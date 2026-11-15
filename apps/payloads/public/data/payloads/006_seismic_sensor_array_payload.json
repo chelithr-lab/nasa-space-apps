@@ -1,0 +1,303 @@
+{
+  "catalogue_id": 6,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 1,
+    "name": "Geophysical and lunar interior instruments"
+  },
+  "payload": {
+    "number": 6,
+    "name": "Seismic sensor array",
+    "article": {
+      "overview": "A seismic sensor array is a set of seismometers placed at several separated sites that record ground motion at the same time. A single seismometer shows that a moonquake happened and what it looked like at one place. Several synchronised stations also show when the seismic waves reached each site, which lets researchers compare arrival times and estimate where an event came from and how the waves travelled through the Moon's interior. The Apollo missions provide the only completed example: four Apollo passive seismic stations (12, 14, 15 and 16) operated together as a seismic network until September 1977. Proposed successors, including the NASA Lunar Geophysical Network (LGN), would place several seismometers at widely separated sites. None of these successor arrays has flown, and none has a confirmed launch.",
+      "description": "A seismic sensor array is defined by its geometry and timing rather than by one standard instrument. Its main components are several sensing stations at separated sites, each with a seismometer (or several sensors on three axes); synchronised recording so that the same event is timed at every station; power, thermal control and data relay at each station, often through a central spacecraft or relay satellite; and shared processing that combines the station records into one catalogue. The Apollo network was the flown example of this approach. The Nunn et al. review describes stations 12, 14, 15 and 16 as functioning as a seismic network [1]. Later proposals, such as the minimum requirements for an International Lunar Network, aim for simultaneous, comparable data from similar sensors [1]. A single station can be hard to interpret on its own: distance, depth and source location are difficult to determine from one record. Several stations recording the same event make those parameters easier to constrain, which is why both the Nunn review and the LGN study emphasise simultaneous multi-station data [1][2].",
+      "scientific_purpose_and_applications": "The main purpose of a seismic array is to measure how seismic waves travel through the Moon's crust, mantle and core, and to record what causes moonquakes. The Nunn et al. review lists Apollo seismic event types including artificial impacts, meteoroid strikes, shallow moonquakes (less than 200 km deep) and deep moonquakes [1]. Its catalogue of more than 13,000 events came from the mid-period instruments of the Apollo network [1]. The LGN study lists scientific objectives to define the interior structure of the Moon, constrain the interior and bulk composition, delineate lateral and vertical heterogeneities inside the Moon, and evaluate current seismo-tectonic activity [2]. The study also states that a network samples deep-mantle and core-traversing seismic waves (for example PKP) more densely than Apollo did [2]. Applications named in the sources are: internal structure of the crust, mantle and core [1][2]; moonquake sources, including shallow moonquakes that may indicate thrust faulting [1][2]; meteoroid impact detection and the impact flux [1]; and regional and farside seismicity, which Apollo could not observe well [1][2].",
+      "operating_principle": "Each station in an array works like any seismometer. A suspended mass or sensing element stays relatively still when the ground moves, and a transducer measures the relative motion. The recorded waveform is time-stamped. Arrays add a second step: the arrival times of the same event at different stations are compared. The Apollo PSE stations combined sensor types. Each PSE station had a three-component (two horizontal and one vertical) mid-period displacement sensor and a vertical-component short-period sensor [1]. The review notes that earlier papers called the mid-period sensor 'long-period' [1]. The LGN concept uses modern sensors on each lander. The very broadband (VBB) seismometer and short-period (SP) sensors are based on InSight SEIS hardware, and the study describes the VBB as measuring ground acceleration in a 1 mHz to 25 Hz band [2]. Landers can send data directly to Earth, and the orbiter provides a relay for farside landers [2].",
+      "scientific_importance": "The Apollo network produced data that is still used. The Nunn et al. review states that more than 40 years after the experiments ended, the Apollo data continue to provide important insights for lunar seismology [1]. Some Apollo data survive only on digital tapes that are deteriorating, and some may be permanently lost [1]. Recovery efforts have restored some missing data [1]. The review states that the Apollo network 'covered only a portion of the lunar nearside', which is likely one reason that most detected events are from the nearside [1]. That sampling limit is the main scientific reason for the farside and global coverage in the LGN proposal [2].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a seismic sensor array. The number of stations, the spacing, the sensors at each station and the power and mass depend on the mission. The examples below are different designs and should not be compared directly.",
+        "examples": [
+          {
+            "name": "Apollo Passive Seismic Experiment network (stations 12, 14, 15 and 16)",
+            "type": "Flown lunar seismic network (1969-1977)",
+            "status": "Flown. Stations 12, 14, 15 and 16 operated continuously from deployment and functioned as a seismic network until September 1977. Station 11 ran for about three weeks in 1969 [1].",
+            "sensor_configuration": "Each PSE station had a three-component mid-period displacement sensor (two horizontal, one vertical) and a vertical-component short-period sensor [1]. The active experiments (ASE) were at stations 14 and 16 and the LSPE at station 17; those are not part of the passive network [1].",
+            "station_coordinates_passive_experiments": {
+              "source": "Table 1 of Nunn et al. [1]; coordinates in the DE421 mean Earth/rotation-axis frame, from Wagner et al. (2017) as cited in [1].",
+              "stations": [
+                {"station": "Apollo 11 PSE", "latitude_deg": 0.67322, "longitude_deg": 23.47315, "in_four_station_network": false},
+                {"station": "Apollo 12 PSE", "latitude_deg": -3.0099, "longitude_deg": 336.5752, "in_four_station_network": true},
+                {"station": "Apollo 14 PSE", "latitude_deg": -3.64408, "longitude_deg": 342.52233, "in_four_station_network": true},
+                {"station": "Apollo 15 PSE", "latitude_deg": 26.13411, "longitude_deg": 3.6298, "in_four_station_network": true},
+                {"station": "Apollo 16 PSE", "latitude_deg": -8.9759, "longitude_deg": 15.4986, "in_four_station_network": true}
+              ],
+              "other_rows_in_table": "Table 1 also lists ALSEP coordinates for stations 14, 15 and 16, and Apollo 17 ALSEP (20.1923 N, 30.7655 E). Not repeated here."
+            },
+            "geometry": {
+              "stated_in_source": "The review states: 'The four stations formed an almost equilateral triangle, with stations 12 and 14 at one corner' [1].",
+              "computed_great_circle_distances_km": {
+                "method": "Calculated for this article from Table 1 coordinates with a mean lunar radius of 1737.4 km. Not stated in [1].",
+                "A12_A14": 181,
+                "A12_A15": 1188,
+                "A12_A16": 1187,
+                "A14_A15": 1095,
+                "A14_A16": 1006,
+                "A15_A16": 1121
+              },
+              "assessment": "The computed distances do not form an almost equilateral triangle. Apollo 12 and 14 are close, and Apollo 15 and 16 are more than 1000 km from the other stations. The discrepancy is unresolved."
+            },
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "Per-station mass, power and dimensions for the network stations were not verified in the sources read for this article.",
+            "cross_reference": "The Apollo 11 PSE instrument mass of 11.5 kg recorded in payload 001 comes from a Smithsonian document read in that run and is not used here for network stations.",
+            "source_urls": [
+              "https://doi.org/10.1007/s11214-020-00709-3"
+            ],
+            "images": [
+              {
+                "id": "apollo_11_pse_deployment",
+                "description": "Apollo 11 astronaut deploying the Passive Seismic Experiment on the lunar surface.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/lunar-science/2023/09/371255main_Seismic_full.jpg",
+                "source_page_url": "https://science.nasa.gov/resource/apollo-11-seismic-experiment/",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "Apollo 11 astronaut deploying the Passive Seismic Experiment on the lunar surface. This was the Apollo 11 station, which was not one of the four network stations; it is shown for context only.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct NASA image asset URL (query parameters removed). HTTP 200 and image/jpeg confirmed on 2026-11-12. Caption and source-page attribution carried over from payload 001 and not re-read for this article. Use the NASA source page for context and download options."
+              }
+            ]
+          },
+          {
+            "name": "Lunar Geophysical Network (LGN)",
+            "type": "Proposed lunar geophysical network (not flown)",
+            "status": "Proposed. The LGN Decadal Study Final Report (10 August 2020) describes the mission as 'currently in formulation for NASA's New Frontiers 5 Announcement of Opportunity' [2]. Not flight-proven; no confirmed launch.",
+            "architecture": "Baseline: an orbiter and four solar-powered landers. The four landers launch together on one vehicle and are deployed sequentially from the orbiter, which also relays data [2]. Four landers provide global distribution including the farside; a threshold of two landers still achieves the threshold mission [2].",
+            "lifetime_design": "Each lander is designed for 6 years, with a goal of 10 years. The 6-year figure covers one primary tidal cycle [2].",
+            "schedule_proposed": "The mission schedule figure in the study shows launch on 30 August 2030 [2]. A proposed date from a 2020 study, not a confirmed launch.",
+            "instrument_package_per_lander_proposed": [
+              "Very broadband (VBB) and short-period (SP) seismometer package beneath the lander.",
+              "One SP seismometer on the lander deck, primarily to measure lander noise.",
+              "One buried SP seismometer (Silicon Audio Buried Seismometer, SPSAB) in a 50 mm borehole sonde, deployed from one of the legs.",
+              "Two heat flow probes.",
+              "Two laser retroreflectors (NGLR).",
+              "Magnetotelluric sounder suite with four remote electrodes, a fluxgate magnetometer, a search coil magnetometer and an electrostatic analyser."
+            ],
+            "seismometer_data_from_source": {
+              "VBB": "Developed by CNES and IPGP in France, based on the InSight SEIS VBB. Four sensors in an oblique configuration measuring ground acceleration over 1 mHz to 25 Hz. Operating thermal range -55 C to +125 C. TRL about 7 for the Moon. Lowered onto the surface by a crane with a single actuator and two cables.",
+              "SP": "Developed by Imperial College London, Oxford University and Kinemetrics, based on the InSight SP sensor head. Three-axis sensor packaged in a 5 cm x 6 cm x 6 cm box. TRL about 7 for the Moon."
+            },
+            "power_and_mass_table_4": {
+              "note": "Average CBE values from Table 4 of [2]. Column alignment is inferred from the power row, which sums to the payload total. Mass alignment in the extracted table is ambiguous.",
+              "vbb_sp_seismometer_average_power_w": 11,
+              "sp_deck_seismometer_average_power_w": 2,
+              "silicon_audio_seismometer_average_power_w": 4.6,
+              "payload_total_average_power_w": 64,
+              "payload_total_mass_kg_cbe": 76.5,
+              "vbb_sp_seismometer_mass_kg_cbe": "uncertain; a first mass value of 25 appears in the table but alignment could not be confirmed",
+              "seismometer_masses_sum_kg": 75.5
+            },
+            "site_selection_summary": "The study selects three nearside sites and one farside site, deployed sequentially [2]. Site descriptions are omitted in line with the project's deferral of lunar location recommendations.",
+            "source_urls": [
+              "https://assets.science.nasa.gov/content/dam/science/psd/planetary-science-division/2024/Lunar-Geophysical-Network.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Farside Seismic Suite (FSS)",
+            "type": "Modern lunar seismic payload example (in development; not an array)",
+            "status": "In development. JPL mission page lists the status as 'Future' with no date or lander named [3]. CNES page (last updated 17 January 2025) lists 'In development' and a planned launch of June 2026 [4]. That date has passed as of this article; no confirmed launch or landing was found in the sources read.",
+            "configuration": "Two-seismometer suite at one site: a Very Broadband (VBB) sensor contributed by CNES and a Short Period (SP) sensor built by Kinemetrics, based on an InSight design [3][4]. Not an array of separate sites.",
+            "dimensions_and_mass": "40 cm cube, about 45 kg for the whole suite [4]. Mass, power and dimensions of the VBB and SP sensors individually are not stated.",
+            "power": "Independent power from its own solar panels; no figure stated [4].",
+            "vbb_performance_from_cnes": "Sensitivity 2 x 10^-10 m/s^2/sqrt(Hz); sensing band 0.1 to 1 Hz [4]. These are project-level values for the FSS and are not transferable to other seismometers.",
+            "mission_duration": "At least four months (text) and 4.5 months (key-info box) [3][4]. A mission design duration, not a universal seismometer lifetime.",
+            "delivery_status": "Delivery route not confirmed. Payloads 002 and 003 record that the CP-12 task order was ended in July 2026; this article did not verify that. The JPL and CNES pages read here do not mention CP-12.",
+            "source_urls": [
+              "https://www.jpl.nasa.gov/missions/farside-seismic-suite/",
+              "https://cnes.fr/en/projects/fss"
+            ],
+            "images": [
+              {
+                "id": "farside_seismic_suite_before_testing",
+                "description": "Farside Seismic Suite in a JPL clean room before environmental testing.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia26/pia26299/PIA26299.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/farside-seismic-suite-before-testing-at-jpl/",
+                "publisher": "NASA/JPL-Caltech",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "Farside Seismic Suite in a JPL clean room before environmental testing. This is a single-site package with two seismometers and is not an array.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct NASA Photojournal asset URL (query parameters removed). HTTP 200 and image/jpeg confirmed on 2026-11-12. Image identity (PIA26299) carried over from payload 001 and not re-read for this article. Use the NASA source page for download options."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo network stations were spread across the nearside and beyond, with coordinates given in Table 1 of [1]. The LGN lander package is a set of instruments mounted under and on the lander, with a 5 cm x 6 cm x 6 cm SP sensor box and a 50 mm buried borehole sonde [2]. The FSS is a 40 cm cube [4]. These describe different designs and are not directly comparable.",
+        "mass_and_weight": "Per-station mass for the Apollo network is not verified. The LGN payload total is 76.5 kg CBE with a 30 percent contingency-based estimate in the report [2]; the seismometer masses are not reliably assigned (see data_quality_notes). The FSS is about 45 kg [4].",
+        "power_requirements": "The LGN payload averages about 64 W CBE, with the VBB/SP seismometer package about 11 W, the lander-deck SP about 2 W and the Silicon Audio sensor about 4.6 W [2]. The FSS uses its own solar panels, with no figure stated [4]. The Apollo network per-station power is not verified here."
+      },
+      "environmental_and_operational_requirements": "Seismic arrays on the Moon face the same environment as single seismometers: no atmosphere, large surface temperature swings, radiation and micrometeoroid impacts. Requirements specific to arrays include: synchronised timing, so that stations share a common time reference and arrival times can be compared. The Nunn review's minimum requirements for an International Lunar Network are built around simultaneous, comparable data from similar sensors [1]; Figure 14 of that review, which contains the requirements, could not be read in text form, so the requirements are not reproduced here. Thermal control: the LGN VBB requires -55 C to +125 C and a thermal sheath [2]. Power: the LGN landers are solar-powered, with an average CBE payload power of about 64 W [2]. The Nunn review states that performance requirements are not specified for the ILN, to allow low-performance sensors to be included, and that decisions on performance are left to the organisation funding the instrument [1].",
+      "limitations": "1. No flown array since Apollo: the only completed lunar seismic network is the Apollo network, which ended in 1977 [1]. Statements about future networks are proposals. 2. Coverage was limited: the Apollo network covered only part of the nearside [1]. 3. Geometry is unresolved: the review's 'almost equilateral triangle' description does not match the Table 1 coordinates (see physical_specifications.examples[0].geometry). 4. Mixed sensor types: Apollo PSE stations used mid-period and short-period sensors and LGN uses VBB and SP sensors. Their response characteristics differ, so records from different instrument types need to be corrected for instrument response before they are compared. 5. Single-site versus array: the FSS is a two-seismometer package at one site, and its data alone cannot provide the spatial information an array provides.",
+      "transportation_and_deployment": {
+        "overview": "A seismic array is delivered as several instrument stations, or as one spacecraft that carries and releases several landers. The LGN concept shows how this would work; the Apollo network was installed as part of the ALSEP packages.",
+        "transportation_process": [
+          "Earth integration: four landers and an orbiter are integrated for one launch vehicle [2].",
+          "Launch and lunar transfer: the orbiter provides the velocity needed to place all flight systems into lunar orbit [2].",
+          "Sequential deployment: the landers are released from the orbiter and descend one at a time [2].",
+          "Surface installation: the VBB is lowered to the surface by a crane with a single actuator and two cables. The SP sensors are on the lander deck, beneath the lander or on a leg [2].",
+          "Power, data and thermal: each lander is solar-powered. The orbiter provides a communications relay, including for farside landers [2]."
+        ],
+        "deployment_methods": "LGN: a crane lowers the VBB, and a buried SP sensor is deployed from a leg [2]. Apollo: the PSE was one of the seismic experiments carried in the ALSEP packages [1]. The sources read do not describe the deployment steps for the network stations, so they are not described here.",
+        "historical_examples": "The Apollo PSE stations (1969-1977) and the FSS (in development) are the two examples in the sources read. The Apollo network was the only completed lunar seismic network [1].",
+        "compatibility_assessment": "The LGN report does not name a specific lander for the seismic package, and this article does not claim compatibility with any lander. FSS delivery route is not confirmed (see physical_specifications.examples[2].delivery_status).",
+        "images": []
+      },
+      "historical_significance": "The Apollo passive experiments began in 1969 [1]. The four-station network operated until September 1977 and produced more than 13,000 catalogued events [1]. The review states that these data have been used for decades to investigate the Moon's internal structure and are still used today [1]. No seismic observations have been made on the Moon since Apollo [1]. The review also notes that some data were recovered in recent years after being lost or deteriorating [1]. The LGN concept, if built, would be the first new lunar seismic network since Apollo. Its study states that a wider geographic distribution, including a farside station, is intended to improve sampling of the deep mantle and core compared with Apollo [2].",
+      "limitations_and_uncertainties": "Apollo geometry conflict: the review says the four stations formed an almost equilateral triangle, but the Table 1 coordinates do not show this (see physical_specifications.examples[0].geometry). Event count: the review gives more than 13000 catalogued events, attributed to Nakamura et al. (1981) [1]; a second, lower figure appeared only in a search summary and is not used. Apollo network details: per-station mass, power, dimensions and deployment steps are not verified. The Latham et al. 1978 report (NTRS 19780005006) returned HTTP 404 and could not be read; NTRS 19750006611 is a scanned image PDF without extractable text. LGN details: the source read is the 2020 Decadal Study Final Report, not a 2024 fact sheet; the 2030 launch date is a proposal from a 2020 schedule; the mass table column alignment is ambiguous. FSS status: the JPL page gives no date or lander; the CNES page gives a June 2026 launch that has passed; the CP-12 delivery link is not verified. Other proposals: a European ECLIPSE concept and a Chinese seismometer for Chang'e 7 and 8 appear in search results only and are not described. Figures not read: Figure 1 (Apollo station map) and Figure 14 (ILN requirements) in the Nunn review are image-only in the extracted text.",
+      "images": [
+        {
+          "id": "apollo_11_pse_deployment",
+          "description": "Apollo 11 astronaut deploying the Passive Seismic Experiment on the lunar surface.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/lunar-science/2023/09/371255main_Seismic_full.jpg",
+          "source_page_url": "https://science.nasa.gov/resource/apollo-11-seismic-experiment/",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Apollo 11 astronaut deploying the Passive Seismic Experiment on the lunar surface. This was the Apollo 11 station, which was not one of the four network stations; it is shown for context only.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA image asset URL (query parameters removed). HTTP 200 and image/jpeg confirmed on 2026-11-12. Caption and source-page attribution carried over from payload 001 and not re-read for this article."
+        },
+        {
+          "id": "farside_seismic_suite_before_testing",
+          "description": "Farside Seismic Suite in a JPL clean room before environmental testing.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia26/pia26299/PIA26299.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/farside-seismic-suite-before-testing-at-jpl/",
+          "publisher": "NASA/JPL-Caltech",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Farside Seismic Suite in a JPL clean room before environmental testing. This is a single-site package with two seismometers and is not an array.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct NASA Photojournal asset URL (query parameters removed). HTTP 200 and image/jpeg confirmed on 2026-11-12. Image identity (PIA26299) carried over from payload 001 and not re-read for this article."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "apollo_11_pse_deployment",
+          "description": "Apollo 11 astronaut deploying the Passive Seismic Experiment on the lunar surface.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/lunar-science/2023/09/371255main_Seismic_full.jpg",
+          "source_page_url": "https://science.nasa.gov/resource/apollo-11-seismic-experiment/",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Apollo 11 astronaut deploying the Passive Seismic Experiment on the lunar surface. Credit: NASA. This was the Apollo 11 station, which was not one of the four network stations; it is shown for context only.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA image asset URL (query parameters removed). HTTP 200 and image/jpeg confirmed on 2026-11-12."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Lunar Seismology: A Data and Instrumentation Review",
+          "authors": "Nunn, C., Garcia, R.F., Nakamura, Y., Marusiak, A.G., Kawamura, T., Sun, D., Margerin, L., Weber, R., Drilleau, M., Wieczorek, M.A., Khan, A., Rivoldini, A., Lognonne, P., Zhu, P.",
+          "publisher": "Space Science Reviews",
+          "publication_date": "2020-07-03 (online); volume 216, article 89",
+          "url": "https://doi.org/10.1007/s11214-020-00709-3",
+          "local_copy": "data/sources/006/s11214-020-00709-3.pdf",
+          "read_status": "Read in full from local PDF copy for this article."
+        },
+        {
+          "number": 2,
+          "title": "LGN Decadal Study Final Report",
+          "authors": "Neal, C.R., Weber, R., Amato, M.J., Seas, A., and the LGN study team (NASA Goddard Space Flight Center)",
+          "publisher": "NASA Goddard Space Flight Center",
+          "publication_date": "2020-08-10",
+          "url": "https://assets.science.nasa.gov/content/dam/science/psd/planetary-science-division/2024/Lunar-Geophysical-Network.pdf",
+          "local_copy": "data/sources/006/Lunar-Geophysical-Network.pdf",
+          "read_status": "Read from local PDF copy for this article. The local file is titled 'LGN Decadal Study Final Report' (10 August 2020); the canonical URL folder is dated 2024, so the file and URL should be checked against each other."
+        },
+        {
+          "number": 3,
+          "title": "Farside Seismic Suite",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "publication_date": "not stated on page",
+          "url": "https://www.jpl.nasa.gov/missions/farside-seismic-suite/",
+          "read_status": "Read by a web-fetch subagent for this article. Status 'Future'; no date or lander named."
+        },
+        {
+          "number": 4,
+          "title": "FSS (Farside Seismic Suite)",
+          "publisher": "Centre national d'etudes spatiales (CNES)",
+          "publication_date": "last updated 2025-01-17",
+          "url": "https://cnes.fr/en/projects/fss",
+          "read_status": "Read by a web-fetch subagent for this article. Status 'In development'; launch date June 2026."
+        },
+        {
+          "number": 5,
+          "title": "Apollo 11 Seismic Experiment",
+          "publisher": "NASA Science",
+          "publication_date": "not stated",
+          "url": "https://science.nasa.gov/resource/apollo-11-seismic-experiment/",
+          "read_status": "Image source; cited in payload 001; not re-read for this article."
+        },
+        {
+          "number": 6,
+          "title": "Farside Seismic Suite Before Testing at JPL (PIA26299)",
+          "publisher": "NASA Science / NASA Photojournal",
+          "publication_date": "not stated",
+          "url": "https://science.nasa.gov/photojournal/farside-seismic-suite-before-testing-at-jpl/",
+          "read_status": "Image source; cited in payload 001; not re-read for this article."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo passive seismic network example": "payload.article.physical_specifications.examples[0].images",
+      "LGN proposed example": "payload.article.physical_specifications.examples[1].images (no verified image)",
+      "FSS example": "payload.article.physical_specifications.examples[2].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images placed in this section)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. HTTP 200 was confirmed for both direct image URLs on 2026-11-12. The source pages for the images were not re-read for this article; the image identities are carried over from payload 001."
+  },
+  "data_quality_notes": [
+    "Apollo geometry conflict: the Nunn et al. review states the four PSE stations 'formed an almost equilateral triangle, with stations 12 and 14 at one corner'. Great-circle distances computed from its Table 1 coordinates (mean lunar radius 1737.4 km, calculated for this article, not stated in the source) are about 181 km for 12-14, and 1006 to 1188 km for every pair involving 15 or 16. The conflict is recorded and not resolved.",
+    "Table 1 of the Nunn review was read from a raw text extraction of PDF page 3, which gave a clean row-to-value layout. Coordinates were not checked against the original Wagner et al. (2017) table.",
+    "Event count: 'more than 13000' seismic events catalogued (Nakamura et al. 1981, as cited in [1]). A lower figure from a search summary is not used.",
+    "Latham et al. 1978 (NTRS 19780005006) returned HTTP 404 and could not be read. NTRS 19750006611 is a scanned image PDF; OCR has not been run. Springer full text was obtained from a local copy.",
+    "Apollo network per-station mass, power and dimensions are not verified for stations 12, 14, 15 and 16.",
+    "Figure 1 (Apollo station map) and Figure 14 (ILN minimum requirements) in the Nunn review are image-only in the extracted text and were not checked.",
+    "LGN source: the local file is the 2020 LGN Decadal Study Final Report (10 August 2020). The canonical URL folder is dated 2024, so the file-to-URL correspondence should be confirmed.",
+    "LGN mass table: the extracted Table 4 column alignment is ambiguous. The VBB/SP seismometer mass is recorded as uncertain (a first value of 25 kg appears in the mass column). Seismometer masses sum to about 75.5 kg against the 76.5 kg payload total. The power column reconciles (11 + 2 + 4.6 + 12 + 8.6 + 0 + 25.8 = 64 W, matching the payload total).",
+    "LGN launch date (30 August 2030) is proposed in a 2020 study and is not confirmed. The schedule figure's other dates are not clearly assignable in the extracted text. No current status was found.",
+    "FSS: JPL page status 'Future' with no date or lander. CNES page (updated 2025-01-17) gives 'In development' and June 2026 launch, which has passed. The CP-12 link recorded in payloads 002 and 003 (CP-12 ended July 2026) was not verified; the JPL and CNES pages read here do not mention CP-12.",
+    "Proposed concepts from search summaries only (not verified, not described in article): European ECLIPSE; a Chinese seismometer for Chang'e 7 and 8; a fibre-optic seismic network proposal; Argonaut-based geophysical network idea.",
+    "Images: both direct image URLs returned HTTP 200 (image/jpeg) on 2026-11-12. Their caption and source-page attribution were carried over from payload 001 and not re-read on the source pages. The Apollo 11 image shows a station outside the four-station network. The FSS image shows a two-sensor single-site package, not an array.",
+    "Source-page checks: NASA Apollo 11 and FSS Photojournal pages and the CNES FSS page returned HTTP 200; the JPL FSS mission page returned HTTP 403 to a curl check on 2026-11-12, though a web-fetch subagent read it earlier (status 'Future'). The DOI for the Nunn review resolved to HTTP 200.",
+    "No landing-site recommendations are included, in line with the user's deferral."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@serenity/home",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Serenity home page: static HTML, CSS and JavaScript. Built by tools/build-site.mjs."
+}

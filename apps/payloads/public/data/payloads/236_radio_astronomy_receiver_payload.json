@@ -1,0 +1,217 @@
+{
+  "catalogue_id": 236,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 12,
+    "name": "Astronomical observation"
+  },
+  "payload": {
+    "number": 236,
+    "name": "Radio astronomy receiver",
+    "article": {
+      "overview": "A radio astronomy receiver is the electronic instrument that detects faint radio waves arriving from celestial sources such as the Sun, planets, the Milky Way and the early universe. It works with an antenna: the antenna collects the radio waves, and the receiver amplifies them with very low noise, selects the frequency band of interest, converts the signal into digital data, and records its strength and frequency content over time. On the Moon the main attraction is location. Earth's ionosphere blocks radio waves at wavelengths of about 10 metres or longer, which corresponds to frequencies below roughly 30 MHz, so these wavelengths cannot be observed well from the ground. The lunar far side is described in the sources as radio quiet and shielded from Earth's radio interference, and it lacks Earth's ionosphere. Several lunar radio astronomy receivers have therefore been flown, proposed or developed, and the examples below are at very different stages of maturity. This article uses 'radio astronomy receiver' as a payload class. No single design is standard, and the figures given below belong to specific named instruments.",
+      "description": "A radio astronomy receiver consists of front-end electronics that connect to one or more antennas, plus a processing and recording unit. Typical functions include amplification, with the aim of boosting very weak signals while adding as little electronic noise as possible; band selection, meaning filtering to the frequency range being studied, which for lunar low-frequency work is often in the kilohertz-to-tens-of-megahertz range; spectral analysis, which splits the band into many channels so that the frequency content of a source can be measured; calibration, which measures known reference signals so that recorded power can be converted into physically meaningful units; and data handling, which digitises, stores and transmits results, often through a relay or base station because the far side cannot communicate directly with Earth. The instrument's antennas, receiver electronics and data system are sometimes described as separate subsystems. Only some of the examples in this article provide enough source information to describe all of them.",
+      "scientific_purpose_and_applications": "Radio astronomy at low frequencies is aimed at several scientific targets. The first is the early universe: neutral hydrogen emits and absorbs radio waves at a wavelength of about 21 cm, and the redshifted version of this signal from the Cosmic Dark Ages and Cosmic Dawn may carry information about the first stars and structures. The second is solar and planetary radio emissions: bursts from the Sun and emissions from Jupiter and other planets are strong at low frequencies and are relevant to space weather. The third is galactic and extragalactic sources, since low-frequency surveys can map the sky at wavelengths that are difficult to observe from Earth. The fourth is the lunar environment: a receiver on the Moon can study the lunar ionosphere and the lunar surface's electromagnetic environment.",
+      "operating_principle": "A radio receiver converts the electrical signal from an antenna into measured quantities. In a typical total-power or spectrometer design, the antenna collects incoming radio waves, which induce a small voltage; a low-noise amplifier boosts the signal close to the antenna to limit noise added by cables; filters select the band of interest and reject unwanted frequencies; the signal is downconverted or sampled and split into frequency channels; and the channel powers are averaged over time, calibrated and recorded. This general principle is standard radio-engineering practice rather than a specific published design. The sensitivity and frequency resolution of a real instrument depend on its antennas, receiver noise temperature, bandwidth and integration time, none of which are stated in the sources for the examples below unless a number is quoted explicitly.",
+      "scientific_importance": "Radio astronomy at low frequencies probes parts of the electromagnetic spectrum that are blocked from Earth. The lunar far side is described in the sources as radio quiet and shielded from Earth's radio interference, and it lacks Earth's ionosphere, which is the main reason a receiver there could detect signals that cannot be recorded from Earth. The scientific returns are still largely prospective. The flown examples were limited by hardware problems or short operating periods, and the proposed examples have not yet reached flight.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power requirement for a radio astronomy receiver. The figures below belong to specific examples and must not be compared as if they described the same class of instrument. The lunar-orbit satellites, the relay-satellite payload, the proposed lunar-surface telescope concepts and the proposed far-side array differ greatly in architecture and in their stage of development.",
+        "examples": [
+          {
+            "name": "Explorer 49 (RAE-B / Radio Astronomy Explorer-2)",
+            "type": "Flown lunar-orbit radio astronomy satellite",
+            "status": "Flown. Placed into lunar orbit on 15 June 1973 (secondary summary).",
+            "frequency_range_mhz": [0.025, 13.1],
+            "receivers": "Two burst receivers connected to the V-antennas, and a third burst receiver connected to the dipole antenna that failed about one week into the flight and produced no significant data. One secondary summary states that the working receivers operated at nine frequencies from 0.45 to 9.18 MHz.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "Not verified in this article.",
+            "end_of_contact": "August 1977 (secondary summary).",
+            "source_urls": [
+              "https://en.wikipedia.org/wiki/Explorer_49",
+              "https://ui.adsabs.harvard.edu/abs/1975A%26A....40..365A/abstract",
+              "https://ui.adsabs.harvard.edu/abs/1974STIN...7518284A/abstract"
+            ],
+            "images": [],
+            "notes": "Frequency and receiver figures come from a secondary summary; the 1975 and 1974 primary instrumentation documents were identified but not opened in this run."
+          },
+          {
+            "name": "Chang'e-4 Netherlands-China Low-frequency Explorer (NCLE)",
+            "type": "Flown low-frequency radio telescope on a lunar relay satellite",
+            "status": "Flown and in operation as of the source date (2 December 2019). Current status not verified.",
+            "platform": "Queqiao relay satellite, launched May 2018, in a halo orbit around the second Earth-Moon Lagrange point about 60,000 to 80,000 km beyond the Moon.",
+            "antennas": "Three antennas, each 5 metres long. One deployed to close to full length; the other two were stuck at about 2.5 metres as of the 2019 report.",
+            "frequency_range_mhz": [1, 30],
+            "receiver_spectrometer_details": "Not stated in the source.",
+            "mass_kg": null,
+            "power_w": null,
+            "operating_mode": "The relay satellite can switch from relay duty to radio-telescope mode when the Chang'e-4 lander powers down during the lunar night.",
+            "science_goals": "Initial targets were the Sun and Jupiter; longer-term goals include faint Cosmic Dawn and Dark Ages signals.",
+            "source_urls": [
+              "https://spectrum.ieee.org/pioneering-astronomy-experiment-begins-beyond-the-moon"
+            ],
+            "images": []
+          },
+          {
+            "name": "FARSIDE (Farside Array for Radio Science Investigations of the Dark ages and Exoplanets)",
+            "type": "Proposed far-side low-frequency interferometric array",
+            "status": "Proposed concept. A NASA-funded design study (2019) covered the instrument, deployment rover, lander and base station and found an architecture broadly consistent with Probe mission requirements. Not flown.",
+            "architecture": "128 dual-polarisation antennas across a 10 km area, deployed by a rover and tethered to a base station for central processing, power and data transmission toward the Lunar Gateway.",
+            "frequency_range_mhz": [0.1, 40],
+            "channels": 1400,
+            "mass_kg": null,
+            "power_w": null,
+            "lifetime": null,
+            "science_goals": "Monitoring of nearby stellar systems for radio signatures of coronal mass ejections; detecting magnetospheres of candidate habitable exoplanets; solar-system radio activity; the Dark Ages global 21-cm signal at redshift 50 to 100, calibrated with an orbiting beacon; and lunar subsurface sounding.",
+            "source_urls": [
+              "https://arxiv.org/abs/1907.05407"
+            ],
+            "images": [],
+            "notes": "The 100 kHz lower bound is from the arXiv abstract page. A secondary search summary gave 200 kHz for another version of the study; check the full PDF before reuse."
+          },
+          {
+            "name": "DAPPER (Dark Age Polarimetry Pathfinder)",
+            "type": "Proposed lunar-orbit radio spacecraft",
+            "status": "Proposed. NRAO's 2020 release describes a two-year effort to design and develop a prototype receiver. No launch date has been published in the sources reviewed.",
+            "receiver_and_antenna": "NRAO's Central Development Laboratory is developing the specialised receiver and high-frequency antenna, targeting the redshifted 21-cm hydrogen signal from low lunar orbit.",
+            "frequency_range_mhz": null,
+            "mass_kg": null,
+            "power_w": null,
+            "launch_concept": "The release says the spacecraft would likely launch from the vicinity of the Lunar Gateway; this is a stated possibility, not a confirmed plan.",
+            "source_urls": [
+              "https://public.nrao.edu/news/nrao-joins-space-mission-to-the-far-side-of-the-moon-to-explore-the-early-universe/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Crater Radio Telescope (LCRT)",
+            "type": "Early-stage NIAC concept, lunar crater dish",
+            "status": "Early-stage NASA Innovative Advanced Concepts concept. Nothing has flown, and JPL describes it as not a NASA mission.",
+            "design_concept": "A wire-mesh dish about 1 km wide in a crater more than 3 km wide, with the receiver suspended above the dish on cables anchored at the crater rim. Robotic DuAxel rovers would build the mesh dish over days or weeks.",
+            "receiver_specifications": "None given in the source. Frequency range not stated.",
+            "mass_kg": null,
+            "power_w": null,
+            "funding": "$500,000 for NIAC Phase II, running for two years.",
+            "source_urls": [
+              "https://www.jpl.nasa.gov/news/lunar-crater-radio-telescope-illuminating-the-cosmic-dark-ages"
+            ],
+            "images": []
+          },
+          {
+            "name": "FARSIDE prototype analog RF electronics (student project)",
+            "type": "Engineering prototype",
+            "status": "Prototype built by an Arizona State University student team, identified only from a search summary and not opened in this run.",
+            "frequency_range_mhz": [0.1, 40],
+            "performance_figures": "Not stated here.",
+            "source_urls": [
+              "https://capstones.engineering.asu.edu/project/lunar-radio-telescope-radio-frequency-rf-receiver-pcb-design/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No single dimensions apply to a radio astronomy receiver. The NCLE antennas were 5 metres long each (two stuck at about 2.5 metres in 2019). The LCRT concept's dish would be about 1 km wide in a crater more than 3 km wide. FARSIDE's array would cover a 10 km area with 128 dual-polarisation antennas. Explorer 49's dimensions were not verified.",
+        "mass_and_weight": "Mass is not stated for any named example in the sources reviewed. The article makes no mass claim for any receiver.",
+        "power_requirements": "Power is not stated for any named example in the sources reviewed, apart from the qualitative statement that the FARSIDE array is tethered to a base station for power and processing."
+      },
+      "environmental_and_operational_requirements": "A lunar radio receiver must operate in a vacuum with large daily temperature swings and extreme cold during the lunar night. The Chang'e-4 system had a related operating mode: the relay satellite could take on a radio-telescope role while the lander was powered down for the cold lunar night. The LCRT concept's wire-mesh dish would have to hold a parabolic shape across surface temperatures that JPL gives as minus 280 degrees Fahrenheit to 260 degrees Fahrenheit (about minus 173 C to 127 C). A lunar receiver also needs careful electromagnetic design: the far side's advantage is shielding from Earth's radio noise, but electronics on the spacecraft or lander can generate their own interference. The sources reviewed do not quantify this effect for the examples above, so it should be treated as a design requirement rather than a demonstrated margin. Operationally, a far-side receiver cannot communicate directly with Earth, and the FARSIDE and Chang'e-4 examples both rely on relay or base-station architectures to return data.",
+      "limitations": "A receiver can only observe the band its antennas and electronics support. The sources reviewed do not quantify the sensitivity or calibration limits of any named example across its band. Although the far side is shielded from Earth, spacecraft, landers and rovers can generate their own interference. Large antenna arrays and dishes depend on mechanical deployment, and Chang'e-4's NCLE has already shown partial deployment problems. Without a relay, data cannot be returned to Earth, which creates a dependence on the relay's availability and operating schedule. A single receiver measures one sky position at a time, so imaging needs arrays or interferometry, which increases mass, complexity and cost.",
+      "transportation_and_deployment": {
+        "overview": "The deployment method depends strongly on the example. Surface concepts (FARSIDE, LCRT) assume rovers would deploy and assemble their antennas, and the relay-satellite example (Chang'e-4 NCLE) was deployed in orbit on the Queqiao relay. The orbiter examples (Explorer 49, DAPPER) are lunar-orbit spacecraft. None of these has a verified lander or spacecraft interface in this article.",
+        "transportation_process": [
+          "Surface concepts: integrate the antenna array and rover on Earth, launch, transfer to the Moon, deliver to the surface, and deploy and assemble the array with a rover (FARSIDE) or robotic DuAxel rovers (LCRT).",
+          "Relay payload: the NCLE was carried on the Queqiao relay satellite, launched in May 2018 and placed in a halo orbit beyond the Moon, where the antennas were deployed in orbit.",
+          "Orbiter payloads: Explorer 49 was placed into lunar orbit on 15 June 1973; DAPPER is proposed for a low lunar orbit, with a possible launch from the vicinity of the Lunar Gateway."
+        ],
+        "deployment_methods": "FARSIDE's architecture assumes a rover to deploy and assemble the antenna array, with a base station providing power, processing and communications to the Lunar Gateway. The LCRT concept assumes robotic DuAxel rovers would build the dish in a crater. The NCLE antennas were deployed in orbit; two of three stalled at about 2.5 metres.",
+        "historical_examples": "Explorer 49 operated from lunar orbit in 1973 and contacted the Earth until August 1977 according to a secondary summary. Chang'e-4's NCLE operated from the Queqiao relay satellite and illustrates the deployment risk for this class.",
+        "compatibility_assessment": "No lander or spacecraft compatibility is asserted for any example. The 2019 FARSIDE study named a lander reference design, but that is not treated here as verified compatibility, and no mass, dimensions, mounting points or landing loads were verified for any named example.",
+        "images": []
+      },
+      "historical_significance": "Explorer 49 (RAE-B / Radio Astronomy Explorer-2) was an early demonstration that radio astronomy could be carried out from lunar orbit at very low frequencies. A secondary summary states that the satellite's main capability was repeated lunar occultations of strong radio sources at very low frequencies, which the summary describes as unique to RAE-2. The Chang'e-4 NCLE used a relay satellite in a radio-telescope role at low frequencies, and its partial antenna deployment problems are a practical lesson for future designs. The FARSIDE and DAPPER concepts, and the LCRT concept, reflect the current interest in using the far side as a radio-quiet site for cosmology and solar-system science.",
+      "limitations_and_uncertainties": "Most figures in this article come from a small number of sources, and several of those were read only in summary form. Explorer 49's figures come from a secondary summary. The Chang'e-4 NCLE figures date from 2019. The proposed examples have not flown, and their numbers are study values or design goals rather than measurements. Items that could not be verified are listed below. Explorer 49's frequency and receiver figures come from a secondary summary and were not checked against the primary 1975 and 1974 instrumentation papers, which were listed but not opened. The Chang'e-4 NCLE figures come from a 2019 article and do not reflect its current status. FARSIDE's 100 kHz lower bound was taken from its arXiv abstract page, while a secondary summary gave 200 kHz for another version of the study; the full PDF should be checked. FARSIDE's mass, power and lifetime are not given in the sources reviewed. DAPPER's receiver frequency band, mass and power are not given in the NRAO release. The LCRT concept has no receiver specifications. Schedules and funding for all proposed examples may have changed since the sources were published (2019 to 2020). The operating principle is general radio-engineering practice and is not sourced to a specific instrument. No lunar lander compatibility is asserted for any example. No images were included because no direct image asset URL was verified in this run.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Lunar Crater Radio Telescope: Illuminating the Cosmic Dark Ages",
+          "publisher": "NASA JPL",
+          "url": "https://www.jpl.nasa.gov/news/lunar-crater-radio-telescope-illuminating-the-cosmic-dark-ages",
+          "status": "Opened"
+        },
+        {
+          "title": "Pioneering astronomy experiment begins beyond the Moon",
+          "publisher": "IEEE Spectrum",
+          "date": "2019-12-02",
+          "url": "https://spectrum.ieee.org/pioneering-astronomy-experiment-begins-beyond-the-moon",
+          "status": "Opened"
+        },
+        {
+          "title": "FARSIDE: A Low Radio Frequency Interferometric Array on the Lunar Farside (Astro2020 whitepaper)",
+          "publisher": "arXiv (Burns, J. et al.)",
+          "date": "2019-07-11",
+          "url": "https://arxiv.org/abs/1907.05407",
+          "status": "Abstract page opened; full PDF not opened"
+        },
+        {
+          "title": "NRAO joins space mission to the far side of the Moon to explore the early universe",
+          "publisher": "National Radio Astronomy Observatory",
+          "date": "2020-09-22",
+          "url": "https://public.nrao.edu/news/nrao-joins-space-mission-to-the-far-side-of-the-moon-to-explore-the-early-universe/",
+          "status": "Opened"
+        },
+        {
+          "title": "Explorer 49",
+          "publisher": "Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Explorer_49",
+          "status": "Search summary only; not opened"
+        },
+        {
+          "title": "RAE-2 instrumentation, Astronomy and Astrophysics vol. 40, p. 365",
+          "publisher": "Alexander, J.K. et al. (1975) / NASA ADS",
+          "date": "1975",
+          "url": "https://ui.adsabs.harvard.edu/abs/1975A%26A....40..365A/abstract",
+          "status": "Identified in search; not opened"
+        },
+        {
+          "title": "Scientific instrumentation of the Radio-Astronomy-Explorer-2 satellite",
+          "publisher": "NASA STI / NASA ADS",
+          "date": "1974",
+          "url": "https://ui.adsabs.harvard.edu/abs/1974STIN...7518284A/abstract",
+          "status": "Identified in search; not opened"
+        },
+        {
+          "title": "Lunar Radio Telescope - Radio Frequency (RF) Receiver PCB Design",
+          "publisher": "Arizona State University capstone projects",
+          "url": "https://capstones.engineering.asu.edu/project/lunar-radio-telescope-radio-frequency-rf-receiver-pcb-design/",
+          "status": "Search summary only; not opened"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No images were included in this v1 article because no direct image asset URL was verified in this run."
+  },
+  "data_quality_notes": [
+    "Explorer 49 (RAE-B / RAE-2) frequency, receiver and end-of-contact figures come from a secondary summary (Wikipedia search summary); primary instrumentation papers were identified but not opened.",
+    "Chang'e-4 NCLE figures come from an IEEE Spectrum article dated 2 December 2019 and are not updated for current status.",
+    "FARSIDE lower frequency bound is 100 kHz per the arXiv abstract page; a secondary search summary gave 200 kHz for another version of the study. The full PDF was not opened.",
+    "DAPPER: NRAO release (2020) does not state the receiver's frequency band, mass or power; no launch date was found.",
+    "LCRT: JPL article gives no receiver specifications, mass or power; NIAC Phase II funding of $500,000 is stated.",
+    "A search result page (cavac.at) contained embedded instructions in a non-English language; these were ignored and the page was not used as a source.",
+    "A Chang'e-4 Low Frequency Spectrometer (0.1 to 40 MHz) was mentioned in a secondary search summary but was not verified against a primary source and is omitted from the article.",
+    "The Springer paper 10.1007/s11432-020-3047-4 was identified but could not be opened (paywalled redirect), so it is not cited.",
+    "No images are included in this v1 article; no direct image asset URL was verified.",
+    "Mass, power and dimensions are null for every example in this article unless a value was quoted from a named source."
+  ]
+}

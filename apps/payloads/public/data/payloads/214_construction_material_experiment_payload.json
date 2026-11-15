@@ -1,0 +1,246 @@
+{
+  "catalogue_id": 214,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 214,
+    "name": "Construction material experiment",
+    "article": {
+      "overview": "A construction material experiment tests whether building materials, such as bricks, blocks or printed components, can be made from lunar regolith, the loose layer of dust and broken rock that covers the Moon's surface, rather than launched from Earth. It belongs to in-situ resource utilisation (ISRU). The approaches reviewed here use sunlight, furnaces, lasers or light-cured or chemical binders to fuse or bind regolith simulant into solid forms. The evidence reviewed is almost entirely laboratory work on simulants, ground demonstrations, and one in-orbit exposure of simulant samples whose results have not been reported [1][2][5][7].",
+      "description": "Construction material experiment is a catalogue name for a family of experiments rather than one standard instrument. Its variants differ in how they make regolith hold together. Sintering heats loose regolith to a temperature below full melting so that grains bond at their contact points [5][7]. Solar sintering concentrates sunlight to fuse thin layers of simulant [3][4]. Laser sintering uses a focused beam for the same purpose [6]. Binder-based printing deposits a liquid binder layer by layer, and light-curable ceramic printing hardens each layer with light before an oven step [1][2]. Every variant also needs feedstock handling, which means excavating, sieving to a target particle size and feeding material into a process chamber [2]. Products are then judged by compressive strength, porosity and dimensional accuracy.",
+      "scientific_purpose_and_applications": "The purpose is to establish whether local regolith can supply useful structural or functional parts, such as landing pads, shelter walls, radiation shielding, roads or replacement tools, which would otherwise have to be launched. The experiments also test scientific questions: how particle size, grain shape and mineralogy control bonding during sintering [5][8], how binders and temperature change strength and porosity [5][7], and whether printing works in vacuum and at lunar temperatures [1]. The data are meant to feed engineering models of lunar structures, although no published experiment yet supplies verified flight data for those models.",
+      "operating_principle": "Sintering bonds grains through atomic diffusion at their contact points while the material remains solid. The IISc study infers that volume diffusion is the main mechanism for the three simulants it tested, from changes in sample dimensions, while noting that other mechanisms remain uncertain [5]. In solar and laser sintering, a concentrated heat source melts or fuses regolith locally in thin layers, so the structure is built up layer by layer [3][6]. In binder printing, the 2013 ESA-supported process mixed the simulant with magnesium oxide so that it could be printed, and a binding salt then converted it to a stone-like solid [1]. In ceramic printing, the regolith is mixed with a light-reactive binder, printed layer by layer, hardened by light and then sintered in an oven [2].",
+      "scientific_importance": "Making construction materials from regolith could reduce the mass that must be launched for a lunar base, but only if the materials reach usable strength and survive the lunar environment. The results so far show that simulant can be bonded into solid forms by several routes, with strengths that vary widely between methods [5][6]. These results do not yet show that lunar regolith itself behaves like the simulants. Regolith mechanics research indicates that grain size distribution, grain shape and grain density control compressibility, shear strength, porosity and thermal conductivity, and that terrestrial soil mechanics cannot be applied to regolith without adjustment [8].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a construction material experiment. The six examples below use different processes, feedstocks, scales and statuses, and their numbers are not directly comparable. For example, a 40.8 MPa figure from a furnace-sintered cube and a 1.5 MPa figure from a laser-sintered block were measured by different methods on different simulants [5][6].",
+        "examples": [
+          {
+            "name": "Monolite D-Shape regolith binder printing demonstration (ESA-supported feasibility study, 2013)",
+            "type": "Ground demonstration and feasibility study (not flown)",
+            "status": "Demonstration and test level. No hardware has flown. The 99.8% similarity claim is ESA's own statement and was not independently verified.",
+            "summary": "In a 2013 ESA article, a D-Shape-type printer deposited a binder onto simulated regolith. The simulant was first mixed with magnesium oxide, and a binding salt then converted it into a stone-like solid [1]. ESA reports a 1.5 tonne building block produced as a demonstration, a current build rate of about 2 m per hour, and a next-generation target of 3.5 m per hour [1]. ESA also describes a basaltic source that it says is 99.8% similar to lunar soil [1]. An Alta test placed the nozzle beneath the regolith layer, and 2 mm droplets stayed in place through capillary forces, which suggested that printing could work in vacuum [1]. ESA describes the work as a feasibility study, says the basic concept was confirmed, and lists lunar dust control and thermal effects as open issues [1].",
+            "source_urls": [
+              "https://www.esa.int/articles/building-a-lunar-base-with-3d-printing"
+            ],
+            "images": [
+              {
+                "id": "esa_2013_1_5_tonne_block",
+                "description": "1.5 tonne building block produced as a demonstration by the ESA-supported regolith-simulant binder printing study.",
+                "image_type": "Demonstration photograph (ESA article image list)",
+                "image_url": null,
+                "source_page_url": "https://www.esa.int/articles/building-a-lunar-base-with-3d-printing",
+                "publisher": "ESA",
+                "credit": "Not stated on the ESA article page",
+                "caption": "1.5 tonne building block produced as a demonstration.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Caption and title are from the ESA article image list (fetched). The page lists only CDN thumbnail paths, which are not treated as verified direct assets, so image_url is null. Rights and reuse terms were not checked."
+              }
+            ]
+          },
+          {
+            "name": "RegoLight solar sintering (EU-funded project, 2016–2018)",
+            "type": "Ground-based research project (not flown)",
+            "status": "Ground-based research. The IAC paper reports TRL 3 to TRL 5. No flight status is claimed.",
+            "summary": "RegoLight was an EU-funded project that ran from November 2016 to June 2018. Its partners included DLR and LIQUIFER Systems Group [3]. It sinters regolith simulant with sunlight, without binders, to build elements that a mobile print head could assemble [3]. The paper states that the project moved solar sintering from TRL 3 to TRL 5 [3]. Its stated objectives included fine-structure elements with a resolution target of 1.4 cm or better, vacuum-based block production and interlocking elements [3]. The text that could be read contains no measured strength, resolution or demonstrator dimensions, so those achievements are not confirmed here [3]. A CORDIS news item describes a solar-furnace test at about 1000 °C that produced a 20 × 10 × 3 cm brick in roughly five hours, with the process not yet tried on real lunar soil [4]. That figure was not verified against the full item.",
+            "source_urls": [
+              "https://iafastro.directory/iac/archive/browse/IAC-18/E5/1/47746/",
+              "https://cordis.europa.eu/article/id/122340-3d-printing-of-bricks-using-simulated-moondust-and-solar-power-now-possible"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lithoz ceramic lithography printing of regolith simulant (ESA-publicised demonstration, 2018)",
+            "type": "Ground demonstration (not flown)",
+            "status": "Ground demonstration. ESA said mechanical strength testing was the next step. No strength result is reported on the page.",
+            "summary": "In November 2018, ESA reported finely detailed ceramic parts 3D printed from simulated lunar regolith by the Austrian company Lithoz, and said the parts had the finest print resolution yet achieved with regolith-simulant objects [2]. The process grinds and sieves the regolith, mixes it with a binder that hardens under light, prints it layer by layer with each layer light-cured, and then sinters the part in an oven [2]. ESA said the intended use is replacement tools or machinery parts for a future lunar base [2]. The page gives neither part sizes nor part counts [2].",
+            "source_urls": [
+              "https://www.esa.int/ESA_Multimedia/Images/2018/11/3D-printed_ceramic_parts_made_from_lunar_regolith"
+            ],
+            "images": [
+              {
+                "id": "esa_2018_lithoz_ceramic_parts",
+                "description": "Finely detailed ceramic parts 3D printed from simulated lunar regolith by Lithoz for ESA.",
+                "image_type": "Demonstration photograph (ESA image gallery)",
+                "image_url": null,
+                "source_page_url": "https://www.esa.int/ESA_Multimedia/Images/2018/11/3D-printed_ceramic_parts_made_from_lunar_regolith",
+                "publisher": "ESA",
+                "credit": "ESA–G. Porter",
+                "caption": "3D-printed ceramic parts made from lunar regolith (ESA, 14 November 2018).",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "The page reports licence CC BY-SA 3.0 IGO or the ESA Standard Licence. A full-resolution file path on the ESA legacy media server was seen with a download query string; the query was removed, but the cleaned URL was not fetched to confirm it resolves, so image_url is null."
+              }
+            ]
+          },
+          {
+            "name": "Furnace-sintered synthetic space bricks from lunar and Martian simulants (arXiv, 2023)",
+            "type": "Laboratory study with simulants (not flown)",
+            "status": "Laboratory test with simulants. Results are not from lunar regolith and are not flight-qualified.",
+            "summary": "The study pressed cubes of about 18 mm, at 280–300 MPa, from three simulants: lunar highland (LHS), lunar mare (LMS) and Martian global (MGS) [5]. Polyvinyl alcohol (PVA) binder was used at the green stage and burnt out at 600 °C for one hour [5]. Sintering used a peak of 1150 °C, a ramp of 5 °C per minute and a cool-down of 4 °C per minute, with soaks from 10 to 480 minutes [5]. Mean compressive strengths (four samples per point) were 23.9 MPa for MGS after a 10-minute soak and about 40.8 MPa for MGS after more than 60 minutes, while LHS reached 11.4 MPa after more than 60 minutes [5]. The abstract quotes up to 45 MPa, which the body text does not reproduce, and the body contains one conflicting LMS statement, so these values are reported with caution [5]. Mercury intrusion porosity was 24.2% after a one-hour soak and 20.3% after a six-hour soak [5]. The paper reports a strength decrease at soaks beyond 360 minutes whose cause it does not establish, and the furnace atmosphere and pressure are not stated [5].",
+            "source_urls": [
+              "https://arxiv.org/abs/2308.14331"
+            ],
+            "images": []
+          },
+          {
+            "name": "Wentian exterior exposure of simulant bricks (HUST, China, 2024)",
+            "type": "In-orbit exposure experiment (samples flown to the station; exposure results not reported)",
+            "status": "Hardware has flown as exposure samples to the Chinese space station. Exterior exposure outcomes were not reported in the sources read.",
+            "summary": "The bricks use a mortise-and-tenon interlocking joint and are made as cylinders, for mechanical tests, and slabs, for insulation and heat tests [7]. The simulant was made from volcanic ash from Changbai Mountain, with five simulated compositions. The team also used 500 mg of real Chang'e-5 lunar samples to inform its work [7]. Vacuum, inert-gas and air sintering were compared, with inert-gas sintering reported as giving the highest strength. Effective vacuum sintering was reported at 1000–1100 °C [7]. The 226 g sample set was carried to the station on the Tianzhou-8 cargo craft in November 2024 [7]. A later spacewalk was to move the samples outside the Wentian module, with retrievals planned for the end of 2025, 2026 and 2027 [7]. The report gives no exposure results. Its claims that density is comparable to conventional bricks and that compressive strength is more than three times that of concrete bricks have no published test data behind them [7].",
+            "source_urls": [
+              "https://www.hjkc.de/_blog/24303-raumfahrt-testing-mortise-tenon-bricks-on-chinas-space-station-for-building-houses-on-moon/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Laser-sintered reconfigurable interlocking bricks (arXiv, 2025)",
+            "type": "Laboratory proof of concept (not flown)",
+            "status": "Laboratory proof of concept with simulants. No flight or lunar-surface status is claimed.",
+            "summary": "The authors varied several laser processing parameters to achieve controllable sintering of lunar regolith simulant, and designed Lego-like interlocking bricks that can be rearranged into different structures without adding material [6]. Sintered cubic blocks reached a peak stress of about 1.5 MPa [6]. The laser type, power and scan settings, the simulant name, and the density and porosity values were not available from the abstract page or the PDF in this review, so they are not stated here [6].",
+            "source_urls": [
+              "https://arxiv.org/abs/2506.06392"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are documented only for specific test articles: about 18 mm cubes in the IISc study [5], a 1.5 tonne demonstration block in the 2013 ESA-supported study [1], and a 20 × 10 × 3 cm brick in a RegoLight test reported by CORDIS, which was not verified in full text [4]. No universal dimensions apply to a construction material experiment.",
+        "mass_and_weight": "Mass is documented only for the 226 g Wentian sample set [7] and the 1.5 tonne demonstration block [1]. The launch mass of a flight construction system is not publicly specified in the sources read.",
+        "power_requirements": "No power requirement is publicly specified for a flight construction system. Process temperatures indicate high thermal energy demand: the IISc furnace peaked at 1150 °C [5], and vacuum sintering was reported at 1000–1100 °C [7]. RegoLight used concentrated sunlight [3][4]."
+      },
+      "environmental_and_operational_requirements": "A lunar construction process must work in vacuum, under wide surface temperature swings, and in abrasive dust. The 2013 ESA study found that printing works best at room temperature, that the lunar poles have the most moderate temperature range, and that dust control and thermal effects remain open issues [1]. Vacuum sintering was reported at 1000–1100 °C for the Wentian samples [7]. Regolith mechanics also depends on particle size distribution, grain shape and grain density, which affect how feedstock is handled and compacted [8]. The sources read do not quantify excavation, sieving or feed-system requirements for a flight system.",
+      "limitations": "Most results use simulants, and simulant fidelity is not established. Strength values come from different processes, sample counts and test conditions, and not all furnace atmospheres are reported, so they cannot be compared directly [5][6]. The IISc bricks use a PVA binder at the green stage, so they are not binder-free, while RegoLight was described as binder-free [3][5]. The vacuum printing result is a droplet-capillarity test, not a full vacuum print demonstration [1]. The Wentian exposure has no reported results [7].",
+      "transportation_and_deployment": {
+        "overview": "A construction material experiment could be delivered as part of a surface payload or as a dedicated process unit on a lander. Its feedstock would normally come from local regolith, so the transportation load is the process hardware, its power supply and its consumables such as binders, rather than bulk building material.",
+        "transportation_process": [
+          "Integrate the process unit, power system and any binder supply into a lander or surface payload on Earth.",
+          "Launch the payload and transfer it toward the Moon.",
+          "Land the payload on a stable, level surface chosen for excavation and feedstock access.",
+          "Deploy the process unit, connect power and thermal control, and verify feed and heating systems.",
+          "Excavate and sieve local regolith to the target particle size, then feed the process chamber in controlled layers or batches."
+        ],
+        "deployment_methods": "Deployment methods are not specified for a flight construction experiment. The 2013 ESA-supported concept includes a catenary dome with a cellular wall and an inflatable pressurised shelter designed by Foster + Partners, but this is a concept, not a flown design [1]. Any surface deployment would need a stable base for printing or sintering, and its effect on nearby measurements must be considered.",
+        "historical_examples": "Three historical or near-historical items are relevant. The 2013 ESA-supported study produced a demonstration block at ground level [1]. The 2018 ESA-publicised Lithoz parts were produced on the ground [2]. The Wentian exposure sent simulant bricks to orbit by cargo craft in 2024, with exterior exposure planned by spacewalk [7]. None of these is a lunar-surface construction experiment.",
+        "compatibility_assessment": "No lander, rover or station compatibility has been verified for any construction material experiment in the sources read, and no specific lander is named here. Compatibility would depend on the process unit's mass, dimensions, mounting points, power, thermal control and feed requirements, and none of these has been verified for a named vehicle.",
+        "images": []
+      },
+      "historical_significance": "Ground demonstrations in 2013 and 2018 showed that regolith simulant can be printed or bonded into solid forms with ESA-supported processes [1][2]. The EU-funded RegoLight project, from 2016 to 2018, advanced solar sintering from TRL 3 to TRL 5 by its own assessment [3]. Since 2023, academic groups have reported furnace-sintered and laser-sintered simulant bricks [5][6], and a 2024 in-orbit exposure of simulant bricks was announced, with results not yet reported in the sources read [7].",
+      "limitations_and_uncertainties": "The catalogue name is generic and covers several technologies, so values apply only to the specific study cited. The IISc paper's abstract quotes up to 45 MPa, but its body text reports at most about 40.8 MPa for one simulant, and one LMS statement conflicts with another, so the strength values are flagged for checking [5]. The laser study's process parameters, simulant and porosity values could not be extracted from its PDF in this review [6]. The Wentian sampling was planned for retrieval at the end of 2025, 2026 and 2027, and the sources read contain no post-exposure data [7]. The RegoLight measured results are not in the text read [3]. The 2013 study's claim of 99.8% simulant similarity is ESA's own statement [1]. No lunar landing site or location recommendation is made, as deferred by the user.",
+      "images": [
+        {
+          "id": "esa_2013_1_5_tonne_block",
+          "description": "1.5 tonne building block produced as a demonstration by the ESA-supported regolith-simulant binder printing study.",
+          "image_type": "Demonstration photograph (ESA article image list)",
+          "image_url": null,
+          "source_page_url": "https://www.esa.int/articles/building-a-lunar-base-with-3d-printing",
+          "publisher": "ESA",
+          "credit": "Not stated on the ESA article page",
+          "caption": "1.5 tonne building block produced as a demonstration.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Caption and title are from the ESA article image list (fetched). The page lists only CDN thumbnail paths, which are not treated as verified direct assets, so image_url is null. Rights and reuse terms were not checked."
+        },
+        {
+          "id": "esa_2018_lithoz_ceramic_parts",
+          "description": "Finely detailed ceramic parts 3D printed from simulated lunar regolith by Lithoz for ESA.",
+          "image_type": "Demonstration photograph (ESA image gallery)",
+          "image_url": null,
+          "source_page_url": "https://www.esa.int/ESA_Multimedia/Images/2018/11/3D-printed_ceramic_parts_made_from_lunar_regolith",
+          "publisher": "ESA",
+          "credit": "ESA–G. Porter",
+          "caption": "3D-printed ceramic parts made from lunar regolith (ESA, 14 November 2018).",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "The page reports licence CC BY-SA 3.0 IGO or the ESA Standard Licence. A full-resolution file path on the ESA legacy media server was seen with a download query string; the query was removed, but the cleaned URL was not fetched to confirm it resolves, so image_url is null."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Building a lunar base with 3D printing",
+          "publisher": "ESA",
+          "date": "2013-01-31",
+          "url": "https://www.esa.int/articles/building-a-lunar-base-with-3d-printing"
+        },
+        {
+          "title": "3D-printed ceramic parts made from lunar regolith (image page)",
+          "publisher": "ESA",
+          "date": "2018-11-14",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2018/11/3D-printed_ceramic_parts_made_from_lunar_regolith"
+        },
+        {
+          "title": "Using solar sintering to build infrastructure on the Moon: latest advancements in the RegoLight project (IAC-18,E5,1,6,x47746)",
+          "publisher": "International Astronautical Congress 2018 (Imhof, Sperl et al.)",
+          "date": "2018",
+          "url": "https://iafastro.directory/iac/archive/browse/IAC-18/E5/1/47746/"
+        },
+        {
+          "title": "3D printing of bricks using simulated moondust and solar power now possible",
+          "publisher": "CORDIS (European Commission)",
+          "date": "not stated",
+          "url": "https://cordis.europa.eu/article/id/122340-3d-printing-of-bricks-using-simulated-moondust-and-solar-power-now-possible"
+        },
+        {
+          "title": "Synthetic space bricks from lunar and martian regolith via sintering (Gupta, Dawara, Kumar, Viswanathan)",
+          "publisher": "arXiv:2308.14331",
+          "date": "2023-08-28 (v1)",
+          "url": "https://arxiv.org/abs/2308.14331"
+        },
+        {
+          "title": "Additive Manufacturing of Lunar Regolith for Reconfigurable Building Blocks toward Lunar Habitation (McCallum, Liang, Tushar, Xu, Zhao, Zeng, Shou)",
+          "publisher": "arXiv:2506.06392",
+          "date": "2025-06-05 (v1)",
+          "url": "https://arxiv.org/abs/2506.06392"
+        },
+        {
+          "title": "Testing mortise-tenon bricks on China's space station for building houses on the Moon (Xinhua report, republished)",
+          "publisher": "Xinhua (republished on a German aerospace news blog)",
+          "date": "2024-12-06 (republication date)",
+          "url": "https://www.hjkc.de/_blog/24303-raumfahrt-testing-mortise-tenon-bricks-on-chinas-space-station-for-building-houses-on-moon/"
+        },
+        {
+          "title": "3D Particle Geometry Characterization of Apollo Regolith Samples Via Laser Diffraction and Dynamic Image Analysis (LPSC 2023 abstract)",
+          "publisher": "NASA NTRS (Kovtun, Jacobs; Gruener, NASA JSC)",
+          "date": "2023-03",
+          "url": "https://ntrs.nasa.gov/citations/20230000270"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "physical_specifications.examples[0]": "payload.article.physical_specifications.examples[0].images",
+      "physical_specifications.examples[2]": "payload.article.physical_specifications.examples[2].images"
+    },
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. Both image URLs are null because no direct asset could be verified; source-page references are used instead."
+  },
+  "data_quality_notes": [
+    "No verified direct image asset URLs were found for any image; both registry images have image_url null with source-page references.",
+    "The arXiv PDFs for 2308.14331 and 2506.06392 returned unreadable binary. 2308.14331 was read via its ar5iv HTML rendering. 2506.06392 was read only from its abstract page, so its laser parameters, simulant, density and porosity are not stated.",
+    "The IISc abstract quotes up to 45 MPa, while the body text reports at most about 40.8 MPa. The body also contains an LMS strength statement that conflicts with another LMS statement, and affiliation is not shown on the page fetched.",
+    "The NASA MMPACT (2022) presentation PDF returned unreadable binary and was not used for article content.",
+    "The ESA-supported Lithoz/LUPIN study report (ESA activities or nebula PDF) was not readable: the nebula link redirects to a generic ESA activities page. Its demonstrator parts and TRL claims are therefore not stated in this article beyond the 2018 ESA image page.",
+    "The HUST exposure has no reported results in the sources read. Retrievals were planned for end-2025, 2026 and 2027. As of 2026-11-13, the first planned retrieval date has passed and current status is unverified.",
+    "RegoLight's 20 × 10 × 3 cm brick and roughly five-hour solar-furnace run come from a CORDIS news item seen only in search output, not in full text.",
+    "The 2013 ESA article is marked as archive content and its 99.8% similarity and throughput figures are ESA's own statements.",
+    "The Xinhua report on the HUST experiment was read from a German aerospace blog republication; the original Xinhua page was not checked directly.",
+    "Lunar location recommendations are deferred by the user and are not included."
+  ]
+}

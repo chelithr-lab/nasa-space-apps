@@ -1,0 +1,153 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 317,
+    "name": "Thermal reference plate",
+    "article": {
+      "overview": "A thermal reference plate is a surface or source held at a known, controlled and measurable temperature, so that a thermal sensor can be checked against a reference during operation. On the Moon, the value of such a reference is that the lunar surface and the instruments that observe it experience very large temperature swings, and sensor readings can drift over time. A reference with a known temperature and emissivity gives scientists and engineers a fixed point against which to correct those readings. No lunar mission has been verified in this research as carrying a payload named or described as a 'thermal reference plate.' The examples in this article are closely related calibration sources that were verified from primary or institutional sources. Their status is stated explicitly, and none of them should be read as a flight-proven design for this payload class.",
+      "description": "The payload class described by catalogue entry 317 is a plate-like thermal reference: a flat, thermally stable surface whose temperature is either controlled or precisely measured, and whose radiative properties are known. An instrument can view the plate to establish a known thermal signal, which is then compared with its own measurement. The plate may be passive, with its temperature set by its environment and measured by embedded sensors, or active, with heaters or other controls holding it at chosen set points. The term 'thermal reference' describes the function rather than a fixed design. In practice, closely related hardware appears under several names, including blackbody target, calibration target, radiometric source and reference blackbody. The verified examples in this article use those names.",
+      "scientific_purpose_and_applications": "The main purpose is to support radiometric calibration and thermal monitoring. A thermal infrared instrument converts the energy it receives into a temperature or radiance value. That conversion depends on the instrument's detectors, optics and electronics, all of which change with temperature. A reference source at a known temperature allows the conversion to be checked and corrected. Applications verified in the sources reviewed include: routine in-flight calibration of a thermal instrument using a reference view at known temperature, as the LRO Diviner instrument does with internal and external blackbody references; correction of detector drift, as noted in a 2021 conference presentation on the Diviner instrument stating that electronic and thermal drift in a high-gain detector requires regular calibration observations (a search-result excerpt that was not reviewed in full); and pre-flight and system-level testing, as described in a NASA Goddard paper on a flat-plate radiometric source used in ambient and thermal-vacuum environments to test optical sensors before flight.",
+      "operating_principle": "A reference plate works on a simple thermal principle. A surface at a known temperature emits thermal radiation according to its temperature and emissivity. If an instrument views that surface and its reading is compared with the expected signal, any difference points to a calibration error, an offset or drift in the instrument. Three elements determine whether a reference is useful. First, known temperature: the plate's temperature must be measured with a sensor whose own calibration is traceable, or it must be held at a set point with known stability. Second, known radiative properties: emissivity, meaning how efficiently the surface radiates compared with an ideal blackbody, must be known or characterised, and flat, high-emissivity coatings are commonly used for this purpose in reference sources. Third, uniform temperature: temperature gradients across the plate make the reference harder to interpret, so uniformity matters as much as the average temperature. The verified sources describe these principles in general terms. They do not give lunar-specific values for any reference plate, so no specific set-point, emissivity or stability figure is given in this article.",
+      "scientific_importance": "Thermal measurements of the lunar surface and near-surface help scientists study how the Moon heats and cools over lunar day and night, how heat moves through regolith, and what the surface is made of. Those measurements are only as reliable as the calibration of the instrument making them. A reference plate or blackbody is therefore an enabling element of thermal science rather than a science target in its own right. The importance of calibration is illustrated by the LRO Diviner team's practice. The Diviner instrument overview states that the elevation actuator rotates '10 times per orbit to view these targets,' meaning the internal calibration targets, to calibrate the mid- and far-infrared channels. Frequent calibration observations of this kind are a direct response to instrument drift.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power specification for a thermal reference plate. The values for each example are either not publicly specified in the sources reviewed or are specific to that instrument. The examples are not directly comparable, because one is a flown instrument component and the other is a ground test source. Images: no direct image asset was verified from an official page for this payload class during this research; no images are included in this article. Image research remains open.",
+        "examples": [
+          {
+            "name": "LRO Diviner blackbody calibration targets",
+            "type": "Flown calibration sources within a lunar orbital thermal instrument",
+            "status": "Flown. The Diviner instrument is operating on the Lunar Reconnaissance Orbiter, as documented by the UCLA Diviner instrument pages and the NASA Planetary Data System (PDS).",
+            "configuration": "The UCLA instrument overview describes 'two calibration targets buried deep within the instrument,' and a separate solar calibration target. The PDS ground calibration guide identifies three blackbodies by elevation actuator angle: an internal blackbody at 0 degrees, a fixed blackbody at 76 degrees and a variable blackbody at 111 degrees.",
+            "temperature_and_emissivity": "Not stated in the sources reviewed. The PDS guide notes that temperature readings of four diode thermometers on the external blackbodies are recorded, but it does not give set points or temperature ranges. The guide refers to a separate radiometric calibration report (DLRE_Radiometric_Cal_Report.pdf), which was not reviewed in this research.",
+            "dimensions_mass_power": "Not publicly specified in the sources reviewed.",
+            "observing_cadence": "The UCLA page states that the elevation actuator rotates about 10 times per orbit to view the calibration targets.",
+            "mass_kg": null,
+            "source_urls": [
+              "https://www.diviner.ucla.edu/instrument-overview",
+              "https://pds-geosciences.wustl.edu/lro/lro-l-dlre-4-rdr-v1/lrodlr_1002/calib/diviner_calibration_files.htm"
+            ],
+            "images": []
+          },
+          {
+            "name": "NASA Goddard flat-plate radiometric source",
+            "type": "Ground test equipment: flat-plate radiometric source for testing optical remote sensors",
+            "status": "Not flown. The paper describes its use in ambient and thermal-vacuum environments during pre-thermal-vacuum testing of a spacecraft-level optical sensor. It does not describe the source flying in space.",
+            "reference": "Schwarz, M. A., Kent, C. J., Bousquet, R. and Brown, S. W. (2016), SPIE conference, San Diego, 2016 (NASA Technical Reports Server record 20160010082).",
+            "design_notes": "The paper states that 'design upgrades were incorporated into the source to improve both radiometric throughput and uniformity.' No numerical temperature range, emissivity or uniformity value is given on the record page reviewed.",
+            "dimensions_mass_power": "Not publicly specified in the sources reviewed.",
+            "mass_kg": null,
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20160010082"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chandrayaan-3 ChaSTE (related instrument, not a reference plate)",
+            "type": "Subsurface temperature probe with heater, flown on a lunar lander",
+            "status": "Flown on Chandrayaan-3, as described by the Space Physics Laboratory, Indian Space Research Organisation. It measures the vertical temperature profile and thermal conductivity of the top 100 mm of regolith at the landing site.",
+            "relevance": "Included only to distinguish a subsurface temperature probe from a reference plate. No calibration of ChaSTE against a reference plate was identified in the sources reviewed.",
+            "mass_kg": null,
+            "source_urls": [
+              "https://www.spl.gov.in/SPLv2/index.php/advanced-technologies/chandrayaan-3/ChaSTE-ch3.html"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No universal dimensions exist for a thermal reference plate. Dimensions for any surface plate would depend on the intended measurement field of view, the thermal mass needed to hold a stable temperature and the mounting and deployment design. None of these are specified for a lunar thermal reference plate in the sources reviewed.",
+        "mass_and_weight": "Not publicly specified for any verified example. For spacecraft engineering, mass is normally expressed in kilograms and affects launch requirements, lander capacity, structural support and deployment design.",
+        "power_requirements": "Not publicly specified for any verified example. A passive plate would need no active power for its reference function, but its temperature sensors would require power and a data path. An active plate with heaters or temperature control would need power that depends on its set point and thermal environment, which were not found in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A reference plate on the lunar surface would face the same demanding conditions as other surface instruments. The surface experiences large temperature swings between lunar day and night, has no substantial atmosphere to moderate those swings and is exposed to radiation and micrometeoroid impacts. A plate intended to hold a stable, known temperature must therefore be thermally isolated from its surroundings, have a controlled or well-characterised thermal path, and carry reliable temperature sensors. Dust is an additional concern. Lunar regolith can deposit on exposed surfaces and change their emissivity over time, which directly affects the reference. Any surface plate would need protection from dust, a method to measure or correct emissivity changes, or both. The sources reviewed do not quantify dust effects on any specific plate design. An orbital reference, such as the internal and external blackbodies on LRO Diviner, is shielded inside the instrument and is not exposed in the same way, so its requirements differ from those of a surface plate.",
+      "limitations": "The payload class is not supported by a verified flown example named 'thermal reference plate.' The examples in this article are related calibration sources, not confirmed instances of this payload. Temperature set points, stability, emissivity and uniformity values were not found for the verified examples, so the reference's accuracy cannot be assessed from the sources reviewed. A reference is only as good as its own calibration: a plate whose temperature sensors have drifted cannot correct an instrument. The reviewed sources describe this problem but give no quantified example for a plate. Dust deposition on exposed surfaces can change emissivity over time, and no verified lunar plate data on this effect were found.",
+      "transportation_and_deployment": {
+        "overview": "This payload would be a surface payload if fielded as a standalone plate. No surface-deployed lunar thermal reference plate has been verified as flown, so the transportation discussion below is general engineering context, not a description of an existing mission.",
+        "transportation_process": [
+          "Integrate the plate with a lander or deployment platform on Earth.",
+          "Launch it using a launch vehicle.",
+          "Transfer it towards the Moon.",
+          "Deliver it to the lunar surface with a lander.",
+          "Deploy and position it on a suitable surface so that its view and thermal path are as the design intends.",
+          "Level and thermally protect it, then connect its sensor, power and data interfaces to the lander or a relay."
+        ],
+        "deployment_methods": "Deployment method is not specified for any lunar thermal reference plate in the sources reviewed. It could in principle be placed by a robotic arm, a dedicated mechanism or an astronaut, but no such design was verified.",
+        "historical_examples": "The LRO Diviner internal and external blackbody references are integrated into an orbital instrument and do not involve surface transportation. The NASA Goddard flat-plate radiometric source is ground test equipment. No flown surface thermal reference plate was identified.",
+        "compatibility_assessment": "No specific lander, rover or spacecraft compatibility has been verified for this payload. Compatibility would depend on mass, dimensions, mounting, deployment method, power and communications, none of which are specified for a lunar thermal reference plate in the sources reviewed.",
+        "images": []
+      },
+      "historical_significance": "Calibration sources have been part of thermal remote sensing for decades. Orbital thermal instruments rely on in-instrument blackbody targets, and the LRO Diviner instrument is a lunar example that uses such targets routinely. The NASA Goddard flat-plate source illustrates how reference sources are used on Earth to qualify optical sensors before they fly. No lunar surface thermal reference plate was identified in the research as having flown.",
+      "limitations_and_uncertainties": "Flight status of the payload class: no flown lunar example named or clearly described as a thermal reference plate was verified. Diviner calibration targets: the UCLA overview and PDS guide do not state the target temperatures, set points or emissivity values, and the separate DLRE radiometric calibration report was referenced but not reviewed. Drift quantification: the 2021 Diviner conference excerpt reports drift requiring regular calibration, but the magnitude of drift for any reference plate was not confirmed from a primary source reviewed in full. Goddard flat-plate source: the paper record gives no numerical temperature range, emissivity or uniformity value, and the full paper was not reviewed. Surface plate performance: no lunar surface reference plate was found with verified dust, thermal or lifetime data. Dimensions, mass and power: not publicly specified for any verified example.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Improved Thermal-Vacuum Compatible Flat Plate Radiometric Source For System-Level Testing Of Optical Sensors",
+          "authors": [
+            "Mark A. Schwarz",
+            "Craig J. Kent",
+            "Robert Bousquet",
+            "Steven W. Brown"
+          ],
+          "publisher": "NASA Technical Reports Server (SPIE conference, San Diego)",
+          "publication_date": "2016-08-30",
+          "url": "https://ntrs.nasa.gov/citations/20160010082",
+          "notes": "Record page reviewed (abstract and metadata). The full PDF was not reviewed."
+        },
+        {
+          "title": "Diviner Instrument Overview",
+          "publisher": "UCLA LRO Diviner team",
+          "publication_date": "not stated (footer shows 2023)",
+          "url": "https://www.diviner.ucla.edu/instrument-overview",
+          "notes": "Describes two buried calibration targets and the elevation actuator cadence. Does not use the word 'blackbody' and gives no target temperatures."
+        },
+        {
+          "title": "Guide to Diviner Ground Calibration Files in PDS",
+          "publisher": "NASA Planetary Data System, Geosciences Node",
+          "publication_date": "2010 (rev. 1, 2/4/2010)",
+          "url": "https://pds-geosciences.wustl.edu/lro/lro-l-dlre-4-rdr-v1/lrodlr_1002/calib/diviner_calibration_files.htm",
+          "notes": "Identifies internal (0 degrees), fixed (76 degrees) and variable (111 degrees) blackbodies. Gives no temperatures. Refers to DLRE_Radiometric_Cal_Report.pdf, which was not reviewed."
+        },
+        {
+          "title": "Diviner calibration (conference presentation, Kharkiv 2021)",
+          "publisher": "Diviner instrument team",
+          "publication_date": "2021",
+          "url": "https://michaelaye.github.io/talks/2021-diviner-kharkiv-talk/main.pdf",
+          "notes": "Search-result excerpt only; not fetched in full. Used only for the statement that drift requires regular calibration observations."
+        },
+        {
+          "title": "ChaSTE payload aboard Chandrayaan-3",
+          "publisher": "Space Physics Laboratory, Indian Space Research Organisation",
+          "publication_date": "not stated",
+          "url": "https://www.spl.gov.in/SPLv2/index.php/advanced-technologies/chandrayaan-3/ChaSTE-ch3.html",
+          "notes": "Cited only to distinguish a related subsurface probe; not fetched in full."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No image objects are included because no direct image asset was verified during this research."
+  },
+  "data_quality_notes": [
+    "No verified flown lunar example named or clearly described as a 'thermal reference plate' was found. The article uses closely related calibration sources (LRO Diviner blackbody targets, NASA Goddard flat-plate radiometric source) and states their status explicitly.",
+    "No temperature set points, temperature ranges, emissivity values, uniformity values, dimensions, mass or power figures were found for any verified example. All such fields are recorded as not publicly specified or null.",
+    "The LRO Diviner PDS guide refers to DLRE_Radiometric_Cal_Report.pdf, which was not reviewed. It may contain target temperatures and should be checked in a future audit.",
+    "The 2021 Diviner conference presentation and the ChaSTE SPL page were used from search-result excerpts and were not fetched in full.",
+    "No image research was completed. image_url values are not set and no images are included. Image research remains open.",
+    "No lunar location recommendations were made; this was deferred by the user.",
+    "No lander, rover or spacecraft compatibility is asserted for this payload."
+  ]
+}

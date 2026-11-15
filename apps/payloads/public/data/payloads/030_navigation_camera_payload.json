@@ -1,0 +1,300 @@
+{
+  "catalogue_id": 30,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 30,
+    "name": "Navigation camera",
+    "article": {
+      "overview": "A navigation camera is an imager that helps a rover or lander work out where it is and where it can safely drive. Its images support localisation (estimating the vehicle's position and orientation relative to the surrounding terrain), route planning and assessment of the ground ahead. In the rover examples reviewed for this article, navigation cameras are mounted on a mast on the rover [1][5]. This article covers the generic class, not one standard instrument. The examples are ranked by the quality of the evidence. The Chang'e-4 Yutu-2 rover has the most specific published parameters found for a lunar navigation camera [1]. The Chang'e-3 Yutu rover, the Chandrayaan-3 Pragyan rover and NASA's cancelled VIPER rover are included with much less verified technical information. The Mars Science Laboratory and Perseverance navigation cameras are non-lunar heritage examples and are not evidence of lunar performance. The hazard detection camera (payload 031), the optical navigation camera (payload 184) and the terrain-relative navigation system (payload 270) are separate catalogue entries and are only cross-referenced here. Status in this article: the Yutu-2 navigation camera is flown hardware whose basic parameters are published in a 2020 conference paper [1]. The Yutu, Pragyan and VIPER navigation cameras have no verified numerical specification in the sources reviewed. The Perseverance and Mars Science Laboratory navigation cameras are flown Mars rover cameras [3][5]. No source reviewed states a lander compatibility for any navigation camera.",
+      "description": "A typical navigation camera is a digital imager, or a stereo pair of imagers, mounted on a pan/tilt mast. A stereo pair lets the surrounding terrain be measured in three dimensions. The Yutu-2 rover carries a binocular pair of Navcams mounted on a mast that can be rotated in yaw and pitch [1]. Perseverance carries two colour stereo Navigation Cameras high on its mast, about 42 cm (16.5 in) apart [5]. The Mars Science Laboratory Navcam is described as mounted on a pan/tilt mast [3]. Navigation cameras are generally engineering payloads that support guidance, navigation and control, rather than primary science instruments. The Yutu-2 paper describes its Navcam and Hazcam as engineering payloads used for the guidance, navigation and control system [1]. Other rover cameras, such as panoramic cameras, are often scientific payloads and are outside the scope of this article. Navigation images are processed into products such as digital elevation models (DEMs), orthophoto maps and path-planning cost maps. For Yutu-2, a sequence of Navcam images was captured every 20 degrees in yaw at a fixed pitch angle to generate a 0.02 m DEM and digital orthophoto map for next-path planning [1].",
+      "scientific_purpose_and_applications": "The main purpose is to give the rover a reliable geometric picture of its surroundings. Navigation camera data support localisation, path planning and approach to targets. In the Yutu-2 work, Navcam imagery was used to calculate the position of a detection target, and the moving path was then planned by considering terrain, illumination and communication constraints [1]. Products derived from navigation images include DEMs and orthophoto maps [1][5]. NASA states that the Perseverance navigation cameras help engineers navigate and aid autonomous navigation [5]. For lunar missions, these applications also support operations that are commanded from Earth. Long communication delays and limited data volumes make onboard or semi-autonomous hazard assessment important. These are general mission considerations; the sources reviewed do not quantify their effect on any specific lunar mission.",
+      "operating_principle": "A stereo navigation camera works by triangulation. Two imagers, separated by a known baseline, view the same point on the ground from slightly different positions. The difference in that point's position between the two images (its disparity) depends on distance. Once the cameras are calibrated, matching points across the pair allows range and three-dimensional shape to be computed. The Yutu-2 paper states that the intrinsic and structural parameters of its Navcam and Hazcam were precisely calibrated before launch [1]. Autonomous or semi-autonomous driving typically takes an image pair, builds a local terrain model, assesses slope and roughness, and plans a path through a cost map. In the Yutu-2 method, a comprehensive cost map was built from the generated DEM and orthophoto and used to search for a path to the next waypoint [1]. NASA states that Perseverance's navigation cameras support one stereo pair per drive step, which speeds up hazard detection and path selection [4].",
+      "scientific_importance": "Navigation cameras turn a rover's visual surroundings into measurements that can be used to drive safely and to reach scientific targets. Without reliable navigation imagery, driving depends more on slower, more conservative operation. The Yutu-2 mission reported a travel distance of greater than 300 m by the 12th lunar day [1]. Its navigation approach also supported a spectrometer with a narrow field of view: 8.5 degrees for the VNIR channel and 3.6 degrees for the SWIR channel [1]. The class is scientifically important mainly as an engineering enabler. Navigation imaging determines where a rover can accurately place its scientific instruments. The Yutu-2 paper's central point is that approaching and accurately pointing a narrow-field spectrometer depends completely on precise control of the moving rover [1].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a navigation camera. The values below describe the named instruments and sources only. Numerical values were found only for the Yutu-2 Navcam (field of view, focal length, baseline, image size) [1], the Perseverance Navcam (field of view and stereo separation) [4][5] and the Mars Science Laboratory Navcam (field of view and angular resolution) [3]. Mass, dimensions and power were not publicly specified for any navigation camera in the sources reviewed.",
+        "examples": [
+          {
+            "name": "Chang'e-4 Yutu-2 navigation camera (Navcam)",
+            "type": "Flown lunar rover navigation camera (lunar far side)",
+            "flight_status": "Flown: Yutu-2 operated on the lunar far side after the Chang'e-4 landing in January 2019 [1].",
+            "mounting": "Mounted atop the rover's mast, which can be rotated in both yaw and pitch [1].",
+            "configuration": "Binocular (stereo) pair [1].",
+            "published_parameters": {
+              "field_of_view_deg": 46.6,
+              "focal_length_mm": 17.7,
+              "stereo_baseline_mm": 270,
+              "image_size_px": "1024 x 1024",
+              "measurement_status": "Basic parameters as tabulated in [1]. The paper attributes the table to Chen et al. (2014), which was not retrieved. The values are pre-launch calibration and design parameters, not in-flight measurements."
+            },
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "source_urls": [
+              "https://isprs-archives.copernicus.org/articles/XLIII-B3-2020/1191/2020/isprs-archives-XLIII-B3-2020-1191-2020.pdf"
+            ],
+            "images": [],
+            "notes": "Parameters transcribed from a layout-extracted table in the 2020 ISPRS paper; column assignment inferred from the text and the 20-degree / 26.6-degree overlap check. Verification against the Chen et al. (2014) source is outstanding."
+          },
+          {
+            "name": "Chang'e-3 Yutu rover navigation cameras",
+            "type": "Flown lunar rover navigation cameras (Chang'e-3 Yutu)",
+            "flight_status": "Flown: the Yutu rover operated on the lunar surface on Chang'e-3 [2].",
+            "mounting": "The Planetary Society's 2014 update states that Yutu 'also has navigation cameras and panoramic cameras mounted on a mast' [2].",
+            "configuration": "Hazard avoidance cameras are mounted low on the front of the body only; the update notes that the Mars rovers also carry rear units [2]. No count of navigation cameras is given in [2].",
+            "published_parameters": null,
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "source_urls": [
+              "https://www.planetary.org/articles/0409-yutu-update"
+            ],
+            "images": [],
+            "notes": "Qualitative configuration only. Primary Chinese-language instrument documentation for Yutu navigation cameras has not been retrieved."
+          },
+          {
+            "name": "Chandrayaan-3 Pragyan rover navigation camera (reported, unverified)",
+            "type": "Reported lunar rover navigation camera (Chandrayaan-3 Pragyan); status unresolved",
+            "flight_status": "The Pragyan rover is the Chandrayaan-3 rover [7]. Whether a navigation camera was carried, and whether it is the navigation camera described in secondary reports, is unresolved.",
+            "mounting": "not publicly specified in the primary source reviewed",
+            "configuration": "Secondary news and encyclopedia summaries found in search describe two navigation cameras (NavCams) at the front of the rover. These reports were not retrieved in full and are not accepted as primary evidence.",
+            "published_parameters": null,
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "source_urls": [
+              "https://www.isro.gov.in/Chandrayaan3_Details.html"
+            ],
+            "images": [],
+            "notes": "Deliberately excluded from numerical specifications. Treat the NavCam claim as unverified until ISRO documentation is checked."
+          },
+          {
+            "name": "NASA VIPER navigation cameras (cancelled; not flown)",
+            "type": "Proposed lunar rover navigation cameras (VIPER); development discontinued",
+            "flight_status": "Not flown. NASA announced on 17 July 2024 its intent to discontinue development of the VIPER project [6].",
+            "mounting": "not publicly specified in the NASA primary source reviewed",
+            "configuration": "Secondary coverage reports a stereo navigation-camera pair on the rover's mast. This was not verified against a NASA primary source, and the NASA release does not name the navigation cameras [6].",
+            "published_parameters": null,
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "source_urls": [
+              "https://www.nasa.gov/news-release/nasa-ends-viper-project-continues-moon-exploration/"
+            ],
+            "images": [],
+            "notes": "Included to show a navigation-camera concept whose flight status is discontinued. Not flown hardware."
+          },
+          {
+            "name": "Perseverance (Mars 2020) Navigation Cameras (non-lunar heritage example)",
+            "type": "Flown Mars rover navigation cameras (not lunar)",
+            "flight_status": "Flown on Mars on the Perseverance rover [5].",
+            "mounting": "Located high on the rover's mast [5].",
+            "configuration": "Two colour stereo Navigation Cameras, described by NASA as a stereo pair [5]. The left and right 'eyes' are about 42 cm (16.5 in) apart [5].",
+            "published_parameters": {
+              "field_of_view_deg": 96,
+              "stereo_baseline_cm": 42,
+              "measurement_status": "Field of view as stated by NASA JPL [4]. Stereo separation as stated on NASA's rover components page [5]. Focal length, pixel count and angular resolution were not found in the sources reviewed."
+            },
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "source_urls": [
+              "https://robotics.jpl.nasa.gov/what-we-do/flight-projects/mars-2020-rover/m2020mobility/",
+              "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/"
+            ],
+            "images": [
+              {
+                "id": "perseverance_navcam_rock_pile",
+                "description": "Mars 2020 Navigation Camera (Navcam) views of a pile of rocks, taken from a distance of about 15 m.",
+                "image_type": "Navcam image (Mars surface, non-lunar)",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/8/8801_mars2020-enhanced-engineering-cameras-full2.png",
+                "source_page_url": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+                "publisher": "NASA",
+                "credit": "NASA (credit line not separately verified on the source page)",
+                "caption": "Mars 2020 Navcam views showing a pile of rocks, taken from a distance of about 15 meters (NASA Perseverance rover components page).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[4]"
+                ],
+                "notes": "Direct asset URL verified: HTTP 200 (image/png, about 1.5 MB) on the review date, and the file name 8801_mars2020-enhanced-engineering-cameras-full2.png is referenced on the NASA source page (there with a width query parameter, removed here). Non-lunar image included as a Navcam example. Check NASA media usage guidance before republication."
+              },
+              {
+                "id": "perseverance_navcam_borehole",
+                "description": "Composite of two Perseverance Navigation Camera images showing the hole (sample borehole) drilled by the rover.",
+                "image_type": "Navcam image (Mars surface, non-lunar)",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/2/6/26209_PIA24805-web.jpg",
+                "source_page_url": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+                "publisher": "NASA",
+                "credit": "NASA (credit line not separately verified on the source page)",
+                "caption": "Perseverance's Navigation Camera Captures Sample Borehole (caption on the NASA source page).",
+                "section_placements": [
+                  "physical_specifications.examples[4]"
+                ],
+                "notes": "Direct asset URL verified: HTTP 200 (image/jpeg, about 186 KB) on the review date, and the file name 26209_PIA24805-web.jpg is referenced on the NASA source page (there with a width query parameter, removed here). Non-lunar image. Check NASA media usage guidance before republication."
+              }
+            ],
+            "notes": "Mars example. The 96-degree field of view is quoted from NASA JPL's mobility page. The 42 cm separation is quoted from NASA's rover components page."
+          },
+          {
+            "name": "Mars Science Laboratory (MSL) Navcam (non-lunar heritage example)",
+            "type": "Flown Mars rover navigation camera (not lunar)",
+            "flight_status": "Flown on the Mars Science Laboratory rover [3].",
+            "mounting": "Mounted on a pan/tilt mast [3].",
+            "configuration": "Not fully verified. The NTRS record was reviewed as an abstract-level description; the full-text PDF could not be parsed in this review.",
+            "published_parameters": {
+              "field_of_view_deg": 45,
+              "field_of_view_type": "square",
+              "angular_resolution_mrad_per_pixel": 0.82,
+              "measurement_status": "Values from the NASA NTRS record description of the MSL engineering cameras paper [3]. Not checked against the full-text paper."
+            },
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20130008789"
+            ],
+            "images": [],
+            "notes": "Record-level description only. Full-text verification of the MSL Navcam values is outstanding."
+          }
+        ],
+        "dimensions_and_proportions": "No dimensions were publicly specified for any navigation camera in the sources reviewed. The Yutu-2 table gives image and optical parameters but not physical housing dimensions [1]. Any future navigation camera must have its dimensions set by its field of view, mast mounting, thermal design and required stereo baseline.",
+        "mass_and_weight": "No mass was publicly specified for any navigation camera in the sources reviewed. Mass would be a key input to lander and rover integration, but no mass value in this article should be read as a payload mass for a specific mission.",
+        "power_requirements": "No power consumption was publicly specified for any navigation camera in the sources reviewed. Power and data-handling requirements for the Yutu-2 and Perseverance systems are part of their rover designs and are not separately published in these sources."
+      },
+      "environmental_and_operational_requirements": "A lunar navigation camera operates in vacuum, under strong sunlight and deep shadow, with large surface temperature changes, radiation and dust. Image quality depends on illumination, so the camera's useful operation is constrained by sun angle and by traverse scheduling. The Yutu-2 paper notes that its spectrometer work has strict requirements on sun orientation [1]. The same paper's navigation method depends on imagery acquired under conditions that allow a path to be planned [1]. Calibration matters for stereo accuracy. The Yutu-2 paper states that the Navcam and Hazcam intrinsic and structural parameters were precisely calibrated before launch [1]. The sources reviewed do not describe in-flight recalibration for these instruments. Mast-mounted cameras need stable pointing during image acquisition so that the stereo geometry remains valid. The Yutu-2 method rotates the mast in yaw at a fixed pitch to capture image sequences [1]. Mars examples operate in a different atmosphere and light environment; no Mars environmental values are used in this article.",
+      "limitations": "Narrow fields of view need many images. The Yutu-2 paper notes that, owing to the limited field of view of single Navcam imagery, the path lines were projected onto an image mosaic [1]. A single navigation image therefore rarely covers the whole route. Stereo range accuracy depends on baseline, focal length, pixel size and calibration. The Yutu-2 table lists a 270 mm Navcam baseline [1], but no range-accuracy value is published in the sources reviewed. Navigation cameras see the terrain ahead and around the rover, but the ground directly under or immediately beside the vehicle requires other imagers. See the hazard detection camera (payload 031). Published numerical parameters for Yutu-2 are pre-launch calibration and design values quoted from a secondary table [1]. They are not measured performance on the Moon.",
+      "transportation_and_deployment": {
+        "overview": "A navigation camera is normally delivered as part of a rover or lander, not as a stand-alone surface payload. Its mast, cabling, thermal control and data path are usually integrated with the vehicle. The Yutu-2 and Perseverance navigation cameras are mounted on their rovers' masts [1][5].",
+        "transportation_process": [
+          "Integrate the navigation cameras and mast on the rover on Earth, including alignment and calibration.",
+          "Launch the spacecraft and transfer it towards the Moon or Mars.",
+          "Deliver the rover to the surface by lander or landing system.",
+          "Deploy the rover and check mast and camera operation before traverse planning begins.",
+          "Operate the cameras through the rover's power and data interfaces, with thermal and mechanical protection maintained throughout."
+        ],
+        "deployment_methods": "For rovers, navigation cameras are deployed when the rover is operated, typically after the mast is raised and the cameras are checked. The Yutu-2 and Perseverance examples both use mast-mounted cameras [1][5]. The sources reviewed do not describe the deployment sequence in detail.",
+        "historical_examples": "The Yutu-2 rover, carried by the Chang'e-4 mission, operated on the lunar far side after a January 2019 landing and used navigation imagery for targeting and path planning [1]. The Chang'e-3 Yutu rover carried navigation cameras on a mast [2]. Perseverance and the Mars Science Laboratory rover are non-lunar examples [3][5].",
+        "compatibility_assessment": "No lander or rover compatibility is asserted for any navigation camera in this article. No verified interface evidence was found for a lander-specific navigation camera integration in the sources reviewed.",
+        "images": []
+      },
+      "historical_significance": "Navigation cameras have supported lunar rover operations since the Chang'e-3 Yutu rover [2]. The Yutu-2 rover's navigation-based targeting and path planning are documented in a 2020 conference paper [1]. Mars rover navigation cameras, including the Mars Science Laboratory and Perseverance examples, established a stereo mast-camera heritage for later rovers [3][5]. Chandrayaan-3's rover is described by ISRO as carrying APXS and LIBS instruments [7], and secondary reports of a rover NavCam remain unresolved in this article. NASA's VIPER project, which included a rover planned for a lunar polar mission, was discontinued in July 2024 [6]. Its navigation cameras are not described in that release.",
+      "limitations_and_uncertainties": "The navigation-camera class has no single specification. Parameters in this article are tied to named instruments and sources, and comparing them across designs can mislead. The Yutu-2 table is a secondary tabulation of pre-launch values [1]. The Mars examples are not lunar performance data [3][4][5]. The Yutu and Pragyan entries lack verified specifications. The VIPER entry is cancelled and not flown [6]. Key gaps are the full-text Chen et al. (2014) parameters, Chinese-language Yutu navigation camera documentation, ISRO rover payload documentation for Pragyan, and the full-text MSL Navcam paper. The article's engineering description is general. It is not a certified design specification for a new navigation camera.",
+      "images": [
+        {
+          "id": "perseverance_navcam_rock_pile",
+          "description": "Mars 2020 Navigation Camera (Navcam) views of a pile of rocks, taken from a distance of about 15 m.",
+          "image_type": "Navcam image (Mars surface, non-lunar)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/8/8801_mars2020-enhanced-engineering-cameras-full2.png",
+          "source_page_url": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+          "publisher": "NASA",
+          "credit": "NASA (credit line not separately verified on the source page)",
+          "caption": "Mars 2020 Navcam views showing a pile of rocks, taken from a distance of about 15 meters (NASA Perseverance rover components page).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[4]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200 (image/png, about 1.5 MB) on the review date, and the file name 8801_mars2020-enhanced-engineering-cameras-full2.png is referenced on the NASA source page (there with a width query parameter, removed here). Non-lunar image included as a Navcam example. Check NASA media usage guidance before republication."
+        },
+        {
+          "id": "perseverance_navcam_borehole",
+          "description": "Composite of two Perseverance Navigation Camera images showing the hole (sample borehole) drilled by the rover.",
+          "image_type": "Navcam image (Mars surface, non-lunar)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/2/6/26209_PIA24805-web.jpg",
+          "source_page_url": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+          "publisher": "NASA",
+          "credit": "NASA (credit line not separately verified on the source page)",
+          "caption": "Perseverance's Navigation Camera Captures Sample Borehole (caption on the NASA source page).",
+          "section_placements": [
+            "physical_specifications.examples[4]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200 (image/jpeg, about 186 KB) on the review date, and the file name 26209_PIA24805-web.jpg is referenced on the NASA source page (there with a width query parameter, removed here). Non-lunar image. Check NASA media usage guidance before republication."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "perseverance_navcam_rock_pile",
+          "description": "Mars 2020 Navigation Camera (Navcam) views of a pile of rocks, taken from a distance of about 15 m.",
+          "image_type": "Navcam image (Mars surface, non-lunar)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/8/8801_mars2020-enhanced-engineering-cameras-full2.png",
+          "source_page_url": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/",
+          "publisher": "NASA",
+          "credit": "NASA (credit line not separately verified on the source page)",
+          "caption": "Mars 2020 Navcam views showing a pile of rocks, taken from a distance of about 15 meters (NASA Perseverance rover components page).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[4]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200 (image/png, about 1.5 MB) on the review date, and the file name 8801_mars2020-enhanced-engineering-cameras-full2.png is referenced on the NASA source page (there with a width query parameter, removed here). Non-lunar image included as a Navcam example. Check NASA media usage guidance before republication."
+        }
+      ],
+      "references": [
+        {
+          "title": "Implementation strategy of visible and near-infrared imaging spectrometer on Yutu-2 rover based on vision measurement technology",
+          "publisher": "T. Yu, Z. Liu, Z. Rong, Y. Wang, J. Wang, S. Gou, L. Li, W. Wan, X. He, K. Di, R. Ke, K. Zhang, Y. You. International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLIII-B3-2020, p. 1191 ff. (ISPRS XXIV Congress, 2020)",
+          "url": "https://isprs-archives.copernicus.org/articles/XLIII-B3-2020/1191/2020/isprs-archives-XLIII-B3-2020-1191-2020.pdf"
+        },
+        {
+          "title": "Yutu Update",
+          "publisher": "P. Stooke, The Planetary Society, 10 April 2014",
+          "url": "https://www.planetary.org/articles/0409-yutu-update"
+        },
+        {
+          "title": "Mars Science Laboratory Engineering Cameras",
+          "publisher": "J. N. Maki, D. L. Thiessen, A. M. Pourangi, P. A. Kobzeff, S. W. Lee, A. Dingizian, M. A. Schwochert. NASA Technical Reports Server record 20130008789 (NASA Tech Briefs, November 2012; record abstract reviewed)",
+          "url": "https://ntrs.nasa.gov/citations/20130008789"
+        },
+        {
+          "title": "Mars 2020 Perseverance mobility (navigation cameras and autonomous driving)",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "url": "https://robotics.jpl.nasa.gov/what-we-do/flight-projects/mars-2020-rover/m2020mobility/"
+        },
+        {
+          "title": "Perseverance Rover Components",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/mars-2020-perseverance/rover-components/"
+        },
+        {
+          "title": "NASA Ends VIPER Project, Continues Moon Exploration (news release, 17 July 2024)",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/news-release/nasa-ends-viper-project-continues-moon-exploration/"
+        },
+        {
+          "title": "Chandrayaan-3 Details",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "url": "https://www.isro.gov.in/Chandrayaan3_Details.html"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Perseverance Navcam example (non-lunar)": "payload.article.physical_specifications.examples[4].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Yutu-2 Navcam and Hazcam parameters come from Table 1 of Yu et al. (2020), a layout-extracted PDF table attributed to Chen et al. (2014), which was not retrieved. Column assignment was inferred from the text and checked by the 20-degree / 26.6-degree overlap. The Nature Communications paper (s41467-019-12278-3) was not accessible (identity-provider redirect).",
+    "Chang'e-3 Yutu navigation camera numbers and specifications are not publicly specified in the sources reviewed. The Planetary Society 2014 update gives no count or specification. Chinese primary documentation was not retrieved, and the NAOC panoramic-camera page returned a certificate error.",
+    "Chandrayaan-3 Pragyan NavCam (two front-mounted cameras) is reported only in secondary sources. The ISRO Chandrayaan-3 details page lists rover payloads as APXS and LIBS and no rover cameras. The claim is unresolved; ISRO rover documentation or the LVM3-M4 brochure remains to be checked.",
+    "VIPER navigation cameras are not named in the NASA 2024 release. The stereo navigation-camera configuration reported in secondary coverage is unverified and no specification was found.",
+    "MSL Navcam values (45-degree square field of view, 0.82 mrad per pixel) come from the NTRS record description of Maki et al. (2012). The full-text PDF could not be parsed with the available tools, so these values are not checked against the paper.",
+    "Perseverance Navcam focal length, pixel count and angular resolution were not found in the sources reviewed. The 96-degree field of view and 42 cm stereo separation are quoted from NASA pages.",
+    "No lunar navigation-camera image was verified. The two images included are Mars 2020 Navcam images; both returned HTTP 200 and their file names appear on the NASA source page.",
+    "No mass, dimensions or power were publicly specified for any navigation camera reviewed, so those fields are recorded as null or not publicly specified.",
+    "Cross-references to payloads 031, 184 and 270 are descriptive only and do not duplicate those entries."
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "catalogue_id": 98,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 4,
+    "name": "Subsurface exploration and drilling"
+  },
+  "payload": {
+    "number": 98,
+    "name": "Subsurface moisture detector",
+    "article": {
+      "overview": "A subsurface moisture detector is an instrument class for finding water, or material that holds hydrogen bound to water, in the ground beneath a planetary surface. On the Moon the target is usually the regolith (the loose soil and broken rock layer) and, at the poles, possible water ice in shadowed terrain. The catalogue entry names a function rather than one instrument design, so no single mass, power or detection method applies to every example. This article covers five examples: the Dynamic Albedo of Neutrons (DAN) instrument on Mars [2][3][4]; the Lunar Prospector neutron spectrometer in lunar orbit [5][6]; the PRIME-1 TRIDENT drill and MSolo mass spectrometer that flew on Intuitive Machines' IM-2 mission in 2025 [1]; the Neutron Spectrometer System (NSS) for rover use [7][8]; and a simulation-based epithermal neutron counter concept [9]. Three examples have flown, but in the sources read no flown example has yet produced a confirmed in-situ lunar water measurement. Neutron-based instruments infer water indirectly from hydrogen.",
+      "description": "Two measurement approaches appear in this class. The first is neutron spectroscopy from the surface, rover or orbit. Cosmic rays strike the ground and release neutrons; hydrogen slows them, so a detector that counts the neutrons escaping from the ground reads a hydrogen signal [7][9]. DAN and the NSS use this principle, and the Lunar Prospector instrument used it from orbit [5][6]. The second is sample analysis. PRIME-1's TRIDENT drill brings up regolith from up to about three feet (about 0.9 m) below the surface, and the MSolo mass spectrometer analyses the drilled sample for water and other volatiles [1]. Neither approach by itself shows whether the hydrogen is present as ice, bound in hydrated minerals, or adsorbed onto grains, and this is a recurring limitation [2][4].",
+      "scientific_purpose_and_applications": "The main purposes are to locate and map water-bearing ground and to estimate how much hydrogen-rich material is present, so that scientists can study the Moon's volatile history and planners can judge possible resource use [1][7]. Lunar Prospector's polar data motivated the question of whether polar water ice is present [5][6]. The NSS is designed to find hydrogen-bearing deposits, especially subsurface ice, while moving on a rover, with a stated primary goal of detecting water-equivalent hydrogen at 0.5 wt% or greater [7]. The 2025 concept paper proposes rover-mounted subsurface hydrogen prospecting and ground-truthing of orbital hydrogen maps, which earlier orbital spectrometers provided only at coarse resolution [9]. The PRIME-1 mission was a NASA technology demonstration of drilling and volatile analysis on the Moon, designed to support resource-location work ahead of Artemis human missions [1].",
+      "operating_principle": "Neutron instruments: a hydrogen-rich layer slows the neutrons produced by cosmic rays, so fewer epithermal neutrons (energies in the intermediate range) escape. The NSS abstract states that 1 to 2 wt% water-equivalent hydrogen reduces epithermal leakage flux by about a factor of two [7]. The NSS uses two helium-3 gas proportional counters: one covered with cadmium, which detects only epithermal neutrons, and one uncovered, which detects thermal and epithermal neutrons [7]. DAN works in two ways. In passive mode it records neutrons from the environment during traverses; in active mode it fires a pulsing neutron generator at a stopping point and measures the response. The published DAN description gives a rough active estimate of about 1 percent by weight from runs of under two minutes and 0.1 to 0.3 percent by weight from runs of about 30 minutes for vertical distribution [4]. Sample analysis: PRIME-1's TRIDENT drill extracts regolith, and MSolo, a commercial off-the-shelf mass spectrometer modified for space, analyses the sample for water and other volatiles [1]. Other techniques, such as dielectric or capacitance moisture sensing, are used on Earth, but no lunar example was verified in the sources read, so none is described here.",
+      "scientific_importance": "The Moon's polar regions may hold volatile deposits that bear on lunar history and on future operations. In 1998 NASA reported that Lunar Prospector's neutron data suggested water ice at both poles, with an estimated 330 million short tons (300 million metric tons) mixed into the regolith at each pole [5][6]. The NASA page calls this the first direct evidence of water ice at the lunar poles. The neutron data measure hydrogen, so the ice identification is an interpretation of hydrogen counts rather than a direct spectroscopic detection [5][6]. Later hydrogen measurements from Mars by DAN showed a hydrogen-rich area in the subsurface near Marias Pass, with values reported in relative terms and interpreted as water or hydroxyl bound in minerals [2][4]. Lunar in-situ instruments are needed to show whether that kind of signal corresponds to recoverable water on the Moon [7][9].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a subsurface moisture detector. The examples below use different principles, from orbit, on Mars, and on the lunar surface, and they are not directly comparable. Where a number is given, it is tied to the instrument and source named; where the source does not publish a value, the field says 'not publicly specified in the sources read'.",
+        "examples": [
+          {
+            "name": "Dynamic Albedo of Neutrons (DAN), Mars Science Laboratory (Curiosity rover)",
+            "type": "Mars surface neutron spectrometer (flown; Mars, not Moon)",
+            "flight_status": "Flown and operated on Mars on NASA's Curiosity rover since its 2012 landing [2].",
+            "description": "Status: flown and operated on Mars by the Curiosity rover [2][4]. It is included here as a flown analogue of hydrogen-based subsurface water detection; it is not a lunar instrument. Detection: passive neutron measurement during traverses and active pulsed-neutron measurement at stopping points [4]. The instrument description gives a sensing depth of a shallow layer of about 1 m [4][2]. Published accuracy: short active runs (under 2 minutes) give a rough estimate with about 1 percent by weight accuracy; longer runs (about 30 minutes) give 0.1 to 0.3 percent by weight for vertical distribution [4]. Mass, power, dimensions, neutron generator energy and detector type: not stated in the sources read [4]. Reported result: near Marias Pass in 2015, the passive count-rate map shows hydrogen levels that NASA describes as three to four times those seen elsewhere on the traverse. The release gives relative levels only. The map annotation 'Up to 10% water equivalent hydrogen' is not reconciled with the release text, so no absolute abundance is adopted here [2].",
+            "sensing_depth": "about 1 m (instrument description) [4]",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "dimensions": "Not publicly specified in the sources read.",
+            "field_of_view": "Not publicly specified in the sources read.",
+            "source_urls": [
+              "https://atmos.nmsu.edu/data_and_services/atmospheres_data/MARS/curiosity/dan.html",
+              "https://science.nasa.gov/photojournal/curiosity-finds-hydrogen-rich-area-of-mars-subsurface"
+            ],
+            "notes": "Cited numbers are from the NMSU description and the NASA release. The Mitrofanov et al. 2012 paper is cited for the instrument publication only; its full text was not read.",
+            "images": [
+              {
+                "id": "dan_hydrogen_summary_map",
+                "description": "Map of DAN passive count-rate observations after multiple Curiosity traverses near Marias Pass, Gale Crater, Mars; colour scale shows DAN passive count rate (cps)",
+                "image_type": "Scientific data map (Mars)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia19/pia19809/PIA19809.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/curiosity-finds-hydrogen-rich-area-of-mars-subsurface",
+                "publisher": "NASA/JPL-Caltech/Russian Space Research Institute",
+                "credit": "NASA/JPL-Caltech/Russian Space Research Institute",
+                "caption": "Summary of DAN observations after multiple Curiosity traverses in the same area, Marias Pass, Gale Crater (PIA19809). This is a data map, not a photograph of the instrument. The map annotation reads 'Up to 10% water equivalent hydrogen'; the NASA release text gives relative values only, so that annotation is not adopted as a measurement in this article.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct TIFF/JPEG asset URL from the NASA photojournal page, with no query string. HTTP 200 confirmed; viewed directly. The 'Up to 10%' annotation conflicts with the release text and is not reconciled."
+              }
+            ]
+          },
+          {
+            "name": "Lunar Prospector Neutron Spectrometer (lunar orbit, 1998-1999)",
+            "type": "Orbital lunar neutron spectrometer (flown; orbit, not surface)",
+            "flight_status": "Flown in lunar orbit. Launched 6 January 1998 (NASA's spec table gives 7 January 1998 UT), entered lunar orbit 12 January 1998, and impacted the lunar surface on 31 July 1999 [6].",
+            "description": "Status: flown in lunar orbit, not on the surface [6]. Measurement: neutron counts from orbit; a significant dip in epithermal neutron counts over both poles was read as excess hydrogen [5][6]. Interpretation: NASA announced in March 1998 that the data suggested water ice at both poles, with an estimated 330 million short tons (300 million metric tons) mixed into the regolith at each pole [6]. The hydrogen signal does not identify water directly [5][6]. Sensing depth: not stated on the NASA mission page [6]. Secondary summaries give a depth near 1 m, but that figure was not confirmed in the primary article, which was not accessible [5]. Mass, power and dimensions of the neutron spectrometer: not stated in the sources read.",
+            "sensing_depth": "not stated in the sources read (secondary summaries suggest about 1 m; not confirmed)",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "dimensions": "Not publicly specified in the sources read.",
+            "field_of_view": "Not publicly specified in the sources read.",
+            "source_urls": [
+              "https://science.nasa.gov/mission/lunar-prospector/",
+              "https://www.science.org/doi/10.1126/science.281.5382.1496"
+            ],
+            "notes": "The spacecraft concept image is shown for context; it does not show the neutron spectrometer.",
+            "images": [
+              {
+                "id": "lunar_prospector_spacecraft_concept",
+                "description": "Artist's concept of the Lunar Prospector spacecraft just before impact on the Moon",
+                "image_type": "Artist's concept (spacecraft)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/78777main_befcras.jpg",
+                "source_page_url": "https://science.nasa.gov/mission/lunar-prospector/",
+                "publisher": "NASA",
+                "credit": "NASA/Ames",
+                "caption": "Artist's concept of the Lunar Prospector spacecraft just before impact on the Moon (NASA/Ames). It shows the spacecraft, not the neutron spectrometer.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Full-size asset URL from the NASA page, with no query string. HTTP 200 confirmed. Not viewed directly in this run; the caption is taken from the source page."
+              }
+            ]
+          },
+          {
+            "name": "PRIME-1: TRIDENT drill and MSolo mass spectrometer (Intuitive Machines IM-2, 2025)",
+            "type": "Lander-mounted drill and volatile mass spectrometer (flown; lunar south polar region)",
+            "flight_status": "Flown. Launched 26 February 2025 from NASA Kennedy Space Center on Intuitive Machines' IM-2 lander (Nova-C, named Athena in the NASA video description), under NASA's CLPS initiative. The lander landed on its side about 820 ft from its intended site, Mons Mouton, on 6 March 2025 [1].",
+            "description": "Status: flown on the IM-2 mission [1]. TRIDENT (Regolith and Ice Drill for Exploring New Terrain), built by Honeybee Robotics, is designed to extract regolith up to about three feet (about 0.9 m) below the surface [1]. MSolo (Mass Spectrometer Observing Lunar Operations) is a commercial off-the-shelf mass spectrometer modified for space; the NASA page lists INFICON as an industry partner and states that MSolo analyses drilled samples for water and other volatiles [1]. Mass, power and performance figures: not given on the NASA page [1]. Reported outcome: the NASA page gives only the headline 'NASA Receives Some Data Before Intuitive Machines Ends Lunar Mission' and does not give results [1]. Other reports describe limited surface operation and early MSolo readings that were attributed to spacecraft-related gases. Those reports were not verified against a primary NASA document in this article, so no PRIME-1 water measurement is reported here.",
+            "sensing_depth": "drill reach up to about 3 ft (about 0.9 m) [1]",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "dimensions": "Not publicly specified in the sources read.",
+            "field_of_view": "Not applicable (contact sampling by drill; MSolo analyses drilled samples).",
+            "source_urls": [
+              "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/"
+            ],
+            "notes": "Both instrument identities rest on the NASA page captions, not on labels visible in the images.",
+            "images": [
+              {
+                "id": "prime1_trident_test",
+                "description": "PRIME-1 TRIDENT drill hardware in a test setting: a tall drill-type mechanism with an operator",
+                "image_type": "Official NASA hardware photograph (test/engineering)",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_2.jpg",
+                "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+                "publisher": "NASA",
+                "credit": "NASA (the source page gives no photo credit for this image)",
+                "caption": "TRIDENT drill hardware in a test setting. The NASA PRIME-1 page captions this image as TRIDENT test hardware; the identity was not confirmed from the image itself.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Clean URL: the ?w=1024 size parameter was removed from the page-linked image. HTTP 200 confirmed. Viewed directly: the image shows a drill-type mechanism with an operator, but carries no instrument label. TRIDENT identity is taken from the NASA page caption as read through a summarising fetch."
+              },
+              {
+                "id": "prime1_msolo_test",
+                "description": "PRIME-1 MSolo mass spectrometer test unit: cylindrical vacuum-compatible instrument in an electronics box",
+                "image_type": "Official NASA hardware photograph (test/engineering)",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_1.jpg",
+                "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+                "publisher": "NASA",
+                "credit": "NASA (the source page gives no photo credit for this image)",
+                "caption": "MSolo test unit. The NASA PRIME-1 page captions this image as the MSolo test unit; the identity was not confirmed from the image itself.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Clean URL: the ?w=1024 size parameter was removed. HTTP 200 confirmed. Viewed directly: a cylindrical instrument mounted on an electronics enclosure, with no label visible. MSolo identity is taken from the NASA page caption, not from the image."
+              }
+            ]
+          },
+          {
+            "name": "Neutron Spectrometer System (NSS) for rover use (NASA Ames)",
+            "type": "Rover-mounted neutron spectrometer (development instrument; earlier versions reported flown)",
+            "flight_status": "Earlier NSS versions are described by NASA as having flown on two earlier commercial deliveries to the Moon; those missions are not named on the page. A VIPER flight unit is planned, but its vehicle and date are not stated in the sources read [8].",
+            "description": "Status: development instrument for rover use, developed at NASA Ames [8]. Design: two helium-3 gas proportional counters, one covered with cadmium (epithermal only) and one uncovered (thermal plus epithermal), following the Lunar Prospector design lineage [7]. The Sensor Module sits outside the rover body to limit background from the host; the Data Processing Module inside the rover digitises signals and sends data over an RS422 serial link [7]. Objectives: detect water-equivalent hydrogen of 0.5 wt% or greater while driving, and estimate the burial depth of hydrogen-rich material up to 1 m [7]. NASA's VIPER page gives the sensing limit as up to 3 feet below the surface [8]. Mass, power, dimensions and field of view: not stated in the sources read [7][8]. Test: a photograph shows a test unit fixed to a vibration platform for a pre-flight shake test [8].",
+            "sensing_depth": "up to 3 ft (NASA VIPER page) [8]; 1 m burial-depth objective (2017 abstract) [7]",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "dimensions": "Not publicly specified in the sources read.",
+            "field_of_view": "Not publicly specified in the sources read.",
+            "source_urls": [
+              "https://science.nasa.gov/mission/viper/rover-and-instruments",
+              "https://ntrs.nasa.gov/citations/20170010372"
+            ],
+            "notes": "The 2017 source is a conference abstract; the PDF was not read, so quantitative hardware specifications are missing.",
+            "images": [
+              {
+                "id": "nss_shaker_test",
+                "description": "Neutron Spectrometer System test unit being fixed to a vibration platform for a pre-flight shake test",
+                "image_type": "Official NASA test photograph (engineering)",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2023/05/acd20-0040-017-jpg.webp",
+                "source_page_url": "https://science.nasa.gov/mission/viper/rover-and-instruments",
+                "publisher": "NASA Ames Research Center",
+                "credit": "NASA / Ames Research Center / Dominic Hart",
+                "caption": "Neutron Spectrometer System test unit being secured to a vibration platform before a shake test (NASA / Ames Research Center / Dominic Hart). The page describes it as a pre-flight test for a CLPS Moon flight.",
+                "section_placements": [
+                  "physical_specifications.examples[3]"
+                ],
+                "notes": "Clean URL (no query). The file has a .webp extension but is served as image/jpeg; HTTP 200 confirmed. Viewed directly: a technician fixing a test unit on a vibration platform, consistent with the caption."
+              }
+            ]
+          },
+          {
+            "name": "Boron-coated epithermal neutron counter concept (Cuevas-Zepeda et al., 2025)",
+            "type": "Proposed concept (simulation-based in the preprint read)",
+            "flight_status": "Proposed concept. The preprint describes Monte Carlo simulations; no built or tested prototype is stated in the text read [9].",
+            "description": "Status: proposed concept; the preprint describes simulation-based design [9]. Detector: a boron-10 coated, fully depleted silicon imager. The boron converts epithermal neutrons into charged particles, which the silicon records with an event pattern that helps reject background [9]. Moderation and layer: polyethylene moderation; a 3 micrometre boron layer was selected by simulation for detection efficiency [9]. Stated figures (simulation context): energy range 0.4 eV to 500 keV; active area 10 cm2; sensitivity to H2O weight fractions as low as 0.01 wt% in a 15-minute measurement [9]. Mass, power and field of view: not stated in the text read [9]. Target application: rover-mounted subsurface hydrogen prospecting and ground-truthing of orbital measurements [9].",
+            "sensing_depth": "not stated in the text read",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "dimensions": "Not publicly specified in the sources read.",
+            "field_of_view": "Not publicly specified in the sources read.",
+            "source_urls": [
+              "https://arxiv.org/abs/2509.04367"
+            ],
+            "notes": "No image is included for this concept because no verified official image was located.",
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for most examples in the sources read. PRIME-1 drill reach is up to about three feet (about 0.9 m) below the surface [1]. The NSS burial-depth objective is up to 1 m [7] and the NSS VIPER page states up to 3 feet [8]. Example dimensions are not given.",
+        "mass_and_weight": "Not publicly specified in the sources read for any example. No mass values are given; the field is null in each example object.",
+        "power_requirements": "Not publicly specified in the sources read for any example. The NSS is described only as low power [7], and the concept is described only as low power [9]."
+      },
+      "environmental_and_operational_requirements": "Target terrain: the sources read focus on the lunar poles, where hydrogen-rich deposits are sought, and PRIME-1 landed near the south pole [1][5][7]. The sources read do not give a temperature specification for the target ground. Background: the NSS abstract states that the neutrons it measures are produced by galactic cosmic rays, so instrument design must control background from the host vehicle [7]. Operations: a rover-mounted instrument must be driven and stopped at sample points, as DAN was on Mars [2][4]. A drill-and-analyse payload must extract sample material and deliver it to the analyser, as PRIME-1 was designed to do [1]. Power and thermal requirements for the flown instruments are not publicly specified in the sources read. Dust and thermal effects on sensitivity were raised in secondary reporting about PRIME-1 but were not verified [1].",
+      "limitations": "The main limitation is that hydrogen is not water. DAN's hydrogen signal is interpreted as water molecules or hydroxyl bound in minerals, or water absorbed onto minerals, and the instrument cannot separate these cases on its own [2][4]. Depth resolution is coarse: DAN senses a shallow layer of about 1 m, NSS has a 1 m burial-depth objective, and orbital instruments gave coarse resolution [4][7][9]. Drill-based sampling gives a single point sample, not a map. PRIME-1 operated on the surface for a short period according to secondary reporting, and its primary results were not available in the sources read [1]. Mass, power and dimensions are missing for most examples, which limits engineering comparison.",
+      "transportation_and_deployment": {
+        "overview": "A subsurface moisture detector on the Moon is a surface payload, either mounted on a lander (for example PRIME-1 on IM-2) or on a rover (for example NSS). The following describes the interfaces the sources read identify, and it does not assert compatibility with any named lander or rover without verified interface evidence [1][7][8].",
+        "transportation_process": [
+          "Earth integration: the instrument is integrated into the lander or rover payload accommodation. The sources read do not describe the integration steps for PRIME-1 or NSS in detail [1][7].",
+          "Launch: PRIME-1 launched on IM-2 on 26 February 2025 from NASA Kennedy Space Center under CLPS [1].",
+          "Lunar transfer and landing: the IM-2 lander landed on 6 March 2025 near the South Pole, on its side, about 820 ft from its intended site [1].",
+          "Deployment: TRIDENT drilling and MSolo sample analysis were the operations planned after landing [1]. The sources read do not describe the drill mounting or the stowage configuration.",
+          "Rover integration (NSS): the Sensor Module sits outside the rover body and the Data Processing Module inside it, with an RS422 serial link between them [7].",
+          "Power, data and thermal interfaces: the NSS data link is RS422 [7]. Power and thermal interfaces are not publicly specified in the sources read."
+        ],
+        "deployment_methods": "PRIME-1 was delivered on the IM-2 lander, and TRIDENT and MSolo were operated from that lander after it reached the surface [1]. The lander's on-side landing shows that orientation after touchdown can constrain instrument use, but the sources read do not say how it affected the drill or the analyser [1]. The NSS was designed to be carried by a landed mobility system, with its sensor module outside the rover body [7]. The NASA VIPER page confirms that NSS is part of the VIPER instrument suite but does not state the flight configuration [8].",
+        "historical_examples": "DAN has been operated on a Mars rover traverse, with passive measurements taken at intervals and active measurements at stopping points [2][4]. This is the best flown example of rover-based subsurface hydrogen measurement, but it is on Mars, not the Moon [2][4].",
+        "compatibility_assessment": "Verified for PRIME-1 only: it flew on IM-2 [1]. For NSS, NASA states that it is planned for VIPER and that earlier NSS versions flew on unnamed commercial deliveries [8]; the VIPER flight unit's launch vehicle, date and interface specification were not verified in the sources read [8]. No compatibility claim is made for any other lander or rover in this article.",
+        "images": [
+          {
+            "id": "im2_lander_on_surface",
+            "description": "Intuitive Machines IM-2 lander on the lunar surface after landing, with its footpads and mounted instruments visible; Earth visible above the limb",
+            "image_type": "Official NASA mission image (lander on the Moon)",
+            "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+            "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+            "publisher": "NASA",
+            "credit": "NASA / Intuitive Machines (credit as listed on the source page: 'Intuitive Machines')",
+            "caption": "IM-2 lander on the lunar surface, image taken 6 March 2025 after landing near the South Pole, as captioned on the NASA PRIME-1 page. The image shows the lander; it does not isolate the PRIME-1 instruments.",
+            "section_placements": [
+              "transportation_and_deployment"
+            ],
+            "notes": "Clean URL (no query). HTTP 200 confirmed; viewed directly. The image shows the lander, not PRIME-1 hardware; it is used here only as mission-context evidence."
+          }
+        ]
+      },
+      "historical_significance": "Lunar Prospector's 1998 polar hydrogen result was the first major orbital suggestion of water ice at the Moon's poles, and it motivated the later prospecting instruments discussed here [5][6]. DAN extended the approach to Mars, where in 2015 the team mapped a hydrogen-rich area near Marias Pass [2][4]. PRIME-1 tested a drill and a volatile mass spectrometer on the Moon in 2025 as a NASA technology demonstration [1]. Its science results, if any, were not available in the sources read.",
+      "limitations_and_uncertainties": "The main uncertainties are: (1) hydrogen-to-water attribution, which the sources treat as an interpretation [2][4][5][6][7]; (2) the Lunar Prospector sensing depth, which NASA's page does not state and secondary summaries give variously [6]; (3) the DAN map annotation of up to 10 percent water-equivalent hydrogen, which the release text does not reconcile [2]; (4) PRIME-1 outcomes, which the NASA page does not give and which secondary reporting describes without primary confirmation [1]; (5) the NSS flight unit's vehicle, date and mass and power [7][8]; (6) the concept figures in the preprint, which are simulation-based and not measured hardware [9].",
+      "images": [
+        {
+          "id": "prime1_trident_test",
+          "description": "PRIME-1 TRIDENT drill hardware in a test setting: a tall drill-type mechanism with an operator",
+          "image_type": "Official NASA hardware photograph (test/engineering)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_2.jpg",
+          "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "publisher": "NASA",
+          "credit": "NASA (the source page gives no photo credit for this image)",
+          "caption": "TRIDENT drill hardware in a test setting. The NASA PRIME-1 page captions this image as TRIDENT test hardware; the identity was not confirmed from the image itself.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Clean URL: the ?w=1024 size parameter was removed from the page-linked image. HTTP 200 confirmed. Viewed directly: the image shows a drill-type mechanism with an operator, but carries no instrument label. TRIDENT identity is taken from the NASA page caption as read through a summarising fetch."
+        },
+        {
+          "id": "prime1_msolo_test",
+          "description": "PRIME-1 MSolo mass spectrometer test unit: cylindrical vacuum-compatible instrument in an electronics box",
+          "image_type": "Official NASA hardware photograph (test/engineering)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_1.jpg",
+          "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "publisher": "NASA",
+          "credit": "NASA (the source page gives no photo credit for this image)",
+          "caption": "MSolo test unit. The NASA PRIME-1 page captions this image as the MSolo test unit; the identity was not confirmed from the image itself.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Clean URL: the ?w=1024 size parameter was removed. HTTP 200 confirmed. Viewed directly: a cylindrical instrument mounted on an electronics enclosure, with no label visible. MSolo identity is taken from the NASA page caption, not from the image."
+        },
+        {
+          "id": "dan_hydrogen_summary_map",
+          "description": "Map of DAN passive count-rate observations after multiple Curiosity traverses near Marias Pass, Gale Crater, Mars; colour scale shows DAN passive count rate (cps)",
+          "image_type": "Scientific data map (Mars)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia19/pia19809/PIA19809.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/curiosity-finds-hydrogen-rich-area-of-mars-subsurface",
+          "publisher": "NASA/JPL-Caltech/Russian Space Research Institute",
+          "credit": "NASA/JPL-Caltech/Russian Space Research Institute",
+          "caption": "Summary of DAN observations after multiple Curiosity traverses in the same area, Marias Pass, Gale Crater (PIA19809). This is a data map, not a photograph of the instrument. The map annotation reads 'Up to 10% water equivalent hydrogen'; the NASA release text gives relative values only, so that annotation is not adopted as a measurement in this article.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct TIFF/JPEG asset URL from the NASA photojournal page, with no query string. HTTP 200 confirmed; viewed directly. The 'Up to 10%' annotation conflicts with the release text and is not reconciled."
+        },
+        {
+          "id": "lunar_prospector_spacecraft_concept",
+          "description": "Artist's concept of the Lunar Prospector spacecraft just before impact on the Moon",
+          "image_type": "Artist's concept (spacecraft)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/78777main_befcras.jpg",
+          "source_page_url": "https://science.nasa.gov/mission/lunar-prospector/",
+          "publisher": "NASA",
+          "credit": "NASA/Ames",
+          "caption": "Artist's concept of the Lunar Prospector spacecraft just before impact on the Moon (NASA/Ames). It shows the spacecraft, not the neutron spectrometer.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Full-size asset URL from the NASA page, with no query string. HTTP 200 confirmed. Not viewed directly in this run; the caption is taken from the source page."
+        },
+        {
+          "id": "nss_shaker_test",
+          "description": "Neutron Spectrometer System test unit being fixed to a vibration platform for a pre-flight shake test",
+          "image_type": "Official NASA test photograph (engineering)",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/05/acd20-0040-017-jpg.webp",
+          "source_page_url": "https://science.nasa.gov/mission/viper/rover-and-instruments",
+          "publisher": "NASA Ames Research Center",
+          "credit": "NASA / Ames Research Center / Dominic Hart",
+          "caption": "Neutron Spectrometer System test unit being secured to a vibration platform before a shake test (NASA / Ames Research Center / Dominic Hart). The page describes it as a pre-flight test for a CLPS Moon flight.",
+          "section_placements": [
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Clean URL (no query). The file has a .webp extension but is served as image/jpeg; HTTP 200 confirmed. Viewed directly: a technician fixing a test unit on a vibration platform, consistent with the caption."
+        },
+        {
+          "id": "im2_lander_on_surface",
+          "description": "Intuitive Machines IM-2 lander on the lunar surface after landing, with its footpads and mounted instruments visible; Earth visible above the limb",
+          "image_type": "Official NASA mission image (lander on the Moon)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+          "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "publisher": "NASA",
+          "credit": "NASA / Intuitive Machines (credit as listed on the source page: 'Intuitive Machines')",
+          "caption": "IM-2 lander on the lunar surface, image taken 6 March 2025 after landing near the South Pole, as captioned on the NASA PRIME-1 page. The image shows the lander; it does not isolate the PRIME-1 instruments.",
+          "section_placements": [
+            "transportation_and_deployment"
+          ],
+          "notes": "Clean URL (no query). HTTP 200 confirmed; viewed directly. The image shows the lander, not PRIME-1 hardware; it is used here only as mission-context evidence."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "prime1_trident_test",
+          "description": "PRIME-1 TRIDENT drill hardware in a test setting: a tall drill-type mechanism with an operator",
+          "image_type": "Official NASA hardware photograph (test/engineering)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_2.jpg",
+          "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "publisher": "NASA",
+          "credit": "NASA (the source page gives no photo credit for this image)",
+          "caption": "TRIDENT drill hardware in a test setting. The NASA PRIME-1 page captions this image as TRIDENT test hardware; the identity was not confirmed from the image itself.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Clean URL: the ?w=1024 size parameter was removed from the page-linked image. HTTP 200 confirmed. Viewed directly: the image shows a drill-type mechanism with an operator, but carries no instrument label. TRIDENT identity is taken from the NASA page caption as read through a summarising fetch."
+        }
+      ],
+      "references": [
+        {
+          "title": "PRIME-1 (Polar Resources Ice Mining Experiment-1) mission page",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "citation": "NASA. Polar Resources Ice Mining Experiment-1 (PRIME-1) mission page. NASA, undated page (last updated 11 March 2025 per page text)."
+        },
+        {
+          "title": "Curiosity finds hydrogen-rich area of Mars subsurface (PIA19809)",
+          "publisher": "NASA Science Photojournal / NASA/JPL-Caltech/Russian Space Research Institute",
+          "url": "https://science.nasa.gov/photojournal/curiosity-finds-hydrogen-rich-area-of-mars-subsurface",
+          "citation": "NASA Science. Curiosity finds hydrogen-rich area of Mars subsurface (photojournal release, 19 August 2015; image PIA19809)."
+        },
+        {
+          "title": "Dynamic Albedo of Neutrons (DAN) Experiment Onboard NASA's Mars Science Laboratory",
+          "publisher": "Space Science Reviews (Springer)",
+          "url": "https://doi.org/10.1007/s11214-012-9924-y",
+          "citation": "Mitrofanov, I. G., et al. (2012). Dynamic Albedo of Neutrons (DAN) Experiment Onboard NASA's Mars Science Laboratory. Space Science Reviews. DOI 10.1007/s11214-012-9924-y. Full text not read; the DOI was resolved, and the title was matched in a search result."
+        },
+        {
+          "title": "DAN - Dynamic Albedo of Neutrons (instrument description page)",
+          "publisher": "New Mexico State University, Atmospheres group",
+          "url": "https://atmos.nmsu.edu/data_and_services/atmospheres_data/MARS/curiosity/dan.html",
+          "citation": "New Mexico State University, Atmospheres group. DAN - Dynamic Albedo of Neutrons (instrument description page; undated)."
+        },
+        {
+          "title": "Fluxes of fast and epithermal neutrons from Lunar Prospector: evidence for water ice at the lunar poles",
+          "publisher": "Science (AAAS)",
+          "url": "https://www.science.org/doi/10.1126/science.281.5382.1496",
+          "citation": "Feldman, W. C., et al. (1998). Fluxes of fast and epithermal neutrons from Lunar Prospector: evidence for water ice at the lunar poles. Science, 281(5382), 1496-1500. DOI 10.1126/science.281.5382.1496. Bibliographic details are from the author's knowledge and the DOI resolution only; the article text was not accessible (HTTP 403)."
+        },
+        {
+          "title": "Lunar Prospector (mission page)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/lunar-prospector/",
+          "citation": "NASA Science. Lunar Prospector mission page (undated)."
+        },
+        {
+          "title": "The Resource Prospector Neutron Spectrometer System: RP's Bloodhound",
+          "publisher": "NASA Ames Research Center (Elphic, Fritzler, Mobilia, Kou); NASA NTRS",
+          "url": "https://ntrs.nasa.gov/citations/20170010372",
+          "citation": "Elphic, R. C., Fritzler, E., Mobilia, J., and Kou, A. (2017). The Resource Prospector Neutron Spectrometer System: RP's Bloodhound. NASA Exploration Science Forum, 18-20 July 2017; NTRS document 20170010372, report ARC-E-DAA-TN44677. Conference abstract; the full PDF was not read."
+        },
+        {
+          "title": "VIPER rover and instruments (Neutron Spectrometer System description)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/viper/rover-and-instruments",
+          "citation": "NASA Science. VIPER rover and instruments, Neutron Spectrometer System section (page last updated 21 September 2023 per page text)."
+        },
+        {
+          "title": "A compact, low-power epithermal neutron counter for lunar water detection",
+          "publisher": "arXiv (Fermilab-PUB-25-0634-PPD)",
+          "url": "https://arxiv.org/abs/2509.04367",
+          "citation": "Cuevas-Zepeda, J., et al. (2025). A compact, low-power epithermal neutron counter for lunar water detection. arXiv:2509.04367 (submitted 4 September 2025). Preprint; simulation-based according to the text read."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[0]": "payload.article.physical_specifications.examples[0].images",
+      "physical_specifications.examples[1]": "payload.article.physical_specifications.examples[1].images",
+      "physical_specifications.examples[2]": "payload.article.physical_specifications.examples[2].images",
+      "physical_specifications.examples[3]": "payload.article.physical_specifications.examples[3].images",
+      "physical_specifications.examples[4]": "payload.article.physical_specifications.examples[4].images",
+      "transportation_and_deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All URL query strings and fragments removed (for example the ?w= size parameters on NASA image URLs). Paths are unchanged. Each cleaned image URL was checked for HTTP 200 and six of the images were viewed directly; see data_quality_notes."
+  },
+  "data_quality_notes": [
+    "Image identity: the PRIME-1 captions (TRIDENT for prime-1_web_photo_2, MSolo for prime-1_web_photo_1) were read through a summarising fetch of the NASA page. Both images were viewed; neither shows a readable instrument label, so identity is unconfirmed.",
+    "DAN map annotation: the image reads 'Up to 10% water equivalent hydrogen', but the NASA release text gives relative levels only. The 2013 secondary figure (up to 4 percent) was seen only in a secondary search result and is not used.",
+    "Lunar Prospector sensing depth: the NASA mission page gives no depth. Secondary sources give about 1 m in one case and about 1.5 ft in another. No depth is adopted from the primary paper.",
+    "Feldman et al. (1998): the Science article text was not accessible (HTTP 403 from the DOI resolver). The title, authors and volume shown are from the author's knowledge and were not verified against the article text.",
+    "Mitrofanov et al. (2012): the DOI resolved to the Springer article page, but the full text was not read. The title was matched in a search result. DAN numbers come from the NMSU description and the NASA release.",
+    "PRIME-1 outcome: the NASA page gives only a headline. Secondary reports of limited operation (about 10 hours), spacecraft-related gases in MSolo readings, and a landing-orientation explanation were not verified against a primary NASA document and are not used as results.",
+    "IM-2 image: the image shows the lander on the surface and does not isolate PRIME-1 hardware. It is used as mission context only.",
+    "NSS flight status: NASA's VIPER page says earlier NSS versions flew on two unnamed commercial deliveries. The VIPER flight unit's launch vehicle and date were not verified; a web-search attempt on this was blocked by the session search budget.",
+    "NSS sources: the Elphic et al. (2017) reference is a conference abstract; the full PDF was not read, so the NSS mass, power and dimensions are missing.",
+    "Concept figures: the 0.01 wt% sensitivity and 0.4 eV to 500 keV energy range are simulation-based figures from a preprint, not measured hardware performance.",
+    "Image URLs: NASA image URLs on the source pages carried ?w= size parameters, which were removed; each cleaned URL was checked for HTTP 200. The NSS file has a .webp extension but is served as image/jpeg.",
+    "Not searched: web-search budget for this session was exhausted during research, so no further searches were run on VIPER launch schedule, Chang'e-series or other lunar subsurface water instruments, or PRIME-1 results papers. These are open gaps."
+  ]
+}

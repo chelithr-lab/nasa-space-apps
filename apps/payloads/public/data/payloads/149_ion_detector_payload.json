@@ -1,0 +1,182 @@
+{
+  "catalogue_id": 149,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 7,
+    "name": "Lunar exosphere and atmospheric instruments"
+  },
+  "payload": {
+    "number": 149,
+    "name": "Ion detector",
+    "article": {
+      "overview": "An ion detector is an instrument that identifies and measures electrically charged particles (ions) near a planetary surface or in its surrounding space environment. On the Moon, such instruments can show which ions are present, how fast and how energetic they are, what their masses are, and where they come from. The best-documented lunar example is the Suprathermal Ion Detector Experiment (SIDE), part of the Apollo Lunar Surface Experiments Package (ALSEP). The first SIDE unit was deployed on Apollo 12 in November 1969. The catalogue name describes a broad class of instruments rather than one standard design. This article therefore treats SIDE as the main worked example and briefly contrasts it with ISRO's CHACE-2 on Chandrayaan-2, which is a related but different instrument: a neutral-gas mass spectrometer rather than an ion detector.",
+      "description": "An ion detector typically separates charged particles by energy, mass or both, then counts them with a sensitive detector such as an electron multiplier. Ions near the lunar surface have several possible sources: particles carried by the solar wind, charged particles from the Earth's magnetosphere, and ions created when ultraviolet sunlight ionises the thin lunar atmosphere (the exosphere). Measuring these ions helps scientists understand the Moon's electrical environment and its interaction with the solar wind. SIDE measured positive ions reaching the lunar surface. According to the PDS instrument description, it recorded the energy and mass of these ions and was designed to determine their flux, number density, velocity and energy per unit charge. The instrument was a box-shaped unit placed on a tripod, connected to the ALSEP central station by cable, and set up by astronauts during the first extravehicular activity.",
+      "scientific_purpose_and_applications": "According to the PDS description of the Apollo 12 SIDE, the instrument was intended to: measure positive ions at the lunar surface, including magnetospheric ions, ions produced by ultraviolet ionisation of the lunar atmosphere and ions produced by solar-wind interaction with the surface; determine ion flux, number density, velocity and energy per unit charge; study ion energy and mass spectra near the surface, ion flux in the Earth's magnetotail and magnetosheath, and the solar wind-Moon plasma interaction; and make a preliminary estimate of the lunar surface electric potential. These are the instrument's stated goals in the PDS record. Whether they were fully met is a separate question. The Rice University final report for the SIDE programme (NASA CR-144544, July 1975) lists topics including the lunar ionosphere, the electric potential of the lunar surface, nightside ion activity, bow-shock protons, magnetosheath and magnetotail ions, solar-wind interaction with the neutral gas cloud around the Moon, penetrating solar particles and rocket exhaust products. The catalogue record for that report gives only topic headings, so the findings under each heading were not reviewed in this article.",
+      "operating_principle": "The Apollo SIDE used two detection channels. (1) Mass analyser (MA): a Wien filter, which uses crossed electric and magnetic fields, works in tandem with a curved-plate electrostatic filter that selects by energy per charge. Ions that pass both filters reach a channel electron multiplier, which operates as an ion counter. The analyser recorded 20 mass channels from about 10 to 1000 atomic mass units per unit charge, at six energies of 0.2, 0.6, 1.8, 5.4, 16.2 and 48.6 electron volts. Laboratory calibration was reliable only for the two highest energies. (2) Total ion detector (TID): this channel has no velocity filter. It uses a channel electron multiplier for higher-energy ions and covers 10 to 3500 electron volts in 20 steps. Both multipliers had their input ends biased at -3.5 kV to increase ion energy and detection efficiency. In normal operation the instrument produced a mass spectrum (from the MA) and an energy spectrum (from the TID) every 24 seconds. During a surface-potential sweep, the entrance aperture voltage was stepped through 24 voltages, from 0 to 27.6 and from 0 to -27.6 (the PDS record gives these values without units; volts are implied), at 2.58 minutes per step.",
+      "scientific_importance": "The Moon has no global magnetic field and only a very thin atmosphere, so its surface is directly exposed to the solar wind. Ion measurements at the surface show how this exposure changes the local plasma, and they provide ground truth for models of the lunar exosphere and plasma environment. The Apollo instruments are the main historical source for this work. The SIDE final report and the Apollo 12 analysis discuss the lunar ionosphere, the surface electric potential and the acceleration of thermal ions. One secondary summary, not checked against the primary paper, reports an Apollo 12 study that proposed a mechanism accelerating originally thermal ions to several hundred electron volts, and observations of the Apollo 13 S-IVB rocket-stage impact on 15 April 1970. These claims are noted as secondary and are not relied on elsewhere in this article. Modern lunar exosphere work has moved towards neutral-gas instruments. ISRO's CHACE-2 on Chandrayaan-2 is a quadrupole mass spectrometer that measures neutral gases such as argon-40 in the exosphere. ISRO reports its first global observations of argon-40, including mid-latitude coverage and localised enhancements, which it calls 'Argon bulge', over the KREEP and South Pole-Aitken terrains. ISRO cites the result in Geophysical Research Letters (doi:10.1029/2021GL094970). The article does not treat CHACE-2 as an ion detector.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an ion detector. Instruments differ widely in sensor design, energy range and mission role. The values below describe specific instruments and are not general figures for all ion detectors. Mass, sensitivity, dimensions and power for the Apollo SIDE were not found in the sources reviewed and are recorded as null.",
+        "examples": [
+          {
+            "name": "Apollo 12 ALSEP Suprathermal Ion Detector Experiment (SIDE)",
+            "type": "Historical lunar surface ion-detection instrument (Apollo Lunar Surface Experiments Package)",
+            "mass_kg": null,
+            "main_enclosure_height_above_surface_cm": 50,
+            "power_consumption_w": null,
+            "sensor_configuration": "Two positive-ion detection channels in a side-by-side arrangement: a mass analyser (Wien filter in tandem with a curved-plate electrostatic energy-per-charge filter, with a channel electron multiplier as ion counter) and a total ion detector (channel electron multiplier, no velocity filter). The Cold Cathode Ion Gauge is stored in a compartment of the SIDE box and set up on the surface separately.",
+            "mass_analyser_mass_channels": "20 channels, about 10 to 1000 amu per unit charge",
+            "mass_analyser_energy_steps_ev": [0.2, 0.6, 1.8, 5.4, 16.2, 48.6],
+            "mass_analyser_calibration_note": "Laboratory calibrations were reliable only for the two highest energy steps.",
+            "total_ion_detector_energy_range_ev": [10, 3500],
+            "total_ion_detector_energy_steps": 20,
+            "multiplier_input_bias_kv": -3.5,
+            "normal_mode_cadence_seconds": 24,
+            "surface_potential_sweep": "Entrance aperture voltage stepped through 24 values from 0 to 27.6 and 0 to -27.6 (units implied as volts), 2.58 minutes per step.",
+            "viewing_geometry": "Detectors look upward about 15 degrees from local vertical, in a plane parallel to the lunar equator and about 38.4 degrees to the right of the Earth direction.",
+            "thermal_control": "Switched on and off for several days on either side of lunar noon to keep internal temperature below about 55 degrees C, because electrical arcing at high temperatures occurred.",
+            "deployment": "Deployed by astronauts during the first EVA; levelled with a bubble level; on a tripod about 15 m southwest of the ALSEP central station; connected by ribbon cable; a wire screen beneath the tripod compensates for possible surface potential.",
+            "operational_history": "Turn-on 19:45 UT, 19 November 1969 (Apollo 12). Standby for the lunar night from 18 January 1976. Commanded off on 3 May 1976 because there was not enough power to run all ALSEP instruments. Secondary sources state SIDE also flew on Apollo 14 and 15; the NSSDC catalogue lists the Apollo 14 SIDE as 71-008C-06. The Rice final report abstract also mentions Apollo 13, which did not land; unresolved.",
+            "qualification": "The PDS record does not give sensitivity, instrument mass, enclosure dimensions beyond the height above surface, or power consumption. The NASA engineering report (search summary) credits Marshall Laboratories with design and fabrication; Wikipedia credits the Bendix Corporation. Not resolved.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a12/instruments/a12a_side.txt",
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:side.a12a",
+              "https://www.nasa.gov/wp-content/uploads/static/history/SP-350/ch-12-7.html",
+              "https://www.osti.gov/biblio/7327951-apollo-lunar-surface-experiment-package-suprathermal-ion-detector-experiment-final-report"
+            ],
+            "images": [
+              {
+                "id": "apollo_side_sp350_photograph",
+                "description": "NASA SP-350 photograph of the Suprathermal Ion Detector Experiment (SIDE) on the Apollo lunar surface.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": null,
+                "source_page_url": "https://www.nasa.gov/wp-content/uploads/static/history/SP-350/ch-12-7.html",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "Alt text on the source page: A picture of the Suprathermal Ion Detector Experiment (SIDE). No image ID or caption was available on the page.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "image_url is null: the page references the photograph only as a relative file name (i12-8a.jpg) without an absolute URL, and no direct asset URL was verified. The source page is shown as a linked reference in the article. Image ID and rights/reuse status unverified."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "No enclosure diameter, length or total dimensions were found for the Apollo SIDE. The PDS record states only that the box's top sits about 50 cm above the surface. The SIDE was a rectangular box placed on a tripod, and its detectors were directed upward at a fixed viewing angle. Future instrument dimensions would depend on the intended energy range, sensitivity and thermal design. The CHACE-2 instrument is an orbiter quadrupole mass spectrometer whose dimensions were not stated on the page read.",
+        "mass_and_weight": "Instrument mass was not found for the Apollo SIDE in the sources reviewed and is recorded as null. ISRO's CHACE-2 page does not state a mass. Mass determines launch and lander requirements and would need to be verified from primary documentation before any comparison.",
+        "power_requirements": "No SIDE-specific power value was found in the sources reviewed. The PDS record notes that SIDE was shut down because there was not enough power to run all ALSEP instruments. NASA SP-350 states that ALSEP units were powered by a radioisotope thermoelectric generator, without a SIDE-specific figure. CHACE-2 power was not stated on the page read."
+      },
+      "environmental_and_operational_requirements": "An ion detector on the lunar surface must withstand extreme temperature cycles, a near-vacuum environment and exposure to ultraviolet light and charged particles. Its sensitive electronics need thermal control. The SIDE experience shows that temperature management is critical: electrical arcing and overheating forced on-off cycling during the lunar day. The instrument's readings are also sensitive to the electrical potential of its surroundings. SIDE therefore had a grounded wire screen beneath its tripod, connected to a stepped voltage supply, to compensate for surface potentials that could be tens of volts. The PDS record also notes that detector viewing is restricted: solar-wind ions could not be observed directly when the Moon was outside the magnetosphere. The SIDE's operational life was limited by shared ALSEP power. It was placed in standby for the lunar night from 18 January 1976 and was commanded off on 3 May 1976.",
+      "limitations": "An ion detector measures ions at a single location. Studying the wider plasma environment requires several stations or orbital measurements. The SIDE mass analyser was reliably calibrated only at its two highest energy steps, which limits energy-dependent interpretation. Viewing geometry limits direct observations of some ion populations, such as solar-wind ions when the Moon lies outside the magnetosphere. Thermal and electrical effects, including arcing and overheating, limited operation. Key SIDE specifications, including sensitivity, mass, dimensions and power, were not found in the sources reviewed.",
+      "transportation_and_deployment": {
+        "overview": "An ion detector could be delivered to the Moon as a standalone instrument or as part of a larger surface experiment package. The Apollo SIDE was carried on an ALSEP subpallet and deployed by astronauts. Orbiter instruments such as CHACE-2 follow a different transportation sequence, described below.",
+        "transportation_process": [
+          "Integrate the instrument into a lander or spacecraft on Earth (for the Apollo SIDE, an ALSEP subpallet carried it together with the Cold Cathode Ion Gauge, the Passive Seismic Experiment stool and an antenna-aiming mechanism; secondary source, Apollo 14 Lunar Surface Journal content).",
+          "Launch it using a launch vehicle.",
+          "Transfer it towards the Moon.",
+          "Deliver it to the lunar surface with a lander.",
+          "Deploy it: astronauts levelled the SIDE with a bubble level and placed it on a tripod about 15 m southwest of the ALSEP central station, connected by ribbon cable.",
+          "Connect power, data and ground-potential interfaces (wire screen and stepped voltage supply for surface potential compensation)."
+        ],
+        "deployment_methods": "Apollo SIDE: astronaut deployment during the first extravehicular activity, using a tripod, ribbon cable to the ALSEP central station and a wire screen beneath the tripod. CHACE-2 is an orbiter instrument and is not deployed on the surface.",
+        "historical_examples": "Apollo 12 SIDE was deployed as part of the first ALSEP. The Apollo 14 and 15 SIDE units were also deployed with ALSEP packages according to secondary sources. CHACE-2 on Chandrayaan-2 is an orbital example of a related neutral-gas mass spectrometer.",
+        "compatibility_assessment": "No compatibility with a specific lander or spacecraft is claimed. Any future ion detector would need its mass, dimensions, mounting points, power, thermal and data requirements compared with verified lander specifications before compatibility could be assessed.",
+        "images": []
+      },
+      "historical_significance": "The first SIDE unit flew on Apollo 12 as part of the first ALSEP deployment (NASA SP-350 states that ALSEPs were emplaced at each landing site, starting with Apollo 12). SIDE was designed to measure surface-level ions and to help characterise the lunar plasma environment and its interaction with the solar wind, as part of the early Apollo surface-science programme. SIDE was commanded off on 3 May 1976 because of power shortages.",
+      "limitations_and_uncertainties": "The name 'Ion detector' describes a broad class. The Apollo SIDE and CHACE-2 are not interchangeable, and their specifications should not be compared as if they were the same type of instrument. Mass, sensitivity, dimensions and power for SIDE were not verified and are recorded as null. The SIDE flight history is inconsistent across sources: Apollo 12, 14 and 15 are supported by PDS records and secondary sources, the Rice final report abstract also mentions Apollo 13, and one source mentions Apollo 16. The Apollo 13 and Apollo 16 claims are not confirmed. The SIDE manufacturer is disputed (Marshall Laboratories versus Bendix Corporation) and was not resolved. The SIDE final report (NASA CR-144544, also indexed as NTRS 19700004894) was not read in full because the file exceeded the fetch size limit, so its quantitative results remain unverified. Findings from a secondary summary (the Apollo 12 acceleration mechanism and the 1970 S-IVB impact observation) were not checked against the primary paper. CHACE-2 results are ISRO's own reported claims; the underlying paper was cited but not opened. The CHACE-2 mass range and resolution were not confirmed on the CHACE-2 page read. No verified direct image asset URL was obtained for any image in this article.",
+      "images": [
+        {
+          "id": "apollo_side_sp350_photograph",
+          "description": "NASA SP-350 photograph of the Suprathermal Ion Detector Experiment (SIDE) on the Apollo lunar surface.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/wp-content/uploads/static/history/SP-350/ch-12-7.html",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Alt text on the source page: A picture of the Suprathermal Ion Detector Experiment (SIDE). No image ID or caption was available on the page.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "image_url is null: the page references the photograph only as a relative file name (i12-8a.jpg) without an absolute URL, and no direct asset URL was verified. The source page is shown as a linked reference in the article. Image ID and rights/reuse status unverified."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Apollo Expeditions to the Moon, SP-350, Chapter 12",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/wp-content/uploads/static/history/SP-350/ch-12-7.html"
+        },
+        {
+          "title": "Apollo 12 ALSEP Suprathermal Ion Detector Experiment (SIDE) instrument document",
+          "publisher": "NASA Planetary Data System, Geosciences Node",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a12/instruments/a12a_side.txt"
+        },
+        {
+          "title": "Apollo 12 ALSEP Suprathermal Ion Detector Experiment instrument context record (side.a12a)",
+          "publisher": "NASA Planetary Data System",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:side.a12a"
+        },
+        {
+          "title": "Apollo 14 ALSEP Suprathermal Ion Detector Experiment instrument context record (side.a14a)",
+          "publisher": "NASA Planetary Data System",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:side.a14a"
+        },
+        {
+          "title": "The Apollo lunar surface experiment package suprathermal ion detector experiment: Final report (NASA CR-144544; catalogue record)",
+          "publisher": "Rice University, Department of Space Physics and Astronomy; OSTI",
+          "url": "https://www.osti.gov/biblio/7327951-apollo-lunar-surface-experiment-package-suprathermal-ion-detector-experiment-final-report"
+        },
+        {
+          "title": "CHACE-2 On Board Chandrayaan-2",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "url": "https://www.isro.gov.in/CHACE-2OnboardChandrayaan-2.html"
+        },
+        {
+          "title": "CHACE-2 argon-40 exosphere observations (cited by ISRO; not opened)",
+          "publisher": "Geophysical Research Letters (2021), doi:10.1029/2021GL094970",
+          "url": "https://doi.org/10.1029/2021GL094970"
+        },
+        {
+          "title": "Apollo SIDE final report (NASA NTRS document 19700004894; indexed in search, full text not read)",
+          "publisher": "NASA Technical Reports Server",
+          "url": "https://ntrs.nasa.gov/api/citations/19700004894/downloads/19700004894.pdf"
+        },
+        {
+          "title": "Suprathermal Ion Detector Experiment (secondary; mission list and manufacturer discrepancy only)",
+          "publisher": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Suprathermal_Ion_Detector_Experiment"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images (no verified image; empty)",
+      "Apollo 12 SIDE example": "payload.article.physical_specifications.examples[0].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no verified image; empty)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. The only image entry has image_url null because no direct asset URL was verified. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Catalogue ID 149, name 'Ion detector' and category 7 'Lunar exosphere and atmospheric instruments' confirmed against lunar_payloads_catalogue_320.md; the name is generic, so the article treats the Apollo SIDE as the main example.",
+    "No direct image asset URL could be verified. The only candidate image (SP-350 photograph, referenced as i12-8a.jpg) is recorded with image_url null. A search-result mirror of AS14-67-09369 was not used because it is not an official source.",
+    "Apollo 14 ALSEP Lunar Surface Journal pages and an hq.nasa.gov redirect returned HTTP 404 or redirected; the Apollo 14 deployment statements rely on a search summary.",
+    "NASA NTRS 19700004894 (SIDE final report) exceeded the fetch size limit; quantitative results were not verified.",
+    "CHACE-2 mass range (1-300 amu) and resolution (about 0.5 amu) came from a search-result summary of an ISRO payload page and were not confirmed on the CHACE-2 page read; recorded as text only, not as verified numeric fields.",
+    "Flight history discrepancy: Apollo 13 (named in the Rice report abstract, which did not land) and Apollo 16 (one secondary source) are not confirmed; Apollo 12, 14 and 15 supported by PDS records and secondary sources.",
+    "Manufacturer discrepancy unresolved: Marshall Laboratories (NASA engineering report, search summary) versus Bendix Corporation (Wikipedia).",
+    "The Apollo 12 surface acceleration mechanism and the 1970 S-IVB impact observation come from a secondary summary and were not checked against the primary paper.",
+    "The CHACE-2 'first global argon-40 observations' and 'Argon bulge' results are ISRO's own claims; the GRL paper was cited but not opened. A secondary news summary of a CME-related CHACE-2 finding was not used."
+  ]
+}

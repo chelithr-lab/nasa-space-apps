@@ -1,0 +1,198 @@
+{
+  "catalogue_id": 246,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 12,
+    "name": "Astronomical observation"
+  },
+  "payload": {
+    "number": 246,
+    "name": "Spectrograph",
+    "article": {
+      "overview": "A spectrograph separates light into its component wavelengths and records how bright each wavelength is, producing a spectrum that can reveal the composition, temperature and physical conditions of the source. On the Moon, spectrographs have been used for ultraviolet observations of the Earth's upper atmosphere and of distant stars and nebulae, which are difficult to observe from the ground because Earth's atmosphere absorbs much ultraviolet light. Two flown examples illustrate the class: the Apollo 16 Far Ultraviolet Camera/Spectrograph, operated by an astronaut on the lunar surface in April 1972 [1][2], and the Lyman Alpha Mapping Project (LAMP), a far-ultraviolet imaging spectrograph operating in lunar orbit on NASA's Lunar Reconnaissance Orbiter [3][4][6].",
+      "description": "A spectrograph has three basic elements: an entrance aperture or slit that admits light, a dispersing element (a grating, prism or equivalent optics) that spreads the light by wavelength, and a detector that records intensity across the spread spectrum. Spectrographs are often combined with a telescope or camera so that an observer can record either an image or a spectrum of the same target.\n\nThe Apollo 16 instrument combined a Schmidt camera with an electronographic recording system, and the Smithsonian record describes it as operating in both spectroscopic and direct-view modes [2]. LAMP is an imaging spectrograph: it records far-ultraviolet light in a form that supports spatial maps of the lunar surface as well as spectra [3][4].",
+      "scientific_purpose_and_applications": "The Apollo 16 instrument was designed to study Earth's outermost atmosphere (the geocorona), the upper atmosphere, and the ultraviolet colours of stars and nebulae, and it was operated from the lunar surface for this purpose [1][2]. LAMP's objectives centre on far-ultraviolet mapping of the Moon, including Lyman-alpha albedo mapping, which measures how strongly the surface reflects ultraviolet light at 121.6 nm [3][4]. In general, ultraviolet spectra from a spectrograph of this kind can help identify surface materials and atmospheric gases, but the specific science results of each instrument are not summarised in full here.",
+      "operating_principle": "A spectrograph disperses incoming light by wavelength, and the detector records how much light arrives at each wavelength. The Apollo 16 camera used an F/1, 3-inch Schmidt optical system on an altitude-azimuth mount, with electronographic amplification that recorded images on nuclear emulsion film [2]. Because the record is film-based, the spectral data were stored on film that had to be returned and processed after the mission [2].\n\nLAMP is tuned to the far-ultraviolet band of roughly 120 to 180 nm, which includes the brightest line of the hydrogen Lyman series, Lyman-alpha, at 121.6 nm [4][5]. Its measurements are used to determine surface reflectance from orbit [3][4].",
+      "scientific_importance": "Ultraviolet spectroscopy from the lunar surface and from orbit observes wavelengths that Earth's atmosphere largely blocks. The Smithsonian describes the Apollo 16 camera as the first astronomical telescope to observe from another planetary body [2]. The instrument's operating results were presented as a demonstration of the electronographic technique in space astronomy and of the lunar surface as a potential astronomical observing base [1]. LAMP extends this work with orbital far-ultraviolet mapping of the Moon [3][4].",
+      "physical_specifications": {
+        "note": "There is no single universal specification for a spectrograph payload. Instruments differ in wavelength band, optics, detector and platform (surface or orbit). The values below apply only to the named instrument and source. Where a value was not verified in the sources read for this article, it is stated as not publicly specified.",
+        "examples": [
+          {
+            "name": "Apollo 16 Far Ultraviolet Camera/Spectrograph",
+            "type": "Flown lunar surface instrument",
+            "status": "Flown; operated on the lunar surface during Apollo 16, 21 to 23 April 1972 [1].",
+            "optics": "F/1, 3-inch Schmidt camera on an altitude-azimuth mount [2].",
+            "detection": "Electronographic amplification recorded on nuclear emulsion film [2].",
+            "operating_modes": ["spectroscopic", "direct-view"],
+            "mass_kg": null,
+            "power_w": null,
+            "field_of_view": null,
+            "spectral_band": "Described only as ultraviolet; band not further specified in the source read [2].",
+            "museum_record_dimensions_cm_backup_model": [49.5, 78.7, 53.3],
+            "museum_record_notes": "The Smithsonian object (serial number 4) is a reconstructed back-up engineering model. The film transport assembly on display is the actual flight unit [2]. The dimensions apply to the back-up model, not the flown unit.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19730058363",
+              "https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16"
+            ],
+            "images": [
+              {
+                "id": "apollo16_fuv_camera_smithsonian_record",
+                "description": "Museum object record for the Apollo 16 Lunar Surface Ultraviolet Camera (Far Ultraviolet Camera/Spectrograph) held by the Smithsonian National Air and Space Museum.",
+                "image_type": "Museum collection object record (linked source page; no verified direct image asset)",
+                "image_url": null,
+                "source_page_url": "https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16",
+                "publisher": "Smithsonian National Air and Space Museum",
+                "credit": "Smithsonian National Air and Space Museum (inventory A19830142000)",
+                "caption": "Object record for the Apollo 16 Lunar Surface Ultraviolet Camera, a reconstructed back-up engineering model; the film transport assembly on display is the flight unit.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "The Smithsonian object page lists five image delivery URLs, but each carries a size query string (max=900) and none is a clean direct asset URL. Removing the query would leave an endpoint that was not verified, so image_url is null. Usage conditions apply; verify rights before reuse."
+              }
+            ]
+          },
+          {
+            "name": "Lyman Alpha Mapping Project (LAMP)",
+            "type": "Flight instrument on a lunar orbiter",
+            "status": "Flight instrument on NASA's Lunar Reconnaissance Orbiter (LRO) mission [3][6].",
+            "heritage": "Far-ultraviolet imaging spectrograph based on the flight-proven ALICE family of ultraviolet spectrographs [4][5].",
+            "wavelength_range_nm": [120, 180],
+            "lyman_alpha_wavelength_nm": 121.6,
+            "mass_kg": 6.1,
+            "power_w": {
+              "reported_average": 4.0,
+              "reported_in_swri_material": 4.5,
+              "reconciled": false
+            },
+            "dimensions": null,
+            "field_of_view": null,
+            "aperture": null,
+            "spectral_resolution": null,
+            "detector": null,
+            "source_urls": [
+              "https://link.springer.com/doi/10.1007/s11214-009-9578-6",
+              "https://boulder.swri.edu/lamp/science.html",
+              "https://www.boulder.swri.edu/lamp/LAMPfactsheet.pdf",
+              "https://spaceflightnow.com/atlas/av020/090610lro.html"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo camera record gives overall dimensions of 49.5 × 78.7 × 53.3 cm, but these are for a reconstructed back-up engineering model rather than the flown unit [2]. LAMP's physical dimensions were not verified in this run.",
+        "mass_and_weight": "The Apollo instrument mass was not stated in the sources read. LAMP's mass of 6.1 kg is reported in SwRI-related material [5] and was not confirmed against the instrument paper [3]. A secondary web summary gave other figures for the Apollo camera; these could not be verified against a primary source and are not used.",
+        "power_requirements": "Power for the Apollo camera is not stated in [2]. LAMP's power is reported as an average of 4.0 W [6] and as 4.5 W in SwRI-related material [5]. The two values have not been reconciled."
+      },
+      "environmental_and_operational_requirements": "The sources read do not give environmental qualification limits for either instrument. In general terms, a surface instrument must tolerate the Moon's day-night temperature cycle and dust, and must be pointed accurately by its operators. An orbital instrument depends on spacecraft pointing, thermal control and power. These are general engineering considerations, not values taken from a cited specification.",
+      "limitations": "A spectrograph measures only the wavelength band that its optics and detector can cover. Both examples here operate in the ultraviolet (the Apollo record describes its sensitivity as ultraviolet [2]; the LAMP band is given as about 120 to 180 nm [4][5]), so their spectra do not replace visible or infrared spectroscopy. The Apollo results were recorded on film, and the sources read contain no quantitative sensitivity or exposure results for the lunar observations [1]. The LAMP figures used here come from secondary summaries rather than the instrument paper and require verification.",
+      "transportation_and_deployment": {
+        "overview": "Surface and orbital examples follow different delivery paths. The Apollo 16 camera was a crewed surface instrument. LAMP is an orbital instrument on a lunar orbiter. Neither transportation chain has been verified to the level needed for lander compatibility in this article.",
+        "transportation_process": [
+          "Apollo 16 camera: carried to the Moon as part of the Apollo 16 mission and operated by astronaut John Young on the lunar surface [2].",
+          "Apollo 16 camera: Earth integration, launch and lunar transfer followed the Apollo mission architecture; the specific lunar module interface was not verified in this run.",
+          "LAMP: flew as an instrument on the Lunar Reconnaissance Orbiter [3][6]; spacecraft integration, launch, cruise, orbit insertion, commissioning and pointing interfaces were not verified in this run."
+        ],
+        "deployment_methods": "The Apollo 16 camera was operated by an astronaut on the lunar surface [2]; the mounting and deployment steps were not verified in this run. LAMP was not deployed on the surface; no surface transport is implied.",
+        "historical_examples": "The Apollo 16 camera is a historical example of a crewed surface astronomical instrument [1][2]. LAMP is a modern example of an orbital ultraviolet spectrograph on the Lunar Reconnaissance Orbiter [3][4][6].",
+        "compatibility_assessment": "No lander or spacecraft compatibility is asserted for this payload class. A future spectrograph's compatibility would need to be assessed using its mass, dimensions, mounting and pointing requirements, power, thermal interfaces and data architecture against verified vehicle specifications.",
+        "images": []
+      },
+      "historical_significance": "The Smithsonian describes the Apollo 16 camera as the first astronomical telescope to observe from another planetary body [2], and its operations were reported in a 1973 instrument paper [1]. LAMP continues the use of ultraviolet spectroscopy from the Moon by mapping the lunar surface from orbit [3][4].",
+      "limitations_and_uncertainties": "- The LAMP instrument paper [3] was not read in full. Its publication year is listed as 2010 in the Springer record and as 2009 in another index, so the year should be checked before citation.\n- The LAMP fact sheet [5] returned an HTTP 404 error when fetched. The mass and power values attributed to it were taken from search-result summaries and must be checked against the live source.\n- The SwRI LAMP science page [4] could not be read in full in this run. The spectral range and imaging-spectrograph description are taken from search summaries.\n- No verified direct image asset was found for either instrument. The only image reference is a linked source page for the Apollo 16 record.\n- LAMP's aperture size and detector technology were reported in secondary summaries and are not included in this article.\n- The Apollo instrument's mass, field of view and sensitivity values remain unverified and are not presented as facts.",
+      "images": [
+        {
+          "id": "apollo16_fuv_camera_smithsonian_record",
+          "description": "Museum object record for the Apollo 16 Lunar Surface Ultraviolet Camera (Far Ultraviolet Camera/Spectrograph) held by the Smithsonian National Air and Space Museum.",
+          "image_type": "Museum collection object record (linked source page; no verified direct image asset)",
+          "image_url": null,
+          "source_page_url": "https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Smithsonian National Air and Space Museum (inventory A19830142000)",
+          "caption": "Object record for the Apollo 16 Lunar Surface Ultraviolet Camera, a reconstructed back-up engineering model; the film transport assembly on display is the flight unit.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "The Smithsonian object page lists five image delivery URLs, but each carries a size query string (max=900) and none is a clean direct asset URL. Removing the query would leave an endpoint that was not verified, so image_url is null. Usage conditions apply; verify rights before reuse."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "apollo16_fuv_camera_smithsonian_record",
+          "description": "Museum object record for the Apollo 16 Lunar Surface Ultraviolet Camera (Far Ultraviolet Camera/Spectrograph) held by the Smithsonian National Air and Space Museum.",
+          "image_type": "Museum collection object record (linked source page; no verified direct image asset)",
+          "image_url": null,
+          "source_page_url": "https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Smithsonian National Air and Space Museum (inventory A19830142000)",
+          "caption": "Object record for the Apollo 16 Lunar Surface Ultraviolet Camera, a reconstructed back-up engineering model; the film transport assembly on display is the flight unit.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "The Smithsonian object page lists five image delivery URLs, but each carries a size query string (max=900) and none is a clean direct asset URL. Removing the query would leave an endpoint that was not verified, so image_url is null. Usage conditions apply; verify rights before reuse."
+        }
+      ],
+      "references": [
+        {
+          "title": "Apollo 16 far-ultraviolet camera/spectrograph - Instrument and operations",
+          "publisher": "Applied Optics (author G. R. Carruthers); NASA Technical Reports Server",
+          "date": "1973-10-01",
+          "url": "https://ntrs.nasa.gov/citations/19730058363"
+        },
+        {
+          "title": "Camera, Lunar Surface Ultraviolet, Apollo 16 (NASM A19830142000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "url": "https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16"
+        },
+        {
+          "title": "LAMP: The Lyman Alpha Mapping Project on NASA's Lunar Reconnaissance Orbiter Mission",
+          "publisher": "Space Science Reviews (Springer); G. R. Gladstone et al.",
+          "date": "2010 (vol. 150, pp. 161-181; another index lists 2009)",
+          "url": "https://link.springer.com/doi/10.1007/s11214-009-9578-6"
+        },
+        {
+          "title": "LAMP science",
+          "publisher": "Southwest Research Institute, Boulder",
+          "url": "https://boulder.swri.edu/lamp/science.html"
+        },
+        {
+          "title": "LAMP fact sheet",
+          "publisher": "Southwest Research Institute",
+          "url": "https://www.boulder.swri.edu/lamp/LAMPfactsheet.pdf"
+        },
+        {
+          "title": "Lunar Reconnaissance Orbiter mission coverage",
+          "publisher": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/atlas/av020/090610lro.html"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo 16 Far Ultraviolet Camera/Spectrograph example": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. image_url is null where no clean direct asset URL was verified; the linked source page is retained instead."
+  },
+  "data_quality_notes": [
+    "Apollo 16 camera: mass, field of view, detector sensitivity band and exposure results were not publicly specified in the sources read. A secondary web summary gave figures for these; they were not verified and are not used.",
+    "Apollo 16 camera: the Smithsonian overall dimensions (49.5 x 78.7 x 53.3 cm) apply to a reconstructed back-up engineering model, not the flown unit.",
+    "LAMP: mass (6.1 kg) and power (4.0 W average and 4.5 W) come from secondary summaries; the SwRI fact sheet returned HTTP 404 on fetch and the Springer paper redirected to a login page, so the instrument paper was not read.",
+    "LAMP: the publication year of Gladstone et al. is 2010 in the Springer record and 2009 in another index; check before citation.",
+    "LAMP: dimensions, field of view, aperture, spectral resolution and detector technology were not verified and are null.",
+    "No verified direct image asset URL was found for either instrument. The Smithsonian image delivery URLs carry size query strings and were not used as image_url.",
+    "Only two of seven page fetches returned usable content in this run; several claims rest on search-result summaries and are flagged in the article."
+  ]
+}

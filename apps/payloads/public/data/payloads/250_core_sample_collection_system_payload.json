@@ -1,0 +1,215 @@
+{
+  "catalogue_id": 250,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 13,
+    "name": "Sample collection, preservation and return"
+  },
+  "payload": {
+    "number": 250,
+    "name": "Core sample collection system",
+    "article": {
+      "overview": "A core sample collection system is a payload subsystem that extracts a cylindrical column of lunar regolith, or of regolith and rock, from below the surface, keeps the column in its original order, and transfers it into a container for analysis on the Moon or return to Earth. Because a core preserves the vertical sequence of material, it can record layering that a surface scoop cannot. Flown examples include the Apollo 15 to 17 drive tubes and deep-core drill [1][2], the Soviet Luna 24 drill [3] and the Chinese Chang'e-5 robotic drill [5]. The name describes a class of mechanisms rather than one standard design, and the examples below differ widely in depth, core size and sealing approach.",
+      "description": "A core sample collection system has four functional parts. The first is a driving element that forces a hollow tube, or a hollow drill stem with a bit, into the ground. The second is a core retention element that holds the column of material inside the tube after it has been cut. The third is a removal and transfer step that moves the core from the hole into a container. The fourth is a capping or sealing step that limits loss of volatile material and contamination before analysis or return.\n\nSimple designs push a thin-walled tube into soft regolith. The Apollo 15 to 17 drive tubes were of this type and were capped on the Moon [2]. Other designs use a drill with a hollow stem so that cuttings are carried away while the core enters a tube or flexible liner. In a laboratory auger-coring study, soil entering the bit was collected in a flexible tube inside the hollow stem, which moved relative to the stem at penetration speed [7]. The Luna 24 drill stored its core in a flexible tube that was coiled and sealed within a storage container [3].",
+      "scientific_purpose_and_applications": "The main purpose of a core is to preserve stratigraphy: the vertical order of layers that record how material was deposited, mixed and exposed to space weathering. A core also keeps material in a known depth sequence, so that laboratory measurements can be linked to a specific depth. For volatile-bearing material, such as water ice or solar-wind implanted gases, a cold, sealed core can reduce losses between acquisition and analysis, although the degree of preservation depends strongly on the design [4].\n\nApplications include subsurface sampling for lunar science and in situ analysis. The PROSPECT package, for example, is designed to acquire samples from depths up to about 1 m and deliver them to an analytical package that examines water ice and other volatiles [4]. Cores also provide ground-truth material for interpreting remote observations of the regolith.",
+      "operating_principle": "Core acquisition depends on the drive method and the retention method. The examples in this article illustrate three approaches.\n\n**Driven tubes.** The Apollo 15 to 17 core tubes were thin-walled stainless steel tubes with an inner diameter of about 4.1 cm and a length of about 34 cm [2]. They were driven into the regolith and capped on the Moon.\n\n**Rotary-percussive drilling.** The Luna 24 LB-09 drill drilled in rotating mode to 120 cm and then changed to percussion-rotating mode, adjusting its power to soil density. The source states that this preserved the layering of the regolith [3]. The Apollo Lunar Surface Drill was a cordless, battery-operated drill with modular hollow stems [1]. Its drive mode, percussive or rotary, is not stated in the record read [1].\n\n**Auger and internal liner coring.** In the PROSPECT ProSEED design, a push tube and an internal auger acquire two sample types. The push tube retracts as the drill moves down and discharges its sample into a sample oven, which is then sealed to the analytical package [4]. In a laboratory testbed, the authors report that the coring rate is linear with revolutions per penetration over roughly 2.2 to 4.3 revolutions per penetration, equivalent to about 28 to 53 mm/min at 120 r/min. The tests used a basaltic simulant, not real regolith [7].",
+      "scientific_importance": "The Apollo missions showed that lunar regolith could be sampled in depth by astronaut-operated equipment. The Apollo 15 to 17 drive tubes and the Apollo Lunar Surface Drill were used to extract soil columns and to create holes for two heat-flow probes [1][2]. The Apollo deep core is widely cited because it reached a much greater depth than the drive tubes. Search-result summaries put the recovered deep core at roughly 290 to 294 cm, but this figure was not confirmed against a full-text primary source in this run [6].\n\nLuna 24 returned a core that preserved layering, which is scientifically useful even though the sampled column was shorter than the planned depth [3]. Chang'e-5 showed that a robotic drill could sample the regolith to about 1 m. A search-result abstract reports 259.72 g collected from a drill penetration of 1 m [5]. A 2022 analysis seen only in search results attributes one reported termination to a regolith particle obstructing the sampling entry; no retained source supports that finding.\n\nPROSPECT addresses a different scientific question: whether cold, volatile-bearing samples can be acquired and analysed without substantial loss. The paper identifies volatile loss during handling as non-trivial and as a modelling requirement [4].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a core sample collection system. The examples below are different designs with different flight statuses, and their values must not be compared as though they described one instrument. Where a value was not found in the sources read for this article, it is recorded as not publicly specified.",
+        "examples": [
+          {
+            "name": "Apollo 15 to 17 drive tubes (flown)",
+            "type": "Historical flown core tube",
+            "flight_status": "flown (Apollo 15, 16, 17)",
+            "specifications": {
+              "wall_material": "thin-walled stainless steel",
+              "inner_diameter_cm": 4.1,
+              "length_cm": 34,
+              "mass_kg": null,
+              "power": "not publicly specified in sources read"
+            },
+            "reference_numbers": [
+              2
+            ],
+            "notes": "Tubes were variously capped on the Moon; some returned in ALSRC or CVSC containers."
+          },
+          {
+            "name": "Apollo Lunar Surface Drill (flown on Apollo 15, 16 and 17; the museum object is a training unit)",
+            "type": "Historical flown drill (museum object is a training unit)",
+            "flight_status": "flown on Apollo 15, 16, 17; the Smithsonian object record describes a training unit",
+            "specifications": {
+              "overall_object_dimensions_cm": [
+                58,
+                24,
+                12
+              ],
+              "mass_kg": 13.4,
+              "drive": "cordless battery-operated motor; percussive or rotary not stated",
+              "stem_length_cm": 40,
+              "stated_max_depth_m": 3.05,
+              "power": "battery capacity not stated"
+            },
+            "reference_numbers": [
+              1,
+              6
+            ],
+            "notes": "Search-result NASA summary gives 137 cm and 71 cm stems, conflicting with 40 cm; unresolved."
+          },
+          {
+            "name": "Luna 24 LB-09 rotary-percussion drill (flown 1976)",
+            "type": "Historical flown robotic drill",
+            "flight_status": "flown 1976",
+            "specifications": {
+              "drill_mode": "rotary to 120 cm, then percussion-rotating",
+              "planned_drilling_range_mm": 2575,
+              "achieved_depth": "225 cm in one statement; two metres in another (unreconciled)",
+              "core_tube": {
+                "length_cm": 260,
+                "diameter_mm": 12
+              },
+              "soil_column_cm": 160,
+              "returned_mass_g": 170.1,
+              "power": "adjusted to soil density; no value found"
+            },
+            "reference_numbers": [
+              3
+            ],
+            "notes": "Core stored coiled on an 80 mm drum, sealed in the metal storage container in the return capsule."
+          },
+          {
+            "name": "Chang'e-5 robotic drill (flown)",
+            "type": "Flown robotic drill",
+            "flight_status": "flown",
+            "specifications": {
+              "class": "2-m-class (search-result abstract)",
+              "penetration_m": 1,
+              "returned_mass_g": 259.72,
+              "mass_kg": null,
+              "power": "not publicly specified in sources read"
+            },
+            "reference_numbers": [
+              5
+            ],
+            "notes": "Figures from search-result abstract; IJRR full text not accessed (HTTP 403). Obstruction analysis from a 2022 search-result summary with no retained source."
+          },
+          {
+            "name": "PROSPECT ProSEED drill (proposed flight payload; flight status unverified)",
+            "type": "Proposed ESA payload drill with ProSPA analytical package",
+            "flight_status": "not flown in sources read; hardware manufacturing and integration per 2024 paper; current status unverified",
+            "specifications": {
+              "sampling_depth_m": 1.0,
+              "push_tube_sample_mm3": 45,
+              "auger_sample_mm3": 5000,
+              "sample_interface_temperature": "ideally about -50 C, not exceeding 0 C during surface operations",
+              "carousel_ovens": 25,
+              "ice_detection_limit": "below 1 wt% at about 125 K (projection, not measured flight result)"
+            },
+            "reference_numbers": [
+              4
+            ],
+            "notes": "Planned flight opportunity CP-22 (CLPS), landing 2026, as stated in the 2024 paper."
+          },
+          {
+            "name": "Laboratory auger-coring testbed (laboratory prototype; not a flight sampler)",
+            "type": "Laboratory prototype (not a flight sampler)",
+            "flight_status": "not flown",
+            "specifications": {
+              "outer_diameter_mm_derived": 31,
+              "bit_stem_radius_mm": 15.5,
+              "simulant": "basaltic, 0.1 to 1 mm grains, 1.74 g/cm3",
+              "drill_depth_tested_m": 1
+            },
+            "reference_numbers": [
+              7
+            ],
+            "notes": "Coring rate linear over 2.2 to 4.3 revolutions per penetration (about 28 to 53 mm/min at 120 r/min)."
+          }
+        ],
+        "dimensions_and_proportions": "**Dimensions and proportions.** Core diameters across the examples range from about 12 mm for the Luna 24 flexible core tube [3] to an inner diameter of about 4.1 cm for the Apollo 15 to 17 drive tubes [2]. The Apollo Lunar Surface Drill museum object has an overall envelope of 58 x 24 x 12 cm, with stems of about 40 cm [1]. The Chang'e-5 drill is described as a 2-m-class design in a search-result abstract [5]. No overall dimensions were found for the PROSPECT ProSEED drill in the paper read [4].",
+        "mass_and_weight": "**Mass and weight.** The Smithsonian record gives a mass of 13.4 kg (29.5 lb) for the Apollo Lunar Surface Drill object [1], which the same record describes as a training unit, so this value is not confirmed for flight hardware. The returned Luna 24 core had a mass of 170.1 g [3]. The Chang'e-5 search-result abstract reports 259.72 g of collected samples [5]. Masses for the Apollo drive tubes, the Chang'e-5 drill and the PROSPECT ProSEED drill were not publicly specified in the sources read.",
+        "power_requirements": "**Power requirements.** The Apollo Lunar Surface Drill used a cordless, battery-operated motor [1]. The battery capacity is not stated in the record read. The Luna 24 drill adjusted its power to soil density, but no power value was found in the source read [3]. Power values for the Chang'e-5 drill and the PROSPECT ProSEED drill were not publicly specified in the sources read. The PROSPECT paper describes thermal targets for the sample interface, but a separate electrical power figure was not found in the paper summary read [4]."
+      },
+      "environmental_and_operational_requirements": "A core system must operate in vacuum, through large temperature swings, and in a dust-rich environment. Dust is a design concern: a 2022 analysis seen only in search results reports that regolith particles obstructed the Chang'e-5 sampling entry, so clearances and seals must be designed for dust [5].\n\nVolatile-bearing samples place additional requirements on temperature and sealing. The PROSPECT paper recommends a sample interface temperature of about -50 °C and not above 0 °C during surface operations, and notes that volatile loss during handling must be modelled [4]. Apollo tubes were capped on the Moon and returned in containers [2]. The Luna 24 core was sealed inside a metal storage container within the return capsule [3].\n\nOperations also depend on the mission profile. The PROSPECT paper uses a lunar polar baseline with no night survival and about 10 Earth days of surface operations, with operator monitoring during critical phases [4].",
+      "limitations": "- Depth and core length are limited by the mechanism. The Luna 24 drill penetrated a stated 225 cm but returned a 160 cm column [3].\n- Depth records conflict across sources. The Luna 24 summary gives both 225 cm and two metres, and Apollo deep-drill figures range from about 3 m drilled to about 290 to 294 cm recovered [1][3][6].\n- Dust and clearances can obstruct the sampling entry, as reported for Chang'e-5 in a search-result analysis [5].\n- Sample volume may be small. The PROSPECT push-tube sample is 45 mm3 [4].\n- Volatile loss during acquisition and handling is significant and must be modelled [4].\n- Laboratory coring results from a basaltic simulant do not transfer directly to real regolith [7].\n- Sealing, cooling, mass, power and thermal allocations for flight configurations are not quantified here because they were not publicly specified in the sources read.",
+      "transportation_and_deployment": {
+        "overview": "A core sample collection system is normally part of a surface payload or a surface sampling system. Some designs are operated by astronauts and others are robotic. The Apollo drive tubes and Apollo Lunar Surface Drill were used by astronauts [1][2]. The Luna 24 and Chang'e-5 drills were robotic [3][5]. PROSPECT is a lander payload intended for robotic operation [4].",
+        "transportation_process": [
+          "**Earth integration.** The drill, tube or capsule is integrated into a lander payload compartment or surface package. Interface requirements (mass, mounting, thermal and data connections) must be verified against the specific lander before any compatibility claim is made.",
+          "**Launch, transfer and landing.** Luna 24 was launched on 9 August 1976 and landed in Mare Crisium on 18 August 1976 [3]. The sources read give launch and landing details for Luna 24 only.",
+          "**Deployment.** The Apollo drive tubes and drill were deployed by astronauts [1][2]. Luna 24 and Chang'e-5 drilled robotically [3][5]. The PROSPECT ProSEED drill is positioned over a sample delivery point by an alignment collet and works with a sample carousel of up to 25 ovens [4].",
+          "**Power, data and thermal interfaces.** The PROSPECT package is poleward-facing to limit solar heating during drilling and transfer, and its sample interface relies on radiative cooling [4]. Power and data interfaces for the other examples were not publicly specified in the sources read.",
+          "**Sample return chain.** Apollo tubes were returned in ALSRC or CVSC containers [2], and the Luna 24 core was sealed within a storage container in its return capsule [3]. Containment, sealing and handling are therefore part of the return chain for each example."
+        ],
+        "deployment_methods": "Deployment ranged from astronaut-handled tubes and a battery-powered drill to robotic drilling with sealed sample transfer [1][2][3][4][5].",
+        "historical_examples": "**Historical examples.** The Apollo missions provide examples of astronaut deployment and surface return containment [1][2]. Luna 24 provides an example of a robotic drill with sealed return of a core [3]. Chang'e-5 provides a robotic example, with a search-result report of a sampling-entry obstruction [5]. PROSPECT is a proposed modern example, and its flight status was not verified in this run [4].",
+        "compatibility_assessment": "**Compatibility assessment.** No lander is assigned to a core system in this article. The PROSPECT paper names NASA's CLPS mission CP-22 as its flight opportunity [4], but the lander's mass, power, thermal and interface allocations were not verified against a CLPS specification in this run. Compatibility for any specific lander must be assessed from those verified requirements.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 15 to 17 drive tubes and deep-core equipment established depth sampling on the Moon, and their cores have been the subject of later laboratory studies [1][2][6]. Luna 24 demonstrated that a robotic drill and a sealed storage container could return a core from the lunar surface [3]. Chang'e-5 extended robotic core-type sampling to a 1 m penetration in a later mission [5]. PROSPECT represents a modern design focus on cold, volatile-preserving sample acquisition for in situ analysis [4].",
+      "limitations_and_uncertainties": "The main uncertainties are as follows.\n\n- Apollo deep-core and drill-stem dimensions conflict between sources. The Apollo 17 recovered-core length (about 290 to 294 cm) rests on search-result summaries rather than full-text reading [1][6].\n- The Luna 24 depth figures are internally inconsistent [3].\n- The Chang'e-5 drill figures come from a search-result abstract. The primary IJRR full text returned HTTP 403 during this run [5]. The obstruction analysis is from a search-result summary and has no retained source.\n- The PROSPECT paper is a 2024 design description. Its schedule statements (delivery in 2025 and landing in 2026) may have changed, and the current flight status was not verified [4].\n- The laboratory auger-coring results come from a simulant testbed, not a flight system [7]. The title of that paper was not recorded in this run.\n- No direct image asset was verified in this run, so the article contains no images and no image URLs were added.\n\nNo lunar landing site or location recommendation is made in this article.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Apollo Lunar Surface Drill (ALSD) object record",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "url": "https://airandspace.si.edu/collection-objects/drill-apollo-lunar-surface-alsd/nasm_A19750038000"
+        },
+        {
+          "title": "Drive Tubes (Apollo 15, 16 and 17)",
+          "publisher": "Lunar Sample Compendium, hosted by Apollo in Real Time",
+          "url": "https://lsc.apolloinrealtime.org/general/drive_tubes/drive_tubes/"
+        },
+        {
+          "title": "Luna-24 (E8-5M No. 413) mission summary",
+          "publisher": "Russian Space Web",
+          "url": "https://mail.russianspaceweb.com/luna24.html"
+        },
+        {
+          "title": "PROSPECT: A comprehensive sample acquisition and analysis package for lunar science and exploration (Trautner et al., 2024)",
+          "publisher": "Frontiers in Space Technologies",
+          "url": "https://www.frontiersin.org/articles/10.3389/frspt.2024.1331828"
+        },
+        {
+          "title": "Chang'e-5 robotic lunar drill system design (full text not accessed; figures from search-result abstract)",
+          "publisher": "International Journal of Robotics Research (SAGE)",
+          "url": "https://doi.org/10.1177/02783649231187918"
+        },
+        {
+          "title": "Composition of the Apollo 17 drive tube 76001 (Korotev, 2022; deep-core length figure from search-result summary only)",
+          "publisher": "Meteoritics and Planetary Science",
+          "url": "https://epsc.wustl.edu/~rlk/papers/Korotev(2022)M&PS_Composition_of_the_Apollo_17_drive_tube_76001.pdf"
+        },
+        {
+          "title": "Drilling and coring study of an auger-based lunar regolith drill (title not recorded in this run)",
+          "publisher": "Applied Mathematics and Mechanics (English Edition), 2019, 40(1), 153-166",
+          "url": "https://www.amm.shu.edu.cn/fileup/0253-4827/HTML/2019-1-153.htm"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image URLs were added in this run because no direct image asset could be verified from an official page."
+  },
+  "data_quality_notes": [
+    "No direct image asset URL was verified in this run; image arrays are empty and no image URLs were invented.",
+    "Apollo Lunar Surface Drill stem length: the Smithsonian record gives about 40 cm stems [1]; a NASA drilling summary seen only in search results gives 137 cm and 71 cm. Unresolved.",
+    "Apollo 17 deep-core recovered length (about 290 to 294 cm) comes from search-result summaries, not full-text reading. Drilled length is given variously as about 3 m and 3.2 m.",
+    "Luna 24: the same source gives an achieved depth of 225 cm and also 'two metres'; the returned soil column is 160 cm.",
+    "Chang'e-5 figures (2-m-class drill, 1 m penetration, 259.72 g, sampling-entry obstruction) come from search-result abstracts or summaries; the IJRR full text returned HTTP 403.",
+    "The Apollo Lunar Surface Drill museum object is described as a training unit; flight dimensions and mass were not verified.",
+    "PROSPECT: flight status is from a 2024 paper; the 2025 delivery and 2026 CP-22 landing statements were not verified against current sources.",
+    "The title of reference 7 was not recorded in this run."
+  ]
+}

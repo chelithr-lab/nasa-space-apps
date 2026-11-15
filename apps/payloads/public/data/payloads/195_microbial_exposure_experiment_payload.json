@@ -1,0 +1,314 @@
+{
+  "catalogue_id": 195,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 10,
+    "name": "Biological and life-science experiments"
+  },
+  "payload": {
+    "number": 195,
+    "name": "Microbial exposure experiment",
+    "article": {
+      "overview": "A microbial exposure experiment places dried or otherwise dormant microorganisms, spores or other small biological samples outside a spacecraft or on a planetary surface for a defined period, then measures how many survive and how their cells and DNA respond. On the Moon, such an experiment would test how microbes cope with the combined effects of vacuum, ultraviolet light, particle radiation and extreme temperature changes. Earlier exposure experiments have flown on the International Space Station (ISS), whereas the lunar-surface payloads described here are planned rather than flown. The catalogue name describes a class of experiment, not one standard instrument.",
+      "description": "In its simplest form, a microbial exposure experiment consists of a sample holder, a set of organisms or biological materials, a means of exposing part of the sample to the environment while shielding or shading other parts, and a plan for returning or measuring the samples afterwards. Samples are commonly arranged as thin films, dried pellets or mineral mixtures so that exposed material can be compared with dark controls and with unexposed ground reference samples [2][4]. Some designs return the biological samples to Earth for laboratory analysis. Others, such as the LEIA concept, include sensors that record growth or radiation on the spacecraft itself, so biological interpretation depends partly on the instrument's own measurements [1]. Because the sample is the detector, the scientific value of the experiment depends heavily on sample preparation, storage before flight, and post-flight analysis.",
+      "scientific_purpose_and_applications": "The sources describe four main purposes: to measure how long dormant organisms survive space conditions; to separate the effects of individual stressors such as ultraviolet light, vacuum, temperature and radiation; to inform planetary protection, the rules meant to limit biological contamination of other worlds; and to test whether life could survive transfer between planets [4][5]. The LEIA concept is aimed at radiation biology. It uses yeast strains with different DNA-repair capabilities to study how the lunar environment affects living cells, with the goal of helping NASA develop ways to protect astronauts from space radiation [1]. Applications named in the sources include astrobiology, planetary protection and future space agriculture or life-support work [1][5].",
+      "operating_principle": "Exposure experiments are largely passive. A tray or plate is opened to the environment, typically through a window, valve or port, and the window material controls which ultraviolet wavelengths reach the sample. MgF2 windows transmit down to roughly 110 to 120 nm, whereas quartz windows cut off shorter wavelengths and transmit only above roughly 170 to 200 nm [2][4]. Shaded samples serve as dark controls, so differences between exposed and shaded samples isolate the effect of solar radiation [4]. After return, survival is measured by culturing the organisms, and DNA damage is measured with molecular methods such as quantitative PCR and pulsed-field gel electrophoresis [4]. Active lunar designs add sensing: the LEIA BioSensor is an autonomous fluidic system holding 16 microfluidic cards of dry yeast that measures growth and metabolic activity, supported by charged-particle and neutron detectors that record the radiation environment [1].",
+      "scientific_importance": "Biology beyond low Earth orbit has been tested only in limited ways. ISS experiments have shown that some dried microbes and spores can survive for extended periods outside a spacecraft, but the ISS lies inside Earth's magnetosphere and so does not reproduce the full deep-space or lunar radiation environment [4][5]. A lunar-surface exposure would extend this work to a different radiation environment and could support the design of radiation-protection and life-support systems. Well-characterised results could also help calibrate laboratory simulations and inform planetary protection decisions.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a microbial exposure experiment. The examples below describe specific planned or flown experiments, and numerical values are tied to each named design. Where a source does not publish a value, it is recorded as not publicly specified or null. Mass and power are given only where the cited source states them.",
+        "examples": [
+          {
+            "name": "LEIA (Lunar Explorer Instrument for space biology Applications)",
+            "type": "Planned lunar-surface biology payload (not verified as flown)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "biological_payload": "Yeast strains: two strains flown on the BioSentinel spacecraft, a strain similar to brewing and baking yeast, a strain with impaired DNA repair, radiation-resistance-modified strains, and strains from NASA's BioNutrients project.",
+            "instruments": [
+              "BioSensor: autonomous fluidic system with 16 microfluidic cards of dry yeast that measures growth and metabolic activity",
+              "ARES LET charged-particle spectrometer (NASA Johnson Space Center)",
+              "Mini-FND Miniature Fast Neutron Detector (Southwest Research Institute)"
+            ],
+            "duration": "Expected to finish within about 10 Earth days or less, per source page.",
+            "delivery": "NASA Commercial Lunar Payload Services (CLPS) lander, not named on the source page; South Pole region; 2026 target. No launch date published.",
+            "qualification": "Mass, dimensions and power are not stated on the NASA source page.",
+            "source_urls": [
+              "https://www.nasa.gov/technology/science-instruments/what-is-the-lunar-explorer-instrument-for-space-biology-applications/"
+            ],
+            "images": [
+              {
+                "id": "leia_microfluidic_card_dry_yeast",
+                "description": "LEIA microfluidic card holding dry yeast cells between temperature-control electronics and optics at NASA Ames Research Center.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": null,
+                "source_page_url": "https://www.nasa.gov/technology/science-instruments/what-is-the-lunar-explorer-instrument-for-space-biology-applications/",
+                "publisher": "NASA",
+                "credit": "NASA/Dominic Hart",
+                "caption": "A LEIA microfluidic card holding dry yeast cells, shown between electronics that control temperature and optics, at NASA Ames Research Center.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL not verified in this run, so image_url is null and the NASA source page is linked instead. Caption paraphrased from the page's image description. Rights and reuse terms not independently checked."
+              },
+              {
+                "id": "leia_prototype_assembly",
+                "description": "Mechanical engineer assembling electrical components inside a LEIA prototype enclosure at NASA Ames Research Center.",
+                "image_type": "Engineering prototype photograph",
+                "image_url": null,
+                "source_page_url": "https://www.nasa.gov/technology/science-instruments/what-is-the-lunar-explorer-instrument-for-space-biology-applications/",
+                "publisher": "NASA",
+                "credit": "NASA/Dominic Hart",
+                "caption": "Mathew McKay, a mechanical engineer, assembling electrical components inside a LEIA prototype enclosure at Ames.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL not verified in this run, so image_url is null and the NASA source page is linked instead. Rights and reuse terms not independently checked."
+              }
+            ]
+          },
+          {
+            "name": "ALEPH-1 (micro-habitat with lichen samples)",
+            "type": "Scheduled lunar lander micro-habitat demonstration (not flown)",
+            "mass_kg": 0.5,
+            "mass_note": "Approximately 500 grams ('~ 500 grams') per source page.",
+            "dimensions_cm": null,
+            "heater_power_w": 10,
+            "avionics_power_w": 5,
+            "data_interface": "Ethernet, 100 Mb data limit",
+            "biological_payload": "Two samples of crustose map lichen (Rhizocarpon geographicum) in two circular cells of a sealed Biological Module; 3 mm cavity described as intended for seeds, but no seeds listed in the flight configuration.",
+            "sensors": "Internal air temperature and pressure sensors in the Biological Module.",
+            "primary_objective": "Test whether micro-habitat conditions can be maintained and measured over the mission, including 72 hours on the lunar surface.",
+            "delivery": "Side panel of Intuitive Machines Nova-C lander, IM-3 mission, scheduled for H2 2026. Data path: Control Module to Nova-C, then to Earth via Deep Space Network.",
+            "development": "Lunaria One Pty Ltd, funded through the Australian Space Agency Moon-to-Mars Initiative Demonstrator Award (2022); integration by RMIT M2MIST Centre.",
+            "qualification": "Some images are test or engineering models; flight hardware may differ. Launch date is only 'scheduled for H2 2026'.",
+            "source_urls": [
+              "https://www.rmit.edu.au/partner/hubs/space-industry-hub/m2mist/aleph-1"
+            ],
+            "images": [
+              {
+                "id": "aleph1_test_biological_module",
+                "description": "Test version of the ALEPH-1 biological module scaffold shown on the RMIT ALEPH-1 page.",
+                "image_type": "Engineering test-model photograph",
+                "image_url": null,
+                "source_page_url": "https://www.rmit.edu.au/partner/hubs/space-industry-hub/m2mist/aleph-1",
+                "publisher": "RMIT University",
+                "credit": "Not verified",
+                "caption": "Test version of the ALEPH-1 biological module scaffold, as shown on the RMIT project page; flight hardware may differ.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL and photo credit not verified, so image_url is null and the RMIT source page is linked instead. The source page describes the photo as a test version."
+              }
+            ]
+          },
+          {
+            "name": "Proposed lunar-surface microbial exposure study (EANA 2025 abstract)",
+            "type": "Proposal (conceptual design and preparation status; not flown)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "biological_payload": "Bacteria Deinococcus radiodurans, Bacillus atrophaeus, Escherichia coli and Nostoc sp. HK-01; yeast-like eukaryote Schizosaccharomyces pombe; moss spores of Physcomitrium patens.",
+            "hardware": "Based on the proven TANPOPO apparatus.",
+            "target_environments": "Sunlit and permanently shadowed lunar polar regions; Lunar Orbital Platform-Gateway mentioned as an alternative target.",
+            "stressors": "Ultraviolet light, cosmic radiation, extreme cold and vacuum, alone or combined.",
+            "analyses": "Survival, DNA damage, mutation frequency and spectrum, and transcriptomic, proteomic and metabolomic responses.",
+            "duration": "Described only as short-duration; not stated.",
+            "sample_return": "Post-exposure sample return assumed.",
+            "source_urls": [
+              "https://eana-net.eu/conferences/EANA2025/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Tanpopo exposure facility, Japanese Experimental Module (JEM), ISS",
+            "type": "Flown ISS microbial exposure experiment",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "biological_payload": "Dried cell pellets of Deinococcus radiodurans R1 and D. aerius TR0125, including DNA-repair mutants, in 2.0 mm wells on aluminium plates.",
+            "pellet_thicknesses_um": [1, 100, 500, 1000, 1500],
+            "windows": "MgF2 windows (UV above about 110 nm) for upper plates; one R1 plate behind a quartz window (UV above about 170 nm); lower plates as dark controls.",
+            "launch": "SpaceX CRS-6, 14 April 2015; 12 days in a vacuum airlock before mounting.",
+            "exposure_durations_days": {
+              "year_1": 384,
+              "year_2_cumulative": 769,
+              "year_3_cumulative": 1126
+            },
+            "return": "Year-3 panel returned to Earth in August 2018.",
+            "key_results": "After 3 years, R1 pellets of 500 um or thicker survived at levels similar to ground controls; 100 um pellets showed low survival. D. aerius pellets of 1000 um or thicker matched ground controls. After 1 year, intact rpoB copies were about 100-fold lower in 100 um space samples and about 10-fold lower in 500 and 1000 um samples relative to ground controls.",
+            "estimates": "Authors' model-based interplanetary survival estimate of 2 to 8 years, and 15 to 45 years for pellets over 0.5 mm under ISS UV (both extrapolations, not measurements).",
+            "qualification": "Mass, dimensions and power not extracted in this review.",
+            "source_urls": [
+              "https://doi.org/10.3389/fmicb.2020.02050"
+            ],
+            "images": []
+          },
+          {
+            "name": "EXPOSE-R2 (ESA astrobiology facility, ISS external platform)",
+            "type": "Flown ISS microbial exposure experiment",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "launch": "Progress 56P, 23 July 2014; installed on external URM-D platform 18 August 2014; vacuum valves opened 20 August 2014.",
+            "return": "Returned to the ISS 3 February 2016; trays 3 and 1/2 landed March and June 2016 respectively.",
+            "exposure_phases": "About 62 days shielded by a sun shield, then about 469 days of direct solar exposure from 22 October 2014.",
+            "exposure_duration_reported": "531 days (abstract), 534 days (mission text), 532 days (tray 3 table); inconsistent in source.",
+            "trays": "Trays 1 and 3: space vacuum and extraterrestrial solar UV (above 120 nm, MgF2 windows). Tray 2: simulated Mars atmosphere (about 980 Pa) and Mars-like UV (above 200 nm, quartz windows and filters).",
+            "experiments": "BIOMEX (11 sub-experiments), BOSS (5 sub-experiments), BIODIVERSITY (4 sub-experiments), P.S.S. chemistry experiment, and dosimeters.",
+            "sample_count": 828,
+            "environmental_data": "Temperature range -20.9 °C to 58.0 °C; mean UV fluence (200 to 400 nm) reported in the paper, with modelled values; total ionizing dose up to about 1 Gy from passive dosimeters.",
+            "biological_results": "Not reported in the methods paper; deferred to companion publications.",
+            "anomaly": "Tray 3 valve did not fully close; likely uncontrolled re-pressurisation during return.",
+            "qualification": "Mass, dimensions and power not extracted in this review.",
+            "source_urls": [
+              "https://doi.org/10.3389/fmicb.2017.01533"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No single size applies. The lunar examples are small sealed or tray-based hardware with stated dimensions missing for LEIA and the EANA proposal. ALEPH-1 dimensions are not stated on its source page. The ISS examples are external-platform or facility trays whose overall dimensions were not extracted in this review. Dimensions must be tied to each named design and its source.",
+        "mass_and_weight": "Only ALEPH-1 has a stated approximate payload mass (about 500 grams) in the sources reviewed. Mass for LEIA, the EANA proposal, Tanpopo and EXPOSE-R2 is recorded as null because it was not verified. Mass affects lander capacity and deployment design, so it must be confirmed from primary specifications before any transport comparison.",
+        "power_requirements": "ALEPH-1 states 10 W heater power and 5 W avionics power. Power for LEIA, the EANA proposal, Tanpopo and EXPOSE-R2 is not verified and is recorded as null."
+      },
+      "environmental_and_operational_requirements": "Exposure hardware must survive launch and maintain its samples for months to years. The samples experience vacuum, ultraviolet radiation, particle radiation and temperature cycling. In EXPOSE-R2 the recorded temperature range was -20.9 °C to 58.0 °C, and UV dose had to be modelled because the UV sensors could not be recalibrated after return [2]. Tanpopo found that ISS cabin controls, which could not stay dry, survived less well than ground controls, showing that humidity and handling can affect results as much as the space environment does [4]. A lunar payload would also need to withstand the lunar night and polar temperature extremes. The ALEPH-1 micro-habitat relies on 10 W of heater power and 5 W of avionics power, showing that thermal control is a major power requirement [3]. Sample recovery or telemetry also determines what can be measured [1][5].",
+      "limitations": "A dormant organism that survives exposure has not thereby been shown to grow, reproduce or metabolise in space. Results from one organism or one sample thickness cannot be generalised: Tanpopo found different survival thresholds for different species and pellet thicknesses [4]. Window materials and shading produce non-uniform UV doses, and dosimetry depends on calibration and modelling [2][4]. Lunar flight data are not yet available for the payloads described here, and recovery, humidity control and handling can dominate outcomes.",
+      "transportation_and_deployment": {
+        "overview": "Lunar surface examples (LEIA, ALEPH-1) are planned deliveries by commercial lunar landers, with launch and landing details only partly published. ISS examples (EXPOSE-R2, Tanpopo) show a launch, station installation, exposure, return and analysis chain, but they do not describe lunar deployment.",
+        "transportation_process": [
+          "Integrate the sample hardware with the lander or station-logistics carrier on Earth (surface examples: integration details not published).",
+          "Launch by commercial launch vehicle (LEIA and ALEPH-1: not named or dated beyond 2026 targets; Tanpopo: SpaceX CRS-6; EXPOSE-R2: Progress 56P).",
+          "Lunar transfer and landing for LEIA (unnamed CLPS lander, South Pole region) and ALEPH-1 (Intuitive Machines Nova-C, IM-3).",
+          "Deploy: ALEPH-1 mounted on a Nova-C side panel with data routed through the lander to Earth; LEIA sensors and samples operate on the surface for about 10 Earth days or less.",
+          "For orbital examples, Tanpopo panels spent 12 days in a vacuum airlock before mounting; EXPOSE-R2 was installed on the external URM-D platform."
+        ],
+        "deployment_methods": "Surface payloads are attached to or deployed from landers (ALEPH-1 on a Nova-C side panel; LEIA on an unnamed CLPS lander). Orbital facilities are mounted on ISS external or exposure platforms. No deployment mechanism for lunar surface samples is verified beyond these descriptions.",
+        "historical_examples": "EXPOSE-R2 (ISS external platform, 2014 to 2016) and Tanpopo (JEM Exposure Facility, 2015 to 2018) are flown microbial exposure examples. No lunar microbial exposure experiment is verified as flown in this review.",
+        "compatibility_assessment": "No compatibility claim is made beyond what the sources state. LEIA's lander is not named. ALEPH-1's side-panel mounting on the Nova-C for IM-3 is stated on the RMIT page but is scheduled, not verified as flight-confirmed. Interface, mass, dimensions, landing loads and power would have to be compared with verified lander specifications before any further compatibility assessment.",
+        "images": []
+      },
+      "historical_significance": "Microbial exposure studies on the ISS include ESA's EXPOSE-R2 [2] and Japan's Tanpopo mission [4]. The 3-year Tanpopo pellet dataset is the longest exposure reviewed here [4]. Lunar payloads are more recent: LEIA and ALEPH-1 are planned, and the 2025 conference proposal shows interest in lunar testing beyond Earth's magnetosphere [1][3][5]. LEIA reuses two yeast strains that were flown on the BioSentinel spacecraft; the outcome of that earlier flight was not verified in this review [1]. A 2019 Chang'e-4 lunar-lander biology experiment is reported in press coverage, but its reported results are disputed and no primary source was verified, so it is not discussed further here.",
+      "limitations_and_uncertainties": "The payload name describes a class of experiment rather than one instrument, so values from ISS facilities, scheduled lunar payloads and conference proposals are not interchangeable. Neither lunar payload is verified as flown in this review: LEIA's source page gives no launch date, and ALEPH-1 is scheduled only for the second half of 2026. Mass, dimensions and power are missing for most examples. Interplanetary survival estimates are model-based extrapolations, not measurements. The EXPOSE-R2 methods paper reports environmental data but not biological survival values, which are deferred to companion publications [2]. Press coverage of Tanpopo gives longer survival figures than the peer-reviewed paper and should not be used without checking [4].",
+      "images": [
+        {
+          "id": "leia_microfluidic_card_dry_yeast",
+          "description": "LEIA microfluidic card holding dry yeast cells between temperature-control electronics and optics at NASA Ames Research Center.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/technology/science-instruments/what-is-the-lunar-explorer-instrument-for-space-biology-applications/",
+          "publisher": "NASA",
+          "credit": "NASA/Dominic Hart",
+          "caption": "A LEIA microfluidic card holding dry yeast cells, shown between electronics that control temperature and optics, at NASA Ames Research Center.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL not verified in this run, so image_url is null and the NASA source page is linked instead. Caption paraphrased from the page's image description. Rights and reuse terms not independently checked."
+        },
+        {
+          "id": "leia_prototype_assembly",
+          "description": "Mechanical engineer assembling electrical components inside a LEIA prototype enclosure at NASA Ames Research Center.",
+          "image_type": "Engineering prototype photograph",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/technology/science-instruments/what-is-the-lunar-explorer-instrument-for-space-biology-applications/",
+          "publisher": "NASA",
+          "credit": "NASA/Dominic Hart",
+          "caption": "Mathew McKay, a mechanical engineer, assembling electrical components inside a LEIA prototype enclosure at Ames.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL not verified in this run, so image_url is null and the NASA source page is linked instead. Rights and reuse terms not independently checked."
+        },
+        {
+          "id": "aleph1_test_biological_module",
+          "description": "Test version of the ALEPH-1 biological module scaffold shown on the RMIT ALEPH-1 page.",
+          "image_type": "Engineering test-model photograph",
+          "image_url": null,
+          "source_page_url": "https://www.rmit.edu.au/partner/hubs/space-industry-hub/m2mist/aleph-1",
+          "publisher": "RMIT University",
+          "credit": "Not verified",
+          "caption": "Test version of the ALEPH-1 biological module scaffold, as shown on the RMIT project page; flight hardware may differ.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL and photo credit not verified, so image_url is null and the RMIT source page is linked instead. The source page describes the photo as a test version."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "leia_microfluidic_card_dry_yeast",
+          "description": "LEIA microfluidic card holding dry yeast cells between temperature-control electronics and optics at NASA Ames Research Center.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/technology/science-instruments/what-is-the-lunar-explorer-instrument-for-space-biology-applications/",
+          "publisher": "NASA",
+          "credit": "NASA/Dominic Hart",
+          "caption": "A LEIA microfluidic card holding dry yeast cells, shown between electronics that control temperature and optics, at NASA Ames Research Center.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL not verified in this run, so image_url is null and the NASA source page is linked instead. Caption paraphrased from the page's image description. Rights and reuse terms not independently checked."
+        }
+      ],
+      "references": [
+        {
+          "title": "What is the Lunar Explorer Instrument for Space Biology Applications (LEIA)?",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/technology/science-instruments/what-is-the-lunar-explorer-instrument-for-space-biology-applications/"
+        },
+        {
+          "title": "EXPOSE-R2: The Astrobiological ESA Mission on Board of the International Space Station",
+          "publisher": "Frontiers in Microbiology (Rabbow E, Rettberg P, Parpart A, et al.), 2017, 8:1533",
+          "url": "https://doi.org/10.3389/fmicb.2017.01533"
+        },
+        {
+          "title": "ALEPH-1 Mission and Payload Description Summary",
+          "publisher": "RMIT University, M2MIST Centre",
+          "url": "https://www.rmit.edu.au/partner/hubs/space-industry-hub/m2mist/aleph-1"
+        },
+        {
+          "title": "DNA Damage and Survival Time Course of Deinococcal Cell Pellets During 3 Years of Exposure to Outer Space",
+          "publisher": "Frontiers in Microbiology (Kawaguchi Y, Shibuya M, Kinoshita I, et al.), 2020, 11:2050",
+          "url": "https://doi.org/10.3389/fmicb.2020.02050"
+        },
+        {
+          "title": "Toward Deep-Space Astrobiology: Lunar Exposure Experiments to Test Microbial Survival Beyond Earth's Magnetosphere (EANA2025-139; abstract page query string removed per URL policy)",
+          "publisher": "EANA 2025 conference (Yokobori S, Mita H, Abe T, et al.), 2025",
+          "url": "https://eana-net.eu/conferences/EANA2025/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "LEIA example": "payload.article.physical_specifications.examples[0].images",
+      "ALEPH-1 example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images; the transport section uses text only)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Image URLs are null where no direct asset URL was verified; the source page is linked in the Markdown instead. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "No direct image asset URLs were verified in this run; all three images use image_url null with source-page links.",
+    "Mass, dimensions and power are not published on the LEIA source page; the EANA proposal and the flown ISS examples were not checked for these values in this run.",
+    "ALEPH-1 mass is given as approximately 500 grams ('~ 500 grams' on the source page); heater power 10 W and avionics power 5 W are as stated on the source page.",
+    "LEIA status is planned; its source page is undated for launch and was last updated 13 November 2023. A 2024 conference summary repeats a no-earlier-than-2026 launch. No 2026 confirmation was found.",
+    "ALEPH-1 is scheduled for H2 2026 on IM-3; not verified as flown.",
+    "EXPOSE-R2 exposure duration is inconsistent in the source (531, 532 and 534 days). Environmental figures (temperature range, UV fluence) come from a summarising read of the methods paper and were not re-checked against the full text.",
+    "Tanpopo 2 to 8 year and 15 to 45 year survival figures are the authors' model-based extrapolations. Press reports give varying figures and should not be used without the paper.",
+    "BioSentinel flight outcome and the 2019 Chang'e-4 lunar biology outcome were not verified against primary sources. They are mentioned only as flagged gaps, and no outcome is claimed.",
+    "The EANA 2025 abstract URL carries a query string (abstract_show.php?id=139); per URL policy it is recorded as the clean conference URL, so the abstract cannot be reached from the recorded link without the removed id parameter. Abstract ID EANA2025-139 is given in the reference title.",
+    "Web search quota was not reached during this run."
+  ]
+}

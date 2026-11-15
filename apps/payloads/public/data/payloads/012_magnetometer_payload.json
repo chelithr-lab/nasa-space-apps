@@ -1,0 +1,613 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 1,
+    "name": "Geophysical and lunar interior instruments"
+  },
+  "payload": {
+    "number": 12,
+    "name": "Magnetometer",
+    "article": {
+      "overview": "The Moon has no global magnetic field comparable with Earth's. It does have magnetised rocks in parts of its crust, and it is also moved by magnetic fields that come from outside, mainly from the solar wind. A magnetometer on the Moon can therefore measure three things: the local magnetism of the crust, the steady or slowly changing field at the surface, and the rapid changes that the solar wind causes. Each of these tells scientists something different about the Moon's interior and surface.\n\nTwo flown approaches are described here. In the first, a magnetometer on the surface records the field at one place for many years. The Apollo Lunar Surface Magnetometers (LSMs) of Apollo 12 and Apollo 16 are examples. In the second, a magnetometer in orbit maps the field over a larger area. Explorer 35, Lunar Prospector, Kaguya (SELENE) and ARTEMIS are examples. The Apollo 12 surface instrument measured a steady field of 36 ± 5 gamma at its site [1]. Lunar Prospector mapped crustal fields from orbit between January 1998 and July 1999 [3].",
+      "scope": "Scope reading: this article covers the generic magnetometer class as a lunar instrument (measuring the magnetic field at the lunar surface or in lunar orbit). It describes flown examples: Apollo 12 and Apollo 16 surface magnetometers, the Apollo 16 portable magnetometer, Explorer 35, Lunar Prospector, Kaguya (SELENE) and ARTEMIS. Detailed sensing principles are cross-referenced, not repeated: fluxgate magnetometer (payload 013), vector magnetometer (payload 014) and scalar magnetometer (payload 015). Electromagnetic field sensors are payload 020.",
+      "description": "A magnetometer is an instrument that measures the strength and direction of a magnetic field. On a planetary body, the field has several sources. A permanent field can come from magnetised rocks in the crust. An induced field is created when a conducting interior responds to a changing external field, such as the solar wind. Some fields are very weak, so the instrument must be sensitive at the level of nanotesla or below. On the Moon, the field is measured in nanotesla (nT). One gamma is equal to one nanotesla, and the Apollo papers use gamma [1][2].\n\nLunar magnetometers have been of two broad types. Surface magnetometers are mounted on booms, sometimes on a tripod, and are powered and read out through the lander or central station. Orbital magnetometers are mounted on the spacecraft, usually on a long boom, so that the spacecraft's own magnetic field does not disturb the measurement. Most lunar magnetometers described in the sources read are fluxgate instruments, but the class also includes other sensing principles.",
+      "scientific_purpose_and_applications": "The main purpose of a lunar magnetometer is to measure the magnetic field so that it can be separated into its sources. The Apollo 12 and 16 surface instruments were designed to measure both the magnitude and the time variations of the surface field. The aim was to learn about the Moon's internal electrical properties, including its electrical diffusivity, and to test whether a molten core exists [2].\n\nThe surface instruments also sought to determine the electrical conductivity and temperature of the lunar interior. The Apollo 12 analysis was based on the transient response of the surface field to changes in the solar-wind magnetic field. Simultaneous measurements from the orbiting Explorer 35 spacecraft were used for comparison [1]. The method depends on the time the interior takes to respond, so it probes how the interior conducts and how warm it is.\n\nOrbital magnetometers map the crustal field. Lunar Prospector's stated objectives were to investigate the origin and nature of lunar crustal magnetic fields and to constrain the size of a metallic core [3]. Kaguya's magnetometer was intended to study the present and ancient magnetic and plasma environment of the Moon and to contribute to understanding its deep interior [5]. ARTEMIS carried particle and field instruments, including a fluxgate and a search-coil magnetometer, for use in lunar orbit [7].",
+      "operating_principle": "The surface and orbital magnetometers in this article use a fluxgate sensor, which is described in detail in payload 013. In brief, a magnetic core of high-permeability material is driven into saturation by an alternating current. The magnetic field being measured changes the way the core saturates, and the sensing winding picks up a second-harmonic signal whose size depends on the external field component along the sensor axis [2].\n\nThe Apollo 16 instrument description gives a clear example of this principle. Each sensor has a flattened toroidal permalloy core driven into saturation at 6000 Hz. The second harmonic of the drive frequency is generated in the sense winding with a magnitude proportional to the surface field. Its phase relative to the drive signal gives the field direction along the sensor axis. The output is amplified and synchronously demodulated before it is converted to digital form and transmitted [2].\n\nTwo other operating ideas matter for lunar measurements. Surface magnetometers use calibration flips. The Apollo 16 sensors could be rotated on gimbals to flip their measurement axes, which allowed calibration and a check on offsets [2]. Orbital magnetometers measure the spacecraft's own field as well as the external field, so the instrument is placed at the end of a boom. The Kaguya design used a 12 m mast for this reason [5].",
+      "scientific_importance": "Lunar magnetometers have shown that the Moon has crustal magnetism. This matters for the Moon's history, but the sources read do not settle how the crustal magnetism was produced. Apollo 12 and Apollo 16 surface data provided ground measurements at fixed sites, and Explorer 35 gave the orbital context for those records [1][2].\n\nOrbital mapping adds spatial coverage. Lunar Prospector's stated objectives included the crustal field over the Moon and the induced dipole moment, which is linked to the size of a metallic core [3]. Kaguya provided calibrated magnetic-anomaly maps at 100 km and 30 km altitude [5]. ARTEMIS has measured fields in lunar orbit since 2011 [7].\n\nApollo's surface and orbital data together showed that the lunar magnetic environment changes with the solar wind. This makes a surface magnetometer valuable as a long-term monitoring instrument, because one station can record the same events repeatedly over many years [1][2].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, range or power for a lunar magnetometer. The instruments below use different sensors, boom lengths, electronics and mission roles. Values are given only for the named instrument and source. Where a value is not stated in the sources read, the article says so, and no value has been inferred.",
+        "examples": [
+          {
+            "name": "Apollo 12 Lunar Surface Magnetometer (LSM)",
+            "type": "Historical lunar surface instrument (ALSEP)",
+            "status": "Flown on the Moon",
+            "mission": "Apollo 12 (Apollo Lunar Surface Experiments Package)",
+            "activation": "1969-11-19 at 14:39 GMT, by Astronauts Conrad and Bean",
+            "sensor_configuration": "Three orthogonal fluxgate sensors at the ends of three 100 cm booms, 150 cm apart and 75 cm above the ground",
+            "range_gamma": "0 to ±400 (memorandum text); Table 1 (OCR) also lists 200 and 100",
+            "resolution_gamma": 0.2,
+            "sampling_interval_s": 0.3019,
+            "steady_surface_field_gamma": "36 ± 5 at the surface site",
+            "prelaunch_artificial_field_limit_gamma": "less than 0.2 at the sensor locations (prelaunch tests)",
+            "mass_kg": 8.9,
+            "dimensions_cm": [
+              25,
+              28,
+              63
+            ],
+            "power_w": {
+              "day_average": 3.5,
+              "night_average": 7.5
+            },
+            "operating_temperature_c": "-50 to +85 (Table 1, OCR)",
+            "source_refs": [
+              1
+            ],
+            "images": [
+              {
+                "id": "ap12_lsm_deployment",
+                "description": "Astronaut Alan L. Bean deploys the Apollo 12 Lunar Surface Magnetometer (LSM) during the first Apollo 12 extravehicular activity; the Lunar Module is in the left background.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://images-assets.nasa.gov/image/as12-46-6813/as12-46-6813~large.jpg",
+                "source_page_url": "https://www.nasa.gov/image-detail/amf-as12-46-6813/",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "Astronaut Alan L. Bean deploys the Lunar Surface Magnetometer (LSM) during the first Apollo 12 extravehicular activity.",
+                "notes": "Direct NASA image asset (images-assets.nasa.gov, query string removed; HTTP 200, image/jpeg, 1902x1920 checked by viewing). The NASA image-detail page (HTTP 200) describes the LSM and the Lunar Module in the background, consistent with the image. Usage follows NASA media guidelines; no public-domain status is asserted beyond NASA's own credit.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]",
+                  "transportation_and_deployment"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apollo 16 Lunar Surface Magnetometer (LSM)",
+            "type": "Historical lunar surface instrument (ALSEP)",
+            "status": "Flown on the Moon",
+            "mission": "Apollo 16 (ALSEP)",
+            "deployment_date": "1972-04-21",
+            "shutdown_date": "1977-09-30 (ALSEP shutdown)",
+            "sensor_configuration": "Triaxial fluxgate magnetometer; three sensors on orthogonal 100 cm booms at 35 degrees to horizontal, about 70 to 75 cm above the surface and about 150 cm apart; gimballed for axis flips",
+            "range_gamma": [
+              "±50",
+              "±100",
+              "±200 (selectable by ground command)"
+            ],
+            "resolution_gamma": 0.1,
+            "frequency_response_hz": "0 (DC) to 3",
+            "drive_frequency_hz": 6000,
+            "orientation_accuracy_deg": 0.2,
+            "mass_kg": 8.9,
+            "power_w": {
+              "day_average": 3.5,
+              "night": 9.4
+            },
+            "average_data_rate_bits_per_s": 116,
+            "dimensions_cm": "not stated in the source read",
+            "source_refs": [
+              2
+            ],
+            "images": [
+              {
+                "id": "ap16_alsep_area_lsm",
+                "description": "Astronaut at the Apollo 16 ALSEP deployment area, with a white sensor boom structure visible at left.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://images-assets.nasa.gov/image/as16-114-18388/as16-114-18388~large.jpg",
+                "source_page_url": "https://images-assets.nasa.gov/image/as16-114-18388/as16-114-18388~large.jpg",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "Apollo 16 ALSEP deployment area; sensor structure at left identified as the Lunar Surface Magnetometer in secondary catalogue descriptions.",
+                "notes": "Direct NASA image asset (HTTP 200, image/jpeg, 1868x1920, viewed). The NASA image-detail page for AS16-114-18388 was not located (HTTP 404 on the guessed URL), so the source-page field repeats the direct asset URL. Identification of the LSM rests on secondary catalogue descriptions and was not confirmed against a NASA catalogue page. Image rights follow NASA media guidelines.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Apollo 16 Lunar Portable Magnetometer (LPM)",
+            "type": "Historical portable lunar surface instrument",
+            "status": "Flown on the Moon (Apollo 16); identification from secondary catalogue descriptions",
+            "mission": "Apollo 16 (carried on the Lunar Roving Vehicle)",
+            "specifications": "not publicly specified in the sources read",
+            "source_refs": [
+              9
+            ],
+            "images": [
+              {
+                "id": "ap16_lpm_lrv",
+                "description": "Deployed magnetometer on a tripod on the lunar surface beside the Apollo 16 Lunar Roving Vehicle; the instrument is identified in secondary descriptions as the Lunar Portable Magnetometer.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://images-assets.nasa.gov/image/as16-114-18433/as16-114-18433~large.jpg",
+                "source_page_url": "https://images-assets.nasa.gov/image/as16-114-18433/as16-114-18433~large.jpg",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "Lunar Portable Magnetometer set up beside the Apollo 16 Lunar Roving Vehicle.",
+                "notes": "Direct NASA image asset (HTTP 200, image/jpeg, 1920x1920, viewed). The NASA image-detail page was not located, so the source-page field repeats the direct asset URL. The identification as the Lunar Portable Magnetometer and the LRV context come from secondary catalogue descriptions; the instrument's specifications were not found in the sources read.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Explorer 35 (lunar-orbit magnetometers)",
+            "type": "Historical orbital magnetometer (spacecraft in lunar orbit)",
+            "status": "Flown in lunar orbit",
+            "nssdc_experiment_ids": [
+              "1967-070A-03",
+              "1967-070A-04"
+            ],
+            "orbital_period_h": 11.5,
+            "apolune_km": 9390,
+            "perilune_km": 2570,
+            "magnetometer_specifications": "not publicly specified in the sources read",
+            "source_refs": [
+              2,
+              1
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Prospector magnetometer (MAG)",
+            "type": "Flown orbital magnetometer (combined MAG/ER experiment)",
+            "status": "Flown in lunar orbit",
+            "launch": "1998-01-06 from Cape Canaveral Air Station, Athena 2 (NASA); one secondary summary gives 1998-01-07",
+            "sensor_configuration": "Three-axis fluxgate magnetometer sharing an electronics box with the Electron Reflectometer; heritage from the Mars Global Surveyor magnetometer",
+            "range_nT": "up to ±65,536",
+            "sensitivity_pT": "as low as ±2",
+            "noise_pT_rms": 6,
+            "sensor_box_cm": [
+              11,
+              6.5,
+              9
+            ],
+            "data_coverage": "1998-01-16 to 1999-07-29 (calibrated vector data)",
+            "planned_end": "scripted impact near a lunar south-polar crater, planned 1999-07-31 at 05:51 EDT (NASA article dated 28 July 1999); outcome not verified",
+            "boom_length_m": "not stated on the page read",
+            "mass_kg": "not publicly specified in the sources read",
+            "power_w": "not publicly specified in the sources read",
+            "source_refs": [
+              3,
+              4,
+              11,
+              12
+            ],
+            "images": [
+              {
+                "id": "lp_artist_concept_pia18162",
+                "description": "Artist's concept of the Lunar Prospector spacecraft in lunar orbit, with its instrument masts shown deployed.",
+                "image_type": "Artist's concept",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia18/pia18162/PIA18162.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/lunar-prospector-artists-concept/",
+                "publisher": "NASA/Ames (NASA Photojournal)",
+                "credit": "NASA/Ames",
+                "caption": "Lunar Prospector artist's concept (NASA Photojournal PIA18162), dated 8 January 1998 on the Photojournal record.",
+                "notes": "Direct asset from assets.science.nasa.gov (query string removed; HTTP 200, image/jpeg, 2000x1594, viewed). NASA Photojournal source page HTTP 200 and states this is an artist's concept. The image is not a photograph of flight hardware. The JPL mirror page returned HTTP 403 to curl and was not used.",
+                "section_placements": [
+                  "physical_specifications.examples[4]"
+                ]
+              },
+              {
+                "id": "lp_clean_room_gpn2000001543",
+                "description": "Lunar Prospector spacecraft in a clean room, mated above a space-transfer stage, with a technician at its base.",
+                "image_type": "Engineering hardware photograph (pre-launch)",
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lunar_Prospector_in_Clean_Room_-_GPN-2000-001543.jpg",
+                "source_page_url": "https://commons.wikimedia.org/wiki/File:Lunar_Prospector_in_Clean_Room_-_GPN-2000-001543.jpg",
+                "publisher": "NASA (via Wikimedia Commons)",
+                "credit": "NASA (GPN-2000-001543)",
+                "caption": "Lunar Prospector in a clean room before launch (NASA identifier GPN-2000-001543).",
+                "notes": "Wikimedia Commons upload URL (HTTP 200, image/jpeg, 1962x2944, viewed); the Commons file page HTTP 200 records the file as public domain. The NASA-hosted original was not checked, so the public-domain status is taken from Commons and not from NASA. The boom visible at the right of the spacecraft is not identified in the source.",
+                "section_placements": [
+                  "physical_specifications.examples[4]",
+                  "transportation_and_deployment"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Kaguya (SELENE) Lunar Magnetometer (LMAG)",
+            "type": "Flown orbital magnetometer",
+            "status": "Flown in lunar orbit (launch 2007 and end June 2009 from a secondary summary; not checked against JAXA)",
+            "sensor_configuration": "Triaxial fluxgate magnetometer on the edge of a 12 m mast",
+            "mast_length_m": 12,
+            "sensitivity": "weaker than 1/100,000 of the geomagnetic field (no absolute nT value stated on the ODE page)",
+            "sampling_interval_s": 4,
+            "data_products": [
+              "calibrated magnetic field time series",
+              "magnetic-anomaly grids at 100 km and 30 km altitude, 1-degree spacing"
+            ],
+            "range_nT": "not stated",
+            "mass_kg": "not publicly specified in the sources read",
+            "power_w": "not publicly specified in the sources read",
+            "source_refs": [
+              5,
+              13
+            ],
+            "images": []
+          },
+          {
+            "name": "ARTEMIS Fluxgate Magnetometer (FGM)",
+            "type": "Flown orbital fluxgate magnetometer (THEMIS heritage)",
+            "status": "Flown in lunar orbit (P1 entry 2011-06-27; P2 entry 2011-07-17, per NASA); current operating status not confirmed",
+            "launch": "2007-02-17 (THEMIS)",
+            "reassignment_to_moon": "2009-01-01",
+            "developer": "Technical University of Braunschweig (FGM lead K. H. Glassmeier, per UCLA page)",
+            "sensitivity_nT": 0.01,
+            "bandwidth_hz_max": 64,
+            "offset_stability_requirement_nT_per_h": 0.2,
+            "offset_stability_statement": "better than 0.5 nT during the first 18 months of operation (near-Earth THEMIS phase, not lunar orbit)",
+            "initial_p1_lunar_orbit": "roughly 2,200 x 17,000 miles (about 3,543 x 27,000 km), per NASA",
+            "companion_instrument": "Search Coil Magnetometer (SCM), per NASA",
+            "mass_kg": "not publicly specified in the sources read",
+            "power_w": "not publicly specified in the sources read",
+            "source_refs": [
+              6,
+              7
+            ],
+            "images": []
+          }
+        ],
+        "comparison_table_apollo_surface_lsm": {
+          "rows": [
+            {
+              "parameter": "Sensor type",
+              "apollo_12": "Three fluxgate sensors",
+              "apollo_16": "Triaxial fluxgate magnetometer"
+            },
+            {
+              "parameter": "Boom length",
+              "apollo_12": "100 cm",
+              "apollo_16": "100 cm"
+            },
+            {
+              "parameter": "Range",
+              "apollo_12": "0 to ±400 gamma (memorandum text)",
+              "apollo_16": "±50, ±100 or ±200 gamma, selectable"
+            },
+            {
+              "parameter": "Resolution",
+              "apollo_12": "0.2 gamma (memorandum text)",
+              "apollo_16": "0.1 gamma"
+            },
+            {
+              "parameter": "Frequency response or sampling",
+              "apollo_12": "Three components every 0.3019 s",
+              "apollo_16": "DC to 3 Hz"
+            },
+            {
+              "parameter": "Mass",
+              "apollo_12": "8.9 kg (Table 1, OCR)",
+              "apollo_16": "8.9 kg"
+            },
+            {
+              "parameter": "Power, daytime",
+              "apollo_12": "3.5 W (Table 1, OCR)",
+              "apollo_16": "3.5 W"
+            },
+            {
+              "parameter": "Power, night",
+              "apollo_12": "7.5 W (Table 1, OCR)",
+              "apollo_16": "9.4 W"
+            },
+            {
+              "parameter": "Dimensions",
+              "apollo_12": "25 x 28 x 63 cm (Table 1, OCR)",
+              "apollo_16": "not stated in the source read"
+            }
+          ],
+          "note": "Both are fluxgate surface instruments; ranges, resolutions and night-time power differ between the two sources, so each value must be checked against its own source."
+        },
+        "dimensions_and_proportions": "There is no single dimension set for a lunar magnetometer. The Apollo 12 LSM used three 100 cm booms with sensors 150 cm apart and 75 cm above the ground, and Table 1 of the 1971 memorandum (OCR) gives a 25 x 28 x 63 cm package. The Apollo 16 LSM used three 100 cm booms at 35 degrees to the horizontal, with sensors about 70 to 75 cm above the surface and about 150 cm apart. The Lunar Prospector MAG sensor is described as an 11 x 6.5 x 9 cm box. Kaguya's sensor sat at the end of a 12 m mast. Boom and package dimensions are not stated for ARTEMIS or for the Lunar Portable Magnetometer in the sources read. The proportions differ because the surface instruments needed booms to keep the sensors away from the electronics and the lander, and the orbital instruments needed a boom to keep the spacecraft field away from the sensor.",
+        "mass_and_weight": "The two Apollo LSM packages are both recorded at 8.9 kg in the sources read: Table 1 of the Apollo 12 memorandum (read by OCR, so provisional) and the Apollo 16 instrument overview [1][2]. Mass is not stated for the Lunar Prospector MAG, Kaguya LMAG, ARTEMIS FGM or Explorer 35 magnetometers in the sources read. Mass determines launch and lander requirements, so these values are needed before any compatibility assessment.",
+        "power_requirements": "The Apollo 16 LSM used 3.5 W average in daytime and 9.4 W at night. Table 1 of the Apollo 12 memorandum (OCR) gives 3.5 W in daytime and 7.5 W at night. The two night-time values differ and are reported as found. Power for the orbital instruments is not stated in the sources read. The Apollo 16 record also shows a thermal dependence of the sensor flip operation on temperature [2]."
+      },
+      "environmental_and_operational_requirements": "A lunar magnetometer must work in a severe thermal environment. The Apollo 16 record shows the problem clearly. The sensors could not complete all their flips at high noon temperatures in July 1972, and the z-axis data became static at low night temperatures in March 1975 [2]. The Apollo 12 design needed thermal changes before Apollo 15 and 16 [2]. Surface magnetometers therefore need thermal insulation, controlled heating and radiators, as well as a stable mounting.\n\nThe surface instruments must also be isolated from the magnetic field of the lander and the other experiments. The Apollo 12 design used long booms and separation for this reason [1]. Orbital instruments face the same issue in a different form. Kaguya's sensor was placed on a 12 m mast to keep the spacecraft field low at the sensor [5].\n\nMeasurement sensitivity needs a stable reference. Apollo 16 used gravity-level sensors to monitor sensor orientation to 0.2 degrees [2]. Offset stability is a separate issue. ARTEMIS sets a requirement of 0.2 nT per hour for the FGM [6].\n\nPower and data rates are limited. The Apollo 16 LSM used 3.5 W in daytime and 9.4 W at night, with an average data rate of 116 bits per second [2]. Orbital instruments are usually limited by the spacecraft's power and telemetry budget, which the sources read do not quantify for each mission.",
+      "limitations": "A surface magnetometer records the field at one point. It cannot map the field over a region, and its results depend on the local geology and on the field from the lander. Orbital magnetometers map a larger area but at a larger distance from the sources, which limits the spatial resolution of the crustal field.\n\nSeparating the crustal field from the induced field is not simple. The Apollo 12 analysis used the transient response of the surface field to the solar wind, and it needed simultaneous orbital data for comparison [1]. A single surface instrument cannot separate these components by itself.\n\nSurface instruments also have limited lifetimes. The Apollo 16 LSM lost data intermittently in 1973 and 1975 and was shut down in 1977 [2]. Lifetimes of orbital missions are set by the mission design and spacecraft health, and the sources read do not give these for all instruments.\n\nThe published specifications in this article are not directly comparable. The Apollo 12 and Apollo 16 LSMs use different ranges and resolutions, and the orbital instruments differ in boom length, sensor size and data products. No general accuracy figure is given for the class.",
+      "transportation_and_deployment": {
+        "overview": "The transportation discussion separates surface magnetometers from orbital magnetometers. The Apollo surface instruments were set up by astronauts during extravehicular activity. The orbital examples were carried by spacecraft: Lunar Prospector, Kaguya and ARTEMIS. No lander or spacecraft compatibility is asserted.",
+        "transportation_process": [
+          "Surface instruments (Apollo): the sources read do not describe stowage on the lunar module or release from it.",
+          "Surface instruments (Apollo): set up by astronauts during extravehicular activity; Apollo 12 activated 1969-11-19, Apollo 16 deployed 1972-04-21.",
+          "Orbital instruments (Lunar Prospector): launched 1998-01-06 from Cape Canaveral aboard an Athena 2; the sources read do not describe cruise, orbit insertion or boom commissioning in detail.",
+          "Orbital instruments (Kaguya): magnetometer on a 12 m mast extended from the spacecraft; launch and insertion details not described in the sources read.",
+          "Orbital instruments (ARTEMIS): two THEMIS spacecraft reassigned to the Moon in 2009; entered lunar orbit in June and July 2011 per NASA; boom deployment and commissioning not described in the sources read."
+        ],
+        "deployment_methods": "The Apollo surface magnetometers were set up by astronauts during extravehicular activity. The sources read do not describe how the instruments were stowed on the lunar module or released from it. The Apollo 12 instrument was activated by Astronauts Conrad and Bean on 19 November 1969 [1]. The Apollo 16 LSM was deployed on 21 April 1972 [2]. Both instruments were part of the ALSEP, a set of experiments that the crew deployed on the surface. The Apollo deployment method is historical. It is not evidence of how a new surface magnetometer would be delivered. Any future surface magnetometer would need a stowage, release and deployment design to suit the lander and the mission, and that design is not described in the sources read. Lunar Prospector launched on 6 January 1998 from Cape Canaveral aboard an Athena 2 rocket [4]. Its magnetometer shares an electronics box with the Electron Reflectometer, and the combined instrument operated in lunar orbit until the planned end on 31 July 1999 [3][4]. The sources read do not describe the spacecraft's integration, cruise or orbit-insertion sequence for the magnetometer in detail. ARTEMIS reused two THEMIS spacecraft after they were reassigned to the Moon in 2009. The two spacecraft entered lunar orbit in June and July 2011 [7]. The sources read do not describe the magnetometer boom deployment or the commissioning sequence. The Kaguya magnetometer was placed on a 12 m mast extended from the spacecraft [5]. Its launch and orbit-insertion details are not described in the sources read.",
+        "historical_examples": "The Apollo 12 and Apollo 16 LSMs (surface), the Apollo 16 LPM (portable surface), Explorer 35 (early lunar orbit), Lunar Prospector (1998-1999), Kaguya (2007-2009) and ARTEMIS (from 2011) are the flown examples in this article.",
+        "compatibility_assessment": "No compatibility is asserted with any named lander, rover or spacecraft. The sources read describe the flown instruments and their own spacecraft, but they do not establish compatibility with any future lander or spacecraft. Any future assessment would need the instrument's mass, dimensions, mounting interface, thermal requirements, power, data rate and deployment method.",
+        "images": [
+          {
+            "id": "ap12_lsm_deployment",
+            "description": "Astronaut Alan L. Bean deploys the Apollo 12 Lunar Surface Magnetometer (LSM) during the first Apollo 12 extravehicular activity; the Lunar Module is in the left background.",
+            "image_type": "Historical lunar surface photograph",
+            "image_url": "https://images-assets.nasa.gov/image/as12-46-6813/as12-46-6813~large.jpg",
+            "source_page_url": "https://www.nasa.gov/image-detail/amf-as12-46-6813/",
+            "publisher": "NASA",
+            "credit": "NASA",
+            "caption": "Astronaut Alan L. Bean deploys the Lunar Surface Magnetometer (LSM) during the first Apollo 12 extravehicular activity.",
+            "notes": "Direct NASA image asset (images-assets.nasa.gov, query string removed; HTTP 200, image/jpeg, 1902x1920 checked by viewing). The NASA image-detail page (HTTP 200) describes the LSM and the Lunar Module in the background, consistent with the image. Usage follows NASA media guidelines; no public-domain status is asserted beyond NASA's own credit.",
+            "section_placements": [
+              "overview",
+              "physical_specifications.examples[0]",
+              "transportation_and_deployment"
+            ]
+          },
+          {
+            "id": "lp_clean_room_gpn2000001543",
+            "description": "Lunar Prospector spacecraft in a clean room, mated above a space-transfer stage, with a technician at its base.",
+            "image_type": "Engineering hardware photograph (pre-launch)",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lunar_Prospector_in_Clean_Room_-_GPN-2000-001543.jpg",
+            "source_page_url": "https://commons.wikimedia.org/wiki/File:Lunar_Prospector_in_Clean_Room_-_GPN-2000-001543.jpg",
+            "publisher": "NASA (via Wikimedia Commons)",
+            "credit": "NASA (GPN-2000-001543)",
+            "caption": "Lunar Prospector in a clean room before launch (NASA identifier GPN-2000-001543).",
+            "notes": "Wikimedia Commons upload URL (HTTP 200, image/jpeg, 1962x2944, viewed); the Commons file page HTTP 200 records the file as public domain. The NASA-hosted original was not checked, so the public-domain status is taken from Commons and not from NASA. The boom visible at the right of the spacecraft is not identified in the source.",
+            "section_placements": [
+              "physical_specifications.examples[4]",
+              "transportation_and_deployment"
+            ]
+          }
+        ]
+      },
+      "historical_significance": "The Apollo 12 magnetometer reported a steady field of 36 ± 5 gamma at its surface site [1]. The Apollo 16 LSM was part of a surface network with the Apollo 12 and Apollo 15 instruments, according to the Apollo 16 instrument overview [2]. Those surface records combined with orbital observations were used to study the Moon's electrical and thermal interior.\n\nExplorer 35 gave orbital magnetic-field observations while the Apollo surface instruments were operating [2]. Lunar Prospector mapped the crustal field from orbit in 1998 and 1999 [3]. Kaguya extended this with a calibrated time series and anomaly maps [5]. ARTEMIS used fluxgate instruments in lunar orbit from 2011, in a plasma and solar-wind study [7].",
+      "limitations_and_uncertainties": "- - Apollo 12 and 16 values. The Apollo 12 mass, dimensions and night-time power are read from OCR text of a 1971 memorandum. Treat them as provisional [1].\n- - Apollo 15 network. The Apollo 16 instrument overview lists the network as Apollo 12, 15 and 16 [2]. A secondary summary lists Apollo 12, 14 and 16 instead. The Apollo 15 surface instrument was not described.\n- - Apollo 16 image identifications. The LSM and LPM identifications for the two Apollo 16 frames rely on secondary catalogue descriptions. The NASA catalogue pages for those frames could not be located.\n- - Lunar Prospector. Boom length, mass and power are not stated on the ODE page. The PI and co-investigators are not identified in the sources read. The impact outcome is not verified in the primary sources read.\n- - Kaguya. The JAXA equipment page did not resolve. Mass, power, range, PI and dates are unverified, and the 2007 launch and June 2009 end come from a secondary summary. The 2009 in-orbit calibration paper was not read.\n- - ARTEMIS. NASA's page gives the 2011 lunar-orbit dates, but the operating status is not confirmed after the 2017 statement on the page. The FGM offset-stability statement applies to the THEMIS near-Earth phase.\n- - Explorer 35. Magnetometer specifications and the NSSDC experiment records were not read.\n- - Apollo 15 and 16 subsatellite magnetometers. Described only in search summaries of later papers. Not described in this article.\n- - Remanent-field values. Search summaries cite remanent-field values for the Apollo 15 and 16 sites. The primary paper was not read, so no values are used here.\n- - Soviet and other national instruments. Not researched.\n- - Sensing principle. The fluxgate physics is in payload 013. The vector and scalar sensing approaches are in payloads 014 and 015. Other principles were not reviewed in this article.\n- - Lunar landing sites. This article does not recommend lunar landing sites or locations. That is deferred by the user.",
+      "images": [
+        {
+          "id": "ap12_lsm_deployment",
+          "description": "Astronaut Alan L. Bean deploys the Apollo 12 Lunar Surface Magnetometer (LSM) during the first Apollo 12 extravehicular activity; the Lunar Module is in the left background.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://images-assets.nasa.gov/image/as12-46-6813/as12-46-6813~large.jpg",
+          "source_page_url": "https://www.nasa.gov/image-detail/amf-as12-46-6813/",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Astronaut Alan L. Bean deploys the Lunar Surface Magnetometer (LSM) during the first Apollo 12 extravehicular activity.",
+          "notes": "Direct NASA image asset (images-assets.nasa.gov, query string removed; HTTP 200, image/jpeg, 1902x1920 checked by viewing). The NASA image-detail page (HTTP 200) describes the LSM and the Lunar Module in the background, consistent with the image. Usage follows NASA media guidelines; no public-domain status is asserted beyond NASA's own credit.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ]
+        },
+        {
+          "id": "ap16_alsep_area_lsm",
+          "description": "Astronaut at the Apollo 16 ALSEP deployment area, with a white sensor boom structure visible at left.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://images-assets.nasa.gov/image/as16-114-18388/as16-114-18388~large.jpg",
+          "source_page_url": "https://images-assets.nasa.gov/image/as16-114-18388/as16-114-18388~large.jpg",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Apollo 16 ALSEP deployment area; sensor structure at left identified as the Lunar Surface Magnetometer in secondary catalogue descriptions.",
+          "notes": "Direct NASA image asset (HTTP 200, image/jpeg, 1868x1920, viewed). The NASA image-detail page for AS16-114-18388 was not located (HTTP 404 on the guessed URL), so the source-page field repeats the direct asset URL. Identification of the LSM rests on secondary catalogue descriptions and was not confirmed against a NASA catalogue page. Image rights follow NASA media guidelines.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ]
+        },
+        {
+          "id": "ap16_lpm_lrv",
+          "description": "Deployed magnetometer on a tripod on the lunar surface beside the Apollo 16 Lunar Roving Vehicle; the instrument is identified in secondary descriptions as the Lunar Portable Magnetometer.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://images-assets.nasa.gov/image/as16-114-18433/as16-114-18433~large.jpg",
+          "source_page_url": "https://images-assets.nasa.gov/image/as16-114-18433/as16-114-18433~large.jpg",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Lunar Portable Magnetometer set up beside the Apollo 16 Lunar Roving Vehicle.",
+          "notes": "Direct NASA image asset (HTTP 200, image/jpeg, 1920x1920, viewed). The NASA image-detail page was not located, so the source-page field repeats the direct asset URL. The identification as the Lunar Portable Magnetometer and the LRV context come from secondary catalogue descriptions; the instrument's specifications were not found in the sources read.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ]
+        },
+        {
+          "id": "lp_artist_concept_pia18162",
+          "description": "Artist's concept of the Lunar Prospector spacecraft in lunar orbit, with its instrument masts shown deployed.",
+          "image_type": "Artist's concept",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia18/pia18162/PIA18162.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/lunar-prospector-artists-concept/",
+          "publisher": "NASA/Ames (NASA Photojournal)",
+          "credit": "NASA/Ames",
+          "caption": "Lunar Prospector artist's concept (NASA Photojournal PIA18162), dated 8 January 1998 on the Photojournal record.",
+          "notes": "Direct asset from assets.science.nasa.gov (query string removed; HTTP 200, image/jpeg, 2000x1594, viewed). NASA Photojournal source page HTTP 200 and states this is an artist's concept. The image is not a photograph of flight hardware. The JPL mirror page returned HTTP 403 to curl and was not used.",
+          "section_placements": [
+            "physical_specifications.examples[4]"
+          ]
+        },
+        {
+          "id": "lp_clean_room_gpn2000001543",
+          "description": "Lunar Prospector spacecraft in a clean room, mated above a space-transfer stage, with a technician at its base.",
+          "image_type": "Engineering hardware photograph (pre-launch)",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lunar_Prospector_in_Clean_Room_-_GPN-2000-001543.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Lunar_Prospector_in_Clean_Room_-_GPN-2000-001543.jpg",
+          "publisher": "NASA (via Wikimedia Commons)",
+          "credit": "NASA (GPN-2000-001543)",
+          "caption": "Lunar Prospector in a clean room before launch (NASA identifier GPN-2000-001543).",
+          "notes": "Wikimedia Commons upload URL (HTTP 200, image/jpeg, 1962x2944, viewed); the Commons file page HTTP 200 records the file as public domain. The NASA-hosted original was not checked, so the public-domain status is taken from Commons and not from NASA. The boom visible at the right of the spacecraft is not identified in the source.",
+          "section_placements": [
+            "physical_specifications.examples[4]",
+            "transportation_and_deployment"
+          ]
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "ap12_lsm_deployment",
+          "description": "Astronaut Alan L. Bean deploys the Apollo 12 Lunar Surface Magnetometer (LSM) during the first Apollo 12 extravehicular activity; the Lunar Module is in the left background.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://images-assets.nasa.gov/image/as12-46-6813/as12-46-6813~large.jpg",
+          "source_page_url": "https://www.nasa.gov/image-detail/amf-as12-46-6813/",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Astronaut Alan L. Bean deploys the Lunar Surface Magnetometer (LSM) during the first Apollo 12 extravehicular activity.",
+          "notes": "Direct NASA image asset (images-assets.nasa.gov, query string removed; HTTP 200, image/jpeg, 1902x1920 checked by viewing). The NASA image-detail page (HTTP 200) describes the LSM and the Lunar Module in the background, consistent with the image. Usage follows NASA media guidelines; no public-domain status is asserted beyond NASA's own credit.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Electrical conductivity and temperature of the lunar interior from magnetic transient response measurements",
+          "author": "Dyal, P., Parkin, C.W., Sonett, C.P., Colburn, D.S.",
+          "publisher": "NASA Ames Research Center (NASA TM X-62,012)",
+          "date": "1971",
+          "url": "https://ntrs.nasa.gov/api/citations/19710007387/downloads/19710007387.pdf",
+          "notes": "Read via local PDF text (pdftotext) and OCR-affected Table 1. Date as on the NTRS record."
+        },
+        {
+          "number": 2,
+          "title": "Apollo 16 Lunar Surface Magnetometer (LSM) Experiment, instrument overview",
+          "author": "not named on the document (cites Dyal et al. 1972, NASA SP-315)",
+          "publisher": "NASA Planetary Data System Geosciences Node",
+          "date": "not stated",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a16/instruments/a16a_lsm.pdf",
+          "notes": "Read via PDF text layer (3 pages)."
+        },
+        {
+          "number": 3,
+          "title": "LP Magnetometer Instrument (MAG)",
+          "author": "not stated",
+          "publisher": "Mars Orbital Data Explorer (ODE), NASA-hosted",
+          "date": "not stated",
+          "url": "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/Lunar_Prospector/MAG/Intro.htm",
+          "notes": "Instrument help page; PI and launch not stated on the page."
+        },
+        {
+          "number": 4,
+          "title": "Creative impact experiment to mark end of Lunar Prospector",
+          "author": "NASA Science",
+          "publisher": "NASA",
+          "date": "1999-07-28 (dateline)",
+          "url": "https://science.nasa.gov/solar-system/moon/creative-impact-experiment-to-mark-end-of-lunar-prospector",
+          "notes": "Source of the launch date (6 January 1998) and planned impact time."
+        },
+        {
+          "number": 5,
+          "title": "KAGUYA (SELENE) LMAG: Instrument Summary",
+          "author": "not stated",
+          "publisher": "Mars Orbital Data Explorer (ODE), NASA-hosted",
+          "date": "not stated",
+          "url": "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/KAGUYA%20(SELENE)/LMAG/Intro.htm",
+          "notes": "The JAXA equipment page (kaguya.jaxa.jp) did not resolve from the research environment."
+        },
+        {
+          "number": 6,
+          "title": "Fluxgate Magnetometer (FGM), ARTEMIS instrument page",
+          "author": "UCLA Space Physics Group (FGM lead K. H. Glassmeier, TU Braunschweig, per page)",
+          "publisher": "UCLA",
+          "date": "not stated",
+          "url": "https://artemis.igpp.ucla.edu/instrument_fgm.shtml",
+          "notes": "Sensitivity, bandwidth and offset-stability statements from this page."
+        },
+        {
+          "number": 7,
+          "title": "THEMIS/ARTEMIS mission page",
+          "author": "NASA Science",
+          "publisher": "NASA",
+          "date": "page last updated 2026-01-09 (per page footer)",
+          "url": "https://science.nasa.gov/mission/themis-artemis/",
+          "notes": "Source of ARTEMIS launch, reassignment and lunar-orbit entry dates and instrument list."
+        },
+        {
+          "number": 8,
+          "title": "Astronaut Alan Bean deploys Lunar Surface Magnetometer on lunar surface (AS12-46-6813)",
+          "author": "NASA",
+          "publisher": "NASA image detail page",
+          "date": "not stated",
+          "url": "https://www.nasa.gov/image-detail/amf-as12-46-6813/",
+          "notes": "Source page for the Apollo 12 image."
+        },
+        {
+          "number": 9,
+          "title": "Apollo 16 image AS16-114-18433 (direct asset)",
+          "author": "NASA",
+          "publisher": "NASA image archive (direct asset URL)",
+          "date": "not stated",
+          "url": "https://images-assets.nasa.gov/image/as16-114-18433/as16-114-18433~large.jpg",
+          "notes": "Source page not located. Instrument identity from secondary catalogue descriptions."
+        },
+        {
+          "number": 10,
+          "title": "Chandrayaan-1 Science",
+          "author": "ISRO",
+          "publisher": "ISRO",
+          "date": "not stated",
+          "url": "https://www.isro.gov.in/ISRO_EN/Chandrayaan-1_science.html",
+          "notes": "Seen only as a search-result entry; not fetched. Supports only the search-level finding that no magnetometer was listed for the Moon Impact Probe."
+        },
+        {
+          "number": 11,
+          "title": "Lunar Prospector Artist's Concept (PIA18162)",
+          "author": "NASA/Ames",
+          "publisher": "NASA Photojournal",
+          "date": "1998-01-08 (per Photojournal record)",
+          "url": "https://science.nasa.gov/photojournal/lunar-prospector-artists-concept/",
+          "notes": "Source page for the artist's concept image."
+        },
+        {
+          "number": 12,
+          "title": "File: Lunar Prospector in Clean Room - GPN-2000-001543.jpg",
+          "author": "NASA (per Commons credit)",
+          "publisher": "Wikimedia Commons",
+          "date": "not stated",
+          "url": "https://commons.wikimedia.org/wiki/File:Lunar_Prospector_in_Clean_Room_-_GPN-2000-001543.jpg",
+          "notes": "Public domain status recorded on the Commons page; not checked against a NASA-hosted copy."
+        },
+        {
+          "number": 13,
+          "title": "SELENE (Moon probe)",
+          "author": "Wikipedia contributors",
+          "publisher": "Wikipedia",
+          "date": "not stated",
+          "url": "https://en.wikipedia.org/wiki/SELENE",
+          "notes": "Secondary summary used only for the Kaguya launch year and end date; not a primary source."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo 12 LSM example": "payload.article.physical_specifications.examples[0].images",
+      "Apollo 16 LSM example": "payload.article.physical_specifications.examples[1].images",
+      "Apollo 16 LPM example": "payload.article.physical_specifications.examples[2].images",
+      "Lunar Prospector MAG example": "payload.article.physical_specifications.examples[4].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. Two Apollo 16 frames use the direct asset URL as source_page_url because the NASA catalogue page could not be located."
+  },
+  "data_quality_notes": [
+    "Scope: class-level article (generic lunar magnetometer) with flown examples. Fluxgate, vector and scalar sensing physics are cross-referenced to payloads 013, 014 and 015 and not repeated; electromagnetic field sensors are payload 020.",
+    "Apollo 12 LSM mass (8.9 kg), dimensions (25 x 28 x 63 cm), power (3.5 W day, 7.5 W night) and operating temperature come from Table 1 of NASA TM X-62,012, read by OCR. Treat as provisional. The mass matches the Apollo 16 figure exactly, which should be checked against the original scan.",
+    "Apollo 12 range (0 to ±400 gamma, 0.2 gamma resolution) is from the memorandum text, while Table 1 OCR lists 400/200/100 gamma; Apollo 16 range (±50/100/200, 0.1 gamma) is from the PDS document. The two configurations are not directly comparable.",
+    "Night-time power conflict between sources: Apollo 12 Table 1 (OCR) gives 7.5 W and Apollo 16 gives 9.4 W. Both are reported as found.",
+    "Apollo network membership conflict: the Apollo 16 PDS document lists Apollo 12, 15 and 16; a secondary summary lists 12, 14 and 16. The Apollo 15 surface instrument was not described.",
+    "Apollo 16 LSM deployment and shutdown dates (1972-04-21; 1977-09-30) are from the PDS document. The deployment coordinates in that document are omitted because they relate to a landing site.",
+    "Apollo 16 image frames AS16-114-18388 and AS16-114-18433: identification of the LSM and LPM rests on secondary catalogue descriptions. NASA catalogue pages could not be located (HTTP 404 on guessed URLs), so the source_page_url fields repeat the direct asset URLs.",
+    "Lunar Portable Magnetometer (Apollo 16): no specifications found in the sources read; described only from image context and secondary summaries.",
+    "Explorer 35: magnetometer specifications, mass and power not read. The NSSDC experiment records linked from the Apollo 16 PDS document were not fetched.",
+    "Apollo 15 and 16 subsatellite magnetometers and remanent-field values appear only in search summaries of later NASA papers. The primary papers were not read, so they are not described.",
+    "Lunar Prospector: mass, power, boom length and PI not stated on the ODE page; PI attribution (Mitchell, Lin) could not be resolved from the sources read and is not stated. Launch date 6 January 1998 (NASA) versus 7 January in one secondary source. Impact outcome not verified in primary sources (a secondary summary reports no water ice detected; not used).",
+    "Lunar Prospector photographs: the Photojournal item is an artist's concept, not flight hardware. The clean-room photograph is taken from Wikimedia Commons, where the file is recorded as public domain; the NASA-hosted original was not checked.",
+    "Kaguya: JAXA equipment page (kaguya.jaxa.jp) did not resolve. Mass, power, range, PI and the 2007 launch and June 2009 end dates come from a secondary summary. The 2009 in-orbit calibration paper was seen only as a search snippet and not read. ODE gives no absolute sensitivity in nT.",
+    "ARTEMIS: NASA gives the lunar-orbit entry dates (2011-06-27 P1; 2011-07-17 P2), but a search summary gives 2 July 2011 for P1 from another source. The FGM offset-stability statement (0.5 nT over 18 months) refers to the near-Earth THEMIS phase. Current operating status not confirmed; NASA's statement that both spacecraft operate in good health dates from 2017.",
+    "ARTEMIS FGM mass, power and boom length not stated in sources read.",
+    "Chandrayaan-1 Moon Impact Probe checked only at search level (ISRO page not fetched); no magnetometer was found in the consulted results.",
+    "No lunar landing-site or location recommendations are included; those are deferred by the user.",
+    "No lander, rover or spacecraft compatibility is asserted for any example."
+  ]
+}

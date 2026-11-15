@@ -1,0 +1,200 @@
+{
+  "catalogue_id": 156,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 8,
+    "name": "Regolith and soil analysis"
+  },
+  "payload": {
+    "number": 156,
+    "name": "Regolith grain-size analyser",
+    "article": {
+      "overview": "A regolith grain-size analyser is a payload class for measuring how large the individual grains of lunar regolith are, and how their sizes and shapes are distributed. Grain size matters for engineering (how regolith flows, compacts, and affects drills, seals and mechanisms) and for science (how the regolith was broken down and weathered by impacts and the solar wind). No standalone grain-size instrument with this exact name was identified as flown, flight-qualified or formally proposed in the sources reviewed. The closest candidates are instruments that measure grain size as one part of a larger analysis suite: the NASA METRIC X-ray computed tomography (XCT) scanner, planned for a commercial lunar lander, and the ESA PROSPECT sample camera, being prepared for a NASA CLPS lander. A laboratory particle analyser used on Apollo samples provides the reference method against which such instruments would be judged.",
+      "description": "Regolith is a mixture of rock fragments, mineral grains and glass particles that has been broken down by billions of years of micrometeoroid impacts and solar-wind bombardment. Its particles range from dust-sized material to coarse fragments. A grain-size analyser estimates the distribution of particle sizes in a sample, and where possible the shapes of the particles, so that scientists and engineers can describe the material in a repeatable way. Possible approaches include imaging (optical microscopy, camera-based particle imaging or three-dimensional X-ray tomography), laser or light-scattering methods, and combinations of these. Each method measures a different size range and reports a different quantity, so results from one method are not directly interchangeable with another. A flight instrument also has to deliver a small sample to the measurement volume, which is a considerable engineering constraint on the lunar surface.",
+      "scientific_purpose_and_applications": "The main scientific purposes are to: describe the size and shape distribution of regolith, which records the processes acting on the surface such as impact comminution and space weathering [2]; provide ground-truth data for building and testing lunar regolith simulants for equipment testing [2]; and support interpretation of composition measurements, because mineral phases are often present in different grain-size fractions [1]. Engineering applications include assessing how regolith will behave in excavation, sealing, dust control and mechanism design. The sources reviewed describe these as motivations; none reports a measured engineering result from a flight instrument.",
+      "operating_principle": "No flown or formally specified operating principle for a dedicated lunar grain-size analyser was identified. The sources describe three approaches. (1) X-ray computed tomography (METRIC XCT): a sample in a small graphite tube is rotated through 360 degrees in 0.9-degree steps while an X-ray beam passes through it, and the data are reconstructed into a three-dimensional image; crystal and grain morphologies give a grain-size distribution for each mineral phase [1]. (2) Particle imaging (PROSPECT sample camera): the payload photographs each sample before it is sealed into an oven; the ESA page does not state what the camera measures or its resolution, so it does not confirm grain-size data [3]. (3) Laboratory laser diffraction with dynamic image analysis (reference method): a Microtrac SYNC instrument combines laser diffraction with image analysis of individual grains; each 0.1 g sample yielded about 10^5 grain images, and more than 30 size and shape parameters per grain are reported over a stated range of 0.01-2000 micrometres [2].",
+      "scientific_importance": "Grain size is a basic property of regolith. It controls the surface area available for reactions with the solar wind, the rate at which volatiles can be released, and the mechanical behaviour of the soil. A flight instrument able to measure it in situ would extend returned-sample work to places where samples are not available. A 2022 laboratory study used four Apollo regolith samples chosen to represent different maturities and terrains: 10084 (mature high-titanium mare), 15601 (immature low-titanium mare), 64501 (mature highland) and 67461 (immature highland) [2]. The authors reported that the mature samples had smaller average particle sizes and higher sphericity, which they attribute to micrometeoroid and solar-wind weathering. Average particle sizes were about 24.5 micrometres for 10084 and about 103-118.5 micrometres for the other three, against a stated Apollo collection average of about 72 micrometres [2]. These are laboratory results on returned samples, not flight measurements.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a regolith grain-size analyser, and no flown or formally specified lunar instrument with this name was identified. The examples below are the closest candidates. They measure different quantities, operate in different environments and belong to different programmes, so they are not directly comparable. Mass, power and dimensions were not published for the METRIC XCT or the sample-analysis instruments in the sources read, and are given as null.",
+        "examples": [
+          {
+            "name": "METRIC XCT (miniaturised X-ray micro-CT scanner within the METRIC suite)",
+            "type": "Planned lunar instrument (CLPS lander); not flown",
+            "status": "Planned. The source states the suite is intended for delivery to the lunar surface on a CLPS lander; flight date and prototype status not stated.",
+            "heritage": "The source states XCT has not previously flown in space. The XRD/F element of METRIC builds on Mars Science Laboratory CheMin design.",
+            "sample_tube": "3 mm diameter, 10 mm long graphite tube",
+            "scan_method": "Rotation through 360 degrees in 0.9-degree steps",
+            "voxel_resolution_um": 30,
+            "particle_size_range": "Not stated in the source; 30 micrometre voxel size is an imaging resolution, not a grain-size range",
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20220002240"
+            ],
+            "images": []
+          },
+          {
+            "name": "PROSPECT ProSPA sample camera and analysis suite",
+            "type": "Planned lunar payload (NASA CLPS, ESA-led); not flown as a whole",
+            "status": "Being prepared for flight to the lunar south polar region under NASA CLPS (2026 conference abstract). ESA page gives launch date 2027 and Intuitive Machines Nova-C lander. A 2024 paper gave an earlier CLPS opportunity (CP-22) for 2026. Schedules conflict; current date unverified.",
+            "heritage": "An ion-trap mass spectrometer derived from the PROSPECT design was reported to have flown on CLPS mission Peregrine 1, which did not reach the surface.",
+            "drill_depth": "Up to 1 m",
+            "samples": "About 8 samples; each heated in a single-use oven to nearly 1000 C; one conference abstract gives 25 single-use ovens on a rotary carousel",
+            "operating_duration": "Between 5 and 10 Earth days, during one lunar day; not planned to survive the lunar night",
+            "grain_size_capability": "ESA page describes the sample photography but gives no resolution, field of view, spectral bands or grain-size performance. Search-level summaries of the PROSPECT literature describe the sample camera as providing morphology and grain-size information; not confirmed in a full readable text.",
+            "mass_kg": 45,
+            "mass_note": "Approximate whole-package mass as stated by ESA; not an instrument-level grain-size figure",
+            "power_w": null,
+            "source_urls": [
+              "https://esa.int/Science_Exploration/Human_and_Robotic_Exploration/Prospect_searching_for_water_at_the_lunar_poles",
+              "https://doi.org/10.3389/frspt.2024.1331828"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Dust Analysis Package (L-DAP)",
+            "type": "ESA study concept; flight not confirmed",
+            "status": "Planned for the ESA Lunar Lander mission, which one abstract said would be in 2018. No evidence of a flown L-DAP was identified; current status unverified.",
+            "instruments": "Optical microscope, atomic force microscope and Raman spectrometer working on samples delivered by the lander sampling system",
+            "stated_goal": "Size distribution for particles from tens of nanometres to hundreds of micrometres, plus grain shape and structure",
+            "optical_microscope_resolution_um": 1,
+            "resolution_note": "Stated as about 1 micrometre in a 2012 abstract excerpt obtained from search results; full PDF not read",
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://meetingorganizer.copernicus.org/EPSC2012/EPSC2012-732.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Microtrac SYNC laboratory particle analyser (reference method, Apollo samples)",
+            "type": "Laboratory instrument; not a lunar payload",
+            "status": "Laboratory work on returned Apollo samples; not flight hardware or a concept",
+            "method": "Tri-laser diffraction combined with dynamic image analysis",
+            "sample_mass_g": 0.1,
+            "grain_images_per_sample": "About 10^5",
+            "size_range_um": [0.01, 2000],
+            "shape_parameters": "More than 30 size and shape parameters per grain; sphericity, aspect ratio, roundness and concavity examined",
+            "samples_studied": [
+              "10084 (mature high-Ti mare)",
+              "15601 (immature low-Ti mare)",
+              "64501 (mature highland)",
+              "67461 (immature highland)"
+            ],
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20210026714"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Regolith Analyzer (concept)",
+            "type": "Proposed concept; not flown",
+            "status": "Concept paper, IAC 2024. No specifications verified in this review.",
+            "approach": "Electrodynamic trap to study particle size and geometry, alongside chemistry and electrostatic properties",
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://iafastro.directory/iac/paper/id/87164/abstract-pdf/IAC-24,A3,IP,137,x87164.brief.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No dimensions are published for the METRIC XCT, the PROSPECT sample camera or L-DAP in the sources read. The XCT sample tube is 3 mm in diameter and 10 mm long. Dimensions for a flight grain-size analyser would depend on its measurement method and the sample volume it needs to handle; these have not been determined for any example.",
+        "mass_and_weight": "Not publicly specified for the METRIC XCT, the PROSPECT sample camera or L-DAP. The PROSPECT package is stated by ESA to be approximately 45 kg; this is a whole-package figure, not a grain-size instrument mass. The Microtrac SYNC is a laboratory instrument and its mass is not relevant to lunar payload mass.",
+        "power_requirements": "Not publicly specified for any example in the sources read. The ESA PROSPECT page gives no power figure. Power is therefore not stated for any grain-size analyser example."
+      },
+      "environmental_and_operational_requirements": "The sources reviewed do not publish environmental qualification values for a grain-size instrument; the general lunar environment applies (no substantial atmosphere, large surface temperature swings, radiation and micrometeoroid exposure). The main operational constraints in the sources read are sample acquisition and transfer to the measurement volume (handled by pneumatic or drilling systems in the METRIC and PROSPECT designs), thermal management of samples (PROSPECT ovens reach nearly 1000 C, a separate problem from the grain-size measurement itself), and survival through the lunar night, which the PROSPECT mission does not plan for. No temperature, vibration or radiation tolerance is given for any of the instruments, so none is stated here.",
+      "limitations": "No standalone flown grain-size analyser was identified; the payload name describes a measurement role, and the examples are instruments that perform grain-size analysis within a broader analysis. The METRIC XCT, PROSPECT sample camera and L-DAP microscope have no published grain-size performance figures in the sources read. Several sources are conference abstracts. Full PDF texts for the METRIC COSPAR paper, the PROSPECT Frontiers paper and the 2012 L-DAP abstract could not be parsed in this session, so values come from NTRS and ESA record pages, a DOI landing page and search-result excerpts. Laboratory grain-size results describe returned Apollo samples, not in-situ lunar measurements.",
+      "transportation_and_deployment": {
+        "overview": "A regolith grain-size analyser would be a surface payload. Surface-payload considerations apply: Earth integration, launch, lunar transfer, landing delivery, deployment, power and data, and thermal and mechanical interfaces. No compatibility with a named lander has been verified beyond stated plans.",
+        "transportation_process": [
+          "Integrate the instrument into a lander payload compartment or on the lander structure on Earth.",
+          "Launch on a launch vehicle and transfer to the Moon.",
+          "Land on the lunar surface on a commercial lunar lander.",
+          "Deliver sample material to the measurement system (METRIC: PlanetVac sampling and transfer system on a lander footpad; PROSPECT: ProSEED drill feeding the Solids Inlet System and ovens).",
+          "Operate and return data within the lander's power and communications limits."
+        ],
+        "deployment_methods": "METRIC: the sampling and transfer system is mounted on a lander footpad and delivers sieved regolith to the X-ray instruments [1]. PROSPECT: the ProSEED drill (up to 1 m depth) passes material to the ProSPA laboratory, and the sample camera images samples before sealing [3]. A search-result summary of the METRIC record states that a Honeybee pneumatic drill would excavate regolith up to 50 cm below the lander; this was not confirmed in the full record [1].",
+        "historical_examples": "No flown dedicated grain-size analyser was identified. The PROSPECT ion-trap mass spectrometer version reportedly flew on CLPS mission Peregrine 1, which did not reach the surface [4]. The Apollo surface packages are not relevant to grain-size measurement.",
+        "compatibility_assessment": "METRIC: lander unnamed in the source read; compatibility with any named lander not verified. PROSPECT: ESA states the payload will fly on Intuitive Machines' Nova-C lander as a NASA CLPS mission [3]; interface compatibility, mass budget and deployment arrangement have not been verified in the sources read. L-DAP: planned host was the ESA Lunar Lander mission [5]; that mission's status is not verified here.",
+        "images": []
+      },
+      "historical_significance": "No flown dedicated regolith grain-size analyser was identified. The most significant historical contribution in this area is the body of returned Apollo samples, which remain the basis for laboratory grain-size studies [2]. The METRIC XCT, if it flies, would be the first X-ray CT scanner used in space for regolith grain morphology, according to the source's statement that XCT has not previously flown [1]. The PROSPECT sample-imaging and drilling chain would be a further first for lunar polar volatile analysis, if it flies on the planned CLPS mission [3][4].",
+      "limitations_and_uncertainties": "Flight status: METRIC and PROSPECT are planned; L-DAP has no confirmed flight; no flight of a grain-size-specific instrument was found. Schedule: the PROSPECT launch date conflicts across sources (2026 in a 2024 paper, 2027 on the ESA page) and was not confirmed after 2026. Performance: no particle size range has been published for the METRIC XCT or PROSPECT sample camera in the sources read; the 30 micrometre XCT voxel size is an imaging resolution. Mass, power and dimensions: not publicly specified for the METRIC XCT or PROSPECT sample camera; the approximately 45 kg PROSPECT figure is a whole-package value. Source access: several PDF sources could not be parsed; descriptions rely on record pages, ESA web content and search-result excerpts and should be checked against full papers before use. Images: no direct image asset URL could be verified from an official page in this review.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Mineralogical, Elemental and Tomographic Reconnaissance Investigation for CLPS (METRIC)",
+          "authors": "Rampe, E. B., Cannon, K., Sarrazin, P., Blake, D. F., Obbard, R. W., Lucey, P., Bergman, D., Taylor, G. J., Vaniman, D. T.",
+          "publisher": "NASA Technical Reports Server (COSPAR 2022, 44th Scientific Assembly)",
+          "publication_date": "Not stated; record acquired 2022-02-09",
+          "url": "https://ntrs.nasa.gov/citations/20220002240"
+        },
+        {
+          "title": "Characterizing Detailed Grain Shape and Size Distribution Properties of Lunar Regolith",
+          "authors": "Deitrick, S. R., Cannon, K. M.",
+          "publisher": "NASA Technical Reports Server (53rd Lunar and Planetary Science Conference, 2022)",
+          "publication_date": "Record acquired 2022-01-11; conference March 2022",
+          "url": "https://ntrs.nasa.gov/citations/20210026714"
+        },
+        {
+          "title": "Prospect: searching for water at the lunar poles",
+          "authors": null,
+          "publisher": "European Space Agency",
+          "publication_date": "Not stated in the page text read",
+          "url": "https://esa.int/Science_Exploration/Human_and_Robotic_Exploration/Prospect_searching_for_water_at_the_lunar_poles"
+        },
+        {
+          "title": "PROSPECT: A comprehensive sample acquisition and analysis package for lunar science and exploration",
+          "authors": "Trautner, R. et al.",
+          "publisher": "Frontiers in Space Technologies, 5:1331828",
+          "publication_date": "2024",
+          "url": "https://doi.org/10.3389/frspt.2024.1331828"
+        },
+        {
+          "title": "Lunar Dust Analysis Package (L-DAP), EPSC 2012 abstract 732",
+          "authors": "Not verified in this review",
+          "publisher": "Europlanet Science Congress 2012",
+          "publication_date": "2012",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2012/EPSC2012-732.pdf"
+        },
+        {
+          "title": "Lunar Regolith Analyzer concept paper, IAC-24,A3,IP,137,x87164",
+          "authors": "Not verified in this review",
+          "publisher": "International Astronautical Congress 2024",
+          "publication_date": "2024",
+          "url": "https://iafastro.directory/iac/paper/id/87164/abstract-pdf/IAC-24,A3,IP,137,x87164.brief.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image URLs were added because no direct asset URL could be verified from an official page in this review."
+  },
+  "data_quality_notes": [
+    "No standalone flown or formally specified regolith grain-size analyser was identified; the article covers the closest candidates (METRIC XCT, PROSPECT sample camera, L-DAP concept, laboratory reference method) and states this explicitly.",
+    "METRIC and PROSPECT are planned, not flown. L-DAP flight status is unverified.",
+    "PROSPECT launch date conflicts across sources (2026 in the 2024 Frontiers paper, 2027 on the ESA page). ESA page used as the more current source; not independently confirmed.",
+    "The METRIC XCT 30 micrometre figure is an imaging voxel resolution, not a grain-size range.",
+    "The PROSPECT approximately 45 kg figure is a whole-package mass from ESA, not an instrument-level grain-size mass.",
+    "The L-DAP optical microscope resolution (about 1 micrometre) and size goal come from a 2012 abstract excerpt; the full PDF could not be parsed.",
+    "The METRIC COSPAR PDF, PROSPECT Frontiers PDF and L-DAP EPSC PDF could not be parsed in this session; claims rely on NTRS and ESA record pages, a DOI landing page and search-result excerpts.",
+    "The statement that a Honeybee pneumatic drill would excavate regolith up to 50 cm below the lander comes from a search-result summary and was not confirmed in the full METRIC record.",
+    "The PROSPECT sample camera grain-size capability is described in search-level summaries but not in the ESA page; treat as unverified.",
+    "No image assets were verified; the ESA PROSPECT page lists image file names only, not direct asset URLs."
+  ]
+}

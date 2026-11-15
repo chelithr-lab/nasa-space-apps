@@ -1,0 +1,485 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 52,
+    "name": "Polarimetric imager",
+    "article": {
+      "overview": "A polarimetric imager records how the polarisation of reflected light varies across a scene, as well as, or instead of, its brightness and colour. Polarisation depends on surface roughness, particle structure and viewing geometry, so polarisation maps can show surface properties that ordinary images do not. Only one polarimetric imager of the Moon is verified as flown in the sources reviewed: the wide-angle Polarimetric Camera (PolCam) on South Korea's Danuri (KPLO) lunar orbiter, which is described in on-orbit calibration papers and a 2026 mapping abstract. A second example, the LOUPE concept, is a proposed polarimetric imager designed to observe the Earth from the Moon. It is included because it is a polarimetric imager, but it has not flown and is not a lunar surface mapping instrument. In scope: optical imaging instruments that measure polarisation of light, including flown, engineering-model and proposed designs that the sources describe as polarimetric. Out of scope or cross-referenced: ordinary broad-band, multispectral or colour cameras without a polarisation measurement, covered by catalogue entries 034 (Multispectral imager), 039 (Visible-light camera) and 043 (Panchromatic camera). Radar instruments that use polarisation, such as the Mini-RF polarimetric radar, are not optical imagers and are outside this article, as are the radar entries 81, 82, 83 and 102. The MSPI (Multiangle Spectro-Polarimetric Imager) appeared in search results only as a ground and aircraft instrument and was not reviewed further. A wide-angle camera article (catalogue 044) has not been written in this series, so the wide-angle nature of PolCam is noted only by name.",
+      "description": "A polarimetric imager contains an optical system and a detector, and adds a way of measuring the polarisation state of light. Polarisation describes the direction in which the electric field of light oscillates. Light reflected from a rough surface is partly polarised, and the degree and direction of that polarisation depend on the angle between the light source, the surface and the observer. Sunlight arriving at the Moon is unpolarised, so any polarisation seen by the instrument has been created by reflection or scattering from the surface. Measuring polarisation requires several images through different polariser orientations, or a combination of polarisers and filters that records the same scene in several polarisation states at once. The results are combined to give a degree of linear polarisation (DoLP) and, where the instrument can measure it, the orientation of the polarisation. DoLP is a dimensionless fraction or percentage. Many polarimetric instruments use a sequence of images with polarisers at fixed angles, which is one reason calibration and image registration are demanding. PolCam is the only instrument that the sources reviewed describe as operating from lunar orbit. Its design combines two cameras with a wide field, a set of polarisation channels and a frame-transfer detector, and its images show surface brightness together with polarisation information. The LOUPE concept has a different design goal: it would measure the polarisation of sunlight reflected from the Earth, and its requirements emphasise polarimetric accuracy and sensitivity rather than lunar mapping.",
+      "scientific_purpose_and_applications": "The main purpose of a lunar polarimetric imager is to measure how the polarisation of reflected sunlight varies across the surface. Polarisation depends on physical surface structure, such as particle size, roughness and composition, so polarisation maps can complement brightness and colour images in studies of the lunar regolith and geological units. For PolCam, the stated objective is to produce the first high-resolution, global polarimetric dataset of the Moon [1]. The mission team plans maps of the degree of linear polarisation and related products [3][1]. Polarisation maps of this kind are generally interpreted together with colour and reflectance data; this is general practice in the field, not a PolCam-specific claim from the sources. The 2026 Danuri/PolCam abstract reports DoLP values for the lunar maria and highlands as an early example of this use [3]. For LOUPE, the purpose is different: the concept would observe the Earth as an unresolved point from the Moon, and would use polarimetry to study Earth's atmosphere and surface as a test case for detecting life signatures on Earth-like exoplanets [5]. Its application is astrophysical and Earth-observing, not lunar surface mapping.",
+      "operating_principle": "PolCam is a wide-angle polarimetric camera with two cameras, PolCam-L and PolCam-R, mounted at a 45 degree tilt. The on-orbit calibration paper explains that the instrument observes the surface from an oblique viewing geometry and uses six colour and polarisation channels, each defined by a central wavelength and polariser orientation shown in the paper's Figure 1 inset [1]. The detector is a Teledyne e2v CCD47-20, a 1024 x 1024 frame-transfer CCD with 13 micrometre pixels [1]. PolCam operates as a push-broom imager, with the spacecraft's motion building the image line by line. Only six of the 1024 horizontal lines are read out per frame, at lines 48, 180, 368, 564, 724 and 884 [1]. The frame-transfer architecture causes smear, in which charge from bright regions is shifted through the image area and blurs neighbouring pixels. The calibration pipeline removes dark current, corrects smear and applies flat-fielding [2]. PolCam has no shutter; the 2026 abstract describes it as a shutterless frame-transfer CCD [3]. Its oblique 45 degree viewing angle produces topographic distortion, which the geometric calibration reduces by modelling the observation time of each line and the camera geometry [1][3]. A KASI news item shows a PolCam image of the Wichmann crater, which illustrates the three colour filters and polarisation filters and the intensity differences they produce across the scene [7]. The direct image URL depends on a query parameter, so the reference is given as a linked source page only.",
+      "scientific_importance": "Polarisation is a complementary observable. Colour and reflectance images show how much light a surface returns at each wavelength, while polarisation maps show how the returned light is structured. Together they can help separate effects of composition from effects of texture and roughness. The PolCam team reports that the first quasi-global DoLP map of the Moon, presented in a preliminary 2026 conference abstract, shows elevated DoLP in the lunar maria, at about 10-15%, and lower DoLP in the highlands, at about 4-7%. The map covers all longitudes within a restricted latitude band and includes the farside [3]. These values are author-reported, described as preliminary, and have not been checked against an independent calibration. The Paper II calibration abstract reports that the corrected data are good enough for precise DoLP derivation and show the expected inverse relationship between intensity and polarisation [2]. The same team reports a cross-track RMS geolocation error of about 0.87 pixels after refinement, which supports seamless orthorectified mosaics over cratered basins [3]. The Paper I calibration matched 160,256 tie points against the Kaguya MI global map [1]. The Paper II abstract describes PolCam as the first instrument to make global polarimetric observations from lunar orbit [2]. For LOUPE, the scientific importance is methodological. The paper argues that Earth-based polarimetric observations of the Moon are limited by phase angle, spatial resolution and the inability to observe the farside, and proposes polarimetry of the Earth from the Moon as a test case for life-detection methods on other planets [5]. No LOUPE data are reported.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a polarimetric imager. The two examples differ in purpose, state of development and mission and should not be read as representative of all polarimetric imagers. Values are tied to the named instrument and source, and each example's status is stated. PolCam values are from the on-orbit calibration paper's Table 1 and text unless marked as engineering-model (IAC-18) design values. PolCam-L is the camera described in Table 1; PolCam-R is stated to be not functioning as intended [1].",
+        "comparison_table_markdown": "Not provided. The PolCam example (flown, on-orbit camera with measured calibration results) and the LOUPE example (requirements study, not flown) are not directly comparable and are presented as separate examples.",
+        "examples": [
+          {
+            "name": "PolCam (wide-angle Polarimetric Camera), Danuri (KPLO) lunar orbiter",
+            "type": "Flown lunar-orbit polarimetric imager",
+            "status": "Flown. On the Danuri (KPLO) orbiter, which launched on 4 August 2022 (UTC) from Cape Canaveral Space Force Station [6]. On-orbit calibration and mapping are reported in 2025-2026 papers [1][2][3]. Current (November 2026) operating status not confirmed by a primary source.",
+            "launch_reference": "Launch date from Wikipedia [6]; some news search results use 5 August 2022; launch vehicle reported as SpaceX Falcon 9 in news search results only (not verified in a primary source).",
+            "number_of_cameras": 2,
+            "camera_designations": [
+              "PolCam-L",
+              "PolCam-R"
+            ],
+            "polcam_r_status": "Not functioning as intended; the paper states this does not compromise the planned scientific objectives [1, Section 3 footnote].",
+            "mounting_tilt_deg": {
+              "design": 45,
+              "onorbit_pitch_estimate": 44.774,
+              "tolerance": 1,
+              "source": "Table 1 and Section 5.1 of [1]"
+            },
+            "detector": "Teledyne e2v CCD47-20, frame-transfer, shutterless",
+            "detector_format_pixels": "1024 x 1024",
+            "pixel_pitch_um": 13,
+            "focal_length_mm": {
+              "preflight_design_PolCam_L": 76.39,
+              "onorbit_shared_estimate": 74.881416,
+              "onorbit_per_channel_range": [
+                74.706424,
+                76.820351
+              ],
+              "source": "Table 1, Eq. (7) and Table 2 of [1]"
+            },
+            "field_of_view_deg": {
+              "PolCam_L": 9.9,
+              "total_instrument": null,
+              "source": "Table 1 of [1]; total instrument field of view not stated"
+            },
+            "spectral_channels": {
+              "number": 6,
+              "bands_nm": {
+                "stated_onorbit_composite": "430 nm unpolarised composite built from channels 2-4 [1, Section 6]",
+                "per_channel_centres_and_widths": "not stated in accessed text",
+                "design_bands_IAC18": "430 and 750 nm selected; 320 nm for a 320/430 nm reflectance ratio [4, design value]"
+              }
+            },
+            "polariser_angles_deg": {
+              "IAC18_engineering_model_design": [
+                0,
+                60,
+                90,
+                120
+              ],
+              "onorbit": "not stated in accessed on-orbit text"
+            },
+            "readout": {
+              "lines_per_frame": 6,
+              "line_positions": [
+                48,
+                180,
+                368,
+                564,
+                724,
+                884
+              ],
+              "source": "Sections 1 and 5.2 of [1]"
+            },
+            "ground_sampling_distance_m_per_pixel": {
+              "about_43_at_100_km_nominal": 43,
+              "about_20_at_60_km_extended": 20,
+              "basis": "not stated in [1]; see data_quality_notes",
+              "source": "Sections 5.1 and 7 of [1]"
+            },
+            "spatial_resolution_m_design_IAC18": 80,
+            "orbit_altitude_km": {
+              "nominal": "100 +/- 20 (Section 4), 100 (Section 5.1)",
+              "extended_mission": 60,
+              "source": "[1]"
+            },
+            "target_latitude_deg_design": [
+              -70,
+              70
+            ],
+            "mass_kg": {
+              "flight_value": null,
+              "IAC18_engineering_model": "less than 3",
+              "source": "[4], design-stage engineering model; flight mass not verified"
+            },
+            "power_w": {
+              "flight_value": null,
+              "IAC18_engineering_model_max": 15,
+              "source": "[4], design-stage engineering model; flight power not verified"
+            },
+            "dimensions_cm": null,
+            "calibration_results": {
+              "geometric": "160,256 tie points matched to the Kaguya MI orthorectified global map; sub-pixel geolocation with cross-track RMS about 0.87 pixels [1][3]",
+              "radiometric": "dark-current removal, smear correction and flat-fielding described; inter-channel relative response and absolute radiance calibration left for later work; calibration described for qualitative analysis in the Paper II abstract [2]"
+            },
+            "dolp_map_reported": {
+              "maria_percent": "10-15",
+              "highlands_percent": "4-7",
+              "coverage": "all longitudes, restricted latitude band, includes farside",
+              "status": "preliminary, author-reported conference abstract [3]"
+            },
+            "source_urls": [
+              "https://arxiv.org/abs/2512.05330",
+              "https://arxiv.org/abs/2607.08008",
+              "https://meetingorganizer.copernicus.org/EPSC2026/EPSC2026-709.html",
+              "https://iafastro.directory/iac/archive/browse/IAC-18/A3/IP/46966/"
+            ],
+            "images": [
+              {
+                "id": "polcam_camera_model_tie_point_distortion_fig7",
+                "description": "Tie-point distortion on the PolCam-L image plane before and after calibration.",
+                "image_type": "Scientific figure (calibration residuals)",
+                "image_url": "https://arxiv.org/html/2512.05330v1/fig7_camera_model.png",
+                "source_page_url": "https://arxiv.org/html/2512.05330v1",
+                "publisher": "arXiv preprint (Baek, Kim, Jeong and Choi)",
+                "credit": "Baek, Kim, Jeong and Choi, arXiv:2512.05330, Fig. 7",
+                "caption": "Tie-point distortion on the PolCam-L image plane before and after calibration, in cross-track, along-track and Euclidean terms.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL verified (HTTP 200, image/png) without query string. Author-posted preprint figure, not an official agency image. Caption paraphrased from the paper's HTML figure list. Reuse terms should be confirmed against the arXiv licence (CC BY-SA 4.0 per arXiv listing) and the authors' terms."
+              },
+              {
+                "id": "polcam_copernicus_crater_geometric_calibration_fig8",
+                "description": "Copernicus crater before and after geometric calibration of PolCam images.",
+                "image_type": "Scientific figure (mosaic before and after calibration)",
+                "image_url": "https://arxiv.org/html/2512.05330v1/fig8_mapping.png",
+                "source_page_url": "https://arxiv.org/html/2512.05330v1",
+                "publisher": "arXiv preprint (Baek, Kim, Jeong and Choi)",
+                "credit": "Baek, Kim, Jeong and Choi, arXiv:2512.05330, Fig. 8",
+                "caption": "Copernicus crater before and after geometric calibration, showing mosaics and magnified views of small craters and the central peak.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL verified (HTTP 200, image/png) without query string. Author-posted preprint figure. Caption paraphrased from the paper's figure list. Rights as for fig7."
+              }
+            ]
+          },
+          {
+            "name": "LOUPE (Lunar Observatory for Unresolved Polarimetry of the Earth)",
+            "type": "Proposed concept (requirements and design study), not flown",
+            "status": "Not flown. The paper reports a design study and a proof-of-concept validated in an earlier design iteration, and states that the first flight-qualified model was expected to be ready in 2022 [5]. No flight or operational data are reported in the sources reviewed.",
+            "observation_target": "Earth, observed as an unresolved point from the Moon [5]",
+            "mass_kg": {
+              "minimum_requirement": "less than 1",
+              "goal": 0.3,
+              "design_estimate": "about 0.3",
+              "source": "[5]"
+            },
+            "volume": {
+              "minimum_requirement": "1 U",
+              "goal": "less than 1 U",
+              "source": "[5]"
+            },
+            "energy_per_image_kJ": {
+              "estimate": 1,
+              "source": "[5]"
+            },
+            "field_of_view_deg": {
+              "minimum_requirement": "20 x 20 (rough pointing)",
+              "goal": "horizon and Sun avoidance with active pointing",
+              "source": "[5]"
+            },
+            "detector": "CMOS detector with linear variable filter, from the HyperScout platform (heritage and design) [5]",
+            "spectral_range_nm": {
+              "minimum_requirement": [
+                500,
+                800
+              ],
+              "goal": [
+                400,
+                1000
+              ],
+              "source": "[5]"
+            },
+            "spectral_resolution_nm": {
+              "minimum_requirement": 20,
+              "goal": 5,
+              "simulation": "about 3",
+              "source": "[5]"
+            },
+            "polarimetric_sensitivity_percent": {
+              "minimum_requirement": 0.1,
+              "goal": "below 0.0001",
+              "source": "[5]"
+            },
+            "polarimetric_accuracy_percent": {
+              "minimum_requirement": 1,
+              "goal": "below 0.001",
+              "source": "[5]"
+            },
+            "relative_photometry_percent": {
+              "minimum_requirement": 3,
+              "goal": 1,
+              "source": "[5]"
+            },
+            "radiometric_accuracy_percent": {
+              "minimum_requirement": null,
+              "goal": 1,
+              "source": "[5]"
+            },
+            "temporal_sampling": {
+              "minimum_requirement": "hourly",
+              "goal": "multiple per hour",
+              "source": "[5]"
+            },
+            "mission_duration": {
+              "minimum_requirement": "1 month",
+              "goal": "1 year or more",
+              "source": "[5]"
+            },
+            "data_volume": {
+              "minimum_requirement": "about 50 MB per day",
+              "goal": "more than 100 MB per day",
+              "per_compressed_observation": "about 2 MB",
+              "source": "[5]"
+            },
+            "power_w": null,
+            "polariser_angles_deg": null,
+            "source_urls": [
+              "https://arxiv.org/abs/2007.16078"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The flight PolCam dimensions are not publicly specified in the sources accessed; the IAC-18 engineering-model paper does not give dimensions in its abstract. The LOUPE requirement is a 1 U volume at minimum and less than 1 U at goal. The two examples are not dimensionally comparable because one is a flown camera and the other is a requirements study.",
+        "mass_and_weight": "PolCam: flight mass not stated in accessed on-orbit sources. The IAC-18 engineering model gives a total mass of less than 3 kg [4], a design-stage value. LOUPE: minimum requirement less than 1 kg, goal 300 g, and a design estimate of about 300 g [5]. These values are not measured masses.",
+        "power_requirements": "PolCam: flight power not stated in accessed on-orbit sources. The IAC-18 engineering model gives a maximum of 15 W [4], a design-stage value. LOUPE: power not stated; energy of about 1 kJ per image is an estimate [5]."
+      },
+      "environmental_and_operational_requirements": "Operating a polarimetric imager in lunar orbit involves the same environmental constraints as other lunar optical instruments: high vacuum, large temperature swings over each orbit, radiation exposure and no atmosphere. The sources reviewed do not publicly specify PolCam's thermal design, radiation tolerance or operating temperature range, so those values are not given. Operationally, PolCam's measurement depends on viewing geometry. The camera views the surface at an oblique 45 degree tilt, and the polarisation signal depends on the phase angle between the Sun, the surface and the camera. The 2026 abstract refers to high-phase-angle polarimetry as a demonstrated capability but gives no range of angles [3]. A phase-angle range of up to about 140 degrees appears in search-result summaries but was not confirmed in a primary source reviewed. Calibration is an operational requirement. Paper I describes the observation time of each line as modelled with a simple linear model, because telemetry records storage times for 64-line packets rather than per-line times [1]. Paper II describes dark-current removal, smear correction and flat-fielding, and leaves inter-channel relative response and absolute radiance calibration for later work [2]. LOUPE's operational requirements are minimum and goal values for pointing, sampling and duration, and its concept includes a single-use protective lid at minimum and active pointing and protection at goal [5].",
+      "limitations": "PolCam: frame-transfer smear, because the CCD has no shutter and bright regions smear into neighbouring pixels; the Paper II pipeline corrects it, but smear correction is one of the main calibration tasks [2][3]. The oblique 45 degree viewing geometry creates topographic distortion, which the geometric calibration reduces but does not remove [1][3]. Pre-launch ground tests did not accurately characterise the camera model, so the on-orbit calibration had to be built from on-orbit data [1]. The 2026 map covers all longitudes within a restricted latitude band, and a comprehensive global product is future work [3]. PolCam-R is not functioning as intended, which reduces instrument redundancy even though the paper says the planned objectives are not compromised [1]. The Paper II abstract describes the current calibration as suitable for qualitative analysis and describes no absolute radiometric reference; DoLP accuracy and uncertainty were not reported in the accessed text [2]. The on-orbit paper gives about 43 m per pixel at 100 km without a stated basis, while the IAC-18 design gives 80 m and a calculation for this article from the 13 micrometre pixel and 76.39 mm focal length gives about 17 m at 100 km nadir; this discrepancy is unresolved. LOUPE: the concept has not flown; its requirements are minimum and goal values from a 2020 paper, and its design estimates have not been verified against a flight model [5].",
+      "transportation_and_deployment": {
+        "overview": "PolCam is an instrument on the Danuri (KPLO) lunar orbiter, so its transport is that of a spacecraft mission rather than a surface payload. The LOUPE concept is a 1 U volume with a mass target of about 300 g, but its deployment platform is not specified in the accessed text.",
+        "transportation_process": [
+          "PolCam: integrate the instrument on the Danuri orbiter (integration details not found in accessed sources).",
+          "PolCam: launch on 4 August 2022 (UTC) from Cape Canaveral Space Force Station [6]; launch vehicle reported as SpaceX Falcon 9 in news search results only.",
+          "PolCam: transfer to the Moon and insert into lunar orbit (details not verified in accessed sources).",
+          "PolCam: commissioning and on-orbit calibration; operations at a nominal 100 km altitude and an extended mission at 60 km [1].",
+          "PolCam: mission period originally scheduled to end in late 2023, extended to 2025 [6], with news search results reporting a further extension through the end of 2027 (secondary, not verified against an official KASA statement) [8].",
+          "LOUPE: concept only; no launch, integration or deployment plan is stated in the accessed paper [5]."
+        ],
+        "deployment_methods": "PolCam does not require a lunar lander or surface deployment. Its 45 degree tilt and data handling depend on the spacecraft's attitude and data path, and the sources do not describe a separate deployment mechanism. LOUPE: deployment method not specified in the accessed text.",
+        "historical_examples": "PolCam is an example of an orbiter-mounted lunar polarimetric imager on Danuri (KPLO), a Korean mission launched in 2022 [1][6]. LOUPE is a concept with no historical deployment.",
+        "compatibility_assessment": "No compatibility with a specific lander, rover or spacecraft is asserted beyond the Danuri orbiter integration described in the sources. PolCam-specific thermal, power and data interfaces with the spacecraft were not found in accessed sources. No LOUPE compatibility with any lander is assessed.",
+        "images": []
+      },
+      "historical_significance": "PolCam is significant because the Paper II abstract describes it as the first instrument to make global polarimetric observations from lunar orbit [2]. Before PolCam, the on-orbit paper's introduction states that no such observations had been performed from lunar orbit [1]. Earlier lunar polarimetry, according to that introduction, relied on ground-based telescopes limited by phase angle, spatial resolution and the inability to observe the farside [1]; the specific ground-based instruments are not named in the accessed text. The 2026 quasi-global map is an early scientific result from PolCam [3], and its significance depends on the outcome of the planned comprehensive map and on independent confirmation of the DoLP values. The LOUPE concept is historically significant as a design study connecting lunar polarimetry with exoplanet life-detection methods [5]; it did not produce flight hardware in the sources reviewed.",
+      "limitations_and_uncertainties": "Flight status and current operations: PolCam's on-orbit operation is supported by 2025-2026 papers, but its current status was not confirmed in a primary source. Flight mass, dimensions and power: only the IAC-18 engineering model gives mass (less than 3 kg) and power (maximum 15 W); no flight values were found. Ground sampling distance: three values conflict (about 43 m at 100 km, 80 m IAC-18 design, and about 17 m from a calculation for this article). Band centres and polariser angles: the on-orbit text gives only the 430 nm composite; the 320, 430 and 750 nm bands come from the IAC-18 design and a search-result summary of the KASI project page, which could not be accessed directly; polariser angles come from the IAC-18 design only. DoLP results come from a preliminary conference abstract, and their uncertainty was not reported in the accessed text. Launch date and vehicle: 4 August 2022 (UTC) from Wikipedia, with 5 August in some news results; vehicle from news results only. Mission extension through 2027 is from news search results, not an official statement. LOUPE status after the 2020 paper was not found, and no flight is reported. Historical ground-based lunar polarimetry: only the introduction-level statement was accessed; the PMC and DOAJ pages could not be read. Rights for figures: the arXiv listing shows CC BY-SA 4.0 for the paper, but figure reuse terms should be confirmed; the figures are author-posted preprint figures, not official agency images.",
+      "images": [
+        {
+          "id": "polcam_orthorectified_mosaic_fig9",
+          "description": "Orthorectified, mosaicked Reiner Gamma and Aristarchus Plateau images from PolCam, Kaguya MI and LROC WAC.",
+          "image_type": "Scientific figure (orthorectified mosaic)",
+          "image_url": "https://arxiv.org/html/2512.05330v1/figures/fig9_ortho.png",
+          "source_page_url": "https://arxiv.org/html/2512.05330v1",
+          "publisher": "arXiv preprint (Baek, Kim, Jeong and Choi)",
+          "credit": "Baek, Kim, Jeong and Choi, arXiv:2512.05330, Fig. 9",
+          "caption": "Orthorectified, mosaicked Reiner Gamma and Aristarchus Plateau images from PolCam, Kaguya Multiband Imager (MI) and LROC Wide Angle Camera (WAC).",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset URL verified (HTTP 200, image/png, about 2.5 MB) without query string. Author-posted preprint figure, not an official agency image. Caption paraphrased from the paper's figure list. Reuse terms should be confirmed against the arXiv licence (CC BY-SA 4.0 per arXiv listing) and the authors' terms. Full-resolution download not checked."
+        },
+        {
+          "id": "polcam_observation_geometry_fig1",
+          "description": "Schematic of the PolCam observation geometry in lunar orbit, with an inset giving the central wavelength and polariser orientation for the six channels.",
+          "image_type": "Technical diagram",
+          "image_url": "https://arxiv.org/html/2512.05330v1/fig1_PolCam_optics_2.png",
+          "source_page_url": "https://arxiv.org/html/2512.05330v1",
+          "publisher": "arXiv preprint (Baek, Kim, Jeong and Choi)",
+          "credit": "Baek, Kim, Jeong and Choi, arXiv:2512.05330, Fig. 1",
+          "caption": "Schematic diagram of the PolCam observation geometry in lunar orbit; the inset gives the central wavelength and polariser orientation for the six channels.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "Direct asset URL verified (HTTP 200, image/png) without query string. Author-posted preprint figure. The inset values are not legible in the caption and are not transcribed into this file. Rights as for fig9."
+        },
+        {
+          "id": "kasi_polcam_wichmann_crater_news",
+          "description": "Wichmann crater observed by Danuri/PolCam, showing the three colour filters and polarisation filters of PolCam and the intensity differences they produce.",
+          "image_type": "News photograph (PolCam observation)",
+          "image_url": null,
+          "source_page_url": "https://pda.kasi.re.kr/media.php",
+          "publisher": "Korea Astronomy and Space Science Institute (KASI)",
+          "credit": "KASI; no photo credit listed on the news item; KASI copyright notice on the page",
+          "caption": "Wichmann crater observed by Danuri/PolCam, KASI news item dated 13 June 2023.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "image_url is null. The image on the KASI media page is served through a query-string endpoint (webapi.php with an image parameter), so no clean direct asset URL could be verified. The source page is cited instead, with the query string removed. Usage conditions should be checked on the source page."
+        },
+        {
+          "id": "polcam_camera_model_tie_point_distortion_fig7",
+          "description": "Tie-point distortion on the PolCam-L image plane before and after calibration.",
+          "image_type": "Scientific figure (calibration residuals)",
+          "image_url": "https://arxiv.org/html/2512.05330v1/fig7_camera_model.png",
+          "source_page_url": "https://arxiv.org/html/2512.05330v1",
+          "publisher": "arXiv preprint (Baek, Kim, Jeong and Choi)",
+          "credit": "Baek, Kim, Jeong and Choi, arXiv:2512.05330, Fig. 7",
+          "caption": "Tie-point distortion on the PolCam-L image plane before and after calibration, in cross-track, along-track and Euclidean terms.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL verified (HTTP 200, image/png) without query string. Author-posted preprint figure. Caption paraphrased from the paper's figure list. Rights as for fig9."
+        },
+        {
+          "id": "polcam_copernicus_crater_geometric_calibration_fig8",
+          "description": "Copernicus crater before and after geometric calibration of PolCam images.",
+          "image_type": "Scientific figure (mosaic before and after calibration)",
+          "image_url": "https://arxiv.org/html/2512.05330v1/fig8_mapping.png",
+          "source_page_url": "https://arxiv.org/html/2512.05330v1",
+          "publisher": "arXiv preprint (Baek, Kim, Jeong and Choi)",
+          "credit": "Baek, Kim, Jeong and Choi, arXiv:2512.05330, Fig. 8",
+          "caption": "Copernicus crater before and after geometric calibration, showing mosaics and magnified views of small craters and the central peak.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL verified (HTTP 200, image/png) without query string. Author-posted preprint figure. Caption paraphrased from the paper's figure list. Rights as for fig9."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "polcam_orthorectified_mosaic_fig9",
+          "description": "Orthorectified, mosaicked Reiner Gamma and Aristarchus Plateau images from PolCam, Kaguya MI and LROC WAC.",
+          "image_type": "Scientific figure (orthorectified mosaic)",
+          "image_url": "https://arxiv.org/html/2512.05330v1/figures/fig9_ortho.png",
+          "source_page_url": "https://arxiv.org/html/2512.05330v1",
+          "publisher": "arXiv preprint (Baek, Kim, Jeong and Choi)",
+          "credit": "Baek, Kim, Jeong and Choi, arXiv:2512.05330, Fig. 9",
+          "caption": "Orthorectified, mosaicked Reiner Gamma and Aristarchus Plateau images from PolCam, Kaguya Multiband Imager (MI) and LROC Wide Angle Camera (WAC).",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset URL verified (HTTP 200, image/png) without query string. Author-posted preprint figure. Rights as for the master registry entry."
+        }
+      ],
+      "operating_principle_images": [
+        {
+          "id": "polcam_observation_geometry_fig1",
+          "description": "Schematic of the PolCam observation geometry in lunar orbit, with an inset giving the central wavelength and polariser orientation for the six channels.",
+          "image_type": "Technical diagram",
+          "image_url": "https://arxiv.org/html/2512.05330v1/fig1_PolCam_optics_2.png",
+          "source_page_url": "https://arxiv.org/html/2512.05330v1",
+          "publisher": "arXiv preprint (Baek, Kim, Jeong and Choi)",
+          "credit": "Baek, Kim, Jeong and Choi, arXiv:2512.05330, Fig. 1",
+          "caption": "Schematic diagram of the PolCam observation geometry in lunar orbit; the inset gives the central wavelength and polariser orientation for the six channels.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "Direct asset URL verified (HTTP 200, image/png) without query string. Author-posted preprint figure. Rights as for fig9."
+        },
+        {
+          "id": "kasi_polcam_wichmann_crater_news",
+          "description": "Wichmann crater observed by Danuri/PolCam, showing the three colour filters and polarisation filters of PolCam and the intensity differences they produce.",
+          "image_type": "News photograph (PolCam observation)",
+          "image_url": null,
+          "source_page_url": "https://pda.kasi.re.kr/media.php",
+          "publisher": "Korea Astronomy and Space Science Institute (KASI)",
+          "credit": "KASI; no photo credit listed on the news item; KASI copyright notice on the page",
+          "caption": "Wichmann crater observed by Danuri/PolCam, KASI news item dated 13 June 2023.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "image_url is null; see the master registry entry for the reason. Linked source-page reference only."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "On-Orbit Calibration of Danuri/PolCam. I. Geometric Calibration (arXiv:2512.05330; v1 5 December 2025, v2 10 June 2026)",
+          "publisher": "Baek, K., Kim, S. S., Jeong, M. and Choi, Y.-J. (arXiv preprint)",
+          "url": "https://arxiv.org/abs/2512.05330",
+          "notes": "Primary source for PolCam hardware (Table 1: CCD47-20, 1024 x 1024, 13 micrometre pixels, 76.39 mm pre-flight focal length, 9.9 degree FOV for PolCam-L), two cameras at 45 degree tilt, six channels, six readout lines, 100 km and 60 km orbit altitudes, geometric calibration with 160,256 tie points, and the PolCam-R footnote. HTML version used for figures: https://arxiv.org/html/2512.05330v1."
+        },
+        {
+          "number": 2,
+          "title": "On-Orbit Calibration of Danuri/PolCam. II. Image Artifact Correction (arXiv:2607.08008)",
+          "publisher": "Baek, K., Kim, S. S., Jeong, M. and Choi, Y.-J. (arXiv preprint)",
+          "url": "https://arxiv.org/abs/2607.08008",
+          "notes": "Abstract reviewed; full text not reviewed. Source for dark-current removal, smear correction and flat-fielding; for the first global polarimetric observation claim; and for the DoLP derivation statement. No DoLP uncertainty values were in the accessed text."
+        },
+        {
+          "number": 3,
+          "title": "First Quasi-Global Lunar Polarimetric Map from Danuri/PolCam Using a Calibration Pipeline with Smear Correction (EPSC2026-709)",
+          "publisher": "Baek, K., Kim, S., Jeong, M. and Choi, Y.-J.; EPSC Abstracts, Vol. 19 (2026)",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2026/EPSC2026-709.html",
+          "notes": "Preliminary conference abstract. Source for DoLP values (maria 10-15 percent, highlands 4-7 percent), restricted latitude band with all longitudes and farside coverage, sub-pixel geolocation (cross-track RMS about 0.87 pixels), and high-phase-angle polarimetry statement. Not labelled preliminary in the abstract text but presented as a basis for a future global map."
+        },
+        {
+          "number": 4,
+          "title": "Engineering Model of Polarimetric Camera for Korean Lunar Orbiter (IAC-18, IAC-18,A3,IP,53,x46966)",
+          "publisher": "Kang, K., Gu, B., Kim, J. K., Choi, Y.-J., Jung, M., Kim, S. S. and Sim, C. K.; International Astronautical Congress, 2018",
+          "url": "https://iafastro.directory/iac/archive/browse/IAC-18/A3/IP/46966/",
+          "notes": "Abstract reviewed; full manuscript not available. Source for the engineering-model design values: mass less than 3 kg, maximum power 15 W, bands 430 and 750 nm selected plus 320 nm for reflectance ratio, polariser angles 0, 60, 90 and 120 degrees, design spatial resolution 80 m, latitude coverage plus or minus 70 degrees. Design-stage values, not flight measurements."
+        },
+        {
+          "number": 5,
+          "title": "LOUPE: Observing Earth from the Moon to prepare for detecting life on Earth-like exoplanets (arXiv:2007.16078)",
+          "publisher": "Klindzic, D., Stam, D. M., Snik, F., Hoeijmakers, H. J., Willebrands, M., Karalidi, T., Pallichadath, V., van Dijk, C. N. and Esposito, M. (arXiv, 2020)",
+          "url": "https://arxiv.org/abs/2007.16078",
+          "notes": "Source for LOUPE (Lunar Observatory for Unresolved Polarimetry of the Earth) requirements (minimum and goal values), design estimates (mass about 300 g, 1 U volume, about 1 kJ per image), HyperScout-heritage CMOS and linear variable filter detector, and the statement that the paper reports design and testing, not flight operation. Content was read from the arXiv HTML render (ar5iv); the arXiv abstract page was confirmed reachable."
+        },
+        {
+          "number": 6,
+          "title": "Korean Lunar Exploration Program",
+          "publisher": "Wikipedia contributors",
+          "url": "https://en.wikipedia.org/wiki/Korean_Lunar_Exploration_Program",
+          "notes": "Secondary source, used for the Danuri (KPLO) launch date (4 August 2022, from Cape Canaveral Space Force Station) and for the mission extension history (end date originally late 2023, extended to 2025). Launch vehicle not stated on the page. Wikipedia is a secondary source; treat the launch date as to be confirmed against an official record."
+        },
+        {
+          "number": 7,
+          "title": "Media: news item 'Wichmann crater observed by Danuri/PolCam' (13 June 2023)",
+          "publisher": "Korea Astronomy and Space Science Institute (KASI)",
+          "url": "https://pda.kasi.re.kr/media.php",
+          "notes": "Source page for the PolCam Wichmann crater news image. Query string removed from the source URL (the original page URL carried a language query). Direct image asset not verified (query-string endpoint). Usage conditions should be checked on the page."
+        },
+        {
+          "number": 8,
+          "title": "Danuri mission period extension (news reports, 2025)",
+          "publisher": "Korea Herald (https://www.koreaherald.com/article/10416318); Asiae (https://www.asiae.co.kr/en/article/2025021013070233897)",
+          "url": "https://www.koreaherald.com/article/10416318",
+          "notes": "Seen in news search results. The Korea Herald article was not opened in full and the Asiae page could not be reached (connection failure). Secondary source for the extension through the end of 2027; not verified against an official KASA statement."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "operating_principle": "payload.article.operating_principle_images",
+      "physical_specifications.examples[0]": "payload.article.physical_specifications.examples[0].images",
+      "physical_specifications.examples[1]": "no images; LOUPE concept has no verified image in the sources reviewed",
+      "transportation_and_deployment": "payload.article.transportation_and_deployment.images (empty; no image is shown in this section)"
+    },
+    "url_policy": "All image_url, source_page_url and reference URLs in this file have query strings and fragments removed. Direct image URLs were checked for HTTP 200 and image/png content types, and each is a published figure in arXiv:2512.05330. The KASI image has image_url null because its direct asset depends on a query-string endpoint; the KASI media page is cited at its query-free path. Section-level image objects are repeated intentionally so that each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Flight status: PolCam's on-orbit operation is supported by 2025-2026 papers (arXiv:2512.05330, arXiv:2607.08008, EPSC2026-709). Its current operating status in November 2026 was not confirmed by a primary source.",
+    "Flight mass, dimensions and power for PolCam are not stated in the accessed on-orbit sources. The IAC-18 engineering-model values (mass less than 3 kg; maximum power 15 W) are design-stage values and are not flight measurements.",
+    "Ground sampling distance conflict: arXiv:2512.05330 Section 5.1 gives about 43 m per pixel at 100 km without a stated basis; IAC-18 gives 80 m as a design spatial resolution; a calculation for this article from the 13 micrometre pixel and 76.39 mm focal length gives about 17 m at 100 km nadir. Unresolved; the 43 m value should not be used without its basis.",
+    "Spectral bands: the on-orbit paper states only the 430 nm unpolarised composite of channels 2-4 (Section 6). The 320, 430 and 750 nm set comes from the IAC-18 design and from a search-result summary of the KASI PolCam project page. That page could not be accessed (DNS failure), so the set is not verified against a primary on-orbit source. Per-channel centres and widths are not stated.",
+    "Polariser angles 0, 60, 90 and 120 degrees come from the IAC-18 engineering-model design only. The on-orbit paper does not state them in its text, although its Figure 1 inset is said to show them.",
+    "Phase-angle range (up to about 140 degrees) appears in search-result summaries only; it was not confirmed in a primary source reviewed.",
+    "DoLP map values (maria 10-15 percent; highlands 4-7 percent) are from the preliminary EPSC2026-709 abstract. They are author-reported, uncertainty was not reported in the accessed text, and the Paper II abstract was reviewed without its full text.",
+    "Launch date: 4 August 2022 (UTC) from Wikipedia; some news search results use 5 August 2022. The launch vehicle (SpaceX Falcon 9) comes from news search results only. Both should be checked against an official KASA or KARI record.",
+    "Mission extension through the end of 2027 is from news search results (Korea Herald article 10416318 and an Asiae article, 10 February 2025). The Asiae page could not be reached (connection failure), the Korea Herald page was not opened in full, and neither is a primary statement from KASA.",
+    "The KASI PolCam project page (planetary.kasi.re.kr) could not be accessed from the research environment. The KASI media page (pda.kasi.re.kr) was used for the Wichmann crater news item.",
+    "LOUPE is a 2020 concept paper with requirement and design-estimate values. No flight is reported in the sources reviewed; its 2022 flight-qualified-model expectation was not confirmed, and its status after the 2020 paper was not found. Its deployment platform and any lander compatibility are not specified.",
+    "Historical ground-based lunar polarimetry is described only at introduction level in arXiv:2512.05330. The PMC and DOAJ pages on ground-based lunar polarimetry could not be read (verification page and HTTP 403), so no specific earlier ground-based instrument is named.",
+    "Image rights: the four PolCam figures and the overview figure are author-posted arXiv preprint figures. The arXiv abstract page shows a CC BY-SA 4.0 licence link; reuse terms for individual figures should be confirmed. They are not official agency images. The KASI image is not embedded because its asset depends on a query-string endpoint.",
+    "Image verification: direct image URLs returned HTTP 200 with image/png content types in this run. Full-resolution downloads were not checked, and the images were not individually inspected beyond their figure captions from the paper HTML.",
+    "The KPLO press kit (shadowcam.im-ldi.com) could not be read as text, so its 10 degree field-of-view claim is not used. The field-of-view value used here (9.9 degrees, PolCam-L) is from arXiv:2512.05330 Table 1.",
+    "Adjacent instruments not reviewed: the Mini-RF polarimetric radar, the MSPI (ground and aircraft), and catalogue radar entries 81, 82, 83 and 102 are outside this article's optical-imager scope.",
+    "Transportation and compatibility: no PolCam thermal, power or data interface with the Danuri spacecraft was found in accessed sources, and no lander or rover compatibility is asserted. LOUPE deployment and integration are not specified."
+  ]
+}

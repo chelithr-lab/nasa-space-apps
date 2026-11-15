@@ -1,0 +1,178 @@
+{
+  "catalogue_id": 282,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 282,
+    "name": "Surface instrument installation system",
+    "article": {
+      "overview": "A surface instrument installation system is a piece of lunar surface hardware whose job is to take a scientific instrument off a lander or rover, carry it to a chosen spot, and place it on the ground in a controlled way. It may be a robotic arm, a crane-like manipulator, a deployment mechanism, or a crew-operated tool. It does not make a measurement itself. It makes sure that an instrument such as a seismometer, a heat-flow probe or a radio experiment is positioned, levelled and connected so that it can work properly. The payload name describes a function, not a single design. No single flown or agreed specification exists for a surface instrument installation system. The examples considered differ in maturity: one flew on Mars, one is a NASA development concept, one is a crewed-deployment instrument package for Artemis, and one is a proposed robotic station concept.",
+      "description": "Most scientific instruments placed on the Moon must be set down on the surface rather than left on a lander deck. Placement affects the measurement. The instrument must be far enough from the lander to avoid its vibrations, heat and exhaust, but close enough to be reached and checked. Seismometers depend on firm, level ground contact, and tilt, loose soil or a poor seat can add noise or degrade data. Some instruments need thermal shields or covers after placement, and power, data and any tethers must be routed without snagging or straining the instrument. An installation system addresses these requirements. It can be automated (a robotic arm or manipulator following commands from Earth or a lander computer), crewed (astronauts carrying and setting down the instrument with handheld or cart-based tools), or a combination in which a robot performs repetitive work and operators handle difficult cases.",
+      "scientific_purpose_and_applications": "The main application is making scientific instruments usable at locations a lander's own footprint does not serve well. Possible uses include placing seismometers far enough from the lander to reduce its disturbances, positioning heat-flow probes, dust or radiation monitors and radio or telescope packages at useful sites, spreading several instruments across a region so that the same events or conditions can be compared between sites, and moving instruments to new locations later in a mission if the installation hardware is reusable. The scientific benefit depends on correct placement: a poorly levelled or thermally exposed instrument can produce data that are hard to interpret, however sensitive it is. The installation system is therefore part of the measurement chain, not merely a means of transport.",
+      "operating_principle": "An installation system generally follows a sequence. The instrument is released from its stowage on the lander or rover. A manipulator (robotic arm, crane-like truss or crewed tool) grips it through a fixed interface or quick-change tip. The manipulator carries the instrument to the target location and lowers it onto the surface. The instrument is rotated, levelled or pressed into the ground as needed, and some systems use a tripod or base that touches down first. Power, data or thermal protection connections are made, or the instrument is switched on for autonomous operation. The manipulator is then withdrawn or stowed and the instrument is confirmed as operating. The NASA Langley Lunar Surface Manipulation System (LSMS) describes complete control over both translation and rotation of the payload, so that it can be lowered to the ground across much of its workspace without a separate hoist [1]. The InSight arm on Mars used a comparable sequence of grasping, carrying, setting down and adjusting the seismometer, with placement checked using arm-mounted and lander-mounted cameras [4][5].",
+      "scientific_importance": "Seismic and other ground-based instruments can give much better results when placed deliberately than when left in an arbitrary spot. Placement is often the difference between an instrument that records useful ground motion and one that mainly records its own lander. Automated installation widens the range of sites that can be studied: if a lander can place instruments several metres from its own structure, a network can cover more terrain. The InSight mission on Mars is the clearest flown precedent. Its arm placed the seismometer at a distance from the lander and then placed a wind and thermal shield over it [4][5]. The Apollo experiments showed that useful lunar surface science depends on careful deployment, although the Apollo instruments were placed by astronauts rather than by a dedicated automated system.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a surface instrument installation system. Mass, dimensions, reach, power and lifetime depend on the payload carried, the lander it is mounted on and the mission design. The examples are not directly comparable, and most figures are not publicly specified. No single table is given because the examples differ too much to tabulate meaningfully.",
+        "examples": [
+          {
+            "name": "NASA Lunar Surface Manipulation System (LSMS), LAR-TOPS-73",
+            "type": "Development concept (NASA Langley technology)",
+            "mass_kg": null,
+            "dimensions_m": null,
+            "reach_m": null,
+            "payload_capacity_kg": null,
+            "power_w": null,
+            "description": "A lifting and positioning device described as combining features of a crane and a robotic manipulator. NASA lists lunar surface tasks such as unloading components from a lander, carrying them to a work site and installing them, and also cites construction, material handling and camera-boom operations [1].",
+            "structure_and_control": "The page credits a truss built from compression and tension members, with spreaders arranged like spokes, and says mechanical advantage is maintained across the articulation range. Kinematics are not explained in detail [1].",
+            "end_effectors": "A quick-change device at the tip allows automated acquisition of end effectors and special-purpose tools. Listed tools include a bucket, pallet forks, grappling devices, sensor and visualisation packages and dexterous robotic arms [1].",
+            "reference_data": "NASA identifies the technology as LAR-TOPS-73 (case LAR-17528-1) and cites US Patent 7,878,348 [1].",
+            "qualification": "Not publicly specified on the NASA page. Payload capacity, reach, mass, dimensions, power and tip-change time are not given there. NASA states it is seeking development partners and potential licensees. No technology readiness level is given [1].",
+            "unverified_information": "A 2020 NASA technology overview for the same system, presented to a commercial lander provider, appeared in search results with a 500 kg mass goal and a three-year Phase I plan. The document could not be read in this run and these values are not used as facts [3].",
+            "source_urls": [
+              "https://technology.nasa.gov/patent/LAR-TOPS-73"
+            ],
+            "images": []
+          },
+          {
+            "name": "InSight Instrument Deployment System (IDS), Mars",
+            "type": "Flown on Mars (not a lunar system); included as the best-documented flown precedent for robotic instrument placement on a planetary surface",
+            "mass_kg": null,
+            "reach_m": 1.636,
+            "reach_note": "Reported maximum reach of the arm at which the SEIS seismometer was placed, from search-result summaries of InSight documentation; not verified against the primary paper in this run.",
+            "hardware": "A robotic arm, a scoop, a five-finger claw grapple, an arm-mounted camera and a lander-mounted context camera. The arm is described as a refurbished flight robotic arm from the Mars Surveyor 2001 lander mission [4][5].",
+            "placement": "The arm placed the SEIS seismometer on the Martian surface in December 2018 at its maximum reach. The seismometer then needed a levelling follow-up because the ground was tilted about 2 to 3 degrees [4][5].",
+            "wind_and_thermal_shield": "The arm later placed a wind and thermal shield over the seismometer to stabilise the environment around the sensors [5].",
+            "verification": "Engineers rehearsed the placement on a JPL test bed recreating the landing site, to keep the instrument tether clear of rocks [5].",
+            "qualification": "Flown on Mars, December 2018 placement. Not a lunar system and not qualified for lunar use by this source.",
+            "source_urls": [
+              "https://doi.org/10.1007/s11214-018-0520-7",
+              "https://www-robotics.jpl.nasa.gov/what-we-do/flight-projects/insight-mars-lander/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Environment Monitoring Station (LEMS), with astronaut deployment",
+            "type": "Lunar payload in development, designed for crewed deployment; the instrument requires an installation method but is not itself an installation system",
+            "mass_kg": null,
+            "weight_in_lunar_gravity_lb": 11,
+            "dimensions": "About the size of a small suitcase, as stated by NASA. No dimensions in centimetres are given.",
+            "function": "Two seismometers monitoring ground vibrations from moonquakes and meteorite impacts near the lunar south pole. NASA describes it as the first payload designed for Artemis astronauts to deploy on the surface [6].",
+            "power_and_thermal_design": "A flexible solar array that conforms to the unit's shape. NASA states it needs no radioisotope heater and no external power during the lunar night, which lasts about two Earth weeks. It is designed to withstand temperatures down to minus 400 degrees Fahrenheit in some areas [6]. No power draw in watts is stated.",
+            "status": "NASA reports hardware development and testing are complete. The payload will remain at NASA Goddard until assigned to an Artemis mission [6].",
+            "deployment_method": "Not described by NASA. Installation steps, tools and timeline are not disclosed in the source [6].",
+            "source_urls": [
+              "https://science.nasa.gov/missions/artemis/nasa-completes-astronaut-deployed-science-instrument-for-lunar-surface/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Robotically deployable lunar surface science station (Witte et al., 2020)",
+            "type": "Proposed concept, tested in a Moon-analogue environment; not flown",
+            "mass_kg": null,
+            "dimensions": "Not verified.",
+            "description": "A small observatory built for robotic deployment. The strawman payload is a seismometer, a radio experiment and an infrared telescope. A Moon-analogue field test on Mount Etna was reported to confirm the general feasibility of the concept for lunar scientific exploration [2].",
+            "numerical_specifications": "Not verified. The full paper could not be read in this run, so no mass, dimensions, power or deployment-timing values are given [2].",
+            "source_urls": [
+              "https://doi.org/10.1016/j.pss.2020.105080"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No universal dimensions exist. The LSMS concept gives no dimensions, LEMS gives only a qualitative size ('about the size of a small suitcase') and the InSight arm reach of about 1.636 m is a Mars value from search-result summaries. A new installation system would need dimensions determined by its reach requirement, the instrument mass and the lander's stowage envelope, none of which is verified here.",
+        "mass_and_weight": "Not publicly specified for any lunar installation system described. LEMS is given as about 11 pounds of weight in lunar gravity, not a mass in kilograms [6]. The LSMS mass goal of 500 kg appears only in a search-result summary of a 2020 NASA overview that could not be read [3] and is not used as a verified value.",
+        "power_requirements": "Not publicly specified for the installation systems described. LEMS, the instrument, is designed to operate without a radioisotope heater or external power during the lunar night, with a solar array; no power value in watts is stated [6]. Power requirements for an installation mechanism are not given in any source read."
+      },
+      "environmental_and_operational_requirements": "An installation system must operate in the lunar environment: no substantial atmosphere, very large day-night temperature swings, continuous exposure to radiation and micrometeoroids, and dust that is a particular concern for mechanisms, joints and electrical contacts. It must work on uneven ground, which makes levelling and ground-contact verification important. Where it places a seismometer or similar instrument, it must avoid disturbing the ground near the instrument or the lander's vibration environment. LEMS illustrates thermal requirements for a deployed instrument: it is designed for operation through the lunar night without a radioisotope heater and for temperatures down to minus 400 degrees Fahrenheit in some areas [6]. These are instrument requirements, not verified requirements for any installation system.",
+      "limitations": "The name describes a function, so performance cannot be generalised from one example to another. Maturity differs: the InSight arm has flown, but on Mars; the LSMS is a development concept; LEMS has completed hardware development but has no published deployment plan; the Witte et al. station is a proposal. None is a flown lunar installation system. Reach values and placement tolerances must be verified against specific hardware. No installation system here is verified as compatible with a named lander, and compatibility requires verified mass, mounting, reach, power, data and thermal interfaces.",
+      "transportation_and_deployment": {
+        "overview": "This is a surface payload. The transportation chain covers Earth integration, launch and lunar transfer, landing and release, deployment, setup and levelling, and operation. No compatibility with a specific lander, rover or spacecraft is asserted.",
+        "transportation_process": [
+          "Earth integration: the installation system is integrated into a lander or rover with its stowage, power and data interfaces defined. For a crewed-deployment design such as the LEMS concept, the instrument is integrated into the mission's payload stowage [6].",
+          "Launch and lunar transfer: the lander or rover carrying the system is launched and transferred to the Moon.",
+          "Landing and release: after landing, the system is released from its stowage. For the LSMS concept, NASA describes unloading components from a lander as an intended task [1].",
+          "Deployment: the system carries the instrument to the chosen location and places it. The InSight arm performed this step on Mars, placing a seismometer at its maximum reach of about 1.636 m and later adding a shield [4][5]. A crewed deployment, as planned for LEMS, relies on astronauts performing this step; NASA does not describe the procedure [6].",
+          "Setup, levelling and connections: the instrument is levelled, thermally protected and connected to power and data. The InSight seismometer needed a levelling follow-up [5].",
+          "Operation: the instrument operates autonomously or under command. LEMS is planned to send data to Earth monthly on a preset plan [6]."
+        ],
+        "deployment_methods": "Robotic placement by a manipulator (the InSight arm on Mars is the flown example; the LSMS is a development concept) [1][4][5]. Crewed placement by astronauts, as planned for LEMS, with the procedure not disclosed [6]. A proposed robotic station concept, with a strawman seismometer, radio experiment and infrared telescope, was tested in a Moon-analogue field trial [2]. A proposed retroreflector deployment by lander arm is described in a 2012 study, with details not verified [7].",
+        "historical_examples": "The InSight Instrument Deployment System placed its seismometer on Mars in December 2018 [4][5]. The Apollo programme deployed instruments by astronaut hand, and the LEMS is designed for Artemis astronaut deployment [6].",
+        "compatibility_assessment": "No compatibility with a named lunar lander, rover or spacecraft is established. A future installation system's compatibility would need to be assessed using its mass, dimensions, mounting points, landing loads, deployment method, power requirements and communications architecture, compared with verified spacecraft specifications.",
+        "images": []
+      },
+      "historical_significance": "The InSight Instrument Deployment System placed its seismometer on Mars in December 2018. One search-result summary describes this as NASA's first precision robotic instrument placement and release on another planetary body since Apollo [4][5]. On the Moon, the Apollo programme established the practice of astronauts deploying instruments by hand. LEMS is described by NASA as the first payload designed for Artemis astronauts to deploy on the surface [6]. The LSMS is one of several development concepts for lunar installation hardware [1]. The Witte et al. concept is a further proposal for robotic deployment [2].",
+      "limitations_and_uncertainties": "Several claims in this article rest on sources that could not be read in full, so the evidence for them is weaker than for the verified facts elsewhere. The main gaps are listed below and should be read before relying on any value in this article. Witte et al. (2020) is unverified in detail: its title, authors, payload strawman and Mount Etna test come from search-result summaries, and the full paper could not be read, so no numerical specification is taken from it [2]. InSight details (arm reach of 1.636 m, the arm's origin, the 2 to 3 degree tilt, the shield placement) come from search-result summaries of InSight documentation; the primary Springer paper (DOI 10.1007/s11214-018-0520-7) could not be read in full [4][5]. LSMS has no published numeric specifications on the NASA page; a 2020 overview may contain them but could not be parsed in this run [1][3]. The 2012 retroreflector study could not be read as text, so its concept is described from search results only [7]. LEMS installation steps, tools and timeline are not disclosed [6]. Mass, reach, power and lifetime values for the systems described are not publicly specified in the sources read.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Lunar Surface Manipulation System (LAR-TOPS-73)",
+          "publisher": "NASA Langley Research Center / NASA Technology Transfer Portal",
+          "url": "https://technology.nasa.gov/patent/LAR-TOPS-73"
+        },
+        {
+          "title": "Robotically deployable lunar surface science station and its validation in a Moon-analogue environment (Witte et al., 2020), Planetary and Space Science, 193, 105080",
+          "publisher": "Elsevier (Planetary and Space Science)",
+          "url": "https://doi.org/10.1016/j.pss.2020.105080",
+          "notes": "Title and abstract from search-result summary; full text not read in this run."
+        },
+        {
+          "title": "LSMS Technology Overview V5 (Blue Origin presentation)",
+          "publisher": "NASA Technical Reports Server",
+          "url": "https://ntrs.nasa.gov/api/citations/20205006977/downloads/LSMS%20Technology%20Overview%20V5%20Blue%20Origin.pdf",
+          "notes": "Document could not be read as text in this run; not used for values."
+        },
+        {
+          "title": "InSight mission paper, Space Science Reviews",
+          "publisher": "Springer",
+          "url": "https://doi.org/10.1007/s11214-018-0520-7",
+          "notes": "Identified from a search result; title and authors not confirmed and full text not read in this run."
+        },
+        {
+          "title": "InSight Mars Lander mission pages",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "url": "https://www-robotics.jpl.nasa.gov/what-we-do/flight-projects/insight-mars-lander/",
+          "notes": "Identified from search results; not fetched in full."
+        },
+        {
+          "title": "NASA Completes Astronaut-Deployed Science Instrument for Lunar Surface (LEMS)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/missions/artemis/nasa-completes-astronaut-deployed-science-instrument-for-lunar-surface/"
+        },
+        {
+          "title": "Corner-cube retro-reflector instrument for advanced lunar laser ranging",
+          "publisher": "arXiv",
+          "url": "https://arxiv.org/pdf/1210.7857",
+          "notes": "Identified from search results; PDF not readable as text in this run."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image URLs were added because no direct image asset could be verified from an official source in this run. Third-party mirror sites were not used."
+  },
+  "data_quality_notes": [
+    "No images are included. No direct image asset URL was verified from an official source, so image_url values were not added.",
+    "The Witte et al. (2020) paper was identified from a search result; its title, authors, payload strawman and Mount Etna test are not verified from the full text.",
+    "The InSight arm reach (1.636 m), arm origin, 2 to 3 degree tilt and shield placement come from search-result summaries of InSight documentation; the primary Springer paper was not read in full.",
+    "The LSMS NASA page gives no numeric specifications. A 2020 NASA overview with a 500 kg mass goal appeared in search results but could not be parsed; the value is not used as verified.",
+    "The 2012 retroreflector deployment study (arXiv 1210.7857) could not be read as text; its concept is described from search results only.",
+    "LEMS is given as about 11 pounds of weight in lunar gravity, not a mass in kilograms. No kilogram mass, centimetre dimensions or watt power value is stated by NASA.",
+    "A Honeybee Robotics deployment-mechanism page redirected to a different host during research and was not followed, so no claims are taken from it.",
+    "The payload name is a functional description rather than a single design; no universal specification exists.",
+    "No lander, rover or spacecraft compatibility is asserted."
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "catalogue_id": 200,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 10,
+    "name": "Biological and life-science experiments"
+  },
+  "payload": {
+    "number": 200,
+    "name": "Microorganism survival experiment",
+    "article": {
+      "overview": "A microorganism survival experiment exposes living microbes, or dormant forms such as dried cells and spores, to conditions found on the Moon or in cislunar space, and then determines whether they remain viable. Such experiments answer a practical question: how long can Earth life persist on the lunar surface, and what would contaminate a scientific site? This entry describes the payload class rather than one standard instrument. Four flown or planned experiments and one 2026 modelling study are discussed. None of the examples shows that microorganisms can grow or reproduce on the Moon [1][2].",
+      "description": "A microorganism survival experiment places a biological sample in a controlled container or on a sample holder, exposes it to one or more lunar or cislunar environmental stresses, and later measures viability. The sample might be dried bacterial or cyanobacterial cells, fungal spores, or yeast in a dormant state. Stresses of interest include vacuum, ultraviolet (UV) radiation, ionising cosmic and solar particle radiation, temperature cycling, and contact with regolith. Viability is usually judged by culturing the organism after rehydration, by staining or metabolic indicators, or by observing growth in an onboard fluidic system. Survival in this sense means that cells remain alive; it does not necessarily mean growth or reproduction. The 2026 lunar south pole study defines survival in exactly this limited way [1][2].",
+      "scientific_purpose_and_applications": "The main purposes are: (a) to measure how well microorganisms survive the lunar environment, which constrains whether dormant Earth life could persist in shadowed or sunlit regions [1][2]; (b) to establish a baseline of biological contamination that human activity could introduce, which matters for future life-detection and surface chemistry studies [2]; (c) to study how radiation, vacuum and mineral shielding affect biological material, including the protective effect of a lunar regolith analogue [5]; and (d) to support long-duration life-support and biological-production concepts, such as the yeast and nutrient-production work planned for the LEIA experiment [8]. Applications also include planetary-protection policy and the design of sample-return containment, because contamination of returned samples by Earth life can confuse analysis [4].",
+      "operating_principle": "A typical experiment has four elements. First, the biological sample is prepared in a dormant state, usually dried, so that it can survive transport and launch. Second, it is kept in a containment system that either protects it from the environment until deployment or exposes it through a window or open sample holder. Third, the sample is exposed to the lunar or cislunar environment for a defined duration. Fourth, viability is determined after retrieval or by an onboard readout, and compared with ground control samples handled identically but not exposed. Differences between flown and control samples indicate the effect of the environment. Growth requires liquid water and suitable temperatures; the 2026 modelling study reports no evidence that the Moon provides the conditions for microbes to grow and reproduce, and notes that liquid water is absent [1][2]. This section describes the general method; the hardware of each example is described below.",
+      "scientific_importance": "Biological experiments on the Moon are scientifically important for three reasons. The first is contamination. The Surveyor 3 camera returned to Earth with the Apollo 12 crew in 1969 was reported to carry a bacterium identified as Streptococcus mitis; the authors of a 2011 analysis concluded that poor clean-room conditions were the more likely explanation, rather than survival on the Moon [4]. The second is radiation and dormancy. The BIOMEX experiment on the International Space Station showed that dried cyanobacterial cells mixed with a lunar regolith simulant survived space UV better than unmixed cells [5]. The third is current modelling. The 2026 Science Advances study predicts survivable niches across the lunar south pole, ranging from crater floors several miles across down to areas no larger than an astronaut's boot print [1][2]. This suggests that contamination baseline measurements may be needed before surface science in these regions.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power requirement for a microorganism survival experiment. The payload may be a small sample tray on a lander, a sealed canister, a microfluidic cartridge on a small spacecraft, or an exposure facility on an orbital platform. The examples below are different designs and should not be compared directly. Only figures reported in the sources retrieved for this article are given; other values are recorded as not publicly specified.",
+        "examples": [
+          {
+            "name": "Chang'e-4 Lunar Micro Ecosystem (LME)",
+            "type": "Flown lunar surface experiment (Chang'e-4 lander, lunar far side, landed 3 January 2019)",
+            "status": "Flown; operated on the lunar surface",
+            "mass_kg": 2.6,
+            "dimensions_cm": {
+              "length": 18,
+              "diameter": 16
+            },
+            "power_consumption_w": null,
+            "organisms_and_contents": "Seeds of cotton, rapeseed, potato and arabidopsis; fruit fly eggs; yeast. The cotton, rapeseed, potato and arabidopsis seeds are plants rather than microorganisms; the experiment is included because it was a closed micro-ecosystem that also carried yeast. Secondary reporting describes water, soil and air in the canister; this was not verified against a primary source.",
+            "thermal_control": "The source describes the LME as unheated.",
+            "weight_constraint": "The source states that the experiment's weight could not exceed 3 kg.",
+            "results": "Only the cotton seeds gave a positive result; updated data showed two leaves, and the article states that none of the other organisms produced results. The cotton sprout died after the first lunar day, when temperatures fell to about minus 190 degrees Celsius.",
+            "publication_status": "The source states that no scientific papers will be published from the experiment.",
+            "qualification": "Flown on the Chang'e-4 lander. Mass and dimensions are from the retrieved source and were not checked against a Chinese primary source.",
+            "source_urls": [
+              "https://universetoday.com/143614/chinas-lander-successfully-grew-some-cotton-plants-on-the-moon-fruit-flies-and-potatoes-didnt-fare-so-well/"
+            ],
+            "images": []
+          },
+          {
+            "name": "BioSentinel yeast experiment",
+            "type": "Flown deep-space CubeSat experiment with dried yeast and an onboard radiation detector",
+            "status": "Flown; not on the lunar surface",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "launch_vehicle": "Not verified in the retrieved sources.",
+            "organisms_and_contents": "Dried yeast; onboard radiation detector.",
+            "results": "NASA reports that the yeast did not activate and that four two-week experiments showed no cell growth, while the onboard radiation detector continued to collect data. NASA states that deep space radiation was not the cause, and that the yeast had likely expired after extended storage before launch.",
+            "mission_extension": "Extended by up to 18 months; no results confirming status after November 2024 were found.",
+            "qualification": "Results rely on NASA summaries; the fact sheet PDF could not be read in full.",
+            "source_urls": [
+              "https://www.nasa.gov/sites/default/files/atoms/files/biosentinel_fact_sheet-16apr2019_508.pdf",
+              "https://ntrs.nasa.gov/citations/20230008421"
+            ],
+            "images": []
+          },
+          {
+            "name": "BIOMEX on EXPOSE-R2 (low Earth orbit ground analogue)",
+            "type": "Flown experiment on an ISS exposure platform; not on the lunar surface",
+            "status": "Flown in low Earth orbit",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "organisms_and_contents": "Chroococcidiopsis cyanobacterium (strains CCMEE 029 and CCMEE 057 per secondary summary), dried, mixed with sandstone or a lunar regolith simulant (mainly anorthosite, 100-1000 micrometre grains) or unmixed.",
+            "results": "Dried cells not mixed with minerals were killed by about 205 kJ/m2 of UV radiation. Cells mixed with sandstone or lunar regolith simulant survived about 159 and 179 kJ/m2 respectively.",
+            "qualification": "Values come from a secondary summary with garbled exponents and must be checked against the primary paper. The lunar-analogue result comes from one experiment. Low Earth orbit is shielded by Earth's magnetosphere and does not represent the lunar surface.",
+            "source_urls": [
+              "https://doi.org/10.1017/S1473550419000168"
+            ],
+            "images": []
+          },
+          {
+            "name": "LEIA (Lunar Explorer Instrument for space biology Applications), planned",
+            "type": "Planned lunar surface yeast experiment (CLPS delivery)",
+            "status": "Planned; landing not verified as of November 2026",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "organisms_and_contents": "BioSensor with 16 microfluidic cards of dry Saccharomyces cerevisiae yeast; strains include the two BioSentinel strains and BioNutrients project strains. Companion Mini-FND neutron detector.",
+            "design_notes": "BioSensor built at NASA Ames on BioSentinel heritage. On command, the cards release a nutrient liquid intended to make the yeast grow.",
+            "scheduled_landing": "South Pole region of the Moon, 2026, as stated by NASA.",
+            "qualification": "Dimensions, mass and power were not verified.",
+            "source_urls": [
+              "https://www.nasa.gov/technology/science-instruments/what-is-the-lunar-explorer-instrument-for-space-biology-applications/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Chang'e-4 LME was a sealed cylinder 18 cm long and 16 cm in diameter. Dimensions for the BioSentinel, BIOMEX and LEIA examples were not verified and are recorded as null. The examples differ in purpose, containment and environment, so their dimensions should not be compared directly.",
+        "mass_and_weight": "The Chang'e-4 LME had a mass of 2.6 kg, below the 3 kg limit stated in its source. Masses for the other examples were not verified and are recorded as null. Mass affects launch requirements, lander capacity and mounting design.",
+        "power_requirements": "Not publicly specified in the retrieved sources for any example. The Chang'e-4 LME was described as unheated; no power value was found."
+      },
+      "environmental_and_operational_requirements": "The relevant conditions include vacuum; UV exposure, which the 2026 modelling study identifies as one of the main threats to microbes at the lunar south pole, together with heat [2]; the extreme cold of the lunar night, which ended the cotton sprout in the Chang'e-4 LME after the first lunar day [3]; ionising cosmic and solar particle radiation, which BioSentinel was designed to measure [6]; and the absence of an atmosphere and of liquid water, which precludes growth [1]. In the south pole model, survival required that an organism remain viable for at least one Earth day [1][2]. Operationally, the sample needs protected containment until deployment, thermal control through the lunar night, and contamination-controlled handling before and after exposure [4].",
+      "limitations": "Only a few flown examples exist, and each sample set is small. The BIOMEX lunar-analogue result comes from one experiment [5]. Null results cannot be read as showing that radiation has no effect: the BioSentinel team attributes its result to storage-related loss of yeast viability rather than to radiation [6]. The Chang'e-4 result rests on a single secondary article and no peer-reviewed publication [3]. The 2026 modelling study is a simulation of Earth microbes on lunar terrain models; it did not sample the Moon, did not test growth or reproduction, and did not examine mutation or pathogenicity [1][2]. Contamination from Earth organisms can confound any measurement, as the Surveyor 3 case shows [4].",
+      "transportation_and_deployment": {
+        "overview": "A microorganism survival payload is usually small enough to be a sample tray or canister on a lander, a cartridge on a secondary payload, or an exposure module. The Chang'e-4 LME was carried by a lander [3], and LEIA is planned for delivery by a CLPS lander [8]. The lander named for LEIA is not identified in the retrieved sources.",
+        "transportation_process": [
+          "Earth integration: sterile or contamination-controlled handling of the sample, because contamination is itself a measurement problem [4].",
+          "Launch and lunar transfer: the sample must survive launch loads and transit, which is why dormant forms such as dried cells are used [1][2].",
+          "Landing delivery and deployment: the Chang'e-4 LME deployment mechanism is not described in the retrieved source. LEIA's BioSensor is autonomous and releases its nutrient liquid on command [8].",
+          "Power, data and thermal interfaces: the Chang'e-4 canister was unheated and its sprout died in the lunar night [3]; LEIA's power and data interfaces are not described in the retrieved sources."
+        ],
+        "deployment_methods": "The Chang'e-4 LME deployment mechanism is not described in the retrieved source. LEIA is an autonomous BioSensor that releases nutrient liquid on command [8]. Deployment for other examples is not described in the retrieved sources.",
+        "historical_examples": "The Surveyor 3 camera was returned to Earth with the Apollo 12 crew in a porous bag rather than in the sealed containers used for lunar samples, which is one reason the contamination case is disputed [4]. The Chang'e-4 LME is a lander-carried example [3].",
+        "compatibility_assessment": "Compatibility with any specific lander was not assessed, because verified interface data were not retrieved. The LEIA lander is not identified in the retrieved sources.",
+        "images": []
+      },
+      "historical_significance": "The most cited historical case is the Surveyor 3 camera. Its returned parts were reported to contain Streptococcus mitis, which some accounts interpreted as surviving about two and a half years on the Moon. A 2011 analysis attributed the finding to contamination under poor clean-room conditions [4]. The episode is said to have helped motivate stricter contamination controls for sample return, and the bacterial test cannot now be repeated because the parts were re-exposed to terrestrial conditions [4]. The Chang'e-4 LME was reported in the press as the first biology experiment to produce a sprout on the lunar surface, but the retrieved source reports only one positive result and no peer-reviewed data [3]. The BIOMEX experiment established a protective effect of regolith-analogue mixtures for cyanobacterial cells in low Earth orbit [5]. The 2026 south pole modelling study is the most recent development and is a simulation rather than an experiment [1][2].",
+      "limitations_and_uncertainties": "Evidence gaps: (1) the Science Advances paper was verified only through a NASA-sourced news summary, so the exact durations, area percentages and per-species figures have not been checked against the paper; the author order also differs between sources [1][2]. (2) The BIOMEX UV values come from a secondary summary with garbled exponents [5]. (3) The BioSentinel results rely on NASA summaries and mission documents that could not be read in full [6][7]. (4) Secondary reporting differs on whether the Chang'e-4 LME was heated and on which seeds sprouted [3]. (5) The Surveyor 3 species identification is reported in secondary summaries and is not checked against primary records [4]. (6) No direct image asset was verified for any example, so this article contains no images.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "id": 1,
+          "title": "Potential survivable niches for microbial life on the lunar south pole",
+          "authors": "Saxena P, Bertone S, Graham HV, Curran NM, Regberg AB, Needham A, Puge DE, Petro NE",
+          "publisher": "Science Advances",
+          "date": "2026-08-19",
+          "volume_issue": "12(34)",
+          "url": "https://doi.org/10.1126/sciadv.aec0811",
+          "notes": "Verified only through NASA-sourced news summaries; the science.org page returned HTTP 403. Another summary lists the first authors as Puge and Petro."
+        },
+        {
+          "id": 2,
+          "title": "NASA-sourced news release on the lunar south pole microbe survival study",
+          "authors": null,
+          "publisher": "ScienceDaily",
+          "date": "2026-08-25",
+          "url": "https://sciencedaily.com/releases/2026/08/260823094142.htm",
+          "notes": "Secondary news release quoting NASA material."
+        },
+        {
+          "id": 3,
+          "title": "China's lander successfully grew some cotton plants on the Moon. Fruit flies and potatoes didn't fare so well",
+          "authors": null,
+          "publisher": "Universe Today",
+          "date": null,
+          "url": "https://universetoday.com/143614/chinas-lander-successfully-grew-some-cotton-plants-on-the-moon-fruit-flies-and-potatoes-didnt-fare-so-well/",
+          "notes": "Secondary source; the article date is not in the retrieved text. Describes the LME as unheated and states no scientific papers will be published."
+        },
+        {
+          "id": 4,
+          "title": "A Microbe on the Moon? Surveyor III and Lessons Learned for Future Sample Return Missions",
+          "authors": "Rummel JD, Allton J, Morrison D",
+          "publisher": "NASA Science Mission Directorate",
+          "date": "2011",
+          "url": "https://smd-cms.nasa.gov/wp-content/uploads/2023/04/A_Microbe_on_the_Moon_TAGGED.pdf",
+          "notes": "Full text not read; findings taken from a search summary. Journal of publication not confirmed."
+        },
+        {
+          "id": 5,
+          "title": "Exposure to low Earth orbit of an extreme tolerant cyanobacterium as a contribution to lunar astrobiology activities",
+          "authors": "Billi D, et al.",
+          "publisher": "International Journal of Astrobiology",
+          "date": "2019",
+          "url": "https://doi.org/10.1017/S1473550419000168",
+          "notes": "The DOI was inferred from the Cambridge Core PII in a retrieved link and has not been verified. Authors and figures come from a search summary."
+        },
+        {
+          "id": 6,
+          "title": "BioSentinel mission fact sheet",
+          "authors": null,
+          "publisher": "NASA",
+          "date": "2019-04-16",
+          "url": "https://www.nasa.gov/sites/default/files/atoms/files/biosentinel_fact_sheet-16apr2019_508.pdf",
+          "notes": "The PDF could not be read by the fetch tool; statements are from NASA summaries returned by search."
+        },
+        {
+          "id": 7,
+          "title": "BioSentinel Small Satellite Conference paper on spacecraft performance and lessons learned",
+          "authors": "NASA Ames",
+          "publisher": "NASA Technical Reports Server",
+          "date": "2023",
+          "url": "https://ntrs.nasa.gov/citations/20230008421",
+          "notes": "Record viewed only through search results; full text not read."
+        },
+        {
+          "id": 8,
+          "title": "What is the Lunar Explorer Instrument for Space Biology Applications (LEIA)?",
+          "authors": null,
+          "publisher": "NASA",
+          "date": null,
+          "url": "https://www.nasa.gov/technology/science-instruments/what-is-the-lunar-explorer-instrument-for-space-biology-applications/",
+          "notes": "Undated NASA page; landing status not verified as of November 2026."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Chang'e-4 LME example": "payload.article.physical_specifications.examples[0].images",
+      "BioSentinel example": "payload.article.physical_specifications.examples[1].images",
+      "BIOMEX example": "payload.article.physical_specifications.examples[2].images",
+      "LEIA example": "payload.article.physical_specifications.examples[3].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All URL values in this file have query strings and fragments removed. No direct image asset was verified, so every image array is empty and no image URLs are included."
+  },
+  "data_quality_notes": [
+    "No direct image asset was verified from an official page for any example, so the master registry and all section-level image arrays are empty. No image URLs were invented.",
+    "The Science Advances paper (reference 1) was not read directly because science.org returned HTTP 403. Figures are from a NASA-sourced ScienceDaily summary. Author order differs between sources.",
+    "The DOI for reference 5 was inferred from a Cambridge Core identifier in a retrieved link and must be verified.",
+    "The BIOMEX kJ/m2 values come from a secondary summary with garbled exponents and must be checked against the primary paper.",
+    "Secondary reporting disagrees on whether the Chang'e-4 LME was heated and on which seeds sprouted. The Universe Today article (reference 3) was used as the primary retrieved source for these points.",
+    "The BioSentinel fact sheet PDF could not be read by the fetch tool. BioSentinel claims rely on NASA summaries returned by search.",
+    "LEIA landing status was not verified as of 2026-11-13.",
+    "Mass, dimensions and power are null for all examples except the Chang'e-4 LME, because no verified figures were retrieved.",
+    "Surveyor 3 microbe identification (Streptococcus mitis) is reported in secondary summaries and is not checked against primary records."
+  ]
+}

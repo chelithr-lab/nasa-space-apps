@@ -1,0 +1,25 @@
+{
+  "name": "serenity",
+  "private": true,
+  "description": "Serenity: one site for the lunar explorers (home, 3D explorer, mission explorer, payload explorer).",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "node tools/build-site.mjs",
+    "start": "node tools/build-site.mjs && node tools/serve.mjs",
+    "dev:explorer": "npm run dev -w @serenity/explorer",
+    "dev:payloads": "npm run dev -w @serenity/payloads",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test:e2e": "playwright test"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "vite": "^7.3.8"
+  }
+}

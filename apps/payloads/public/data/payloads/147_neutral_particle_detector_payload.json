@@ -1,0 +1,164 @@
+{
+  "catalogue_id": 147,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 7,
+    "name": "Lunar exosphere and atmospheric instruments"
+  },
+  "payload": {
+    "number": 147,
+    "name": "Neutral particle detector",
+    "article": {
+      "overview": "A neutral particle detector counts atoms that carry no electric charge, which makes them harder to measure than charged particles. At the Moon, the main interest is in energetic neutral atoms (ENAs). These are produced when particles of the solar wind strike the surface and rebound as neutral atoms, or when they knock atoms out of the regolith. Measuring ENAs shows how the solar wind interacts with the lunar surface and with local magnetic fields, information that surface images alone do not provide [2][3][4]. The three examples are the ASAN instrument on China's Chang'E-4 rover Yutu-2, which has operated on the lunar surface since 2019 [2][3]; the CENA sensor of the SARA experiment on India's Chandrayaan-1 orbiter [4][5]; and the Lunar Neutrals Telescope (LNT), planned for Turkey's AYAP-1 mission and not yet flown [6].",
+      "description": "Because neutral atoms are not steered by electric or magnetic fields, an ENA instrument usually converts them into charged particles before analysing them. The ASAN instrument converts incoming ENAs to positive ions on a charge-conversion surface, then analyses them with a surface-interaction time-of-flight system, an electrostatic analyser and an electrostatic elevation scanner. Together these resolve the flux by direction, energy and mass [3]. SARA (Sub-keV Atom Reflecting Analyzer) combined two sensors: CENA, the neutral-atom sensor, and SWIM, a solar-wind ion monitor, with a data processing unit that commands both sensors and interfaces with the spacecraft [5]. LNT is described by its developer as an ENA instrument that builds on the SARA heritage and is designed to map the surface at 12 km by 12 km resolution. This is a design target, not a measured performance [6].",
+      "scientific_purpose_and_applications": "The purpose of these instruments is to measure the flux, energy spectrum and mass of neutral atoms leaving the lunar surface. ISRO lists SARA's objectives as imaging surface composition, including permanently shadowed and volatile-rich areas, imaging how the solar wind interacts with the surface, and studying lunar surface magnetic anomalies [5]. SARA observations suggested that about 20% of incident solar wind ions are backscattered from the surface as neutral atoms [4]. ASAN's surface measurements allow the microphysics of solar-wind and surface interaction to be studied directly, and they show how local magnetic anomalies affect the emitted neutral flux [3].",
+      "operating_principle": "The general principle is to collect neutral atoms that arrive from the surface, convert them to charged particles so that they can be steered and analysed, and then sort them by energy, direction and mass using timing and electrostatic analysis [3]. ASAN uses a time-of-flight measurement after charge conversion, which allows the mass of the incoming atom to be estimated, although the mass resolution is coarse [1][2]. SARA's CENA was an imaging sensor for low-energy neutral atoms, and it was used for remote imaging from lunar orbit [4][5]. The detailed optical and electrostatic design of each sensor is not described in the sources consulted for this article.",
+      "scientific_importance": "The ENA measurements show that a substantial fraction of the solar wind hitting the Moon returns as neutral atoms rather than being absorbed. The SARA result was reported as relevant to other airless bodies in the Solar System [4]. ASAN is the first instrument to measure ENAs directly on the lunar surface rather than from orbit [2][3]. This surface viewpoint complements orbital imaging because it records the same processes at one location while the rover moves and samples different solar-wind and illumination geometries [2].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power figure for a neutral particle detector. The values below apply only to the named instruments and to the sources cited with them. Where a value is not published in the sources consulted, it is stated as not publicly specified rather than estimated.",
+        "examples": [
+          {
+            "name": "Advanced Small Analyzer for Neutrals (ASAN)",
+            "type": "Flown instrument, lunar surface (Chang'E-4 Yutu-2 rover)",
+            "status": "Flown and operating on the lunar surface since January 2019",
+            "mass_kg": 0.97,
+            "power_consumption_w": 3.4,
+            "energy_range_ev": [
+              10,
+              10000
+            ],
+            "energy_resolution_typical_percent": 30,
+            "mass_resolution_m_over_dm_approx": 2,
+            "angular_coverage": "Single angular pixel",
+            "values_status": "Mass, power, energy range and resolution are from secondary summaries of Wieser et al. (2020) and were not verified against the paper text.",
+            "source_urls": [
+              "https://doi.org/10.1007/s11214-020-00691-w",
+              "https://meetingorganizer.copernicus.org/EGU2020/EGU2020-9199.html",
+              "https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-238.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chandrayaan-1 SARA (CENA neutral-atom sensor)",
+            "type": "Flown instrument, lunar orbiter (Chandrayaan-1)",
+            "status": "Flown; observations from lunar orbit",
+            "mass_kg": {
+              "CENA": 2,
+              "SWIM": 0.5,
+              "DPU": 2,
+              "total_SARA": 4.5
+            },
+            "power_consumption_w": null,
+            "energy_range_ev": [
+              10,
+              3200
+            ],
+            "energy_range_source_note": "ISRO lists 10 eV to 3.2 keV; other descriptions give slightly different upper limits.",
+            "key_result": "About 20% of incident solar wind ions backscattered from the surface as neutral atoms; reflection of solar wind protons as neutral hydrogen.",
+            "orbital_altitude_km": null,
+            "source_urls": [
+              "https://www.isro.gov.in/Chandrayaan-1_science.html",
+              "https://arxiv.org/abs/1012.1527"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Neutrals Telescope (LNT), AYAP-1",
+            "type": "Proposed / under development lunar orbital instrument (Turkish Lunar Mission AYAP-1)",
+            "status": "Under development; not flown; launch planned for 2027 per developer page",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "spatial_resolution_claim_km": [
+              12,
+              12
+            ],
+            "spatial_resolution_status": "Developer design target, not a measured performance",
+            "mission_profile": "About 100 km orbit for about three months, then controlled hard landing",
+            "heritage": "Builds on the SARA experiment flown on Chandrayaan-1; flight model reported as calibrated and mechanically tested",
+            "source_urls": [
+              "https://www.irf.se/en/i-rymden/ayap-1/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for a generic neutral particle detector. The only dimensions available are for the SARA and ASAN instruments, which are not stated in the sources consulted; no dimensions are reported for LNT.",
+        "mass_and_weight": "ASAN: 0.97 kg reported (secondary summary, unverified against paper). SARA: CENA 2 kg, SWIM 0.5 kg, DPU 2 kg, total 4.5 kg (ISRO). LNT: not publicly specified.",
+        "power_requirements": "ASAN: 3.4 W reported (secondary summary, unverified against paper). SARA: not publicly specified in the sources consulted. LNT: not publicly specified."
+      },
+      "environmental_and_operational_requirements": "A neutral particle detector on the Moon must operate without an atmosphere, through extreme surface temperature cycles and in a radiation and micrometeoroid environment. These are general lunar conditions. The sources consulted do not give environmental test limits for the examples above. ASAN has operated on the surface for more than one year and has run in two measurement sessions per lunar day, with nominal performance reported in 2020 [2]. The sources consulted do not describe its power, thermal or data-handling interfaces in detail.",
+      "limitations": "ENA instruments resolve the energy and direction of arriving atoms, but their mass resolution is coarse. ASAN's reported mass resolution of about m/Δm ≈ 2 [1] limits how precisely different species can be separated [2]. A surface instrument with a single angular pixel samples one viewpoint at a time [2]. A single orbital or surface instrument also cannot deliver a global picture without repeated observations. Finally, the three examples have different missions, sensors and calibration histories, so their values cannot be compared directly.",
+      "transportation_and_deployment": {
+        "overview": "Surface, orbiter and mission-payload pathways for the three examples; no compatibility with a specific lander has been verified. Full text is in the Markdown article.",
+        "transportation_process": [
+          "ASAN: carried to the lunar far side by the Chang'E-4 mission; lander touched down in Von Kármán crater in January 2019 and the instrument operates from the Yutu-2 rover.",
+          "SARA: carried on the Chandrayaan-1 orbiter and observed from lunar orbit; launch and orbit-insertion details not verified.",
+          "LNT: planned for the AYAP-1 spacecraft, with a roughly three-month 100 km orbit followed by a controlled hard landing."
+        ],
+        "deployment_methods": "ASAN was operated from the mobile Yutu-2 rover, which allowed observations from different geometries. SARA and LNT are orbital sensors; no surface deployment is described for them in the sources consulted.",
+        "historical_examples": "Chang'E-4 / Yutu-2 (ASAN), Chandrayaan-1 (SARA), AYAP-1 (LNT, planned).",
+        "compatibility_assessment": "Compatibility with a named lander or spacecraft has not been assessed from verified interface data. The mass, power and mounting requirements for a new neutral particle detector are not specified by the sources consulted.",
+        "images": []
+      },
+      "historical_significance": "ASAN is the first instrument to measure energetic neutral atoms directly on the lunar surface [2][3]. SARA's remote measurements from orbit were an important earlier source of ENA data for the lunar surface and provided the 20% backscatter figure [4][5]. LNT is planned as a successor that would extend the SARA approach with higher spatial resolution [6].",
+      "limitations_and_uncertainties": "- The ASAN mass, power, energy-range and resolution values come from secondary summaries of the 2020 Space Science Reviews paper [1]. The paper's full text could not be accessed for this article.\n- SARA's power consumption and orbital altitude during observations are not verified from the sources consulted [5].\n- LNT is a project under development. Its launch date, spatial resolution and mission profile come from a developer-authored project page and may change [6].\n- No direct image asset URL could be verified for any of the three examples. The article therefore contains no images.\n- Preliminary or unpublished ASAN results from conference abstracts are not included as established findings.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "The Advanced Small Analyzer for Neutrals (ASAN) on the Chang'E-4 Rover Yutu-2",
+          "publisher": "Space Science Reviews, 216, 73 (Wieser, M. et al., 2020)",
+          "url": "https://doi.org/10.1007/s11214-020-00691-w"
+        },
+        {
+          "title": "Solar wind interaction with the lunar surface: Observation of energetic neutral atoms on the lunar surface by the ASAN instrument on the Yutu-2 rover of Chang'E-4",
+          "publisher": "EGU General Assembly 2020, abstract EGU2020-9199 (Wieser, M. et al.)",
+          "url": "https://meetingorganizer.copernicus.org/EGU2020/EGU2020-9199.html"
+        },
+        {
+          "title": "The Advanced Small Analyzer for Neutrals (ASAN) instrument on Chang'E-4: A review of five years on the lunar surface",
+          "publisher": "Europlanet Science Congress 2024, abstract EPSC2024-238 (Wieser, M. et al.)",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-238.html"
+        },
+        {
+          "title": "The Sub-keV Atom Reflecting Analyzer (SARA) Experiment Aboard Chandrayaan-1 Mission: Instrument and Observations",
+          "publisher": "arXiv:1012.1527 (Bhardwaj, A. et al., 2010)",
+          "url": "https://arxiv.org/abs/1012.1527"
+        },
+        {
+          "title": "Chandrayaan-1 Science",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "url": "https://www.isro.gov.in/Chandrayaan-1_science.html"
+        },
+        {
+          "title": "AYAP-1 Lunar Neutrals Telescope project page",
+          "publisher": "Swedish Institute of Space Physics (IRF)",
+          "url": "https://www.irf.se/en/i-rymden/ayap-1/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No images are included because no direct image asset could be verified from an official source for this article."
+  },
+  "data_quality_notes": [
+    "Scope decision: the catalogue name 'Neutral particle detector' is generic and does not identify a single instrument. The article describes the instrument class using three documented examples: ASAN (flown, Chang'E-4 Yutu-2), SARA/CENA (flown, Chandrayaan-1 orbiter) and LNT (under development, AYAP-1). Neutral mass spectrometers are separate catalogue entries and are out of scope.",
+    "ASAN mass (970 g), power (3.4 W), energy range (10 eV to 10 keV), typical energy resolution (about 30%) and mass resolution (m/Δm about 2) were taken from secondary summaries of Wieser et al. (2020, Space Science Reviews). The paper's full text could not be accessed (Springer redirected to a login page; ADS returned HTTP 405). A 2017 pre-flight presentation was reported in a search summary as giving a different mass (650 g plus 70 g mounting structure); this conflict is unresolved.",
+    "SARA energy range is taken from ISRO (10 eV to 3.2 keV). Other sources give slightly different upper limits (3.3 keV, or about 3.0 keV). SARA power consumption and orbital altitude during observations are not verified from the sources consulted.",
+    "LNT figures (12 km by 12 km spatial resolution, launch planned for 2027, 100 km orbit for about three months, controlled hard landing) come from a developer-authored IRF project page. The resolution is a design target, not a measurement, and the launch date may change.",
+    "No direct image asset URL was verified for any example. A candidate ISRO SARA image path was seen (/media_isro/image/science/ch7.jpg.webp, alt text 'Chandrayaan-1_Science') but it is generic, the full URL was not confirmed, and it was not used.",
+    "Preliminary ASAN results (dawn-dusk asymmetry over 23 lunar days; a 2026 EPSC abstract on possible lander-exhaust effects) were seen only in search summaries and are excluded from the article as established findings.",
+    "A Chang'E-4 LND paper (Wimmer-Schweingruber et al., 2020, DOI 10.1007/s11214-020-00725-3) was retrieved but describes a neutron dosimetry instrument, not a neutral particle detector, and is not cited.",
+    "Chandrayaan-1 mission dates were not verified from the fetched ISRO page and are not stated as facts in the article."
+  ]
+}

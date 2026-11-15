@@ -1,0 +1,290 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 45,
+    "name": "Narrow-angle camera",
+    "article": {
+      "overview": "A narrow-angle camera is an imaging instrument with a small field of view and a long focal length. Each image covers a small patch of ground, but every pixel samples that patch finely. The term is relative: a narrow-angle camera is usually defined against a wide-angle companion that images a much larger area at coarser resolution. The catalogue entry names the class, not a single design, so this article describes the class and uses one flown example in detail. That example is the pair of Narrow Angle Cameras (NACs) on NASA's Lunar Reconnaissance Orbiter (LRO), part of the Lunar Reconnaissance Orbiter Camera (LROC) system. Each NAC is a monochrome push-broom scanner that produces roughly 0.5 m panchromatic images from a nominal 50 km altitude [1][2]. The LRO was launched on 18 June 2009 [7]. The NAC values in this article come from the LROC factsheet, the LROC specifications page, the ODE calibrated-data-record page and the LROC instrument overview paper [1][2][3][4]. In scope: the generic narrow-angle camera class; the LRO NAC pair as the primary flown example; the relationship between narrow-angle and wide-angle designs. Out of scope or covered elsewhere: The LRO Wide Angle Camera and wide-field imaging are covered in 044 (Wide-angle camera). The WAC appears here only as the comparison that defines \"narrow\". The generic high-resolution class, ShadowCam on the Korea Pathfinder Lunar Orbiter (KPLO) and the Chandrayaan-2 Orbiter High Resolution Camera (OHRC) are covered in 027 (High-resolution camera). They are named here as related instruments and are not re-specified. Terrain mapping and stereo DTM instruments are covered in 028 (Terrain mapping camera) and 029 (Stereo camera). Panoramic imaging is in 026 (Panoramic camera). Broad-band imaging is in 043 (Panchromatic camera). Visible-light imaging is in 039 (Visible-light camera). This article makes no lunar landing-site or location recommendations. Status. The LRO NAC pair is flown hardware. Its 2026 operational status was not verified in this run (see Limitations, Uncertainties and Evidence Gaps).",
+      "description": "A narrow-angle camera is essentially a telescope that focuses light onto a fine-pitch detector. The telescope's focal length and the size of one detector pixel set the angle that each pixel sees. Multiplying this angle by the spacecraft's altitude gives the ground size of one pixel. The LRO NAC uses a 700 mm focal-length telescope and a detector pixel that subtends 10 microradians, so its nominal ground sample at 50 km altitude is 50 km \u00d7 10 \u00b5rad = 0.5 m per pixel [1][2]. Because the field of view is narrow, each NAC image is long and thin. The LRO NAC's maximum image size is listed as 2.5 km \u00d7 26 km at 50 km altitude [2]. A narrow field gives fine detail, but it also means each image covers little ground. Mapping a region therefore needs many orbits or targeted observations. The LRO carries two NAC units, NAC-Left (NAC-L) and NAC-Right (NAC-R). Each has a 2.85\u00b0 cross-track field of view. NAC-L is pointed 2.85\u00b0 away from NAC-R, so that the two strips join to form a combined swath of about 5 km at 50 km altitude [1][2]. The two units therefore act as one wider instrument while keeping the fine resolution of a single telescope.",
+      "scientific_purpose_and_applications": "The LROC mission defined eight original measurement objectives. Several rely on high-resolution NAC imaging: finding potential landing sites, mapping regions of permanent shadow or illumination, creating high-resolution maps of polar massifs, deriving high-resolution topography from multiple viewing angles, improving maps of mineralogical components, creating a global morphology base map, characterising the regolith and determining impact hazards [2]. These are mission objectives, not results. They are cited to show the application areas. Robinson et al. give an example of the resolution this supports. A 10 m \u00d7 10 m region covers 2 \u00d7 2 pixels of the Chandrayaan Terrain Mapping Camera (5 m pixels), but it would be covered by 400 NAC pixels (20 \u00d7 20) [1]. Robinson et al. note that persistently illuminated massifs near the poles may be only a few to tens of metres across, below the resolution of other lunar datasets [1]. The LRO NAC produces panchromatic images, which record brightness across one broad band of light. Such images show shape, texture and small-scale structure well. They cannot identify composition on their own, which is why the NAC is paired with the multispectral Wide Angle Camera in the LROC system [1][2]. The broad-band concept is described in 043 (Panchromatic camera).",
+      "operating_principle": "The LRO NAC is a push-broom scanner. A single line of detector elements is placed across the image plane. As the spacecraft moves over the surface, each successive exposure of that line adds a new row to the image, so the scene is built up line by line [1]. The telescope is a Ritchey\u2013Chr\u00e9tien design, which uses two hyperbolic mirrors. The NAC uses a 700 mm effective focal length and an f/3.59 optical system with a spherical triplet field corrector to widen the usable field to about 3\u00b0 [1][2]. The optical design aimed for near diffraction-limited performance at a half-metre ground sample, over a relatively wide field, in the thermal environment of lunar orbit and at low mass [1]. A long sunshade limits the illumination of the primary mirror by light arriving more than 30\u00b0 off-axis [1]. The detector is a Kodak KLI-5001G linear CCD with 5064 elements and 7 \u00b5m pixels, with a quantum efficiency above 60% across the instrument band [1][2]. Of these elements, 4996 are imaging pixels; the remainder are masked pixels used for dark-signal monitoring or transition pixels [1]. Correlated double sampling is performed on the CCD chip [1]. The electronics design is based on the Context Camera (CTX) on the Mars Reconnaissance Orbiter, with a higher maximum pixel rate of 7.5 megapixels per second [1]. After digitisation to 12 bits, a field-programmable gate array (FPGA) encodes each pixel into 8 bits using an adjustable piecewise-linear transfer function, which approximates square-root encoding [1]. The NAC stores data in a 256 MB buffer of uncompressed data, enough for a full-swath image 25 km long or a 2\u00d7-binned image 104 km long [1]. Before downlink, the data receive a lossless first-difference Huffman compression [1]. The NAC gain is 90.5 \u00b1 2.6 e\u207b/DN for NAC-L and 92.5 \u00b1 1.5 e\u207b/DN for NAC-R, as calibrated [3].",
+      "scientific_importance": "The LROC NAC pair provides 0.5 m panchromatic images. Its pixels allow metre-scale features to be mapped across areas that a single image covers, and the LROC objectives name application areas including impact hazards, regolith characterisation and illumination mapping [1][2]. Calibrated NAC products are distributed through the NASA Planetary Data System, as described in the ODE calibrated data record page [3]. Because the NAC is narrow, its images are most valuable when combined with coarser data. A single NAC image can resolve detail across many pixels of a coarser instrument such as the Chandrayaan Terrain Mapping Camera, as the 2 \u00d7 2 versus 20 \u00d7 20 pixel example above shows [1]. Its sensitivity range of 400\u2013750 nm, as listed on the LROC specifications page, defines the wavelengths over which its panchromatic images are formed [2][4]. The NAC is also the design basis for later fine-scale instruments. Its telescope design and electronics heritage are described for ShadowCam, flown on KPLO, in payload 027 (High-resolution camera). That heritage claim was not re-verified in this article.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a narrow-angle camera. The focal length, detector and optical design determine the pixel scale, and these vary widely across instruments. The values below are for the LRO NAC only. Where sources disagree, both values are shown and the disagreement is listed in the final section. Values are per NAC unless stated otherwise.",
+        "examples": [
+          {
+            "name": "Lunar Reconnaissance Orbiter Narrow Angle Camera (NAC) pair, LROC",
+            "type": "Flown lunar orbital narrow-angle camera pair (two units, NAC-L and NAC-R)",
+            "status": "Status: flown. The LRO was launched on 18 June 2009, and NASA describes the mission as an active mission carrying seven science instruments [7]. The LROC factsheet and instrument overview describe the NACs as in lunar orbit since 2009 [1][2]. A July 2009 LROC news item records that the NACs were powered down for a final thermal bakeout after three days of imaging, and that the team was bringing both cameras into final focus [6].",
+            "optical_design": "f/3.59 Ritchey-Chretien telescope with spherical triplet field corrector",
+            "effective_focal_length_mm": 700,
+            "focal_length_per_camera_mm": {
+              "NAC-L": "699.62 +/- 0.08",
+              "NAC-R": "701.57 +/- 0.09",
+              "source": "ODE CDRNAC page [3]"
+            },
+            "primary_mirror_diameter_mm": {
+              "value": 195,
+              "source": "LROC factsheet [2]",
+              "conflict": "Robinson et al. Table 2 text extraction shows 198 mm, which could not be assigned to a row; unresolved [1]"
+            },
+            "detector": "Kodak KLI-5001G linear CCD, 5064 elements, 7 um pixels",
+            "imaging_pixels": 4996,
+            "field_of_view_deg_per_camera": 2.85,
+            "combined_swath_km_at_50km": 5,
+            "ifov_urad": {
+              "nominal": 10,
+              "NAC-L": "10.0042",
+              "NAC-R": "9.9764",
+              "sources": [
+                "Robinson et al. [1]",
+                "LROC factsheet [2]",
+                "ODE CDRNAC [3]"
+              ]
+            },
+            "pixel_scale_m_at_50km": 0.5,
+            "max_image_size_km_at_50km": "2.5 x 26",
+            "footprint_overlap_pixels": {
+              "robinson_et_al": 135,
+              "ode_summary": 130,
+              "note": "ODE value is an approximate summary; not reconciled"
+            },
+            "spectral_sensitivity_nm": {
+              "lroc_factsheet_and_specs_page": "400-750",
+              "robinson_et_al_table_text": "400-760",
+              "status": "unresolved"
+            },
+            "mass_kg": {
+              "per_nac": 8.2,
+              "both_nacs": 16.4,
+              "sources": [
+                "LROC factsheet [2]",
+                "Robinson et al. Table 2 [1]"
+              ]
+            },
+            "dimensions_cm": {
+              "telescope_length": 70,
+              "diameter": 27,
+              "alternative_length_incl_radiator": 118,
+              "status": "70 cm (factsheet, specs page, news item) and 118 cm including radiator (Robinson et al.) not reconciled"
+            },
+            "power_w": {
+              "peak_per_nac": 9.3,
+              "average_per_nac": 6.4,
+              "sources": [
+                "LROC factsheet [2]",
+                "Robinson et al. Table 2 [1]"
+              ]
+            },
+            "voltage_v_dc": {
+              "value": 28,
+              "source": "LROC factsheet [2]",
+              "note": "Robinson et al. Table 2 extraction reads 28 +/- 7 V DC; unresolved"
+            },
+            "digitisation": "12-bit, encoded to 8-bit (square-root-type piecewise-linear encoding)",
+            "onboard_buffer_mb_uncompressed_per_nac": 256,
+            "gain_e_per_dn": {
+              "NAC-L": "90.5 +/- 2.6",
+              "NAC-R": "92.5 +/- 1.5",
+              "source": "ODE CDRNAC [3]"
+            },
+            "radiometric_accuracy": "1% relative, 10% absolute; Robinson et al. state this requires in-flight verification",
+            "mtf_at_nyquist": {
+              "lroc_factsheet": "> 0.23",
+              "robinson_et_al_design": "> 56% over the field",
+              "note": "Different metrics and conditions; not reconciled"
+            },
+            "detector_noise_e": {
+              "lroc_factsheet": 76,
+              "robinson_et_al_datasheet_room_temperature": 150,
+              "note": "Conditions differ; not reconciled"
+            },
+            "focal_plane_expected_operating_temp_c": {
+              "min": 0,
+              "max": 20,
+              "status": "expected range, not a measured value"
+            },
+            "max_pixel_rate_mpx_per_s": 7.5,
+            "structure": "Graphite-cyanate composite metering structure; hygroscopic resin causes focus shift between laboratory and lunar-orbit conditions",
+            "specification_table_markdown": "| Parameter | Value | Source | Notes |\n|---|---|---|---|\n| Optical design | f/3.59 Ritchey\u2013Chr\u00e9tien with triplet field corrector | [1][2] | Robinson et al. describe a spherical triplet corrector |\n| Effective focal length | 700 mm nominal | [2][4] | Per-camera: 699.62 \u00b1 0.08 mm (NAC-L), 701.57 \u00b1 0.09 mm (NAC-R) [3] |\n| Primary mirror diameter | 195 mm | [2] | Robinson et al. Table 2 extraction shows a 198 mm value that could not be assigned to a row [1] |\n| Detector | Kodak KLI-5001G, 5064-element linear CCD | [1][2] | 7 \u00b5m pixels; 4996 imaging pixels [1] |\n| Field of view | 2.85\u00b0 per NAC | [1][2] | Combined swath about 5 km at 50 km altitude [1][2] |\n| Instantaneous field of view (IFOV) | 10 \u00b5rad nominal | [1][2] | Per-camera: 10.0042 \u00b5rad (NAC-L), 9.9764 \u00b5rad (NAC-R) [3] |\n| Pixel scale | 0.5 m at 50 km altitude | [1][2] | Nominal value; the factsheet marks it as applying at 50 km |\n| Maximum image size | 2.5 km \u00d7 26 km at 50 km altitude | [2] | Factsheet asterisked value |\n| Spectral sensitivity | 400\u2013750 nm | [2][4] | Robinson et al. Table 2 extraction reads 400\u2013760 nm; unresolved [1] |\n| Overlap between NAC-L and NAC-R footprints | About 135 pixels | [1] | ODE summary states about 130 pixels [3] |\n| Mass | 8.2 kg per NAC | [2][4] | Robinson et al. Table 2 lists 16.4 kg for both NACs, which is consistent [1] |\n| Dimensions | Telescope length 70 cm, diameter 27 cm | [2][5] | Robinson et al. Table 2 lists 118 cm \u00d7 27 cm including radiator; unresolved [1] |\n| Peak power | 9.3 W | [1][2] | Factsheet and Table 2 agree |\n| Average power | 6.4 W | [1][2] | Factsheet and Table 2 agree |\n| Voltage | 28 V DC | [2] | Robinson et al. Table 2 extraction reads 28 \u00b1 7 V DC; unresolved [1] |\n| Digitisation | 12-bit, encoded to 8-bit | [1][2] | Square-root-type piecewise-linear encoding [1] |\n| Onboard buffer | 256 MB uncompressed per NAC | [1] | 8 \u00d7 256 Mbit SDRAM [1] |\n| Gain | 90.5 \u00b1 2.6 e\u207b/DN (NAC-L); 92.5 \u00b1 1.5 e\u207b/DN (NAC-R) | [3] | Calibration values |\n| Radiometric accuracy | 1% relative, 10% absolute | [1][2] | Robinson et al. state this requires in-flight verification [1] |\n| MTF at Nyquist | Factsheet: > 0.23 | [2] | Robinson et al. state a design MTF greater than 56% over the field [1]; different metrics, not reconciled |\n| Detector noise | Factsheet: 76 e\u207b | [2] | Robinson et al. quote a datasheet noise floor of 150 e\u207b at room temperature [1]; conditions differ |\n| Structure | Graphite-cyanate composite metering structure | [1][2] | Hygroscopic resin causes a focus shift between laboratory and lunar-orbit conditions [1] |\n| Focal-plane operating temperature | Expected 0 \u00b0C to 20 \u00b0C | [1] | Thermistors on focal plane, electronics and metering structure [1] |\n| Maximum pixel rate | 7.5 megapixels per second | [1] | Increased from the CTX electronics heritage of 2 megapixels per second [1] |\n| Data link to spacecraft | Serial LVDS interface to the Sequence and Compressor System; 30 MHz maximum clock | [1] | Synchronous serial link |",
+            "dimensions_and_proportions": "Mass and dimensions in context. The NAC's mass and dimensions reflect its long telescope, graphite structure and radiator. The factsheet and LROC specifications page describe a 70 cm telescope length [2][4][5], while Robinson et al. list 118 cm including radiator [1]. The two figures are not reconciled, so neither should be used as a verified envelope without checking the mission documentation.",
+            "mass_and_weight": "Mass and power budget. The per-NAC mass of 8.2 kg and average power of 6.4 W describe one instrument. They are not spacecraft-level budgets and should not be compared with other payloads' power values.",
+            "power_requirements": "Peak 9.3 W and average 6.4 W per NAC (LROC factsheet [2]; Robinson et al. Table 2 [1]). These are per-instrument values, not spacecraft-level budgets.",
+            "source_urls": [
+              "https://lroc.im-ldi.com/assets/LROC_factsheet-1ea25e00953a1dc6e26774f2e6925bf5f4534712da4ce1c2dfc70f49c41acab6.pdf",
+              "https://lroc.im-ldi.com/about/specs",
+              "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/LRO/LROC/CDR/CDRNAC.htm",
+              "https://www.lroc.asu.edu/assets/LROC_instrument_overview-5b07a1035bc2625c486e7f3d5777034224aa9b6ea887b61fcfd962f863c675f9.pdf"
+            ],
+            "images": [
+              {
+                "id": "lro_nac_cleanroom_photo",
+                "description": "Clean-room photograph of an LROC Narrow Angle Camera telescope at Malin Space Science Systems, showing the silver baffle tube, gold thermal insulation and electronics housing.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://lroc.im-ldi.com/news/uploads/20080504_LROC_Pretty_095-Outreach3.jpg",
+                "source_page_url": "https://lroc.im-ldi.com/news/49",
+                "publisher": "LROC project, Arizona State University (hosted on lroc.im-ldi.com)",
+                "credit": "Not stated on the source page; the page was published by Mark Robinson on 4 March 2009. EXIF metadata records a Nikon D70 camera.",
+                "caption": "LROC Narrow Angle Camera telescope in a clean room at Malin Space Science Systems, photographed in 2008. Source page: LROC news item 49.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct image asset returned HTTP 200 (image/jpeg) at a URL without query string or fragment, and was downloaded and visually checked (600 x 399 web-resolution file). The source page gives no explicit credit; rights and reuse conditions were not verified. Full-resolution version not checked. Only one image is verified for this article."
+              }
+            ],
+            "notes": ""
+          },
+          {
+            "name": "ShadowCam (KPLO) and Chandrayaan-2 Orbiter High Resolution Camera (OHRC): cross-reference only",
+            "type": "Related fine-scale orbital instruments; specifications not repeated in this article",
+            "status": "Covered in payload 027 (High-resolution camera). Not re-verified in this run.",
+            "notes": "ShadowCam, flown on the Korea Pathfinder Lunar Orbiter, and the Chandrayaan-2 Orbiter High Resolution Camera are fine-scale orbital instruments with their own technical data. Their telescope and detector values are not repeated here. The full treatment, with sources and recorded gaps, is in 027 (High-resolution camera). No ShadowCam or OHRC specification was re-verified in this article.",
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Mass and dimensions in context. The NAC's mass and dimensions reflect its long telescope, graphite structure and radiator. The factsheet and LROC specifications page describe a 70 cm telescope length [2][4][5], while Robinson et al. list 118 cm including radiator [1]. The two figures are not reconciled, so neither should be used as a verified envelope without checking the mission documentation.",
+        "mass_and_weight": "Mass and power budget. The per-NAC mass of 8.2 kg and average power of 6.4 W describe one instrument. They are not spacecraft-level budgets and should not be compared with other payloads' power values.",
+        "power_requirements": "Peak 9.3 W and average 6.4 W per NAC (LROC factsheet [2]; Robinson et al. Table 2 [1]). These are per-instrument values, not spacecraft-level budgets."
+      },
+      "environmental_and_operational_requirements": "The NAC operates in the lunar orbital thermal environment, which varies more than the thermal environment at Mars. Robinson et al. state that this prompted a less thermally sensitive design than the CTX telescope [1]. The focal plane is expected to run between 0 \u00b0C and 20 \u00b0C over the mission, mostly as a function of local time of day [1]. Health monitoring is minimal, with three thermistors: one at the focal plane, one at the FPGA in the electronics box and one on the metering structure between the mirrors [1]. The metering structure's resin is hygroscopic, so the focus shifts between the laboratory (wet) and lunar-orbit (dry) conditions. The team validated focus by baking the cameras at 65 \u00b0C in vacuum while imaging a collimator, then confirmed it by imaging the Moon after removing each unit from thermal vacuum [1]. A July 2009 LROC news item describes a final thermal bakeout at 50 \u00b0C with the NACs powered down, followed by focusing [6]. Dark-signal offset is also operationally important. The CCD's DC pedestal varies from device to device and may change with temperature and radiation exposure. The design therefore includes a black-level DAC that can be adjusted by ground command [1]. Data handling is a constraint. Each NAC buffers 256 MB of uncompressed data before lossless compression for downlink [1]. This limits how much continuous imaging can be stored between downlinks.",
+      "limitations": "The narrow field is the main trade-off. Each NAC image covers only about 2.5 km across at 50 km altitude [2]. Covering large areas at 0.5 m resolution therefore needs many orbits, targeted imaging or the two-unit pair. This is an inference from the published swath values, not an operational measurement. The LRO NAC is a monochrome instrument with panchromatic output. It does not separate wavelengths, so it cannot by itself show differences in composition [1][2]. The published performance values are a mixture of pre-flight calibration, ground specification and in-flight calibration. Robinson et al. state that the radiometric accuracy requires in-flight verification [1]. The NAC's health monitoring is limited to thermistors, so thermal and detector trends must be inferred from the image data and calibration products [1]. The NAC's pixel scale and per-camera values depend on altitude. The factsheet's 0.5 m pixel scale and 5 km swath are stated for a 50 km altitude [2]. A different orbit would change the ground scale proportionally.",
+      "transportation_and_deployment": {
+        "overview": "The NAC pair is an orbiter payload, not a surface or lander payload. It was integrated into the LRO spacecraft and launched with it. The LROC cameras were built by Malin Space Science Systems [2]. The NAC telescopes were built by LightWorks Optics of Tustin, California, in collaboration with Vanguard Composites of San Diego, California [1]. The Robinson et al. paper describes the spacecraft mounting: the CCDs are perpendicular to the spacecraft's X-axis, and NAC-L is offset 2.85\u00b0 from NAC-R so that the two footprints join [1].",
+        "transportation_process": [
+          "Spacecraft integration and interfaces. The NACs connect to the Sequence and Compressor System through a serial LVDS interface [1]. Their thermal interface is set by the spacecraft's thermal design, which must keep the focal plane within its expected operating range [1]. The spacecraft's attitude control determines the NAC pointing; this is an engineering inference, not a value taken from the sources. The Robinson et al. paper describes the NAC's data buffering and compression, which affect how much imaging the spacecraft can perform between downlinks [1].",
+          "Launch and commissioning. The LRO was launched on 18 June 2009 [7]. The LROC news item of 9 July 2009 records three days of imaging (3\u20135 July) before a final thermal bakeout, after which the team focused the cameras and analysed the first images [6]. The Robinson et al. paper describes the in-flight focus confirmation as imaging the Moon immediately after thermal vacuum [1]."
+        ],
+        "deployment_methods": "Not applicable as a surface deployment. The NAC pair is an orbiter payload integrated into the LRO spacecraft; no surface deployment mechanism is part of this payload.",
+        "historical_examples": "The LRO NAC pair (launched 18 June 2009) is the documented flown example. Commissioning in July 2009 included a final thermal bakeout and focus confirmation (LROC news item 120).",
+        "compatibility_assessment": "Compatibility with other spacecraft. No compatibility with a lander, rover or other spacecraft is asserted in this article. The NAC pair is documented as part of LRO. Any other use would need verified interface documents for the named vehicle.",
+        "images": []
+      },
+      "historical_significance": "The LRO NAC pair has supplied high-resolution, broad-band imaging of the Moon since 2009 [1][2]. Its design was a deliberate development from the CTX camera on the Mars Reconnaissance Orbiter. The NAC required twice CTX's angular resolution (10 \u00b5rad rather than 20 \u00b5rad) with the same field of view, and the team duplicated the instrument with offset pointing to reach the wider swath [1]. The NAC electronics also reuse the CTX heritage, with changes to increase the pixel rate [1]. The LROC NAC has also served as the design basis for later lunar imagers. ShadowCam, flown on KPLO, is described as building on NAC heritage [see 027]. These later instruments are covered in 027 and are not re-specified here.",
+      "limitations_and_uncertainties": "Primary mirror diameter. The LROC factsheet and specifications page give 195 mm [2][4]. Robinson et al. Table 2 contains a 198 mm value that could not be assigned to a row in the extracted text [1]. The discrepancy is not resolved. Instrument dimensions. The factsheet and specifications page give a 70 cm telescope length and 27 cm diameter [2][4][5]. Robinson et al. list 118 cm \u00d7 27 cm including radiator [1]. The radiator's contribution is not confirmed, so the length is recorded as an unreconciled range. Spectral range. The factsheet and specifications page give 400\u2013750 nm [2][4]. Robinson et al. Table 2 extraction reads 400\u2013760 nm [1]. The 10 nm difference is not resolved. Mirror design and MTF. The factsheet reports MTF at Nyquist as above 0.23 [2]. Robinson et al. report a design MTF above 56% over the field [1]. These are different metrics and conditions, and neither is a measured value from flight. Detector noise. The factsheet gives 76 e\u207b [2]. Robinson et al. give a datasheet noise floor of 150 e\u207b at room temperature and state that performance is better at operating temperature [1]. The conditions are not matched. Overlap width. Robinson et al. give 135 pixels [1]. The ODE summary gives about 130 pixels [3]. The ODE value is an approximate summary and was not reconciled with Robinson et al. Voltage. The factsheet gives 28 V DC [2]. The Robinson et al. Table 2 extraction reads 28 \u00b1 7 V DC, which could not be confirmed as a supply tolerance [1]. Current operational status. The LRO was described as an active mission by NASA [7], and the NAC pair was in orbit by 2009 [1][6]. The NAC's operational status in 2026 was not verified from an official source in this run. A secondary news search summary indicated that the mission's funded extension ran to September 2025, but no official notice was located, so no end-of-mission date is given. Robinson et al. full text. The DOI page resolves but redirects to a paywalled Springer page. The full text was read from the LROC-hosted copy of the same paper [1]. Its figure and table extraction is partly garbled, so the table values above were checked against the text where possible. Radiometric accuracy. The 1% relative and 10% absolute figures are listed as specifications and require in-flight verification [1][2]. They are not measured performance in this article. Image coverage. One image is verified and included: a clean-room photograph of a NAC telescope on the LROC news site [5]. The rights and reuse conditions for that image are not stated on the page. Figure 1 of Robinson et al., showing the LRO spacecraft with NAC positions, was not retrieved as a verified direct asset. The NASA hardware gallery and Smithsonian collection pages were not used as direct image sources, because their current URLs could not be verified. Other narrow-angle designs. No flown, flight-qualified or proposed narrow-angle camera other than the LRO NAC pair was verified in this run. ShadowCam and OHRC are covered in 027 and not re-verified here. Cross-references. Wide-field imaging is in 044 (Wide-angle camera). The generic high-resolution class is in 027 (High-resolution camera). Terrain mapping is in 028 (Terrain mapping camera). Stereo imaging is in 029 (Stereo camera). Panoramic imaging is in 026 (Panoramic camera). Broad-band imaging is in 043 (Panchromatic camera). This article does not duplicate those entries. Location recommendations. None are made in this article.",
+      "images": [
+        {
+          "id": "lro_nac_cleanroom_photo",
+          "description": "Clean-room photograph of an LROC Narrow Angle Camera telescope at Malin Space Science Systems, showing the silver baffle tube, gold thermal insulation and electronics housing.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://lroc.im-ldi.com/news/uploads/20080504_LROC_Pretty_095-Outreach3.jpg",
+          "source_page_url": "https://lroc.im-ldi.com/news/49",
+          "publisher": "LROC project, Arizona State University (hosted on lroc.im-ldi.com)",
+          "credit": "Not stated on the source page; the page was published by Mark Robinson on 4 March 2009. EXIF metadata records a Nikon D70 camera.",
+          "caption": "LROC Narrow Angle Camera telescope in a clean room at Malin Space Science Systems, photographed in 2008. Source page: LROC news item 49.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct image asset returned HTTP 200 (image/jpeg) at a URL without query string or fragment, and was downloaded and visually checked (600 x 399 web-resolution file). The source page gives no explicit credit; rights and reuse conditions were not verified. Full-resolution version not checked. Only one image is verified for this article."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lro_nac_cleanroom_photo",
+          "description": "Clean-room photograph of an LROC Narrow Angle Camera telescope at Malin Space Science Systems, showing the silver baffle tube, gold thermal insulation and electronics housing.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://lroc.im-ldi.com/news/uploads/20080504_LROC_Pretty_095-Outreach3.jpg",
+          "source_page_url": "https://lroc.im-ldi.com/news/49",
+          "publisher": "LROC project, Arizona State University (hosted on lroc.im-ldi.com)",
+          "credit": "Not stated on the source page; the page was published by Mark Robinson on 4 March 2009. EXIF metadata records a Nikon D70 camera.",
+          "caption": "LROC Narrow Angle Camera telescope in a clean room at Malin Space Science Systems, photographed in 2008. Source page: LROC news item 49.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct image asset returned HTTP 200 (image/jpeg) at a URL without query string or fragment, and was downloaded and visually checked (600 x 399 web-resolution file). The source page gives no explicit credit; rights and reuse conditions were not verified. Full-resolution version not checked. Only one image is verified for this article."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Lunar Reconnaissance Orbiter Camera (LROC) Instrument Overview",
+          "publisher": "Robinson, M.S.; Brylow, S.M.; Tschimmel, M.; Humm, D.; Lawrence, S.J.; et al. Space Science Reviews 150, 81-124 (2010), published online 11 March 2010",
+          "url": "https://www.lroc.asu.edu/assets/LROC_instrument_overview-5b07a1035bc2625c486e7f3d5777034224aa9b6ea887b61fcfd962f863c675f9.pdf",
+          "notes": "Full text read from LROC-hosted copy of the paper. DOI https://doi.org/10.1007/s11214-010-9634-2 resolves to a paywalled publisher page (HTTP 200, not read in full). NAC section 3.1, Table 2 (text extraction partly garbled) and Table 3 used."
+        },
+        {
+          "number": 2,
+          "title": "LROC factsheet (Lunar Reconnaissance Orbiter Camera), Narrow Angle Camera specifications table",
+          "publisher": "LROC science team, Arizona State University and Malin Space Science Systems (undated PDF)",
+          "url": "https://lroc.im-ldi.com/assets/LROC_factsheet-1ea25e00953a1dc6e26774f2e6925bf5f4534712da4ce1c2dfc70f49c41acab6.pdf",
+          "notes": "NAC values read from the PDF text layer. Asterisked values apply at 50 km altitude. Also the source of the 5 km combined swath and the 700 mm focal length."
+        },
+        {
+          "number": 3,
+          "title": "LROC Calibrated Data Record Narrow Angle Camera (CDRNAC)",
+          "publisher": "NASA Planetary Data System (PDS), Operations Data Explorer (ODE), LROC help pages",
+          "url": "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/LRO/LROC/CDR/CDRNAC.htm",
+          "notes": "Per-camera effective focal length, IFOV, gain and digitisation notes. Overlap given as roughly 130 pixels."
+        },
+        {
+          "number": 4,
+          "title": "LROC instrument specifications",
+          "publisher": "LROC project, Arizona State University",
+          "url": "https://lroc.im-ldi.com/about/specs",
+          "notes": "NAC specifications: 700 mm effective focal length, 0.5 m pixel scale at 50 km, 2.85 deg FOV, KLI-5001G, 400-750 nm sensitivity, 8.2 kg, 9.3 W peak, 6.4 W average, 28 V DC, 70 cm x 27 cm. WAC values excluded. Page last updated 8 May 2013 per the page text."
+        },
+        {
+          "number": 5,
+          "title": "Narrow Angle Cameras (NAC), LROC news item 49",
+          "publisher": "LROC project, Arizona State University; published by Mark Robinson, 4 March 2009",
+          "url": "https://lroc.im-ldi.com/news/49",
+          "notes": "Source page for the clean-room NAC photograph. Describes a Ritchey-Chretien telescope with CCD line scanner, about 70 cm length and 27 cm diameter (approximate values as printed)."
+        },
+        {
+          "number": 6,
+          "title": "NAC Imaging Hiatus, LROC news item 120",
+          "publisher": "LROC project, Arizona State University; published by Mark Robinson, 9 July 2009",
+          "url": "https://lroc.im-ldi.com/news/120",
+          "notes": "Describes three days of NAC imaging (3-5 July 2009), a final thermal bakeout with heaters raised to 50 C, and focus confirmation. Does not state a resumption date."
+        },
+        {
+          "number": 7,
+          "title": "Lunar Reconnaissance Orbiter (LRO) mission page",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/lro/",
+          "notes": "Launch date 18 June 2009; status Active Mission; seven science instruments. The page does not state the operational status of individual instruments in 2026."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "LRO NAC example (physical specifications)": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. The single registry image was verified to return HTTP 200 (image/jpeg) without query parameters. Its section-level copies are repeated intentionally so that each article section can render its own images without resolving IDs against the master registry. Source URLs for references have no query strings or fragments."
+  },
+  "data_quality_notes": [
+    "Primary mirror diameter: LROC factsheet and specifications page give 195 mm; Robinson et al. Table 2 text extraction shows 198 mm, which could not be assigned to a row. Unresolved.",
+    "Instrument dimensions: factsheet, specifications page and news item give a 70 cm telescope length and 27 cm diameter; Robinson et al. Table 2 lists 118 cm x 27 cm including radiator. Unresolved.",
+    "Spectral range: factsheet and specifications page give 400-750 nm; Robinson et al. Table 2 text extraction reads 400-760 nm. Unresolved.",
+    "MTF and noise: factsheet reports MTF at Nyquist above 0.23 and noise 76 e-; Robinson et al. report a design MTF above 56% over the field and a datasheet noise floor of 150 e- at room temperature. Different metrics and conditions; not reconciled.",
+    "Overlap width: Robinson et al. give 135 pixels; the ODE summary gives roughly 130 pixels. Not reconciled.",
+    "Voltage: factsheet gives 28 V DC; Robinson et al. Table 2 extraction reads 28 +/- 7 V DC. Unresolved.",
+    "Current operational status: NASA describes LRO as an active mission (launch 18 June 2009), but NAC operational status in 2026 was not verified from an official source. A secondary news search summary indicated a funded extension to September 2025; no official notice was located, so no end-of-mission date is given.",
+    "Robinson et al. full text: the DOI resolves to a paywalled publisher page. The full text was read from the LROC-hosted copy of the same paper. Table extraction is partly garbled, so table values were cross-checked against the running text and the factsheet where possible.",
+    "Radiometric accuracy (1% relative, 10% absolute) is a specification that Robinson et al. say requires in-flight verification. It is not measured performance in this article.",
+    "Image coverage: one image is verified and included (LROC news item 49 clean-room photograph). Rights and reuse conditions are not stated on the source page. Figure 1 of Robinson et al. was not retrieved as a verified direct asset. The NASA hardware gallery and Smithsonian collection pages were not used as direct image sources because their current direct asset URLs could not be verified.",
+    "Other narrow-angle designs: no flown, flight-qualified or proposed narrow-angle camera other than the LRO NAC pair was verified in this run. ShadowCam and OHRC are cross-referenced to payload 027 and not re-verified here.",
+    "Heritage claim: the statement that the NAC telescope design is the basis for ShadowCam is taken from payload 027 and was not re-verified in this article.",
+    "Engineering inferences: the statements on thermal interface and attitude-control pointing in the transportation section are engineering inferences and are not sourced values.",
+    "No lunar landing-site or location recommendations are made. No lander, rover or spacecraft compatibility is asserted."
+  ]
+}

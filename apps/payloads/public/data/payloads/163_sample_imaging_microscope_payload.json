@@ -1,0 +1,225 @@
+{
+  "catalogue_id": 163,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 8,
+    "name": "Regolith and soil analysis"
+  },
+  "payload": {
+    "number": 163,
+    "name": "Sample imaging microscope",
+    "article": {
+      "overview": "A sample imaging microscope is a close-range camera that photographs a small area of soil, regolith or a collected sample at a resolution fine enough to show individual grains, their shape and surface texture. On the Moon, no such instrument is confirmed as having operated on the surface in the sources reviewed for this article. The most developed lunar design, CAM-M on the United Arab Emirates' Rashid-1 rover, was carried by a lander that was lost during descent on 25 April 2023 (EDT), and CAM-M did not collect lunar data [1][5]. Flown microscopic imagers exist on Mars, notably the Athena Microscopic Imager on NASA's Mars Exploration Rovers [4][11]. A second lunar design, the Regolith Imager of the Heimdall camera system, is planned for a launch in July 2028 according to its project page, and it has no confirmed operating record [6].",
+      "description": "A sample imaging microscope is normally a fixed-focus or focusable camera with a short working distance and a small field of view. It is usually mounted on a robotic arm or a rover mast so that it can be placed close to the material being studied. The term 'microscope' is used loosely. Some designs are true optical microscopes with built-in illumination. Others are close-up cameras with modest magnification, which is the case for the Athena MI [4] and the Heimdall Regolith Imager [6].\n\nThe payload name refers to a function rather than a single standard design. The function covers two related tasks. The first is imaging loose regolith or a collected sample so that grain size, sorting, shape and surface coatings can be studied. The second is imaging the undisturbed top layer of the surface in place, without collecting a sample [2]. The first task suits sample-handling and sample-return architectures. The second suits rover-mounted and in-situ designs.",
+      "scientific_purpose_and_applications": "Grain size and shape: a pixel scale of about 30 micrometres per pixel allows grains a few tenths of a millimetre across to cover many pixels, which is sufficient to measure their shape and texture [4]. The CAM-M design targets the same tens-of-micrometre scale for lunar regolith [1][2].\n\nLayering in undisturbed regolith: the CAM-M concept was proposed to show how regolith is layered and distributed on the undisturbed surface, which returned samples cannot show because sampling disturbs the layering. The top layer is of particular interest because it is the most exposed to space weathering and to electrostatically driven dust transport [2].\n\nContext for analytical instruments: a close-range image links a wide-angle view of a site to the chemistry measured from a small spot. The same logic applies to a lunar payload paired with an analytical instrument. This is a design principle, and no lunar mission pairing is verified here.\n\nSample documentation: for sample collection and return, close-up images can record a sample's condition before and after handling. This is a general use case and is not verified for a specific lunar mission.",
+      "operating_principle": "A close-up imager forms an image through a lens onto a detector, usually a CCD or CMOS array with a fixed number of pixels. For a given optical design, the pixel scale on the target depends on the working distance. Moving the instrument closer gives finer detail but a shallower depth of field, so the placement of the instrument must be accurate [4].\n\nThree design choices distinguish the examples in this article. Focus: the Athena MI is a fixed-focus camera with at least 6 mm depth of field at 30 micrometres per pixel [4]; the Heimdall and CAM-M focus approaches are not described in the sources read for this article [1][6]. Illumination: the Athena MI uses only solar or skylight illumination and obtains stereo views by moving between two frames [4]; the CAM-M illumination arrangement is not described in the sources read [1][3]. Detector: the CAM-M detector is described as a CMOS detector with 10-bit output in a 2025 calibration abstract [3]. One secondary summary describes a three-colour RGB CMOS array and another describes a Bayer colour filter array, so the detector type should be confirmed against the primary 2024 paper [1][3].",
+      "scientific_importance": "A sample imaging microscope fills the gap between wide-angle imaging and analytical chemistry. Wide-angle images show landforms and outcrops, and analytical instruments give chemistry from small spots. Close-range images show the physical texture of the same material. For the Moon, such an instrument would address grain-scale properties of regolith in place, not only the properties of returned samples. No lunar grain-scale imagery from a microscope has been confirmed in the sources reviewed for this article, so the lunar objectives remain untested.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a sample imaging microscope. Each example below is an individual instrument or design, and each value is tied to a named design and source. Values that are not publicly specified are recorded as null or as a 'not publicly specified' string. The examples differ in purpose, optics, detector, mission status and the age of their source documents, so they are not directly comparable.",
+        "examples": [
+          {
+            "name": "Athena Microscopic Imager (MI), Mars Exploration Rovers",
+            "type": "Flown Mars instrument, reference only; not a lunar instrument",
+            "status": "flown on Mars (flight status from mission-investigation literature; the 2001 calibration plan itself is a pre-flight document)",
+            "technology": "Fixed-focus camera on an extendable arm; CCD detector; solar or skylight illumination only; stereo by repositioning between frames",
+            "detector": "1024 x 2048 frame-transfer CCD with 1024 x 1024 imaging pixels, required to give a 1024 x 1024 pixel field of view [4]",
+            "pixel_scale_um_per_pixel": "30 +/- 1.5 on-axis (requirement) [4]",
+            "spectral_band_nm": [400, 680],
+            "focus": "Fixed focus; at least 6 mm depth of field at 30 um/pixel; effective depth of field at least +/-3 mm; coarse focus precision about 2 mm [4]",
+            "working_f_number": "15 +/- 0.75 [4]",
+            "operating_temperature_c": "-55 +/- 2 to +5 +/- 2 [4]",
+            "survival_temperature_c": "-105 to +50 [4]",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "not publicly specified in the calibration plan",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/mer/mer1-m-mi-2-edr-sci-v1/mer1mi_0xxx/calib/mi_calib.htm"
+            ],
+            "images": [],
+            "notes": "Values are pre-flight design requirements and targets from a 2001 calibration plan, not as-built or flight-verified values. Other published mass and power figures were not verified for this article."
+          },
+          {
+            "name": "CAM-M microscope camera, Rashid rover (Rashid-1; Rashid-2 follow-on)",
+            "type": "Flight hardware built for Rashid-1; not operated on the lunar surface",
+            "status": "Rashid-1 lander lost during descent on 25 April 2023 (EDT) before CAM-M collected lunar data [5][1]. Rashid-2 reported as completing development and testing by November 2025; launch and landing not confirmed as of 2026-11-13 [7][8].",
+            "technology": "Close-up optical microscope mounted on the front of the rover; CMOS detector with 10-bit output [3]; design reported identical to Rashid-1 [3]",
+            "pixel_scale_um_per_pixel": "tens of microns (2021 concept paper) [2]; better than 30 (2025 calibration abstract) [3]; about 20 to 27 (secondary summary of the 2024 primary paper, not verified) [1]",
+            "field_of_view": "not stated in the 2025 abstract [3]; about 4 x 5 cm on the surface per a secondary summary, not verified [1]",
+            "detector_calibration": "Gain 0.147 DN/e-; offset non-uniformity about 7%; dark current measured before integration [3]",
+            "integrator": "Kampf Telescope Optics, Munich [3]",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "not publicly specified",
+            "operating_temperature_c": null,
+            "source_urls": [
+              "https://link.springer.com/article/10.1007/s11214-024-01117-7",
+              "https://squ.elsevierpure.com/en/publications/a-regolith-close-up-imager-on-board-the-emirates-lunar-mission-s-",
+              "https://meetingorganizer.copernicus.org/EPSC-DPS2025/EPSC-DPS2025-27.html"
+            ],
+            "images": [],
+            "notes": "Performance figures come mainly from pre-flight papers and conference abstracts. The primary 2024 paper was not read directly. Sources differ on the detector type (CMOS RGB or Bayer)."
+          },
+          {
+            "name": "Regolith Imager, Heimdall camera system",
+            "type": "Planned lunar instrument (Gruithuisen Domes target)",
+            "status": "Planned; project page banner gives launch as July 2028 [6]",
+            "technology": "One of two Heimdall cameras on the end of a robotic arm, paired with the Panoramic Imager [6]. Arm described as a SAMPLR sieve-scoop and penetrometer system in a secondary summary, not verified [9].",
+            "pixel_scale_um_per_pixel": "about 35 [6]",
+            "sensor": "Shared Heimdall system specification: four wide-angle 5-megapixel colour CMOS cameras [6]",
+            "field_of_view": "not stated [6]",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "not publicly specified [6]",
+            "operating_temperature_c": null,
+            "lander": "not named on the project page; a secondary summary associates CP-21 with a Firefly Blue Ghost lander, not verified [9]",
+            "source_urls": [
+              "https://heimdall.psi.edu/"
+            ],
+            "images": [],
+            "notes": "The project page gives one pixel-scale figure and no field of view, mass, power or dimensions for the Regolith Imager."
+          }
+        ],
+        "dimensions_and_proportions": "No single dimension set applies to a sample imaging microscope. The Athena MI example has a pre-flight calibration plan that gives array and field-of-view values but not physical dimensions [4]. Dimensions for CAM-M and the Heimdall Regolith Imager are not publicly specified in the sources read [1][3][6].",
+        "mass_and_weight": "Mass is not publicly specified for CAM-M or the Heimdall Regolith Imager in the sources read. The Athena MI calibration plan does not give mass [4]. Mass affects lander capacity and mounting design, and should be compared with verified interface data before any lander compatibility is assessed.",
+        "power_requirements": "Power is not publicly specified for CAM-M or the Heimdall Regolith Imager in the sources read. The Athena MI calibration plan does not give power [4]."
+      },
+      "environmental_and_operational_requirements": "A lunar sample imaging microscope must operate in vacuum with extreme surface temperature cycles, electrostatically charged dust, and micrometeoroid and radiation exposure. Dust is especially relevant for close-up optics because electrostatic levitation and transport of fine regolith can affect the cleanliness of optics and the surface being imaged [2]. The only verified temperature limits in this article are those of the Athena MI, which are design requirements from a 2001 plan [4]. No verified operating or survival temperature values were found for CAM-M or the Heimdall Regolith Imager. Required stowage, deployment and sample-handling constraints for lunar missions are not publicly specified for these instruments.",
+      "limitations": "No sample imaging microscope has been confirmed as operating on the lunar surface in the sources reviewed. The best-documented flown microscopic imager is on Mars, in a different environment and design context. CAM-M performance data come mainly from pre-flight papers and conference abstracts, and the Rashid-1 instrument did not return lunar data. The Heimdall Regolith Imager has one published pixel-scale figure and no published field of view, mass or power. Close-range imagers have a short working distance, so placement accuracy and surface stability limit what they can measure.",
+      "transportation_and_deployment": {
+        "overview": "This is a surface payload. The sources reviewed describe three transportation or deployment contexts: the Rashid-1 rover on the ispace Hakuto-R Mission 1 lander (lost 25 April 2023 EDT), the Rashid-2 rover with a reported Firefly Blue Ghost Mission 2 lander (not confirmed), and the Heimdall Regolith Imager on a robotic arm (lander not named).",
+        "transportation_process": [
+          "Integrate the rover-mounted or arm-mounted instrument into a rover or payload assembly on Earth.",
+          "Launch the lander or spacecraft carrying the rover or instrument. A secondary summary gives the Hakuto-R Mission 1 launch as 11 December 2022 on a Falcon 9 [10].",
+          "Transfer to the Moon and perform powered descent. Hakuto-R Mission 1 contact was lost during powered descent on 25 April 2023 (EDT) [5].",
+          "Release or deploy the rover or instrument on the surface. The rover release sequence is not described in the sources read.",
+          "Operate the instrument at the surface. For CAM-M this is intended to occur at each stop of the traverse, according to a secondary summary [1]."
+        ],
+        "deployment_methods": "CAM-M is mounted on the rover front [1]. The Heimdall Regolith Imager is mounted at the end of a robotic arm, which positions it for imaging [6][9]. The Rashid rover release mechanism and the Heimdall arm interface are not verified in the sources read.",
+        "historical_examples": "Rashid-1 was carried by the Hakuto-R Mission 1 lander and lost during descent on 25 April 2023 (EDT) [5][10]. Accounts of the cause differ: ispace's first analysis cited a software fault in altitude estimation, while a later flight-data analysis reported a propellant shortage after an altitude measurement error [10]. Athena MI on the Mars Exploration Rovers is a flown Mars precedent [4][11].",
+        "compatibility_assessment": "Compatibility with a named lander is not verified for any example. The sources do not give interface, mass, dimension, mounting or landing-load data for the instrument on a named lander. The Rashid-2 and Heimdall lander attributions conflict across sources and must not be treated as confirmed.",
+        "images": []
+      },
+      "historical_significance": "The Athena MI on the Mars Exploration Rovers is an early, well-documented example of a flown close-range microscopic imager on another planet [4][11]. No lunar microscopic imager is recorded as having operated on the Moon in the sources reviewed. CAM-M is the most developed lunar design for a rover-mounted close-up imager found in this search, but its first lunar attempt ended with the loss of the lander before any lunar data were collected [5][1]. The Heimdall Regolith Imager is a more recent planned instrument [6].",
+      "limitations_and_uncertainties": "The CAM-M primary paper [1] was not read directly, so its pixel scale (about 20 to 27 micrometres per pixel), field of view (about 4 x 5 cm) and detector type (CMOS or Bayer) are unconfirmed. Mass, power and dimensions for CAM-M and the Heimdall Regolith Imager are not publicly specified in the sources read. Rashid-2 launch and landing status and the Heimdall lander attribution are not confirmed as of 2026-11-13. The Athena MI values are 2001 design requirements, not flight-verified values [4]. The three examples are not interchangeable, and their pixel scales, optics and detectors are not directly comparable.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "The Microscope Camera CAM-M on-Board the Rashid-1 Lunar Rover",
+          "authors": "Els, S. G., et al.",
+          "publisher": "Space Science Reviews",
+          "date": "2024",
+          "volume": "220",
+          "article_number": "81",
+          "doi": "10.1007/s11214-024-01117-7",
+          "url": "https://link.springer.com/article/10.1007/s11214-024-01117-7",
+          "notes": "Not read directly (redirect to login page). Cited for existence and DOI. Figures attributed to it are from secondary summaries and are marked as unverified."
+        },
+        {
+          "title": "A Regolith close-up imager on-board the Emirates Lunar Mission's Rashid rover",
+          "authors": "Els, S. G., Ageorges, N., Kampf, D., et al.",
+          "publisher": "IAF Space Exploration Symposium, 72nd International Astronautical Congress, Dubai",
+          "date": "2021",
+          "url": "https://squ.elsevierpure.com/en/publications/a-regolith-close-up-imager-on-board-the-emirates-lunar-mission-s-",
+          "notes": "Abstract read. Stated purpose and concept only; no pixel scale, field of view, detector, mass, power or dimensions are stated in the abstract."
+        },
+        {
+          "title": "Preparing Rashid-2 Lunar Mission: calibration of the optical cameras (EPSC-DPS2025-27)",
+          "authors": "Théret, N., Guénin, M., Bonassi, T., Douaglin, Q., Virmontois, C., Lalucaa, V., Els, S.",
+          "publisher": "EPSC-DPS Joint Meeting 2025",
+          "date": "2025",
+          "url": "https://meetingorganizer.copernicus.org/EPSC-DPS2025/EPSC-DPS2025-27.html",
+          "notes": "Abstract read. Source of the better-than-30 micrometre resolution, detector-level calibration values, integrator and the statement that CAM-M design matches Rashid-1."
+        },
+        {
+          "title": "Athena Microscopic Imager (MI) calibration plan, Rev. A",
+          "authors": "NASA Mars Exploration Rover project",
+          "publisher": "NASA Planetary Data System, Geosciences Node",
+          "date": "2001-10-28",
+          "url": "https://pds-geosciences.wustl.edu/mer/mer1-m-mi-2-edr-sci-v1/mer1mi_0xxx/calib/mi_calib.htm",
+          "notes": "Read. Pre-flight design requirements and targets, not as-built values."
+        },
+        {
+          "title": "NASA's LRO Images Hakuto-R Lunar Crash Site",
+          "authors": null,
+          "publisher": "SpacePolicyOnline",
+          "date": "2023-05-23",
+          "url": "https://spacepolicyonline.com/news/nasas-lro-images-hakuto-r-lunar-crash-site/",
+          "notes": "Read. Contact loss on 25 April 2023 EDT during powered descent; LRO imaged the crash area. Rashid rover fate implied, not stated."
+        },
+        {
+          "title": "Heimdall project",
+          "authors": null,
+          "publisher": "Planetary Science Institute",
+          "date": null,
+          "url": "https://heimdall.psi.edu/",
+          "notes": "Read. Regolith Imager resolution about 35 micrometres per pixel, mounting on SAMPLR arm, four wide-angle 5 MP colour CMOS cameras, launch banner July 2028."
+        },
+        {
+          "title": "UAE mission to land on Moon is one giant leap closer with completion of Rashid rover 2",
+          "authors": null,
+          "publisher": "The National",
+          "date": "2025-11-03",
+          "url": "https://www.thenationalnews.com/news/uae/2025/11/03/uae-mission-to-land-on-moon-is-one-giant-leap-closer-with-completion-of-rashid-rover-2",
+          "notes": "Search summary only; not read directly. Reports Rashid-2 development and testing complete and Blue Ghost Mission 2 carriage."
+        },
+        {
+          "title": "Emirates Lunar Mission (Rashid rover) encyclopaedia entry, Wikipedia mirror",
+          "authors": null,
+          "publisher": "Wikipedia mirror",
+          "date": "2026-03",
+          "url": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Rashid_(rover)",
+          "notes": "Secondary mirror. Used only for the Rashid-2 lander attribution claim. Not verified against a primary Firefly or MBRSC announcement."
+        },
+        {
+          "title": "CP-21 science deliveries",
+          "authors": null,
+          "publisher": "NASA Science",
+          "date": null,
+          "url": "https://science.nasa.gov/lunar-science/clps-deliveries/cp-21-science",
+          "notes": "Search summary only; not read directly. Source of the secondary claims about SAMPLR and the lander association for Heimdall."
+        },
+        {
+          "title": "Hakuto-R Mission 1 loss, secondary coverage",
+          "authors": null,
+          "publisher": "Various (SpacePolicyOnline; Menews247)",
+          "date": "2023-2025",
+          "url": "https://menews247.com/flight-data-analysis-confirms-ispaces-hakuto-r-mission-1-lunar-lander-crash-landed-due-to-landing-stage-fuel-shortage",
+          "notes": "Search summaries only; not read directly. Source of the launch date (11 December 2022, Falcon 9) and the conflicting cause accounts."
+        },
+        {
+          "title": "The Athena Microscopic Imager investigation",
+          "authors": "Herkenhoff, K. E., et al.",
+          "publisher": "Journal of Geophysical Research",
+          "date": "2003",
+          "doi": "10.1029/2003JE002076",
+          "url": "https://pubs.usgs.gov/publication/70025049",
+          "notes": "Search summary only; the page returned an access error and was not read. Cited for Mars flight operation, which the 2001 calibration plan does not itself confirm."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No direct image asset was verified from an official source in this run, so no image URLs are included."
+  },
+  "data_quality_notes": [
+    "No lunar sample imaging microscope is confirmed as having operated on the surface in the sources reviewed. The Athena MI example is a Mars instrument included as a reference only.",
+    "CAM-M figures from the 2024 primary paper were not read directly. The 20 to 27 micrometre pixel scale and about 4 x 5 cm field of view come from secondary summaries and are unverified.",
+    "The Athena MI values are 2001 pre-flight design requirements, not flight-verified values.",
+    "Rashid-2 launch and landing status could not be confirmed as of 2026-11-13. Lander attribution for Rashid-2 and the Heimdall Regolith Imager conflicts across sources.",
+    "Heimdall Regolith Imager field of view, mass, power and dimensions are not publicly specified on the project page.",
+    "No direct image asset was verified from an official source. The article and JSON contain no images.",
+    "Search-summary-only sources (references 7, 9, 10 and 11) were not opened directly and are marked as such in the references."
+  ]
+}

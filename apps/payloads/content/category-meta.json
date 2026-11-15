@@ -1,0 +1,19 @@
+{
+  "_note": "Hand-edited presentation metadata merged into catalogue.json by tools/build-catalogue.mjs. Keys are category numbers. 'icon' must match a key in js/icons.js.",
+  "1":  { "icon": "seismic",     "description": "Instruments that probe the Moon's interior through seismic, thermal, magnetic and gravity measurements." },
+  "2":  { "icon": "camera",      "description": "Cameras, imagers and laser systems that photograph and map the lunar surface in 2D and 3D." },
+  "3":  { "icon": "spectrum",    "description": "Spectrometers and analysers that identify the minerals, elements and isotopes in lunar rock and soil." },
+  "4":  { "icon": "drill",       "description": "Radars, drills and probes that reveal and sample what lies beneath the lunar surface." },
+  "5":  { "icon": "droplet",     "description": "Detectors that search for water ice, hydrogen and other volatiles, especially in cold polar regions." },
+  "6":  { "icon": "radiation",   "description": "Sensors that measure radiation, solar wind, plasma and dust in the harsh lunar space environment." },
+  "7":  { "icon": "exosphere",   "description": "Instruments that sample the Moon's extremely thin exosphere and the gases released from its surface." },
+  "8":  { "icon": "regolith",    "description": "Tools that test the mechanical, thermal and electrostatic properties of lunar regolith." },
+  "9":  { "icon": "antenna",     "description": "Beacons, retroreflectors and radio systems for navigation, communications and precise geodesy." },
+  "10": { "icon": "leaf",        "description": "Experiments that study how plants, microbes and living tissue respond to lunar conditions." },
+  "11": { "icon": "isru",        "description": "Demonstrators that turn lunar resources into oxygen, water, power and construction materials." },
+  "12": { "icon": "telescope",   "description": "Telescopes and receivers that use the Moon as a quiet platform for observing the universe." },
+  "13": { "icon": "capsule",     "description": "Mechanisms that collect, seal, preserve and return lunar samples for study on Earth." },
+  "14": { "icon": "robot",       "description": "Robotic arms, rovers and deployment systems that move, place and operate payloads on the surface." },
+  "15": { "icon": "power",       "description": "Technology experiments for power, shielding, habitats and infrastructure on the Moon." },
+  "16": { "icon": "target",      "description": "Calibration targets, reference standards and monitors that keep other instruments accurate." }
+}

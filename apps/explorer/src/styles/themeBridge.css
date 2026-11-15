@@ -1,0 +1,222 @@
+/*
+ * Theme bridge (Stage 1). OPTIONAL. Import it AFTER app.css to re-skin the CURRENT interface with the
+ * new palette and fonts, without changing any layout, component or class name.
+ * To undo it, remove the import. Stage 2 replaces this file with real component styling.
+ *
+ * What it does:
+ *   1. Maps the existing variables (--bg, --panel, --text, --accent ...) to the new tokens.
+ *   2. Replaces the cyan and navy colours that app.css and solar.css write directly.
+ *   3. Moves every font to Inter Bold (headings) and Economica (everything else).
+ *   4. Gives the instrument panel the 70 percent frosted glass, and the text-heavy panels the dense recipe.
+ *   5. Brings the mission dossier (which injects its own cyan and monospace styles) into the system.
+ *
+ * Checked in a Chromium test page built from these real stylesheets and components, with a painted stand-in for
+ * the Three.js scenes. Not checked against the real Three.js Moon, and Economica was not available there.
+ * The sizes are one knob: html font-size below.
+ */
+
+:root {
+  --bg: var(--lg-ground);
+  --bg-elevated: var(--lg-panel);
+  --panel: var(--lg-near-solid-bg);
+  --panel-2: var(--lg-panel-2);
+  --panel-3: var(--lg-panel-3);
+  --line: var(--lg-hair);
+  --line-strong: rgba(143, 176, 203, 0.45);
+  --text: var(--lg-text);
+  --muted: var(--lg-text-2l);
+  --accent: var(--lg-blue-text);
+  --accent-soft: rgba(100, 137, 165, 0.18);
+  --warn: var(--lg-amber);
+  --ok: var(--lg-green);
+  --err: var(--lg-red);
+  --mono: var(--lg-font-ui);
+  --radius: var(--lg-radius);
+  --shadow: var(--lg-shadow-1);
+  font-family: var(--lg-font-ui);
+}
+
+/* Economica is small for its size. One knob: every rem-based size in the app follows it. */
+html { font-size: 19px; }
+body {
+  background: var(--lg-ground);
+  font-family: var(--lg-font-ui);
+  font-size: 15px;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+}
+button, input, select, textarea { font-family: inherit; }
+::selection { background: rgba(100, 137, 165, 0.35); color: var(--lg-text); }
+
+/*
+ * Headings: Inter Bold. The font is a static bold, so presence comes from size, tight line height,
+ * tight tracking and a light colour (#E4EAF0), not from a different font file.
+ */
+.app h1, .app h2, .app h3, .app h4,
+.label, .sp-title, .sp-kicker, .solar-panel h4, .sp-power-label, .sp-form legend {
+  font-family: var(--lg-font-head);
+  font-weight: 700;
+}
+.app h1, .app h2, .sp-title, .mdx .mdx-title { color: var(--lg-heading); }
+.app h2 { font-size: var(--lg-fs-heading); line-height: 1.15; letter-spacing: -0.015em; }
+.overlay-top-left h2 { font-size: 26px; line-height: 1.08; letter-spacing: -0.025em; }
+.app h3, .label, .solar-panel h4 { letter-spacing: 0.08em; }
+.app h3 { font-size: 12px; }
+.label, .sp-kicker { color: var(--lg-text-2l); }
+.sp-kicker { color: var(--lg-blue-text); }
+.sp-title { font-size: 20px; line-height: 1.12; letter-spacing: -0.015em; }
+
+/* Data, clocks and coordinates: Economica 700, tabular figures */
+.clock-value, .clock-sub, .facts dd, .scene-label.distance, .app input[type='text'] {
+  font-family: var(--lg-font-ui);
+  font-variant-numeric: tabular-nums;
+}
+.clock-value { color: var(--lg-text); font-weight: 700; letter-spacing: 0; }
+.facts dd { color: var(--lg-text); font-weight: 700; }
+
+/* Badges, chips, tags */
+.badge-warn, .badge-sim { background: rgba(212, 164, 95, 0.1); border-color: rgba(212, 164, 95, 0.4); color: var(--lg-amber); }
+.badge-live { background: rgba(127, 176, 143, 0.1); border-color: rgba(127, 176, 143, 0.4); color: var(--lg-green); }
+.chip {
+  background: rgba(32, 45, 56, 0.92);
+  color: var(--lg-text-2l);
+  border-color: var(--lg-hair);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none; /* many small blurred layers cost more than they give */
+}
+.chip-warn { border-color: rgba(212, 164, 95, 0.5); color: var(--lg-amber); }
+.tag { background: var(--lg-panel); color: var(--lg-text); border-color: var(--lg-ctl); }
+.lvl2 { background: rgba(127, 176, 143, 0.14); color: var(--lg-green); }
+.lvl4 { background: rgba(212, 164, 95, 0.14); color: var(--lg-amber); }
+.lvl-none { background: rgba(163, 177, 188, 0.12); color: var(--lg-text-2l); }
+.message-error { background: rgba(224, 122, 110, 0.1); color: var(--lg-red); border-color: rgba(224, 122, 110, 0.4); }
+.message-note { background: rgba(100, 137, 165, 0.12); color: var(--lg-text); border-color: rgba(143, 176, 203, 0.35); }
+
+/* Buttons and controls. Control borders use the 3:1 colour. */
+.app button {
+  border-color: var(--lg-ctl);
+  background: var(--lg-panel-2);
+  color: var(--lg-text);
+  font-weight: 700;
+}
+.app button:hover { border-color: var(--lg-blue-text); background: var(--lg-panel-3); color: var(--lg-text); }
+.app button[aria-pressed='true'] {
+  background: rgba(100, 137, 165, 0.24);
+  border-color: var(--lg-blue-text);
+  color: var(--lg-text);
+  box-shadow: none;
+}
+.app .primary-btn { background: var(--lg-blue); border-color: var(--lg-blue); color: var(--lg-ground); }
+.app .primary-btn:hover { background: var(--lg-blue-text); color: var(--lg-ground); }
+.app button:focus-visible, .app input:focus-visible, .app select:focus-visible {
+  outline: 2px solid var(--lg-blue-text);
+  outline-offset: 2px;
+}
+.app input[type='text'], .app select { background: var(--lg-ground); border-color: var(--lg-ctl); color: var(--lg-text); }
+.check, .slider { color: var(--lg-text); }
+
+/* Surfaces */
+body { background-image: none; }
+.viewport-wrap { background: #000; border-color: var(--lg-hair); border-radius: var(--lg-radius); }
+.primary-view { background: #000; }
+.orbit-panel, .info-panel, .time-controls {
+  background: var(--lg-panel);
+  border-color: var(--lg-hair);
+  border-radius: var(--lg-radius);
+  box-shadow: none;
+}
+.viewport-error { background: rgba(16, 24, 32, 0.97); }
+.overlay .hint { color: var(--lg-text); }
+.side { scrollbar-color: var(--lg-ctl) transparent; }
+
+/*
+ * Frosted glass. The instrument panel over the Moon uses the 70 percent recipe from tokens.css.
+ * The panels that are mostly small text (Lunar Solar Intelligence, mission dossier) use the dense
+ * recipe (84 percent), because at 70 percent grey text cannot reach 4.5:1 over a bright Moon.
+ * Selectors are written with .app in front so they beat the stylesheet that MissionDossier injects at run time.
+ */
+.app .panel-mini {
+  background: var(--lg-glass-bg);
+  -webkit-backdrop-filter: var(--lg-glass-filter);
+  backdrop-filter: var(--lg-glass-filter);
+  border: 1px solid var(--lg-glass-border);
+  border-radius: var(--lg-radius);
+  box-shadow: var(--lg-highlight), var(--lg-shadow-1);
+  color: var(--lg-text);
+}
+.app .solar-panel, .app .mdx {
+  background: var(--lg-glass-bg-dense);
+  -webkit-backdrop-filter: var(--lg-glass-filter);
+  backdrop-filter: var(--lg-glass-filter);
+  border: 1px solid var(--lg-glass-border);
+  border-radius: var(--lg-radius);
+  box-shadow: var(--lg-highlight), var(--lg-shadow-2);
+  color: var(--lg-text);
+}
+/* On the 70 percent glass, text keeps the primary colour. Hierarchy comes from size, weight and case. */
+.app .panel-mini .hint, .app .panel-mini .label, .app .panel-mini .slider, .app .panel-mini .check,
+.app .panel-mini legend, .app .panel-mini dt { color: var(--lg-text); }
+/* MoonViewport writes this label's colour inline, so it needs !important to be changed from CSS. */
+.app .panel-mini .surface-readout > div:first-child {
+  color: var(--lg-text) !important;
+  font-family: var(--lg-font-head);
+  font-weight: 700;
+  font-size: 12px !important;
+}
+:root[data-glass='solid'] .app .panel-mini,
+:root[data-glass='solid'] .app .solar-panel,
+:root[data-glass='solid'] .app .mdx {
+  background: var(--lg-near-solid-bg);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .app .panel-mini, .app .solar-panel, .app .mdx { background: var(--lg-near-solid-bg); }
+}
+
+/* Mission dossier: its own injected styles use cyan, system-ui and a monospace font. Bring it into the system. */
+.app .mdx { font-family: var(--lg-font-ui); font-size: 15px; }
+.app .mdx .mdx-kicker, .app .mdx .mdx-h, .app .mdx .mdx-fact dt {
+  font-family: var(--lg-font-head);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.app .mdx .mdx-kicker { color: var(--lg-blue-text); font-size: 12px; }
+.app .mdx .mdx-h { color: var(--lg-text-2l); font-size: 12px; }
+.app .mdx .mdx-fact dt { color: var(--lg-text-2l); font-size: 11px; }
+.app .mdx .mdx-title { font-family: var(--lg-font-head); font-weight: 700; font-size: 22px; line-height: 1.12; letter-spacing: -0.015em; }
+.app .mdx .mdx-sub, .app .mdx .mdx-note, .app .mdx .mdx-p, .app .mdx .mdx-fact dd { color: var(--lg-text); font-family: var(--lg-font-ui); }
+.app .mdx .mdx-p { font-size: 16px; line-height: 1.45; }
+.app .mdx .mdx-sub { font-size: 15px; }
+.app .mdx .mdx-note { font-size: 14px; color: var(--lg-text-2l); }
+.app .mdx .mdx-fact { background: rgba(16, 24, 32, 0.9); }
+.app .mdx .mdx-fact dd { font-size: 15px; font-weight: 700; }
+.app .mdx .mdx-fact.missing dd { color: var(--lg-amber); }
+.app .mdx .mdx-close, .app .mdx .mdx-tab, .app .mdx .mdx-status { font-family: var(--lg-font-ui); font-weight: 700; font-size: 14px; }
+.app .mdx .mdx-close { border-color: var(--lg-ctl); background: var(--lg-panel-2); color: var(--lg-text); }
+.app .mdx .mdx-tab { color: var(--lg-text-2l); }
+.app .mdx .mdx-tab[aria-selected='true'] { color: var(--lg-text); border-bottom-color: var(--lg-blue-text); }
+.app .mdx .mdx-close:focus-visible, .app .mdx .mdx-tab:focus-visible, .app .mdx a:focus-visible { outline-color: var(--lg-blue-text); }
+.app .mdx .t-confirmed { color: var(--lg-green); }
+.app .mdx .t-partial { color: var(--lg-amber); }
+.app .mdx .t-failed { color: var(--lg-red); }
+.app .mdx .t-planned, .app .mdx .t-neutral, .app .mdx .t-passive { color: var(--lg-text-2l); }
+
+/* Lunar Solar Intelligence panel (solar.css) */
+.sp-sub, .sp-fine, .sp-form legend, .sp-power-label, .sp-grid dt, .sp-stages dt { color: var(--lg-text-2l); }
+.sp-note { color: var(--lg-text); }
+.sp-warn { color: var(--lg-amber); }
+.sp-limits { color: var(--lg-text-2l); }
+.sp-tag { color: var(--lg-amber); }
+.sp-hi, .sp-power-value { color: var(--lg-blue-text); }
+.sp-power { border-color: rgba(143, 176, 203, 0.4); background: rgba(100, 137, 165, 0.1); }
+.sp-badge { background: var(--lg-panel-3); color: var(--lg-text); }
+.sp-cond[data-cond='high-sun'] .sp-badge, .sp-cond[data-cond='low-sun'] .sp-badge,
+.sp-cond[data-cond='sunrise'] .sp-badge, .sp-cond[data-cond='sunset'] .sp-badge { background: rgba(212, 164, 95, 0.25); color: var(--lg-amber); }
+.sp-cond[data-cond='terrain-shadow'] .sp-badge { background: rgba(212, 164, 95, 0.15); color: var(--lg-amber); }
+.sp-cond[data-cond='darkness'] .sp-badge, .sp-cond[data-cond='eclipse'] .sp-badge { background: var(--lg-ground); color: var(--lg-text-2l); }
+.sp-close, .sp-seg button, .sp-events button { background: var(--lg-panel-2); color: var(--lg-text); border-color: var(--lg-ctl); }
+.sp-seg button[aria-pressed='true'] { background: rgba(100, 137, 165, 0.24); border-color: var(--lg-blue-text); }
+.sp-form { border-color: var(--lg-hair); }
+.sp-form input, .sp-form select { background: var(--lg-ground); color: var(--lg-text); border-color: var(--lg-ctl); }
+.sp-table .sp-cur { background: rgba(100, 137, 165, 0.14); }

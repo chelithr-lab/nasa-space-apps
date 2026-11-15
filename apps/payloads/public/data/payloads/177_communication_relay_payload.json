@@ -1,0 +1,213 @@
+{
+  "catalogue_id": 177,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 9,
+    "name": "Navigation, communication and geodesy"
+  },
+  "payload": {
+    "number": 177,
+    "name": "Communication relay",
+    "article": {
+      "overview": "A communication relay is a spacecraft or payload that receives radio or optical signals from one place and forwards them to another, usually from a lander, rover or surface station towards Earth. On the Moon, relays are needed because the far side cannot communicate directly with Earth [1]. ESA's Moonlight programme also gives priority to coverage of the lunar south pole [4]. This entry covers relay satellites and related lunar communication demonstrations. The examples examined here are China's Queqiao and Queqiao-2 relay satellites, which have flown, the ESA and SSTL Lunar Pathfinder relay, which is still in development, and NASA's LADEE laser communication demonstration, which flew in 2013. The payload class is defined by its function rather than by one hardware design, so no single set of specifications applies to every relay.",
+      "description": "A relay sits between two endpoints that cannot easily reach each other directly. A lunar relay typically has receivers and transmitters for surface or orbital users and a separate link to Earth ground stations. In the Queqiao system, the rover sent UHF signals to the lander, which decoded them and forwarded the data to Queqiao. Queqiao communicated with the lander and rover at X-band and with the Earth ground station at S-band [1]. Lunar Pathfinder is described as providing S-band and UHF links to surface and orbital assets and an X-band link to Earth [5]. ESA's description of the same spacecraft mentions two S-band links to lunar assets and one X-band link to Earth [6]. The two descriptions differ on the link count, so the discrepancy is recorded in the Physical Specifications section.\n\nRelay services can be real-time or store-and-forward, in which data are held and passed on later. NASA's LunaNet Interoperability Specification materials describe a framework for both service types [8]. That document was identified in this run but was not read in full, so its details are not relied on here. Optical relay demonstrations use laser links instead of radio. NASA's LADEE mission tested this approach in 2013 [7].",
+      "scientific_purpose_and_applications": "The main purpose of a communication relay is to make other science and exploration missions possible by returning their data to Earth. Queqiao was placed in an Earth-Moon halo orbit to act as a communication bridge for the Chang'e-4 far-side mission [1]. Queqiao-2 was described in 2024 as a relay for far-side and south-pole missions. Its planned first task was support for Chang'e-6, a far-side sample-return mission, with later support planned for Chang'e-7 and Chang'e-8 [2]. Queqiao-2 also carries three science payloads and a very long baseline interferometry (VLBI) experiment [2].\n\nLunar Pathfinder is planned to host a navigation experiment, a radiation monitor and a laser retroreflector for ranging [5][6]. ESA's Moonlight programme is a planned constellation of five satellites, one for communications and four for navigation. It is intended to comply with the LunaNet standards and has first navigation interoperability tests planned for 2029 [4].",
+      "operating_principle": "The general operating principle is to receive a signal on one link, amplify or regenerate it, and retransmit it on another link. A relay satellite needs a directional antenna pointed at the user on the surface, a second antenna pointed at Earth, and an orbit that keeps both links available for as long as possible. The Queqiao design used an Earth-Moon L2 halo orbit. The source describes this as giving near-continuous Earth contact, continuous sunlight without eclipses and low long-term energy needs for station-keeping, although these were pre-launch planning statements [1]. Queqiao-2 and Lunar Pathfinder were described as using elliptical frozen orbits to keep line of sight to Earth and to the lunar sites they serve [2][5].\n\nOptical relays encode data on laser pulses. In the LADEE demonstration, the laser link carried two simultaneous high-definition video channels and large data files, and the terminal also supported continuous ranging measurements [7]. Radio and optical links differ in beam width, sensitivity to pointing and sensitivity to atmospheric conditions at the ground station. The last point is a general engineering consideration, not a result drawn from a specific cited source.",
+      "scientific_importance": "A relay does not measure the Moon directly. Its scientific importance lies in enabling data return from landers, rovers and far-side instruments that would otherwise have no reliable link to Earth [1][2]. The same infrastructure can also support navigation and timing. ESA states that Moonlight will provide navigation as well as communication services and will be interoperable with NASA and JAXA systems through LunaNet [4]. Relay capability therefore affects the design and operation of many scientific missions that are not relays themselves.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power figure for a communication relay. The values below describe specific flown, developed or demonstrated systems. They should not be applied to other relays unless a source for that system is cited. Where a value is only a planning figure, that is stated. A comparison table in the Markdown article shows status, mass, antenna and design life for the Queqiao, Queqiao-2, Lunar Pathfinder and LADEE LLCD examples. The first two rows are broadly comparable because both are lunar relay satellites. The LADEE row is not a like-for-like relay and is included only to show a flown optical demonstration.",
+        "examples": [
+          {
+            "name": "Queqiao (Chang'e-4 relay satellite, China)",
+            "type": "Flown relay satellite",
+            "status": "Flown; launched in May 2018 on a Long March 4C from Xichang [1][10]. The reported launch date varies between sources, so the exact day is not verified here.",
+            "mass_kg": "425 (pre-launch planned figure [1]). Search-result summaries of other secondary sources give a launch mass of about 448 kg and a dry mass of about 325 kg. These were not checked against the primary Chinese technical paper and are not used as verified figures.",
+            "antenna": "4.2 m umbrella antenna [1]",
+            "power": "Solar panels and lithium batteries; no power value given in the source [1].",
+            "orbit": "Earth-Moon L2 halo orbit, about 450,000 km from Earth, described as a pre-launch plan [1].",
+            "transfer": "Planned lunar swing-by, with orbit entry about eight to nine days after launch [1]. Some search-result summaries give a 24-day transfer. This conflicts with the planned figure and is not resolved.",
+            "planned_operating_life": "More than five years, planned [1]. This is a planning figure, not a measured lifetime.",
+            "communications": "UHF from rover to lander; X-band between Queqiao and the lander and rover; S-band to the Earth ground station [1].",
+            "source_urls": [
+              "https://www.planetary.org/articles/0519-change-4-relay-satellite",
+              "https://www.nasaspaceflight.com/2018/05/queqiao-relay-satellite-launched-change-4-lunar-mission/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Queqiao-2 (China)",
+            "type": "Flown relay satellite",
+            "status": "Flown; launched on 20 March 2024 (Beijing time, 19 March US Eastern) on a Long March 8 from Wenchang [2][3]. Reached lunar orbit on 24 March 2024 according to a launch-tracking record [9].",
+            "mass_kg": 1200,
+            "antenna": "4.2 m parabolic antenna [2]",
+            "power": "Not stated in the source reviewed [2].",
+            "data_rate": "Not stated in the source reviewed [2].",
+            "orbit": "24-hour-period elliptical frozen orbit, planned to change later to a 12-hour-period orbit [2].",
+            "design_life": "At least eight years [2].",
+            "co_passengers": "Tiandu-1 and Tiandu-2, two small test satellites for navigation and communication techniques [3].",
+            "science_payloads": "Three science payloads and a VLBI experiment [2].",
+            "source_urls": [
+              "https://www.planetary.org/space-missions/queqiao-2-chinas-bridge-for-lunar-exploration",
+              "https://spacepolicyonline.com/news/china-launches-second-lunar-commuications-relay-satellite/",
+              "https://spacelaunchnow.me/launch/long-march-8-queqiao-2"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Pathfinder (ESA and SSTL)",
+            "type": "Commercial lunar relay spacecraft, in development",
+            "status": "Not flown as of the sources reviewed. ESA states the proto-flight model was about halfway through assembly, integration and testing, and that all but one flight unit had been delivered to SSTL. The page gives no date for this status, so it is treated as undated [6].",
+            "launch": "ESA states not earlier than November 2026 on Firefly Aerospace's Blue Ghost Mission 2 [6]. SSTL lists a 2027 launch [5]. This conflict is unresolved.",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in the sources reviewed [5][6].",
+            "power": "Not publicly specified in the sources reviewed [5][6].",
+            "orbit": "Elliptical lunar frozen orbit [5].",
+            "design_life": "8 years, planned [5].",
+            "communications": "SSTL describes one S-band and one UHF link to lunar assets and an X-band link to Earth [5]. ESA describes two S-band links to lunar assets and an X-band link to Earth [6]. The sources conflict.",
+            "hosted_payloads": "ESA navigation signal experiment, ESA radiation monitor, and a NASA laser retroreflector [5][6].",
+            "note": "A 280 kg figure in a secondary 2022-era article was not verified and is not used.",
+            "source_urls": [
+              "https://sstl.co.uk/What-We-Do/Lunar-Mission-Services",
+              "https://bsgn.esa.int/service/lunar-pathfinder/"
+            ],
+            "images": []
+          },
+          {
+            "name": "LADEE Lunar Laser Communications Demonstration (LLCD), NASA",
+            "type": "Flown optical communication demonstration",
+            "status": "Flown in 2013 on the LADEE orbiter. LADEE launched on 6 September 2013 from NASA's Wallops Flight Facility and reached lunar orbit 30 days later. First results were reported on 18 October 2013 [7].",
+            "downlink": "622 Mbps from the Moon to Earth [7].",
+            "uplink": "20 Mbps, error-free [7].",
+            "distance": "About 239,000 miles from the White Sands ground station [7].",
+            "terminal": "Built by MIT Lincoln Laboratory. NASA reports half the weight of a comparable radio terminal and 25 percent less power. No absolute mass or power values are published in the source [7].",
+            "note": "A demonstration, not an operational relay service.",
+            "source_urls": [
+              "https://www.nasa.gov/content/goddard/historic-demonstration-proves-laser-communication-possible/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No universal dimensions exist for a communication relay. Queqiao and Queqiao-2 are both documented with a 4.2 m antenna [1][2]. Their overall bus dimensions were not verified in the sources reviewed. Lunar Pathfinder's dimensions are not publicly specified in the sources reviewed [5][6]. The LADEE laser terminal's size is given only relative to a comparable radio terminal [7].",
+        "mass_and_weight": "Queqiao: 425 kg at pre-launch planning stage [1]. Queqiao-2: 1,200 kg [2]. Lunar Pathfinder: not publicly specified in the sources reviewed [5][6]. LADEE LLCD: relative only, with half the weight of a comparable radio terminal [7]. Mass values for different relays are not directly comparable because the sources do not state whether they are launch, dry or planned values.",
+        "power_requirements": "Queqiao: solar panels and lithium batteries, with no power value in the source [1]. Queqiao-2: not stated in the source reviewed [2]. Lunar Pathfinder: not publicly specified in the sources reviewed [5][6]. LADEE LLCD: 25 percent less power than a comparable radio terminal, with no absolute value [7]."
+      },
+      "environmental_and_operational_requirements": "A lunar relay must operate in vacuum, with large temperature swings between sunlight and shadow and exposure to space radiation. Queqiao's halo orbit was chosen for continuous sunlight without eclipses [1]. Lunar Pathfinder includes a radiation monitor in its planned payload, which indicates radiation is a design consideration for lunar orbit [5]. Relays also need accurate pointing and orbit maintenance so that their antennas stay aimed at the correct users and Earth stations. These are general engineering requirements. The sources reviewed do not give environmental test levels for any named relay.",
+      "limitations": "A relay depends on the spacecraft, lander and rover radios being compatible. A relay also cannot provide a link to a user it cannot see. The Queqiao and Queqiao-2 sources give planned or design values for several parameters, and the data rates for these satellites are not stated in the sources reviewed [1][2]. Lunar Pathfinder's launch date and some technical parameters are unresolved. Laser links require good pointing and suitable ground conditions, so optical demonstrations may not give the same availability as radio systems.",
+      "transportation_and_deployment": {
+        "overview": "A relay satellite is an orbiter-type payload. Its path to the Moon is a sequence of integration with a launch vehicle, launch, transfer to the Moon, insertion into a lunar or Earth-Moon orbit and commissioning. It is not deployed onto the surface like a seismometer.",
+        "transportation_process": [
+          "Integrate the relay satellite with a launch vehicle.",
+          "Launch on a Long March 4C from Xichang (Queqiao) or a Long March 8 from Wenchang (Queqiao-2) [1][2][3].",
+          "Transfer towards the Moon. For Queqiao this included a lunar swing-by [1].",
+          "Enter the target orbit: an Earth-Moon L2 halo orbit for Queqiao [1], and lunar orbit for Queqiao-2 (entry reported on 24 March 2024) [9].",
+          "For Lunar Pathfinder, ESA states that Firefly's Blue Ghost Mission 2 will bring the spacecraft into lunar orbit [6]. This is a mission plan.",
+          "Commission the relay and establish links with surface and Earth assets. Commissioning details were not verified in the sources reviewed."
+        ],
+        "deployment_methods": "A relay is not deployed onto the surface. Its orbit insertion and link establishment are the relevant deployment steps. Queqiao's halo orbit and Queqiao-2's frozen orbit are described in the sources reviewed [1][2]. Lunar Pathfinder's orbit is described as an elliptical lunar frozen orbit [5].",
+        "historical_examples": "Queqiao (launched May 2018) and Queqiao-2 (launched 20 March 2024) are flown Chinese lunar relays [1][2][3][10]. The LADEE LLCD demonstration flew in 2013 as an optical link experiment on a lunar orbiter [7].",
+        "compatibility_assessment": "Lunar Pathfinder is planned to be delivered to lunar orbit by Firefly's Blue Ghost Mission 2 according to ESA [6]. Mission-level compatibility, including mass, mounting, power and data interfaces, was not verified against a Firefly or SSTL interface document in this run. No verified interface document for a specific lander or rover was reviewed, so no compatibility is asserted for any named lander, rover or spacecraft.",
+        "images": []
+      },
+      "historical_significance": "Queqiao was placed in an Earth-Moon L2 orbit to relay communications for the Chang'e-4 far-side mission [1]. Queqiao-2 followed in 2024 as a further relay for Chinese lunar missions, with planned support for Chang'e-6, Chang'e-7 and Chang'e-8 [2][3]. The LADEE LLCD demonstration showed in 2013 that a laser link could carry data at a high rate from lunar orbit. NASA described the downlink as more than six times faster than previous radio systems flown to the Moon [7]. The ESA Moonlight programme and the LunaNet framework show that lunar relay work is moving towards interoperable, multi-agency services [4][8].",
+      "limitations_and_uncertainties": "The name \"communication relay\" describes a class of systems. The Queqiao, Queqiao-2, Lunar Pathfinder and LADEE examples are not interchangeable. Mass, antenna size, power, lifetime and data rate must always be tied to a named system and source. Several Queqiao values are pre-launch planning figures and are not confirmed flight performance. Lunar Pathfinder is in development and its launch date is unresolved between ESA and SSTL sources. Queqiao-2 power and data rate were not found in the source reviewed. Some timing and mass values differ between secondary sources, and those differences are recorded above. The LunaNet specification was not read in full. No verified image assets were added in this version, so the article contains no images. This article does not establish compatibility with any named lander, rover or spacecraft.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Chang'e 4 relay satellite, Queqiao: A bridge between Earth and the mysterious lunar farside",
+          "publisher": "Planetary Society",
+          "date": "2018-05-19 (pre-launch article)",
+          "url": "https://www.planetary.org/articles/0519-change-4-relay-satellite"
+        },
+        {
+          "title": "Queqiao-2: China's bridge for lunar exploration",
+          "publisher": "Planetary Society",
+          "date": "undated page, reviewed 2026",
+          "url": "https://www.planetary.org/space-missions/queqiao-2-chinas-bridge-for-lunar-exploration"
+        },
+        {
+          "title": "China Launches Second Lunar Communications Relay Satellite",
+          "publisher": "SpacePolicyOnline",
+          "date": "2024-03",
+          "url": "https://spacepolicyonline.com/news/china-launches-second-lunar-commuications-relay-satellite/"
+        },
+        {
+          "title": "ESA launches Moonlight to establish lunar communications and navigation infrastructure",
+          "publisher": "ESA",
+          "date": "2024-10-15 (media advisory)",
+          "url": "https://www.esa.int/Newsroom/Press_Releases/ESA_launches_Moonlight_to_establish_lunar_communications_and_navigation_infrastructure"
+        },
+        {
+          "title": "Lunar Mission Services (Lunar Pathfinder)",
+          "publisher": "SSTL",
+          "date": "undated page, reviewed 2026",
+          "url": "https://sstl.co.uk/What-We-Do/Lunar-Mission-Services"
+        },
+        {
+          "title": "Lunar Pathfinder",
+          "publisher": "ESA Business Support and Global Navigation",
+          "date": "undated page, reviewed 2026",
+          "url": "https://bsgn.esa.int/service/lunar-pathfinder/"
+        },
+        {
+          "title": "Historic demonstration proves laser communication possible",
+          "publisher": "NASA Goddard",
+          "date": "2013-10-28",
+          "url": "https://www.nasa.gov/content/goddard/historic-demonstration-proves-laser-communication-possible/"
+        },
+        {
+          "title": "LunaNet Interoperability Specification v5 baseline",
+          "publisher": "NASA",
+          "date": "2025 (PDF); identified in search results only, not read in full",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/02/lunanet-interoperability-specification-v5-baseline.pdf"
+        },
+        {
+          "title": "Long March 8 Queqiao-2 launch record",
+          "publisher": "Spacelaunchnow (launch-tracking aggregator, not a primary source)",
+          "date": "2024-03-24 (lunar orbit entry as reported)",
+          "url": "https://spacelaunchnow.me/launch/long-march-8-queqiao-2"
+        },
+        {
+          "title": "Queqiao relay satellite launched for Chang'e-4 lunar mission",
+          "publisher": "NASASpaceflight",
+          "date": "2018-05 (identified in search results; exact launch date not verified)",
+          "url": "https://www.nasaspaceflight.com/2018/05/queqiao-relay-satellite-launched-change-4-lunar-mission/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Queqiao example": "payload.article.physical_specifications.examples[0].images",
+      "Queqiao-2 example": "payload.article.physical_specifications.examples[1].images",
+      "Lunar Pathfinder example": "payload.article.physical_specifications.examples[2].images",
+      "LADEE LLCD example": "payload.article.physical_specifications.examples[3].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. No image objects are included in this version because no direct image asset URL was verified from an official page within the research budget. Section-level image arrays are present and empty."
+  },
+  "data_quality_notes": [
+    "No images were verified or included. The Markdown article contains no images, and the image arrays are empty.",
+    "Queqiao mass is a pre-launch planning figure (425 kg) from the Planetary Society. Secondary search-result summaries give about 448 kg launch mass and about 325 kg dry mass. The primary Chinese technical paper (Zhang et al., Sci Sin Tech, 2019) was identified but not opened, so the discrepancy is unresolved.",
+    "Queqiao transfer time conflicts: the pre-launch source plans orbit entry about 8 to 9 days after launch, while a secondary search-result summary gives 24 days. Not resolved.",
+    "Queqiao-2 power and data rate are not stated in the source reviewed. Its mass and antenna are from the Planetary Society article.",
+    "Lunar Pathfinder launch date conflicts: ESA states not earlier than November 2026 on Blue Ghost Mission 2; SSTL lists 2027. Mass and dimensions are not publicly specified in the sources reviewed. A 280 kg value from a 2022-era secondary article was not verified and is not used. Communication link count also conflicts between ESA (two S-band) and SSTL (one S-band and one UHF).",
+    "Lunar Pathfinder hosted-payload detail for the NASA laser retroreflector comes from an ESA headline only, not from a full page reviewed.",
+    "The LunaNet Interoperability Specification v5 PDF could not be read as text by the fetch tool in this run. It is listed as a reference only and its content is not relied on.",
+    "Queqiao-2 launch date is reported as 20 March 2024 (Beijing time) and 19 March US Eastern in search-result summaries. The Planetary Society article gives March 20 UTC without a year. Time zones explain the difference.",
+    "The NASA LLCD article gives 622 Mbps downlink and 20 Mbps error-free uplink. The ranging accuracy statement ('less than half an inch') is in the source but is not used.",
+    "The Moonlight programme (ESA, 2024) is a planned constellation. The ESA page gives no accuracy, mass or dimensions for its satellites.",
+    "Search quota: 8 WebSearch calls and 7 WebFetch calls were used. No MCP tools were called."
+  ]
+}

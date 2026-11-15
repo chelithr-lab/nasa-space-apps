@@ -1,0 +1,244 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 311,
+    "name": "Instrument reference standard",
+    "article": {
+      "overview": "An instrument reference standard is a physical object or material with a known, characterised property that a scientific instrument observes in order to convert its raw readings into calibrated values. On the Moon, the most common form is a reflectance panel: a surface of known, stable brightness that a camera or spectrometer views under sunlight, so that the instrument can express its measurements as reflectance rather than as uncalibrated detector counts. The catalogue entry is a class description, not a single device. The best-documented flown lunar example in the sources reviewed is the calibration panel of the Visible and Near-Infrared Imaging Spectrometer (VNIS) carried by Chinese lunar rovers. A planetary example from Mars, the Mastcam-Z calibration targets on NASA's Perseverance rover, is included for comparison only and is not a lunar payload.",
+      "description": "A reference standard is normally designed so that its response is known or can be modelled. Typical features include a flat, diffusely reflecting surface with a known reflectance, often a fluoropolymer such as PTFE-type material; a position that lets the instrument view it under the same illumination as the scene, usually sunlight; a stowed or shielded position that protects the surface from dust and radiation when not in use; and, in some designs, additional colour swatches, neutral grey patches or a shadow post for checking lighting and sky colour. The reference standard does not measure the scene itself. It supplies a known quantity against which the instrument's response is compared, so that measurements from the lunar surface can be placed on an absolute scale. It is closely related to, but distinct from, other calibration devices in this catalogue such as calibration targets, spectrometer calibration sources, radiation calibration sources and temperature reference sensors. The boundaries between these categories are interpretive and depend on the design.",
+      "scientific_purpose_and_applications": "The purpose of an instrument reference standard is to make lunar surface measurements quantitatively meaningful and comparable over time. Reported applications include: absolute reflectance retrieval, which converts spectrometer or camera data into reflectance so that lunar surface materials can be compared with laboratory spectra and orbital datasets; in-situ radiometric calibration, which checks the instrument's response under real illumination rather than only under laboratory conditions before launch; calibration-site studies, which use in-situ panel measurements to establish the absolute reflectance of a surface that could serve as a reference for orbital sensors (Wu et al., 2018 argued for the Chang'e-3 landing site in this role; this claim is not verified against the full text); and monitoring instrument stability, because repeated views of a stable reference can reveal drift in detector gain, illumination or optics over a mission.",
+      "operating_principle": "The operating principle is comparison against a known reference under the same conditions as the measurement. As described for the Chang'e-4 VNIS in Li et al. (2019), a typical sequence is: acquire dark-current frames with the instrument shielded so that the detector's own offset can be removed; move the calibration unit into the calibration position, where the diffuser panel receives sunlight at the light entrance; record the panel signal and the scene signal under the same solar illumination; normalise the scene signal by the panel response, referenced to a known solar irradiance spectrum, to obtain reflectance; and move the calibration unit into a protected position between observations. The essential assumption is that the panel's reflectance is known and stable. If the panel brightens, darkens, yellows or accumulates dust, the retrieved reflectance for every scene is biased in the same direction. A reference standard is therefore only as good as its pre-flight characterisation, its protection on the surface and any in-flight monitoring of its state.",
+      "scientific_importance": "Reflectance is the basis for interpreting lunar surface spectra. Mineral absorption features, space weathering and regolith maturity all appear as changes in reflectance as a function of wavelength. Without an absolute reference, a spectrometer can show relative differences between surfaces but cannot state their absolute brightness with confidence, so an on-board reference standard sets the baseline for a mission's spectral dataset. The Chang'e-4 VNIS paper reports a stated in-flight inversion uncertainty of 4.97 per cent for the VIS/NIR channel and 6.36 per cent for the SWIR channel. These are instrument-team estimates for that instrument, not a general property of reference standards.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an instrument reference standard. Its size, material, mounting and mechanism depend on the instrument it serves, the illumination geometry and the mission's dust and thermal environment. The examples below describe specific instruments only and should not be generalised.",
+        "examples": [
+          {
+            "name": "Chang'e-4 VNIS calibration unit",
+            "type": "Flown lunar surface instrument calibration unit",
+            "mass_kg": {
+              "probe_part": 4.65,
+              "electronics_part": 0.7
+            },
+            "power_consumption_w": 16.95,
+            "mounting_height_m": 0.69,
+            "visual_angle_degrees": 45,
+            "calibration_panel_material": "Polytetrafluoroethylene (PTFE)",
+            "calibration_panel_location": "At the light entrance, outside the main optics.",
+            "calibration_position": "Horizontal, reached by a lightweight ultrasonic motor, then oriented parallel to the VNIS mounting plane.",
+            "dust_protection": "The calibration unit provides dust-proofing and insulation. Stowed position details are not stated.",
+            "traceability": "Solar spectral irradiation.",
+            "panel_reflectance": "Not stated in the source reviewed.",
+            "calibration_unit_dimensions": "Not stated in the source reviewed.",
+            "laboratory_calibration": "Integrating sphere U6500 traceable to the National Institute of Metrology (NIM), China. Radiance obtained by linear fitting of digital number against source radiance for each pixel and band. Twenty dark-current frames per channel and twenty bias-light frames for the imaging channel.",
+            "radiometric_inversion_uncertainty_percent": {
+              "vis_nir": 4.97,
+              "swir": 6.36
+            },
+            "snr_specification": "Stated as greater than 30 dB at albedo 0.09 with solar incidence 45 degrees (VIS/NIR) and 75 degrees (SWIR). Table I lists greater than 33 dB (VIS/NIR) and greater than 31 dB (SWIR).",
+            "operating_envelope": "Solar elevation 15 to 45 degrees; surface reflectance 5 to 98 per cent, including the diffuser panel.",
+            "not_stated": [
+              "Panel reflectance value",
+              "In situ calibration uncertainty",
+              "Calibration cadence",
+              "Thermal effects on the panel",
+              "Reflectance retrieval method in the text reviewed"
+            ],
+            "qualification": "Flown instrument description from Li et al. (2019). The paper gives two different boot dates (3 January 2019 in Section IV and 8 December 2018 in the Conclusion); this inconsistency is not resolved here.",
+            "source_urls": [
+              "https://pubs.aip.org/rsi/article/90/10/103106/360612/Detection-and-calibration-characteristics-of-the"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-3 VNIS calibration unit",
+            "type": "Flown lunar surface instrument calibration unit (abstract-level evidence)",
+            "calibration_panel_type": "Dust-protected white calibration panel.",
+            "positions": [
+              "Detection (full-open)",
+              "Calibration (horizontal)",
+              "Dust-proof (closed)"
+            ],
+            "calibration_method": "Radiometric correction against a standard solar spectral irradiance.",
+            "mass_kg": "Not stated in the source reviewed.",
+            "dimensions": "Not stated in the source reviewed.",
+            "panel_reflectance": "Not stated in the source reviewed.",
+            "qualification": "Evidence comes from the SPIE conference record (Xu, Lv, Ma and Wang, 2014) and a search summary. The full paper was not accessible for this review; panel material, dimensions and reflectance are not confirmed.",
+            "source_urls": [
+              "https://ebooks.spiedigitallibrary.org/conference-proceedings-of-spie/9263/926315/Calibration-of-Visible-and-Near-infrared-Imaging-Spectrometer-VNIS-on/10.1117/12.2068947.full"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mastcam-Z primary and secondary calibration targets (non-lunar planetary analogue)",
+            "type": "Flown Mars rover calibration targets; not a lunar payload",
+            "calibration_targets": [
+              "Primary target: larger and more intricate; does most of the work of converting images to reflectance.",
+              "Secondary target: simpler cross-check under different lighting and dust conditions."
+            ],
+            "primary_target_features": [
+              "Colour swatches used to fine-tune camera settings",
+              "Central shadow post used to check sky colour for lighting conditions",
+              "Mission-themed symbols around the perimeter"
+            ],
+            "mass_kg": "Not stated on the NASA resource page reviewed.",
+            "dimensions": "Not stated on the NASA resource page reviewed.",
+            "number_of_swatches": "Not stated on the NASA resource page reviewed.",
+            "performance_study": "Merusi et al. (2022) report that the targets performed well for the first 350 sols; dust mostly collected on eight permanent magnets placed under the primary target; the derived solar irradiance varied smoothly with Mars-Sun distance apart from a few dust events; an open small offset in the fit model and a yellowing effect on one target material remained under investigation. These details come from a search summary and were not checked against the full article.",
+            "qualification": "Planetary analogue for comparison only. It is not evidence about lunar performance and does not establish any lunar compatibility.",
+            "source_urls": [
+              "https://science.nasa.gov/resource/mastcam-zs-calibration-target/",
+              "https://essopenarchive.org/doi/full/10.1002/essoar.10511895.1",
+              "https://doaj.org/article/153fddd09ebc42e0a0c8c481e9fb0990"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No universal dimensions exist for an instrument reference standard. The Chang'e-4 VNIS calibration unit's dimensions are not stated in the source reviewed. The Mastcam-Z targets' dimensions are not stated on the NASA resource page reviewed. Any new reference standard would need dimensions determined by the instrument's field of view, illumination geometry and mounting constraints.",
+        "mass_and_weight": "The Chang'e-4 VNIS instrument is documented as 4.65 kg for the probe part and 0.7 kg for the electronics part (Li et al., 2019). The calibration unit's own mass is not separately stated. The Mastcam-Z target masses are not stated on the NASA resource page reviewed. Mass figures are instrument-specific and should not be generalised.",
+        "power_requirements": "The Chang'e-4 VNIS is documented at 16.95 W (Li et al., 2019). Power for the calibration unit's motor is not separately stated. The Chang'e-3 VNIS and Mastcam-Z power requirements are not stated in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A reference standard must keep its known properties under the conditions it will experience. On the lunar surface this includes dust, which is abrasive and electrostatically active, so reference surfaces need covers, stowed positions or other protection; the VNIS design uses a dust-proof position. Radiation and ultraviolet exposure can change the optical properties of polymers and coatings; the Mastcam-Z study reports a yellowing effect on one target material, with the cause not established in the sources reviewed. Large diurnal temperature swings can change the reference surface and the instrument optics; thermal effects on the VNIS panel are not stated in the paper reviewed. A reflectance reference is only valid under the geometry for which it is characterised; the VNIS paper states an operating envelope of solar elevation 15 to 45 degrees. A moving calibration unit needs a motor and drive that survive many cycles; the VNIS design uses a lightweight ultrasonic motor.",
+      "limitations": "A reference standard provides an absolute scale only if its own reflectance is known; for the Chang'e-4 VNIS, the panel reflectance is not stated in the source reviewed. Changes in the panel over time can bias all retrieved reflectance values in the same direction, so monitoring is essential, but the monitoring method is not described in detail in the sources reviewed. Some reflectance-target materials have been associated with spectral artefacts in laboratory work; a search summary mentions an artificial feature near 2.1 micrometres when a Spectralon-type plaque was used as a near-infrared calibration target. The original laboratory source was not identified and is not verified here. Lunar regolith reflectance depends on maturity, roughness and composition, so matching laboratory reference spectra to in situ data is not straightforward.",
+      "transportation_and_deployment": {
+        "overview": "An instrument reference standard usually travels as part of the instrument it supports. For rover-mounted examples, the calibration unit is integrated into the instrument head during spacecraft and rover integration on Earth, launched and transferred to the Moon, and then operated after the rover is deployed. The VNIS design places its calibration unit at the light entrance, outside the main optics, and moves it with an ultrasonic motor.",
+        "transportation_process": [
+          "Integrate the calibration unit into the instrument head on Earth, including its drive and protection features.",
+          "Launch the spacecraft or lander carrying the instrument.",
+          "Transfer to the Moon and deliver the rover or payload to the surface.",
+          "Deploy the rover and instrument, then verify that the calibration unit is in the field of view and correctly illuminated for the calibration sequence.",
+          "Connect power and command interfaces for the calibration drive and dust-protection mechanism."
+        ],
+        "deployment_methods": "For surface instruments the reference standard is typically fixed to or carried by the instrument or rover and is deployed with it. The VNIS calibration unit is moved into position by a motor after deployment. Pointing, mounting and illumination constraints must be checked on the surface.",
+        "historical_examples": "The Chang'e-4 VNIS was carried on a Chinese lunar rover, and the Chang'e-3 VNIS used a similar panel concept. The Mastcam-Z targets are on a Mars rover; they are a planetary precedent and not a lunar transportation example.",
+        "compatibility_assessment": "No compatibility with a specific lander or rover is asserted. Compatibility would need to be assessed from the calibration unit's mass, dimensions, mounting, power, thermal and data interfaces against verified spacecraft specifications, which are not available for this review.",
+        "images": []
+      },
+      "historical_significance": "The lunar examples are significant because they show that in-situ reflectance calibration is practical on a lunar rover. Wu et al. (2018) used in-situ VNIS panel data from the Chang'e-3 mission to argue that the Chang'e-3 landing site could serve as a calibration reference for orbital sensors. Wu et al. (2018) reports an average visible reflectance of about 3.86 per cent for this site, as stated in a search summary; the full paper was not accessible for this review, so the value is not verified here. The Mastcam-Z calibration targets are an important planetary precedent: they show how a rover-mounted reference standard can be combined with a primary and secondary target, dust control and long-term monitoring.",
+      "limitations_and_uncertainties": "'Instrument reference standard' describes a class; the examples are different instruments and their values must not be compared as if they were one design. Chang'e-4 VNIS and Chang'e-3 VNIS are flown lunar instruments, but the Chang'e-3 details rely on an abstract-level source. The Mastcam-Z targets are flown on Mars, not the Moon. The Chang'e-4 panel reflectance is not stated in the source reviewed, so the absolute scale of the VNIS reflectance product cannot be independently checked from this review. The Wu et al. (2018) VizieR instrument description could not be retrieved, and the 3.86 per cent site reflectance is from a search summary. An EPSC-DPS 2019 abstract (Wu et al.) could not be read as text and has not been used for any fact. The Chang'e-4 VNIS paper gives two different boot dates. The Mastcam-Z target mass and first-imaging date were not stated on the NASA page reviewed.",
+      "images": [
+        {
+          "id": "mastcam_z_primary_cal_target_pia24178",
+          "description": "Mastcam-Z primary calibration target on NASA's Perseverance rover, Mars. Shown as a non-lunar planetary analogue for the instrument reference standard class.",
+          "image_type": "Flight hardware photograph (Mars rover calibration target)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/detail_files/2/5/25433_PIA24178-Mastcam-Z_Primary_Cal_Target-1015.jpg",
+          "source_page_url": "https://science.nasa.gov/resource/mastcam-zs-calibration-target/",
+          "publisher": "NASA/JPL-Caltech",
+          "credit": "NASA/JPL-Caltech/ASU/MSSS/University of Copenhagen",
+          "caption": "Primary calibration target for Mastcam-Z on NASA's Perseverance rover on Mars (NASA PIA24178). Non-lunar planetary analogue.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct NASA asset URL taken from the NASA resource page and confirmed to return HTTP 200 with image/jpeg content type. The NASA page gives alt text 'A calibration target for Mastcam-Z on Mars' Perseverance' and no formal caption; the caption above is editorial. Use is subject to NASA image use policy; rights were not separately checked."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "mastcam_z_primary_cal_target_pia24178",
+          "description": "Mastcam-Z primary calibration target on NASA's Perseverance rover, Mars. Shown as a non-lunar planetary analogue for the instrument reference standard class.",
+          "image_type": "Flight hardware photograph (Mars rover calibration target)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/detail_files/2/5/25433_PIA24178-Mastcam-Z_Primary_Cal_Target-1015.jpg",
+          "source_page_url": "https://science.nasa.gov/resource/mastcam-zs-calibration-target/",
+          "publisher": "NASA/JPL-Caltech",
+          "credit": "NASA/JPL-Caltech/ASU/MSSS/University of Copenhagen",
+          "caption": "Primary calibration target for Mastcam-Z on NASA's Perseverance rover on Mars (NASA PIA24178). Non-lunar planetary analogue.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct NASA asset URL taken from the NASA resource page and confirmed to return HTTP 200 with image/jpeg content type. Caption is editorial; NASA gives alt text only."
+        }
+      ],
+      "references": [
+        {
+          "title": "Detection and calibration characteristics of the visible and near-infrared imaging spectrometer in the Chang'e-4",
+          "authors": "Li, C. L.; Xu, R.; Lv, G.; Yuan, L. Y.; He, Z. P.; Wang, J. Y.",
+          "publisher": "Review of Scientific Instruments, 90(10), 103106 (Shanghai Institute of Technical Physics, CAS)",
+          "publication_date": "2019-10-15",
+          "doi": "10.1063/1.5089737",
+          "url": "https://pubs.aip.org/rsi/article/90/10/103106/360612/Detection-and-calibration-characteristics-of-the",
+          "verification": "Full text reviewed via summary."
+        },
+        {
+          "title": "Calibration of Visible and Near-infrared Imaging Spectrometer (VNIS) on the lunar surface",
+          "authors": "Xu, Lv, Ma and Wang (initials not confirmed)",
+          "publisher": "SPIE Proceedings, vol. 9263",
+          "publication_date": "2014",
+          "url": "https://ebooks.spiedigitallibrary.org/conference-proceedings-of-spie/9263/926315/Calibration-of-Visible-and-Near-infrared-Imaging-Spectrometer-VNIS-on/10.1117/12.2068947.full",
+          "verification": "Abstract-level evidence only; full text not accessible; title taken from the record URL and search metadata."
+        },
+        {
+          "title": "The Absolute Reflectance and New Calibration Site of the Moon",
+          "authors": "Wu et al. (initials not confirmed)",
+          "publisher": "The Astronomical Journal, 155, 213",
+          "publication_date": "2018",
+          "url": "https://cdsarc.cds.unistra.fr/VizieR/ftp/J/AJ/155/213/ReadMe",
+          "verification": "Not retrieved during this review (connection refused). Claims are from a search summary only."
+        },
+        {
+          "title": "Mastcam-Z's Calibration Target",
+          "authors": "NASA Science",
+          "publisher": "NASA/JPL-Caltech/ASU/MSSS/University of Copenhagen",
+          "publication_date": "2020-12-08 (page publication date)",
+          "url": "https://science.nasa.gov/resource/mastcam-zs-calibration-target/",
+          "verification": "Fetched and reviewed."
+        },
+        {
+          "title": "The Mastcam-Z Radiometric Calibration Targets on NASA's Perseverance",
+          "authors": "Not confirmed in this review",
+          "publisher": "ESS Open Archive",
+          "publication_date": "Not confirmed in this review",
+          "url": "https://essopenarchive.org/doi/full/10.1002/essoar.10511895.1",
+          "verification": "Listed in search results only; not opened."
+        },
+        {
+          "title": "Merusi et al. (2022), Mastcam-Z calibration targets performance study",
+          "authors": "Merusi et al.",
+          "publisher": "Earth and Space Science",
+          "publication_date": "2022",
+          "url": "https://doaj.org/article/153fddd09ebc42e0a0c8c481e9fb0990",
+          "verification": "Search summary and open-access index only; full text not opened."
+        },
+        {
+          "title": "Laboratory reflectance reference, Apollo 16 soil 62231 (secondary paper)",
+          "authors": "Not confirmed in this review",
+          "publisher": "Not confirmed in this review",
+          "publication_date": "Not confirmed in this review",
+          "url": "https://artefacts-discovery.researcher.life/full_text/DA-2/5a/5a864a8abf333b8d9640b3c88d95d64b/full_text/849e24361e7e5586529e6b8591bfdf2b.pdf",
+          "verification": "Search metadata only; not opened. Used only for the statement that soil 62231 is used as a laboratory reflectance reference."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. The single image is repeated in overview_images so the Overview can render it without resolving IDs against the master gallery. The Mastcam-Z image is a non-lunar planetary analogue."
+  },
+  "data_quality_notes": [
+    "Chang'e-4 VNIS details come from the full text of Li et al. (2019), read through a summary. The panel reflectance value, the calibration unit dimensions, and in situ calibration uncertainty are not stated in that source.",
+    "The Li et al. (2019) paper gives two different boot dates (3 January 2019 in Section IV and 8 December 2018 in the Conclusion). This is recorded and not resolved.",
+    "Chang'e-3 VNIS details (three positions, dust-protected white panel, solar irradiance correction) come from the SPIE 2014 record and a search summary, not the full paper.",
+    "Wu et al. (2018) is cited for its argument about the Chang'e-3 landing site and its 3.86 per cent average visible reflectance. The VizieR instrument record could not be retrieved, so these are unverified.",
+    "The EPSC-DPS 2019 abstract (Wu et al.) PDF could not be read as text. It is not used for any fact in this article.",
+    "The Mastcam-Z target dimensions, mass and number of swatches are not stated on the NASA resource page reviewed. Merusi et al. (2022) performance details come from a search summary and were not checked against the full article.",
+    "A Spectralon-type calibration target artefact at 2.1 micrometres is mentioned in a search summary of laboratory work. The original source was not identified and the claim is not verified.",
+    "The Apollo 16 soil 62231 laboratory reflectance reference claim comes from search metadata for a secondary paper and has not been opened.",
+    "No lunar landing-site or location recommendation is included, as deferred by the user.",
+    "The category boundary between 311 Instrument reference standard and related entries (306 Calibration target, 307 Spectrometer calibration source, 308 Optical calibration target, 309 Radiation calibration source, 310 Temperature reference sensor) is interpretive and is stated as such in the article."
+  ]
+}

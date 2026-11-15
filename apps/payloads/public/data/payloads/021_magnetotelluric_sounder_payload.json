@@ -1,0 +1,303 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 1,
+    "name": "Geophysical and lunar interior instruments"
+  },
+  "payload": {
+    "number": 21,
+    "name": "Magnetotelluric sounder",
+    "article": {
+      "overview": "The Moon's interior can be probed by using the Moon itself as a conductor. The solar wind and the surrounding plasma produce changing magnetic fields around the Moon. Those changes induce electric currents inside the Moon, and the strength and timing of the induced response depend on how well the interior conducts electricity. Measuring the response at the surface lets scientists estimate how conductivity changes with depth. Conductivity is linked to temperature, composition and the presence of partial melt, so the method gives an independent constraint on the interior [1][5][6].\n\nThe magnetotelluric method measures the electric and magnetic fields at the same place at the same time, and compares them to work out the conductivity structure below. A related approach, the magnetic transfer function, uses one magnetometer on the surface and a second, distant reference measurement from a spacecraft in lunar orbit or near the Moon. The Apollo 12 surface magnetometer and the Explorer 35 spacecraft were used in this way in the 1970s [8].\n\nThe Lunar Magnetotelluric Sounder (LMS) flew on Firefly's Blue Ghost Mission 1 and was activated after the lander reached the lunar surface in March 2025. NASA describes it as the first extraterrestrial use of magnetotellurics [3]. Its principal investigator's team reports that it collected data and that a conductivity-based temperature estimate has been derived from them [5]. The results have been presented as conference material and have not yet been published in a peer-reviewed paper that was read for this article.",
+      "scope": "Scope reading: this article covers magnetotelluric (MT) and related natural-source induction sounding instruments and methods, which measure the Moon's interior electrical conductivity using naturally varying electric and magnetic fields. The magnetometer that an MT system uses as its magnetic sensor is covered in payloads 012 to 015 (magnetometer 012, fluxgate 013, vector 014, scalar 015) and is cross-referenced here, not repeated. General electromagnetic field sensing is payload 020. Measurements of conductivity made in place, in the regolith, are payload 022. The Apollo-era induction studies are included as historical precedent, because they derived conductivity profiles from magnetometer data. The flown Blue Ghost LMS is the main worked example. Two proposed systems are also described, with their status stated.",
+      "description": "A magnetotelluric sounder is an instrument system that measures natural electric and magnetic fields at the surface of a planetary body. The electric field is measured with a pair of electrodes placed on the ground at a known separation. Each pair gives the voltage across it. The magnetic field is measured with a magnetometer. The electric and magnetic measurements are then combined, usually in the frequency domain, to give a quantity called impedance. Impedance depends on the conductivity of the material below the surface [1][5].\n\nDifferent frequencies of the natural signal penetrate to different depths. Higher-frequency variations are attenuated by conductive material near the surface, so they probe shallow layers. Lower-frequency variations penetrate further and therefore sample the deeper interior. A usable profile therefore needs measurements over a wide band of frequencies [1][9].\n\nOn the Moon, the natural signals are driven mainly by variations in the solar wind and by the plasma environment around the Moon. These variations include the transit of the solar wind, the magnetosheath and the magnetotail past the Moon [5]. Because the signal depends on the external environment, a lunar MT system has to separate the induced interior response from the plasma's own fields, which can also contribute to the measured signal [5].\n\nThe LMS as flown has four electrodes on cables, which are ejected from the lander at right angles to each other, and a magnetometer on an extendable mast [2][3]. The electrodes measure voltage across opposite pairs [3].",
+      "scientific_purpose_and_applications": "The main purpose of a lunar MT sounder is to measure how electrical conductivity varies with depth in the Moon's interior. Conductivity profiles are used to test models of the Moon's thermal history, its composition and the possible presence of partial melt. The Japanese LEMS proposal states that conductivity information is independent of seismic structure and would therefore add a separate constraint on the interior. It also links the conductivity structure to the Moon's thermal structure and origin [9].\n\nThe flown LMS was designed to probe the upper mantle. The SwRI project that supports its science states the goal as mapping the electrical conductivity of the upper mantle, down to depths of a few hundred miles, to understand why the Moon's main geological terranes differ [6]. The EGU 2026 abstract reports the instrument's aim as studying upper-mantle conductivity and temperature outside the Procellarum KREEP Terrane (PKT) [5]. NASA states that the LMS would help scientists understand the Moon's differentiation and thermal history [3].\n\nThe EGU 2026 abstract reports a temperature difference, derived from conductivity, of less than 100 K (at the one-sigma level) at 200 km depth, between the Apollo 12 site and the LMS site. The authors use this result to argue that partial melting in the PKT region cannot be explained by the heat-producing element abundances that would be needed [5]. The temperature estimate depends on the conductivity model and on the assumptions behind it. The abstract does not describe those assumptions in enough detail for independent checking [5].\n\nInterior conductivity can also be used to compare the Moon's interior with its surface chemistry. The EGU abstract states that PKT volcanism and surface incompatible-element concentrations are \"not genetically related\" according to the authors' interpretation [5].",
+      "operating_principle": "An MT sounder works by combining two measurements. The first is the electric field, measured as voltage across an electrode pair divided by the electrode spacing. The second is the magnetic field, measured by a magnetometer. At each frequency, the ratio of the electric to the magnetic field gives the impedance. Under the simplest assumption of a conductivity that varies only with depth, the impedance can be inverted to give a conductivity profile [1][5].\n\nThe magnetic transfer function is an alternative that uses only magnetic measurements. It compares the field at the surface with a reference field measured elsewhere, usually by a spacecraft. The transfer function between the two fields depends on the interior response at each frequency [5][8].\n\nThe LMS team used both methods on Blue Ghost, but relied mainly on the magnetic transfer function. The EGU abstract states that plasma conductivity near the Moon was about 10 times higher than expected. This attenuated the induction signal at some frequencies, and the magnetometer's placement relatively far from the surface reduced the signal further. The authors therefore compared the LMS magnetic data with reference fields from the THEMIS-B spacecraft, which is in lunar orbit, to derive the transfer function [5]. The same comparison identified the solar wind, magnetosheath and magnetotail transits in the data [5].\n\nThe Japanese LEMS proposal described a similar approach. It used external magnetic variations, which induce currents inside the Moon, and inverted the resulting internal-origin field under a one-dimensional conductivity assumption. Its authors argued for higher-frequency sounding to improve on Apollo-era estimates [9][10].\n\nThe Apollo 12 analysis used a related transfer-function method. Sill's 1971 study tested several conductivity models against Apollo 12 magnetometer data. Except at the highest frequencies, a simple core-crust model was compatible with the observed dayside transfer function. When the models were fitted to the flat high-frequency response, every profile peaked near 1500 km [8]. Sill also noted that the north-south and east-west transfer functions differed, and attributed the difference plausibly to solar-wind plasma fluctuations that changed the remanent field at the site over time [8].",
+      "scientific_importance": "Electrical conductivity is one of the few interior properties that can be measured from the surface without drilling or seismic analysis. It responds to temperature, composition, water and partial melt, which means that a conductivity profile constrains several of these properties at once [1][5]. For the Moon, this matters because the interior's thermal and compositional history is still uncertain.\n\nThe Apollo-era conductivity studies were limited by data quality. The Japanese LEMS abstracts state that Apollo-era estimates of conductivity in the outer few hundred kilometres were uncertain by more than two orders of magnitude, and that the Apollo magnetic data were sampled too slowly to resolve the higher frequencies [9][10]. Sill's analysis showed that more than one conductivity profile can fit the same data, and that the fitted profiles peaked near 1500 km [8]. These results show why a new, higher-quality measurement is needed.\n\nThe LMS is important because it is the first attempt to make an MT measurement on another body, and because it sampled a region outside the Apollo landing area. NASA states that Mare Crisium lies outside the thorium-anomalous region where most Apollo missions landed, and that LMS data might therefore be more representative of the Moon's bulk interior [3]. The EGU abstract reports an interpretation of the LMS data in terms of PKT and non-PKT regions, but the sources read do not show the full data set [5]. The conclusions drawn from one measurement should be treated as provisional until the data are published and checked by other groups.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, power or frequency range for an MT sounder. The payload's design depends on the number and spacing of its electrodes, the magnetometer and its mast, the electronics and the data handling. The examples below are named systems. Values are tied to the system and source they come from. Where a value is not stated in the sources read, the article says so. The Apollo-era induction analyses used magnetometers rather than MT electrode systems and are recorded in non_mt_precedent_note, not as an MT instrument example.",
+        "examples": [
+          {
+            "name": "Lunar Magnetotelluric Sounder (LMS), Firefly Blue Ghost Mission 1",
+            "type": "Flown lunar surface MT sounder",
+            "status": "Flown and operated on the lunar surface. NASA's release states that the instrument successfully deployed five sensors [4]. SwRI's March 2025 release states that LMS was activated and deployed just hours after touchdown on 2 March 2025 [2]. The EGU abstract gives the landing as 3 March 2025 and states that LMS operated until 12 March 2025 [5].",
+            "developers": "SwRI built the central electronics and leads the investigation (PI Dr. Robert Grimm). NASA Goddard Space Flight Center provided the magnetometer. Heliospace Corp. provided the mast and four electrodes [2][3].",
+            "sensor_configuration": "Four electrodes on cables, ejected at 90-degree angles to each other, measuring voltage across opposite pairs. A magnetometer on an extendable mast to reduce lander interference. SwRI March 2025 states that four sensors were deployed more than 60 feet away from the lander and that five sensors were deployed overall; the breakdown is inferred and not stated explicitly [2][4].",
+            "electrode_distance_ft": {
+              "pre_launch_statement": "distances up to 60 feet [1]",
+              "post_landing_statement": "more than 60 feet [2]",
+              "secondary_summary": "about 80 feet (25 m) arc, not confirmed against a primary source [11]"
+            },
+            "mast_length_m": {
+              "value": null,
+              "secondary_summary": "about 2.4 m (8 ft), not confirmed against a primary source [11]",
+              "note": "Mast length not stated in the SwRI or NASA sources read."
+            },
+            "mass_kg": {
+              "value": 6.4,
+              "source_value": "about 14 pounds for the five subsystems and connecting cables, pre-launch release [1]",
+              "note": "Converted from pounds by the author (about 6.35 kg). Pre-launch figure; no flight measurement found."
+            },
+            "power_w": {
+              "value": 11,
+              "source_value": "about 11 watts, pre-launch release [1]",
+              "note": "Pre-launch figure; no flight measurement found."
+            },
+            "stowed_size": "Each electrode wound in a cable yarn ball; stowed assembly roughly spherical, about the size of a softball. No other dimensions given [1].",
+            "deployed_area": "Sensors spread at 90-degree angles across an area about half the size of a football field [2].",
+            "sounding_depth": {
+              "stated_depth_miles": 700,
+              "stated_depth_comparison": "about two-thirds of the lunar radius [1][2]",
+              "note": "Design goal stated by SwRI, not a measured depth. A secondary summary quotes 1,000 miles, which conflicts with the SwRI releases; the SwRI figure is used [11]."
+            },
+            "frequency_band": null,
+            "electrode_spacing_used_in_analysis": null,
+            "results": "The EGU abstract reports that data were collected and used in a transfer-function analysis, with a temperature estimate of less than 100 K at 200 km depth relative to the Apollo 12 site (one-sigma level). Absolute conductivity values are not given in the sources read [5].",
+            "mission_duration": "14-day lunar lander mission according to the pre-launch release [1]. NASA states that the lander mission concluded on 16 March 2025 [4].",
+            "source_refs": [1, 2, 3, 4, 5],
+            "images": [
+              {
+                "id": "swri_lms_hardware_cables",
+                "description": "Lunar Magnetotelluric Sounder hardware with electrode cables, cable spools and a mast-mounted sensor.",
+                "image_type": "Hardware photograph (flight or engineering status not stated)",
+                "image_url": "https://www.swri.org/sites/default/files/styles/large/public/d025811-3966-lunar-magnetotelluric-sounder.jpg",
+                "source_page_url": "https://www.swri.org/newsroom/press-releases/swri-led-sounder-instrument-deploys-across-lunar-surface",
+                "publisher": "Southwest Research Institute (SwRI)",
+                "credit": "Not stated on the source page read; hosted by SwRI",
+                "caption": "Image of LMS cables and parts (caption as given on the SwRI source page).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct SwRI image asset URL (a large-style derivative), with query string removed. HTTP 200 with image/jpeg content type, and the image was visually inspected. The SwRI source page states that images may be used for educational and informational purposes only, as summarised from the page; no other rights statement was read. Not a full-resolution download. A second SwRI image of what appears to be the same hardware (d025811-3983, on the January 2025 SwRI release) was verified but is not used in this article."
+              }
+            ]
+          },
+          {
+            "name": "Japanese Lunar Electromagnetic Sounder (LEMS) proposal for SELENE-2",
+            "type": "Proposed concept (not flown)",
+            "status": "Proposal only. A series of JpGU conference abstracts from 2010 to 2015, from one research group led by M. Matsushima, describe LEMS for the SELENE-2 mission. None of the abstracts seen state that SELENE-2 or LEMS was approved, built or flown [9][10].",
+            "sensor_configuration": "A later abstract describes two triaxial fluxgate magnetometers on a lunar orbiter and two on a lunar surface module, using a dual-magnetometer technique to avoid strict EMC requirements of the Kaguya spacecraft. Taken from a search-result snippet and not read in full [10].",
+            "mass_kg": null,
+            "power_w": null,
+            "source_refs": [9, 10],
+            "images": []
+          },
+          {
+            "name": "Lunar Geophysical Network (LGN) magnetotelluric sounder",
+            "type": "Proposed mission concept (New Frontiers candidate)",
+            "status": "Concept. The NASA fact sheet, seen as a search snippet, describes four solar-powered landers, each carrying a seismometer, a heat-flow probe, a magnetotelluric sounder and a laser retroreflector. The instruments are described as in development. Selection status not established in the sources read [12].",
+            "sensor_configuration": "Not read in the sources read.",
+            "mass_kg": null,
+            "power_w": null,
+            "source_refs": [12],
+            "images": []
+          }
+        ],
+        "non_mt_precedent_note": "The Apollo 12 surface magnetometer and the Explorer 35 spacecraft magnetometer were used to derive interior conductivity profiles in the 1970s [8]. These studies used magnetometers, not MT electrode systems. The magnetometer hardware is described in payload 012 and the fluxgate sensor in payload 013. They are treated here as historical precedent for the induction method.",
+        "dimensions_and_proportions": "The flown LMS is described by its stowed size, which is roughly the size of a softball for each electrode-cable spool assembly, and by the deployed layout, which spreads the sensors over an area described by SwRI as about half the size of a football field. The deployed sensors are more than 60 feet (about 18 m) from the lander according to SwRI. No full dimension set for the central electronics or the mast is stated in the sources read.",
+        "mass_and_weight": "The pre-launch SwRI release states that the LMS five subsystems and connecting cables weigh about 14 pounds, about 6.4 kg by conversion [1]. This is not a flight measurement. Masses for the Japanese LEMS and the LGN concept are not stated in the sources read.",
+        "power_requirements": "The pre-launch SwRI release states that the LMS consumes about 11 watts [1]. This is not a flight measurement. Thermal power for heating or survival is not stated in the sources read."
+      },
+      "environmental_and_operational_requirements": "A lunar MT sounder operates in the surface plasma environment around the Moon. The EGU abstract reports that the surface data include transits of the solar wind, the magnetosheath and the magnetotail, and that plasma conductivity near the Moon was about 10 times higher than expected [5]. These plasma effects are a source of signal, but they also contaminate the interior induction signal. A design has to allow for them [5].\n\nThe electrodes and the magnetometer must be placed away from the lander's own electrical and magnetic interference. The LMS design answers this with a mast for the magnetometer [2][3]. SwRI describes the sensors as spread over an area about half the size of a football field [2]. The EGU abstract states that the magnetometer's placement, relatively far from the surface, reduced the induction signal at some frequencies [5].\n\nPower is a practical constraint. The pre-launch figure of about 11 W [1] is a modest figure for a lander payload, but the sources read do not describe the thermal control needed for a surface instrument. They also do not describe operating temperature limits, dust protection or survival through the lunar night.",
+      "limitations": "A single MT station gives a one-dimensional profile at one place. If the conductivity varies sideways, the profile may be misleading. The Japanese LEMS abstracts state that their inversion tests assumed a one-dimensional conductivity structure [10]. The LMS abstract does not state the dimensionality assumption it used [5].\n\nThe signal from the Moon is weak compared with the plasma environment. The LMS team found that the plasma's conductivity attenuated the induction signal at some frequencies, which limited the MT approach and led them to rely on the transfer function [5]. A lunar MT system therefore needs careful plasma modelling and a suitable reference measurement.\n\nThe LMS result is preliminary. The EGU abstract is a conference abstract, and no peer-reviewed paper or public data archive was found in the sources read [5][6]. The absolute conductivity values, the frequency band and the electrode spacing used in the analysis are not given in the sources read.",
+      "transportation_and_deployment": {
+        "overview": "The LMS was delivered to the lunar surface as part of Firefly's Blue Ghost Mission 1 under NASA's Commercial Lunar Payload Services (CLPS) initiative [2][3]. This section covers the flown surface deployment, the orbiter-based concepts and the compatibility position.",
+        "transportation_process": [
+          "Integrated with the Blue Ghost lander under NASA's CLPS initiative [2][3].",
+          "Delivered to the lunar surface on Blue Ghost Mission 1, which landed on 2 March 2025 according to SwRI and Firefly [2].",
+          "Activated and deployed hours after touchdown, according to SwRI [2].",
+          "Electrodes ejected on cables wound on spools, at 90-degree angles to each other [1][3].",
+          "Magnetometer extended on its mast to reduce lander interference [2][3].",
+          "Data collected and analysed; results presented as a 2026 conference abstract [5]."
+        ],
+        "deployment_methods": "Each electrode is wound in a cable on a spool, and the stowed assembly is roughly spherical and softball-sized [1]. After touchdown the cables and electrodes were ejected and the magnetometer was extended on its mast [2][3]. The sources read do not give the deployment sequence or timing in detail. A secondary summary gives a deployment arc of about 25 m for the electrodes and about 2.4 m for the mast, which were not confirmed [11]. Grimm and colleagues' 2020 white paper compares electrode deployment distances for the CLPS design, roughly 20 m, with astronaut deployment to about 100 m. This statement is from a search snippet only [7].",
+        "historical_examples": "The Blue Ghost LMS is the flown example. The Apollo 12 and Explorer 35 magnetometer studies used magnetometers already on the surface and in orbit rather than an MT electrode deployment. The THEMIS-B spacecraft in lunar orbit is used as a reference field in the LMS transfer-function analysis; this uses an existing spacecraft, not a dedicated MT orbiter payload [5][6].",
+        "compatibility_assessment": "This article does not assert compatibility of the MT sounder with any lander, rover or spacecraft other than the flown Blue Ghost mission. Any future MT sounder would need its mass, electrode layout, deployment mechanism, power, data rate and interface requirements compared with verified lander specifications before compatibility could be claimed. The Japanese LEMS orbiter integration and the LGN lander integration were not read in detail.",
+        "images": []
+      },
+      "historical_significance": "The Apollo-era induction studies of the 1970s derived conductivity profiles from Apollo 12 and Explorer 35 magnetometer data. These were early attempts to derive the Moon's interior electrical structure from induction data [8]. Their results showed that more than one profile could fit the data [8].\n\nThe LMS on Blue Ghost Mission 1 is described by NASA as the first extraterrestrial application of magnetotellurics [3], and the 2026 EGU abstract calls it the first extraterrestrial MT experiment [5]. It used the THEMIS-B spacecraft as a reference for the transfer-function analysis, which is an example of an existing lunar-orbit mission supporting a surface measurement [5]. The EGU abstract presents the LMS data as sampling conductivity outside the PKT [5].\n\nThe Japanese LEMS proposal and the LGN concept show that interest in lunar MT sounding has continued since the 2010s [9][10][12]. Their status is not confirmed in the sources read.",
+      "limitations_and_uncertainties": "Landing date: SwRI and Firefly releases give 2 March 2025, while the EGU abstract gives 3 March 2025 [2][5].\n\nElectrode distance: SwRI gives distances up to 60 feet before launch and more than 60 feet after landing [1][2]. A secondary summary gives about 80 feet (25 m) [11]. No primary source was found for the 80-foot figure.\n\nSensor count: NASA and SwRI both state five sensors [2][4]. The breakdown of the five sensors is assumed to be four electrodes plus a magnetometer, but this was not stated directly in the sources read.\n\nMast length: the 2.4 m (8 ft) figure comes from a secondary summary only [11].\n\nSounding depth: SwRI gives 700 miles [1][2]. A secondary summary gives 1,000 miles [11]. The SwRI figure is used, and it is a design goal, not a measured depth.\n\nMass and power: the about 14 pounds (about 6.4 kg) and about 11 W figures come from the pre-launch release [1]. No flight-measured values were found.\n\nOperating dates: the EGU abstract states that LMS operated until 12 March 2025 [5]. NASA states that the lander mission concluded on 16 March 2025 [4]. No separate LMS end-of-operations statement was found.\n\nResults: the LMS results are from a 2026 conference abstract. No peer-reviewed paper, data archive or full set of conductivity values was read. Frequency band, electrode spacing used in the analysis and absolute conductivity values are not given in the sources read [5][6].\n\nTemperature estimate: the less-than-100-K estimate at 200 km depth [5] depends on the conductivity model and its assumptions, which the abstract does not describe in enough detail to check.\n\nApollo-era depth: Sill's models peaked near 1500 km [8]. Secondary summaries of the same era report other peak depths, which were not verified against the primary reports. The depth of conductivity peaks is therefore model-dependent and is not stated as established.\n\nLEMS: the Japanese LEMS status is unconfirmed. The magnetometer configuration comes from a search snippet of a 2010 to 2015 abstract [9][10]. The 2010 PDF was not readable in the research environment.\n\nLGN: the LGN values come from a search snippet of the NASA fact sheet [12]. The PDF was too large to read in full. The selection status of the mission was not established.\n\nGrimm 2020 white paper: only its metadata were read. Its statement about electrode deployment distances comes from a search snippet [7].\n\nGeneral physics background: the statements on impedance, the frequency dependence of penetration depth and the link between conductivity and temperature or composition are standard MT background. No textbook or review on the MT method was read for this article, so those statements are not supported by a primary source here. The citations attached to them point to the LMS and LEMS sources that use the method.\n\nImage rights: the SwRI press release states that images may be used for educational and informational purposes only, as summarised from the page. No other rights statement was read, and the image credit is not stated on the page read.\n\nLunar landing sites: this article does not recommend lunar landing sites or locations. Mare Crisium is named only as the flown mission's site. No coordinates are given, and the choice of site is not evaluated.",
+      "images": [
+        {
+          "id": "swri_lms_hardware_cables",
+          "description": "Lunar Magnetotelluric Sounder hardware with electrode cables, cable spools and a mast-mounted sensor.",
+          "image_type": "Hardware photograph (flight or engineering status not stated)",
+          "image_url": "https://www.swri.org/sites/default/files/styles/large/public/d025811-3966-lunar-magnetotelluric-sounder.jpg",
+          "source_page_url": "https://www.swri.org/newsroom/press-releases/swri-led-sounder-instrument-deploys-across-lunar-surface",
+          "publisher": "Southwest Research Institute (SwRI)",
+          "credit": "Not stated on the source page read; hosted by SwRI",
+          "caption": "Image of LMS cables and parts (caption as given on the SwRI source page).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct SwRI image asset URL (a large-style derivative), with query string removed. HTTP 200 with image/jpeg content type, and the image was visually inspected. The SwRI source page states that images may be used for educational and informational purposes only, as summarised from the page; no other rights statement was read. Not a full-resolution download. A second SwRI image of what appears to be the same hardware (d025811-3983, on the January 2025 SwRI release) was verified but is not used in this article."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "swri_lms_hardware_cables",
+          "description": "Lunar Magnetotelluric Sounder hardware with electrode cables, cable spools and a mast-mounted sensor.",
+          "image_type": "Hardware photograph (flight or engineering status not stated)",
+          "image_url": "https://www.swri.org/sites/default/files/styles/large/public/d025811-3966-lunar-magnetotelluric-sounder.jpg",
+          "source_page_url": "https://www.swri.org/newsroom/press-releases/swri-led-sounder-instrument-deploys-across-lunar-surface",
+          "publisher": "Southwest Research Institute (SwRI)",
+          "credit": "Not stated on the source page read; hosted by SwRI",
+          "caption": "Image of LMS cables and parts (caption as given on the SwRI source page).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct SwRI image asset URL (a large-style derivative), with query string removed. HTTP 200 with image/jpeg content type, and the image was visually inspected. The SwRI source page states that images may be used for educational and informational purposes only, as summarised from the page; no other rights statement was read. Not a full-resolution download."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "SwRI is sending its first instrument to the lunar surface to survey the Moon's interior (pre-launch press release)",
+          "author": "Southwest Research Institute",
+          "publisher": "SwRI",
+          "date": "2025-01-13",
+          "url": "https://www.swri.org/newsroom/press-releases/swri-sending-its-first-instrument-the-lunar-surface-survey-the-moon-s-interior",
+          "notes": "Read in full. Source of the pre-launch mass (about 14 lb), power (about 11 W), electrode distances (up to 60 ft), stowed size and 700-mile depth statement. Pre-launch; not flight data."
+        },
+        {
+          "number": 2,
+          "title": "SwRI-led sounder instrument deploys across lunar surface",
+          "author": "Southwest Research Institute",
+          "publisher": "SwRI",
+          "date": "2025-03-13",
+          "url": "https://www.swri.org/newsroom/press-releases/swri-led-sounder-instrument-deploys-across-lunar-surface",
+          "notes": "Read in full. Source of the post-landing sensor and electrode statements, the football-field area statement, the 700-mile depth and the image used in this article. States that four sensors were deployed more than 60 feet from the lander and that five sensors were deployed in total. No data results stated."
+        },
+        {
+          "number": 3,
+          "title": "NASA instrument on Firefly's Blue Ghost lander to study lunar interior",
+          "author": "NASA Goddard Space Flight Center",
+          "publisher": "NASA",
+          "date": "2025-01-10",
+          "url": "https://www.nasa.gov/centers-and-facilities/goddard/nasa-instrument-on-fireflys-blue-ghost-lander-to-study-lunar-interior/",
+          "notes": "Read in full. Pre-launch NASA article. Source of the CLPS delivery statement, the developer roles (SwRI, Goddard, Heliospace), the first-extraterrestrial-magnetotellurics statement and the Mare Crisium comparison with the thorium-anomalous region. Date taken from the page as read."
+        },
+        {
+          "number": 4,
+          "title": "NASA Science continues after Firefly's first Moon mission concludes",
+          "author": "NASA",
+          "publisher": "NASA",
+          "date": "2025-03-18",
+          "url": "https://www.nasa.gov/news-release/nasa-science-continues-after-fireflys-first-moon-mission-concludes/",
+          "notes": "Read in full. Source of the statement that LMS successfully deployed five sensors, and of the lander-mission conclusion on 16 March 2025. Page last updated 19 March 2025. No LMS image on this page; the only image is of the lander."
+        },
+        {
+          "number": 5,
+          "title": "Results from the Lunar Magnetotelluric Sounder on Blue Ghost Mission 1",
+          "author": "Johnson, C. L., Grimm, R. E., Espley, J., Garrick-Bethel, I., Howard, S. K., Maxwell, R. E., Neal, C. R., Stillman, D. E.",
+          "publisher": "European Geosciences Union, EGU General Assembly 2026, session PS1.4",
+          "date": "2026",
+          "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-8526.html",
+          "notes": "Abstract EGU26-8526, read as a web page. Conference abstract, not peer reviewed. Source of the operating window (to 12 March 2025), the plasma conductivity statement, THEMIS-B transfer-function approach, the less-than-100-K temperature estimate at 200 km depth, and the PKT interpretation. Electrode spacing, frequency band and absolute conductivity values are not stated in the abstract."
+        },
+        {
+          "number": 6,
+          "title": "Foundational Studies of the Lunar Interior Using Surface and Orbital Electromagnetic Sounding (project 19-R6604)",
+          "author": "Robert Grimm (PI)",
+          "publisher": "Southwest Research Institute",
+          "date": "2025-04-25 to 2026-04-01 (project period)",
+          "url": "https://www.swri.org/what-we-do/internal-research-development/2025/earth-space/foundational-studies-of-the-lunar-interior-using-surface-orbital-electromagnetic-sounding-19-r6604",
+          "notes": "Read as a project summary page. Source of the upper-mantle conductivity goal and the statement that the LMS results were analysed in the project period. Notes that preliminary modelling has recovered conductivity from a distant and a near-orbit satellite comparison. Does not name the satellites or instruments."
+        },
+        {
+          "number": 7,
+          "title": "Electromagnetic Sounding of the Lunar Interior from Artemis III",
+          "author": "Grimm, R. E., Delory, G. T., Chi, P., Espley, J. R., Farrell, W., Haviland, H., Johnson, C. L.",
+          "publisher": "NASA Technical Reports Server (white paper)",
+          "date": "2020-09-08",
+          "url": "https://ntrs.nasa.gov/citations/20205007100",
+          "notes": "Metadata read only. The NTRS citation page gives no abstract. The deployment-distance comparison (about 20 m for CLPS against about 100 m for astronauts) comes from a search snippet of the PDF, which was not read in full."
+        },
+        {
+          "number": 8,
+          "title": "Lunar conductivity models from the Apollo 12 magnetometer experiment",
+          "author": "Sill, W. R.",
+          "publisher": "Bellcomm, Inc., NASA CR-124758, NASA Technical Reports Server (NTRS 19720007189)",
+          "date": "1971-10-22",
+          "url": "https://ntrs.nasa.gov/citations/19720007189",
+          "notes": "Read as an NTRS citation page with summary. Source of the statement that all conductivity profiles peaked near 1500 km when fitted to the flat high-frequency response, the core-crust model compatibility statement and the note on north-south and east-west transfer function differences. The page does not define depth."
+        },
+        {
+          "number": 9,
+          "title": "Lunar Electromagnetic Sounder (LEMS) proposal, JpGU 2010 abstract PPS003-P31",
+          "author": "Matsushima group (M. Matsushima, Tokyo Tech)",
+          "publisher": "Japan Geoscience Union (JpGU) Meeting 2010",
+          "date": "2010",
+          "url": "https://www2.jpgu.org/meeting/2010_disc1/program/PDF/P-PS003/PPS003-P31_e.pdf",
+          "notes": "Seen as a search snippet only; the PDF could not be read. Title and author list not read in full. Source of the statement that conductivity estimates from Apollo-era data were uncertain by more than two orders of magnitude, and the higher-frequency sounding argument. Proposal status unconfirmed."
+        },
+        {
+          "number": 10,
+          "title": "LEMS abstracts, JpGU 2011 to 2015 (PPS024-30, PPS23-P05, PPS23-P12)",
+          "author": "Matsushima group",
+          "publisher": "Japan Geoscience Union (JpGU)",
+          "date": "2011 to 2015",
+          "url": "https://www2.jpgu.org/meeting/2011/yokou/PPS024-30_E.pdf",
+          "notes": "Seen as search snippets only. Source of the dual-magnetometer configuration (two triaxial fluxgates on an orbiter and two on a surface module), the one-dimensional inversion tests, and the 2013 crust-effect abstract. Other abstract URLs in this series were seen as snippets: PPS23-P05 (2014) and PPS23-P12 (2015). Proposal status unconfirmed."
+        },
+        {
+          "number": 11,
+          "title": "Secondary article on the Blue Ghost LMS deployment",
+          "author": "not read",
+          "publisher": "space.com",
+          "date": "not read",
+          "url": "https://www.space.com/astronomy/moon/private-lunar-landing-how-blue-ghost-measured-the-moons-electric-and-magnetic-fields",
+          "notes": "Seen as a search snippet only. Used only for figures not confirmed by a primary source: electrode arc of about 80 feet (25 m), mast extension of about 8 feet (2.4 m), and a 1,000-mile depth figure that conflicts with SwRI. Not relied on for any headline value."
+        },
+        {
+          "number": 12,
+          "title": "Lunar Geophysical Network concept fact sheet",
+          "author": "NASA Science",
+          "publisher": "NASA Science, Planetary Science Division (2024 document folder)",
+          "date": "not read",
+          "url": "https://assets.science.nasa.gov/content/dam/science/psd/planetary-science-division/2024/Lunar-Geophysical-Network.pdf",
+          "notes": "Seen as a search snippet only; the PDF was too large to read in full. Source of the four-lander concept with a seismometer, heat-flow probe, magnetotelluric sounder and retroreflector per lander, the in-development status, and the New Frontiers 5 context. Selection status not established."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Blue Ghost LMS example": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. The single registry image is repeated in the overview_images array and in the Blue Ghost LMS example's images array, where it is displayed in the Markdown article. No transportation_and_deployment images are displayed, so that array is empty."
+  },
+  "data_quality_notes": [
+    "Scope: magnetotelluric and natural-source induction sounding of the lunar interior. Magnetometer sensing is cross-referenced to payloads 012 to 015 and not repeated. General EM field sensing is payload 020. In-situ conductivity measurement is payload 022. Apollo-era induction studies are included as historical precedent only.",
+    "Flown example: the Blue Ghost Lunar Magnetotelluric Sounder (LMS) is the only flown MT sounder described. Its mass (about 14 lb, about 6.4 kg by conversion) and power (about 11 W) come from the pre-launch SwRI release and are not flight-measured values.",
+    "Sensor count and breakdown: NASA and SwRI both state five sensors, and SwRI describes four electrodes plus a magnetometer on a mast. The breakdown is inferred, not stated explicitly, and the mast length is not stated in the primary sources read.",
+    "Electrode distance conflict: SwRI gives 'distances up to 60 feet' before launch and 'more than 60 feet' after landing. A secondary summary gives about 80 feet (25 m). No primary source confirms 80 feet.",
+    "Sounding depth conflict: SwRI releases give 700 miles (about two-thirds of the lunar radius). A secondary summary gives 1,000 miles. The 700-mile figure is a design goal, not a measured depth, and is used here.",
+    "Landing and operating dates: SwRI and Firefly give 2 March 2025 for the landing, the EGU abstract gives 3 March 2025. The EGU abstract gives an operating end of 12 March 2025, and NASA gives a lander-mission conclusion of 16 March 2025. No separate LMS end-of-operations statement was found.",
+    "LMS results: the EGU 2026 abstract is a conference abstract and not peer reviewed. No data archive, frequency band, electrode spacing used in the analysis or absolute conductivity values were read. The less-than-100-K temperature estimate at 200 km depth depends on model assumptions the abstract does not describe in enough detail to check.",
+    "LMS image: one direct SwRI image asset (d025811-3966) was verified with HTTP 200 and visually inspected. Its credit is not stated on the source page. The SwRI page says images may be used for educational and informational purposes only, as summarised from the page. The image's flight or engineering status is not stated. Other images on the mission pages read (including the NASA Blue Ghost lander sunset image, which shows the lander and not the instrument) were not used.",
+    "Japanese LEMS: a proposed concept from one research group, seen only through JpGU abstract snippets from 2010 to 2015. The PDFs could not be read in the research environment. Mass, power, electrode configuration and frequency band are not stated in the sources read. Proposal and flight status are unconfirmed.",
+    "LGN MT sounder: a concept within the Lunar Geophysical Network, seen as a search snippet of a NASA fact sheet whose PDF was too large to read in full. Selection status and MT specifications are not established.",
+    "Apollo-era depth: Sill's 1971 summary states that all profiles peaked near 1500 km when fitted to the flat high-frequency response. Secondary summaries of the same era report other peak depths. These were not verified against the primary reports, and the depth of conductivity peaks is model-dependent.",
+    "Grimm et al. 2020 white paper: only metadata were read. The electrode deployment comparison (about 20 m for CLPS against about 100 m for astronauts) comes from a search snippet.",
+    "General physics background (impedance, frequency-dependent penetration depth, and the link between conductivity and temperature or composition) is standard MT background. No textbook or review on the MT method was read, so these statements lack a primary citation in this article.",
+    "The Apollo 12 surface magnetometer and Explorer 35 analyses used magnetometer hardware described in payload 012, not MT electrode systems. They are recorded as precedent, not as an MT instrument example.",
+    "No lunar landing-site or location recommendations are included. Mare Crisium is named only as the flown mission's site, with no coordinates and no site evaluation. The EGU abstract's coordinates are deliberately omitted.",
+    "No lander, rover or spacecraft compatibility is asserted for any example other than the flown Blue Ghost mission, and the Blue Ghost flight is not treated as a compatibility assessment."
+  ]
+}

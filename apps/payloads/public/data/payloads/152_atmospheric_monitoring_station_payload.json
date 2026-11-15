@@ -1,0 +1,232 @@
+{
+  "catalogue_id": 152,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 7,
+    "name": "Lunar exosphere and atmospheric instruments"
+  },
+  "payload": {
+    "number": 152,
+    "name": "Atmospheric monitoring station",
+    "article": {
+      "overview": "An atmospheric monitoring station is a payload class for a surface package that records the Moon's exosphere over long periods, including both day and night, and relates its changes to the processes that drive them. The name describes a measurement role rather than one standard instrument. The closest match in the sources reviewed is NASA Goddard's Lunar Environment Monitoring Station (LEMS). LEMS is a concept whose engineering unit has been built and tested, but no flight, mission or launch date is given in the sources read [1][2][3]. Earlier lunar atmospheric instruments were flown on Apollo: the Cold Cathode Gauge Experiment measured gas density rather than composition [5], and the Lunar Atmospheric Composition Experiment (LACE) measured gas composition with a mass spectrometer [4]. The Lunar Atmosphere and Dust Environment Explorer (LADEE) carried an orbital neutral mass spectrometer that measured the exosphere from orbit [7][8][9]. No flown lunar surface station with this exact name was identified in this review.",
+      "description": "An atmospheric monitoring station combines several sensors in one autonomous unit that can run for long periods without crew attention. Its value lies in continuity. Short campaigns, such as a single lunar day or one orbital phase, can show snapshots of the exosphere but cannot easily reveal how the gas changes through lunar day and night, across seasons of solar activity, or in response to meteoroid showers and surface disturbances. The LEMS concept describes this approach. NASA describes it as a Moon buoy: an autonomous station designed to collect geophysical data through lunar days and nights [1]. A 2020 conference abstract describes the station as designed to monitor the lunar exosphere in situ over long periods, and to track the processes that drive it, including dust infall, solar wind and magnetospheric particles, extreme-ultraviolet irradiation, interior outgassing and disturbances from landers and surface activity [2]. The same abstract states that the station can be delivered by crewed or robotic missions and deployed on a deck or directly on the surface [2]. Two historical instruments are relevant. The Apollo Cold Cathode Gauge Experiment (CCGE, also called the Lunar Atmosphere Detector in some sources) measured the density of the thin atmosphere [5][6]. LACE was a miniature mass spectrometer that studied the composition and variations of the lunar atmosphere, mostly at night [4]. Both were surface experiments deployed as part of Apollo lunar surface packages. LADEE was an orbiter, not a surface station, so its neutral mass spectrometer is included only as a comparison [7][8][9].",
+      "scientific_purpose_and_applications": "The primary purpose of an atmospheric monitoring station is to measure how the exosphere's composition and density change in time and space, and to identify the processes responsible for those changes. The LEMS abstract lists the measurement goals as time-resolved, location-specific characterisation of the composition and dynamics of exospheric volatile gases, linked to solar forcing, dust flux, seismicity and human-made events [2]. These are proposed goals, not measured results. LADEE's preliminary results show why long-term monitoring matters. Its mass spectrometer identified helium, neon-20, argon-40, sodium and potassium in the exosphere, and reported that argon-40 varies with surface-temperature-driven condensation and release [8]. The NASA release on the mission reports that argon peaks at sunrise, neon peaks at about 4 a.m. and helium at about 1 a.m., and that total argon rose and then fell by about 25 percent during the mission [9]. Those patterns are the kind of variation a station that records through the whole lunar day and night would be designed to track. The Apollo LACE results show the value of composition data for loss processes. LACE identified thermal escape as the fastest loss mechanism for hydrogen and helium [4]. Applications proposed for a monitoring station include relating exospheric density and composition to solar and meteoroid input, detecting episodic outgassing from the interior, and providing a long-term environmental record that could help future surface operations assess dust and gas conditions [2][1].",
+      "operating_principle": "A monitoring station typically combines sensors for the exosphere with instruments for the surrounding environment. The LEMS concept lists two different instrument sets in the sources reviewed. The 2020 conference abstract lists a mass spectrometer, a laser retro-reflector array, a lunar micrometeoroid monitor, a lunar energetic ion analyser and a three-axis seismometer [2]. A NASA article from 2022, last updated in 2024, describes a baseline of four sensors: a broadband seismometer, a mass spectrometer, a solar-wind monitor and a meteoroid impact monitor [1]. The NASA article says the station was designed to carry other sensors as well [1]. The instrument list therefore changed between sources and should be verified before use. A mass spectrometer in this class separates gas particles by their mass-to-charge ratio after ionisation. The LADEE NMS covered a mass range of 2 to 150 daltons [8]. A search summary of an earlier LADEE abstract described the design as a quadrupole mass spectrometer [7]; that description was not verified in a primary source read in this review. The CCGE used a different principle. It was a cold cathode ionisation gauge that sustained an electrical discharge in a magnetic field. Trapped electrons ionised gas molecules, and the resulting ion current was measured to give neutral gas density [5]. The gauge could not identify gas composition [5]. The station's operating cycle is described as follows. Solar arrays supply power during the lunar day, and batteries carry the station through the lunar night. An autonomous computer manages power and thermal states. Once a month, the station turns on its radio, contacts a Deep Space Network ground station to relay stored data, and then returns to data collection [1].",
+      "scientific_importance": "The Moon's exosphere is too thin to be studied with the methods used for dense atmospheres. Any instrument must measure individual gas species directly, and its results must be linked to the time of day, to solar activity and to the lunar surface. LADEE's preliminary results showed that the exosphere is dominated by helium, argon and neon, that about 20 percent of the helium originates from the Moon [9], and that abundances vary with local time [9]. These results depend on long records, not single snapshots. Apollo experiments produced the first long lunar atmospheric records. The CCGE showed that a tenuous lunar atmosphere exists and measured its density in the nighttime atmosphere [5]. LACE then produced a large composition dataset over ten lunar months, mostly at night [4]. A station that combines composition and density measurements with seismic and micrometeoroid data would connect exospheric observations to the processes that feed them. That is the scientific reason for the concept.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an atmospheric monitoring station. Values below describe specific historical, orbital or proposed examples. They must not be applied to every station in this class.",
+        "examples": [
+          {
+            "name": "Apollo Cold Cathode Gauge Experiment (CCGE), Apollo 14 unit",
+            "type": "Historical lunar surface atmospheric instrument (density, not composition)",
+            "status": "Flown on Apollo 12, 14 and 15; not deployed on Apollo 13 because that landing was aborted [6]. Flight statements from a search summary of a secondary source; not verified against a primary mission document.",
+            "measurement_target": "Neutral gas density; equivalent nitrogen density; cannot identify composition [5]",
+            "sensor_type": "Cold cathode ionisation gauge (magnetic-field discharge with ion-current measurement) [5]",
+            "gauge_head_power_w": 6.5,
+            "gauge_head_external_dimensions_cm_approx": [
+              18,
+              10,
+              12
+            ],
+            "experiment_package_mass_kg": 5.7,
+            "detection_range_particles_per_cm3_equivalent_n2": [
+              200000,
+              100000000000
+            ],
+            "operating_period": "Turned on 5 February 1971; operation mostly at lunar night; standby 15 April 1973; commanded off 5 January 1975 [5]",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a14ccig_atmos_density_plots/document/a14a_ccig.txt",
+              "https://en.wikipedia.org/wiki/Cold_Cathode_Gauge_Experiment"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 17 Lunar Atmospheric Composition Experiment (LACE)",
+            "type": "Historical lunar atmospheric instrument (composition)",
+            "status": "Flown on Apollo 17 as part of the Apollo Lunar Surface Experiments Package, Taurus-Littrow valley [4]",
+            "measurement_target": "Lunar atmospheric gas composition and variation, mostly at night [4]",
+            "sensor_type": "Miniature mass spectrometer [4]",
+            "entrance_aperture": "Facing upward at deployment [4]",
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "power_w": null,
+            "operational_duration": "Ten lunar months of data collection, mostly at night [4]",
+            "calibration": "Raw data reported to have no formal calibration; a similar Pioneer Venus instrument was used as a calibration basis. Search summary only; not verified in a primary source read.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19760025001"
+            ],
+            "images": []
+          },
+          {
+            "name": "LADEE Neutral Mass Spectrometer (NMS), orbital comparison",
+            "type": "Flown orbital neutral mass spectrometer (not a surface station)",
+            "status": "Launched September 2013 from Wallops Flight Facility; in lunar orbit from 6 October 2013; science gathering from 10 November 2013; extended March 2014; intentionally impacted the Moon in April 2014 [9]",
+            "measurement_target": "In situ exospheric gas composition, spatial distribution and temporal variability [7][8]",
+            "instrument_type": "Neutral mass spectrometer [7][8]",
+            "mass_range_daltons": [
+              2,
+              150
+            ],
+            "quadrupole_design": "Reported in a search summary of an earlier LADEE abstract; not verified in a primary source read",
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "power_w": null,
+            "impact_date_note": "NASA release gives 17 April 2014 [9]; an NTRS record gives 18 April 2014 [8]",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20110022402",
+              "https://ntrs.nasa.gov/citations/20150020446",
+              "https://www.nasa.gov/missions/nasas-ladee-spacecraft-finds-neon-in-lunar-atmosphere"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Environment Monitoring Station (LEMS), proposed and engineering-unit concept",
+            "type": "Proposed autonomous surface station concept (NASA Goddard; DALI-funded)",
+            "status": "Engineering unit built and subjected to vibration and thermal-vacuum tests [1]. NASA describes the station as flight-qualifying [1]. No flight, named mission or launch date given in the sources read [1][3]. Proposed to NASA's PRISM call for lunar surface payloads [2].",
+            "measurement_target": "Long-term in situ monitoring of the lunar exosphere and the processes that drive it [2]",
+            "sensor_configuration_2020_abstract": [
+              "Mass spectrometer",
+              "Laser retro-reflector array",
+              "Lunar micrometeoroid monitor",
+              "Lunar energetic ion analyser",
+              "3-axis seismometer"
+            ],
+            "sensor_configuration_2022_nasa_article": [
+              "Broadband seismometer",
+              "Mass spectrometer",
+              "Solar wind monitor",
+              "Meteoroid impact monitor"
+            ],
+            "design_life_nominal_years": 2,
+            "power_approach": "Solar arrays for the lunar day; batteries for the lunar night [1]",
+            "communications": "Monthly contact with a Deep Space Network ground station to relay stored data [1]",
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://science.nasa.gov/technology/technology-highlights/space-age-buoys-for-long-duration-monitoring-of-the-moon",
+              "https://meetingorganizer.copernicus.org/EPSC2020/EPSC2020-60.html",
+              "https://experts.colorado.edu/display/pubid_299891"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No dimensions are published for a general atmospheric monitoring station. The CCGE values above describe the Apollo 14 instrument only. The LADEE NMS and LEMS dimensions are not stated in the sources read. Any new station's dimensions would depend on its instrument suite, thermal design, power system and communications architecture.",
+        "mass_and_weight": "No mass is published for a general atmospheric monitoring station. The 5.7 kg CCGE figure describes the Apollo 14 experiment package only. Mass for LEMS, LADEE NMS and LACE is not stated in the sources read. Mass must be tied to a named instrument and source before comparison.",
+        "power_requirements": "The Apollo 14 CCGE gauge head used 6.5 W [5]. LEMS power is described as solar arrays for the day and batteries for the night, with no power figure stated [1]. Power for LADEE NMS and LACE is not stated in the sources read. Any new station's power budget would depend on its instrument suite, heating and communications."
+      },
+      "environmental_and_operational_requirements": "A lunar monitoring station would operate in vacuum, across a large day-night temperature range, with radiation and micrometeoroid exposure. NASA describes the LEMS thermal design as shielding the sensors from extreme surface temperatures, and its batteries carry the station through a night of roughly 15 Earth days [1]. The Apollo CCGE shows how thermal conditions affect operation. Its operation was limited mostly to the lunar night, with brief daytime use to reduce arcing risk [5]. In April 1973 the standby was attributed to high-voltage arcing at elevated daytime temperatures, and daytime operation was not attempted afterward [5]. LACE was also operated mostly at night [4]. Power and data are also operational requirements. A monitoring station needs enough power to operate through the lunar night, and a communications link that can relay stored data to Earth. The LEMS concept uses monthly contacts with a Deep Space Network ground station [1].",
+      "limitations": "A single station measures one location. The LEMS abstract describes a network of duplicate stations as a viable option for exospheric and geophysical study [2]. A single station cannot show spatial structure in the exosphere by itself. Composition and density are different measurements. The CCGE measured density and could not identify composition, and its response varied somewhat with gas composition [5]. A mass spectrometer identifies species but does not by itself give density or temperature. The Apollo instruments had data gaps. The CCGE for Apollo 14 suffered intermittent loss of nighttime data from 1972 onward, with complete losses lasting months in late 1972 and 1973 [5]. Trapped gas and adsorbed gas affected readings at turn-on [5]. Calibration is a recurring issue. The LACE raw data are reported to have no formal calibration [4] (search summary only). The LEMS design life is a nominal two-year figure from a conference abstract [2]. It is not a demonstrated operating lifetime.",
+      "transportation_and_deployment": {
+        "overview": "For a surface monitoring station, the sources describe delivery by a lander and deployment on the surface (LEMS) and surface deployment during Apollo operations (LACE and CCGE). LADEE, an orbiter, is included only as an orbital comparison. No lander or spacecraft compatibility has been verified for any monitoring station in this review.",
+        "transportation_process": [
+          "Integrate the station into a lander or surface payload on Earth.",
+          "Launch the lander or payload on a launch vehicle.",
+          "Transfer it to the Moon.",
+          "Land it on the surface and deploy it on a deck or directly on the surface, as stated for LEMS [2].",
+          "Level the station, protect its thermal environment and connect its solar-array, battery and communications interfaces [1].",
+          "Commission the station and confirm its monthly Deep Space Network data relay [1]."
+        ],
+        "deployment_methods": "LEMS is described as delivered by a lander and deployed on the surface, with a deck or direct-surface option [1][2]. LACE was deployed as part of the Apollo Lunar Surface Experiments Package with its entrance aperture facing upward [4]. The CCGE deployment method is not described in the sources read.",
+        "historical_examples": "LACE and CCGE were deployed during Apollo lunar surface operations [4][5]. LADEE was an orbiter launched from Wallops Flight Facility in September 2013 and was operated through lunar orbit insertion, commissioning, science gathering and intentional impact in April 2014 [9].",
+        "compatibility_assessment": "Not assessed. No lander, rover or spacecraft interface was verified for any monitoring station in this review, so no compatibility is claimed.",
+        "images": []
+      },
+      "historical_significance": "The Apollo experiments produced the first long lunar atmospheric records. The CCGE was flown on Apollo 12, 14 and 15 and measured lunar atmospheric density [5][6]. LACE produced a large composition dataset over ten lunar months [4]. These instruments established that the Moon has a tenuous atmosphere and showed that composition and loss processes can be studied in situ. LADEE's neutral mass spectrometer made systematic measurements of exospheric gases over seven months from orbit [9], with preliminary results reporting helium, neon-20, argon-40, sodium and potassium [8]. LEMS is a later concept for a surface station and is not a flown instrument in the sources reviewed [1][2][3].",
+      "limitations_and_uncertainties": "1. Existence of a flown station: no flown lunar surface station with the name atmospheric monitoring station was identified. The payload name describes a measurement concept, not a standard instrument.\n2. LEMS instrument list: the 2020 abstract lists five sensors [2]; the 2022 NASA article lists a four-sensor baseline [1]. The sources do not reconcile these lists.\n3. LEMS status: NASA describes an engineering unit as built and tested and uses the phrase flight-qualifying [1]. The sources read show no flight, launch date or named mission [1][3]. A later secondary news report, not used as a source here, describes two seismometers built and the payload at Goddard awaiting Artemis assignment; this was not verified in a NASA primary source read.\n4. Missing specifications: no mass, power or dimension values were found for LEMS, LADEE NMS or LACE in the sources read [1][2][3][7][8][9].\n5. LADEE NMS design: the quadrupole description is from a search summary and was not verified; a NASA project page for the NMS was not retrieved [7].\n6. LADEE impact date: the NASA release gives 17 April 2014 [9] while an NTRS record gives 18 April 2014 [8]; both are recorded.\n7. CCGE density figure: a search summary gave a nighttime density figure with a unit convention that differs from the PDS catalogue. That figure was not verified and is not used; the PDS range is used instead [5].\n8. CCGE Apollo 12 failure: a search summary of a secondary source reports failure after about 14 hours from a transistor fault in the high-voltage control circuit [6]; not verified in a primary source read.\n9. Source strength: the LACE record was read as an abstract only [4]; the LADEE NMS records were read as abstracts only [7][8]; LEMS sources are a NASA article, a conference abstract and a university record [1][2][3].",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Space Age Buoys for Long-Duration Monitoring of the Moon",
+          "authors": "NASA Goddard (article)",
+          "publisher": "NASA Science, technology highlight (article dated 30 August 2022; page last updated 14 August 2024)",
+          "publication_date": "2022-08-30",
+          "url": "https://science.nasa.gov/technology/technology-highlights/space-age-buoys-for-long-duration-monitoring-of-the-moon"
+        },
+        {
+          "title": "The Lunar Environment Monitoring Station (LEMS)",
+          "authors": "M. Benna, N. Schmerr, M. Sarantos, H. Bailey, D. Gershman, M. Horanyi, X. Sun, J. Szalay",
+          "publisher": "EPSC Abstracts, Vol. 14, EPSC2020-60",
+          "publication_date": "2020",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2020/EPSC2020-60.html"
+        },
+        {
+          "title": "The Lunar Environment Monitoring Station (LEMS)",
+          "authors": "M. Benna, N. Schmerr, M. Sarantos, H. Bailey, D. Gershman, M. Horanyi, X. Sun, J. Szalay",
+          "publisher": "University of Colorado Boulder experts record (DOI 10.5194/epsc2020-60)",
+          "publication_date": "2024-05-02 (listed date)",
+          "url": "https://experts.colorado.edu/display/pubid_299891"
+        },
+        {
+          "title": "Lunar atmospheric composition experiment",
+          "authors": "J. H. Hoffman",
+          "publisher": "NASA Contractor Report CR-150946 (accession 76N32089), NASA Technical Reports Server",
+          "publication_date": "1975-01-01",
+          "url": "https://ntrs.nasa.gov/citations/19760025001"
+        },
+        {
+          "title": "Apollo 14 Cold Cathode Ion Gage (CCIG) Experiment instrument documentation",
+          "authors": "Not stated on page",
+          "publisher": "NASA Planetary Data System, Lunar Data Node (Apollo 14 CCIG atmospheric density plots)",
+          "publication_date": "Not stated",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a14ccig_atmos_density_plots/document/a14a_ccig.txt"
+        },
+        {
+          "title": "Cold Cathode Gauge Experiment",
+          "authors": "Wikipedia contributors",
+          "publisher": "Wikipedia (secondary source; used only through a search summary)",
+          "publication_date": "Not stated",
+          "url": "https://en.wikipedia.org/wiki/Cold_Cathode_Gauge_Experiment"
+        },
+        {
+          "title": "Neutral Mass Spectrometer (NMS) for the Lunar Atmosphere and Dust Environment Explorer (LADEE) Mission",
+          "authors": "M. R. Collier, P. R. Mahaffy, M. Benna, T. T. King, R. Hodges",
+          "publisher": "NASA Technical Reports Server (NTRS 20110022402)",
+          "publication_date": "2011-04-28",
+          "url": "https://ntrs.nasa.gov/citations/20110022402"
+        },
+        {
+          "title": "The Lunar Atmosphere and Dust Environment Explorer (LADEE): Initial Science Results",
+          "authors": "R. C. Elphic, B. Hine, G. T. Delory, J. S. Salute, S. Noble, A. Colaprete, M. Horanyi, P. Mahaffy",
+          "publisher": "AAS Division for Planetary Sciences conference abstract; NASA Technical Reports Server (NTRS 20150020446)",
+          "publication_date": "2014-11-09",
+          "url": "https://ntrs.nasa.gov/citations/20150020446"
+        },
+        {
+          "title": "NASA's LADEE Spacecraft Finds Neon in Lunar Atmosphere",
+          "authors": "NASA",
+          "publisher": "NASA news release",
+          "publication_date": "Not stated",
+          "url": "https://www.nasa.gov/missions/nasas-ladee-spacecraft-finds-neon-in-lunar-atmosphere"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image URLs were added because no direct image asset was verified for this entry."
+  },
+  "data_quality_notes": [
+    "No flown lunar surface station with the exact name atmospheric monitoring station was identified; the entry is treated as a measurement-class concept, with LEMS as the closest match and Apollo and LADEE instruments as comparisons.",
+    "Read as full page: NASA LEMS article (science.nasa.gov technology highlight) and the PDS Apollo 14 CCIG documentation. Read as abstract or summary: LACE (NTRS 19760025001), LADEE NMS (NTRS 20110022402 and 20150020446), EPSC2020 LEMS abstract, CU Boulder LEMS record, NASA LADEE neon release.",
+    "A short science.nasa.gov link for the LEMS article with a query-string identifier was fetched; it returned the same LEMS article content, but it is not retained in the references because URL cleanup removes the query string and would leave a different URL.",
+    "The LADEE NMS spaceflight101 page returned HTTP 404 and was not used. The quadrupole design statement is from a search summary and is not verified in a primary source read.",
+    "LADEE impact date differs between sources: 17 April 2014 (NASA release) and 18 April 2014 (NTRS record).",
+    "A secondary news report on LEMS (2026 status, two seismometers built, awaiting Artemis assignment) was seen in search results but was not verified in a NASA primary source and is not used as a fact.",
+    "The CCGE nighttime density figure from a search summary used a different unit convention from the PDS catalogue and was not verified; the PDS range is used instead.",
+    "The Apollo 12 CCGE failure after about 14 hours and the LACE calibration reference to Pioneer Venus come from search summaries and are flagged as unverified.",
+    "No images were added: no direct image asset URL was verified for this entry."
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "catalogue_id": 284,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 284,
+    "name": "Robotic gripper",
+    "article": {
+      "overview": "A robotic gripper is a device that grasps, holds, or latches onto an object, tool, or surface, usually at the end of an arm or manipulator. In lunar and space exploration it is needed to collect samples, handle hardware, service spacecraft, and anchor a robot to a structure. 'Robotic gripper' in the Lunar Payloads Explorer catalogue is a broad functional class rather than one standard instrument. This article therefore describes several documented grasping devices and related end effectors. Only some of them have flown, and none of the examples below is a flown, lunar-surface robotic gripper of the kind the catalogue term might suggest. The most directly lunar example is the set of hand-operated Apollo lunar tongs, which were carried to the Moon by astronauts. The best-documented robotic grasping devices are on the International Space Station (ISS), and the lunar-oriented robotic gripper work found in this research is at prototype or concept stage.",
+      "description": "In engineering terms, a gripper is the 'hand' of a manipulator. Its design depends on what it must hold. A rigid, jaw-type gripper suits a known tool or bolt. A tendon-driven, compliant, or multi-finger hand suits irregular objects. Spiked or microspine surfaces are used on rough rock. Latching devices are used when the arm must attach to a fixed grapple point. The grippers and end effectors in this article fall into five groups: (1) hand-operated lunar tongs used by Apollo astronauts to pick up small rocks; (2) robotic latching end effectors, the 'hands' at each end of the Canadarm2 robotic arm on the ISS; (3) a robotic grasping tool carried by the Dextre robot on the ISS to grab a flexible hose during the Robotic Refueling Mission 3 (RRM3); (4) the Robonaut 2 dexterous humanoid hand, which flew to the ISS; and (5) lunar or planetary prototypes and sampling end effectors, namely a lunar surface manipulator concept, a legged-robot microspine gripper, and the scoop end effector of the Chang'e-5 sampling arm.",
+      "scientific_purpose_and_applications": "Grippers do not perform a scientific measurement on their own. Their scientific value comes from making other investigations possible. Sample collection: collecting rock and regolith samples for geology, which is the function of the Apollo tongs and the Chang'e-5 sampling arm. Deployment and installation: holding instruments or tools and placing them accurately, a role that robotic manipulators in general perform. Servicing and refuelling: grasping hoses, connectors, and tools in orbit, as shown by the RRM3 and Dextre work. Mobility on difficult terrain: gripping rock surfaces or granular ground for legged robots that may explore caves or steep terrain, a motivation stated in the microspine research.",
+      "operating_principle": "Most grippers use one of four principles, often in combination. Mechanical jaws or tines close on an object. The Apollo tongs use this approach in a simple, hand-operated form; the source read does not describe the internal closing mechanism. Tendon actuation: a motor or actuator pulls cables or tendons that close the fingers. The Robonaut 2 hand uses tendon-driven fingers; the microspine gripper uses tendon-driven segmented fingers. Latching or grappling: a mechanism locks onto a fixed grapple fixture. NASA describes the Canadarm2 Latching End Effectors as having cables that tighten to produce a strong grip. Surface adhesion or spines: microspines or many small suspended toes engage irregular rock surfaces; the microspine concept is documented only at laboratory and simulation stage. Robotic grippers also need force and position sensing so that the controller knows whether an object is held securely. Sensor descriptions for individual examples are given below where sources describe them.",
+      "scientific_importance": "Grippers matter for lunar science because the most scientifically valuable material often lies below the surface or in terrain that wheels cannot reach. A sampling end effector determines what can be collected and how well it is protected from contamination. A reliable gripper also decides how much tasks depend on crewed time. The Apollo tongs show that simple hand tools were sufficient for many surface samples during crewed missions. The Chang'e-5 sampling arm shows an uncrewed mission collecting regolith and drill cores and returning them to Earth. Neither example is a general-purpose dexterous gripper.",
+      "physical_specifications": {
+        "note": "There is no single universal mass, size or specification for a robotic gripper. The examples below describe specific documented devices. Values are tied to the named device and source. Where a source gives no figure, it is recorded as null or 'not stated'. Figures from different designs should not be compared directly.",
+        "examples": [
+          {
+            "name": "Apollo lunar tongs",
+            "type": "Historical lunar hand tool (flown on Apollo 11-17); manually operated, not a robotic gripper",
+            "use": "Collected small rocks, generally less than 6-10 inches in diameter. Their long reach offset the stiffness of the spacesuit when astronauts bent to pick up samples.",
+            "versions": "A 32-inch model replaced a shorter model used on Apollo 11 through 14. The longer model was stored in the lunar rover's tool carrier and was used for training.",
+            "quantities_per_mission": {
+              "Apollo 11": 1,
+              "Apollo 12": 1,
+              "Apollo 14": 1,
+              "Apollo 15": 1,
+              "Apollo 16": 2,
+              "Apollo 17": 2
+            },
+            "museum_artifact_dimensions_cm": [70, 13, 6.5],
+            "museum_artifact_dimensions_note": "Smithsonian record lists 70 x 13 x 6.5 cm (27 9/16 x 5 1/8 x 2 9/16 in), labelled '3-D'. These dimensions do not match the 32-inch figure, and the record does not state which version it represents.",
+            "materials": "Stainless steel tines and aluminium handle (museum record).",
+            "mass_kg": null,
+            "power_w": null,
+            "sensor_configuration": "Not applicable (manual tool).",
+            "source_urls": [
+              "https://airandspace.si.edu/collection-objects/tongs-long/nasm_A19750112000",
+              "https://www.nasa.gov/wp-content/uploads/static/history/SP-4029/Apollo_18-35_Geology_and_Soil_Tools.htm"
+            ],
+            "images": [
+              {
+                "id": "smithsonian_tongs_long_collection_record",
+                "description": "Smithsonian National Air and Space Museum collection record for the 'Tongs, Long' Apollo lunar tongs (four gallery images on the record).",
+                "image_type": "Museum collection hardware record (gallery)",
+                "image_url": null,
+                "source_page_url": "https://airandspace.si.edu/collection-objects/tongs-long/nasm_A19750112000",
+                "publisher": "Smithsonian National Air and Space Museum",
+                "credit": "Smithsonian National Air and Space Museum; transferred from the National Aeronautics and Space Administration",
+                "caption": "Smithsonian collection record for the 'Tongs, Long' Apollo lunar tongs.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URLs for the four gallery images were not extracted or verified, so image_url is null and the source page is linked instead. The record states 'Usage conditions apply' and links to Smithsonian Terms of Use; check before republication."
+              }
+            ]
+          },
+          {
+            "name": "Canadarm2 Latching End Effectors (LEE)",
+            "type": "Flown robotic latching end effector on the ISS (orbital; not lunar)",
+            "design": "Each end of Canadarm2 has an identical 'hand', the Latching End Effector. NASA states that the LEEs contain cables that tighten to ensure a strong grip, and that either end can serve as the anchor while the other works.",
+            "grapple_fixtures": "The anchoring end must be secured to a power data grapple fixture. NASA says these fixtures are located at a number of key points on the station's outer structure.",
+            "quantity_on_arm": 2,
+            "quantity_note": "NASA page gives two LEEs (one per Canadarm2 end) and no station-wide count. News-source totals conflict and were not used.",
+            "dimensions_mm": null,
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://www.nasa.gov/international-space-station/mobile-servicing-system/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Dextre Cryogenic Servicing Tool (RRM3)",
+            "type": "Flown robotic grasping tool carried by Dextre on the ISS (orbital; not lunar). Completion of tool operations not confirmed.",
+            "function": "NASA describes the Cryogenic Servicing Tool as 'a robotic tool with adjustable rollers used to grab a flexible cryogen transfer hose', which is then installed into a fuel port. Other RRM3 tools: Multi-Function Tool 2 (dual rotary drive tool for hose adapters) and VIPIR2 (robotic inspection camera).",
+            "mission_launch": "Launched to the space station in December 2018 (NASA).",
+            "status_note": "The NASA page states the mission 'is still projected to carry out the tool operations' and does not confirm completion. A NASA page title found in search, not read, suggests a later set of robotic tool operations; unverified.",
+            "dimensions_mm": null,
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://www.nasa.gov/isam/robotic-refueling-mission-3/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Robonaut 2 dexterous hand",
+            "type": "Dexterous humanoid robotic hand; flown to the ISS and returned to Earth in 2018 for repair",
+            "design": "NASA technology page describes tendon-driven robotic fingers, actuation packaged in the wrist, motors and avionics packaged inside the forearm, and six-degree-of-freedom force-torque sensors. It states that the fingers have 'a top speed of more than 200 mm/sec'.",
+            "history": "Delivered to the ISS by Space Shuttle Discovery (secondary sources; year not verified against a primary page). A March 2018 report says the robot was returned to Earth for repairs after repeated on-orbit faults; a return to the station is a stated goal without a confirmed date.",
+            "finger_count": null,
+            "hand_degrees_of_freedom": null,
+            "dimensions_mm": null,
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://technology.nasa.gov/patent/MSC-TOPS-102",
+              "https://orbital-velocity.squarespace.com/news/2018/3/6/robonaut2-returning-to-earth-later-this-year"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Surface Manipulation System quick-change end effectors (NASA Langley)",
+            "type": "Lunar manipulator concept; licensing stage; not flown",
+            "design": "A lifting and precision positioning device that functions like a robot manipulator. A tip-mounted quick-change device provides automated acquisition of end effectors or special-purpose tools.",
+            "listed_attachments": [
+              "bucket",
+              "pallet forks",
+              "grappling devices",
+              "sensor and visualization packages",
+              "dexterous robotic arms"
+            ],
+            "development_status": "NASA is seeking development partners and potential licensees. No technology readiness level stated.",
+            "mass_kg": null,
+            "reach_m": null,
+            "payload_kg": null,
+            "source_urls": [
+              "https://technology.nasa.gov/patent/LAR-TOPS-73"
+            ],
+            "images": []
+          },
+          {
+            "name": "Microspine legged-robot gripper (Candalot et al.)",
+            "type": "Laboratory prototype and simulation study; no flight or lunar deployment reported",
+            "design": "Underactuated soft gripper with tendon-driven fingers that conform to the target shape, and multiple microspines for grip on rock surfaces.",
+            "testing": "Modular test bench measured sinkage in silica sand across a range of slope angles. A coupled Altair MotionSolve and EDEM model accounted for finger compliance, and lunar-gravity simulations were run with a regolith particle model.",
+            "reported_outcome": "Authors report a satisfactory gripper model with accurate freedom of motion, and that sinkage under load in a particle-filled environment can be estimated. No grip-force or payload values in the abstract.",
+            "grip_force_n": null,
+            "mass_kg": null,
+            "dates": "Submitted 8 November 2024; last revised 10 January 2025.",
+            "source_urls": [
+              "https://arxiv.org/abs/2411.07261"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-5 sampling arm end effector",
+            "type": "Flown lunar sampling manipulator; the end effector is a scoop, so this is a comparison example rather than a gripper",
+            "arm": "Four-degree-of-freedom robotic arm for regolith and small rock samples.",
+            "end_effector": "Scoop with a sample-processing system using vibration and separation so that samples do not contact each other. The end effector can be separated from the arm for transfer to the ascent vehicle.",
+            "drill": "Rotary-percussive coring drill reaching up to 2 m depth; core delivered in a Kevlar tube.",
+            "operations": "Arm and drill finished collection in about 19 hours, on 2 December 2020 (eoPortal).",
+            "returned_mass_g": 1731,
+            "target_mass_kg": 2,
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://eoportal.org/satellite-missions/chang-e-5"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are only stated for specific devices: the Apollo tongs museum artifact is recorded at 70 x 13 x 6.5 cm (version unconfirmed). No dimensions were verified for the Canadarm2 LEE, the Dextre Cryogenic Servicing Tool, the Robonaut 2 hand, the Lunar Surface Manipulation System or the Chang'e-5 end effector. Gripper size depends on the object handled, the reach and the mounting. Designs should not be compared directly.",
+        "mass_and_weight": "Mass is not stated for the Apollo tongs, LEEs, RRM3 tool, Robonaut 2 hand, Lunar Surface Manipulation System or Chang'e-5 end effector in the sources read. For a lunar gripper, mass drives launch cost and lander capacity and must be assessed against a named lander's limits.",
+        "power_requirements": "Not stated for any example in the sources read. The Apollo tongs are manually operated and need no power. Robotic examples' power budgets were not verified."
+      },
+      "environmental_and_operational_requirements": "General engineering requirements for lunar grippers include vacuum, wide temperature swings, abrasive regolith and dust, and reduced or uncertain traction. These are general engineering considerations and were not sourced to one document. Specific requirements that sources describe: spacesuit interface (Apollo tongs had long handles to allow astronauts to reach the ground, because stiff suits limited bending); granular-ground sinkage (the microspine authors say sinkage under load must be estimated for mobility planning); sample contamination control (Chang'e-5 samples were kept in a vacuum-sealed container, per eoPortal's summary of a CCTV interview); and anchoring to fixed grapple points (Canadarm2 must be secured to a grapple fixture to be stable). Thermal, radiation and power requirements for each example are not stated in the sources read.",
+      "limitations": "No standard lunar robotic gripper exists in the sources read; the catalogue term covers several different designs. Most flown examples are orbital or hand-operated rather than lunar robotic grippers. The Apollo tongs show that a simple tool worked in crewed missions but do not demonstrate robotic capability. The microspine gripper and the Lunar Surface Manipulation System are documented only at laboratory, simulation or licensing stage. Grip force, payload capacity, mass and power for the robotic examples are mostly not stated in accessible sources. Several sources are NASA licensing or summary pages that do not give technical specifications.",
+      "transportation_and_deployment": {
+        "overview": "This section applies to a robotic gripper delivered to the lunar surface. No lander compatibility is asserted, because no verified interface evidence was found for a lunar gripper. The orbital examples (Canadarm2, Dextre) are part of ISS operations and are not directly relevant to lunar delivery.",
+        "transportation_process": [
+          "Earth integration of the gripper onto a lunar lander or rover: not assessed in the sources read.",
+          "Launch and lunar transfer: not assessed; no verified mass or envelope for a lunar gripper was found.",
+          "Landing delivery and surface deployment: Apollo tongs were stowed in the lunar rover's tool carrier (Smithsonian record). The Chang'e-5 sampling end effector was separated from the arm for transfer to the ascent vehicle (eoPortal).",
+          "Power, data and thermal/mechanical interfaces: not assessed; no verified interface requirements for a named lander were found."
+        ],
+        "deployment_methods": "Hand-operated tools were carried and used by astronauts (Apollo). The Chang'e-5 sampling arm was a robotic arm on the lander. Robotic grippers on the ISS are installed and operated by the station's robotic systems. No lunar robotic gripper deployment method is verified.",
+        "historical_examples": "Apollo lunar tongs (Apollo 11-17, crewed hand tool); Chang'e-5 sampling arm and scoop end effector (2020 uncrewed lunar sampling); Canadarm2 latching end effectors and Dextre tools (ISS, orbital); Robonaut 2 hand (ISS, returned 2018).",
+        "compatibility_assessment": "A lunar robotic gripper's compatibility with a specific lander, rover or spacecraft would need to be assessed against verified mass, dimensions, mounting, power, data and load requirements. None of the examples in this article has been verified for a named lander, so no compatibility is asserted.",
+        "images": []
+      },
+      "historical_significance": "Apollo lunar tongs were used by crews on Apollo 11 through 17 to collect small rocks and were part of the standard geology toolset. Canadarm2's latching end effectors show how a robotic arm can grip an object and anchor itself to station structure. The Robonaut 2 hand demonstrated a humanoid-style robotic hand in space, although it was returned to Earth in 2018 for repair. RRM3's Dextre tools tested robotic grasping of a cryogenic transfer hose as a step in robotic refuelling of spacecraft. The Chang'e-5 sampling arm and drill collected lunar material in December 2020, and the mission returned about 1,731 g of samples according to eoPortal.",
+      "limitations_and_uncertainties": "Apollo tongs: the museum artifact dimensions do not match the 32-inch model and its version is unconfirmed. How astronauts used the tongs is taken from the Smithsonian record, since the NASA tool table gives quantities only. Canadarm2: NASA gives two LEEs; station-wide counts in news sources conflict and were not verified. Dextre CST: completion of robotic tool operations was not confirmed in the NASA page read. Robonaut 2: finger count, degrees of freedom, mass and dimensions are not verified from a primary source; the primary ICRA 2012 paper was identified but not read; the 2011 ISS delivery year is from secondary summaries; no confirmation was found of a return to the station. Lunar Surface Manipulation System: no TRL, mass, reach or payload values published on the page read. Microspine gripper: grip-force and payload values were not in the abstract and the full PDF was not read; an undated NASA-linked microspine prototype figure (120 N) appeared in search and is not used. Chang'e-5: no arm mass, power, or robotic-transfer specifications in the page read. Canadarm3 and other Gateway arms were not researched in this run.",
+      "images": [
+        {
+          "id": "smithsonian_tongs_long_collection_record",
+          "description": "Smithsonian National Air and Space Museum collection record for the 'Tongs, Long' Apollo lunar tongs (four gallery images on the record).",
+          "image_type": "Museum collection hardware record (gallery)",
+          "image_url": null,
+          "source_page_url": "https://airandspace.si.edu/collection-objects/tongs-long/nasm_A19750112000",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Smithsonian National Air and Space Museum; transferred from the National Aeronautics and Space Administration",
+          "caption": "Smithsonian collection record for the 'Tongs, Long' Apollo lunar tongs.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URLs for the four gallery images were not extracted or verified, so image_url is null and the source page is linked instead. The record states 'Usage conditions apply' and links to Smithsonian Terms of Use; check before republication."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Tongs, Long (NASM A19750112000), collection object record",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "url": "https://airandspace.si.edu/collection-objects/tongs-long/nasm_A19750112000"
+        },
+        {
+          "title": "Apollo 18-35 Geology and Soil Mechanics Tools and Equipment (SP-4029 tools table)",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/wp-content/uploads/static/history/SP-4029/Apollo_18-35_Geology_and_Soil_Tools.htm"
+        },
+        {
+          "title": "Mobile Servicing System (page last updated 27 September 2023)",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/international-space-station/mobile-servicing-system/"
+        },
+        {
+          "title": "Lunar Surface Manipulation System (LAR-TOPS-73)",
+          "publisher": "NASA Technology Transfer (NASA Langley)",
+          "url": "https://technology.nasa.gov/patent/LAR-TOPS-73"
+        },
+        {
+          "title": "Sinkage Study in Granular Material for Space Exploration Legged Robot Gripper (arXiv:2411.07261)",
+          "publisher": "Candalot, A., Hurrell, J., Hashim, M. M., Hickey, B., Laine, M., Yoshida, K.; arXiv (submitted 8 November 2024, revised 10 January 2025)",
+          "url": "https://arxiv.org/abs/2411.07261"
+        },
+        {
+          "title": "Advanced Humanoid Robotic Hand Technologies (MSC-TOPS-102)",
+          "publisher": "NASA Technology Transfer (NASA Johnson Space Center)",
+          "url": "https://technology.nasa.gov/patent/MSC-TOPS-102"
+        },
+        {
+          "title": "Robonaut2 returning to Earth later this year (repost of SpaceFlight Insider)",
+          "publisher": "Orbital Velocity",
+          "url": "https://orbital-velocity.squarespace.com/news/2018/3/6/robonaut2-returning-to-earth-later-this-year"
+        },
+        {
+          "title": "Robotic Refueling Mission 3",
+          "publisher": "NASA In-Space Servicing, Assembly and Manufacturing (ISAM)",
+          "url": "https://www.nasa.gov/isam/robotic-refueling-mission-3/"
+        },
+        {
+          "title": "Chang'e-5 (China's Lunar Sample Return Mission)",
+          "publisher": "eoPortal",
+          "url": "https://eoportal.org/satellite-missions/chang-e-5"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "Apollo lunar tongs example": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No direct image asset URL was verified for this article, so image_url is null and the source page is used instead."
+  },
+  "data_quality_notes": [
+    "Apollo lunar tongs: the Smithsonian museum artifact is recorded at 70 x 13 x 6.5 cm (27 9/16 x 5 1/8 x 2 9/16 in), which does not match the 32-inch model; the record does not say which version it represents. Mass is not stated.",
+    "Apollo lunar tongs: quantities per mission come from the NASA SP-4029 table; usage details come from the Smithsonian record only.",
+    "Canadarm2 LEEs: NASA gives two per Canadarm2; station-wide counts in news sources conflict and were not used.",
+    "Dextre Cryogenic Servicing Tool: NASA page does not confirm completion of tool operations; a NASA page title found in search (not read) suggests later operations; unverified.",
+    "Robonaut 2 hand: the NASA technology page gives no finger count, degrees of freedom, mass or dimensions, and contradicts itself on finger sensor count. A 12-DOF figure from search summaries was not verified against the primary ICRA 2012 paper, which was not read. The 2011 ISS delivery year is from secondary sources. No confirmation of a return to the ISS.",
+    "Lunar Surface Manipulation System: NASA licensing page; no TRL, mass, reach, payload or flight history given.",
+    "Microspine gripper: laboratory and simulation only; no grip-force or payload values in the abstract; full PDF not read. An undated NASA-linked microspine prototype (120 N grip force) appeared in search and was not verified or used.",
+    "Chang'e-5: the eoPortal page is partly dated (last updated Nov 2020) but includes later entries; the ascent-vehicle mass figures conflict within the page and were not used. Returned mass of 1,731 g is taken from an April 2021 entry.",
+    "Images: no direct image asset URLs were extracted or verified. The one listed image is a linked source-page reference with image_url null.",
+    "Not researched in this run: Canadarm3 and other Gateway robotic arms, Chinese or other national gripper programmes beyond Chang'e-5, and any lunar lander interface data."
+  ]
+}

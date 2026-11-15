@@ -1,0 +1,122 @@
+{
+  "catalogue_id": 290,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 290,
+    "name": "Wireless power transmission experiment",
+    "article": {
+      "overview": "A wireless power transmission experiment tests whether electrical energy can be sent from one place to another without a physical cable, using magnetic fields, radio waves or light. On the Moon, such a capability could in principle recharge rovers and instruments, power users in shadowed terrain, or link a generating site to a distant user. The publicly reported lunar-related work reviewed for this article consists of ground tests, an engineering design study and planned demonstrations, not a flown lunar system [1][2][3][4].",
+      "description": "The name describes a class of experiments rather than one standard instrument. Wireless power transmission (WPT) has three broad technical approaches. Near-field inductive coupling uses alternating magnetic fields between coils over short distances, typically centimetres to metres; this is the approach used in the Astrobotic and WiBotic charging system [1]. Microwave beaming uses radio-frequency energy over longer distances. Laser, or optical, power beaming focuses light onto a photovoltaic receiver, which is a solar-cell-type device, and can reach kilometres; the Star Catcher tests [2][3] and the NASA BEACON concept [4] fall into this category.\n\nA WPT experiment typically includes a transmitter that converts electrical energy into the chosen field or beam, a receiver (a coil or a photovoltaic array) that converts it back into electricity, power-conditioning electronics, pointing or alignment systems, and thermal and dust-protection measures. Whether an experiment is a ground test, a lunar surface demonstration or a concept study matters greatly, and the sources below are separated accordingly.",
+      "scientific_purpose_and_applications": "The main purposes of such an experiment are engineering rather than discovery. It would show whether energy can be transferred reliably under lunar conditions, measure transfer efficiency, and reveal how dust, temperature, shadow and misalignment affect performance. The sources describe three applications. The first is keeping surface vehicles and landers alive through the lunar night [1]. The second is charging a vehicle's batteries without a plug, as in the Star Catcher tests [2][3]. The third is supplying power and communications to users in long polar shadow periods from a sunlit tower [4]. Terrestrial and orbital applications exist but are outside the scope of this article.",
+      "operating_principle": "In inductive coupling, an alternating current in a transmitter coil creates a changing magnetic field. A receiver coil placed within that field has a voltage induced in it, which can then charge a battery. Transfer efficiency depends strongly on the alignment and separation of the two coils. Resonant tuning is commonly used to improve transfer across larger gaps, but the sources reviewed do not quantify this for a lunar system. The Astrobotic tests showed no degradation in transfer when the coil was covered by simulated regolith, which is lunar soil [1].\n\nIn laser power beaming, electricity is converted into a laser beam, the light travels through the intervening medium, and a photovoltaic receiver converts it back into electricity. The main losses come from beam spreading, imperfect pointing and conversion efficiency at both ends. The BEACON abstract describes its laser link as having low efficiency [4]. Star Catcher states that its beaming worked with standard solar panels without custom receivers [2].\n\nMicrowave beaming follows the same transmit-and-receive pattern with radio-frequency energy. The sources reviewed do not include a verified lunar example of it.",
+      "scientific_importance": "Power availability is a central constraint for lunar surface operations. The Astrobotic release cites a 14-Earth-day lunar night [1], and the BEACON abstract notes polar shadow periods of two weeks or more [4]. Wireless transfer could separate where power is generated from where it is used, which could help keep rovers, instruments or other users operating in shadowed terrain. The scientific value of such an experiment lies mainly in engineering knowledge: measured transfer efficiency, tolerance to dust and temperature change, and sensitivity to misalignment. Those data are needed before a system can be relied upon in a lunar mission. None of the reviewed sources reports such results from a lunar environment.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a wireless power transmission experiment. Mass, size, power and transfer range depend on whether the system is a short-range charger, a laser beaming demonstrator or a tower-based relay concept, and most published figures belong to one named design. The examples below use different physical principles, distances and maturity levels, so they are not directly comparable and no combined table is given.",
+        "examples": [
+          {
+            "name": "Inductive wireless charging system (Astrobotic and WiBotic)",
+            "type": "Ground-tested inductive charging system (developer configurations; not flight-proven)",
+            "description": "The Astrobotic and WiBotic system uses inductive coupling, in which a transmitter coil and a receiver coil exchange power through a magnetic field over short distances. The company announced 125 W and 400 W configurations in a 2022 press release [1]. That release states that the system was not flight-proven at the time, that a space-rated engineering model was being built, and that full space qualification, including rocket launch loads, was planned for an undated later date [1].\n\nThe release describes two ground tests [1]. In the first, the coil was moved between heated space and a liquid-nitrogen chamber while power transfer continued, over a stated lunar temperature range of -180 °F to 220 °F (about -118 °C to 104 °C); the release calls these chambers simulated. In the second, the system was covered by 4 cm of regolith simulants at NASA Kennedy Space Center, and the release reports no degradation in power transfer. The company also states an efficiency of 80–85% for the total system and says testing showed enough power to help technologies survive the 14-Earth-day lunar night [1]. These are developer claims from ground tests and were not independently verified in this review.\n\nTrade-press search summaries described the 125 W model as commercially available and the 400 W model as still under testing. That current status could not be confirmed from a primary source.",
+            "source_urls": [
+              "https://www.astrobotic.com/astrobotics-wireless-charging-system-for-the-moon-can-survive-lunar-night/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Optical power beaming demonstration (Star Catcher with Intuitive Machines)",
+            "type": "Ground-tested optical power beaming campaign at Kennedy Space Center; on-orbit demonstration planned",
+            "description": "Star Catcher, a private company, reported a multi-day optical power beaming test campaign at NASA Kennedy Space Center in November 2025 [2][3]. Laser energy was delivered to commercially available photovoltaic modules, and the energy was used to charge the batteries of Intuitive Machines' Moon RACER lunar terrain vehicle [3]. The company reported transmitting 1.1 kW and more than 10 MJ of total energy across the campaign [3].\n\nThe company also claims the campaign surpassed an earlier DARPA POWER benchmark. As reported by heise, that benchmark was 800 W transmitted over almost 9 km for 30 seconds [3]. The comparison is limited because Star Catcher did not disclose the distance or duration of its 1.1 kW transmission [3]. The sources reviewed do not say whether the Moon RACER used in the tests was flight hardware or a stand-in [3].\n\nThe sources describe ground testing only. Star Catcher's first on-orbit demonstration was planned for 2026, and multi-orbit deployment was targeted for 2030 [2]. No space or lunar operation of this system is reported in the sources reviewed.",
+            "source_urls": [
+              "https://satnews.com/2025/11/13/star-catcher-intuitive-machines-demo-power-beaming-for-extended-lunar-surface-operations/",
+              "https://heise.de/-11090212"
+            ],
+            "images": []
+          },
+          {
+            "name": "Laser power beaming and relay concept (NASA Glenn BEACON)",
+            "type": "Conceptual engineering design study (laser power beaming and relay)",
+            "description": "The Beamed Energy and Communications Optical Node (BEACON) is a conceptual engineering design study by a NASA Glenn Research Center-led team, presented at the AIAA SciTech Forum in January 2025 [4]. It proposes a tower-mounted solar array that carries a laser beam director and a 3GPP antenna; 3GPP is the family of standards behind cellular mobile networks. The purpose is to supply power and communications to users during polar shadow periods of two weeks or more [4].\n\nThe abstract refers to \"gathering of kilowatts of power\", describes the laser beaming as \"low efficiency\", and says the relay could serve users up to about 10 km away, depending on terrain [4]. It also describes a demonstrator design with a 15 m deployed boom [4]. The abstract states that a demonstration in the lunar environment is still crucial, so no lunar demonstration is reported [4].\n\nA separate 2025 preprint proposes phased-array laser power beaming from cislunar space to the lunar surface [5]. Only its title and identifiers were confirmed in this review, so its quantitative results are not reported here. A planning target of about 10 kW near the south pole by 2028 appeared only in secondary search summaries of the BEACON work; it is not stated as a verified value.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20240014584"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The sources reviewed do not give external dimensions for the Astrobotic and WiBotic charger or for the Star Catcher test hardware. The BEACON abstract describes a demonstrator design with a 15 m deployed boom and a tower-mounted solar array [4]. No other dimensions were verified.",
+        "mass_and_weight": "No verified mass figure was found for any of the examples below. The sources reviewed do not state the mass of the charging hardware, the Star Catcher test equipment or the BEACON demonstrator.",
+        "power_requirements": "Reported power levels describe different quantities and should not be combined. The Astrobotic release lists 125 W and 400 W charger configurations [1]. The Star Catcher test campaign reportedly transmitted 1.1 kW, with distance and duration not disclosed [3]. The BEACON abstract refers to \"gathering of kilowatts of power\" without a single stated value [4]."
+      },
+      "environmental_and_operational_requirements": "The lunar surface has wide temperature swings, no atmosphere to carry heat away by convection, fine dust that can settle on optical and magnetic surfaces, and exposure to radiation and micrometeoroids. Inductive systems need coil alignment, a defined gap and tolerance to any soil between the coils. Laser systems need pointing accuracy, a clear line of sight and receivers that can stay clean. The Astrobotic tests address thermal cycling and regolith cover [1], and the BEACON concept addresses long polar shadow periods [4]. Power beaming may also raise optical-safety and radio-frequency regulatory questions, but the sources reviewed do not quantify these requirements.",
+      "limitations": "The evidence base is limited. Most reviewed sources are developer announcements, trade press or a conceptual design study. Performance figures depend on distance, alignment, receiver type and test conditions, which are often incompletely disclosed [2][3]. Inductive charging works across short gaps and cannot power distant users, whereas laser beaming needs accurate pointing and a clear line of sight. Efficiency is a major limitation: BEACON describes laser beaming as low efficiency [4], and the 80–85% figure for the inductive system is a developer claim [1].",
+      "transportation_and_deployment": {
+        "overview": "A wireless power transmission experiment could fly as a standalone demonstrator, as part of a lander payload, as a rover docking node or as a tower-based power station. The sources reviewed do not define a lunar delivery configuration for any of these options, so the description below is a generic engineering sequence.",
+        "transportation_process": [
+          "Earth integration: mount the transmitter, receiver and power electronics in a payload compartment or on a host vehicle, with thermal insulation and dust protection.",
+          "Launch: the payload would be launched on an Earth launch vehicle. The Astrobotic engineering model was planned for full space qualification, including rocket launch loads [1].",
+          "Lunar transfer and landing: the payload would be carried to the Moon and delivered to the surface by a lunar lander. No landing vehicle for this payload is identified in the sources reviewed.",
+          "Deployment and setup: a charging pad, tower or boom would be placed and aligned. Laser systems need a tower or elevated aperture with a line of sight [4]; inductive systems need the coils aligned with the receiver [1].",
+          "Power, data and thermal interfaces: the system needs a power source, control and data links, and thermal control to protect electronics and coils from lunar temperature extremes [1]."
+        ],
+        "deployment_methods": "Inductive charging pads could be placed on the surface, with a rover driven or docked over them. The Astrobotic system was described as a charging node for CubeRover, a demonstration platform, although no mission date or landing site was given [1]. Laser beaming systems need an elevated optical aperture, and the BEACON concept places its laser on a solar array tower [4]. In the Star Catcher tests, beamed power was used to charge the Moon RACER battery [3]. Actual flight deployment methods are not verified.\n\nIf the transmitter or receiver is mounted on a rover, stowage, release and mobility integration would be additional design tasks. No such design is verified in the sources reviewed.",
+        "historical_examples": "No wireless power transmission experiment is reported as operating on the Moon in the sources reviewed. The most relevant historical examples are ground tests: the Astrobotic thermal and regolith tests [1] and the Star Catcher campaign at Kennedy Space Center [2][3].",
+        "compatibility_assessment": "Compatibility with a named lander, rover or spacecraft has not been verified. The Star Catcher test involved Intuitive Machines' Moon RACER vehicle, but the sources reviewed do not provide an interface specification or flight agreement for that vehicle [3]. Future compatibility assessments should compare mass, dimensions, mounting, power, thermal and data interfaces against verified specifications.",
+        "images": []
+      },
+      "historical_significance": "The sources show a rapid rise in lunar-relevant wireless power activity between 2022 and 2025. The 2022 Astrobotic announcement reported ground tests of an inductive charger [1]. In 2025, Star Catcher reported a laser beaming test campaign at Kennedy Space Center [2][3], and a NASA Glenn-led team published a conceptual laser beaming and relay design study [4]. The DARPA POWER project set a terrestrial benchmark that Star Catcher says it exceeded [3]. The historical importance of this payload category will depend on whether on-orbit or lunar demonstrations produce independently reported results.",
+      "limitations_and_uncertainties": "The payload name describes a family of technologies rather than one standard design, so results for inductive charging, laser beaming and concept studies should not be treated as interchangeable. Each example in this article is tied to a named source, and values such as power, mass and distance are stated only where a source reports them.\n\nNo lunar demonstration of a wireless power transmission system is reported in the sources reviewed. The Star Catcher primary press release and the Intuitive Machines post were not retrieved in full, so the Star Catcher information depends on trade-press coverage [2][3]. The DARPA benchmark values were taken from heise [3] and were not checked against DARPA. The Astrobotic release is dated 2022, and its status may have changed [1]. The BEACON review used the NTRS abstract page rather than the full paper [4]. The Turyshev preprint was identified by title and identifiers only [5].\n\nNo verified direct image asset was identified for this article, so the image registry is empty. No lander, rover or spacecraft compatibility has been verified, and no lunar location recommendation is included, as deferred by the user.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Astrobotic. \"Astrobotic's Wireless Charging System for the Moon Can Survive Lunar Night.\" Press release, 16 June 2022.",
+          "url": "https://www.astrobotic.com/astrobotics-wireless-charging-system-for-the-moon-can-survive-lunar-night/"
+        },
+        {
+          "title": "SatNews. \"Star Catcher and Intuitive Machines Demo Power Beaming for Extended Lunar Surface Operations.\" 13 November 2025.",
+          "url": "https://satnews.com/2025/11/13/star-catcher-intuitive-machines-demo-power-beaming-for-extended-lunar-surface-operations/"
+        },
+        {
+          "title": "heise online. \"Star Catcher beams energy with record power.\" Publication date not confirmed in the text reviewed.",
+          "url": "https://heise.de/-11090212"
+        },
+        {
+          "title": "Oleson, S. R., Landis, G. A., Turnbull, E. R., et al. \"Beamed Energy and Communications Optical Node (BEACON) Demonstrator.\" AIAA SciTech Forum, Orlando, FL, 6–10 January 2025 (NASA NTRS document 20240014584).",
+          "url": "https://ntrs.nasa.gov/citations/20240014584"
+        },
+        {
+          "title": "Turyshev, S. G. \"Phased-Array Laser Power Beaming from Cislunar Space to the Lunar Surface.\" arXiv:2508.10855 (2025).",
+          "url": "https://arxiv.org/abs/2508.10855"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image objects are included because no direct image asset was verified."
+  },
+  "data_quality_notes": [
+    "No verified direct image asset URL was identified; the image registry is empty rather than containing unverified links.",
+    "The Star Catcher and Intuitive Machines primary press release and Intuitive Machines post were not retrieved in full; heise and SatNews are secondary sources.",
+    "The DARPA POWER benchmark values (800 W, almost 9 km, 30 s) are as reported by heise and were not checked against DARPA.",
+    "The Astrobotic release is dated 16 June 2022; the current status of the 125 W and 400 W models was not confirmed from a primary source.",
+    "The BEACON evaluation is based on the NTRS abstract page; the full PDF was not readable in this review.",
+    "Turyshev arXiv:2508.10855 was identified by title and identifiers only; no quantitative results were extracted.",
+    "A planning target of about 10 kW by 2028 for BEACON appeared only in secondary search summaries and is not stated as a verified value.",
+    "Source URLs contain no query strings or fragments.",
+    "No lunar landing-site or location recommendation is included (deferred by user)."
+  ]
+}

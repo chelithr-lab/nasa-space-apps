@@ -1,0 +1,169 @@
+{
+  "catalogue_id": 299,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 299,
+    "name": "Lunar surface charging experiment",
+    "article": {
+      "overview": "A lunar surface charging experiment is an instrument or investigation designed to measure how the lunar surface acquires and holds electrical charge, and how that charge affects the surrounding plasma and fine dust. Exposure to the solar wind, solar ultraviolet light and magnetospheric plasma can leave the surface electrically charged, and the resulting electric fields may lift and move dust grains. Several flown experiments and at least one prototype have addressed this question, but no single standard design exists for this payload class.",
+      "description": "The Moon has no global atmosphere or magnetic field to shield its surface from the charged particles around it. When the surface is illuminated, photoelectron emission tends to drive it positive. When it is in shadow or in the plasma wake of the Earth's magnetosphere, it can collect electrons and become negatively charged. Surface potential is therefore not a constant. It varies with local illumination, plasma conditions and the electrical properties of the regolith [1][4]. A surface charging experiment measures some combination of three quantities: the surface potential relative to the local plasma, the flux and energy of the charged particles arriving at the surface, and the electric fields or charge carried by fine dust. Earlier Apollo-era instruments addressed the first two quantities indirectly, by detecting particles and by stepping a retarding voltage on a grid near the surface [4][6]. Newer designs aim to measure the dust itself, including the charge, size and velocity of individual grains [1][7].",
+      "scientific_purpose_and_applications": "The primary scientific purpose is to understand how the lunar surface charges, and what that means for the transport of dust and for the plasma environment above it. Surface potentials affect the energy of incoming solar wind ions, the trajectories of lofted dust grains and the interpretation of other lunar plasma measurements [4][5]. Applications extend beyond pure science. Electrostatically lofted dust is a known hazard for spacesuits, optics, thermal radiators and mechanical joints during extended surface operations. The EDA prototype was developed under a NASA lunar-instrumentation programme with the stated aim of resolving whether electrostatic dust transport occurs on the Moon, to inform crew safety and exploration systems [1]. Charging data could therefore support both exploration engineering and the design of future surface infrastructure.",
+      "operating_principle": "Different surface charging experiments use different physical principles, so there is no single operating principle for this class. Charged-particle spectrometers, such as the Apollo CPLEE, use electrostatic analysers to sort incoming electrons and ions by energy and count them with electron multipliers. Changes in the energy of arriving particles can reveal the potential difference between the instrument and the surrounding plasma [3][4]. Retarding-grid instruments, such as the Apollo SIDE ground grid, step a voltage on a wire screen placed on the surface. Narrow ion peaks that track the stepped voltage can be used to estimate the surface potential relative to the local plasma. This method depends on the local Debye length and on how closely the screen potential matches the lunar surface, so it measures potential relative to the surrounding plasma rather than an absolute value [4][6]. Dust-charge sensors, such as the Electrostatic Dust Analyzer (EDA), measure the charge induced on wire electrodes as a dust grain passes through them. Deflection in a central electric field then gives the grain's mass, and the two sensor positions give its velocity vector [1].",
+      "scientific_importance": "Surface charging connects the lunar surface, the solar wind and the dust environment. Apollo-era observations of horizon glow and transient dust clouds were attributed to solar-wind and ultraviolet charging of the surface, but the observed dust densities were not confirmed by later measurements [5]. Instrument data on surface potential and dust charging are therefore needed to test charging and transport models, and the EDA paper states that its measurements would be used for this purpose [1]. Charging measurements also constrain the lunar plasma environment. Reported surface potentials depend on the plasma density and on the model used to interpret the data, so the uncertainties in the historical record remain important [3][4].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar surface charging experiment. Published examples differ in measurement method, flight status and level of documentation, and they are not directly comparable. Each example is reported with its own source and caveats. Where a value is not published, it is recorded as null or as not publicly specified.",
+        "examples": [
+          {
+            "name": "Apollo 14 Charged Particle Lunar Environment Experiment (CPLEE)",
+            "type": "Charged-particle spectrometer (ALSEP)",
+            "flight_status": "Flown on Apollo 14 (deployed 5 February 1971); operated intermittently after power-supply and thermal problems.",
+            "description": "Two electrostatic analysers (one pointed toward lunar vertical, one 60 degrees from vertical toward the lunar west) measuring electron and ion fluxes from 40 eV to 20 keV across 18 energy windows; dust cover with nickel-63 calibration source.",
+            "mass_kg": 2.7,
+            "stowed_volume_cm3": 2540,
+            "power_w_normal": 3.0,
+            "power_w_night_with_survival_heater": 6.0,
+            "external_dimensions_cm": null,
+            "surface_potential_result": "Earlier analyses reported a dayside lunar surface potential above +200 V when the Moon was in the plasma sheet. This value is disputed; a 2017 conference abstract states the authors are re-evaluating the constraints [2].",
+            "images": []
+          },
+          {
+            "name": "Apollo 12, 14 and 15 Suprathermal Ion Detector Experiment (SIDE)",
+            "type": "Retarding-grid ion detector with surface-screen potential method (ALSEP)",
+            "flight_status": "Flown on Apollo 12, 14 and 15 ALSEP packages.",
+            "description": "Wire screen on the surface beneath the instrument offsets large surface potentials; grid-to-screen potential stepped through 24 values from 0 to 27.6 V, with a reported step duration of 2.58 minutes.",
+            "mass_kg": null,
+            "power_w": null,
+            "external_dimensions_cm": null,
+            "surface_potential_result": "One Apollo 14 event indicates a lunar surface potential of about 10 V. Secondary material summarising SIDE gives roughly -100 V nightside and +10 V dayside; this was not verified against primary text [6].",
+            "images": []
+          },
+          {
+            "name": "Electrostatic Dust Analyzer (EDA)",
+            "type": "Dust charge, velocity and mass sensor (prototype)",
+            "flight_status": "High-fidelity and flight-qualified prototype (TRL 6), as described in the 2024 paper. No flight or lunar deployment is described in that paper.",
+            "description": "Two dust trajectory sensors at either end with a deflection field electrode between them. Induced charge on wire electrode arrays gives charge and velocity vector; deflection in the central field gives mass. Developed under NASA DALI grant 80NSSC19K0765.",
+            "mass_kg": 4.3,
+            "mass_scope": "sensor module only",
+            "power_w": 5,
+            "power_scope": "sensor module only",
+            "external_dimensions_cm": null,
+            "dimension_note": "Overall instrument dimensions not given; wire electrodes 8 cm long.",
+            "laboratory_performance": {
+              "dust_radius_um": "1 to 20 (requirement 2 to 20)",
+              "velocity_m_per_s": "0.8 to 20 (requirement 1.25 to 10)",
+              "charge_fC": "1.2 to 64 (requirement 2.4 to 24)",
+              "test_medium": "JSC-1A lunar simulant in vacuum at 7e-7 Torr; laboratory results only"
+            },
+            "environmental_testing": "Vibration 14.1 grms; quasi-static loading 42 g on three axes; thermal-vacuum: one survival cycle (-50 to +85 C) and four operational cycles (-35 to +80 C); passed vibration and thermal cycling per the paper.",
+            "images": []
+          },
+          {
+            "name": "DUSTER breadboard instrument",
+            "type": "In situ dust charge and transport instrument (breadboard) with ground test facility",
+            "flight_status": "Not built or flown; breadboard stage. No target lander or mission named.",
+            "description": "Electronics, power supplies, electrodes and enclosure still to be designed, integrated and validated. Lab facility intended to measure electric field needed to move charged dust, current from impacts on dust electrodes, and particle charge level.",
+            "mass_kg": null,
+            "power_w": null,
+            "external_dimensions_cm": null,
+            "funding": "EU HORIZON grant agreement No 101082466",
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are published only for CPLEE (stowed volume 2540 cm3) and the EDA wire electrodes (8 cm). Overall dimensions for CPLEE external envelope, SIDE, the EDA instrument and DUSTER are not publicly specified in the sources reviewed.",
+        "mass_and_weight": "Published masses: CPLEE 2.7 kg; EDA sensor module 4.3 kg (DSP module not part of the prototype and not separately specified). SIDE and DUSTER masses are not publicly specified in the sources reviewed.",
+        "power_requirements": "Published power: CPLEE 3.0 W normal and 6.0 W at night with survival heater on; EDA sensor module 5 W. SIDE and DUSTER power is not publicly specified in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "Surface charging experiments must operate in the lunar vacuum, with a surface subject to strong thermal cycling between lunar day and night, and in a plasma environment that changes with the Moon's position relative to the Earth's magnetotail [2][3][4]. Charge-sensitive measurements are also sensitive to contamination, so apertures, grids and electrodes must be protected or kept clean [3]. For the EDA prototype, the reported qualification envelope covers vibration at 14.1 grms, quasi-static loading at 42 g, and an operational thermal range of -35 C to +80 C, with a survival range of -50 C to +85 C [1]. Thermal and mechanical requirements for flight units depend on the mission and are not publicly specified for this payload class.",
+      "limitations": "The main limitation is that no source reviewed describes a flown, dedicated lunar surface potential instrument with complete published specifications. The Apollo instruments measured related quantities but were not designed as stand-alone surface-potential experiments, and their interpretation depends on plasma models [3][4][6]. Historical surface potential values are contested or summarised secondhand. The CPLEE figure above +200 V is disputed [2], and the SIDE nightside and dayside values were not verified against primary text [6]. The modern EDA is a prototype. Its laboratory results were obtained on lunar simulant in vacuum and do not demonstrate performance in the lunar environment [1]. DUSTER is a breadboard that has not been built as a flight unit [7].",
+      "transportation_and_deployment": {
+        "overview": "This is a surface payload. Its transportation chain typically includes Earth integration, launch, trans-lunar transfer, landing delivery, deployment, setup and power and data connection. Specific lander compatibility has not been verified for any example, and no compatibility claim is made.",
+        "transportation_process": [
+          "Earth integration and launch of the surface payload (general; not specified for a named mission)",
+          "Trans-lunar transfer and landing delivery (general; no named lander verified)",
+          "Deployment and setup on the surface, including power and data connection",
+          "Thermal and mechanical interface management through the lunar day-night cycle and regolith contact"
+        ],
+        "deployment_methods": "The Apollo CPLEE and SIDE were deployed by astronauts as part of the ALSEP package, with CPLEE placed about 3 m northeast of the ALSEP central station; they depended on crew surface operations and the ALSEP central station for power and data. The EDA paper describes a notional configuration in which the sensor module sits on the surface and the DSP module sits on a lander, connected by a harness [1]. This is a design concept, not a verified interface to any lander.",
+        "historical_examples": "Apollo 14 CPLEE (deployed about 3 m from the ALSEP central station on 5 February 1971) and Apollo 12, 14 and 15 SIDE were deployed as ALSEP elements [3][4][6].",
+        "compatibility_assessment": "No lander or spacecraft compatibility is verified for any example in this article. The EDA notional sensor-on-surface and DSP-on-lander configuration is a design concept only [1].",
+        "images": []
+      },
+      "historical_significance": "Apollo-era surface charging measurements, including CPLEE and SIDE, were among the first attempts to measure lunar surface potential directly [3][4][6]. Their results remain important for the historical record, but they are contested in parts and depend on plasma models that have since been revisited [2][4]. The Lunar Dust Experiment (LDEX) on the LADEE mission provided later evidence about the dust environment above the surface. Its published results report a permanent, asymmetric dust cloud produced by micrometeoroid impacts, and they do not confirm the dense lofted dust layer that had been proposed to explain Apollo-era horizon glow [5]. LDEX was not a surface-charging instrument, but it constrains the dust environment that surface charging models must explain [5].",
+      "limitations_and_uncertainties": "The surface potential values reported for Apollo CPLEE and SIDE are historical, contested or secondhand. The CPLEE +200 V value is disputed and is being re-evaluated [2]. The SIDE nightside and dayside values come from secondary material and were not checked against the original Apollo data reports [6]. The EDA performance table compares laboratory results on simulant with stated requirements. The paper describes flight qualification by test, but no flight data exist [1]. The LDEX figures used here, including the count of more than 140,000 impacts over the mission and the comparison with Apollo horizon-glow dust densities, were reported in a secondary summary of the 2015 Nature paper and were not read in the primary text [5]. The 2023 follow-up on LDEX data reports no enhanced integrated current correlated with antihelion meteoroid bombardment, which the authors interpret as indicating that electrostatic lofting does not contribute to the high-altitude dust environment [8]; this was taken from a secondary summary and should be checked against the paper. Evidence gaps: no image of any example instrument was verified from an official asset page, so no image is included. The Apollo SIDE PDS documentation was listed in search results but could not be retrieved for reading. Two Apollo NTRS reports could not be read as text. The Rice University dissertations cited in the Wikipedia CPLEE entry were not verified with URLs and are not included in the references.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Electrostatic Dust Analyzer for Dust Transport Measurements on the Lunar Surface",
+          "publisher": "The Planetary Science Journal (IOP Publishing / AAS), vol. 5, no. 2, 2024",
+          "url": "https://doi.org/10.3847/PSJ/ad1ffe"
+        },
+        {
+          "title": "Conference abstract on re-evaluation of CPLEE lunar surface potential constraints (full author list and title not verified)",
+          "publisher": "Lunar Radiation Constraints / impact.colorado.edu conference abstract, 2017",
+          "url": "https://impact.colorado.edu/lungradcon/2017/abstracts/stone_lgc2017.pdf"
+        },
+        {
+          "title": "Charged Particle Lunar Environment Experiment (CPLEE)",
+          "publisher": "Wikipedia (secondary source summarising NASA/NSSDC catalogue and CPLEE data documentation)",
+          "url": "https://en.wikipedia.org/wiki/Charged_Particle_Lunar_Environment_Experiment"
+        },
+        {
+          "title": "Suprathermal Ion Detector Experiment (SIDE) documentation, Apollo 12 ALSEP (PDS archive; not retrieved for reading in full)",
+          "publisher": "Washington University in St. Louis, Apollo PDS archive",
+          "url": "https://an.rsl.wustl.edu/apollo/data/a12/stationLM/sid/docs/sid_psr.pdf"
+        },
+        {
+          "title": "A permanent, asymmetric dust cloud around the Moon",
+          "publisher": "Nature 522, 324-326 (2015), Springer Nature",
+          "url": "https://doi.org/10.1038/nature14479"
+        },
+        {
+          "title": "Apollo SIDE and ALSEP surface-potential summaries (secondary material from search results; primary text not verified)",
+          "publisher": "Various",
+          "url": "https://an.rsl.wustl.edu/apollo/data/a12/stationLM/sid/docs/sid_psr.pdf"
+        },
+        {
+          "title": "DUSTER: Dust Study, Transport, and Electrostatic Removal for Exploration Missions (project description)",
+          "publisher": "Belgian Institute for Space Aeronomy (BIRA-IASB) and project partners",
+          "url": "https://duster.aeronomie.be/project-description"
+        },
+        {
+          "title": "LDEX lunar-orbit dust analysis follow-up (title not verified)",
+          "publisher": "The Planetary Science Journal (IOP Publishing / AAS), 2023, DOI 10.3847/PSJ/abea7c",
+          "url": "https://doi.org/10.3847/PSJ/abea7c"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image URLs were verified, so no image objects are included; source-page references are listed in payload.article.references."
+  },
+  "data_quality_notes": [
+    "No lunar surface electrometer or other dedicated surface-potential instrument was verified in the sources read for this article; the Apollo CPLEE and SIDE instruments are used as the historical examples.",
+    "CPLEE surface potential above +200 V is disputed and is being re-evaluated per a 2017 conference abstract (full author list and title not verified).",
+    "SIDE nightside (about -100 V) and dayside (about +10 V) potentials are from secondary material and were not verified against primary Apollo data reports.",
+    "The Apollo SIDE PDS document and two NTRS Apollo reports listed in search results could not be read as text through the available tools; their use here is limited to metadata.",
+    "LDEX figures (more than 140,000 impacts; factor of about 10^4 comparison with Apollo dust densities) are from a secondary summary of the 2015 Nature paper and were not read in the primary text.",
+    "The 2023 LDEX follow-up (DOI 10.3847/PSJ/abea7c) is cited from a secondary summary; its title was not verified.",
+    "The EDA is a flight-qualified prototype (TRL 6) with laboratory results on JSC-1A simulant; no flight or lunar measurement is described.",
+    "DUSTER is a breadboard concept with no flight unit, no named target mission, and no published mass, power or dimensions.",
+    "No image of any example instrument was verified from an official asset page; all image arrays are empty and no image URLs are included.",
+    "Rice University dissertations cited in the CPLEE Wikipedia entry were not verified with URLs and are omitted from the references."
+  ]
+}

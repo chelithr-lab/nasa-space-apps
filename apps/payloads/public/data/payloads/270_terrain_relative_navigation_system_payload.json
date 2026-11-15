@@ -1,0 +1,418 @@
+{
+  "catalogue_id": 270,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 270,
+    "name": "Terrain-relative navigation system",
+    "article": {
+      "overview": "Terrain-relative navigation (TRN) is a spacecraft navigation function that estimates a vehicle's position relative to the ground during descent. A downward-facing camera photographs the surface, the images are matched against a stored map of the landing area, and the match gives a position fix that corrects the vehicle's inertial navigation estimate. NASA describes TRN as estimating position and altitude during descent 'within seconds' and, when paired with fuel for a divert, as steering a spacecraft away from medium-to-large hazards in its target zone [1]. TRN is usually a lander guidance, navigation and control (GN&C) subsystem rather than a standalone science instrument. It is best understood as an enabling technology: it does not measure the Moon directly, but it makes it possible to land more accurately, or in terrain previously considered too hazardous. Its heritage is mostly in technology demonstrations and precision-landing missions. The Mars 2020 Perseverance rover used a TRN-based 'lander vision system' for its 2021 landing, which NASA describes as the first robotic Mars mission to use vision-based navigation for safe and precise landing [1][3]. Lunar TRN has flown on a commercial lunar lander (Firefly Blue Ghost Mission 1, March 2025) [8][9], but several other lunar TRN systems have not yet been shown to reach the Moon, as detailed below.",
+      "description": "A TRN system has four main elements. (1) A camera that images the surface during descent; NASA describes the hardware as 'a camera and a computer' [1]. (2) An onboard map of the landing area, usually derived from orbital imagery. NASA states that for the Moon the maps must cover a larger area than for Mars, and that polar shadows add difficulty [1]. (3) Image-processing and matching software that compares camera frames with the map to determine the vehicle's position relative to the ground. (4) A navigation filter that fuses the map-matched position with inertial measurements to give position, velocity and attitude estimates. A 2015 AIAA paper on a Mars lander vision system prototype describes this fusion: the lander vision system 'matches descent camera images to a landing-site map and fuses the result with inertial measurements to produce high-rate position, velocity, and attitude estimates' [5]. TRN is often combined with other sensors. NASA's SPLICE (Safe and Precise Landing - Integrated Capabilities Evolution) project pairs TRN with a Hazard Detection Lidar (HDL), which maps the landing area to find hazards, and a Navigation Doppler Lidar (NDL) that measures velocity [2][6]. Camera-based TRN can struggle in shadowed terrain, which is why NASA describes the later SPLICE work as adding high-resolution lidar to detect small hazards, 'basketball-sized hazards (20-30 cm)', including in shadowed terrain where cameras cannot image [1].",
+      "scientific_purpose_and_applications": "The main purpose of TRN is precision landing and hazard avoidance. NASA describes the goals of SPLICE as enabling safer and more accurate landings on the Moon and Mars and reaching 'hard-to-access and unexplored areas of high scientific interest', including sites with hazardous boulders and nearby shadowed craters that were not practical during Apollo [2]. Applications include: pinpoint landing near a specific scientific target, rather than landing far away and driving a rover to it [2]; hazard avoidance by diverting from boulders, slopes or craters within the landing zone, using fuel carried for that purpose [1]; and landings in terrain previously too hazardous. NASA says SPLICE technologies 'will be considered for use to land the first woman and the next man on the Moon' under Artemis, and for future Mars sample return missions [2]. This is a planned consideration, not a confirmed mission use.",
+      "operating_principle": "A TRN system works in four steps during descent. (1) Image capture: a downward-facing camera photographs the surface as the vehicle descends, starting at a high altitude. For Mars 2020, the camera began matching terrain to maps at about 4.2 km above the surface [1]. (2) Feature matching: image features (craters, rocks, slopes and albedo patterns) are matched against the preloaded map. NASA describes the process as correlating 'visible terrain features to onboard maps' [1]. (3) Position estimation: the matched features yield a position fix. For the Mars 2020 system, NASA states that position estimates were produced 'all within 10 seconds' of starting imaging [1]. A 2015 prototype test reported estimates 'accurate to 40m (3 sigma) in 10 seconds on a flight like processing system' [5]. (4) Guidance use: the position correction updates the navigation state, which can be used to target a landing site or to command a divert away from hazards [1]. The method depends on reliable lighting and a map that matches the terrain as it appears in the camera view. Low sun angles can create long shadows, and changes in illumination can alter the appearance of features. These are the main reasons NASA gives for pairing TRN with lidar hazard detection in later systems [1].",
+      "scientific_importance": "TRN's scientific importance is indirect: it enables science by making it feasible to land at sites that were previously excluded. NASA states that TRN improved the Mars 2020 location estimate from '2 miles (3.2 kilometers) to 0.025 miles (40 meters) or better', and that earlier rover missions relying on Deep Space Network data had an estimated error of 'up to nearly 1.25 miles (2 kilometers)' [1]. These two NASA statements about earlier error values are not fully consistent with each other (see limitations_and_uncertainties and data_quality_notes). TRN also supports the broader goal of reaching the lunar south pole and other rough or shadowed terrain, which NASA's SPLICE and Astrobotic lidar work both target [1][2][4].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a TRN system. Its mass, size, power and processing hardware depend on the camera, computer, map storage and integration into a particular lander. The sources reviewed publish few quantitative physical values for TRN hardware; where a value is not published, this record uses null or 'not publicly specified in sources retrieved' rather than estimating it. The examples below are historical, flown, flight-tested or proposed systems. They are not directly comparable and must not be read as one class of hardware. No comparison table is provided because the accuracy values come from different missions, altitudes, processing conditions and definitions.",
+        "examples": [
+          {
+            "name": "Mars 2020 lander vision system (LVS)",
+            "type": "Flown on Mars; terrain-relative navigation for precise landing",
+            "status": "Flown. Used during the Mars 2020 Perseverance landing at Jezero Crater; the landing was scheduled for 18 February 2021 per the JPL article of 8 February 2021 [3].",
+            "function": "Terrain-relative navigation for precise landing and divert around known hazards [1][3].",
+            "published_performance": "JPL states the system determines the rover's position with an 'accuracy of about 200 feet or less' [3]. NASA states that TRN improved the location estimate to '40 meters or better' [1]. These two statements use different framings and are both quoted from NASA sources. Imaging began at 4.2 km altitude and position estimates were produced 'all within 10 seconds' [1].",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in sources retrieved.",
+            "power": "Not publicly specified in sources retrieved. NASA describes the TRN hardware as a camera and computer operating 'at relatively low power', without a numerical value [1].",
+            "source_urls": [
+              "https://www.nasa.gov/directorates/spacetech/Terrain_Relative_Navigation",
+              "https://www.jpl.nasa.gov/news/tricky-terrain-helping-to-assure-a-safe-rover-landing"
+            ],
+            "images": [
+              {
+                "id": "nasa_pia24265_edl_milestones",
+                "description": "Illustration of the events in the final minutes of the Mars 2020 Perseverance descent and landing.",
+                "image_type": "Mission illustration (Mars descent and landing)",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2022/10/pia24265_-_edl_milestones_unannotated.png",
+                "source_page_url": "https://www.nasa.gov/directorates/spacetech/Terrain_Relative_Navigation",
+                "publisher": "NASA",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "This illustration shows the events that occurred in the final minutes of the nearly seven-month journey... (abridged)",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct NASA asset URL, confirmed by HTTP 200 image/png. The caption is abridged from the NASA TRN page. The image shows the Mars descent sequence, not a lunar operation."
+              },
+              {
+                "id": "nasa_airbus_helicopter_lvs_demo",
+                "description": "Airbus helicopter in flight during the TRN Landing Vision System helicopter demonstration.",
+                "image_type": "Flight-test photograph (helicopter demonstration)",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2022/09/jpegpia23265.jpg",
+                "source_page_url": "https://www.nasa.gov/directorates/spacetech/Terrain_Relative_Navigation",
+                "publisher": "NASA",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "TDM supported TRN's Landing Vision System helicopter demonstration.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct NASA asset URL, confirmed by HTTP 200 image/jpeg. This is a flight-test image of an atmospheric helicopter demonstration, not a Mars or lunar operational image."
+              }
+            ]
+          },
+          {
+            "name": "Firefly Blue Ghost Mission 1 navigation system",
+            "type": "Lunar lander navigation with camera-based terrain matching",
+            "status": "Flown to the lunar surface. Landed on 2 March 2025 in Mare Crisium, near Mons Latreille, according to news reports [8][9].",
+            "function": "Firefly describes a navigation camera whose images are matched to 'simulated lunar imagery rendered onboard the spacecraft in real time', which 'precisely determined the position and attitude of Blue Ghost' [8].",
+            "published_performance": "Firefly's page gives no numerical accuracy figure. News reports attribute a touchdown 'within 100 metres' of the target to a Firefly program manager; the primary statement was not retrieved and this figure is not used as a verified specification [9].",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in sources retrieved.",
+            "power": "Not publicly specified in sources retrieved.",
+            "software_attribution_note": "A vendor article (not retrieved in full) attributes the TRN software to Space-ng, which Firefly's site lists as acquired by Firefly. Firefly's own page does not confirm this attribution [8][10].",
+            "source_urls": [
+              "https://fireflyspace.com/spacecraft-autonomy/"
+            ],
+            "images": []
+          },
+          {
+            "name": "NASA SPLICE terrain-relative navigation and hazard-detection suite",
+            "type": "NASA technology project (flight-tested components; proposed for lunar use)",
+            "status": "Components flight-tested on suborbital vehicles, helicopters and drones. No lunar mission flight of the complete suite is documented in the sources retrieved. NASA lists a September 2026 project closeout [2].",
+            "function": "TRN (camera-based map matching), Hazard Detection Lidar, Navigation Doppler Lidar, Hazard Detection Software, Dual Quaternion Guidance, Active TRN, and a multicore Descent and Landing Computer [2].",
+            "published_parameters": "HDL activates at about 500 m (1,640 ft) above the surface and identifies safe touchdown sites within 'an approximately 330-foot (100-meter) diameter circular space'. NDL activates at 'about 10 kilometers above the surface' [2].",
+            "flight_test_timeline_as_listed": "October 2020 and August 2021 New Shepard flights gathering TRN and Doppler-lidar data; a March 2025 helicopter test of HDL, DLC and HDS; an August 2026 closed-loop drone test of DQG and ATRN at Voyager Technologies' Lunar Surface Proving Grounds in Mojave, California; and a September 2026 project closeout [2]. The timeline was read from the NASA project page summary and not independently verified beyond that retrieval.",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in sources retrieved.",
+            "power": "Not publicly specified in sources retrieved.",
+            "source_urls": [
+              "https://www.nasa.gov/directorates/spacetech/game_changing_development/projects/SPLICE/about"
+            ],
+            "images": []
+          },
+          {
+            "name": "Draper DMEN terrain-relative navigation system",
+            "type": "Prototype terrain-relative navigation and shadow-based hazard detection (flight-tested; planned lunar use)",
+            "status": "Flight-tested; not flown on a lunar mission in the sources retrieved. Draper states its TRN software will be used on NASA CLPS delivery CP-12; the article uses future tense [7].",
+            "function": "Terrain-relative navigation and shadow-based hazard detection [7].",
+            "flight_tests_reported": "A Xodiac hazard-detection test in fall 2024, reaching 500 m altitude over a simulated hazard field; and a New Shepard NS-29 flight on 4 February 2025 that tested algorithms in simulated lunar gravity created by a controlled spin of the capsule [7].",
+            "technology_readiness_vendor_claim": "Draper reports 'TRL 6/7 for lunar descent terrain relative navigation' and 'TRL 4/5 for shadow-based hazard detection'. These are vendor self-assessments [7].",
+            "published_performance": "No accuracy, pixel-error, mass or power figures are given in the release [7].",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in sources retrieved.",
+            "power": "Not publicly specified in sources retrieved.",
+            "source_urls": [
+              "https://www.draper.com/media-center/news-releases/detail/27286/drapers-dmen-successfully-completes-the-next-phase-of-flight-testing"
+            ],
+            "images": []
+          },
+          {
+            "name": "Astrobotic OPAL terrain-relative navigation and hazard detection lidar (Peregrine and Griffin)",
+            "type": "Lunar lander TRN and hazard-detection lidar (integrated; not flown to the lunar surface as of retrieval)",
+            "status": "Integrated into Peregrine Mission One, which launched in January 2024 but suffered a propellant leak; Astrobotic's Update #16 states that 'a soft landing on the Moon is not possible' [11]. Integrated into Griffin Mission One, which NASA's page (updated 16 June 2026) describes as 'scheduled for later this year' [4]. Launch and landing status after June 2026 were not verified.",
+            "function": "TRN camera and compute system matched against onboard orbital-image maps; Hazard Detection Lidar works in tandem with TRN [4].",
+            "hazard_detection_lidar_details": "NASA says the HDL detects hazards as small as 5.9 inches (15 cm) and slopes greater than 10 degrees, and that the lander hovers at 100 m while the lidar scans the intended site [4]. The HDL engineering model flew on Astrobotic's Xodiac rocket on 11 November 2024 over the Lunar Surface Proving Ground [4].",
+            "integration_note": "NASA states that Astrobotic integrated both HDL and TRN into Griffin and ran a soft-landing simulation on a production flatsat [4]. This is a reported integration, not flight evidence.",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in sources retrieved.",
+            "power": "Not publicly specified in sources retrieved.",
+            "source_urls": [
+              "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/hazard-detection-lidar-system-goes-to-the-moon/",
+              "https://www.astrobotic.com/update-16-for-peregrine-mission-one/"
+            ],
+            "images": [
+              {
+                "id": "nasa_astrobotic_hdl_xodiac_integration",
+                "description": "Astrobotic Hazard Detection Lidar payload integrated on top of the Xodiac rocket, angled downward to view the surface during a flight test.",
+                "image_type": "Flight-test hardware integration photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2026/06/t0343-cr-astrobotic-hdl-xodiac-integ-48hr-202411.jpg",
+                "source_page_url": "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/hazard-detection-lidar-system-goes-to-the-moon/",
+                "publisher": "NASA",
+                "credit": "Astrobotic",
+                "caption": "The Hazard Detection Lidar payload, as integrated on the top of Xodiac. The lidar is the box on the left pointed down towards the ground.",
+                "section_placements": [
+                  "physical_specifications.examples[4]"
+                ],
+                "notes": "Direct NASA asset URL, confirmed by HTTP 200 image/jpeg. The image shows the HDL, not the TRN camera. Caption text was read from the NASA STMD page."
+              },
+              {
+                "id": "nasa_astrobotic_opal_peregrine_installation",
+                "description": "Astrobotic personnel installing the OPAL system onto the Peregrine lander's flight decks.",
+                "image_type": "Engineering integration photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2022/09/astrobotic_1.jpeg",
+                "source_page_url": "https://www.nasa.gov/directorates/spacetech/Terrain_Relative_Navigation",
+                "publisher": "NASA",
+                "credit": "Astrobotic",
+                "caption": "Astrobotic installs OPAL onto Peregrine's flight decks.",
+                "section_placements": [
+                  "physical_specifications.examples[4]"
+                ],
+                "notes": "Direct NASA asset URL, confirmed by HTTP 200 image/jpeg. The image shows installation hardware; it does not confirm operation on the Moon."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "No physical dimensions are published for a TRN system as a class. The camera, computer and map storage dimensions depend on the lander and sensor design. For the Mars 2020 LVS, the Draper DMEN system, the SPLICE suite and the Astrobotic OPAL system, the sources retrieved do not give dimensions for the TRN hardware. The NASA SPLICE page gives geometry of the operational envelope rather than hardware size: HDL activation at about 500 m and a safe-site zone about 100 m in diameter [2].",
+        "mass_and_weight": "Not publicly specified in the sources retrieved for any TRN example. For spacecraft engineering, mass is normally expressed in kilograms; the payload's mass affects launch requirements, lander capacity and mounting design. No mass value is assigned here.",
+        "power_requirements": "Not publicly specified in the sources retrieved. NASA describes the TRN hardware as a camera and computer that operate 'at relatively low power' without a numerical value [1]. Power is a lander-level budget item and must be determined for any specific integration."
+      },
+      "environmental_and_operational_requirements": "A TRN system must operate through the descent environment, which for the Moon means vacuum, extreme temperature cycling and radiation. As a general engineering consideration (not sourced to a specific system), camera optics need protection from dust and plume contamination. Processing must keep up with descent timelines: NASA's Mars 2020 example produced estimates within seconds [1]. Lighting and terrain are the most important operational constraints for camera-based TRN. NASA notes that polar shadows add difficulty for lunar TRN [1]. Low sun angles, dark shadows and features that change appearance with illumination can all reduce matching performance [1][2]. The map must be prepared before the mission and must cover the landing zone at adequate resolution, so TRN is tied to the availability and quality of orbital imagery.",
+      "limitations": "Dependence on maps: TRN can only correct position where a suitable map exists, and map resolution and accuracy limit the matching. NASA states that lunar maps need to cover larger areas than Mars maps [1]. Lighting and shadows: camera-based matching can fail where shadows dominate; NASA's SPLICE work adds lidar hazard detection to address this [1][2]. Limited lunar flight heritage: as of this research, only Firefly Blue Ghost Mission 1 is reported as a lunar landing that used a TRN-type navigation system; Astrobotic OPAL and Draper DMEN were tested, integrated or planned but have not been shown to operate on the lunar surface in the sources retrieved [4][7][11]. Performance claims come from different tests and definitions: the 200 ft, 40 m and 10-second figures are not directly comparable. Vendor and project claims: technology readiness levels, landing accuracies and demonstration outcomes from companies are self-reported and were not independently verified.",
+      "transportation_and_deployment": {
+        "overview": "TRN is a navigation function, not a separately deployed payload. It is integrated into the lander or descent vehicle rather than deployed from it. The surface-payload considerations below are therefore integration considerations for a lander subsystem.",
+        "transportation_process": [
+          "Earth integration: the camera, computer and map storage are integrated into the lander avionics, with the camera mounted to view the surface during descent. Astrobotic's OPAL was installed onto Peregrine's flight decks as part of this integration [1].",
+          "Launch and lunar transfer: TRN is inactive during launch and cruise. Its environmental tolerance must cover launch vibration and the transfer environment.",
+          "Landing delivery: TRN runs during final descent. NASA's TRN description says it estimates position and altitude 'during descent, within seconds' [1].",
+          "Deployment, setup, power and data: no separate deployment is required. TRN uses the lander's power and processing; NASA describes the hardware as low power [1]. The data are navigation estimates delivered to the guidance system.",
+          "Thermal and mechanical interfaces: camera optics require thermal and contamination control, and the camera mounting must be stable enough for matching."
+        ],
+        "deployment_methods": "No separate deployment mechanism is documented for TRN. It is a fixed, lander-mounted sensor and compute system. Any deployment considerations belong to the lander or the other payloads it carries, not to TRN itself.",
+        "historical_examples": "Firefly Blue Ghost Mission 1 used a TRN-type navigation system during its March 2025 lunar landing [8][9]. Mars 2020 used a TRN-based lander vision system during its 2021 Mars landing [1][3]. Astrobotic installed OPAL onto Peregrine's flight decks in 2022, but Peregrine did not land on the Moon [1][11].",
+        "compatibility_assessment": "NASA states that Astrobotic integrated HDL and TRN into Griffin and ran a soft-landing simulation on a production flatsat [4]. This is a reported integration, not flight evidence. No compatibility with any other specific lander, rover or spacecraft is asserted. Verified interface data (mass, mounting points, power, data bus) were not retrieved for any lander.",
+        "images": []
+      },
+      "historical_significance": "2014: Masten's Xombie vehicle flew two flights in the Mojave Desert as part of early lander vision system tests [1][3]. NASA's TRN page places these flights in 2013-2014 [1]; the JPL article describes them as 2014 [3]. 2019: a helicopter demonstration over Death Valley and a Masten Xodiac test of a TRN system supported development [1][3]. 2020-2021: Blue Origin New Shepard suborbital flights gathered TRN data (October 2020 and August 2021) [2]. February 2021: Mars 2020 Perseverance used a TRN-based lander vision system during its landing at Jezero Crater; NASA states this was the first robotic Mars mission to use vision-based navigation for safe and precise landing [1][3]. 2024-2025: Draper flew TRN and shadow-based hazard detection tests on Xodiac (fall 2024) and New Shepard NS-29 (4 February 2025) [7]; Astrobotic's HDL flew on Xodiac on 11 November 2024 [4]. March 2025: Firefly Blue Ghost Mission 1 landed in Mare Crisium using a TRN-type navigation system, according to news and vendor reports [8][9]. Pending: Astrobotic's Griffin Mission One, with HDL and TRN, was scheduled for later in 2026 as of June 2026 [4]; its status as of November 2026 was not verified.",
+      "limitations_and_uncertainties": "Mixed evidence quality: the strongest evidence for TRN performance comes from NASA and JPL pages, which are project summaries rather than peer-reviewed test reports. The 2015 AIAA paper provides a test-based accuracy statement [5], but its full altitude and test conditions were not retrieved. Inconsistent NASA error statements: NASA's TRN page gives both '2 miles (3.2 kilometers)' to '0.025 miles (40 meters) or better' for Mars 2020 and 'up to nearly 1.25 miles (2 kilometers)' for earlier missions. These are not reconciled in the source. JPL gives 'about 200 feet or less' for Mars 2020 [1][3]. Blue Ghost navigation performance: the primary Firefly page gives no numeric landing accuracy, and the 'within 100 metres' figure comes from news reports; the landing date is from news coverage rather than a Firefly primary page [8][9]. Space-ng attribution: the attribution of Blue Ghost's TRN software to Space-ng rests on a vendor article not retrieved in full and not confirmed by Firefly's page [8][10]. Draper figures: TRL values and flight descriptions are from a vendor news release; the release caption refers to a '24th mission' for New Shepard while the text identifies the flight as NS-29, which was not reconciled [7]. Peregrine: OPAL was integrated into Peregrine, but the lander did not reach the Moon, so OPAL lunar performance is unknown [11]. Griffin status: NASA's June 2026 page says Griffin is 'scheduled for later this year'; launch, landing or post-launch results after that date were not retrieved [4]. Unretrieved sources: a 2021 paper on Mars 2020 LVS map construction (Cheng, Ansar and Johnson, Earth and Space Science, DOI 10.1029/2020EA001560) was identified but could not be retrieved (HTTP 403); no claim in this record depends on it [12]. No lunar landing-site or location recommendations are included, per the user's instruction.",
+      "images": [
+        {
+          "id": "jpl_mars2020_lvs_landing_technique",
+          "description": "Illustration of the Mars 2020 lander vision system concept, which is based on terrain-relative navigation.",
+          "image_type": "Engineering concept illustration",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/Mars2020-Landing-Technique.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/news/tricky-terrain-helping-to-assure-a-safe-rover-landing",
+          "publisher": "NASA JPL",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Mars 2020's Perseverance rover is equipped with a lander vision system based on terrain-relative navigation.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct JPL image-CDN asset URL, confirmed by HTTP 200 image/jpeg. The caption is verbatim from the JPL page, which also lists a width-1024 variant that was not used."
+        },
+        {
+          "id": "nasa_pia24265_edl_milestones",
+          "description": "Illustration of the events in the final minutes of the Mars 2020 Perseverance descent and landing.",
+          "image_type": "Mission illustration (Mars descent and landing)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/10/pia24265_-_edl_milestones_unannotated.png",
+          "source_page_url": "https://www.nasa.gov/directorates/spacetech/Terrain_Relative_Navigation",
+          "publisher": "NASA",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "This illustration shows the events that occurred in the final minutes of the nearly seven-month journey... (abridged)",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA asset URL, confirmed by HTTP 200 image/png. The caption is abridged from the NASA TRN page. The image shows the Mars descent sequence, not a lunar operation."
+        },
+        {
+          "id": "nasa_airbus_helicopter_lvs_demo",
+          "description": "Airbus helicopter in flight during the TRN Landing Vision System helicopter demonstration.",
+          "image_type": "Flight-test photograph (helicopter demonstration)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/09/jpegpia23265.jpg",
+          "source_page_url": "https://www.nasa.gov/directorates/spacetech/Terrain_Relative_Navigation",
+          "publisher": "NASA",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "TDM supported TRN's Landing Vision System helicopter demonstration.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA asset URL, confirmed by HTTP 200 image/jpeg. This is a flight-test image of an atmospheric helicopter demonstration, not a Mars or lunar operational image."
+        },
+        {
+          "id": "nasa_astrobotic_opal_peregrine_installation",
+          "description": "Astrobotic personnel installing the OPAL system onto the Peregrine lander's flight decks.",
+          "image_type": "Engineering integration photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/09/astrobotic_1.jpeg",
+          "source_page_url": "https://www.nasa.gov/directorates/spacetech/Terrain_Relative_Navigation",
+          "publisher": "NASA",
+          "credit": "Astrobotic",
+          "caption": "Astrobotic installs OPAL onto Peregrine's flight decks.",
+          "section_placements": [
+            "physical_specifications.examples[4]"
+          ],
+          "notes": "Direct NASA asset URL, confirmed by HTTP 200 image/jpeg. The image shows installation hardware; it does not confirm operation on the Moon."
+        },
+        {
+          "id": "nasa_astrobotic_hdl_xodiac_integration",
+          "description": "Astrobotic Hazard Detection Lidar payload integrated on top of the Xodiac rocket, angled downward to view the surface during a flight test.",
+          "image_type": "Flight-test hardware integration photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2026/06/t0343-cr-astrobotic-hdl-xodiac-integ-48hr-202411.jpg",
+          "source_page_url": "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/hazard-detection-lidar-system-goes-to-the-moon/",
+          "publisher": "NASA",
+          "credit": "Astrobotic",
+          "caption": "The Hazard Detection Lidar payload, as integrated on the top of Xodiac. The lidar is the box on the left pointed down towards the ground.",
+          "section_placements": [
+            "physical_specifications.examples[4]"
+          ],
+          "notes": "Direct NASA asset URL, confirmed by HTTP 200 image/jpeg. The image shows the HDL, not the TRN camera. Caption text was read from the NASA STMD page."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "jpl_mars2020_lvs_landing_technique",
+          "description": "Illustration of the Mars 2020 lander vision system concept, which is based on terrain-relative navigation.",
+          "image_type": "Engineering concept illustration",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/Mars2020-Landing-Technique.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/news/tricky-terrain-helping-to-assure-a-safe-rover-landing",
+          "publisher": "NASA JPL",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Mars 2020's Perseverance rover is equipped with a lander vision system based on terrain-relative navigation.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct JPL image-CDN asset URL, confirmed by HTTP 200 image/jpeg. The caption is verbatim from the JPL page, which also lists a width-1024 variant that was not used."
+        },
+        {
+          "id": "nasa_pia24265_edl_milestones",
+          "description": "Illustration of the events in the final minutes of the Mars 2020 Perseverance descent and landing.",
+          "image_type": "Mission illustration (Mars descent and landing)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/10/pia24265_-_edl_milestones_unannotated.png",
+          "source_page_url": "https://www.nasa.gov/directorates/spacetech/Terrain_Relative_Navigation",
+          "publisher": "NASA",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "This illustration shows the events that occurred in the final minutes of the nearly seven-month journey... (abridged)",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA asset URL, confirmed by HTTP 200 image/png. The caption is abridged from the NASA TRN page. The image shows the Mars descent sequence, not a lunar operation."
+        }
+      ],
+      "references": [
+        {
+          "reference_number": 1,
+          "title": "Terrain Relative Navigation (TRN)",
+          "publisher": "NASA Space Technology Mission Directorate",
+          "publication_date": "2022-09-30",
+          "page_last_updated": "2026-06-22",
+          "url": "https://www.nasa.gov/directorates/spacetech/Terrain_Relative_Navigation"
+        },
+        {
+          "reference_number": 2,
+          "title": "Safe and Precise Landing - Integrated Capabilities Evolution (SPLICE)",
+          "publisher": "NASA Game Changing Development project page",
+          "publication_date": "introduced October 2017 (per page)",
+          "url": "https://www.nasa.gov/directorates/spacetech/game_changing_development/projects/SPLICE/about"
+        },
+        {
+          "reference_number": 3,
+          "title": "Tricky Terrain Helping to Assure a Safe Rover Landing",
+          "publisher": "NASA JPL",
+          "publication_date": "2021-02-08",
+          "url": "https://www.jpl.nasa.gov/news/tricky-terrain-helping-to-assure-a-safe-rover-landing"
+        },
+        {
+          "reference_number": 4,
+          "title": "Hazard Detection Lidar System Goes to the Moon",
+          "publisher": "NASA Space Technology Mission Directorate, Flight Opportunities",
+          "publication_date": "page updated 2026-06-16",
+          "url": "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/hazard-detection-lidar-system-goes-to-the-moon/"
+        },
+        {
+          "reference_number": 5,
+          "title": "Real-time Terrain Relative Navigation Test Results from a Relevant Environment for Mars Landing",
+          "publisher": "AIAA SciTech 2015 (NASA Technical Reports Server record 20160009627)",
+          "authors": "Andrew E. Johnson, Yang Cheng, James Montgomery, Nikolas Trawny, Brent Tweddle, Jason Zheng",
+          "publication_date": "2015-01-05",
+          "url": "https://ntrs.nasa.gov/citations/20160009627"
+        },
+        {
+          "reference_number": 6,
+          "title": "Next Generation NASA Hazard Detection System Development",
+          "publisher": "AIAA SciTech Forum 2019 (NASA Technical Reports Server record 20190034132)",
+          "authors": "Carolina I. Restrepo, Po-Ting Chen, Ronald R. Sostaric, John M. Carson",
+          "publication_date": "2020-06-06 (record date; conference held 6-10 January 2020)",
+          "url": "https://ntrs.nasa.gov/citations/20190034132",
+          "notes": "Abstract only; PDF not readable in this research and the abstract gives no performance figures. Cited for SPLICE hazard-detection context."
+        },
+        {
+          "reference_number": 7,
+          "title": "Draper's DMEN Successfully Completes the Next Phase of Flight Testing",
+          "publisher": "Draper (news release)",
+          "publication_date": "2025-03-04",
+          "url": "https://www.draper.com/media-center/news-releases/detail/27286/drapers-dmen-successfully-completes-the-next-phase-of-flight-testing"
+        },
+        {
+          "reference_number": 8,
+          "title": "Spacecraft Autonomy",
+          "publisher": "Firefly Aerospace",
+          "publication_date": "not stated on page",
+          "url": "https://fireflyspace.com/spacecraft-autonomy/"
+        },
+        {
+          "reference_number": 9,
+          "title": "News coverage of the Blue Ghost Mission 1 landing (secondary; primary Firefly or NASA CLPS report not retrieved)",
+          "publisher": "Multiple news outlets",
+          "publication_date": "2025-03-02 (landing date as reported)",
+          "url": null,
+          "notes": "Cited for the landing date, site and the 'within 100 metres' touchdown statement. No single outlet URL is used as a canonical source; the URL is therefore null."
+        },
+        {
+          "reference_number": 10,
+          "title": "AstroVision, Lunar Optical Navigation, Demonstrated at Space Symposium",
+          "publisher": "Space-ng / ExTerra JSC (vendor article; not retrieved in full)",
+          "publication_date": "not confirmed",
+          "url": "https://www.exterrajsc.com/p/astrovision-lunar-optical-navigation",
+          "notes": "Cited only as a vendor claim about the software's role; not used for any numerical specification."
+        },
+        {
+          "reference_number": 11,
+          "title": "Update #16 for Peregrine Mission One",
+          "publisher": "Astrobotic",
+          "publication_date": "01|13|24 (inferred as 13 January 2024; format not stated on page)",
+          "url": "https://www.astrobotic.com/update-16-for-peregrine-mission-one/"
+        },
+        {
+          "reference_number": 12,
+          "title": "Making an Onboard Reference Map From MRO/CTX Imagery for Mars 2020 Lander Vision System",
+          "publisher": "Cheng, Ansar and Johnson, Earth and Space Science (2021)",
+          "publication_date": "2021",
+          "url": "https://doi.org/10.1029/2020EA001560",
+          "notes": "Not retrieved (HTTP 403). Identified as a further-reading pointer only; no claim in this record depends on it."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Mars 2020 lander vision system example": "payload.article.physical_specifications.examples[0].images",
+      "Astrobotic OPAL and Griffin example": "payload.article.physical_specifications.examples[4].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images are displayed in this section of the Markdown; the array is empty)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Image URLs were confirmed by HTTP GET (200 with image content type). Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Catalogue check: ID 270, name 'Terrain-relative navigation system' and category 14 'Robotics, mobility and deployment technology' were confirmed against lunar_payloads_catalogue_320.md.",
+    "NASA TRN page gives two inconsistent earlier-error statements: Mars 2020 improved 'from 2 miles (3.2 kilometers) to 0.025 miles (40 meters) or better', and earlier rover missions had an error of 'up to nearly 1.25 miles (2 kilometers)'. Not reconciled in the source.",
+    "JPL (8 February 2021) gives Mars 2020 accuracy as 'about 200 feet or less'; NASA gives '40 meters or better'. Both are retained with attribution.",
+    "Blue Ghost Mission 1 landing date (2 March 2025) and 'within 100 metres' touchdown statement come from news coverage. The Firefly primary page gives no date or accuracy figure. The primary Firefly or NASA CLPS report was not retrieved. Reference 9 has no canonical URL.",
+    "Attribution of Blue Ghost's TRN software to Space-ng is a vendor claim (reference 10, not retrieved in full) and is not confirmed by Firefly's page.",
+    "Draper DMEN: TRL values are vendor self-assessments. The release caption refers to a '24th mission' for New Shepard while the text identifies the flight as NS-29; not reconciled. No accuracy or hardware figures are given.",
+    "Astrobotic Peregrine Update #16 is dated '01 | 13 | 24'; interpreted here as 13 January 2024 (format inferred). The update states that a soft landing is not possible; OPAL did not operate on the lunar surface.",
+    "Griffin Mission One status: NASA page (updated 16 June 2026) says 'scheduled for later this year'. Launch and landing status as of 13 November 2026 were not verified.",
+    "NASA SPLICE project timeline (including the March 2025 helicopter test, the August 2026 drone test and the September 2026 closeout) was read from the NASA project page summary. The August 2026 and September 2026 rows were quoted from the page text retrieved; they were not independently verified beyond that retrieval.",
+    "2015 AIAA paper (reference 5): accuracy statement '40m (3 sigma) in 10 seconds' is from the abstract. Test altitudes, vehicle details and conditions were not retrieved.",
+    "2019/2020 NASA Technical Reports Server paper (reference 6): only the record and abstract were retrieved; the PDF was not readable in this research and the abstract gives no performance values.",
+    "The 2021 Cheng, Ansar and Johnson paper on Mars 2020 LVS map construction (reference 12) could not be retrieved (HTTP 403 from the publisher). It is cited as a further-reading pointer only; any figures reported in its search snippet were not used.",
+    "A 2024 relative-navigation algorithm paper (Parracino et al.) was seen only in a search summary and was not retrieved; it is not used in this record.",
+    "Helicopter test year discrepancy: NASA TRN page places the Masten Xombie flights in '2013-2014' while the JPL article says '2014 field tests'. Both are retained with attribution.",
+    "Mass, dimensions and power of all TRN hardware examples are not publicly specified in the sources retrieved. These are recorded as null or 'not publicly specified in sources retrieved' and no values were estimated.",
+    "Image captions were read from source pages through summaries of the page text, not from the images themselves. Captions are verbatim where quoted; abridged captions are marked as such.",
+    "Image rights: NASA, JPL and Astrobotic credits are recorded; reuse conditions should be confirmed against each source page before republication.",
+    "No lunar landing-site or location recommendations are included, per the user's deferral.",
+    "No person is described with pronouns in this record; where named authors appear, no pronoun is assigned."
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 1,
+    "name": "Geophysical and lunar interior instruments"
+  },
+  "payload": {
+    "number": 24,
+    "name": "Libration measurement instrument",
+    "article": {
+      "scope": "This article covers instruments and hardware used to measure lunar libration: the periodic wobble in the Moon's rotation and orientation. Two kinds of libration matter. Physical libration is the small oscillation of the Moon's rotation caused by torques on its non-spherical body. Optical libration is the much larger apparent wobble seen from Earth, caused by the changing viewing geometry of the Moon's orbit. No dedicated libration sensor was found in the sources read. The payload class is therefore described through the hardware that measures libration in practice: laser retroreflector arrays on the lunar surface, the ground laser-ranging observations that use them, and one orbital-altimetry approach. Overlaps are stated where they occur. Payload 185 (Laser ranging instrument) covers the laser ranging technique and its ground stations. Payload 187 (Lunar geodesy experiment) covers the reference frames and positions that libration results feed into. Payload 018 (Tiltmeter), payload 025 (Tidal deformation sensor) and payload 023 (Lunar interior monitoring station) cover tilt, tidal response and integrated stations respectively. This article describes only the orientation and libration aspects of these hardware types.",
+      "overview": "The Moon does not spin at a perfectly uniform rate, and its rotation axis does not hold perfectly still. Gravitational torques from the Earth, the Sun and the planets cause small oscillations in the Moon's orientation, and the shape of the Moon's mass distribution determines their size. These oscillations carry information about the Moon's internal structure. Scientists measure them mainly by timing laser pulses that travel from Earth to retroreflectors left on the surface. Each retroreflector is a passive optical target that sends light back toward its source. The round-trip travel time gives the distance, and the way that distance changes over many months reveals how the Moon is oriented.\n\nFive existing lunar retroreflector arrays are on the Moon [1]. Three are Apollo arrays (Apollo 11, Apollo 14 and Apollo 15), and two are French-built reflectors carried by the Soviet Lunokhod 1 and Lunokhod 2 rovers [1][2]. A new single-cube design, the Next Generation Laser Retroreflector (NGLR-1), landed on the Moon in March 2025 and was deployed the same day, according to a project status report [6]. The first measured results from it are reported as preliminary and were made by the project team.",
+      "description": "A libration measurement is not made by a single sensor on the Moon. It is made by timing laser pulses to retroreflector arrays and then fitting a model of the Moon's rotation to the timing data. The surface hardware is simple. Each array holds many small corner-cube prisms, which reflect a beam back along its own path. The ground part of the system is a laser ranging station on Earth, which fires short pulses and records the returns. Four observatories have regularly ranged the Moon with these reflectors [3][1].\n\nBecause the Moon is about 385,000 km away, a small change in the array's orientation changes the path length of the return. An angle of one arcsecond corresponds to about 1.8 km at the Moon's distance [2], which is why small libration effects become measurable. The effect is not only a shift in distance. When an array is tilted, its prisms sit at different distances from the observer, so the return pulse is spread in time. That spreading is a key limit on the precision of the measurement, as discussed below [1][2].\n\nThe payload class therefore has three parts: passive reflector hardware on the surface, the ground stations that observe it, and the analysis software that converts ranges into orientation and interior parameters. This article focuses on the first part, while describing the others where they limit or enable the measurement.",
+      "scientific_purpose_and_applications": "The main purpose of libration measurement is to determine the Moon's physical orientation and its internal mass distribution. Physical libration responds to the Moon's triaxial mass distribution, so measured libration constrains the principal moments of inertia, and the phase and size of its periodic terms carry information about the interior. The Williams et al. (2023) paper describes these oscillations as Fourier-series terms whose size and phase carry lunar science information [1].\n\nLaser ranging results have produced specific values. Using physical libration, LLR has determined the relative differences in the Moon's principal moments of inertia, (C − A)/B ≈ 6.3 × 10⁻⁴ and (B − A)/C ≈ 2.3 × 10⁻⁴, to the 0.05 % level. The polar moment is found to be C = 0.393 ± 0.001 M R², where a uniform-density sphere would have 0.4 [2]. The lunar quadrupole moment J2 is also fitted from the data [2]. Murphy (2013) also reports a lunar Love number h2 of about 0.04 and a tidal dissipation quality factor Q ≈ 33 ± 4 at the monthly tidal period, both derived from LLR [2].\n\nLibration data also support the reference frames used for navigation and geodesy. The NGLR project status report notes that retroreflector arrays are the primary tie points for selenodetic reference frames [6]. Libration results are also used to check model differences between LLR analysis groups. Murphy (2013) reports that, because most observing sessions measure several reflectors, the Apollo data give a nearly direct measurement of lunar orientation, and that the libration adjustments needed to fit the data differ between analysis groups [2].\n\nAn orbital approach is also possible. Stark et al. (2018) describe a method that measures the Moon's rotation from laser altimeter data, using polar terrain models from the Lunar Reconnaissance Orbiter's LOLA instrument. The authors report small oscillations of the rotation axis of the order of ten arcseconds that agree with LLR-based models, but they state that the method cannot yet improve on LLR [7].",
+      "operating_principle": "The operating principle has two parts: the reflector optics and the timing measurement.\n\nReflector optics. A corner-cube prism returns light along the direction it arrived from. Each Apollo and Lunokhod array is built from many prisms, and each prism is a small glass cube with three mutually perpendicular faces. The Apollo 11 and 14 reflectors have 100 fused-silica corner cubes, each 3.8 cm in diameter. The Apollo 15 reflector has 300 prisms of the same size [1]. The Lunokhod arrays have 14 larger triangular corner cubes [1][2]. The 10 cm NGLR and MoonLIGHT reflectors use a single solid fused-silica corner cube each, with total internal reflection on the rear faces [1].\n\nTiming. An Earth-based station fires a short laser pulse toward the Moon, and a telescope records the return. The round-trip time gives the distance. Murphy (2013) describes the challenge: the return signal is very weak. Only about one in 25 million launched photons strikes the small reflectors, and the return beam is further diverged by diffraction and by atmospheric turbulence [2]. Many photons must be collected to reach millimetre-level statistical precision. Murphy gives an example in which a 200 ps RMS pulse spread corresponds to about 30 mm of one-way distance and needs about 900 photons to reach a statistical uncertainty near 1 mm [2].\n\nPulse spreading from libration. The main effect of libration on the measurement is the spreading of the return pulse. Arrays rarely face the Earth exactly, so the beam strikes the array at an angle, typically about 0.1 rad. The spread in return time is about 0.1 rad multiplied by half the array dimension. Williams et al. (2023) give maximum spreads of about 3 cm for the Lunokhod arrays, about 6 cm for the Apollo 11 and 14 arrays, and about 11 cm for the Apollo 15 array [1]. Murphy (2013) gives a full width at half maximum of up to about 1 ns (150 mm one-way) for the Apollo 15 array, or an RMS above 300 ps [2]. Single large corner cubes do not spread the pulse in this way, which is why the next-generation designs use them [1].\n\nFrom range to libration. Libration is not measured directly by an on-surface sensor. The measured ranges are fitted to a model of the Moon's orbit and rotation. The orientation parameters are adjusted until the residuals are minimised. Murphy (2013) compares the libration adjustments from four analysis groups. The JPL solution gives weighted RMS adjustments of 5.1 nrad in longitude and 7.3 nrad in latitude. The CfA, Hannover and Paris solutions give larger values [2]. For scale, 1 nrad corresponds to about 0.7 mm of range at the position of an Apollo reflector [2].",
+      "scientific_importance": "Libration measurement is important because it gives a direct link between surface orientation and the Moon's internal structure. The Moon's triaxial mass distribution, which produces physical libration, depends on the interior. The LLR results have therefore been used to determine the lunar moments of inertia and the dissipation of tidal energy in the interior [2].\n\nThe Apollo arrays have supported these results for more than five decades. Williams et al. (2023) state that the LLR range uncertainty has improved by a factor of 100 over that period [1]. The NGLR project report states that the arrays have produced the discovery of a liquid core and dissipation in the mantle, and that the same long data series supports tests of general relativity [6]. These claims are summarised from a project report and were not checked against the original papers in this run.\n\nThe new single-cube reflectors are expected to improve the measurement. Williams et al. (2023) state that a single 10 cm corner cube should not spread the pulse on reflection, and that the larger cube is expected to be brighter than the small Apollo prisms [1]. The NGLR-1 project team reports a dispersion improvement of a factor of 17 relative to the Apollo 15 array during the first month, and expects the overall precision of the science results to improve by a factor of ten or more [6]. These are project expectations and early results, not peer-reviewed results.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a libration measurement instrument. The payload class is made up of passive optical targets on the surface and ground-based observing systems, so there is no single mass, power or size. Mass and power are given only for named hardware where a value is published in the sources read. A passive corner-cube array does not draw power or transmit telemetry, so for these examples the power entry is \"not applicable (passive)\". Where a mass is not published in the sources read, the value is given as not published rather than inferred.",
+        "examples": [
+          {
+            "name": "Apollo 11 and Apollo 14 Laser Ranging Retroreflector arrays",
+            "type": "Flown passive lunar retroreflector array (historical)",
+            "flight_status": "Flown on the Moon",
+            "details": [
+              "Status: Flown on the Moon. The Apollo 11 array was placed by the astronauts in 1969 [1]. The Apollo 14 array was placed during the Apollo 14 mission in 1971. The exact placement date was not verified in the sources read.",
+              "Configuration: A 10 × 10 square pattern of 100 fused-silica corner cubes, each 3.8 cm in diameter, mounted in a 46 × 46 cm array [1][3]. The two arrays are described as identical [3].",
+              "Mass, power and package dimensions: Not published in the sources read. The array is passive, so no power requirement applies.",
+              "Alignment: The Apollo arrays were aligned by the astronauts to point at the centre of the Earth, with compensation for the lunar optical librations at the time of placement [1].",
+              "Thermal design: The Apollo 11 array was designed to limit temperature differences across the corner cubes as the sunlight on the array changes with the lunar phase, so that thermal distortion does not significantly reduce the returned light [3]."
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 15 Laser Ranging Retroreflector array",
+            "type": "Flown passive lunar retroreflector array (historical)",
+            "flight_status": "Flown on the Moon",
+            "details": [
+              "Status: Flown on the Moon. The array was placed during the Apollo 15 mission in 1971. The exact placement date was not verified in the sources read.",
+              "Configuration: 300 corner cubes, each 3.8 cm in diameter, in an array of 105 × 65 cm. It is the largest of the Apollo arrays [1][5].",
+              "Performance notes: Murphy (2013) reports that the array's temporal response is sensitive to libration, and that the array appears to have a 2-degree azimuth offset, with otherwise nominal tilts. The degree symbol is lost in the text layer, so the value is read as 2 degrees [2].",
+              "Mass, power and package dimensions: Not published in the sources read. The array is passive."
+            ],
+            "images": [
+              {
+                "id": "lro_apollo15_lrrr_annotated_view",
+                "description": "Annotated Lunar Reconnaissance Orbiter Narrow Angle Camera view of the Apollo 15 Lunar Laser Ranging Retroreflector (LRRR) on the lunar surface, with other surface features labelled.",
+                "image_type": "Orbital spacecraft image (annotated)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia13/pia13037/PIA13037.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/the-apollo-15-lunar-laser-ranging-retroreflector-a-fundamental-point-on-the-moon/",
+                "publisher": "NASA/GSFC/Arizona State University (NASA Photojournal PIA13037)",
+                "credit": "NASA/GSFC/Arizona State University",
+                "caption": "Annotated view from the Lunar Reconnaissance Orbiter Narrow Angle Camera, showing the Apollo 15 Lunar Laser Ranging Retroreflector (LRRR, circled) among other surface features. The reflector appears as a few pixels.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct NASA asset URL with no query string or fragment. Verified HTTP 200 with image/jpeg content and visually inspected. The full JPEG download (about 70 KB) was checked; the TIFF download was not. The NASA page gives a credit line only and refers to NASA usage guidelines for reuse. Scale is about 52 cm per pixel; the scene is about 391 m wide; it is a subset of NAC frame M111578606LE."
+              }
+            ]
+          },
+          {
+            "name": "Lunokhod 1 and Lunokhod 2 reflector arrays",
+            "type": "Flown passive lunar retroreflector arrays (rover-carried)",
+            "flight_status": "Flown on the Moon",
+            "details": [
+              "Status: Flown on the Moon. The reflectors were carried by the Lunokhod 1 rover, landed with Luna 17 in 1970, and by the Lunokhod 2 rover, landed with Luna 21 in 1973 [4].",
+              "Configuration: Each array has 14 corner cubes in a triangular arrangement. The triangular edge length is 11 cm, and the rear surfaces are silvered [2][1]. The optical aperture of each corner cube is hexagonal, measuring 7.1 × 6.2 cm [1]. The complete array package is 44 cm long and 19 cm across [1][4].",
+              "Performance notes: The Lunokhod response falls between the 100-element and 300-element Apollo arrays in nominal prediction [2]. Murphy (2013) states that Lunokhod 2 now gives about 10 % of the return strength of the Apollo 15 array [2]. Lunokhod 1 is farther from the apparent lunar centre than the Apollo arrays, so it is sensitive to librations in both latitude and longitude, whereas each Apollo array is mostly sensitive to one principal libration direction [2].",
+              "Mass and power: Not published in the sources read. The arrays are passive."
+            ],
+            "images": []
+          },
+          {
+            "name": "Next Generation Laser Retroreflector (NGLR-1)",
+            "type": "Flown passive single-cube retroreflector (2025), project-reported early results",
+            "flight_status": "Flown on the Moon in 2025 (project self-report)",
+            "details": [
+              "Status: Flown on the Moon in 2025. The project status report states that NGLR-1 landed on the Moon on the Firefly Blue Ghost lander on 2 March 2025 and was deployed the same day [6]. This is a project self-report and has not been independently checked in this run.",
+              "Configuration: A single fused-silica corner cube of 10.0 cm diameter, with total internal reflection and a circular aperture of 79 cm² [1].",
+              "Early results (preliminary, project-reported): The Grasse station obtained more than 1,000 individual range measurements on 3 March 2025 and further measurements on 4 March. The Wettzell and Apache Point stations also made measurements. Wettzell reports normal-point precisions of 0.79 and 1.14 mm. Over the first month the project reports a dispersion improvement of a factor of 17 relative to the Apollo 15 array [6].",
+              "Cross-section (preliminary): The project reports the NGLR-1 cross-section as 100 % ± 18 % of the Apollo 11 array when calibrated against the Apollo 15 array, and 65 % ± 17 % when calibrated against the average of the Apollo 11 and 14 arrays. The two calibrations give different values. The report also gives values for a theoretical polarisation correction, 180 % ± 32 % and 117 % ± 31 % respectively [6].",
+              "Mass, power and mounting: Not published in the sources read."
+            ],
+            "images": []
+          },
+          {
+            "name": "MoonLIGHT retroreflector (planned)",
+            "type": "Planned passive single-cube retroreflector with pointing actuator",
+            "flight_status": "Planned; not flown according to the sources read",
+            "details": [
+              "Status: Planned. Williams et al. (2023) describe MoonLIGHT as a 10 cm solid fused-silica corner cube with total internal reflection, scheduled for a Commercial Lander Payload Services mission at the time of writing [1]. The schedule has since changed, and the sources consulted in this run did not confirm a launch, landing or deployment. It is therefore treated here as not flown.",
+              "Configuration: A single 10 cm corner cube, with a MoonLIGHT Pointing Actuator intended to re-point the reflector toward the mean Earth direction after landing [1].",
+              "Mass, power and dimensions beyond the corner cube: Not published in the sources read."
+            ],
+            "images": []
+          },
+          {
+            "name": "LOLA-based rotation measurement (orbital, existing data)",
+            "type": "Analysis of existing orbital laser altimeter data",
+            "flight_status": "Analysis of an instrument flown for topography; not a dedicated libration instrument",
+            "details": [
+              "Status: Analysis of existing data from an orbiting instrument. Stark et al. (2018) describe the method in a conference abstract [7]. The instrument, the Lunar Orbiter Laser Altimeter on the Lunar Reconnaissance Orbiter, was not designed to measure libration.",
+              "Data used: Almost 50 million LOLA footprints from the north pole (6441 profiles) and the south pole (7062 profiles) [7].",
+              "Result (as stated in the abstract): Recovery of small oscillations in the orientation of the lunar rotation axis, of the order of ten arcseconds, in agreement with LLR-based models. The authors state that the estimates cannot yet improve on LLR [7].",
+              "Mass, power and dimensions: Not applicable to this example as a payload. The instrument is documented elsewhere."
+            ],
+            "images": []
+          }
+        ],
+        "comparison_table_retroreflector_hardware": {
+          "note": "The table below compares only the retroreflector fields that are reported in the same form by Williams et al. (2023) [1]. The Lunokhod reflector package is not directly comparable with the Apollo arrays in construction, and the NGLR and MoonLIGHT entries are single cubes, not arrays.",
+          "rows": [
+            {
+              "Site": "Apollo 11 and 14",
+              "Number of corner cubes": "100",
+              "Array size (cm)": "46 × 46",
+              "Corner cube size and aperture": "3.8 cm circular",
+              "Reflection": "Total internal reflection",
+              "Status in sources read": "Flown"
+            },
+            {
+              "Site": "Apollo 15",
+              "Number of corner cubes": "300",
+              "Array size (cm)": "105 × 65",
+              "Corner cube size and aperture": "3.8 cm circular",
+              "Reflection": "Total internal reflection",
+              "Status in sources read": "Flown"
+            },
+            {
+              "Site": "Lunokhod 1 and 2",
+              "Number of corner cubes": "14",
+              "Array size (cm)": "44 × 19",
+              "Corner cube size and aperture": "Hexagonal aperture 7.1 × 6.2 cm; 11 cm triangular edges [2]",
+              "Reflection": "Silver",
+              "Status in sources read": "Flown"
+            },
+            {
+              "Site": "NGLR-1",
+              "Number of corner cubes": "1",
+              "Array size (cm)": "Single cube",
+              "Corner cube size and aperture": "10.0 cm circular, 79 cm²",
+              "Reflection": "Total internal reflection",
+              "Status in sources read": "Flown (2025), project-reported"
+            },
+            {
+              "Site": "MoonLIGHT",
+              "Number of corner cubes": "1",
+              "Array size (cm)": "Single cube",
+              "Corner cube size and aperture": "10.0 cm circular, 79 cm²",
+              "Reflection": "Total internal reflection",
+              "Status in sources read": "Planned"
+            }
+          ]
+        },
+        "dimensions_and_proportions": "No single dimension set applies. The Apollo 11 and Apollo 14 arrays are 46 x 46 cm with 3.8 cm corner cubes [3][1]. The Apollo 15 array is 105 x 65 cm [1][5]. The Lunokhod package is 44 cm long and 19 cm across [1][4]. The NGLR-1 and MoonLIGHT reflectors are single 10.0 cm corner cubes [1]. Overall package dimensions for these flown and planned units are not published in the sources read, and no dimensions were inferred.",
+        "mass_and_weight": "Mass is not published in the sources read for any retroreflector hardware described in this article, and no mass value is given or inferred. Mass of the ground laser ranging stations is outside the scope of this payload.",
+        "power_requirements": "The retroreflector arrays and single corner cubes are passive and require no electrical power or telemetry. The ground stations that observe them need power, but they are not part of this payload and no values are given. Thermal behaviour is described qualitatively in the Environmental and Operational Requirements section, including the Apollo 11 thermal design [3] and the Lunokhod thermal susceptibility [4]."
+      },
+      "environmental_and_operational_requirements": "Libration measurement depends on the reflector remaining in place and maintaining its optical geometry. Surface reflectors are exposed to large thermal changes. The Lunokhod reflector is susceptible to thermal distortion, and its return is reported to be about 30 times weaker in lunar daylight than at night [4]. The Apollo 11 array was designed to limit temperature differences across its corner cubes for this reason [3].\n\nDust is a second issue. Murphy (2013) and Williams et al. (2023) note that a thin layer of dust is thought to have degraded the Apollo and Lunokhod arrays, and that the new single cubes are expected to be brighter for this reason [1][2]. Strategies to keep dust off the new corner cubes are under consideration [1].\n\nGround operations are also a constraint. Four observatories regularly range the Moon to these reflectors [3][1]. Atmospheric turbulence imposes divergence of around one arcsecond on the laser beam at the Earth, which corresponds to about 1.8 km at the Moon [2]. The orbital and rotational motion of the Earth also introduces a velocity aberration of about 0.8 to 1.5 arcsec at existing stations, as printed in the Williams et al. (2023) abstract [1].",
+      "limitations": "The main limit on the measurement is the spread of the return pulse caused by array tilt. The Apollo arrays spread the pulse by several centimetres, and that spread must be modelled or averaged over many photons [1][2]. Precision therefore depends on collecting many returns, which is limited by the weak signal and by the state of the ground stations [2].\n\nThe libration signal is indirect. It comes from fitting many ranges to a model, so the result depends on the model and its assumptions. In Murphy's (2013) comparison of four analysis groups, the JPL solution gives the smallest libration adjustments and residuals [2]. The Earth-based orientation of the ground stations and the atmosphere also affect the data.\n\nSurface reflectors degrade over time. Dust on the Apollo and Lunokhod arrays has reduced their return strength, and Lunokhod 2 now returns about 10 % of the Apollo 15 signal [2]. The new single cubes need precise pointing, and MoonLIGHT requires a pointing mechanism to point at the Earth after landing [1].\n\nThe published numbers for the different arrays are not directly comparable. The arrays differ in count, size and corner-cube design, and their performance depends on the station and the epoch of observation.",
+      "transportation_and_deployment": {
+        "overview": "This is a surface payload in each example. No orbiter-based libration instrument is described except the LOLA approach, which uses existing orbital data and does not deploy hardware.",
+        "transportation_process": [
+          "Apollo arrays. The Apollo 11 array was placed by the astronauts during extravehicular activity in 1969 [1]. The Apollo 14 and 15 arrays were placed during their missions in 1971. Their deployment sequence was not verified in the sources read [1]. The arrays were aligned by the astronauts toward the Earth, with allowance for optical libration at the time of placement [1].",
+          "Lunokhod arrays. The reflectors were carried by the Lunokhod rovers, which were delivered to the surface by the Luna 17 and Luna 21 landers [2][4]. The sources read do not describe the stowage and release of the reflector arrays from the rovers in detail.",
+          "NGLR-1. The project status report states that NGLR-1 was delivered by the Firefly Blue Ghost lander and deployed on the surface on 2 March 2025 [6]. The sources read do not describe the stowage or deployment mechanism.",
+          "MoonLIGHT. The planned unit is designed for a Commercial Lander Payload Services mission. Williams et al. (2023) describe dust protection during landing and active pointing toward the mean Earth direction after landing, using a pointing actuator [1]. The sources read do not describe the mechanical interface with a lander."
+        ],
+        "deployment_methods": "Apollo arrays were placed by astronauts during extravehicular activity and aligned toward the Earth with allowance for optical libration [1]. Lunokhod reflectors were carried by the Lunokhod rovers, which were delivered by the Luna 17 and Luna 21 landers [2][4]. NGLR-1 was delivered by the Firefly Blue Ghost lander and deployed on 2 March 2025 according to the project report [6]. MoonLIGHT is planned to use dust protection during landing and a pointing actuator after landing [1].",
+        "historical_examples": "The Apollo 11 array (1969), the Apollo 14 and Apollo 15 arrays (1971), the Lunokhod 1 and 2 reflector arrays (1970 and 1973) and NGLR-1 (2025) are the flown examples described in this article [1][4][6]. MoonLIGHT is a planned example.",
+        "compatibility_assessment": "Compatibility. No compatibility is asserted with a named lander, rover or spacecraft. The sources read describe the flown hardware and planned missions but do not establish interface compatibility for any future lander. A future assessment would need the corner-cube count and size, the mounting and pointing interface, the thermal requirements and the landing loads, verified against the lander's documentation.",
+        "images": []
+      },
+      "historical_significance": "The first retroreflector was placed on the Moon by the Apollo 11 astronauts in 1969. Murphy (2013) reports that the first accurate laser ranges to the Moon were made from the Lick Observatory 3.1 m telescope on 1 August 1969, less than two weeks after the placement [2]. Williams et al. (2023) state that the range uncertainty fell from hundreds of metres in the early Apollo era, to a few decimetres by early 1970, and to less than 1 cm today [1].\n\nLLR has continued for more than half a century, and the Lunokhod reflectors extended the network. Lunokhod 1 was found again in 2010, after not being seen for almost 40 years [1][4]. The NGLR-1 landing in 2025 added a single-cube reflector to the surface, and the project report presents it as validating the design [6].",
+      "limitations_and_uncertainties": "- Physical libration amplitude. Murphy (2013) gives physical libration of about ±120 arcsec in both longitude and latitude [2]. Williams et al. (2023) give a larger figure in the introduction of about ±150, but the unit symbol in the text layer is lost, so the figure was not used directly [1]. The two values are not reconciled here.\n- Physical libration seen from Earth. Williams et al. (2023) state that the physical librations are about 0.7 arcsec as seen from Earth. The text layer has lost the unit symbol. The value is consistent with the Moon's orbit being about 221 times larger than the Moon [1].\n- Murphy (2013) publication details. The version read is the arXiv preprint, arXiv:1309.6294. The journal version was not verified in this run [2].\n- NGLR-1 results. The landing date, deployment and early ranging results come from a project status report written by the team that built the reflector. The report has not been checked against a peer-reviewed publication or an independent station report in this run [6].\n- NGLR-1 cross-section. The cross-section ratio depends strongly on the calibration used, and the report gives two different calibrations. The polarisation of the laser return is also undetermined in the report [6].\n- MoonLIGHT. The sources read give a schedule that has since changed. No launch, landing or deployment was confirmed in this run. The current status is unknown [1].\n- Apollo 14 and 15 placement dates. The exact placement dates for the Apollo 14 and 15 arrays were not verified in the sources read [1].\n- Apollo 15 azimuth offset. The 2° azimuth offset is reported by Murphy (2013) from LLR data. It is not confirmed by a mechanical survey in the sources read [2].\n- Lunokhod dates. The landing years for Lunokhod 1 and 2 come from a secondary summary of the Murphy retroreflector page [4]. Murphy (2013) also contains a statement about Lunokhod 2 in 1971 that conflicts with the 1973 landing date, and that statement was not used [2].\n- LOLA rotation result. The LOLA rotation result is from a conference abstract. The full paper, and the LOLA instrument paper by Smith et al. (2017), were not read in this run [7].\n- Images. One direct image asset was verified: the NASA Photojournal image PIA13037 of the Apollo 15 reflector site in LRO imagery. Candidate NASA image identifiers for the Apollo 15 and Apollo 11 reflector photographs did not return image content at their NASA image-detail or image-asset addresses, so no Apollo surface photographs of the arrays are included.\n- Other national retroreflectors. Retroreflectors or other libration-related hardware from other national programmes were not researched in this run.\n- Artemis retroreflector. A NASA page seen only as a search result describes a lunar retroreflector as a candidate payload for a future Artemis mission. It was not read and is not described here.\n- Lunar Geophysical Network. Williams et al. (2023) state that new retroreflectors are scheduled for the Lunar Geophysical Network mission [1]. The mission status was not verified in this run.\n- Lunar landing sites. This article does not recommend lunar landing sites or locations. That is deferred by the user.",
+      "images": [
+        {
+          "id": "lro_apollo15_lrrr_annotated_view",
+          "description": "Annotated Lunar Reconnaissance Orbiter Narrow Angle Camera view of the Apollo 15 Lunar Laser Ranging Retroreflector (LRRR) on the lunar surface, with other surface features labelled.",
+          "image_type": "Orbital spacecraft image (annotated)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia13/pia13037/PIA13037.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/the-apollo-15-lunar-laser-ranging-retroreflector-a-fundamental-point-on-the-moon/",
+          "publisher": "NASA/GSFC/Arizona State University (NASA Photojournal PIA13037)",
+          "credit": "NASA/GSFC/Arizona State University",
+          "caption": "Annotated view from the Lunar Reconnaissance Orbiter Narrow Angle Camera, showing the Apollo 15 Lunar Laser Ranging Retroreflector (LRRR, circled) among other surface features. The reflector appears as a few pixels.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct NASA asset URL with no query string or fragment. Verified HTTP 200 with image/jpeg content and visually inspected. The full JPEG download (about 70 KB) was checked; the TIFF download was not. The NASA page gives a credit line only and refers to NASA usage guidelines for reuse. Scale is about 52 cm per pixel; the scene is about 391 m wide; it is a subset of NAC frame M111578606LE."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lro_apollo15_lrrr_annotated_view",
+          "description": "Annotated Lunar Reconnaissance Orbiter Narrow Angle Camera view of the Apollo 15 Lunar Laser Ranging Retroreflector (LRRR) on the lunar surface, with other surface features labelled.",
+          "image_type": "Orbital spacecraft image (annotated)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia13/pia13037/PIA13037.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/the-apollo-15-lunar-laser-ranging-retroreflector-a-fundamental-point-on-the-moon/",
+          "publisher": "NASA/GSFC/Arizona State University (NASA Photojournal PIA13037)",
+          "credit": "NASA/GSFC/Arizona State University",
+          "caption": "Annotated view from the Lunar Reconnaissance Orbiter Narrow Angle Camera, showing the Apollo 15 Lunar Laser Ranging Retroreflector (LRRR, circled) among other surface features. The reflector appears as a few pixels.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct NASA asset URL with no query string or fragment. Verified HTTP 200 with image/jpeg content and visually inspected. The full JPEG download (about 70 KB) was checked; the TIFF download was not. The NASA page gives a credit line only and refers to NASA usage guidelines for reuse. Scale is about 52 cm per pixel; the scene is about 391 m wide; it is a subset of NAC frame M111578606LE."
+        }
+      ],
+      "references": [
+        {
+          "title": "Lunar Laser Ranging Retroreflectors: Velocity Aberration and Diffraction Pattern",
+          "authors": "Williams, J. G., Porcelli, L., Dell'Agnello, S., Mauro, L., Muccino, M., Currie, D. G., Wellnitz, D., Wu, C., Boggs, D. H. & Johnson, N. H.",
+          "publisher": "The Planetary Science Journal (American Astronomical Society)",
+          "date": "2023-05",
+          "url": "https://doi.org/10.3847/PSJ/acbeab",
+          "read_copy_url": "https://www.physics.umd.edu/nglr/Williams_2023_Planet._Sci._J._4_89.pdf",
+          "notes": "Volume 4, article 89. Read from extracted PDF text."
+        },
+        {
+          "title": "Lunar Laser Ranging: The Millimeter Challenge",
+          "authors": "Murphy, T. W. Jr.",
+          "publisher": "arXiv (preprint arXiv:1309.6294)",
+          "date": "2013-09-24",
+          "url": "https://arxiv.org/abs/1309.6294",
+          "read_copy_url": "https://arxiv.org/pdf/1309.6294",
+          "notes": "ArXiv preprint version read from extracted PDF text. Journal version not verified in this run."
+        },
+        {
+          "title": "Lunar Reflectors: Reflector Information (Apollo 11 reflector page)",
+          "authors": null,
+          "publisher": "NASA ILRS (International Laser Ranging Service)",
+          "date": null,
+          "url": "https://ilrs.gsfc.nasa.gov/missions/satellite_missions/current_missions/ap11_reflector.html",
+          "read_copy_url": null,
+          "notes": "Read through a summarising fetch. Deployment dates not stated on the page."
+        },
+        {
+          "title": "Lunar Retroreflectors (instrument summary page)",
+          "authors": "Murphy, T. W. Jr.",
+          "publisher": "University of California San Diego (tmurphy.physics.ucsd.edu)",
+          "date": null,
+          "url": "https://tmurphy.physics.ucsd.edu/apollo/lrrr.html",
+          "read_copy_url": null,
+          "notes": "Read through a summarising fetch. Used for Lunokhod landing years and Lunokhod ground-based description. Some summary text was not used where it conflicted with primary sources."
+        },
+        {
+          "title": "The Apollo 15 Lunar Laser Ranging Retroreflector - A Fundamental Point on the Moon (PIA13037)",
+          "authors": null,
+          "publisher": "NASA Photojournal / NASA GSFC / Arizona State University",
+          "date": "2010-04-13",
+          "url": "https://science.nasa.gov/photojournal/the-apollo-15-lunar-laser-ranging-retroreflector-a-fundamental-point-on-the-moon/",
+          "read_copy_url": null,
+          "notes": "Source page for the image. Page was last updated 23 September 2025 according to the page."
+        },
+        {
+          "title": "Early Ranging Results to NGLR-1 and Validation of the NGLR Project Objectives (status report)",
+          "authors": "Next Generation Lunar Retroreflector project team, University of Maryland",
+          "publisher": "University of Maryland, Next Generation Lunar Retroreflector project",
+          "date": "2025-10-17",
+          "url": "https://www.physics.umd.edu/nglr/NGLR-1_Status_20251017.pdf",
+          "read_copy_url": null,
+          "notes": "Project self-report. Not peer reviewed. Read from extracted PDF text."
+        },
+        {
+          "title": "Measurement of Lunar Rotation with Lunar Orbiter Laser Altimeter data",
+          "authors": "Stark, A., Annibali, S., Oberst, J. & Hussmann, H.",
+          "publisher": "EPSC Abstracts, European Planetary Science Congress 2018 (EPSC2018-931)",
+          "date": "2018",
+          "url": "https://elib.dlr.de/123392/1/EPSC2018-931.pdf",
+          "read_copy_url": null,
+          "notes": "Conference abstract read from extracted PDF text. Full paper not read."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": true,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[1] (Apollo 15 Laser Ranging Retroreflector array)": "payload.article.physical_specifications.examples[1].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Scope: this article covers instruments and hardware used to measure lunar libration (physical and optical libration of the Moon). No dedicated libration sensor was found in the sources read, so the payload class is described through laser retroreflector arrays, the ground laser ranging observations that use them, and one orbital-altimetry approach (LOLA). Overlap is stated with 185 Laser ranging instrument, 187 Lunar geodesy experiment, 018 Tiltmeter, 025 Tidal deformation sensor and 023 Lunar interior monitoring station.",
+    "Libration is not measured directly by a sensor on the Moon. It is inferred by fitting ranges to retroreflectors with a model of the Moon's orientation. Model dependence is stated in the Operating principle and Limitations sections.",
+    "Physical libration amplitude differs between sources: Murphy (2013) gives about +/-120 arcsec in longitude and latitude; Williams et al. (2023) give about 150 in the text layer with the unit symbol lost. The two values are not reconciled.",
+    "Williams et al. (2023) state physical librations of about 0.7 arcsec as seen from Earth; the unit symbol is lost in the text layer and the value is consistent with the orbit being about 221 times the Moon's size.",
+    "Murphy (2013) was read as the arXiv preprint; the journal version was not verified.",
+    "NGLR-1 landing (2 March 2025), deployment and early ranging results are from a University of Maryland project status report (17 October 2025). It is a project self-report and has not been checked against a peer-reviewed paper or independent station reports. Results are preliminary.",
+    "NGLR-1 cross-section ratio depends strongly on calibration: 100 % +/- 18 % of the Apollo 11 array (calibrated to Apollo 15) versus 65 % +/- 17 % (calibrated to the Apollo 11 and 14 average). The polarisation of the return is undetermined in the report.",
+    "MoonLIGHT: Williams et al. (2023) gave an earlier schedule. Current flight status was not verified; no launch, landing or deployment was confirmed in the sources read. Treated as planned, not flown.",
+    "Apollo 14 and Apollo 15 retroreflector placement years (1971) and exact dates were not verified against a primary NASA source in this run. The Apollo 11 placement year (1969) is from Williams et al. (2023).",
+    "Apollo 15 array: Murphy (2013) reports an apparent 2-degree azimuth offset from LLR data. The degree symbol is lost in the text layer. This was not confirmed by a mechanical survey in the sources read.",
+    "Lunokhod landing years (1970 and 1973) come from a secondary summary of the Murphy retroreflector page. Murphy (2013) also contains a statement about Lunokhod 2 in 1971 that conflicts with the 1973 landing and was not used.",
+    "A summary of the Murphy retroreflector page described the Apollo 15 array as hexagonal. Williams et al. (2023) Table 1 gives it as a 105 x 65 cm array; the JSON uses the Williams figure.",
+    "Lunokhod reflector mass, dimensions and power are not published in the sources read; the array package dimensions 44 x 19 cm and triangular 11 cm edges are from Williams et al. (2023) and Murphy (2013).",
+    "Passive hardware: no power, telemetry or mass values are published in the sources read for the Apollo, Lunokhod, NGLR-1 or MoonLIGHT reflectors. No mass, dimension or power values have been inferred.",
+    "LOLA rotation result (Stark et al., 2018) is from a conference abstract. The full paper and the LOLA instrument paper (Smith et al., 2017) were not read.",
+    "Image gap: one direct image asset was verified (NASA Photojournal PIA13037, Apollo 15 reflector site in LRO imagery). Candidate NASA image identifiers for Apollo 15 (AS15-85-11468) and Apollo 11 (AS11-40-5952) did not return image content at the NASA image-asset or image-detail addresses tried, so no Apollo surface photograph of the arrays is included.",
+    "Other national retroreflectors or libration-related hardware were not researched in this run.",
+    "A NASA page seen only as a search result describes a lunar retroreflector as a candidate payload for a future Artemis mission. It was not read and is not described.",
+    "Lunar Geophysical Network: Williams et al. (2023) describe retroreflectors scheduled for this mission. Mission status was not verified.",
+    "Research status booleans are set conservatively. Technical specifications have not been fully audited against all primary documents, and image verification covers only the single image included.",
+    "No lunar landing-site or location recommendations are made. This is deferred by the user. Landing-site names found in the sources were not included."
+  ]
+}

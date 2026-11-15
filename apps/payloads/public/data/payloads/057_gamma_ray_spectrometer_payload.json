@@ -1,0 +1,604 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 57,
+    "name": "Gamma-ray spectrometer",
+    "article": {
+      "overview": "A gamma-ray spectrometer measures the energies and rates of gamma rays that reach the instrument. Many chemical elements emit gamma rays at characteristic energies when they are struck by cosmic rays or when they decay radioactively. By recording the energy spectrum, an instrument can identify which elements are present in the surface material and estimate how much of each is there. The examples in this article were flown in lunar orbit to study the Moon's elemental and radioactive composition. Scope: this entry covers instruments whose primary purpose is gamma-ray spectroscopy of the lunar surface for elemental composition. Four examples are described: the Apollo 15 and 16 gamma-ray spectrometers (1971–1972), the Lunar Prospector gamma-ray spectrometer (1998–1999), the Kaguya (SELENE) Gamma-Ray Spectrometer (2007–2009) and the Chang'e-1 Gamma-Ray Spectrometer (2007–2009). Status is stated for each example. All four are described in the sources accessed as flown. No flight-qualified-but-unflown, engineering-model or proposed gamma-ray spectrometer was verified in this run, so none is described as such. Cross-references: entry 132 (Gamma-ray detector) covers general gamma-ray detection; entry 244 (Gamma-ray telescope) covers gamma-ray astronomy instruments; entry 058 (Neutron spectrometer) covers the neutron sensing that Lunar Prospector combined with its gamma-ray instrument; entry 056 (X-ray spectrometer) covers the Kaguya and Chang'e-1 X-ray spectrometers. None of these neighbouring articles is yet in the output folder, so their content is not assumed.",
+      "description": "A gamma-ray spectrometer is built around a detector that converts the energy of an incoming gamma ray into an electrical pulse, and an electronic system that counts and sorts those pulses by energy. The result is a histogram of counts against energy, called a spectrum. Each peak in the spectrum corresponds to a gamma-ray line, and the energy of that line points to the element that produced it. Two detector families were used in the examples. Scintillators, such as sodium iodide (NaI(Tl)), caesium iodide (CsI(Tl)) and bismuth germanate (BGO), emit a flash of light when a gamma ray is absorbed. A photomultiplier tube turns that light into a pulse whose size is proportional to the energy deposited. High-purity germanium (HPGe) is a semiconductor detector that produces a charge proportional to the deposited energy. It gives much finer energy resolution than a scintillator, but it must be cooled to work well. Lunar gamma rays arise in two main ways. Galactic cosmic rays strike the lunar surface and produce neutrons in the subsurface; those neutrons interact with the surface material and emit gamma rays with element-specific energies. Naturally radioactive elements, such as potassium-40 and the decay products of thorium and uranium, also emit gamma rays directly. Because the signal is weak and arrives from all directions, the detector must be shielded and separated from the spacecraft's own background, which is why several designs used booms or deck-mounting and anticoincidence shields.",
+      "scientific_purpose_and_applications": "The sources accessed describe several purposes for lunar gamma-ray spectrometers. (1) Mapping radioactive and major elements: the JAXA page for the Kaguya GRS lists global surface abundances of K, U, Th, O, Mg, Al, Si, Ti, Fe, Ca and H as objectives. These elements are relevant to the Moon's crust, its differentiation and its geological history. (2) Hydrogen and water-related science: the same JAXA page lists hydrogen mapping as a way to support lunar resource work, including the search for water. Hydrogen is also a target of neutron-based measurements, covered in entry 058; the NSSDC page discusses the Lunar Prospector gamma-ray spectrometer alongside its Neutron Spectrometer. (3) Measuring the Moon's radioactivity: the HEASARC Apollo 15 and 16 pages state that the Apollo gamma-ray instrument's main purpose was studying the Moon's radioactivity, and that it also measured the cosmic gamma-ray background during the trip. (4) Sensitivity relative to Apollo: the PDS catalogue states that the Lunar Prospector instrument was “2 to 8 times more sensitive than the Apollo gamma ray spectrometer”. The catalogue does not give the basis for this comparison, so it is quoted as a source statement and has not been independently checked.",
+      "operating_principle": "A gamma ray can interact with matter by photoelectric absorption, Compton scattering or pair production. In each case a fraction of its energy is transferred to electrons in the detector. The detector converts that energy into a measurable signal, and the signal is stored in an energy channel. Scintillator instruments use a crystal that emits light in proportion to the energy absorbed. The Apollo 15 and 16 instrument used a NaI(Tl) crystal, the Lunar Prospector instrument used BGO, and the Chang'e-1 instrument used CsI(Tl). The light is detected by photomultiplier tubes and converted into pulses. Scintillator energy resolution is generally coarser than that of germanium; the sources accessed do not quantify this difference for the scintillator instruments beyond the values in the comparison table. The Kaguya instrument used a large high-purity germanium crystal as its main detector. The germanium crystal was cooled by a Stirling mechanical cooler, with the compressor linked to a radiator facing cold space, and was surrounded by a horseshoe-shaped BGO crystal and a curved plastic scintillator. These surrounding detectors act as anticoincidence shields. In general terms, when they detect an event at the same time as the germanium detector, the event is rejected because it is probably a charged particle or a gamma ray that escaped the germanium crystal rather than one fully absorbed in it. This suppresses background and Compton-scattered events. The Apollo and Lunar Prospector instruments differ mainly in mounting and shielding. The Apollo instrument was mounted on a 7.6 m boom; a NASA report summary that links the boom to spacecraft background was not verified in this run. The Lunar Prospector instrument was mounted on one of three booms, and its borated-plastic shield tags charged particles and gamma rays that escape the BGO.",
+      "scientific_importance": "The energy resolution of a gamma-ray spectrometer controls how many neighbouring lines can be separated. The JAXA page states that the Kaguya germanium detector is “20 times superior to those used in past lunar missions”. The page does not define the comparison basis, so this is quoted as the mission team's statement rather than a verified measurement. Resolution is only one part of the measurement. The spectrum combines a continuum with discrete lines from natural radioactivity and from cosmic-ray-induced reactions. The measured Kaguya GRS spectrum shown on the JAXA GRS page has counts per keV per 13 hours on the vertical axis against energy from 0 to 8000 keV, with labelled element lines including silicon at 1778.8 keV and oxygen at 4438.3 keV as read from the figure labels. The page text accessed does not state the observation period or processing applied. The Kaguya mission's stated objective is global elemental mapping. The choice between scintillators and germanium reflects a trade-off between detector robustness and energy resolution, as the values in the comparison table show. The Apollo instrument's 512-channel NaI(Tl) design and its 8% resolution figure are described in its example.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a gamma-ray spectrometer. The four examples used different detector materials, shielding arrangements, mounting schemes and mission environments. Some specifications are published only for one instrument, and values are never combined across instruments. Where a source does not publish a value, this record uses null and the phrase “not publicly specified”. The comparison table contains only values that the cited sources state for each named instrument.",
+        "examples": [
+          {
+            "name": "Apollo 15 and 16 gamma-ray spectrometer",
+            "type": "Historical lunar orbital instrument",
+            "status": "Flown: Apollo 15, 26 Jul–7 Aug 1971; Apollo 16, 16–27 Apr 1972 (HEASARC).",
+            "detector": "512-channel cylindrical NaI(Tl) scintillation spectrometer",
+            "detector_dimensions": "76x76 mm (HEASARC)",
+            "anticoincidence": "Plastic scintillator covering the detector to reject charged particles",
+            "energy_range_mev": [0.55, 8.6],
+            "energy_resolution_percent": 8,
+            "energy_resolution_line": "Not stated on the HEASARC page",
+            "channels": 512,
+            "boom_length_m": 7.6,
+            "mass_kg": null,
+            "power_w": null,
+            "diagram_labelled_dimensions_mm": {
+              "overall_height": 227,
+              "overall_width_including_photomultiplier": 204,
+              "top_flange": 107,
+              "photomultiplier_housing": 63,
+              "note": "Read from the labelled HEASARC diagram; not stated in prose."
+            },
+            "source_urls": [
+              "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/apollo1516.html",
+              "https://heasarc.gsfc.nasa.gov/Images/apollo/gamma_diagram.html"
+            ],
+            "images": [
+              {
+                "id": "apollo_gamma_detector_diagram",
+                "description": "Diagram of the Apollo 15 and 16 gamma-ray detector, showing the scintillation crystal, photomultiplier, plastic scintillator and labelled dimensions in millimetres.",
+                "image_type": "Technical diagram",
+                "image_url": "https://heasarc.gsfc.nasa.gov/Images/apollo/apollo_det.gif",
+                "source_page_url": "https://heasarc.gsfc.nasa.gov/Images/apollo/gamma_diagram.html",
+                "publisher": "NASA HEASARC (NASA Goddard Space Flight Center)",
+                "credit": "NASA (no credit line for the diagram is given on the source page)",
+                "caption": "HEASARC diagram of the Apollo 15 and 16 gamma-ray detector. The source page gives no separate credit for the diagram.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct HEASARC image URL verified with HTTP 200 and viewed. The image is a labelled drawing; dimensions are read from its labels."
+              }
+            ],
+            "notes": "Energy range and resolution as stated by HEASARC for both missions. Secondary search summaries gave mission-specific ranges (160 keV–27.5 MeV for Apollo 15; 65 keV–10.5 MeV for Apollo 16) that were not confirmed in a primary source and are not used. A search summary reporting a gain decrease during the lunar phase is not verified and is not used."
+          },
+          {
+            "name": "Lunar Prospector gamma-ray spectrometer",
+            "type": "Historical lunar orbital instrument",
+            "status": "Flown: launched 7 January 1998 02:28:44 UT (NSSDC and NASA specifications; NASA Key Dates lists 6 January 1998); deliberately impacted 31 July 1999 at 09:52:02 UT in the shadowed Shoemaker crater (NASA).",
+            "detector": "Bismuth germanate (BGO) scintillator viewed by a photomultiplier tube",
+            "detector_diameter_cm": 7.1,
+            "detector_length_cm": 7.6,
+            "anticoincidence": "Borated-plastic anticoincidence shield",
+            "shield_diameter_cm": 12,
+            "shield_length_cm": 20,
+            "housing": "Cylindrical graphite-epoxy housing; dimensions not given",
+            "energy_range_mev": [0.3, 9],
+            "energy_resolution_fwhm": null,
+            "sampling_resolution_kev": 17.6,
+            "sampling_resolution_note": "Labelled as sampling resolution in the PDS catalogue, not as FWHM energy resolution.",
+            "spectrum_acquisition_interval_s": 32,
+            "operating_environment_c": -28,
+            "operating_environment_note": "The PDS catalogue describes a stable operational environment of -28 deg C for at least 1.5 years; this is a stated environment, not a measured record.",
+            "mounting": "Mounted on one of three Lunar Prospector booms",
+            "mass_kg": 8.6,
+            "power_w": 3,
+            "power_note": "About 3 W per the PDS catalogue.",
+            "sensitivity_statement": "2 to 8 times more sensitive than the Apollo gamma ray spectrometer (PDS catalogue statement; basis not given).",
+            "investigators_statement": "PDS catalogue: William Feldman, Los Alamos National Laboratory, described as co-investigator and spectrometer group leader. NSSDC page: G. Scott Hubbard, NASA Ames, listed as investigator for the gamma-ray spectrometer. The sources do not reconcile these roles.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/Lunar/lp-l-grs-3-rdr-v1/lp_2xxx/catalog/grsinst.cat",
+              "https://science.nasa.gov/mission/lunar-prospector",
+              "https://nssdc.gsfc.nasa.gov/planetary/lunarprosp.html"
+            ],
+            "images": [
+              {
+                "id": "lunar_prospector_drawing",
+                "description": "Drawing of the Lunar Prospector spacecraft with extended instrument booms, from the NSSDC Lunar Prospector page.",
+                "image_type": "Spacecraft drawing",
+                "image_url": "https://nssdc.gsfc.nasa.gov/image/spacecraft/lunarprosp.gif",
+                "source_page_url": "https://nssdc.gsfc.nasa.gov/planetary/lunarprosp.html",
+                "publisher": "NASA National Space Science Data Center (NSSDC)",
+                "credit": "NASA (the NSSDC page gives no image credit)",
+                "caption": "NSSDC drawing of Lunar Prospector. The drawing does not label the gamma-ray spectrometer.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct NSSDC image URL verified with HTTP 200 and viewed. The thumbnail link on the page points to the same file. The image is a drawing, not a photograph of flight hardware."
+              }
+            ],
+            "notes": "PDS catalogue gives no FWHM energy resolution. A search summary citing a Los Alamos description gave a 7.62 cm crystal diameter, which differs from the PDS value of 7.1 cm; the PDS value is used because the primary description was not accessed. The neutron spectrometer that shared the mission is covered in entry 058."
+          },
+          {
+            "name": "Kaguya (SELENE) Gamma-Ray Spectrometer",
+            "type": "Historical lunar orbital instrument",
+            "status": "Flown. Kaguya (SELENE) launched 14 September 2007 JST and was inserted into lunar orbit on 4 October 2007 JST (PDS). GRS PDS data periods: 14 Dec 2007–16 Feb 2008 (Period 1); 4 Jul–15 Dec 2008 (Period 2); 10 Feb–28 May 2009 (Period 3). Controlled impact on the lunar nearside on 11 June 2009 JST (PDS).",
+            "detector": "Large-volume high-purity germanium (HPGe) crystal as main detector",
+            "anticoincidence": "Horseshoe-shaped BGO detector and curved plastic scintillator as anticoincidence detectors",
+            "energy_range_mev_abstract": [0.2, 12],
+            "energy_range_mev_pds_high_gain": [0.15, 3.2],
+            "energy_range_mev_pds_low_gain": [0.15, 13],
+            "energy_resolution_prelaunch": "Approximately 0.6% or 4 keV FWHM at 662 keV (PDS calibration document)",
+            "energy_resolution_flight_model_fwhm_kev": {
+              "value": 3.0,
+              "line_kev": 1333,
+              "source": "Hasebe et al. (2008) abstract, flight model; a pre-flight or flight-model specification, not an in-orbit measurement"
+            },
+            "energy_resolution_in_orbit_fwhm_kev_at_1461_kev": {
+              "period_1": "6–10 keV (3.1 kV high voltage)",
+              "period_2": "12–18 keV (2.5 kV high voltage)",
+              "period_3": "6–7 keV (2.5 kV high voltage)",
+              "line": "1461 keV gamma ray from potassium-40 (PDS definition)",
+              "source": "PDS calibrated spectra document, Table 1"
+            },
+            "radiation_damage_and_anneal": "The PDS document states that the resolution was degraded by exposure to high-energy particles and that the HPGe crystal was annealed for 48 hours at a temperature given as “above 80” after the second background measurement of 11–12 December 2008. The temperature unit is not rendered in the extracted text and is not used.",
+            "cooling": "Stirling cryocooler; crystal below 90 K during measurement (Hasebe et al. 2008; PDS). JAXA page states below -180 deg C.",
+            "channels": 8192,
+            "accumulation_interval_s": 17,
+            "mounting": "Deck-mounted on the Kaguya satellite (PDS)",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": null,
+            "principal_investigator": "Nobuyuki Hasebe, Waseda University (JAXA page)",
+            "source_urls": [
+              "https://selene.tksc.jaxa.jp/en/equipment/grs_e.htm",
+              "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-kaguya_grs_spectra/document/kgrs_calibrated_spectra.pdf",
+              "https://doi.org/10.1186/BF03352795",
+              "https://research.aber.ac.uk/en/publications/gamma-ray-spectrometer-grs-for-lunar-polar-orbiter-selene/"
+            ],
+            "images": [
+              {
+                "id": "kaguya_grs_hardware_photograph",
+                "description": "Photograph of hardware shown on the JAXA SELENE GRS page: a cylindrical unit beside a box-shaped unit on a laboratory bench.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_grs_002.jpg",
+                "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/grs_e.htm",
+                "publisher": "JAXA (SELENE project)",
+                "credit": "JAXA (credit line not verified on the page)",
+                "caption": "Hardware photograph shown on the JAXA SELENE GRS page. The text accessed does not confirm whether this is the flight unit or an engineering unit, and the caption was not read.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct JAXA image URL, derived from the relative path on the JAXA GRS page. HTTP 200 and content verified. The flight-unit status is not confirmed."
+              }
+            ],
+            "notes": "The Hasebe et al. abstract, the JAXA page and the PDS calibration document are the sources for the Kaguya specifications. The full Hasebe paper was not accessible without a login. Detection efficiency of about 60% was reported in a search summary but is not in the abstract accessed, and is not used. No Kaguya mass, power or dimensions were found in the sources accessed."
+          },
+          {
+            "name": "Chang'e-1 Gamma-Ray Spectrometer",
+            "type": "Historical lunar orbital instrument",
+            "status": "Flown. Normal observation started on 28 November 2007. Controlled impact on the lunar surface on 1 March 2009 at 08:13:10 UTC, ending the 16-month mission (eoportal). The quick-facts list an end-of-life date of 3 January 2009, which conflicts with the text; the text's impact date is used.",
+            "detector": "CsI(Tl) scintillator",
+            "detector_diameter_cm": 12,
+            "detector_length_cm": 7.6,
+            "energy_range_kev": [300, 9000],
+            "energy_resolution": "≤ 9% at 662 keV",
+            "channels": 512,
+            "anticoincidence": "Anticoincidence efficiency ≥ 90% (eoportal table)",
+            "mass_kg": null,
+            "power_w": null,
+            "mounting": "Not publicly specified in the eoportal page",
+            "source_urls": [
+              "https://www.eoportal.org/satellite-missions/chang-e-1"
+            ],
+            "images": [],
+            "notes": "All values come from the eoportal mission summary page; its GRS table cites reference 21, which was not accessed. No primary Chinese-language instrument paper was accessed. No image for this instrument was verified. Search summaries described energy channels of 512 or 1024 and a 2010 overview; these were not verified against a primary source and are not used beyond the 512-channel value on the eoportal page."
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo 15 and 16 detector is a 76x76 mm NaI(Tl) cylinder with a plastic anticoincidence scintillator, mounted on a 7.6 m boom; the HEASARC diagram gives labelled overall dimensions of 227 mm high and 204 mm wide including the photomultiplier. The Lunar Prospector BGO crystal is 7.1 cm in diameter and 7.6 cm long, inside a 12 cm by 20 cm borated-plastic shield. The Chang'e-1 CsI(Tl) crystal is 12 cm in diameter and 7.6 cm long. Overall dimensions for the Kaguya GRS are not publicly specified in the sources accessed. The dimensions are not directly comparable because they describe different crystal materials and shield designs.",
+        "mass_and_weight": "Mass is stated for only one example: the Lunar Prospector gamma-ray spectrometer has a mass of 8.6 kg per the PDS catalogue. Mass is not publicly specified for the Apollo 15 and 16 instrument, the Kaguya GRS or the Chang'e-1 GRS in the sources accessed. The Chang'e-1 eoportal page refers to reference 21 for its GRS mass and power, which was not accessed.",
+        "power_requirements": "Power is stated for one example: the Lunar Prospector gamma-ray spectrometer draws about 3 W per the PDS catalogue. Power is not publicly specified for the Apollo, Kaguya or Chang'e-1 instruments in the sources accessed. A cryocooler power draw for the Kaguya GRS is not stated in the sources accessed.",
+        "comparison_table": {
+          "note": "Values are those stated by the cited sources for each named instrument. Differences reflect detector technology, mounting and mission period, and the sources were written for different purposes. The Lunar Prospector and Chang'e-1 values come from archive or mission pages rather than detailed instrument papers accessed in this run.",
+          "columns": [
+            "Apollo 15 and 16 gamma-ray spectrometer",
+            "Lunar Prospector GRS",
+            "Kaguya (SELENE) GRS",
+            "Chang'e-1 GRS"
+          ],
+          "rows": [
+            {
+              "item": "Status in sources",
+              "values": [
+                "Flown: Apollo 15, 26 Jul–7 Aug 1971; Apollo 16, 16–27 Apr 1972 (HEASARC)",
+                "Flown: launched 7 Jan 1998 (NSSDC, NASA); deliberately impacted 31 Jul 1999 (NASA)",
+                "Flown: launched 14 Sep 2007 JST; controlled impact 11 Jun 2009 JST (PDS)",
+                "Flown: normal observation from 28 Nov 2007; controlled impact 1 Mar 2009 (eoportal)"
+              ]
+            },
+            {
+              "item": "Main detector",
+              "values": [
+                "NaI(Tl) scintillator, 76x76 mm",
+                "BGO scintillator, 7.1 cm diameter x 7.6 cm long, with photomultiplier",
+                "High-purity germanium (HPGe) semiconductor",
+                "CsI(Tl) scintillator, 12 cm diameter x 7.6 cm long"
+              ]
+            },
+            {
+              "item": "Anticoincidence shield",
+              "values": [
+                "Plastic scintillator for charged-particle rejection",
+                "Borated-plastic shield, 12 cm diameter x 20 cm long",
+                "BGO horseshoe and curved plastic scintillator",
+                "Anticoincidence efficiency ≥ 90%"
+              ]
+            },
+            {
+              "item": "Energy range",
+              "values": [
+                "0.55–8.6 MeV",
+                "0.3–9 MeV",
+                "200 keV–12 MeV (abstract); PDS: 0.15–3.2 MeV (high gain) and 0.15–13 MeV (low gain)",
+                "300 keV–9 MeV"
+              ]
+            },
+            {
+              "item": "Energy resolution",
+              "values": [
+                "8% (HEASARC; line not stated)",
+                "Not publicly specified; PDS sampling resolution 17.6 keV is not a FWHM value",
+                "Flight model: 3.0 keV FWHM at 1333 keV; in orbit FWHM at 1461 keV by period: 6–10, 12–18 and 6–7 keV",
+                "≤ 9% at 662 keV"
+              ]
+            },
+            {
+              "item": "Channels",
+              "values": [
+                512,
+                "Not publicly specified",
+                8192,
+                512
+              ]
+            },
+            {
+              "item": "Cooling",
+              "values": [
+                "None stated",
+                "Stable operating environment of -28 deg C described in the PDS catalogue",
+                "Stirling cryocooler; below 90 K during measurement (paper and PDS); below -180 deg C (JAXA page)",
+                "Not publicly specified"
+              ]
+            },
+            {
+              "item": "Mounting",
+              "values": [
+                "7.6 m boom",
+                "One of three booms",
+                "Deck-mounted",
+                "Not publicly specified"
+              ]
+            },
+            {
+              "item": "Mass",
+              "values": [
+                null,
+                8.6,
+                null,
+                null
+              ]
+            },
+            {
+              "item": "Power",
+              "values": [
+                null,
+                3,
+                null,
+                null
+              ]
+            }
+          ]
+        }
+      },
+      "environmental_and_operational_requirements": "Gamma-ray spectrometers operate in vacuum and must tolerate thermal cycling and a high-radiation environment. Germanium detectors must be cooled to work at high resolution. The Kaguya instrument used a Stirling cooler and documented that the germanium crystal was degraded by high-energy particles and recovered through annealing. Scintillators avoid the need for cryogenic cooling but still have a stable operating temperature requirement: the PDS catalogue describes the Lunar Prospector instrument as operating in a stable environment of -28 deg C for at least 1.5 years. Background control is an operational requirement. The Apollo instrument was mounted on a 7.6 m boom. Kaguya measured background by turning the spacecraft so that the GRS faced deep space, on 4 July and 11–12 December 2008 UTC. Lunar Prospector mounted its instrument on a boom with an anticoincidence shield. These measures address the same underlying problem: a gamma-ray signal from the Moon is weak compared with the spacecraft's own radioactivity and cosmic-ray-induced background. Data rate and timing are design parameters. The Lunar Prospector instrument acquired a spectrum every 32 seconds, and the Kaguya instrument used a fixed accumulation interval of 17 seconds. The Chang'e-1 source gives no timing information.",
+      "limitations": "A gamma-ray spectrometer in orbit measures a spectrum averaged over a large area of the lunar surface, which limits the spatial resolution of the resulting maps. The sources accessed do not give a footprint size or a depth sensitivity for any of these instruments, so no values are stated. The signal is also limited by counting statistics: weak lines need long integration times to be detected. The instruments differ in detector technology, energy range and documentation status, so their values are not interchangeable. The Apollo and Chang'e-1 descriptions come from a mission history page and a single mission summary respectively. The Lunar Prospector values come from a PDS archive catalogue. The Kaguya in-orbit values come from a PDS calibration document, and the flight-model values come from a paper abstract. None of these sources gives a full mass and power breakdown for every instrument.",
+      "transportation_and_deployment": {
+        "overview": "All four examples in this article were flown as orbital instruments, or, in the Apollo case, carried in the command module. The relevant interfaces are spacecraft integration, mounting, thermal control, background management, power and data handling, launch, lunar transfer, orbit insertion and commissioning. No surface deployment of a gamma-ray spectrometer was verified.",
+        "transportation_process": [
+          "Integrate the spectrometer into the spacecraft or command module on Earth, with mounting, thermal control and background management considered.",
+          "Launch on a launch vehicle. Lunar Prospector launched on 7 January 1998; Kaguya (SELENE) launched on 14 September 2007 JST; Chang'e-1 provided normal GRS observation from 28 November 2007.",
+          "Transfer to lunar orbit and insert into orbit. Kaguya was inserted on 4 October 2007 JST.",
+          "Commission the instrument and begin observations, managing the spacecraft's own background, for example by turning Kaguya so that the GRS faced deep space.",
+          "Operate in orbit through the mission and, where applicable, end the mission with a controlled impact (Lunar Prospector on 31 July 1999; Kaguya on 11 June 2009 JST; Chang'e-1 on 1 March 2009 at 08:13:10 UTC)."
+        ],
+        "deployment_methods": "The Apollo 15 and 16 instrument was carried in the Apollo command modules and mounted on a 7.6 m boom; HEASARC does not describe when or how the boom was deployed. The Lunar Prospector instrument was mounted on one of three booms. Kaguya's GRS was deck-mounted on the orbiter. Chang'e-1's GRS mounting is not stated in the eoportal page.",
+        "historical_examples": "The Apollo 15 and 16 command modules carried the spectrometer; the Lunar Prospector mission carried its GRS on a boom and ended with a deliberate impact; Kaguya's GRS was deck-mounted and gathered data over three PDS periods between December 2007 and May 2009; Chang'e-1's GRS began normal observation on 28 November 2007.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted. Such an assertion would require verified interface documents for the named vehicle. No surface gamma-ray spectrometer was verified for this article.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 15 and 16 spectrometers were flown in lunar orbit. HEASARC states that both Apollo command modules carried the instrument and that its main purpose was studying the Moon's radioactivity. The Lunar Prospector mission ended with a deliberate impact into the shadowed Shoemaker crater on 31 July 1999, and its gamma-ray spectrometer was one of its listed scientific instruments. Kaguya's GRS combined a germanium detector with an anticoincidence system and a Stirling cooler, and produced data through three observation periods between December 2007 and May 2009. Chang'e-1's GRS began normal observation on 28 November 2007, and the spacecraft's controlled impact on 1 March 2009 ended the mission. The Apollo command and service module image in the historical section is included as flight context only; it does not show the gamma-ray spectrometer.",
+      "limitations_and_uncertainties": "The Hasebe et al. abstract gives a Kaguya energy range of 200 keV–12 MeV, while the PDS document gives 0.15–3.2 MeV (high gain) and 0.15–13 MeV (low gain); the upper limits differ and the basis of each figure differs. The JAXA page gives a cooling temperature of below -180 deg C, while the paper and PDS document give below 90 K; the two are not identical (-180 deg C is approximately 93 K). The PDS document's anneal temperature (“above 80”) has its unit missing from the extracted text and is not used. Kaguya mass, power and detection efficiency are not verified. Lunar Prospector has no FWHM energy resolution in the PDS catalogue. A search summary's 7.62 cm crystal diameter for Lunar Prospector differs from the PDS value of 7.1 cm and was not confirmed. The PDS catalogue and NSSDC page name different people for the Lunar Prospector gamma-ray spectrometer. Lunar Prospector's launch date is given as 6 January 1998 in a NASA Key Dates section and as 7 January 1998 at 02:28:44 UT in the NASA specifications and NSSDC page. Chang'e-1's eoportal quick-facts end-of-life date of 3 January 2009 conflicts with the text's impact date of 1 March 2009. The Chang'e-1 mass, power and mounting are not stated in the source accessed. Neutron spectrometers, gamma-ray detectors and X-ray spectrometers are covered by catalogue entries 058, 132 and 056, which are not yet in the output folder.",
+      "images": [
+        {
+          "id": "kaguya_grs_concept_illustration",
+          "description": "Illustration of the Kaguya (SELENE) orbiter with its particle and radiation instruments, including the Gamma-ray spectrometer (GRS).",
+          "image_type": "Mission concept illustration",
+          "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_grs_003_e.jpg",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/grs_e.htm",
+          "publisher": "JAXA (SELENE project)",
+          "credit": "JAXA (credit line not verified on the page)",
+          "caption": "Illustration of the Kaguya (SELENE) orbiter with its particle and radiation instruments, including the Gamma-ray spectrometer (GRS), labelled on the JAXA GRS page. The alpha-ray detector (ARD) and particle detector (PS) are labelled alongside the GRS.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct JAXA image URL, derived from the relative path on the JAXA GRS page and the JAXA image directory. HTTP 200 and content verified. The illustration is conceptual and does not show measured performance."
+        },
+        {
+          "id": "kaguya_grs_detector_diagram",
+          "description": "Diagram of the Kaguya Gamma-Ray Spectrometer showing the germanium detector, BGO and plastic anticoincidence shield, photomultiplier tubes and Stirling cooler.",
+          "image_type": "Technical diagram",
+          "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_grs_004.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/grs_e.htm",
+          "publisher": "JAXA (SELENE project)",
+          "credit": "JAXA (credit line not verified on the page)",
+          "caption": "JAXA SELENE GRS page diagram of the germanium detector assembly, with the BGO shield, plastic scintillator, photomultiplier tubes, displacer and compressor labelled.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "Direct JAXA image URL, derived from the relative path on the JAXA GRS page. HTTP 200 and content verified. Diagram labels are not verified in text form and no dimensions are taken from the diagram."
+        },
+        {
+          "id": "kaguya_grs_hardware_photograph",
+          "description": "Photograph of hardware shown on the JAXA SELENE GRS page: a cylindrical unit beside a box-shaped unit on a laboratory bench.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_grs_002.jpg",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/grs_e.htm",
+          "publisher": "JAXA (SELENE project)",
+          "credit": "JAXA (credit line not verified on the page)",
+          "caption": "Hardware photograph shown on the JAXA SELENE GRS page. The text accessed does not confirm whether this is the flight unit or an engineering unit, and the caption was not read.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct JAXA image URL, derived from the relative path on the JAXA GRS page. HTTP 200 and content verified. The flight-unit status is not confirmed."
+        },
+        {
+          "id": "kaguya_grs_measured_spectrum",
+          "description": "Measured gamma-ray energy spectrum from the Kaguya GRS, with labelled element lines, as shown on the JAXA GRS page.",
+          "image_type": "Measured data plot",
+          "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_grs_001.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/grs_e.htm",
+          "publisher": "JAXA (SELENE project)",
+          "credit": "JAXA (credit line not verified on the page)",
+          "caption": "JAXA SELENE GRS page figure: counts per keV per 13 hours against energy (0 to 8000 keV), with labelled element lines. The observation period and processing are not stated in the text accessed.",
+          "section_placements": [
+            "scientific_importance"
+          ],
+          "notes": "Direct JAXA image URL, derived from the relative path on the JAXA GRS page. HTTP 200 and content verified. Labelled lines are as read from the figure (for example Si 1778.8 keV and O 4438.3 keV); the observation period and processing are not verified."
+        },
+        {
+          "id": "apollo_gamma_detector_diagram",
+          "description": "Diagram of the Apollo 15 and 16 gamma-ray detector, showing the scintillation crystal, photomultiplier, plastic scintillator and labelled dimensions in millimetres.",
+          "image_type": "Technical diagram",
+          "image_url": "https://heasarc.gsfc.nasa.gov/Images/apollo/apollo_det.gif",
+          "source_page_url": "https://heasarc.gsfc.nasa.gov/Images/apollo/gamma_diagram.html",
+          "publisher": "NASA HEASARC (NASA Goddard Space Flight Center)",
+          "credit": "NASA (no credit line for the diagram is given on the source page)",
+          "caption": "HEASARC diagram of the Apollo 15 and 16 gamma-ray detector. The source page gives no separate credit for the diagram.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct HEASARC image URL verified with HTTP 200 and viewed. The image is a labelled drawing; dimensions are read from its labels."
+        },
+        {
+          "id": "apollo15_command_service_module",
+          "description": "Apollo 15 command and service module in lunar orbit, as shown on the HEASARC Apollo 15 and 16 mission page.",
+          "image_type": "Historical spacecraft photograph",
+          "image_url": "https://heasarc.gsfc.nasa.gov/Images/apollo/apollo15_endeavor_small.gif",
+          "source_page_url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/apollo1516.html",
+          "publisher": "NASA HEASARC (NASA Goddard Space Flight Center)",
+          "credit": "NASA (no credit line is given on the source page)",
+          "caption": "Apollo 15 command and service module in lunar orbit, as shown on the HEASARC Apollo 15 and 16 mission page. The image does not show the gamma-ray spectrometer; it is included as flight context.",
+          "section_placements": [
+            "historical_significance"
+          ],
+          "notes": "Direct HEASARC image URL verified with HTTP 200 and viewed. The HEASARC page describes it as an Apollo 15 photo. It does not identify the gamma-ray spectrometer."
+        },
+        {
+          "id": "lunar_prospector_drawing",
+          "description": "Drawing of the Lunar Prospector spacecraft with extended instrument booms, from the NSSDC Lunar Prospector page.",
+          "image_type": "Spacecraft drawing",
+          "image_url": "https://nssdc.gsfc.nasa.gov/image/spacecraft/lunarprosp.gif",
+          "source_page_url": "https://nssdc.gsfc.nasa.gov/planetary/lunarprosp.html",
+          "publisher": "NASA National Space Science Data Center (NSSDC)",
+          "credit": "NASA (the NSSDC page gives no image credit)",
+          "caption": "NSSDC drawing of Lunar Prospector. The drawing does not label the gamma-ray spectrometer.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct NSSDC image URL verified with HTTP 200 and viewed. The thumbnail link on the page points to the same file. The image is a drawing, not a photograph of flight hardware."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "kaguya_grs_concept_illustration",
+          "description": "Illustration of the Kaguya (SELENE) orbiter with its particle and radiation instruments, including the Gamma-ray spectrometer (GRS).",
+          "image_type": "Mission concept illustration",
+          "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_grs_003_e.jpg",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/grs_e.htm",
+          "publisher": "JAXA (SELENE project)",
+          "credit": "JAXA (credit line not verified on the page)",
+          "caption": "Illustration of the Kaguya (SELENE) orbiter with its particle and radiation instruments, including the Gamma-ray spectrometer (GRS), labelled on the JAXA GRS page. The alpha-ray detector (ARD) and particle detector (PS) are labelled alongside the GRS.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct JAXA image URL, derived from the relative path on the JAXA GRS page and the JAXA image directory. HTTP 200 and content verified. The illustration is conceptual and does not show measured performance."
+        }
+      ],
+      "operating_principle_images": [
+        {
+          "id": "kaguya_grs_detector_diagram",
+          "description": "Diagram of the Kaguya Gamma-Ray Spectrometer showing the germanium detector, BGO and plastic anticoincidence shield, photomultiplier tubes and Stirling cooler.",
+          "image_type": "Technical diagram",
+          "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_grs_004.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/grs_e.htm",
+          "publisher": "JAXA (SELENE project)",
+          "credit": "JAXA (credit line not verified on the page)",
+          "caption": "JAXA SELENE GRS page diagram of the germanium detector assembly, with the BGO shield, plastic scintillator, photomultiplier tubes, displacer and compressor labelled.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "Direct JAXA image URL, derived from the relative path on the JAXA GRS page. HTTP 200 and content verified. Diagram labels are not verified in text form and no dimensions are taken from the diagram."
+        }
+      ],
+      "scientific_importance_images": [
+        {
+          "id": "kaguya_grs_measured_spectrum",
+          "description": "Measured gamma-ray energy spectrum from the Kaguya GRS, with labelled element lines, as shown on the JAXA GRS page.",
+          "image_type": "Measured data plot",
+          "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_grs_001.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/grs_e.htm",
+          "publisher": "JAXA (SELENE project)",
+          "credit": "JAXA (credit line not verified on the page)",
+          "caption": "JAXA SELENE GRS page figure: counts per keV per 13 hours against energy (0 to 8000 keV), with labelled element lines. The observation period and processing are not stated in the text accessed.",
+          "section_placements": [
+            "scientific_importance"
+          ],
+          "notes": "Direct JAXA image URL, derived from the relative path on the JAXA GRS page. HTTP 200 and content verified. Labelled lines are as read from the figure (for example Si 1778.8 keV and O 4438.3 keV); the observation period and processing are not verified."
+        }
+      ],
+      "historical_significance_images": [
+        {
+          "id": "apollo15_command_service_module",
+          "description": "Apollo 15 command and service module in lunar orbit, as shown on the HEASARC Apollo 15 and 16 mission page.",
+          "image_type": "Historical spacecraft photograph",
+          "image_url": "https://heasarc.gsfc.nasa.gov/Images/apollo/apollo15_endeavor_small.gif",
+          "source_page_url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/apollo1516.html",
+          "publisher": "NASA HEASARC (NASA Goddard Space Flight Center)",
+          "credit": "NASA (no credit line is given on the source page)",
+          "caption": "Apollo 15 command and service module in lunar orbit, as shown on the HEASARC Apollo 15 and 16 mission page. The image does not show the gamma-ray spectrometer; it is included as flight context.",
+          "section_placements": [
+            "historical_significance"
+          ],
+          "notes": "Direct HEASARC image URL verified with HTTP 200 and viewed. The HEASARC page describes it as an Apollo 15 photo. It does not identify the gamma-ray spectrometer."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Gamma-ray spectrometer (GRS) for lunar polar orbiter SELENE",
+          "authors": "Hasebe, N., Shibamura, E., Miyachi, T., Takashima, T., Kobayashi, M., Okudaira, O., Yamashita, S. N., Kobayashi, T., Ishizaki, K., Sakurai, M., Miyajima, M., Fujii, K., Narasaki, S., Takai, K., Tsurumi, H., Kaneko, M., Nakazawa, K., Mori, O., Gasnault, S., Maurice, C., Grande, M.",
+          "publisher": "Earth, Planets and Space, 60(4), 299–312",
+          "publication_date": "2008",
+          "doi": "10.1186/BF03352795",
+          "url": "https://doi.org/10.1186/BF03352795",
+          "access_note": "Abstract accessed through the repository record at https://research.aber.ac.uk/en/publications/gamma-ray-spectrometer-grs-for-lunar-polar-orbiter-selene/. The full text was not accessed because the Springer article page redirects to a login."
+        },
+        {
+          "number": 2,
+          "title": "Gamma Ray Spectrometer (GRS), equipment page",
+          "authors": null,
+          "publisher": "JAXA SELENE project",
+          "publication_date": null,
+          "url": "https://selene.tksc.jaxa.jp/en/equipment/grs_e.htm",
+          "access_note": "Accessed in this run. Principal investigator: Nobuyuki Hasebe, Waseda University. Stated cooling below -180 deg C."
+        },
+        {
+          "number": 3,
+          "title": "Kaguya Gamma-Ray Spectrometer (KGRS): Calibrated Spectra Data Processing",
+          "authors": "Yamashita, N.",
+          "publisher": "NASA Planetary Data System Geosciences Node",
+          "publication_date": "2020 (document metadata creation date 2020-01-17)",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-kaguya_grs_spectra/document/kgrs_calibrated_spectra.pdf",
+          "access_note": "Accessed as a PDF; text extracted with pdftotext. Table 1 gives the in-orbit resolution by period. The temperature unit for annealing is not rendered in the extracted text."
+        },
+        {
+          "number": 4,
+          "title": "Lunar Prospector Gamma-Ray Spectrometer (GRS) instrument catalogue (grsinst.cat)",
+          "authors": null,
+          "publisher": "NASA Planetary Data System Geosciences Node, Lunar Prospector GRS archive",
+          "publication_date": null,
+          "url": "https://pds-geosciences.wustl.edu/Lunar/lp-l-grs-3-rdr-v1/lp_2xxx/catalog/grsinst.cat",
+          "access_note": "Accessed in this run. States the BGO crystal, shield, mass, power, energy range, sampling resolution, acquisition cadence and PI details."
+        },
+        {
+          "number": 5,
+          "title": "Lunar Prospector mission page",
+          "authors": null,
+          "publisher": "NASA Science",
+          "publication_date": null,
+          "url": "https://science.nasa.gov/mission/lunar-prospector",
+          "access_note": "Accessed in this run. Gives the impact date and time (09:52:02 UT, 31 July 1999), the shadowed Shoemaker crater, and a Key Dates launch of 6 January 1998. Lists the Gamma-Ray Spectrometer among the scientific instruments."
+        },
+        {
+          "number": 6,
+          "title": "Lunar Prospector spacecraft page",
+          "authors": "Williams, D. R. (NSSDC curator, per page)",
+          "publisher": "NASA National Space Science Data Center (NSSDC)",
+          "publication_date": null,
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunarprosp.html",
+          "access_note": "Accessed in this run. Gives the launch time 7 January 1998 02:28:44 UT, lists the GRS with G. Scott Hubbard (NASA Ames) as investigator, and provides the lunarprosp.gif drawing."
+        },
+        {
+          "number": 7,
+          "title": "Apollo 15 and 16 mission page",
+          "authors": null,
+          "publisher": "NASA HEASARC",
+          "publication_date": null,
+          "url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/apollo1516.html",
+          "access_note": "Accessed in this run. Gives the 512-channel NaI(Tl) spectrometer, 76x76 mm, 0.55–8.6 MeV, 8% resolution, 7.6 m boom, and mission dates for Apollo 15 and 16."
+        },
+        {
+          "number": 8,
+          "title": "Diagram of the Apollo 15 & 16 Gamma-ray Detector",
+          "authors": null,
+          "publisher": "NASA HEASARC",
+          "publication_date": "Last modified 27 Feb 1998 (per page)",
+          "url": "https://heasarc.gsfc.nasa.gov/Images/apollo/gamma_diagram.html",
+          "access_note": "Accessed in this run. Source of the labelled detector diagram apollo_det.gif and the statement that the instrument's main purpose was studying the Moon's radioactivity."
+        },
+        {
+          "number": 9,
+          "title": "Chang'e-1 mission page (GRS parameter table, payload list, controlled impact)",
+          "authors": null,
+          "publisher": "eoportal (ESA Earth Observation Portal)",
+          "publication_date": null,
+          "url": "https://www.eoportal.org/satellite-missions/chang-e-1",
+          "access_note": "Accessed in this run. Gives the CsI(Tl) GRS parameters, normal observation start 28 Nov 2007, and controlled impact 1 Mar 2009 at 08:13:10 UTC. Its GRS table cites reference 21, which was not accessed."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "operating_principle": "payload.article.operating_principle_images",
+      "scientific_importance": "payload.article.scientific_importance_images",
+      "historical_significance": "payload.article.historical_significance_images",
+      "Apollo 15 and 16 gamma-ray spectrometer example": "payload.article.physical_specifications.examples[0].images",
+      "Lunar Prospector gamma-ray spectrometer example": "payload.article.physical_specifications.examples[1].images",
+      "Kaguya (SELENE) Gamma-Ray Spectrometer example": "payload.article.physical_specifications.examples[2].images",
+      "Chang'e-1 Gamma-Ray Spectrometer example": "payload.article.physical_specifications.examples[3].images (empty: no verified image)",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (empty: no verified image relevant to transportation)"
+    },
+    "url_policy": "All image_url, source_page_url, source_urls and reference url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. The Kaguya image URLs were derived from relative paths on the JAXA GRS page and verified by HTTP 200 at the kaguya.jaxa.jp image directory."
+  },
+  "data_quality_notes": [
+    "Kaguya energy range differs by source: the Hasebe et al. abstract gives 200 keV–12 MeV, while the PDS calibration document gives 0.15–3.2 MeV (high gain) and 0.15–13 MeV (low gain). The basis of each figure is different and both are recorded.",
+    "Kaguya cooling temperature differs by source: JAXA states below -180 deg C, while the Hasebe et al. abstract and PDS document give below 90 K. -180 deg C is approximately 93 K. The paper should be consulted for the exact specification.",
+    "Kaguya in-orbit annealing temperature: the PDS document states the crystal was annealed for 48 hours at “above 80”, but the temperature unit is missing from the extracted text. The value is not used.",
+    "Kaguya flight-model energy resolution (3.0 keV FWHM at 1333 keV, Hasebe et al. abstract) is a pre-flight or flight-model specification and is not directly comparable with the in-orbit FWHM values at 1461 keV in the PDS Table 1.",
+    "Kaguya mass, power, overall dimensions and detection efficiency are not verified. The detection efficiency of about 60% in a search summary is not in the abstract accessed and is not used. The full Hasebe et al. paper was not accessible without a login.",
+    "Apollo 15 and 16 energy ranges and surface coverage: HEASARC gives 0.55–8.6 MeV and 8% resolution for both missions. Secondary search summaries gave mission-specific ranges that were not confirmed in a primary source and are not used. A reported gain decrease during the lunar phase is not verified.",
+    "Apollo 15 and 16 mass, power and overall instrument dimensions are not stated in prose in the sources accessed. Only the labelled HEASARC diagram gives dimensions (227 mm high, 204 mm wide including the photomultiplier), which were read from the diagram.",
+    "Apollo boom purpose: HEASARC gives the 7.6 m boom length but does not state why it was used. A NASA report summary linking the boom to spacecraft background was not verified.",
+    "Lunar Prospector energy resolution (FWHM) is not stated in the PDS catalogue; the 17.6 keV value is labelled a sampling resolution. A search summary gave a 12.2% to 9.6% FWHM improvement at 662 keV on cooling; this is not verified and is not used.",
+    "Lunar Prospector crystal diameter: the PDS catalogue gives 7.1 cm; a search summary citing a Los Alamos description gave 7.62 cm. The PDS value is used. The primary description was not accessed.",
+    "Lunar Prospector investigator roles: the PDS catalogue names William Feldman (LANL) as co-investigator and spectrometer group leader, while the NSSDC page names G. Scott Hubbard (NASA Ames) as investigator for the gamma-ray spectrometer. The roles are not reconciled.",
+    "Lunar Prospector launch date: NASA Key Dates gives 6 January 1998, while NASA specifications and NSSDC give 7 January 1998 at 02:28:44 UT. The UT time may account for the difference; the sources do not say so.",
+    "Lunar Prospector sensitivity statement (2 to 8 times more sensitive than Apollo) is a PDS catalogue statement; its basis is not given and it has not been independently checked.",
+    "Chang'e-1 eoportal quick-facts end-of-life date (3 January 2009) conflicts with the page text's controlled impact date (1 March 2009). The text's date is used.",
+    "Chang'e-1 GRS mass, power and mounting are not stated in the eoportal page, whose GRS table cites reference 21, which was not accessed. No primary Chinese-language instrument paper was accessed. Search summaries of energy channels (512 or 1024) and of a 2010 overview are not verified.",
+    "No proposed or flight-qualified-but-unflown gamma-ray spectrometer was verified. A search summary referred to a 2001 combined gamma-ray and neutron detector concept by Los Alamos authors; it was not accessed as a primary source and is not described.",
+    "Direct image verification: seven images were verified with HTTP 200 and by viewing the image content. The JAXA image paths were derived from relative links on the JAXA GRS page, and the raw HTML embedding was not checked, so direct_image_assets_verified_from_official_pages is set to false. JAXA credit lines were not verified on the page. The NSSDC and HEASARC pages give no image credit lines. No Chang'e-1 image was verified.",
+    "The Apollo command and service module image (apollo15_endeavor_small.gif) shows the spacecraft in lunar orbit and does not show the gamma-ray spectrometer. It is included only as flight context.",
+    "Cross-references: neutron spectrometer (058), gamma-ray detector (132), X-ray spectrometer (056) and gamma-ray telescope (244) entries are not yet in the output folder. Overlap is noted but their content is not repeated or assumed."
+  ]
+}

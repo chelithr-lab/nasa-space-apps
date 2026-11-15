@@ -1,0 +1,165 @@
+{
+  "catalogue_id": 112,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 5,
+    "name": "Water, ice and volatile detection"
+  },
+  "payload": {
+    "number": 112,
+    "name": "Frost detection imager",
+    "article": {
+      "overview": "A frost detection imager is a camera-type instrument proposed to identify thin water frost or ice on lunar surfaces by comparing ultraviolet and visible images, with particular interest in permanently shadowed regions (PSRs). The only design-level source reviewed for this entry is a 2020 laboratory proof of concept [1]. No flown instrument matching this exact design was identified in the sources reviewed.",
+      "description": "A frost detection imager is intended to make images in which thin water frost or ice can be separated from bare regolith. The concept tested in the 2020 laboratory study uses two wavelength bands. Ice reflects far-ultraviolet light at the Lyman-alpha wavelength poorly, so it looks darker than regolith in a UV image. In visible light the contrast reverses, and ice appears brighter [1]. Taking the ratio of the UV and visible images increases the contrast between ice and regolith. The authors report that this improves the signal-to-noise ratio for distinguishing ice from regolith by 36% in their test [1]. The study title refers to reflected starlight as the illumination concept. The laboratory test did not use starlight; it used a lamp emitting UV and visible light to simulate the wavelengths of the background starfield [1].",
+      "scientific_purpose_and_applications": "Frost and ice mapping in dark terrain: the imager is intended for surfaces where a single image is hard to interpret because of shadows or specular reflection. The authors state that the UV/visible ratio helps in those cases [1]. Complementing orbital spectroscopy: the LRO LAMP far-ultraviolet study inferred frost in PSRs from darkness and reddening, and gave up to 1 to 2 percent water frost as an upper-bound estimate for some soils [2][3]. A surface or close-range imager could add spatial detail to such inferences. Volatile resource context: the ShadowCam search reported a few candidate ice areas about 20 to 50 m across, which shows why targeted, high-resolution imaging is relevant [5][6].",
+      "operating_principle": "The method compares two images of the same scene. The UV image is sensitive to the low far-ultraviolet reflectance of ice at Lyman-alpha, and the visible image responds in the opposite sense [1]. The ratio of the two images therefore separates ice from regolith more clearly than either image alone. The authors describe the approach as a proof of concept for a camera that would use faint background illumination, and the laboratory work simulated that illumination with a lamp [1]. The filters, detector and lamp specification used in the laboratory test were not described in the source text retrieved, so this section describes the measurement principle only [1].",
+      "scientific_importance": "Water frost and ice in permanently shadowed regions are scientifically and operationally important because they are a potential resource and a record of volatile delivery. Orbital observations so far give limited, indirect evidence: LAMP inferred frost from far-ultraviolet darkness and reddening [2][3], and ShadowCam's first search found no widespread ice above its detection limit [5][6]. A surface-capable imager that contrasts ice with regolith could help map deposits at higher spatial resolution, if its sensitivity and calibration are adequate.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a frost detection imager. No flight specification for a frost detection imager was found in the sources read. The examples below describe a laboratory prototype and three related instruments. They have different purposes and technologies, and their numbers are not comparable. Values not publicly specified in the sources read are recorded as null.",
+        "examples": [
+          {
+            "name": "Laboratory frost detection imager proof of concept (Godin et al., 2020)",
+            "type": "Laboratory proof of concept (not flown)",
+            "status": "Laboratory test with a simulated ice-covered surface in a vacuum chamber.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "wavelengths": "Ultraviolet (Lyman-alpha) and visible; a lamp emitting UV and visible light simulated the starfield.",
+            "detector_and_filters": "Camera using a UV and visible filter pairing; model not publicly specified in the sources read.",
+            "key_result": "The UV/visible ratio improved the signal-to-noise ratio for distinguishing ice from regolith by 36% in the laboratory test [1].",
+            "source_refs": [1],
+            "source_urls": ["https://arxiv.org/abs/2003.01230"],
+            "images": []
+          },
+          {
+            "name": "ShadowCam (Korea Pathfinder Lunar Orbiter / Danuri)",
+            "type": "Flown lunar-orbit imager, hosted on KPLO; related instrument, not a dedicated frost detection imager",
+            "status": "In lunar orbit, hosted on KPLO. Launch date not stated in the page text retrieved.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "optics": "f/3.6 Cassegrain (Richey-Chretien), 699.28 mm focal length, time-delay-integration pushbroom camera.",
+            "wavelengths": "410 to 780 nm",
+            "spatial_resolution": "1.7 m per pixel",
+            "sensitivity_note": "Stated as over 200 times more sensitive than the LRO Narrow Angle Camera; saturates on sunlit terrain [4].",
+            "key_result": "The 2026 study reports no evidence of widespread ice above 20 to 30 percent by weight, forward-scattering signatures consistent with ice concentrations greater than 10 percent, and a few small areas roughly 20 to 50 m in size [5][6].",
+            "source_refs": [4, 5, 6],
+            "source_urls": ["https://shadowcam.im-ldi.com/about", "https://doi.org/10.1126/sciadv.aec8211", "https://e3.eurekalert.org/news-releases/1121967"],
+            "images": []
+          },
+          {
+            "name": "LRO Lyman Alpha Mapping Project (LAMP)",
+            "type": "Flown lunar-orbit far-ultraviolet instrument on the Lunar Reconnaissance Orbiter; frost-detection method, not an imager of this design",
+            "status": "In lunar orbit on LRO; developed by Southwest Research Institute.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "wavelengths": "Far-ultraviolet, including Lyman-alpha; numerical range not stated in the sources read.",
+            "key_result": "Permanently shadowed regions appear darker and redder at far-ultraviolet wavelengths; darkness attributed to high surface porosity and reddening to water frost. Up to 1 to 2 percent water frost is an upper-bound estimate for some soils; frost loss estimated about 16 times slower than previously believed [2][3].",
+            "source_refs": [2, 3],
+            "source_urls": ["https://doi.org/10.1029/2011JE003913", "https://www.sciencedaily.com/releases/2012/01/120113210608.htm"],
+            "images": []
+          },
+          {
+            "name": "High-resolution Volatiles and Minerals Moon Mapper (HVM3) on Lunar Trailblazer",
+            "type": "Imaging spectrometer; built and integrated, not operated on the Moon",
+            "status": "Lunar Trailblazer launched 26 February 2025 as a rideshare on IM-2, lost contact on 27 February 2025, and the mission ended 31 July 2025 without reported lunar observations [7].",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "wavelengths": "'A wide range of infrared wavelengths'; no numerical band given in the source read [8].",
+            "key_result": "No lunar observations reported [7].",
+            "source_refs": [7, 8],
+            "source_urls": ["https://www.jpl.nasa.gov/news/nasas-lunar-trailblazer-moon-mission-ends/", "https://www.nasa.gov/feature/jpl/moon-water-imager-integrated-with-nasa-s-lunar-trailblazer"],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No dimensions for a frost detection imager design are published in the sources read. The ShadowCam and HVM3 sizes are not comparable with a frost imager and are not used here. A future design's envelope would depend on its optics, detector, filters and the thermal and mechanical requirements of its host.",
+        "mass_and_weight": "No mass has been published for a frost detection imager design in the sources read. Masses for ShadowCam, LAMP and HVM3 were not retrieved, so no mass comparison is made.",
+        "power_requirements": "No power requirement for a frost detection imager is published in the sources read. Power for the examples was not retrieved, so the power budget of any future design is unknown."
+      },
+      "environmental_and_operational_requirements": "A frost detection imager would have to work in a high-vacuum environment with strong ultraviolet exposure and large temperature cycles. Permanently shadowed regions are extremely cold and dark, so the instrument would need enough sensitivity to work with very faint illumination. Thermal cycling and impact gardening may control how long frost persists, and local conditions strongly affect frost accumulation [2][3]. The laboratory test simulated the vacuum and illumination conditions but not the full lunar thermal environment [1].",
+      "limitations": "The payload name describes a concept. The only design-level evidence found is a laboratory test, not a flight instrument [1]. The 36 percent signal-to-noise improvement comes from a laboratory setup with a simulated ice layer and a simulated illumination source [1]. Frost and ice concentrations inferred from orbital data are indirect and upper-bound in some cases [2][3]. The ShadowCam detection limit is high relative to very low ice concentrations, so small or low-concentration deposits may be missed [5][6].",
+      "transportation_and_deployment": {
+        "overview": "No lander, rover or spacecraft has been identified for a frost detection imager, and no compatibility with a named platform is asserted here.",
+        "transportation_process": [
+          "Surface payload: Earth integration, launch, lunar transfer and landing delivery, deployment, power, data and thermal interfaces would all need to be defined. None were verified for a frost detection imager.",
+          "Orbiter payload: ShadowCam shows that a camera can be hosted on a lunar orbiter and image permanently shadowed regions from orbit [4]. Spacecraft integration, cruise, orbit insertion, pointing and thermal interfaces were not verified for any named spacecraft.",
+          "Mobile payload: no rover-mounted design was verified from the full source text. A rover application would need its own stowage, release, mobility and servicing analysis."
+        ],
+        "deployment_methods": "Not specified for a frost detection imager. Surface, orbiter and rover options are all conceptually possible, but none has been verified for this payload.",
+        "historical_examples": "ShadowCam is an orbital example of a camera imaging permanently shadowed regions [4]. HVM3 on Lunar Trailblazer was built as a volatile-mapping imaging spectrometer but did not reach the Moon [7][8].",
+        "compatibility_assessment": "No compatibility with any specific lander, rover or spacecraft is asserted. Any future pairing would need verified interface data: mass, envelope, mounting, launch and landing loads, thermal environment, power, data rate and pointing.",
+        "images": []
+      },
+      "historical_significance": "LAMP's 2012 far-ultraviolet study is the main published evidence that water frost may exist in PSR soils, and it remains an inference rather than a direct detection [2][3]. The ShadowCam team's 2026 search for surficial water ice found no widespread ice above its detection limit, and identified a small number of candidate areas [5][6]. HVM3 on Lunar Trailblazer was built as a volatile-mapping imaging spectrometer but did not reach the Moon [7][8]. The laboratory frost imager concept is the closest design-level precursor to a dedicated frost detection imager [1].",
+      "limitations_and_uncertainties": "The payload name describes a concept, not a flown instrument. The only design-level evidence is a laboratory test with a simulated ice layer, a simulant regolith and a lamp standing in for starlight [1]. The 36 percent signal-to-noise improvement is a laboratory result and does not establish performance in flight conditions. The camera model, filters, lamp specification and ice coverage were not retrievable from the sources read, so mass, dimensions, power and sensitivity are recorded as null. The full text of the 2020 study was not readable in this run; details come from its arXiv abstract page [1] and should be checked against the full paper. ShadowCam's detection limit is stated as 20 to 30 percent by weight for widespread ice, while press coverage has summarised the result differently, so the primary paper should be checked [5][6]. Mission and instrument status reflects sources available on 13 November 2026 and may change. Lunar landing-site or location recommendations are deliberately not included; the user has deferred them.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Laboratory investigations of Lunar ice imaging in permanently shadowed regions using reflected starlight (arXiv:2003.01230)",
+          "publisher": "arXiv (authors: Godin, Kloos, Seguin, Moores; submitted 2 March 2020)",
+          "url": "https://arxiv.org/abs/2003.01230"
+        },
+        {
+          "title": "Far-ultraviolet reflectance properties of the Moon's permanently shadowed regions",
+          "publisher": "Journal of Geophysical Research, vol. 117 (2012), doi:10.1029/2011JE003913",
+          "url": "https://doi.org/10.1029/2011JE003913"
+        },
+        {
+          "title": "LRO LAMP study of permanently shadowed regions (news release)",
+          "publisher": "ScienceDaily, 13 January 2012",
+          "url": "https://www.sciencedaily.com/releases/2012/01/120113210608.htm"
+        },
+        {
+          "title": "Seeing in the Shadows (ShadowCam about page)",
+          "publisher": "ShadowCam project website; publisher and date not stated",
+          "url": "https://shadowcam.im-ldi.com/about"
+        },
+        {
+          "title": "Searching for surficial water ice in lunar permanently shaded regions (PSRs) with ShadowCam",
+          "publisher": "Science Advances, doi:10.1126/sciadv.aec8211, 18 March 2026",
+          "url": "https://doi.org/10.1126/sciadv.aec8211"
+        },
+        {
+          "title": "ShadowCam water-ice study (University of Hawaii news release, via EurekAlert!)",
+          "publisher": "EurekAlert!, 27 March 2026",
+          "url": "https://e3.eurekalert.org/news-releases/1121967"
+        },
+        {
+          "title": "NASA's Lunar Trailblazer Moon Mission Ends",
+          "publisher": "NASA Jet Propulsion Laboratory, announcement dated 4 August 2025",
+          "url": "https://www.jpl.nasa.gov/news/nasas-lunar-trailblazer-moon-mission-ends/"
+        },
+        {
+          "title": "Moon water imager integrated with NASA's Lunar Trailblazer",
+          "publisher": "NASA Jet Propulsion Laboratory, feature article, 22 December 2022",
+          "url": "https://www.nasa.gov/feature/jpl/moon-water-imager-integrated-with-nasa-s-lunar-trailblazer"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No verified direct image assets were identified for this payload, so the image registry is empty."
+  },
+  "data_quality_notes": [
+    "No flight specification exists in the sources read for a frost detection imager; the design-level source is a 2020 laboratory proof of concept.",
+    "The full text of the Godin et al. 2020 arXiv preprint was not readable in this run; camera, filter, lamp and simulant specifications are not verified.",
+    "The ShadowCam launch date and instrument mass, dimensions and power were not found in the pages read.",
+    "Press coverage of the 2026 ShadowCam study summarises the ice detection limit differently; the release wording (20 to 30 percent by weight) is used.",
+    "The LAMP frost estimate of 1 to 2 percent water frost is an upper bound for some soils from a 2012 study, not a uniform value.",
+    "No verified direct image assets were identified, so no images are included and image_urls_added is false."
+  ]
+}

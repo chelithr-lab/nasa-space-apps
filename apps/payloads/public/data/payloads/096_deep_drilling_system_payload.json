@@ -1,0 +1,362 @@
+{
+  "catalogue_id": 96,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 4,
+    "name": "Subsurface exploration and drilling"
+  },
+  "payload": {
+    "number": 96,
+    "name": "Deep drilling system",
+    "article": {
+      "overview": "A deep drilling system is a lunar surface instrument or mechanism that penetrates the regolith, the loose layer of broken rock and dust that covers the Moon, to depths greater than a surface scoop can reach, so that a vertical core of subsurface material can be recovered for analysis or measured in place. The catalogue entry is a class label rather than one standard device: the examples documented in this article range from the Apollo 15-17 deep core drill, which drilled metre-scale holes, to the ESA-led ProSEED drill, which is designed to reach at least 1 m and has not been confirmed as flown [1][2].",
+      "description": "A deep drilling system is normally built from a drive unit, a drill string or stems, a bit at the lower end, a means of keeping the drill vertical or at a known angle, and a core-retention or sample-transfer mechanism. The drive unit turns the string and, in many designs, adds percussion so that the bit breaks through rock fragments and compacted layers. Core material is held in a tube or sleeve that is then withdrawn from the hole and packaged for storage or analysis. Because the drill must reach depth, its stems or rods must be assembled or extended in sections, and each joint is a potential point of failure. The systems described here show three broad approaches: separable stems assembled by astronauts (Apollo), a single flexible core tube in an automated sampler (Luna 24 and Chang'e-5), and a robotic drill whose sample is delivered directly into an analysis oven (ProSEED) [1][2][4][5].",
+      "scientific_purpose_and_applications": "Deep drilling systems give access to material that has been shielded from surface weathering and temperature cycling, although even a deep core may be disturbed by drilling. Layered regolith records the history of impacts and deposition, so a core can reveal how the surface has changed over time. The Apollo drilling was used for heat-flow holes and deep-core collection [1]. Luna 24 was designed to preserve the original relative position of regolith layers, which is valuable for stratigraphic interpretation [4]. The ProSEED drill is intended to bring cryogenic samples from up to 1 m depth to an onboard laboratory for the detection of volatiles, including water ice, in the lunar south polar region [2][3]. Any future use would depend on whether the target layer is reachable by the chosen drill and whether the sample can be kept cold enough to avoid losing volatiles.",
+      "operating_principle": "Most of the systems described use rotary drilling, often combined with percussion. The Apollo lunar surface drill was a battery-powered rotary-percussion drill; NASA documentation gives its operating speeds as 280 rotations per minute and 2,270 blows per minute, and states that bit cooling was not required at those speeds [1]. The Luna 24 LB-09 drill was a rotary-percussion drill that ran in rotary mode to 120 cm and then switched to percussion-rotation mode, adjusting its power to soil density [4]. The Chang'e-5 drill is described as a rotary-percussive coring mechanism that delivers its core to the ascent vehicle in a Kevlar tube [5]. ProSEED uses a different architecture: a mandrel supplies torque to the drill rod while a lead-screw joint provides thrust, and the drill can be run in power-limited, force-limited or constant-speed modes [2]. In each case, the sample is retained or transferred so that its vertical sequence is preserved, although the degree to which this is achieved in practice differs by design.",
+      "scientific_importance": "The Moon's subsurface cannot be examined adequately from orbit or from the surface alone. A core provides a physical sample, layer boundaries and, in principle, information about temperature and volatile content with depth. The Apollo, Luna 24 and Chang'e-5 cores are physical samples available for study; this article does not assess the scientific results obtained from them. The Chang'e-5 total returned mass reported here (1,731 g) combines drilled and scooped material and cannot be attributed to the drill alone [5]. The ProSEED design addresses a different question: whether water ice survives at depth in cold polar terrain. Its specification and test results support that objective, but a flight demonstration has not been confirmed in this run [2][3].",
+      "physical_specifications": {
+        "note": "There is no universal mass, depth, power or dimension for a deep drilling system. Each example below describes a named system, flown or designed at a particular time, and its values must not be transferred to other drills. Several sources also disagree on some figures; those disagreements are shown in the examples and in the limitations section.",
+        "examples": [
+          {
+            "name": "Apollo lunar surface drill (Apollo 15-17)",
+            "type": "Flown historical lunar drill (crewed Apollo surface missions)",
+            "flight_status": "Flown",
+            "drive": "Battery-powered rotary-percussion drill; 280 rpm and 2,270 blows per minute as reported by NASA.",
+            "stems": {
+              "deep_core_stem_length_cm_reported": 40,
+              "deep_core_stem_count": {
+                "Apollo 15": 6,
+                "Apollo 16": 6,
+                "Apollo 17": 8
+              },
+              "heat_flow_stem_set_cm_reported": [
+                137,
+                71,
+                71
+              ],
+              "heat_flow_stem_set_total_cm_derived": 279
+            },
+            "hole_depth": {
+              "heat_flow_holes_m_reported_in_nasa_introduction": 3,
+              "heat_flow_casings_m_reported_by_national_academies_slide": 2.4,
+              "deep_core_m_reported": "2-3",
+              "apollo_17_drilling_m_reported": 3.2,
+              "conflict": "3 m versus 2.4 m for heat-flow holes is not reconciled."
+            },
+            "penetration_rate_cm_per_s": {
+              "Apollo 16": 1.7,
+              "Apollo 15": 1.4,
+              "Apollo 17": 0.9
+            },
+            "core_half_length_m_reported_apollo_16": 1.12,
+            "mass_kg": null,
+            "power": "Not stated in source reviewed.",
+            "mass_note": "Drill mass not stated in the NASA source reviewed.",
+            "qualification": "Flight hardware. Values are mission-specific and not a general specification for deep drilling systems.",
+            "source_urls": [
+              "https://www.nasa.gov/wp-content/uploads/static/history/alsj/WOTM/WOTM-Drilling.html",
+              "https://www.nationalacademies.org/cdn/materials/a055a705-2ac0-4808-aacf-8f3b0dab7351"
+            ],
+            "images": [],
+            "article_summary_points": [
+              "Status: Flown on the Apollo lunar surface missions. NASA's Apollo Lunar Surface Journal states that the drill was flown on Apollo 13, 15, 16 and 17, while its detailed sections cover Apollo 15, 16 and 17 [1]. The article does not treat the Apollo 13 reference as a reported drilling result.",
+              "Drive: A battery-powered rotary-percussion drill operating at 280 rotations per minute and 2,270 blows per minute [1]. The drill's mass and power consumption are not stated in the source reviewed.",
+              "Deep core stems: Each deep-core stem is described as about 40 cm long. Apollo 15 and 16 used six stems (three pairs), and Apollo 17 used eight stems (four pairs) [1]. The arithmetic total for eight 40 cm stems is about 3.2 m, which matches NASA's reference to \"3.2 meters of drilling\" in the Apollo 17 deep-core hole [1]; this total is derived and not separately stated.",
+              "Heat-flow stems: The heat-flow stem set is described as a 137 cm bottom stem plus two 71 cm stems, summing to 279 cm; the total is derived, not stated on the page [1].",
+              "Hole depth: NASA's introduction describes the heat-flow holes as drilled to a 3 m depth and the deep core as 2-3 m [1]. A National Academies slide derived from Honeybee Robotics material gives 2.4 m for two fibreglass heat-flow casings [7]. The two figures conflict and have not been reconciled.",
+              "Performance: Penetration rates are reported as about 1.7 cm/s (Apollo 16), 1.4 cm/s (Apollo 15) and 0.9 cm/s (Apollo 17) [1]. Apollo 16 core halves are each described as about 1.12 m long [1].",
+              "Engineering problems: The Apollo 15 heat-flow stem joint design prevented clearing of the drill-stem flutes, and that experiment is excluded from one analysis [1]. Core extraction was done by hand on Apollo 15 but with a jack and treadle on Apollo 16 and 17 [1]. Rock fragments in the subsurface slowed penetration and caused kick-back on Apollo 17 [1].",
+              "Images: No direct asset URL for a verified Apollo drill image was identified in this run. The NASA Apollo Lunar Surface Journal drilling page is the source reference for this example [1]."
+            ]
+          },
+          {
+            "name": "ESA and Leonardo ProSEED drill (PROSPECT suite)",
+            "type": "Designed and tested robotic lunar drill (not confirmed as flown)",
+            "flight_status": "Designed and tested; flight not confirmed in this run",
+            "target_depth_mm": 1000,
+            "design_depth_reference": "Target up to 1,000 mm, with the surface assumed 200 mm below the SIS X-Y interface (design requirement).",
+            "dimensions_mm": {
+              "drill_box_without_PRJ_HDRM": [
+                257,
+                228,
+                1721
+              ],
+              "drill_box_with_PRJ_HDRM": [
+                497,
+                290,
+                1721
+              ]
+            },
+            "mass_kg": {
+              "package_estimate_including_margins": 31.8,
+              "CEU": 5.3,
+              "drill_and_positioner": 23.4,
+              "harness": 3.1,
+              "drill_only": null
+            },
+            "power_w": {
+              "line_1_package_limit": 50,
+              "line_2_package_limit": 200,
+              "drill_specific": null
+            },
+            "operating_temperature_c": {
+              "surface_operational_drill_box_interface": [
+                -150,
+                50
+              ],
+              "transfer_and_flight": [
+                -50,
+                50
+              ],
+              "surface_non_operational": [
+                -150,
+                80
+              ]
+            },
+            "demonstrated_results": [
+              "Demonstration Model drilled to 1 m below -150 degrees C (laboratory).",
+              "Simulant with up to about 10 wt% water ice drilled and sampled (laboratory)."
+            ],
+            "sample_types": {
+              "push_tube_mm3": 45,
+              "internal_auger_mm3": 5000
+            },
+            "working_area": "About 287 mm along a 134-degree arc, radius 245.6 mm (nominal); the Frontiers article also describes an arc of about 90 degrees, unresolved.",
+            "schedule_status": "Selected for NASA CLPS CP-22 with landing targeted for 2026; delivery to lander provider targeted for 2025 per the article. Current status not confirmed.",
+            "qualification": "Design requirements and laboratory demonstration results; not flight performance; TRL not stated.",
+            "source_urls": [
+              "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+              "https://www.esa.int/media/prospect-s-lunar-drill"
+            ],
+            "images": [
+              {
+                "id": "esa_prospect_drill_image",
+                "description": "Robotic drill of the PROSPECT suite (ProSEED drill) for lunar south polar volatile sampling.",
+                "image_type": "ESA press image of flight-candidate hardware",
+                "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2024/08/prospect_s_lunar_drill/26290180-1-eng-GB/Prospect_s_lunar_drill.jpg",
+                "source_page_url": "https://www.esa.int/media/prospect-s-lunar-drill",
+                "publisher": "ESA",
+                "credit": "Leonardo",
+                "caption": "View of Prospect's robotic drill set to fly to the Moon's South Polar region in search of volatiles, such as water ice.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL taken from the ESA image record with query strings removed; a HEAD request returned HTTP 200 with image/jpeg. ESA image record dated 27 August 2024. Rights and reuse terms are ESA's; public-domain status not verified. Full-resolution download not checked in this run."
+              }
+            ],
+            "article_summary_points": [
+              "Status: Designed and tested, not confirmed as flown. The ProSEED drill was selected for NASA CLPS mission CP-22 with a landing targeted for 2026. The article reviewed describes the package as in hardware manufacturing and integration, with delivery to the lander provider targeted for 2025 [2]. Whether CP-22 has launched or landed has not been confirmed in this run.",
+              "Design depth: Target depth is up to 1,000 mm, with the surface assumed 200 mm below the sample inlet system X-Y interface [2]. This is a design requirement. ESA's image page states that the drill goes to at least 1 m [3].",
+              "Dimensions: The drill box measures 257 x 228 x 1,721 mm without the PRJ and HDRM units named in the article, or 497 x 290 x 1,721 mm with them [2].",
+              "Mass: The ProSEED package is estimated at 31.8 kg including margins: 5.3 kg for the CEU, 23.4 kg for the drill and positioner, and 3.1 kg for the harness. A drill-only mass is not given [2].",
+              "Power: Drill-specific power is not given. The package limits are 50 W on line 1 and 200 W on line 2 [2].",
+              "Temperature: The drill-box interface operational range is -150 to +50 degrees C on the surface, -50 to +50 degrees C during transfer and flight, and -150 to +80 degrees C non-operational on the surface [2]. ESA describes the volatile detection goal as conditions as cold as -150 degrees C [3].",
+              "Demonstrated results: A Demonstration Model drilled to 1 m at temperatures below -150 degrees C, and drilled and sampled simulant mixtures with up to about 10 wt% water ice [2]. These are laboratory test results, not lunar flight results.",
+              "Sample types: A push tube of about 45 mm³ feeds the ProSPA instrument, and an internal auger of about 5,000 mm³ collects larger loose samples [2].",
+              "Working area: About 287 mm along a 134-degree arc, with a nominal radius of 245.6 mm; the Frontiers article also describes an arc of about 90 degrees, which the source leaves unresolved [2].",
+              "Image: The ESA image shown here is the only image in this article with a direct asset URL verified in this run."
+            ]
+          },
+          {
+            "name": "Luna 24 drill (LB-09)",
+            "type": "Flown Soviet lunar sample-return drill",
+            "flight_status": "Flown (Luna 24, landed 18 August 1976, Mare Crisium)",
+            "drill_type": "Rotary-percussion drill designated LB-09 (TashKBM for NPO Lavochkin)",
+            "penetration_cm_reported": 225,
+            "penetration_conflict": "The same source also mentions a depth of two meters and a drilling range of 2,575 mm.",
+            "tilt_angle_degrees_from_vertical": 30,
+            "core_tube": {
+              "length_cm": 260,
+              "diameter_mm": 12
+            },
+            "drill_dimensions_mm": {
+              "external_diameter": 15,
+              "internal_diameter": 8,
+              "length": 3157
+            },
+            "returned_regolith_mass_g": 170.1,
+            "recovered_column_cm": 160,
+            "mass_kg": null,
+            "power": "Not stated in source reviewed.",
+            "qualification": "Flight hardware; values from one specialist source.",
+            "source_urls": [
+              "https://www.russianspaceweb.com/luna24.html"
+            ],
+            "images": [],
+            "article_summary_points": [
+              "Status: Flown on the Soviet Luna 24 sample-return mission, which landed in Mare Crisium on 18 August 1976 [4].",
+              "Drill type: A rotary-percussion drill designated LB-09, developed by TashKBM for NPO Lavochkin, with power adjustable to soil density [4].",
+              "Penetration: The principal source reports 225 cm of penetration at a 30-degree angle from local vertical [4]. The same source also mentions \"a depth of two meters\" and a drilling range of 2,575 mm, which conflict with the 225 cm figure.",
+              "Core tube and mass: The flexible core tube is listed as 260 cm long and 12 mm in diameter. The drill dimensions are given as 15 mm external diameter, 8 mm internal diameter and 3,157 mm length. No mass is given [4].",
+              "Returned core: The returned regolith core is listed as 170.1 g and a recovered column 160 cm long [4]."
+            ]
+          },
+          {
+            "name": "Chang'e-5 drill",
+            "type": "Flown Chinese lunar sample-return drill",
+            "flight_status": "Flown on the Chang'e-5 mission",
+            "drill_type": "Coring drill and penetrating mechanism; rotary-percussive",
+            "target_depth_m": 2,
+            "achieved_depth_m_reported_in_secondary_summary": 1,
+            "achieved_depth_source_status": "Secondary search-result summary of an IJRR paper (DOI 10.1177/02783649231187918), not retrieved directly.",
+            "drill_sample_mass_g_reported_in_secondary_summary": 259.72,
+            "returned_total_mass_g": 1731,
+            "returned_total_note": "Combined drilled and scooped material; not attributable to the drill alone.",
+            "planned_split_kg": {
+              "drilling": 0.5,
+              "scooping": 1.5
+            },
+            "core_delivery": "Core delivered to the ascent vehicle inside a Kevlar tube.",
+            "mass_kg": null,
+            "power": "Not stated in source reviewed.",
+            "qualification": "Flight hardware. Achieved depth and drill sample mass come from secondary summaries and are not reconciled with the mission description.",
+            "source_urls": [
+              "https://eoportal.org/satellite-missions/chang-e-5",
+              "https://doi.org/10.1177/02783649231187918"
+            ],
+            "images": [],
+            "article_summary_points": [
+              "Status: Flown on the Chinese Chang'e-5 lunar sample-return mission [5].",
+              "Design depth: The mission describes a coring drill and penetrating mechanism with a target depth of up to 2 m, using a rotary-percussive mechanism [5].",
+              "Achieved depth: The eoportal description reports only that the lander began drilling 2 m below the surface and that drilling and scooping were finished [5]. A secondary summary of an IJRR analysis reports about 1 m of penetration and that most drill samples came from 0 to 73.8 cm, with few deeper samples because of rocky terrain [6]. This IJRR paper was not retrieved directly in this run.",
+              "Sample: The planned split was 0.5 kg from drilling and 1.5 kg from surface scooping. The total returned mass was 1,731 g of mainly rocks and soil, from a collection operation of about 19 hours [5]. The same search summary gives a drill sample of 259.72 g [6]. These sample masses are not reconciled.",
+              "Drill mass and power: Not stated in the sources reviewed."
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions differ strongly between examples. The ProSEED drill box measures 257 x 228 x 1,721 mm without PRJ and HDRM units and 497 x 290 x 1,721 mm with them, a design value. The Apollo drill was assembled from stems of about 40 cm (deep core) and a 137 cm bottom stem plus two 71 cm stems (heat-flow set). The Luna 24 drill is listed as 15 mm external diameter, 8 mm internal diameter and 3,157 mm long, with a 260 cm flexible core tube. Chang'e-5 drill dimensions are not stated in the sources reviewed.",
+        "mass_and_weight": "No drill mass is published for the Apollo, Luna 24 or Chang'e-5 drills in the sources reviewed. ProSEED is estimated at 31.8 kg including margins for the whole package (CEU 5.3 kg, drill and positioner 23.4 kg, harness 3.1 kg), with no drill-only figure given. The Chang'e-5 ascender mass is also reported inconsistently (about 500 kg and 300-400 kg at docking) but is a separate spacecraft value, not a drill value.",
+        "power_requirements": "The Apollo drill was battery-powered; its power consumption is not stated. Luna 24 and Chang'e-5 drill power is not stated in the sources reviewed. ProSEED package limits are 50 W on line 1 and 200 W on line 2; drill-specific power is not given."
+      },
+      "environmental_and_operational_requirements": "A deep drilling system must operate in vacuum, with large temperature swings between lunar day and night, and it must tolerate abrasive regolith and rock fragments. Thermal control matters where volatile samples are involved: ProSEED is designed to stop and cool for 10 to 20 minutes before acquisition to limit volatile loss [2]. The Apollo 17 record shows that subsurface rock fragments can change the drill's behaviour, slowing penetration and causing kick-back, so the operator or control system must be able to respond to changing loads [1]. ProSEED's selectable power-limited, force-limited and constant-speed drilling modes are one documented design response to varying drilling loads [2].",
+      "limitations": "The main limitations are mechanical. Deep holes require long stems or a flexible string, and joints can jam or fail, as happened with the Apollo 15 heat-flow stems [1]. Rock fragments slowed penetration and caused kick-back on Apollo 17 [1]. Core extraction is difficult at depth: the Apollo 15 core had to be extracted by hand [1], and Apollo 16 and 17 needed a jack and treadle [1]. Flexible core tubes may be only partly filled, as reported for Luna 24 [4]. The depth achieved may also be much less than the design depth, as the Chang'e-5 secondary summary suggests [6]. Finally, most published figures for these systems are specific to one mission and are not general performance measures.",
+      "transportation_and_deployment": {
+        "overview": "A deep drilling system is delivered to the Moon as part of a lander or sample-return payload, and its integration, deployment and interface requirements depend on the specific design. The examples in this article show crewed stem-based deployment (Apollo), automated sample delivery (Luna 24 and Chang'e-5) and a robotic positioner (ProSEED).",
+        "transportation_process": [
+          "Earth integration: the drill is integrated into the lander or sample system before launch. For the Luna 24 drill, the sample was held in a sealed storage container and transferred to the descent capsule [4]. For ProSEED, the drill and positioner form part of a package with an interface to the sample inlet system [2].",
+          "Launch and lunar transfer: these phases are not described in detail for the drill-specific systems in the sources reviewed.",
+          "Landing and surface setup: the Chang'e-5 drill delivers its core to the ascent vehicle in a Kevlar tube [5]. ProSEED is designed to be positioned above the sample inlet system before drilling begins [2].",
+          "Power and data: the ProSEED CEU and the package power limits are documented in the Frontiers article, but the drill's own power is not given [2]. The Luna 24 and Chang'e-5 power and data interfaces are not described in the sources reviewed.",
+          "Thermal and mechanical interfaces: ProSEED has an operational range from -150 to +50 degrees C at the drill-box interface [2]. The mechanical interface to any specific lander is not verified."
+        ],
+        "deployment_methods": "The Apollo drill was deployed by astronauts, who attached the stems and operated the drill [1]. The Luna 24 and Chang'e-5 systems were automated and delivered their cores into the spacecraft's sample-handling chain [4][5]. ProSEED is a robotic system, with a positioner, lead-screw drill translation joint and a funnel-like alignment collet to guide the rod into the sample inlet system [2].",
+        "historical_examples": "The Apollo 15, 16 and 17 drilling sequences provide the most detailed crewed examples, with their stem joint and extraction problems [1]. Luna 16 and Luna 20 used earlier drills, which the Luna 24 source describes as unable to preserve the original layering that the Luna 24 drill was designed to keep [4]. Luna 24 provides an automated example of a deep drill that returned a regolith core [4]. Chang'e-5 provides a more recent automated example, with the core delivered to the ascender [5]. ProSEED is a designed but unflown example of a cold-sample drill [2][3].",
+        "compatibility_assessment": "The ProSEED package has been selected for NASA CLPS CP-22, but this article does not confirm the lander interface, mass budget, mounting configuration or delivery status for that mission [2]. The Chang'e-5 and Luna 24 systems are historical examples, and their compatibility with other landers is not relevant to current planning. No deep drilling system in this article is assessed for compatibility with a specific lander, because the required interface evidence has not been verified.",
+        "images": []
+      },
+      "historical_significance": "Among the systems covered here, the Apollo 15-17 drilling provides the best-documented crewed example of stem-based deep drilling, which was used for deep cores and heat-flow holes [1]. The Luna 24 source contrasts its drill with the earlier Luna 16 and Luna 20 drills, saying that the Luna 24 drill was able to preserve the original layering of the regolith [4]. The Chinese Chang'e-5 mission combined drilling with surface scooping in a sample-return mission [5]. The ESA-led ProSEED drill represents a more recent generation of robotic cold-sample acquisition, although its significance will depend on whether it flies and reaches the south polar region as planned [2][3].",
+      "limitations_and_uncertainties": "Several figures conflict across the sources reviewed. The Apollo heat-flow hole depth is given as 3 m in the NASA introduction [1] and as 2.4 m for two casings in a National Academies slide [7]. The Luna 24 penetration is given as 225 cm and as two metres in the same specialist source [4]. The Chang'e-5 achieved depth is reported as about 1 m in a search summary of an IJRR paper that was not retrieved directly [6], while the eoportal description records only the 2 m target and the start of drilling [5]. The Chang'e-5 ascender mass is also given as about 500 kg and as 300-400 kg at docking in the same eoportal article [5].\n\nMass, power and dimensions are not published for several of the drills, including the Apollo drill, the Luna 24 drill and the Chang'e-5 drill. The ProSEED flight status and CP-22 launch and landing status could not be confirmed in this run. No validated TRL is given in the Frontiers article [2]. The images verified in this run are limited to the ESA ProSEED image; source pages for other examples are linked but no direct asset URLs were verified. The article does not recommend any lunar location, which is deferred by user decision.",
+      "images": [
+        {
+          "id": "esa_prospect_drill_image",
+          "description": "Robotic drill of the PROSPECT suite (ProSEED drill) for lunar south polar volatile sampling.",
+          "image_type": "ESA press image of flight-candidate hardware",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2024/08/prospect_s_lunar_drill/26290180-1-eng-GB/Prospect_s_lunar_drill.jpg",
+          "source_page_url": "https://www.esa.int/media/prospect-s-lunar-drill",
+          "publisher": "ESA",
+          "credit": "Leonardo",
+          "caption": "View of Prospect's robotic drill set to fly to the Moon's South Polar region in search of volatiles, such as water ice.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL taken from the ESA image record with query strings removed; a HEAD request returned HTTP 200 with image/jpeg. ESA image record dated 27 August 2024. Rights and reuse terms are ESA's; public-domain status not verified. Full-resolution download not checked in this run."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "esa_prospect_drill_image",
+          "description": "Robotic drill of the PROSPECT suite (ProSEED drill) for lunar south polar volatile sampling.",
+          "image_type": "ESA press image of flight-candidate hardware",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2024/08/prospect_s_lunar_drill/26290180-1-eng-GB/Prospect_s_lunar_drill.jpg",
+          "source_page_url": "https://www.esa.int/media/prospect-s-lunar-drill",
+          "publisher": "ESA",
+          "credit": "Leonardo",
+          "caption": "View of Prospect's robotic drill set to fly to the Moon's South Polar region in search of volatiles, such as water ice.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL taken from the ESA image record with query strings removed; a HEAD request returned HTTP 200 with image/jpeg. ESA image record dated 27 August 2024. Rights and reuse terms are ESA's; public-domain status not verified. Full-resolution download not checked in this run."
+        }
+      ],
+      "references": [
+        {
+          "title": "Apollo Lunar Surface Journal: Lunar Surface Drill and Deep Core Drill (Working on the Moon section)",
+          "publisher": "NASA",
+          "date": null,
+          "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/WOTM/WOTM-Drilling.html"
+        },
+        {
+          "title": "PROSPECT: A comprehensive sample acquisition and analysis package for lunar science and exploration",
+          "publisher": "Frontiers in Space Technologies (Trautner, R. et al.)",
+          "date": "2024",
+          "url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full"
+        },
+        {
+          "title": "Prospect's lunar drill (image record)",
+          "publisher": "ESA",
+          "date": "2024-08-27",
+          "url": "https://www.esa.int/media/prospect-s-lunar-drill"
+        },
+        {
+          "title": "Luna 24 mission page",
+          "publisher": "Russian Space Web",
+          "date": null,
+          "url": "https://www.russianspaceweb.com/luna24.html"
+        },
+        {
+          "title": "Chang'e-5 (China's Lunar Sample Return Mission) / CE-5",
+          "publisher": "ESA eoportal",
+          "date": null,
+          "url": "https://eoportal.org/satellite-missions/chang-e-5"
+        },
+        {
+          "title": "IJRR analysis of Chang'e-5 lunar core drilling (not retrieved directly; known only from a search-result summary)",
+          "publisher": "International Journal of Robotics Research (DOI 10.1177/02783649231187918)",
+          "date": null,
+          "url": "https://doi.org/10.1177/02783649231187918"
+        },
+        {
+          "title": "Apollo 15-17 drilling slide from Honeybee Robotics material (not fetched; known only from a search-result summary)",
+          "publisher": "National Academies",
+          "date": null,
+          "url": "https://www.nationalacademies.org/cdn/materials/a055a705-2ac0-4808-aacf-8f3b0dab7351"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "ProSEED example (examples[1])": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images placed; empty)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Catalogue match: ID 96 'Deep drilling system' under '4. Subsurface exploration and drilling' (catalogue lines 95-112). Catalogue not edited.",
+    "'Deep drilling system' is a catalogue class label. The article covers four named drill examples (Apollo 15-17, ESA/Leonardo ProSEED, Luna 24 LB-09, Chang'e-5); no universal specification is implied.",
+    "Apollo drill: NASA's Apollo Lunar Surface Journal lists Apollo 13 among the flights of the drill, but its detailed sections cover Apollo 15-17. Heat-flow hole depth conflicts (3 m in NASA text versus 2.4 m for two casings in a National Academies slide). Stem lengths differ between the deep-core (about 40 cm) and heat-flow (137 cm and 71 cm) stem sets. Drill mass and power not stated.",
+    "Apollo 17 deep-core drill PDF (curator.jsc.nasa.gov/lunar/lsc/a17drill.pdf) was fetched but could not be parsed in this session (binary PDF; no page renderer available). Its specifications are not used. A NASA A17DeepCore.pdf URL returned HTTP 404.",
+    "Luna 24: the principal source reports 225 cm penetration but also mentions a two-metre depth and a 2,575 mm drilling range. Mass not stated. Other figures in search summaries (2.3 m core, 1.6 m core) were not used because they conflict and the sources were lower quality or conference material.",
+    "Chang'e-5: the design target is 2 m (eoportal). The achieved depth of about 1 m and the drill sample mass of 259.72 g come from a search-result summary of an IJRR paper that was not retrieved (publisher page returned HTTP 403; DOI redirected). The returned total of 1,731 g combines drilled and scooped material. Ascender mass is reported as about 500 kg and 300-400 kg in the same source; drill mass and power not stated.",
+    "ProSEED: values are design requirements and laboratory demonstrations, not flight data. CP-22 selection and 2026 landing target are from the Frontiers article (2024); launch, landing and current flight status could not be confirmed in this run. The article gives no drill-only mass, no drill power and no TRL. Working arc is 134 degrees in one table and about 90 degrees in the text. The article states underlying data is restricted; the corresponding author is listed in the paper.",
+    "Images: one image is included, the ESA PROSPECT drill image. A HEAD request returned HTTP 200 with image/jpeg for the cleaned asset URL, and the ESA page was read in this run. The ESA source URL redirects (301) from the older ESA image path to https://www.esa.int/media/prospect-s-lunar-drill, which is used as source_page_url. Rights and reuse terms are not verified as public domain. Full-resolution download not checked.",
+    "Images not included: the NASA Apollo Lunar Surface Journal page gives only file names (no verified direct asset URL). No direct asset URLs were verified for Apollo, Luna 24 or Chang'e-5 drill imagery in this run, so none are listed rather than inventing or using proxy URLs.",
+    "Transportation compatibility: no deep drilling system is verified for compatibility with a specific lander. ProSEED is selected for CP-22 but the lander interface and mass budget were not verified.",
+    "Research limits: web search budget was exhausted during this run, so further searches (including for the Chang'e-5 paper and drill images) were not possible. The Ampersand MCP server failed to connect (ENOTFOUND), so the research was done in-session.",
+    "The v4 reference schema has no top-level data_quality_notes field; it is included here as the lunar-doc skill requires. Progress ledger, catalogue and other payloads were not modified."
+  ]
+}

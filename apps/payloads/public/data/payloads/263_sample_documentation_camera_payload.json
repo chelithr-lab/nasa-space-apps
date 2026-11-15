@@ -1,0 +1,249 @@
+{
+  "catalogue_id": 263,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 13,
+    "name": "Sample collection, preservation and return"
+  },
+  "payload": {
+    "number": 263,
+    "name": "Sample documentation camera",
+    "article": {
+      "overview": "A sample documentation camera is an imaging instrument that records a sample, its container or its sampling tube at the moment it is collected, transferred, sealed or stored. Its pictures give a visual record for curation, for linking a sample to its container and collection event, and for checking that the sampling hardware did what operators intended. It differs from a landscape or science camera: the emphasis is close-range imaging of the sample and its handling interface, not the surrounding terrain. Flight examples are few, and none is yet a dedicated lunar sample-documentation camera with published performance. The best-documented cases are an Apollo lunar-surface Hasselblad Data Camera [1], the OSIRIS-REx SamCam on the asteroid Bennu [3][4], and the CacheCam on the Mars 2020 Perseverance rover [2]. A sampling-surveillance camera reported for China's Chang'e-6 mission is described only from a search-indexed summary, because the full text could not be opened in this research run [5].",
+      "description": "A sample documentation camera is a camera, usually with a fixed or focus-limited optical system, that is aimed at a sample, a sample tube, a sample head or a sealed container. The camera is not usually the instrument that analyses the sample. Its job is to show, with time and geometry attached, what the sample looked like and how the hardware handled it.\n\nThree functions recur in the examples reviewed. First, sample-site and event documentation: the OSIRIS-REx SamCam is described as documenting the sample site before, during and after it is disturbed by the sample mechanism [3]. Second, verification of the collected material and container state: CacheCam images the material and dust on the rim of a sample tube during caching, so that operators can see the state of the tube before it is sealed [2]. Third, container alignment and transfer monitoring: a Chang'e-6 sampling-surveillance camera is reported to monitor the alignment between a primary packaging container and a sealed sample container [5].\n\nThe Apollo Hasselblad Data Camera is included as the closest flown lunar precedent for photographic documentation on the surface. Its source describes the camera's design and the intended surface use [1], but it does not state that the camera was used to photograph lunar samples or their containers. Sample-photography archives for Apollo exist, and a search-indexed USGS description refers to them [6], but the reviewed sources do not establish which camera made each frame.",
+      "scientific_purpose_and_applications": "Curation and provenance. A dated, geometrically referenced image of a sample and its container supports later identification. Apollo's sample-photography archive, described in a search-indexed USGS summary, indicates that rock, soil and core samples were photographed systematically, although the archive's coverage of container-stage frames is not confirmed [6].\n\nSampling verification. A camera at the sampling point can show whether material entered the collection volume. The OSIRIS-REx team designed SamCam to image the sample site before, during and after the sample mechanism acted [3]. Mission news reports, which were not opened in this run, describe post-collection SamCam images of the sampler head [7].\n\nSealing and transfer assurance. A camera that watches the join between a primary container and a sealed container can detect misalignment before the sample is transferred [5].\n\nOperational diagnosis. Time-lapse images can reveal mechanical effects, such as the dust removal the CacheCam recorded when the Bore Sweep Tool acted on a sample tube [2].\n\nGeometric calibration. The Apollo Data Camera carried a Reseau plate, a glass grid of calibrated crosses that appears on every frame. It allows angular distances in the image to be measured [1].",
+      "operating_principle": "A sample documentation camera forms an image of a close-range object through a lens onto a detector or photographic film. Because the working distance is short, the depth of field is shallow. The CacheCam's depth of field is stated by NASA as plus or minus 5 millimetres, so material deeper in a tube can fall out of focus [2].\n\nThe Apollo Data Camera was a modified Hasselblad 500EL that exposed 70 mm film. Its Reseau plate was fixed close to the film plane and engraved with crosses 10 mm apart, calibrated to a tolerance of 0.002 mm, so every frame carries a geometric reference [1]. The same source notes that the plate's glass surface was coated with a thin conductive layer, because static charge built up by film winding could produce sparks in vacuum [1].\n\nModern digital sample cameras convert light to electrical signals. A secondary encyclopedia entry describes the CacheCam as using a 20-megapixel CMOS detector; this was not confirmed against a NASA or JPL primary source in this run and is therefore not used as a specification. The NASA primary page states a pixel scale of approximately 13 micrometres per pixel for one CacheCam image [2].\n\nIllumination, mechanical focusing and image-acquisition timing vary between designs. The sources reviewed for the examples below do not describe these in enough detail to generalise.",
+      "scientific_importance": "Sample documentation links a returned sample to the hardware and events that collected it. Without a record of the sample, its container and its handling, scientists may have to rely on written logs alone to reconstruct what happened. Images also provide an independent check on sampling mechanisms and on sealing. The examples here show the same underlying need in different environments: the Moon, a near-Earth asteroid and Mars.\n\nThe Apollo lunar-surface camera set a precedent for close-range, geometrically calibrated photography on the Moon [1]. The SamCam and CacheCam show how a dedicated sample-zone camera can record events that a landscape camera cannot resolve [2][3]. The Chang'e-6 report, if confirmed, would show a lunar sample-return mission that used a camera to verify container alignment during transfer [5].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a sample documentation camera. Each example below is a different instrument, in a different environment, with different measurands and different published detail. Where a value applies to a camera system rather than to the imaging element alone, this is stated. Values that were not publicly specified in the sources reviewed are recorded as not publicly specified. The examples should not be compared numerically.",
+        "examples": [
+          {
+            "name": "Apollo 11 Hasselblad 500EL Data Camera",
+            "type": "Historical lunar instrument (flown on the lunar surface, Apollo 11)",
+            "status": "Flown on Apollo 11. The Apollo Lunar Surface Journal article describes this camera as 'the one to be used on the moon's surface' [1]. The article describes planned use and equipment design; it does not state the number of frames exposed or the sample-photography role of this camera.",
+            "description": "A Hasselblad 500EL Data Camera, a modified standard 500EL, carried in the Lunar Module and used with two magazines on the lunar surface. Its camera body and magazines were modified for NASA use. Film was 70 mm, and each magazine loading gave 160 colour or 200 black-and-white pictures [1]. The lens was a Zeiss Biogon f/5.6, 60 mm lens, specially designed for NASA [1]. A Reseau plate, a glass grid of crosses 10 mm apart and calibrated to a tolerance of 0.002 mm, was fitted close to the film plane and recorded on every exposed frame, so that angular distances could be determined [1]. The camera had a silver finish to reduce temperature variation between full sun and full shadow, and its magazines had tether rings for lowering from and hoisting to the Lunar Module [1]. The conductive coating on the Reseau plate prevented static sparks in vacuum or pure oxygen [1]. Mass, dimensions and power are not stated in the source reviewed.",
+            "function_as_reported": "Surface still photography with geometric calibration. Sample documentation role not stated in the source reviewed.",
+            "film_format_mm": 70,
+            "lens": "Zeiss Biogon f/5.6, 60 mm (specially designed for NASA)",
+            "calibration_reference": "Reseau plate; crosses 10 mm apart; calibrated to 0.002 mm tolerance; recorded on every exposed frame",
+            "frames_per_magazine_loading": {
+              "colour": 160,
+              "black_and_white": 200
+            },
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://nasa.gov/wp-content/uploads/static/history/alsj/a11/a11-hass.html"
+            ],
+            "images": [],
+            "notes": "No Apollo image was verified to a direct asset URL in this run, so no image is attached to this example."
+          },
+          {
+            "name": "OSIRIS-REx SamCam (OCAMS camera suite)",
+            "type": "Flight hardware on a near-Earth asteroid (Bennu, 2020); not a lunar instrument",
+            "status": "Flown and operated at Bennu in 2020 as part of the OCAMS camera suite [3][4].",
+            "description": "SamCam is one of three OCAMS cameras, with MapCam and PolyCam [4]. The OCAMS paper states that the 'SamCam documents the sample site before, during, and after it is disturbed by the sample mechanism' [3]. The NASA In Depth page captions an animation showing the SamCam field of view during the 20 October 2020 touch-and-collect sequence [4]. Post-collection SamCam images of the sampler head are reported in mission press coverage [7]; that coverage was not opened in this run.",
+            "function_as_reported": "Documents the sample site and sampling event before, during and after the sample mechanism acts; images the sampler head after collection [3][7].",
+            "focal_length_mm": null,
+            "field_of_view": null,
+            "detector": null,
+            "pixel_scale": null,
+            "sample_collection_target_mass_g": null,
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://arxiv.org/abs/1704.04531",
+              "https://science.nasa.gov/mission/osiris-rex/in-depth/",
+              "https://www.nasa.gov/news-release/nasas-osiris-rex-spacecraft-successfully-touches-asteroid/"
+            ],
+            "images": [],
+            "notes": "The OCAMS full text could not be read in this run (the PDF returned as binary), so SamCam focal length, field of view, detector format and pixel scale are recorded as null. A search summary gave a 24 mm focal length, but it was not confirmed against a primary source and is not used."
+          },
+          {
+            "name": "Perseverance CacheCam (Sampling and Caching System Camera)",
+            "type": "Flight hardware on Mars (Mars 2020 Perseverance); not a lunar instrument",
+            "status": "Flown on the Mars 2020 Perseverance rover; operated during sample caching [2].",
+            "description": "NASA describes CacheCam as the 'Sampling and Caching System Camera, or CacheCam' [2]. The NASA page presents a set of images showing changes in dust accumulation over four days on the rim of the collection tube containing Perseverance's 14th sample. CacheCam recorded the effect of the Bore Sweep Tool, which was used to 'remove dust from the tube' [2]. The page gives a pixel scale of approximately 13 micrometres per pixel for the image shown and a depth of field of plus or minus 5 millimetres [2]. The NASA page does not specify the detector or where the camera is mounted [2]. Mass and power are not publicly specified in the sources reviewed.",
+            "function_as_reported": "Close-range imaging of material and dust at the rim of a sample tube during caching, including before sealing; records the effect of dust-removal operations.",
+            "pixel_scale_um_per_pixel_stated_for_one_image": 13,
+            "depth_of_field_mm": "plus or minus 5",
+            "detector": null,
+            "mounting_location": null,
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://science.nasa.gov/photojournal/cachecam-image-of-perseverances-14th-sample-of-martian-rock/"
+            ],
+            "images": [
+              {
+                "id": "cachecam_pia25337_dust_timelapse",
+                "description": "CacheCam images showing changes in dust accumulation over four days on the rim of the collection tube containing Perseverance's 14th sample of Martian rock.",
+                "image_type": "Engineering camera image (Mars sample tube; flown hardware)",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25337/PIA25337.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/cachecam-image-of-perseverances-14th-sample-of-martian-rock/",
+                "publisher": "NASA Photojournal (NASA Science)",
+                "credit": "NASA (credit line not independently confirmed in this run)",
+                "caption": "These images show changes in the dust accumulation over the course of four days on the rim of the collection tube containing Perseverance's 14th sample. The images were acquired by the rover's Sampling and Caching System Camera, or CacheCam.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset URL verified in this run: HTTP 200, image/jpeg, with the URL taken from the page's own image metadata; the page metadata gives a size of 1630 x 1557 px. Mars image from a NASA Photojournal record; NASA media is generally not copyright-restricted, but confirm the credit line and NASA media guidelines before reuse."
+              }
+            ]
+          },
+          {
+            "name": "Chang'e-6 sampling-surveillance camera",
+            "type": "Lunar sample-return mission hardware (Chang'e-6, 2024); reported only from a search-indexed summary",
+            "status": "Reported as part of the Chang'e-6 sampling and packing system, on a lunar sample-return mission flown in 2024 (mission-level fact; not checked against a primary source in this run) [5]. The full paper could not be opened in this run (HTTP 403), so the status and details are recorded at summary level only.",
+            "description": "Cameras guided sample deposition into the container, and a sampling-surveillance camera monitored the alignment between the primary packaging container and the sealed container. The authors note that lunar-surface reflections and the three-dimensional-to-two-dimensional interpretation problem complicated detection [5]. No camera specifications were found in the summary.",
+            "function_as_reported": "Monitors alignment between the primary packaging container and the sealed sample container before transfer to the ascender; guides sample deposition [5].",
+            "focal_length_mm": null,
+            "field_of_view": null,
+            "detector": null,
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://doaj.org/article/b754e0314f30430d980798b91f6887bb"
+            ],
+            "images": [],
+            "notes": "Title and full text not confirmed in this run. Treat the description as unverified until the primary paper is read."
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are not publicly specified for any of the sample-documentation cameras reviewed. The values that are stated (for example, the CacheCam image pixel scale and the Apollo Reseau-plate tolerance) are image or calibration properties, not measures of the camera hardware. Apollo's Data Camera has a 70 mm film format, and its magazines carried tether rings for handling; no camera envelope is stated in the source reviewed.",
+        "mass_and_weight": "Mass is not publicly specified for any of the flown sample-documentation cameras reviewed (Apollo Data Camera, OSIRIS-REx SamCam, Perseverance CacheCam and the Chang'e-6 sampling-surveillance camera). No mass figure is recorded for any of them.",
+        "power_requirements": "Power is not publicly specified for any of the sample-documentation cameras reviewed. Illumination and power budgets are not described in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "Sample documentation cameras must work in environments that differ from Earth in ways that affect image quality and hardware design.\n\nTemperature. The Apollo Data Camera was given a silver finish because its surface faced full sun and full shadow, and the finish helped keep its internal temperature more uniform [1].\n\nStatic and vacuum effects. The Apollo Reseau plate required a conductive coating, because static charge from film winding could produce sparks in vacuum or pure oxygen [1].\n\nDust. The CacheCam recorded dust accumulating on a sample-tube rim, and dust removal was a deliberate step in the Perseverance caching sequence [2].\n\nShallow depth of field. At close range, focus limits the usable depth. For CacheCam, the stated depth is plus or minus 5 millimetres [2].\n\nContamination and handling. A camera near a sample must not add contamination, shadow the sampling path or disturb the sample. The sources reviewed for the examples describe these concerns only generally, so no quantitative requirement is stated here.",
+      "limitations": "A camera at the sampling point sees only what its field of view includes. The CacheCam example shows the rim of a tube at close range, not the whole sample volume [2]. Dust, shadows and uneven illumination can make surface material difficult to interpret, as the Chang'e-6 summary reports for lunar reflections [5]. Single-view images cannot give a full three-dimensional picture of a sample, so stereo or multi-view designs are needed for some purposes; the Apollo sample-photography practice is reported to use multiple views per rock [6]. Film cameras cannot provide the immediate image feedback that digital cameras do, which limits in-mission decision-making.",
+      "transportation_and_deployment": {
+        "overview": "A sample documentation camera is generally part of a sample-acquisition or sample-handling system, rather than a free-standing surface payload. Its transportation and deployment therefore depend on the mission that carries it. The Apollo Data Camera was a hand-carried surface camera; the OSIRIS-REx SamCam, Perseverance CacheCam and Chang'e-6 sampling cameras are integrated with sampling hardware.",
+        "transportation_process": [
+          "Mount the camera and any lighting in or near the sampling hardware.",
+          "Calibrate the camera and confirm its focus at the working distance of the sample.",
+          "Launch and transfer to the Moon or other target body, protecting optics and detectors from launch vibration and thermal extremes.",
+          "Acquire images before, during and after sample collection, and before sealing.",
+          "Verify container alignment and seal state, where the design includes a monitoring camera [5].",
+          "Transfer the sealed sample to a return vehicle or container, with imaging records kept with the sample."
+        ],
+        "deployment_methods": "The Apollo Data Camera and its magazines were carried in the Lunar Module, lowered to the Commander standing on the surface with tethers, and hoisted back the same way [1]. Sampling cameras on other missions are integrated with sampling mechanisms rather than deployed separately; the SamCam documents the OCAMS sampling event [3], and the CacheCam images tube contents during caching [2].",
+        "historical_examples": "Apollo 11 lunar-surface Hasselblad Data Camera [1]; OSIRIS-REx SamCam at Bennu, 2020 [3][4]; Perseverance CacheCam on Mars [2]; Chang'e-6 sampling-surveillance camera, as reported [5].",
+        "compatibility_assessment": "Compatibility with any specific lander, rover or return vehicle is not asserted. Any future camera would need verified interface data, including mass, mounting points, field of view relative to the sampler, thermal environment, power, data rate and time synchronisation.",
+        "images": []
+      },
+      "historical_significance": "The Apollo lunar-surface photography programme established the close-range, calibrated photographic record of the Moon that later sample curation depends on [1][6]. The Apollo 11 Data Camera, with its Reseau plate and its silver finish, shows how these requirements were met in flown hardware [1]. Dedicated sample-zone cameras have since flown on a near-Earth asteroid and on Mars. The OSIRIS-REx SamCam and the Perseverance CacheCam show that camera systems can document sample acquisition and caching in situ [2][3][4]. The Chang'e-6 report would extend this practice to a lunar sample-return mission, if confirmed [5].",
+      "limitations_and_uncertainties": "Lunar sample-documentation camera with published performance: no lunar sample-documentation camera with published mass, field of view, resolution or environmental data was identified in this run. The Apollo Data Camera is the closest lunar example, and its sample-photography role is not confirmed by the source reviewed [1].\n\nChang'e-6 sampling-surveillance camera: the description comes from a search-indexed summary of a 2024 paper, in which the title and full text could not be confirmed. The paper and its figures were not accessible (HTTP 403) [5].\n\nOSIRIS-REx SamCam specifications: the OCAMS paper's full text could not be read in this run, so SamCam's focal length, field of view, detector and pixel scale are unverified [3]. Mission press coverage of post-collection SamCam images is recorded as reported but not opened [7].\n\nApollo sample photograph archive: the USGS archive description could not be fetched (HTTP 403). The description of six orthogonal views and stereo pairs per rock is search-indexed only [6].\n\nApollo Hasselblad image: no Apollo Hasselblad or sample-photograph image was verified to a direct asset URL in this run, so no Apollo image is included.\n\nImage rights: the CacheCam image is a NASA Photojournal asset. Its credit line was not confirmed from the page text, and rights should be checked on the source page before reuse.\n\nMass, power and dimensions: not publicly specified for the flown sample-documentation cameras reviewed.",
+      "images": [
+        {
+          "id": "cachecam_pia25337_dust_timelapse",
+          "description": "CacheCam images showing changes in dust accumulation over four days on the rim of the collection tube containing Perseverance's 14th sample of Martian rock.",
+          "image_type": "Engineering camera image (Mars sample tube; flown hardware)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25337/PIA25337.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/cachecam-image-of-perseverances-14th-sample-of-martian-rock/",
+          "publisher": "NASA Photojournal (NASA Science)",
+          "credit": "NASA (credit line not independently confirmed in this run)",
+          "caption": "These images show changes in the dust accumulation over the course of four days on the rim of the collection tube containing Perseverance's 14th sample. The images were acquired by the rover's Sampling and Caching System Camera, or CacheCam.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL verified in this run: HTTP 200, image/jpeg, with the URL taken from the page's own image metadata; the page metadata gives a size of 1630 x 1557 px. Mars image from a NASA Photojournal record; NASA media is generally not copyright-restricted, but confirm the credit line and NASA media guidelines before reuse."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Apollo-11 Hasselblad Cameras",
+          "author": "Phill Parker (from media material supplied by Hasselblad in 1969)",
+          "publisher": "NASA Apollo Lunar Surface Journal",
+          "date": null,
+          "url": "https://nasa.gov/wp-content/uploads/static/history/alsj/a11/a11-hass.html",
+          "accessed_in_this_run": true
+        },
+        {
+          "title": "CacheCam Image of Perseverance's 14th Sample of Martian Rock",
+          "author": null,
+          "publisher": "NASA Science Photojournal",
+          "date": "2022-11-03",
+          "url": "https://science.nasa.gov/photojournal/cachecam-image-of-perseverances-14th-sample-of-martian-rock/",
+          "accessed_in_this_run": true
+        },
+        {
+          "title": "OCAMS: The OSIRIS-REx Camera Suite",
+          "author": "B. Rizk et al. (55 authors)",
+          "publisher": "arXiv (arXiv:1704.04531); a related DOI 10.1007/s11214-017-0460-7 is listed on the arXiv page, not independently opened",
+          "date": "2017-04-14",
+          "url": "https://arxiv.org/abs/1704.04531",
+          "accessed_in_this_run": true,
+          "access_note": "Abstract page read; full-text PDF returned as binary and was not readable."
+        },
+        {
+          "title": "OSIRIS-REx In Depth",
+          "author": null,
+          "publisher": "NASA Science",
+          "date": null,
+          "url": "https://science.nasa.gov/mission/osiris-rex/in-depth/",
+          "accessed_in_this_run": true
+        },
+        {
+          "title": "Sampling surveillance camera and sample packing system for Chang'e-6 (title not confirmed)",
+          "author": "Guanyu Wang, Shenyi Jin, Xiangjin Deng, Yufu Qu",
+          "publisher": "Aerospace (MDPI journal)",
+          "date": "2024-12 (per search-indexed record)",
+          "url": "https://doaj.org/article/b754e0314f30430d980798b91f6887bb",
+          "accessed_in_this_run": false,
+          "access_note": "DOAJ record returned HTTP 403; MDPI full text also returned HTTP 403. Details are from a search-indexed summary only."
+        },
+        {
+          "title": "Moon Apollo Lunar Sample Photographs",
+          "author": null,
+          "publisher": "USGS Astropedia",
+          "date": null,
+          "url": "https://astrogeology.usgs.gov/search/map/moon_apollo_lunar_sample_photographs",
+          "accessed_in_this_run": false,
+          "access_note": "HTTP 403 on fetch; description is from a search-indexed summary only."
+        },
+        {
+          "title": "NASA's OSIRIS-REx Spacecraft Successfully Touches Asteroid",
+          "author": null,
+          "publisher": "NASA News Release",
+          "date": "2020-10 (approximate; not confirmed on page)",
+          "url": "https://www.nasa.gov/news-release/nasas-osiris-rex-spacecraft-successfully-touches-asteroid/",
+          "accessed_in_this_run": false,
+          "access_note": "Search-indexed summary only; not opened. Post-collection details attributed to this reference are unverified."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "Perseverance CacheCam example": "payload.article.physical_specifications.examples[2].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Only one image is verified and attached; it is repeated in its section-level array. No overview, transportation or other section images are attached because no verified direct asset URLs were obtained for them."
+  },
+  "data_quality_notes": [
+    "No lunar sample-documentation camera with published performance (mass, field of view, resolution, environmental tolerance) was identified. The Apollo Data Camera is the closest lunar precedent; its sample-photography role is not stated in its source.",
+    "The Chang'e-6 sampling-surveillance camera is described only from a search-indexed summary of a 2024 paper (authors Wang, Jin, Deng, Qu; journal Aerospace). The title, full text and figures could not be accessed (HTTP 403). Treat as unverified.",
+    "OCAMS (arXiv:1704.04531) full-text PDF returned as binary and could not be read. SamCam specifications are therefore null. A search summary's 24 mm focal length is not used.",
+    "USGS Astropedia Apollo lunar sample photograph dataset returned HTTP 403. Its description (six orthogonal views and 16 stereo pairs per rock, container-stage frame coverage) is search-indexed only.",
+    "NASA News Release on OSIRIS-REx touchdown was not opened. Post-collection SamCam image and sample-head details attributed to it are unverified.",
+    "A secondary encyclopedia entry describes CacheCam as using a 20-megapixel CMOS detector. Not confirmed against a NASA or JPL primary source, and not used.",
+    "NASA CacheCam page does not specify the detector or mounting location. Both are recorded as null.",
+    "The CacheCam image credit line was not confirmed from page text; recorded as NASA with a caveat.",
+    "ALSJ Apollo Hasselblad article is undated in its text and states the Data Camera was 'the one to be used on the moon's surface' (planned use). No ALSJ image was verified to a direct asset URL, so no Apollo image is attached.",
+    "A NASA image of the first Apollo 11 sample container (photo S69-40110) and a NASA image of Apollo sample-container opening were identified by search but could not be fetched from the host (connection failed), so they are not attached.",
+    "Mass, power and dimensions are not publicly specified for any flown sample-documentation camera reviewed. All are recorded as null."
+  ]
+}

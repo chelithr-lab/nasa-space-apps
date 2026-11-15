@@ -1,0 +1,183 @@
+{
+  "catalogue_id": 170,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 8,
+    "name": "Regolith and soil analysis"
+  },
+  "payload": {
+    "number": 170,
+    "name": "Soil hardness tester",
+    "article": {
+      "overview": "A soil hardness tester is an instrument that measures how strongly lunar regolith resists being pushed, penetrated or sheared. Such measurements give engineers and scientists an indication of how firmly the surface will support a lander, rover, drill or future structure, and how its strength changes with depth. The Apollo 15 mission flew a self-recording penetrometer that measured resistance against depth, and more recent studies have tested new cone penetrometers and shear tools on lunar simulants. The examples below differ in purpose, maturity and evidence base, and this article does not identify a single standard design for the payload class.",
+      "description": "In practice, a soil hardness tester pushes a probe into the soil and records the force needed to advance it, or rotates a vane to measure the force needed to shear the soil. Penetrometers use a cone or plate at the end of a rod, and the resulting force-against-depth profile is interpreted as an index of soil strength. The word \"hardness\" is used here in its everyday sense. Geotechnical analysis normally relies on quantities such as penetration resistance, bearing strength and shear strength, which depend on soil density, cohesion, grain shape and moisture. The Apollo 15 Lunar Self-Recording Penetrometer illustrates the basic design. It had three interchangeable cones with base areas of 1.29, 3.22 and 6.45 cm², each with a 30° apex angle, and a reference pad that stayed on the surface while the cone penetrated [1]. A later evaluation of field geotechnical instruments on lunar simulants and analogue soils concluded that none of the tested instruments was adequate for low-cohesion, frictional soil, but that a modified shear vane tester could extract several key soil parameters [3]. A percussive cone penetrometer, which drives its probe with repeated impacts rather than a steady push, was reported to penetrate icy regolith that a static cone could not penetrate even under full body weight [4]. A 2026 University of Adelaide study developed a dynamic cone penetrometer with variable cone sizes and hammering energies, tested in simulated lunar regolith on Earth [5].",
+      "scientific_purpose_and_applications": "A soil hardness tester serves three broad purposes. First, it measures the engineering properties of the regolith at the point where it is used, which supports lunar surface engineering, the design of foundations and anchors, and the planning of excavation or traverse operations. Second, depth profiles reveal layering and compaction, which provide evidence about how the surface has been reworked over time. Third, its data can help interpret other surface experiments. The Apollo 15 penetrometer was meant to help interpret other surface experiments and to support lunar surface models for future engineering work [1]. Some percussive designs have also been proposed as a way to estimate ice content, because the penetration rate in the tested icy regolith depended more on ice content than on applied load [4]. These are research applications and proposals. They are not established operational uses of a current payload.",
+      "operating_principle": "Penetrometer-type instruments convert resistance to motion into a readable record. In the Apollo 15 Lunar Self-Recording Penetrometer, the astronaut pushed the upper housing, which drove the cone and shaft into the soil while the reference pad stayed on the surface. A retractor cable linked the pad to the housing and moved a stylus along a recording drum, recording how far the probe penetrated. The astronaut's push deflected a calibrated coil spring, which rotated the drum in proportion to the force. The maximum force produced a 30° rotation, and the instrument measured up to 111 N [1]. Percussive instruments use a different principle. Rather than applying a steady force, they deliver many small impacts, so a light-load device can advance a probe in low gravity where a static push would need a large reaction force [4]. Dynamic cone penetrometers vary the cone size and the hammering energy, and the resulting resistance is interpreted against those settings [5]. A shear vane tester rotates a bladed vane in the soil and relates the torque needed to shear the soil to its strength. This is the general principle of the method rather than a result from the sources listed.",
+      "scientific_importance": "Soil hardness measurements connect the physical behaviour of regolith with its engineering and scientific context. Lunar regolith is a fine, granular, low-cohesion material whose strength depends on density, grain shape, layering and any ice or volatile content. Penetration profiles are one practical way to probe these properties directly at the surface without collecting samples. The Apollo 15 soil mechanics investigation identified the self-recording penetrometer as one of four new data sources, along with thin-walled core tubes, the lunar roving vehicle and the Apollo lunar-surface drill. The authors described these sources as providing the best bases for quantitative analyses in the Apollo programme [2]. Recent Earth-based studies suggest that the test methods need careful adaptation to lunar conditions. Some field instruments were found inadequate for low-cohesion frictional soil [3], while percussive and dynamic designs are being explored for harder or icy layers [4][5].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power figure for a soil hardness tester. The examples below describe specific instruments at different maturity levels, and values are given only where a source states them. Each example's status is stated explicitly: one flown instrument, one experimental test device, and two laboratory devices or evaluations.",
+        "examples": [
+          {
+            "name": "Apollo 15 Lunar Self-Recording Penetrometer",
+            "type": "Historical lunar instrument (flown)",
+            "status": "Flown on Apollo 15 (1971).",
+            "mass_kg": 2.3,
+            "max_penetration_depth_cm": 76,
+            "max_measurable_force_n": 111,
+            "cone_configuration": "Three interchangeable cones with base areas of 1.29, 3.22 and 6.45 cm² and a 30° apex angle.",
+            "bearing_plate_cm": "2.54 x 12.7",
+            "depth_measurement": "Retractor cable from the reference pad moves a stylus along a recording drum.",
+            "resistance_measurement": "Calibrated coil spring rotates the recording drum in proportion to force.",
+            "overall_dimensions": "Not stated in the source reviewed.",
+            "power": "Mechanical recording; no electrical power figure identified.",
+            "test_summary": "Four cone penetration tests and two plate load tests near the ALSEP site, as summarised in the PDS documentation.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-a15lsrp_soil_mechanics/document/a15l_lsrp.txt",
+              "https://ntrs.nasa.gov/citations/19720015171"
+            ],
+            "images": []
+          },
+          {
+            "name": "Percussive cone penetrometer tested in a regolith and ice mixture",
+            "type": "Experimental test hardware (no flight mission described)",
+            "status": "Tested in a lunar regolith simulant mixed with ice; the NTRS record describes no flight mission.",
+            "mass_kg": null,
+            "dimensions": "Not stated in the record reviewed.",
+            "power": "Not stated in the record reviewed.",
+            "down_force_n": 65,
+            "penetration_depth_m": 1,
+            "performance_summary": "Penetrated material under a 65 N down-force that a static cone could not penetrate even at full body weight. Penetration rate depended more on ice content than on applied load.",
+            "limitations_reported": "The device may fail to penetrate some icy material, and the probe tip can become stuck and fail to retract.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20160005056"
+            ],
+            "images": []
+          },
+          {
+            "name": "Dynamic cone penetrometer (University of Adelaide, 2026 study)",
+            "type": "Bespoke laboratory device",
+            "status": "Laboratory device tested on Earth; no flight configuration identified.",
+            "mass_kg": null,
+            "dimensions": "Not stated in the news report.",
+            "power": "Not stated in the news report.",
+            "cone_sizes": "Variable by design; values not stated in the news report.",
+            "impact_energy": "Variable by design; values not stated in the news report.",
+            "test_setup": "Compaction chamber inside a regolith pit at the university's Exterres laboratory, tested at varying densities.",
+            "performance_summary": "The news report says a static penetrometer may be more precise on Earth, while the dynamic type can penetrate harder layers by adding hammer strikes. Quantitative results were not stated in the news report, and the journal paper was not reviewed.",
+            "source_urls": [
+              "https://adelaide.edu.au/about/news/2026/one-small-step-towards-developing-lunar-construction/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Modified shear vane tester evaluated on lunar simulants",
+            "type": "Laboratory evaluation (concept)",
+            "status": "Evaluated on simulants; no flight configuration identified.",
+            "mass_kg": null,
+            "dimensions": "Not stated in the abstract reviewed.",
+            "power": "Not stated in the abstract reviewed.",
+            "force_range": "Not stated in the abstract reviewed.",
+            "materials_tested": [
+              "JSC-1A",
+              "NU-LHT-2M",
+              "CHENOBI"
+            ],
+            "test_method": "Materials compacted by vibration on a shake table under overburden.",
+            "performance_summary": "The authors state that a modified shear vane tester could extract several key soil parameters and may be useful on the lunar surface. No field instrument tested was adequate for low-cohesion frictional soil.",
+            "source_urls": [
+              "https://arxiv.org/abs/2306.01080"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Published dimensions are available only for the Apollo penetrometer's cone base areas and bearing plate. For penetrometers, the proportions are mainly set by cone geometry and by the force the probe must transmit. A larger base area spreads the same push over more soil area, so the resistance measured for a given force changes with cone size. The three Apollo cones illustrate this trade-off [1]. Overall enclosure or shaft length was not stated for the Apollo instrument in the source reviewed, and no dimensions were stated for the other examples.",
+        "mass_and_weight": "Only the Apollo instrument has a published mass in the sources reviewed, at 2.3 kg [1]. Mass was not stated for the percussive, Adelaide or shear vane examples. For spacecraft engineering, mass determines launch and lander capacity, so this gap must be closed before any compatibility assessment.",
+        "power_requirements": "The Apollo penetrometer's recording was mechanical: a coil spring rotated the recording drum in proportion to force [1]. No electrical power figure was identified for it. Power requirements were not stated for the percussive, dynamic cone or shear vane examples in the sources reviewed. An impact-driven device would need a power source or stored energy to deliver each strike, but no value is given here."
+      },
+      "environmental_and_operational_requirements": "A soil hardness tester must reach the soil to the required depth and remain stable during the push or impact. The Apollo design depended on a reference pad as a surface datum. A known issue was that the pad could ride slightly up the shaft if the instrument vibrated after it had been indexed, and the PDS documentation records that the effect on readings is small [1]. Percussive designs must manage reaction forces and tip retention, and the NTRS record notes that the probe tip can become stuck [4]. Lunar regolith is granular, low-cohesion and sensitive to density and moisture. Because the Apollo work and the 2026 work were carried out on lunar soil or simulants under specific test conditions, extrapolation to other terrains needs supporting evidence [3][5]. Thermal and vacuum conditions matter for any electronics or mechanisms. The reviewed sources do not give temperature, radiation or vacuum requirements for any soil hardness tester, so none are stated here.",
+      "limitations": "A penetration measurement responds to a volume of soil around and below the probe, so it describes local penetration and bearing behaviour rather than a single material property. The depth record is only as reliable as its datum and recording mechanism. For Apollo, the reference pad could move if the instrument vibrated [1]. Earth-based tests on simulants may not reproduce lunar cohesion, grain shape or vacuum effects, and one study found that JSC-1A behaved differently from the other simulants [3]. Percussive devices may fail to penetrate some icy material and may become stuck [4]. The examples do not provide a validated relationship between penetration resistance and bearing capacity for lunar regolith. Such a relationship must be established before a measurement is used for engineering decisions.",
+      "transportation_and_deployment": {
+        "overview": "As a surface payload, a soil hardness tester's delivery depends on whether it is operated by astronauts, mounted on a rover, or carried on a lander with its own deployment mechanism.",
+        "transportation_process": [
+          "Integrate the instrument into a lander or rover payload accommodation on Earth, with mass and mounting checks.",
+          "Launch the spacecraft and perform the lunar transfer.",
+          "Land the payload on the surface, or deliver it by rover, depending on the architecture.",
+          "Deploy the probe by astronaut push, rover-mounted actuation or a dedicated mechanism, while keeping any reference datum on the surface.",
+          "Connect electrical interfaces where the device is powered, and handle data on the mission data chain."
+        ],
+        "deployment_methods": "The Apollo 15 penetrometer was operated by an astronaut, who pushed the instrument into the soil while the reference pad stayed on the surface [1]. The percussive concept is described as suitable for a rover or lander, because impact-driven penetration allows a light-load device to work in low gravity [4].",
+        "historical_examples": "The Apollo 15 penetrometer was used on the lunar surface as part of the Apollo 15 soil mechanics investigation [1][2]. Later percussive and dynamic designs remain at the laboratory or proposal stage in the sources reviewed [4][5].",
+        "compatibility_assessment": "None of the interface requirements (mass, mounting, electrical, data) has been verified for a specific lander or rover in the sources reviewed, and no compatibility with a named spacecraft is asserted. Launch, lunar transfer and landing are generic steps for any surface payload and are not specific to this instrument. The Adelaide device is an Earth-based laboratory prototype, and no flight configuration was identified for it [5].",
+        "images": []
+      },
+      "historical_significance": "The Apollo 15 Lunar Self-Recording Penetrometer is the most clearly documented flown example of a lunar soil hardness tester in the sources reviewed. It was part of the Apollo 15 soil mechanics investigation, which used the penetrometer, thin-walled core tubes, the lunar roving vehicle and the Apollo lunar-surface drill as new data sources [2]. Its archived data are held in the NASA Planetary Data System [1]. Later work has returned to penetrometer concepts for lunar use, including percussive designs for low-gravity operation [4] and dynamic cone designs tested on simulants [5]. Secondary summaries report that the Soviet Luna 13 lander also carried a penetrometer-type soil probe. That claim was not verified against primary sources, and no figure from it is used in this article.",
+      "limitations_and_uncertainties": "The term \"soil hardness tester\" does not describe one standard instrument. The examples are not interchangeable, and their values must not be combined or compared directly. The Apollo values come from the PDS and NTRS records reviewed, and the mass, depth and force figures are specific to that instrument. For the 2026 Adelaide device, the news report does not state cone sizes, impact energies, mass or quantitative results, and the journal paper was not reviewed. Its performance is therefore not quantified here. The 2023 Rahmatian and Metzger paper was reviewed through its abstract only, and device specifications may appear in the full text, which was not available in this run. The 2016 percussive penetrometer was reviewed through the NTRS landing-page record only, so test units, sample sizes and the ice-content unit are not verified. A 2008-era NASA Ames percussive cone penetrometer line and secondary Luna 13 information appeared in searches but were not verified from primary sources, and no claim in this article relies on them. No direct image asset was verified from an official page for this article, so the article contains no images. No lunar lander or rover compatibility has been verified. No regolith density, moisture or strength value has been given for any example, because none was verified from a primary source.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "number": 1,
+          "title": "Apollo 15 Lunar Self-Recording Penetrometer (LSRP) instrument description",
+          "publisher": "NASA Planetary Data System",
+          "date": "Not stated",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-a15lsrp_soil_mechanics/document/a15l_lsrp.txt"
+        },
+        {
+          "number": 2,
+          "title": "Soil mechanics experiment (Apollo 15 Preliminary Science Report, NASA SP-289)",
+          "publisher": "NASA Technical Reports Server",
+          "authors": "Mitchell, J. K., Bromwell, L. G., Carrier, W. D. III, Costes, N. C., Houston, W. N., Scott, R. F.",
+          "date": "1972",
+          "url": "https://ntrs.nasa.gov/citations/19720015171"
+        },
+        {
+          "number": 3,
+          "title": "Soil Test Apparatus for Lunar Surfaces (arXiv:2306.01080; abstract reviewed)",
+          "publisher": "arXiv",
+          "authors": "Rahmatian, L. A. and Metzger, P. T.",
+          "date": "2023 (submitted)",
+          "url": "https://arxiv.org/abs/2306.01080"
+        },
+        {
+          "number": 4,
+          "title": "Low Force Penetration of Icy Regolith (NASA KSC-E-DAA-TN27759; NTRS 20160005056; landing-page record reviewed)",
+          "publisher": "ASCE Earth and Space Conference / NASA",
+          "authors": "Mantovani, J. G., Galloway, G. M., Zacny, K.",
+          "date": "2016",
+          "url": "https://ntrs.nasa.gov/citations/20160005056"
+        },
+        {
+          "number": 5,
+          "title": "One small step towards developing lunar construction (news release on a study published in Acta Astronautica)",
+          "publisher": "University of Adelaide",
+          "date": "2026-06-19",
+          "url": "https://adelaide.edu.au/about/news/2026/one-small-step-towards-developing-lunar-construction/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values, and all other URL fields, have query strings and fragments removed. No images were included because no direct asset URL was verified from an official page in this run."
+  },
+  "data_quality_notes": [
+    "Catalogue entry 170 'Soil hardness tester' confirmed under category 8 'Regolith and soil analysis'.",
+    "No image was verified from an official page; the article and JSON contain no images. Image research is an open gap.",
+    "Quantitative values are given only for the flown Apollo 15 penetrometer and the 2016 percussive penetrometer (force and depth). Other examples are reported qualitatively.",
+    "The 2023 arXiv paper (Rahmatian and Metzger) was reviewed through its abstract only; the full PDF did not load.",
+    "The 2016 NTRS record was reviewed through the landing page; the full PDF was not reviewed, so units and sample details are not verified.",
+    "The Adelaide journal paper in Acta Astronautica was not located or reviewed; only the university news release (19 June 2026) was reviewed.",
+    "Secondary summaries of Soviet Luna 13 penetrometer data and a 2008 NASA Ames PDCP line were seen in search results only and are not used for any figure.",
+    "A CMU Robotic Lunar Geotechnical Tool page returned HTTP 404 and was not used."
+  ]
+}

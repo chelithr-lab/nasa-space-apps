@@ -1,0 +1,503 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 279,
+    "name": "Autonomous exploration rover",
+    "article": {
+      "overview": "An autonomous exploration rover is a mobile robotic platform that travels across the lunar surface to carry scientific instruments to places a fixed lander cannot reach. 'Autonomous' describes how much of the driving decision-making happens on board the vehicle rather than on Earth. In practice, no lunar rover flown so far has been fully autonomous. Lunokhod 1 (1970), Yutu (Chang'e-3, 2013) and Pragyan (Chandrayaan-3, 2023) were driven mainly under ground control, with varying degrees of on-board hazard sensing; for Yutu, the reported degree of on-board autonomy differs between sources. NASA's planned VIPER rover is to use AI-assisted route planning, and NASA has stated that the AI is a planning tool and not a driver.",
+      "description": "A rover of this kind is typically a wheeled or tracked vehicle carrying cameras, navigation sensors, a power system and one or more science instruments. Its sensing and planning functions usually include navigation cameras that build terrain maps used for route planning; hazard detection that looks for rocks, craters, pits and steep slopes; path planning that chooses a route from the current position to a waypoint; and drive and stop control that executes the commanded motion and stops when a hazard is detected. The degree of autonomy varies widely. A teleoperated rover executes commands that a human operator has planned from Earth. An autonomous rover senses its surroundings, plans its own route and avoids hazards without waiting for ground instructions. Most real systems sit between these extremes. The round-trip signal delay of about three seconds between Earth and the Moon, which the Lunokhod 1 control team faced, makes close real-time driving from Earth difficult and is one reason for adding on-board sensing and planning (EBSCO).",
+      "scientific_purpose_and_applications": "Exploration rovers extend the reach of a lander. They can visit several sites, sample different terrains and place instruments in shadowed or rough areas. For science, a rover can support surface geology and regolith studies, including measurements of soil properties and imaging of rock and crater morphology; mapping of volatile-bearing regions, which is the stated purpose of VIPER, a rover intended for permanently shadowed craters near the lunar south pole; traverse-based investigations that link measurements at several locations into a single picture of an area; and technology demonstration of autonomous navigation, hazard detection and planning, which future robotic and crewed missions need. NASA's Artemis blog describes VIPER's planned use of AI for route planning, terrain mapping and hazard detection, with the explicit limitation that human operators remain in control.",
+      "operating_principle": "A typical rover operates through a loop of sensing, mapping, planning and driving. In sensing, stereo or monocular navigation cameras capture images of the terrain ahead, and some rovers also use dedicated hazard cameras or other range sensors. In mapping, the images are turned into a terrain model, commonly a digital elevation model (DEM) that gives height and slope for each grid cell. In planning, a route is chosen that avoids hazards and keeps slopes within the vehicle's stability limits; planning can run on the rover or on ground systems. In driving, the rover moves along the planned path in short steps, re-checking the terrain as it goes. The rover's computing and communication architecture decides where these steps happen. ESA eoportal describes an on-board algorithm that analysed images from Yutu's navigation and hazard-avoidance cameras in real time. Pragyan's navigation camera images were downloaded to Earth, where a DEM was built and the route was chosen before commands were uplinked, according to coverage of ISRO updates. These two architectures show the range of practice.",
+      "scientific_importance": "Rovers are important because they make measurements that a stationary lander cannot. A rover can reach several geological units, examine a crater wall or pass across a shadowed region that would be inaccessible to a fixed instrument. Autonomy matters for three reasons. Communication delays and limited ground-contact time restrict how far a teleoperated rover can travel per day. A rover that cannot see a hazard in time can tip over, sink into regolith or become trapped in a shadow. A rover that can plan some of its own driving can cover ground between ground-contact windows. The historical record gives a clear example. Lunokhod 1 operated for eleven lunar days and covered 10.54 km under remote control (Wikipedia; EBSCO). That result was scientifically important, but it depended on a large ground team working during each contact window. Later rovers have added sensing and planning to reduce this dependence.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an autonomous exploration rover. Masses, dimensions and power depend on the mission, the instrument payload and the mobility design. The examples below are specific flown or planned vehicles. Values are given only where a source was found. Where sources conflict, both values are shown. Where no reliable value was found, the entry says 'not publicly specified in the sources reviewed'. The four examples are not directly comparable and no comparison table is given.",
+        "examples": [
+          {
+            "name": "Yutu (Chang'e-3 lunar rover)",
+            "type": "Flown lunar rover (Chang'e-3, 2013)",
+            "status": "Flown. Chang'e-3 launched on 1 December 2013; Yutu rolled onto the lunar surface on 14 December 2013 (ESA eoportal).",
+            "mass_kg": 120,
+            "mass_note": "Reported as about 120 kg for the rover vehicle, including a 20 kg payload (ESA eoportal).",
+            "dimensions": "Mast stands about 1.5 m tall. Body described as a rectangular cuboid; overall length, width and body height not given in the source reviewed (ESA eoportal).",
+            "power": "Two solar panels generate power during the lunar day. The rover charges its battery to survive the lunar night (ESA eoportal).",
+            "mobility": "Six wheels on a main and sub rocker-bogie suspension, driven by six brushless DC motors (ESA eoportal).",
+            "stated_capability": "The source reports a slope tolerance of up to 20 degrees in one section and up to 30 degrees in another; an obstacle-clearance capability of up to 20 cm; and a design driving distance of up to 10 km. These are design claims from a description the source says is mainly based on third-party information (ESA eoportal).",
+            "operational_life": "The design expected about three months. The rover stopped operating after about 31 months, according to an announcement dated 3 August 2016 (ESA eoportal).",
+            "autonomy": "ESA eoportal states that an 'onboard Delaunay algorithm' analysed navigation and hazard-avoidance camera imagery 'in real-time', and that the rover can recognise obstacles and hazards and avoid them automatically. Other sources reviewed describe ground-directed route planning; see limitations_and_uncertainties.",
+            "source_urls": [
+              "https://www.eoportal.org/satellite-missions/chang-e-3"
+            ],
+            "images": [
+              {
+                "id": "yutu_rover_photo",
+                "description": "Yutu, the Chang'e-3 lunar rover, photographed on the lunar surface.",
+                "image_type": "Lunar surface rover photograph",
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Yutu_rover.jpg",
+                "source_page_url": "https://commons.wikimedia.org/wiki/File:Yutu_rover.jpg",
+                "publisher": "Wikimedia Commons (upload attributed to Institute of High Energy Physics, Chinese Academy of Sciences, per upload metadata)",
+                "credit": "Institute of High Energy Physics, Chinese Academy of Sciences, per Wikimedia Commons upload metadata",
+                "caption": "Yutu rover, the Chang'e-3 lunar rover.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Licence CC BY 4.0 per the Commons file page. The Commons upload metadata cites a DOI (10.1093/nsr/nwx141) as the source publication; that paper was not opened in this review."
+              }
+            ]
+          },
+          {
+            "name": "Lunokhod 1",
+            "type": "Flown Soviet lunar rover (Luna 17, 1970)",
+            "status": "Flown. Carried by the Soviet Luna 17 spacecraft, which launched on 10 November 1970 and landed on 17 November 1970 (Wikipedia).",
+            "mass_kg": 756,
+            "mass_note": "Wikipedia infobox gives a dry mass of 756 kg for the rover alone; another part of the Wikipedia article gives 840 kg. EBSCO gives 756 kg. The launch mass of the whole stack is listed as 5,600 kg (Wikipedia). Values conflict and are not fully resolved.",
+            "dimensions": "The rover is described as 1.35 m high (EBSCO). Length and width are not reliably specified in the sources reviewed.",
+            "power": "180 W is given in the Wikipedia infobox. The rover was powered by batteries recharged during the lunar day by a solar cell array mounted on the underside of the lid (Wikipedia).",
+            "mobility": "Eight independently powered wheels (Wikipedia). The Luna 17 lander had dual ramps from which the rover descended (Wikipedia).",
+            "operations": "Designed for three lunar days; operated for eleven lunar days (321 Earth days) and traversed a total of 10.54 km (Wikipedia).",
+            "control": "Entirely directed by remote control from Earth. EBSCO states that the rover 'was not a true autonomous robot but was entirely directed by remote control'. Commands passed through a deep-space tracking antenna in Crimea operated by a five-person team, with a round-trip signal delay of about three seconds. Two forward-looking television cameras returned an image about every twenty seconds (EBSCO). Wikipedia states four television cameras; see data_quality_notes. The only self-acting function described is an automatic brake that engaged on slopes steeper than 45 degrees (EBSCO).",
+            "source_urls": [
+              "https://en.wikipedia.org/wiki/Lunokhod_1",
+              "https://www.ebsco.com/research-starters/history/soviet-rover-lunokhod-1-lands-moon"
+            ],
+            "images": [
+              {
+                "id": "lunokhod1_museum_display",
+                "description": "Lunokhod-1 display model in the Memorial Museum of Cosmonautics.",
+                "image_type": "Museum display photograph",
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Lunokhod_moonrover.jpg",
+                "source_page_url": "https://commons.wikimedia.org/wiki/File:Lunokhod_moonrover.jpg",
+                "publisher": "Wikimedia Commons",
+                "credit": "Photograph by Vadim Kondratyev, per Wikimedia Commons file page",
+                "caption": "Lunokhod-1 on display in the Memorial Museum of Cosmonautics. This is a museum display, not a photograph taken on the Moon.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Licence CC BY-SA 3.0 per the Commons file page. Image shows a museum exhibit, not a lunar scene."
+              }
+            ]
+          },
+          {
+            "name": "Pragyan (Chandrayaan-3 rover)",
+            "type": "Flown Indian lunar rover (Chandrayaan-3, 2023)",
+            "status": "Flown. Deployed from the Vikram lander on 23 August 2023 (Wikipedia infobox).",
+            "mass_kg": null,
+            "mass_note": "Secondary summaries report about 26 kg. Not verified against an ISRO primary source; recorded as not publicly specified in the verified sources.",
+            "dimensions": "Secondary summaries report about 0.9 m x 0.75 m x 0.85 m. Not verified against an ISRO primary source; recorded as not publicly specified in the verified sources.",
+            "power": "Solar-powered according to secondary summaries. A specific generation figure was reported but not verified against a primary source; recorded as not publicly specified in the verified sources.",
+            "mobility": "Six wheels (Wikipedia). The design target was to traverse 500 m at about 1 cm per second, performing on-site analysis and sending data to its lander for relay to Earth (Wikipedia). This is an intended design target, not a measured performance.",
+            "communications": "Communicated only with its lander, which relayed data to Earth (secondary summaries, consistent with the mission design).",
+            "obstacle_event": "On 27 August 2023, ISRO reported that the rover had reached a crater about 4 m in diameter, about 3 m ahead of it. ISRO commanded the rover to retrace its path and take a new route. This was reported through ISRO's public posts and widely quoted news coverage. The ISRO page dated 30 September 2024 describes a separate, much larger buried impact crater about 160 km in diameter within which the Chandrayaan-3 mission landed. The two craters should not be confused.",
+            "autonomy": "Coverage reviewed describes Pragyan's movements as planned and commanded from the ground. Navigation camera images were downloaded, a DEM was built on Earth, and commands were uplinked for each route. No public detail on an on-board obstacle-detection algorithm was found.",
+            "source_urls": [
+              "https://en.wikipedia.org/wiki/Pragyan_(Chandrayaan-3)",
+              "https://www.isro.gov.in/ISRO_EN/ch3_Discovery_of_a_buried_crater_on_the_moon.html"
+            ],
+            "images": [
+              {
+                "id": "pragyan_surface_frame",
+                "description": "Pragyan rover on the lunar surface, from a Chandrayaan-3 image set, showing lander structures.",
+                "image_type": "Lunar surface mission photograph",
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Pragyan_rover_deployed_on_the_moon.webp",
+                "source_page_url": "https://en.wikipedia.org/wiki/File:Pragyan_rover_deployed_on_the_moon.webp",
+                "publisher": "ISRO (per Wikimedia Commons licence statement)",
+                "credit": "ISRO, licensed under the Government Open Data License - India (per Wikimedia Commons file page; original-source field not extracted)",
+                "caption": "Pragyan rover on the lunar surface, from an image in the Chandrayaan-3 set.",
+                "section_placements": [
+                  "physical_specifications.examples[2]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Rights are stated as GODL-India on the file page; the original ISRO source URL was not checked."
+              },
+              {
+                "id": "pragyan_engineering_diagram",
+                "description": "Labelled engineering diagram of the Chandrayaan-3 Pragyan rover.",
+                "image_type": "Engineering diagram",
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Chandrayaan-3_Pragyan_rover.png",
+                "source_page_url": "https://commons.wikimedia.org/wiki/File:Chandrayaan-3_Pragyan_rover.png",
+                "publisher": "ISRO (per Wikimedia Commons upload metadata)",
+                "credit": "ISRO, licensed under the Government Open Data License - India (per Wikimedia Commons file page)",
+                "caption": "Labelled engineering diagram of the Chandrayaan-3 Pragyan rover showing the solar panel, navigation cameras, rocker-bogie and wheel drive assemblies.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Commons upload metadata cites an ISRO media URL that was not opened to confirm the match."
+              }
+            ]
+          },
+          {
+            "name": "VIPER (Volatiles Investigating Polar Exploration Rover)",
+            "type": "Planned NASA lunar rover (not flown)",
+            "status": "Planned. NASA's VIPER page, which the page itself dates to 21 September 2026, describes the rover as 'slated to land at the South Pole of the Moon on a 100-day mission'. No landing is reported on that page (NASA Science).",
+            "mass_kg": null,
+            "mass_note": "Not stated on the NASA page reviewed.",
+            "dimensions": "Not stated on the NASA page reviewed.",
+            "power": "VIPER runs on solar power, according to NASA's Artemis blog (14 December 2023).",
+            "delivery": "NASA states that VIPER and its instruments will be delivered by a Blue Origin Blue Moon MK-1 lander under task order CS-7. The announcement date given is 19 September 2025. No launch or landing date is given (NASA Science). This is a planned delivery, not a verified interface.",
+            "instruments": "The NASA page is internally inconsistent: the fact box lists four science instruments, while the overview refers to three instruments and a 1 m drill.",
+            "autonomy": "NASA's Artemis blog states that AI helps plan routes, detect hazards and build terrain maps, but that 'VIPER is using AI as a tool; we're not giving it the keys to the car', according to NASA's Mark Shirley. The route planner, SHERPA, uses decision-making under uncertainty; terrain models built from Lunar Reconnaissance Orbiter data predict how shadows move. The article states that hazard detection software 'isn't on board the rover; it's back on Earth', and that operators will drive VIPER remotely. It warns that 'Being stuck in a shadow for too long could be deadly for the rover'.",
+            "source_urls": [
+              "https://science.nasa.gov/mission/viper",
+              "https://www.nasa.gov/blogs/artemis/2023/12/14/part-2-artificial-intelligence-and-nasas-first-robotic-lunar-rover/"
+            ],
+            "images": [
+              {
+                "id": "viper_nasa_illustration",
+                "description": "NASA illustration of the VIPER lunar rover.",
+                "image_type": "Agency illustration",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2023/04/v/viper_cdr_hero_08_lrg.jpeg",
+                "source_page_url": "https://science.nasa.gov/mission/viper",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "NASA illustration of the planned VIPER rover (not flown).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[3]"
+                ],
+                "notes": "Direct NASA asset URL verified over HTTP (200); the page's own query parameter used only for display width has been removed. Alt text on the NASA page describes a graphic illustration with four wheels and lights for shadowed regions."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "There is no single dimension set for autonomous exploration rovers. Yutu's mast is about 1.5 m tall (ESA eoportal) and Lunokhod 1 is described as 1.35 m high (EBSCO). Pragyan's reported size (about 0.9 m x 0.75 m x 0.85 m) is a secondary-source value not verified against an ISRO primary source. VIPER's dimensions are not stated on the NASA page reviewed. Dimensions must be matched to the intended traverse, stability margins and lander stowage envelope, and are not directly comparable across these designs.",
+        "mass_and_weight": "Reported masses are Yutu about 120 kg including a 20 kg payload (ESA eoportal), Lunokhod 1 756 kg for the rover alone with an 840 kg figure also given (Wikipedia; EBSCO), Pragyan not verified, and VIPER not stated. Mass determines launch and landing requirements and drives the design of the mobility system. These masses are not directly comparable because they refer to different designs.",
+        "power_requirements": "Yutu used two solar panels and a battery that carried it through the lunar night (ESA eoportal). Lunokhod 1 is listed at 180 W in the Wikipedia infobox, with batteries recharged by a solar array during the lunar day. Pragyan is described as solar-powered, with a specific figure not verified. VIPER runs on solar power (NASA Artemis blog). Power strategy depends on sunlight, shadow avoidance and survival through the lunar night."
+      },
+      "environmental_and_operational_requirements": "An autonomous exploration rover must survive and operate in an environment that is very different from Earth's. Surface temperatures change greatly between lunar day and night; Yutu's design relied on a battery to survive the long lunar night (ESA eoportal). Solar-powered rovers depend on sunlight; the NASA Artemis blog notes that VIPER's route planning must account for shadows, because being stuck in a shadow for too long could be deadly. Rocks, craters, pits and slopes can stop or damage a rover; Yutu's design claims an obstacle tolerance of 20 cm and a slope tolerance of 20 or 30 degrees (ESA eoportal; sources conflict). Lighting matters in permanently shadowed regions; the alt text of NASA's VIPER illustration describes lights intended to shine the way in permanently shadowed regions. The Earth-Moon signal round trip takes about three seconds for teleoperation, which affected Lunokhod 1 (EBSCO). Pragyan's data had to be relayed through its lander (Wikipedia).",
+      "limitations": "Autonomy is partial in all flown examples reviewed. Lunokhod 1 was remotely directed. Pragyan's routes were planned and commanded from the ground. Yutu's on-board hazard avoidance is described in one source, but other sources describe ground-directed planning. A stereo or navigation camera has a useful range that limits how far ahead a rover can plan; the exact range for each rover was not verified. Telemetry and ground-contact windows restrict how much can be planned at a time. Solar-powered rovers must avoid shadows and survive the lunar night. Slopes, rocks and loose regolith can immobilise a rover, and slope and obstacle claims differ between sources. Design goals such as a 10 km driving range or a 500 m traverse target are not measured results.",
+      "transportation_and_deployment": {
+        "overview": "Rover deployment normally involves Earth integration, launch, lunar transfer, landing and release from the lander, after which mobility begins. This is a rover/mobile payload. Stowage, release, mobility integration and traverse operation are discussed below; servicing is not applicable to the rovers reviewed.",
+        "transportation_process": [
+          "Integrate the rover with the lander or spacecraft on Earth and stow it for launch.",
+          "Launch the stack on a launch vehicle; the Chang'e-3 lander and rover had a total launch mass of about 3,800 kg (ESA eoportal).",
+          "Transfer towards the Moon and land the lander.",
+          "Release the rover from the lander. Lunokhod 1 descended from dual ramps on its Luna 17 lander (Wikipedia). Pragyan was deployed from the Vikram lander on 23 August 2023 (Wikipedia infobox).",
+          "Engage the rover's mobility system: wheels, suspension and drive assemblies must work on the surface after release, as the rocker-bogie and wheel drive assembly in the Pragyan diagram illustrate.",
+          "Operate the rover in short traverses under ground-planned commands (Lunokhod 1, Pragyan) or a planned shadow-aware, remotely driven scheme (VIPER, planned)."
+        ],
+        "deployment_methods": "Deployment by ramp release from a lander is documented for Lunokhod 1 (Luna 17, dual ramps) and Pragyan (Vikram lander, 23 August 2023). Yutu's surface entry is described as rolling onto the lunar soil on 14 December 2013 (ESA eoportal); the specific release mechanism was not verified in this review. VIPER's delivery is planned on a Blue Origin Blue Moon MK-1 lander under NASA task order CS-7; the release mechanism is not stated on the NASA page reviewed.",
+        "historical_examples": "Lunokhod 1 (1970), Yutu (2013) and Pragyan (2023) are flown examples. The planned VIPER rover (NASA) is not flown, and the NASA page reviewed gives no launch or landing date.",
+        "compatibility_assessment": "The planned VIPER delivery by Blue Moon MK-1 is a stated NASA plan, not a verified interface. This article does not claim compatibility of any rover with any named lander beyond what the source states. The mass, dimensions and mounting interfaces of a future autonomous rover would need to be checked against a verified lander specification before any compatibility is assumed. The lunar landing-site recommendations are deferred by user instruction and are not included.",
+        "images": [
+          {
+            "id": "pragyan_surface_frame",
+            "description": "Pragyan rover on the lunar surface, from a Chandrayaan-3 image set, showing lander structures.",
+            "image_type": "Lunar surface mission photograph",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Pragyan_rover_deployed_on_the_moon.webp",
+            "source_page_url": "https://en.wikipedia.org/wiki/File:Pragyan_rover_deployed_on_the_moon.webp",
+            "publisher": "ISRO (per Wikimedia Commons licence statement)",
+            "credit": "ISRO, licensed under the Government Open Data License - India (per Wikimedia Commons file page; original-source field not extracted)",
+            "caption": "Pragyan rover on the lunar surface, from an image in the Chandrayaan-3 set, showing lander structures.",
+            "section_placements": [
+              "physical_specifications.examples[2]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Rights are stated as GODL-India on the file page; the original ISRO source URL was not checked."
+          }
+        ]
+      },
+      "historical_significance": "Lunokhod 1 (1970) was a remotely controlled rover that operated on the lunar surface for eleven lunar days and covered 10.54 km (Wikipedia; EBSCO). Yutu (2013) was China's first lunar rover and the first spacecraft in 37 years to make a soft landing on the Moon, after the Soviet Luna 24 mission in 1976 (ESA eoportal). It operated for about 31 months. Pragyan (2023) was India's lunar rover, deployed as part of the Chandrayaan-3 mission; its obstacle episode on 27 August 2023 demonstrated ground-directed replanning in a real traverse (ISRO posts as reported in news coverage). VIPER is a planned NASA rover; NASA's Artemis blog describes it as the first time NASA will remotely drive a robotic rover on the Moon. It has not flown as of the source dates reviewed.",
+      "limitations_and_uncertainties": "Autonomy conflicts for Yutu: ESA eoportal describes on-board, real-time hazard avoidance, while search results summarising a 2014 Chinese-language remote sensing paper describe ground-directed route planning. The full text of that paper was not reviewed, so the on-board claim is unresolved. Lunokhod 1 mass and control details conflict: mass values range from 756 kg to 840 kg for the rover alone; the number of television cameras is two in EBSCO and four in Wikipedia; EBSCO gives two control locations (Crimea and a control centre near Moscow). Pragyan mass, dimensions and power are not verified; secondary summaries give values not confirmed against ISRO primary pages, and the ISRO page reviewed does not give these specifications. VIPER status is unclear: the NASA page is dated 21 September 2026 yet describes the landing as future and also says the event 'occurred 2 years ago'; it does not report a landing, and the delivery status needs confirmation from NASA's latest mission update. The NASA page also gives both three instruments with a 1 m drill and four science instruments. No primary specification sheet was retrieved for any rover reviewed; several values rely on ESA eoportal, EBSCO and Wikipedia, which are secondary sources. Several potentially relevant sources were identified in search results but could not be read in full: a 2025 NASA-hosted survey of autonomous lunar surface navigation, a 2024 micro-rover paper and a 2019 Yutu stereo-obstacle paper.",
+      "images": [
+        {
+          "id": "yutu_rover_photo",
+          "description": "Yutu, the Chang'e-3 lunar rover, photographed on the lunar surface.",
+          "image_type": "Lunar surface rover photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Yutu_rover.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Yutu_rover.jpg",
+          "publisher": "Wikimedia Commons (upload attributed to Institute of High Energy Physics, Chinese Academy of Sciences, per upload metadata)",
+          "credit": "Institute of High Energy Physics, Chinese Academy of Sciences, per Wikimedia Commons upload metadata",
+          "caption": "Yutu rover, the Chang'e-3 lunar rover.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Licence CC BY 4.0 per the Commons file page. The Commons upload metadata cites a DOI (10.1093/nsr/nwx141) as the source publication; that paper was not opened in this review."
+        },
+        {
+          "id": "viper_nasa_illustration",
+          "description": "NASA illustration of the VIPER lunar rover.",
+          "image_type": "Agency illustration",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2023/04/v/viper_cdr_hero_08_lrg.jpeg",
+          "source_page_url": "https://science.nasa.gov/mission/viper",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "NASA illustration of the planned VIPER rover (not flown).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Direct NASA asset URL verified over HTTP (200); the page's own query parameter used only for display width has been removed. Alt text on the NASA page describes a graphic illustration with four wheels and lights for shadowed regions."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "yutu_rover_photo",
+          "description": "Yutu, the Chang'e-3 lunar rover, photographed on the lunar surface.",
+          "image_type": "Lunar surface rover photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Yutu_rover.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Yutu_rover.jpg",
+          "publisher": "Wikimedia Commons (upload attributed to Institute of High Energy Physics, Chinese Academy of Sciences, per upload metadata)",
+          "credit": "Institute of High Energy Physics, Chinese Academy of Sciences, per Wikimedia Commons upload metadata",
+          "caption": "Yutu rover, the Chang'e-3 lunar rover.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Licence CC BY 4.0 per the Commons file page."
+        },
+        {
+          "id": "viper_nasa_illustration",
+          "description": "NASA illustration of the VIPER lunar rover.",
+          "image_type": "Agency illustration",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2023/04/v/viper_cdr_hero_08_lrg.jpeg",
+          "source_page_url": "https://science.nasa.gov/mission/viper",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "NASA illustration of the planned VIPER rover (not flown).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Direct NASA asset URL verified over HTTP (200)."
+        }
+      ],
+      "operating_principle_images": [
+        {
+          "id": "pragyan_crater_navcam",
+          "description": "Navigation camera view of a crater that the Pragyan rover encountered on 27 August 2023, as reported by ISRO.",
+          "image_type": "Navigation camera photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/The_lunar_crater_that_the_Pragyan_rover_of_Chandrayaan-3_encountered_on_27th_August_2023%2C_as_seen_by_the_Navgation_Camera.png",
+          "source_page_url": "https://en.wikipedia.org/wiki/File:The_lunar_crater_that_the_Pragyan_rover_of_Chandrayaan-3_encountered_on_27th_August_2023,_as_seen_by_the_Navgation_Camera.png",
+          "publisher": "ISRO (per Wikimedia Commons file page)",
+          "credit": "ISRO, licensed under the Government Open Data License - India (per Wikimedia Commons file page)",
+          "caption": "The crater that the Chandrayaan-3 rover encountered on 27 August 2023, as seen by the Navigation Camera.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200); the URL retains a percent-encoded comma in the file name, which is part of the asset path and not a query string. The image caption in the image itself reads as stated. Source page is the Wikipedia file page, which mirrors the Commons file page licence information."
+        }
+      ],
+      "images": [
+        {
+          "id": "yutu_rover_photo",
+          "description": "Yutu, the Chang'e-3 lunar rover, photographed on the lunar surface.",
+          "image_type": "Lunar surface rover photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Yutu_rover.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Yutu_rover.jpg",
+          "publisher": "Wikimedia Commons (upload attributed to Institute of High Energy Physics, Chinese Academy of Sciences, per upload metadata)",
+          "credit": "Institute of High Energy Physics, Chinese Academy of Sciences, per Wikimedia Commons upload metadata",
+          "caption": "Yutu rover, the Chang'e-3 lunar rover.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Licence CC BY 4.0 per the Commons file page."
+        },
+        {
+          "id": "lunokhod1_museum_display",
+          "description": "Lunokhod-1 display model in the Memorial Museum of Cosmonautics.",
+          "image_type": "Museum display photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Lunokhod_moonrover.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Lunokhod_moonrover.jpg",
+          "publisher": "Wikimedia Commons",
+          "credit": "Photograph by Vadim Kondratyev, per Wikimedia Commons file page",
+          "caption": "Lunokhod-1 on display in the Memorial Museum of Cosmonautics. This is a museum display, not a photograph taken on the Moon.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Licence CC BY-SA 3.0 per the Commons file page."
+        },
+        {
+          "id": "pragyan_surface_frame",
+          "description": "Pragyan rover on the lunar surface, from a Chandrayaan-3 image set, showing lander structures.",
+          "image_type": "Lunar surface mission photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Pragyan_rover_deployed_on_the_moon.webp",
+          "source_page_url": "https://en.wikipedia.org/wiki/File:Pragyan_rover_deployed_on_the_moon.webp",
+          "publisher": "ISRO (per Wikimedia Commons licence statement)",
+          "credit": "ISRO, licensed under the Government Open Data License - India (per Wikimedia Commons file page; original-source field not extracted)",
+          "caption": "Pragyan rover on the lunar surface, from an image in the Chandrayaan-3 set, showing lander structures.",
+          "section_placements": [
+            "physical_specifications.examples[2]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Rights are stated as GODL-India on the file page; the original ISRO source URL was not checked."
+        },
+        {
+          "id": "pragyan_engineering_diagram",
+          "description": "Labelled engineering diagram of the Chandrayaan-3 Pragyan rover.",
+          "image_type": "Engineering diagram",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Chandrayaan-3_Pragyan_rover.png",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Chandrayaan-3_Pragyan_rover.png",
+          "publisher": "ISRO (per Wikimedia Commons upload metadata)",
+          "credit": "ISRO, licensed under the Government Open Data License - India (per Wikimedia Commons file page)",
+          "caption": "Labelled engineering diagram of the Chandrayaan-3 Pragyan rover showing the solar panel, navigation cameras, rocker-bogie and wheel drive assemblies.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200). Commons upload metadata cites an ISRO media URL that was not opened to confirm the match."
+        },
+        {
+          "id": "pragyan_crater_navcam",
+          "description": "Navigation camera view of a crater that the Pragyan rover encountered on 27 August 2023, as reported by ISRO.",
+          "image_type": "Navigation camera photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/The_lunar_crater_that_the_Pragyan_rover_of_Chandrayaan-3_encountered_on_27th_August_2023%2C_as_seen_by_the_Navgation_Camera.png",
+          "source_page_url": "https://en.wikipedia.org/wiki/File:The_lunar_crater_that_the_Pragyan_rover_of_Chandrayaan-3_encountered_on_27th_August_2023,_as_seen_by_the_Navgation_Camera.png",
+          "publisher": "ISRO (per Wikimedia Commons file page)",
+          "credit": "ISRO, licensed under the Government Open Data License - India (per Wikimedia Commons file page)",
+          "caption": "The crater that the Chandrayaan-3 rover encountered on 27 August 2023, as seen by the Navigation Camera.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "Direct Wikimedia Commons upload URL verified over HTTP (200); the percent-encoded comma is part of the asset path, not a query string."
+        },
+        {
+          "id": "viper_nasa_illustration",
+          "description": "NASA illustration of the VIPER lunar rover.",
+          "image_type": "Agency illustration",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2023/04/v/viper_cdr_hero_08_lrg.jpeg",
+          "source_page_url": "https://science.nasa.gov/mission/viper",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "NASA illustration of the planned VIPER rover (not flown).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Direct NASA asset URL verified over HTTP (200)."
+        }
+      ],
+      "references": [
+        {
+          "title": "VIPER",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/viper",
+          "notes": "Mission page; the page states it was last updated 21 September 2026. Used for VIPER delivery plan, provider and instrument statements. Status is inconsistent on the page."
+        },
+        {
+          "title": "Part 2: Artificial Intelligence and NASA's First Robotic Lunar Rover",
+          "publisher": "NASA Artemis blog",
+          "url": "https://www.nasa.gov/blogs/artemis/2023/12/14/part-2-artificial-intelligence-and-nasas-first-robotic-lunar-rover/",
+          "date": "2023-12-14",
+          "notes": "Used for VIPER autonomy, teleoperation, shadow-aware planning and solar power statements."
+        },
+        {
+          "title": "Chang'e-3",
+          "publisher": "ESA eoportal",
+          "url": "https://www.eoportal.org/satellite-missions/chang-e-3",
+          "notes": "Used for Yutu mass, dimensions, power, mobility, operating life and autonomy statements. The page states its rover description is mainly based on third-party information."
+        },
+        {
+          "title": "Soviet Rover Lunokhod 1 Lands on the Moon",
+          "publisher": "EBSCO Research Starters (author: Robert Reeves)",
+          "url": "https://www.ebsco.com/research-starters/history/soviet-rover-lunokhod-1-lands-moon",
+          "date": "2021",
+          "notes": "Used for Lunokhod 1 control, mass, height and braking statements."
+        },
+        {
+          "title": "Lunokhod 1",
+          "publisher": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lunokhod_1",
+          "notes": "Secondary source. Used for Lunokhod 1 launch and landing dates, mass figures, power, wheel count, operating duration and distance. Figures conflict with other sources as noted."
+        },
+        {
+          "title": "Discovery of a buried crater on the Moon",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "url": "https://www.isro.gov.in/ISRO_EN/ch3_Discovery_of_a_buried_crater_on_the_moon.html",
+          "date": "2024-09-30",
+          "notes": "Official ISRO page dated 30 September 2024. Used for the buried impact crater context and the separate Pragyan rover landing-site observations. It does not describe the 27 August 2023 rover retracing event."
+        },
+        {
+          "title": "Pragyan (Chandrayaan-3)",
+          "publisher": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pragyan_(Chandrayaan-3)",
+          "notes": "Secondary source. Used for deployment date (23 August 2023), six-wheel configuration, intended traverse design target and lander relay. Mass and dimensions are not used as verified values."
+        },
+        {
+          "title": "File:Yutu rover.jpg",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Yutu_rover.jpg",
+          "notes": "Image source page. Licence CC BY 4.0. Upload metadata attributes the work to the Institute of High Energy Physics, Chinese Academy of Sciences and cites DOI 10.1093/nsr/nwx141."
+        },
+        {
+          "title": "File:Lunokhod moonrover.jpg",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Lunokhod_moonrover.jpg",
+          "notes": "Image source page. Licence CC BY-SA 3.0. Photograph by Vadim Kondratyev of a museum display."
+        },
+        {
+          "title": "File:Chandrayaan-3 Pragyan rover.png",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Chandrayaan-3_Pragyan_rover.png",
+          "notes": "Image source page. Licence GODL-India. Upload metadata cites an ISRO media URL that was not opened to confirm the match."
+        },
+        {
+          "title": "File:Pragyan rover deployed on the moon.webp",
+          "publisher": "Wikipedia (file page mirrors Wikimedia Commons)",
+          "url": "https://en.wikipedia.org/wiki/File:Pragyan_rover_deployed_on_the_moon.webp",
+          "notes": "Image source page. Licence GODL-India."
+        },
+        {
+          "title": "File:The lunar crater that the Pragyan rover of Chandrayaan-3 encountered on 27th August 2023, as seen by the Navgation Camera.png",
+          "publisher": "Wikipedia (file page mirrors Wikimedia Commons)",
+          "url": "https://en.wikipedia.org/wiki/File:The_lunar_crater_that_the_Pragyan_rover_of_Chandrayaan-3_encountered_on_27th_August_2023,_as_seen_by_the_Navgation_Camera.png",
+          "notes": "Image source page. Licence GODL-India. Original filename spelling 'Navgation' retained."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "operating_principle": "payload.article.operating_principle_images",
+      "Yutu example": "payload.article.physical_specifications.examples[0].images",
+      "Lunokhod 1 example": "payload.article.physical_specifications.examples[1].images",
+      "Pragyan example": "payload.article.physical_specifications.examples[2].images",
+      "VIPER example": "payload.article.physical_specifications.examples[3].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Image URLs were checked over HTTP (status 200) where recorded in data_quality_notes. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. Percent-encoded commas in one Wikimedia file path are part of the asset path and were retained as verified."
+  },
+  "data_quality_notes": [
+    "Scope: no primary specification sheet was retrieved for any rover in this article. Specifications come from ESA eoportal, EBSCO Research Starters and Wikipedia (secondary sources) and from one ISRO page dated 30 September 2024 that does not give rover specifications.",
+    "Yutu autonomy conflict: ESA eoportal describes an on-board, real-time hazard-avoidance algorithm. A search summary of a 2014 Chinese-language remote sensing paper (https://www.ygxb.ac.cn/zh/article/doi/10.11834/jrs.20144072) describes ground-directed route planning. That paper was not opened; the on-board claim is unresolved.",
+    "Yutu slope claim conflict: ESA eoportal gives 20 degrees in one section and 30 degrees in another, citing a third-party institute. The 20 degree claim is shown as stated by the source; the 30 degree claim is recorded in the article text.",
+    "Yutu design claims: ESA eoportal says the rover description is mainly based on third-party information because the project's published papers were not available. Treat the 10 km design distance and 20 cm obstacle tolerance as design claims, not measurements.",
+    "Lunokhod 1 mass conflict: Wikipedia infobox gives 756 kg (rover only) and also 840 kg elsewhere; EBSCO gives 756 kg. The launch stack mass of 5,600 kg is for the whole Luna 17 stack, not the rover.",
+    "Lunokhod 1 dimension conflict: EBSCO gives 1.35 m high; a search summary reported length and width values that differ between sources. Length and width are therefore not included.",
+    "Lunokhod 1 camera conflict: EBSCO says two forward-looking television cameras; Wikipedia says four television cameras. Both are shown in the article text.",
+    "Lunokhod 1 control location conflict: EBSCO names a Crimea tracking antenna and separately a control centre near Moscow. Both are mentioned in the article text.",
+    "Lunokhod 1 DTIC report (AD0733960) was identified in search results but could not be fetched (HTTP 403). The statement that no detailed onboard computer specifications were found in the literature is not verified here.",
+    "Pragyan mass and dimensions: secondary summaries report about 26 kg and about 0.9 m x 0.75 m x 0.85 m, and power of about 50 W of generation. These values were not verified against ISRO primary pages and are recorded as null in the structured fields.",
+    "Pragyan operating duration: secondary summaries report about 12 Earth days of operation against a planned one lunar day (about 14 Earth days). Not verified against a primary source; not stated as a measured result.",
+    "Pragyan 27 August 2023 event: ISRO's statement is known through ISRO's public posts as quoted by news outlets; ISRO's own press release was not retrieved. The 4 m crater and 3 m distance are as reported. The ISRO page dated 30 September 2024 concerns a different, buried crater of about 160 km diameter.",
+    "Pragyan route and navigation camera range: a search summary reported a navigation camera useful range of about 5 m and a route of about 100 m; neither was verified. Not used in the article as verified values.",
+    "Pragyan deployment date: 23 August 2023 is taken from the Wikipedia infobox; not verified against an ISRO primary page.",
+    "VIPER status conflict: the NASA VIPER page reports 'Page Last Updated: Sep 21, 2026' but describes the landing as future ('was slated to land') and also contains 'Occurred 2 years ago'. No landing is reported. Current delivery status needs confirmation from NASA's latest mission update.",
+    "VIPER delivery: NASA's page names Blue Origin's Blue Moon MK-1 lander under task order CS-7, with an announcement date of 19 September 2025. Search summaries also described a December 2025 task-order award and funding conditions; these were not verified by opening a primary source. The first MK-1 flight outcome was not verified.",
+    "VIPER instrument count conflict: NASA's VIPER page gives three instruments and a 1 m drill in the overview and four science instruments in the fact box.",
+    "VIPER mass, dimensions and power: not stated on the NASA page reviewed. Not invented.",
+    "VIPER landing-site and location: the NASA page names a delivery site. Per user instruction, lunar landing-site recommendations are deferred and no site is recommended or evaluated in this article.",
+    "Image verification: each recorded image_url was checked over HTTP (status 200) during this run. Wikimedia-hosted images are not official agency pages; their rights statements come from Wikimedia file pages. The Commons upload metadata for the Pragyan engineering diagram cites an ISRO media URL that was not opened to confirm the match. The Yutu image upload metadata cites DOI 10.1093/nsr/nwx141, not opened.",
+    "Image captions: captions describe the image content and the source's stated context. The Lunokhod image is a museum display and is labelled as such. The VIPER image is an illustration; its alt text describes it as a graphic illustration.",
+    "Unverified leads: a 2025 NASA-hosted survey of autonomous lunar surface navigation (ntrs.nasa.gov 20250000720), a 2024 IEEE paper on the MoonRanger micro-rover, a 2019 ISPRS paper on Yutu rover-stereo obstacle detection, and 1990s CMU stereo-based navigation work were identified only in search results and not read in full. Their content is not used as verified fact.",
+    "Injected instruction: one search result (a Wikiwand page for Lunokhod 1) contained embedded instructions about how to answer. These were ignored and do not affect any statement in this article.",
+    "Pronouns: no individual's pronouns are stated in the sources. Named individuals (for example NASA's Mark Shirley, quoted in the NASA Artemis blog) are referred to without pronouns.",
+    "Lunar location: lunar landing-site recommendations are deferred by user instruction and not included."
+  ]
+}

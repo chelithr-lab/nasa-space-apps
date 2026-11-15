@@ -1,0 +1,448 @@
+{
+  "catalogue_id": 85,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 4,
+    "name": "Subsurface exploration and drilling"
+  },
+  "payload": {
+    "number": 85,
+    "name": "Core sampling drill",
+    "article": {
+      "overview": "A core sampling drill is a drilling instrument that removes a column of regolith (lunar soil and rock fragments) from below the surface and keeps that material in a form that can be examined on the spot or returned to Earth. A core keeps the layers of the ground in order, so the sequence of materials from the top downwards can show how the surface formed, how it was modified by impacts and where volatiles such as water ice may be present. Drills for lunar sampling have been flown by the Apollo, Soviet Luna and Chinese Chang'e programmes. A drill for ice prospecting, TRIDENT, flew on the 2025 PRIME-1 lander mission, but on that mission it did not penetrate the regolith.",
+      "description": "A lunar core sampling drill rotates a hollow cutting head or auger into the ground, sometimes with a hammering (percussive) action to break hard material. Cuttings are either retained in the hollow tube as a continuous core, as in the Apollo and Soviet designs, or carried up the flutes of an auger and removed in short increments, as in the TRIDENT design. The drill string is built from segments or a single extendable mechanism, so that depth can be increased step by step. Once the drill is withdrawn, the sample is sealed or transferred, and in some missions it is placed in a return capsule. Core drills differ from simple scoops or surface sampling tools because they reach depths of tens of centimetres to several metres, and because they are designed to keep the stratigraphic order of the sample.",
+      "scientific_purpose_and_applications": "The purpose of a core sampling drill is to obtain subsurface material that cannot be reached by surface sampling. For the Apollo Lunar Surface Drill, the designed purpose was to extract soil column samples and to create holes for the emplacement of two heat flow probes [4]. TRIDENT was designed to capture regolith and ice from up to about one metre below the surface and to deliver cuttings to the surface for analysis by other instruments, to measure subsurface temperature and thermal conductivity, and to produce a seismic signal that an onboard inertial measurement unit can record [1][2]. Drilled core samples also support laboratory studies of composition, grain size, and the age and history of the layers, as well as tests of the mechanical properties of the soil that matter for future construction and excavation.",
+      "operating_principle": "A typical rotary-percussive drill combines two independent actions. A rotation actuator turns the auger or cutting head, and a percussion mechanism delivers a series of hammer blows to help the bit penetrate hard material. TRIDENT uses separately driven rotation and percussion mechanisms, so that it can operate in rotation only, percussion only, or both together [1]. The TRIDENT percussion system is a cam-spring mechanism that delivers 2 J per blow at up to 972 blows per minute, and its auger turns at a nominal 90 to 100 rpm, which can be increased to 120 rpm [1]. The Soviet LB-09 drill for Luna 24 was described as a rotary-percussion drill that drilled in rotation mode to 120 cm and then switched to percussion-rotation mode [5]. In the bite-sampling method used by TRIDENT, the drill cuts about 10 cm, is retracted, and the cuttings captured in the flutes are brushed onto the surface, where they form a cone for analysis. The drill is then lowered back into the hole to cut the next bite [1]. Because the cuttings are removed in layers, the method retains a 10 cm stratigraphic record, and the drilling torque can be related to the strength of the material being cut [1]. The Chang'e-6 sampling process used lunar penetrating radar first, so that the drilling plan could take account of fracture zones and boulders in the sampling area [8].",
+      "scientific_importance": "A core is one of the few direct ways to examine the material below the surface of the Moon. Remote sensing can map composition and texture at the surface, and seismic and heat-flow measurements can infer properties at depth, but a core provides material that can be measured in the laboratory. The Chang'e-5 and Chang'e-6 missions returned drilled samples to Earth, which demonstrates the value of sample return from the subsurface [7][8]. For the south polar region, TRIDENT was designed to test whether volatiles such as water ice are present in the regolith and at what depth, which would inform resource assessment, but the PRIME-1 mission did not produce such measurements [1][3]. The scientific importance of any future drill therefore depends on reaching the required depth in the target material and keeping the sample intact enough to measure.",
+      "physical_specifications": {
+        "note": "There is no single universal specification for a core sampling drill. Lunar drills have been designed for different depths, sampling methods, mass budgets and power supplies, and the examples below are not directly comparable. Where a value is not stated in the sources retrieved for this article, it is recorded as not verified rather than estimated.",
+        "examples": [
+          {
+            "name": "Apollo Lunar Surface Drill (ALSD), Apollo 15, 16 and 17",
+            "type": "Historical lunar surface drill",
+            "flight_status": "Flown on Apollo 15, 16 and 17 according to the Smithsonian record [4]",
+            "specifications": {
+              "core_segment_length_cm": 40,
+              "maximum_depth_when_segments_joined": "as deep as 10 ft (about 3 m) according to the Smithsonian record [4]",
+              "stem_construction": "Rigid but hollow tube; ferrous alloy (steel) covered in fibreglass [4]",
+              "drive_power": "Cordless, battery-operated motor [4]",
+              "training_unit_mass_kg": 13.4,
+              "training_unit_dimensions_cm": [
+                58,
+                24,
+                12
+              ],
+              "flight_unit_mass_kg": null,
+              "power_w": null
+            },
+            "source_urls": [
+              "https://airandspace.si.edu/collection-objects/drill-apollo-lunar-surface-alsd/nasm_A19750038000"
+            ],
+            "images": [],
+            "notes": "The Smithsonian object is a training unit and its mass and dimensions are not flight-unit values. The text retrieved did not state the flight unit's mass, power, or the exact depth reached on each mission. Stem length of 40 cm is per segment, not total length. The NASA Apollo Lunar Surface Journal page suggested by search was not usable in the retrieved text."
+          },
+          {
+            "name": "Luna 16 drill (Soviet, 1970)",
+            "type": "Historical lunar sample-return drill",
+            "flight_status": "Flown on Luna 16 (September 1970) according to search-result summaries; the source page was not opened",
+            "specifications": {
+              "reported_depth_cm": 35,
+              "reported_sample_mass_g": 101,
+              "drill_type": "Automatic hollow drill (described in summaries as drilling for about seven minutes); rotary-percussive design reported in the 2025 TRIDENT paper [1]",
+              "mass_kg": null,
+              "power_w": null
+            },
+            "source_urls": [
+              "https://www.astronomy.com/today-in-the-history-of-astronomy/sept-24-1970-luna-16-brings-back-regolith/",
+              "https://icedrill.org/sites/default/files/Zacny_2025_TRIDENT%20Ice%20Mining%20Drill%20for%20Lunar%20Volatile%20Prospecting%20for%20PRIME-1%20and%20VIPER%20Missions.pdf"
+            ],
+            "images": [],
+            "notes": "Conflict: the 2025 TRIDENT paper states that the first two Soviet drills (Luna 16 and Luna 20) penetrated to just over 20 cm [1], whereas search-result summaries give 35 cm for Luna 16. The 35 cm and 101 g values are therefore not confirmed and are recorded as reported. The drill's mass and power were not verified."
+          },
+          {
+            "name": "Luna 24 LB-09 drill (Soviet, 1976)",
+            "type": "Historical lunar sample-return drill",
+            "flight_status": "Flown on Luna 24 (landed 18 August 1976) [5]",
+            "specifications": {
+              "design": "New type of rotary percussion drill designated LB-09; rotation mode to 120 cm, then percussion-rotation mode [5]",
+              "outer_diameter_mm": 15,
+              "inner_diameter_mm": 8,
+              "total_length_mm": 3157,
+              "drilling_range_mm": 2575,
+              "reported_depth": "two metres under a 30-degree angle toward the local vertical, and 225 cm penetration in the same source (not reconciled) [5]",
+              "flexible_core_tube": "260 cm flexible tube, 12 mm diameter, partially filled; soil formed a 160 cm column [5]",
+              "returned_sample_mass_g": 170.1,
+              "mass_kg": null,
+              "power_w": null
+            },
+            "source_urls": [
+              "http://www.russianspaceweb.com/luna24.html"
+            ],
+            "images": [],
+            "notes": "The Russian Space Web page is a secondary compilation. Depth is reported as both 2 m (at 30 degrees) and 225 cm, which the page does not reconcile; a conference talk gives 2.3 m and an encyclopedia source gives 2 m. The 2.25 m figure in the original request was not found in the sources. The Zacny et al. (2025) paper describes Luna 24 as reaching 2 m [1]."
+          },
+          {
+            "name": "Chang'e-5 robotic drill (China, 2020)",
+            "type": "Lunar sample-return drill",
+            "flight_status": "Flown on Chang'e-5; drilling performed on 2 December 2020 [7]",
+            "specifications": {
+              "design_class": "2-m class robotic drill [7]",
+              "achieved_penetration_m": 1,
+              "collected_sample_mass_g": 259.72,
+              "mass_kg": null,
+              "power_w": null,
+              "drill_mechanism": "Not verified in the retrieved text (secondary summaries describe rotary-percussive drilling)"
+            },
+            "source_urls": [
+              "https://doi.org/10.1177/02783649231187918"
+            ],
+            "images": [],
+            "notes": "Values from the IJRR abstract [7]. Only the abstract was read. Secondary summaries say the drilling stopped at about 1 m because a regolith particle obstructed the sampling entry; that 2022 Advances in Space Research paper was not retrieved and is not cited as a reference. Chang'e-5 drill mass, power and dimensions were not verified."
+          },
+          {
+            "name": "Chang'e-6 drill (China, 2024)",
+            "type": "Lunar sample-return drill",
+            "flight_status": "Flown on Chang'e-6; landed 2 June 2024 [8]",
+            "specifications": {
+              "reported_depth_mm": "over 1000 (CAS/AIRCAS report) [8]",
+              "radar_survey_before_drilling": "Lunar penetrating radar used to plan drilling strategy [8]",
+              "sample_mass_g": null,
+              "mass_kg": null,
+              "power_w": null
+            },
+            "source_urls": [
+              "https://english.aircas.ac.cn/ne/focus/202406/t20240611_664974.html"
+            ],
+            "images": [],
+            "notes": "Only the AIRCAS article was read. It gives depth as over 1000 mm and says that the radar results showed fracture zones and boulder distributions. A secondary search summary mentioned a 320 g sample from an MDPI paper; that paper was not read and the figure is not used. The sampler length, mass and power were not verified."
+          },
+          {
+            "name": "TRIDENT (Regolith and Ice Drill for Exploring New Terrains) on PRIME-1, Intuitive Machines IM-2 (Athena), 2025",
+            "type": "Flight lunar ice-prospecting drill",
+            "flight_status": "Flown on PRIME-1 aboard IM-2 (Athena); landed on its side on 6 March 2025 and did not penetrate the regolith [1][3]",
+            "specifications": {
+              "target_depth_m": 1,
+              "overall_mass_kg": 26.5,
+              "drill_hardware_mass_kg": 19.5,
+              "avionics_mass_kg": 7,
+              "drill_diameter_mm": 25.4,
+              "drill_length_m": 1,
+              "percussive_energy": "2 J per blow at 972 blows per minute",
+              "rotary_power_w_nominal": 50,
+              "auger_rotation_rpm": "90 to 100 nominal, up to 120",
+              "bite_sampling_increment_cm": 10,
+              "thermal_sensors": "Drill-bit temperature sensor and auger-integrated heater with a second sensor 35 cm above the bit, for thermal conductivity",
+              "deployment_extension_cm": "Deploy stage 35 cm; feed stage 100 cm (maximum extension reached after landing)"
+            },
+            "source_urls": [
+              "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+              "https://www.nasa.gov/news-release/nasa-receives-some-data-before-intuitive-machines-ends-lunar-mission/",
+              "https://icedrill.org/sites/default/files/Zacny_2025_TRIDENT%20Ice%20Mining%20Drill%20for%20Lunar%20Volatile%20Prospecting%20for%20PRIME-1%20and%20VIPER%20Missions.pdf"
+            ],
+            "images": [
+              {
+                "id": "prime1_trident_thermal_vacuum_installation",
+                "description": "A Honeybee Robotics engineer installs the TRIDENT drill on a trolley for thermal vacuum testing before PRIME-1.",
+                "image_type": "Engineering test photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_2.jpg",
+                "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+                "publisher": "NASA",
+                "credit": "NASA (individual image credit not stated on the source page)",
+                "caption": "TRIDENT being installed on a trolley for thermal vacuum testing of the PRIME-1 hardware.",
+                "section_placements": [
+                  "physical_specifications.examples[5]"
+                ],
+                "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/jpeg, checked 2026-11-13. Caption paraphrased from the NASA source page, which lists it as a PRIME-1 web photo."
+              },
+              {
+                "id": "prime1_trident_thermal_vacuum_team",
+                "description": "PRIME-1 thermal vacuum test team with the TRIDENT drill and its test trolley.",
+                "image_type": "Engineering test photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_3.jpg",
+                "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+                "publisher": "NASA",
+                "credit": "NASA (individual image credit not stated on the source page)",
+                "caption": "The PRIME-1 thermal vacuum test team with TRIDENT and its test trolley.",
+                "section_placements": [
+                  "physical_specifications.examples[5]"
+                ],
+                "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/jpeg, checked 2026-11-13. Caption paraphrased from the NASA source page."
+              },
+              {
+                "id": "trident_clean_room_inspection",
+                "description": "Engineers inspecting the TRIDENT drill in a clean room.",
+                "image_type": "Engineering inspection photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2023/10/jsc2023e053794-2.jpg",
+                "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+                "publisher": "NASA",
+                "credit": "NASA (individual image credit not stated on the source page)",
+                "caption": "Engineers inspecting TRIDENT in a clean room before integration.",
+                "section_placements": [
+                  "physical_specifications.examples[5]"
+                ],
+                "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/jpeg, checked 2026-11-13. The file name suggests a NASA Johnson Space Center image, but the source page did not state this and the claim is not used in the text. The caption is paraphrased from the NASA source page."
+              },
+              {
+                "id": "trident_testing_at_honeybee_robotics",
+                "description": "TRIDENT drill under test at Honeybee Robotics.",
+                "image_type": "Engineering test photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2021/07/trident_testing.jpg",
+                "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+                "publisher": "NASA",
+                "credit": "NASA (individual image credit not stated on the source page)",
+                "caption": "TRIDENT testing at Honeybee Robotics, shown as part of the pre-flight test programme.",
+                "section_placements": [
+                  "physical_specifications.examples[5]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/jpeg, checked 2026-11-13. The file is a high-resolution photograph; its metadata includes camera information, which is not used. Caption paraphrased from the NASA source page."
+              }
+            ],
+            "notes": "Specifications are from Table 1 and the text of Zacny et al. (2025) [1]. The paper states that the drill ran for about 20 minutes after landing, that all actuators, sensors and heaters worked, and that the drill did not penetrate the regolith. NASA's release states that the landing position prevented full operation of the drill and other instruments before the batteries were depleted [3]. The paper also states that the VIPER mission was scheduled to launch at the end of 2027; this is a 2025 statement and was not verified as current."
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions differ widely between designs. The Apollo drill was assembled from segments about 40 cm long, and a museum record describes the dimensions of a training unit rather than of a flight unit [4]. TRIDENT's drill is 1 m long and 25.4 mm in diameter, with an overall mass of 26.5 kg and a drill hardware mass of 19.5 kg [1]. The Luna 24 LB-09 drill is listed at 15 mm outer diameter, 8 mm inner diameter and 3,157 mm total length, with a drilling range of 2,575 mm [5]. These values describe different machines and should not be read as a design trend.",
+        "mass_and_weight": "Mass is normally expressed in kilograms and drives launch cost, lander capacity and structural design. Only the TRIDENT figures (26.5 kg overall, 19.5 kg drill hardware, 7 kg avionics) are taken from a flown design's engineering specification [1]. The Apollo mass recorded in the museum entry is for a training unit and is not used as a flight mass.",
+        "power_requirements": "TRIDENT's nominal rotary power is 50 W, and it was designed to be powered from the lander through flex harnesses that carry power and data across the range of motion of its deploy and feed stages [1]. The Apollo drill was driven by a cordless battery-operated motor [4]. The Luna 24 and Chang'e-series power arrangements are not described in the sources retrieved for this article."
+      },
+      "environmental_and_operational_requirements": "The lunar environment has no atmosphere, large temperature swings and abrasive regolith. The Zacny et al. (2025) paper states that lunar regolith is more abrasive than terrestrial material because it has not been weathered by an atmosphere, and it describes thermal vacuum testing of TRIDENT in a simulated lunar environment at below -100 degrees C and below 1e-4 Torr [1]. A drill must therefore keep its motors, gears and electronics within temperature limits, seal or protect its bearings and flex harnesses from dust, and survive the vibration of launch and landing [1]. The drill also needs a stable base, because motion of the lander can disturb the hole and any seismic or temperature measurement made during drilling [1]. These are engineering considerations drawn from the sources cited; they are not a certified requirement set for a new drill.",
+      "limitations": "The main limitation of a core sampling drill is that it can only sample the depth it reaches, and the depth achieved is often less than the design target. Chang'e-5 reached 1 m of a 2 m class design [7], and the Luna 24 depth is reported inconsistently in the sources retrieved [5]. Hard or obstructed layers, dust in the mechanism and changes in power can stop drilling, as the TRIDENT landing showed [1][3]. Cuttings-based methods (such as TRIDENT's bite sampling) retain layer order only in 10 cm increments, and the method depends on cuttings staying cohesive in the borehole; the paper notes that drilling torque can be attributed to material strength alone only if they do [1]. A drill that operates in a landed-on-its-side configuration, as TRIDENT did, may not be able to reach its design depth at all [1][3].",
+      "transportation_and_deployment": {
+        "overview": "Core sampling drills are usually surface payloads that are integrated with a lander or sample-return lander, launched, transferred to the Moon, landed and then operated on the surface. The TRIDENT example gives the most detail: the drill was mounted on the side of the lander, its launch locks were released after landing, and the deploy and feed stages were extended to set the drilling position [1]. Apollo 15, 16 and 17 flew the drill [4], but the record retrieved does not describe its deployment method in detail. For the Chang'e-5 and Chang'e-6 drills, the integration details inside the lander and ascent vehicle were not verified from sources retrieved for this article.",
+        "transportation_process": [
+          "Integrate the drill, its avionics and its thermal and power harnesses on the lander; for TRIDENT, the drill was mounted on the side of the lander [1].",
+          "Launch the lander and transfer it to the Moon; PRIME-1 was launched on IM-2 (Athena) on 27 February 2025 [1].",
+          "Land and establish power; for TRIDENT, the drill was powered after landing and its operating checks were run [1].",
+          "Release the launch locks and extend the deploy and feed stages to the drilling position; for TRIDENT, the maximum extension was 35 cm and 100 cm [1].",
+          "Drill and deliver cuttings or core to the surface for analysis or sealing, depending on the design [1]."
+        ],
+        "deployment_methods": "Deployment methods differ between examples. TRIDENT uses an integrated deploy stage and a feed stage, with power and data carried by flex harnesses across the full range of motion [1]. The Apollo drill used segmented stems [4]; the crew deployment method is not described in the record retrieved. Chang'e-5 and Chang'e-6 used automated sampling systems, and the details of their deployment are not described in the sources retrieved here.",
+        "historical_examples": "The Apollo drill was used on Apollo 15, 16 and 17 [4]. The Soviet Luna 16, 20 and 24 missions used automated rotary-percussive coring drills to return samples; the Luna 24 drill is the most documented of these in the sources retrieved [1][5]. Chang'e-5 and Chang'e-6 used drills for sample return in 2020 and 2024 [7][8]. The TRIDENT drill on IM-2 is the flown example of a drill designed for ice prospecting and was not able to drill on the surface in 2025 [1][3].",
+        "compatibility_assessment": "Compatibility with a specific lander cannot be assessed from the sources retrieved except for the TRIDENT on IM-2 configuration, which is documented in the paper and NASA material [1][3]. Future drills would need their mass, dimensions, mounting interfaces, landing loads, power and data requirements compared with verified lander specifications before any compatibility claim is made.",
+        "images": [
+          {
+            "id": "im2_athena_lander_on_side",
+            "description": "Intuitive Machines IM-2 (Athena) lander resting on its side on the lunar surface after its 6 March 2025 landing, with the PRIME-1 drill shown deployed.",
+            "image_type": "Mission operations photograph",
+            "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+            "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+            "publisher": "NASA",
+            "credit": "NASA (individual image credit not stated on the source page)",
+            "caption": "The IM-2 (Athena) lander on its side on the Moon. NASA's caption states that the PRIME-1 suite, including TRIDENT, is shown deployed.",
+            "section_placements": [
+              "overview",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/png, checked 2026-11-13. The source page caption describes the lander as about 820 ft from its target and in a south-pole crater; the Zacny et al. (2025) paper describes a landing on the Mons Mouton plateau. The caption is reproduced as NASA's description, not as an independent measurement. Reuse conditions beyond NASA's general media use were not checked, so the image is not treated as public domain."
+          },
+          {
+            "id": "trident_testing_at_honeybee_robotics",
+            "description": "TRIDENT drill under test at Honeybee Robotics.",
+            "image_type": "Engineering test photograph",
+            "image_url": "https://www.nasa.gov/wp-content/uploads/2021/07/trident_testing.jpg",
+            "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+            "publisher": "NASA",
+            "credit": "NASA (individual image credit not stated on the source page)",
+            "caption": "TRIDENT testing at Honeybee Robotics, shown as part of the pre-flight test programme.",
+            "section_placements": [
+              "physical_specifications.examples[5]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/jpeg, checked 2026-11-13. The file is a high-resolution photograph; its metadata includes camera information, which is not used. Caption paraphrased from the NASA source page."
+          }
+        ]
+      },
+      "historical_significance": "Lunar core drilling has a history of more than fifty years. The Apollo drill was used on Apollo 15, 16 and 17 to collect soil columns and to emplace heat flow probes [4]. The Soviet Luna programme returned cores automatically from the Moon, showing that a drill could be operated remotely with a sample capsule [1][5][6]. The Chinese Chang'e-5 and Chang'e-6 missions returned drilled samples from different parts of the Moon in 2020 and 2024 [7][8]. The TRIDENT drill on PRIME-1 demonstrated flight operation of its actuators but did not drill into the regolith [1][3].",
+      "limitations_and_uncertainties": "The article is limited by the sources accessible during this run. Five points should be treated as open: (1) the Luna 24 depth is reported as 2 m and 225 cm in one source, and as 2.3 m in another [5]; (2) the Luna 16 depth of 35 cm conflicts with the just-over-20 cm figure in the 2025 TRIDENT paper [1][6]; (3) Apollo flight-unit mass, power and per-mission depths are not verified [4]; (4) the Chang'e-5 and Chang'e-6 drill mechanisms, masses and power were not verified beyond the abstract and one article [7][8]; and (5) the IM-2 landing location and cause of the tip-over are described differently in the NASA caption and in the 2025 paper [1][2]. The 2022 Advances in Space Research account of the Chang'e-5 obstruction and the 2020s MDPI report of a 320 g Chang'e-6 sample were not retrieved in full and are not used as evidence.",
+      "images": [
+        {
+          "id": "im2_athena_lander_on_side",
+          "description": "Intuitive Machines IM-2 (Athena) lander resting on its side on the lunar surface after its 6 March 2025 landing, with the PRIME-1 drill shown deployed.",
+          "image_type": "Mission operations photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+          "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "publisher": "NASA",
+          "credit": "NASA (individual image credit not stated on the source page)",
+          "caption": "The IM-2 (Athena) lander on its side on the Moon. NASA's caption states that the PRIME-1 suite, including TRIDENT, is shown deployed.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/png, checked 2026-11-13. The source page caption describes the lander as about 820 ft from its target and in a south-pole crater; the Zacny et al. (2025) paper describes a landing on the Mons Mouton plateau. The caption is reproduced as NASA's description, not as an independent measurement. Reuse conditions beyond NASA's general media use were not checked, so the image is not treated as public domain."
+        },
+        {
+          "id": "prime1_trident_thermal_vacuum_installation",
+          "description": "A Honeybee Robotics engineer installs the TRIDENT drill on a trolley for thermal vacuum testing before PRIME-1.",
+          "image_type": "Engineering test photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_2.jpg",
+          "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "publisher": "NASA",
+          "credit": "NASA (individual image credit not stated on the source page)",
+          "caption": "TRIDENT being installed on a trolley for thermal vacuum testing of the PRIME-1 hardware.",
+          "section_placements": [
+            "physical_specifications.examples[5]"
+          ],
+          "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/jpeg, checked 2026-11-13. Caption paraphrased from the NASA source page, which lists it as a PRIME-1 web photo."
+        },
+        {
+          "id": "prime1_trident_thermal_vacuum_team",
+          "description": "PRIME-1 thermal vacuum test team with the TRIDENT drill and its test trolley.",
+          "image_type": "Engineering test photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_3.jpg",
+          "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "publisher": "NASA",
+          "credit": "NASA (individual image credit not stated on the source page)",
+          "caption": "The PRIME-1 thermal vacuum test team with TRIDENT and its test trolley.",
+          "section_placements": [
+            "physical_specifications.examples[5]"
+          ],
+          "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/jpeg, checked 2026-11-13. Caption paraphrased from the NASA source page."
+        },
+        {
+          "id": "trident_clean_room_inspection",
+          "description": "Engineers inspecting the TRIDENT drill in a clean room.",
+          "image_type": "Engineering inspection photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2023/10/jsc2023e053794-2.jpg",
+          "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "publisher": "NASA",
+          "credit": "NASA (individual image credit not stated on the source page)",
+          "caption": "Engineers inspecting TRIDENT in a clean room before integration.",
+          "section_placements": [
+            "physical_specifications.examples[5]"
+          ],
+          "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/jpeg, checked 2026-11-13. The file name suggests a NASA Johnson Space Center image, but the source page did not state this and the claim is not used in the text. The caption is paraphrased from the NASA source page."
+        },
+        {
+          "id": "trident_testing_at_honeybee_robotics",
+          "description": "TRIDENT drill under test at Honeybee Robotics.",
+          "image_type": "Engineering test photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2021/07/trident_testing.jpg",
+          "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "publisher": "NASA",
+          "credit": "NASA (individual image credit not stated on the source page)",
+          "caption": "TRIDENT testing at Honeybee Robotics, shown as part of the pre-flight test programme.",
+          "section_placements": [
+            "physical_specifications.examples[5]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/jpeg, checked 2026-11-13. The file is a high-resolution photograph; its metadata includes camera information, which is not used. Caption paraphrased from the NASA source page."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "im2_athena_lander_on_side",
+          "description": "Intuitive Machines IM-2 (Athena) lander resting on its side on the lunar surface after its 6 March 2025 landing, with the PRIME-1 drill shown deployed.",
+          "image_type": "Mission operations photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+          "source_page_url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+          "publisher": "NASA",
+          "credit": "NASA (individual image credit not stated on the source page)",
+          "caption": "The IM-2 (Athena) lander on its side on the Moon. NASA's caption states that the PRIME-1 suite, including TRIDENT, is shown deployed.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct NASA asset URL with query string removed; HTTP 200, image/png, checked 2026-11-13. The source page caption describes the lander as about 820 ft from its target and in a south-pole crater; the Zacny et al. (2025) paper describes a landing on the Mons Mouton plateau. The caption is reproduced as NASA's description, not as an independent measurement. Reuse conditions beyond NASA's general media use were not checked, so the image is not treated as public domain."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "TRIDENT Ice Mining Drill for Lunar Volatile Prospecting for PRIME-1 and VIPER Missions",
+          "authors": "Zacny, K. et al.",
+          "publisher": "Journal not confirmed in the retrieved copy",
+          "date": "2025-12-22 (published, per retrieved copy)",
+          "url": "https://icedrill.org/sites/default/files/Zacny_2025_TRIDENT%20Ice%20Mining%20Drill%20for%20Lunar%20Volatile%20Prospecting%20for%20PRIME-1%20and%20VIPER%20Missions.pdf"
+        },
+        {
+          "number": 2,
+          "title": "Polar Resources Ice Mining Experiment-1 (PRIME-1)",
+          "authors": "NASA",
+          "publisher": "NASA",
+          "date": "not stated in retrieved text",
+          "url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/"
+        },
+        {
+          "number": 3,
+          "title": "NASA Receives Some Data Before Intuitive Machines Ends Lunar Mission",
+          "authors": "NASA",
+          "publisher": "NASA",
+          "date": "2025 (IM-2 mission end); exact date not stated in retrieved text",
+          "url": "https://www.nasa.gov/news-release/nasa-receives-some-data-before-intuitive-machines-ends-lunar-mission/"
+        },
+        {
+          "number": 4,
+          "title": "Drill, Apollo Lunar Surface (ALSD) - object record nasm_A19750038000",
+          "authors": "Smithsonian National Air and Space Museum",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "date": "not stated in retrieved text",
+          "url": "https://airandspace.si.edu/collection-objects/drill-apollo-lunar-surface-alsd/nasm_A19750038000"
+        },
+        {
+          "number": 5,
+          "title": "Luna 24 (Russian Space Web mission page)",
+          "authors": "Zak, A.",
+          "publisher": "Russian Space Web",
+          "date": "not stated in retrieved text",
+          "url": "http://www.russianspaceweb.com/luna24.html"
+        },
+        {
+          "number": 6,
+          "title": "Sept. 24, 1970: Luna 16 brings back regolith",
+          "authors": "Astronomy.com",
+          "publisher": "Astronomy magazine (online)",
+          "date": "1970 event; article date not stated in retrieved text",
+          "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/sept-24-1970-luna-16-brings-back-regolith/"
+        },
+        {
+          "number": 7,
+          "title": "Robotic Drilling for the Chinese Chang'E 5 Lunar Sample-Return Mission",
+          "authors": "Xu, Wang, Yu, Lai and Ding",
+          "publisher": "The International Journal of Robotics Research, 42(8), 586-613",
+          "date": "2023 (DOI 10.1177/02783649231187918)",
+          "url": "https://doi.org/10.1177/02783649231187918"
+        },
+        {
+          "number": 8,
+          "title": "Chang'e-6 lander and sampling news (Aerospace Information Research Institute, CAS)",
+          "authors": "Aerospace Information Research Institute, Chinese Academy of Sciences",
+          "publisher": "AIRCAS",
+          "date": "2024-06-11",
+          "url": "https://english.aircas.ac.cn/ne/focus/202406/t20240611_664974.html"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[5] (TRIDENT on PRIME-1)": "payload.article.physical_specifications.examples[5].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. The NASA source page URL is the canonical mission page; the ?p= form that was fetched during research redirects to it. Section-level image objects are repeated intentionally."
+  },
+  "data_quality_notes": [
+    "Catalogue match: ID 085, name 'Core sampling drill', category 4 'Subsurface exploration and drilling', checked against lunar_payloads_catalogue_320.md.",
+    "Image exclusions: the Smithsonian ALSD photograph (NASM-99-15212.11) was reachable at ids.si.edu, but its only direct URL is a query-string delivery endpoint that cannot be cleaned into a valid asset URL, so it was not used. No verified direct image was found for the Apollo, Luna 16, Luna 24, Chang'e-5 or Chang'e-6 drills.",
+    "Image rights: NASA images were checked for HTTP 200 and image content type on 2026-11-13 and are not presumed public domain; individual credits are not stated on the source page.",
+    "Conflict: Luna 24 depth is 2 m at 30 degrees and 225 cm in one source, and 2.3 m in another; the 2.25 m figure in the request was not found.",
+    "Conflict: Luna 16 depth is 35 cm in search-result summaries and just over 20 cm in the 2025 TRIDENT paper; the Luna 16 article itself was not opened.",
+    "Conflict: NASA's IM-2 caption places the lander in a south-pole crater about 820 ft from target; the 2025 paper places it on the Mons Mouton plateau. The landing position is described in the article only as on its side.",
+    "Apollo ALSD mass and dimensions are from a training-unit museum record and are not flight specifications; flight mass, power and per-mission depth are not verified.",
+    "Chang'e-5 drill mechanism, mass and power are not verified beyond the IJRR abstract; the obstruction account from a 2022 Advances in Space Research paper was not retrieved and is not cited as a reference.",
+    "Chang'e-6 sample mass (reported as 320 g in one search summary) was not verified and is not used.",
+    "Generic engineering statements (for example, the lunar environment and abrasive regolith) are general considerations; the abrasive-regolith and test-environment statements are cited to the 2025 TRIDENT paper.",
+    "Tool note: the Ampersand MCP server (plugin:ampersand:ampersand) failed to connect (ENOTFOUND), so this research was done in-session.",
+    "No lunar landing-site or location recommendation is included, as deferred by the user."
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "catalogue_id": 71,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 71,
+    "name": "Gas chromatograph-mass spectrometer",
+    "article": {
+      "overview": "A gas chromatograph-mass spectrometer (GC-MS) is a combined analytical instrument. The gas chromatograph (GC) separates a gas or a vaporised sample into its components by pushing it through a narrow column that delays each compound by a different amount. The mass spectrometer (MS) then ionises the separated molecules and sorts the resulting ions by their mass-to-charge ratio, which allows each compound to be identified from its characteristic fragments [4][5].\n\nOn the Moon, a GC-MS would be used to identify volatile compounds released when regolith or other samples are heated, and potentially to analyse gases in the tenuous lunar exosphere. In the sources reviewed for this article, no GC-MS is reported as having operated on the lunar surface. Flown GC-MS instruments exist on Mars and Titan [1][3][7], and a lunar gas analytical package that includes a GC coupled to a neutral gas mass spectrometer has been built as flight units but, according to the sources reviewed, has not flown [9][10].",
+      "description": "A GC-MS payload is a laboratory-style chemical analyser adapted for a planetary surface or orbit. A typical arrangement has four elements: a sample inlet or oven that releases volatiles from a solid sample by heating (pyrolysis) or accepts a gas directly; an optional GC with one or more separation columns; a mass spectrometer with an ion source, a mass analyser and a detector; and electronics that control heating, valves and data acquisition [3][5][9].\n\nBecause a GC separates compounds in time before they reach the mass spectrometer, a GC-MS can distinguish isomers and mixtures that a mass spectrometer alone may confuse. A mass spectrometer without a GC, by contrast, measures the mass of everything that enters it at the same time. Several flight and proposed systems therefore offer both modes: a direct gas analysis mode and a GC-separated mode [9].\n\nThe name \"gas chromatograph-mass spectrometer\" is used for a class of instruments rather than one standard design. Its mass, power, mass range and separation performance depend strongly on the mission and the specific model.",
+      "scientific_purpose_and_applications": "The main purpose of a lunar GC-MS would be to determine the chemical composition of volatile materials. For planetary surface science this can mean identifying water-derived and carbon-bearing compounds, noble gases and other species that are released when a sample is heated [9][10]. For the Moon, a principal motivation is the possible presence of volatiles in permanently shadowed polar regolith. Interpretation of such measurements is uncertain, and the sources reviewed do not establish the abundance of any particular volatile at a specific lunar location.\n\nApplications discussed in the sources reviewed include:\n- analysis of volatiles released from regolith during controlled heating [9][10];\n- measurement of the composition of a tenuous atmosphere or exosphere, as an operating mode of a neutral gas mass spectrometer [9];\n- analysis of gases from sample handling or processing systems, a common laboratory-style use [5];\n- comparison between surface and orbital composition measurements, once instruments of this type are operating [9].\n\nThe historical Mars and Titan instruments were designed for atmospheric and soil analyses on other worlds rather than for the Moon. Their results inform the design and interpretation of later instruments but do not establish lunar findings [1][3][7].",
+      "operating_principle": "A GC-MS works in several linked steps:\n1. Sample introduction. A sample is heated in an oven or pyrolysis cell, or a gas is taken directly from the atmosphere. Released volatiles are carried by an inert carrier gas, or transferred through capillaries, into the analyser [3][9].\n2. Separation (GC mode). The gas passes through one or more chromatographic columns. Each compound travels through the column at a different speed, so compounds arrive at the detector at different times. The Huygens GCMS, for example, used three GC columns for batch sampling [5].\n3. Ionisation. Molecules are converted into charged fragments in an ion source, often by electron impact.\n4. Mass analysis. A quadrupole filter, magnetic sector or time-of-flight analyser separates ions by mass-to-charge ratio. The Huygens GCMS used a quadrupole mass filter [5]. The Luna-Resurs NGMS is a time-of-flight instrument with a reflectron (ion mirror) [9].\n5. Detection. An electron multiplier converts the ion current into an electrical signal. The Huygens GCMS used two electron multipliers, one for high sensitivity and one for low sensitivity, the high-sensitivity unit being used to detect trace gases in Titan's atmosphere [4].\n6. Interpretation. Scientists compare the measured mass spectrum and retention times with reference libraries and calibration data to identify compounds and estimate their abundances [4][5].\n\nDetection limits depend on the calibration, the sample size and the background. A reported detection threshold for the Huygens instrument is expressed as a mixing ratio of about 10^-8 [3]; this value comes from a secondary summary and should be checked against the primary paper before reuse.",
+      "scientific_importance": "Lunar surface composition has been studied mainly through orbital remote sensing, returned samples and a small number of surface instruments. Direct chemical analysis of volatiles in regolith or in the exosphere would be a complementary approach to remote sensing. The sources reviewed do not quantify this advantage for specific lunar targets [9].\n\nThe Mars and Titan GC-MS experiments show both the value and the difficulty of this approach. The Huygens GCMS was designed to measure the composition of Titan's atmosphere during descent and to determine isotope ratios of its major gaseous constituents [5][6]. The Viking GC-MS instruments on Mars were among the earliest attempts at organic analysis of Martian soil. Their results are still debated, and later reanalysis proposed that perchlorate chemistry during heating may have affected the results [1][11]. These precedents show that sample preparation, heating chemistry and calibration can strongly affect the interpretation of GC-MS data.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power requirement for a GC-MS payload. The examples below are historical, flown, or proposed instruments. Values are tied to the specific instrument and source. Where a value is not verified against a primary source in this run, this is stated. The examples are not directly comparable, because they differ in mission, mass-analyser type, GC architecture and sample handling.",
+        "examples": [
+          {
+            "name": "Viking gas chromatograph-mass spectrometer",
+            "type": "Historical Mars instrument (flown)",
+            "status": "Flown on Viking 1 and Viking 2 landers (Mars, 1976).",
+            "mission_dates": {
+              "viking_1_launch": "1975-08-20",
+              "viking_1_landing": "1976-07-20",
+              "viking_2_launch": "1975-09-09",
+              "viking_2_landing": "1976-09-03"
+            },
+            "instrument_architecture": "Secondary descriptions state a capillary-column gas chromatograph combined with a miniaturised magnetic-sector mass spectrometer. Not verified against a primary specification in this run.",
+            "mass_kg": "Secondary description: below 15 kg. Unverified.",
+            "dimensions": "Secondary description: a box about 1 foot (about 30 cm) on each side. Unverified.",
+            "power_w": null,
+            "mass_range": "Not publicly specified in sources reviewed.",
+            "results": "Secondary sources report no organic molecules detected at either landing site, and argon-36 below expectation. A later reanalysis of archived data reported chlorobenzene in the Viking 2 results and proposed perchlorate during heating as the source; this interpretation is not settled.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19780054611",
+              "https://science.nasa.gov/mission/viking/",
+              "https://en.wikipedia.org/wiki/Viking_lander_biological_experiments"
+            ],
+            "images": [],
+            "notes": "No verified direct image asset was located for this instrument in this run, so no image is included."
+          },
+          {
+            "name": "Huygens gas chromatograph-mass spectrometer (GCMS)",
+            "type": "Flown Titan instrument (Cassini-Huygens)",
+            "status": "Flown. The Huygens probe landed on Titan at about 11:30 UTC on 14 January 2005.",
+            "mass_kg": "17.3 (secondary summary of Niemann et al. 2002; not verified against the primary article in this run)",
+            "energy_budget_wh": "110 Wh for warm-up plus 150 minutes of operation (secondary summary; unverified)",
+            "average_power_w": "41 W (conference-slide summary; unverified and not reconciled with the energy budget)",
+            "mass_range_da": "2 to 141 (secondary summary; unverified)",
+            "detection_threshold": "Nominal mixing ratio of about 10^-8 (secondary summary; unverified)",
+            "mass_analyser": "Quadrupole mass filter with a secondary electron multiplier detection system (ESA PSA/PDS context record).",
+            "gas_sampling": "Continuous direct atmospheric measurements, and batch sampling through three gas chromatograph columns (ESA PSA/PDS context record).",
+            "ion_sources": "Five ion sources fed to the analyser in sequence: three serve the GC columns; two handle direct atmosphere sampling and aerosol collector gas sampling (ESA PSA/PDS context record).",
+            "electron_multipliers": 2,
+            "electron_multiplier_modes": "One in high-sensitivity mode (trace gases in Titan's atmosphere) and one in low-sensitivity mode (NASA Goddard archived GCMS page).",
+            "altitude_range": "From 170 km altitude (about 1 hPa) to the surface (about 1500 hPa), as stated in the ESA PSA/PDS context record.",
+            "data_rate_bps": "885 bit/s (secondary summary; unverified)",
+            "descent_and_surface": "Descent lasted two hours and 27 minutes; the probe survived 72 minutes on the surface (NASA Science).",
+            "results": "The GCMS was designed to identify and measure chemicals in Titan's atmosphere and to determine isotope ratios of major gaseous constituents. Secondary summaries report altitude profiles of nitrogen and methane; this was not verified against the primary paper.",
+            "source_urls": [
+              "https://science.nasa.gov/mission/cassini/spacecraft/huygens-probe/",
+              "https://science.gsfc.nasa.gov/attic/huygensgcms/MS_Detector_1.htm",
+              "https://arcnav.psi.edu/urn:esa:psa:context:instrument:hp.gcms",
+              "https://hal-insu.archives-ouvertes.fr/insu-03588427"
+            ],
+            "images": [
+              {
+                "id": "huygens_gcms_sample_mass_spectrum",
+                "description": "Sample mass spectrum shown on the archived NASA Goddard Huygens GCMS pages.",
+                "image_type": "Instrument data plot (archived web page image)",
+                "image_url": "https://science.gsfc.nasa.gov/attic/huygensgcms/mass_spectrum.jpg",
+                "source_page_url": "https://science.gsfc.nasa.gov/attic/huygensgcms/MS_Detector_1.htm",
+                "publisher": "NASA Goddard Space Flight Center (archived page)",
+                "credit": "NASA Goddard Space Flight Center (credit line not verified on the image)",
+                "caption": "Sample mass spectrum from the archived Huygens GCMS pages. The page does not identify the sample or mission data shown.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; no query string or fragment. Source page is an archived page that states it is no longer actively maintained. Reuse rights not verified."
+              },
+              {
+                "id": "huygens_gcms_electron_multiplier_diagram",
+                "description": "Schematic of the continuous-dynode electron multiplier used in the Huygens GCMS.",
+                "image_type": "Technical diagram (archived web page image)",
+                "image_url": "https://science.gsfc.nasa.gov/attic/huygensgcms/multiplier_diagram.gif",
+                "source_page_url": "https://science.gsfc.nasa.gov/attic/huygensgcms/MS_Detector_1.htm",
+                "publisher": "NASA Goddard Space Flight Center (archived page)",
+                "credit": "Credited on the source page to the Burle Channeltron Handbook",
+                "caption": "Electron multiplier schematic from the archived Huygens GCMS pages.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL verified to return HTTP 200 image/gif. The page credits the diagram to the Burle Channeltron Handbook; the reuse rights of that third-party image were not verified."
+              }
+            ]
+          },
+          {
+            "name": "Sample Analysis at Mars (SAM) gas chromatograph-mass spectrometer suite",
+            "type": "Flown Mars instrument suite (Curiosity rover)",
+            "status": "Flown on the Curiosity rover (Mars Science Laboratory), 2012 onward.",
+            "instrument_architecture": "Suite including a quadrupole mass spectrometer, a gas chromatograph and a tunable laser spectrometer, analysing gases released from heated solid samples (qualitative description from secondary search summaries; primary paper not verified in this run).",
+            "mass_kg": "Not verified in this run.",
+            "power_w": null,
+            "mass_range": "Not verified in this run.",
+            "gc_columns": "Not verified in this run.",
+            "source_urls": [
+              "https://doi.org/10.1007/s11214-012-9879-z",
+              "https://www.planetary.org/space-images/sam_from-side_pia16100"
+            ],
+            "images": [
+              {
+                "id": "sam_instrument_side_view_pia16100",
+                "description": "Curiosity's SAM instrument viewed from the side with the side panel removed.",
+                "image_type": "Instrument photograph (flown hardware, Mars)",
+                "image_url": "https://planetary.s3.amazonaws.com/web/assets/pictures/20121128_sam_from-side_PIA16100.jpg",
+                "source_page_url": "https://www.planetary.org/space-images/sam_from-side_pia16100",
+                "publisher": "The Planetary Society (image hosting); underlying NASA/JPL image identifier PIA16100",
+                "credit": "Not verified; the source page is hosted by The Planetary Society and the NASA/JPL credit was not confirmed in this run",
+                "caption": "Curiosity's SAM instrument, seen from the side with the side panel removed.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; no query string or fragment. Original NASA/JPL reuse terms not verified."
+              }
+            ]
+          },
+          {
+            "name": "Luna-Resurs gas analytical package: GC and neutral gas mass spectrometer (NGMS)",
+            "type": "Proposed lunar instrument package (built flight units; not flown according to sources reviewed)",
+            "status": "Two NGMS flight units (NGMS-PFM and NGMS-FS) exist and are described as waiting for their next mission. No launch date given in sources reviewed.",
+            "mass_kg": 3.5,
+            "maximum_size_cm": [26, 15, 18],
+            "power_w": 25,
+            "operating_temperature_c": "-30 to 80",
+            "ngms_mass_analyser": "Compact time-of-flight neutral gas mass spectrometer with a grid-less ion mirror (reflectron).",
+            "ngms_mass_resolution": "Up to m/delta-m = 1200 (secondary conference-abstract summary; unverified).",
+            "gc_columns": "Two columns, one optimised for hydrocarbons and one for noble gases (secondary summary; unverified).",
+            "pyrolysis_oven_max_c": 1000,
+            "operating_modes": "Exosphere mode (direct measurement of exospheric gases) and GC mode (analysis of pyrolysis-released volatiles from regolith, with or without GC separation).",
+            "source_urls": [
+              "https://luna-ngms.unibe.ch/instrument/index_eng.html",
+              "https://openpolar.no/Record/ftinsu:oai:HAL:insu-04426876v1"
+            ],
+            "images": [
+              {
+                "id": "ngms_pfm_fs_flight_instruments",
+                "description": "The two Luna-Resurs NGMS flight instruments (NGMS-PFM and NGMS-FS) at the University of Bern.",
+                "image_type": "Instrument photograph (flight hardware, not flown)",
+                "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110124/1_NGMS-PFM-1200_eng.jpg",
+                "source_page_url": "https://luna-ngms.unibe.ch/instrument/index_eng.html",
+                "publisher": "University of Bern (instrument team web page)",
+                "credit": "University of Bern (credit line not verified)",
+                "caption": "The two NGMS flight instruments (NGMS-PFM and NGMS-FS) at the University of Bern.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[3]"
+                ],
+                "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; the host is www.luna-ngms.unibe.ch while the source page is luna-ngms.unibe.ch. No query string or fragment. Caption paraphrased from the source page. Full-resolution availability and rights not checked."
+              },
+              {
+                "id": "ngms_sensor_overview",
+                "description": "Sensor overview of the Luna-Resurs NGMS showing the ion source, drift tube with ion mirror, detector, pulsers and electronics box.",
+                "image_type": "Instrument photograph (flight hardware, not flown)",
+                "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110114/1_NGMS-IMG_6057-1200_eng.jpg",
+                "source_page_url": "https://luna-ngms.unibe.ch/instrument/index_eng.html",
+                "publisher": "University of Bern (instrument team web page)",
+                "credit": "University of Bern (credit line not verified)",
+                "caption": "NGMS sensor overview showing the ion source, drift tube with ion mirror, detector, pulsers and electronics box.",
+                "section_placements": [
+                  "physical_specifications.examples[3]"
+                ],
+                "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; no query string or fragment. Caption paraphrased from the source page. Rights not checked."
+              },
+              {
+                "id": "ngms_cad_model",
+                "description": "CAD model of the Luna-Resurs NGMS with labelled components and the spacecraft wall interface.",
+                "image_type": "Engineering CAD model",
+                "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110299/1_NGMSCADmodelohneText_eng.jpg",
+                "source_page_url": "https://luna-ngms.unibe.ch/instrument/index_eng.html",
+                "publisher": "University of Bern (instrument team web page)",
+                "credit": "University of Bern (credit line not verified)",
+                "caption": "NGMS CAD model showing the spacecraft wall interface.",
+                "section_placements": [
+                  "physical_specifications.examples[3]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; no query string or fragment. Shows the mounting interface type only; it does not verify compatibility with any named lander or spacecraft."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "The NGMS example has a maximum size of 26 x 15 x 18 cm according to the University of Bern instrument page. The Viking example's secondary description gives a box about 1 foot on each side; the Huygens and SAM dimensions were not verified in this run. The instrument types differ, so the sizes should not be compared as equivalent designs.",
+        "mass_and_weight": "The NGMS example has a stated mass of about 3.5 kg. The Huygens GCMS mass of 17.3 kg is a secondary summary, not verified against the primary article. The Viking secondary description of below 15 kg is unverified. Mass depends strongly on the mission, the GC architecture and the number of sample paths, so the values must be read as instrument-specific.",
+        "power_requirements": "The NGMS example can be fully operated with 25 W according to the University of Bern page. The Huygens figures are a secondary energy budget of 110 Wh for warm-up plus 150 minutes of operation and a conference-slide average of 41 W; these are unverified and not reconciled. Viking and SAM power values were not verified in this run."
+      },
+      "environmental_and_operational_requirements": "A lunar GC-MS must operate in vacuum, with large day-night temperature changes, and must avoid contamination of its inlet by the sample or the lander. Its heating systems must be controlled so that samples are not heated beyond the design limit, and its carrier gas and column systems must survive launch and storage. The NGMS page gives an operating temperature range of -30 °C to 80 °C [9]. Requirements for radiation tolerance, vibration and thermal control for any specific flight design were not verified in this run.\n\nThe sample path also has operational constraints. Volatiles released from regolith may condense in cold lines, react with surfaces, or be altered by heating. The Mars SAM and Viking experiences show that sample handling and heating chemistry can strongly influence results [1][7][11].",
+      "limitations": "A GC-MS measures only the molecules that enter its inlet and survive the heating and separation steps. Some compounds may decompose during pyrolysis, be absorbed in cold traps or be masked by background gases. Interpretation depends on calibration standards and reference libraries, which may not cover all compounds of interest [1][11]. Mass resolution, mass range and detection limit must be tied to a specific instrument and calibration. The sources reviewed do not allow a single set of performance values to be assigned to all lunar GC-MS concepts.",
+      "transportation_and_deployment": {
+        "overview": "A surface GC-MS payload would normally be integrated into a lunar lander or rover on Earth, launched, transferred to the Moon, delivered to the surface, and then operated with power, data and thermal interfaces provided by the host. For a sample-analysis instrument, the inlet, sample-handling and heating systems must also be integrated with the host's sampling arm or sampling system. Exact interface requirements depend on the design.",
+        "transportation_process": [
+          "Integrate the GC-MS and its inlet or sample-handling hardware into the lander or rover payload compartment on Earth.",
+          "Launch the spacecraft on a launch vehicle and transfer it towards the Moon.",
+          "Deliver the payload to the lunar surface with a lander, or carry it on a rover.",
+          "Deploy or mount the instrument, connect power, data and thermal interfaces, and commission the sampling system.",
+          "Operate heating, valve and carrier-gas systems in the sequence defined for the mission."
+        ],
+        "deployment_methods": "Deployment depends on the design. The Luna-Resurs NGMS CAD model shows a spacecraft wall interface, indicating a structure-mounted instrument [9]. The sources reviewed do not describe a deployment mechanism for a lunar GC-MS.",
+        "historical_examples": "The Viking GC-MS was carried on Mars landers in 1976 [1][2]. The Huygens GCMS was carried on a probe that descended to Titan's surface in 2005 [5][6]. The Curiosity SAM suite is a rover-mounted example [7][8]. No GC-MS is reported in the sources reviewed as deployed on the lunar surface.",
+        "compatibility_assessment": "Compatibility with any lander, rover or spacecraft has not been verified. An assessment would need the host's mass, mounting points, landing loads, power, thermal, data and sampling interfaces, compared against verified host specifications. Resource Prospector, which was reported to include a GC-MS in a volatile-analysis subsystem, was cancelled in 2018 [12]; that reported GC-MS content is not verified.",
+        "images": [
+          {
+            "id": "ngms_cad_model",
+            "description": "CAD model of the Luna-Resurs NGMS with labelled components and the spacecraft wall interface.",
+            "image_type": "Engineering CAD model",
+            "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110299/1_NGMSCADmodelohneText_eng.jpg",
+            "source_page_url": "https://luna-ngms.unibe.ch/instrument/index_eng.html",
+            "publisher": "University of Bern (instrument team web page)",
+            "credit": "University of Bern (credit line not verified)",
+            "caption": "NGMS CAD model showing the spacecraft wall interface.",
+            "section_placements": [
+              "physical_specifications.examples[3]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; no query string or fragment. Shows the mounting interface type only; it does not verify compatibility with any named lander or spacecraft."
+          }
+        ]
+      },
+      "historical_significance": "The Viking GC-MS was among the first instruments to attempt chemical analysis of Martian soil with a combined separation and mass-analysis method. Its results are still debated [1][8][11]. The Huygens GCMS sampled Titan's atmosphere during descent and contributed composition and isotope measurements for the major constituents [5][6]. The SAM suite on Curiosity has continued the Mars GC-MS line of investigation [7][8].\n\nNo GC-MS system has been reported in the sources reviewed as having operated on the Moon. The Luna-Resurs gas analytical package is an example of a lunar GC-MS-type development that has been built, but not flown, according to the sources reviewed [9][10]. NASA's Resource Prospector lunar rover concept was cancelled in 2018 [12]. A secondary report that its volatile-analysis subsystem included a GC-MS was found, but it was not verified against an official NASA document in this run and is not treated as a lunar GC-MS flight or development record.",
+      "limitations_and_uncertainties": "The name \"gas chromatograph-mass spectrometer\" describes an instrument class rather than one design. Values such as mass, power, mass range and mass resolution must always be attributed to a specific instrument and source. This article does not present a single universal specification.\n\nThe following claims are not verified against primary sources in this run:\n- the Viking GC-MS mass (below 15 kg) and size (about one foot cubed) and its contractors [13];\n- the Huygens GCMS mass (17.3 kg), energy budget (110 Wh), mass range (2 to 141 daltons), detection threshold (about 10^-8) and average power (41 W) [3];\n- the Luna-Resurs GC mass-resolution and column details [10];\n- the Resource Prospector GC-MS content in its volatile-analysis subsystem [12];\n- all numerical values for SAM, and its qualitative instrument description, which was drawn from secondary search summaries rather than the primary paper [7].\n\nOther gaps:\n- No lunar surface GC-MS flight was found in the sources reviewed. This is not a complete survey of all national and commercial lunar missions.\n- The INFICON MSolo instrument mentioned in secondary sources is described by the vendor as a quadrupole mass spectrometer rather than a GC-MS. It is excluded from the GC-MS examples [14].\n- The Mars Viking organics question is still under debate, and the reanalysis relies on secondary summaries [11][13].\n- Images from the University of Bern page and the Planetary Society page have not been checked for full-resolution downloads or reuse rights.",
+      "images": [
+        {
+          "id": "ngms_pfm_fs_flight_instruments",
+          "description": "The two Luna-Resurs NGMS flight instruments (NGMS-PFM and NGMS-FS) at the University of Bern.",
+          "image_type": "Instrument photograph (flight hardware, not flown)",
+          "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110124/1_NGMS-PFM-1200_eng.jpg",
+          "source_page_url": "https://luna-ngms.unibe.ch/instrument/index_eng.html",
+          "publisher": "University of Bern (instrument team web page)",
+          "credit": "University of Bern (credit line not verified)",
+          "caption": "The two NGMS flight instruments (NGMS-PFM and NGMS-FS) at the University of Bern.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; the host is www.luna-ngms.unibe.ch while the source page is luna-ngms.unibe.ch. No query string or fragment. Caption paraphrased from the source page. Full-resolution availability and rights not checked."
+        },
+        {
+          "id": "ngms_sensor_overview",
+          "description": "Sensor overview of the Luna-Resurs NGMS showing the ion source, drift tube with ion mirror, detector, pulsers and electronics box.",
+          "image_type": "Instrument photograph (flight hardware, not flown)",
+          "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110114/1_NGMS-IMG_6057-1200_eng.jpg",
+          "source_page_url": "https://luna-ngms.unibe.ch/instrument/index_eng.html",
+          "publisher": "University of Bern (instrument team web page)",
+          "credit": "University of Bern (credit line not verified)",
+          "caption": "NGMS sensor overview showing the ion source, drift tube with ion mirror, detector, pulsers and electronics box.",
+          "section_placements": [
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; no query string or fragment. Caption paraphrased from the source page. Rights not checked."
+        },
+        {
+          "id": "ngms_cad_model",
+          "description": "CAD model of the Luna-Resurs NGMS with labelled components and the spacecraft wall interface.",
+          "image_type": "Engineering CAD model",
+          "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110299/1_NGMSCADmodelohneText_eng.jpg",
+          "source_page_url": "https://luna-ngms.unibe.ch/instrument/index_eng.html",
+          "publisher": "University of Bern (instrument team web page)",
+          "credit": "University of Bern (credit line not verified)",
+          "caption": "NGMS CAD model showing the spacecraft wall interface.",
+          "section_placements": [
+            "physical_specifications.examples[3]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; no query string or fragment. Shows the mounting interface type only; it does not verify compatibility with any named lander or spacecraft."
+        },
+        {
+          "id": "huygens_gcms_sample_mass_spectrum",
+          "description": "Sample mass spectrum shown on the archived NASA Goddard Huygens GCMS pages.",
+          "image_type": "Instrument data plot (archived web page image)",
+          "image_url": "https://science.gsfc.nasa.gov/attic/huygensgcms/mass_spectrum.jpg",
+          "source_page_url": "https://science.gsfc.nasa.gov/attic/huygensgcms/MS_Detector_1.htm",
+          "publisher": "NASA Goddard Space Flight Center (archived page)",
+          "credit": "NASA Goddard Space Flight Center (credit line not verified on the image)",
+          "caption": "Sample mass spectrum from the archived Huygens GCMS pages. The page does not identify the sample or mission data shown.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; no query string or fragment. Source page is an archived page that states it is no longer actively maintained. Reuse rights not verified."
+        },
+        {
+          "id": "huygens_gcms_electron_multiplier_diagram",
+          "description": "Schematic of the continuous-dynode electron multiplier used in the Huygens GCMS.",
+          "image_type": "Technical diagram (archived web page image)",
+          "image_url": "https://science.gsfc.nasa.gov/attic/huygensgcms/multiplier_diagram.gif",
+          "source_page_url": "https://science.gsfc.nasa.gov/attic/huygensgcms/MS_Detector_1.htm",
+          "publisher": "NASA Goddard Space Flight Center (archived page)",
+          "credit": "Credited on the source page to the Burle Channeltron Handbook",
+          "caption": "Electron multiplier schematic from the archived Huygens GCMS pages.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL verified to return HTTP 200 image/gif. The page credits the diagram to the Burle Channeltron Handbook; the reuse rights of that third-party image were not verified."
+        },
+        {
+          "id": "sam_instrument_side_view_pia16100",
+          "description": "Curiosity's SAM instrument viewed from the side with the side panel removed.",
+          "image_type": "Instrument photograph (flown hardware, Mars)",
+          "image_url": "https://planetary.s3.amazonaws.com/web/assets/pictures/20121128_sam_from-side_PIA16100.jpg",
+          "source_page_url": "https://www.planetary.org/space-images/sam_from-side_pia16100",
+          "publisher": "The Planetary Society (image hosting); underlying NASA/JPL image identifier PIA16100",
+          "credit": "Not verified; the source page is hosted by The Planetary Society and the NASA/JPL credit was not confirmed in this run",
+          "caption": "Curiosity's SAM instrument, seen from the side with the side panel removed.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; no query string or fragment. Original NASA/JPL reuse terms not verified."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "ngms_pfm_fs_flight_instruments",
+          "description": "The two Luna-Resurs NGMS flight instruments (NGMS-PFM and NGMS-FS) at the University of Bern.",
+          "image_type": "Instrument photograph (flight hardware, not flown)",
+          "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110124/1_NGMS-PFM-1200_eng.jpg",
+          "source_page_url": "https://luna-ngms.unibe.ch/instrument/index_eng.html",
+          "publisher": "University of Bern (instrument team web page)",
+          "credit": "University of Bern (credit line not verified)",
+          "caption": "The two NGMS flight instruments (NGMS-PFM and NGMS-FS) at the University of Bern.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Direct asset URL verified to return HTTP 200 image/jpeg; the host is www.luna-ngms.unibe.ch while the source page is luna-ngms.unibe.ch. No query string or fragment. Caption paraphrased from the source page. Full-resolution availability and rights not checked."
+        }
+      ],
+      "references": [
+        {
+          "title": "Viking gas chromatograph-mass spectrometer (Rushneck et al., Review of Scientific Instruments, vol. 49, 1978)",
+          "publisher": "NASA Technical Reports Server",
+          "url": "https://ntrs.nasa.gov/citations/19780054611"
+        },
+        {
+          "title": "Viking mission page (launch and landing dates)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/viking/"
+        },
+        {
+          "title": "The Gas Chromatograph Mass Spectrometer for the Huygens Probe (Niemann et al., Space Science Reviews, vol. 104, 2002)",
+          "publisher": "HAL (CNRS/INSU record)",
+          "url": "https://hal-insu.archives-ouvertes.fr/insu-03588427"
+        },
+        {
+          "title": "Huygens GCMS archived pages: MS Detector",
+          "publisher": "NASA Goddard Space Flight Center",
+          "url": "https://science.gsfc.nasa.gov/attic/huygensgcms/MS_Detector_1.htm"
+        },
+        {
+          "title": "Gas Chromatograph Mass Spectrometer (HP.GCMS) instrument context record, urn:esa:psa:context:instrument:hp.gcms",
+          "publisher": "ESA Planetary Science Archive / PDS",
+          "url": "https://arcnav.psi.edu/urn:esa:psa:context:instrument:hp.gcms"
+        },
+        {
+          "title": "Huygens probe mission page (landing date, descent and surface duration)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/cassini/spacecraft/huygens-probe/"
+        },
+        {
+          "title": "The Sample Analysis at Mars Investigation and Instrument Suite (Mahaffy et al., Space Science Reviews, 2012)",
+          "publisher": "Springer / Space Science Reviews",
+          "url": "https://doi.org/10.1007/s11214-012-9879-z"
+        },
+        {
+          "title": "Curiosity's SAM instrument, from the side (side panel removed)",
+          "publisher": "The Planetary Society",
+          "url": "https://www.planetary.org/space-images/sam_from-side_pia16100"
+        },
+        {
+          "title": "NGMS - Time of Flight Neutral Gas Mass Spectrometer (TOF-MS), Luna-NGMS instrument page",
+          "publisher": "University of Bern",
+          "url": "https://luna-ngms.unibe.ch/instrument/index_eng.html"
+        },
+        {
+          "title": "Scientific performance of the Gas Chromatograph Neutral Gas Mass Spectrometer for the Luna-Resurs Mission",
+          "publisher": "HAL (via OpenPolar)",
+          "url": "https://openpolar.no/Record/ftinsu:oai:HAL:insu-04426876v1"
+        },
+        {
+          "title": "Viking lander biological experiments (secondary summary; not a primary source)",
+          "publisher": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Viking_lander_biological_experiments"
+        },
+        {
+          "title": "NASA Says Scrapped Moon Resource Prospector No Longer Fit Lunar Exploration Plans",
+          "publisher": "Space.com",
+          "url": "https://www.space.com/40493-nasa-moon-resource-prospector-lunar-exploration.html"
+        },
+        {
+          "title": "Viking GC-MS mass, size and contractor details, and the chlorobenzene and perchlorate reanalysis, as summarised in secondary sources",
+          "publisher": "Secondary summaries (see reference 11)",
+          "url": "https://en.wikipedia.org/wiki/Viking_lander_biological_experiments"
+        },
+        {
+          "title": "INFICON Technology Returning to the Moon (MSolo quadrupole mass spectrometer)",
+          "publisher": "INFICON",
+          "url": "https://www.inficon.com/en/news/inficon-technology-returning-to-the-moon"
+        }
+      ],
+      "reference_notes": "Several claims rely on secondary summaries, including reference 3 (primary article not accessible in this run), reference 10 (conference-abstract summary), reference 11 and 13 (secondary Wikipedia summary), and reference 12 (press coverage)."
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Huygens GCMS example": "payload.article.physical_specifications.examples[1].images",
+      "SAM example": "payload.article.physical_specifications.examples[2].images",
+      "Luna-Resurs NGMS example": "payload.article.physical_specifications.examples[3].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Direct asset URLs were confirmed to return HTTP 200 with an image media type. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. The Viking GC-MS example has no verified direct image asset and therefore has no image entry."
+  },
+  "data_quality_notes": [
+    "Flight status: the Viking GC-MS (Mars, 1976) and the Huygens GCMS (Titan, 2005) and the SAM suite (Mars, 2012) are flown hardware. The Luna-Resurs NGMS and GC package has built flight units but is described as not flown, with no launch date in the sources reviewed. No lunar surface GC-MS flight was found in the sources reviewed; this is not a complete survey.",
+    "Huygens GCMS mass (17.3 kg), energy budget (110 Wh), mass range (2 to 141 daltons), detection threshold (about 10^-8 mixing ratio), data rate (885 bit/s) and average power (41 W) come from secondary summaries and were not verified against the primary Niemann et al. (2002) article. The 41 W conference-slide value is not reconciled with the energy budget.",
+    "Huygens GCMS configuration (quadrupole mass filter with secondary electron multiplier, three GC columns, five ion sources, altitude coverage from 170 km to the surface) is verified from the ESA PSA/PDS context record excerpt; the full record was not reviewed. Two electron multipliers are verified from the NASA Goddard archived page.",
+    "Viking GC-MS: flight dates are verified from the NASA Viking mission page. The mass below 15 kg, the box of about one foot per side, the magnetic-sector mass spectrometer and the contractor names are from secondary descriptions and are unverified. The Rushneck et al. (1978) abstract was verified, but the full paper was not accessed. The no-organics result and the chlorobenzene/perchlorate reanalysis are from a secondary Wikipedia summary, not from primary papers.",
+    "SAM (Curiosity) quantitative specifications (mass, power, mass range, GC column count) were not verified in this run; the qualitative description comes from secondary search summaries. The Mahaffy et al. (2012) paper was identified but not accessed because the Springer page required a login redirect.",
+    "Luna-Resurs NGMS: mass (3.5 kg), maximum size (26 x 15 x 18 cm), power (25 W), operating temperature range (-30 to 80 C), pyrolysis oven (up to 1000 C), flight-unit status and the operating modes are verified from the University of Bern instrument page. The mass resolution (up to 1200), the two GC columns and the detection-limit figures come from conference-abstract summaries and are unverified against the primary paper.",
+    "Resource Prospector: the 2018 cancellation is supported by press coverage. The reported inclusion of a GC-MS in its volatile-analysis subsystem (LAVA) comes from a secondary report that was not verified against an official NASA document; it is not treated as a flight or development record.",
+    "The INFICON MSolo instrument in secondary coverage is a quadrupole mass spectrometer, not a GC-MS, and is excluded from the examples. Its flight-demonstration claim comes from a vendor announcement and was not independently verified.",
+    "Image handling: six direct image assets were confirmed to return HTTP 200 with an image media type (University of Bern NGMS images, NASA Goddard archived Huygens GCMS images, and a Planetary Society-hosted SAM image). The NASA/JPL credit for the SAM image, the rights for the Burle Channeltron diagram and the University of Bern credit lines were not verified. No full-resolution downloads were checked. Images are not embedded for the operating-principle section because the validator schema covers only the overview, physical-specification example and transportation sections; this is a known gap in section-level placement.",
+    "Viking GC-MS: no verified direct image asset or official image page was located in this run, so no image is included for this example. The Smithsonian collection object could not be fetched (DNS failure).",
+    "Lunar location and landing-site recommendations are deferred by the user and are not included. Lander compatibility is not asserted for any instrument; the NGMS CAD image shows a mounting interface type only."
+  ]
+}

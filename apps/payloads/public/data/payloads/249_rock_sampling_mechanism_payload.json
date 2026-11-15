@@ -1,0 +1,198 @@
+{
+  "catalogue_id": 249,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 13,
+    "name": "Sample collection, preservation and return"
+  },
+  "payload": {
+    "number": 249,
+    "name": "Rock sampling mechanism",
+    "article": {
+      "overview": "A rock sampling mechanism is a device that collects consolidated rock fragments, or cores that contain rock fragments, from a planetary surface so that they can be analysed or returned to Earth. On the Moon, Apollo astronauts used hand-held tongs, rakes, scoops and core or drive tubes, and robotic drill systems have been used on the Soviet Luna 24 and Chinese Chang'e 5 and Chang'e 6 sample-return missions. This entry describes the class of mechanism rather than one specific instrument. It is distinct from the loose-regolith collection mechanism listed separately in the catalogue (entry 248).",
+      "description": "A rock sampling mechanism has to do three things: detach or capture rock material from the surface or subsurface, retain it in a defined container or tube, and keep the sample identifiable as far as possible for later analysis. Depending on the design, it may grip or pry loose fragments with tongs or a rake, dig with a trenching tool, or drill into the ground with a hollow bit that carries a core of material up into a sample container. Hand tools are operated by an astronaut in a spacesuit, while drills and grabbers are operated by a robotic arm or a dedicated sampling mechanism. Rock sampling is usually paired with containment hardware that seals the material for transfer to a return vehicle. Rocks can be too large, too hard or too deeply bedded for simple scooping, so rock sampling generally demands more reach, force and control than regolith collection alone.",
+      "scientific_purpose_and_applications": "Returned rock and core material gives laboratory scientists direct access to lunar material that remote sensing can only infer. Laboratory analysis can establish mineralogy, chemistry, texture and, for some samples, isotopic ages, and the results can be used to check orbital measurements. A drill core adds depth information, because it records how material changes with depth in a way that a surface grab cannot. The general scientific value of returned lunar samples is well established, but the specific sources consulted for this article do not address it directly, so the statement above is not independently referenced.",
+      "operating_principle": "Rock sampling mechanisms work on a small number of physical principles. Hand tools rely on mechanical leverage and on the operator's control: tongs grasp fragments, rakes gather small and varied rocks, and scoops and trenching tools collect loose material [1]. Core tubes and drive tubes are hollow tubes pushed or driven into the ground so that material enters the tube and is retained for return [1]. Robotic drills, such as the rotary-percussive coring drill described for Chang'e 5 [9], combine rotation with repeated hammer-like impacts to advance a hollow bit, and the sample is carried up into a container. Once collected, the sample must be sealed or stored in a way that limits contamination and loss. Each approach trades sample integrity against mass, power, reach and mechanical complexity.",
+      "scientific_importance": "Sample return is the most direct way to study lunar material, because laboratory instruments can be larger, more sensitive and more varied than anything that can be flown on a lander. A rock sampling mechanism determines which material reaches the laboratory at all: the choice of tool controls whether intact fragments, fine regolith or a depth profile is recovered. Depth-resolved cores are especially valuable because they show layering and compositional change that surface samples cannot reveal. The Apollo deep-drill cores and the Chang'e 5 and Chang'e 6 drill cores illustrate this value, although the depth and quality of recovered cores differ considerably between missions.",
+      "physical_specifications": {
+        "note": "There is no single universal specification for a rock sampling mechanism. The examples below cover four families of hardware: the Apollo hand tools and tubes, the Apollo 15 deep drill, the Luna 24 drill, and the Chang'e 5 and Chang'e 6 drills. Values are given only where a source was consulted. Masses and dimensions of the Apollo hand tools were not obtained from the sources examined, and no mechanism mass or power figure was verified for any example.",
+        "examples": [
+          {
+            "name": "Apollo hand tools, core tubes and drive tubes (Apollo 11 to 17)",
+            "type": "Historical crew-operated hand tools and tubes",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in the sources consulted.",
+            "mission_counts": {
+              "Apollo 11": "2 core tubes, 2 core tube caps, 1 large scoop, 1 pair of tongs, 1 extension handle",
+              "Apollo 12": "4 core tubes, 1 core tube cap, 1 large scoop, 1 pair of tongs, 1 extension handle",
+              "Apollo 14": "6 core tubes, 1 large scoop, 1 adjustable trenching tool, 1 pair of tongs, 1 extension handle",
+              "Apollo 15": "1 rake, 1 adjustable scoop, 1 pair of tongs, 1 extension handle, 5 lower and 4 upper drive tubes, 3 drive tube cap and bracket assemblies",
+              "Apollo 16": "2 pairs of tongs, 1 rake, 1 adjustable scoop, 2 extension handles, 5 lower and 4 upper drive tubes, 5 drive tube cap and bracket assemblies, 1 drive tube tool assembly",
+              "Apollo 17": "2 pairs of tongs, 1 rake, 1 adjustable scoop, 2 extension handles, 5 lower and 4 upper drive tubes, 5 drive tube cap and bracket assemblies, 1 drive tube tool assembly"
+            },
+            "qualification": "Count-by-mission inventory only. The source does not give dimensions, masses or penetration depths for these tools.",
+            "source_urls": [
+              "https://www.nasa.gov/wp-content/uploads/static/history/SP-4029/Apollo_18-35_Geology_and_Soil_Tools.htm"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 15 deep core drill",
+            "type": "Historical lunar deep-drill system with drive stem and tubes",
+            "mass_kg": null,
+            "assumed_max_stem_penetration_cm": "236 +/- 1 (search summary of a 1974 article; not verified)",
+            "compendium_label_depth_cm": "242 (search summary of Lunar Sample Compendium label; not verified)",
+            "recovered_core_length_m": "about 2.4 (search summary; not verified against a primary mission report)",
+            "average_bulk_density_g_cm3": 1.76,
+            "total_sample_mass_g": "3302 from three core-tube locations (search summary; not individually verified)",
+            "conflicting_claims": "A PDS instrument note cites a deep-sample capability of 4.6 m; treated as an unverified design or claimed figure only.",
+            "qualification": "Values are not checked against the primary Apollo 15 documents, which could not be accessed.",
+            "source_urls": [
+              "https://link.springer.com/article/10.1007/BF00655719"
+            ],
+            "images": []
+          },
+          {
+            "name": "Luna 24 drill",
+            "type": "Historical Soviet robotic drill on an automated sample-return mission",
+            "mass_kg": null,
+            "drilled_depth_cm": 200,
+            "core_length_cm": 160,
+            "sample_mass_g": 170,
+            "conflicting_claims": "Secondary summaries give 2 m core (research starter), 2.5 m bore (LPOD entry) and 2.3 m (conference-talk summary, uncited). Unresolved; no primary source accessed.",
+            "qualification": "Autonomous rotary-percussive drill on a robotic arm is a secondary description and is not verified against a primary source.",
+            "source_urls": [
+              "https://www.astronomy.com/today-in-the-history-of-astronomy/aug-9-1976-luna-24-blasts-off/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e 5 drill and surface samplers",
+            "type": "Chinese robotic sample-return lander with drill and surface sampling tools",
+            "mass_kg": null,
+            "design_target_depth_m": "about 2 (EO Portal summary; page retrieved without sampling text; unverified)",
+            "achieved_depth_m": "about 1 (search summary of an IJRR paper; not verified)",
+            "recovered_sample_mass_g": "259.72 (search summary, drilling on 2 December 2020; not verified)",
+            "surface_system": "Two samplers reported in secondary descriptions: a shovel-shaped sampler for loose regolith and a coring sampler for cohesive material, guided by near-field cameras. Not referenced to a verified source.",
+            "qualification": "Drill mass and dimensions not verified.",
+            "source_urls": [
+              "https://journals.sagepub.com/doi/10.1177/02783649231187918",
+              "https://eoportal.org/satellite-missions/chang-e-5"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e 6 drill",
+            "type": "Chinese robotic farside sample-return lander with drill-based sampling system",
+            "mass_kg": null,
+            "achieved_depth_mm": "over 1000 (Chinese Academy of Sciences news item, 24 June 2024)",
+            "capability_estimate": "about seven feet (about 2.1 m) cited in a news report as a NASA estimate; capability estimate, not a measured depth",
+            "sample_mass_g": "predicted 292.4 against actual 320, within 10 per cent (search summary; article page not retrieved)",
+            "conflicting_claims": "A combined scoop and drill sample mass of 1935.3 g appears in a secondary summary and is not reconciled with the drill-only figure.",
+            "qualification": "Drill mass and dimensions not verified.",
+            "source_urls": [
+              "https://english.cas.cn/newsroom/research_news/earth/202406/t20240624_665533.shtml",
+              "https://mdpi.com/2226-4310/12/4/331"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified in the sources consulted for the Apollo hand tools, and not verified for any drill mechanism. Achieved depths differ between examples: about 2.4 m recovered for Apollo 15 (unverified), about 160 cm core for Luna 24, about 1 m for Chang'e 5 (unverified) and over 1000 mm for Chang'e 6. These are depths of recovered material and design targets, not a single mechanism performance specification.",
+        "mass_and_weight": "The masses listed are recovered sample masses, not mechanism masses. Luna 24 recovered about 170 g. Chang'e 5 recovered 259.72 g according to a search summary (unverified). Chang'e 6 sample mass is reported as 320 g against a predicted 292.4 g (search summary). Apollo 15 three-location core total is reported as 3302 g (search summary). No mechanism mass is verified for any example, so mechanism mass is null.",
+        "power_requirements": "Not verified for any example. Null."
+      },
+      "environmental_and_operational_requirements": "A rock sampling mechanism must survive the lunar surface environment, which includes large temperature variation, vacuum, dust and radiation, and it must operate within the power and thermal budgets of the carrying spacecraft. Robotic drills must also manage reaction loads, because drilling pushes against the ground. Hand tools must be usable by suited astronauts; the Apollo tools were therefore supplied with long handles and extension handles [1]. Sampling must also be planned geometrically, so that the sampler reaches the target, avoids the lander and delivers a sealed sample to the return chain. Drilling can be limited by regolith obstruction. Secondary summaries report that the Chang'e 5 drill stopped at about 1 m, with a suspected particle jam in the hollow drill tool as one possible cause. This cause has not been verified against a primary source.",
+      "limitations": "Rock sampling mechanisms are limited by target hardness, boulder size, achievable depth, regolith obstruction, and the mass and power budget of the lander. Hand tools are limited by astronaut time, reach and suit mobility. Drilled cores can be disturbed or partly lost during recovery, and a single core cannot show lateral variation across a site. The recovered mass can be much smaller than the design depth implies, as the Chang'e 5 figures above illustrate. Some secondary summaries report that earlier Apollo core-tube designs recovered less material than expected in dense regolith; this has not been verified.",
+      "transportation_and_deployment": {
+        "overview": "Rock sampling hardware has been carried in two broad forms: hand tools carried by astronauts during extravehicular activity, and robotic drill or arm systems integrated into a lander. A new rock sampling mechanism would need integration with launch, transfer, landing loads, deployment, and power and data interfaces. For sample return, integration also requires containment, sealing and transfer into a return container.",
+        "transportation_process": [
+          "Integrate the sampling tools or drill into the flight configuration on Earth, with protected stowage.",
+          "Launch the spacecraft and transfer it towards the Moon.",
+          "Land, and for robotic systems deploy or extend the arm or drill.",
+          "Collect the sample.",
+          "Seal and package the sample.",
+          "Transfer the sealed container to the return vehicle. For Chang'e 5 and Chang'e 6, secondary summaries describe transfer to an ascender, guided by cameras.",
+          "Return the sample to Earth within a containment chain."
+        ],
+        "deployment_methods": "Apollo hand tools were carried and used by astronauts, with extension handles, as listed per mission [1]. Robotic examples used a drill or sampler on a robotic arm, as described in the Luna 24 and Chang'e summaries; these arrangements have not been verified against primary interface documents.",
+        "historical_examples": "Apollo 11 to 17 used hand tools and tubes [1]. Luna 24 used an automated drill [2]. Chang'e 5 and Chang'e 6 used drill-based sampling [3][6].",
+        "compatibility_assessment": "Compatibility has not been assessed against any named lander, rover or spacecraft, and no verified interface data were obtained. A compatibility assessment would require the mass, envelope, reach, mounting, power, data, thermal and sample-transfer specifications from the relevant lander.",
+        "images": []
+      },
+      "historical_significance": "The Apollo programme established hand collection of lunar rock and deep-core sampling as part of its surface science. Its tool sets changed from one mission to the next, with the mission counts showing a shift from core tubes on Apollo 11, 12 and 14 to drive tubes and rakes on Apollo 15 to 17 [1]. Luna 24 was described as the final mission of the Soviet lunar programme, and it returned a drilled core to Earth in August 1976 [2]. Chang'e 5 recovered drill and surface samples in December 2020 [3], and Chang'e 6 reported drilling to over 1000 mm in June 2024 [6]. These missions show that drill-based sampling has been used by three national programmes, although the reported depths and recovered masses differ between sources.",
+      "limitations_and_uncertainties": "This article is a limited-scope draft. The payload name describes a class of mechanisms rather than a single design, so no single set of specifications applies. Primary mission documents, the full text of the International Journal of Robotics Research and MDPI papers, and the Apollo 15 technical documents could not be accessed through the available research tools. Some returned HTTP 403 errors, and some PDFs were scanned or binary without a text layer. Numbers for Chang'e 5, Chang'e 6, Apollo 15 and the Apollo hand tools therefore rely on search-result summaries and are flagged as unverified. Luna 24 core lengths differ across secondary sources, ranging from 2 m to 2.5 m in the summaries, and the 200 cm drilled and 160 cm core figures from Astronomy magazine are not confirmed against a primary source. No images were verified, and no lander compatibility has been established.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Geology and Soil Mechanics Tools and Equipment (Apollo 18-35 summary, SP-4029)",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/wp-content/uploads/static/history/SP-4029/Apollo_18-35_Geology_and_Soil_Tools.htm"
+        },
+        {
+          "title": "Aug. 9, 1976: Luna 24 blasts off",
+          "publisher": "Astronomy magazine",
+          "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/aug-9-1976-luna-24-blasts-off/"
+        },
+        {
+          "title": "Robotic Drilling for the Chinese Chang'E 5 Lunar Sample-Return Mission (International Journal of Robotics Research, vol. 42, no. 8, pp. 586-613; full text not accessed)",
+          "publisher": "SAGE",
+          "url": "https://journals.sagepub.com/doi/10.1177/02783649231187918"
+        },
+        {
+          "title": "Chang'e-6 sampling system paper, MDPI Aerospace 12(4), article 331 (title not recorded; HTTP 403)",
+          "publisher": "MDPI",
+          "url": "https://mdpi.com/2226-4310/12/4/331"
+        },
+        {
+          "title": "Apollo 15 deep core drill article (Carrier, 1974; title not recorded; search summary only)",
+          "publisher": "Springer",
+          "url": "https://link.springer.com/article/10.1007/BF00655719"
+        },
+        {
+          "title": "Chang'e-6 drilling research news item, 24 June 2024",
+          "publisher": "Chinese Academy of Sciences",
+          "url": "https://english.cas.cn/newsroom/research_news/earth/202406/t20240624_665533.shtml"
+        },
+        {
+          "title": "Lunar regolith samples (Research Starters)",
+          "publisher": "EBSCO",
+          "url": "https://www.ebsco.com/research-starters/astronomy-and-astrophysics/lunar-regolith-samples"
+        },
+        {
+          "title": "Lunar Photo of the Day wiki, entry for 18 August 2015",
+          "publisher": "LPOD",
+          "url": "https://www.lpod.org/wiki/August_18,_2015"
+        },
+        {
+          "title": "Chang'e-5 (China's Lunar Sample Return Mission) / CE-5 (page retrieved without sampling text)",
+          "publisher": "ESA EO Portal",
+          "url": "https://eoportal.org/satellite-missions/chang-e-5"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values are absent because no image was verified. All URL values in this file have query strings and fragments removed."
+  },
+  "data_quality_notes": [
+    "Primary sources were largely inaccessible: NASA Apollo 15 PDF and Allton catalogue PDF were scanned or binary, the IJRR and MDPI pages returned HTTP 403, the NSSDC Luna 24 record returned an error page, and the EO Portal page contained no sampling text.",
+    "Apollo 15 deep-drill depth (236 +/- 1 cm, 242 cm, about 2.4 m recovered, 4.6 m PDS claim) is inconsistent across sources and unverified.",
+    "Luna 24 core length conflicts across secondary sources (2 m, 2.3 m, 2.5 m bore versus 200 cm drilled and 160 cm core in Astronomy magazine).",
+    "Chang'e 5 drill design depth (about 2 m) and achieved depth (about 1 m, 259.72 g) rest on search summaries, not full text.",
+    "Chang'e 6 sample mass (predicted 292.4 g, actual 320 g) rests on a search summary; a combined aggregate of 1935.3 g in a secondary source is unreconciled and not used.",
+    "Mass, dimensions and power of every mechanism are null because no verified value was obtained.",
+    "No image URLs were verified; images arrays are empty by design. No Luna 16 or Luna 20 sampling hardware was researched, so the Soviet drill history is limited to Luna 24."
+  ]
+}

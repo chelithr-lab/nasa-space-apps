@@ -1,0 +1,214 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 316,
+    "name": "Contamination monitoring instrument",
+    "article": {
+      "overview": "A contamination monitoring instrument is a payload class that detects, measures or tracks unwanted material on a surface, inside an instrument, or in the surrounding environment, so that scientists and engineers can judge whether later measurements are still representative. On the Moon, the material of interest falls into three broad groups: lunar dust and regolith particles that settle on or are lofted onto surfaces; gases and volatiles released by a lander's exhaust, outgassing or the disturbed soil; and biological or chemical residues carried from Earth. No single standard design exists for this payload class. This article therefore describes the class through documented examples that are related but not equivalent: the Apollo dust-detector packages (DTREM), a Chinese sticky quartz crystal microbalance flown on Chang'e-3, a student-led quartz crystal microbalance concept, and the SEAL (Surface and Exosphere Alterations by Landers) spectrometer, which is planned to measure landing-related contamination. The Surveyor 3 camera case is included as a historical lesson in contamination control, not as an example of a monitoring instrument.",
+      "description": "A contamination monitor usually works by one of three routes. First, degradation of an exposed reference surface: solar cells or thermistors are left exposed to the environment, and their output or temperature response is recorded over time. The Apollo Dust, Thermal and Radiation Engineering Measurements (DTREM) packages used this approach, with some cells covered and others left bare so that dust effects could be separated from radiation damage. Second, mass deposition on a sensing crystal: a quartz crystal microbalance (QCM) measures the change in the resonant frequency of a quartz crystal as material accumulates on it. The Chang'e-3 instrument used a sticky QCM, and a student-led concept proposed a QCM for measuring individual dust grains in real time. Third, gas-phase composition measurement: a mass spectrometer records the chemical composition of exhaust gases during descent and of gases released from the soil after landing, which is the design goal of SEAL. The contamination of concern is not always dust. A lander's engine exhaust can deposit or chemically alter the surface, and returned hardware or samples can carry microbes from Earth. The Surveyor 3 episode shows how biological contamination can be misidentified when handling procedures are not controlled.",
+      "scientific_purpose_and_applications": "The main purposes are: (1) measuring how much dust settles on surfaces over time and whether it is lofted by landings, impacts or other disturbances, a purpose served by the Apollo DTREM data, which have been used to estimate dust accretion; (2) separating lander-introduced material from the native regolith signal, so that a sample or spectrum taken after a landing can be judged for alteration; (3) tracking dust accumulation on solar panels, thermal surfaces and optics, to show how fast performance degrades and whether mitigation is needed; and (4) supporting sample integrity and planetary protection by measuring contamination from Earth or from the landing, which informs sample-handling and quarantine procedures.",
+      "operating_principle": "Solar-cell degradation (DTREM): each DTREM package carried solar cells and thermistors. The Apollo 11, 14 and 15 units had three solar cells: one with a cover glass, one exposed directly to space, and one pre-irradiated to induce damage before mounting, which also carried a cover glass. The Apollo 12 unit had three identical cells facing east, west and upward. A decline in cell output that is larger for the exposed cell than for the cover-glass cell points to dust and surface effects, while the pre-irradiated cell reflects radiation history. A reanalysis by Hollick and O'Brien (2013) concluded that the covered cells were degraded more by dust accumulation than by particle radiation, and gave a dust accretion figure of the order of 100 micrograms per square centimetre per year as reported in published summaries; this figure is not yet checked against the full paper. Quartz crystal microbalance (QCM): a quartz resonator oscillates at a frequency that falls as mass is added to its surface. The frequency change, combined with the sensing area and calibration, is converted to deposited mass per unit area. A temperature-controlled sensor keeps the frequency-temperature relationship stable. A sticky QCM has an adhesive or otherwise collecting surface so that dust is retained for the measurement. Gas-phase mass spectrometry (SEAL): a mass spectrometer identifies gas species by their mass-to-charge ratio. SEAL is designed to measure exhaust species during descent and gases released after landing.",
+      "scientific_importance": "Lunar surface measurements are increasingly sensitive to small chemical and particulate changes. Without monitoring, it is difficult to know whether a landing has altered the soil or whether a volatile signal comes from the native Moon or from the lander. The Apollo DTREM data remain significant because they cover years of exposure and record changes at lunar sunrise, sunset, eclipses and lunar-module ascent. The restoration effort described by McBride and colleagues (2012) noted that most of the information from these data depends on relative changes in solar-cell output rather than absolute values, which makes long-term degradation trends useful even where calibration is incomplete. The Chang'e-3 sticky QCM result reported by Li and colleagues (2019) is significant because it is a lunar-surface measurement of dust deposition rather than an orbital estimate; the authors describe it as the first use of a sticky QCM to detect lunar dust and say the annual deposition rate is comparable with the Apollo result to some extent. The full paper was not accessible in this run, so this claim is recorded from the published abstract and secondary reporting. The Surveyor 3 case shows why contamination control matters for future sample return and for any experiment that seeks to detect life or organic chemistry. Streptococcus mitis was isolated from the returned Surveyor 3 television camera in 1971 (Mitchell and Ellis, 1971). Later analysis by Rummel, Allton and Morrison concluded that the most likely source was contamination during handling and sampling on Earth rather than survival on the Moon: no viable microbes were isolated from the Earth-based Type Approval Test camera, participants wore short-sleeved scrubs during sampling, and a possible exhalation deposit during foam sampling could not be excluded.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power figure for a contamination monitoring instrument. The values below apply only to the named historical, flown, prototype or proposed examples. Where the sources reviewed do not give a value, it is recorded as 'not publicly specified in sources reviewed'. Values are not estimated.",
+        "examples": [
+          {
+            "name": "Apollo Dust, Thermal and Radiation Engineering Measurements (DTREM) packages",
+            "type": "Historical lunar surface dust and radiation monitor (flown)",
+            "flight_status": "Flown and operated on the Moon. The Apollo 11 unit was part of the Early Apollo Surface Experiments Package (EASEP) and operated for a few months. The Apollo 12, 14 and 15 units were mounted on the ALSEP central station and operated from deployment until ALSEP shutdown in September 1977, up to nearly eight years according to McBride and colleagues (2012).",
+            "mass_kg": null,
+            "mass_note": "Not publicly specified in sources reviewed.",
+            "dimensions_note": "Not publicly specified in sources reviewed. Described as a small box mounted on the top northwest corner of the ALSEP central-station sunshield.",
+            "power_consumption_w": null,
+            "sensors": "Three solar cells and three thermistors. Apollo 11, 14 and 15: one cell with cover glass, one exposed, one pre-irradiated (which also had a cover glass). Apollo 12: three identical cells facing east, west and upward.",
+            "sampling_interval_seconds": 54.34,
+            "operational_duration": "Up to nearly 8 years (Apollo 12 unit covers 7.9 years of data per McBride and colleagues, 2012); Apollo 14 and 15 units cover 6.7 and 6.2 years respectively.",
+            "data_handling": "DTREM data were sent back with the central-station housekeeping ('Word 33') data as counts from 0 to 255, which were later converted to voltages and temperatures using translation tables.",
+            "qualification": "Flight hardware; the restoration of its data is described by McBride and colleagues (2012).",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20120017948/downloads/20120017948.pdf",
+              "https://www.sciencedaily.com/releases/2013/11/131120143804.htm"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-3 sticky quartz crystal microbalance (SQCM)",
+            "type": "Lunar-surface dust deposition sensor (flown)",
+            "flight_status": "Flown on the Chang'e-3 lander, launched 2 December 2013 and landed 14 December 2013 on Sinus Iridum (per news reporting of the mission). Mounted in a temperature-controlled cabinet on the front-left corner of the lander.",
+            "mass_kg": null,
+            "mass_note": "Not publicly specified in sources reviewed.",
+            "dimensions_note": "Not publicly specified in sources reviewed.",
+            "power_consumption_w": null,
+            "reported_result": "Total deposition mass at 190 cm above the lunar surface over 12 lunar daytimes was about 0.0065 mg/cm2, corresponding to an annual deposition rate of about 21.4 micrograms/cm2 (Li and colleagues, 2019, abstract-level).",
+            "qualification": "Flight hardware on a lander. Full methodology, error bars and the authors' analysis of causes were not verified.",
+            "source_urls": [
+              "https://doi.org/10.1029/2019JE006054",
+              "https://news.cgtn.com/news/2019-09-21/Chinese-researchers-conduct-in-situ-measurement-of-lunar-dust-K9YE7HiOSA/index.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Student quartz crystal microbalance (QCM) dust payload",
+            "type": "Proposed lunar surface dust-lofting and dust-counting payload (breadboard stage)",
+            "flight_status": "Breadboard-level testing and a stratospheric balloon flight are reported by the authors. The authors rate the breadboard at Technology Readiness Level (TRL) 4 and their plan targets a prototype and lunar surface deployment in 2021 (Hooper and colleagues, 2019). No evidence of a lunar flight was found in this run. The TRL rating is the authors' self-assessment.",
+            "mass_kg": null,
+            "mass_note": "Not publicly specified in sources reviewed.",
+            "dimensions_note": "Not publicly specified in sources reviewed.",
+            "power_consumption_w": null,
+            "qualification": "Modified from a commercial off-the-shelf device. Testing reported: balloon flight to about 120,000 ft, planned rocket and dusty thermal-vacuum testing.",
+            "source_urls": [
+              "https://ui.adsabs.harvard.edu/abs/2019LPI....50.2671H/abstract"
+            ],
+            "images": []
+          },
+          {
+            "name": "SEAL (Surface and Exosphere Alterations by Landers)",
+            "type": "Proposed mass-spectrometer-based payload for lander exhaust and surface chemistry",
+            "flight_status": "Proposed or in development. Selected as a NASA payload for a commercial lunar lander under the Commercial Lunar Payload Services (CLPS) initiative, with delivery planned for a lander described as reaching the Moon before the end of 2021. No confirmed launch or landing was found in this run.",
+            "mass_kg": 5.7,
+            "mass_note": "Per NASA technology highlights page.",
+            "dimensions_note": "Described by NASA as shoebox-sized; numerical dimensions not publicly specified in sources reviewed.",
+            "power_consumption_w": null,
+            "origin": "Built from a refurbished spare of the Nozomi Neutral Mass Spectrometer, recalibrated and updated at NASA Goddard Space Flight Center.",
+            "function": "Measures exhaust gas composition during descent and gases released from the soil after landing, and evaluates contaminants injected into the regolith by the landing.",
+            "dust_protection": "Dust cover added to protect the instrument from fine lunar particles blown by lander exhaust (per NASA reporting).",
+            "qualification": "Not publicly specified in sources reviewed.",
+            "source_urls": [
+              "https://science.nasa.gov/technology/technology-highlights/surface-and-exosphere-alterations-by-landers"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "There is no single dimension set for this payload class. The examples differ widely: the Apollo DTREM is a small box on the ALSEP central station; the Chang'e-3 sensor sat in a temperature-controlled cabinet on the lander; SEAL is described as shoebox-sized. Dimensions for a new contamination monitor would depend on its sensing geometry, required field of view or exposure area, thermal control and mounting interface. Numerical dimensions for the DTREM, Chang'e-3 SQCM and student QCM examples are not publicly specified in the sources reviewed.",
+        "mass_and_weight": "Only SEAL has a published mass in the sources reviewed (5.7 kg, per NASA). Apollo DTREM, the Chang'e-3 SQCM and the student QCM payload have no mass value in the sources reviewed. Mass is not estimated for any example here.",
+        "power_requirements": "Not publicly specified in sources reviewed for any example. The DTREM units were described as solar-cell-based sensors on the ALSEP central station, and the Chang'e-3 sensor used a temperature-controlled cabinet; neither source gives a power figure in the material reviewed."
+      },
+      "environmental_and_operational_requirements": "A monitoring instrument on the lunar surface must withstand the same extreme environment as any other surface payload: vacuum, large temperature swings between lunar day and night, solar and cosmic radiation, and micrometeoroid impacts. The sensitive element must remain in an environment that represents the contamination being measured, so it must be positioned away from the lander's own exhaust or intentionally exposed to it, depending on the goal. Thermal control is central. The Surveyor 3 camera is reported to have reached a maximum of about 70 degrees C on the lunar surface (Rummel and colleagues, slide presentation). The Chang'e-3 sensor was held in a temperature-controlled cabinet because QCM frequency depends on temperature. The DTREM packages were mounted on the ALSEP sunshield, and their output reflected the thermal environment they experienced. Exhaust exposure is an operational concern for SEAL. The mission team reportedly added a dust cover to protect the instrument from fine lunar particles blown by lander exhaust, so exhaust exposure and dust sensitivity must be balanced in the design. Simulations reported by APL (summarised in a 2020 news item) suggest that lander exhaust can spread around the Moon within hours, so a monitor near one landing can detect that landing's contamination, while a monitor at a distance may be affected by exhaust from another source.",
+      "limitations": "A monitor measures only the material that reaches its sensor. A surface that is shadowed, tilted, or covered by its own structure may record a different deposit from the surrounding ground. Solar-cell degradation mixes dust and radiation effects; separating them requires cover-glass and pre-irradiated reference cells, and the separation is only as good as the calibration of those references. QCM sensitivity depends on temperature, crystal orientation and the collecting surface; the Chang'e-3 result depends on the sticky surface behaving as the authors assume. SEAL's measurement of exhaust during descent is technically challenging because the exhaust is intense and changes rapidly during the landing sequence. Long-term monitoring depends on power, data links and thermal control. The Apollo DTREM units operated for years, but the Chang'e-3 and SEAL capabilities have not been demonstrated over long periods in the sources reviewed.",
+      "transportation_and_deployment": {
+        "overview": "Surface payload. The DTREM packages were carried to the Moon as part of Apollo surface-experiment packages: the Apollo 11 unit as part of EASEP, and the Apollo 12, 14 and 15 units mounted on the ALSEP central station and deployed by astronauts. The Chang'e-3 SQCM was integrated into the lander. SEAL was planned for delivery by a commercial lander, to be stored at NASA Goddard before delivery to the lander provider. The main interface requirements are launch and transfer integration; landing loads; deployment or mounting to a stable, thermally managed surface; power and data connections; and, for exhaust-sensitive instruments, a protective cover or a defined position relative to the descent plume. The DTREM data, for example, depended on the central station's housekeeping telemetry. No orbiter or rover deployment is described for this payload class in the sources reviewed.",
+        "transportation_process": [
+          "Integrate the monitor onto the lander or as part of a surface experiment package on Earth.",
+          "Store and handle the sensor under the programme's contamination and cleanliness requirements until delivery.",
+          "Launch and transfer to the Moon as part of the spacecraft stack.",
+          "Land the lander, which may itself create exhaust and dust disturbance near the monitor.",
+          "Deploy or mount the sensor on a stable, thermally managed location with a defined field of view or exposure.",
+          "Connect power, data and thermal control interfaces, then begin monitoring."
+        ],
+        "deployment_methods": "Astronaut deployment for the Apollo DTREM units; integration into the lander for the Chang'e-3 SQCM; planned lander-based delivery for SEAL. Robotic deployment is not described for the examples reviewed.",
+        "historical_examples": "Apollo 11 EASEP and the Apollo 12, 14 and 15 ALSEP central station (DTREM); Chang'e-3 lander (SQCM); the Surveyor 3 camera, which was retrieved by the Apollo 12 crew from a site about 163 m from the Surveyor 3 spacecraft and returned to Earth in a sealed pack for quarantine at the Lunar Receiving Laboratory (contamination case study, not a monitor).",
+        "compatibility_assessment": "Compatibility with any named lander, rover or spacecraft is not verified in this article. Nothing here asserts that SEAL, a DTREM-type monitor or a QCM payload is compatible with a specific lander. Compatibility would need to be assessed against the verified mass, dimensions, mounting points, landing loads, power, data and thermal interfaces of that vehicle.",
+        "images": []
+      },
+      "historical_significance": "The Apollo DTREM packages gave the first long-term, in-situ record of how dust, thermal cycling and radiation degrade surfaces on the Moon. Their data, which ran for years, remain a reference for lunar surface environment models, and their restoration was described by McBride and colleagues (2012). The Surveyor 3 case is a historical lesson in contamination control: the Apollo 12 crew retrieved the Surveyor 3 television camera, and Streptococcus mitis was isolated from it in 1971. The original interpretation suggested survival on the Moon, but later review attributed the finding to contamination during handling and sampling on Earth. The Chang'e-3 sticky QCM is historically significant because, according to its authors, it made a lunar-surface dust-deposition measurement with a sensor type not previously used on the Moon.",
+      "limitations_and_uncertainties": "The Li and colleagues (2019) paper was not accessible in this run because the publisher returned HTTP 403; the Chang'e-3 values come from the abstract and secondary news coverage. The Hollick and O'Brien (2013) paper was not accessible either; the dust accretion figure of about 100 micrograms per square centimetre per year is taken from published summaries, and summaries differ on whether it is an upper limit or a measured rate. The student QCM payload has no flight evidence in this run, and its 2021 target has passed without a documented flight in the sources reviewed. SEAL has no confirmed launch or landing in the sources reviewed, and the NASA page's delivery dates are outdated. The Surveyor 3 microbial interpretation is a debated historical question, and the Rummel and colleagues analysis is a retrospective reassessment rather than a new experiment. Mass, dimensions, power and sensitivity values are not publicly specified in the sources reviewed for most examples and are not estimated.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Hollick, M. and O'Brien, B. (2013). Space Weather. Full title not retrieved in this run.",
+          "publisher": "Wiley / American Geophysical Union (Space Weather)",
+          "url": "https://doi.org/10.1002/2013SW000978",
+          "notes": "Publisher returned HTTP 403; cited from abstract-level and press coverage only."
+        },
+        {
+          "title": "In situ measurements of lunar dust at the Chang'E-3 landing site in the northern Mare Imbrium",
+          "publisher": "Li, D. et al., Journal of Geophysical Research: Planets",
+          "url": "https://doi.org/10.1029/2019JE006054",
+          "notes": "Abstract-level only; full paper not accessed."
+        },
+        {
+          "title": "Developing a QCM for Measuring Dust in the Lunar Environment (LPSC Abstract 2671)",
+          "publisher": "Hooper, D. et al., 50th Lunar and Planetary Science Conference, 2019",
+          "url": "https://ui.adsabs.harvard.edu/abs/2019LPI....50.2671H/abstract",
+          "notes": "Authors' self-assessed TRL 4; proposed 2021 lunar deployment target."
+        },
+        {
+          "title": "Restoration and Reexamination of Data from the Apollo 11, 12, 14, and 15 Dust, Thermal and Radiation Engineering Measurements Experiments",
+          "publisher": "McBride, M. J., Williams, D. R., Hills, H. K. and Turner, N.; NASA NTRS record 20120017948",
+          "url": "https://ntrs.nasa.gov/api/citations/20120017948/downloads/20120017948.pdf"
+        },
+        {
+          "title": "Surface and Exosphere Alterations by Landers (SEAL)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/technology/technology-highlights/surface-and-exosphere-alterations-by-landers",
+          "notes": "Page dates 1 Sep 2020 (original) and 14 Aug 2024 (last updated); future-tense delivery dates are outdated."
+        },
+        {
+          "title": "A Microbe on the Moon? Surveyor III and Lessons Learned for Future Sample Return Missions (Streptococcus mitis on Surveyor III)",
+          "publisher": "Rummel, J. D., Allton, J. H. and Morrison, D.; NASA-hosted slide presentation",
+          "url": "https://smd-cms.nasa.gov/wp-content/uploads/2023/04/A_Microbe_on_the_Moon_TAGGED.pdf",
+          "notes": "Publication date not shown on the document; secondary coverage dates the reassessment to around 2011."
+        },
+        {
+          "title": "Surveyor III: Bacterium isolated from lunar-retrieved TV camera",
+          "publisher": "Mitchell, F. J. and Ellis, W. L., Proceedings of the Second Lunar Science Conference, 1971",
+          "url": null,
+          "notes": "Cited through the Rummel and colleagues slides; not accessed directly; no URL verified."
+        },
+        {
+          "title": "Rediscovered Apollo data measures how fast Moon dust piles up",
+          "publisher": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2013/11/131120143804.htm",
+          "notes": "Press coverage of the Hollick and O'Brien reanalysis."
+        },
+        {
+          "title": "Chinese researchers conduct in situ measurement of lunar dust at Chang'e-3 landing site",
+          "publisher": "CGTN",
+          "url": "https://news.cgtn.com/news/2019-09-21/Chinese-researchers-conduct-in-situ-measurement-of-lunar-dust-K9YE7HiOSA/index.html",
+          "notes": "News coverage."
+        },
+        {
+          "title": "Moon microbe mystery solved: Apollo 12",
+          "publisher": "Space.com",
+          "url": "https://www.space.com/11536-moon-microbe-mystery-solved-apollo-12.html",
+          "notes": "Secondary coverage of the Surveyor 3 microbial analysis."
+        },
+        {
+          "title": "Simulations show lander exhaust cloud on the Moon",
+          "publisher": "Phys.org (2020)",
+          "url": "https://phys.org/news/2020-08-simulations-lander-exhaust-cloud-lunar.pdf",
+          "notes": "Secondary coverage of an APL simulation of lander exhaust dispersal."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo DTREM example": "payload.article.physical_specifications.examples[0].images",
+      "Chang'e-3 SQCM example": "payload.article.physical_specifications.examples[1].images",
+      "student QCM example": "payload.article.physical_specifications.examples[2].images",
+      "SEAL example": "payload.article.physical_specifications.examples[3].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No images were included because no direct image asset URL was verified in this run; every images array is empty. Source URLs have query strings and fragments removed."
+  },
+  "data_quality_notes": [
+    "Images: no direct image asset URLs were verified in this run, so no image objects are included. The Markdown article contains no image embeds.",
+    "Chang'e-3 SQCM values (0.0065 mg/cm2 at 190 cm over 12 lunar daytimes; ~21.4 micrograms/cm2 per year) come from the Li and colleagues (2019) abstract and secondary news coverage. The DOI landing page returned HTTP 403 and the full paper was not accessed.",
+    "Hollick and O'Brien (2013) dust accretion figure (~100 micrograms/cm2/year) comes from abstract-level and press coverage. The DOI landing page returned HTTP 403. Summaries differ on whether the value is an upper limit or a rate; verify against the full paper before reuse.",
+    "The Surveyor 3 microbial case rests on the Rummel, Allton and Morrison slide presentation and the Mitchell and Ellis (1971) reference cited within it. Mitchell and Ellis was not accessed directly. The 1967 landing date of Surveyor 3 was not re-verified in this run and is not stated in the article body.",
+    "The student QCM TRL rating (TRL 4) and 2021 lunar-deployment target are the authors' own statements; no flight evidence was found.",
+    "SEAL status is taken from a NASA technology page last updated 14 August 2024 whose delivery dates (late 2020; before end of 2021) are outdated. Flight status is unverified.",
+    "The Chang'e-3 landing site name 'Sinus Iridum' is taken from news reporting and is recorded only as part of the mission history, not as a site recommendation.",
+    "Phys.org and CGTN are secondary news sources used for context only.",
+    "Mass, dimensions and power values are not publicly specified in the sources reviewed for three of four examples; mass_kg for SEAL (5.7 kg) is from the NASA page.",
+    "The payload name is generic and no flown instrument with exactly this name was identified; the examples are related monitoring instruments and are not claimed to be equivalent."
+  ]
+}

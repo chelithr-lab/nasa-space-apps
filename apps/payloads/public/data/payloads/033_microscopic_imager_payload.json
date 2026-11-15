@@ -1,0 +1,463 @@
+{
+  "catalogue_id": 33,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 33,
+    "name": "Microscopic imager",
+    "article": {
+      "overview": "A microscopic imager is a camera designed to photograph very small areas of a sample or surface, typically a few millimetres to a few centimetres across, at a resolution fine enough to show individual grains, crystals, layers and textures. On a planetary surface it is usually mounted on a robotic arm so that it can be placed close to a rock, soil patch or sample. Its scientific value lies in linking what the eye or a wider camera sees with the physical texture of the material: grain size, shape, sorting, cohesion, porosity, coatings and fractures [1][3][6]. The term 'microscopic' is used loosely. Some instruments in this class are true optical microscopes with built-in illumination, while others are close-up cameras with a modest magnification.\n\nFlown examples so far all come from Mars. The Athena Microscopic Imager (MI) on NASA's Mars Exploration Rovers operated from 2004 [1][12]. The Phoenix lander's MECA Optical Microscope (OM) imaged Martian soil in 2008 [6][7][10]. The Curiosity rover's Mars Hand Lens Imager (MAHLI) and the Perseverance rover's WATSON camera, part of the SHERLOC instrument, are close-range imagers that serve a similar role [3][5][9][13]. None of these is a lunar flight. This article does not identify any microscopic imager that has been confirmed as operating on the Moon. A lunar-rover microscope, CAM-M, was planned for the United Arab Emirates' Rashid rover, but its lander was lost in 2023 before the instrument returned any lunar data [14][15]. The 2025 status of its follow-on rover is unconfirmed [16].",
+      "description": "A microscopic imager is normally a fixed-focus or focusable camera on a short working distance, with a small field of view. The MI, for example, has a field of view of about 31 mm square at its best-focus distance of about 66 mm [1]. Imagers in this class are commonly characterised by their pixel scale, which is the size on the target that one pixel covers. A pixel scale of about 30 micrometres per pixel means that a grain roughly a few tenths of a millimetre across covers many pixels, which is sufficient to measure its shape and texture [1].\n\nInstruments differ in three main ways. First, they differ in how they focus: some have a single fixed focus and rely on the instrument being placed at a known distance, while others, such as MAHLI and WATSON, can be focused over a wide range of working distances [3][5]. Second, they differ in illumination. The Mars Exploration Rover MI used only sunlight or skylight, whereas the Phoenix optical microscope and the MAHLI and WATSON cameras carry their own light-emitting diodes (LEDs) [1][3][5][6]. Third, they differ in how they handle dust. The MI has a retractable dust cover, and the MAHLI optics assembly is sealed to keep out dust [1][3].\n\nA lunar microscopic imager would have the same basic design problem as its Mars counterparts: it needs to see very small particles of regolith, which are electrostatically charged and can levitate and move across the surface [14]. A rover-mounted version could in principle sample the undisturbed top layer at many locations without collecting a sample [14].",
+      "scientific_purpose_and_applications": "Grain size and texture. Close-range images show particle size, shape, sorting and surface texture. The Phoenix optical microscope was designed to show colour, grain size, texture, porosity and magnetic behaviour of soil [6].\nLayers, coatings and alteration. The MI was used to examine thin coatings on abraded rock surfaces and the grains beneath them, which helped interpret weathering and alteration [2].\nContext for analytical instruments. The MI's 31 mm field of view was chosen to give good coverage of the approximately 38 mm field of view of the Athena APXS instrument, so that close-up images could be linked to chemistry measurements [1]. The same logic applies to a lunar payload paired with an analytical instrument such as the APXS (catalogue entry 054), the X-ray fluorescence spectrometer (055) or the X-ray spectrometer (056). A sample imaging microscope (163) addresses returned or collected samples and is discussed separately.\nSurface-layer and dust studies. For the Moon, a close-up imager has been proposed to study the top regolith layer, which is most exposed to space weathering and most affected by electrostatic dust transport [14].\nRepeated observation at a consistent scale. WATSON was planned to build a consistent dataset of Martian rock textures by imaging targets at fixed working distances [5].",
+      "operating_principle": "A close-up imager forms an image through a lens. The lens focuses the scene onto a detector, usually a charge-coupled device (CCD) array with a fixed number of pixels. For a given working distance the pixel scale depends on the lens focal length and the detector pixel size. The MI paper gives a 20 mm focal length, a working distance of about 66 mm, 12 micrometre pixels and a design sampling of 30 micrometres per pixel [1]. These published figures were not reconciled here with a simple thin-lens calculation, so the sampling value is quoted as published. The MI optics are a fixed-focus f/15 Cooke triplet, providing a depth of field of about ±3 mm [1]. Moving the instrument closer gives finer pixel scale but less depth of field, so the arm must place the instrument accurately [1][3].\n\nFocusable imagers change their focus by moving a lens group and report a working distance from the focus position. MAHLI, for example, changes its effective focal length from 18.4 mm at a 22.5 mm working distance to 21.4 mm at infinity [3]. WATSON estimates the working distance using an autofocus routine and a range-finding procedure that uses the arm position [5].\n\nIllumination and colour are handled differently by each design. The MI acquires images only with natural light, but its dust cover window is tinted orange, so that images taken with and without the cover can be combined to recover some colour information [1]. The Phoenix optical microscope uses red, green and blue LEDs for colour and an ultraviolet LED to reveal fluorescence [6]. MAHLI and WATSON use filtered microlenses in a Bayer pattern for colour and white and ultraviolet LEDs for night imaging [3][5].",
+      "scientific_importance": "Microscopic imaging fills a gap between wide-angle cameras and analytical instruments. Wide-angle images show landforms and outcrops, and analytical instruments give chemistry from small spots. A close-range image links the two by showing the physical texture of the very material being analysed [1][3]. On Mars, the MI results were used to describe thin coatings on rocks that were abraded by the rovers' Rock Abrasion Tool and to identify mineral grains beneath those coatings [2]. The Phoenix optical microscope produced grain-scale images of Martian soil [6][7].\n\nFor the Moon, a microscopic imager would address the grain-scale properties of regolith in place, rather than only the properties of returned samples. The proposed CAM-M was intended to resolve most of the lunar particle size distribution in its undisturbed environment [14]. No lunar surface microscopic imager has yet been confirmed as flown in the sources reviewed, so these lunar objectives remain untested.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a microscopic imager. Each example below describes a specific instrument, states whether it has flown, and gives values only where the cited source publishes them. Values that are not publicly specified are recorded as null in the JSON. Pixel scales, focal lengths and masses come from different designs with different optics and detectors, so the numbers should not be compared directly. The status and technology summary below is not a performance comparison.",
+        "examples": [
+          {
+            "name": "Mars Exploration Rover Athena Microscopic Imager (MI)",
+            "type": "Flown Mars instrument (MER-A Spirit and MER-B Opportunity); not a lunar instrument",
+            "status": "flown on Mars",
+            "status_detail": "Operated on Mars on both MER rovers from 2004 [1][2][12]; Spirit operations ended 25 May 2011 [11].",
+            "technology": "Fixed-focus camera on the Instrument Deployment Device arm; CCD detector; solar or skylight illumination only; retractable dust cover with Kapton window",
+            "focal_length_mm": 20,
+            "focal_ratio": "f/15 (fixed-focus Cooke triplet)",
+            "best_focus_working_distance_mm": 66,
+            "field_of_view_mm": {
+              "2003_jgr_paper": "31 x 31 at best focus, 1024 x 1024 CCD",
+              "2005_abstract": "32 x 32"
+            },
+            "pixel_scale_micrometres_per_pixel": {
+              "2003_jgr_paper_design_sampling": 30,
+              "2005_abstract": 31
+            },
+            "detector": "1024 x 1024 pixel CCD; 12 micrometre pixel pitch [1]",
+            "spectral_band_nm": [
+              400,
+              700
+            ],
+            "magnification": 0.4,
+            "depth_of_field_mm": "about +/-3",
+            "mass_kg": 0.21,
+            "mass_note": "210 g without dust cover and contact sensor [1]",
+            "system_mass_kg_as_printed": 0.29,
+            "system_mass_note": "approximately 290 g as printed in the text layer, which renders the symbol unreliably [1]",
+            "power_w": {
+              "ccd_flush_maximum": 4.3,
+              "integration_and_readout": 2.5,
+              "dust_cover_motor": 0.5
+            },
+            "voltages_v": {
+              "from_rover": "+7 and -10",
+              "dust_cover_motor": 5
+            },
+            "dimensions_mm": {
+              "optics_and_ccd_assembly": "48.6 high (along boresight) x 51 long x 41 wide",
+              "electronics_box": "78 x 75.1 x 34 (including connector and mounting hardware)"
+            },
+            "temperature_c": {
+              "ccd_full_well_and_read_noise_specified_range": "-55 to +5",
+              "camera_non_operating_survival_range": "-110 to +55"
+            },
+            "source_urls": [
+              "https://doi.org/10.1029/2003JE002076",
+              "https://ntrs.nasa.gov/api/citations/20050169992/downloads/20050169992.pdf",
+              "https://science.nasa.gov/photojournal/adirondacks-finer-side"
+            ],
+            "images": [
+              {
+                "id": "mer_mi_adirondack_pia05177",
+                "description": "Microscopic Imager image of the rock target 'Adirondack' on Mars, taken by the Spirit rover's Athena Microscopic Imager.",
+                "image_type": "Mars rover Microscopic Imager image",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia05/pia05177/PIA05177.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/adirondacks-finer-side",
+                "publisher": "NASA Photojournal",
+                "credit": "NASA/JPL/USGS",
+                "caption": "PIA05177, \"Adirondack's Finer Side\": a Mars Exploration Rover Microscopic Imager (MI) view of a rock target on Mars.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL (content/dam JPEG) returned HTTP 200 (image/jpeg) and the asset is identified on Photojournal page PIA05177 (Instrument: Microscopic Imager; Spirit; credit NASA/JPL/USGS). TIFF and full-resolution downloads not checked. Use is subject to NASA image-use policy on the source page."
+              }
+            ],
+            "narrative": "The MI was a fixed-focus camera on the end of the rover's extendable arm, the Instrument Deployment Device (IDD). It had a fixed-focus f/15 Cooke triplet, a focal length of 20 mm and a best-focus working distance of about 66 mm [1]. Its field of view was 31 × 31 mm across a 1024 × 1024 pixel CCD with 12 micrometre pixels, and it was designed to sample at 30 micrometres per pixel over 400 to 700 nm [1]. A 2005 conference abstract reports the same instrument as 31 micrometres per pixel with a 32 × 32 mm field of view and 400 to 700 nm spectral range [2]. The difference is not explained in the abstract, so both values are recorded. The optics were described as providing a magnification of 0.4 [1]. Its depth of field was about ±3 mm [1]. The MI used only solar or skylight illumination [1].\n\nA retractable dust cover protected the optics. Its Kapton window is tinted orange to restrict the spectral band to 500 to 700 nm, allowing colour information to be obtained from images taken with the cover open and closed [1]. A contact sensor placed the instrument slightly closer than its best-focus distance so that concave surfaces could be imaged in focus [1]. Published flight-unit values are a mass of 210 g without the dust cover and contact sensor, and about 290 g for the total system as printed in the text layer [1]. The camera consumed as much as 4.3 W during CCD flush and about 2.5 W during integration and readout, while the dust-cover motor required 0.5 W [1]. The optics and CCD assembly measured 48.6 mm high, 51 mm long and 41 mm wide, and the electronics box measured 78 mm × 75.1 mm × 34 mm [1]. The paper states that the MI CCD full well and read noise were specified within an operating temperature range of −55 °C to +5 °C, and that the camera's non-operating survival range was −110 °C to +55 °C [1].\n\nThese are Mars flight values, not lunar performance. The MI was operated on Mars, with the Opportunity rover's first signal on 24 January 2004 [12] and the Spirit rover's mission ending on 25 May 2011 [11]."
+          },
+          {
+            "name": "Phoenix MECA Optical Microscope (OM)",
+            "type": "Flown Mars instrument (Phoenix lander, 2008); not a lunar instrument",
+            "status": "flown on Mars",
+            "status_detail": "Phoenix last contact 2 November 2008 [10].",
+            "technology": "Fixed-focus CCD imager with red, green, blue and ultraviolet LEDs; shares readout electronics with the Robotic Arm Camera and cannot run in parallel with it [6][17]",
+            "magnification": {
+              "instrument_description": "6x",
+              "characteristics_table": 5.75,
+              "source": "[6]"
+            },
+            "pixel_scale_micrometres_per_pixel": 4,
+            "pixel_scale_note": "at the target location [6]",
+            "imaged_area_mm": {
+              "max_planck_page": "1 x 2",
+              "wustl_pds_help_page": "2 x 1 at working distance (help page also mentions a 2 x 2 mm area from two images)"
+            },
+            "detector": {
+              "max_planck_page": "256 x 512 pixel CCD",
+              "wustl_pds_help_page": "512 x 256 pixel frame-transfer CCD"
+            },
+            "focal_ratio": "f/30 doublet [17]",
+            "effective_focal_length_mm": 16.5,
+            "working_distance_mm": "about 14 [17]",
+            "uv_led_wavelength_nm": {
+              "max_planck_page": "about 350",
+              "wustl_pds_help_page": "central wavelength about 375, spectral width about 12"
+            },
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_mm": null,
+            "not_publicly_specified_note": "Mass, power and dimensions are not stated in the pages reviewed [6][17].",
+            "source_urls": [
+              "https://www2.mps.mpg.de/en/projekte/phoenix/meca-om/",
+              "https://science.nasa.gov/photojournal/microscope-image-of-a-martian-soil-surface-sample",
+              "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/PHX/Instruments/PHX%20OM.htm"
+            ],
+            "images": [
+              {
+                "id": "phoenix_meca_om_soil_pia11205",
+                "description": "Microscope image of a Martian soil surface sample from the Phoenix MECA Optical Microscope.",
+                "image_type": "Mars lander microscope image",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia11/pia11205/PIA11205.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/microscope-image-of-a-martian-soil-surface-sample",
+                "publisher": "NASA Photojournal",
+                "credit": "NASA/JPL-Caltech/University of Arizona/Imperial College London",
+                "caption": "Microscope image of a Martian soil surface sample from the Phoenix Optical Microscope (MECA), PIA11205.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL (content/dam JPEG) returned HTTP 200 (image/jpeg) and the asset is identified on Photojournal page PIA11205 (Instrument: MECA; Phoenix; image addition date 30 September 2008). Full-resolution TIFF not downloaded."
+              }
+            ],
+            "narrative": "The Phoenix Optical Microscope was a fixed-focus imager that shared its detector with the Robotic Arm Camera [6]. The instrument description gives a 6× magnification and a characteristics table gives 5.75 [6]. Pixel scale is 4 micrometres per pixel at the target location [6]. The detector is a 256 × 512 pixel CCD [6], whereas the instrument help page describes a 512 × 256 pixel frame-transfer CCD shared with the Robotic Arm Camera [17]. The imaged area is given as 1 mm × 2 mm [6] and as 2 mm × 1 mm at the working distance [17]. The help page gives an f/30 doublet with a 16.5 mm effective focal length, a working distance of about 14 mm, and red, green, blue and ultraviolet LEDs. It gives the ultraviolet centre wavelength as about 375 nm [17], while the Max Planck page gives about 350 nm [6]. These discrepancies are unresolved. The instrument was designed to show soil colour, grain size, texture, porosity and magnetic properties, and to reveal fluorescence under ultraviolet light [6].\n\nMass, power and dimensions for the Optical Microscope are not stated in the pages reviewed [6][17]. Phoenix's last contact was on 2 November 2008 [10]."
+          },
+          {
+            "name": "Curiosity Mars Hand Lens Imager (MAHLI)",
+            "type": "Flown Mars instrument (Curiosity rover); close-range colour camera rather than a true microscope",
+            "status": "flown on Mars",
+            "status_detail": "Flight image of a penny taken on sol 411 (2 October 2013) [9].",
+            "technology": "Focusable colour camera with focusable macro lens, Kodak KAI-2020CM Bayer-pattern CCD, mounted on the robotic arm turret [3]",
+            "detector": "1600 x 1200 active pixels, 7.4 micrometre square pixels (2 megapixel) [3]",
+            "working_distance_mm": {
+              "pre_flight_closest_focus": 22.5,
+              "pre_flight_focus_range": "22.5 to infinity [3]",
+              "2012_abstract_closest_focus_cm_as_summarised": "about 2.1 (full 2012 text not read) [4]"
+            },
+            "pixel_scale_micrometres_per_pixel": {
+              "at_22.5_mm": 14.5,
+              "at_66_mm": 31
+            },
+            "depth_of_field_mm": {
+              "at_22.5_mm": 0.9
+            },
+            "effective_focal_length_mm": {
+              "at_22.5_mm_working_distance": 18.4,
+              "at_infinity": 21.4
+            },
+            "illumination": "two banks of two white LEDs (commandable separately); ultraviolet LEDs at 365 nm for night imaging [3]",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_mm": null,
+            "not_publicly_specified_note": "Mass and power are not stated in the pre-flight abstract [3].",
+            "source_urls": [
+              "https://www-robotics.jpl.nasa.gov/media/documents/MAHLI%20LPI%201197.pdf",
+              "https://doi.org/10.1007/s11214-012-9910-4",
+              "https://science.nasa.gov/photojournal/mars-hand-lens-imager-sends-ultra-high-res-photo-from-mars"
+            ],
+            "images": [
+              {
+                "id": "curiosity_mahli_penny_pia17365",
+                "description": "Mars Hand Lens Imager image of a 1909 VDB penny on the MAHLI calibration target, taken at about 14 micrometres per pixel.",
+                "image_type": "Mars rover close-range colour image",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia17/pia17365/PIA17365.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/mars-hand-lens-imager-sends-ultra-high-res-photo-from-mars",
+                "publisher": "NASA Photojournal",
+                "credit": "NASA/JPL-Caltech/MSSS",
+                "caption": "PIA17365, \"Mars Hand Lens Imager Sends Ultra High-Res Photo from Mars\": a 1909 VDB penny on the MAHLI calibration target, taken on sol 411 (2 October 2013).",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset URL (content/dam JPEG) returned HTTP 200 (image/jpeg) and the asset is identified on Photojournal page PIA17365 (Instrument: MAHLI; Curiosity; credit NASA/JPL-Caltech/MSSS). Full-resolution TIFF not downloaded."
+              }
+            ],
+            "narrative": "MAHLI is a 2-megapixel colour camera with a focusable macro lens on Curiosity's robotic arm. Its detector is a Kodak KAI-2020CM Bayer-pattern CCD with 1600 × 1200 active 7.4 micrometre square pixels [3]. The pre-flight description gives a focus range from 22.5 mm to infinity. At 22.5 mm the pixel scale is about 14.5 micrometres per pixel with a depth of field of about 0.9 mm. At 66 mm the resolution is about 31 micrometres per pixel, similar to the MER MI [3]. The effective focal length ranges from 18.4 mm at 22.5 mm working distance to 21.4 mm at infinity [3]. The illumination is two banks of two white LEDs and ultraviolet LEDs at 365 nm for night-time imaging of fluorescent materials [3].\n\nThe 2012 investigation paper, as summarised in its abstract, describes working distances from about 2.1 cm to infinity and a pixel scale of about 14 micrometres per pixel at the closest distance [4]. This is not the same as the pre-flight 22.5 mm value. The full 2012 text was not read for this article, so the discrepancy is recorded as unresolved. The 2013 flight image of the penny was taken at what the Photojournal describes as the camera's highest possible resolution, about 14 micrometres per pixel [9]. Mass and power for MAHLI are not stated in the pre-flight abstract [3]."
+          },
+          {
+            "name": "Perseverance SHERLOC WATSON camera",
+            "type": "Flown Mars instrument (Perseverance rover; landed 18 February 2021 [13]); part of SHERLOC",
+            "status": "flown on Mars; values are anticipated pre-landing figures",
+            "technology": "Focusable colour camera, Bayer-pattern filter over a 1600 x 1200 pixel CCD; white light and 365 nm UV LEDs [5]",
+            "working_distance_cm": {
+              "closest": 1.8,
+              "farthest": "infinity"
+            },
+            "pixel_scale_micrometres_per_pixel_anticipated": {
+              "27_cm": 105,
+              "10_cm": 43,
+              "7_cm": 32,
+              "3_to_4_cm": "18 to 21"
+            },
+            "separate_sherloc_aci_pixel_scale_micrometres_per_pixel": 10.1,
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_mm": null,
+            "not_publicly_specified_note": "Mass, power and dimensions are not given in the abstract [5].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20220000131/downloads/WATSON%20LPSC52%20abstract_ScanCopy.pdf",
+              "https://spaceflightnow.com/2021/02/18/nasa-rover-reaches-mars-on-mission-in-search-for-signs-of-past-life/"
+            ],
+            "images": [],
+            "narrative": "WATSON, the Wide Angle Topographic Sensor for Operations and eNgineering, is part of the SHERLOC instrument. Its colour image is made with a Bayer-pattern filter over a 1600 × 1200 pixel CCD, and the abstract compares its use with that of MAHLI on Curiosity [5]. It is focusable from a working distance of 1.8 cm to infinity and has white-light and 365 nm ultraviolet LEDs [5]. The anticipated pixel scales are about 105 micrometres per pixel at 27 cm, about 43 micrometres per pixel at 10 cm, about 32 micrometres per pixel at 7 cm, and about 18 to 21 micrometres per pixel at 3 to 4 cm [5]. The SHERLOC Autonomous Context Imager (ACI) is a separate camera that images at about 10.1 micrometres per pixel [5]. Mass and power for WATSON are not given in the abstract [5]. The Perseverance landing on 18 February 2021 is reported in [13]."
+          },
+          {
+            "name": "Rashid CAM-M (Emirates Lunar Mission)",
+            "type": "Planned lunar rover microscope; not confirmed flown",
+            "status": "planned; not confirmed flown",
+            "status_detail": "Carried on the Rashid rover, which was on the Hakuto-R Mission 1 lander that lost contact in April 2023 [15]. Rashid 2 completion reported November 2025 [16]; CAM-M presence on Rashid 2 not confirmed.",
+            "technology": "Compact close-up optical imager designed for mounting on a lunar rover [14]",
+            "scale": "tens of micrometres (concept statement) [14]",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_mm": null,
+            "pixel_scale_micrometres_per_pixel": null,
+            "field_of_view_mm": null,
+            "not_publicly_specified_note": "Expected performance values appear in the body of [14] and were not extracted; these are recorded as not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://p.iafastro.directory/iac/paper/id/64733/abstract-pdf/IAC-21,A3,2C,8,x64733.brief.pdf",
+              "https://www.thenationalnews.com/uae/2023/04/26/rashid-rover-ispace-moon/",
+              "https://www.thenationalnews.com/news/uae/2025/11/03/uae-mission-to-land-on-moon-is-one-giant-leap-closer-with-completion-of-rashid-rover-2"
+            ],
+            "images": [],
+            "narrative": "The CAM-M was described as an optical microscope to be carried on the Rashid rover, to investigate the lunar surface at the scale of tens of micrometres [14]. A 2021 conference paper presented its concept, expected performance and operating concepts, and the paper was designed for mounting on a lunar rover so that undisturbed surface layers could be sampled at many locations [14]. The performance values are in the body of that paper and were not extracted for this article, so the pixel scale, field of view, mass and power are recorded as not publicly specified in the sources reviewed. The Rashid rover was carried on Japan's Hakuto-R Mission 1 lander, which lost contact before landing in April 2023 [15]. Rashid 2 was reported as completed in November 2025 [16]. Whether CAM-M is part of the Rashid 2 payload could not be confirmed."
+          }
+        ],
+        "dimensions_and_proportions": "For the flown Mars examples, published dimensions are instrument-specific. The MI optics and CCD assembly measure 48.6 mm high, 51 mm long and 41 mm wide, and its electronics box measures 78 mm × 75.1 mm × 34 mm [1]. The MAHLI, WATSON, Phoenix OM and CAM-M envelope dimensions are not publicly specified in the sources reviewed. The Phoenix optics and detector dimensions are not given in the pages reviewed [6][17].",
+        "mass_and_weight": "The MI is the only example in this article with a published mass for the camera itself: 210 g without its dust cover and contact sensor, and about 290 g for the total system as printed [1]. The other examples' masses are not publicly specified in the sources reviewed. The scale of mass and volume matters for lunar payloads because a microscope would need to be mounted on an arm or rover with a stable, vibration-isolated platform [1][14].",
+        "power_requirements": "The MI drew up to 4.3 W during CCD flush and about 2.5 W during integration and readout, with 0.5 W for the dust-cover motor [1]. Power for the MAHLI, WATSON, Phoenix OM and CAM-M is not publicly specified in the sources reviewed [3][5][6][14]."
+      },
+      "environmental_and_operational_requirements": "Close-range imagers must handle a dusty, thermally variable surface and an arm that must place them accurately. The MI was designed to survive a non-operating range of −110 °C to +55 °C and to be operated within a CCD performance range of −55 °C to +5 °C [1]. Its dust cover had to protect the optics during operation on Mars [1]. Lunar conditions are different, with no atmosphere, extreme day-night temperature swings and electrostatically charged dust, and a lunar microscope would need the same type of protection, though its requirements have not been published for any lunar instrument [14].\n\nThe depth of field of close-range imagers is small. The MI's depth of field was about ±3 mm [1], and MAHLI's was about 0.9 mm at its closest working distance [3]. Accurate positioning relative to the target is therefore essential. The MI used a contact sensor [1], WATSON uses range-finding based on autofocus and arm position [5], and the Phoenix sample wheel moved soil into the microscope's view [6].\n\nIllumination is an operational constraint. The MI relied on sunlight or skylight, so its images depended on the target's illumination [1]. The Phoenix Optical Microscope, MAHLI and WATSON use their own LEDs, including ultraviolet LEDs for fluorescence, which allows imaging at night [3][5][6].",
+      "limitations": "Small field of view. A single image covers a few millimetres to a few tens of millimetres, so a context image is needed to place the close-up in its surroundings [1][5].\nShallow depth of field. Only a thin slice of a rough surface is in focus at one time. The MI and MAHLI both have depths of field of only a few millimetres or less [1][3].\nPositioning and contact risk. The arm must place the imager accurately and the surface must not be touched unnecessarily, especially where contamination matters [1][5].\nColour and illumination limitations. The MI could not image in darkness and used a filtered dust-cover window for colour [1]. Phoenix and MAHLI colour depends on their LEDs and filters [3][6].\nPixel scale is not feature size. A pixel scale describes the sampling, not necessarily the smallest resolvable detail. The distinction should be checked against each instrument's calibration data before a feature size is quoted.\nNo lunar flight evidence. No lunar surface microscopic imager was identified in the sources reviewed. Searches of Chang'e-6 and Chandrayaan-3 payload descriptions did not identify a microscope on either mission. This is an absence of evidence in the sources reviewed, not a confirmed negative.",
+      "transportation_and_deployment": {
+        "overview": "A microscopic imager is a surface payload. The flown examples were carried on or near the surface on robotic arms, and no lunar example has been confirmed. The MI was mounted on the end of the Instrument Deployment Device arm [1]. WATSON is mounted on the Perseverance robotic arm turret [5]. The Phoenix Optical Microscope imaged soil delivered by the lander's scoop onto a sample wheel [6]. The CAM-M was designed to be mounted on a lunar rover, which would sample the undisturbed surface at numerous locations [14].",
+        "transportation_process": [
+          "Integrate the imager on Earth with its optics, detector, dust protection, light sources and electronics. The MI flight units were assembled, tested and calibrated at JPL before integration on the rover [1].\n2. Protect the optics for launch and landing. The MI used a dust cover that was opened only for imaging, and its contact sensor was placed outside the field of view [1].\n3. Launch and transfer on a carrier. The MI and MAHLI were carried to Mars on their rovers and deployed there [1][3]. No lunar transfer has been demonstrated for a microscopic imager in the sources reviewed.\n4. Deploy by arm or scoop. The imager is placed near the target by an arm or a sample-handling mechanism, using a contact sensor or range-finding [1][5][6].\n5. Calibrate and image. Colour and focus are calibrated against known targets [1][3].\n6. Operate under power and thermal limits, and downlink images within the limits of the data budget [1]."
+        ],
+        "deployment_methods": "The flown Mars examples were deployed on robotic arms or within sample-handling mechanisms. The MI was positioned by the Instrument Deployment Device [1]. MAHLI is mounted on Curiosity's robotic arm turret [3]. WATSON is mounted at the end of the Perseverance robotic arm [5]. The Phoenix OM worked with a sample wheel and translation stage that moved soil into its view [6]. The CAM-M concept is for a lunar rover-mounted instrument [14].",
+        "historical_examples": "Mars Exploration Rover MI, from 2004 on Spirit and Opportunity [1][2][11][12].\nPhoenix MECA Optical Microscope, 2008 [6][7][10].\nCuriosity MAHLI, on the Curiosity rover (images in use from 2013) [3][9].\nPerseverance SHERLOC WATSON, from 2021 [5][13].\nCAM-M, planned for the Rashid rover on Hakuto-R Mission 1, which was lost in 2023 [14][15].",
+        "compatibility_assessment": "No compatibility with any lunar lander, rover or crewed vehicle is asserted here. The CAM-M was designed for a lunar rover, but the 2025 completion of the Rashid 2 rover does not confirm which payloads it carries or what delivery vehicle it will use [14][16]. A lunar microscopic imager would need verified interface data: mass, envelope, arm or mount interface, field-of-view clearance, dust protection, thermal environment, power, data rate, illumination, and vibration isolation from the lander or rover.",
+        "images": []
+      },
+      "historical_significance": "The MI on the Mars Exploration Rovers provided close-range textural images of rocks and soils on Mars [1][2]. The Phoenix optical microscope added close-range images of Martian soil [6][7]. MAHLI and WATSON extended the close-range record to Mars rovers that carry analytical instruments [3][5]. For the Moon, the lack of a confirmed microscopic imager is itself informative: the grain-scale study of lunar material has relied largely on returned samples, and the CAM-M concept was proposed to address the undisturbed surface [14].",
+      "limitations_and_uncertainties": "The points below list the evidence gaps, source conflicts and scope limits that affect how far the numbers in this article can be used. Each point names the source that raises it, and none of them has been resolved by this article.\n\nClass, not design. 'Microscopic imager' names a class of instruments. The Mars examples differ in focus, illumination, detector and purpose, and their numbers should not be compared directly.\nMI resolution values differ between sources. The 2003 paper gives 30 micrometres per pixel and 31 mm × 31 mm [1]. The 2005 abstract gives 31 micrometres per pixel and 32 mm × 32 mm [2]. The reason is not explained in the sources read.\nPhoenix OM values conflict. The magnification (6× or 5.75), the imaged area (1 mm × 2 mm or 2 mm × 1 mm), the CCD format (256 × 512 or 512 × 256 pixels) and the ultraviolet wavelength (about 350 nm or 375 nm) differ between [6] and [17]. The mass, power and dimensions are not published in the pages reviewed.\nMAHLI working distance conflicts. The pre-flight abstract gives 22.5 mm as the closest focus [3]. The 2012 abstract, as summarised, gives about 2.1 cm [4]. The full 2012 text was not read for this article.\nWATSON values are anticipated. The figures come from a 2021 abstract written before landing [5], and the flight-calibrated values were not checked.\nCAM-M values are not extracted. The 2021 paper contains expected performance, but the numerical values were not extracted from the paper body [14]. Its current status is not confirmed [15][16].\nNo lunar flight identified. No lunar surface microscopic imager was confirmed as flown in the sources reviewed. Searches of Chang'e-6 and Chandrayaan-3 did not identify one, and Chang'e lab studies of returned samples are outside the scope of this in-situ article.\nPhoenix end date. The last-contact date is taken from the NASA astrobiology mission page [10], which was not read in full for this article.\nImages. Three direct NASA image assets were verified to return HTTP 200 and to be identified on their source pages. Full-resolution downloads were not checked. Images for the WATSON and CAM-M examples were not verified and are not shown.\nLunar landing-site or location recommendations are deliberately not included; the user has deferred them.",
+      "images": [
+        {
+          "id": "mer_mi_adirondack_pia05177",
+          "description": "Microscopic Imager image of the rock target 'Adirondack' on Mars, taken by the Spirit rover's Athena Microscopic Imager.",
+          "image_type": "Mars rover Microscopic Imager image",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia05/pia05177/PIA05177.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/adirondacks-finer-side",
+          "publisher": "NASA Photojournal",
+          "credit": "NASA/JPL/USGS",
+          "caption": "PIA05177, \"Adirondack's Finer Side\": a Mars Exploration Rover Microscopic Imager (MI) view of a rock target on Mars.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL (content/dam JPEG) returned HTTP 200 (image/jpeg) and the asset is identified on Photojournal page PIA05177 (Instrument: Microscopic Imager; Spirit; credit NASA/JPL/USGS). TIFF and full-resolution downloads not checked. Use is subject to NASA image-use policy on the source page."
+        },
+        {
+          "id": "phoenix_meca_om_soil_pia11205",
+          "description": "Microscope image of a Martian soil surface sample from the Phoenix MECA Optical Microscope.",
+          "image_type": "Mars lander microscope image",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia11/pia11205/PIA11205.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/microscope-image-of-a-martian-soil-surface-sample",
+          "publisher": "NASA Photojournal",
+          "credit": "NASA/JPL-Caltech/University of Arizona/Imperial College London",
+          "caption": "Microscope image of a Martian soil surface sample from the Phoenix Optical Microscope (MECA), PIA11205.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL (content/dam JPEG) returned HTTP 200 (image/jpeg) and the asset is identified on Photojournal page PIA11205 (Instrument: MECA; Phoenix; image addition date 30 September 2008). Full-resolution TIFF not downloaded."
+        },
+        {
+          "id": "curiosity_mahli_penny_pia17365",
+          "description": "Mars Hand Lens Imager image of a 1909 VDB penny on the MAHLI calibration target, taken at about 14 micrometres per pixel.",
+          "image_type": "Mars rover close-range colour image",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia17/pia17365/PIA17365.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/mars-hand-lens-imager-sends-ultra-high-res-photo-from-mars",
+          "publisher": "NASA Photojournal",
+          "credit": "NASA/JPL-Caltech/MSSS",
+          "caption": "PIA17365, \"Mars Hand Lens Imager Sends Ultra High-Res Photo from Mars\": a 1909 VDB penny on the MAHLI calibration target, taken on sol 411 (2 October 2013).",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL (content/dam JPEG) returned HTTP 200 (image/jpeg) and the asset is identified on Photojournal page PIA17365 (Instrument: MAHLI; Curiosity; credit NASA/JPL-Caltech/MSSS). Full-resolution TIFF not downloaded."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "mer_mi_adirondack_pia05177",
+          "description": "Microscopic Imager image of the rock target 'Adirondack' on Mars, taken by the Spirit rover's Athena Microscopic Imager.",
+          "image_type": "Mars rover Microscopic Imager image",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia05/pia05177/PIA05177.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/adirondacks-finer-side",
+          "publisher": "NASA Photojournal",
+          "credit": "NASA/JPL/USGS",
+          "caption": "PIA05177, \"Adirondack's Finer Side\": a Mars Exploration Rover Microscopic Imager (MI) view of a rock target on Mars.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL (content/dam JPEG) returned HTTP 200 (image/jpeg) and the asset is identified on Photojournal page PIA05177 (Instrument: Microscopic Imager; Spirit; credit NASA/JPL/USGS). TIFF and full-resolution downloads not checked. Use is subject to NASA image-use policy on the source page."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Athena Microscopic Imager investigation",
+          "citation": "Herkenhoff, K. E. et al., \"Athena Microscopic Imager investigation\", Journal of Geophysical Research 108(E12), 8065. American Geophysical Union, 2003. doi:10.1029/2003JE002076.",
+          "url": "https://doi.org/10.1029/2003JE002076"
+        },
+        {
+          "number": 2,
+          "title": "Overview of Athena Microscopic Imager results",
+          "citation": "Herkenhoff, K. E. et al., \"Overview of Athena Microscopic Imager results\", Lunar and Planetary Science XXXVI, abstract 1778. Lunar and Planetary Institute, 2005.",
+          "url": "https://ntrs.nasa.gov/api/citations/20050169992/downloads/20050169992.pdf"
+        },
+        {
+          "number": 3,
+          "title": "The Mars Science Laboratory (MSL) Mars Hand Lens Imager (MAHLI) flight instrument",
+          "citation": "Edgett, K. S. et al., \"The Mars Science Laboratory (MSL) Mars Hand Lens Imager (MAHLI) flight instrument\", Lunar and Planetary Science XL, abstract 1197. Lunar and Planetary Institute, 2009.",
+          "url": "https://www-robotics.jpl.nasa.gov/media/documents/MAHLI%20LPI%201197.pdf"
+        },
+        {
+          "number": 4,
+          "title": "Curiosity's Mars Hand Lens Imager (MAHLI) investigation",
+          "citation": "Edgett, K. S. et al., \"Curiosity's Mars Hand Lens Imager (MAHLI) investigation\", Space Science Reviews 170(1–4): 259–317. Springer, 2012. doi:10.1007/s11214-012-9910-4 (abstract-level summary consulted; full text not read).",
+          "url": "https://doi.org/10.1007/s11214-012-9910-4"
+        },
+        {
+          "number": 5,
+          "title": "The Mars 2020 WATSON imaging subsystem of the SHERLOC investigation and anticipated early results",
+          "citation": "Minitti, M. E. et al., \"The Mars 2020 WATSON imaging subsystem of the SHERLOC investigation and anticipated early results\", Lunar and Planetary Science 52, abstract. Lunar and Planetary Institute, 2021.",
+          "url": "https://ntrs.nasa.gov/api/citations/20220000131/downloads/WATSON%20LPSC52%20abstract_ScanCopy.pdf"
+        },
+        {
+          "number": 6,
+          "title": "MECA-OM (Optical Microscope) on Phoenix",
+          "citation": "Max Planck Institute for Solar System Research, \"MECA-OM (Optical Microscope) on Phoenix\", instrument page. MPS, date not stated.",
+          "url": "https://www2.mps.mpg.de/en/projekte/phoenix/meca-om/"
+        },
+        {
+          "number": 7,
+          "title": "Microscope Image of a Martian Soil Surface Sample",
+          "citation": "NASA/JPL-Caltech/University of Arizona/Imperial College London, \"Microscope Image of a Martian Soil Surface Sample\", NASA Photojournal PIA11205. NASA, 30 September 2008 (image addition date).",
+          "url": "https://science.nasa.gov/photojournal/microscope-image-of-a-martian-soil-surface-sample"
+        },
+        {
+          "number": 8,
+          "title": "Adirondack's Finer Side",
+          "citation": "NASA/JPL/USGS, \"Adirondack's Finer Side\", NASA Photojournal PIA05177. NASA, 30 January 2004 (image addition date).",
+          "url": "https://science.nasa.gov/photojournal/adirondacks-finer-side"
+        },
+        {
+          "number": 9,
+          "title": "Mars Hand Lens Imager Sends Ultra High-Res Photo from Mars",
+          "citation": "NASA/JPL-Caltech/MSSS, \"Mars Hand Lens Imager Sends Ultra High-Res Photo from Mars\", NASA Photojournal PIA17365. NASA, 17 October 2013 (addition date).",
+          "url": "https://science.nasa.gov/photojournal/mars-hand-lens-imager-sends-ultra-high-res-photo-from-mars"
+        },
+        {
+          "number": 10,
+          "title": "Phoenix",
+          "citation": "NASA Astrobiology, \"Phoenix\" mission page. NASA, date not stated.",
+          "url": "https://astrobiology.nasa.gov/missions/phoenix/"
+        },
+        {
+          "number": 11,
+          "title": "Mars Exploration Rovers Update: NASA Ends Spirit Mission",
+          "citation": "Rayl, A. J. S., \"Mars Exploration Rovers Update: NASA Ends Spirit Mission\", The Planetary Society, 26 May 2011.",
+          "url": "https://www.planetary.org/articles/05-26-mer-update"
+        },
+        {
+          "number": 12,
+          "title": "Mars Opportunity rover ends mission",
+          "citation": "EarthSky, \"Mars Opportunity rover ends mission\", February 2019. EarthSky, 2019.",
+          "url": "https://earthsky.org/space/mars-opportunity-rover-ends-mission-feb2019"
+        },
+        {
+          "number": 13,
+          "title": "NASA rover reaches Mars on mission in search of signs of past life",
+          "citation": "Spaceflight Now, \"NASA rover reaches Mars on mission in search of signs of past life\", 18 February 2021. Spaceflight Now, 2021.",
+          "url": "https://spaceflightnow.com/2021/02/18/nasa-rover-reaches-mars-on-mission-in-search-for-signs-of-past-life/"
+        },
+        {
+          "number": 14,
+          "title": "A regolith close-up imager on-board the Emirates Lunar Mission's Rashid rover",
+          "citation": "Els, S. et al., \"A regolith close-up imager on-board the Emirates Lunar Mission's Rashid rover\", IAC-21-A3.2C.8 (paper 64733), 72nd International Astronautical Congress. International Astronautical Federation, 2021.",
+          "url": "https://p.iafastro.directory/iac/paper/id/64733/abstract-pdf/IAC-21,A3,2C,8,x64733.brief.pdf"
+        },
+        {
+          "number": 15,
+          "title": "The National (UAE), news article on loss of contact with the Hakuto-R Mission 1 lander carrying the Rashid rover, 26 April 2023 (headline not recorded). The National, 2023.",
+          "citation": "The National (UAE), news article on loss of contact with the Hakuto-R Mission 1 lander carrying the Rashid rover, 26 April 2023 (headline not recorded). The National, 2023.",
+          "url": "https://www.thenationalnews.com/uae/2023/04/26/rashid-rover-ispace-moon/"
+        },
+        {
+          "number": 16,
+          "title": "UAE mission to land on Moon is one giant leap closer with completion of Rashid rover 2",
+          "citation": "The National (UAE), \"UAE mission to land on Moon is one giant leap closer with completion of Rashid rover 2\", 3 November 2025. The National, 2025.",
+          "url": "https://www.thenationalnews.com/news/uae/2025/11/03/uae-mission-to-land-on-moon-is-one-giant-leap-closer-with-completion-of-rashid-rover-2"
+        },
+        {
+          "number": 17,
+          "title": "MECA Optical Microscope (OM)",
+          "citation": "Phoenix Mission, \"MECA Optical Microscope (OM)\", Washington University in St. Louis Planetary Data System help pages, mission documentation. WashU PDS, date not stated.",
+          "url": "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/PHX/Instruments/PHX%20OM.htm"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Mars Exploration Rover MI example": "payload.article.physical_specifications.examples[0].images",
+      "Phoenix MECA Optical Microscope example": "payload.article.physical_specifications.examples[1].images",
+      "Curiosity MAHLI example": "payload.article.physical_specifications.examples[2].images"
+    },
+    "url_policy": "All image_url, source_page_url and reference URL values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "MI pixel scale and field of view differ between the 2003 JGR paper (30 micrometres/pixel; 31 x 31 mm) and the 2005 LPSC abstract (31 micrometres/pixel; 32 x 32 mm). The cause is not explained in either source; both values are recorded.",
+    "MI total system mass is printed as '$290 g' in the text layer of the 2003 paper; it is recorded as approximately 290 g and was not checked against the source figure.",
+    "Phoenix OM values conflict between the Max Planck instrument page and the WashU PDS help page (magnification 6x vs 5.75; imaged area 1 x 2 mm vs 2 x 1 mm; CCD 256 x 512 vs 512 x 256 pixels; UV about 350 nm vs about 375 nm). Mass, power and dimensions are not published in either page.",
+    "MAHLI closest working distance: 22.5 mm in the 2009 pre-flight abstract versus about 2.1 cm in the 2012 Space Science Reviews paper as summarised in its abstract. The 2012 full text was not read; the discrepancy is unresolved.",
+    "WATSON values are anticipated pre-landing figures from a 2021 LPSC abstract. Flight-calibrated values were not located or checked.",
+    "CAM-M expected performance values are in the body of the 2021 IAC paper and were not extracted. CAM-M flight status is unconfirmed. Whether CAM-M is on Rashid 2 is unconfirmed, and the Rashid 2 launch and landing status as of 12 November 2026 is not verified. A 2025 search summary mentioned a Firefly Blue Ghost Mission 2 delivery plan that was not verified from a primary page and is not cited.",
+    "No lunar surface microscopic imager was confirmed as flown. Searches of Chang'e-6 and Chandrayaan-3 payload descriptions did not identify one; this is an absence of evidence in the sources reviewed, not a confirmed negative.",
+    "The Phoenix last-contact date comes from the NASA Astrobiology mission page, which was checked for HTTP 200 and its summary read but not read in full. The Phoenix landing date is not separately cited.",
+    "The JPL Spirit mission page returned HTTP 403 to the link checker and was not used; the Spirit end date is cited to The Planetary Society article instead.",
+    "Several references (EarthSky, Spaceflight Now, The National 2023 and 2025 articles, Planetary Society) were checked for HTTP status and their content was taken from search summaries rather than full-page reads. The National 2023 headline was not recorded.",
+    "Image verification covers three direct NASA image assets (HTTP 200, image/jpeg, identified on their Photojournal pages). Full-resolution TIFF downloads were not checked. No WATSON or CAM-M image was included because no source-verified image was located for them.",
+    "The MI paper's 2003 specifications describe the design as built; flight-unit performance in orbit or on Mars was not separately verified beyond the operational statements cited."
+  ]
+}

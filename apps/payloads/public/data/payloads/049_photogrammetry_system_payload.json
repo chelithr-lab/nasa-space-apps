@@ -1,0 +1,318 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 49,
+    "name": "Photogrammetry system",
+    "article": {
+      "overview": "A photogrammetry system turns overlapping photographs into measurements of position, height and shape. Its defining feature is not a single instrument but a chain of three things: cameras whose geometry is calibrated well enough that the viewing direction of every pixel is known; records of where the camera was and how it was pointed; and software that finds the same ground point in several images and solves for its three-dimensional coordinates [1][2]. This entry covers that whole class for lunar work.\n\n**Scope.** In scope: flown metric and mapping cameras designed or calibrated for photogrammetric use (the Apollo 15-17 Metric Camera, and the calibrated Hasselblad cameras used on Apollo surface EVAs, as examples); the processing chain applied to those images (the Ames Stereo Pipeline, the ISIS3 sensor model and bundle adjustment, and the DLR stereo software applied to LROC NAC images); and the products made from them (control networks, digital terrain models and mosaics). Out of scope, and cross-referenced rather than duplicated: stereo camera hardware, including the Apollo close-up stereo camera and the Chang'e-3 rover panoramic camera (entry 029, Stereo camera); terrain mapping cameras as an instrument class (entry 028, Terrain mapping camera); the high-resolution and panoramic cameras (entries 027, High-resolution camera, and 026, Panoramic camera); laser altimeters (entry 047, Laser altimeter); and the digital terrain mapping system (entry 050, Digital terrain mapping system).\n\n**Status of the examples.** Every hardware example in this article was flown. The processing examples are ground-based software applied to flown imagery. No proposed, prototype or flight-qualified-but-unflown photogrammetry payload was identified in the sources read for this article.",
+      "description": "Photogrammetry begins with a geometric model of each photograph. Lens distortion, the principal point and the principal distance (the effective focal length for the calibrated geometry) are measured before flight. Fiducial marks and reseau marks, which are fixed crosses or dots that appear on the image itself, define the image coordinate frame. Film and scan deformation is corrected against those marks [1][3].\n\nEach frame also needs exterior orientation: the position and pointing of the camera when the picture was taken. For the Apollo cameras this was reconstructed decades later from original tracking and timing records, digitised from hardcopy and combined with control network solutions [1].\n\nA complete product needs three further steps. Tie points are matched automatically between overlapping images. A bundle adjustment then solves for the camera poses and the tie-point coordinates together, constrained by control points whose coordinates are known. Finally, a surface model is produced by dense image matching and interpolation, and it is referenced to an independent altimetry frame [1][2]. The 2016 Apollo 15 study used the ISIS program jigsaw for the bundle adjustment [2].",
+      "scientific_purpose_and_applications": "Photogrammetric mapping systems answer questions about surface geometry, geology and change. The Apollo mapping system was described by its present-day team as enabling mission planning, geologic mapping, geophysical process modelling, slope-dependent correction of spectral data and change detection [1]. The 2018 authors note that, apart from a few Lunar Orbiter and Ranger images and images from landed missions, the Apollo mapping images are the highest-resolution images acquired before LRO, and that they allow subtle surface change to be detected over a window of about 45 years [1].\n\nClose-range photogrammetry of astronaut photographs has a different purpose. Haase et al. used calibrated Apollo 17 Hasselblad frames, together with LROC NAC orthomosaics, to fix the positions of astronauts, instruments and surface features, and to produce traverse and station maps [3]. The study's outputs are historical reconstructions of the Apollo 17 surface activity; they are not operational recommendations.",
+      "operating_principle": "The operating principle is photogrammetric triangulation. Each image defines a line from the camera through a ground point. The same ground point seen in two or more images gives lines that intersect at one three-dimensional position, provided the camera geometry and pose are known well enough [1][3].\n\n**Metric (frame) camera.** The Apollo Metric Camera exposed frames, not strips. Its geometry was supplied to ISIS3 as a sensor model that combines the calibrated interior geometry with the exposure time and spacecraft state for each frame [1][2]. For about 150 otherwise useful AS15 frames no support data survived, so their pose was found by interpolation or by photogrammetric resection, which estimates a camera pose from known ground points [2].\n\n**Hand-held Hasselblad cameras.** The same principle applies in a two-dimensional form. Angular directions from the astronaut's camera to recognisable landmarks are measured in each frame, with the reseau used to convert pixel to image coordinates, and the directions are adjusted by least squares. Where two frames form a stereo pair, the feature can also be triangulated [3].\n\n**Software.** The Apollo Metric Camera images were processed with the Ames Stereo Pipeline (ASP), which performs stereo matching, and with ISIS3, which handles calibration and sensor models [1][4]. The ASP documentation gives an Apollo 15 Metric Camera example in which two sequential frames are reduced by a factor of four, their camera pointing is initialised from SPICE kernels and a parallel stereo step is run [4]. The DLR software used for LROC NAC stereo DTMs is a modified version of a system developed for Mars Express HRSC image processing [3].",
+      "scientific_importance": "A photogrammetric system matters when measurements must be tied to a known coordinate frame and carry an error estimate. The Apollo mapping data are important because they can be reprocessed with modern geodesy. The 2018 authors state that earlier hardcopy products could not be updated to match improved lunar coordinate knowledge and did not support quantitative surface characterisation, so digital reprocessing tied to laser-altimeter control is the stated goal [1].\n\nThe control and residual figures published for the Apollo 15 Metric Camera are internal measures. The bundle adjustments reported RMS image-measurement residuals of about 1.2 to 1.8 pixels across nadir and oblique image sets [2]. They describe how well the adjusted model fits the measured image points; they are not absolute ground accuracies and cannot be converted directly into metres. The Hasselblad study reports positions of features and equipment with accuracies of better than about 1 m in most cases, and of about 0.5 m or better at the ALSEP area of the Apollo 17 site [3]. Those figures belong to that study's network and reference frame and should not be applied to other camera systems.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a photogrammetry system. The examples are a flown frame camera designed for mapping, a flown hand-held metric camera, and two ground-based processing chains. They differ in purpose, geometry and evidence base, so their values are shown per example and are not combined or ranked. Where a source does not publish a value, the text says 'not publicly specified'.",
+        "examples": [
+          {
+            "name": "Apollo 15-17 Metric (Mapping) Camera (MC) in the Lunar Mapping Camera System",
+            "type": "Flown lunar orbital frame camera for photogrammetric mapping (Apollo 15, 16 and 17 service modules)",
+            "status": "flown (AS15, AS16, AS17; 1971-1972)",
+            "mass_kg": "not publicly specified in sources read",
+            "dimensions_mm": "not publicly specified in sources read",
+            "power_w": "not publicly specified in sources read",
+            "focal_length_mm": 76,
+            "image_format_mm": "114 mm square (image format, per Edmundson et al. 2018); the Apollo Image Archive describes metric scans as 120 x 120 mm film, not reconciled with 114 mm",
+            "scan": "Leica DSW700 photogrammetric scanner, recorded at 14-bit; scanned pixel size 5 um (200 pixels/mm per the Apollo Image Archive); processed scans stored as 16-bit TIFF",
+            "nadir_ground_sample_distance_m": 8,
+            "nominal_altitude_km": 111,
+            "nadir_frame_coverage_km": "approximately 166 x 166",
+            "along_track_overlap_pct": 78,
+            "frame_counts": "about 6,000 MC images suitable for mapping from AS15-17, three-quarters nadir (about 16% of the Moon) and the rest oblique (coverage rises to about 25%); about 2,350 useful AS15 MC images, 475 of them oblique",
+            "oblique_tilts": "25 degrees forward or aft (orbits 23 and 34); 40 degrees north or south (orbits 35 and 71)",
+            "bundle_adjustment_rms_pixels": [
+              {
+                "image_set": "nadir only",
+                "images": 1463,
+                "rms_pixels": 1.18
+              },
+              {
+                "image_set": "orbit 23 (25 degrees forward)",
+                "images": 115,
+                "rms_pixels": 1.54
+              },
+              {
+                "image_set": "orbit 34 (25 degrees aft)",
+                "images": 105,
+                "rms_pixels": 1.51
+              },
+              {
+                "image_set": "orbit 35 (40 degrees north)",
+                "images": 128,
+                "rms_pixels": 1.75
+              },
+              {
+                "image_set": "orbit 71 (40 degrees south)",
+                "images": 127,
+                "rms_pixels": 1.15
+              }
+            ],
+            "dtm_sampling": "DTM and digital image mosaics sampled at about 30 m/pixel, tied to a LOLA-based reference frame; original nadir pixel scale stated as 7 m/pixel in the 2016 Figure 9 caption",
+            "source_urls": [
+              "https://doi.org/10.5194/isprs-archives-XLII-1-133-2018",
+              "https://doi.org/10.5194/isprsarchives-XLI-B4-375-2016",
+              "https://apollo.im-ldi.com/ABOUT_SCANS/"
+            ],
+            "article_text": "**Status: flown.** The Lunar Mapping Camera System flew on Apollo 15, 16 and 17 in 1971 and 1972. It comprised a Metric Camera, a stellar camera and a laser altimeter, integrated into a single unit by the Fairchild Camera and Instrument Corporation's Space and Defense Systems branch [1]. The Metric Camera was a frame camera similar to those used in terrestrial aerial photogrammetry, and it was calibrated before flight [1].\n\n**Published configuration.** The focal length is 76 mm and the image format is stated as 114 mm square [1]. The Apollo Image Archive describes its metric film as 120 x 120 mm and scans it at 200 pixels per mm, which is a 5 um pixel [5]. The two film sizes are not reconciled in the sources read, so both are recorded. The scanned pixel size is printed as '5 m' in the 2018 text layer, which is consistent with 5 um and is read that way here [1][5]. The nominal orbital altitude was about 111 km, and a nadir frame covered about 166 x 166 km, with 78% along-track overlap [1]. The nadir ground sample distance is stated as about 8 m [1][2].\n\n**Coverage and oblique geometry.** About 6,000 MC images suitable for mapping were acquired from AS15-17. Three-quarters are nadir-looking and cover about 16% of the lunar surface; the oblique frames raise useful coverage to about 25% [1]. For Apollo 15 alone, about 2,350 useful MC images were taken in four orbits, 475 of them oblique. The camera was tilted 25 degrees forward or aft in orbits 23 and 34, and 40 degrees north or south in orbits 35 and 71 [2].\n\n**Control residuals.** The 2016 bundle adjustment reported RMS image-measurement residuals of 1.18 pixels for 1463 nadir-only images, 1.54 pixels for 115 images in orbit 23, 1.51 pixels for 105 images in orbit 34, 1.75 pixels for 128 images in orbit 35 and 1.15 pixels for 127 images in orbit 71 [2]. These are internal fit values from Table 2 of that paper, not absolute ground accuracies.\n\n**Mass, dimensions and power.** Not publicly specified in the sources read. The 2018 paper cites a table of Apollo camera characteristics from a 1972 source [1]; its values did not survive text extraction and are not used here.\n\n**Evidence limits.** The focal length and format come from a 2018 review paper that cites a 1972 source [1]. The residuals are from one adjustment for one camera on one mission set [2]. The DTM quality was still under evaluation at the time of the 2016 paper [2].",
+            "images": [
+              {
+                "id": "apollo_lunar_mapping_camera_system_fig3",
+                "description": "Apollo Lunar Mapping Camera System: the Metric Camera, stellar camera and laser altimeter integrated into a single unit.",
+                "image_type": "Hardware figure reproduced in a peer-reviewed photogrammetry paper (figure caption read from the paper text layer)",
+                "image_url": null,
+                "source_page_url": "https://doi.org/10.5194/isprs-archives-XLII-1-133-2018",
+                "publisher": "Edmundson et al. (2018), ISPRS Archives XLII-1",
+                "credit": "NASA/Fairchild (per figure caption)",
+                "caption": "Figure 3 of Edmundson et al. (2018), as printed: 'Apollo Lunar Mapping Camera System (NASA/Fairchild).'",
+                "section_placements": [
+                  "physical_specifications.examples[0].images"
+                ],
+                "notes": "No direct asset URL verified; image_url is null and the paper DOI page is the source reference. The figure was not visually inspected, so its content is described only from the caption and the paper's text, which states that the Lunar Mapping Camera System 'consisted of the MC, stellar camera, and laser altimeter integrated into a single unit (Figure 3)'."
+              }
+            ]
+          },
+          {
+            "name": "Apollo Hasselblad 500 EL data cameras (hand-held metric cameras)",
+            "type": "Flown hand-held metric camera used by Apollo surface crews (Apollo 17 documented in the source read)",
+            "status": "flown on the lunar surface; cameras left on the Moon, film magazines returned",
+            "mass_kg": "not publicly specified in sources read",
+            "dimensions_mm": "not publicly specified in sources read",
+            "power_w": "not publicly specified in sources read",
+            "lens": "Zeiss Biogon f/5.6, nominal focal length 60 mm (per Haase et al. 2019)",
+            "reseau": "5 x 5 crosses at 10 mm intervals, imaged in every frame and used to define the image coordinate system",
+            "film_format": "70 mm film (per Haase et al. 2019); the Apollo Image Archive table lists 64 x 64 mm, not reconciled",
+            "focus_detents": "three click-stop focus distances; calibrated principal distances for camera S/N 1023 of 63.0, 62.3 and 61.4 mm at 6, 10 and 50 ft focus",
+            "principal_distance_used_mm": 61.5,
+            "reseau_measurement_precision_px": 1,
+            "reseau_maximum_dislocation_px": 2,
+            "archive_scan_resolution": "colour 100 pixels/mm and black-and-white 200 pixels/mm (64 x 64 mm frames, Apollo Image Archive)",
+            "positional_accuracy_m": "better than about 1 m in most cases; about 0.5 m or better at the ALSEP area (Apollo 17, per Haase et al. 2019)",
+            "source_urls": [
+              "https://doi.org/10.1029/2018EA000408",
+              "https://apollo.im-ldi.com/ABOUT_SCANS/"
+            ],
+            "article_text": "**Status: flown on the lunar surface.** The Apollo 17 astronauts carried two electronically powered Hasselblad 500 EL data cameras during their EVAs. The cameras were left on the Moon, and only the film magazines were returned [3]. The Apollo 17 crew took 2,218 photographs on the surface [3].\n\n**Published configuration.** Haase et al. describe the Hasselblad Data cameras as metric cameras modified for use in space, accurately calibrated and fitted with a high-precision reseau plate in front of the image plane [3]. The reseau is a 5 x 5 pattern of crosses at 10 mm intervals, imaged in each frame. The lenses were Zeiss Biogon f/5.6 wide-angle optics of nominal 60 mm focal length [3]. The film is stated as 70 mm [3].\n\n**Calibration.** The calibrated principal distances for one Apollo 17 camera (S/N 1023) were 63.0, 62.3 and 61.4 mm at the 6, 10 and 50 ft focus detents. The study adopted 61.5 mm for the 74-ft setting used for panoramas, because that gave the lowest discrepancy between camera positions in the same panorama [3]. The study notes that a change of 0.1 mm in principal distance shifts the position along the visual ray by about 0.5 m [3]. The calibration for the second Apollo 17 camera (S/N 1032) was not available to the study [3].\n\n**Measurement precision.** The reseau centres were measured to a precision of about 1 pixel, and the maximum reseau dislocation was about 2 pixels, mainly at the image edges [3]. The Apollo Image Archive scans colour frames at 100 pixels/mm and black-and-white frames at 200 pixels/mm [5].\n\n**Mass, dimensions and power.** Not publicly specified in the sources read.\n\n**Evidence limits.** The film format is 70 mm in one source and 64 x 64 mm in the archive table, and the mean pixel size printed in the study's text layer ('22 m') could not be checked for its unit, so it is not used [3][5]. The Apollo 17 values should not be transferred to other missions' cameras without their own calibration reports.",
+            "images": []
+          },
+          {
+            "name": "DLR stereo processing of LROC Narrow Angle Camera images (ground processing of flown imagery)",
+            "type": "Ground-based photogrammetric processing chain applied to flown LRO NAC images (camera described in entry 028)",
+            "status": "processing software; no flight hardware; applied to flown LRO imagery",
+            "mass_kg": null,
+            "dimensions_mm": null,
+            "power_w": null,
+            "software_basis": "modified version of the DLR photogrammetric processing system developed for Mars Express HRSC image data (per Haase et al. 2019)",
+            "input": "four NAC stereo pairs at 0.5 m/pixel, with stereo angles of about 25 to 30 degrees",
+            "initial_grid_m": 8,
+            "final_grid_m": 1.5,
+            "source_urls": [
+              "https://doi.org/10.1029/2018EA000408"
+            ],
+            "article_text": "**Status: processing chain applied to flown imagery.** Haase et al. processed NAC images from NASA's Lunar Reconnaissance Orbiter with a modified version of the German Aerospace Center (DLR) stereo system, which was developed for Mars Express High Resolution Stereo Camera data [3]. The camera itself is described in entry 028. No flight hardware is attributed to this processing chain.\n\n**Published configuration.** Four NAC stereo pairs at 0.5 m/pixel, with stereo angles of about 25 to 30 degrees, formed the image base of the study's Apollo 17 DTM [3]. The DTM was built iteratively, starting from an 8 m grid derived from SELENE Terrain Camera images and ending at a 1.5 m/pixel grid, with images pre-rectified at each step [3]. Matching used an area-based multi-image matcher followed by least-squares matching to subpixel accuracy [3]. Orientation data were derived from SPICE kernels that incorporate LOLA crossover-adjusted positions [3].\n\n**Geometry limit.** The study reports that a stereo pair with a convergence angle below 10 degrees had a relatively low mean three-dimensional accuracy [3].\n\n**Mass, dimensions and power.** Not applicable to ground processing. No values are given.",
+            "images": []
+          },
+          {
+            "name": "Ames Stereo Pipeline and ISIS3 workflow for Apollo Metric Camera frames (ground processing)",
+            "type": "Ground-based stereo and cartography software workflow applied to scanned Apollo 15 Metric Camera frames",
+            "status": "software; no flight hardware; applied to flown Apollo imagery",
+            "mass_kg": null,
+            "dimensions_mm": null,
+            "power_w": null,
+            "software_basis": "Ames Stereo Pipeline (NASA Ames) with ISIS3 (USGS Astrogeology), as used in the Apollo mapping work (per Edmundson et al. 2018 and the ASP documentation)",
+            "documented_steps": [
+              "ISIS reduce, subsampling two sequential Apollo 15 MC frames by a factor of four",
+              "ISIS spiceinit, to attach SPICE pointing and position kernels",
+              "parallel_stereo on the subsampled cubes"
+            ],
+            "source_urls": [
+              "https://stereopipeline.readthedocs.io/en/stable/examples/apollo15.html",
+              "https://doi.org/10.5194/isprs-archives-XLII-1-133-2018"
+            ],
+            "article_text": "**Status: ground software.** The Ames Stereo Pipeline (ASP) is NASA Ames software for building surface models from stereo images. The ISIS3 package from the USGS Astrogeology Science Center provides the calibration and sensor models needed to use Apollo frames [1][4].\n\n**Documented workflow.** The ASP documentation gives an Apollo 15 Metric Camera example using two sequential MC frames. It recommends subsampling by a factor of four, because film grain at full resolution adds noise that does not help the matcher [4]. The steps are ISIS reduce, ISIS spiceinit and parallel_stereo [4]. The page states that the same stereo settings can be used for all sequential Metric Camera pairs, and it notes that tools to ingest Apollo TIFF files into ISIS were then 'not available' [4]. Bundle adjustment and the DEM-generation step are not covered on that page [4].\n\n**Evidence limits.** The ASP example does not state a camera model, a calibration file or an output resolution [4]. It should be read as a worked example, not as a validated production pipeline.",
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo 15-17 Metric Camera dimensions are not publicly specified in the sources read. The hand-held Hasselblad dimensions are not publicly specified in the sources read. The processing chains have no physical dimensions. No general dimension is stated for photogrammetry systems.",
+        "mass_and_weight": "Not publicly specified for the Apollo Metric Camera or the Hasselblad cameras in the sources read. Not applicable to the ground processing chains.",
+        "power_requirements": "Not publicly specified for the Apollo Metric Camera or the Hasselblad cameras in the sources read. Not applicable to the ground processing chains."
+      },
+      "environmental_and_operational_requirements": "Photogrammetric accuracy depends on the geometry and records of the imaging as much as on the instrument. The following requirements are documented for the examples.\n\n**Known exposure geometry.** For the Metric Camera, the nominal orbital altitude was about 111 km, along-track overlap was 78%, and oblique frames were taken at 25 or 40 degrees of tilt [1][2]. Because the camera was not a stereo instrument in its own right, stereo convergence came from overlap and oblique geometry [1].\n\n**Pose records.** Position, velocity and pointing for each exposure were required. These came from original tracking and timing records, digitised by Apollo-era reconstruction and checked by the present-day team [1]. Without them, poses must be estimated by interpolation or resection [2].\n\n**Obliqueness.** The quality of the DTMs and mosaics decreases toward the limb. The 2018 authors therefore trimmed oblique products at an emission angle of about 80 degrees [1][2]. Large tilts also required considerable manual editing of tie points [2].\n\n**Film and data handling.** The Apollo Metric Camera negatives were held in cold storage at Johnson Space Center and were scanned at film-grain resolution [1]. The archive lists a nominal file size of about 1,200 MB for each 200 pixels/mm metric scan, and about 234 to 313 MB for Hasselblad scans [5]. The Apollo 17 Hasselblad film rolls were developed and then stored, mostly deep-frozen, at Johnson Space Center [3].\n\n**Thermal, vacuum and radiation.** No environmental requirement for the photogrammetric components is stated in the sources read. The sources do not describe the thermal or radiation tolerance of the Metric Camera or the Hasselblad cameras.",
+      "limitations": "- **Calibration dependence.** Hasselblad principal distance depends on the focus setting. The focus settings called out in the mission transcripts (5, 15 and 74 ft) did not match the detent values in the calibration report, so the study adopted 61.5 mm after testing panorama consistency [3]. Calibration for the second flown camera was not available to that study [3].\n- **Film artefacts.** Foreign debris on the negatives produced blemishes that can compromise feature detection and matching, and some were masked. Reseau and fiducial marks had to be measured and then removed cosmetically [1][2].\n- **Obliqueness and geometry.** Oblique frames give poorer DTMs and mosaics, and high-tilt orbits required manual correction of tie points [1][2].\n- **Absolute control.** Absolute horizontal control for the Apollo 15 oblique work came from the LRO Wide Angle Camera mosaic, and radius values came from a DTM combining LOLA and SELENE Terrain Camera data. Errors in that control propagate into the Apollo products [2].\n- **Internal versus absolute accuracy.** The RMS residuals reported for the Metric Camera are internal fit statistics [2]. No absolute ground accuracy for the Metric Camera DTM is established in the sources read.\n- **Support data gaps.** For about 150 otherwise useful AS15 MC frames, no pose data were available [2].\n- **Mass, dimensions and power.** Not publicly specified for the Metric Camera or the Hasselblad cameras in the sources read.",
+      "transportation_and_deployment": {
+        "overview": "The Apollo photogrammetric examples have two different transport paths. The Metric Camera system was carried as part of the Apollo service module, and its imagery came back as film. The Hasselblad cameras were carried on the lunar surface by astronauts and were left behind; only their film returned [1][3]. The processing chains are ground-based and have no launch or landing history of their own.",
+        "transportation_process": [
+          "Pre-flight calibration: the Metric Camera was calibrated before flight [1]. The Hasselblad cameras were calibrated, and their parameters recorded in mission calibration reports [3].",
+          "Integration: the Lunar Mapping Camera System, comprising the Metric Camera, stellar camera and laser altimeter, was installed in the Scientific Instrument Module of the Apollo 15 Command and Service Module, together with the Panoramic Camera [1].",
+          "Launch and lunar transfer: the Apollo 15-17 systems flew on the Apollo mission profile in 1971 and 1972 [1]. Mission-level launch and transfer details are not part of the sources read for this article.",
+          "Orbital imaging: the Metric Camera exposed frames from about 111 km nominal altitude, with the spacecraft oriented for the 25 or 40 degree oblique tilts on the relevant orbits [1][2].",
+          "Surface imaging: the Apollo 17 Hasselblad cameras were carried by astronauts on EVAs, used for single frames, stereo pairs and panoramas, and left on the surface [3].",
+          "Return of data: the Metric Camera negatives and Hasselblad film magazines were returned to Earth and developed or held at Johnson Space Center, from which they were later scanned [1][3][5]."
+        ],
+        "deployment_methods": "The Metric Camera system was not deployed. It was fixed inside the Scientific Instrument Module and operated from lunar orbit [1]. The Hasselblad cameras were hand-held and were not deployed by any mechanism; they were left on the lunar surface when the crews departed [3]. For the Apollo Metric Camera and Hasselblad cameras, no compatibility with any other spacecraft or lander is asserted.",
+        "historical_examples": "Metric Camera (Apollo 15-17, orbital, service module); Hasselblad 500 EL data cameras (Apollo surface EVAs, Apollo 17 documented in [3]); Ames Stereo Pipeline and ISIS3 workflow applied to Apollo MC frames [4]; and DLR stereo processing applied to LROC NAC frames [3].",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted. The Apollo cameras were integrated into the Apollo Command and Service Module and into the EVA equipment of that programme. Any reuse on another vehicle would need verified interface documents for that vehicle, which were not reviewed.",
+        "images": [
+          {
+            "id": "apollo15_csm_mapping_system_fig2",
+            "description": "Apollo 15 Command and Service Module with the Lunar Mapping Camera System and the Panoramic Camera in the Scientific Instrument Module.",
+            "image_type": "Mission photograph reproduced as a figure in a peer-reviewed photogrammetry paper (figure caption read from the paper text layer)",
+            "image_url": null,
+            "source_page_url": "https://doi.org/10.5194/isprs-archives-XLII-1-133-2018",
+            "publisher": "Edmundson et al. (2018), ISPRS Archives XLII-1, reproducing NASA image AS15-88-11972",
+            "credit": "NASA (per figure caption); the paper's own figure credit was not separately verified",
+            "caption": "Figure 2 of Edmundson et al. (2018), as printed: 'Apollo 15 Command and Service Module with Lunar Mapping Camera System and Panoramic Camera in the Scientific Instrument Module (from NASA image AS15-88-11972).'",
+            "section_placements": [
+              "overview",
+              "transportation_and_deployment"
+            ],
+            "notes": "No direct asset URL verified. The NASA image-assets path for AS15-88-11972 returned HTTP 403 to the default client in this run, and the NASA image record page could not be read, so image_url is null and the paper DOI page is the source reference. The figure was not visually inspected; identity rests on the caption text. The 2016 companion paper cites the same photograph as 'AS15-88-1197', a discrepancy recorded in data_quality_notes; the 2018 identifier is used here."
+          }
+        ]
+      },
+      "historical_significance": "The Apollo 15-17 mapping system was designed in response to a 1967 recommendation for a metric frame camera for lunar geodesy and cartography, with stereo panoramic cameras, stellar cameras and a laser altimeter. The 2018 authors note that the recommended instrumentation was very close to that flown on the Corona photo-reconnaissance missions, which used adapted instruments [1].\n\nAfter the missions, several U.S. agencies geodetically controlled mainly the nadir Metric Camera frames and produced hardcopy mosaics and contour maps [1]. Those hardcopy products could not be updated as lunar coordinate knowledge improved. Since then, the USGS Astrogeology Science Center, NASA Ames and Arizona State University have worked to produce digital products, with the nadir DIM and DTM at about 30 m/pixel tied to LOLA and published through NASA's Moon Trek portal [1].\n\nThe Apollo 17 Hasselblad frames have also been used, with LROC NAC orthomosaics, to reconstruct the astronauts' traverse and station positions and to make large-scale maps [3]. These uses rely on the same calibrated reseau-based geometry that the Apollo crews used for their own surveying [3].",
+      "limitations_and_uncertainties": "- **Film format conflicts.** The Metric Camera image format is 114 mm square in the 2018 review [1], while the archive describes 120 x 120 mm metric film [5]. The Hasselblad film is 70 mm in [3] and 64 x 64 mm in the archive table [5]. Both pairs are recorded unresolved.\n- **Metric Camera hardware values.** Mass, dimensions and power are not publicly specified in the sources read. The 2018 paper cites a table of Apollo camera characteristics [1], whose values did not survive text extraction.\n- **Ground resolution conflicts.** The nadir ground sample distance is about 8 m in the text [1][2], while the 2016 figure caption gives 7 m/pixel as the original nadir pixel scale [2]. The article states 8 m as the text value and records 7 m as the figure value.\n- **Hasselblad pixel size.** The mean pixel size printed as '22 m' in the text layer of [3] has no readable unit in this extraction, and it is not used.\n- **Second Apollo 17 Hasselblad camera.** Calibration data for camera S/N 1032 were not available to the study [3].\n- **Figure identity.** The figure of the Apollo 15 Command and Service Module is credited to AS15-88-11972 in the 2018 paper and to AS15-88-1197 in the 2016 paper [1][2]. The figure was not inspected visually, and no direct image asset could be verified.\n- **Absolute accuracy.** No absolute ground accuracy is established for the Metric Camera DTM in the sources read. The 2016 authors state that DTM quality was still being evaluated [2].\n- **Product availability.** The 2016 paper said the tie-point database, DTM and mosaics 'will soon be available' through the USGS PDS Annex [2]. The 2018 paper says they are available through the Moon Trek portal [1]. Current availability was not re-checked.\n- **Sources not read in full.** The USGS Astrogeology metric-camera data page returned HTTP 403 in this run and was not read. Borgeson and Batson (1969), cited by [3], was not read directly. The Ames Stereo Pipeline and Kim et al. (2009) papers were not read in full text.\n- **Panoramic Camera.** The Apollo Panoramic Camera is covered in entry 026. The 2018 paper gives its focal length as 610 mm [1], but that value is not used here.\n- **Cross-references.** Stereo hardware, including the Apollo close-up camera and the Chang'e-3 rover panoramic camera, is in entry 029. Terrain mapping cameras, including the LRO NAC stereo DTM capability, are in entry 028. Digital terrain mapping systems are in entry 050. This article does not duplicate them.",
+      "images": [
+        {
+          "id": "apollo15_csm_mapping_system_fig2",
+          "description": "Apollo 15 Command and Service Module with the Lunar Mapping Camera System and the Panoramic Camera in the Scientific Instrument Module.",
+          "image_type": "Mission photograph reproduced as a figure in a peer-reviewed photogrammetry paper (figure caption read from the paper text layer)",
+          "image_url": null,
+          "source_page_url": "https://doi.org/10.5194/isprs-archives-XLII-1-133-2018",
+          "publisher": "Edmundson et al. (2018), ISPRS Archives XLII-1, reproducing NASA image AS15-88-11972",
+          "credit": "NASA (per figure caption); the paper's own figure credit was not separately verified",
+          "caption": "Figure 2 of Edmundson et al. (2018), as printed: 'Apollo 15 Command and Service Module with Lunar Mapping Camera System and Panoramic Camera in the Scientific Instrument Module (from NASA image AS15-88-11972).'",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "No direct asset URL verified. The NASA image-assets path for AS15-88-11972 returned HTTP 403 to the default client in this run, and the NASA image record page could not be read, so image_url is null and the paper DOI page is the source reference. The figure was not visually inspected; identity rests on the caption text. The 2016 companion paper cites the same photograph as 'AS15-88-1197', a discrepancy recorded in data_quality_notes; the 2018 identifier is used here."
+        },
+        {
+          "id": "apollo_lunar_mapping_camera_system_fig3",
+          "description": "Apollo Lunar Mapping Camera System: the Metric Camera, stellar camera and laser altimeter integrated into a single unit.",
+          "image_type": "Hardware figure reproduced in a peer-reviewed photogrammetry paper (figure caption read from the paper text layer)",
+          "image_url": null,
+          "source_page_url": "https://doi.org/10.5194/isprs-archives-XLII-1-133-2018",
+          "publisher": "Edmundson et al. (2018), ISPRS Archives XLII-1",
+          "credit": "NASA/Fairchild (per figure caption)",
+          "caption": "Figure 3 of Edmundson et al. (2018), as printed: 'Apollo Lunar Mapping Camera System (NASA/Fairchild).'",
+          "section_placements": [
+            "physical_specifications.examples[0].images"
+          ],
+          "notes": "No direct asset URL verified; image_url is null and the paper DOI page is the source reference. The figure was not visually inspected, so its content is described only from the caption and the paper's text, which states that the Lunar Mapping Camera System 'consisted of the MC, stellar camera, and laser altimeter integrated into a single unit (Figure 3)'."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "apollo15_csm_mapping_system_fig2",
+          "description": "Apollo 15 Command and Service Module with the Lunar Mapping Camera System and the Panoramic Camera in the Scientific Instrument Module.",
+          "image_type": "Mission photograph reproduced as a figure in a peer-reviewed photogrammetry paper (figure caption read from the paper text layer)",
+          "image_url": null,
+          "source_page_url": "https://doi.org/10.5194/isprs-archives-XLII-1-133-2018",
+          "publisher": "Edmundson et al. (2018), ISPRS Archives XLII-1, reproducing NASA image AS15-88-11972",
+          "credit": "NASA (per figure caption); the paper's own figure credit was not separately verified",
+          "caption": "Figure 2 of Edmundson et al. (2018), as printed: 'Apollo 15 Command and Service Module with Lunar Mapping Camera System and Panoramic Camera in the Scientific Instrument Module (from NASA image AS15-88-11972).'",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "No direct asset URL verified. The NASA image-assets path for AS15-88-11972 returned HTTP 403 to the default client in this run, and the NASA image record page could not be read, so image_url is null and the paper DOI page is the source reference. The figure was not visually inspected; identity rests on the caption text. The 2016 companion paper cites the same photograph as 'AS15-88-1197', a discrepancy recorded in data_quality_notes; the 2018 identifier is used here."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Revisiting the Apollo Photogrammetric Mapping System",
+          "authors": "K. L. Edmundson, O. Alexandrov, B. A. Archinal, K. J. Becker, T. L. Becker, J. A. Mapel, Z. M. Moratto, A. V. Nefian, J. O. Richie, M. S. Robinson, M. R. Shepherd, J. R. Shinaman, E. D. Smith",
+          "publisher": "International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLII-1, 133-140",
+          "date": "2018-09-26",
+          "url": "https://doi.org/10.5194/isprs-archives-XLII-1-133-2018",
+          "notes": "Full text read. Source for Metric Camera configuration, mission dates, scan and reseau processing, oblique geometry, DTM products and history."
+        },
+        {
+          "number": 2,
+          "title": "Photogrammetric processing of Apollo 15 Metric Camera oblique images",
+          "authors": "K. L. Edmundson, O. Alexandrov, B. A. Archinal, K. J. Becker, T. L. Becker, R. L. Kirk, Z. M. Moratto, A. V. Nefian, J. O. Richie, M. S. Robinson",
+          "publisher": "International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLI-B4, 375-381",
+          "date": "2016",
+          "url": "https://doi.org/10.5194/isprsarchives-XLI-B4-375-2016",
+          "notes": "Full text read. Source for bundle-adjustment residuals (Table 2), oblique orbit tilts, scan and reseau handling, support-data gap, and control sources."
+        },
+        {
+          "number": 3,
+          "title": "Coordinates and maps of the Apollo 17 landing site",
+          "authors": "I. Haase, M. Woehlisch, P. Gloeser, J. Oberst, M. S. Robinson",
+          "publisher": "Earth and Space Science, 6, American Geophysical Union (open access)",
+          "date": "2019",
+          "url": "https://doi.org/10.1029/2018EA000408",
+          "notes": "Full text read from the DLR e-library copy (https://elib.dlr.de/131963/1/Haase_et_al-2019-Earth_and_Space_Science.pdf); the DOI page returned HTTP 403 to the default client in this run. Source for Hasselblad 500 EL configuration, reseau, calibration, positional accuracy, and the DLR NAC stereo processing chain. Used for historical measurement results only."
+        },
+        {
+          "number": 4,
+          "title": "Ames Stereo Pipeline documentation: Apollo 15 Metric Camera images",
+          "authors": "Ames Stereo Pipeline documentation team",
+          "publisher": "Ames Stereo Pipeline documentation (Read the Docs)",
+          "date": "not stated on page",
+          "url": "https://stereopipeline.readthedocs.io/en/stable/examples/apollo15.html",
+          "notes": "Page read via a summary fetch. Source for the worked example (reduce, spiceinit, parallel_stereo) and the statement about Apollo TIFF ingestion."
+        },
+        {
+          "number": 5,
+          "title": "About the scans (Apollo Image Archive)",
+          "authors": "Arizona State University, Apollo Image Archive",
+          "publisher": "Apollo Image Archive",
+          "date": "not stated on page",
+          "url": "https://apollo.im-ldi.com/ABOUT_SCANS/",
+          "notes": "Page read via a summary fetch. Source for Leica DSW700 scanning, 200 pixels/mm metric scans (5 um), nominal file sizes and Hasselblad scan resolutions. Scan-format values are archive values and conflict in part with [1] and [3]."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "transportation_and_deployment": "payload.article.transportation_and_deployment.images",
+      "Metric Camera example": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. No direct image asset URL was verified, so every image_url is null and each image is referenced through its source page."
+  },
+  "data_quality_notes": [
+    "Scope: entry 049 is a broad catalogue class. This article covers the Apollo Metric Camera system, the Apollo Hasselblad photogrammetric use, and two ground processing chains. No proposed or flight-qualified-but-unflown photogrammetry payload was identified in the sources read, so none is described.",
+    "Metric Camera film format conflict: 114 mm square image format in Edmundson et al. (2018) versus 120 x 120 mm metric film in the Apollo Image Archive. Both are recorded; neither is resolved.",
+    "Metric Camera hardware values: mass, dimensions and power are not publicly specified in the sources read. A table of Apollo camera characteristics cited in Edmundson et al. (2018) (from Light, 1972) did not survive text extraction.",
+    "Nadir ground sample distance: about 8 m in the text of Edmundson et al. (2018) and Edmundson et al. (2016), but the 2016 Figure 9 caption gives 7 m/pixel as the original nadir pixel scale. Both are recorded.",
+    "Figure identity: the Apollo 15 CSM figure is credited to NASA image AS15-88-11972 in the 2018 paper and to AS15-88-1197 in the 2016 paper. Image asset URLs for both figures could not be verified; image_url is null for all image objects.",
+    "Hasselblad film format conflict: 70 mm in Haase et al. (2019) versus 64 x 64 mm in the Apollo Image Archive table. The mean pixel size printed as '22 m' in the Haase et al. text layer has no readable unit and is not used.",
+    "Second flown Apollo 17 Hasselblad camera (S/N 1032): calibrated parameters were not available to Haase et al. (2019).",
+    "Metric Camera residuals in Table 2 of Edmundson et al. (2016) are internal bundle-adjustment fit values, not absolute accuracies. No absolute ground accuracy for the Metric Camera DTM is established in the sources read.",
+    "Haase et al. (2019) figures are for that study's Apollo 17 network and reference frame, not general instrument specifications.",
+    "The Haase et al. (2019) DOI page returned HTTP 403 to the default client in this run. The full text was read from the DLR e-library copy, which is the same article by the same authors and is listed in the reference notes.",
+    "The USGS Astrogeology metric-camera page returned HTTP 403 and was not read. Borgeson and Batson (1969) and Kim et al. (2009) were not read directly. The ASP documentation and the Apollo Image Archive page were read through summary fetches, not verbatim.",
+    "Image assets: no direct asset URL for the Apollo 15 CSM figure or the Metric Camera hardware figure was verified from this environment. The NASA image-assets path for AS15-88-11972 returned HTTP 403 with the default client, and the NASA image record page could not be read. Both figures are referenced via their DOI source pages with image_url set to null.",
+    "Apollo 15 Metric Camera tie-point and DTM products: the 2016 paper said they would soon be available through the USGS PDS Annex, and the 2018 paper says they are available through the NASA Moon Trek portal. Current availability was not re-checked.",
+    "Cross-referenced entries 026, 027, 028, 029, 047 and 050 are described only by their names and scope. Their article contents were not re-derived in this article."
+  ]
+}

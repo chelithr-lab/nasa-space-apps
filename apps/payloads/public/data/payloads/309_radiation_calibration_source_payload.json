@@ -1,0 +1,178 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 309,
+    "name": "Radiation calibration source",
+    "article": {
+      "overview": "A radiation calibration source is a known emitter, usually a radioactive source or a source of characteristic X-ray lines, placed where a radiation detector can see it. The detector's response to the source is then compared with the source's known energy or intensity, so that the detector's gain and energy scale can be checked. On the Moon, such a source gives an in-flight reference that does not depend on sunlight, on the surface being measured or on the instrument's own assumptions.\n\nThe catalogue name is generic. The sources reviewed do not describe one standard 'radiation calibration source' instrument. This article therefore covers radioactive or line-emitting reference sources used to calibrate or check radiation detectors, and it notes where a source inside a lunar instrument is used for measurement rather than calibration.\n\nTwo lunar examples are discussed. The Apollo 15 and 16 X-ray fluorescence spectrometers carried radioactive calibration sources on a rotating rod that could be turned to face the detectors during flight [1]. The Surveyor alpha-scattering instrument used a curium-242 source to probe the surface, and its in-flight calibration method is not confirmed from a primary source in this review [3][4]. A third example, the Chandrayaan-2 APXS, uses a curium-244 source to excite X-rays from the sample rather than to calibrate the detector [5].\n\nScope. In scope: sources whose main role is calibration or reference of radiation detectors, and instruments in which a radioactive source is part of the calibration chain. Boundary cases, included for comparison: measurement or excitation sources in alpha and X-ray instruments (Surveyor, APXS). Out of scope: general calibration targets (entry 306), spectrometer calibration sources (entry 307, which overlaps with this entry and is cross-referenced rather than duplicated), optical calibration targets (entry 308), temperature reference sensors (entry 310) and instrument reference standards (entry 311). Laboratory standards used on returned samples are also out of scope.\n\nStatus summary. Flown in lunar orbit (Apollo 15 and 16, 1971 and 1972): the X-ray fluorescence spectrometer carried an in-flight calibration rod with radioactive Mg and Mn K-radiation sources [1]. Flown on the lunar surface (Surveyor 5, 6 and 7, 1967-1968): the alpha-scattering instrument carried a curium-242 measurement source; its calibration method is not confirmed from a primary source here [3][4]. Flight model, no lunar surface operation reported: the Chandrayaan-2 APXS carries a curium-244 excitation source; the source paper reports pre-flight testing only [5].",
+      "description": "A calibration source emits radiation at known energies, so that a detector's output can be compared with a reference. Radioactive nuclei emit at fixed energies, and some decay processes produce characteristic X-rays. The pre-flight testing of the Apollo X-ray detectors used an iron-55 source placed in front of each detector window, with a line at 5.9 keV [1]. Iron-55 decays to manganese-55, which emits manganese K X-rays. The Apollo document describes the in-flight calibration rod as carrying 'Mg and Mn K-radiation' sources [1]. The Mn lines are therefore the expected product of an iron-55 decay, but the document does not name the in-flight isotope.\n\nA calibration source can be a fixed reference inside the instrument, a movable source that is rotated into the field of view, or an external reference that the spacecraft or instrument points at. A calibration source is different from a measurement source. The curium-242 source in the Surveyor alpha-scattering instrument irradiates the surface to produce the signal being measured [3]. A calibration source is used to check the detector, not the sample.",
+      "scientific_purpose_and_applications": "The main purpose of a radiation calibration source is to maintain an accurate energy and gain scale in a radiation instrument. Counts can then be converted into meaningful elemental or radiation values. In the Apollo X-ray fluorescence experiment, detector output was converted into intensities for silicon, aluminium and magnesium, and aluminium and magnesium were ratioed to silicon to reduce geometric effects. That decomposition depends on a reliable energy scale [1].\n\nSecondary purposes include tracking detector drift over the mission, identifying calibration-affected data so that they are not interpreted as geological signal, and providing a stable reference that allows measurements from different mission phases to be compared.",
+      "operating_principle": "When a calibration source is in view, the detector records a peak at the source's known energy. The instrument's channel-to-energy relation can then be checked, and changes in gain can be tracked over time.\n\nIn the Apollo X-ray fluorescence spectrometer, the calibration assembly was a rod carrying radioactive sources (Mg and Mn K-radiation). The rod normally faced away from the proportional counters. On internal command from the X-ray processor assembly, a solenoid drive rotated it 180 degrees so that the sources faced the counters. Magnetically sensitive reed relays provided feedback on the rod's position, which generated flag bits in telemetry [1]. The calibration cycle repeated every 16 minutes and lasted 64 seconds. In calibration mode the detectors operated at twice the gain, shifting the working range from 0.75-2.75 keV to 1.5-5.5 keV [1]. The instrument entered calibration mode automatically when it was turned on. Otherwise, the document states that it repeatedly operated for 6 hours in normal mode followed by 2 hours in calibration mode [1].\n\nIn the Surveyor alpha-scattering instrument, a curium-242 source was collimated so that it irradiated a 100 mm diameter opening in the bottom of the instrument, where the sample sat [3]. A 1966 description of the instrument, as summarised in a search result, mentions an on-site electronic calibration mode that could be commanded from Earth [4]. That summary was not checked against the full primary text, so the in-flight calibration method remains unconfirmed.\n\nIn the Chandrayaan-2 APXS, the curium-244 source emits X-rays and alpha particles. These excite characteristic X-rays from the lunar surface through particle-induced X-ray emission (PIXE) and X-ray fluorescence (XRF) [5].",
+      "scientific_importance": "The Apollo design shows why a calibration source matters for data that are later used to map composition over large areas. Apollo data reduction had to remove variations caused by solar output. The solar monitor saturated on Apollo 15, and an additional beryllium layer was added on Apollo 16 with an unknown thickness. Two empirical normalisation methods were therefore used [1].\n\nA radiation calibration source fixes the instrument's own response. It does not, on its own, correct for external variation such as solar flux. Scientific interpretation needs both kinds of correction.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a radiation calibration source. The examples below use different isotopes, geometries and mission statuses. Their values are not directly comparable, so no comparison table is given.",
+        "examples": [
+          {
+            "name": "Apollo 15 and 16 X-ray fluorescence spectrometer",
+            "example_number": 1,
+            "flight_status": "Flown on Apollo 15 and 16, measuring the Moon from orbit [1]",
+            "source_type": "Rotating calibration rod with radioactive Mg and Mn K-radiation sources",
+            "calibration_cadence": "64-second calibration every 16 minutes in the documented in-flight cycle [1]",
+            "detector_resolution": "18% at the 5.9 keV line, as measured during pre-flight testing [1]",
+            "source_activities_isotopes_half_lives": "Not stated in the document read [1]",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "images": [],
+            "text": "Flight status: flown on Apollo 15 and 16, measuring the Moon from orbit [1]. Calibration source: a rotating rod carrying radioactive Mg and Mn K-radiation sources, turned by a solenoid drive to face the proportional counters during each calibration cycle [1]. Calibration cadence: a 64-second calibration every 16 minutes in the documented in-flight cycle [1]. Detector performance: resolution of 18% at the 5.9 keV line, as measured during pre-flight testing [1]. Source activities, isotopes and half-lives: not stated in the document read [1]. Mass, dimensions and power: not publicly specified in the document read.",
+            "source_reference_numbers": [1]
+          },
+          {
+            "name": "Surveyor alpha-scattering instrument (Surveyor 5, 6 and 7)",
+            "example_number": 2,
+            "flight_status": "Flown on the lunar surface on Surveyor 5, 6 and 7, 1967-1968; a Smithsonian record describes the flown instrument as representative of those carried on the three missions and names Hughes Aircraft as builder [4][6]",
+            "source_type": "Curium-242 alpha measurement source, collimated to irradiate a 100 mm opening in the bottom of the instrument [3]",
+            "calibration_method": "Not confirmed from a primary source in this review; a search summary of a 1966 description mentions an on-site electronic calibration mode commandable from Earth [4]",
+            "source_preparation": "Curium-242 reportedly prepared by neutron irradiation of americium-241 in a reactor [7]",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "images": [],
+            "text": "Flight status: flown on the lunar surface on Surveyor 5, 6 and 7, 1967-1968. A Smithsonian record describes the flown instrument as representative of those carried on the three missions and names Hughes Aircraft as builder [4][6]. Source: a curium-242 alpha source, collimated to irradiate a 100 mm opening in the bottom of the instrument [3]. The curium-242 was reportedly prepared by neutron irradiation of americium-241 in a reactor [7]. Calibration method: not confirmed from a primary source in this review. Mass, dimensions and power: not publicly specified in the sources reviewed.",
+            "source_reference_numbers": [3, 4, 6, 7]
+          },
+          {
+            "name": "Chandrayaan-2 APXS curium-244 excitation source (flight model, not operated on the lunar surface)",
+            "example_number": 3,
+            "flight_status": "Flight model completed and tested; the source paper reports no lunar surface operation [5]",
+            "source_type": "Curium-244 excitation source emitting X-rays and alpha particles; not a calibration source [5]",
+            "source_half_life_and_alpha_energy": "Search summary of the same paper gives a half-life of about 18.1 years and an alpha energy of about 5.8 MeV; not checked against the full text [5]",
+            "detector_resolution": "135 eV at 5.9 keV at about -35 degrees C, reported for the flight detector [5]",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "images": [],
+            "text": "Flight status: a completed and tested flight model; no lunar surface operation reported [5]. Source: a curium-244 source that emits X-rays and alpha particles for excitation, not calibration [5]. A search summary of the same paper gives a half-life of about 18.1 years and an alpha energy of about 5.8 MeV; these were not checked against the full text [5]. Detector performance: an energy resolution of 135 eV at 5.9 keV at about -35 degrees C is reported for the flight detector [5]. Mass, dimensions and power: not publicly specified in the sources reviewed.",
+            "source_reference_numbers": [5]
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo document does not give dimensions for the calibration rod or for the complete spectrometer. It does give detector geometry: three flight detectors were selected from about six candidates, each had a beryllium window of 1 mil (0.001 inch), and the collimated detectors had a 60-degree field of view [1]. No dimensions are publicly specified for the Surveyor alpha-scattering source assembly or for the Chandrayaan-2 APXS source in the sources reviewed.",
+        "mass_and_weight": "No mass is publicly specified for any of the three examples in the sources reviewed.",
+        "power_requirements": "No power figure is given for the Apollo calibration drive or for the other examples in the sources reviewed. Source activities are not publicly specified for any example in the sources read; this is the largest specification gap for this payload class."
+      },
+      "environmental_and_operational_requirements": "A radioactive calibration source must be shielded and contained. Its activity decreases with its half-life over the mission, so its calibration value changes with time. Standard nuclear data give a half-life of about 2.7 years for iron-55 and about 163 days for curium-242. These values come from general nuclear data, not from a mission source reviewed here. The source must survive the vacuum, the lunar thermal environment and the launch environment without losing position or alignment.\n\nThe mechanism must also work reliably. The Apollo design relied on a solenoid drive, reed relays and telemetry flag bits to confirm the calibration state [1]. Lunar surface sources must additionally avoid contaminating the sample or the instrument's view of the sample.",
+      "limitations": "Time cost: each calibration cycle takes observing time from the science measurement. The 64-second interval every 16 minutes in the Apollo design is one example [1]. Limited energy coverage: a calibration source gives reference lines at a few energies and does not calibrate every energy in the instrument's range. Decay: activity decreases over time, so the reference strength changes during the mission. External variation: a calibration source does not correct for changes in the illuminating source or the sample; the Apollo solar-output normalisation shows why separate corrections are needed [1]. Unreported specifications: the sources reviewed do not publish activities, masses, dimensions or power for most examples.",
+      "transportation_and_deployment": {
+        "overview": "A radiation calibration source is delivered to the Moon as part of an instrument package, either on an orbital spacecraft or on a surface lander or rover. A calibration source is not normally deployed separately from its instrument.",
+        "transportation_process": [
+          "Integrate the instrument, including its calibration source and drive mechanism, into the spacecraft or lander on Earth.",
+          "Apply the safety, licensing and transport approvals that govern radioactive material for launch and for transfer to the Moon.",
+          "Launch and transfer the package towards the Moon.",
+          "For surface instruments, deliver the package to the surface with the lander.",
+          "Verify the calibration mechanism's state and power, thermal and data interfaces before or during operation."
+        ],
+        "deployment_methods": "Orbital instruments: the Apollo X-ray fluorescence calibration rod was part of an orbital instrument; its integration and launch are not described in the document read [1]. The rod's sources are part of the instrument and are not separately deployed. Surface instruments: the Surveyor-era instrument shows that a source can be integrated into a surface payload [3][4]. A future surface source would need to meet the lander's power, thermal and mechanical interfaces.",
+        "historical_examples": "Apollo 15 and 16 X-ray fluorescence spectrometers: orbital, with an in-flight calibration rod [1]. Surveyor 5, 6 and 7: surface alpha-scattering instrument with a curium-242 source [3][4]. Chandrayaan-2 APXS: a flight model with a curium-244 excitation source, not reported operating on the surface [5].",
+        "compatibility_assessment": "No lander or spacecraft compatibility is assessed. None of the reviewed sources provides verified interface data for a named lander, so no compatibility claim is made. The radioactive-material approvals that apply to a specific mission were not reviewed for this article.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 15 and 16 X-ray fluorescence experiment produced orbital elemental maps of the Moon. The data reduction methods described in the calibration document were used to correlate these maps with other lunar datasets [1]. The Surveyor alpha-scattering instrument was an early lunar surface chemical analysis instrument; the Surveyor 5, 6 and 7 landings provided the surface measurements that the instrument was designed to make [3][4]. The Chandrayaan-2 APXS is a more recent example; the sources reviewed describe its design and pre-flight testing, not surface measurements [5].",
+      "limitations_and_uncertainties": "Source identity and activity: the in-flight source isotopes and activities for the Apollo rod are not stated in the document read [1]. The Mn lines are consistent with an iron-55 decay, but the in-flight isotope is not confirmed. Surveyor calibration method: the 1966 description summarised in a search result mentions an electronic calibration mode [4]; the primary text was a scanned document that could not be read in this review, so the claim is unconfirmed. Chandrayaan-2 APXS values: the half-life, alpha energy and role of the curium-244 source come from the source paper and a search summary and were not checked against the full text [5]. Mission outcome: the Chandrayaan-2 APXS paper reports pre-flight testing only; its surface operation status is not established from the sources reviewed. Images: no image with a verified direct asset URL was confirmed for this article, so the article has no images. Specifications: masses, dimensions and power are not publicly specified for most examples, and source activities are not publicly specified for any example in the sources read.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "id": 1,
+          "title": "Apollo 15 and 16 X-Ray Fluorescence Spectrometers - Experiment Calibration",
+          "authors": "Pamela E. Clark",
+          "publisher": "NASA Goddard Space Flight Center (PDS document)",
+          "date": "2007 (document); archived 2016",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/a16c-l-xrfs-2-surface-xray-counts-v1/a16xr_0001/document/xrfs_calibration.pdf",
+          "verification": "Read in full"
+        },
+        {
+          "id": 2,
+          "title": "The Apollo 15 and 16 X-ray fluorescence experiment",
+          "authors": "I. Adler, R. Schmadebeck, J. I. Trombka, P. Gorenstein, P. Bjorkholm",
+          "publisher": "Space Science Instrumentation, vol. 1, pp. 305-316",
+          "date": "1975",
+          "url": null,
+          "verification": "Cited in reference 1; not opened"
+        },
+        {
+          "id": 3,
+          "title": "Surveyor 6",
+          "authors": null,
+          "publisher": "Wikipedia",
+          "date": null,
+          "url": "https://en.wikipedia.org/wiki/Surveyor_6",
+          "verification": "Search-result summary only; secondary source; not verified against the primary document"
+        },
+        {
+          "id": 4,
+          "title": "NASA Technical Reports Server document 19670003914, description of the Surveyor alpha-scattering instrument",
+          "authors": null,
+          "publisher": "NASA Technical Reports Server",
+          "date": "1966-1967",
+          "url": "https://ntrs.nasa.gov/api/citations/19670003914/downloads/19670003914.pdf",
+          "verification": "Scanned document that could not be read in this review; claims from a search summary only"
+        },
+        {
+          "id": 5,
+          "title": "Alpha Particle X-Ray Spectrometer (APXS) On-board Chandrayaan-2 Rover -- Pragyan",
+          "authors": "M. Shanmugam, S. V. Vadawale, Arpit R. Patel, et al.",
+          "publisher": "arXiv:1910.09232; listed journal reference Current Science 118(1), January 2020",
+          "date": "Submitted 2019-10-21",
+          "url": "https://arxiv.org/abs/1910.09232",
+          "verification": "Abstract and design status read; specific values from a search summary"
+        },
+        {
+          "id": 6,
+          "title": "Lunar Lander, Surveyor, Alpha Scattering Auxiliary (NASM A19731143000)",
+          "authors": null,
+          "publisher": "Smithsonian National Air and Space Museum",
+          "date": null,
+          "url": "https://www.si.edu/object/lunar-lander-surveyor-alpha-scattering-auxiliary:nasm_A19731143000",
+          "verification": "Seen in search results; page not opened in this review"
+        },
+        {
+          "id": 7,
+          "title": "Nuclear Technology article 31301 (curium-242 preparation)",
+          "authors": null,
+          "publisher": "American Nuclear Society, Nuclear Technology",
+          "date": "1973",
+          "url": "https://www.ans.org/pubs/journals/nt/article-31301/",
+          "verification": "Search-result summary only"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image objects are included because no direct image asset URL was verified in this run; the article contains no images. Reference URLs are stored without query strings or fragments."
+  },
+  "data_quality_notes": [
+    "No direct image asset URL was verified; the image registry is empty and no section-level image arrays are populated.",
+    "Source activities, isotopes and half-lives are not stated in the Apollo calibration document read; the iron-55 identification is from the pre-flight test description, and the in-flight isotope is not confirmed.",
+    "The Surveyor alpha-scattering calibration method rests on a search summary of a scanned 1966 NASA document that could not be read; it is unconfirmed.",
+    "The Chandrayaan-2 APXS half-life (about 18.1 years) and alpha energy (about 5.8 MeV) come from a search summary of arXiv:1910.09232 and were not checked against the full text.",
+    "The Smithsonian object record and Nuclear Technology article 31301 were seen only in search results; they were not opened.",
+    "Standard nuclear half-lives used for decay discussion (about 2.7 years for iron-55 and about 163 days for curium-242) come from general nuclear data, not from a mission source in this run.",
+    "No mass, dimensions, power or lander compatibility values are publicly specified in the sources read for any example."
+  ]
+}

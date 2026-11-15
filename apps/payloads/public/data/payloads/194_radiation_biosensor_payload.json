@@ -1,0 +1,293 @@
+{
+  "catalogue_id": 194,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 10,
+    "name": "Biological and life-science experiments"
+  },
+  "payload": {
+    "number": 194,
+    "name": "Radiation biosensor",
+    "article": {
+      "overview": "A radiation biosensor is an instrument that uses living cells to report the biological effects of ionising radiation. The best-documented example in this family is a yeast-based biosensor built around baker's yeast (Saccharomyces cerevisiae), developed at NASA Ames Research Center. Yeast shares DNA damage and repair pathways with human cells, so changes in its growth and metabolism can serve as a model for chronic, sublethal radiation damage [3][1]. The biosensor was flown as the BioSensor on NASA's BioSentinel CubeSat, which launched on Artemis I on 16 November 2022 [2][3]. A lunar follow-on, the Lunar Explorer Instrument for space biology Applications (LEIA), is planned to reach the lunar South Pole through NASA's Commercial Lunar Payload Services (CLPS) programme, with a 2026 delivery target stated by NASA [1]. Because the catalogue entry does not define a specific instrument, this article uses the yeast-based BioSensor as the representative design. The BioSentinel flight observed no yeast growth, and the LEIA delivery status could not be confirmed as of 13 November 2026.",
+      "description": "A radiation biosensor combines a biological sensing element with a physical measurement system. In the design described here, the sensing element is a population of dried baker's yeast cells held in sealed microfluidic cards. The cells are kept dormant with desiccant until the measurement starts. Activation adds a liquid growth medium, which lets the yeast grow and metabolise over several days [1][5][6]. Each culture well is read optically: LEDs shine light through the well and a photodiode measures the transmitted light, which tracks growth as turbidity. A redox indicator dye reports metabolic activity, because living cells chemically reduce the dye and change its colour [5][6]. Radiation is measured separately by charged-particle and neutron detectors, so that the biological response can be compared with the physical radiation environment [1][4]. The payload is therefore both a biological experiment and a radiation monitor.",
+      "scientific_purpose_and_applications": "The purpose of a radiation biosensor is to measure how living cells respond to the radiation they actually experience, not only how much energy a physical detector records. A dosimeter records deposited energy but does not show whether biology responds. Yeast is used because it shares DNA damage and repair mechanisms with human cells, so it can serve as a model for radiation risk to crew [1][3]. For LEIA, NASA states that the instrument will measure the radiation environment at the lunar South Pole and use yeast to study the combined effects of radiation and reduced gravity [1]. Planned strains include BioSentinel strains, strains with engineered DNA repair modifications, beta-carotene-producing strains intended to test antioxidant production, and strains with added radiation-resistance genes [1][4]. Applications described in the sources are:\n- biological data on sublethal radiation effects that can inform human exploration risk assessment [1][3];\n- testing of engineered radiation-resistant or antioxidant-producing organisms as possible crew countermeasures [1][4];\n- relating cell responses to a measured radiation field at the same site and time [1][4].",
+      "operating_principle": "The yeast in each card is dried to a dormant state and kept at low humidity by desiccant chambers, with check valves on both sides of each chamber acting as humidity barriers [6]. On activation, liquid medium is delivered through microfluidic channels into each well. Growth is followed by measuring turbidity with a light source and photodiode pair. Metabolic activity is followed by a redox dye, whose colour changes as the cells reduce it [5]. The BioSentinel flight design used a three-colour LED source at 630, 570 and 850 nm [6]. Growth and metabolic readouts are taken independently [5]. The LEIA design retains the BioSensor's fluidic, optical and thermal systems [1][6]. Radiation sensors record the exposure over the same period so that biological and physical data can be correlated [1][4].",
+      "scientific_importance": "Galactic cosmic radiation can damage DNA and proteins, and the associated cancer risk is a concern for human deep-space missions, based on Apollo-era and ground studies [4]. Biological responses measured directly in the lunar environment would complement ground irradiation experiments. LEIA is intended to test biological responses to the combined radiation and reduced-gravity conditions of the lunar surface [1][4]. BioSentinel was described by NASA as the first deep-space biology mission of its kind on Artemis I [3]. Its negative biological result is scientifically useful because it showed that yeast viability during pre-launch storage can limit what a deep-space biosensor can measure [2][5].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a radiation biosensor. The two examples below are yeast-based BioSensor designs in the same lineage: one flown and one planned. Values are given only where a named source states them. A \"U\" designation is a CubeSat size class, not a measured dimension.",
+        "examples": [
+          {
+            "name": "LEIA BioSensor (Lunar Explorer Instrument for space biology Applications)",
+            "type": "Planned lunar surface biosensor (NASA delivery target 2026; current status not confirmed)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "reported_specifications": [
+              "Status: NASA lists delivery to the Moon through CLPS as scheduled for 2026 [1]. The 2022 source describes the design as still in its formulation and design stages [6]. Current flight status was not confirmed as of 13 November 2026.",
+              "Biosensor size designation: 4U, a CubeSat size class rather than a measured dimension [4].",
+              "Fluidic cards: 16 cards, each with 16 culture microwells (256 wells), which NASA says accommodate samples and calibration standards [1]. The 2023 conference abstract describes 16 microfluidic cards housing dried yeast cells, without a well count [4].",
+              "Radiation instruments: ARES, which measures time-resolved dose, dose rate and charged-particle energy deposition (developed at NASA Johnson Space Center), and the Mini-FND fast neutron detector (developed by Southwest Research Institute, a miniaturised version of the ISS-RAD FND) [1].",
+              "Late-load capability: fresh yeast cards can be integrated at the end of payload assembly, reducing storage-related cell damage [1].",
+              "Mass, dimensions, power, operating temperature range and lander: not stated in the sources consulted [1][4][6]."
+            ],
+            "source_urls": [
+              "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+              "https://ntrs.nasa.gov/citations/20230011094"
+            ],
+            "images": [
+              {
+                "id": "leia_fluidic_card_stack",
+                "description": "LEIA card stack: a fluidic card with microwells for yeast growth, layered with the electronics that control temperature and optics.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": null,
+                "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+                "publisher": "NASA",
+                "credit": "NASA (exact credit line not confirmed)",
+                "caption": "A LEIA card stack: a fluidic card with microwells for yeast growth.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL not fetched or verified, so image_url is null per policy. The NASA source page reports a candidate path, https://science.nasa.gov/wp-content/uploads/2023/09/leia-1.jpg, which remains unverified. Caption paraphrased from the source-page text."
+              },
+              {
+                "id": "leia_hardware_drawings",
+                "description": "Drawings of the LEIA hardware components: the ARES/BioSensor subassembly and the Mini-FND.",
+                "image_type": "Engineering drawing",
+                "image_url": null,
+                "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+                "publisher": "NASA",
+                "credit": "NASA (exact credit line not confirmed)",
+                "caption": "Drawings of the hardware components comprising LEIA, including the ARES/BioSensor subassembly and the Mini-FND.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL not verified, so image_url is null. The source page reports a candidate path, https://science.nasa.gov/wp-content/uploads/2023/09/leia-2.png, which remains unverified. Caption paraphrased from the source-page text."
+              }
+            ]
+          },
+          {
+            "name": "BioSentinel BioSensor",
+            "type": "Flown biosensor (launched on Artemis I, 16 November 2022)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "reported_specifications": [
+              "Status: launched on Artemis I on 16 November 2022 as one of ten secondary CubeSats [2][3].",
+              "Spacecraft: 6U CubeSat with a 4U aluminum payload enclosure and a 2U bus [5].",
+              "Fluidic cards: 18 cards, each with sixteen 100 microlitre wells, 288 wells in total, in two independent banks of nine cards on separate manifolds; well diameter 3.5 mm [6]. Approximately 10^5 cells per 100 microlitre well [5].",
+              "Desiccant: about 80 mg of Drierite per desiccant chamber [6].",
+              "Optics: three-colour LED system at 630, 570 and 850 nm with photodiode detection [6]. Growth is followed by turbidity and metabolic activity by alamarBlue redox dye [5].",
+              "Onboard linear energy transfer (LET) spectrometer [6].",
+              "Strains: wild-type (YBS21-A) and rad51 deletion (YBS29-1), both in a diploid W303 background [5].",
+              "Thermal: heaters keep the payload at or above 4 C in stasis, with a 5 C set point for non-experimental phases [5]. Non-active cards are kept above freezing at about 5 C and active cards at 23 C [6].",
+              "Operation: two cards are activated at a time, up to nine times, with about seven days per two-card experiment [6].",
+              "Flight result: four two-week experiments observed no yeast cell growth; NASA concluded that deep-space radiation was not the cause [2].",
+              "Mass, power and volume: not stated [5][6]."
+            ],
+            "source_urls": [
+              "https://www.nasa.gov/ames/biosentinel",
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC10254977",
+              "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2022.853980/full"
+            ],
+            "images": [
+              {
+                "id": "biosentinel_biosensor_card",
+                "description": "BioSentinel microfluidics card designed at NASA Ames, where pink wells show actively growing yeast.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": null,
+                "source_page_url": "https://www.nasa.gov/ames/biosentinel",
+                "publisher": "NASA",
+                "credit": "NASA/Dominic Hart (as reported on the source page)",
+                "caption": "A BioSentinel microfluidics card designed at Ames, where pink wells show actively growing yeast.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL not verified, so image_url is null. The source page reports a candidate path, https://www.nasa.gov/wp-content/uploads/2021/10/acd15-0042-011.jpg, which remains unverified. Caption paraphrased from the source-page text."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are not publicly specified for LEIA. For BioSentinel, the spacecraft is a 6U CubeSat with a 4U aluminum payload enclosure and a 2U bus [5]. NASA describes the spacecraft as shoebox-sized [3]. The U designations are size classes, and the instrument's own dimensions in centimetres are not given in the sources consulted.",
+        "mass_and_weight": "Mass is not publicly specified for either the LEIA or the BioSentinel BioSensor in the sources consulted [4][5][6]. Mass would drive launch and lander accommodation, but no verified value is given here.",
+        "power_requirements": "Power is not quantified in watts for either design. The LEIA BioSensor is described as running on a limited power supply [4], and the BioSentinel bus is solar-powered [5]. Heater power and the full thermal budget are not publicly specified."
+      },
+      "environmental_and_operational_requirements": "The biosensor must keep living cells viable through long dormant storage on Earth, launch and transit, then support growth on command in space. Thermal control is central. In stasis the payload is heated to keep it at or above about 4 C [5]. Non-active cards are kept above freezing at about 5 C, and active cards are held at the experimental growth temperature of 23 C [6]. Dried yeast is described as allowing stasis for more than 20 months before activation [6]. Desiccant and check valves keep humidity low before activation [6]. Power is limited: the LEIA BioSensor runs on a limited supply [4], and the BioSentinel bus is solar-powered [5]. The LEIA target is the lunar South Pole, close to the anticipated Artemis III landing region, so the payload must operate autonomously and send data to Earth without sample return [1][4]. Launch vibration, shock and lunar surface temperature cycling are not quantified in the sources consulted, so their values for any lunar version are not publicly specified.",
+      "limitations": "The biosensor is a biological instrument and inherits the constraints of living cells. Yeast is a model organism, so its responses approximate but do not equal those of human tissue [1][3]. The BioSentinel flight showed that yeast viability can be lost during long pre-launch storage, and NASA concluded that the absence of growth was not caused by deep-space radiation [2]. The biological readouts depend on optical and dye systems that must be calibrated, and LEIA reserves some wells for calibration standards [1]. The number of conditions that can be tested is limited by the number of wells, 256 in the LEIA description and 288 in the BioSentinel description [1][6]. The number of activation cycles is also limited by the number of cards [6].",
+      "transportation_and_deployment": {
+        "overview": "A radiation biosensor is not delivered alone. BioSentinel flew as one of ten secondary CubeSats on Artemis I [2][3], and LEIA is planned as a secondary payload on a CLPS lander, with most spacecraft components removed and the fluidic, optical and thermal systems retained [6]. Transport and deployment therefore depend on the host vehicle's launch, transfer and landing environment, which is not specified for LEIA in the sources consulted.",
+        "transportation_process": [
+          "Assemble and load dried yeast cards and desiccant chambers on Earth. LEIA's late-load capability allows fresh cards to be integrated at the end of assembly [1].",
+          "Maintain stasis with heaters and humidity barriers during integration, launch and transit [5][6].",
+          "Launch as a secondary payload. BioSentinel was secured inside the Orion stage adapter at Kennedy Space Center alongside other CubeSats [3].",
+          "Transit: BioSentinel was planned for six to nine months in solar orbit after a lunar flyby, with periodic week-long yeast studies [3].",
+          "Lunar delivery: LEIA is planned to reach the lunar surface as a secondary payload on a CLPS lander. The lander is not named in the sources consulted [1][6].",
+          "Surface operation: activate the cards by adding medium, measure growth and metabolism over several days, and record radiation data [1][6]."
+        ],
+        "deployment_methods": "The sources describe an autonomous, self-contained biosensor that activates and measures yeast cultures on command, rather than a deployable structure or a sample-return system [1][4]. No robotic arm, deployment mechanism or astronaut installation is described for LEIA or BioSentinel.",
+        "historical_examples": "BioSentinel is the historical precedent: a 6U CubeSat secondary payload on Artemis I, secured in the Orion stage adapter before launch [3][5]. Its biology experiments observed no yeast growth [2].",
+        "compatibility_assessment": "Compatibility with a specific lunar lander has not been verified. NASA names the CLPS programme but does not name the LEIA lander [1], and the 2022 source does not name one either [6]. Lander mass, mounting, thermal, power and data interfaces would need to be checked against verified specifications before any compatibility claim is made.",
+        "images": [
+          {
+            "id": "artemis_i_cubesats_in_orion_adapter",
+            "description": "Overhead view of the Artemis I CubeSats, including BioSentinel, secured inside the Orion stage adapter at Kennedy Space Center.",
+            "image_type": "Launch preparation photograph",
+            "image_url": null,
+            "source_page_url": "https://www.nasa.gov/missions/artemis/orion/artemis-i-to-launch-first-of-a-kind-deep-space-biology-mission",
+            "publisher": "NASA",
+            "credit": "NASA/Cory Huston (as reported on the source page)",
+            "caption": "The CubeSats after final processing, secured inside the Orion stage adapter at Kennedy Space Center.",
+            "section_placements": [
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct asset URL not verified, so image_url is null. The source page reports a candidate path, https://www.nasa.gov/wp-content/uploads/2022/08/cubesats_081221_1.jpg, which remains unverified. Caption paraphrased from the source-page text."
+          }
+        ]
+      },
+      "historical_significance": "BioSentinel is historically significant because it was the first yeast biosensor flown on a deep-space mission as part of an Artemis flight [3]. Its four two-week biological experiments observed no yeast growth. NASA concluded that deep-space radiation was not the cause, and the likely explanation is that the yeast was no longer viable after extended storage before launch [2]. The mission was extended, and its radiation detector kept recording data; as of 16 November 2025 NASA reported three years of continuous radiation observations in deep space [2]. LEIA is presented as the lunar follow-on. It reuses the BioSensor's fluidic, optical and thermal systems, and adds a late-load capability that integrates fresh yeast cards late in assembly to reduce storage damage [1][6].",
+      "limitations_and_uncertainties": "The LEIA mission status as of 13 November 2026 could not be confirmed. NASA's page was last updated in 2024 and gives a 2026 delivery target [1], and this article does not assume that delivery has occurred. No mass, dimensions, power or thermal operating limits for LEIA are publicly specified in the sources consulted [1][4][6]. The well count differs between sources: NASA describes LEIA with 16 cards of 16 microwells each [1], while the BioSentinel design is described as 18 cards with sixteen 100 microlitre wells each [6]. Public flight results for BioSentinel are limited to NASA's summary, and no peer-reviewed flight results were found [2]. Image URLs were not separately verified, so images in this article link to their source pages. The yeast biosensor is used as a representative radiation biosensor because the catalogue entry does not define a specific instrument.",
+      "images": [
+        {
+          "id": "leia_fluidic_card_stack",
+          "description": "LEIA card stack: a fluidic card with microwells for yeast growth, layered with the electronics that control temperature and optics.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": null,
+          "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+          "publisher": "NASA",
+          "credit": "NASA (exact credit line not confirmed)",
+          "caption": "A LEIA card stack: a fluidic card with microwells for yeast growth.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL not fetched or verified, so image_url is null per policy. The NASA source page reports a candidate path, https://science.nasa.gov/wp-content/uploads/2023/09/leia-1.jpg, which remains unverified. Caption paraphrased from the source-page text."
+        },
+        {
+          "id": "leia_hardware_drawings",
+          "description": "Drawings of the LEIA hardware components: the ARES/BioSensor subassembly and the Mini-FND.",
+          "image_type": "Engineering drawing",
+          "image_url": null,
+          "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+          "publisher": "NASA",
+          "credit": "NASA (exact credit line not confirmed)",
+          "caption": "Drawings of the hardware components comprising LEIA, including the ARES/BioSensor subassembly and the Mini-FND.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL not verified, so image_url is null. The source page reports a candidate path, https://science.nasa.gov/wp-content/uploads/2023/09/leia-2.png, which remains unverified. Caption paraphrased from the source-page text."
+        },
+        {
+          "id": "biosentinel_biosensor_card",
+          "description": "BioSentinel microfluidics card designed at NASA Ames, where pink wells show actively growing yeast.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/ames/biosentinel",
+          "publisher": "NASA",
+          "credit": "NASA/Dominic Hart (as reported on the source page)",
+          "caption": "A BioSentinel microfluidics card designed at Ames, where pink wells show actively growing yeast.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL not verified, so image_url is null. The source page reports a candidate path, https://www.nasa.gov/wp-content/uploads/2021/10/acd15-0042-011.jpg, which remains unverified. Caption paraphrased from the source-page text."
+        },
+        {
+          "id": "artemis_i_cubesats_in_orion_adapter",
+          "description": "Overhead view of the Artemis I CubeSats, including BioSentinel, secured inside the Orion stage adapter at Kennedy Space Center.",
+          "image_type": "Launch preparation photograph",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/missions/artemis/orion/artemis-i-to-launch-first-of-a-kind-deep-space-biology-mission",
+          "publisher": "NASA",
+          "credit": "NASA/Cory Huston (as reported on the source page)",
+          "caption": "The CubeSats after final processing, secured inside the Orion stage adapter at Kennedy Space Center.",
+          "section_placements": [
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL not verified, so image_url is null. The source page reports a candidate path, https://www.nasa.gov/wp-content/uploads/2022/08/cubesats_081221_1.jpg, which remains unverified. Caption paraphrased from the source-page text."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "leia_fluidic_card_stack",
+          "description": "LEIA card stack: a fluidic card with microwells for yeast growth, layered with the electronics that control temperature and optics.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": null,
+          "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+          "publisher": "NASA",
+          "credit": "NASA (exact credit line not confirmed)",
+          "caption": "A LEIA card stack: a fluidic card with microwells for yeast growth.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL not fetched or verified, so image_url is null per policy. The NASA source page reports a candidate path, https://science.nasa.gov/wp-content/uploads/2023/09/leia-1.jpg, which remains unverified. Caption paraphrased from the source-page text."
+        }
+      ],
+      "references": [
+        {
+          "title": "Growing Yeast on the Moon to Study Radiation Risks to Human Explorers (LEIA technology highlight)",
+          "publisher": "NASA Science",
+          "date": "2023-09-26 (last updated 2024-08-14)",
+          "url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers"
+        },
+        {
+          "title": "BioSentinel mission page",
+          "publisher": "NASA Ames Research Center",
+          "date": "Page content updated November 2025",
+          "url": "https://www.nasa.gov/ames/biosentinel"
+        },
+        {
+          "title": "Artemis I to Launch First-of-a-Kind Deep Space Biology Mission",
+          "publisher": "NASA",
+          "date": "2022-08-12",
+          "url": "https://www.nasa.gov/missions/artemis/orion/artemis-i-to-launch-first-of-a-kind-deep-space-biology-mission"
+        },
+        {
+          "title": "Developing Flexible Instruments for Biological Missions Beyond Low Earth Orbit (conference abstract)",
+          "publisher": "NASA Technical Reports Server; American Society for Gravitational and Space Research annual meeting",
+          "date": "2023-11-14 to 2023-11-18",
+          "url": "https://ntrs.nasa.gov/citations/20230011094"
+        },
+        {
+          "title": "BioSentinel: Long-Term Saccharomyces cerevisiae Preservation for a Deep Space Biosensor Mission (DOI 10.1089/ast.2019.2073)",
+          "publisher": "Astrobiology 23(6):617-630; PMC",
+          "date": "2023-05-22",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10254977"
+        },
+        {
+          "title": "Fluidic-Based Instruments for Space Biology Research in CubeSats (DOI 10.3389/frspt.2022.853980)",
+          "publisher": "Frontiers in Space Technologies (Harandi et al.)",
+          "date": "2022",
+          "url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2022.853980/full"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "LEIA BioSensor example": "payload.article.physical_specifications.examples[0].images",
+      "BioSentinel BioSensor example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. Direct image asset URLs were not verified, so image_url is null for every image and the Markdown links to source pages instead. Section-level image objects are repeated intentionally."
+  },
+  "data_quality_notes": [
+    "The catalogue name 'Radiation biosensor' is generic. The article uses the yeast-based BioSensor (LEIA and BioSentinel) as the representative design; this is an interpretive choice.",
+    "LEIA flight status as of 2026-11-13 was not confirmed. NASA's page was last updated in 2024 and gives a 2026 delivery target.",
+    "Well counts differ: NASA describes LEIA as 16 cards of 16 microwells (256 wells); the 2022 source describes BioSentinel as 18 cards of sixteen 100 microlitre wells (288 wells). The 2023 LEIA abstract gives 16 cards without a well count.",
+    "No direct image asset URL was verified. All image_url values are null; candidate paths reported by source pages are noted in each image's notes field and are unverified.",
+    "Reference 4 is a conference abstract and reference 6 is a 2022 perspective article. The reference 6 author attribution comes from a secondary summary of the source page.",
+    "Mass, dimensions, power and thermal operating limits for LEIA are not publicly specified in the sources consulted."
+  ]
+}

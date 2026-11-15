@@ -1,0 +1,531 @@
+{
+  "catalogue_id": 7,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 1,
+    "name": "Geophysical and lunar interior instruments"
+  },
+  "payload": {
+    "number": 7,
+    "name": "Active seismic source",
+    "article": {
+      "overview": "An active seismic source is a device, or a controlled event, that deliberately creates seismic waves at a known time and place. Scientists then measure how those waves travel through the ground. Natural moonquakes arrive at unknown times and places, so a controlled source gives a reference that is easier to interpret. On the Moon, Apollo carried three kinds of controlled source. Astronaut-operated thumpers and rocket-launched grenades (the mortar package) were part of the Active Seismic Experiment (ASE) on Apollo 14 and 16. Remotely detonated explosive packages were part of the Lunar Seismic Profiling Experiment (LSPE) on Apollo 17. In the sources read for this article, these are the only controlled seismic sources flown on the Moon. Deliberate impacts of spacecraft stages were also recorded as seismic sources; the Nunn review treats them separately, as artificial impacts [1].",
+      "description": "An active seismic experiment has three main parts. A source: a thumper (a staff used to set off a small explosive charge), a rocket-launched grenade, or an explosive package placed on the surface. A receiver array: geophones (ground-motion sensors) laid out in a line or a triangle, so the same wave can be timed at several points. Firing and recording electronics: firing was either done by the crew at the source or sent by radio from the ALSEP central station, and the recording electronics were in the central station [4]. The Nunn et al. review describes the ASE as a set of controlled sources used to evaluate the subsurface structure around the landing site [1]. The Apollo 17 LSPE extended the depth of this approach; its aim was to explore the subsurface down to a few kilometres [1].",
+      "scientific_purpose_and_applications": "The purpose of an active source is to produce seismic waves whose origin and firing time are known. The arrival times and shapes of the recorded waves then show the velocity structure beneath the array. Applications described in the sources read: (1) near-surface structure at the landing site. The Apollo 14 ASE was designed to measure the subsurface around the landing site using controlled sources [1]. A 1972 Science paper, read as an abstract only, reports a regolith about 8.5 m thick with a compressional-wave velocity of 104 m/s, underlain by a layer of 299 m/s [2]. (2) Deeper crustal structure. The LSPE's stated aim was to probe the subsurface to a depth of a few kilometres [1]. The Apollo 17 abstract states that the analysis determined the crustal structure to a depth of several kilometers [3]; the abstract gives no numerical layer values. (3) Calibrating wave velocities with known impacts. Artificial impacts with known time and location have been used to constrain the velocity structure of the crust and upper mantle [1].",
+      "operating_principle": "An active source releases energy at a known time and place. The energy travels through the ground as seismic waves, and some of it is refracted or reflected by layers and boundaries. Geophones at known distances from the source record the ground motion. The arrival time of each wave, measured against the known firing time, gives its travel time. The travel times at different distances then give the seismic velocities of the layers [2][3]. Apollo 14 and 16 ASE: the thumper and the mortar package were fired from fixed geophone positions. The geophones were of the moving-coil magnet type; their output was proportional to ground velocity above their natural resonant frequency, which the Data User's Note gives as 7.5 Hz for the ASE/LSPE geophone array without attributing it to a single station [4]. The Apollo 14 and 16 recording systems used a nominal sampling rate of 530 Hz [1]. Apollo 17 LSPE: the explosive packages were detonated remotely. The LSPE transmitter in the central station sent a repetitive pulsed carrier signal; a series of three properly spaced pulses was used to fire the signal processor in each explosive package and detonate its explosive train [4]. The nominal sampling rate was 117.7667 Hz; the review gives the actual rate as between 117.7773 and 117.7803 Hz [1].",
+      "scientific_importance": "Controlled sources give the velocity structure a known origin. They complement passive seismometers, which record natural events with unknown times and positions. The Apollo 14 abstract reported that there was no evidence of permafrost at that site [2]. The LSPE abstract reports that its data determined the internal characteristics of the lunar crust to a depth of several kilometres [3]. The Nunn review also notes that artificial impacts with known time and location were used to constrain the velocity inversion of the crust and upper mantle [1]. Active sources are therefore important as calibration references for passive seismology as well as for their own direct measurements.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an active seismic source. Each Apollo experiment used its own source hardware, and the examples below are different designs. They should not be compared directly. Published mass, size and power values are scarce for these experiments; where a value is not stated in the sources read it is recorded as not publicly specified in the sources read.",
+        "examples": [
+          {
+            "name": "Apollo 14 Active Seismic Experiment (ASE): thumper and mortar package",
+            "type": "Flown lunar active seismic experiment (1971)",
+            "status": "Flown. Part of the ALSEP, operated during the first Apollo 14 EVA on 5 February 1971 [8][9].",
+            "thumper": {
+              "description": "An astronaut-activated thumper, a short staff used to detonate compressive explosive charges [4]. It contained a small explosive charge [1].",
+              "initiators_stated": 21,
+              "initiator_location": "Each initiator was located next to a geophone at station 14 [1].",
+              "charge_mass_and_size": "Not publicly specified in the sources read."
+            },
+            "geophone_layout": {
+              "count": 3,
+              "nominal_spacing_m": 45.7,
+              "shot_interval_described": "Shot positions at 4.6 m intervals along the geophone line [4].",
+              "note": "Geophone 2 was pulled out of the ground before shot 11, replaced, and lay on its side during the first five shots [4]."
+            },
+            "firing_results": {
+              "review_successful_positions": "1, 2, 3, 4, 7, 11, 12, 13, 17, 18, 19, 20, 21 (13 positions) [1].",
+              "data_user_note_successful_positions": "1, 3, 4, 7, 11, 12, 13, 17, 18, 19, 20, 21 (12 positions; omits shot 2) [4].",
+              "conflict": "The two sources differ by one position. Secondary web sources give 22 charges and 19 fired; these were not confirmed in a primary source and are not used. Failure causes for shots 5, 6, 8, 9, 10, 14, 15 and 16 are not given in the sources read [1][4]."
+            },
+            "mortar_package": {
+              "description": "Assembled as a mortar package of rocket-launched grenades. Not fired at Apollo 14 because of concern that back-blast might damage other instruments [1].",
+              "planned_ranges_m_from_data_user_note": [
+                150,
+                300,
+                900,
+                1500
+              ],
+              "outcome": "Not fired [1][4]."
+            },
+            "sampling": {
+              "cutoff_hz": 250,
+              "filter_order": 8,
+              "nominal_sampling_rate_hz": 530,
+              "note": "The review notes that 500 Hz is sometimes quoted in error [1]."
+            },
+            "results_abstract_only": "A 1972 Science paper by Watkins and Kovach reports, in its abstract, a regolith 8.5 m thick with a compressional-wave velocity of 104 m/s, underlain by a layer with a velocity of 299 m/s whose thickness is between 16 and 76 m, and a layer beneath with a velocity greater than 370 m/s; the abstract states that there was no evidence of permafrost [2]. The full text was not readable.",
+            "source_urls": [
+              "https://doi.org/10.1126/science.175.4027.1244",
+              "https://ntrs.nasa.gov/citations/19720039829",
+              "https://ntrs.nasa.gov/citations/19710021485",
+              "https://ntrs.nasa.gov/citations/19810009447"
+            ],
+            "images": [
+              {
+                "id": "apollo_14_ase_thumper_operation",
+                "description": "Apollo 14 astronaut Edgar D. Mitchell operating the Active Seismic Experiment thumper on the lunar surface during the first Apollo 14 EVA.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2023/03/s71-19509.jpg",
+                "source_page_url": "https://www.nasa.gov/image-article/astronaut-edgar-d-mitchell-operates-active-seismic-experiment",
+                "publisher": "NASA",
+                "credit": "Image Credit: NASA",
+                "caption": "Astronaut Edgar D. Mitchell operates the Active Seismic Experiment's thumper during the first Apollo 14 EVA, 5 February 1971. Credit: NASA.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct NASA asset URL verified (HTTP 200, image/jpeg). The NASA catalogue number S71-19509 is taken from the image file name and was not printed on the source page; confirm before citing it as a catalogue number."
+              },
+              {
+                "id": "apollo_14_ase_mortar_package",
+                "description": "Mortar package assembly of the ALSEP's active seismic experiment (Apollo 14).",
+                "image_type": "Historical lunar hardware photograph",
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/ALSEP_AS14-67-9361.jpg",
+                "source_page_url": "https://commons.wikimedia.org/wiki/File:ALSEP_AS14-67-9361.jpg",
+                "publisher": "NASA (catalogued by the Lyndon B. Johnson Space Center; NARA NAID 16697840), as stated on Wikimedia Commons",
+                "credit": "NASA, catalogued by the Lyndon B. Johnson Space Center. NARA NAID: 16697840",
+                "caption": "The mortar package assembly of the ALSEP's active seismic experiment, Apollo 14 (photograph AS14-67-9361, 5 February 1971).",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct Wikimedia Commons asset URL verified (HTTP 200, image/jpeg). The original NASA page cited on Commons returned HTTP 403 and could not be checked. Commons states that the image is public domain in the United States because NASA created it."
+              }
+            ]
+          },
+          {
+            "name": "Apollo 16 Active Seismic Experiment (ASE): thumper and grenade package",
+            "type": "Flown lunar active seismic experiment (1972)",
+            "status": "Flown. Part of the ALSEP at the Descartes landing site. The ASE recorded the seismic signal generated by the lunar module ascent on 24 April 1972 [4].",
+            "geophone_layout": {
+              "count": 3,
+              "geophone_3_distance_from_geophone_1_m": 90,
+              "shot_interval_m": [
+                4.75,
+                9.5
+              ],
+              "shot_interval_note": "Shot spacing was 4.75 m, increased to 9.5 m between shots 11 and 12 and between shots 18 and 19 [1][4]."
+            },
+            "thumper_results": {
+              "data_user_note": "All 19 thumper shots were successful [4].",
+              "secondary_web_sources": "Secondary sites give 19 of 22 charges; not confirmed in a primary source. The review gives no count for Apollo 16 [1]."
+            },
+            "grenade_package": {
+              "placement": "14 m from geophone 1, fired parallel to and downrange of the geophone line [4].",
+              "contents": "Rocket motor, safe slide plate, high-explosive charge, ignition and detonation device, thermal battery and 30-MHz transmitter [4].",
+              "nominal_parameters_table": [
+                {
+                  "grenade": 1,
+                  "nominal_range_m": 1524,
+                  "mass_kg": 1.261,
+                  "mean_velocity_m_per_s": 50,
+                  "launch_angle_deg": 44,
+                  "outcome": "Not launched; pitch-angle sensor problem after grenade 3 [1][4]."
+                },
+                {
+                  "grenade": 2,
+                  "nominal_range_m": 914,
+                  "mass_kg": 1.024,
+                  "mean_velocity_m_per_s": 38,
+                  "launch_angle_deg": 32,
+                  "outcome": "Launched first; approximately 900 m per the Data User's Note [1][4]."
+                },
+                {
+                  "grenade": 3,
+                  "nominal_range_m": 305,
+                  "mass_kg": 0.775,
+                  "mean_velocity_m_per_s": 22,
+                  "launch_angle_deg": 19,
+                  "outcome": "Launched third (last); approximately 300 m [1][4]."
+                },
+                {
+                  "grenade": 4,
+                  "nominal_range_m": 152,
+                  "mass_kg": 0.695,
+                  "mean_velocity_m_per_s": 16,
+                  "launch_angle_deg": 13,
+                  "outcome": "Launched second; approximately 150 m [1][4]."
+                }
+              ],
+              "launch_window": "23 May 1972, between 05:20 and 06:44 UT; exact launch times are not known precisely [1][4].",
+              "caveat": "The original ranges were in feet and were converted only roughly [1]."
+            },
+            "sampling": {
+              "cutoff_hz": 150,
+              "nominal_sampling_rate_hz": 530
+            },
+            "operations": "Operated for 30 minutes every Friday in a passive listening mode [5].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19810009447",
+              "https://ntrs.nasa.gov/citations/19730002120",
+              "https://doi.org/10.1007/s11214-020-00709-3"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 17 Lunar Seismic Profiling Experiment (LSPE): explosive packages",
+            "type": "Flown lunar active seismic experiment (1972), designated S-203 in NASA photograph records",
+            "status": "Flown. Eight explosive packages were deployed by the Apollo 17 astronauts during EVAs and detonated remotely after the crew left the Moon [1][4]. The LSPE recorded the signals from the lunar module ascent and the ascent-stage impact [1][4].",
+            "explosive_packages": {
+              "count": 8,
+              "description": "Identical except for the amount of high explosive and the preset run-out time of the mechanical timers [4].",
+              "maximum_distance_km_from_alsep": 2.7,
+              "maximum_distance_note": "From the Data User's Note [4]. Secondary web sources give 3.5 km; not checked against a primary source.",
+              "total_explosive_mass_kg_calculated": 5.104,
+              "total_explosive_mass_note": "Calculated for this article from the eight values in Table 6 of Nunn et al. The review does not give a total [1].",
+              "detonation_table": [
+                {
+                  "package": "EP-6",
+                  "explosive_mass_kg": 0.454,
+                  "detonation_utc": "1972-12-15T23:48:14.56"
+                },
+                {
+                  "package": "EP-7",
+                  "explosive_mass_kg": 0.227,
+                  "detonation_utc": "1972-12-16T02:17:57.11"
+                },
+                {
+                  "package": "EP-4",
+                  "explosive_mass_kg": 0.057,
+                  "detonation_utc": "1972-12-16T19:08:34.67"
+                },
+                {
+                  "package": "EP-1",
+                  "explosive_mass_kg": 2.722,
+                  "detonation_utc": "1972-12-17T00:42:36.79"
+                },
+                {
+                  "package": "EP-8",
+                  "explosive_mass_kg": 0.113,
+                  "detonation_utc": "1972-12-17T03:45:46.08"
+                },
+                {
+                  "package": "EP-5",
+                  "explosive_mass_kg": 1.361,
+                  "detonation_utc": "1972-12-17T23:16:41.06"
+                },
+                {
+                  "package": "EP-2",
+                  "explosive_mass_kg": 0.113,
+                  "detonation_utc": "1972-12-18T00:44:56.82"
+                },
+                {
+                  "package": "EP-3",
+                  "explosive_mass_kg": 0.057,
+                  "detonation_utc": "1972-12-18T03:07:22.28"
+                }
+              ],
+              "detonation_table_note": "Masses and times from Table 6 of Nunn et al. [1], based on Kovach et al. (1973) Table 10-III. The Data User's Note gives the same masses in grams and EP-5 at 23:16:41.08 UT [4]. Placement distances are given only in Figure 6 of the review, which could not be read in text form [1]."
+            },
+            "geophone_array": {
+              "review_description": "Four outer geophones in a triangular array, with an additional geophone at the centre; outer sensors approximately 100 m apart [1].",
+              "data_user_note_description": "Four identical geophones in a triangular array [4].",
+              "conflict": "The two descriptions differ on the centre geophone; not resolved.",
+              "geophone_1_position": "Approximately 148 m west-northwest of the lunar module [1][4]."
+            },
+            "detonation_method": "The LSPE transmitter in the central station sent a repetitive pulsed carrier signal; a series of three properly spaced pulses fired the signal processor in each explosive package and detonated its explosive train [4].",
+            "recording": {
+              "medium": "Magnetic tape [4].",
+              "nominal_sampling_rate_hz": 117.7667,
+              "actual_sampling_rate_hz": "117.7773 to 117.7803 [1]."
+            },
+            "power_and_mass": "Not publicly specified in the sources read for the LSPE hardware. The 1972 progress report gives an estimated weight of 42.4 lb for the explosive package transport module as a pre-flight estimate [5]. Its power figures are for the ALSEP array as a whole and cannot be assigned to the LSPE with confidence [5].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19740010327",
+              "https://ntrs.nasa.gov/citations/19810009447",
+              "https://ntrs.nasa.gov/citations/19730002120",
+              "https://doi.org/10.1007/s11214-020-00709-3"
+            ],
+            "images": [
+              {
+                "id": "apollo_17_lspe_geophone_module_reels",
+                "description": "Geophone module and cable reels of the Apollo 17 Lunar Seismic Profiling Experiment (S-203).",
+                "image_type": "Historical lunar hardware photograph (linked source page only)",
+                "image_url": null,
+                "source_page_url": "https://artsandculture.google.com/asset/apollo-17-lunar-surface-experiment-equipment/1wEXHBPCGXqygA",
+                "publisher": "NASA (via Google Arts & Culture)",
+                "credit": "NASA, Washington, DC, United States",
+                "caption": "The Geophone Module and Cable Reels of the Lunar Seismic Profiling Experiment (S-203). NASA catalogue S72-37259, dated 30 November 1972.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "No direct asset URL verified. Rendered in the Markdown as a linked source-page reference. Rights as stated on the source page: 'JSC'."
+              },
+              {
+                "id": "apollo_17_lspe_explosive_charge_diagram",
+                "description": "Diagram of a Lunar Seismic Profiling Experiment explosive charge, showing the charge packed on a pallet and in deployed configuration.",
+                "image_type": "Engineering diagram (press kit)",
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/ALSEP_Lunar_Seismic_Profiling_Experiment_Charge.gif",
+                "source_page_url": "https://commons.wikimedia.org/wiki/File:ALSEP_Lunar_Seismic_Profiling_Experiment_Charge.gif",
+                "publisher": "NASA (Apollo 17 Press Kit), as stated on Wikimedia Commons",
+                "credit": "Apollo 17 Press Kit: PDF file (5.8 MB) courtesy Ron Wells and Glen Swanson. Figure 2-19",
+                "caption": "Diagram of a charge from the Lunar Seismic Profiling Experiment, packed on a pallet and in deployed configuration.",
+                "section_placements": [
+                  "physical_specifications.examples[2]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct Wikimedia Commons asset URL verified (HTTP 200, image/gif). Commons states that the image is public domain in the United States because NASA created it; this was not checked against the NASA press kit itself."
+              }
+            ]
+          },
+          {
+            "name": "Artificial impacts of Saturn third-stage boosters and lunar module ascent stages",
+            "type": "Flown artificial seismic sources (deliberate stage impacts, not planned as seismic experiments)",
+            "status": "Flown events. Nine impacts are described in Section 3.1 of the Nunn review; two other papers it cites give eight [1].",
+            "characteristics": "The timing, location and impact energy are known for these events, except for one Apollo 16 booster for which tracking was lost [1]. Impact locations were estimated from Lunar Reconnaissance Orbiter images [1]. The review treats the impacts as purely isotropic (explosive) sources [1].",
+            "lspe_observations": "The LSPE detected the lunar module ascent-stage impact approximately 8.7 km from the array and recorded the thrust of the lunar module ascent engine [1]. The impact time is not given in the sources read.",
+            "specifications": "Impact energies and masses are not given in the sources read. The review's table of artificial impacts is in its electronic supplement (Section S9), which is not included in the PDF [1].",
+            "source_urls": [
+              "https://doi.org/10.1007/s11214-020-00709-3"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo 14 and 16 ASE used a geophone line with a nominal spacing of 45.7 m for Apollo 14 and a 90 m distance between geophones 1 and 3 for Apollo 16. The LSPE geophone array had outer sensors about 100 m apart [1]. Thumper, grenade and explosive package dimensions are not publicly specified in the sources read. Grenade dimensions are not given. These designs are not directly comparable.",
+        "mass_and_weight": "Explosive masses are given for the eight LSPE packages (total 5.104 kg, calculated for this article) [1]. Grenade masses are 0.695 to 1.261 kg for the four Apollo 16 grenades [1]. Thumper charge mass is not publicly specified. The LSPE explosive package transport module was estimated at 42.4 lb in a 1972 progress report, which is a pre-flight estimate [5]. The LSPE electronics and central-station hardware mass is not publicly specified in the sources read.",
+        "power_requirements": "Not publicly specified for the active experiments in the sources read. The 1972 ALSEP progress report gives power values for the ALSEP array as a whole, which cannot be assigned to the active experiments with confidence [5]."
+      },
+      "environmental_and_operational_requirements": "Active sources on the Moon face the same environment as other surface instruments: vacuum, large temperature swings, radiation and micrometeoroid impacts [1]. Operational requirements specific to active sources include: crew-placed hardware (the thumper, the mortar package and the explosive packages were placed or operated by the crew, and the Apollo 14 grenades were not fired because of possible damage to other experiments [1][4]); safety around the source (a lunar roving vehicle striking a deployed explosive package was determined not to be a safety hazard, but it would make the package impossible to detonate [5]); thermal qualification (in a qualification test at the lunar noon design limit, the LSPE geophone module reached 320 F, above the 292 F limit, and support rings cracked and were replaced; this is a test finding, not flight data [5]); and timing and firing (the LSPE explosive packages used preset mechanical timers and were detonated remotely from the central station [4][5]).",
+      "limitations": "1. No planned active source since Apollo: the Apollo ASE and LSPE are the only controlled seismic sources flown on the Moon in the sources read. Future sources are not described. 2. Source counts conflict: the Apollo 14 successful-shot count is 13 in the review and 12 in the Data User's Note, and secondary sources give 22 charges that the primary sources do not confirm. 3. Source hardware is poorly documented: thumper charge masses and sizes are not stated in the sources read; grenade masses are given in Table 1 of the Markdown article. 4. Distances are partly unverified: LSPE explosive package placement distances are given only in a figure that could not be read in text form; the 2.7 km maximum is from the Data User's Note, and the 3.5 km secondary figure was not verified. 5. Geophone geometry differs between sources for the LSPE centre geophone. 6. Active and passive data are not interchangeable: the amplitude of each source and its coupling to the ground are not calibrated in the sources read.",
+      "transportation_and_deployment": {
+        "overview": "The Apollo active sources were part of the ALSEP packages and were set up by the crew during EVAs. The LSPE explosive packages were carried in a transport module and detonated remotely from the central station after the crew left the Moon. These were Apollo-specific systems; the sources read do not describe a current or future delivery route.",
+        "transportation_process": [
+          "ALSEP packages, including the thumper, the mortar package and the geophone lines (Apollo 14 and 16), were carried to the surface as part of the ALSEP and set up during EVAs. The sources read do not describe the detailed steps [1][4].",
+          "The LSPE explosive packages were carried in an explosive package transport module, with a pre-flight weight estimate of 42.4 lb [5].",
+          "The LSPE charge was packed on a pallet for transport and then placed in its deployed configuration, as shown in the Apollo 17 press-kit diagram [7].",
+          "Explosive packages were deployed by the Apollo 17 astronauts during the EVAs, along the traverses, and remained on the surface [1][4].",
+          "The central station's transmitter sent a three-pulse sequence to fire each explosive package remotely after the crew left the Moon [4]."
+        ],
+        "deployment_methods": "Crew placement and remote detonation. The Apollo 14 and 16 thumper and mortar package were operated by the crew from fixed geophone positions [1][4]. The LSPE explosive packages were placed by the crew and detonated by a three-pulse command from the central station [4]. The sources read do not describe the detailed deployment steps.",
+        "historical_examples": "Apollo 14 ASE (1971), Apollo 16 ASE (1972) and Apollo 17 LSPE (1972) [1][4][5].",
+        "compatibility_assessment": "These Apollo systems were designed for the Apollo lunar surface experiment packages. No compatibility with any current or future lander is claimed, because none was verified.",
+        "images": [
+          {
+            "id": "apollo_17_lspe_explosive_charge_diagram",
+            "description": "Diagram of a Lunar Seismic Profiling Experiment explosive charge, showing the charge packed on a pallet and in deployed configuration.",
+            "image_type": "Engineering diagram (press kit)",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/ALSEP_Lunar_Seismic_Profiling_Experiment_Charge.gif",
+            "source_page_url": "https://commons.wikimedia.org/wiki/File:ALSEP_Lunar_Seismic_Profiling_Experiment_Charge.gif",
+            "publisher": "NASA (Apollo 17 Press Kit), as stated on Wikimedia Commons",
+            "credit": "Apollo 17 Press Kit: PDF file (5.8 MB) courtesy Ron Wells and Glen Swanson. Figure 2-19",
+            "caption": "Diagram of a charge from the Lunar Seismic Profiling Experiment, packed on a pallet and in deployed configuration.",
+            "section_placements": [
+              "physical_specifications.examples[2]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct Wikimedia Commons asset URL verified (HTTP 200, image/gif). Commons states that the image is public domain in the United States because NASA created it; this was not checked against the NASA press kit itself."
+          }
+        ]
+      },
+      "historical_significance": "The Apollo 14 ASE was operated on 5 February 1971 [8][9]. Its successor, the LSPE, was flown on Apollo 17 in December 1972 [1][4]. Between them, the experiments were designed to measure near-surface and deeper subsurface velocity structure with controlled sources [1][2][3]. The Apollo 16 ASE recorded the lunar module ascent signal on 24 April 1972 [4]. The LSPE recorded both the ascent-engine thrust and the ascent-stage impact [1].",
+      "limitations_and_uncertainties": "Apollo 14 thumper count: the review gives 21 initiators and 13 successful positions; the Data User's Note gives 12 successful positions; secondary sites give 22 charges and 19 fired. The primary sources do not resolve this, so no count is given as definitive. Apollo 14 and 17 primary records not readable: the Apollo 14 ASE publications (NTRS 19710021485 and 19720039829) and the Apollo 17 LSPE chapter (NTRS 19740010327) have abstracts only, so their numerical results are taken from the abstracts and the review, not from full texts. OCR quality: the Data User's Note and the 1972 progress report were read from OCR text, and several tables are garbled, so values from those tables are used only where the review gives the same number. Figures not read: Figure 6 of the Nunn review (LSPE explosive package placements) and Figure 14 (ILN requirements) could not be read in text form. Secondary sources (Wikipedia and similar pages) were used only to find images and leads; their numerical claims are not used unless a primary source confirms them. Thumper and grenade charge size: not stated in the sources read. LSPE power, mass and dimensions: not stated in the sources read. Impact energies and timing: the review's table of artificial impacts is not in the PDF, and the LM ascent-stage impact time is not given in the readable sources. Proposed future sources: none verified.",
+      "images": [
+        {
+          "id": "apollo_14_ase_thumper_operation",
+          "description": "Apollo 14 astronaut Edgar D. Mitchell operating the Active Seismic Experiment thumper on the lunar surface during the first Apollo 14 EVA.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2023/03/s71-19509.jpg",
+          "source_page_url": "https://www.nasa.gov/image-article/astronaut-edgar-d-mitchell-operates-active-seismic-experiment",
+          "publisher": "NASA",
+          "credit": "Image Credit: NASA",
+          "caption": "Astronaut Edgar D. Mitchell operates the Active Seismic Experiment's thumper during the first Apollo 14 EVA, 5 February 1971. Credit: NASA.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA asset URL verified (HTTP 200, image/jpeg). The NASA catalogue number S71-19509 is taken from the image file name and was not printed on the source page; confirm before citing it as a catalogue number."
+        },
+        {
+          "id": "apollo_14_ase_mortar_package",
+          "description": "Mortar package assembly of the ALSEP's active seismic experiment (Apollo 14).",
+          "image_type": "Historical lunar hardware photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/ALSEP_AS14-67-9361.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:ALSEP_AS14-67-9361.jpg",
+          "publisher": "NASA (catalogued by the Lyndon B. Johnson Space Center; NARA NAID 16697840), as stated on Wikimedia Commons",
+          "credit": "NASA, catalogued by the Lyndon B. Johnson Space Center. NARA NAID: 16697840",
+          "caption": "The mortar package assembly of the ALSEP's active seismic experiment, Apollo 14 (photograph AS14-67-9361, 5 February 1971).",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct Wikimedia Commons asset URL verified (HTTP 200, image/jpeg). The original NASA page cited on Commons returned HTTP 403 and could not be checked. Commons states that the image is public domain in the United States because NASA created it."
+        },
+        {
+          "id": "apollo_17_lspe_geophone_module_reels",
+          "description": "Geophone module and cable reels of the Apollo 17 Lunar Seismic Profiling Experiment (S-203).",
+          "image_type": "Historical lunar hardware photograph (linked source page only)",
+          "image_url": null,
+          "source_page_url": "https://artsandculture.google.com/asset/apollo-17-lunar-surface-experiment-equipment/1wEXHBPCGXqygA",
+          "publisher": "NASA (via Google Arts & Culture)",
+          "credit": "NASA, Washington, DC, United States",
+          "caption": "The Geophone Module and Cable Reels of the Lunar Seismic Profiling Experiment (S-203). NASA catalogue S72-37259, dated 30 November 1972.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "No direct asset URL verified. Rendered in the Markdown as a linked source-page reference. Rights as stated on the source page: 'JSC'."
+        },
+        {
+          "id": "apollo_17_lspe_explosive_charge_diagram",
+          "description": "Diagram of a Lunar Seismic Profiling Experiment explosive charge, showing the charge packed on a pallet and in deployed configuration.",
+          "image_type": "Engineering diagram (press kit)",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/ALSEP_Lunar_Seismic_Profiling_Experiment_Charge.gif",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:ALSEP_Lunar_Seismic_Profiling_Experiment_Charge.gif",
+          "publisher": "NASA (Apollo 17 Press Kit), as stated on Wikimedia Commons",
+          "credit": "Apollo 17 Press Kit: PDF file (5.8 MB) courtesy Ron Wells and Glen Swanson. Figure 2-19",
+          "caption": "Diagram of a charge from the Lunar Seismic Profiling Experiment, packed on a pallet and in deployed configuration.",
+          "section_placements": [
+            "physical_specifications.examples[2]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct Wikimedia Commons asset URL verified (HTTP 200, image/gif). Commons states that the image is public domain in the United States because NASA created it; this was not checked against the NASA press kit itself."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "apollo_14_ase_thumper_operation",
+          "description": "Apollo 14 astronaut Edgar D. Mitchell operating the Active Seismic Experiment thumper on the lunar surface during the first Apollo 14 EVA.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2023/03/s71-19509.jpg",
+          "source_page_url": "https://www.nasa.gov/image-article/astronaut-edgar-d-mitchell-operates-active-seismic-experiment",
+          "publisher": "NASA",
+          "credit": "Image Credit: NASA",
+          "caption": "Astronaut Edgar D. Mitchell operates the Active Seismic Experiment's thumper during the first Apollo 14 EVA, 5 February 1971. Credit: NASA.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA asset URL verified (HTTP 200, image/jpeg). The NASA catalogue number S71-19509 is taken from the image file name and was not printed on the source page; confirm before citing it as a catalogue number."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Lunar Seismology: A Data and Instrumentation Review",
+          "authors": "Nunn, C., Garcia, R.F., Nakamura, Y., Marusiak, A.G., Kawamura, T., Sun, D., Margerin, L., Weber, R., Drilleau, M., Wieczorek, M.A., Khan, A., Rivoldini, A., Lognonne, P., Zhu, P.",
+          "publisher": "Space Science Reviews",
+          "publication_date": "2020-07-03 (online); volume 216, article 89",
+          "url": "https://doi.org/10.1007/s11214-020-00709-3",
+          "local_copy": "data/sources/006/s11214-020-00709-3.pdf",
+          "read_status": "Read in full from local PDF copy. Figures 4, 5, 6 and 14 were not readable in text form."
+        },
+        {
+          "number": 2,
+          "title": "Apollo 14 Active Seismic Experiment",
+          "authors": "Watkins, J.S., Kovach, R.L.",
+          "publisher": "Science",
+          "publication_date": "1972 (vol. 175, issue 4027, p. 1244)",
+          "url": "https://doi.org/10.1126/science.175.4027.1244",
+          "ntrs_record": "https://ntrs.nasa.gov/citations/19720039829",
+          "read_status": "Abstract only (NTRS record has no downloadable text)."
+        },
+        {
+          "number": 3,
+          "title": "Lunar Seismic Profiling Experiment (Apollo 17 Preliminary Science Report chapter)",
+          "authors": "Kovach, R.L., Watkins, J.S., Talwani, P.",
+          "publisher": "NASA",
+          "publication_date": "1973",
+          "url": "https://ntrs.nasa.gov/citations/19740010327",
+          "read_status": "Abstract only (no downloads available on NTRS)."
+        },
+        {
+          "number": 4,
+          "title": "Data User's Note: Apollo Seismological Investigations (NSSDC/WDC-A-R&S 80-11; NASA TM-82280)",
+          "authors": "Vostreys, R.W.",
+          "publisher": "NASA / National Space Science Data Center",
+          "publication_date": "1980-10",
+          "url": "https://ntrs.nasa.gov/citations/19810009447",
+          "read_status": "Read from OCR text (NTRS PDF). Tables are garbled; the ASE and LSPE values used are those confirmed against the review where possible."
+        },
+        {
+          "number": 5,
+          "title": "ALSEP Monthly Progress Report, July 1972 (BSR-3378, Contract NAS9-5829)",
+          "authors": "Bendix Aerospace Systems Division",
+          "publisher": "NASA (NASA-CR-128580)",
+          "publication_date": "1972-07",
+          "url": "https://ntrs.nasa.gov/citations/19730002120",
+          "read_status": "Read from OCR text. The LSPE body section was not located in the OCR; values are used only where attributable."
+        },
+        {
+          "number": 6,
+          "title": "Apollo 17 lunar surface experiment equipment (image S72-37259)",
+          "publisher": "NASA via Google Arts & Culture",
+          "publication_date": "1972-11-30 (image date)",
+          "url": "https://artsandculture.google.com/asset/apollo-17-lunar-surface-experiment-equipment/1wEXHBPCGXqygA",
+          "read_status": "Source page read; provides the image identification and credit only."
+        },
+        {
+          "number": 7,
+          "title": "Apollo 17 Press Kit, Figure 2-19 (LSPE charge diagram)",
+          "publisher": "NASA (as cited on Wikimedia Commons)",
+          "publication_date": "1972",
+          "url": "https://commons.wikimedia.org/wiki/File:ALSEP_Lunar_Seismic_Profiling_Experiment_Charge.gif",
+          "read_status": "Image source page read; the press kit itself was not read."
+        },
+        {
+          "number": 8,
+          "title": "Astronaut Edgar D. Mitchell operates Active Seismic Experiment",
+          "publisher": "NASA",
+          "publication_date": "not stated on page (event date 5 February 1971)",
+          "url": "https://www.nasa.gov/image-article/astronaut-edgar-d-mitchell-operates-active-seismic-experiment",
+          "read_status": "Read; source for the thumper image and the 5 February 1971 date."
+        },
+        {
+          "number": 9,
+          "title": "ALSEP AS14-67-9361",
+          "publisher": "Wikimedia Commons (NASA photograph, catalogued by NASA JSC; NARA NAID 16697840)",
+          "publication_date": "not stated (event date 5 February 1971)",
+          "url": "https://commons.wikimedia.org/wiki/File:ALSEP_AS14-67-9361.jpg",
+          "read_status": "Image file page read; the original NASA page cited on Commons returned HTTP 403."
+        },
+        {
+          "number": 10,
+          "title": "Active seismic signal analysis from Apollo 14 thumper and mortar detonations on lunar surface",
+          "authors": "Kovach, R.L., Landers, T., Watkins, J.S.",
+          "publisher": "NASA",
+          "publication_date": "1971",
+          "url": "https://ntrs.nasa.gov/citations/19710021485",
+          "read_status": "Abstract only; no downloads available on NTRS."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo 14 ASE example": "payload.article.physical_specifications.examples[0].images",
+      "Apollo 16 ASE example": "payload.article.physical_specifications.examples[1].images (no verified image)",
+      "Apollo 17 LSPE example": "payload.article.physical_specifications.examples[2].images",
+      "artificial impacts example": "payload.article.physical_specifications.examples[3].images (no verified image)",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Direct image URLs for the NASA thumper image, the Apollo 14 mortar package and the LSPE charge diagram returned HTTP 200 with the expected image content type on 2026-11-12. The LSPE geophone module has no verified direct asset URL and is recorded with image_url null. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Apollo 14 thumper count conflict: the Nunn review gives 21 initiators and 13 successful positions (shots 1, 2, 3, 4, 7, 11, 12, 13, 17, 18, 19, 20, 21); the 1980 Data User's Note lists 12 successful positions, omitting shot 2. Secondary web sources give 22 charges and 19 fired. The primary sources do not resolve this; no count is given as definitive.",
+    "Apollo 16 thumper: the Data User's Note states all 19 shots were successful; secondary web sources give 19 of 22 charges. The review gives no Apollo 16 count.",
+    "Apollo 16 grenade ranges: Nunn Table 3 gives nominal ranges of 1524, 914, 305 and 152 m; the Data User's Note reports the launched grenades at approximately 900, 300 and 150 m. Launch order per the Nunn caption: grenade 2, then 4, then 3; grenade 1 not launched.",
+    "LSPE explosive package masses and detonation times are taken from Table 6 of Nunn et al. (based on Kovach et al. 1973, Table 10-III). The Data User's Note OCR gives the same masses in grams and EP-5 at 23:16:41.08 UT versus 23:16:41.06 UT in the review. The mass-to-package mapping in the OCR was inferred from column order and was checked against the review table.",
+    "LSPE total explosive mass (5.104 kg) is calculated for this article from the eight values; no source gives a total.",
+    "LSPE maximum distance: 2.7 km from the Data User's Note. Secondary web sources give 3.5 km; not verified. Package placement distances are only in Figure 6 of the review, which was not readable in text form.",
+    "LSPE geophone array description differs between the review (four outer geophones in a triangle plus one at the centre, outer sensors about 100 m apart) and the Data User's Note (four identical geophones in a triangular array). Not resolved.",
+    "The 1972 ALSEP progress report (NTRS 19730002120) gives an explosive package transport module weight estimate of 42.4 lb and power values for the ALSEP array as a whole. Per-package mass and LSPE power are not stated; the report's Table 5-1 OCR does not allow reliable assignment of LSPE values.",
+    "LSPE qualification finding (1972 progress report): the geophone module reached 320 F at the lunar noon design limit against a 292 F limit, and support rings cracked and were replaced. This is a test finding, not flight data.",
+    "Apollo 14 and 17 primary records are abstract-only on NTRS: NTRS 19710021485 (Kovach, Landers, Watkins 1971), NTRS 19720039829 (Watkins and Kovach 1972, Science) and NTRS 19740010327 (Apollo 17 LSPE chapter). Numerical results for Apollo 14 (regolith 8.5 m, 104 m/s, 299 m/s, 16 to 76 m, greater than 370 m/s) are taken from the Watkins and Kovach abstract and have not been checked against the full paper.",
+    "The Apollo 17 LSPE layer velocities and depths that appear in secondary web summaries were not confirmed in a primary source and are not used. NTRS 19760018052 (NASA CR-147760) was reported in search results with a 4.7 km/s value at 1.4 km depth; it was not read and is not used.",
+    "Artificial impacts: the review counts nine impacts in Section 3.1 but cites eight in two other papers (Nakamura 1983; Lognonne et al. 2003). The review does not reconcile the difference. The impact table is in the electronic supplement (Section S9), which is not in the PDF.",
+    "Thumper and grenade charge mass and size: not stated in the sources read. Thumper charge mass is not publicly specified.",
+    "Images: the NASA thumper image (s71-19509) returned HTTP 200 image/jpeg. Its NASA catalogue number S71-19509 comes from the file name and is not printed on the source page. The Apollo 14 mortar image is a Wikimedia Commons copy (HTTP 200); its original NASA page returned HTTP 403, so the NASA source was not verified. The LSPE charge diagram is a Wikimedia Commons copy of a press-kit figure (HTTP 200); the press kit itself was not read. The LSPE geophone module has no verified direct asset URL and is shown only as a linked source-page reference. Commons public-domain statements were not checked against official NASA pages.",
+    "Source-page checks on 2026-11-12: nasa.gov image article, Commons file pages (both), Google Arts & Culture S72-37259 page and all five NTRS record pages returned HTTP 200. The cosmosobservatory.com S72-37259 page returned Media Not Found and is not used.",
+    "Figure 14 (ILN minimum requirements) of the Nunn review could not be read; the review's body text does not mention active sources for future missions. No proposed future lunar active seismic source was verified.",
+    "No landing-site recommendations are included, in line with the user's deferral."
+  ]
+}

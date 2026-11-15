@@ -1,0 +1,410 @@
+{
+  "catalogue_id": 29,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 29,
+    "name": "Stereo camera",
+    "article": {
+      "overview": "A stereo camera is an imaging instrument that records two or more views of the same scene from slightly different positions. The small difference between the views, called parallax, can be measured and converted into distance and three-dimensional shape when the camera geometry is calibrated. In lunar and planetary exploration, stereo imagers have been used in astronaut-held close-up cameras, on rover and lander masts, and in orbit. This entry covers the generic class. Specific designs are described only where a primary, archival or instrument-team source was reviewed, and each example states whether it was flown, flight-qualified, prototype or proposed.",
+      "description": "A stereo camera pairs two optical channels, or two exposures taken from different positions, with a known separation. The separation is called the baseline. Each channel forms an image on a detector, which may be film, a CCD or a CMOS array. Points that appear in both images are matched, and the offset between their positions (the disparity) is converted into a three-dimensional coordinate using the baseline, focal length and pointing of the camera [3][4]. Stereo imagers therefore produce not only pictures but also elevation models, slope maps and measurements of object size. In lunar work, the term covers several different configurations. Apollo astronauts used a handheld stereoscopic close-up camera to photograph soil and rock at millimetre scale [1][10]. Rover masts have carried stereo pairs for panoramas, terrain models and navigation support [4][6]. Orbital stereo cameras use two viewing directions, forward and backward along the spacecraft track, to build stereo coverage from a single orbit [7]. Some of the orbital capability overlaps with entry 028 (Terrain mapping camera) and the rover-based navigation role overlaps with entry 030 (Navigation camera). Entry 049 (Photogrammetry system) covers the processing chain that turns stereo images into products. This entry does not duplicate those topics beyond the stereo-imaging hardware.",
+      "scientific_purpose_and_applications": "The main purposes of a stereo camera are to measure three-dimensional terrain and object geometry, to record close-up textures for geological interpretation, and to support rover or lander operations. Measured products include digital terrain models (DTMs), slope and roughness maps, and distance estimates for hazard assessment. The Chang'e-3 panoramic stereo team reported that image pairs from the first lunar day were used to build DTMs at 0.02 m resolution near two observation points, and that these maps supported Yutu rover operations and planning for the second lunar day [4]. Mars Pathfinder stereo images were used to derive a DTM, a slope map and thematic maps of lighting and emission angles for the landing site [3]. Close-up stereo photography serves a different purpose. The Apollo 14 close-up record consists of 17-1/2 stereopairs of lunar soil and rock, including tracks left by a wheel, astronaut bootprints and undisturbed soil, which were presented as material for interpreting soil formation and impact phenomena [1][10]. The Mars Exploration Rover Pancam is a multispectral and stereo imager whose stereo pairs support both geology and terrain context [2].",
+      "operating_principle": "Stereo ranging depends on the geometry of two views. If the camera's baseline is B and its focal length is f, a point at distance Z produces a disparity d that is approximately proportional to B times f divided by Z. A larger baseline or longer focal length gives greater parallax at a given distance, which improves range precision for distant targets but also changes the near-field overlap. Toe-in, the small inward rotation of each optical axis, is used to set the range where the two fields overlap and where parallax is useful [2][3]. Matching is performed on images after geometric calibration. Calibration corrects lens distortion, establishes the principal point and relates the two cameras to one another. Errors in calibration, pointing or mast position propagate into the 3D coordinates, so practical accuracy depends on calibration quality as well as on the optical geometry [3][4]. Where the two channels have different focal lengths, as in some rover mast pairs, the stereo pair can still be used but is not optimised for matched ranging [6].",
+      "scientific_importance": "Stereo imaging converts two-dimensional pictures into measurements. Matching points between a left and right image gives parallax, which can be converted into 3D coordinates when the camera geometry is calibrated. The outputs include digital terrain models (DTMs), slope and hazard maps and close-up records of soil and rock structure. Apollo close-up stereo pairs documented regolith and rock textures at millimetre scale, Mars Pathfinder and MER stereo data supported terrain mapping and rover operations, and Chang'e-3 panoramic stereo pairs were used to build DTMs of the landing area [2][3][4].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a stereo camera. The class includes handheld close-up cameras, mast-mounted rover pairs and orbital push-broom systems with different detectors, optics and baselines. The examples below describe specific instruments and cite the source for each figure. Values that could not be confirmed from a primary or archival source are recorded as \"not publicly specified\" or null, and no mass, power or dimension is generalised across the class. No table compares these designs directly, because their geometries and purposes differ.",
+        "examples": [
+          {
+            "name": "Apollo Lunar Surface Closeup Camera (ALSCC)",
+            "type": "Handheld stereoscopic close-up camera with internal strobe",
+            "status": "Flown",
+            "flight_history": "Used on Apollo 11, Apollo 12 and Apollo 14 missions [1].",
+            "image_area_mm": [
+              72,
+              82.8
+            ],
+            "resolved_object_diameter_mm": 0.085,
+            "stereopairs_apollo_14": 17.5,
+            "mounting": "Figure 1 of [1] shows the ALSCC mounted on the modular equipment transporter (MET).",
+            "baseline_mm": null,
+            "focal_length_mm": null,
+            "film_format": "Not publicly specified in the sources reviewed",
+            "mass_kg": "Not publicly specified in the sources reviewed",
+            "power_w": "Not publicly specified in the sources reviewed",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19720010804",
+              "https://apollospace.com/images/apollo-missions/apollo-11/apollo-11-lunar-surface-closeup-camera/"
+            ],
+            "images": [
+              {
+                "id": "alscc_as11_45_6706",
+                "description": "Apollo 11 ALSCC closeup stereo pair of lunar soil and rock fragments, frame AS11-45-6706, displayed side by side.",
+                "image_type": "Historical lunar surface photograph (closeup stereo pair)",
+                "image_url": "https://images-assets.nasa.gov/image/as11-45-6706/as11-45-6706~orig.jpg",
+                "source_page_url": "https://apollospace.com/images/apollo-missions/apollo-11/apollo-11-lunar-surface-closeup-camera/",
+                "publisher": "Third-party Apollo archive (Apollospace); image asset served from the NASA Image and Video Library domain",
+                "credit": "NASA/JSC/ASU (as listed on the source page)",
+                "caption": "NASA frame AS11-45-6706, a side-by-side closeup stereo pair of lunar soil and rock taken with the ALSCC during Apollo 11.",
+                "section_placements": [
+                  "physical_specifications.examples[0]",
+                  "historical_significance"
+                ],
+                "notes": "Direct asset https://images-assets.nasa.gov/image/as11-45-6706/as11-45-6706~orig.jpg returned HTTP 200 image/jpeg (781,002 bytes) on 2026-11-12 and was viewed to confirm a side-by-side soil and rock stereo pair. Frame identity AS11-45-6706 is taken from the third-party Apollospace magazine 45 page. The NASA record https://images.nasa.gov/details/AS11-45-6706 returned HTTP 200, but its metadata was not exposed in the retrieved HTML. Rights and full-resolution checks are not complete; consult NASA media guidelines before reuse."
+              }
+            ]
+          },
+          {
+            "name": "Mars Pathfinder Imager for Mars Pathfinder (IMP)",
+            "type": "Binocular CCD-based stereo camera with twin lenses",
+            "status": "Flown (Mars Pathfinder, 1997)",
+            "flight_history": "The Pathfinder lander landed on 4 July 1997; the last data transmission cycle was completed on 27 September 1997 [3].",
+            "baseline_mm": 150,
+            "lens_separation_source": "Lenses mounted 15 cm apart [3].",
+            "toe_in_degrees": 5.9,
+            "stereo_range_m": [
+              2,
+              10
+            ],
+            "detector": "512 by 512 CCD; the optical paths from the two lenses were combined on it [3].",
+            "stereo_exposure_image_pixels": [
+              248,
+              256
+            ],
+            "products": "Monoscopic colour panorama, DTM, slope map and thematic maps of the landing site [3].",
+            "focal_length_mm": "Not confirmed from the primary text reviewed",
+            "mast_height_m": "Not confirmed from the primary text reviewed",
+            "mass_kg": "Not publicly specified in the sources reviewed",
+            "power_w": "Not publicly specified in the sources reviewed",
+            "source_urls": [
+              "https://www.isprs.org/proceedings/XXXII/part4/oberst31neu.pdf",
+              "https://science.nasa.gov/photojournal/asimet-3-d"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mars Exploration Rover Pancam",
+            "type": "Pair of digital CCD cameras on a mast; multispectral and stereoscopic",
+            "status": "Flown on the Spirit and Opportunity rovers",
+            "baseline_mm": 300,
+            "toe_in_degrees": 1,
+            "focal_length_mm": {
+              "introduction_text": 42,
+              "instrument_table": 43,
+              "note": "The same source gives 42 mm in the introduction and 43 mm in the instrument table (f/20 system). Both values are recorded; the discrepancy is not resolved."
+            },
+            "focal_ratio": "f/20",
+            "field_of_view_deg": [
+              16,
+              16
+            ],
+            "ifov_mrad_per_pixel": 0.28,
+            "filters": "Eight-position filter wheel per eye, covering 400-1100 nm",
+            "mast_height_m": 1.54,
+            "mass_kg_per_camera": 0.27,
+            "power_w_per_camera_typical": 3,
+            "operating_temperature_c": [
+              -55,
+              5
+            ],
+            "dust_protection": "Sapphire window",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20030066682"
+            ],
+            "images": [
+              {
+                "id": "pancam_pia08750",
+                "description": "Stereo version of the Spirit Pancam Everest panorama from the top of Husband Hill, shown as a red-cyan anaglyph.",
+                "image_type": "Stereo panorama (anaglyph) from a Mars rover",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia08/pia08750/PIA08750.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/stereo-version-of-spirits-everest-panorama/",
+                "publisher": "NASA Science Photojournal",
+                "credit": "NASA/JPL/Cornell (as reported in the Photojournal record summary; credit line not fully retrieved)",
+                "caption": "NASA Photojournal PIA08750, a stereo version of Spirit's 360-degree Pancam Everest panorama from the top of Husband Hill in early October 2005; 3D glasses are needed to view it.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset returned HTTP 200 image/jpeg (49,675 bytes) on 2026-11-12 and was viewed. The served rendition is much smaller than the 26,244 by 3,500 px master listed in the page metadata, so full-resolution download was not checked."
+              }
+            ],
+            "limitations": "Stereo geometry, focal length and mass are as stated in the MER Pancam instrument paper; the 42 mm and 43 mm values are a discrepancy within the same source."
+          },
+          {
+            "name": "Chang'e-3 Rover Panoramic Camera (PCAM)",
+            "type": "Stereo pair of colour CMOS cameras on the rover mast",
+            "status": "Flown on the Yutu rover (Chang'e-3, landed 14 December 2013)",
+            "optical_axis_angle_degrees": 1,
+            "principal_point_height_m": 1.6,
+            "detector_colour": "CMOS, 2352 by 1728 pixels",
+            "field_of_view_deg": [
+              19.7,
+              14.5
+            ],
+            "baseline_mm": null,
+            "baseline_note": "Not stated in the primary or archival sources reviewed. A secondary search summary gives 270 mm; that value was not confirmed and is not used.",
+            "focal_length_mm": null,
+            "products": "DTMs at 0.02 m resolution reconstructed from first-lunar-day image pairs near observation points S and E3 [4].",
+            "mass_kg": "Not publicly specified in the sources reviewed",
+            "power_w": "Not publicly specified in the sources reviewed",
+            "source_urls": [
+              "https://isprs-archives.copernicus.org/articles/XL-4/149/2014/",
+              "https://casdc.china-vo.org/archive/change3/p.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mars Science Laboratory Mastcam (M-34 and M-100)",
+            "type": "Two camera heads on the mast: M-34 (34 mm) and M-100 (100 mm)",
+            "status": "Flown on the Curiosity rover (Mars Science Laboratory)",
+            "m34": {
+              "focal_length_mm": 34,
+              "f_number": 8,
+              "field_of_view_deg": 15,
+              "pixels": "1200 by 1200 imaged on a 1600 by 1200 CCD"
+            },
+            "m100": {
+              "focal_length_mm": 100,
+              "f_number": 10,
+              "field_of_view_deg": 5.1
+            },
+            "stereo_use": "The instrument team states that the system can acquire stereo pairs but that this is not a major emphasis of the investigation because the two focal lengths differ.",
+            "baseline_cm": null,
+            "baseline_note": "Not stated on the instrument-team page. A secondary search summary cites 24.2 cm; not confirmed from primary text and not used.",
+            "mass_kg": "Not publicly specified in the sources reviewed",
+            "power_w": "Not publicly specified in the sources reviewed",
+            "source_urls": [
+              "https://www.msss.com/science/msl-mastcam-instrument-description.php"
+            ],
+            "images": []
+          },
+          {
+            "name": "SELENE (Kaguya) Terrain Camera (TC), orbital stereo",
+            "type": "Push-broom imager with forward and backward one-dimensional telescopes for along-track stereo",
+            "status": "Flown on the SELENE (Kaguya) lunar orbiter",
+            "telescopes": "Two telescopes with one-dimensional detectors looking forward and backward for stereo observation [7].",
+            "spatial_resolution_m": 10,
+            "coverage_swath_km": "Not confirmed from the JAXA page; secondary summaries are not used",
+            "mass_kg": "Not publicly specified in the sources reviewed",
+            "power_w": "Not publicly specified in the sources reviewed",
+            "cross_references": [
+              "Entry 028 (Terrain mapping camera)",
+              "Entry 049 (Photogrammetry system)"
+            ],
+            "source_urls": [
+              "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for the generic class. Dimensions for individual examples were not confirmed from primary or archival sources in this pass and are therefore not stated.",
+        "mass_and_weight": "Mass is documented only where a source states it: the MER Pancam instrument table gives about 270 g per camera [2]. Other examples are recorded as not publicly specified.",
+        "power_requirements": "Power is documented only where a source states it: the MER Pancam instrument table gives typical power of about 3 W per camera [2]. Other examples are recorded as not publicly specified."
+      },
+      "environmental_and_operational_requirements": "Environmental requirements depend on the individual instrument and are documented only where the source states them. The MER Pancam specification lists an operating range of -55 °C to +5 °C and a sapphire window for dust protection [2]. Chang'e-3 PCAM operated on a mast about 1.6 m above the surface [4]. The Apollo ALSCC was handled by astronauts on the lunar surface and carried on the MET [1]. Lunar thermal, radiation, vacuum and dust requirements for each example were not verified in the sources reviewed and are not generalised. Stereo imagers also depend on lighting. Shadow and low sun angle change the visibility of texture and can reduce matching quality, so operational planning should consider the illumination at each observation.",
+      "limitations": "Stereo accuracy depends on the baseline and focal length, but several baselines and focal lengths in this entry were not confirmed from primary sources. Stereo pairs from different optical heads, such as the Mastcam M-34 and M-100, do not share the same geometry, which limits matching [6]. A stereo pair requires overlap between the two fields of view; the Pancam and IMP geometries are designed for near-field and mid-range parallax, so distant or near-field targets are less reliable [2][3]. Close-up stereo cameras such as the ALSCC record very small areas, so they do not replace wide-area terrain mapping [1]. Calibration, mast position and pointing errors affect range accuracy, and calibration details for each instrument require the original calibration papers.",
+      "transportation_and_deployment": {
+        "overview": "This entry is a generic class, so transportation depends on the host system. Three cases are documented in the sources reviewed: astronaut-deployed handheld close-up equipment (ALSCC), a lander-rover mast camera (Chang'e-3 PCAM), and a SELENE orbital push-broom stereo imager.",
+        "transportation_process": [
+          "Integrate the stereo camera into the lander, rover or spacecraft payload configuration on Earth.",
+          "Launch and transfer to the Moon or, for orbital instruments, to orbit.",
+          "For surface systems, deliver the camera on a lander or rover, or carry handheld equipment on the lunar surface (ALSCC on the MET [1]).",
+          "Deploy the mast or handheld unit, establish pointing and calibration, and connect power and data.",
+          "For orbital systems, commission the instrument and acquire stereo observations with forward and backward views [7]."
+        ],
+        "deployment_methods": "For surface payloads, stereo cameras have been delivered as astronaut-deployed equipment (the ALSCC was carried on the MET) [1], or as mast-mounted cameras on a lander-rover system (Chang'e-3 PCAM on Yutu) [4]. In both cases, deployment involved mechanical installation, power and data integration, and thermal and pointing checks. The sources reviewed do not describe the thermal, power or data interfaces for the ALSCC or the Chang'e-3 PCAM in detail, so these are not stated here.",
+        "historical_examples": "Apollo 11, 12 and 14 used the ALSCC [1]. Chang'e-3 used the PCAM on Yutu [4]. The SELENE Terrain Camera used forward and backward telescopes for orbital stereo [7]. Mars Pathfinder and MER carried stereo imagers for surface operations [2][3].",
+        "compatibility_assessment": "Compatibility with a specific lander or rover is not assessed here. No lander compatibility is asserted for any example, because verified interface evidence was not reviewed. Mass, power, mounting and deployment interfaces must be compared against verified spacecraft specifications before any compatibility statement is made.",
+        "images": []
+      },
+      "historical_significance": "Stereo imaging has an established role in lunar and planetary exploration. The Apollo close-up stereo photography recorded lunar soil and rock textures at millimetre scale and produced stereo pairs for later study [1][10]. The Mars Pathfinder stereo imager produced a monoscopic panorama, a DTM and a slope map of the landing area [3], and the Mars Exploration Rover Pancam has continued to acquire stereo panoramas of the surface [2][9]. The Chang'e-3 PCAM DTM work demonstrated stereo terrain reconstruction on the Moon for rover operations [4].",
+      "historical_significance_images": [
+        {
+          "id": "alscc_as11_45_6706",
+          "description": "Apollo 11 ALSCC closeup stereo pair of lunar soil and rock fragments, frame AS11-45-6706, displayed side by side.",
+          "image_type": "Historical lunar surface photograph (closeup stereo pair)",
+          "image_url": "https://images-assets.nasa.gov/image/as11-45-6706/as11-45-6706~orig.jpg",
+          "source_page_url": "https://apollospace.com/images/apollo-missions/apollo-11/apollo-11-lunar-surface-closeup-camera/",
+          "publisher": "Third-party Apollo archive (Apollospace); image asset served from the NASA Image and Video Library domain",
+          "credit": "NASA/JSC/ASU (as listed on the source page)",
+          "caption": "NASA frame AS11-45-6706, a side-by-side closeup stereo pair of lunar soil and rock taken with the ALSCC during Apollo 11.",
+          "section_placements": [
+            "physical_specifications.examples[0]",
+            "historical_significance"
+          ],
+          "notes": "Direct asset https://images-assets.nasa.gov/image/as11-45-6706/as11-45-6706~orig.jpg returned HTTP 200 image/jpeg (781,002 bytes) on 2026-11-12 and was viewed to confirm a side-by-side soil and rock stereo pair. Frame identity AS11-45-6706 is taken from the third-party Apollospace magazine 45 page. The NASA record https://images.nasa.gov/details/AS11-45-6706 returned HTTP 200, but its metadata was not exposed in the retrieved HTML. Rights and full-resolution checks are not complete; consult NASA media guidelines before reuse."
+        }
+      ],
+      "limitations_and_uncertainties": "- **Baselines and focal lengths.** The Apollo ALSCC baseline and focal length were not found in the sources reviewed [1]. The Chang'e-3 PCAM baseline was not found in primary text [4][5]. The Mastcam pair separation was not found on the instrument-team page [6].\n- **Pancam focal length.** The MER Pancam source gives 42 mm in its introduction and 43 mm in its instrument table [2]. Both are recorded, and the discrepancy is not resolved.\n- **Pathfinder image attribution.** The PIA00695 page does not name the camera that took the stereo image [8], so the image is treated as a Pathfinder stereo illustration rather than a verified IMP frame.\n- **Mast heights.** The Pathfinder IMP mast height was not confirmed from primary text, so no value is given for it.\n- **Chandrayaan-3 Pragyan NavCam.** The rover carries a navigation camera pair described in secondary news and Wikipedia-derived sources. Primary ISRO specifications were not retrieved, so no values are given and no numbered example was created.\n- **Chang'e-3 secondary value.** A secondary search summary gives a 270 mm PCAM baseline and a 50 mm focal length, which were not confirmed from primary text and are not used.\n- **Mastcam secondary value.** A secondary search summary gives a 24.2 cm pair separation, which was not confirmed from the instrument-team page and is not used.\n- **Image verification.** The ALSCC frame identification comes from a third-party page [10], not from an official NASA record page, so the image is flagged as not fully verified from official pages.\n- **Proposed stereo imagers.** No proposed or prototype stereo camera with verified specifications was included in this pass, so that status category is not populated.",
+      "images": [
+        {
+          "id": "alscc_as11_45_6706",
+          "description": "Apollo 11 ALSCC closeup stereo pair of lunar soil and rock fragments, frame AS11-45-6706, displayed side by side.",
+          "image_type": "Historical lunar surface photograph (closeup stereo pair)",
+          "image_url": "https://images-assets.nasa.gov/image/as11-45-6706/as11-45-6706~orig.jpg",
+          "source_page_url": "https://apollospace.com/images/apollo-missions/apollo-11/apollo-11-lunar-surface-closeup-camera/",
+          "publisher": "Third-party Apollo archive (Apollospace); image asset served from the NASA Image and Video Library domain",
+          "credit": "NASA/JSC/ASU (as listed on the source page)",
+          "caption": "NASA frame AS11-45-6706, a side-by-side closeup stereo pair of lunar soil and rock taken with the ALSCC during Apollo 11.",
+          "section_placements": [
+            "physical_specifications.examples[0]",
+            "historical_significance"
+          ],
+          "notes": "Direct asset https://images-assets.nasa.gov/image/as11-45-6706/as11-45-6706~orig.jpg returned HTTP 200 image/jpeg (781,002 bytes) on 2026-11-12 and was viewed to confirm a side-by-side soil and rock stereo pair. Frame identity AS11-45-6706 is taken from the third-party Apollospace magazine 45 page. The NASA record https://images.nasa.gov/details/AS11-45-6706 returned HTTP 200, but its metadata was not exposed in the retrieved HTML. Rights and full-resolution checks are not complete; consult NASA media guidelines before reuse."
+        },
+        {
+          "id": "imp_pia00695",
+          "description": "Mars Pathfinder stereo image of the ASI/MET mast and windsocks, shown as a red-cyan anaglyph.",
+          "image_type": "Stereo image (anaglyph) from a Mars lander",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia00/pia00695/PIA00695.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/asimet-3-d",
+          "publisher": "NASA Science Photojournal",
+          "credit": "NASA (Photojournal record; credit line not fully retrieved)",
+          "caption": "NASA Photojournal PIA00695, a stereo image from Mars Pathfinder showing the Atmospheric Structure Instrument/Meteorology Package (ASI/MET) mast and windsocks; 3D glasses are needed to view the stereo effect.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia00/pia00695/PIA00695.jpg returned HTTP 200 image/jpeg (65,287 bytes) on 2026-11-12 and was viewed; the Photojournal record gives 640 by 480 px. The record does not name the imaging instrument, so this is an illustrative Pathfinder stereo image rather than a verified IMP frame. Full-resolution TIFF was not downloaded."
+        },
+        {
+          "id": "pancam_pia08750",
+          "description": "Stereo version of the Spirit Pancam Everest panorama from the top of Husband Hill, shown as a red-cyan anaglyph.",
+          "image_type": "Stereo panorama (anaglyph) from a Mars rover",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia08/pia08750/PIA08750.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/stereo-version-of-spirits-everest-panorama/",
+          "publisher": "NASA Science Photojournal",
+          "credit": "NASA/JPL/Cornell (as reported in the Photojournal record summary; credit line not fully retrieved)",
+          "caption": "NASA Photojournal PIA08750, a stereo version of Spirit's 360-degree Pancam Everest panorama from the top of Husband Hill in early October 2005; 3D glasses are needed to view it.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset returned HTTP 200 image/jpeg (49,675 bytes) on 2026-11-12 and was viewed. The served rendition is much smaller than the 26,244 by 3,500 px master listed in the page metadata, so full-resolution download was not checked."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "imp_pia00695",
+          "description": "Mars Pathfinder stereo image of the ASI/MET mast and windsocks, shown as a red-cyan anaglyph.",
+          "image_type": "Stereo image (anaglyph) from a Mars lander",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia00/pia00695/PIA00695.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/asimet-3-d",
+          "publisher": "NASA Science Photojournal",
+          "credit": "NASA (Photojournal record; credit line not fully retrieved)",
+          "caption": "NASA Photojournal PIA00695, a stereo image from Mars Pathfinder showing the Atmospheric Structure Instrument/Meteorology Package (ASI/MET) mast and windsocks; 3D glasses are needed to view the stereo effect.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia00/pia00695/PIA00695.jpg returned HTTP 200 image/jpeg (65,287 bytes) on 2026-11-12 and was viewed; the Photojournal record gives 640 by 480 px. The record does not name the imaging instrument, so this is an illustrative Pathfinder stereo image rather than a verified IMP frame. Full-resolution TIFF was not downloaded."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Carrier, W. D. III and Heiken, G., \"Lunar Surface Closeup Stereoscopic Photography at Fra Mauro (Apollo 14 Site)\", NASA Technical Memorandum NASA TM X-58072",
+          "publisher": "NASA Manned Spacecraft Center",
+          "publication_date": "1972-01",
+          "url": "https://ntrs.nasa.gov/citations/19720010804"
+        },
+        {
+          "number": 2,
+          "title": "Bell, J. F. III et al., \"Pancam: A Multispectral Imaging Investigation on the NASA 2003 Mars Exploration Rover Mission\", Sixth International Conference on Mars, LPI report 3029",
+          "publisher": "Lunar and Planetary Institute",
+          "publication_date": "2003-07",
+          "url": "https://ntrs.nasa.gov/citations/20030066682"
+        },
+        {
+          "number": 3,
+          "title": "Oberst, J. et al., \"Mars Pathfinder: Photogrammetric Processing of Lander Images\", International Archives of Photogrammetry and Remote Sensing, Vol. 32, Part 4",
+          "publisher": "ISPRS / International Archives of Photogrammetry and Remote Sensing",
+          "publication_date": "1998",
+          "url": "https://www.isprs.org/proceedings/XXXII/part4/oberst31neu.pdf"
+        },
+        {
+          "number": 4,
+          "title": "Liu, J. J. et al., \"Digital Terrain Model Reconstruction and Preliminary Scientific Exploration Planning of the Chang'E 3\", ISPRS Archives Vol. XL-4 (doi:10.5194/isprsarchives-XL-4-149-2014)",
+          "publisher": "ISPRS Archives",
+          "publication_date": "2014-05",
+          "url": "https://isprs-archives.copernicus.org/articles/XL-4/149/2014/"
+        },
+        {
+          "number": 5,
+          "title": "Science and Application Center for Moon and Deepspace Exploration (CAS/CNSA), Chang'e 3 data archive, Rover Panoramic Camera (PCAM) page",
+          "publisher": "Chinese Academy of Sciences / China National Space Administration",
+          "publication_date": null,
+          "url": "https://casdc.china-vo.org/archive/change3/p.html"
+        },
+        {
+          "number": 6,
+          "title": "Malin Space Science Systems, Mars Science Laboratory (MSL) Mast Camera (Mastcam) Instrument Description",
+          "publisher": "Malin Space Science Systems (Mastcam instrument team)",
+          "publication_date": null,
+          "url": "https://www.msss.com/science/msl-mastcam-instrument-description.php"
+        },
+        {
+          "number": 7,
+          "title": "JAXA, SELENE (Kaguya) Equipment: Terrain Camera (TC), LISM instrument description",
+          "publisher": "JAXA",
+          "publication_date": null,
+          "url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm"
+        },
+        {
+          "number": 8,
+          "title": "NASA Science Photojournal, PIA00695, \"ASI/MET - 3-D\" (Mars Pathfinder stereo image)",
+          "publisher": "NASA",
+          "publication_date": "1997-07-13",
+          "url": "https://science.nasa.gov/photojournal/asimet-3-d"
+        },
+        {
+          "number": 9,
+          "title": "NASA Science Photojournal, PIA08750, \"Stereo Version of Spirit's 'Everest' Panorama\"",
+          "publisher": "NASA",
+          "publication_date": "2006-09-12",
+          "url": "https://science.nasa.gov/photojournal/stereo-version-of-spirits-everest-panorama/"
+        },
+        {
+          "number": 10,
+          "title": "Apollo Lunar Surface Closeup Camera magazine 45 page (Apollo 11 frames AS11-45-6697 to AS11-45-6714)",
+          "publisher": "Apollospace (third-party Apollo archive)",
+          "publication_date": null,
+          "url": "https://apollospace.com/images/apollo-missions/apollo-11/apollo-11-lunar-surface-closeup-camera/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo ALSCC example": "payload.article.physical_specifications.examples[0].images",
+      "Mars Pathfinder IMP example": "payload.article.physical_specifications.examples[1].images",
+      "MER Pancam example": "payload.article.physical_specifications.examples[2].images",
+      "Chang'e-3 PCAM example": "payload.article.physical_specifications.examples[3].images",
+      "MSL Mastcam example": "payload.article.physical_specifications.examples[4].images",
+      "SELENE Terrain Camera example": "payload.article.physical_specifications.examples[5].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images",
+      "historical significance": "payload.article.historical_significance_images"
+    },
+    "url_policy": "All image_url, source_page_url, source_urls and reference url values in this file have query strings and fragments removed. Direct image URLs were checked for HTTP 200 on 2026-11-12. Reference and source page URLs were checked for HTTP 200 on 2026-11-12, except where noted in data_quality_notes. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Flight status: the Apollo ALSCC (Apollo 11, 12, 14), Mars Pathfinder IMP, MER Pancam, Chang'e-3 PCAM, MSL Mastcam and SELENE Terrain Camera are documented as flown. No flight-qualified-but-unflown, prototype or proposed stereo camera with verified specifications was included in this pass.",
+    "Unverified baselines: the ALSCC baseline and focal length, the Chang'e-3 PCAM baseline, and the Mastcam pair separation were not found in primary text and are null. A secondary search summary gave 270 mm (Chang'e-3) and 24.2 cm (Mastcam), which were not confirmed and are not used.",
+    "MER Pancam focal length discrepancy: the primary source gives 42 mm in its introduction and 43 mm in its instrument table; both are recorded.",
+    "Pathfinder image attribution: the PIA00695 Photojournal record names the ASI/MET mast as the subject of a Pathfinder stereo image but does not name the imaging instrument. The image is treated as illustrative, not as a verified IMP frame.",
+    "ALSCC image verification: the frame identity AS11-45-6706 comes from a third-party Apollospace page; the NASA record page was reachable but its metadata was not exposed. Official-page verification is therefore incomplete.",
+    "PIA08750 rendition: the served JPEG (49,675 bytes) is far smaller than the 26,244 by 3,500 px master listed in the Photojournal metadata; full-resolution download was not checked.",
+    "Chandrayaan-3 Pragyan navigation camera pair is reported in secondary sources only. Primary ISRO specifications were not retrieved, so no example or values are given. This is an open gap.",
+    "Chang'e-3 PCAM panchromatic-mode values in the primary table are garbled in text extraction and were not used.",
+    "No lander or rover compatibility is asserted for any example; verified interface evidence was not reviewed. Lunar location recommendations are deferred by the user and not included."
+  ]
+}

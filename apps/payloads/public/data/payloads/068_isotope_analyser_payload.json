@@ -1,0 +1,390 @@
+{
+  "catalogue_id": 68,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 68,
+    "name": "Isotope analyser",
+    "article": {
+      "overview": "An isotope analyser measures the relative abundances of isotopes, which are atoms of the same chemical element that differ in neutron number, for example argon-40 and argon-36, or rubidium-87 and strontium-87. Isotope ratios can record radioactive decay (and therefore age), the origin of volatile gases, and physical or chemical processing. On the Moon they are useful for dating rocks and for working out where volatiles such as water and noble gases came from [2][7].\n\nThe catalogue name \"Isotope analyser\" is generic. The sources reviewed do not use it as the name of a standard instrument. This article therefore covers ion-based analysers, mainly mass spectrometers and closely related laser-ablation instruments, whose stated measurement goals include the isotopic composition of lunar rock, regolith or gas.\n\n**Scope of this article.** In scope: mass-spectrometric instruments with isotope-related measurement goals, their historical, flown, flight-qualified, development and planned examples, and their engineering constraints. Out of scope: laboratory isotope analysis of returned samples, which is a laboratory technique rather than a payload; optical payloads such as Raman spectrometers (063) and laser-induced breakdown spectroscopy (060), which have their own entries; and orbital remote-sensing instruments.\n\n**Cross-references to other catalogue entries (not duplicated here):**\n\n- 059 (Mass spectrometer) and 071 (Gas chromatograph-mass spectrometer): general mass-spectrometry instruments; the NGMS example below is a gas chromatograph-coupled time-of-flight instrument.\n- 070 (Gas chromatograph) and 069 (Volatile analyser): gas-phase volatile analysis.\n- 067 (Elemental composition analyser) and 073 (Secondary ion mass spectrometer): elemental and surface ion analysis.\n\n**Status summary.** The article distinguishes five evidence classes:\n\n- **Flown historically (1972):** the Apollo 17 atmospheric mass spectrometer reported helium, neon, argon and possibly molecular hydrogen, and described argon-40 and argon-36 qualitatively [1].\n- **Flown in 2025, short operation:** MSolo, carried on the Intuitive Machines IM-2 lander, operated on the surface for about 12 hours. The mission presentation reports no isotope ratios [4][5].\n- **Flight-qualified, not flown:** the Neutral Gas Mass Spectrometer (NGMS) for the Luna-Resurs programme, rated technology readiness level (TRL) 8 with flight units held at the University of Bern [2][3].\n- **Engineering development unit:** CODEX, the laser-ablation mass spectrometer for the NASA DIMPLE payload, is being commissioned. No Rb-Sr isotope results are reported yet [7][8].\n- **Planned:** CLPS-LIMS, a laser-ablation ionisation mass spectrometer from the University of Bern, planned for Blue Ghost Mission 4 with a target landing in late 2029 [9][10].",
+      "description": "An isotope analyser in this sense is usually a mass spectrometer. It ionises sample atoms or molecules, separates the resulting ions by their mass-to-charge ratio (m/z) and counts them. Isotopes differ in mass by one or a few atomic mass units, so the instrument must resolve neighbouring masses. The mass resolution, m/Δm, quantifies this ability: the higher the value, the better two neighbouring peaks are separated [2].\n\nThe sample reaches the analyser in one of three ways across the examples in this article. Gas can be delivered from a gas chromatograph or pyrolysis oven (NGMS) [2]. A solid rock or regolith surface can be struck by a pulsed laser that vaporises and ionises a small spot (CODEX and CLPS-LIMS) [7][8][9]. The PRIME-1 concept of operations drilled material and analysed it with MSolo at each depth step [4].",
+      "scientific_purpose_and_applications": "**Radiometric dating.** Rubidium-87 decays to strontium-87. Measuring 87Rb/87Sr ratios at many spots in one rock and fitting them to a line (an isochron) gives an age for the rock. CODEX on the DIMPLE payload is designed to date basalt samples from the Ina mare patch this way [7]. The age of Ina is disputed: one interpretation is about 33 ± 2 million years, while the alternative is an ancient shield of about 3.5 billion years [7].\n\n**Volatile inventory and resource assessment.** NGMS is designed to measure element, isotope and molecular composition of volatiles in the lunar polar regolith and exosphere, including water and noble gases. Its stated isotope-ratio goals include 13C/12C, D/H, 17O/16O, 18O/16O and 15N/14N, which bear on the source and transport of volatiles and on in-situ resource utilisation [2].\n\n**Exospheric and atmospheric composition.** The Apollo 17 instrument measured argon isotopes near the surface and found that both argon-40 and argon-36 are enhanced before dawn, which suggests that they condense on the night side and are released at sunrise [1]. MSolo was the mass spectrometer of the PRIME-1 (Polar Resources Mining Experiment) payload [4].\n\n**Regolith geochemistry.** CLPS-LIMS is designed to analyse the element and isotope composition of lunar regolith dust in situ [9].",
+      "operating_principle": "Three measurement chains appear in this article.\n\n**Time-of-flight mass spectrometry (NGMS).** The NGMS ionises gas molecules by electron impact from thermionic filaments. Pulsed extraction accelerates the ions into a drift region. Heavier ions travel more slowly, so ions of different masses arrive at the detector at different times. Because all masses are recorded simultaneously, the instrument can follow the gas stream from a gas chromatograph [2][3]. An ion mirror corrects the spread caused by the initial thermal energies of the ions, and a microchannel-plate detector records the arrivals [2].\n\n**Quadrupole mass filtering (MSolo).** MSolo houses an INFICON Transpector MPH quadrupole mass spectrometer [5]. A quadrupole filter uses oscillating electric fields so that only ions of a selected m/z pass to the detector; scanning the fields steps through the mass range. During the surface operation, MSolo scanned from 0 to 90 m/z [4]. The quadrupole principle is a standard textbook description, and no primary source for it is cited here.\n\n**Laser ablation with mass analysis (CODEX and CLPS-LIMS).** The CODEX engineering development unit combines two modes. Laser-ablation mass spectrometry (LAMS) uses a 266 nm ultraviolet laser to measure major and trace elements over m/z 1 to 250. Laser-ablation resonance-ionization mass spectrometry (LARIMS) is used for Rb and Sr isotopes. LARIMS is described as handling the 87Rb/87Sr isobar without extreme mass resolving power [8]. CLPS-LIMS uses laser ablation ionisation followed by mass spectrometry to analyse element and isotope composition of regolith dust [9].",
+      "scientific_importance": "Isotope ratios carry information that elemental abundances alone cannot provide. The age of a lunar basalt fixes when it crystallised and therefore constrains how long the lunar mantle stayed warm enough to produce magma. The Ina question matters because a very young age would require long-lived heat sources in the lunar interior, while an ancient age would require a re-evaluation of crater-scaling laws [7].\n\nFor volatiles, the NGMS design specifically targets isotope ratios of hydrogen, carbon, nitrogen and oxygen, together with water and noble gases, because these are needed for in-situ resource utilisation and for understanding how volatiles are transported [2]. For rocks, the DIMPLE team states that CODEX measurements will ground-truth compositional inferences that otherwise rely on orbital data [7].",
+      "physical_specifications": {
+        "note": "There is no universal specification for an isotope analyser. The five historical, flown, flight-qualified, engineering and planned examples below use different ionisation methods, inlet systems and mission statuses. Their masses, powers and resolutions are not directly comparable, so no comparison table is given.\n\n**Dimensions and proportions.** Only NGMS has published envelope dimensions in the sources accessed. The flight design paper gives 290 × 176 × 173 mm [2]. The University of Bern NGMS page gives a maximum size of 26 × 15 × 18 cm [3]. These two values differ, and the difference is not resolved in the sources. No dimensions are publicly specified for MSolo, CODEX or CLPS-LIMS in the sources accessed.\n\n**Mass and weight.** NGMS is given as 3.2 kg including shielding, mounting and internal parts in the flight design paper [2], and as about 3.5 kg on the Bern page [3]. No mass is publicly specified for the other examples in the sources accessed.\n\n**Power.** NGMS has a maximum power consumption requirement of 23 W [2]. The Bern page states that it can be fully operated with 25 W in a rough space environment between -30 °C and 80 °C [3]. No power figure is publicly specified for the other examples in the sources accessed.",
+        "examples": [
+          {
+            "name": "Apollo 17 lunar atmosphere mass spectrometer (flown, 1972)",
+            "example_number": 1,
+            "flight_status": "Flown on the Moon, Apollo 17 mission, December 1972",
+            "instrument_type": "Mass spectrometer (type not stated in the abstract accessed)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "mass_resolution": null,
+            "mass_range_mz": null,
+            "isotope_capability": "Argon-36 and argon-40 both reported qualitatively; no ratios or abundances in the abstract.",
+            "images": [],
+            "text": "**Status.** Flown on the Moon during the Apollo 17 mission in December 1972, with results presented at the 1973 Lunar Science Conference [1]. The instrument type, mass range and mass are not stated in the abstract accessed; the full paper was not retrieved.\n\n**Measurement.** The abstract reports that the Apollo 17 mass spectrometer identified helium, neon and argon, and possibly molecular hydrogen, in the lunar atmosphere. Helium and neon levels matched predictions for a solar-wind source. Both argon-40 and argon-36 show a pre-dawn enhancement, which the authors interpret as condensation on the night side and release at the sunrise terminator. Total nighttime concentration of the known species is reported as 200,000 molecules per cm³ [1].\n\n**Isotope capability.** Argon isotopes were distinguished in the flown data, but the abstract gives no quantitative isotope ratios or abundances for either isotope [1].\n\n**Mass, dimensions and power.** Not specified in the sources accessed [1].",
+            "source_reference_numbers": [
+              1
+            ]
+          },
+          {
+            "name": "MSolo, flown on Intuitive Machines IM-2 (2025)",
+            "example_number": 2,
+            "flight_status": "Flown on Intuitive Machines IM-2 (Athena), landed 2025-03-06 17:28 UTC; about 12 hours of surface operation",
+            "instrument_type": "Quadrupole mass spectrometer (INFICON Transpector MPH) housed in MSolo",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "mass_resolution": null,
+            "mass_range_mz": "Scanned 0 to 90 m/z during surface operation",
+            "isotope_capability": "Mission presentation reports no isotope ratios.",
+            "images": [],
+            "text": "**Status.** Flown. MSolo was carried as part of NASA's PRIME-1 (Polar Resources Mining Experiment) payload on the Intuitive Machines IM-2 lander, named Athena. Launch was on 27 February 2025 at 00:16 UTC and landing on 6 March 2025 at 17:28 UTC near the lunar south pole. The planned mission duration was about 10 days (240 hours), and the actual duration was about 12 hours [4].\n\n**Hardware.** MSolo houses an INFICON Transpector MPH quadrupole mass spectrometer. INFICON describes it as the first commercial off-the-shelf mass spectrometer to operate on the Moon's surface; this is the manufacturer's own claim [5]. NASA's presentation calls the main result validation of the MSolo model, which shows that a commercial off-the-shelf instrument, space-hardened, can operate in space and on the lunar surface [4].\n\n**Surface operation.** MSolo was powered on three times and collected 43 scans, of which 40 were complete and 3 partial. Scans covered 0 to 90 m/z. The presentation reports that peak shapes and tuning were good, although sensitivity was lower than in transit. Its suggested causes were uncertain, with dust on the filament, ion source or rods as one possibility. While MSolo was on, the lander vented its methane and oxygen tanks, which were pressurised with helium [4].\n\n**Isotope capability.** The mission presentation does not report isotope ratios for any species [4].\n\n**Mass, dimensions and power.** Not publicly specified in the sources accessed [4][5].",
+            "source_reference_numbers": [
+              4,
+              5
+            ]
+          },
+          {
+            "name": "Neutral Gas Mass Spectrometer, Luna NGMS (flight-qualified, not flown)",
+            "example_number": 3,
+            "flight_status": "Flight-qualified (PFM and FS at TRL 8); not flown",
+            "instrument_type": "Time-of-flight mass spectrometer with gas chromatograph and pyrolysis oven inlet",
+            "mass_kg": {
+              "flight_design_paper": 3.2,
+              "university_of_bern_page": 3.5
+            },
+            "dimensions_cm": {
+              "flight_design_paper": "29.0 x 17.6 x 17.3",
+              "university_of_bern_page": "26 x 15 x 18 (maximum size)"
+            },
+            "power_w": {
+              "maximum_requirement": 23,
+              "university_of_bern_page_operating": 25
+            },
+            "mass_resolution": "Better than 1000 (prototype/flight-design paper)",
+            "mass_range_mz": "Up to about m/z 1000",
+            "isotope_capability": "Element, isotope and molecular composition stated as goals; isotope-ratio targets 13C/12C, D/H, 17O/16O, 18O/16O, 15N/14N; no measured isotope ratios in the sources.",
+            "operating_temperature_c": "-30 to 80 (University of Bern page)",
+            "detection_limits_by_mass_regolith_estimate": {
+              "hydrocarbons": "2e-10",
+              "noble_gases": "2e-9",
+              "status": "Conservative prototype-based upper limits"
+            },
+            "images": [
+              {
+                "id": "ngms_hardware_bern",
+                "description": "Luna NGMS (Neutral Gas Mass Spectrometer) hardware photograph from the University of Bern LUNA-NGMS project.",
+                "image_type": "Institutional hardware photograph",
+                "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110124/1_NGMS-PFM-1200_eng.jpg",
+                "source_page_url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html",
+                "publisher": "University of Bern",
+                "credit": "University of Bern (credit line not verified)",
+                "caption": "NGMS hardware. The engraved label reads 'Luna-Resource-1 Lander, Neutral Gas Mass-Spectrometer FU s/n 1'; the page caption describes two flight instruments, PFM and FS.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1200 x 745 px. No query string or fragment. The engraved label (FU s/n 1) and the page caption (PFM/FS) disagree on the unit designation, so the unit identity is unresolved. Rights statement not checked."
+              }
+            ],
+            "text": "**Status.** Qualified through an engineering qualification model, a proto-flight model (PFM) and a flight spare (FS). The PFM and FS reached TRL 8 and are described as flight-ready [2]. NGMS was descoped from the Luna 25 mission, which launched on 10 August 2023 and performed a hard landing [2]. After ESA withdrew from the Luna programme, efforts were made to repurpose the hardware, but the Luna NGMS project and attempts to integrate it into alternative missions were discontinued [2]. The two flight instruments, NGMS-PFM and NGMS-FS, are still at the University of Bern awaiting a mission [3].\n\n**Measurement.** The instrument is a compact time-of-flight mass spectrometer integrated with a gas chromatograph and a pyrolysis oven. It has a mass resolution better than 1000 and a dynamic range of up to six decades within a one-second integration time. Its mass range extends to about m/z 1000 [2]. Prototype test results estimate detection limits in lunar regolith of 2 × 10⁻¹⁰ by mass for hydrocarbons and 2 × 10⁻⁹ by mass for noble gases. These are conservative upper limits from prototype results; the flight-grade gas chromatograph would be needed to settle final detection limits [2].\n\n**Isotope capability.** The design is stated to measure element, isotope and molecular composition [2]. The isotope-ratio goals are listed in the Scientific Purpose section above [2].\n\n**Mass, dimensions and power.** The flight design paper gives a mass of 3.2 kg, an envelope of 290 × 176 × 173 mm and a maximum power of 23 W [2]. The Bern page gives about 3.5 kg, a maximum size of 26 × 15 × 18 cm and operation with 25 W between -30 °C and 80 °C [3]. These secondary values differ from the flight design paper and are reported as found.\n\n**Heritage.** NGMS served as the baseline design for the Neutral and Ion Mass Spectrometer (NIM) on ESA's JUICE mission and the MANIaC instrument on ESA's Comet Interceptor mission [2]. The same paper also says that integration of NGMS components into CODEX on NASA's DIMPLE was studied and discontinued because the modifications were too extensive [2].",
+            "source_reference_numbers": [
+              2,
+              3
+            ]
+          },
+          {
+            "name": "CODEX (Chemistry, Organics and Dating EXperiment), DIMPLE payload",
+            "example_number": 4,
+            "flight_status": "Engineering development unit under commissioning; no flight-model status or launch date in the sources",
+            "instrument_type": "Dual-mode laser-ablation time-of-flight mass spectrometer (LAMS and LARIMS)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "mass_resolution": "LAMS m/delta-m about 300 to 400 (FWHM) across targeted range on calibration samples (EDU)",
+            "mass_range_mz": "LAMS m/z 1 to 250",
+            "isotope_capability": "Rb and Sr isotopes by LARIMS; no Rb-Sr results reported yet.",
+            "images": [],
+            "text": "**Status.** CODEX is the instrument of NASA's Dating an Irregular Mare Patch with a Lunar Explorer (DIMPLE) payload, selected for flight under the NASA Commercial Lunar Payload Services (CLPS) initiative [7]. The designers are Southwest Research Institute, the Aerospace Corporation and the University of Bern [7]. The EGU 2026 abstract describes the unit as an engineering development unit (EDU) that is being commissioned. It gives no flight-model status and no launch date [8].\n\n**Measurement.** CODEX runs as a laser-ablation mass spectrometer for elemental abundances and as a laser-ablation resonance-ionisation mass spectrometer for Rb and Sr isotopic abundances [7]. The EDU LAMS mode, on calibration samples, achieves m/Δm of about 300 to 400 (FWHM) across its targeted range and resolves isotopic structure such as Fe and Pb isotopes [8]. The Rb-Sr measurement chain is being extended toward resonance-ionisation operation, and no Rb-Sr results are reported yet [8]. The science plan is to measure 87Rb/87Sr at hundreds of spots within each rock sample and build isochrons from them [7].\n\n**Operation.** The DIMPLE architecture uses a lander-mounted arm, plus a rake carried by a CLPS-provided rover, to collect rocks. The arm grips rocks and presents smoothed faces to CODEX for analysis [7].\n\n**Isotope capability.** Rb and Sr isotopes are the stated dating system. Precision for Ina samples is not reported in the EGU abstract [8]. An earlier LPSC abstract anticipates major-element precision goals of 5 % relative for SiO₂ and 10 % relative for alkalis [7]; these are design expectations, not measured results.\n\n**Mass, dimensions and power.** Not publicly specified in the sources accessed [7][8].",
+            "source_reference_numbers": [
+              7,
+              8
+            ]
+          },
+          {
+            "name": "CLPS-LIMS, laser ablation ionisation mass spectrometer (planned)",
+            "example_number": 5,
+            "flight_status": "Planned for Blue Ghost Mission 4 (Firefly, NASA CLPS Task Order CS-6); target landing late 2029",
+            "instrument_type": "Laser ablation ionisation mass spectrometer (spectrometer unit and electronics unit)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "mass_resolution": null,
+            "mass_range_mz": null,
+            "isotope_capability": "Element and isotope composition of regolith dust in situ (stated goal); no numerical specifications published on the pages reviewed.",
+            "images": [
+              {
+                "id": "clps_lims_project_graphic_bern",
+                "description": "CLPS-LIMS project header graphic: an illustrated lunar landscape with a laser ionisation mass spectrometer team badge.",
+                "image_type": "Project illustration (badge artwork)",
+                "image_url": "https://lims.unibe.ch/unibe/portal/fak_naturwis/micro_lims/content/home_image_b_eng.jpg",
+                "source_page_url": "https://lims.unibe.ch/",
+                "publisher": "University of Bern",
+                "credit": "University of Bern (credit line not verified)",
+                "caption": "CLPS-LIMS project header graphic from the University of Bern home page. Illustration, not a flight photograph.",
+                "section_placements": [
+                  "physical_specifications.examples[4]"
+                ],
+                "notes": "Direct asset URL verified: HTTP 200, image/jpeg, JPEG frame 1200 x 450 px. No query string or fragment. Badge text 'Laser Ionization Mass Spectrometer' differs from the page text 'laser ablation ionization mass spectrometry'. Rights statement not checked."
+              }
+            ],
+            "text": "**Status.** Planned. The University of Bern describes CLPS-LIMS as part of the payload suite of the Blue Ghost Mission 4 lander, a Firefly Aerospace mission under NASA CLPS Task Order CS-6, with a target landing in late 2029 [9]. The University of Bern is responsible for development, assembly and testing of the payload [9].\n\n**Measurement.** The instrument uses laser ablation ionisation and mass spectrometry to analyse the element and isotope composition of lunar regolith dust in situ [9]. The instrument page names two units, a spectrometer unit (SMU) and an electronics unit (ELU), and mentions a pulsed laser and a mass analyser, but it gives no numerical values [10].\n\n**Isotope capability.** Stated as a goal of the instrument [9].\n\n**Mass, dimensions, power and resolution.** Not publicly specified in the sources accessed [9][10].",
+            "source_reference_numbers": [
+              9,
+              10
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Only NGMS has published envelope dimensions in the sources accessed. The flight design paper gives 290 × 176 × 173 mm [2]. The University of Bern NGMS page gives a maximum size of 26 × 15 × 18 cm [3]. These two values differ, and the difference is not resolved in the sources. No dimensions are publicly specified for MSolo, CODEX or CLPS-LIMS in the sources accessed.",
+        "mass_and_weight": "NGMS is given as 3.2 kg including shielding, mounting and internal parts in the flight design paper [2], and as about 3.5 kg on the Bern page [3]. No mass is publicly specified for the other examples in the sources accessed.",
+        "power_requirements": "NGMS has a maximum power consumption requirement of 23 W [2]. The Bern page states that it can be fully operated with 25 W in a rough space environment between -30 °C and 80 °C [3]. No power figure is publicly specified for the other examples in the sources accessed."
+      },
+      "environmental_and_operational_requirements": "**Thermal.** The NGMS can be operated between -30 °C and 80 °C [3]. The MSolo concept of operations stows the instrument with survival heaters that cycle as needed during transit, and warms it to operational temperature before use [4].\n\n**Vacuum and contamination.** During transit, MSolo recorded Earth air, N₂/O₂ and CO₂ for days after launch. The presentation attributes this to a sensor that was not hermetically sealed and to a hard vacuum that pumped less well than expected. The team concluded that baking out or long operation is needed to remove contaminants and achieve the best sensitivity [4].\n\n**Lander interference.** While MSolo was operating on the surface, the lander vented its methane and oxygen tanks, which were pressurised with helium; the presentation shows the effect on the surface spectra [4].\n\n**Radiation.** The NGMS design includes radiation tolerance, which was assessed at TRL 8 [2].\n\n**Sample conditions.** NGMS detection-limit estimates assume a regolith sample volume of about 500 mm³ [2]. Lunar regolith conditions for CODEX and CLPS-LIMS are not specified in the sources accessed.",
+      "limitations": "- **No quantitative lunar isotope measurement from a modern instrument.** The only lunar isotope observation in the sources accessed is the qualitative 1972 Apollo 17 argon result [1].\n- **Flight status.** NGMS has never flown, and its detection limits are prototype-based upper limits [2].\n- **Development status.** CODEX is an engineering development unit without reported Rb-Sr results, and its heritage is described inconsistently in the sources [2][7][8].\n- **Missing specifications.** The CLPS-LIMS pages give no numerical values [10].\n- **Surface performance.** MSolo sensitivity fell after landing for reasons not established [4].\n- **Mission outcome.** MSolo operated for about 12 hours of a planned 240 hours [4].",
+      "transportation_and_deployment": {
+        "overview": "Of the examples, MSolo, CODEX and CLPS-LIMS are surface payloads. NGMS is a lander-integrated gas instrument whose exhaust tube connects to space through the spacecraft wall. No orbiter isotope analyser is discussed here.",
+        "transportation_process": [
+          "Earth integration: MSolo was integrated into the PRIME-1 payload on the IM-2 lander and was stowed and powered off during launch and landing, with survival heaters cycled as needed [4].",
+          "Launch: MSolo flew on IM-2 (Athena), launched on 27 February 2025 at 00:16 UTC [4].",
+          "Lunar transfer: a transit health check of about 5 hours was planned, and calibration gas was used in transit, which showed Earth-air contamination [4].",
+          "Landing delivery: landing occurred on 6 March 2025 at 17:28 UTC, described as a rough landing [4].",
+          "Deployment and setup: the planned sequence was lander status check, warm-up, PRIME-1 deployment to the surface, MSolo activation, tuning and baseline scan, followed by sample analysis after drilling [4].",
+          "Power and data: the NGMS CAD model shows an exhaust tube connecting the instrument through the spacecraft top wall to space [3]. A data rate of about 15 kbyte/s is quoted for NGMS, and communication opportunities are limited, typically once per terrestrial day [2].",
+          "Thermal and mechanical interfaces: NGMS operating temperature is -30 °C to 80 °C [3]. MSolo was to be warmed to operational temperature before use [4]."
+        ],
+        "deployment_methods": "MSolo was deployed as part of PRIME-1 and analysed drilled material according to the planned sequence [4]. CODEX relies on a lander arm that grips rocks and presents them to the instrument, with a rover-mounted rake for collecting rocks [7]. NGMS is not a deployable instrument; its inlet is fed from a gas chromatograph or pyrolysis oven [2].",
+        "historical_examples": "The Apollo 17 atmospheric mass spectrometer operated on the lunar surface in 1972 [1]. MSolo operated on the lunar surface in 2025 for about 12 hours [4].",
+        "compatibility_assessment": "MSolo flew on the IM-2 lander, and that flight is documented [4][5]. NGMS has not flown, and no current lander interface is verified for it. CODEX is part of DIMPLE under CLPS, but the lander and rover that will carry it are not named in the sources accessed [7][8]. CLPS-LIMS is assigned to Blue Ghost Mission 4 [9]. No compatibility with a named lander is asserted beyond these documented assignments.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 17 instrument made an on-surface measurement in which argon-36 and argon-40 were both reported, and its diurnal behaviour pointed to night-side condensation and sunrise release [1]. MSolo's 2025 flight is significant because NASA's team considers it validation of commercial off-the-shelf mass spectrometry operating on the Moon [4]. The NGMS design is historically important because it served as the baseline for the JUICE and Comet Interceptor instruments [2].",
+      "limitations_and_uncertainties": "- **Isotope data.** No quantitative isotope ratio from MSolo, CODEX or CLPS-LIMS is reported in the sources accessed [4][8][9].\n- **Specifications.** Mass, dimensions, power and resolution are not publicly specified for MSolo, CODEX or CLPS-LIMS in the sources accessed [5][8][10].\n- **Source conflicts.** NGMS mass (3.2 kg versus about 3.5 kg), size (290 × 176 × 173 mm versus 26 × 15 × 18 cm) and power (23 W versus 25 W) differ between the flight design paper and the Bern web page [2][3].\n- **CODEX heritage.** The NGMS paper describes CODEX both as a baseline instrument and as a design into which NGMS integration was discontinued [2]. An unverified search summary states that the CODEX flight unit reuses a Luna-Resurs design [not verified here].\n- **Dating.** The Ina age is disputed, with interpretations of about 33 ± 2 million years and about 3.5 billion years [7].\n- **Mission schedule.** CLPS-LIMS and CODEX have no confirmed launch date in the sources accessed [8][9].\n- **Images.** Image rights and reuse conditions were not confirmed for NASA, University of Bern and project images beyond their source pages [3][6][9].",
+      "images": [
+        {
+          "id": "msolo_unit_nasa_kennedy",
+          "description": "MSolo (Mass Spectrometer Observing Lunar Operations) instrument enclosure, photographed during testing at NASA Kennedy Space Center.",
+          "image_type": "Official agency photograph (hardware)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2023/03/msolo.jpg",
+          "source_page_url": "https://www.nasa.gov/image-detail/mass-spectrometer-destined-moon-finishes-testing-kennedy/",
+          "publisher": "NASA",
+          "credit": "NASA (credit line not separately verified on the page text accessed)",
+          "caption": "MSolo hardware, shown in NASA's image titled 'Mass Spectrometer Destined for the Moon Finishes Testing at Kennedy'.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1041 x 867 px; matches the og:image tag of the NASA source page. No query string or fragment. Overview placement only; the MSolo example refers to the same hardware in text. Reuse conditions follow NASA media guidelines (not checked)."
+        },
+        {
+          "id": "ngms_hardware_bern",
+          "description": "Luna NGMS (Neutral Gas Mass Spectrometer) hardware photograph from the University of Bern LUNA-NGMS project.",
+          "image_type": "Institutional hardware photograph",
+          "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110124/1_NGMS-PFM-1200_eng.jpg",
+          "source_page_url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html",
+          "publisher": "University of Bern",
+          "credit": "University of Bern (credit line not verified)",
+          "caption": "NGMS hardware. The engraved label reads 'Luna-Resource-1 Lander, Neutral Gas Mass-Spectrometer FU s/n 1'; the page caption describes two flight instruments, PFM and FS.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1200 x 745 px. No query string or fragment. The engraved label (FU s/n 1) and the page caption (PFM/FS) disagree on the unit designation, so the unit identity is unresolved. Rights statement not checked."
+        },
+        {
+          "id": "clps_lims_project_graphic_bern",
+          "description": "CLPS-LIMS project header graphic: an illustrated lunar landscape with a laser ionisation mass spectrometer team badge.",
+          "image_type": "Project illustration (badge artwork)",
+          "image_url": "https://lims.unibe.ch/unibe/portal/fak_naturwis/micro_lims/content/home_image_b_eng.jpg",
+          "source_page_url": "https://lims.unibe.ch/",
+          "publisher": "University of Bern",
+          "credit": "University of Bern (credit line not verified)",
+          "caption": "CLPS-LIMS project header graphic from the University of Bern home page. Illustration, not a flight photograph.",
+          "section_placements": [
+            "physical_specifications.examples[4]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, JPEG frame 1200 x 450 px. No query string or fragment. Badge text 'Laser Ionization Mass Spectrometer' differs from the page text 'laser ablation ionization mass spectrometry'. Rights statement not checked."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "msolo_unit_nasa_kennedy",
+          "description": "MSolo (Mass Spectrometer Observing Lunar Operations) instrument enclosure, photographed during testing at NASA Kennedy Space Center.",
+          "image_type": "Official agency photograph (hardware)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2023/03/msolo.jpg",
+          "source_page_url": "https://www.nasa.gov/image-detail/mass-spectrometer-destined-moon-finishes-testing-kennedy/",
+          "publisher": "NASA",
+          "credit": "NASA (credit line not separately verified on the page text accessed)",
+          "caption": "MSolo hardware, shown in NASA's image titled 'Mass Spectrometer Destined for the Moon Finishes Testing at Kennedy'.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1041 x 867 px; matches the og:image tag of the NASA source page. No query string or fragment. Overview placement only; the MSolo example refers to the same hardware in text. Reuse conditions follow NASA media guidelines (not checked)."
+        }
+      ],
+      "historical_significance_images": [],
+      "references": [
+        {
+          "title": "Lunar atmospheric composition results from Apollo 17",
+          "authors": [
+            "Hoffmann, J.H.",
+            "Hodges, R.R., Jr.",
+            "Johnson, F.S.",
+            "Evans, D.E."
+          ],
+          "publisher": "NASA NTRS (Lunar Science Conference proceedings, record 19740040255)",
+          "date": "1973",
+          "url": "https://ntrs.nasa.gov/citations/19740040255"
+        },
+        {
+          "title": "Advancing Lunar Exploration: The Neutral Gas Mass Spectrometer for Regolith and Exosphere Analysis",
+          "authors": [
+            "Fausch, R.",
+            "Elsener, H.R.",
+            "Hofer, L.",
+            "Jost, J.",
+            "Lasi, D.",
+            "Piazza, D.",
+            "Wurz, P."
+          ],
+          "publisher": "IEEE Aerospace Conference 2025 (DOI 10.1109/AERO63441.2025.11068730); University of Bern",
+          "date": "2025",
+          "url": "https://wurz.space.unibe.ch/Fausch_IEEE_2025.pdf"
+        },
+        {
+          "title": "LUNA-NGMS: Instrument",
+          "authors": [
+            "University of Bern, LUNA-NGMS project"
+          ],
+          "publisher": "University of Bern",
+          "date": "not stated on page",
+          "url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html"
+        },
+        {
+          "title": "PRIME-1: MSolo Overview and Results",
+          "authors": [
+            "MSolo Science Team"
+          ],
+          "publisher": "NASA (presentation)",
+          "date": "2026-04",
+          "url": "https://ntrs.nasa.gov/api/citations/20260003150/downloads/MSolo%20PRIME-1%20overview%20and%20results%20-%20LSSW.pdf"
+        },
+        {
+          "title": "Historic lunar mission",
+          "authors": [
+            "INFICON"
+          ],
+          "publisher": "INFICON (company news page)",
+          "date": "not stated on page",
+          "url": "https://www.inficon.com/en/news/historic-lunar-mission"
+        },
+        {
+          "title": "Mass Spectrometer Destined for the Moon Finishes Testing at Kennedy",
+          "authors": [
+            "NASA"
+          ],
+          "publisher": "NASA image page",
+          "date": "2023 (image upload path 2023/03)",
+          "url": "https://www.nasa.gov/image-detail/mass-spectrometer-destined-moon-finishes-testing-kennedy/"
+        },
+        {
+          "title": "In situ dating of lunar basalt samples at Ina",
+          "authors": [
+            "Anderson, F.S.",
+            "Bierhaus, E.B.",
+            "Braden, S.E.",
+            "Fagan, A.L.",
+            "Fausch, R.G.",
+            "Head, J.W., III",
+            "Joy, K.H.",
+            "Levine, J.",
+            "Osterman, S.",
+            "Pernet-Fisher, J.",
+            "Tartese, R.",
+            "Wurz, P.",
+            "Yant, M."
+          ],
+          "publisher": "55th Lunar and Planetary Science Conference, abstract 2336",
+          "date": "2024",
+          "url": "https://wurz.space.unibe.ch/Anderson_LPSC_2336.pdf"
+        },
+        {
+          "title": "CODEX engineering development unit (abstract EGU26-6654)",
+          "authors": [
+            "Fausch, R. et al. (as listed on abstract page)"
+          ],
+          "publisher": "EGU General Assembly 2026",
+          "date": "2026",
+          "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-6654.html"
+        },
+        {
+          "title": "CLPS-LIMS project home page",
+          "authors": [
+            "University of Bern, CLPS-LIMS project"
+          ],
+          "publisher": "University of Bern",
+          "date": "not stated on page",
+          "url": "https://lims.unibe.ch/"
+        },
+        {
+          "title": "CLPS-LIMS: units and sub-systems",
+          "authors": [
+            "University of Bern, CLPS-LIMS project"
+          ],
+          "publisher": "University of Bern",
+          "date": "not stated on page",
+          "url": "https://lims.unibe.ch/instrument/units_and_sub_systems/index_eng.html"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Physical Specifications example 3 (Luna NGMS)": "payload.article.physical_specifications.examples[2].images",
+      "Physical Specifications example 5 (CLPS-LIMS)": "payload.article.physical_specifications.examples[4].images"
+    },
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. Section-level image objects are repeated intentionally so each section can render its own images without resolving IDs against the master registry."
+  },
+  "data_quality_notes": [
+    "Catalogue name 'Isotope analyser' is generic. No standard instrument with this exact name was found in the sources reviewed, so the article covers isotope-relevant ion-based analysers (mass spectrometers and laser-ablation mass spectrometers) and labels each example's status.",
+    "Evidence sources: primary PDFs (MSolo PRIME-1 slides, Fausch et al. 2025 NGMS paper, Anderson et al. 2024 LPSC abstract, Apollo 17 NTRS record) were retrieved and text-extracted locally; key figures were checked against the extracted text. The EGU26-6654 abstract and University of Bern pages were read via WebFetch. Quoted numbers should be re-checked if the source pages change.",
+    "NGMS conflicts: flight design paper gives 3.2 kg, envelope 290 x 176 x 173 mm, maximum power 23 W; University of Bern NGMS page gives about 3.5 kg, maximum size 26 x 15 x 18 cm, and operation with 25 W between -30 and 80 C. Both are reported; neither is treated as definitive.",
+    "CODEX heritage is described inconsistently in the Fausch et al. 2025 paper: NGMS is named a baseline for CODEX, and elsewhere the integration of NGMS components into CODEX is stated to have been discontinued. A secondary search summary (EGU24 abstract, not retrieved) claimed the CODEX flight unit reuses a Luna-Resurs design; this claim is not included in the article as a fact.",
+    "CODEX resolution: the EGU26-6654 abstract gives LAMS m/delta-m of about 300 to 400 on calibration samples. A secondary search summary of an EPSC-DPS 2025 abstract claimed the instrument meets its required mass resolution and sensitivity; that abstract was not retrieved and the claim is not used.",
+    "MSolo: the INFICON page identifies the Transpector MPH quadrupole and the company's 'first commercial off-the-shelf mass spectrometer to operate on the Moon's surface' claim; the claim is attributed as the company's own. No mass, dimensions, power, mass resolution or isotope-performance data were found for MSolo in the sources accessed.",
+    "MSolo helium-3 objective: a secondary search summary stated that MSolo would infer rare isotopes such as helium-3 from low-mass volatiles. This was not confirmed in a primary source and is not stated as a fact in the article.",
+    "CLPS-LIMS: the Bern pages give no numerical specifications, so mass, dimensions, power, mass range, mass resolution and operating time are null. Earlier public coverage (secondary, not verified here) gave a 2027 landing date; the current Bern page gives a target of late 2029, which is the date used. A secondary summary also gave a 60-hour surface operation figure, which was not verified and is not used.",
+    "Apollo 17 atmospheric instrument: only the 1973 NTRS abstract was retrieved. The instrument type, mass range and mass are not stated there and are null. No quantitative 36Ar/40Ar ratios are reported in the abstract; the full Lunar Science Conference paper was not retrieved.",
+    "Image verification: the three article images have direct asset URLs with no query strings or fragments. Each returned HTTP 200 with an image/jpeg content type and was visually reviewed. Rights and credit lines were not confirmed beyond the source pages, so reuse conditions remain open.",
+    "Image exclusion: a DIMPLE lander/rover mockup showing CODEX was found on EurekAlert, but its asset URL is a press-service rendition endpoint (mediasvc) rather than an official direct asset, so it was not used. Transportation and deployment has no verified images.",
+    "NGMS image label versus caption: the engraved label reads 'Luna-Resource-1 Lander, Neutral Gas Mass-Spectrometer FU s/n 1' while the page describes PFM and FS flight instruments. The unit identity is unresolved and the caption in the article reports both.",
+    "Lander compatibility: no named-lander interface was verified for NGMS, CODEX or CLPS-LIMS beyond the documented mission assignments (MSolo on IM-2; CLPS-LIMS on Blue Ghost Mission 4; DIMPLE under CLPS without a named lander in the sources).",
+    "Internal search (Glean) returned no relevant internal documents for this topic and was not used as a source.",
+    "Lunar location recommendations: deferred by the user; not included."
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "catalogue_id": 224,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 224,
+    "name": "Solar concentrator experiment",
+    "article": {
+      "overview": "A solar concentrator experiment collects sunlight over a large area with mirrors or lenses and focuses it onto a small target, producing very high temperatures without burning fuel or relying on electrical heaters. In lunar in-situ resource utilisation (ISRU), that concentrated heat can drive chemical reactions that release oxygen from lunar regolith. The most documented example is NASA's Carbothermal Reduction Demonstration (CaRD), in which a deployable, sun-tracking concentrator delivered sunlight into a carbothermal reactor that processed lunar regolith simulant. CaRD was a ground-based prototype tested in Houston, Texas; it has not flown to the Moon [2][3].",
+      "description": "The name \"solar concentrator experiment\" describes a class of experiment rather than one standard design. In the examples reviewed here, the experiment has three parts: a sun-tracking concentrator made of reflective optics, a receiver or reactor that absorbs the focused energy, and instrumentation that measures what the heat produces. A shutter or splash plate protects the reactor window while the focal point is aligned [2].\n\nIn the CaRD design the concentrator is a deployable structure with composite mirrors arranged in a crossed-Dragone configuration. The concentrator is stowed for launch and deployed on the surface, and it tracks the sun on an altitude-azimuth mount [2][3]. Concentrated energy enters a pressurised reactor and melts a small part of the regolith, which then reacts with carbon. The unmelted regolith insulates the melt from the reactor walls [1][2]. Because the experiment studies a process, the concentrator is a supporting subsystem rather than a scientific instrument in its own right.",
+      "scientific_purpose_and_applications": "The main purpose of this class of experiment is to show that concentrated sunlight can extract oxygen from regolith and to measure how much oxygen results per unit of solar energy. In CaRD this was done with a gas analyser derived from the MSOLO residual gas analyser, which quantified carbon monoxide released from the reaction [2].\n\nSecondary purposes include: testing optical transmission from the concentrator to the reactor window, including mirror reflectance and alignment; testing the splash plate and optical shutter that protect hardware during alignment [2]; collecting data needed to size a larger concentrator and reactor, which the CaRD authors describe as the key unknown for a pilot plant [2]; and supporting later use of the oxygen for propellant and life support, which would reduce the mass delivered from Earth [1][2].",
+      "operating_principle": "The reaction studied in CaRD is carbothermal reduction. Metal oxides in the regolith react with carbon to release carbon monoxide, leaving reduced metal in a molten slag [2]: MOx(l) + x C(s) → M(l) + x CO(g). In a complete system, carbon monoxide would be converted to water and then split by electrolysis to give oxygen gas. CaRD focused on the carbothermal step and did not implement these downstream systems [2].\n\nThe concentrator directs sunlight through a window into the reactor. In the Sierra Space reactor design, the regolith itself isolates the molten material from the walls, which allows passive thermal control at about 1800 °C without exotic materials or active cooling [1]. The reactor is therefore designed so that sunlight heats the regolith directly rather than heating a container [1][2].",
+      "scientific_importance": "Oxygen forms most of the propellant mass required for ascent from the lunar surface and for in-space chemical propulsion [1]. A process that makes oxygen from regolith with solar heat could reduce the mass that must be delivered from Earth [2][3]. Solar-carbothermal experiments matter because they test whether concentrated sunlight can supply the high temperatures required and whether the resulting oxygen yield can be measured reliably. They also expose engineering problems that ground tests cannot fully resolve, including dust, vacuum, thermal cycling and the precise shape of the solar input. Results so far are encouraging for process chemistry and subsystem performance, but they do not yet establish lunar-scale oxygen production [1][2][3].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a solar concentrator experiment. The examples below are different designs and should not be compared directly. Values are tied to named hardware and sources.",
+        "examples": [
+          {
+            "name": "CaRD solar concentrator prototype (2025 test campaign)",
+            "type": "Ground-tested prototype, not flown",
+            "concentrator_developer": "NASA Glenn Research Center; mirrors by Composite Mirror Applications",
+            "concentrator_configuration": "Deployable, stowable, sun-tracking crossed-Dragone arrangement of carbon-composite mirrors on an altitude-azimuth base",
+            "clear_aperture_area_m2": 1.889,
+            "alternative_aperture_area_m2_for_1380_W_delivery": 1.67,
+            "mirror_mass_kg_measured": 51.2,
+            "concentrator_mass_kg_estimated": 205,
+            "mirror_reflectance_percent_measured": 92.7,
+            "optical_transmission_efficiency_percent": 60.3,
+            "optical_transmission_efficiency_basis": "After an assumed reactor-window loss; calorimeter test without reactor measured 71.2% on 11 September 2025.",
+            "reactor_design_temperature_c": 1800,
+            "reactor_pyrometer_temperature_c_laser_tvac": 1782.9,
+            "reactor_pyrometer_temperature_note": "Laser-heated thermal-vacuum test; emissivity assumed 0.8.",
+            "houston_test_2025_08_28": {
+              "oxygen_extracted_g": 0.195,
+              "solar_energy_at_primary_mirror_kwh": 0.38,
+              "oxygen_yield_g_per_kwh": 0.51,
+              "simulant_note": "Simulant not named in the text; Table 1 lists differing yields for two simulant rows on the same date."
+            },
+            "lunar_projection_not_measured": {
+              "solar_flux_w_per_m2": 1370,
+              "incoming_power_w": 2588,
+              "reactor_power_w_at_60_3_percent": 1561,
+              "projected_yield_g_per_kwh": 9.53,
+              "assumptions": "Assumes regolith yield similar to the Greenspar 250 simulant used in the 1380 W laser test and that concentrated sunlight performs similarly to a laser; the energy basis differs from the measured value."
+            },
+            "power_consumption_w": "Not publicly specified",
+            "lunar_compatibility": "Source describes the CaRD design as aimed at reducing mass for CLPS-class landers; no verified lander specification; compatibility with a named lander is not asserted.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20260002864/downloads/CaRD_ASCEND%202026_rev1.pdf",
+              "https://ntrs.nasa.gov/citations/20260004723",
+              "https://www.nasa.gov/image-article/harnessing-the-sun-to-extract-oxygen-on-the-moon/"
+            ],
+            "images": [
+              {
+                "id": "card_solar_concentrator_test_2025",
+                "description": "NASA photograph of a CaRD solar concentrator under test; light shines onto the mirror-like concentrator, which is tilted upward (alt text: about 45 degrees).",
+                "image_type": "Engineering test photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2026/02/jsc2025e075711orig.jpg",
+                "source_page_url": "https://www.nasa.gov/image-article/harnessing-the-sun-to-extract-oxygen-on-the-moon/",
+                "publisher": "NASA",
+                "credit": "NASA/Michael Rushing",
+                "caption": "Light shines onto a solar concentrator being tested in this Aug. 7, 2025, photo. The concentrator is part of the Carbothermal Reduction Demonstration (CaRD) project, which aims to produce oxygen from simulated lunar regolith for use at the Moon's south pole.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct NASA WordPress upload URL with no query string, taken from the NASA image-article page. The image was confirmed present on that page through a page read, but the asset itself was not downloaded and its resolution was not checked. The caption was assembled from quoted segments and should be checked against the full page. Rights: NASA media; no public-domain status is asserted here."
+              }
+            ]
+          },
+          {
+            "name": "First-generation solar-carbothermal system (2010)",
+            "type": "Historical ground and field prototype, Mauna Kea, Hawaii; not flown",
+            "concentrator_configuration": "Cassegrain-type concentrator with optical waveguide (developer per source: Physical Sciences Inc.)",
+            "concentrator_mass_kg_approximate": 635,
+            "optical_transmission_efficiency_percent": 33,
+            "power_delivered_to_reactor_w": 703,
+            "solar_power_at_primary_mirrors_w": 2110,
+            "test_oxygen_extracted_g": 1.1,
+            "test_solar_energy_kwh": 3.313,
+            "oxygen_yield_g_per_kwh": 0.35,
+            "date_note": "Text gives 24 February 2010; Table 1 of the same source gives 4 February 2010.",
+            "power_consumption_w": "Not publicly specified",
+            "lunar_compatibility": "Source states the concentrator exceeds the payload capacity of mid-class CLPS landers; no verified lander specification.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20260002864/downloads/CaRD_ASCEND%202026_rev1.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Cassegrain solar concentrator system for ISRU material processing (2012)",
+            "type": "Ground-tested concentrator system presented in 2012; not flown",
+            "primary_optic_diameter_m": 0.5,
+            "primary_optic_material": "Aluminium Cassegrain",
+            "concentration_ratio": "approximately 3000:1",
+            "extended_optics_system_concentration_ratio": "approximately 6000:1 (two-axis extended optics halving focal-spot size)",
+            "regolith_melting_test_values": "Not stated in the abstract and metadata reviewed",
+            "power_consumption_w": "Not publicly specified",
+            "lunar_compatibility": "Not assessed in source",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20120004046"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The three concentrators differ in configuration, size and purpose. The CaRD concentrator is a deployable, stowable structure, whereas the 2012 unit is a fixed Cassegrain assembly with optional extended optics. The overall stowed and deployed dimensions of the CaRD concentrator were not stated in the sources reviewed. A flight concentrator would need dimensions set by its focal spot, reactor window, lander deck interface and deployment envelope.",
+        "mass_and_weight": "Measured and estimated values are reported separately: the CaRD mirrors were measured at 51.2 kg, the total CaRD concentrator is estimated at 205 kg, and the first-generation concentrator was about 635 kg [2]. These masses are not interchangeable because they describe different designs and different levels of hardware.",
+        "power_requirements": "The optics are passive, but tracking and deployment drives need electrical power. Drive power for the CaRD concentrator was not publicly specified. Heater or reactor power is also not a concentrator specification."
+      },
+      "environmental_and_operational_requirements": "The reactor and concentrator must operate in vacuum and with large temperature differences. The CaRD reactor was tested in the dirty thermal-vacuum chamber at Johnson Space Center, and the authors found no evidence that vacuum changed oxygen extracted per unit of thermal energy, because the reaction occurs in a pressurised volume [1]. Thermal control was passive: initial calculations suggested the heat shield could exceed 350 °C during operation, but measured temperatures remained below 60 °C in thermal-vacuum testing [1]. Sunlight at the lunar poles is roughly horizontal, and the crossed-Dragone configuration only works when the incoming light is perpendicular to the target, so the design uses a reactor with a zenith-facing window [2]. The alt-az mount can accommodate a slope of up to 10 degrees, and the COPR reactor was tested with an assumed slope of 15 degrees [2]. Regolith handling is a recurring constraint: the COPR valve design was reported to seal after thousands of cycles with regolith exposure, and optical windows need protection from regolith [2].",
+      "limitations": "Most performance results come from ground tests with lunar regolith simulant rather than real lunar regolith, and the source notes that real regolith contains agglutinates that simulants do not reproduce [1][2]. The CaRD tests were carried out in Houston with fluctuating solar flux and local weather, so the measured solar-energy inputs were derived from recorded flux data [2]. The optical shutter and splash plate were not fully tested because some LI900 plates were damaged during shipping [2]. The lunar oxygen yield figure is a projection, not a measurement [2]. The downstream steps that turn carbon monoxide into oxygen gas were not built in CaRD [2]. No flight demonstration date was found in the sources reviewed; the sources describe a proposed flight demonstration [2][3].",
+      "transportation_and_deployment": {
+        "overview": "This is a surface payload concept. The discussion applies to the CaRD design and is not an assertion of compatibility with any named lander.",
+        "transportation_process": [
+          "Earth integration: the concentrator is designed to stow for launch; avionics and software were developed at Kennedy Space Center and electrical harnesses at Johnson Space Center [2].",
+          "Launch and lunar transfer: not defined for CaRD in the sources reviewed.",
+          "Landing and delivery: CaRD included a lander deck mockup representing the structural and electrical interface a future lander could provide; it was tested with an 800 lb load at a 10.1 degree tilt [2].",
+          "Deployment: deploy the concentrator while pointing away from the sun, then rotate it toward the sun in the fully deployed configuration; deployment is motorised [2].",
+          "Power and data: electrical power for drives and avionics is not publicly specified; the gas analysis instrument is a commercial version of a flight-qualified residual gas analyser with PRIME-1 heritage on the lunar surface [2].",
+          "Thermal and mechanical interfaces: the reactor is passively thermally controlled and needs a zenith-facing window; the alt-az mount interfaces directly with the lander deck [2]."
+        ],
+        "deployment_methods": "Motorised deployment of a stowable concentrator on an altitude-azimuth base, using a concept of operations that moves from pointing away from the sun to tracking it [2].",
+        "historical_examples": "The 2010 first-generation system was tested on Mauna Kea as part of a larger demonstration; the CaRD prototype was tested in Houston [2][3].",
+        "compatibility_assessment": "The CaRD mass estimate of 205 kg and its interface concept have not been compared with any verified lander specification. No compatibility with a named lander is asserted.",
+        "images": []
+      },
+      "historical_significance": "The first solar-carbothermal demonstration was carried out on Mauna Kea in 2010, as part of a larger \"dust to thrust\" demonstration that included regolith excavation, methanation, water electrolysis, oxygen liquefaction and thruster firing [2]. Its developers described it as the first system of its kind, and it established baseline performance parameters for later work [2]. CaRD, funded by NASA's Game Changing Development programme within the Space Technology Mission Directorate, built on that system to develop a concentrator that could survive launch and operate on the lunar surface [2][3]. The integrated prototype was tested in 2025 and reported in 2026 [2][3][4].",
+      "limitations_and_uncertainties": "The evidence is strongest for the ground-test chemistry and subsystem performance of CaRD, and weakest for any lunar figure. The lunar oxygen yield of about 9.53 g/kWh is an extrapolation built on stated assumptions, and it is expressed on a different energy basis from the measured 0.51 g/kWh, so the two should not be compared directly [2]. Two source dates and one simulant identity remain inconsistent, and several dimension, power and lifetime values are not publicly specified. No flight demonstration date was found, so the evidence supports a demonstrated ground process concept rather than a verified flight system.",
+      "images": [
+        {
+          "id": "card_solar_concentrator_test_2025",
+          "description": "NASA photograph of a CaRD solar concentrator under test; light shines onto the mirror-like concentrator, which is tilted upward (alt text: about 45 degrees).",
+          "image_type": "Engineering test photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2026/02/jsc2025e075711orig.jpg",
+          "source_page_url": "https://www.nasa.gov/image-article/harnessing-the-sun-to-extract-oxygen-on-the-moon/",
+          "publisher": "NASA",
+          "credit": "NASA/Michael Rushing",
+          "caption": "Light shines onto a solar concentrator being tested in this Aug. 7, 2025, photo. The concentrator is part of the Carbothermal Reduction Demonstration (CaRD) project, which aims to produce oxygen from simulated lunar regolith for use at the Moon's south pole.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA WordPress upload URL with no query string, taken from the NASA image-article page. The image was confirmed present on that page through a page read, but the asset itself was not downloaded and its resolution was not checked. The caption was assembled from quoted segments and should be checked against the full page. Rights: NASA media; no public-domain status is asserted here."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "card_solar_concentrator_test_2025",
+          "description": "NASA photograph of a CaRD solar concentrator under test; light shines onto the mirror-like concentrator, which is tilted upward (alt text: about 45 degrees).",
+          "image_type": "Engineering test photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2026/02/jsc2025e075711orig.jpg",
+          "source_page_url": "https://www.nasa.gov/image-article/harnessing-the-sun-to-extract-oxygen-on-the-moon/",
+          "publisher": "NASA",
+          "credit": "NASA/Michael Rushing",
+          "caption": "Light shines onto a solar concentrator being tested in this Aug. 7, 2025, photo. The concentrator is part of the Carbothermal Reduction Demonstration (CaRD) project, which aims to produce oxygen from simulated lunar regolith for use at the Moon's south pole.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA WordPress upload URL with no query string, taken from the NASA image-article page. The image was confirmed present on that page through a page read, but the asset itself was not downloaded and its resolution was not checked. The caption was assembled from quoted segments and should be checked against the full page. Rights: NASA media; no public-domain status is asserted here."
+        }
+      ],
+      "references": [
+        {
+          "title": "Environmental Testing of a Fully Automated Carbothermal Reactor for Lunar Oxygen Production",
+          "authors": "Haggerty, N. P., White, B. C., Paz, A., O'Connor, D., Azim, N., and Captain, J.",
+          "publisher": "54th International Conference on Environmental Systems (ICES-2025-200); NASA NTRS 20250004151",
+          "date": "2025",
+          "url": "https://ntrs.nasa.gov/api/citations/20250004151/downloads/Carbothermal_Paper_Final.pdf"
+        },
+        {
+          "title": "Prototype Demonstration of Solar-Carbothermal System to Extract Oxygen from Regolith",
+          "authors": "Paz, A., O'Connor, D., Colozza, A., White, B., and Azim, N.",
+          "publisher": "ASCEND 2026 conference paper; NASA NTRS 20260002864",
+          "date": "2026",
+          "url": "https://ntrs.nasa.gov/api/citations/20260002864/downloads/CaRD_ASCEND%202026_rev1.pdf"
+        },
+        {
+          "title": "Prototype Demonstration of an Integrated Solar Concentrator System and Carbothermal Reactor Using Solar Energy to Extract Oxygen from Regolith",
+          "authors": "White, B., Paz, A., O'Connor, D., Colozza, A., and Azim, N.",
+          "publisher": "Space Resources Roundtable presentation, Golden, CO; NASA NTRS 20260004723",
+          "date": "2026-06-02",
+          "url": "https://ntrs.nasa.gov/citations/20260004723"
+        },
+        {
+          "title": "Harnessing the Sun to Extract Oxygen on the Moon (image article)",
+          "authors": null,
+          "publisher": "NASA",
+          "date": null,
+          "url": "https://www.nasa.gov/image-article/harnessing-the-sun-to-extract-oxygen-on-the-moon/"
+        },
+        {
+          "title": "Cassegrain Solar Concentrator System for ISRU Material Processing",
+          "authors": "Colozza, A., Macosko, R., Castle, C., Sacksteder, K., Suzuki, N. H., and Mulherin, J.",
+          "publisher": "50th AIAA Aerospace Sciences Meeting, Nashville, TN; NASA NTRS 20120004046",
+          "date": "2012-01-09",
+          "url": "https://ntrs.nasa.gov/citations/20120004046"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "CaRD solar concentrator prototype example": "payload.article.physical_specifications.examples[0].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images; the CaRD image is not used in this section)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Primary evidence: NTRS 20250004151 (ICES 2025 COPR paper, read as text), NTRS 20260002864 (ASCEND 2026 CaRD paper, read as text), NTRS 20260004723 (SRR 2026 abstract page), NASA image-article page (summary read). The SRR slide PDF could not be read, so slide-only values are not used.",
+    "The 2010 first-generation test date conflicts within the source: 24 February 2010 in the text versus 4 February 2010 in Table 1.",
+    "For the 28 August 2025 Houston test, the text gives 0.51 g/kWh without naming the simulant; Table 1 lists 0.29 for a Greenspar 250 row and 0.51 for an NUW-LHT-5M row on the same date. The simulant for the headline figure is unresolved.",
+    "The lunar projection of 9.53 g/kWh uses a different energy basis from the measured 0.51 g/kWh; the two should not be compared directly.",
+    "The geometric concentration ratio of about 1975 and the 1.6 m clear aperture appear only in secondary summaries of the SRR slides and are not used as specifications.",
+    "One secondary article described CaRD as aboard the International Space Station; primary sources describe ground and vacuum testing, so the claim is treated as unsupported.",
+    "The NASA image caption was assembled from quoted segments of the source page summary and should be checked against the full page.",
+    "No flight date, lander compatibility, overall CaRD TRL or drive power was found in the sources read."
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "catalogue_id": 320,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 320,
+    "name": "Surface weather monitoring station",
+    "article": {
+      "overview": "A surface weather monitoring station is an unattended instrument package that records environmental conditions at one location on the Moon's surface. The term 'weather' is an analogy: the Moon has no atmosphere that could support weather in the terrestrial sense. Such a station would instead record the thermal environment, the very thin gas around the surface (the exosphere), the plasma and charged-particle environment, ultraviolet and visible light, and ionising radiation.\n\nAs of the sources reviewed, no dedicated lunar surface weather station has been flown. The closest flown examples are individual environmental instruments: the Apollo 15 Cold Cathode Gage Experiment (CCGE), which measured gas concentration or pressure at the surface [1]; the Chandrayaan-3 ChaSTE thermal probe, which measured a near-surface temperature profile [3]; and the Chandrayaan-3 RAMBHA-LP Langmuir probe, which measured near-surface plasma [4]. The closest dedicated concept is the Lunar Environmental Observation Station (LEOS), at technology readiness level (TRL) 6 and tested on the ground only [2].\n\nScope of this article. The article covers unattended surface instruments whose stated purpose includes monitoring the lunar surface environment, and separates three evidence classes: flown on the Moon (CCGE, ChaSTE, RAMBHA-LP); concept, not flown (LEOS); and adjacent but not a weather station (LEMS, a NASA Goddard seismometer suite planned for Artemis III, included only to mark the boundary of this entry [5]).",
+      "description": "A surface environmental station typically combines several sensors on one support structure, each reporting a different aspect of the surface environment: temperature, either at the surface or as a profile at depth in the regolith; gas density or pressure in the thin exosphere, which depends on the balance between gas sources (solar-wind implantation, outgassing and lander contamination) and losses (escape to space and ionisation); light and radiation, including ultraviolet, photosynthetically active radiation (PAR) and ionising radiation; plasma and charged-particle conditions near the surface, which affect dust behaviour and electrical charging; and images of the surrounding terrain and sky, which give context for the other measurements.\n\nThe LEOS concept collects several of these in one station. The Apollo and Chandrayaan-3 instruments each measured only part of this list, and each was built for a specific scientific question rather than as a general-purpose station.",
+      "scientific_purpose_and_applications": "Thermal environment. Surface temperature varies greatly between lunar day and night, and regolith temperature changes with depth. A temperature profile in the top centimetres shows how heat moves through the surface. ISRO describes the ChaSTE profile as the first such profile for the lunar south pole, with detailed observations underway [3].\n\nExospheric gas. The Apollo 15 CCGE was included in the Apollo Lunar Surface Experiments Package (ALSEP) to evaluate the amount of gas present on the lunar surface. Its indications could be expressed as a concentration of particles per unit volume or as a pressure, and the pressure depends on ambient temperature as well as on concentration. The measured amount could be compared with the expected solar-wind contribution to show whether other gas sources were present [1].\n\nPlasma environment. RAMBHA-LP was designed to characterise near-surface plasma and to track how it changes through the lunar day [4].\n\nLight and radiation. LEOS was proposed to measure surface ultraviolet light, PAR and ionising radiation. These are design objectives for LEOS, not measured results [2].",
+      "operating_principle": "Gas-density measurement (Apollo 15 CCGE). The essential sensing element is a cold-cathode ionisation gauge with a coaxial electrode arrangement; a cathode spool is held at high voltage by a 4500 V supply, which drives a discharge that ionises gas molecules. The resulting ion current is measured by an electrometer, whose output is routed to an analogue-to-digital converter. The electrometer works in three automatically selected overlapping current ranges [1]. The gauge responds to gas in general, so its indication is expressed as an equivalent nitrogen response, meaning the nitrogen concentration that would give the same reading. The true concentration of a given gas can differ from that value [1].\n\nTemperature profiling (Chandrayaan-3 ChaSTE). The probe has a controlled penetration mechanism that pushes it into the regolith to a depth of 10 cm and carries 10 individual temperature sensors along its length, which gives a depth profile [3]. The ISRO page describes a graph of temperature variation at various depths; no numeric values are given in the text reviewed.\n\nPlasma measurement (Chandrayaan-3 RAMBHA-LP). A 5 cm metallic spherical probe is mounted on a 1 m boom on the upper deck of the lander. A Langmuir probe applies a voltage sweep to the sphere and measures the resulting current, from which ion and electron densities and energies are derived [4].\n\nRadiometric and optical measurement (LEOS, proposed). LEOS uses a black-body globe to measure surface temperature and radiative flux, a PAR sensor, an ultraviolet sensor, a CNP-TEPC sensor for neutral and charged ionising radiation, and a camera for images. The poster describes commercial off-the-shelf sensors tested for thermal vacuum and vibration, but no flight data [2].",
+      "scientific_importance": "The Moon lacks a global weather network, so each surface station provides a unique local record. LEOS's authors state that models predict surface temperature, light and radiation values, but that 'there are no sensors or instruments that have measured these parameters on the Moon' [2]. Even a few measured points are valuable for testing those models.\n\nThe Apollo 15 CCGE was an early attempt to measure the lunar atmosphere directly at the surface. Its authors noted that the most significant possible source of such an atmosphere, if detectable, is degassing from the interior, and that measurements of actual gas composition would eventually need a mass spectrometer [1]. The Chandrayaan-3 ChaSTE profile adds a data point for the south polar region [3].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a surface weather monitoring station, because no flown or flight-qualified station of this type exists. The examples below are individual instruments with different purposes. Their masses, dimensions and power were not publicly specified in the sources reviewed, so these fields are null rather than estimated.",
+        "examples": [
+          {
+            "name": "Apollo 15 Cold Cathode Gage Experiment (CCGE)",
+            "example_number": 1,
+            "flight_status": "Flown on the Moon as part of the Apollo 15 ALSEP (1971) [1]",
+            "instrument_type": "Cold-cathode ionisation gauge with electrometer, part of the ALSEP SIDE package [1]",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "measurement_range_k_approximate": [100, 350],
+            "accuracy_statement": "The true concentration varies from the reported result by a factor that is usually less than 2 [1].",
+            "thermal_conditioning": "Baked at about 350 K for more than a week during each lunar day to drive off adsorbed gases [1].",
+            "images": [],
+            "text": "Status. Flown on the Moon as part of the Apollo 15 ALSEP [1].\n\nMeasurement. Gas concentration or pressure at the surface. The gauge was not evacuated. Its dust cover did not form a vacuum seal and was removed on command [1].\n\nTemperature. A sensor monitored instrument temperature. Because the gauge had no temperature control, its operating range was approximately 100 to 350 K [1].\n\nAccuracy. The report states that the true concentration 'varies from this result by a factor that is usually less than 2' [1].\n\nThermal conditioning. The gauge was baked at about 350 K for more than a week during each lunar day to drive off adsorbed gases [1].\n\nMass, dimensions and power. Not verified in the Apollo 15 report pages reviewed. Recorded as null.",
+            "source_reference_numbers": [1]
+          },
+          {
+            "name": "Chandrayaan-3 ChaSTE thermal probe",
+            "example_number": 2,
+            "flight_status": "Flown on the Chandrayaan-3 Vikram lander; ISRO first observations 27 August 2023 [3]",
+            "instrument_type": "Penetrating temperature probe with controlled penetration mechanism",
+            "probe_depth_cm": 10,
+            "temperature_sensor_count": 10,
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "images": [],
+            "text": "Status. Flown on the Chandrayaan-3 Vikram lander. ISRO reports first observations on 27 August 2023 [3].\n\nProbe. Penetration to a depth of 10 cm with 10 individual temperature sensors [3].\n\nMeasurement. A temperature profile versus depth. The ISRO page describes a graph but does not state numeric values in the text reviewed [3].\n\nMass, dimensions and power. Not publicly specified in the sources reviewed. Recorded as null.",
+            "source_reference_numbers": [3]
+          },
+          {
+            "name": "Chandrayaan-3 RAMBHA-LP Langmuir probe",
+            "example_number": 3,
+            "flight_status": "Flown on the Chandrayaan-3 lander; ISRO results reported 31 August 2023 [4]",
+            "instrument_type": "Langmuir probe (5 cm spherical sensor on 1 m boom)",
+            "probe_sphere_diameter_cm": 5,
+            "boom_length_m": 1,
+            "measured_number_density_per_m3_approximate": [5000000, 30000000],
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "classification_note": "Plasma instrument rather than a meteorological one; included because it measures the near-surface environment.",
+            "images": [],
+            "text": "Status. Flown on the Chandrayaan-3 lander. ISRO reports the results on 31 August 2023 [4].\n\nProbe. A 5 cm metallic spherical probe on a 1 m boom [4].\n\nMeasured range. A number density of about 5 to 30 million electrons per cubic metre, reported for the early lunar day [4].\n\nMass, dimensions and power. Not publicly specified in the sources reviewed. Recorded as null.\n\nClassification. This is a plasma instrument rather than a meteorological one. It is included because it measures the near-surface environment.",
+            "source_reference_numbers": [4]
+          },
+          {
+            "name": "LEOS, Lunar Environmental Observation Station (concept, TRL 6)",
+            "example_number": 4,
+            "flight_status": "Concept at TRL 6; ground testing only; not flown [2]",
+            "instrument_type": "Multi-sensor surface station: black-body globe, PAR sensor, ultraviolet sensor, CNP-TEPC radiation sensor, camera [2]",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "pressure_sensor": "None listed in the poster [2]",
+            "images": [],
+            "text": "Status. Concept at TRL 6 with ground testing only. The LEOS team presented the work at the 55th Lunar and Planetary Science Conference in March 2024 [2].\n\nSensors. Black-body globe for surface temperature and radiative flux, PAR sensor, ultraviolet sensor, CNP-TEPC radiation sensor and camera [2].\n\nPressure. No pressure sensor is listed in the poster [2].\n\nMass, dimensions and power. Not stated in the poster reviewed. Recorded as null.",
+            "source_reference_numbers": [2]
+          },
+          {
+            "name": "LEMS, Lunar Environment Monitoring Station (adjacent, not a weather instrument)",
+            "example_number": 5,
+            "flight_status": "Engineering unit built and tested; planned for Artemis III, which NASA's page says is currently planned to launch in 2027 [5]",
+            "instrument_type": "Seismometer suite [5]",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "images": [],
+            "text": "Status. Engineering unit built, vibration, vacuum and thermal tested. NASA's page states that LEMS is one of the first three payloads for Artemis III, which is 'currently planned to launch in 2027' [5].\n\nMeasurement. Seismic. The page describes a seismometer suite and does not state that LEMS measures temperature or pressure [5].\n\nMass, dimensions and power. The page gives only 'compact' and does not state mass, size or power [5].\n\nClassification. Included only to mark the boundary of this entry. It is not a weather station.",
+            "source_reference_numbers": [5]
+          }
+        ],
+        "dimensions_and_proportions": "No dimensions are publicly specified for any example in the sources reviewed. Scale depends on the sensor set. A ChaSTE-type probe is slender and penetrates the regolith. A LEOS-type station would be a surface package with a camera and an exposed globe.",
+        "mass_and_weight": "No mass is publicly specified for any example in the sources reviewed. A secondary search summary gives a LEMS mass of 11 lb in lunar gravity, but this was not verified on the NASA page read and is not used.",
+        "power_requirements": "No power figures are publicly specified for any example in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "Thermal. The Apollo 15 CCGE had no temperature control and was specified for approximately 100 to 350 K [1]. Each example must survive the lunar day-night thermal cycle. ChaSTE measures temperature at depth in the regolith, so its environment includes the surface temperature gradient [3].\n\nVacuum. The Moon has no atmosphere to hold heat or conduct it away, so surface instruments depend on conduction, radiation and insulation. The CCGE was not evacuated, and adsorbed gases were driven off by baking the gauge at about 350 K for more than a week each lunar day [1]. LEOS was qualified in thermal vacuum testing as a ground test [2].\n\nContamination. The Apollo 15 report identifies lander and astronaut-suit contamination as a source of gas that could be mistaken for a natural lunar atmosphere [1]. Surface weather measurements therefore need to be separated from lander outgassing.\n\nRadiation. The LEOS design includes an ionising radiation sensor, which implies the environment must be measurable at the surface [2]. No radiation tolerance figures are given for the other examples.\n\nPlasma. RAMBHA-LP measured plasma near the Chandrayaan-3 lander and reported changes over the early lunar day [4]. The lander's own presence may affect local plasma, but the sources reviewed do not quantify this.",
+      "limitations": "- No flown dedicated station. No lunar surface weather station has flown as a single integrated package; the examples are separate instruments, each with its own scope.\n- Different measurements. The CCGE measures gas density, ChaSTE measures temperature at depth, RAMBHA-LP measures plasma, and LEOS was designed to measure surface temperature, light and radiation. These cannot be combined into one specification.\n- No pressure instrument on LEOS. The LEOS poster lists no pressure sensor [2]. The CCGE measured gas density, and its pressure value depends on the temperature correction [1].\n- Unverified numeric values. The ChaSTE temperature values are shown only in a graph that was not read as numbers [3].\n- Accuracy. The CCGE result may differ from the true concentration by a factor usually below 2 [1]. The other instruments report no accuracy figures in the sources reviewed.\n- Contamination. Lander outgassing and contamination complicate the interpretation of gas measurements [1].",
+      "transportation_and_deployment": {
+        "overview": "A surface weather station would be integrated into a lander or rover payload on Earth, launched, transferred to the Moon, delivered to the surface, deployed and connected to power and data systems. Each stage imposes constraints on mass, thermal protection and mounting [5].",
+        "transportation_process": [
+          "Earth integration: integrate the instrument into a lander or rover payload compartment on Earth.",
+          "Launch: launch on a launch vehicle.",
+          "Lunar transfer: transfer towards the Moon.",
+          "Landing delivery: deliver to the surface by lander.",
+          "Deployment and setup: deploy and position the instrument; the Apollo 15 CCGE was deployed by astronauts as part of the ALSEP and attached to the SIDE electronics package [1]; the ChaSTE penetration mechanism pushes the probe into the regolith, and the sources reviewed do not describe its lander interface [3]; the RAMBHA-LP probe is mounted on a 1 m boom on the lander's upper deck [4].",
+          "Power and data: not described for the examples in the sources reviewed, except that the LEMS page does not state its power or data interface [5]."
+        ],
+        "deployment_methods": "Apollo 15 CCGE: deployed by astronauts as part of the ALSEP [1]. Chandrayaan-3 ChaSTE: penetration mechanism into regolith [3]. Chandrayaan-3 RAMBHA-LP: 1 m boom on the lander upper deck [4]. LEOS: concept only; the poster reviewed does not describe a deployment method [2]. LEMS: planned for Artemis III; the NASA page does not describe its deployment method [5].",
+        "historical_examples": "The Apollo 15 CCGE was deployed on the lunar surface in 1971 [1]. The Chandrayaan-3 instruments were deployed in 2023 on the Vikram lander [3][4].",
+        "compatibility_assessment": "No compatibility with a named lander is asserted for LEOS. The Chandrayaan-3 instruments are documented on the Vikram lander and the Apollo 15 instruments on the Apollo 15 ALSEP [1][3][4]. LEMS is planned for Artemis III, but the NASA page does not name a lander interface [5]. Any future station would need its mass, dimensions, power, mounting and data interfaces compared with verified lander specifications before compatibility is assumed.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 15 CCGE was one of the earliest attempts to measure the lunar atmosphere at the surface. Its report presented the gas measurement as a test of whether a surface gas source other than the solar wind was present [1].\n\nThe Chandrayaan-3 instruments are among the most recent surface measurements. ChaSTE provides a temperature profile for the lunar south polar region, which ISRO describes as the first such profile for that region, with detailed observations still underway [3]. RAMBHA-LP provides a near-surface plasma record for the early lunar day [4].\n\nLEOS is a current concept that explicitly aims to provide a surface weather-style record. Its authors state that no sensors have yet measured its target parameters on the Moon [2].",
+      "limitations_and_uncertainties": "- No dedicated station has flown. The article describes individual environmental instruments and one concept, not a flown station.\n- Missing numerical values. ChaSTE temperature values are in a graph that was not read as numbers. Mass, dimensions and power are not publicly specified for any example in the sources reviewed.\n- LEOS status. The LEOS results come from a conference poster draft. The NTRS record describes ground testing with commercial off-the-shelf sensors, not flight data [2].\n- LEMS status. NASA's page carries a notice that it is not being updated because of a lapse in federal funding, and an editor's note says the site is being revised for Artemis architecture changes [5]. The launch date and configuration may change.\n- Unverified secondary claims. Search summaries reported a ChaSTE depth of 141 mm, a lunar-night ChaSTE surface temperature near -10 C, a CCGE range of 100 to 400 K, and a LEMS mass of 11 lb. None was confirmed in a primary source and none is used here; the Apollo 15 primary report gives 100 to 350 K [1].\n- Other Apollo flights. Search summaries describe CCGE or CCIG flights on Apollo 12, 13 and 14. The Apollo 15 report is the only primary source for the CCGE in this article.\n- Source not retrieved. A 2025 Communications Earth & Environment paper on ChaSTE south-pole temperatures was identified in a search summary but not retrieved; it is not cited.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Cold Cathode Gage Experiment (Lunar-Atmosphere Detector), Chapter 13, Apollo 15 Preliminary Science Report",
+          "authors": [
+            "Johnson, F. S.",
+            "Evans, D. E. (initials not confirmed in extracted text)",
+            "Carroll, J. M."
+          ],
+          "publisher": "NASA (SP-289)",
+          "date": "not verified in extracted pages",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a15side_ccig_raw_arcsav/document/a15_psr_ch13_ccig.pdf"
+        },
+        {
+          "title": "LEOS: Lunar Environmental Observation Station, A TRL 6 Payload for the Lunar South Pole (LPSC poster draft)",
+          "authors": [
+            "Quigley, E. A. (NASA Ames Research Center)",
+            "Smith, H. D. (KISS Institute for Practical Robotics)",
+            "Duncan, A. G. (KISS Institute for Practical Robotics)"
+          ],
+          "publisher": "NASA Technical Reports Server, document 20250009036; 55th Lunar and Planetary Science Conference",
+          "date": "2024-03 (conference); NTRS acquisition 2025-09-05",
+          "url": "https://ntrs.nasa.gov/api/citations/20250009036/downloads/LEOS%20LPSC%20Poster%20Draft%201.pdf"
+        },
+        {
+          "title": "The first observations from the ChaSTE payload onboard Vikram Lander",
+          "authors": [
+            "ISRO"
+          ],
+          "publisher": "Indian Space Research Organisation",
+          "date": "2023-08-27",
+          "url": "https://www.isro.gov.in/Ch3_first_observation_ChaSTE_Vikram_Lander.html"
+        },
+        {
+          "title": "RAMBHA-LP on-board Chandrayaan-3 measures near-surface plasma content",
+          "authors": [
+            "ISRO"
+          ],
+          "publisher": "Indian Space Research Organisation",
+          "date": "2023-08-31",
+          "url": "https://www.isro.gov.in/Ch3_Rambha-LP_near-surface_Plasma.html"
+        },
+        {
+          "title": "Lunar Environment Monitoring Station (LEMS) project page",
+          "authors": [
+            "NASA Goddard Space Flight Center"
+          ],
+          "publisher": "NASA Goddard",
+          "date": "not stated on page",
+          "url": "https://etd.gsfc.nasa.gov/our-work/lunar-environment-monitoring-station-lems/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All source_page_url and reference URLs have query strings and fragments removed. No image assets were verified, so the image registry is empty and no image_url values are recorded."
+  },
+  "data_quality_notes": [
+    "Catalogue name 'Surface weather monitoring station' is a concept category. No flown or flight-qualified dedicated lunar surface weather station was found in the sources reviewed. The article covers individual flown environmental instruments and one ground-tested concept, with each example's status stated.",
+    "Apollo 15 CCGE primary source: NASA SP-289 Chapter 13 text was extracted locally from the PDS PDF. The operating range (approximately 100 to 350 K) and accuracy statement (factor usually less than 2) were checked against the extracted text. A search summary gave 100 to 400 K; that figure is not used.",
+    "Apollo 15 CCGE electrometer current ranges were read from an OCR-degraded text layer and are not quoted numerically in this article.",
+    "ChaSTE: the ISRO page states the 10 cm penetration and 10 temperature sensors. A search summary's 141 mm depth figure and its claim about a 6 degree sun-facing slope effect were not confirmed in a primary source and are not used. The temperature values are only in an ISRO graph that was not read as numbers.",
+    "RAMBHA-LP: the ISRO page gives a number density of about 5 to 30 million electrons per cubic metre for the early lunar day and describes the 5 cm spherical probe on a 1 m boom. Other search-summary claims about the lunar ionosphere model were not verified and are not used.",
+    "LEOS: the source is an LPSC 2024 poster draft on NTRS. The poster lists no pressure sensor and states that ground testing only has been performed. No flight data are claimed.",
+    "LEMS: the NASA Goddard page describes a seismometer suite, not a weather station. It is included only to mark the scope boundary. The page carries a funding-lapse notice and an editor's note that it is being updated; the Artemis III launch year is quoted as the page states it.",
+    "Images: no direct image asset URLs were verified for this payload, so no images are included. Source-page references are given in the references list. Image rights and reuse conditions were not checked.",
+    "Unverified secondary claims excluded from the article include a LEMS mass of 11 lb, a ChaSTE lunar-night temperature near -10 C, and a Communications Earth & Environment paper that was not retrieved.",
+    "Lunar location recommendations: deferred by the user; not included."
+  ]
+}

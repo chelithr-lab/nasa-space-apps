@@ -1,0 +1,264 @@
+{
+  "catalogue_id": 275,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 275,
+    "name": "Instrument positioning system",
+    "article": {
+      "overview": "An instrument positioning system is a mechanism, usually a robotic arm or similar manipulator, that carries a scientific instrument or a set of instruments and places them at a chosen point on a surface, rock, soil sample or other target. It holds them there while they take measurements. On the Moon, such a system would allow a lander or rover to bring instruments close to regolith or rock without requiring an astronaut to do so by hand. The catalogue name describes a function rather than one standard design. No flown lunar system carrying this exact name was identified in the research for this article. The closest flown precedents are robotic arms on Mars: the Mars Exploration Rover (MER) manipulating arm and the Mars Science Laboratory (MSL) arm on the Curiosity rover. Both are described in this article. Their operating environment is Mars, not the Moon.",
+      "description": "A positioning system for scientific instruments typically combines four elements. First, a manipulator with several joints, which moves the instrument through a defined workspace. Second, an instrument interface or turret, which holds one or more instruments and, in some designs, tools such as abrasion or sampling devices. Third, sensing and targeting, which allows operators to select a target and move the instrument to it; targeting usually relies on onboard or ground-based imagery. Fourth, control and stowage, which lets the arm be folded for launch and landing and then moved into operating positions after deployment. The Curiosity arm illustrates this architecture. NASA describes it as a five-joint arm, with shoulder azimuth, shoulder elevation, elbow, wrist and turret joints, that places and holds turret-mounted tools on rock and soil targets [2]. The turret holds two instruments and three tools [2]. The MER manipulating arm is described by JPL as having five degrees of freedom and a reach of about 0.8 metres in front of the rover at full extent [1].",
+      "scientific_purpose_and_applications": "The main purpose of an instrument positioning system is to make measurements that need physical contact with, or close proximity to, a target. Examples in the sources include placing spectrometers and imagers at close range on rock and soil. The MER arm carried the Mossbauer Spectrometer, the Alpha Particle X-ray Spectrometer (APXS), the Microscopic Imager and the Rock Abrasion Tool [1]. A turret can hold several instruments so that multiple measurements can be made at the same target without moving the rover [2]. Positioning systems can also deploy autonomous or semi-autonomous observatories and sensor packages, such as seismometers, on the surface. A 2020 study describes a small lunar observatory designed so that robotic assets can deploy it, with a seismometer, a radio experiment and an infrared telescope as sizing cases [4]. On the Moon, applications could include deploying seismic, dust, radio or environmental instruments at locations chosen by ground operators. NASA's December 2025 selection of Artemis IV surface instruments shows that some surface instruments are instead planned for astronaut deployment [3]. The choice between robotic and human placement depends on the mission and the instrument, and the sources do not provide a general rule.",
+      "operating_principle": "A positioning system moves an instrument by controlling the angle of each joint. The Curiosity arm uses rotary actuators for its joints [2]. Ground operators or onboard software compute a sequence of joint motions that places the instrument at the target. Operators then check the placement, hold the instrument in position during measurement, and move it again if needed. For lunar use, a lightweight system would need to survive launch and landing loads, operate across the lunar surface temperature range and remain stable while instruments measure. These are general engineering requirements rather than figures taken from a specific source. The lunar laser-ranging corner-cube reflector concept described in the physical specifications is designed to have low mass so that it can be placed by a robot [5].",
+      "scientific_importance": "A positioning system does not itself make a scientific measurement. Its importance comes from the measurements it enables. Close-range contact measurements of rock and soil, and repeat placement of instruments on the same target, depend on controlled positioning. The MER and MSL arms have carried out such measurements on Mars [1][2]. The sources reviewed do not quantify how much science a lunar positioning system would add compared with fixed or hand-placed instruments. Any such comparison would need mission-specific analysis.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an instrument positioning system. The examples below describe specific systems or concepts and should not be read as typical values. Only values stated in the cited sources are given. Where a source gives no value, the example is described qualitatively.",
+        "examples": [
+          {
+            "name": "Mars Exploration Rover (MER) manipulating arm",
+            "type": "Flown planetary instrument positioning arm (Mars)",
+            "status": "Flown on Mars. JPL describes the arm as flown and carried on the Mars Exploration Rovers.",
+            "degrees_of_freedom": 5,
+            "degrees_of_freedom_description": "JPL describes it as the most dexterous robotic manipulator ever flown to another planetary surface.",
+            "reach_m": "approximately 0.8 metres in front of the rover at full extent",
+            "mass_kg": "approximately 4",
+            "payload_mass_kg": "approximately 2 (instruments and associated structure)",
+            "instruments_carried": [
+              "Mössbauer Spectrometer",
+              "Alpha Particle X-ray Spectrometer (APXS)",
+              "Microscopic Imager",
+              "Rock Abrasion Tool"
+            ],
+            "power_w": null,
+            "qualification": "Flight heritage on Mars. Not a lunar system.",
+            "source_urls": [
+              "https://robotics.jpl.nasa.gov/what-we-do/flight-projects/mars-exploration-rovers/manipulating-arm/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mars Science Laboratory (Curiosity) robotic arm and turret",
+            "type": "Flown planetary instrument positioning arm (Mars)",
+            "status": "Flown on Mars, on the Curiosity rover.",
+            "degrees_of_freedom": 5,
+            "joints": [
+              "shoulder azimuth",
+              "shoulder elevation",
+              "elbow",
+              "wrist",
+              "turret"
+            ],
+            "actuation": "Rotary actuators at each joint.",
+            "turret_contents": "Two instruments and three tools, described by NASA as five devices.",
+            "turret_mass_text": "The NASA Photojournal text describes a turret of 66 pounds (30 kilograms).",
+            "function": "Places and holds turret-mounted tools on rock and soil targets.",
+            "qualification": "Flight heritage on Mars. Not a lunar system.",
+            "source_urls": [
+              "https://science.nasa.gov/photojournal/curiositys-robotic-arm"
+            ],
+            "images": [
+              {
+                "id": "msl_robotic_arm_engineering_drawing",
+                "description": "Engineering drawing of NASA's Curiosity rover showing its robotic arm with five joints and a turret with five devices.",
+                "image_type": "Engineering drawing",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia16/pia16144/PIA16144.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/curiositys-robotic-arm",
+                "publisher": "NASA Photojournal (NASA/JPL-Caltech)",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "Engineering drawing of the Curiosity rover indicating its robotic arm (five joints) and turret (five devices).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct NASA asset URL (PIA16144.jpg) with no query string or fragment. The URL returned HTTP 200 with image/jpeg and the file was inspected: it shows the arm and turret annotations quoted in the caption. The source page identifies the image as PIA16144. The TIFF download was not checked. Rights follow NASA Photojournal conventions; no public-domain status is asserted beyond the NASA credit line."
+              }
+            ]
+          },
+          {
+            "name": "Lunar laser-ranging corner-cube reflector instrument (proposed)",
+            "type": "Proposed lunar instrument (design study)",
+            "status": "Proposed design. The source describes preliminary thermal, mechanical and optical design and analysis, and an instrument development effort. It is not a flight instrument.",
+            "design": "A single, hollow corner cube with a large aperture.",
+            "deployment": "The abstract states that the instrument will have low mass to allow robotic deployment. The abstract does not describe the placement mechanism.",
+            "mass_kg": "not stated in the abstract",
+            "dimensions": "not stated in the abstract",
+            "performance_target": "The abstract states the design will be able to reach an Earth-Moon range precision of 1 mm in a single pulse. This is a design goal, not a measured result.",
+            "qualification": "Not flight qualified.",
+            "source_urls": [
+              "https://arxiv.org/abs/1210.7857"
+            ],
+            "images": []
+          },
+          {
+            "name": "Robotically deployable lunar surface science station (engineering model)",
+            "type": "Engineering model tested in a Moon-analogue environment",
+            "status": "Engineering model of the core unit, demonstrated in a Moon-analogue field test. Not flown.",
+            "design": "A compact, modular observatory with features that enable deployment by robotic assets. A seismometer, a radio experiment and an infrared telescope were used as sizing cases.",
+            "validation": "End-to-end demonstration in a Moon-analogue field test on Mt. Etna, Sicily, covering robotic deployment through to delivery of geoscientific data. The authors state that the evaluation of the acquired seismic data confirmed its suitability for sub-surface exploration.",
+            "mass_kg": "not stated in the material accessed",
+            "dimensions": "not stated in the material accessed",
+            "qualification": "Engineering model and field test only. Not flight qualified.",
+            "source_urls": [
+              "https://elib.dlr.de/135958/",
+              "https://www.sciencedirect.com/science/article/abs/pii/S0032063320302932"
+            ],
+            "images": []
+          },
+          {
+            "name": "Artemis IV surface instruments (astronaut-deployed, contrast case)",
+            "type": "Selected lunar surface instruments (not a robotic positioning system)",
+            "status": "Selected for development. NASA states that final manifesting decisions about the mission will be determined at a later date.",
+            "instruments": [
+              "DUSTER (Dust and Plasma Environment Surveyor): instruments mounted on a small autonomous rover supplied by Lunar Outpost; components named by NASA are the Electrostatic Dust Analyzer and RESOLVE.",
+              "South Pole Seismic Station (SPSS): a seismometer."
+            ],
+            "deployment": "NASA describes the instruments as designed for astronauts to deploy on the surface of the Moon during the Artemis IV mission. The article does not describe a robotic arm for these instruments.",
+            "qualification": "Development selection only.",
+            "source_urls": [
+              "https://science.nasa.gov/missions/artemis/artemis-4/nasa-selects-2-instruments-for-artemis-iv-lunar-surface-science/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Each example is a different system, so no general dimensions apply to the payload class. The MER arm and the Curiosity arm are described in the sources in terms of reach or joints rather than envelope dimensions, and no envelope dimensions were located for the lunar examples. A new positioning system would need dimensions determined by its reach, its stowed configuration within the lander envelope and the mounting geometry for its instruments.",
+        "mass_and_weight": "Mass is stated only for specific examples. The MER manipulating arm is described as approximately 4 kg with a payload mass of approximately 2 kg for instruments and associated structure. The Curiosity turret is described as 66 pounds (30 kilograms). No mass was located for the lunar examples; the corner-cube reflector and robotic observatory mass values were not stated in the accessed material.",
+        "power_requirements": "No power requirement was located in the accessed sources for any positioning system example, so none is stated. A lunar system would need power for its actuators, sensors and instruments, and this must be defined for a specific design."
+      },
+      "environmental_and_operational_requirements": "A lunar positioning system would operate in a vacuum, with lunar surface temperature variations, dust and radiation. These are general background conditions and this article does not cite a specific lunar environmental specification for any positioning system. The examples above operated on Mars, which has a thin atmosphere and different thermal conditions, so their environmental qualification does not transfer directly to the Moon. Stable placement and careful control are required so that the instrument measures the target and not the motion of its support structure. The MSL and MER sources describe placement on rock and soil targets, but they do not provide lunar stability or disturbance limits.",
+      "limitations": "The flown examples are on Mars and do not demonstrate operation on the Moon. The lunar examples are proposed or engineering-model designs, not flight hardware, or they are instruments whose deployment method is astronaut-based. Published values for mass, dimensions and performance are given only for specific systems and should not be generalised. Sources for the lunar examples are, in several cases, abstracts only, and mechanism details and full test data were not verified.",
+      "transportation_and_deployment": {
+        "overview": "This payload is a surface payload. It can be delivered to the Moon as an arm or manipulator on a lander or rover, or as a positioning mechanism that carries instruments placed by another system.",
+        "transportation_process": [
+          "Earth integration: the arm and instruments are integrated with the lander or rover and stowed for launch. Stowage must withstand launch loads.",
+          "Launch and lunar transfer: the system is launched on a launch vehicle and sent on a trajectory to the Moon.",
+          "Landing delivery: the system is delivered to the surface on a lander. The sources reviewed do not describe a specific lander interface.",
+          "Deployment: the arm is unstowed and moved to a working position. The MSL arm is described as placing and holding tools on targets [2]. A lunar arm would require a similar sequence, but no lunar deployment sequence was verified.",
+          "Power and data: the arm and instruments need power and communications interfaces. The sources do not specify values for a lunar system.",
+          "Thermal and mechanical interfaces: the instruments need thermal control and a mechanical mount that is stable enough for measurement. Specifications were not located."
+        ],
+        "deployment_methods": "A positioning system is unstowed and moved by its own joints, guided by ground operators or onboard software. Alternatively, instruments may be placed by a fixed or hand-placed method, or by astronauts. The Artemis IV surface instruments are planned for astronaut deployment rather than robotic placement [3]. The MSL arm places turret-mounted tools on targets after landing on Mars [2].",
+        "historical_examples": "The MER and MSL arms are flown Mars examples of instrument placement [1][2]. No lunar instrument positioning system with flight heritage was identified in the sources reviewed.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted in this article. Compatibility would need to be assessed using the positioning system's mass, dimensions, mounting points, landing loads, deployment method, power requirements and communications architecture, and only after verified interface evidence is available.",
+        "images": []
+      },
+      "historical_significance": "The MER and MSL arms are the most important flown precedents for instrument positioning. Both have placed instruments on rock and soil on Mars [1][2]. They show that a multi-joint arm carrying a set of instruments can operate successfully on another planet's surface. No flown lunar instrument positioning system was identified in the sources reviewed. The lunar examples in this article are proposals, engineering models or planned astronaut-deployed instruments.",
+      "limitations_and_uncertainties": "No verified lunar flight example. The research did not identify a flown lunar instrument positioning system with this exact name or function. The Pragyan rover APXS is a lunar-surface instrument whose abstract confirms a completed and tested flight model [6]. Its deployment mechanism, standoff distance and mission outcome were not verified from accessible text, so they are not reported here. A 2005 JPL-hosted IEEE Aerospace paper titled IPS was located [7], but its text could not be extracted in this research, and none of its content is used. NASA's December 2025 article states that final manifesting decisions will be made later [3]. Secondary reports from March 2024 about earlier Artemis instrument selections were not verified against a NASA primary page. Some secondary sources reported positioning accuracy and repeatability figures for the MER arm; these were not confirmed in a primary source and are not used. Mass, power and dimensions for lunar concepts are not stated in the accessed sources. No lander interface was verified.",
+      "images": [
+        {
+          "id": "msl_robotic_arm_engineering_drawing",
+          "description": "Engineering drawing of NASA's Curiosity rover showing its robotic arm with five joints and a turret with five devices.",
+          "image_type": "Engineering drawing",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia16/pia16144/PIA16144.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/curiositys-robotic-arm",
+          "publisher": "NASA Photojournal (NASA/JPL-Caltech)",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Engineering drawing of the Curiosity rover indicating its robotic arm (five joints) and turret (five devices).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct NASA asset URL (PIA16144.jpg) with no query string or fragment. The URL returned HTTP 200 with image/jpeg and the file was inspected: it shows the arm and turret annotations quoted in the caption. The source page identifies the image as PIA16144. The TIFF download was not checked. Rights follow NASA Photojournal conventions; no public-domain status is asserted beyond the NASA credit line."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "msl_robotic_arm_engineering_drawing",
+          "description": "Engineering drawing of NASA's Curiosity rover showing its robotic arm with five joints and a turret with five devices.",
+          "image_type": "Engineering drawing",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia16/pia16144/PIA16144.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/curiositys-robotic-arm",
+          "publisher": "NASA Photojournal (NASA/JPL-Caltech)",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Engineering drawing of the Curiosity rover indicating its robotic arm (five joints) and turret (five devices).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct NASA asset URL (PIA16144.jpg) with no query string or fragment. The URL returned HTTP 200 with image/jpeg and the file was inspected: it shows the arm and turret annotations quoted in the caption. The source page identifies the image as PIA16144. The TIFF download was not checked. Rights follow NASA Photojournal conventions; no public-domain status is asserted beyond the NASA credit line."
+        }
+      ],
+      "references": [
+        {
+          "title": "MER Manipulating Arm",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "url": "https://robotics.jpl.nasa.gov/what-we-do/flight-projects/mars-exploration-rovers/manipulating-arm/"
+        },
+        {
+          "title": "Curiosity's Robotic Arm (PIA16144)",
+          "publisher": "NASA Photojournal (NASA/JPL-Caltech)",
+          "url": "https://science.nasa.gov/photojournal/curiositys-robotic-arm"
+        },
+        {
+          "title": "NASA Selects 2 Instruments for Artemis IV Lunar Surface Science",
+          "publisher": "NASA Science",
+          "date": "2025-12-04",
+          "url": "https://science.nasa.gov/missions/artemis/artemis-4/nasa-selects-2-instruments-for-artemis-iv-lunar-surface-science/"
+        },
+        {
+          "title": "A robotically deployable lunar surface science station and its validation in a Moon-analogue environment",
+          "publisher": "Planetary and Space Science (Elsevier), DOI 10.1016/j.pss.2020.105080",
+          "authors": "Witte, L.; Heffels, A.; Killian, M.; Knapmeyer, M.; Lange, C.; Toth, N.; Tsakyridis, G.; Wedler, A.",
+          "date": "2020",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0032063320302932"
+        },
+        {
+          "title": "Corner-cube retro-reflector instrument for advanced lunar laser ranging",
+          "publisher": "arXiv; Experimental Astronomy 36(1), 105-135 (2013)",
+          "authors": "Turyshev, S. G.; Williams, J. G.; Folkner, W. M.; Gutt, G. M.; Baran, R. T.; Hein, R. C.; Somawardhana, R. P.; Lipa, J. A.; Wang, S.",
+          "date": "2012-10-29",
+          "url": "https://arxiv.org/abs/1210.7857"
+        },
+        {
+          "title": "Alpha Particle X-Ray Spectrometer (APXS) On-board Chandrayaan-2 Rover -- Pragyan",
+          "publisher": "arXiv; Current Science 118(1), 53 (2020)",
+          "authors": "Shanmugam, M.; Vadawale, S. V.; Patel, A. R.; and co-authors",
+          "date": "2019-10-21",
+          "url": "https://arxiv.org/abs/1910.09232"
+        },
+        {
+          "title": "IPS IEEE Aerospace 2005 final (PDF) - located, text not extracted, not used for facts",
+          "publisher": "Hosted by NASA Jet Propulsion Laboratory robotics group; publisher and authors not stated in accessed metadata",
+          "date": "2005 (per file title)",
+          "url": "https://www-robotics.jpl.nasa.gov/media/documents/IPS_IEEE_Aerospace_2005_final.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Mars Science Laboratory (Curiosity) robotic arm example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (empty: no verified image for this section)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Catalogue check: ID 275, name 'Instrument positioning system' and category 14 'Robotics, mobility and deployment technology' were confirmed against lunar_payloads_catalogue_320.md.",
+    "Only one image was verified and used (NASA PIA16144). No direct image asset was verified for the MER arm, Artemis IV instruments, the lunar reflector concept or the robotic observatory, so none is included.",
+    "The PIA16144 image was inspected locally; the TIFF download was not checked, so full_resolution_image_downloads_checked is false.",
+    "The 2005 JPL-hosted IEEE Aerospace PDF (IPS) returned HTTP 200 but its text could not be extracted with the tools available; none of its content is used.",
+    "The Pragyan APXS arXiv full text was not accessible; only the abstract was read. Its deployment mechanism, standoff distance, mass, power and mission outcome are unverified and omitted.",
+    "The Turyshev et al. (arXiv:1210.7857) abstract does not describe the placement mechanism; the claim of robotic deployment comes only from the abstract's statement that low mass allows robotic deployment. Secondary search snippets suggesting an arm lift and tripod base were not verified and are not used.",
+    "The Witte et al. (2020) full text was not available; facts come from the DLR repository abstract record. The publisher URL is taken from that record; a direct HTTP check returned 403 to an automated client, so the publisher page is unverified (the DLR record itself returned 200). Volume/article number (193, 105080) appear in a search snippet and are not confirmed on the publisher page.",
+    "NASA Artemis IV article (4 December 2025) was read via WebFetch; the author is listed as Molly Wasser. Artemis III selections (LEMS, LEAF, LDA; March 2024) appeared only in secondary search results; the NASA Artemis III URL returned HTTP 404, so those selections are not used as facts.",
+    "The MER arm's positioning repeatability (about 1 mm position, about 1 degree orientation) and its builder appeared only in secondary search snippets; they were not confirmed on the primary JPL page and are excluded.",
+    "Power requirements were not located for any example in the accessed sources; power_requirements is stated as not located.",
+    "Dimensions and envelope values were not located for any example in the accessed sources.",
+    "Lunar environmental and stability requirements are general engineering background, not drawn from a cited lunar specification.",
+    "Lander or rover compatibility was not verified for any lander, rover or spacecraft; no compatibility is asserted.",
+    "Flight status of Pragyan operation on the lunar surface was not verified in this research."
+  ]
+}

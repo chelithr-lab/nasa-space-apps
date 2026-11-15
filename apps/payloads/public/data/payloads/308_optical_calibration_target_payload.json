@@ -1,0 +1,386 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 308,
+    "name": "Optical calibration target",
+    "article": {
+      "overview": "An optical calibration target is a passive reference object carrying patches of known colour, grey level or reflectance. It is placed inside the field of view of a camera or optical spectrometer so that images of the target can be used to check and correct the instrument's response. The target is not a measuring instrument in its own right; its value depends on how accurately its reflectance has been characterised before flight and on how reliably it stays clean and in place on the surface. On the Moon, the documented evidence is limited: the Surveyor 1 television photometric test chart (1966) and the Apollo 15-17 gnomon, which carried grey and colour scales for photographic reference. Most well-documented optical calibration targets flown so far were built for Mars rovers and are discussed here as engineering precedents, not as lunar heritage.",
+      "description": "In the broad sense used in this catalogue entry, an optical calibration target usually includes: (1) reflectance or colour patches, meaning known-reflectance surfaces, often white, black, grey and a few saturated colours, so that observed brightness and colour can be converted into a reference scale; (2) grey-scale or resolution features, meaning stepped grey levels, bar or chrome patterns used to check dynamic range, sharpness and distortion; (3) geometric or shape references, meaning plates, posts or rods of known size used to estimate scale, sun angle or shadow direction; and (4) mounting and protection, meaning a mount that holds the target in the camera field of view and sometimes features that limit dust settling on the reference surfaces. Two calibration-target designs are documented in this entry: the Surveyor television reflectance chart and the Mars rover targets. In each case the target has a fixed, known spectral response that is measured in the laboratory before flight, and images of the target taken on the surface are compared with those laboratory values. A related but distinct class is the non-optical calibration plate. The Chandrayaan-2 Pragyan rover carried an alpha-particle X-ray spectrometer (APXS) calibration plate whose spectrum was recorded during thermovacuum testing as an in-flight reference (arXiv 1910.09232). That plate serves an X-ray instrument, so it is not an optical calibration target and is excluded from the examples.",
+      "scientific_purpose_and_applications": "The main purpose of an optical calibration target is to make images and spectra quantitatively comparable over time and between instruments. Documented applications are: (a) radiometric calibration, converting measured radiance into reflectance by comparing a known target with observed brightness; for Mastcam-Z the calibration team describes using the targets to track how sunlight and dust change measurements (Mastcam-Z team, 'Calibrating Mars', 2020); (b) colour balance and white balance, adjusting image colours so that terrain appearance is consistent; JPL states the Curiosity Mastcam target's known colours help researchers adjust images to approximate natural colour (JPL PIA16798); (c) spectral reference, where SuperCam's passive reflectance standards are used for radiometric calibration and white balance and its diamond and titanium targets are used for wavelength checks (Manrique et al., 2020); (d) resolution and geometric checks, where SuperCam's geometric target supports checks of resolution, modulation transfer function, point-spread function and distortion (Manrique et al., 2020); and (e) monitoring of instrument drift, since repeated imaging of the same target reveals changes in instrument response or in the target itself, and SuperCam's team compares each calibration acquisition on the target with laboratory data (Manrique et al., 2020). For a lunar mission, a target would support photometric studies of the regolith, colour mapping and validation of other remote-sensing instruments. No lunar mission is documented here as having used a target specifically for those purposes.",
+      "operating_principle": "The target works by providing a reference of known properties inside the same image or spectrum as the scene being studied. (1) Pre-flight characterisation: the reflectance of each patch is measured in a laboratory under controlled illumination. For SuperCam the passive standards were characterised before flight (Manrique et al., 2020). For the Surveyor chart the design was intended to permit evaluation of resolution, photometric and colorimetric response and the angle of the Sun relative to the chart face (Blanchard, 1970). (2) On-surface imaging: the target is imaged under surface illumination, often in the same frame as the terrain, so the same lighting and atmospheric conditions apply to both. (3) Comparison and correction: observed target brightness or colour is compared with laboratory values. A linear relationship between laboratory reflectance and observed radiance can then be used to estimate solar irradiance and convert images to reflectance. A study of Mastcam-Z used this approach across 41 regions on the targets, including colour and grey patches (Merusi et al., 2022; identified from a search result and not read in full). (4) Dust-clean regions: on Mars, magnets placed under some target patches attract airborne dust away from the central surfaces. The Mastcam-Z primary target uses eight magnets, one beneath each of its eight outer patches, so that the centre of each patch stays relatively clean (Mastcam-Z team, 2020).",
+      "scientific_importance": "A calibration target is important because raw camera and spectrometer data depend on instrument settings, illumination, dust and temperature. Without a reference, scientists cannot easily separate changes in the terrain from changes in the instrument. The lunar record is sparse. Apollo missions used on-scene colour and grey references to interpret colours in photographs. The Apollo gnomon carried a grey scale of 5% to 35% reflectivity alongside a colour scale; the Smithsonian describes it as a device used to judge sun angle, size and rock and soil colours (Smithsonian NASM A19750133000). The Chang'e-4 mission provides a documented lunar example of the problem these targets solve: Open University researchers reported that raw Yutu-2 rover images appeared red, that this was linked to the detectors' greater response to red light, and that the lander had no colour calibration strip on its ramps (Open University research news). This shows why colour references matter on the Moon but does not establish that any particular mission carried one.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an optical calibration target. Published values describe specific instruments or targets. Many lunar and Mars examples have dimensions or reflectance values but no published mass or power figures; where a value is not in the sources reviewed it is marked as not publicly specified. The examples below are ordered from the earliest documented lunar examples to the most recent Mars examples and are not directly comparable designs.",
+        "examples": [
+          {
+            "name": "Apollo 15-17 lunar gnomon with grey and colour scales",
+            "type": "Lunar surface photographic reference tool (Apollo Lunar Hand Tools)",
+            "flight_status": "The Smithsonian specimen (NASM A19750133000) is recorded as qualified for flight but never used on a mission. The gnomon is described as similar to the one used on Apollo 15, 16 and 17. A catalogue record for Apollo 16 frame AS16-114-18412 describes the gnomon and its colour patch resting on a lunar rock; that record is secondary and was not verified against the original NASA image archive.",
+            "deployed_dimensions_cm": [62, 53],
+            "mass_kg_deployed": 0.3,
+            "storage_container_dimensions_cm": [62.9, 13.3, 12.4],
+            "storage_container_mass_kg": 2.3,
+            "reference_scales": "Grey scale on the rod spanning 5% to 35% reflectivity; colour scale for rock and soil colour comparison. Number of patches not stated.",
+            "stated_use": "The shadow cast by the staff indicates sun angle and therefore direction; also used for size estimation and colour comparison. Hand-deployed astronaut tool rather than a fixed camera target.",
+            "power_requirements": "Not applicable; passive tool.",
+            "source_urls": [
+              "https://airandspace.si.edu/collection-objects/gnomon-lunar-apollo/nasm_A19750133000",
+              "https://cosmosobservatory.com/gallery/as16-114-18412"
+            ],
+            "images": [
+              {
+                "id": "smithsonian_apollo_gnomon_object_page",
+                "description": "Smithsonian object page for the Apollo lunar gnomon (NASM A19750133000); no verified direct image asset URL.",
+                "image_type": "Museum collection object page (no direct image asset verified)",
+                "image_url": null,
+                "source_page_url": "https://airandspace.si.edu/collection-objects/gnomon-lunar-apollo/nasm_A19750133000",
+                "publisher": "Smithsonian National Air and Space Museum",
+                "credit": "Smithsonian National Air and Space Museum",
+                "caption": "Apollo lunar gnomon with grey and colour scales, Smithsonian NASM A19750133000.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "No direct image asset URL was verified, so image_url is null and the Smithsonian object page is linked instead. Usage conditions apply; consult the museum rights information before republication."
+              }
+            ]
+          },
+          {
+            "name": "Surveyor 1 television photometric and reflectance test chart",
+            "type": "Lunar surface television reflectance test chart and photometric target (1966)",
+            "flight_status": "Flown on Surveyor 1. The chart was designed for postlanding calibration of the spacecraft television system and to evaluate resolution, photometric and colorimetric response and the Sun's angle relative to the chart face (Blanchard, 1970; abstract read, full paper behind paywall).",
+            "location": "The JPL Surveyor television calibration report (NTRS 19690004445) lists a photometric target on footpad 2 in its table of contents; the full report was not read.",
+            "colours_and_size": "Not verified. A Wikimedia Commons caption describes a small circular dish with radial stripes on a spacecraft leg; not verified against a primary source.",
+            "imaging_note": "The colour photometric target in the digitised Surveyor 1 panorama was overlaid from a photograph of a spare target, not from the flown unit (Planetary Society).",
+            "dimensions_cm": "not publicly specified",
+            "mass_kg": "not publicly specified",
+            "source_urls": [
+              "https://journal.smpte.org/periodicals/Journal%20of%20the%20SMPTE/79/3/15/",
+              "https://ntrs.nasa.gov/api/citations/19690004445/downloads/19690004445.pdf",
+              "https://planetary.org/space-images/surveyor-1-restored-panorama"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mars Exploration Rover Pancam and Curiosity Mastcam calibration target",
+            "type": "Mars rover colour and radiometric calibration target",
+            "flight_status": "Flown and used on Mars. The Curiosity Mastcam target has the same design as the target used for the Pancam instruments on the Mars Exploration Rovers, modified for Curiosity to include six small embedded magnets that capture and concentrate dust from the Martian atmosphere (JPL PIA16798).",
+            "location": "JPL caption places the target at the lower centre of the cameras-and-target view on the rover.",
+            "dimensions_cm": "not publicly specified",
+            "mass_kg": "not publicly specified",
+            "patch_count": "not publicly specified",
+            "source_urls": [
+              "https://www.jpl.nasa.gov/images/pia16798-mast-camera-and-its-calibration-target-on-curiosity-rover/"
+            ],
+            "images": [
+              {
+                "id": "jpl_pia16798_mastcam_calibration_target",
+                "description": "Mast Camera (Mastcam) twin cameras and the calibration target on the Curiosity rover, imaged on Sol 69 (15 October 2012).",
+                "image_type": "Rover hardware photograph",
+                "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA16798.jpg",
+                "source_page_url": "https://www.jpl.nasa.gov/images/pia16798-mast-camera-and-its-calibration-target-on-curiosity-rover/",
+                "publisher": "NASA/JPL-Caltech",
+                "credit": "NASA/JPL-Caltech/MSSS/ASU",
+                "caption": "Mast Camera (Mastcam) twin cameras and the calibration target on the Curiosity rover, imaged on Sol 69 (15 October 2012).",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct JPL image asset URL (JPEG original) verified to return HTTP 200 with image/jpeg; no query string or fragment. The JPL source page lists TIFF and web-preview download options. Reuse conditions beyond the credit line were not verified."
+              }
+            ]
+          },
+          {
+            "name": "SuperCam calibration target (Perseverance)",
+            "type": "Multi-instrument spectroscopic and imaging calibration target on the Perseverance rover deck",
+            "flight_status": "Flown and used on Mars. The paper describes 36 calibration targets in total (Manrique et al., 2020).",
+            "passive_reflectance_standards": {
+              "count": 5,
+              "exposed_face_diameter_mm": 8,
+              "mounting": "Each disk is glued into a Sm2Co17 magnet; the magnet keeps dust off the central approximately 4 mm.",
+              "colours": ["white (AluWhite98)", "black (aluminium disk painted with Aeroglaze Z307)", "red, green and blue/cyan fired-clay standards with matte glazes from Lucideon"],
+              "characterisation": "Characterised pre-flight; used on Mars for radiometric calibration and white balance."
+            },
+            "geometric_target_rmi": {
+              "material": "Two 99.6% alumina plates with chrome patterns",
+              "plate_dimensions_mm": [16.5, 9.0, 1.27],
+              "tolerance_mm": 0.1,
+              "grey_scale": "Three bands of 12 levels, described as a 257-level scale from black to white"
+            },
+            "other_targets": [
+              "Diamond (type IA, 4 mm diameter, 1 mm thick) for Raman checks",
+              "Ti6Al4V plate (19 x 18 mm) for LIBS wavelength checks",
+              "PET organic target (1 cm diameter, 5 mm thick) for Raman and LIBS timing and organic studies",
+              "Geological LIBS pellets (flash-sintered pressed pellets) for quantitative elemental calibration",
+              "Martian meteorite slab (approximately 11 x 9 x 1.25 mm) for outreach"
+            ],
+            "mass_kg": "not publicly specified",
+            "power_requirements": "not publicly specified",
+            "source_urls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7691312"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mastcam-Z primary and secondary calibration targets (Perseverance)",
+            "type": "Colour, grey-scale and radiometric calibration targets for the Mastcam-Z zoom camera pair",
+            "flight_status": "Flown and used on Mars. The NASA resource describes the primary target as the camera's main calibration target.",
+            "primary_target": {
+              "diameter_cm": 10,
+              "outer_coloured_patches": 8,
+              "outer_patch_colours": "Colours spanning the sensitivity range of the Mastcam-Z cameras",
+              "magnets": "Eight, one beneath each outer patch, to repel most dust from the centre",
+              "grey_rings": "Four grey-to-black rings inside the periphery, matching four of the outer circles; the main calibration information used by the camera team",
+              "perimeter_decoration": "Mission symbols and the motto Two Worlds, One Beginning, per the NASA resource"
+            },
+            "secondary_target": {
+              "length_cm": 8,
+              "description": "Smaller and simpler; vertical patterns that accumulate less dust"
+            },
+            "pre_flight_and_on_mars_use": "Reflectance measured on Earth before flight; on Mars the targets are imaged while as dust-free as possible to provide a baseline for monitoring changes (Mastcam-Z team, 2020).",
+            "known_issue": "A yellowing effect affecting one of the target materials is under investigation (Merusi et al., 2022; not read in full).",
+            "mass_kg": "not publicly specified",
+            "power_requirements": "not publicly specified",
+            "source_urls": [
+              "https://www.planetary.org/articles/calibrating-mars",
+              "https://science.nasa.gov/resource/mastcam-zs-calibration-target/",
+              "https://doi.org/10.1029/2022EA002552"
+            ],
+            "images": [
+              {
+                "id": "nasa_mastcamz_primary_calibration_target",
+                "description": "Mastcam-Z primary calibration target on the Perseverance rover.",
+                "image_type": "Rover hardware photograph",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/2/5/25433_PIA24178-Mastcam-Z_Primary_Cal_Target-1015.jpg",
+                "source_page_url": "https://science.nasa.gov/resource/mastcam-zs-calibration-target/",
+                "publisher": "NASA Science",
+                "credit": "NASA/JPL-Caltech/ASU/MSSS/University of Copenhagen",
+                "caption": "Mastcam-Z primary calibration target on the Perseverance rover (Mars).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[4]"
+                ],
+                "notes": "Direct NASA asset URL (displayed image, query string removed) verified to return HTTP 200 with image/jpeg. The full-size download is at https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/detail_files/2/5/25433_PIA24178-Mastcam-Z_Primary_Cal_Target-1015.jpg. Reuse conditions beyond the credit line were not verified."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "The lunar examples differ widely. The Apollo gnomon is a deployed rod and tripod-leg reference about 62 x 53 cm. The Surveyor chart's dimensions are not verified. The Mars targets range from the 8 mm exposed faces of SuperCam's passive standards and the 16.5 x 9.0 x 1.27 mm SuperCam geometric plates to the 10 cm Mastcam-Z primary target. Target size must be matched to the camera field of view and to the spatial resolution required to resolve the patches.",
+        "mass_and_weight": "No mass is verified for any lunar target example except the deployed Apollo gnomon (0.3 kg, Smithsonian). Its storage container (2.3 kg) is not the target mass. For a new target, mass would depend on size, substrate, mount and dust-control features; a passive target would normally carry little mass beyond its mount.",
+        "power_requirements": "No power figure is published for any target example. A passive target with no moving parts would not normally need its own power supply; this is an engineering inference, not a figure from the sources reviewed. Calibration units that move, such as the Chang'e-3 VNIS calibration unit, would have their own power needs, which are not covered here."
+      },
+      "environmental_and_operational_requirements": "Dust is a central operational issue. Mars targets are imaged when as dust-free as possible, and magnets are used on some designs to keep central patches clear. The lunar surface has no atmosphere to carry dust, but regolith dust is fine, abrasive and electrostatically active, so an equivalent protection method would still be needed (engineering inference, not a verified lunar result). Illumination matters: the Surveyor chart was designed to account for the Sun's angle relative to the chart face, and the Apollo gnomon used its shadow to indicate sun direction. Colour and grey patches must keep their reflectance over the mission; the Mastcam-Z yellowing issue shows material change is a real operational risk (Merusi et al., 2022; not read in full). Lunar thermal and radiation environments are severe, but no thermal or radiation specification for a lunar target was verified. The target must remain in the camera field of view and must not be shadowed or covered by the lander or rover structure.",
+      "limitations": "A calibration target is only as good as its laboratory characterisation and its condition on the surface; dust, ageing and mechanical damage can change the reference. A single target in one location calibrates that location under the lighting present at the time and does not automatically calibrate an entire mission or scene. The lunar evidence is limited to a few historical examples, and modern lunar optical calibration targets are not documented in the sources reviewed. Target size and shape must match the camera field of view and resolution: a very small target may not be resolved and a very large one may be impractical for a lander.",
+      "transportation_and_deployment": {
+        "overview": "A lunar optical calibration target would normally be integrated on the lander or rover structure on Earth, launched, transferred to the Moon and delivered to the surface. It would then need to be placed where the relevant cameras or spectrometers can image it under the expected lighting. Its mount would need to withstand launch and landing loads. No lander or rover compatibility is asserted.",
+        "transportation_process": [
+          "Earth integration: attach the target to the payload structure, mark its orientation, and protect its reference surfaces from contamination.",
+          "Launch and transfer: the target must survive vibration, shock and thermal cycling; patch and substrate changes would need to be assessed under these conditions.",
+          "Landing and deployment: the target could be fixed to a lander or rover deck, or placed by an astronaut or robot. The Apollo gnomon was deployed by astronauts; SuperCam's target sits on the Perseverance rover deck.",
+          "Power and data: a passive target does not normally need a power or data interface; any sensor or actuator added to it would need its own interfaces.",
+          "Thermal and mechanical interfaces: mounting must avoid thermal stress and hold the target steady in the imaging geometry."
+        ],
+        "deployment_methods": "Fixed mount on a lander or rover structure, astronaut placement (as for the Apollo gnomon), or robotic placement. No lunar deployment method is verified for a specific target.",
+        "historical_examples": "Surveyor 1 carried a photometric and reflectance test chart on the lunar surface (1966). Apollo 15-17 astronauts used a gnomon with grey and colour scales as a hand-deployed reference. Mars rover targets (Pancam, Mastcam, SuperCam, Mastcam-Z) are integrated on rover decks or structures.",
+        "compatibility_assessment": "No lunar lander or rover compatibility is asserted. The Mars targets were integrated on rovers, but no verified interface evidence exists for any lunar lander or rover to carry an optical calibration target of this design. Compatibility would need to be assessed against mass, dimensions, mounting points, landing loads and imaging geometry once a specific spacecraft is verified.",
+        "images": []
+      },
+      "historical_significance": "The Surveyor 1 chart and the Apollo gnomon show that lunar missions recognised the need for on-scene optical references in the 1960s and early 1970s. The Mars rover targets show how the approach has developed over several missions into a combined system of colour patches, grey scales, reflectance standards and dust-control features.",
+      "limitations_and_uncertainties": "Lunar evidence is thin. The Surveyor chart's dimensions, colours and mass were not verified. The Apollo gnomon is well documented, but its patch count and the details of its flown configuration on each Apollo mission were not confirmed. Several sources were read only as search results or abstracts: the JPL Surveyor report (NTRS 19690004445; table of contents only), the SMPTE Surveyor chart paper (abstract only), Merusi et al. (2022; search result only) and the Chandrayaan-2 APXS paper (search result summary). Searches did not find a documented optical calibration target for the Chandrayaan-3 Pragyan rover or a Chang'e rover camera. The Chang'e-3 Yutu VNIS spectrometer uses the Sun as its standard calibration source through a movable calibration unit, but no optical calibration plate was confirmed for the Yutu panoramic camera. Rashid-2 is reported to use colour patches in a laboratory calibration chamber for its optical cameras (Image Engineering industry blog); this was not verified against a primary source. No mass, power or lifetime is verified for any target example, and reflectance values for most patches are not publicly specified in the sources read.",
+      "images": [
+        {
+          "id": "nasa_mastcamz_primary_calibration_target",
+          "description": "Mastcam-Z primary calibration target on the Perseverance rover.",
+          "image_type": "Rover hardware photograph",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/2/5/25433_PIA24178-Mastcam-Z_Primary_Cal_Target-1015.jpg",
+          "source_page_url": "https://science.nasa.gov/resource/mastcam-zs-calibration-target/",
+          "publisher": "NASA Science",
+          "credit": "NASA/JPL-Caltech/ASU/MSSS/University of Copenhagen",
+          "caption": "Mastcam-Z primary calibration target on the Perseverance rover (Mars).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[4]"
+          ],
+          "notes": "Direct NASA asset URL (displayed image, query string removed) verified to return HTTP 200 with image/jpeg. Reuse conditions beyond the credit line were not verified."
+        },
+        {
+          "id": "jpl_pia16798_mastcam_calibration_target",
+          "description": "Mast Camera (Mastcam) twin cameras and the calibration target on the Curiosity rover, imaged on Sol 69 (15 October 2012).",
+          "image_type": "Rover hardware photograph",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA16798.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/images/pia16798-mast-camera-and-its-calibration-target-on-curiosity-rover/",
+          "publisher": "NASA/JPL-Caltech",
+          "credit": "NASA/JPL-Caltech/MSSS/ASU",
+          "caption": "Mast Camera (Mastcam) twin cameras and the calibration target on the Curiosity rover, imaged on Sol 69 (15 October 2012).",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct JPL image asset URL (JPEG original) verified to return HTTP 200 with image/jpeg; no query string or fragment. Reuse conditions beyond the credit line were not verified."
+        },
+        {
+          "id": "smithsonian_apollo_gnomon_object_page",
+          "description": "Smithsonian object page for the Apollo lunar gnomon (NASM A19750133000); no verified direct image asset URL.",
+          "image_type": "Museum collection object page (no direct image asset verified)",
+          "image_url": null,
+          "source_page_url": "https://airandspace.si.edu/collection-objects/gnomon-lunar-apollo/nasm_A19750133000",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Smithsonian National Air and Space Museum",
+          "caption": "Apollo lunar gnomon with grey and colour scales, Smithsonian NASM A19750133000.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "No direct image asset URL was verified, so image_url is null and the Smithsonian object page is linked instead. Usage conditions apply; consult the museum rights information before republication."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "nasa_mastcamz_primary_calibration_target",
+          "description": "Mastcam-Z primary calibration target on the Perseverance rover.",
+          "image_type": "Rover hardware photograph",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/2/5/25433_PIA24178-Mastcam-Z_Primary_Cal_Target-1015.jpg",
+          "source_page_url": "https://science.nasa.gov/resource/mastcam-zs-calibration-target/",
+          "publisher": "NASA Science",
+          "credit": "NASA/JPL-Caltech/ASU/MSSS/University of Copenhagen",
+          "caption": "Mastcam-Z primary calibration target on the Perseverance rover (Mars). Mars example included as the best-documented flown precedent for the payload class.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[4]"
+          ],
+          "notes": "Direct NASA asset URL verified to return HTTP 200 with image/jpeg. Displayed at the top of the Markdown article, before the Overview section."
+        }
+      ],
+      "references": [
+        {
+          "id": 1,
+          "title": "The Design of Postlanding Television System Photometric Charts for the Surveyor Spacecraft",
+          "authors": "L. E. Blanchard",
+          "publisher": "Journal of the SMPTE",
+          "year": 1970,
+          "volume_issue": "79(3)",
+          "url": "https://journal.smpte.org/periodicals/Journal%20of%20the%20SMPTE/79/3/15/",
+          "notes": "Abstract read; full paper behind paywall."
+        },
+        {
+          "id": 2,
+          "title": "Surveyor television system calibration (JPL Technical Report 32-1023)",
+          "publisher": "NASA NTRS",
+          "url": "https://ntrs.nasa.gov/api/citations/19690004445/downloads/19690004445.pdf",
+          "notes": "Table of contents seen via search result only; full report not read (fetch exceeded the size limit)."
+        },
+        {
+          "id": 3,
+          "title": "Surveyor 1 restored panorama",
+          "publisher": "The Planetary Society",
+          "url": "https://planetary.org/space-images/surveyor-1-restored-panorama"
+        },
+        {
+          "id": 4,
+          "title": "SuperCam Calibration Targets: Design and Development",
+          "authors": "J. A. Manrique et al.",
+          "publisher": "Space Science Reviews",
+          "year": 2020,
+          "volume_issue": "216(8):138",
+          "doi": "10.1007/s11214-020-00764-w",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7691312"
+        },
+        {
+          "id": 5,
+          "title": "Mast Camera and Its Calibration Target on Curiosity Rover (PIA16798)",
+          "publisher": "NASA/JPL-Caltech",
+          "year": 2013,
+          "url": "https://www.jpl.nasa.gov/images/pia16798-mast-camera-and-its-calibration-target-on-curiosity-rover/"
+        },
+        {
+          "id": 6,
+          "title": "Calibrating Mars",
+          "authors": "Mastcam-Z team",
+          "publisher": "The Planetary Report (Planetary Society)",
+          "year": 2020,
+          "url": "https://www.planetary.org/articles/calibrating-mars"
+        },
+        {
+          "id": 7,
+          "title": "Mastcam-Z's Calibration Target",
+          "publisher": "NASA Science",
+          "year": 2020,
+          "url": "https://science.nasa.gov/resource/mastcam-zs-calibration-target/"
+        },
+        {
+          "id": 8,
+          "title": "The Mastcam-Z Radiometric Calibration Targets on NASA's Perseverance",
+          "authors": "Merusi et al.",
+          "publisher": "Earth and Space Science",
+          "year": 2022,
+          "doi": "10.1029/2022EA002552",
+          "url": "https://doi.org/10.1029/2022EA002552",
+          "notes": "Identified from search results; not read in full."
+        },
+        {
+          "id": 9,
+          "title": "Gnomon, Lunar, Apollo (NASM A19750133000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "url": "https://airandspace.si.edu/collection-objects/gnomon-lunar-apollo/nasm_A19750133000"
+        },
+        {
+          "id": 10,
+          "title": "Apollo 16 frame AS16-114-18412 catalogue record",
+          "publisher": "cosmosobservatory.com (secondary)",
+          "url": "https://cosmosobservatory.com/gallery/as16-114-18412",
+          "notes": "Secondary record; not verified against NASA image archive."
+        },
+        {
+          "id": 11,
+          "title": "Chang'e 4: why the moon's far side looks red in new images",
+          "publisher": "The Open University",
+          "year": 2019,
+          "url": "https://research.open.ac.uk/news/change-4-why-moons-far-side-looks-red-new-images",
+          "notes": "Search-result summary only."
+        },
+        {
+          "id": 12,
+          "title": "Alpha Particle X-Ray Spectrometer (APXS) On-board Chandrayaan-2 Rover - Pragyan",
+          "publisher": "arXiv",
+          "year": 2019,
+          "url": "https://arxiv.org/abs/1910.09232",
+          "notes": "Search-result summary only; used for the non-optical distinction."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo 15-17 gnomon example": "payload.article.physical_specifications.examples[0].images",
+      "Curiosity Mastcam calibration target example": "payload.article.physical_specifications.examples[2].images",
+      "Mastcam-Z calibration target example": "payload.article.physical_specifications.examples[4].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. Image objects with image_url null link the source page rather than embedding an image."
+  },
+  "data_quality_notes": [
+    "Surveyor 1 photometric chart: dimensions, colours, mass and exact footpad location are not verified. The footpad 2 location comes from a JPL report table of contents seen in a search result; the full report (NTRS 19690004445) exceeded the fetch size limit and was not read.",
+    "Surveyor 1 panorama: the colour photometric target shown in the digitised panorama was overlaid from a spare target, not the flown unit (Planetary Society).",
+    "Apollo gnomon: the Smithsonian specimen (NASM A19750133000) is flight-qualified and recorded as never used on a mission; it is described as similar to the Apollo 15-17 gnomons. The Apollo 16 frame AS16-114-18412 is a secondary catalogue record and was not verified against NASA's image archive. Patch count is not stated.",
+    "Mars examples are included as engineering precedents, not as lunar heritage.",
+    "SuperCam: the paper gives 36 calibration targets in total; reflectance spectra for each patch are not reproduced in the text read.",
+    "Mastcam-Z: the Merusi et al. (2022) paper was identified from search results and not read in full; statements about 41 regions and the yellowing issue come from that search summary.",
+    "Chandrayaan-2 Pragyan APXS calibration plate is an X-ray calibration reference and is excluded from the optical examples.",
+    "No optical calibration target was confirmed for the Chandrayaan-3 Pragyan rover or the Chang'e-3 Yutu panoramic camera. The Chang'e-3 VNIS calibration unit uses the Sun as its standard source.",
+    "Rashid-2 colour-patch calibration is from an industry blog and was not verified against a primary source.",
+    "Environmental statements about lunar dust and thermal conditions are engineering inferences and are not lunar-verified specifications for any target.",
+    "Image rights: reuse conditions for the NASA/JPL images were not verified beyond the credit lines on the source pages. Full-resolution downloads were not checked.",
+    "No lunar location recommendations are included, per the user deferral."
+  ]
+}

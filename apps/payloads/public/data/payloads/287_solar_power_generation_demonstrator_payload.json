@@ -1,0 +1,247 @@
+{
+  "catalogue_id": 287,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 287,
+    "name": "Solar power generation demonstrator",
+    "article": {
+      "overview": "A solar power generation demonstrator is a lunar surface test system that checks whether solar energy can be collected, converted and delivered reliably on the Moon. The name describes a class of experiments rather than one standard instrument. The examples reviewed here include a vertical solar array designed to collect light from low sun angles near the lunar poles, a small experiment that tests several solar cell technologies in place, a demonstration that aims to transmit about 1 kilowatt along a cable, and a planned test of perovskite-silicon tandem cells. Most are still in development or planned, and no public evidence was found that any of them has produced sustained power on the Moon. The status of each example is therefore stated separately below.",
+      "description": "A solar power generation demonstrator is an experiment or engineering system that tests how solar energy can be collected, converted and delivered on the lunar surface. Its hardware may be a tall deployable array that lifts solar cells above terrain shadows, a small surface experiment that tests cells in place, or a system that carries power from a lander's arrays to a remote load. The Moon poses several difficulties for this kind of system. The sun stays low on the horizon near the poles, each lunar day and each lunar night lasts about two Earth weeks (general background, not drawn from the cited sources), and the surface is covered in abrasive dust. A demonstrator therefore has to show performance under these real conditions, because Earth tests cannot fully reproduce them.",
+      "scientific_purpose_and_applications": "The main purpose of a solar power generation demonstrator is to gather evidence on whether solar power can be relied upon for lunar surface activities. Typical questions include how much power a surface array delivers at low sun angles, how solar cells respond to lunar radiation and temperature cycling, how deployable structures behave when raised, and how power can be moved from a generation point to a user. NASA frames its vertical array work around Artemis South Pole activities that need power for habitats, rovers and construction systems [3]. The PILS experiment was described as a way to set baseline requirements for future lunar solar power systems, and eventually Mars [1]. The LunaGrid-Lite demonstration is intended to pilot a commercial power-distribution service on the Moon [11]. The SSTEF-1 experiment is designed to gather real lunar performance and reliability data for perovskite-silicon tandem cells [6].",
+      "operating_principle": "A solar generator converts sunlight into electricity with photovoltaic cells. When photons with enough energy strike a semiconductor junction, they free charge carriers that flow through an external circuit, producing a direct current whose voltage and power depend on temperature, illumination angle and cell technology. A demonstrator usually adds a structure that orients or elevates the cells, power-conditioning electronics that regulate the output, and a battery, a load or a transmission system to use the energy. Vertical arrays raise the cells so that they can receive light from low-angle sun above terrain shadows [3][5]. Cable-based distribution moves energy to a remote user; LunaGrid-Lite uses a cable carried and laid by a CubeRover [4]. Tandem cells stack a perovskite layer on silicon so that the two layers respond to different parts of the solar spectrum; SSTEF-1 is testing such devices on the Moon [6]. Efficiency and output values for any given demonstrator must come from its own source, and none is given as a measured lunar result here.",
+      "scientific_importance": "Power is a basic requirement for any sustained lunar activity, including habitats, rovers, science instruments and in-situ resource utilisation. Solar energy is attractive because it does not require fuel to be carried from Earth, but the lunar night and the low sun angles near the poles make it hard to rely on. Demonstrators test real lunar conditions, including dust, temperature extremes, radiation and shading, that cannot be fully reproduced on Earth. Data from such tests can reduce design uncertainty for future surface power systems. NASA's Vertical Solar Array Technology effort links tall arrays to uninterrupted light for Artemis South Pole activities [3].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a solar power generation demonstrator. Mass, size, power and deployment depend on the chosen architecture: a tall deployable array, a set of surface test cells, or a power-transmission system with a rover. The examples below describe specific programmes or experiments and must not be compared as if they were the same design, so no comparison table is given.",
+        "examples": [
+          {
+            "name": "NASA Vertical Solar Array Technology (VSAT) program, Government Reference Design",
+            "type": "Government development program (no flight hardware reported)",
+            "status": "Design and analysis phase; mechanism demonstrations described as planned",
+            "mass_kg": null,
+            "power_output_kw": null,
+            "deployed_height": "Target: up to 32 feet (about 9.8 m) per NASA 2021 announcement; a design requirement refers to 30-foot masts",
+            "deployment": "Autonomous vertical deployment and retraction (development goal)",
+            "lunar_deployment_goal": "One system at the lunar South Pole near the end of the decade (target)",
+            "qualification": "Target values only; no measured results reported in the sources read",
+            "source_refs": [
+              2,
+              3,
+              5,
+              8
+            ],
+            "images": []
+          },
+          {
+            "name": "Lockheed Martin LVSAT vertical solar array prototype",
+            "type": "Industry vertical solar array design (NASA-funded effort)",
+            "status": "Prototype tests described qualitatively; future depends on NASA next steps",
+            "mass_kg": null,
+            "power_output_kw": null,
+            "deployed_height": "Design figure 19.8 m (pv magazine 2025); up to 20 m in a search-result summary, not verified",
+            "deployment": "Deployment tests reported qualitatively",
+            "qualification": "Deployment, simulated lunar gravity and sloped-terrain tests, and cold exposure described without numeric results in the source read",
+            "source_refs": [
+              3,
+              5,
+              9
+            ],
+            "images": []
+          },
+          {
+            "name": "Photovoltaic Investigation on the Lunar Surface (PILS)",
+            "type": "Small surface experiment testing multiple solar cell technologies",
+            "status": "Assigned to Astrobotic Peregrine Mission One, which did not land; PILS operation not verified",
+            "mass_kg": null,
+            "power_output_kw": null,
+            "dimensions_cm": null,
+            "hardware": "Described as relatively small and lightweight; no size, mass or power figures published in the article read",
+            "source_refs": [
+              1,
+              12
+            ],
+            "images": []
+          },
+          {
+            "name": "Astrobotic LunaGrid-Lite lunar power transmission demonstration",
+            "type": "Power transmission demonstration (source is the lander's solar arrays)",
+            "status": "Critical Design Review passed and flight components in fabrication as of August 2025; flight-ready target Q2 2026; no launch date verified",
+            "power_transmitted_kw_target": 1,
+            "voltage": null,
+            "cable_length_m": "500 (August 2025 release and 2024 presentation summary); 1 km in a 2023 announcement summary",
+            "rover": "4U CubeRover (2025 release); 6U in a 2023 announcement summary",
+            "mass_kg_limit_reported": 20,
+            "operation_limit_hours_reported": 200,
+            "funding": "USD 34.6 million NASA Tipping Point award (2023 announcement summary)",
+            "source_refs": [
+              4,
+              10,
+              11
+            ],
+            "images": []
+          },
+          {
+            "name": "SSTEF-1 lunar in-situ solar cell experiment (perovskite-silicon tandem cells)",
+            "type": "NASA-funded lunar surface solar cell experiment (Aegis Aerospace Inc. lead)",
+            "status": "Planned; launch and landing dates not stated in the article read",
+            "hardware": "Perovskite-silicon tandem cell samples from Hanwha Q CELLS GmbH, selected by GTRI, to be mounted on a lunar lander",
+            "performance": "No space performance figures published; terrestrial outdoor results for Hanwha Qcells modules are not space data",
+            "source_refs": [
+              6
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions depend on the architecture. The only published dimension among the examples is the vertical array height: a target of up to 32 feet (about 9.8 m) in NASA's 2021 announcement [3], and a 19.8 m design figure reported for Lockheed Martin's array in 2025 [5]. No stowed packaging volume is published in the sources read. The LunaGrid-Lite cable length (500 m) is a deployment length, not an equipment dimension [4].",
+        "mass_and_weight": "No mass is publicly specified for the vertical arrays [3][5] or for SSTEF-1 [6]. The LunaGrid-Lite total system mass limit reported in a 2024 presentation summary is 20 kg [10]; this has not been verified against the presentation itself. Mass is a main driver of transportation cost and lander compatibility, so the absence of published masses limits any comparison.",
+        "power_requirements": "Power output is not publicly specified for the vertical arrays [3][5]. LunaGrid-Lite aims to transmit 1 kW from the lander's solar arrays to a tethered load [4]; its voltage is not stated [4]. PILS and SSTEF-1 publish no space power figures [1][6]. The Qcells figures in [6] are terrestrial and are not space power data."
+      },
+      "environmental_and_operational_requirements": "The Moon has no substantial atmosphere, extreme surface temperature swings, strong ultraviolet and cosmic radiation, and micrometeoroid exposure. Solar generation adds specific constraints. Sunlight is available only during the lunar day, so a surface system that needs continuous power must store energy or receive it from a source that is still illuminated. Near the lunar poles the sun stays low on the horizon and crater rims and boulders cast long shadows. NASA states that a tall vertical solar power structure would increase the likelihood of getting uninterrupted light [3]. Deployable arrays must also survive regolith dust, steep or uneven terrain and deployment loads [3][5]. Solar cells and array structures are exposed to vacuum, temperature extremes, UV and cosmic radiation, which the SSTEF-1 samples are intended to test [6].",
+      "limitations": "Solar generation depends on illumination. Low sun angles reduce incident power near the poles, and night periods require storage or an external supply. For LunaGrid-Lite, a 2024 presentation summary reports that night survival is not planned and that operation is limited to a maximum of 200 hours [10]. Terrestrial efficiencies of tandem cells do not describe space or lunar performance [6]. Dust, thermal cycling and deployment reliability of tall arrays remain open development questions [3][5].",
+      "transportation_and_deployment": {
+        "overview": "A solar power generation demonstrator is a surface payload. Its transport chain is integration with a lander or rover, launch, transfer to the Moon, landing, deployment and connection to power and data. The examples reviewed have different interfaces, and none has a verified lander compatibility.",
+        "transportation_process": [
+          "Integrate the array, cells or cable system with a lander or rover on Earth.",
+          "Launch on a launch vehicle and transfer towards the Moon.",
+          "Deliver to the surface by lander. For PILS, the assigned lander (Peregrine) did not land [12].",
+          "Deploy the structure (vertical arrays are designed for autonomous raising to the target height [3]) or unspool the cable (LunaGrid-Lite [4]).",
+          "Orient or level the array and confirm a working position with usable sunlight.",
+          "Connect power conditioning, thermal control and data links. Their details are not publicly specified in the sources read."
+        ],
+        "deployment_methods": "Vertical arrays are designed for autonomous vertical deployment and retraction [3][5]. NASA's 2021 announcement lists a target deployed height of up to 32 feet [3]. LunaGrid-Lite uses a CubeRover with a robotic cable deployer to lay cable [4]. PILS is a small surface experiment whose deployment method is not described in the article read [1]. SSTEF-1 samples are to be mounted on a lunar lander [6].",
+        "historical_examples": "PILS was assigned to Astrobotic's Peregrine lander as one of 11 NASA payloads [1]. Peregrine did not land after a propulsion problem [12]. No example reviewed has a verified record of operating a solar generation system on the Moon.",
+        "compatibility_assessment": "No lander or rover compatibility is verified for any example. The LunaGrid-Lite release does not name the lander [4], the SSTEF-1 article does not name it [6], and the NASA vertical array announcement describes a South Pole deployment without naming a lander [3]. Compatibility would require mass, dimensions, landing loads, mounting points, power and data interfaces, none of which is verified here.",
+        "images": []
+      },
+      "historical_significance": "Solar power has a limited record in lunar surface work so far, and the examples reviewed here are mainly recent programs. NASA's 2021 awards to develop vertical solar arrays for the South Pole marked a formal step to mature the technology [3]. A Langley Government Reference Design paper in 2024 [2] and the LunaGrid-Lite critical design review in 2025 [4] show development progress. None of the examples reviewed has a verified record of delivering sustained solar power on the Moon.",
+      "limitations_and_uncertainties": "The payload name describes a category of demonstrators, not a single design, so no universal mass, power or size applies. The examples are at different stages: some are programme-level design goals, some are concepts, and some are hardware with a planned or uncertain flight. Numbers from press releases and secondary summaries are targets or reported figures, not measured lunar performance. Where sources disagree, the conflict is recorded rather than resolved. This article is not a certified design specification for any payload.",
+      "evidence_gaps": [
+        "BEACON: a NASA executive summary from 2024 [7] was described in a search-result summary as a concept for delivering up to 500 W to users within 10 km of a south-pole array. The PDF could not be parsed, so no value is verified here.",
+        "VSAT 2023 review: the PDF [8] could not be parsed. Its 2028 to 2029 flight-demonstration date comes from a search-result summary only.",
+        "Source conflicts: NASA's 2021 announcement lists five base-period awardees [3], while pv magazine describes three companies in 2022 [5]. Deployed height is given as 32 feet [3], '30-foot masts' [3], 19.8 m [5] and 'up to 20 meters' [9]. LunaGrid-Lite cable length is 1 km in a 2023 summary [11] and 500 m in [4] and [10]; the rover is 6U in the 2023 summary [11] and 4U in [4].",
+        "PILS outcome: whether PILS operated after the Peregrine mission is not verified [1][12].",
+        "Secondary-only sources: [9], [10], [11] and [12] were read through search-result summaries, not as full documents. The SpaceNews article [9] could not be fetched.",
+        "SSTEF-1: no launch or landing date is given in [6], and its performance figures are not published.",
+        "Current status: no source read confirms the status of any example after August 2025 [4]. The status as of November 2026 is unknown.",
+        "Images: no image assets were verified for this article, so none are included."
+      ],
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Out of the Shadows: Lunar Solar Experiment Build Completed Despite Challenges",
+          "publisher": "NASA Glenn Research Center",
+          "date": "27 January 2021 (per the fetched page; page last updated 26 July 2023)",
+          "evidence_level": "read (fetched page)",
+          "url": "https://www.nasa.gov/centers-and-facilities/glenn/out-of-the-shadows-lunar-solar-experiment-build-completed-despite-challenges"
+        },
+        {
+          "title": "Government Reference Design of the Vertical Solar Array Technology Demonstrator",
+          "publisher": "NASA Langley Research Center (Belbin, Mills, Chan); 47th Aerospace Mechanisms Symposium",
+          "date": "Presented 15-17 May 2024; acquired by NTRS 19 April 2024",
+          "evidence_level": "read (NTRS record page; full paper not read)",
+          "url": "https://ntrs.nasa.gov/citations/20240004914"
+        },
+        {
+          "title": "NASA Industry to Mature Vertical Solar Array Technologies for Lunar Surface",
+          "publisher": "NASA",
+          "date": "23 March 2021 (page updated 22 June 2026)",
+          "evidence_level": "read (fetched page)",
+          "url": "https://www.nasa.gov/technology/nasa-industry-to-mature-vertical-solar-array-technologies-for-lunar-surface/"
+        },
+        {
+          "title": "LunaGrid-Lite Completes Critical Design Review, Flight Model Underway",
+          "publisher": "Astrobotic Technology",
+          "date": "20 August 2025",
+          "evidence_level": "read (fetched page)",
+          "url": "https://www.astrobotic.com/lunagrid-lite-completes-critical-design-review-flight-model-underway/"
+        },
+        {
+          "title": "Lockheed Martin developing vertical solar arrays for the Moon",
+          "publisher": "pv magazine (Patrick Jowett)",
+          "date": "9 April 2025",
+          "evidence_level": "read (fetched page)",
+          "url": "https://www.pv-magazine.com/2025/04/09/lockheed-martin-developing-vertical-solar-arrays-for-the-moon/"
+        },
+        {
+          "title": "Hanwha Qcells to supply tandem perovskite solar cells for NASA-backed lunar demo",
+          "publisher": "Perovskite-Info (Roni Peleg)",
+          "date": "9 June 2026",
+          "evidence_level": "read (fetched page)",
+          "url": "https://www.perovskite-info.com/hanwha-qcells-supply-tandem-perovskite-solar-cells-nasa-backed-lunar-demo"
+        },
+        {
+          "title": "BEACON Executive Summary",
+          "publisher": "NASA (NASA Technical Reports Server)",
+          "date": "2024 (from NTRS record ID; not confirmed)",
+          "evidence_level": "search-result summary only; PDF could not be parsed",
+          "url": "https://ntrs.nasa.gov/api/citations/20240015887/downloads/BEACON%20Exec%20Summary.pdf"
+        },
+        {
+          "title": "GCD Annual Review: VSAT, September 2023",
+          "publisher": "NASA (NASA Technical Reports Server)",
+          "date": "September 2023",
+          "evidence_level": "search-result summary only; PDF could not be parsed",
+          "url": "https://ntrs.nasa.gov/api/citations/20230012849/downloads/GCD%20Annual%20Review%20VSAT%20September%202023%20Final.pdf"
+        },
+        {
+          "title": "Lockheed Martin unveils solar power array for Artemis program",
+          "publisher": "SpaceNews",
+          "date": "not confirmed (late 2024 to early 2025, per search-result summary)",
+          "evidence_level": "search-result summary only; fetch failed",
+          "url": "https://spacenews.com/lockheed-martin-unveils-solar-power-array-for-artemis-program"
+        },
+        {
+          "title": "LunaGrid-Lite Overview, LSIC presentation",
+          "publisher": "Astrobotic / Lunar Surface Innovation Consortium focus files (JHU APL)",
+          "date": "27 June 2024 (from file name)",
+          "evidence_level": "search-result summary only; not fetched",
+          "url": "https://lsic.jhuapl.edu/uploadedDocs/focus-files/2531-2024-06-27%20-%20LunaGrid-Lite%20Overview%20LSIC%20Presentation%20-%20TO%20LSIC.pdf"
+        },
+        {
+          "title": "Astrobotic Wins $34.6M for Power Demo Mission on the Moon",
+          "publisher": "Astrobotic Technology",
+          "date": "2023 (per search-result summary)",
+          "evidence_level": "search-result summary only; not fetched",
+          "url": "https://www.astrobotic.com/astrobotic-wins-34-6m-for-power-demo-mission-on-the-moon/"
+        },
+        {
+          "title": "NASA Science: Astrobotic Peregrine Mission One Concludes",
+          "publisher": "PR Newswire (NASA Science / Astrobotic release)",
+          "date": "January 2024 (per search-result summary)",
+          "evidence_level": "search-result summary only; post-mission report PDF could not be parsed",
+          "url": "https://prnewswire.com/news-releases/nasa-science-astrobotic-peregrine-mission-one-concludes-302039878.html"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No image URLs were verified or added, so no image objects are included."
+  },
+  "data_quality_notes": [
+    "No image assets were verified or added. Image arrays are empty and no image URLs were invented.",
+    "Awardee conflict: NASA 2021 announcement lists five base-period awardees; pv magazine 2025 describes NASA selecting three companies in 2022.",
+    "Vertical array height conflict: 32 feet (NASA 2021), 30-foot masts (NASA 2021 design requirement), 19.8 m (pv magazine 2025), up to 20 m (search-result summary only).",
+    "LunaGrid-Lite cable length conflict: 1 km (2023 summary) versus 500 m (2024 and 2025 sources); rover 6U (2023 summary) versus 4U (2025 release).",
+    "PILS flight outcome is not verified; Peregrine did not land and PILS operation is not confirmed.",
+    "BEACON (ref 7) and the 2023 VSAT review (ref 8) PDFs could not be parsed; their claims are not used as specifications.",
+    "Refs 9 to 12 were read through search-result summaries only; they are flagged in the references list.",
+    "Research budget: 5 web searches and 10 page fetch attempts, of which 6 returned readable pages.",
+    "Current status of all examples after August 2025 was not verified as of 13 November 2026.",
+    "Evidence gaps list reviewed; no lunar location recommendations included (deferred by user)."
+  ]
+}

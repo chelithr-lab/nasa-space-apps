@@ -1,0 +1,464 @@
+{
+  "catalogue_id": 41,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 41,
+    "name": "Shortwave infrared camera",
+    "article": {
+      "overview": "A shortwave infrared (SWIR) camera records sunlight reflected from a surface at wavelengths just beyond the visible and near-infrared. This article takes the working band as roughly 1 to 2.5 micrometres (µm). The band contains absorption features of hydrated minerals, water and hydroxyl, so images taken through selected filters can show where those materials occur, and images taken through many narrow bands can be turned into a spectrum at each pixel. The 1–2.5 µm range is a convention rather than a standard. The sources reviewed use different band edges, and none of the verified flown camera examples is shown to reach 2.5 µm [2][6][9][12][15]. Four flown or flown-and-ended examples are described in detail: the two LCROSS near-infrared cameras that observed the 2009 impact plume [1][2][4], the near-infrared channel of the SELENE (KAGUYA) Multiband Imager [6][7][8], the Multi-Band Camera on JAXA’s SLIM lander [9][10][12][13], and the HVM3 imaging spectrometer on NASA’s Lunar Trailblazer, which was launched but whose mission ended [15][16][17]. A proposed example, the Active Lunar Imaging Spectrometer (ALIS) for the JAXA–ISRO LUPEX rover, is included at engineering-model stage [18]. Imaging spectrometers, thermal cameras and the broader infrared classes are cross-referenced to payloads 035 (hyperspectral imager), 036 (infrared imager), 040 (near-infrared camera) and 042 (longwave infrared camera) rather than repeated here. The SWIR channel of the Chang’e VNIS rover spectrometer is a single-point spectrometer rather than an imager and is referred to payload 035 [19]. The Ball Aerospace L-CIRiS is a thermal-infrared microbolometer camera and belongs with payload 042 [21].",
+      "description": "A SWIR camera is a focal-plane-array camera or a scanning imager whose detector responds to photons with wavelengths shorter than about 2.5 µm. The most common detector material for the lower part of this band is indium gallium arsenide (InGaAs), a semiconductor whose composition sets the long-wavelength cut-off. A 2026 vendor press release states that InGaAs-based SWIR sensors are typically limited to about 1.7 µm, and that mercury cadmium telluride is used for longer wavelengths [20]. The flown examples reviewed here are consistent with that limit: the LCROSS NIR2 sensitivity ends at 1.7 µm [2] and the SLIM MBC sensitivity is quoted to about 1.7 µm [13]. The HVM3 range given in secondary summaries (0.6–3.6 µm) would need a detector with a longer cut-off, but the detector is not described in the sources reviewed [17].\n\nMost SWIR cameras are passive: they use reflected sunlight and therefore work only on the sunlit side of the Moon. The image is built either as a two-dimensional frame, as the LCROSS cameras did with a 320 by 240 pixel array [2], or by line-by-line scanning, as the SELENE Multiband Imager (MI) did with two-dimensional detectors and a spacecraft-motion scan [7]. Bands are selected by bandpass or long-pass filters, by a filter wheel, or by spectrometer optics.\n\nMineral mapping requires calibrated reflectance, which means correcting for the illumination geometry and the instrument response. Volatile detection depends on signals that are small compared with surface brightness, so low noise and stable detector temperature matter. These constraints shape both the hardware and the interpretation of the data described below.",
+      "scientific_purpose_and_applications": "- **Volatile and water detection.** LCROSS was designed to look for water in material thrown up by an impact, and its cameras were part of the imaging payload [1][4]. NASA states that the mission found water and that scientists confirmed it was mostly pure ice crystals in some places [1].\n- **Surface mineralogy and crust composition.** The SELENE MI paper is titled “Performance and scientific objectives” [6]. The sources reviewed do not restate its detailed mineral goals, so this article does not list them beyond that title.\n- **Rock and mineral identification at a lander site.** The SLIM Multi-Band Camera was intended to identify rocks and rock-forming minerals near the lander and to estimate the Mg# of olivine, which may come from the lunar mantle [12][13]. The olivine absorption band near 1000 nm was a key focus [12].\n- **Water-form mapping from orbit.** NASA describes HVM3 as a JPL-developed imaging spectrometer sensitive to the spectral fingerprints of the different forms of water [15]. ALIS was intended to identify rock-forming minerals and to confirm and quantify water ice [18].\n- **Context for other measurements.** Lunar Trailblazer combined HVM3 with a thermal instrument, the Lunar Thermal Mapper, which NASA lists as an instrument on the mission [15].",
+      "operating_principle": "A photodiode detector absorbs a photon only when the photon energy exceeds the semiconductor band gap. For InGaAs, the composition sets a cut-off near the long-wavelength edge of the band, so longer-wavelength photons are not detected [20]. Each pixel accumulates charge during an exposure, and read-out converts the charge to a digital number per pixel. Because the signal is reflected sunlight, the measured value depends on the illumination geometry as well as on the surface composition.\n\nFilters define the spectral channels. The LCROSS NIR1 camera carried a long-pass filter with a cut-on above 1.4 µm, while NIR2 had no filter [2][3]. The SELENE MI used bandpass filters to observe in nine wavelengths, five visible and four near-infrared [7]. The SLIM MBC used a filter wheel with ten bandpass filters, each 30 nm wide [12][13].\n\nImaging geometry differs. The LCROSS cameras are frame cameras with a 28.7 by 21.7 degree field of view [2][3]. The MI is a push-broom instrument whose two-dimensional detectors are read line by line as the spacecraft moves [7]. The SLIM MBC uses a movable mirror to pan and tilt its view [12][13].\n\nAbsorption-band mapping works by comparing reflectance at several wavelengths across a mineral or water feature. This separates materials only if the bands are calibrated and placed on the feature. The olivine band near 1000 nm is one example that the SLIM team set out to observe [12].",
+      "scientific_importance": "The Moon’s surface records the composition of its crust and of material delivered by impacts, and SWIR wavelengths reach hydrated minerals and water that visible imagery cannot show. The flown examples illustrate this. LCROSS was designed to test for water in impact ejecta [1][4], and the Science team reports a maximum of 155 ± 12 kg of water vapour and ice within the instrument field of view for the full instrument suite, not for the cameras alone [5]. SELENE MI showed that a multiband camera in lunar orbit can add spectral information across a large area, with 20 m visible and 62 m near-infrared ground pixels from a 100 km orbit [7]. SLIM’s MBC gave a direct spectral observation of individual rocks on the surface, with 10 bands on 10 rocks reported by JAXA [10]. The value of such a camera depends on calibration: band edges, filter shapes and illumination correction determine whether a spectral feature is real. The class has no single flown design, so results from LCROSS, MI, SLIM and HVM3 should not be compared as one dataset.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a SWIR camera. The examples differ in purpose, band set, detector, platform and status: an impact-plume camera (LCROSS), a multiband lunar-orbit mapper (SELENE MI), a lander-mounted multi-band camera (SLIM MBC), an orbital imaging spectrometer whose mission ended (HVM3) and a proposed rover imaging spectrometer (ALIS). Each value below is tied to the instrument and source named. The values are not directly comparable across examples, and mass, power and size are published for only one of them.",
+        "examples": [
+          {
+            "name": "LCROSS near-infrared cameras (NIR1 and NIR2)",
+            "type": "Flown impact-experiment imaging cameras (InGaAs)",
+            "flight_status": "Flown: LCROSS launched 18 June 2009 and impacted the Moon 9 October 2009 [1].",
+            "manufacturer_and_model": "Goodrich Sensors Unlimited SU320-KTX (ruggedised), per PDS catalogue [2][3].",
+            "quantity": 2,
+            "detector": "InGaAs focal-plane array, 320 x 240 pixels [2][3].",
+            "wavelength_range_um": "NIR2: 0.9 to 1.7 [2]. NIR1: same sensor with long-pass filter cut-on above 1.4 [2][3].",
+            "filter": "NIR1: long-pass, >1.4 µm. NIR2: no filter [2].",
+            "cooling": "NIR1: active thermoelectric cooler [3]. NIR2: identical to NIR1 apart from filter [2]; cooling inferred.",
+            "optics": "25 mm f/1.4 C-mount lens (UkaOptics 2514M) [2].",
+            "field_of_view": "28.7 deg (H) x 21.7 deg (V); 36.0 deg diagonal [2].",
+            "output_format": "720 x 486, 24-bit RGB arrays [3].",
+            "power_w": {
+              "peak_per_camera": 1.6,
+              "source": "PDS catalogue [2]"
+            },
+            "mass_kg": null,
+            "dimensions": "not publicly specified in the sources reviewed",
+            "notes": "NASA describes the LCROSS instruments as two near-infrared cameras [1]; trade press calls them SWIR [4].",
+            "source_urls": [
+              "https://science.nasa.gov/mission/lcross/",
+              "https://pds-geosciences.wustl.edu/Lunar/lcross-e_l-mir1-2-raw-v1/lcro_0001/catalog/nir2_inst.cat",
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:nir1.lcross"
+            ],
+            "images": [
+              {
+                "id": "nasa_lcross_artist_rendering",
+                "description": "NASA artist’s rendering of the LCROSS spacecraft and Centaur separation at the Moon.",
+                "image_type": "Artist’s rendering (agency mission page)",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/07/226580main_2007-08-02_On_Way_In.jpg",
+                "source_page_url": "https://science.nasa.gov/mission/lcross/",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "An artist’s rendering of the LCROSS spacecraft and Centaur separation at the Moon.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL with the NASA resize query string removed (HTTP 200 checked; the clean URL resolves). The NASA page lists this image with that caption. This is an illustration, not hardware, and it is placed only in the LCROSS example."
+              }
+            ]
+          },
+          {
+            "name": "SELENE (KAGUYA) Multiband Imager (MI), near-infrared channel",
+            "type": "Flown lunar-orbit multiband imager (visible and near-infrared)",
+            "flight_status": "Flown on SELENE (KAGUYA); part of LISM [7]. Launch date from search-excerpt summary of [6], not checked in full text.",
+            "configuration": "Two nadir-looking telescopes with two-dimensional detectors; bandpass filters [7].",
+            "visible_bands_nm": "5 bands: JAXA extraction 415, 750, 900, 950, 1000 (1.0 µm also appears in the NIR list) [7]; band centres 415, 750, 900, 950, 1000 nm per [6] summary.",
+            "nir_bands_nm": "4 bands: 1000, 1050, 1250, 1550 nm per JAXA page [7]; DARTS tags 1000.0, 1049.0, 1248.0, 1548.0 nm [8].",
+            "band_width_nm": "10–50 [7]",
+            "nir_detector": "Stated on JAXA page only as two-dimensional detectors [7]. Uncooled InGaAs NIR sensor reported in search-excerpt summary of [6]; not verified in full text.",
+            "spatial_resolution": "VIS 20 m; NIR 62 m, from 100 km [7].",
+            "field_of_view": "VIS 11 deg (19.3 km); NIR 11.2 deg (19.6 km) [7].",
+            "mass_kg": null,
+            "power": "not publicly specified in the sources reviewed [7]",
+            "dimensions": "not publicly specified in the sources reviewed [7]",
+            "notes": "Band list from a garbled extraction of the JAXA page; confirm against [6].",
+            "source_urls": [
+              "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+              "https://darts.isas.jaxa.jp/datasets/sln-l-mi-3-nir-level2b2-v1.0",
+              "https://link.springer.com/doi/10.1186/BF03352789"
+            ],
+            "images": [
+              {
+                "id": "jaxa_selene_mi_flight_model",
+                "description": "Photograph of the SELENE Multiband Imager flight model, captioned “MI Flight model” on the JAXA page.",
+                "image_type": "Flight-model hardware photograph (agency mission page)",
+                "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_003.jpg",
+                "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+                "publisher": "JAXA",
+                "credit": "JAXA",
+                "caption": "SELENE Multiband Imager flight model (hardware photograph).",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL with no query string (HTTP 200 checked). The asset was visually inspected and matches the JAXA caption ‘MI Flight model’. Rights: JAXA page; not checked further."
+              },
+              {
+                "id": "jaxa_selene_lism_principle_figure",
+                "description": "JAXA figure showing the LISM box with the MI multiband image, the TC topographic map and the SP continuous spectrum.",
+                "image_type": "Instrument concept figure (agency mission page)",
+                "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_005_e.gif",
+                "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+                "publisher": "JAXA",
+                "credit": "JAXA",
+                "caption": "LISM (TC, MI and SP) concept figure from the SELENE equipment page.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL with no query string (HTTP 200 checked). Visually inspected: shows the MI multiband image and SP spectrum. The page labels the image ‘LISM (figure)’."
+              }
+            ]
+          },
+          {
+            "name": "SLIM Multi-Band Camera (MBC)",
+            "type": "Flown lander-mounted multiband VIS-NIR camera with InGaAs imaging sensor",
+            "flight_status": "Flown on SLIM: landed 20 January 2024 JST [9]; 10-band observations on 10 rocks reported [10]; operations concluded 23 August 2024 [10].",
+            "detector": "InGaAs imaging sensor [12][13].",
+            "filter_wheel": "10 bandpass filters [12][13].",
+            "bands_nm": [
+              750,
+              920,
+              950,
+              970,
+              1000,
+              1050,
+              1100,
+              1250,
+              1550,
+              1650
+            ],
+            "band_width_nm": 30,
+            "sensitivity_nm": "about 700 to 1700 [13]",
+            "optics": "telephoto optics; movable mirror for pan and tilt [12][13]",
+            "field_of_view": "4 deg horizontal (search-excerpt summary of [13])",
+            "spatial_resolution": "1.3 mm per pixel at 10 m, reported in 2022 abstract [14]",
+            "mass_kg": null,
+            "power": "not publicly specified in the sources reviewed",
+            "dimensions": "not publicly specified in the sources reviewed",
+            "notes": "Specifications from conference abstracts [12][13][14]; primary paper not located. Pre-landing sensor locked at 750 nm [12].",
+            "source_urls": [
+              "https://global.jaxa.jp/press/2024/01/20240120-1_e.html",
+              "https://global.jaxa.jp/press/2024/08/20240826-1_e.html",
+              "https://pub.confit.atlas.jp/en/event/jpgu2024/presentation/PPS09-P02",
+              "https://confit.atlas.jp/guide/event/jpgu2019/subject/PPS08-P09/date",
+              "https://confit.atlas.jp/guide/event/jpgu2022/subject/PPS06-17/detail"
+            ],
+            "images": []
+          },
+          {
+            "name": "High-resolution Volatiles and Minerals Moon Mapper (HVM3), Lunar Trailblazer",
+            "type": "Orbital shortwave infrared imaging spectrometer (cross-reference to payload 035)",
+            "flight_status": "Launched 26 February 2025 [15][16]; mission ended 31 July 2025 per JPL [15]. No HVM3 measurements reported in the sources reviewed.",
+            "wavelength_range_um": "not stated by JPL or NASA [15][16]; 0.6–3.6 in secondary summary [17], unverified",
+            "detector": "not publicly specified in the sources reviewed",
+            "mass_kg": null,
+            "power": "not publicly specified in the sources reviewed",
+            "dimensions": "not publicly specified in the sources reviewed",
+            "notes": "Included because it is a SWIR instrument in this band; primary instrument paper not accessed.",
+            "source_urls": [
+              "https://www.jpl.nasa.gov/missions/lunar-trailblazer/",
+              "https://science.nasa.gov/mission/lunar-trailblazer-fact-sheet",
+              "https://eoportal.org/satellite-missions/lunar-trailblazer"
+            ],
+            "images": []
+          },
+          {
+            "name": "Active Lunar Imaging Spectrometer (ALIS), LUPEX rover",
+            "type": "Proposed rover-mounted imaging spectrometer (cross-reference to payload 035)",
+            "flight_status": "Proposed; engineering model stage. Preliminary design review January 2023; EM manufacture complete and functional testing under way early 2025 [18]. LUPEX launch date not verified.",
+            "wavelength_range_nm": "750 to 1650 [18] (secondary excerpt)",
+            "purpose": "identify rock-forming minerals; confirm and quantify water ice [18]",
+            "detector": "not publicly specified in the sources reviewed; InGaAs not confirmed",
+            "mass_kg": null,
+            "power": "not publicly specified in the sources reviewed",
+            "dimensions": "not publicly specified in the sources reviewed",
+            "notes": "Source is a third-party mirror of an LPSC abstract; treat as provisional.",
+            "source_urls": [
+              "https://epizodyspace.ru/bibl/inostr-yazyki/Lunar_and_Planetary_Science/2025/Ohtake_et_al_Objectives_Instruments_and_Operation_Plan_of_LUPEX_56th_LPSC_no_1918_(2025).pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions and proportions are not publicly specified for any example in the sources reviewed. The only geometry given is the LCROSS camera optics (25 mm lens, 28.7° by 21.7° field of view) and the SELENE MI fields of view (11° and 11.2°) [2][7].",
+        "mass_and_weight": "Mass is not publicly specified for any example in the sources reviewed [2][7][12][15][18]. For the LCROSS cameras, the PDS record gives no mass [2].",
+        "power_requirements": "The only published electrical value is the peak operating power of 1.6 W per LCROSS camera [2]. No power figure is given for the SELENE MI, the SLIM MBC, HVM3 or ALIS in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A SWIR imager depends on sunlight for reflectance measurements, so observations depend on illumination geometry, solar elevation and whether the target lies in shadow. Detector temperature affects dark current and noise. The LCROSS NIR1 sensor was actively cooled by a thermoelectric cooler [3]. Lunar vacuum, temperature extremes and dust apply to every example. A lander camera must survive landing and the lunar night. JAXA reported that after the SLIM landing the solar cells were not generating power [9], and the MBC acquired its 10-band data only after solar power returned during a lunar evening [12]. An orbiter camera depends on stable pointing and on data downlink; the MI’s scanning acquisition ties image geometry to spacecraft motion [7]. The LCROSS cameras were used in a single timed impact event [1], so their operating requirement was a single successful acquisition rather than long-term operation.",
+      "limitations": "The main limitations are as follows. First, the band definition is not standard: the sources reviewed give LCROSS 0.9–1.7 µm [2], MI near-infrared 1.0–1.55 µm [7], SLIM MBC bands from 750 to 1650 nm with sensitivity to about 1700 nm [12][13], ALIS 750–1650 nm [18] and HVM3 0.6–3.6 µm in a secondary summary [17]. None of the flown camera examples is verified in full text to reach 2.5 µm. Second, a multiband camera records band-limited information; full spectra require a spectrometer such as those in payload 035. Third, the evidence base is uneven: LCROSS and MI have agency or journal documentation, SLIM is described in conference abstracts, and HVM3 and ALIS have limited public specifications. Fourth, most mass, power and size values are unpublished [2][7]. Fifth, the LCROSS plume results come from the full instrument suite, so they cannot be attributed to the cameras alone [5].",
+      "transportation_and_deployment": {
+        "overview": "The examples differ by mission role. The LCROSS cameras flew on a spacecraft that impacted the Moon with its Centaur stage and did not land [1]. The SELENE MI was an orbital instrument on the SELENE spacecraft [7]. The SLIM MBC was carried by a lander that touched down on 20 January 2024 [9]. HVM3 was carried by the Lunar Trailblazer orbiter, which NASA reports ended its mission in 2025 [15]. ALIS is proposed for the LUPEX rover [18]. No example is assessed here against a named lander, rover or spacecraft.",
+        "transportation_process": [
+          "Integrate the camera with the host spacecraft, lander or rover in an Earth-based payload compartment, including thermal, mechanical and electrical interfaces.",
+          "Launch on a launch vehicle; LCROSS launched on 18 June 2009 [1], Lunar Trailblazer on 26 February 2025 [15] and SLIM was scheduled for a 7 September 2023 launch [11].",
+          "Transfer to the Moon on a trajectory that depends on the host mission; for an impact mission, the spacecraft is steered toward a predetermined impact location [1].",
+          "Deliver to lunar orbit or the lunar surface. An orbital camera is commissioned in orbit; a lander camera must survive landing, which for SLIM was followed by a period without solar power [9].",
+          "Deploy or set up the camera. A lander-mounted camera uses a pan and tilt mirror in the SLIM MBC design [12][13]; an orbiter camera is fixed to the spacecraft body.",
+          "Operate the camera and downlink its data. Lander data depend on power and communications availability [9][10]; orbiter data depend on pointing and downlink."
+        ],
+        "deployment_methods": "Orbital cameras are fixed to the spacecraft body and acquire data by framing or by scanning as the spacecraft moves [7]. A lander camera is mounted on the lander structure; the SLIM MBC has a movable mirror that pans and tilts its view [12][13]. The mounting of ALIS on the LUPEX rover is not stated in the sources reviewed.",
+        "historical_examples": "SLIM is the lander-mounted example in this article [9][10][12]. LCROSS shows an impact-experiment configuration in which a camera observed a plume from a spacecraft that did not land [1][4]. SELENE MI is an example of a multiband camera on a lunar orbiter [7].",
+        "compatibility_assessment": "Compatibility is not assessed. No verified interface document for the mounting, power, thermal or data interface of any SWIR camera on a named lander, rover or spacecraft was reviewed. The LCROSS PDS record gives a peak power for each camera but no interface description for a host other than LCROSS [2].",
+        "images": []
+      },
+      "historical_significance": "LCROSS is a historical flown example of InGaAs SWIR cameras used in an impact experiment at the Moon [1][4]. SELENE’s MI was an early multiband imager in lunar orbit with visible and near-infrared bands [6][7]. SLIM’s MBC is a recent lander-based example, and JAXA reports that its 10-band observations exceeded initial expectations [10]. HVM3 shows an orbital SWIR imaging spectrometer that was launched but whose mission ended before the sources reviewed report any measurements [15][16].",
+      "limitations_and_uncertainties": "1. **Band edges.** The sources give different band edges, listed under Limitations above. None of the flown examples is verified in full text to reach 2.5 µm.\n2. **MI detector.** The uncooled InGaAs near-infrared sensor is reported only in search-excerpt summaries of the 2008 paper [6]. The full paper was not accessible.\n3. **SLIM MBC.** The specifications come from conference abstracts [12][13][14]. The primary paper and a JAXA technical description were not located.\n4. **HVM3.** The wavelength range from secondary summaries [17] is unverified, and the detector is not stated in the sources reviewed.\n5. **ALIS.** The 750–1650 nm range and the development status come from a mirror of a 2025 LPSC abstract [18]. The detector material and the LUPEX launch date are not verified.\n6. **Naming.** NASA and the PDS call the LCROSS cameras near-infrared, while trade press calls them SWIR [1][2][4].\n7. **Mass, power and size.** Only the LCROSS peak power is published [2]. All other mass, power and size values are not publicly specified in the sources reviewed.\n8. **Plume results.** The 155 ± 12 kg figure [5] is for the full instrument suite, not the cameras alone. The paper itself was not accessed; its metadata and key figure come from a search excerpt.",
+      "images": [
+        {
+          "id": "jaxa_selene_lism_three_instruments",
+          "description": "JAXA figure of the SELENE LISM suite with three optical instruments (TC, MI, SP) installed on KAGUYA.",
+          "image_type": "Spacecraft instrument figure (agency mission page)",
+          "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_001.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "publisher": "JAXA",
+          "credit": "JAXA",
+          "caption": "Three high-performance optical instruments (TC, MI, SP) of the SELENE (KAGUYA) LISM suite, as captioned on the JAXA page.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset URL taken from the JAXA equipment page with no query string or fragment (HTTP 200 checked). The asset is identified on the source page by its caption. Reuse rights are those stated by JAXA; not checked beyond the page."
+        },
+        {
+          "id": "jaxa_selene_mi_flight_model",
+          "description": "Photograph of the SELENE Multiband Imager flight model, captioned “MI Flight model” on the JAXA page.",
+          "image_type": "Flight-model hardware photograph (agency mission page)",
+          "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_003.jpg",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "publisher": "JAXA",
+          "credit": "JAXA",
+          "caption": "SELENE Multiband Imager flight model (hardware photograph).",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL with no query string (HTTP 200 checked). The asset was visually inspected and matches the JAXA caption ‘MI Flight model’. Rights: JAXA page; not checked further."
+        },
+        {
+          "id": "jaxa_selene_lism_principle_figure",
+          "description": "JAXA figure showing the LISM box with the MI multiband image, the TC topographic map and the SP continuous spectrum.",
+          "image_type": "Instrument concept figure (agency mission page)",
+          "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_005_e.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "publisher": "JAXA",
+          "credit": "JAXA",
+          "caption": "LISM (TC, MI and SP) concept figure from the SELENE equipment page.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL with no query string (HTTP 200 checked). Visually inspected: shows the MI multiband image and SP spectrum. The page labels the image ‘LISM (figure)’."
+        },
+        {
+          "id": "nasa_lcross_artist_rendering",
+          "description": "NASA artist’s rendering of the LCROSS spacecraft and Centaur separation at the Moon.",
+          "image_type": "Artist’s rendering (agency mission page)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/07/226580main_2007-08-02_On_Way_In.jpg",
+          "source_page_url": "https://science.nasa.gov/mission/lcross/",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "An artist’s rendering of the LCROSS spacecraft and Centaur separation at the Moon.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL with the NASA resize query string removed (HTTP 200 checked; the clean URL resolves). The NASA page lists this image with that caption. This is an illustration, not hardware, and it is placed only in the LCROSS example."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "jaxa_selene_lism_three_instruments",
+          "description": "JAXA figure of the SELENE LISM suite with three optical instruments (TC, MI, SP) installed on KAGUYA.",
+          "image_type": "Spacecraft instrument figure (agency mission page)",
+          "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_001.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "publisher": "JAXA",
+          "credit": "JAXA",
+          "caption": "Three high-performance optical instruments (TC, MI, SP) of the SELENE (KAGUYA) LISM suite, as captioned on the JAXA page.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset URL taken from the JAXA equipment page with no query string or fragment (HTTP 200 checked). The asset is identified on the source page by its caption. Reuse rights are those stated by JAXA; not checked beyond the page."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "NASA, LCROSS mission page",
+          "publisher_or_author": "NASA Science",
+          "url": "https://science.nasa.gov/mission/lcross/",
+          "notes": "Mission dates, instrument list (two near-infrared cameras), impact and water-confirmation statements."
+        },
+        {
+          "number": 2,
+          "title": "LCROSS NEAR INFRARED CAMERA 2 (NIR2) instrument catalogue",
+          "publisher_or_author": "NASA PDS Lunar Data Node",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/lcross-e_l-mir1-2-raw-v1/lcro_0001/catalog/nir2_inst.cat",
+          "notes": "Detector (InGaAs 320 x 240), 0.9–1.7 µm sensitivity, optics, field of view, 1.6 W peak power."
+        },
+        {
+          "number": 3,
+          "title": "LCROSS Near Infrared Camera 1 (NIR1) instrument description",
+          "publisher_or_author": "PSI ARCNAV (PDS context)",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:nir1.lcross",
+          "notes": "Long-pass filter above 1.4 µm, thermoelectric cooling, 720 x 486 output."
+        },
+        {
+          "number": 4,
+          "title": "Lunar crash to be imaged by Sensors Unlimited/Goodrich cameras",
+          "publisher_or_author": "Laser Focus World (2009)",
+          "url": "https://www.laserfocusworld.com/detectors-imaging/article/16566398/lunar-crash-to-be-imaged-by-sensors-unlimited-goodrich-cameras",
+          "notes": "Trade-press description: two InGaAs SWIR cameras on the shepherding spacecraft; vendor-era article."
+        },
+        {
+          "number": 5,
+          "title": "Detection of Water in the LCROSS Ejecta Plume",
+          "publisher_or_author": "Colaprete, A. et al., Science 330(6003), 463–468 (2010)",
+          "url": "https://www.science.org/doi/10.1126/science.1186986",
+          "notes": "Maximum 155 ± 12 kg water vapour and ice in the instrument field of view (full instrument suite). Metadata from search excerpt; DOI page not retrieved."
+        },
+        {
+          "number": 6,
+          "title": "Performance and scientific objectives of the SELENE (KAGUYA) Multiband Imager",
+          "publisher_or_author": "Ohtake, M. et al., Earth, Planets and Space 60, 257–264 (2008)",
+          "url": "https://link.springer.com/doi/10.1186/BF03352789",
+          "notes": "Source for MI objectives and pre-flight performance. Full text not retrieved; detector and launch-date statements from search excerpts only."
+        },
+        {
+          "number": 7,
+          "title": "SELENE (KAGUYA) LISM: Terrain Camera (TC), Multiband Imager (MI), Spectral Profiler (SP)",
+          "publisher_or_author": "JAXA SELENE project",
+          "url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "notes": "MI band list, bandpass method, 20 m VIS and 62 m NIR resolution, fields of view, flight-model photograph and LISM figure."
+        },
+        {
+          "number": 8,
+          "title": "SELENE MI-NIR Level 2B2 radiance dataset",
+          "publisher_or_author": "JAXA DARTS",
+          "url": "https://darts.isas.jaxa.jp/datasets/sln-l-mi-3-nir-level2b2-v1.0",
+          "notes": "NIR four-band dataset; band tags 1000.0, 1049.0, 1248.0 and 1548.0 nm. Detector not stated."
+        },
+        {
+          "number": 9,
+          "title": "SLIM landing press release (20 January 2024)",
+          "publisher_or_author": "JAXA press release",
+          "url": "https://global.jaxa.jp/press/2024/01/20240120-1_e.html",
+          "notes": "Landing at 0:20 a.m. JST on 20 January 2024; solar cells not generating power after landing."
+        },
+        {
+          "number": 10,
+          "title": "SLIM operations concluded (26 August 2024)",
+          "publisher_or_author": "JAXA press release",
+          "url": "https://global.jaxa.jp/press/2024/08/20240826-1_e.html",
+          "notes": "Multi-Band Camera 10-band spectral observations on 10 rocks; operations concluded 23 August 2024."
+        },
+        {
+          "number": 11,
+          "title": "SLIM project page (moved; launch-time notice)",
+          "publisher_or_author": "JAXA SLIM project page",
+          "url": "https://global.jaxa.jp/projects/sas/slim/",
+          "notes": "Rescheduled launch time 8:42:11 a.m. JST, 7 September 2023. Payload list not stated on this page."
+        },
+        {
+          "number": 12,
+          "title": "Objective and Current Development Status of Multi-Band Camera on SLIM (JpGU 2024 PPS09-P02)",
+          "publisher_or_author": "Japan Geoscience Union Meeting 2024 abstract",
+          "url": "https://pub.confit.atlas.jp/en/event/jpgu2024/presentation/PPS09-P02",
+          "notes": "MBC InGaAs sensor, 700–1700 nm sensitivity, post-landing 10-band data. Read from search excerpt; page returned HTTP 403 to direct retrieval."
+        },
+        {
+          "number": 13,
+          "title": "[PPS08-P09] Objective and Current Development Status of Multi-Band Camera on SLIM (JpGU 2019)",
+          "publisher_or_author": "Japan Geoscience Union Meeting 2019 abstract",
+          "url": "https://confit.atlas.jp/guide/event/jpgu2019/subject/PPS08-P09/date",
+          "notes": "MBC filter bands (750–1650 nm), 30 nm widths, 4° field of view. Read from search excerpt."
+        },
+        {
+          "number": 14,
+          "title": "[PPS06-17] Multi-Band Camera on SLIM (JpGU 2022)",
+          "publisher_or_author": "Japan Geoscience Union Meeting 2022 abstract",
+          "url": "https://confit.atlas.jp/guide/event/jpgu2022/subject/PPS06-17/detail",
+          "notes": "MBC spatial resolution 1.3 mm per pixel at 10 m. Read from search excerpt."
+        },
+        {
+          "number": 15,
+          "title": "Lunar Trailblazer",
+          "publisher_or_author": "NASA Jet Propulsion Laboratory",
+          "url": "https://www.jpl.nasa.gov/missions/lunar-trailblazer/",
+          "notes": "Launch 26 February 2025; mission ended 31 July 2025; HVM3 described as a JPL imaging spectrometer for forms of water; instrument list."
+        },
+        {
+          "number": 16,
+          "title": "Lunar Trailblazer fact sheet",
+          "publisher_or_author": "NASA Science",
+          "url": "https://science.nasa.gov/mission/lunar-trailblazer-fact-sheet",
+          "notes": "HVM3 described as a shortwave infrared imaging spectrometer; launch from Kennedy Space Center on Falcon 9. No wavelength range given."
+        },
+        {
+          "number": 17,
+          "title": "Lunar Trailblazer",
+          "publisher_or_author": "European Space Agency EO Portal",
+          "url": "https://eoportal.org/satellite-missions/lunar-trailblazer",
+          "notes": "Summary table lists HVM3 at 0.6–3.6 µm. Status field outdated (planned). Search excerpt only; not verified against an instrument paper."
+        },
+        {
+          "number": 18,
+          "title": "Objectives, Instruments and Operation Plan of LUPEX (LPSC 56, abstract no. 1918, 2025)",
+          "publisher_or_author": "Ohtake, M. et al., Lunar and Planetary Science Conference (third-party mirror)",
+          "url": "https://epizodyspace.ru/bibl/inostr-yazyki/Lunar_and_Planetary_Science/2025/Ohtake_et_al_Objectives_Instruments_and_Operation_Plan_of_LUPEX_56th_LPSC_no_1918_(2025).pdf",
+          "notes": "ALIS description, 750–1650 nm, preliminary design review (January 2023), engineering-model status. Third-party mirror of an LPSC abstract; the mirror text was not extractable on direct fetch."
+        },
+        {
+          "number": 19,
+          "title": "Chang’e-4 Visible and Near-IR Imaging Spectrometer (VNIS) scientific information model and in-flight verification",
+          "publisher_or_author": "Sensors (MDPI), 19(12), 2806",
+          "url": "https://www.mdpi.com/1424-8220/19/12/2806",
+          "notes": "Cross-reference only: VNIS SWIR channel is a single-point spectrometer; performance table from search excerpt."
+        },
+        {
+          "number": 20,
+          "title": "LYNRED eSWIR sensor press release (2026)",
+          "publisher_or_author": "LYNRED (vendor press release via Laser Focus World)",
+          "url": "https://www.laserfocusworld.com/directory/detectors-and-imaging/image-sensors/press-release/55343011/lynred-usa-from-space-to-earth-lynred-launches-an-eswir-sensor-to-better-measure-critical-resources-and-climate-signals",
+          "notes": "Vendor statement that InGaAs SWIR sensors are typically limited to about 1.7 µm; MCT extends to about 2.5 µm. Commercial source, used for context only."
+        },
+        {
+          "number": 21,
+          "title": "L-CIRiS datasheet (D3611)",
+          "publisher_or_author": "Ball Aerospace",
+          "url": "https://www.ball.com/getattachment/b3ebc93e-85e0-45bd-abfd-0f5e3a285f74/D3611-L-CIRiS-0922.pdf",
+          "notes": "Cross-reference only: multispectral infrared imaging radiometer on a microbolometer focal-plane array (thermal, not SWIR)."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "LCROSS near-infrared cameras example": "payload.article.physical_specifications.examples[0].images",
+      "SELENE MI example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no verified direct image; empty)"
+    },
+    "url_policy": "All image_url, source_page_url and reference URLs have query strings and fragments removed. Direct image URLs were checked with HTTP requests; the NASA image URL had its resize query string removed and still resolves."
+  },
+  "data_quality_notes": [
+    "Band-limit conflict: no flown camera example in this article is verified in full text to reach 2.5 µm. LCROSS NIR2 is 0.9–1.7 µm (PDS catalogue); SELENE MI near-infrared bands are 1.0–1.55 µm (JAXA page); SLIM MBC bands are 750–1650 nm with sensitivity to about 1700 nm (conference abstracts); HVM3 is 0.6–3.6 µm in a secondary summary only.",
+    "SELENE MI detector material (uncooled InGaAs NIR, frame-transfer Si-CCD VIS) is taken from search-excerpt summaries of Ohtake et al. (2008). The Springer full text returned an identity-provider redirect and was not accessed. Priority check before use.",
+    "SELENE MI launch date (14 September 2007) and first-image date come from search-excerpt summaries, not from a fetched primary page. The JAXA MI band list is a garbled extraction with 1.0 µm appearing in both VIS and NIR lists.",
+    "SLIM MBC specifications (InGaAs sensor, 10 filters, 700–1700 nm sensitivity, 4° field of view, 1.3 mm/pixel at 10 m) come from JpGU conference abstracts. The JpGU pages returned HTTP 403 to direct retrieval; excerpts were read from search results. The primary MBC paper was not located.",
+    "HVM3 (Lunar Trailblazer) wavelength range 0.6–3.6 µm and the detector are unverified; JPL and NASA pages give no numeric range. The mission ended per JPL, but no instrument paper was accessed.",
+    "ALIS (LUPEX) wavelength range 750–1650 nm, the preliminary design review date (January 2023) and the engineering-model status come from a third-party mirror of a 2025 LPSC abstract. The LUPEX launch date and the detector material are not verified.",
+    "LCROSS plume result (maximum 155 ± 12 kg of water vapour and ice in the instrument field of view) is from the Colaprete et al. (2010) Science paper via a search excerpt; the DOI page returned HTTP 403 to direct retrieval. The figure refers to the full instrument suite.",
+    "Mass, power and dimensions: only the LCROSS NIR camera peak power (1.6 W per camera) is published in the sources reviewed. Every other mass, power, dimension and detector-cooling value in this article is recorded as not publicly specified.",
+    "Image coverage: four direct images are verified (JAXA SELENE LISM figures and MI flight-model photograph; NASA LCROSS artist’s rendering). No verified direct image was found for the SLIM MBC, HVM3 or ALIS, so no image is placed for those examples.",
+    "Cross-references: payloads 035, 036, 040 and 042 are referred to by number only. The Chang’e VNIS SWIR single-point spectrometer [19] and the L-CIRiS thermal camera [21] are noted as adjacent instruments without full specification.",
+    "HTTP checks (25 unique URLs in the JSON, checked 2026-11-12): the four direct image URLs returned HTTP 200. Of the 21 references, 13 returned HTTP 200, 7 returned HTTP 403 to automated requests (Science DOI, two JpGU abstract pages, MDPI, Ball L-CIRiS, JPL Lunar Trailblazer page; the JPL and JpGU content was read through a separate fetch or search excerpt), and 1 (the epizodyspace.ru LUPEX/ALIS mirror, reference 18) was unreachable from the check environment. Reference 18 is therefore unverified.",
+    "Lunar location recommendations are deferred by the user and are not included."
+  ]
+}

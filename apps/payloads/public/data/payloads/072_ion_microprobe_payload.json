@@ -1,0 +1,237 @@
+{
+  "catalogue_id": 72,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 72,
+    "name": "Ion microprobe",
+    "article": {
+      "overview": "An ion microprobe is a mass spectrometer that analyses the chemistry and isotopic composition of a solid sample by bombarding a very small area with a focused beam of ions. The beam sputters atoms and molecular fragments from the surface, and some of these leave as secondary ions that are extracted, separated by mass and counted [7]. Because the beam can be focused to a spot of a few micrometres or less, an ion microprobe can measure individual grains, mineral zones and inclusions in a polished section rather than an average of the whole sample. In lunar science, secondary ion mass spectrometry has been used in Earth-based laboratories to measure water and hydrogen isotopes in lunar volcanic glass and apatite from returned samples [3][4]. The sources reviewed for this article did not identify an ion microprobe that has operated on the lunar surface or in lunar orbit, so this article treats the payload as a laboratory-class analytical technique whose lunar surface capability is not demonstrated. A related flight instrument, the COSIMA secondary ion mass spectrometer on ESA's Rosetta mission, analysed cometary dust in space, but it was not a lunar instrument [2][10].",
+      "description": "An ion microprobe is built around four functional parts: a primary ion source that produces a beam of ions such as caesium or oxygen; a primary column that accelerates, focuses and scans this beam across the sample; an extraction and transfer system that collects the secondary ions released from the sample surface; and a mass analyser with a detector that determines the mass and number of each ion species [1][7]. Geoscience ion microprobes are commonly large, double-focusing magnetic-sector instruments that achieve high mass resolution, which helps separate ions of similar mass from one another [7][8]. The NanoSIMS 50L at NASA's Johnson Space Center uses caesium and oxygen primary beams and reports lateral resolution down to 50 nm, making it a smaller-spot, high-resolution example [1]. The naming is not strict: some groups call their instruments secondary ion mass spectrometers (SIMS) and others ion microprobes. This article uses 'ion microprobe' for instruments designed for micrometre-scale analysis of solid samples.",
+      "scientific_purpose_and_applications": "The purpose of an ion microprobe is to measure elemental abundances and isotope ratios at a spatial scale that bulk methods cannot reach. For lunar materials, the relevant applications include: measuring water and hydrogen isotopes in apatite and volcanic glass, which bear on the Moon's volatile budget and the possible sources of its water [3][4]; tracing trace-element and volatile variations inside individual crystals and glass beads, which can record crystallisation and degassing history [3][5]; and isotopic dating of accessory minerals such as zircon, a technique established for terrestrial samples with large-geometry instruments [8]. Lunar zircon work with such instruments was not verified in this review. A surface-deployed ion microprobe would be expected to address the in-situ composition of rock and regolith grains, but no mission concept with verified requirements was identified.",
+      "operating_principle": "When the primary ion beam strikes the sample, its energy is transferred to the outermost atomic layers. Atoms are ejected (sputtered), and a fraction leave as charged secondary ions [7]. An extraction lens accelerates these ions into the mass analyser. In a magnetic-sector analyser, a magnetic field bends ions by different amounts according to their mass-to-charge ratio, and slits select a narrow mass range for detection [7][8]. The selected ion species are counted, and isotope ratios such as deuterium to hydrogen are calculated from repeated counts while the beam is held on or rastered across the spot [3][4][7]. The yield of secondary ions depends strongly on the chemistry of the surface (the matrix), so unknown samples are normally calibrated against standards of similar composition; without this, measured concentrations can be biased. This matrix dependence is a general SIMS limitation [7]. Operation requires high vacuum so that the beam and the secondary ions are not scattered by residual gas. Beam current, spot size and mass resolution are chosen as a trade-off between sensitivity, spatial resolution and precision.",
+      "scientific_importance": "An ion microprobe matters for lunar science because it can extract information from small, complex samples that cannot be homogenised. Returned lunar samples often contain grains and glass beads only tens to hundreds of micrometres across. One laboratory study of lunar volcanic glass beads gave a best estimate of 745 parts per million (ppm) of pre-eruptive water, with a minimum of 260 ppm, derived by modelling the degassing of very-low-titanium glass [3]. Hydrogen isotope measurements of lunar apatite have been interpreted as evidence for a cometary contribution to lunar water [4]. Boyce et al. reported volatile abundances in lunar apatite that the authors suggested could be closer to terrestrial values than previously assumed [5]. These conclusions are not settled: apatite-based volatile estimates have been disputed, and the interpretation depends on calibration, sample context and modelling choices. The instrument's importance therefore lies in producing measurements that constrain the question rather than in a single settled result.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an ion microprobe. Laboratory instruments differ in primary ion source, column design, analyser geometry and sample handling, and the one flight example in this article, COSIMA, is a different design. The values below describe named instruments only. No mass, dimensions or power value was verified for a lunar-surface ion microprobe, because none was identified.",
+        "dimensions_and_proportions": "Dimensions were not publicly specified in the sources reviewed for the NanoSIMS 50L or the large-geometry laboratory instruments, and no instrument envelope is given here. No dimensions are assigned to a lunar design.",
+        "mass_and_weight": "Mass was not publicly specified in the sources reviewed for any example below. Mass and launch-mass figures would be required for any lander or orbiter compatibility assessment.",
+        "power_requirements": "Power was not publicly specified in the sources reviewed. Laboratory instruments draw power from facility supplies, and no flight power budget for COSIMA or for any lunar concept was verified.",
+        "examples": [
+          {
+            "name": "Cameca NanoSIMS 50L (NASA Johnson Space Center laboratory)",
+            "type": "Laboratory instrument (not flown)",
+            "primary_ion_sources": [
+              "caesium (Cs)",
+              "oxygen (O)"
+            ],
+            "lateral_resolution": "down to 50 nm (NASA ARES page)",
+            "mass_resolution": "described as high; no numeric value given",
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "description": "NASA's ARES laboratory page describes the NanoSIMS 50L as a Cameca instrument with caesium and oxygen primary ion sources, positive and negative secondary-ion analysis, lateral resolution down to 50 nm, and high mass resolution (no numeric mass-resolution value is given on the page) [1]. The page lists in-situ isotopic and trace-element analysis of sub-micron grains and inclusions in extraterrestrial materials, including interplanetary dust and Stardust comet samples, as intended uses [1]. The page does not mention lunar samples. Mass, dimensions and power are not publicly specified in [1].",
+            "source_urls": [
+              "https://ares.jsc.nasa.gov/research/laboratories/NanoSims-50L.html"
+            ],
+            "images": [
+              {
+                "id": "nasa_jsc_nanosims_50l_laboratory_photo",
+                "description": "Researcher in a laboratory coat working at a stainless-steel vacuum instrument, shown on NASA JSC's NanoSIMS 50L laboratory page.",
+                "image_type": "Laboratory instrument photograph",
+                "image_url": "https://ares.jsc.nasa.gov/_pictures/_laboratories/nanosims.jpg",
+                "source_page_url": "https://ares.jsc.nasa.gov/research/laboratories/NanoSims-50L.html",
+                "publisher": "NASA Johnson Space Center (ARES)",
+                "credit": "NASA Johnson Space Center (credit line not verified)",
+                "caption": "Researcher with a stainless-steel vacuum instrument, presented on NASA JSC's NanoSIMS 50L laboratory page.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL taken from the NASA JSC page (relative path /_pictures/_laboratories/nanosims.jpg resolved against the ares.jsc.nasa.gov host). The asset loads as a JPEG. The viewed copy shows no legible model label, so identification as the NanoSIMS 50L rests on the NASA page. Rights and reuse terms were not verified beyond the NASA attribution. Full-resolution download was not checked."
+              }
+            ]
+          },
+          {
+            "name": "Sensitive High-Resolution Ion MicroProbe (SHRIMP)",
+            "type": "Large-geometry laboratory ion microprobe (not flown)",
+            "reported_values_unverified": {
+              "spot_diameter_um": [
+                10,
+                30
+              ],
+              "depth_resolution_um": [
+                1,
+                5
+              ],
+              "mass_resolution": 5000,
+              "lead_sensitivity_cps_per_ppm_per_nA": ">20 (zircon)"
+            },
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "description": "The Sensitive High-Resolution Ion MicroProbe (SHRIMP) is an Australian large-geometry laboratory instrument; it has not flown. A secondary encyclopaedia entry reports a spot diameter of 10 to 30 micrometres, depth resolution of 1 to 5 micrometres, mass resolution of about 5000, and lead sensitivity above 20 counts per second per ppm per nA for zircon [8]. These figures have not been checked against a manufacturer datasheet or a primary paper. The instrument is widely used for high-precision isotope work on terrestrial zircon [8].",
+            "source_urls": [
+              "https://en.wikipedia.org/wiki/Sensitive_high-resolution_ion_microprobe"
+            ],
+            "images": []
+          },
+          {
+            "name": "Cameca IMS 1280 class large-geometry ion microprobe",
+            "type": "Large-geometry laboratory ion microprobe (not flown)",
+            "reported_values_unverified": {
+              "routine_spot_um": "about 20 (Kohler)",
+              "focused_Cs_spot_um": "about 10",
+              "mass_resolution": "about 6000 at high transmission",
+              "stage_reproducibility_um": 2
+            },
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "description": "The Cameca IMS 1280 class is a large-geometry laboratory ion microprobe; it has not flown. The Heidelberg facility description could not be retrieved in this review, because the page returned a service error and then a maintenance message [9]. Search-result summaries of that facility page report typical analysis spots of about 20 micrometres in Kohler illumination for routine geochronology and about 10 micrometres with a focused caesium beam for stable isotopes, a mass resolution of about 6,000 at high transmission, and 2 micrometre stage reproducibility [9]. These values are unverified and must be checked against the facility page or a manufacturer datasheet before use.",
+            "source_urls": [
+              "https://www.geow.uni-heidelberg.de/HIP/cameca_en.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Cometary Secondary Ion Mass Analyser (COSIMA), Rosetta",
+            "type": "Flight instrument (flown on ESA Rosetta; cometary, not lunar)",
+            "primary_ion_sources": [
+              "indium-115 (monoisotopic)"
+            ],
+            "primary_energy_keV": 10,
+            "beam_diameter_um": "about 10 per ESA; about 50 FWHM per PDS record (conflict)",
+            "mass_resolution": "above 2000 for ions above 28 Da",
+            "mass_kg": null,
+            "dimensions": "not verified",
+            "power": "not verified",
+            "description": "The Cometary Secondary Ion Mass Analyser (COSIMA) flew on ESA's Rosetta spacecraft and analysed cometary dust, not lunar material. ESA's instrument summary describes a time-of-flight secondary ion mass spectrometer that analyses individual dust particles collected on a target [2]. The primary beam is monoisotopic indium-115 ions at 10 keV in three-nanosecond pulses, with a stated beam diameter of about 10 micrometres, and mass resolution is above 2000 for ions above 28 Da [2]. A separate PDS archive record gives a beam width of about 50 micrometres, so the beam size conflicts between sources [10]. Mass range, mass, power and dimensions were not verified from the ESA page. COSIMA shows that a SIMS-type analyser can operate in space, but it was designed for cometary dust rather than lunar samples [2][10].",
+            "source_urls": [
+              "https://sci.esa.int/web/rosetta/-/35061-instruments",
+              "https://pds-smallbodies.astro.umd.edu/holdings/ro-c-cosima-3-v2.0/document/cosimapaper.pdf"
+            ],
+            "images": []
+          }
+        ]
+      },
+      "environmental_and_operational_requirements": "A lunar-surface ion microprobe would face the Moon's vacuum, large surface temperature swings, radiation and dust, as other surface instruments do. The sources reviewed did not give environmental test levels for any ion microprobe. General SIMS practice requires high vacuum in the analyser and sample chamber, stable high-voltage supplies and precise sample positioning; these requirements are not sourced to a flight design here and would need to be checked against a specific instrument. Lunar-surface dust is a particular engineering concern because it can contaminate optics, insulators and vacuum seals; this is a design consideration rather than a verified finding for any instrument. Thermal control of the electronics and the mechanism for presenting a sample to the beam would be central design issues.",
+      "limitations": "Ion microprobes are destructive: the primary beam removes material from the analysed spot, so each measurement consumes a small amount of sample and analysis is limited to the prepared surface. Calibration against matrix-matched standards is needed for accurate concentrations. Spot size, mass resolution and sensitivity trade against one another, and quantitative isotope ratios require correction for instrumental mass fractionation. In a surface context, the instrument would need a sample-presentation mechanism that the sources reviewed do not describe, and its power, mass and thermal requirements are unknown from those sources.",
+      "transportation_and_deployment": {
+        "overview": "No lunar-surface ion microprobe mission, lander interface or deployment study was identified in the sources reviewed. The discussion below therefore covers the verified sample-return route used for lunar SIMS work and the general engineering interfaces that a surface instrument would need to address. It does not assert compatibility with any named lander, rover or spacecraft.",
+        "transportation_process": [
+          "Earth-based route, verified for lunar samples: returned samples are prepared and analysed in laboratory ion microprobes or SIMS instruments [3][4].",
+          "Surface route, unverified: integrate the instrument with a lander or rover on Earth, launch it, transfer it towards the Moon, land it and deploy it.",
+          "Surface interfaces to define: power and thermal control for vacuum electronics, high-voltage supplies, vacuum pumping or sealed operation, sample presentation to the beam, and data handling.",
+          "Mechanical loads during launch and landing would apply to the vacuum chamber, the magnetic analyser and the sample mechanism; no load limits were verified."
+        ],
+        "deployment_methods": "No deployment method was verified. A surface instrument would need either a sample-acquisition system that brings material to a fixed analyser or an instrument that can be positioned against the surface. The sources reviewed do not describe either approach for an ion microprobe. Astronaut or robotic handling is possible in principle but was not verified.",
+        "historical_examples": "Lunar samples returned by the Apollo missions have been analysed in laboratories using SIMS-type methods in later decades [3][4]. The Apollo Suprathermal Ion Detector Experiment (SIDE), flown on Apollo 12, 14 and 15, was a surface ion mass spectrometer rather than an ion microprobe; it shows that ion-mass instruments have operated on the lunar surface, but not the SIMS technique [6]. COSIMA on Rosetta demonstrates a flight SIMS-type analyser in space [2][10].",
+        "compatibility_assessment": "Compatibility with any lander, rover or orbiter has not been assessed in this article. An assessment would need the instrument's mass, dimensions, power, thermal load, vacuum and sample-handling requirements, mounting and landing-load limits and data interfaces, compared against verified spacecraft specifications. None of these values were available for an ion microprobe.",
+        "images": []
+      },
+      "historical_significance": "Secondary ion mass spectrometry has been used in Earth-based laboratories for lunar sample studies, notably the 2008 measurements of water in lunar volcanic glass [3] and later hydrogen isotope and apatite studies [4][5]. These results stimulated debate about the Moon's interior volatile content [3][5]. In flight, COSIMA established a SIMS-type analyser in space at a comet [2][10]. The Apollo SIDE measurements of ions near the lunar surface, including a signal from the Apollo 14 unit that was interpreted as water vapour and whose origin is disputed, show the value of in-situ ion instruments [6]. No lunar-surface ion microprobe has been identified as flown in the sources reviewed.",
+      "limitations_and_uncertainties": "Almost all quantitative results cited here come from laboratory instruments on returned samples. They establish what SIMS can measure, not what a surface instrument would measure. The NanoSIMS 50L source gives resolution claims without mass or power data [1]. SHRIMP and IMS 1280 figures come from secondary summaries and are unverified [8][9]. COSIMA's beam size is contradictory between the ESA and PDS summaries [2][10]. Water-content and hydrogen-isotope interpretations depend on the sample, calibration and model used, and apatite volatile conclusions have been challenged [5]. Several references (3 to 6, 8 to 10) were identified and summarised from search results; their full texts were not opened in this review.",
+      "images": [
+        {
+          "id": "nasa_jsc_nanosims_50l_laboratory_photo",
+          "description": "Researcher in a laboratory coat working at a stainless-steel vacuum instrument, shown on NASA JSC's NanoSIMS 50L laboratory page.",
+          "image_type": "Laboratory instrument photograph",
+          "image_url": "https://ares.jsc.nasa.gov/_pictures/_laboratories/nanosims.jpg",
+          "source_page_url": "https://ares.jsc.nasa.gov/research/laboratories/NanoSims-50L.html",
+          "publisher": "NASA Johnson Space Center (ARES)",
+          "credit": "NASA Johnson Space Center (credit line not verified)",
+          "caption": "Researcher with a stainless-steel vacuum instrument, presented on NASA JSC's NanoSIMS 50L laboratory page.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA JSC page (relative path /_pictures/_laboratories/nanosims.jpg resolved against the ares.jsc.nasa.gov host). The asset loads as a JPEG. The viewed copy shows no legible model label, so identification as the NanoSIMS 50L rests on the NASA page. Rights and reuse terms were not verified beyond the NASA attribution. Full-resolution download was not checked."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Nanoscale secondary ion mass spectrometer (NanoSIMS 50L) laboratory page",
+          "publisher": "NASA Johnson Space Center, Astromaterials Research and Exploration Science (ARES)",
+          "url": "https://ares.jsc.nasa.gov/research/laboratories/NanoSims-50L.html"
+        },
+        {
+          "title": "Rosetta instruments (COSIMA entry)",
+          "publisher": "European Space Agency (ESA)",
+          "url": "https://sci.esa.int/web/rosetta/-/35061-instruments"
+        },
+        {
+          "title": "Volatile content of lunar volcanic glasses and the presence of water in the Moon's interior, Nature 454, 192-195 (2008)",
+          "publisher": "Saal, A. E. et al., Nature",
+          "url": "https://doi.org/10.1038/nature07047"
+        },
+        {
+          "title": "Hydrogen isotope ratios in lunar rocks indicate delivery of cometary water to the Moon, Nature Geoscience 4, 79-82 (2011)",
+          "publisher": "Greenwood, J. P. et al., Nature Geoscience",
+          "url": "https://doi.org/10.1038/NGEO1050"
+        },
+        {
+          "title": "Lunar apatite with terrestrial volatile abundances, Nature 466, 466-469 (2010)",
+          "publisher": "Boyce, J. W. et al., Nature",
+          "url": "https://doi.org/10.1038/nature09274"
+        },
+        {
+          "title": "Suprathermal Ion Detector Experiment, Apollo final report",
+          "publisher": "NASA Technical Reports Server (document 19760004892)",
+          "url": "https://ntrs.nasa.gov/api/citations/19760004892/downloads/19760004892.pdf"
+        },
+        {
+          "title": "Secondary-ion mass spectrometry (overview article)",
+          "publisher": "Wikipedia (secondary source)",
+          "url": "https://en.wikipedia.org/wiki/Secondary-ion_mass_spectrometry"
+        },
+        {
+          "title": "Sensitive high-resolution ion microprobe (overview article)",
+          "publisher": "Wikipedia (secondary source)",
+          "url": "https://en.wikipedia.org/wiki/Sensitive_high-resolution_ion_microprobe"
+        },
+        {
+          "title": "Cameca ion microprobe (IMS 1280) facility page",
+          "publisher": "University of Heidelberg, Heidelberg Ion Probe facility",
+          "url": "https://www.geow.uni-heidelberg.de/HIP/cameca_en.html"
+        },
+        {
+          "title": "COSIMA instrument description paper (Rosetta)",
+          "publisher": "NASA Planetary Data System, Small Bodies Node",
+          "url": "https://pds-smallbodies.astro.umd.edu/holdings/ro-c-cosima-3-v2.0/document/cosimapaper.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "physical_specifications.examples[0] (NanoSIMS 50L)": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Catalogue check: payload 72 is 'Ion microprobe' in category 3, 'Mineralogical and chemical analysis' (catalogue file lunar_payloads_catalogue_320.md, not edited). No pre-existing outputs for this name or ID were present. The progress ledger was not edited.",
+    "No lunar-surface or lunar-orbit ion microprobe was identified in the research. This is an absence of evidence from the searches run, not an exhaustive proof.",
+    "Only one image is included. Its direct asset URL resolves to a JPEG on the NASA JSC host and the source page presents it as the NanoSIMS 50L. The viewed copy shows no legible model label, and credit line and rights were not verified. No overview or transportation images were verified, so none are included.",
+    "The NASA JSC NanoSIMS 50L page was fetched directly. Its lateral resolution (down to 50 nm) is the only quantitative figure for that instrument; mass resolution, mass, dimensions and power are not given.",
+    "SHRIMP figures come from a Wikipedia summary, not from a manufacturer datasheet or primary paper, and are marked unverified in the examples.",
+    "Cameca IMS 1280 figures come from search-result summaries of the Heidelberg facility page. The page could not be retrieved (service error, then maintenance message), so all of those values are unverified.",
+    "COSIMA: ESA page read directly for beam species, energy, beam diameter and mass resolution. The PDS record gives a beam width of about 50 micrometres, conflicting with ESA's 10 micrometres. The COSIMA paper PDFs were not readable through the fetch tool, so mass range, mass, power and dimensions are not verified.",
+    "References 3, 4 and 5 (Saal 2008, Greenwood 2011, Boyce 2010) were identified from search metadata and search summaries. Their DOIs were taken from search results and the full texts were not opened. The analytical method for Boyce et al. (2010) was not confirmed; the article does not attribute a SIMS method to it.",
+    "References 6 (Apollo SIDE report) and 10 (PDS COSIMA paper) were identified from search results and not opened in full.",
+    "Wikipedia references (7 and 8) are secondary sources used only for general principles and the SHRIMP summary.",
+    "Lunar transportation: no lander, rover or orbiter compatibility is asserted. The engineering considerations for a surface instrument are general and not sourced to a specific design.",
+    "Research status flags are set conservatively: technical specifications are not fully audited, full-resolution image downloads were not checked and lander compatibility is not verified."
+  ]
+}

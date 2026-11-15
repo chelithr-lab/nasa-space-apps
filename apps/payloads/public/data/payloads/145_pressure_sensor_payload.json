@@ -1,0 +1,159 @@
+{
+  "catalogue_id": 145,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 7,
+    "name": "Lunar exosphere and atmospheric instruments"
+  },
+  "payload": {
+    "number": 145,
+    "name": "Pressure sensor",
+    "article": {
+      "overview": "A pressure sensor for the lunar exosphere is an instrument that measures how much gas is present near the lunar surface, reported either as gas density (particles per cubic centimetre) or as pressure (torr). The Moon has only an extremely thin exosphere, so an instrument for this purpose must be sensitive to very low gas densities. The most direct historical precedent is the Apollo Cold Cathode Ion Gage Experiment, flown on Apollo 12, 14 and 15, which measured gas density rather than pressure directly and could not identify the gases present. Recent exosphere instruments, such as the Peregrine Ion Trap Mass Spectrometer, are mass spectrometers that identify composition, so this article covers both a gauge and a mass spectrometer as examples of instruments built for this measurement purpose.",
+      "description": "A lunar exosphere pressure sensor measures the density of the thin gas layer around the Moon. The Apollo gauge was an ion gauge: its high-voltage anode (4500 V) and permanent magnet (about 0.09 tesla) were used to ionise residual gas molecules, and the resulting electrometer current, recorded over the range 1.0 x 10^-13 to 1.0 x 10^-16 amperes, was used to infer gas density [1][2]. The general ion-gauge principle is described here without a separate primary reference. The gage head, roughly 18 x 10 x 12 cm, was placed on the lunar surface near the Apollo Lunar Surface Experiments Package (ALSEP) central station and connected by a cable to the Suprathermal Ion Detector Experiment (SIDE) package, which housed its electronics [2][3]. The PITMS, by contrast, uses electron bombardment from a heated filament to create ions, which are then analysed to identify the molecules present [5].",
+      "scientific_purpose_and_applications": "The primary purpose of the Apollo gauge, as stated in its PDS record, was to measure neutral gas density at the lunar surface, helping to constrain the source and loss mechanisms of the lunar atmosphere [1]. The NASA SP-350 history describes it as measuring changes in the extremely low gas concentrations of the lunar atmosphere [3]. The PITMS was designed to chart the composition of the lunar exosphere by sampling molecules close to the surface [5]. Applications inferred from these purposes include tracking outgassing from a lander and nearby surface sources, and observing how the exosphere changes between lunar night and day. These applications are inferences from the stated purposes; the sources read did not separately demonstrate them for a new instrument.",
+      "operating_principle": "A cold-cathode ion gauge ionises a small sample of the gas it is exposed to and measures the resulting electrometer current, which is interpreted as gas density. Because the response depends on gas species, the Apollo gauge reported density in particles per cubic centimetre (equivalent nitrogen) or as a pressure in torr, but could not determine composition [1]. The PITMS works differently: electrons from a heated filament create ions from molecules near the surface, and the ions are analysed in an ion trap to produce a mass spectrum that identifies species [5]. Both approaches depend on sensitivity to very low gas densities, which is a key requirement for lunar exosphere measurements.",
+      "scientific_importance": "The lunar exosphere is an extremely thin gas layer whose density and composition depend on the balance between gas sources and loss processes, and direct surface measurements help scientists determine which processes dominate. The Apollo gauge provided surface gas-density measurements at three Apollo landing sites [1][2][3]. Its documentation states that its purpose was to help constrain the source and loss mechanisms of the lunar atmosphere [1]. A nighttime density reported in a secondary source (2 x 10^11 particles per m^3, which equals 2 x 10^5 particles per cm^3 after unit conversion) is a useful reference, but this value has not been checked against the primary Apollo science reports in this article [4]. A gauge cannot identify which gases are present, so composition-sensitive instruments such as PITMS address a different and complementary question [5][6].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a pressure sensor or exosphere gauge. The two examples below use different measurement principles: the Apollo instrument is a gas-density gauge, whereas PITMS is a mass spectrometer. Their figures describe specific instruments and should not be compared as if they were the same class of device.",
+        "examples": [
+          {
+            "name": "Apollo Cold Cathode Ion Gage Experiment (CCIG, also called CCGE)",
+            "type": "Historical lunar surface gas-density gauge (flown)",
+            "flight_status": "Flown on Apollo 12, 14 and 15 as part of ALSEP, as described in the PDS records and NASA SP-350.",
+            "mass_kg": 5.7,
+            "mass_note": "Recorded as the experiment package mass in the Apollo 12 and Apollo 14 PDS records; whether all associated items are included is not stated.",
+            "gage_head_dimensions_cm": [18, 10, 12],
+            "dimensions_note": "Roughly 18 x 10 x 12 cm for the gage head as recorded in the PDS records.",
+            "power_w": 6.5,
+            "power_note": "Recorded as 6.5 W for the gage head.",
+            "measurement_range_particles_per_cm3": "2.0E+5 to 1.0E+11 (equivalent nitrogen), covered by three auto-switched overlapping sensitivity ranges",
+            "output_units": "Particle density (particles per cm^3) or pressure (torr); cannot determine gas composition",
+            "electrometer_current_range_a": "1.0E-13 to 1.0E-16",
+            "anode_high_voltage_v": 4500,
+            "permanent_magnet_tesla": 0.09,
+            "pressure_reference_torr": "4.0E-7 (Apollo 14: reading at about 01:20 UT on 6 February 1971 when the level dropped below saturation; Apollo 12: saturation reference). Apollo 12 record notes readings dropped below 1.0E-8 torr before failure.",
+            "operating_modes": "Normal: 2.5-minute cycle of five measurements 2.4 s apart, three measurements 40 s apart, and 16 s of calibration and auto-zeroing. Special (ground-commanded): one measurement every 2.4 s.",
+            "deployment_and_operating_history": "Apollo 12: placed about 15 m SW of the ALSEP central station and about 185 m NW of the Lunar Module; turned on 19:18 UT on 19 November 1969; a transistor in the high-voltage control circuit failed about 14 hours after turn-on. Apollo 14: placed about 16 m SSE of the ALSEP central station and 180 m W of the Lunar Module; turned on about 23:59 UT on 5 February 1971; high voltage turned off at 01:40 UT on 6 February 1971 because arcing was suspected; operated mainly at night with brief daytime runs; night-time data dropouts through 1972-1973; standby from 15 April 1973 after arcing at elevated daytime temperatures; commanded off 5 January 1975.",
+            "nighttime_density_reported_secondary": "2 x 10^11 particles per m^3 (about 2 x 10^5 per cm^3 after unit conversion) for Apollo 14 and 15, per a secondary source (Wikipedia). Not verified against primary Apollo reports.",
+            "qualification": "Flight hardware. Mass, dimensions and power are taken from PDS records and are not a specification for other pressure sensors.",
+            "limitations": "Errors from composition uncertainty were expected to be within a factor of two. Gauge not evacuated; adsorbed gases caused elevated readings at turn-on, which escaped quickly at first and then baked out slowly during the lunar day.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a14/instruments/a14a_ccig.txt",
+              "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a12/instruments/a12a_ccig.txt",
+              "https://www.nasa.gov/wp-content/uploads/static/history/SP-350/ch-12-7.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Peregrine Ion Trap Mass Spectrometer (PITMS)",
+            "type": "Modern CLPS-manifested mass spectrometer (flown on a lander that did not reach the Moon)",
+            "flight_status": "Flight hardware on Astrobotic's Peregrine lander under NASA CLPS. ESA lists a launch on 8 January 2024 on a ULA Vulcan rocket. The lander suffered a propulsion anomaly after launch and did not reach the Moon. According to a 2025 paper as summarised in search results, PITMS collected 80 high-quality spectra in cislunar space.",
+            "mass_kg": 1.6,
+            "dimensions_cm": null,
+            "dimensions_note": "Not stated numerically; ESA describes the device as the size of half a shoebox.",
+            "power_w_range": [4, 12],
+            "power_note": "ESA lists energy consumption of 4 to 12 W.",
+            "ionisation": "Electron impact from a heated filament",
+            "technology": "Ion trap mass spectrometer (ITMS)",
+            "mass_range_amu": "not stated",
+            "sensitivity_resolution": "not stated",
+            "operating_temperature": "not stated",
+            "planned_operational_period_hours": 240,
+            "science_goal": "Chart the composition of the lunar exosphere by sniffing out molecules close to the surface.",
+            "partners": "ESA supplied the Exospheric Mass Spectrometer at the core of PITMS; NASA Goddard Space Flight Center supplied structural, mechanical and thermal elements and a protective cover; The Open University developed the spectrometer; STFC RAL Space was involved in development. Principal Investigator: Barbara Cohen (NASA Goddard).",
+            "flight_outcome_summary": "Per the 2025 Planetary Science Journal paper as summarised in search results, the spectra mostly captured the lander's own outgassing products, including water, MON-25 oxidiser from a propulsion leak, and traces of combustion products. The paper itself was not read in full.",
+            "qualification": "Mass and power are as stated by ESA for PITMS; the mass range, sensitivity and operating temperature were not stated in the source read.",
+            "limitations": "Spectra in the one flight summarised here were dominated by lander outgassing, which limits interpretation of the native exosphere.",
+            "source_urls": [
+              "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/PITMS_a_mini_mass_spectrometer_for_the_Moon",
+              "https://doi.org/10.3847/psj/ad9927"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo gage head is recorded as roughly 18 x 10 x 12 cm. The PITMS dimensions are not stated numerically in the source read; ESA describes the device as the size of half a shoebox. The two are therefore not directly comparable in proportion, and no general size for a pressure sensor is implied.",
+        "mass_and_weight": "The Apollo experiment package is recorded as 5.7 kg in the PDS records, and PITMS is described as a 1.6 kg device. The Apollo figure is recorded for the experiment package; the source does not clarify whether all associated items are included, so it should not be treated as a complete mission-level mass.",
+        "power_requirements": "The Apollo gage head is recorded as 6.5 W. ESA gives PITMS an energy consumption of 4 to 12 W. These are operating figures for each named instrument and are not universal."
+      },
+      "environmental_and_operational_requirements": "The Apollo gauge illustrates the main operational constraints for a lunar pressure sensor. Its high-voltage supply created an arcing risk, and the Apollo 14 record states that the instrument was operated mainly during the lunar night, with brief daytime runs to limit arcing, while elevated daytime temperatures later led to arcing and a standby period [1]. The gauge was not evacuated before deployment, so adsorbed gas caused elevated readings at turn-on [1][2]. The units were placed roughly 180 to 185 m from the Lunar Module [1][2], a separation that the sources read do not quantify for contamination purposes. Spacecraft and lander outgassing remains a general concern for exosphere measurements, as the PITMS flight illustrated [5][6].",
+      "limitations": "A pressure-type gauge responds to gas density rather than to composition, and its response depends on the gas species present; the Apollo documentation states that errors from composition uncertainty were expected to be within a factor of two [1][2]. The Apollo gauge also had high-voltage arcing and intermittent night-time data dropouts [1]. A mass spectrometer such as PITMS can identify species, but in its one flight summarised here the spectra were dominated by the lander's own outgassing products, which limits interpretation of the native exosphere [6]. No mass range, sensitivity or resolution specification for PITMS was found in the ESA page read, so these values are not stated here [5].",
+      "transportation_and_deployment": {
+        "overview": "The Apollo gauge was part of the ALSEP experiments package and was deployed on the lunar surface by astronauts [1][2]. PITMS was designed as a CLPS-delivered payload on Astrobotic's Peregrine lander; because that lander did not reach the Moon, PITMS did not operate on the lunar surface [5][6]. The transport chain for a new surface pressure sensor would include integration, launch, transfer, landing and deployment, as summarised below.",
+        "transportation_process": [
+          "Integrate the gauge or spectrometer into the lander or payload compartment on Earth, including power, data and thermal interfaces.",
+          "Launch on a launch vehicle and transfer toward the Moon.",
+          "Land the payload with a lunar lander, as planned for PITMS on Peregrine [5].",
+          "Deploy the instrument on a stable surface, as the Apollo gauge was deployed by astronauts [1][2].",
+          "Connect power and communications, and manage thermal and contamination conditions during operation, which the Apollo record shows were significant constraints [1]."
+        ],
+        "deployment_methods": "The Apollo gauge was removed from the SIDE compartment by an astronaut and set up on the surface. It was connected to SIDE by a wrapped wire cable whose stiffness made head positioning difficult, and the head was left with its opening generally upward [2]. The Apollo 14 unit was placed about 16 m south-southeast of the ALSEP central station [1]. For PITMS, the deployment method is not described in the sources read, because the mission did not reach the lunar surface [5][6].",
+        "historical_examples": "The Apollo 12, 14 and 15 gauges are the historical examples [1][2][3]. PITMS is a recent example of a mass spectrometer manifested on a CLPS lander, discussed here as a partial mission outcome [5][6].",
+        "compatibility_assessment": "Compatibility of a pressure sensor with any specific lander has not been verified in this article. ESA names PITMS as a payload on Astrobotic's Peregrine lander [5], but no lander interface documentation was reviewed. Apollo deployment by astronauts does not transfer to a robotic lander.",
+        "images": []
+      },
+      "historical_significance": "The Apollo gauges were among the first direct measurements of the lunar surface gas environment. They flew on three Apollo missions. The Apollo 12 unit failed about 14 hours after turn-on, whereas the Apollo 14 unit operated intermittently into the 1970s before being commanded off on 5 January 1975 [1][2]. Results were reported in Apollo preliminary science reports (SP-235, SP-272 and SP-289), which are identified in search results but were not read for this article. PITMS is a more recent attempt to measure lunar exosphere composition from a lander. Its flight did not reach the Moon, but the PITMS spectra, as summarised in the 2025 paper, were used to study lander outgassing and the need for lander cleanliness in CLPS missions [5][6].",
+      "limitations_and_uncertainties": "The name 'pressure sensor' does not denote a single standard design. In this article, the Apollo instrument is a gas-density gauge and PITMS is a mass spectrometer, and the two are not interchangeable. Numerical values must be tied to a named instrument and source. The conversion from Apollo gauge density to pressure depends on gas composition, and the Apollo documentation gives errors within a factor of two [1]. The nighttime density value from Wikipedia has not been checked against the primary Apollo reports [4]. The PITMS outcome summary is based on a search-result summary of the 2025 Planetary Science Journal paper; the paper was not read in full [6]. The Apollo PDS records give the 5.7 kg mass for the experiment package without clarifying all items included. No direct image asset URL was verified in this run, so this article contains no images. Generic ion-gauge and exosphere background is explained without separate primary references.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Cold Cathode Ion Gage Experiment (CCIG), Apollo 14 ALSEP instrument record",
+          "publisher": "NASA Apollo records, PDS Geosciences Node, Washington University in St. Louis",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a14/instruments/a14a_ccig.txt"
+        },
+        {
+          "title": "Cold Cathode Ion Gage Experiment (CCIG), Apollo 12 ALSEP instrument record",
+          "publisher": "NASA Apollo records, PDS Geosciences Node, Washington University in St. Louis",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a12/instruments/a12a_ccig.txt"
+        },
+        {
+          "title": "Apollo Expeditions to the Moon (NASA SP-350), Chapter 12, Section 7: Cold Cathode Gauge Experiment",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/wp-content/uploads/static/history/SP-350/ch-12-7.html"
+        },
+        {
+          "title": "Cold Cathode Gauge Experiment (secondary source)",
+          "publisher": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cold_Cathode_Gauge_Experiment"
+        },
+        {
+          "title": "PITMS: a mini mass spectrometer for the Moon",
+          "publisher": "European Space Agency (ESA), page dated 9 November 2023 as read",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/PITMS_a_mini_mass_spectrometer_for_the_Moon"
+        },
+        {
+          "title": "The Peregrine Ion Trap Mass Spectrometer (PITMS): Results from a CLPS-delivered Mass Spectrometer",
+          "publisher": "The Planetary Science Journal, 2025, DOI 10.3847/psj/ad9927; authors not verified in this run",
+          "url": "https://doi.org/10.3847/psj/ad9927"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL fields have query strings and fragments removed. No image objects are included because no direct image asset URL was verified in this run."
+  },
+  "data_quality_notes": [
+    "Payload name 'Pressure sensor' is a measurement class. The Apollo CCIG/CCGE is a gas-density (ion) gauge that reports density or pressure in torr; PITMS is a mass spectrometer. Figures are not directly comparable.",
+    "Apollo CCIG mass of 5.7 kg is recorded as the experiment package mass in PDS records; the composition of that package is not clarified in the sources read.",
+    "Nighttime density of 2 x 10^11 particles per m^3 (Apollo 14 and 15) comes from a secondary source (Wikipedia) and has not been checked against primary NASA SP-272/SP-289 reports. The unit conversion to 2 x 10^5 per cm^3 is arithmetic only.",
+    "Apollo preliminary science reports SP-235, SP-272 and SP-289 and the NASA final engineering report NTRS 19700004894 were identified in search results but not read; the NTRS PDF exceeded the fetch size limit.",
+    "PITMS flight outcome (80 spectra in cislunar space; lander outgassing dominance) is taken from a search-result summary of the 2025 Planetary Science Journal paper (DOI 10.3847/psj/ad9927). The paper was not read in full and its authors were not verified. The Open University record returned HTTP 403.",
+    "PITMS mass range, sensitivity, resolution, operating temperature and dimensions (numeric) were not stated in the ESA page read.",
+    "No direct image asset URL was verified for any candidate image, so the image registry is empty. A candidate ESA image page (Mini mass spectrometer on Peregrine) was identified but its asset URL and rights were not verified.",
+    "The general ion-gauge principle and generic exosphere background are stated without separate primary references.",
+    "Other proposed exosphere instruments noted in search results (LEMS, SEAL, QITMS/DALI) were not characterised in enough detail and are not included as examples.",
+    "Lander compatibility for either instrument is not verified; no lander interface documentation was reviewed."
+  ]
+}

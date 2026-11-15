@@ -1,0 +1,209 @@
+{
+  "catalogue_id": 144,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 7,
+    "name": "Lunar exosphere and atmospheric instruments"
+  },
+  "payload": {
+    "number": 144,
+    "name": "Gas chromatograph",
+    "article": {
+      "overview": "A gas chromatograph (GC) separates a mixture of gases or vapours into its individual components by passing the sample through a narrow column, so that different molecules emerge at different times. In lunar science a GC is normally combined with a mass spectrometer, which identifies each separated component by its mass. Together, these techniques can heat a soil or rock sample, collect the gases it releases and identify which volatile molecules are present [2][9]. This article covers the lunar gas chromatograph class and its nearest flown relatives. No gas chromatograph that has operated on the lunar surface or in lunar orbit was identified in this research. The lunar instruments identified as flown are mass spectrometers: the Apollo 17 Lunar Atmospheric Composition Experiment, which operated from December 1972 until October 1973 [1], and the MSolo instrument that reached the Moon on the Intuitive Machines IM-2 lander in March 2025 [4][5]. The PITMS instrument was carried on the Peregrine lander, which did not reach the surface [6][10]. The most developed GC-based lunar volatile instrument identified, the RESOLVE gas chromatograph-mass spectrometer, remains a prototype and test system because its mission was cancelled in 2018 [2][3].",
+      "description": "In a typical laboratory gas chromatograph, a carrier gas moves the sample through a column, and each molecular species interacts with the column material for a different time, so the species leave in sequence. A lunar instrument would normally be used for sample analysis rather than continuous monitoring. Regolith would be heated in a small oven, the released gases would be passed to the analyser, and the analyser would report which species are present and their relative amounts. The RESOLVE concept applied this approach to detecting water and other volatiles in regolith [2][3]. Its 2014 trade study compared two commercial GC units with column lengths of 20 m and 8 m and found a trade-off between peak separation and run time [2]. A 2025 IEEE Aerospace Conference paper describes a neutral gas mass spectrometer for regolith and exosphere analysis [7]. This research verified only that paper's bibliographic metadata and did not establish whether the instrument includes a gas chromatograph.",
+      "scientific_purpose_and_applications": "The scientific aim of a lunar gas chromatograph is to identify the volatile material in lunar soil and ice and to measure its composition. For the RESOLVE mission, water was the main target. NASA's stated goal for that mission was to mine water ice in permanently shadowed craters and convert it to propellant, water and air [3]. Atmospheric measurements serve a different purpose: identifying the thin gases above the surface and how they vary through the lunar day. The Apollo 17 instrument identified helium, neon and argon in the atmosphere [1]. The PITMS instrument was designed to chart the composition and density of the lunar exosphere and to separate natural gases from those released by its own lander [6]. A GC-based instrument could support both resource studies and atmospheric measurements, but no lunar gas chromatograph has yet demonstrated either role in flight.",
+      "operating_principle": "A gas chromatograph separates a gas mixture by passing it through a column. Smaller or weakly interacting molecules generally move through the column faster than larger or more strongly interacting molecules, so each species leaves the column after a characteristic delay, called its retention time. A detector records each species as it emerges. In a GC-MS, the detector is a mass spectrometer, which ionises the molecules, separates the ions by their mass-to-charge ratio and records a mass spectrum. The Apollo 17 LACE used a mass-spectrometer chain without a chromatographic separation stage: gas molecules were ionised by electron bombardment from two filaments, the ion beam passed through a magnetic analyser, and separate electron multipliers covered different mass ranges [1]. The PITMS was an ion-trap mass spectrometer, a different mass-analysis design from the magnetic analyser used by LACE [6]. A lunar GC-MS would combine both stages: the chromatographic column would separate the sample, and the mass spectrometer would identify each fraction.",
+      "scientific_importance": "Volatile materials in lunar soil and polar ice matter both for science and for resource use. Measuring which molecules are present, and in what proportions, can show how volatiles were delivered to the Moon and how they have been retained or lost since. The Apollo 17 LACE identified helium, neon and argon in the lunar atmosphere, and its argon signal rose just before dawn, consistent with night-time freezing onto the surface and release at sunrise [1]. That result shows the value of in-situ gas measurement. LACE measured gas arriving at its aperture rather than gas released from a heated sample [1]. A GC-MS adds a separation stage before identification, which helps when several species are released together from a heated sample [2]. For the Resource Prospector programme, this capability was valued for water detection, and NASA described its goal as mining water ice in permanently shadowed craters [3]. Because no lunar gas chromatograph has yet flown, the scientific return of this method on the Moon remains unverified.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar gas chromatograph or a lunar GC-MS. No flown lunar gas chromatograph was identified, so the examples below describe named instruments and are not a design specification. Each value is tied to its source. Where no reliable value was found, the entry says so.",
+        "examples": [
+          {
+            "name": "Apollo 17 Lunar Atmospheric Composition Experiment (LACE)",
+            "type": "Historical lunar instrument: mass spectrometer, not a gas chromatograph",
+            "flight_status": "Flown (Apollo 17 ALSEP; deployed 12 December 1972, switched on 27 December 1972, failed 17 October 1973)",
+            "mass_kg": null,
+            "dimensions": "Not stated in source",
+            "power": "Not stated in source",
+            "performance": "Simultaneous detection of ions at 28 and 64 amu (joint CO and SO2 measurement); recording accuracy 1% for all 21-bit counts; counter saturation above an ion flux of 5 x 10^5 counts per second",
+            "sensor_design": "Electron bombardment ionisation from two filaments; magnetic analyser; separate electron multiplier, amplifier, discriminator and counter for each mass range; entrance aperture facing upward to measure downward gas flux",
+            "source_urls": [
+              "https://en.wikipedia.org/wiki/Lunar_Atmospheric_Composition_Experiment"
+            ],
+            "images": [],
+            "notes": "Included for comparison as the best-documented flown lunar atmospheric mass analyser in the sources opened for this article. Source is a Wikipedia summary of Apollo 17 documentation; primary Apollo 17 Preliminary Science Report not opened."
+          },
+          {
+            "name": "RESOLVE gas chromatograph-mass spectrometer (Resource Prospector)",
+            "type": "Engineering prototype and trade study; not flown",
+            "flight_status": "Not flown. Resource Prospector cancelled in 2018; instruments to be moved to future landers without a date",
+            "mass_kg": null,
+            "dimensions": "Not published in sources opened",
+            "power": "Not published in sources opened",
+            "performance": "Not published in sources opened. Trade study compared a 20 m, 0.25 mm ID column (Inficon Fusion GC, ideal 95 C and 50 psig) with an 8 m, 0.32 mm ID column (Inficon Micro GC 3000, 70 C and 30 psig); the 8 m column separated water in a shorter run with poorer overall separation; the author recommended the 20 m column unless the 7-10 day timeline and water separation were top priorities",
+            "sensor_design": "Gas chromatograph used in conjunction with a mass spectrometer; mass spectrometer model not named in the trade study",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20140016782",
+              "https://www.planetary.org/articles/20180503-resource-prospector-timeline"
+            ],
+            "images": [],
+            "notes": "LAVA subsystem and test-result details come only from search-result summaries and were not verified against primary papers; they are not used as numerical evidence."
+          },
+          {
+            "name": "Luna-Resurs Gas Chromatograph Neutral Gas Mass Spectrometer (GC-NGMS)",
+            "type": "Proposed flight instrument for a Luna-Resurs mission",
+            "flight_status": "Not confirmed as flown in this research",
+            "mass_kg": null,
+            "dimensions": "Not verified",
+            "power": "Not verified",
+            "performance": "Not verified; no numerical values reported because the full text could not be retrieved",
+            "sensor_design": "Search-result summary describes a GC combined with a compact time-of-flight mass spectrometer, pyrolysis cells and two chromatographic columns; not verified against primary text",
+            "source_urls": [
+              "https://openpolar.no/Record/ftinsu:oai:HAL:insu-04426876v1"
+            ],
+            "images": [],
+            "notes": "Bibliographic title taken from search results. Mission schedule and launch status for Luna-Resurs not verified."
+          },
+          {
+            "name": "Mass Spectrometer Observing Lunar Operations (MSolo)",
+            "type": "Commercial off-the-shelf quadrupole mass spectrometer modified for space; not a gas chromatograph",
+            "flight_status": "Flown on Intuitive Machines IM-2 (PRIME-1 suite); landed at Mons Mouton on 6 March 2025 with the lander on its side",
+            "mass_kg": null,
+            "dimensions": "Not stated in sources",
+            "power": "Not stated in sources",
+            "performance": "No published measurement performance values; vendor states operation during transit and for several hours after landing; NASA states some data was received before mission end",
+            "sensor_design": "INFICON Transpector MPH quadrupole mass spectrometer",
+            "source_urls": [
+              "https://science.nasa.gov/lunar-science/clps-deliveries/prime-1-im",
+              "https://www.inficon.com/en/news/historic-lunar-mission"
+            ],
+            "images": [],
+            "notes": "INFICON is a vendor source and its claims are not independently verified."
+          },
+          {
+            "name": "Peregrine Ion Trap Mass Spectrometer (PITMS)",
+            "type": "Ion-trap mass spectrometer; not a gas chromatograph",
+            "flight_status": "Planned for the Astrobotic Peregrine lander (launch January 2024); the lander did not reach the lunar surface",
+            "mass_kg": 1.6,
+            "dimensions": "Described by ESA only as the size of half a shoebox; no exact measurements published on that page",
+            "power": {
+              "energy_consumption_w_range": [
+                4,
+                12
+              ]
+            },
+            "performance": "Goal: chart composition and density of the lunar exosphere over a lunar day. Later results from search summary: spectra collected in cislunar space; did not measure the native lunar exosphere",
+            "sensor_design": "Ion trap mass spectrometer; aperture facing upward; protective cover designed to open after landing; ESA Exospheric Mass Spectrometer at core; structural, mechanical and thermal elements from NASA Goddard",
+            "source_urls": [
+              "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/PITMS_a_mini_mass_spectrometer_for_the_Moon",
+              "https://doi.org/10.3847/psj/ad9927"
+            ],
+            "images": [],
+            "notes": "Mass and power values are as listed by ESA. The 2025 Planetary Science Journal report was identified in search results and not opened in full."
+          }
+        ],
+        "dimensions_and_proportions": "No single dimensional specification applies. Dimensions are only available for the PITMS (described qualitatively as half a shoebox by ESA). The RESOLVE GC-MS and Luna-Resurs GC-NGMS dimensions were not publicly specified in the sources opened. The GC column lengths in the RESOLVE trade study (20 m and 8 m) describe laboratory GC units, not flight hardware dimensions.",
+        "mass_and_weight": "The only mass figure in this article is the 1.6 kg device mass that ESA gives for PITMS. The Apollo 17 LACE, RESOLVE GC-MS, MSolo and Luna-Resurs GC-NGMS mass values were not stated in the sources opened and are recorded as null.",
+        "power_requirements": "The PITMS is listed by ESA with an energy consumption of 4 to 12 W. Power for the RESOLVE GC-MS, MSolo, LACE and Luna-Resurs GC-NGMS was not stated in the sources opened. A lunar GC-MS would also need energy for its sample oven, column temperature control and detector, but no verified values were found for any of these."
+      },
+      "environmental_and_operational_requirements": "A lunar gas analyser must operate in lunar vacuum, at extreme surface temperatures, and in an environment where the instrument itself can contaminate its own measurements. LACE was switched off to let the instrument cool and reduce outgassing [1]. The PITMS team identified substantial outgassing from its lander, including water and oxidiser products from a propulsion leak, and this suggests that lander cleanliness needs attention for instruments flying on commercial landers [10]. For a heated-sample GC, the sample oven and column need controlled temperature and gas pressure. The RESOLVE trade study used column operating points of 95 °C and 50 psig for one commercial unit and 70 °C and 30 psig for another. These are laboratory settings for commercial units and are not flight requirements [2]. Mission duration also matters, because the RESOLVE study assumed a seven-to-ten-day mission timeline [2].",
+      "limitations": "A lunar GC-MS would inherit the limitations of the sample-heating method. The result describes the species released at the temperatures used and does not directly give the native composition of the soil. Lander and instrument contamination can be confused with lunar gases. The Apollo 17 LACE team recorded suspected instrument contaminants, including hydrogen, chlorine, oxygen, hydrogen chloride and carbon dioxide, which rose with sunrise and declined over time [1]. Column separation also involves a trade-off between peak resolution and analysis time [2]. No lunar gas chromatograph has been flown, so its flight performance, reliability and calibration on the Moon are unverified.",
+      "transportation_and_deployment": {
+        "overview": "A lunar surface gas analyser would need Earth integration into a lander or rover payload compartment, launch, transfer to the Moon, landing, deployment, and connection to power, data and thermal systems. The RESOLVE GC-MS was designed as a payload of the Resource Prospector mission, which combined the instruments, a lander and a rover [2][3]. Japan and Canada were expected to provide the lander and rover, but both backed out in 2014 and 2015, and NASA built its own rover prototype [3]. The budget discussion described lander payload capacities of 200 kg and then 500 kg, and Resource Prospector would require the 500 kg variant [3]. NASA cancelled the mission in 2018 and said the instruments would fly on future landers, without a date [3]. Historical lunar examples include LACE, which astronauts deployed as part of the Apollo lunar surface experiments package on 12 December 1972 [1]. MSolo was delivered on the Intuitive Machines IM-2 lander [4], and PITMS was planned for the Peregrine lander [6]. No compatibility with a specific lander has been assessed for a GC-MS, because no verified flight interface specification was found.",
+        "transportation_process": [
+          "Integrate the instrument into a lander or rover payload compartment on Earth.",
+          "Launch it on a launch vehicle and transfer it towards the Moon.",
+          "Land it on the lunar surface with a lander.",
+          "Deploy and position the instrument, then connect power, data and thermal interfaces.",
+          "Operate the sample oven and analyser for each sample, within the available power and time budget."
+        ],
+        "deployment_methods": "Deployment method depends on the host lander or rover. For LACE, astronauts deployed the instrument as part of ALSEP. For RESOLVE, the planned architecture combined a lander, a rover and the instruments, but no deployment design was verified in the sources opened. No flight deployment method for a GC-MS has been verified.",
+        "historical_examples": "LACE was deployed by astronauts on Apollo 17 on 12 December 1972 [1]. MSolo flew on the Intuitive Machines IM-2 lander in March 2025 [4]. PITMS was planned for the Peregrine lander, which did not reach the surface [6][10]. The Viking landers on Mars carried gas chromatograph-mass spectrometers, but they are not lunar examples [8].",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted. A future gas analyser's compatibility would need to be assessed against its mass, dimensions, power, thermal and data interfaces and sample-handling requirements once verified specifications are available.",
+        "images": []
+      },
+      "historical_significance": "The LACE results are the main historical in-situ lunar atmospheric composition measurements identified in this research. The instrument positively identified helium, neon and argon. Its helium levels matched predictions that assume a solar-wind origin, and its argon signal supports night-time freezing and sunrise release [1]. The Viking landers on Mars each carried a gas chromatograph-mass spectrometer that analysed heated soil [8]. That instrument measured no significant amount of organic molecules in the Martian soil, and the chlorine compounds it detected were attributed to cleaning solvents. A 2018 reanalysis of the data suggested that organic compounds may actually have been detected [8]. Viking is a planetary-surface precedent for the GC-MS approach, not a lunar result. RESOLVE and Resource Prospector represent the most developed GC-based lunar volatile programme identified. NASA reports spending about 22 million dollars on RESOLVE and 80 million dollars on Resource Prospector before the 2018 cancellation [3]. The MSolo and PITMS flights show that mass spectrometers have operated in the lunar or cislunar environment in 2024 and 2025, but neither is a gas chromatograph [4][6][10].",
+      "limitations_and_uncertainties": "No flown lunar gas chromatograph was identified, so the catalogue class is described here through prototypes, proposals and nearby flown mass spectrometers. Numerical specifications for the RESOLVE GC-MS and the Luna-Resurs GC-NGMS were not verified against primary text, and the LAVA subsystem details come from search-result summaries only. The Apollo 17 LACE, MSolo and PITMS are mass spectrometers and are included for comparison. The INFICON MSolo claims are vendor statements, and the Viking and LACE summaries rely on secondary sources. The PITMS later-results and Fausch 2025 content were identified from search results or metadata and were not read in full. The Luna-Resurs schedule and status were not verified. No image assets were verified for this article.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Lunar Atmospheric Composition Experiment",
+          "publisher": "Wikipedia (secondary summary of Apollo 17 documentation)",
+          "url": "https://en.wikipedia.org/wiki/Lunar_Atmospheric_Composition_Experiment"
+        },
+        {
+          "title": "Gas Chromatograph Method Optimization Trade Study for RESOLVE: 20-meter Column v. 8-meter Column",
+          "publisher": "NASA Kennedy Space Center report KSC-E-DAA-TN16884 (author: K. Huz, Fordham University), NASA Technical Reports Server, 2014",
+          "url": "https://ntrs.nasa.gov/citations/20140016782"
+        },
+        {
+          "title": "A brief history of Resource Prospector, NASA's cancelled lunar mission",
+          "publisher": "The Planetary Society, 2018",
+          "url": "https://www.planetary.org/articles/20180503-resource-prospector-timeline"
+        },
+        {
+          "title": "PRIME-1 on the IM-2 mission",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/lunar-science/clps-deliveries/prime-1-im"
+        },
+        {
+          "title": "Historic lunar mission",
+          "publisher": "INFICON (vendor article, not an independent source)",
+          "url": "https://www.inficon.com/en/news/historic-lunar-mission"
+        },
+        {
+          "title": "PITMS: a mini mass spectrometer for the Moon",
+          "publisher": "European Space Agency",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/PITMS_a_mini_mass_spectrometer_for_the_Moon"
+        },
+        {
+          "title": "Advancing Lunar Exploration: The Neutral Gas Mass Spectrometer for Regolith and Exosphere Analysis",
+          "publisher": "IEEE Aerospace Conference 2025, DOI 10.1109/AERO63441.2025.11068730",
+          "url": "https://doi.org/10.1109/AERO63441.2025.11068730"
+        },
+        {
+          "title": "Pyrolytic Release (Viking lander biological experiments)",
+          "publisher": "Wikipedia (secondary summary of Viking GCMS results and 2018 reanalysis)",
+          "url": "https://en.wikipedia.org/wiki/Pyrolytic_Release"
+        },
+        {
+          "title": "Scientific performance of the Gas Chromatograph Neutral Gas Mass Spectrometer for the Luna-Resurs Mission",
+          "publisher": "Open Polar bibliographic record (title from search results; full text not accessed)",
+          "url": "https://openpolar.no/Record/ftinsu:oai:HAL:insu-04426876v1"
+        },
+        {
+          "title": "The Peregrine Ion Trap Mass Spectrometer (PITMS): Results from a CLPS-delivered Mass Spectrometer",
+          "publisher": "Cohen et al., Planetary Science Journal, 2025, DOI 10.3847/psj/ad9927 (identified in search results; not opened)",
+          "url": "https://doi.org/10.3847/psj/ad9927"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image URLs were verified in this run, so no image objects are included; section-level image arrays are empty by design."
+  },
+  "data_quality_notes": [
+    "No flown lunar gas chromatograph was identified. The catalogue entry is treated as a class; the article covers prototypes, proposals and nearby flown mass spectrometers, labelled by flight status.",
+    "Apollo 17 LACE, MSolo and PITMS are mass spectrometers rather than gas chromatographs and are included for comparison only.",
+    "RESOLVE LAVA subsystem and GC-MS test-result details come from search-result summaries and were not verified against primary papers. No numerical RESOLVE GC-MS performance values are used.",
+    "Luna-Resurs GC-NGMS: only the bibliographic title was verified (via search result). The full text could not be retrieved, so no numerical values are given. Mission schedule and status not verified.",
+    "PDF sources (NASA NTRS 20150022135 and the Fausch 2025 IEEE paper body) did not decode through WebFetch. Only Fausch 2025 bibliographic metadata was obtained.",
+    "Smithsonian Viking GCMS record returned HTTP 403; Viking facts rely on the Wikipedia summary (Pyrolytic Release), which cites Kieffer et al. 1992, Caplinger 1995, Webster et al. 2010 and Guzman et al. 2018 secondhand.",
+    "The PITMS 2025 Planetary Science Journal report (DOI 10.3847/psj/ad9927) was identified in search results and not opened. The statement that the lander did not reach the surface and that spectra were collected in cislunar space is from that search summary.",
+    "INFICON MSolo claims are vendor statements. NASA PRIME-1 page gives no MSolo performance figures.",
+    "Apollo 17 LACE values are from the Wikipedia summary, not the primary Apollo 17 Preliminary Science Report.",
+    "No image assets were verified; image fields are empty and no image URLs were invented.",
+    "Web searches used: 8. Page-read calls: 13 (several returned errors, redirects, access blocks or undecodable PDFs)."
+  ]
+}

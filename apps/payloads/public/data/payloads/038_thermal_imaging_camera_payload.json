@@ -1,0 +1,431 @@
+{
+  "catalogue_id": 38,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 38,
+    "name": "Thermal imaging camera",
+    "article": {
+      "overview": "A thermal imaging camera makes pictures from thermal infrared emission, the heat energy that every object above absolute zero radiates, rather than from reflected sunlight. Each pixel records how much thermal radiation arrives from a patch of ground or surface at the detector's wavelengths. Because that radiation depends on temperature and on the material's emissive properties, a thermal image can map surface temperature. With several narrow wavelength bands, it can also give clues about the minerals present [8].\n\nThe class is defined by its detection method rather than by one design. This article covers a lunar thermal imager that launched in 2025 but for which no measurements are reported in the sources accessed [4][6][8]; a proposed lunar hyperspectral thermal imager concept [9]; and three flown non-lunar thermal imagers that are included for technical comparison only: the Thermal Infrared Imager (TIR) on JAXA's Hayabusa2 at asteroid Ryugu [1][2][3], the Thermal Emission Imaging System (THEMIS) on NASA's 2001 Mars Odyssey orbiter [10][11][12], and the Thermal Infrared Sensor (TIRS) on Landsat 8 [13]. The status of each example is stated in its own subsection.\n\nRelated catalogue entries are not duplicated here. The Diviner-type lunar radiometer belongs to 036 (Infrared imager), lunar longwave cameras to 042 (Longwave infrared camera) and thermal emission spectrometers to 076 (Thermal emission spectrometer). A mass spectrometer (059) identifies composition by a different principle and is relevant only where a thermal image is paired with a separate chemical measurement.",
+      "description": "Thermal imaging cameras use detectors that are sensitive to thermal infrared radiation. The examples in this article cover wavelengths from about 6 µm to about 15 µm, with the LTM's broadband channels extending to 100 µm [1][8][10][13]. No single band defines the class; each instrument's coverage must be read from its own source.\n\nA camera records a grid of pixels, and each pixel gives an electrical signal related to the radiance from its patch of ground. Converting that signal into a temperature requires calibration against known references. For a natural surface it also requires an assumption or measurement of emissivity, which describes how efficiently the surface emits compared with a perfect emitter.\n\nTwo design approaches appear in the sources. The Hayabusa2 TIR and THEMIS both use an uncooled microbolometer array [1][11]. A microbolometer is a detector whose electrical resistance changes as its small sensing elements warm up. Uncooled arrays avoid a cryogenic cooler, but they drift with their own temperature and so must be calibrated in flight [1][10]. THEMIS is described as a combined infrared and visible multispectral pushbroom imager, meaning that it builds an image one line at a time as the spacecraft moves [11].",
+      "scientific_purpose_and_applications": "Thermal imaging cameras serve several connected purposes, and the sources show different emphases.\n\n- **Surface temperature mapping.** The LTM's primary goal is to measure lunar surface temperature at the same time as maps of water are acquired, to understand how temperature controls water on the Moon's surface [5][8].\n- **Thermophysical properties of small bodies.** Hayabusa2 TIR was built to study the thermophysical properties of the surface of asteroid Ryugu, and its observations supported surface property characterisation, sampling-site selection and safe landing assessment [1][2].\n- **Compositional clues from spectral bands.** The LTM's 11 narrow channels are intended to investigate composition through mid-infrared spectral features such as the Christiansen feature, reststrahlen bands and transparency features [8]. The Rockstar concept targets silicate mineralogy and molecular water in the 5 to 10.7 µm range [9].\n- **Planetary surface thermal mapping.** THEMIS acquired its first thermal infrared image of Mars on 30 October 2001 [12].\n- **Earth land-surface temperature.** Landsat 8 TIRS measures land surface temperature in two thermal bands [13].",
+      "operating_principle": "A thermal imaging camera collects infrared radiation through an optical telescope and focuses it on an array of detector elements. For an uncooled microbolometer, incoming radiation warms each element slightly, and the change in its electrical resistance is read out as a signal [1][11]. The sources describe the LTM's wavelength selection as a set of 15 filters [8]; the wavelength-selection method of the Hayabusa2 TIR is not described in the sources accessed beyond its 8 to 12 µm coverage [1].\n\nCalibration is a central part of the operating principle. The Hayabusa2 TIR takes images with the shutter open and closed and subtracts a dark frame, so that the result reflects the scene rather than the detector's own offset [1][2]. THEMIS uses an internal calibration flag, a mechanism placed in the optical path, to provide thermal calibration and flat-fielding, and its data guide notes that the focal plane's thermal equilibration after closing the flag is a source of image offset that must be removed [10].\n\nThe LTM is a spectral radiometer with 15 filters. Four broadband filters constrain surface temperature, and 11 narrowband filters cover 6 to 10 µm to investigate composition [8]. The mid-infrared features targeted include the Christiansen feature, whose position indicates silica polymerisation, and transparency features, whose contrast increases as particle size decreases [8].",
+      "scientific_importance": "Temperature is a basic property of a planetary surface, and it controls processes such as the stability of water ice and the way rock and soil respond to heating and cooling. The LTM team argues that temperature maps are needed alongside water maps to understand the temperature control on lunar water [5][8]. The Hayabusa2 TIR observations similarly supported the characterisation of surface properties at Ryugu, including the choice of sampling sites [1][2].\n\nThermal infrared spectral coverage also adds a second source of compositional information. The LTM authors state that its 11 narrow bands will capture more spectral information in the thermal infrared than any previous thermal infrared instrument sent to the Moon [8]. That statement is the authors' own and was not independently checked here.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a thermal imaging camera. The examples differ in purpose (a lunar orbital spectral radiometer, a proposed lunar hyperspectral imager, an asteroid imager, a Mars orbital imager and an Earth-observing sensor), wavelength coverage, detector design and status. The table below contains only values stated by the cited sources. \"Not publicly specified\" means that the value was not stated in the sources accessed; it does not mean that the value does not exist. The rows are not a ranking, and the instruments should not be compared as if they described one product.",
+        "examples": [
+          {
+            "name": "Lunar Thermal Mapper (LTM) on Lunar Trailblazer",
+            "type": "Lunar orbital thermal infrared spectral radiometer",
+            "status": "Launched 26 February 2025; in-flight operation and data not confirmed in the sources accessed.",
+            "mission_status_detail": "Lunar Trailblazer launched as a rideshare on Intuitive Machines' IM-2 mission. Operators lost contact the day after launch, and NASA's mission page states the mission ended on 31 July 2025.",
+            "spectral_channels": {
+              "total_filters": 15,
+              "broadband_channels": 4,
+              "broadband_range_um": [
+                6,
+                100
+              ],
+              "narrowband_channels": 11,
+              "narrowband_range_um": [
+                6,
+                10
+              ]
+            },
+            "spatial_resolution_m_per_pixel": 70,
+            "spatial_resolution_note": "70 m/pixel as stated in Shirley et al. (2026). The undated Rockstar paper lists 30 m/pixel for Lunar Trailblazer in a comparison; this discrepancy is not resolved.",
+            "temperature_mapping_range_as_stated": "from about minus 265 degrees to 266 Fahrenheit (JPL 2023 pre-launch release; given in Fahrenheit only)",
+            "mass_kg": null,
+            "mass_note": "Not publicly specified in the sources accessed.",
+            "dimensions_cm": null,
+            "dimensions_note": "Not publicly specified in the sources accessed.",
+            "power_w": null,
+            "power_note": "Not publicly specified in the sources accessed.",
+            "source_urls": [
+              "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin",
+              "https://www.jpl.nasa.gov/news/nasas-lunar-trailblazer-gets-final-payload-for-moon-water-hunt/",
+              "https://www.jpl.nasa.gov/missions/lunar-trailblazer",
+              "https://science.nasa.gov/mission/lunar-trailblazer-fact-sheet",
+              "https://ora.ox.ac.uk/objects/uuid:c1e2a33a-0175-42cf-bb94-315d85400e12/files/r8c97ks97m"
+            ],
+            "images": []
+          },
+          {
+            "name": "Rockstar (proposed lunar thermal infrared hyperspectral imager concept)",
+            "type": "Proposed lunar orbital hyperspectral thermal imager concept",
+            "status": "Proposed concept; not flown.",
+            "heritage_statement": "Described as a maturation of ESTO HyTI, a 6U CubeSat that the paper says was scheduled to fly in early 2023. The flight status of HyTI was not verified in the sources accessed.",
+            "design_targets_not_measured": {
+              "spectral_range_um": [
+                5,
+                10.7
+              ],
+              "spectral_resolution_cm_minus1": 10.8,
+              "detector_format": "640 x 512",
+              "pixel_size_um": 25,
+              "spatial_resolution_m_diffraction_limited_from_20_km": 4,
+              "swath_km": 1.4,
+              "broadband_NEdT_as_stated": "1 K at 50 K and about 1 mK at 300 K",
+              "readout_rate_hz_as_stated": 1000,
+              "processed_data_volume_gb_per_orbit_as_stated": 130
+            },
+            "maturity_statement": "The paper states that many HyTI components are at TRL 6. This is the proposer's statement and was not independently verified.",
+            "compatibility_statement": "The paper describes the instrument as compatible with very small satellites in the 50-kg class. This is a proposer statement and is not a verified spacecraft interface.",
+            "mass_kg": null,
+            "mass_note": "Not publicly specified in the sources accessed.",
+            "dimensions_cm": null,
+            "dimensions_note": "Not publicly specified in the sources accessed.",
+            "power_w": null,
+            "power_note": "Not publicly specified in the sources accessed.",
+            "source_urls": [
+              "https://smd-cms.nasa.gov/wp-content/uploads/2023/11/rockstar.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Hayabusa2 Thermal Infrared Imager (TIR)",
+            "type": "Small-body thermal infrared imager (asteroid Ryugu)",
+            "status": "Flown on JAXA's Hayabusa2 and used to observe asteroid Ryugu.",
+            "spectral_band_um": [
+              8,
+              12
+            ],
+            "field_of_view_deg": [
+              16,
+              12
+            ],
+            "spatial_resolution_deg_per_pixel": 0.05,
+            "detector": "Two-dimensional uncooled micro-bolometer array inherited from the Longwave Infrared Camera (LIR) on Akatsuki",
+            "temperature_range_k": [
+              150,
+              460
+            ],
+            "well_calibrated_temperature_range_k": [
+              230,
+              420
+            ],
+            "netd_k": "0.4 K or lower at each pixel (as stated)",
+            "temperature_accuracy_k": "Within 2 K or better for summed images (as stated)",
+            "processing": "Summing, dark-frame subtraction and StarPixel compression",
+            "mass_kg": null,
+            "mass_note": "Not publicly specified in the sources accessed.",
+            "dimensions_cm": null,
+            "dimensions_note": "Not publicly specified in the sources accessed.",
+            "power_w": null,
+            "power_note": "Not publicly specified in the sources accessed.",
+            "source_urls": [
+              "https://link.springer.com/article/10.1007/s11214-016-0286-8",
+              "https://dspace.stir.ac.uk/handle/1893/26994",
+              "https://www.hayabusa2.jaxa.jp/en/topics/20180907e"
+            ],
+            "images": [
+              {
+                "id": "hayabusa2_tir_thermograph_ryugu",
+                "description": "Thermographic image of asteroid Ryugu from the Hayabusa2 Thermal Infrared Imager (TIR), shown on JAXA's topic page. The colour bar is labelled from -2000 to 4000 without units; the article does not interpret those values.",
+                "image_type": "Thermal infrared image (asteroid)",
+                "image_url": "https://www.hayabusa2.jaxa.jp/en/topics/20180907e/img/tir_thermography_20180630.gif",
+                "source_page_url": "https://www.hayabusa2.jaxa.jp/en/topics/20180907e",
+                "publisher": "JAXA Hayabusa2 project",
+                "credit": "JAXA, Ashikaga University & collaborators (abbreviated credit requested by JAXA; full credit line on source page)",
+                "caption": "Thermography of Ryugu by the TIR, JAXA Hayabusa2 topic page.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Asset identified as the img element on the source page (src img/tir_thermography_20180630.gif); direct URL HTTP 200, image/gif verified. JAXA asks that the displayed credit be used when reproducing its images."
+              }
+            ]
+          },
+          {
+            "name": "Thermal Emission Imaging System (THEMIS), 2001 Mars Odyssey",
+            "type": "Mars orbital combined infrared and visible imager",
+            "status": "Flown on NASA's 2001 Mars Odyssey orbiter.",
+            "ir_bands": 9,
+            "ir_wavelength_range_um": [
+              6.8,
+              14.9
+            ],
+            "ir_detector": "Uncooled IR microbolometer array (ARCNav instrument record)",
+            "visible_imaging": "Co-aligned visible area array with the infrared array (ARCNav instrument record)",
+            "telescope_aperture_cm": 12,
+            "first_ir_image_date": "2001-10-30",
+            "spatial_resolution_m": null,
+            "spatial_resolution_note": "Not publicly specified in the sources accessed.",
+            "mass_kg": 11.2,
+            "dimensions_cm": [
+              29,
+              37,
+              55
+            ],
+            "power_w": "About 14 W orbital average",
+            "power_note": "Value from the THEMIS data processing guide version 0.8 (2003).",
+            "source_urls": [
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:themis.ody",
+              "https://science.nasa.gov/photojournal/first-themis-image-of-mars/",
+              "https://pds.nasa.gov/data/ody-m-thm-2-visiredr-packtest-v1.0/ody_0000/label/process.pdf"
+            ],
+            "images": [
+              {
+                "id": "themis_pia03459_first_image",
+                "description": "THEMIS thermal infrared image of Mars, displayed with a false-colour scale labelled 0 C to -120 C and a globe inset showing the area covered.",
+                "image_type": "Thermal infrared data image (Mars)",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia03/pia03459/PIA03459.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/first-themis-image-of-mars/",
+                "publisher": "NASA Science Photojournal",
+                "credit": "NASA (Photojournal PIA03459); specific photographer or producer credit line not verified",
+                "caption": "This thermal infrared image was acquired by NASA's Mars Odyssey spacecraft on October 30, 2001, as the spacecraft orbited Mars on its ninth revolution around the planet.",
+                "section_placements": [
+                  "physical_specifications.examples[3]"
+                ],
+                "notes": "Direct asset URL is the dynamicimage JPEG referenced by the NASA source page (HTTP 200, image/jpeg, verified). The image is a THEMIS data product, not a photograph of the instrument. Reuse terms were not verified."
+              }
+            ]
+          },
+          {
+            "name": "Landsat 8 Thermal Infrared Sensor (TIRS)",
+            "type": "Earth-observation thermal infrared sensor (not a lunar instrument)",
+            "status": "Flown on Landsat 8, launched 11 February 2013.",
+            "thermal_bands_um": [
+              [
+                10.6,
+                11.19
+              ],
+              [
+                11.5,
+                12.51
+              ]
+            ],
+            "spatial_resolution_m": {
+              "native": 100,
+              "resampled": 30
+            },
+            "built_by": "NASA Goddard Space Flight Center",
+            "mass_kg": null,
+            "mass_note": "Not publicly specified in the sources accessed.",
+            "dimensions_cm": null,
+            "dimensions_note": "Not publicly specified in the sources accessed.",
+            "power_w": null,
+            "power_note": "Not publicly specified in the sources accessed.",
+            "source_urls": [
+              "https://science.nasa.gov/mission/landsat-8"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Published dimensions are available only for THEMIS (29 cm x 37 cm x 55 cm) [10]. Dimensions for the LTM, the proposed Rockstar concept, Hayabusa2 TIR and TIRS are not publicly specified in the sources accessed.",
+        "mass_and_weight": "The only mass stated in the sources accessed is 11.2 kg for THEMIS [10]. Mass for the LTM, Rockstar (proposed), Hayabusa2 TIR and TIRS is not publicly specified in the sources accessed.",
+        "power_requirements": "The only power stated in the sources accessed is an orbital-average power of about 14 W for THEMIS [10]. Power for the other examples is not publicly specified in the sources accessed."
+      },
+      "environmental_and_operational_requirements": "Thermal imagers operate in vacuum or near-vacuum, and their optics and detectors experience large temperature changes. For an uncooled microbolometer, the detector's own temperature is a measurement variable, so the instrument must be stabilised or calibrated against its own temperature [1][10]. The THEMIS data guide notes an equilibration time constant of about 30 seconds under the conditions it describes [10].\n\nLunar operations add two requirements. First, the instrument must measure surface temperature, which the LTM is designed to do [5][8]; the sources accessed do not state its day and night performance. Second, the instrument's thermal and radiation design must tolerate the lunar environment. The Rockstar paper lists this as a development task and gives sampling-coverage goals for polar regions, including day and night observations and data volumes of 130 GB processed per orbit. These are proposed concept statements and are not verified requirements [9].",
+      "limitations": "A thermal image records emitted radiation, not directly a temperature. Calibration and an emissivity assumption or measurement are needed to convert the signal into a surface temperature, and a broadband channel provides less compositional information than the narrow channels [8].\n\nCompositional inference is limited by the number and width of the spectral bands. The LTM authors describe its spectral resolution as lower than that of laboratory spectrometers, although its 11 narrow channels cover features that depend on the mineral [8]. A thermal imager therefore cannot identify chemical composition on its own; spectrometric or chemical instruments, such as those in 059 (Mass spectrometer) or 076 (Thermal emission spectrometer), provide complementary evidence.\n\nThe examples are different instruments on different missions. A value for one should not be applied to another, and the non-lunar examples are included for technical comparison only.",
+      "transportation_and_deployment": {
+        "overview": "The LTM was carried by an orbiter, not a lander. It was shipped from the UK to the US; NASA's photojournal page is titled \"Lunar Trailblazer's Thermal Mapper Has Arrived at Lockheed Martin\" [4]. NASA's 2023 release states that both LTM and HVM3 were integrated with the spacecraft and were undergoing final system-level testing at that time [5]. Lunar Trailblazer launched on 26 February 2025 as a rideshare on the IM-2 mission [7], and the mission ended on 31 July 2025 after loss of contact [6].",
+        "transportation_process": [
+          "Integrate the instrument with the spacecraft on Earth, including mounting, alignment and interface checks (LTM: integration with the spacecraft was reported in 2023 [5]).",
+          "Ship the instrument between facilities (LTM: shipped from the UK to the US [4]).",
+          "Launch the spacecraft as a rideshare; Lunar Trailblazer launched on 26 February 2025 on IM-2 [7].",
+          "Transfer to and insert into lunar orbit (the LTM mission was a lunar orbiter mission [8]; the transfer and insertion sequence was not described in the sources accessed).",
+          "Commission the instrument and operate its thermal, pointing and data interfaces. For LTM, no operations or data are reported in the sources accessed [6]."
+        ],
+        "deployment_methods": "For an orbiter payload of this kind, the relevant interfaces are spacecraft integration, mounting and alignment, thermal control, pointing knowledge, power, data handling and orbit altitude. The sources accessed do not give the LTM's interface requirements, mounting details or thermal environment, so those interfaces are not described here.",
+        "historical_examples": "Lunar Trailblazer (LTM) launched in 2025 on the IM-2 rideshare but lost contact after launch and ended on 31 July 2025 [6][7]. Non-lunar examples (Hayabusa2 TIR, THEMIS and Landsat 8 TIRS) are included for technical comparison only, and their transport interfaces are not discussed.",
+        "compatibility_assessment": "No compatibility with a specific lander, rover or spacecraft is asserted in this article. The LTM's rideshare on IM-2 is a historical fact about the Lunar Trailblazer mission. It is not an interface assessment for any other payload or spacecraft.",
+        "images": [
+          {
+            "id": "ltm_pia25831_photo",
+            "description": "Lunar Thermal Mapper (LTM) instrument wrapped in silver protective covers, photographed before shipment from the UK to the USA. The image shows the instrument, not the full spacecraft.",
+            "image_type": "Flight-hardware photograph (pre-shipment)",
+            "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25831/jpeg/PIA25831.jpg",
+            "source_page_url": "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin",
+            "publisher": "NASA Science Photojournal",
+            "credit": "University of Oxford (credit line on NASA Photojournal page PIA25831)",
+            "caption": "Seen here before being shipped from the U.K. to the U.S., the Lunar Thermal Mapper (LTM) is one of two instruments that will be carried by NASA's Lunar Trailblazer.",
+            "section_placements": [
+              "overview",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct asset URL is the dynamicimage JPEG listed on the NASA source page (HTTP 200, image/jpeg, verified). The content/dam JPEG path also listed on that page returned HTTP 404 and was not used. Reuse terms were not verified."
+          }
+        ]
+      },
+      "historical_significance": "THEMIS provided thermal infrared images of Mars from the 2001 Mars Odyssey orbiter. The first THEMIS thermal infrared image was acquired on 30 October 2001 [10][12].\n\nHayabusa2 TIR produced thermographic images of asteroid Ryugu and supported the characterisation of its surface properties [1][2][3].\n\nLandsat 8 TIRS continues the Landsat thermal record for Earth. Its two thermal bands provide land surface temperature, and it was built at NASA Goddard [13].\n\nBecause Lunar Trailblazer launched in 2025 and lost contact after launch, the LTM's historical significance in this article is limited to its design and to the pre-launch and analysis papers [5][6][8]. The 2026 paper states that the LTM carries more narrowband thermal infrared channels than any previous thermal instrument sent to the Moon [8]; that is the authors' statement.",
+      "limitations_and_uncertainties": "- **LTM in-flight status.** The sources accessed report launch and contact loss but do not report any LTM measurement. No LTM performance, data quality or operating period is claimed in this article [6][7][8].\n- **LTM spatial resolution.** The 2026 paper states 70 m/pixel [8], while the undated Rockstar paper uses 30 m/pixel for Lunar Trailblazer in a pre-launch comparison [9]. The 70 m/pixel value is used here because it comes from the later paper. The discrepancy is not resolved.\n- **LTM temperature range.** NASA's release gives the range in Fahrenheit only [5] and was not cross-checked against the instrument paper, which was not accessed in full. An Oxford summary that could not be accessed (HTTP 403) was not used.\n- **LTM mass, power and dimensions.** Not publicly specified in the sources accessed.\n- **Rockstar.** The paper is undated and describes a concept. Its maturity level (TRL 6 for many components), its development status and its lunar-mission assumptions are the proposer's statements and were not verified. No flight is claimed [9].\n- **HyTI flight status.** The Rockstar paper describes HyTI as scheduled to fly in early 2023 [9]. The flight status of HyTI was not verified in the sources accessed.\n- **THEMIS.** The data guide is version 0.8 from July 2003, so its values may not reflect later configuration changes. Spatial resolution, current operating status and any in-flight performance were not verified in this article. The mass and power values are from the guide and are not mission-level values [10].\n- **Hayabusa2 TIR.** The paper's content was read through the Stirling repository record [2]; the DOI page [1] was checked for HTTP status but its full text was not read. Mass, power and dimensions were not stated in the sources accessed. The temperature accuracy and NEdT values are as stated in the record and were not re-derived.\n- **Landsat 8 TIRS.** Mass, power and dimensions are not stated in the sources accessed. The USGS Landsat 8 page returned HTTP 403 to automated requests; its content was read through a fetch tool, and the NASA mission page [13] is cited instead. Current operating status is not verified in this article.\n- **Secondary search summaries.** Values seen only in search summaries, such as a Lunar Trailblazer loss date from a secondary database and an HyTI launch date, were not used as values. The mission-end date used here is from the NASA JPL mission page [6].\n- **Cross-references.** Diviner-type lunar radiometry is in 036 (Infrared imager). Lunar longwave imaging is in 042 (Longwave infrared camera). Thermal emission spectroscopy is in 076 (Thermal emission spectrometer). Chemical measurements by mass spectrometry are in 059 (Mass spectrometer). This article does not duplicate those entries.",
+      "images": [
+        {
+          "id": "ltm_pia25831_photo",
+          "description": "Lunar Thermal Mapper (LTM) instrument wrapped in silver protective covers, photographed before shipment from the UK to the USA. The image shows the instrument, not the full spacecraft.",
+          "image_type": "Flight-hardware photograph (pre-shipment)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25831/jpeg/PIA25831.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin",
+          "publisher": "NASA Science Photojournal",
+          "credit": "University of Oxford (credit line on NASA Photojournal page PIA25831)",
+          "caption": "Seen here before being shipped from the U.K. to the U.S., the Lunar Thermal Mapper (LTM) is one of two instruments that will be carried by NASA's Lunar Trailblazer.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL is the dynamicimage JPEG listed on the NASA source page (HTTP 200, image/jpeg, verified). The content/dam JPEG path also listed on that page returned HTTP 404 and was not used. Reuse terms were not verified."
+        },
+        {
+          "id": "themis_pia03459_first_image",
+          "description": "THEMIS thermal infrared image of Mars, displayed with a false-colour scale labelled 0 C to -120 C and a globe inset showing the area covered.",
+          "image_type": "Thermal infrared data image (Mars)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia03/pia03459/PIA03459.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/first-themis-image-of-mars/",
+          "publisher": "NASA Science Photojournal",
+          "credit": "NASA (Photojournal PIA03459); specific photographer or producer credit line not verified",
+          "caption": "This thermal infrared image was acquired by NASA's Mars Odyssey spacecraft on October 30, 2001, as the spacecraft orbited Mars on its ninth revolution around the planet.",
+          "section_placements": [
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Direct asset URL is the dynamicimage JPEG referenced by the NASA source page (HTTP 200, image/jpeg, verified). The image is a THEMIS data product, not a photograph of the instrument. Reuse terms were not verified."
+        },
+        {
+          "id": "hayabusa2_tir_thermograph_ryugu",
+          "description": "Thermographic image of asteroid Ryugu from the Hayabusa2 Thermal Infrared Imager (TIR), shown on JAXA's topic page. The colour bar is labelled from -2000 to 4000 without units; the article does not interpret those values.",
+          "image_type": "Thermal infrared image (asteroid)",
+          "image_url": "https://www.hayabusa2.jaxa.jp/en/topics/20180907e/img/tir_thermography_20180630.gif",
+          "source_page_url": "https://www.hayabusa2.jaxa.jp/en/topics/20180907e",
+          "publisher": "JAXA Hayabusa2 project",
+          "credit": "JAXA, Ashikaga University & collaborators (abbreviated credit requested by JAXA; full credit line on source page)",
+          "caption": "Thermography of Ryugu by the TIR, JAXA Hayabusa2 topic page.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Asset identified as the img element on the source page (src img/tir_thermography_20180630.gif); direct URL HTTP 200, image/gif verified. JAXA asks that the displayed credit be used when reproducing its images."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "ltm_pia25831_photo",
+          "description": "Lunar Thermal Mapper (LTM) instrument wrapped in silver protective covers, photographed before shipment from the UK to the USA. The image shows the instrument, not the full spacecraft.",
+          "image_type": "Flight-hardware photograph (pre-shipment)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25831/jpeg/PIA25831.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin",
+          "publisher": "NASA Science Photojournal",
+          "credit": "University of Oxford (credit line on NASA Photojournal page PIA25831)",
+          "caption": "Seen here before being shipped from the U.K. to the U.S., the Lunar Thermal Mapper (LTM) is one of two instruments that will be carried by NASA's Lunar Trailblazer.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL is the dynamicimage JPEG listed on the NASA source page (HTTP 200, image/jpeg, verified). The content/dam JPEG path also listed on that page returned HTTP 404 and was not used. Reuse terms were not verified."
+        }
+      ],
+      "references": [
+        {
+          "title": "Thermal Infrared Imaging Experiments of C-Type Asteroid 162173 Ryugu on Hayabusa2 (Okada et al. 2017, Space Science Reviews 208, 255-286; DOI 10.1007/s11214-016-0286-8)",
+          "publisher": "Springer / Space Science Reviews",
+          "url": "https://link.springer.com/article/10.1007/s11214-016-0286-8",
+          "notes": "Canonical DOI record (HTTP 200). Full text was not read; content was taken from reference 2."
+        },
+        {
+          "title": "Record for Okada et al. (2017), Thermal Infrared Imaging Experiments of C-Type Asteroid 162173 Ryugu on Hayabusa2",
+          "publisher": "University of Stirling research repository",
+          "url": "https://dspace.stir.ac.uk/handle/1893/26994",
+          "notes": "Source of TIR specification values quoted in the article (HTTP 200)."
+        },
+        {
+          "title": "Thermography of Ryugu by the TIR (Hayabusa2 topic)",
+          "publisher": "JAXA Hayabusa2 project",
+          "url": "https://www.hayabusa2.jaxa.jp/en/topics/20180907e",
+          "notes": "Source of the thermograph image and credit line (HTTP 200)."
+        },
+        {
+          "title": "Lunar Trailblazer's Thermal Mapper Has Arrived at Lockheed Martin (PIA25831)",
+          "publisher": "NASA Science Photojournal",
+          "url": "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin",
+          "notes": "Source page for the LTM photograph (HTTP 200)."
+        },
+        {
+          "title": "NASA's Lunar Trailblazer Gets Final Payload for Moon Water Hunt (JPL release 2023-121)",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "url": "https://www.jpl.nasa.gov/news/nasas-lunar-trailblazer-gets-final-payload-for-moon-water-hunt/",
+          "notes": "Pre-launch LTM description and temperature-mapping range. Returns HTTP 403 to automated requests; content read through a fetch tool."
+        },
+        {
+          "title": "Lunar Trailblazer mission page",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "url": "https://www.jpl.nasa.gov/missions/lunar-trailblazer",
+          "notes": "Source of mission status and end date (31 July 2025). Returns HTTP 403 to automated requests; content read through a fetch tool."
+        },
+        {
+          "title": "Lunar Trailblazer fact sheet",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/lunar-trailblazer-fact-sheet",
+          "notes": "Source of launch date (26 February 2025) and IM-2 rideshare (HTTP 200)."
+        },
+        {
+          "title": "Mid-infrared compositional spectral parameters for the Lunar Thermal Mapper instrument onboard Lunar Trailblazer (Shirley et al. 2026, Earth and Space Science 13, e2025EA004590)",
+          "publisher": "Earth and Space Science (Oxford institutional repository copy)",
+          "url": "https://ora.ox.ac.uk/objects/uuid:c1e2a33a-0175-42cf-bb94-315d85400e12/files/r8c97ks97m",
+          "notes": "Peer-reviewed source for LTM channel count, wavelength coverage and 70 m/pixel resolution (HTTP 200). The DOI landing page (10.1029/2025EA004590) returned HTTP 403 to automated requests."
+        },
+        {
+          "title": "ROCKSTAR: A Thermal Infrared Hyperspectral Imager for Meter-Scale Data Collection from Orbit (Ferrari-Wong et al.)",
+          "publisher": "NASA Science Mission Directorate (hosted PDF)",
+          "url": "https://smd-cms.nasa.gov/wp-content/uploads/2023/11/rockstar.pdf",
+          "notes": "Undated proposal-stage concept paper. Source of Rockstar design targets and HyTI heritage statements (HTTP 200). Publication date not established."
+        },
+        {
+          "title": "2001 Mars Odyssey Thermal Emission Imaging System (THEMIS) Data Processing User's Guide, version 0.8 (July 2003)",
+          "publisher": "NASA Planetary Data System (PDS-hosted copy)",
+          "url": "https://pds.nasa.gov/data/ody-m-thm-2-visiredr-packtest-v1.0/ody_0000/label/process.pdf",
+          "notes": "Source of THEMIS band coverage, mass (11.2 kg), dimensions and orbital-average power (14 W). Early version; not checked against later revisions (HTTP 200)."
+        },
+        {
+          "title": "Thermal Emission Imaging System (THEMIS), Mars Odyssey instrument record (PDS context themis.ody)",
+          "publisher": "Planetary Science Institute, ARCNav",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:themis.ody",
+          "notes": "Source of instrument type, uncooled microbolometer detector and 12 cm aperture (HTTP 200)."
+        },
+        {
+          "title": "First THEMIS Image of Mars (PIA03459)",
+          "publisher": "NASA Science Photojournal",
+          "url": "https://science.nasa.gov/photojournal/first-themis-image-of-mars/",
+          "notes": "Source of first THEMIS image date and image caption (HTTP 200)."
+        },
+        {
+          "title": "Landsat 8 mission page (TIRS bands, resolution, launch date)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/landsat-8",
+          "notes": "Source of TIRS band coverage, 100 m resolution, NASA Goddard build and launch date (HTTP 200)."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images",
+      "Hayabusa2 TIR example": "payload.article.physical_specifications.examples[2].images",
+      "THEMIS example": "payload.article.physical_specifications.examples[3].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "LTM in-flight status: Lunar Trailblazer launched on 26 February 2025 and lost contact the day after launch; NASA's JPL mission page states the mission ended on 31 July 2025. No LTM measurement, operating period or data product is reported in the sources accessed, and no LTM performance claim is made.",
+    "LTM spatial resolution conflict: Shirley et al. (2026) state 70 m/pixel, while the undated Rockstar paper uses 30 m/pixel for Lunar Trailblazer in a comparison. The 70 m/pixel value is used because it comes from the later peer-reviewed paper.",
+    "LTM temperature range: the 2023 JPL release gives the mapping range in Fahrenheit only ('from about minus 265 degrees to 266 Fahrenheit'). It was not cross-checked against the instrument paper (Bowles et al. 2026), which was not accessed in full.",
+    "LTM mass, power and dimensions are not publicly specified in the sources accessed. The Bowles et al. (2026) LTM instrument paper was not accessed, so instrument-level engineering values are a gap.",
+    "Rockstar is a proposed concept with an undated source. Its TRL statement, its 50-kg-class compatibility statement and its development steps are proposer statements. HyTI's flight status (scheduled for early 2023 in the paper) was not verified.",
+    "THEMIS values (11.2 kg, 29 x 37 x 55 cm, about 14 W) come from a version 0.8 data processing guide dated July 2003. They were not checked against later revisions, and the spatial resolution and current operating status were not verified.",
+    "Hayabusa2 TIR content was read through the Stirling repository record; the Springer DOI full text was not read. Mass, power and dimensions are not stated in the sources accessed.",
+    "Landsat 8 TIRS mass, power and dimensions are not stated in the sources accessed, and current operating status was not verified. The USGS Landsat 8 page returned HTTP 403 to automated requests, so the NASA Science mission page is cited instead.",
+    "Automated HTTP access returned 403 for several pages that were read through a fetch tool (JPL LTM release and mission page, Wiley DOI landing page for Shirley et al. 2026, USGS Landsat page). Their content is cited as read, and the HTTP results are recorded in each reference's notes.",
+    "The NASA Photojournal page for the LTM photograph lists a content/dam JPEG path that returned HTTP 404. The dynamicimage JPEG path (HTTP 200) is used instead.",
+    "Image reuse rights were not verified for any image. NASA and JAXA credit requirements are recorded in each image's credit and notes fields."
+  ]
+}

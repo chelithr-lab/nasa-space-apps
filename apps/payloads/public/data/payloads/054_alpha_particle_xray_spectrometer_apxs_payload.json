@@ -1,0 +1,413 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 54,
+    "name": "Alpha Particle X-ray Spectrometer (APXS)",
+    "article": {
+      "overview": "An Alpha Particle X-ray Spectrometer (APXS) is a contact instrument that determines the chemical elements in a rock or soil sample. It is placed against the surface, and radioactive sources bombard the sample with particles or X-rays. The sample then emits characteristic X-rays, which a detector records as a spectrum. The name \"alpha particle\" refers to instruments that also use an alpha-particle detector, which helps measure light elements such as carbon and oxygen. Not every APXS-type instrument has this alpha channel, so the family is described here by its shared principle, not its exact sensor set.\n\nThe article covers four flown instruments from the same family: the Mars Pathfinder APXS (named the \"Alpha Proton X-ray Spectrometer\" in its source documents) [4][3], the two Mars Exploration Rover (MER) APXS units [6][7], the Mars Science Laboratory (MSL) APXS on Curiosity [9][10], and the Chang'e-3 Yutu rover instrument, which its own sources call the \"Active Particle-induced X-ray Spectrometer\" [1][2]. Chang'e-3 is the only lunar-surface example verified in this run. The three Mars instruments are included as heritage and comparison examples, and each is labelled by its environment.\n\nScope boundaries: this entry covers contact spectrometers that use radioactive sources to excite X-ray spectra. Standalone X-ray fluorescence instruments (entry 055) and general X-ray spectrometers (entry 056) are covered in their own entries and are not repeated here. The Chang'e-3 instrument is included because its sources describe it as an APXS, even though its published description states that its operating principle is similar to other X-ray fluorescence spectrometers [2]. The Beagle 2 lander's X-ray instrument was a separate X-ray spectrometer (XRS), not an APXS [14]. Mineral identification by X-ray diffraction, which the MSL CheMin instrument performs, is covered under entry 065 (X-ray diffraction instrument). No lunar landing site or location recommendation is made.",
+      "description": "The APXS sensor head sits at the end of a robotic arm and touches or hovers close to the sample. Each flown example uses radioactive sources, and the detectors record X-rays emitted by the sample. The Chang'e-3 description states that its sensor head contains a silicon drift detector surrounded by eight excitation sources and that it has a radioisotope heater unit (RHU) to keep the sensor head warm during the lunar night [2]. The MSL description states that its X-ray detector can be cooled by an internal Peltier cooler and that it uses curium-244 X-ray sources [9].\n\nEach instrument records a spectrum over minutes to hours. The spectrum shows peaks at energies that are characteristic of particular elements. Analysts then convert peak intensities into element concentrations using calibration with reference materials. The MER instrument was calibrated with 11 geological samples and meteorites before flight, and both MER and MSL include onboard calibration targets [7][8][9]. The Pathfinder description states that its detectors were cross-calibrated before flight [4].\n\nThe name \"alpha particle X-ray spectrometer\" describes a combination of two measurement modes. In X-ray mode, the instrument records characteristic X-rays from the sample. In alpha mode, alpha particles from a source are backscattered from the sample, and the energies of the backscattered particles provide information about lighter elements. The MER description states that its alpha data provide carbon and oxygen [8]. The MSL description states that it has no alpha channel and that its X-ray measurements are the only mode [9]. The term therefore applies to a family in which some members have alpha detection and others do not.",
+      "scientific_purpose_and_applications": "The purpose of an APXS is to find the major and minor elements in rocks and soils at the point of contact. Major elements include silicon, aluminium, iron, magnesium and calcium. Minor elements include titanium, chromium, potassium and others. Element concentrations help scientists determine rock types, weathering processes and the sources of soil materials.\n\nThe Pathfinder APXS was designed to analyse Martian soil and rocks at the landing site. The source paper reports the composition of Martian soil and rock from its X-ray mode [3]. The MER APXS units were designed to determine the elemental makeup of soils and rocks, and the Gellert et al. (2006) calibration paper reports concentration data from Spirit's first 470 sols in Gusev Crater [5][8]. The MSL APXS is designed to measure element concentrations at the points where the rover's arm places it, including trace elements that need long integration times [9]. The Chang'e-3 instrument was designed to determine the element composition and abundance of lunar soil and rock [2].\n\nThe data from these instruments are used to compare sample compositions across sites, to identify chemical differences between rock types, and to check remote-sensing measurements against in situ chemistry. Chang'e-3's ground verification paper states that a detection limit that increases with distance can prevent low-atomic-number elements such as magnesium from being determined at detection distances above 50 mm under its test conditions [2].",
+      "operating_principle": "The sensor head contains radioactive sources that emit particles or X-rays onto the sample. When these radiations strike atoms in the sample, the atoms are excited. As they return to their normal state, they emit characteristic X-rays. A silicon detector records these X-rays and sorts them by energy. Each element has characteristic energies, so the spectrum can be analysed to identify the elements present and estimate their abundance [2].\n\nThe Chang'e-3 description gives the operating sequence: the robotic arm deploys the sensor head to a target on the lunar surface, the radioactive sources bombard the soil, and the silicon drift detector and electronics accumulate the characteristic X-rays [2]. The Pathfinder instrument used curium-244 alpha sources and a silicon PIN photodiode for X-rays, together with alpha and proton detectors [4]. The MER instruments used a silicon drift detector with alpha-emitting sources and backscatter detectors [7][8]. The MSL instrument used a curium-244 X-ray source and a silicon drift detector cooled by a Peltier cooler [9].\n\nCooling affects the X-ray resolution. The MSL description states that the X-ray detector resolution is below 200 eV at 6.4 keV at temperatures below about -5 °C, and below 150 eV at temperatures below about -15 °C [9]. The MER description states that the optimum X-ray resolution occurs at 248 K (about -25 °C) for touch-and-go operations [8].\n\nFigure 1 shows the APXS instrument on Curiosity in a Mastcam image. The image was taken on sol 32 of surface operations. The NASA caption states that it confirmed the instrument had not been coated in dust after landing [12].",
+      "scientific_importance": "The APXS is important because it provides element-level chemistry from a small contact area, which complements orbital and remote-sensing measurements. Orbital instruments see the surface from a distance and cannot easily determine the composition of an individual rock. A contact instrument can measure a specific target and can be combined with imaging and mobility data to choose later sampling sites.\n\nMars APXS data helped establish the chemistry of soils and rocks at several landing sites. The Pathfinder soil results were interpreted as requiring a mixed origin rather than local rock alone, and that interpretation remains debated [3]. MER data reported soils that resemble earlier landing sites, a meteoritic component in the soil, and more weathered rocks in the Columbia Hills [5]. MSL reports that its APXS provides about three times the sensitivity to low-atomic-number elements, and about six times the sensitivity to higher-atomic-number elements, compared with the MER APXS [9]. The source does not state the basis or test conditions for these factors, so they are reported as the instrument's own statements.\n\nThe Chang'e-3 APXS adds lunar surface chemistry, a different environment from the Mars sites [1][2]. Its ground verification paper found that major elements could be determined with relative deviations below 15 wt.% for a 30 mm detection distance and 30 minute acquisition [2]. Flight results from the Yutu rover are described in the LPSC abstract [1] but were not verified in this run.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an APXS. Each instrument has its own sensor head, electronics, radioactive sources, detectors and calibration. The examples below are flown or flight-built instruments; their values are tied to the named instrument and source. Mass, power and dimensions are not published for every instrument, and missing values are marked as not publicly specified. No table is given because the four instruments were designed for different missions and their values are not directly comparable.",
+        "examples": [
+          {
+            "name": "Mars Pathfinder APXS (named \"Alpha Proton X-ray Spectrometer\" in its source documents)",
+            "type": "Flown Mars surface instrument (Sojourner rover payload)",
+            "flight_status": "flown",
+            "mass_kg": 0.57,
+            "mass_note": "PDS instrument description lists 570 g for the whole instrument; a separate sensor-head mass is not given.",
+            "dimensions_cm": {
+              "length": 10.5,
+              "width": 8.0,
+              "height": 6.5
+            },
+            "power_consumption_w": null,
+            "power_note": "Power draw not stated in the PDS instrument description.",
+            "sources": "Nine curium-244 alpha-particle sources (PDS description; activity not stated).",
+            "xray_detector": "Silicon PIN photodiode in a hermetically sealed package with a beryllium window.",
+            "xray_resolution_fwhm_ev_at_fe_kalpha": 260,
+            "xray_resolution_status": "flight observation (PDS description: constant over the mission)",
+            "night_ambient_temperature_c_range": [
+              -85,
+              -50
+            ],
+            "night_temperature_status": "flight observation (PDS description)",
+            "sample_area_diameter_cm": 5,
+            "article_text": "Status: flown on Mars Pathfinder, as part of the Sojourner rover [3][4]. The instrument description states that it was a foreign-provided copy of an instrument design flown on the Russian Vega, Phobos and Mars '96 missions [4].\n\nThe PDS instrument description gives a mass of 570 g for the whole instrument, with overall dimensions of 10.5 cm long, 8.0 cm wide and 6.5 cm high [4]. This mass covers the whole instrument, not a separately measured sensor head, and the description was not checked against a separate mass budget. Power draw is not stated in the description [4]. The sources contain nine curium-244 alpha-particle sources, which the description calls sources \"for each of three types of particles\" [4]. The X-ray detector is a silicon PIN photodiode with a beryllium window, and the alpha detector is silicon, 35 µm thick, which stops 6.5 MeV alpha particles. A proton detector sits behind it [4].\n\nThe description gives a constant X-ray resolution of about 260 eV FWHM at the Fe-Kα line for the full mission, which is a flight observation [4]. The ambient temperature during most night-time X-ray measurements was -50 to -85 °C [4]. The analysed sample area is a 5 cm circle, and the sensor axis must be within 20° of the surface normal [4]. The PDS page gives the instrument PI as R. Rieder, with the alpha and proton sections from the Max Planck Institute in Mainz and the X-ray section from the University of Chicago [4].",
+            "source_urls": [
+              "https://pds.nasa.gov/data/mpfr-m-apxs-2-edr-v1.0/mprv_0001/document/apxsinst.htm"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mars Exploration Rover (MER) APXS",
+            "type": "Flown Mars surface instrument (two Mars Exploration Rovers)",
+            "flight_status": "flown",
+            "mass_kg": null,
+            "mass_note": "Mass not stated in the PDS label or RSL page accessed.",
+            "dimensions_mm": {
+              "sensor_head_diameter": 53,
+              "sensor_head_length": 84,
+              "insulating_flange_square": 68
+            },
+            "dimensions_status": "design description (PDS label)",
+            "power_consumption_w": null,
+            "power_supply": {
+              "board_battery_nominal_v": 28,
+              "internal_rails_v": [
+                "5 digital",
+                "±5 analog",
+                "±12 analog"
+              ]
+            },
+            "power_note": "Power draw in watts not stated in the accessed sources.",
+            "xray_detector": "Silicon drift detector, 10 mm2 active area, 5 µm beryllium window.",
+            "xray_resolution_ev_at_5_9_kev": 160,
+            "xray_resolution_status": "design / pre-launch value (PDS label: about 160 eV at 5.9 keV)",
+            "alpha_sources": "Six alpha-emitting pellets in a spring-loaded holder, covered with 2.5 µm titanium foils that reduce alpha energy from 5.80 MeV to 5.17 MeV. Isotope and activity not stated in the accessed text.",
+            "optimum_xray_resolution_temperature_k": 248,
+            "touch_and_go_min_duration_min": 15,
+            "trace_element_search_hours_xray_mode": "about 2 to 4",
+            "carbon_search_hours_alpha_mode_min": 8,
+            "docking_accuracy": {
+              "untouched_target_mm": 10,
+              "untouched_target_deg": 10,
+              "previously_contacted_target_mm": 4,
+              "previously_contacted_target_deg": 3
+            },
+            "article_text": "Status: flown on the two Mars Exploration Rovers. The Gellert et al. (2006) calibration paper reports Spirit data from the mission, and the PDS label refers to \"the two\" MER rovers [5][7]. The instrument is described as part of the Athena payload [7].\n\nThe PDS label gives the sensor head as a cylindrical enclosure 53 mm in diameter and 84 mm long, with an insulating flange of 68 mm by 68 mm [7]. The RSL page describes the instrument as \"very light-weight\" but gives no mass [8]. Power is taken from the rover's board battery, nominally 28 V, with internal supply rails of 5 V digital, ±5 V analog and ±12 V analog [7]. Power draw in watts is not stated in the accessed sources.\n\nThe X-ray detector is a silicon drift detector with a 10 mm² active area and a 5 µm beryllium window. The label gives a resolution of about 160 eV at 5.9 keV, which is a pre-launch design value [7]. The alpha channel uses six alpha-emitting pellets in a spring-loaded holder, covered with 2.5 µm titanium foils. These foils reduce the alpha energy from 5.80 MeV to 5.17 MeV [8]. The isotope and activity of these pellets are not stated in the accessed text. The accessed MER description names curium sources only as background sources, so the identity of the alpha source is not verified here [8].\n\nThe MER X-ray spectrum covers roughly sodium to yttrium, and backscattered alpha data provide carbon and oxygen [8]. Trace-element searches need about 2–4 hours in X-ray mode, and carbon searches need at least 8 hours in alpha mode. Touch-and-go measurements should last at least 15 minutes [8]. The description also states that carbon background \"remains the limiting factor\" for carbon determination [8]. Calibration used 11 validated samples (8 geostandards and 3 meteorites) at the Max Planck Institute in Mainz, together with oxide and metal standards [7][8].",
+            "source_urls": [
+              "https://pds.nasa.gov/data/pds3/backup/202007-mer/zzold/mer1_apxs_inst.cat",
+              "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/MER/Instruments/MER%20APXS.htm"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mars Science Laboratory (MSL) APXS on Curiosity",
+            "type": "Flown Mars surface instrument (Curiosity rover, robotic arm)",
+            "flight_status": "flown",
+            "mass_kg": null,
+            "mass_note": "Mass not published in the RSL page accessed. A 2012 conference presentation seen only as a search snippet is not used.",
+            "power_consumption_w": null,
+            "power_note": "Power draw not published in the RSL page accessed.",
+            "sensor_head_height_cm": 7.8,
+            "sensor_head_height_source": "NASA caption for PIA13874 (pre-launch photograph)",
+            "xray_source": "Curium-244 X-ray sources (RSL page)",
+            "alpha_channel": false,
+            "cooling": "Internal Peltier cooler for the X-ray detector chip (RSL page)",
+            "xray_resolution_ev_at_6_4_kev": {
+              "below_about_minus_5_c": "below 200",
+              "below_about_minus_15_c": "best FWHM below 150"
+            },
+            "xray_resolution_status": "design statements on the RSL page; not separately labelled pre-launch or flight",
+            "spot_diameter_cm_at_contact": 1.7,
+            "standoff_typical_max_cm": 2,
+            "analysis_depth": {
+              "low_z_elements": "upper about 5 µm",
+              "iron": "upper about 50 µm"
+            },
+            "measurement_duration": {
+              "quick_look_max_min": 10,
+              "full_min_min": 15,
+              "full_max_h": 3
+            },
+            "data_per_measurement_kb": 32,
+            "accuracy_approx_percent": 10,
+            "accuracy_note": "Limited mainly by sample heterogeneity (RSL page; not labelled)",
+            "sensitivity_vs_mer": {
+              "low_z_factor": 3,
+              "high_z_factor": 6,
+              "note": "Statement made on the RSL page; basis not given there; not independently verified."
+            },
+            "lockup_mitigation": "Long integrations split in two with a power cycle between them (flight observation, RSL page)",
+            "article_text": "Status: flown on Curiosity, which operates on Mars. The NASA image record shows the instrument placed on a rock on sol 46, on 22 September 2012 [13]. The MSL APXS was funded by the Canadian Space Agency, with MDA Corporation as prime subcontractor, and its PI is Ralf Gellert of the University of Guelph [9].\n\nThe sensor head sits on the robotic arm, and the electronics are inside the rover body [9]. A pre-launch photograph of the sensor head shows that it is 7.8 cm tall, according to the NASA caption [11]. The accessed RSL page gives no sensor-head mass, electronics mass or power draw. A 2012 conference presentation, which was seen only as a search snippet, reported a sensor-head mass and power dissipation. Those figures were not verified in a primary source and are not used in this article [9].\n\nThe X-ray source is curium-244, and the RSL description states that there is no alpha channel and no Rutherford backscattering spectroscopy [9]. The Peltier cooler keeps the X-ray detector cold enough for daytime operation [9]. The RSL description gives the following resolution figures at 6.4 keV: below 200 eV at temperatures below about -5 °C, and below 150 eV at about -15 °C. These are pre-flight design statements, not independently measured, and the accessed page does not separate pre-launch and flight values for them [9].\n\nThe MSL spot size is about 1.7 cm in diameter at contact. The instrument can operate at contact or hover typically less than 2 cm from the sample [9]. Low-atomic-number X-rays come from the upper 5 µm of the sample, while iron X-rays come from the upper 50 µm [9]. Measurements last from 15 minutes to 3 hours. A quick look at major and minor elements takes 10 minutes or less, and proximity-mode spectra of about 10 seconds support arm positioning. Each measurement returns 32 kilobytes of data, including up to 13 consecutive spectra [9]. The page gives an accuracy of about 10%, limited mainly by sample heterogeneity [9].\n\nThe MSL APXS has a documented flight anomaly. The RSL page describes the mitigation: long integrations are split in two, with a power cycle between them, which is a flight observation [9]. The failure mode itself is described only in secondary search summaries and is not verified here.\n\nThe NASA image record includes a Navcam image of the arm placing the APXS on a pyramid-shaped rock on sol 46. The NASA caption describes the rock as \"Jake Matijevic,\" and the image is shown in the Transportation section below [13].",
+            "source_urls": [
+              "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/MSL/Instruments/APXS%20Alpha%20Particle%20X-ray%20Spectrometer.htm",
+              "https://science.nasa.gov/photojournal/sensor-head-on-the-mars-bound-apxs-instrument"
+            ],
+            "images": [
+              {
+                "id": "msl_apxs_sensor_head_pia13874",
+                "description": "Sensor head of the Mars-bound Alpha Particle X-ray Spectrometer during testing at NASA's Jet Propulsion Laboratory, before the Curiosity mission.",
+                "image_type": "Pre-launch engineering hardware photograph",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia13/pia13874/PIA13874.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/sensor-head-on-the-mars-bound-apxs-instrument",
+                "publisher": "NASA / JPL-Caltech",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "The sensor head on the Alpha Particle X-ray Spectrometer instrument was installed during testing at NASA's Jet Propulsion Laboratory. For perspective, the sensor head is 7.8 centimeters, or about 3 inches tall.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct NASA asset URL verified by HTTP 200 image/jpeg, with no query string. The source page gives PIA13874 and the 7.8 cm scale statement. Source page lists an image addition date of 02/18/2011."
+              }
+            ]
+          },
+          {
+            "name": "Chang'e-3 Yutu rover APXS (\"Active Particle-induced X-ray Spectrometer\")",
+            "type": "Flown lunar surface instrument (Yutu rover, Chang'e-3 mission)",
+            "flight_status": "flown",
+            "mass_kg": 0.754,
+            "mass_note": "Sensor head only, from Table 1 of the ground verification preprint.",
+            "dimensions_cm": null,
+            "dimensions_note": "Not stated in the accessed text.",
+            "power_consumption_w": null,
+            "power_note": "Not stated in the accessed text.",
+            "xray_detector": "Silicon drift detector, 7 mm2 effective area, central in the sensor head.",
+            "xray_resolution_ev_at_5_9_kev": "less than 140",
+            "xray_resolution_status": "Table 1 of the preprint; the table layout was extracted imperfectly",
+            "excitation_sources": {
+              "iron_55": {
+                "count": 4,
+                "xray_energies_kev": [
+                  5.9,
+                  6.49
+                ],
+                "total_activity_mci_body_text": 294,
+                "activity_mci_table_text": "4 x 70"
+              },
+              "cadmium_109": {
+                "count": 4,
+                "xray_energies_kev": [
+                  22.1,
+                  24.9,
+                  25.5,
+                  88
+                ],
+                "total_activity_mci_body_text": 13.4,
+                "activity_mci_table_text": "4 x 5"
+              }
+            },
+            "source_activity_conflict": "The body text and Table 1 give different activity totals; unresolved.",
+            "radioisotope_heater_unit": true,
+            "test_detection_distance_mm_range": [
+              10,
+              110
+            ],
+            "standard_test_detection_distance_mm": 30,
+            "major_element_relative_deviation_wt_pct_below": 15,
+            "major_element_test_acquisition_min": 30,
+            "article_text": "Status: flown on the Yutu rover of the Chang'e-3 lunar mission [1][2]. The instrument is a lunar surface payload. Its name differs from the catalogue name, and its sources describe it as an X-ray spectrometer with radioisotope sources rather than an alpha backscatter instrument [2].\n\nThe ground verification paper gives the following technical specifications for the instrument, as read from Table 1 of the preprint and checked against the body text [2]. The silicon drift detector has a 7 mm² effective area, and its energy resolution is given as less than 140 eV at 5.9 keV. The sensor head weighs 754 g, as stated in the table for the sensor head alone [2]. The excitation sources are four iron-55 sources and four cadmium-109 sources, emitting X-rays at 5.90 and 6.49 keV (iron-55) and 22.1, 24.9, 25.5 and 88 keV (cadmium-109) [2]. The body text gives total activities of 294 mCi for iron-55 and 13.4 mCi for cadmium-109, while the table lists 4×70 mCi and 4×5 mCi. These values are inconsistent in the preprint and are not resolved here. The paper also describes the RHU and a basalt calibration disk mounted on the rover's front panel for on-orbit calibration [2].\n\nThe ground verification test used the flight-model sensor head in a vacuum chamber below 10 Pa. Detection distance was varied from 10 mm to 110 mm [2]. Under a 30 mm detection distance and 30 minute acquisition, the paper reports relative deviations below 15 wt.% for major elements [2]. The limit of detection for each element increases with detection distance, and the paper concludes that detection distances above 50 mm do not allow low-atomic-number elements such as magnesium to be determined under the test conditions [2]. The Chang'e-3 instrument's overall mass and dimensions beyond the sensor head are not stated in the accessed text.",
+            "source_urls": [
+              "https://arxiv.org/pdf/1504.05899"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No universal dimensions exist for an APXS. Published values: the Mars Pathfinder instrument is 10.5 x 8.0 x 6.5 cm (PDS, design description); the MER sensor head is a 53 mm diameter by 84 mm long cylinder with a 68 mm square flange (PDS label); the Chang'e-3 sensor head mass is 754 g (preprint Table 1) with overall dimensions not stated; the MSL sensor head is 7.8 cm tall (NASA caption for a pre-launch photograph). Figures for different instruments describe different designs and are not directly comparable.",
+        "mass_and_weight": "Mass is published only for the Mars Pathfinder instrument as a whole (570 g, PDS description) and for the Chang'e-3 sensor head (754 g, preprint Table 1). MER and MSL masses are not stated in the accessed sources. The Pathfinder figure covers the whole instrument, not a sensor head alone.",
+        "power_requirements": "Not publicly specified for any of the four instruments in the accessed sources. The MER description gives a nominal 28 V board-battery supply and internal rails, not a power draw. The Chang'e-3 radioisotope heater unit is described qualitatively only."
+      },
+      "environmental_and_operational_requirements": "An APXS must work in the surface environment of the body where it operates. The Mars instruments operated in very cold conditions. The Pathfinder description gives night-time ambient temperatures of -50 to -85 °C during most X-ray measurements [4]. MSL resolution depends on detector temperature, so the instrument uses cooling for daytime measurements [9]. The MER description identifies 248 K as the optimum X-ray resolution temperature for touch-and-go operations [8].\n\nOn the Moon, the Chang'e-3 instrument uses a radioisotope heater unit to keep the sensor head warm during the lunar night [2]. The Chang'e-3 paper does not give a survival or operating temperature range for the sensor head.\n\nContact accuracy also depends on positioning. The MER description gives docking accuracies of 10 mm and 10° for an untouched target, and 4 mm and 3° for a target previously contacted by another instrument [7][8]. The MSL spot size of about 1.7 cm means that the sample area sampled is much larger than a point, and contact technique affects the spectrum [9]. The sensor head must be in good contact or at a controlled distance. Standoff increases the sampled area and reduces the intensity of the signal [9].\n\nThe radioactive sources, and their handling and licensing requirements, are engineering constraints. The accessed sources do not describe these requirements, so this article does not state them.",
+      "limitations": "The APXS analyses only a small area of the surface. Results can therefore vary with the heterogeneity of rocks and soils [9]. Light elements such as carbon are difficult to determine, and carbon background limits the MER carbon results [8]. Instruments with an X-ray channel are most sensitive to elements in the upper few micrometres to tens of micrometres of the sample [9]. Long integration times are needed for trace-element searches [8][9].\n\nThe flown MSL instrument has an operational anomaly, which requires splitting long integrations to avoid lockup [9]. The Chang'e-3 test shows that detection limits worsen as the detection distance increases [2]. The Pathfinder description states that its power draw is not given [4], and the MER and MSL mass and power figures are not verified in the accessed sources.",
+      "transportation_and_deployment": {
+        "overview": "Surface payload: the APXS is a contact instrument, so its sensor head must be carried to the sample by a robotic arm or similar mechanism. The Chang'e-3 sensor head is mounted on the robotic arm at the front of the Yutu rover, and the arm places it on the target surface [2]. The sensor head is kept warm by a radioisotope heater unit, and the rover carries a basalt calibration disk for on-orbit checks [2].\n\nThe MSL instrument is also carried on a rover arm. The NASA image record shows the arm placing the APXS on a rock on sol 46 [13]. The image below shows that deployment.\n\nThe Earth-to-Moon chain for a lunar APXS includes integration into the rover, launch, lunar transfer, landing or delivery, deployment, power and data connections, and thermal control. For Chang'e-3, the sources describe the rover integration and surface operation only. Power and data details for the lunar installation are not described in the accessed text. No compatibility with a specific lander or rover is asserted here, because such an assertion would need verified interface documents.\n\nFor the Mars instruments, the transport chain is the same in outline: the instrument is integrated into a rover, transferred to Mars and deployed by the rover's arm. The Pathfinder instrument was part of the Sojourner rover payload, and the MER and MSL instruments are on the rover arm [4][7][9]. These descriptions are reported as heritage for future designs, not as lunar compatibility evidence.",
+        "transportation_process": [
+          "Integrate the APXS sensor head, electronics and calibration equipment into a rover or lander on Earth. For Chang'e-3, the accessed sources describe the rover configuration (sensor head on the front-mounted robotic arm, RHU and calibration equipment on the front panel), not the integration procedure [2].",
+          "Launch and transfer to the Moon as part of a lunar mission. The accessed sources do not describe these steps for the APXS; they are general mission-chain steps and are not verified for this instrument.",
+          "Land or deliver the rover to the surface. Not verified for the APXS in the accessed sources.",
+          "Deploy: the robotic arm places the sensor head on the target surface. Chang'e-3 sources describe this sequence [2]. The MSL arm placement is shown in an official NASA image of sol 46 [13].",
+          "Power and data: the accessed Chang'e-3 text does not describe the power and data interfaces, apart from the RHU that keeps the sensor head warm during the lunar night [2]."
+        ],
+        "deployment_methods": "Robotic arm placement. Chang'e-3: sensor head on the robotic arm at the front of Yutu [2]. MSL: arm-mounted APXS placed on a rock on sol 46 [13]. MER: sensor head on the rover's IDD turret [7]. Pathfinder: instrument carried on the Sojourner rover [4].",
+        "historical_examples": "Mars Pathfinder (Sojourner rover payload), the two Mars Exploration Rovers, Mars Science Laboratory (Curiosity), and Chang'e-3 (Yutu rover). Each is a rover-mounted or arm-mounted contact instrument; none is a lander-only example in the accessed sources.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted for a lunar APXS. A compatibility claim would require verified interface documents for the named vehicle, including mass, dimensions, mounting, power, data and thermal interfaces.",
+        "images": [
+          {
+            "id": "msl_apxs_arm_rock_contact_sol46_pia16220",
+            "description": "Navcam image of the Curiosity robotic arm placing the Alpha Particle X-ray Spectrometer on a pyramid-shaped rock on sol 46.",
+            "image_type": "Navcam surface photograph",
+            "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/mars/downloadable_items/3/6/36386_pia16220_Sol46-right-navcam-Jake.jpg",
+            "source_page_url": "https://science.nasa.gov/resource/curiositys-rock-contact-science-begins/",
+            "publisher": "NASA / JPL-Caltech",
+            "credit": "NASA/JPL-Caltech",
+            "caption": "This image shows the robotic arm of NASA's Mars rover Curiosity with the first rock touched by an instrument on the arm. The right Navcam captured the image on sol 46, when the rover placed its APXS instrument on a pyramid-shaped rock to analyze its chemical elements. The rock is named Jake Matijevic.",
+            "section_placements": [
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct NASA asset URL verified by HTTP 200 image/jpeg, with no query string. The source page gives PIA16220, sol 46 (September 22, 2012) and the caption text. The NASA caption's phrase 'first rock touched by an instrument on the arm' is quoted as published and is not a claim about the first APXS measurement in this article."
+          }
+        ]
+      },
+      "historical_significance": "The APXS family has a long record on Mars. The Mars Pathfinder instrument analysed Martian soil and rocks, and it used a foreign-provided design derived from earlier Russian missions [3][4]. The two MER instruments extended the measurements to Gusev Crater and the Columbia Hills [5][7]. The MSL instrument, installed on Curiosity, continued the measurements on Mars, and the NASA image record documents its early operations [9][11][12][13].\n\nChang'e-3 is the only lunar example verified in this run. Its APXS is an X-ray spectrometer that uses radioisotope sources, and its instrument documentation records lunar surface operations using the Yutu rover's robotic arm [1][2].",
+      "limitations_and_uncertainties": "Chang'e-3 naming and technology. The instrument is called the \"Active Particle-induced X-ray Spectrometer\" in its sources, but a related thesis reference uses \"alpha particle X-ray spectrometer\" [2]. The Chang'e-3 APXS is described as an X-ray fluorescence type using radioisotope X-ray sources, not as an alpha backscatter instrument [2]. Chang'e-3 specifications. The sensor head mass of 754 g and the detector values are taken from a preprint table, and the energy-range row was not legible in the extracted text. The source activities conflict between the text and table [2]. The flight results and their publication status are not verified in this run [1]. Pathfinder power and mass. The PDS description gives a 570 g figure for the whole instrument and no power value [4]. The sensor-head mass and power are therefore not publicly specified in the accessed sources. MER mass, power, rover assignment and PI. The PDS label and RSL page do not state the instrument mass, power, field-of-view angle, detection distance, or the rover that carried each unit [7][8]. Spirit is named as a source of MER data in the Gellert et al. calibration paper [5], but the accessed instrument label does not identify both rovers by name [7]. MER alpha source isotope and activity. The accessed text does not name the isotope or activity of the six alpha sources [8]. MSL mass and power. The accessed RSL page does not provide mass or power. A 2012 conference presentation seen only in a search summary gave values, but they could not be verified in the primary source and are not used [9]. MSL instrument paper. The MSL calibration paper (Campbell et al., 2012) was identified from a secondary listing and was not read in full [10]. The Gellert et al. instrument paper was not located. Beagle 2. The Beagle 2 lander's X-ray instrument was an XRS, not an APXS. The MPS page identifies the Beagle 2 instruments as including an X-ray spectrometer [14]. Image coverage. Three NASA images were verified as direct JPEG assets and listed on NASA source pages [11][12][13]. No verified direct image was found for the Chang'e-3, MER or Pathfinder instruments in this run, so those examples are text-only. The CAS and CSA source pages were not accessible during this run [1][9]. Cross-references. Standalone X-ray fluorescence is covered under entry 055 (X-ray fluorescence spectrometer), and general X-ray spectrometers under entry 056 (X-ray spectrometer). X-ray diffraction on MSL is covered under entry 065 (X-ray diffraction instrument). This article does not duplicate those entries.",
+      "images": [
+        {
+          "id": "msl_apxs_mastcam_portrait_pia16160",
+          "description": "Mast Camera image of the Alpha Particle X-ray Spectrometer on the Curiosity rover, with Martian terrain behind it, taken on sol 32 of surface operations.",
+          "image_type": "Mast Camera surface photograph (colour-enhanced)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia16/pia16160/PIA16160.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/portrait-of-apxs-on-mars/",
+          "publisher": "NASA / JPL-Caltech",
+          "credit": "NASA/JPL-Caltech/MSSS",
+          "caption": "The APXS instrument on Curiosity, with Martian terrain behind it, taken by the Mast Camera. The color was enhanced to approximate Earth lighting.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "Direct NASA asset URL verified by HTTP 200 image/jpeg, with no query string. The source page gives PIA16160, the sol 32 date and the dust-check statement. Rights and reuse follow NASA/JPL image policy; check the source page before republication."
+        },
+        {
+          "id": "msl_apxs_sensor_head_pia13874",
+          "description": "Sensor head of the Mars-bound Alpha Particle X-ray Spectrometer during testing at NASA's Jet Propulsion Laboratory, before the Curiosity mission.",
+          "image_type": "Pre-launch engineering hardware photograph",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia13/pia13874/PIA13874.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/sensor-head-on-the-mars-bound-apxs-instrument",
+          "publisher": "NASA / JPL-Caltech",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "The sensor head on the Alpha Particle X-ray Spectrometer instrument was installed during testing at NASA's Jet Propulsion Laboratory. For perspective, the sensor head is 7.8 centimeters, or about 3 inches tall.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct NASA asset URL verified by HTTP 200 image/jpeg, with no query string. The source page gives PIA13874 and the 7.8 cm scale statement. Source page lists an image addition date of 02/18/2011."
+        },
+        {
+          "id": "msl_apxs_arm_rock_contact_sol46_pia16220",
+          "description": "Navcam image of the Curiosity robotic arm placing the Alpha Particle X-ray Spectrometer on a pyramid-shaped rock on sol 46.",
+          "image_type": "Navcam surface photograph",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/mars/downloadable_items/3/6/36386_pia16220_Sol46-right-navcam-Jake.jpg",
+          "source_page_url": "https://science.nasa.gov/resource/curiositys-rock-contact-science-begins/",
+          "publisher": "NASA / JPL-Caltech",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "This image shows the robotic arm of NASA's Mars rover Curiosity with the first rock touched by an instrument on the arm. The right Navcam captured the image on sol 46, when the rover placed its APXS instrument on a pyramid-shaped rock to analyze its chemical elements. The rock is named Jake Matijevic.",
+          "section_placements": [
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct NASA asset URL verified by HTTP 200 image/jpeg, with no query string. The source page gives PIA16220, sol 46 (September 22, 2012) and the caption text. The NASA caption's phrase 'first rock touched by an instrument on the arm' is quoted as published and is not a claim about the first APXS measurement in this article."
+        }
+      ],
+      "overview_images": [],
+      "operating_principle_images": [
+        {
+          "id": "msl_apxs_mastcam_portrait_pia16160",
+          "description": "Mast Camera image of the Alpha Particle X-ray Spectrometer on the Curiosity rover, with Martian terrain behind it, taken on sol 32 of surface operations.",
+          "image_type": "Mast Camera surface photograph (colour-enhanced)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia16/pia16160/PIA16160.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/portrait-of-apxs-on-mars/",
+          "publisher": "NASA / JPL-Caltech",
+          "credit": "NASA/JPL-Caltech/MSSS",
+          "caption": "The APXS instrument on Curiosity, with Martian terrain behind it, taken by the Mast Camera. The color was enhanced to approximate Earth lighting.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "Direct NASA asset URL verified by HTTP 200 image/jpeg, with no query string. The source page gives PIA16160, the sol 32 date and the dust-check statement. Rights and reuse follow NASA/JPL image policy; check the source page before republication."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "citation": "Peng, W. X., Wang, H. Y., Cui, X. Z., et al. (2014). Active Particle-induced X-ray Spectrometer for CHANG'E-3 YuTu Rover mission and its first results. 45th Lunar and Planetary Science Conference, abstract. Canonical URL not verified in this run.",
+          "url": null
+        },
+        {
+          "number": 2,
+          "citation": "Guo, D.-Y., Wang, H.-Y., Peng, W.-X., et al. Ground-based verification and data processing of Yutu rover Active Particle-induced X-ray Spectrometer. Submitted to Chinese Physics C; preprint on arXiv (Table 1 and body text used).",
+          "url": "https://arxiv.org/pdf/1504.05899"
+        },
+        {
+          "number": 3,
+          "citation": "Rieder, R., et al. (1997). The chemical composition of Martian soil and rocks returned by the mobile Alpha Proton X-ray Spectrometer: preliminary results from the X-ray mode. Science, 278, 1771. Canonical URL not verified in this run; bibliographic details from a secondary search summary.",
+          "url": null
+        },
+        {
+          "number": 4,
+          "citation": "NASA Planetary Data System. Alpha Proton X-ray Spectrometer instrument description (Mars Pathfinder APXS, mpfr-m-apxs-2-edr-v1.0).",
+          "url": "https://pds.nasa.gov/data/mpfr-m-apxs-2-edr-v1.0/mprv_0001/document/apxsinst.htm"
+        },
+        {
+          "number": 5,
+          "citation": "Gellert, R., et al. (2006). Alpha Particle X-Ray Spectrometer (APXS): Results from Gusev crater and calibration report. Journal of Geophysical Research: Planets, 111. DOI:",
+          "url": "https://doi.org/10.1029/2005JE002555"
+        },
+        {
+          "number": 6,
+          "citation": "Rieder, R., et al. (2003). The New Athena Alpha Particle X-Ray Spectrometer (APXS) for the Mars Exploration Rovers mission. Cited by the PDS MER APXS label; not accessed directly in this run.",
+          "url": null
+        },
+        {
+          "number": 7,
+          "citation": "NASA Planetary Data System. MER1 APXS instrument label (INSTRUMENT_ID = APXS, revised 2004).",
+          "url": "https://pds.nasa.gov/data/pds3/backup/202007-mer/zzold/mer1_apxs_inst.cat"
+        },
+        {
+          "number": 8,
+          "citation": "Washington University in St. Louis, Rosetta Science Lab / RSL instrument help. Alpha Particle X-ray Spectrometer (MER).",
+          "url": "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/MER/Instruments/MER%20APXS.htm"
+        },
+        {
+          "number": 9,
+          "citation": "Washington University in St. Louis, RSL instrument help. Alpha Particle X-ray Spectrometer (MSL).",
+          "url": "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/MSL/Instruments/APXS%20Alpha%20Particle%20X-ray%20Spectrometer.htm"
+        },
+        {
+          "number": 10,
+          "citation": "Campbell, J. L., et al. (2012). Calibration of the Mars Science Laboratory Alpha Particle X-ray Spectrometer. Space Science Reviews, 170, 319–340. Canonical URL not verified in this run.",
+          "url": null
+        },
+        {
+          "number": 11,
+          "citation": "NASA Photojournal, PIA13874 \"Sensor Head on the Mars-bound APXS Instrument\".",
+          "url": "https://science.nasa.gov/photojournal/sensor-head-on-the-mars-bound-apxs-instrument"
+        },
+        {
+          "number": 12,
+          "citation": "NASA Photojournal, PIA16160 \"Portrait of APXS on Mars\".",
+          "url": "https://science.nasa.gov/photojournal/portrait-of-apxs-on-mars/"
+        },
+        {
+          "number": 13,
+          "citation": "NASA Science, \"Curiosity's Rock-Contact Science Begins\" (PIA16220).",
+          "url": "https://science.nasa.gov/resource/curiositys-rock-contact-science-begins/"
+        },
+        {
+          "number": 14,
+          "citation": "Max Planck Institute for Solar System Research. Beagle 2 mission page (instrument list).",
+          "url": "https://www2.mps.mpg.de/en/projekte/mars-express/beagle2/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "operating_principle": "payload.article.operating_principle_images",
+      "physical_specifications.examples[2] (Mars Science Laboratory (MSL) APXS on Curiosity)": "payload.article.physical_specifications.examples[2].images",
+      "transportation_and_deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Each registry image was verified to return HTTP 200 (image/jpeg) at its asset URL as listed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Chang'e-3 naming: the sources use 'Active Particle-induced X-ray Spectrometer' (LPSC 2014 title and the Chinese Physics C preprint), while the thesis reference in the preprint uses 'alpha particle X-ray spectrometer'. The catalogue name is kept unchanged; the instrument is described on its own terms.",
+    "Chang'e-3 Table 1 was read from an extracted preprint PDF. The energy-range row was not legible and is not used. The sensor head mass (754 g) comes from the table row 'Weight (sensor head only)'.",
+    "Chang'e-3 source activities conflict: the body text gives 294 mCi total iron-55 and 13.4 mCi total cadmium-109, while Table 1 gives 4 x 70 mCi and 4 x 5 mCi. Unresolved.",
+    "Chang'e-3 flight results (Yutu) and the publication record of the LPSC 2014 abstract were not verified in this run. The CAS news release returned HTTP 404 and was not used.",
+    "Chang'e-3 overall dimensions and power draw are not stated in the accessed text.",
+    "Mars Pathfinder: the PDS description lists 570 g for the whole instrument. Sensor-head mass, power draw and source activity are not stated. The Science paper (Rieder et al., 1997) was identified from a secondary search summary and was not read; its canonical URL is not verified.",
+    "MER: the PDS label and RSL page do not state instrument mass, power draw, field-of-view angle, detection distance, PI, or which rover carried each unit. Spirit is named as a source of MER data only in the Gellert et al. (2006) calibration paper, which was identified from a search summary and not read in full.",
+    "MER alpha-source isotope and activity are not named in the accessed text; the 5.80 MeV pre-foil energy is recorded as stated and is not used to assign an isotope.",
+    "MSL mass and power are not published in the RSL page accessed. A 2012 conference presentation (Dickinson et al.) seen only as a search snippet reported figures, but its host did not resolve, so those values were not verified and are not used.",
+    "MSL resolution figures on the RSL page are design statements not separately labelled as pre-launch or flight. The 3x and 6x sensitivity statements are the page's own; their basis is not given there and they are not independently verified.",
+    "MSL primary instrument and calibration papers: Campbell et al. (2012, Space Science Reviews 170) is identified from a secondary listing and was not read in full; the Gellert et al. instrument-description paper was not located. Canonical URLs for references 1, 3, 6 and 10 are not verified.",
+    "Beagle 2: the MPS page identifies its X-ray instrument as an XRS, not an APXS. Beagle 2 is therefore not included as an APXS example.",
+    "Image coverage: three NASA images were verified as direct JPEG assets (HTTP 200, image/jpeg, no query string) and their NASA source pages were read. No direct asset was verified for the Pathfinder, MER or Chang'e-3 instruments; those examples are text-only and no image URL is invented. The JPL image page link returned HTTP 403 to the curl check and was not used as an asset.",
+    "Image rights: NASA/JPL images are cited with their credit lines. Reuse terms follow NASA/JPL image policy on each source page; they were not checked beyond the credit line.",
+    "No lunar landing-site or location recommendation is made, as deferred by the user.",
+    "Full-resolution download checks were not performed for the three NASA images beyond the HTTP 200 check on the listed asset URL.",
+    "The DOI for Gellert et al. (2006) (reference 5) returned HTTP 403 to automated checks. The citation was identified from search summaries and the DOI page was not read in this run.",
+    "Transportation compatibility is not verified for any named lunar lander or rover."
+  ]
+}

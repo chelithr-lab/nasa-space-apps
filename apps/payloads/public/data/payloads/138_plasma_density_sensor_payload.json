@@ -1,0 +1,233 @@
+{
+  "catalogue_id": 138,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 6,
+    "name": "Radiation and space environment"
+  },
+  "payload": {
+    "number": 138,
+    "name": "Plasma density sensor",
+    "article": {
+      "overview": "A plasma density sensor measures how many charged particles (electrons and ions) are present per unit volume in the plasma around a spacecraft or the Moon. On the lunar surface, the plasma is extremely thin and is shaped by sunlight, the solar wind and the Moon's own surface charging. Measuring it helps scientists understand the near-surface electrical environment and can inform the safety and operation of equipment, dust behaviour and future human activity. Only one flown example with a published electron-density result is verified in this article: the Langmuir probe on India's Chandrayaan-3 lander (RAMBHA-LP), which measured near-surface electron density in August and September 2023. A second flown instrument, ROLSES on the Intuitive Machines-1 lander, is described as a radio-based sounder whose electron-density results were not verified. Other examples are selected, proposed, or were lost before deployment. There is no single standard design for a plasma density sensor.",
+      "description": "'Plasma density' refers to the number of charged particles per cubic metre or cubic centimetre. The plasma above the lunar surface is sparse compared with Earth's ionosphere. A sensor for this purpose must detect very low currents or radio signals and must separate the plasma signal from effects caused by the spacecraft or lander itself. Two broad approaches appear in the sources reviewed. In situ probes, such as Langmuir probes, are exposed to the plasma and record the current collected as a voltage is swept; electron density is derived from the shape and magnitude of that current-voltage relationship. Remote radio sounders listen for radio emissions or resonances in the plasma; electron density can be inferred from the plasma frequency, which depends on electron density. The sources reviewed describe this approach for ROLSES, but the electron-density method was not verified from the primary paper.",
+      "scientific_purpose_and_applications": "Plasma density measurements at the Moon are used to characterise the thin, partly sunlit plasma environment that forms above the surface; to provide in situ ground-truth data that can be compared with indirect estimates, such as those from radio occultation at higher altitudes (described in the ISRO ground-truth article); to study how the lunar surface charges electrically, which can influence dust lofting and the behaviour of exposed hardware; and to support astronaut safety and equipment operation assessments, which is the stated goal of the LASP DUSTER proposal. The published Chandrayaan-3 result reported electron density about 2 m above the surface together with electron temperature, which together help constrain models of the near-surface plasma.",
+      "operating_principle": "Langmuir probe (Chandrayaan-3 RAMBHA-LP): according to the ISRO description, the probe applies a bias voltage that sweeps from -12 V to +12 V in 0.1 V steps and measures return currents as small as picoamperes, with a 1 millisecond dwell time. The Manju et al. (2025) paper describes the same +/-12 V sweep in 0.1 V steps with a 60 ms dwell per step, which differs from the ISRO dwell-time description. Electron density, ion density and electron energy are derived from the measured current-voltage curve using the instrument's analysis model. The ion composition conclusion, which the ISRO article links to molecular ions such as CO2 and H2O, depends on an in-house model. Radio sounding (ROLSES): the arXiv abstract by Gopalswamy et al. (2026) describes a radio receiver that measures radio and plasma-wave emissions from the lunar nearside using four 2.5 m monopole antennas. Press coverage, which was not verified against the primary paper, describes using two antenna heights to estimate electron density from the plasma frequency. The arXiv abstract does not describe an electron-density method, so this principle is unconfirmed. Mission-level sounding (DUSTER / RESOLVE): the LASP article describes RESOLVE as performing plasma sounding to characterise the average electron density above the lunar surface; its measurement principle beyond this description is not specified in the source reviewed.",
+      "scientific_importance": "The Moon has no thick atmosphere or global magnetic field to shield its surface, so the plasma environment varies strongly with sunlight, the solar wind and local surface conditions. The ISRO article describes the Chandrayaan-3 measurements as the first in situ electron density measurements of the near-surface lunar plasma over the south polar region, and states that the measured values are well above estimates from higher altitudes that rely on radio occultation. These near-surface values are relevant to testing models of the lunar plasma and surface charging. A single site and a short time window, however, cannot establish how the plasma varies globally or over the lunar day and night cycle.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a plasma density sensor. Values below describe the specific instruments found in the sources reviewed and should not be applied to other designs.",
+        "examples": [
+          {
+            "name": "Chandrayaan-3 RAMBHA-LP (Langmuir probe)",
+            "type": "Flown lunar surface plasma instrument",
+            "status": "Flown on the Chandrayaan-3 Vikram lander, which landed near the Shiv Shakti site at 69.3 S, 32.3 E according to the ISRO ground-truth article.",
+            "developer": "ISRO Space Physics Laboratory (VSSC), according to the ISRO article.",
+            "probe_description": "Spherical probe. The ISRO page describes a 5 cm metallic sphere; the Manju et al. paper gives a 50 mm stemmed hollow titanium-alloy sphere with a TiN coating (main text radius 2.5 cm).",
+            "boom_length_m": 1,
+            "boom_material": "CFRP (carbon fibre reinforced polymer), deployed by hold-release mechanism after touchdown.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_cm": null,
+            "bias_sweep_v": [-12, 12],
+            "bias_sweep_step_v": 0.1,
+            "dwell_time": "ISRO article: 1 ms per step. Manju et al. (2025): 60 ms per step. Both reported; they differ.",
+            "measurement_window": "Manju et al. (2025): 24 August to 2 September 2023, described as lunar daytime at about 2 m above the surface. ISRO ground-truth article: 23 August to 3 September 2023, day/night status not stated.",
+            "reported_electron_density_cm3": "380-600 (mean, Manju et al. 2025 abstract). Equivalent to 3.8-6.0 x 10^8 m^-3.",
+            "electron_density_uncertainty": "Worst-case uncertainty 'of the order of 50/cc'; overall error below 15 per cent (Manju et al. 2025).",
+            "reported_electron_temperature_k": "3000-8000 (Manju et al. 2025 abstract; ISRO article gives the same range as electron kinetic temperature).",
+            "ion_density": "No numerical ion density values given. ISRO article reports a model-based suggestion that molecular ions (likely CO2 and H2O) play a significant role; this depends on an in-house model.",
+            "discrepancy": "The earlier ISRO RAMBHA-LP page reports an 'initial assessment' of approximately 5-30 million electrons per cubic metre (5 x 10^6 to 3 x 10^7 m^-3, about 5-30 cm^-3), roughly 20 times lower than the peer-reviewed mean. The cause is not resolved in the sources reviewed; the peer-reviewed value is used as the primary figure.",
+            "qualification": "Environmental qualification and mass/power budget not stated in the sources reviewed.",
+            "source_urls": [
+              "https://www.isro.gov.in/Ch3_Rambha-LP_near-surface_Plasma.html",
+              "https://www.isro.gov.in/Chandrayaan3RAMBHALP_GroundTruth.html",
+              "https://academic.oup.com/mnras/article/542/4/2647/8223395",
+              "https://doi.org/10.1093/mnras/staf1276"
+            ],
+            "images": []
+          },
+          {
+            "name": "ROLSES (Radio-wave Observations at the Lunar Surface of the photoElectron Sheath)",
+            "type": "Flown lunar surface radio and plasma-wave instrument (limited data)",
+            "status": "Flown on the Intuitive Machines-1 (IM-1) lander, Odysseus, which landed near Malapert A (about 80 S) on 22 February 2024. The lander was tilted and some antennas deployed without command.",
+            "antenna_configuration": "Four 2.5 m radio monopole antennas, stowed for launch and deployed after landing using a frangibolt mechanism (arXiv abstract). Antenna heights not stated in the abstract.",
+            "frequency_band_hz": [2000, 30000000],
+            "sampling": "14-bit digitisation at 120 mega-samples per second; onboard FPGA FFT spectral analysis; raw waveforms also telemetered (arXiv abstract).",
+            "operating_duration": "Sources conflict: about 20 minutes combined in one press account; fractions of a day during cruise and two days on the surface in another. Not verified from the primary paper.",
+            "electron_density_results": "Not verified. The arXiv abstract describes 'initial observations' and gives no electron density value.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_cm": null,
+            "source_urls": [
+              "https://arxiv.org/abs/2603.22600",
+              "https://www.universetoday.com/articles/one-instrument-on-the-failed-lunar-lander-did-a-little-science"
+            ],
+            "images": []
+          },
+          {
+            "name": "Multi-needle Langmuir probe for the UAE Rashid rover",
+            "type": "Proposed lunar surface plasma probe (not deployed on the Moon)",
+            "status": "Not deployed. Rashid was carried by the Hakuto-R lander, which was lost during its landing attempt in April 2023 according to search-result summaries (not read directly).",
+            "developer": "ESA describes the probe as an MBRSC-integrated spin-off of an instrument developed by a Norwegian team led by the University of Oslo, with ESA backing (search-result summary).",
+            "design": "Four miniature needle-like probes at different fixed voltages, intended to build an altitude profile of electron density and temperature above the surface. Spatial resolution below 2 m is stated in secondary sources.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_cm": null,
+            "source_urls": [
+              "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/ESA_to_touch_Moon_from_wheels_of_UAE_Rashid_rover",
+              "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/ESA_plasma_sampler_headed_to_the_Moon_and_ISS"
+            ],
+            "images": []
+          },
+          {
+            "name": "DUSTER (DUst and plaSma environmenT survEyoR), including RESOLVE plasma-sounding instrument",
+            "type": "Selected lunar surface plasma and dust suite (not built or flown)",
+            "status": "Selected for development under NASA's Artemis Deployed Instruments Program with US$24.8 million in funding, according to the LASP article. Described as selected for development, not built, delivered or flown.",
+            "plasma_instrument": "RESOLVE (Relaxation SOunder and differentiaL VoltagE): plasma sounding to characterise the average electron density above the lunar surface.",
+            "dust_instrument": "EDA (Electrostatic Dust Analyzer): charge, velocity, size and flux of lofted dust particles.",
+            "housing": "Mobile Autonomous Prospecting Platform (MAPP) rover supplied by Lunar Outpost; astronauts to deploy near the South Pole landing site.",
+            "launch_timing": "LASP article gives no date and refers to 'a future Artemis mission'. A secondary search summary links it to Artemis IV, planned for 2028; not confirmed in the LASP article.",
+            "measurement_range": null,
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_cm": null,
+            "source_urls": [
+              "https://lasp.colorado.edu/2025/12/05/lasp-instruments-target-a-trip-to-the-moon-aboard-future-nasa-artemis-mission/"
+            ],
+            "images": []
+          },
+          {
+            "name": "ESA L-DEPP (Lunar Dust Environment and Plasma Package) concept",
+            "type": "Proposed lunar lander concept",
+            "status": "Concept study only, identified from search-result summaries of ESA material that was not read directly.",
+            "instrument_pairing": "Langmuir probe with an ion/electron spectrometer and a dust sensor.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_cm": null,
+            "source_urls": [
+              "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/ESA_plasma_sampler_headed_to_the_Moon_and_ISS"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are not publicly specified for most examples. The RAMBHA-LP probe is a small sphere (about 5 cm or 50 mm in diameter depending on the source) on a 1 m boom; the boom length sets the distance from the lander, and the sources state this is intended to keep the probe outside the lander's influence. The complete RAMBHA-LP instrument envelope is not stated. ROLSES uses four 2.5 m monopole antennas. Dimensions of the DUSTER and Rashid probes are not publicly specified in the sources reviewed.",
+        "mass_and_weight": "Mass is not stated for any example in the sources reviewed. Mass, power and dimension values for a flight sensor depend on its mechanical design, sensor type and mounting; none of the examples here should be used as a general specification.",
+        "power_requirements": "Power values are not stated for any example in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A plasma density sensor operates in a hard environment. The lunar surface experiences large day-night temperature swings, very little atmosphere, strong solar ultraviolet exposure and possible dust lofting. The Chandrayaan-3 probe was designed to keep operating so that changes could be followed through the lunar day, but the sources reviewed do not describe its night-time performance. Electrical and mechanical isolation matters: a sensor on a lander or rover can be affected by the lander's own charge, plasma disturbances from engines or electronics, and mechanical movement, which is why the RAMBHA-LP probe was placed on a 1 m boom. Radio instruments such as ROLSES have their own requirements: antennas must deploy correctly, the receiver must avoid interference from the lander, and sampling rates and data volumes must fit available telemetry. ROLSES raw waveforms are also useful for studying dust impacts on the antennas (arXiv abstract).",
+      "limitations": "A single probe or radio instrument at one site gives a local measurement, not a global map of lunar plasma. The Chandrayaan-3 measurements covered about 10 to 11 days at one landing site. Ion density values from the Chandrayaan-3 instrument are not given numerically. The Chandrayaan-3 ISRO article reports ranges without stated uncertainties; the paper states them separately. Langmuir-probe measurements can be affected by lander charging, and mitigation is described only qualitatively in the sources reviewed. The radio-sounding method for electron density is not verified for ROLSES.",
+      "transportation_and_deployment": {
+        "overview": "A plasma density sensor can be carried as a standalone payload on a lander or as part of a rover, depending on the design. Sources reviewed describe lander-mounted probes on booms, antenna arrays deployed after landing, and a rover-housed suite for a future mission.",
+        "transportation_process": [
+          "Integrate the sensor onto a lander or rover on Earth (not described in detail in the sources reviewed).",
+          "Launch and transfer to the Moon (not described in detail in the sources reviewed).",
+          "Land the spacecraft; for ROLSES the lander was tilted and some antennas deployed without command.",
+          "Deploy the sensor: RAMBHA-LP boom deployed after touchdown by a hold-release mechanism; ROLSES antennas deployed using a frangibolt mechanism.",
+          "Operate the sensor and telemeter data, subject to lander power and communications."
+        ],
+        "deployment_methods": "Chandrayaan-3 RAMBHA-LP: boom deployed after touchdown using a hold-release mechanism, mounted on the lander's upper deck (ISRO article). ROLSES: four stowed monopole antennas deployed after landing using a frangibolt mechanism (arXiv abstract). DUSTER: instruments carried on the MAPP rover and deployed by astronauts (LASP article). Rashid probe: intended for rover deployment, but the lander was lost before reaching the surface (search-result summary).",
+        "historical_examples": "Chandrayaan-3 (2023): RAMBHA-LP on a 1 m boom from the Vikram lander. IM-1 (2024): ROLSES antennas on the Odysseus lander, with a tilted landing that limited operations. Rashid (2023): multi-needle probe planned for a rover, lost with the Hakuto-R lander. DUSTER: selected but not yet flown.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted beyond the historical missions above. DUSTER's MAPP rover and any Artemis-mission integration would need verified interface specifications before compatibility can be assessed.",
+        "images": []
+      },
+      "historical_significance": "The ISRO article describes the Chandrayaan-3 RAMBHA-LP measurements as the first in situ electron density measurements of the near-surface lunar plasma over the south polar region. The Langmuir probe approach has a long history in space plasma research, but the lunar surface application is distinct. ROLSES is significant as a lunar surface radio observatory, although limited data were returned because of the tilted landing; its successor ROLSES-2 is described as under development. The DUSTER proposal represents a planned lunar surface plasma and dust programme linked to Artemis human exploration but has not flown.",
+      "limitations_and_uncertainties": "The payload name 'plasma density sensor' describes a class of instruments rather than one standard design. The article's conclusions about the Chandrayaan-3 results rest on one probe at one site over about ten days, and the source values differ between the ISRO pages and the peer-reviewed paper. Conflicting RAMBHA-LP electron-density values: the ISRO early estimate (about 5-30 cm^-3) and the peer-reviewed mean (380-600 cm^-3) differ by about a factor of 20; this article uses the peer-reviewed value and reports the discrepancy. Measurement windows differ slightly between the peer-reviewed paper and the ISRO article. Dwell time differs (1 ms ISRO; 60 ms Manju et al.). ROLSES electron-density method and results are not verified from the primary paper; the Hibbard et al. paper cited in press coverage was not accessed. ROLSES operating duration is inconsistent across sources and the primary paper was not parsed. DUSTER / RESOLVE measurement range, mass, power and dimensions are not stated in the sources reviewed. Rashid multi-needle probe physical specifications are not publicly specified in the sources reviewed. The ESA L-DEPP concept is based on search-result summaries only. The Artemis IV launch year (2028) and the Hakuto-R loss date are from search summaries, not primary documents read in this run.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "RAMBHA-LP on-board Chandrayaan-3 measures near-surface plasma content",
+          "publisher": "ISRO",
+          "publication_date": null,
+          "url": "https://www.isro.gov.in/Ch3_Rambha-LP_near-surface_Plasma.html",
+          "notes": "Read in full. Source of 5-30 million m^-3 'initial assessment', 1 ms dwell, 1 m boom, 5 cm sphere."
+        },
+        {
+          "title": "Chandrayaan-3's RAMBHA-LP Instrument Delivers Critical 'Ground Truth' on the Moon's Plasma Environment",
+          "publisher": "ISRO",
+          "publication_date": null,
+          "url": "https://www.isro.gov.in/Chandrayaan3RAMBHALP_GroundTruth.html",
+          "notes": "Read in full. Source of 380-600 per cm^3, 3000-8000 K, 23 Aug to 3 Sep 2023 window, landing site coordinates."
+        },
+        {
+          "title": "In situ ionospheric observations near lunar south pole by the Langmuir Probe on Chandrayaan-3 lander",
+          "publisher": "Monthly Notices of the Royal Astronomical Society (Oxford Academic)",
+          "publication_date": "2025-08-06",
+          "authors": "Manju et al.",
+          "journal_reference": "MNRAS 542(4), 2647-2656",
+          "url": "https://doi.org/10.1093/mnras/staf1276",
+          "notes": "Read via the publisher page (https://academic.oup.com/mnras/article/542/4/2647/8223395). Source of peer-reviewed 380-600/cc mean, 24 Aug to 2 Sep 2023 daytime window, 50 mm sphere, uncertainty statements. Main text beyond character 100000 not read."
+        },
+        {
+          "title": "The Radio-wave Observations at the Lunar Surface of the photoElectron Sheath (ROLSES) instrument onboard the Intuitive Machines-1 Mission to the Moon",
+          "publisher": "arXiv",
+          "publication_date": "2026-03-23",
+          "authors": "Gopalswamy, N. et al. (18 authors)",
+          "url": "https://arxiv.org/abs/2603.22600",
+          "notes": "Abstract read. PDF could not be parsed; methods, electron density method and operating duration not verified. Version 2 revised 2026-07-11."
+        },
+        {
+          "title": "LASP instruments target a trip to the Moon aboard future NASA Artemis mission",
+          "publisher": "Laboratory for Atmospheric and Space Physics (LASP), University of Colorado Boulder",
+          "publication_date": "2025-12-05",
+          "url": "https://lasp.colorado.edu/2025/12/05/lasp-instruments-target-a-trip-to-the-moon-aboard-future-nasa-artemis-mission/",
+          "notes": "Read in full. Updated 2026-04-24 per page. Source of DUSTER / RESOLVE description, US$24.8 million, MAPP rover."
+        },
+        {
+          "title": "ESA plasma sampler headed to the Moon and ISS",
+          "publisher": "European Space Agency",
+          "publication_date": null,
+          "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/ESA_plasma_sampler_headed_to_the_Moon_and_ISS",
+          "notes": "Search-result summary only; not read in full. Used for multi-needle Langmuir probe and L-DEPP concept context."
+        },
+        {
+          "title": "ESA to touch Moon from wheels of UAE Rashid rover",
+          "publisher": "European Space Agency",
+          "publication_date": null,
+          "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/ESA_to_touch_Moon_from_wheels_of_UAE_Rashid_rover",
+          "notes": "Search-result summary only; not read in full. Used for Rashid probe context."
+        },
+        {
+          "title": "One Instrument on the Failed Lunar Lander Did a Little Science",
+          "publisher": "Universe Today",
+          "publication_date": null,
+          "url": "https://www.universetoday.com/articles/one-instrument-on-the-failed-lunar-lander-did-a-little-science",
+          "notes": "Search-result summary only; press coverage of ROLSES operations and deployment problems. Not a primary source."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Chandrayaan-3 RAMBHA-LP example": "payload.article.physical_specifications.examples[0].images",
+      "ROLSES example": "payload.article.physical_specifications.examples[1].images",
+      "Rashid multi-needle probe example": "payload.article.physical_specifications.examples[2].images",
+      "DUSTER example": "payload.article.physical_specifications.examples[3].images",
+      "ESA L-DEPP example": "payload.article.physical_specifications.examples[4].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values are absent because no image assets were verified for this article. All source URLs in this file have query strings and fragments removed. The Markdown article contains no images."
+  },
+  "data_quality_notes": [
+    "Electron-density conflict: ISRO RAMBHA-LP page gives an initial assessment of about 5-30 million m^-3 (5-30 cm^-3); the peer-reviewed Manju et al. (2025) abstract gives a mean of 380-600 cm^-3. The discrepancy is about 20x and is unresolved. The peer-reviewed value is used as primary.",
+    "Dwell-time conflict: ISRO article gives 1 ms per step; Manju et al. (2025) gives 60 ms per step.",
+    "Measurement-window conflict: Manju et al. gives 24 Aug to 2 Sep 2023 (lunar daytime); ISRO ground-truth article gives 23 Aug to 3 Sep 2023 with no day/night statement.",
+    "ROLSES: electron-density method, flight results and operating duration are not verified. The arXiv PDF could not be parsed; only the abstract was read. Press sources conflict on operating duration.",
+    "DUSTER / RESOLVE: selected for development, not built or flown. No measurement range, mass, power or dimensions published in the source read. Artemis IV timing is from a search summary, not confirmed in the LASP article.",
+    "Rashid multi-needle probe and ESA L-DEPP concept rely on search-result summaries; the ESA pages were not read in full.",
+    "No image assets were verified; image arrays are empty and image_urls_added is false. No image URLs were invented.",
+    "Mass, power and dimensions are null for all examples because no reliable values were found in the sources read.",
+    "Web search results contained a formatting reminder asking for source links; this was treated as page text and did not change the article's content."
+  ]
+}

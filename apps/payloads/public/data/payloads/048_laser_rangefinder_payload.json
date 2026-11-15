@@ -1,0 +1,281 @@
+{
+  "catalogue_id": 48,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 48,
+    "name": "Laser rangefinder",
+    "article": {
+      "overview": "A laser rangefinder measures distance by sending laser light towards a target and timing or analysing the returning signal. Most instruments in this family measure the round-trip time of a short pulse, while some measure the frequency shift of a continuous beam. The result is a range, and in some designs also a velocity, along a defined line of sight.\n\nScope of this article: instruments whose main output is a laser-measured range to a surface or target, including single-beam and few-beam ranging devices used as altimeters, and a Doppler-lidar sensor that outputs range and velocity together. The catalogue does not define the boundary with neighbouring entries, so this split is a working judgement for the orchestrator to check. In scope: single-line or few-beam laser ranging for altitude, range and descent navigation, including the Apollo orbital laser altimeters and the NASA navigation Doppler lidar flown on IM-1. Cross-referenced, not described in detail: 046 (Lidar scanner) covers multi-beam or scanning 3D laser imaging, and the Chang'e-3 obstacle-avoidance lidar is summarised here only because its ranging role overlaps with this entry; 047 (Laser altimeter) covers dedicated orbital altimetry missions such as LRO LOLA and SELENE/Kaguya LALT, which were not researched in this run. Out of scope: passive laser retroreflectors (the Apollo Laser Ranging Retroreflector arrays and NGLR-1), which are targets that Earth-based stations range to and contain no laser transmitter or receiver on the Moon [9][10]; velocity-only sensors; and passive navigation imaging, which is covered by 030 (Navigation camera) and 031 (Hazard detection camera).\n\nStatus: two flown Apollo-era laser altimeters are described from NASA-linked records. The Chang'e-3 lidar and the IM-1 Navigation Doppler Lidar (NDL) are described as flown on lunar missions, with the caveats stated in each example. The ALHAT laser altimeter is a prototype that flew on a terrestrial rocket test vehicle, not on the Moon. No proposed or unflown lunar laser rangefinder was verified in this run.",
+      "description": "The basic measurement is time of flight. A pulse leaves the instrument, reflects off the surface and returns. Distance is half the round-trip time multiplied by the speed of light, so a timing counter with fine resolution sets the range precision. The Apollo 15 altimeter used this principle with a Q-switched ruby laser and a photomultiplier receiver [1].\n\nA second family uses continuous-wave laser light. The NDL transmits a laser whose frequency is changed linearly with time (frequency-modulated continuous-wave, FMCW). The returned light is mixed with the transmitted light. The frequency difference gives range, and the Doppler shift gives velocity along the beam [7][8]. Three beams in fixed directions give three line-of-sight measurements, which combine into the velocity vector and the altitude above the ground.\n\nRanging from a single beam is sensitive to terrain: boulders and craters change the distance measured by one beam. Using several beams reduces this effect, because the altitude can be calculated from the triangle formed by the beam ground points [7][8].\n\nThe instruments differ in geometry. The Apollo altimeters measured slant range along the mapping camera's axis, the Chang'e-3 lidar scanned a 30 degree by 30 degree field, and the NDL used three fixed beams. Each example is therefore described separately.",
+      "scientific_purpose_and_applications": "Laser rangefinders provide distance information that cameras and spectrometers do not provide directly. Applications in the sources accessed:\n\n- Orbital altitude and topography. The Apollo 15 and Apollo 17 Command and Service Module altimeters measured the spacecraft's height above the surface. Their data supported mapping and panoramic photography, supplied altitude to other orbital experiments and helped define lunar topographic features [2][3].\n- Obstacle detection during landing. The Chang'e-3 lidar built three-dimensional terrain maps during hover, so that rocks or potholes taller than about 20 cm could be detected for site selection [6].\n- Descent navigation and velocity. The NDL on IM-1 was designed to measure range and velocity during descent. NASA's ALHAT programme tested laser altimetry and Doppler velocimetry as inputs to precision landing [7][8].\n- Terrain-relative navigation. The ALHAT long-range laser altimeter was designed for terrain-relative navigation from 15 km or more, described as its original design intent [7].",
+      "operating_principle": "Pulsed time-of-flight. The Apollo 15 altimeter consisted of a Q-switched ruby laser, transmitting optics, a counting timer, receiving optics and a photomultiplier [1]. The timer measures the interval between a transmitted pulse and its return. The altimeter was coupled to the metric mapping camera, firing a pulse for each frame exposed by the camera; when the camera was off, it ranged independently at intervals of about 20 seconds [2].\n\nPulsed ranging with camera coupling (Apollo 17). The Apollo 17 altimeter was a pulsed ranging instrument within the Lunar Mapping Camera system. Its pulses were timed to the camera in coupled mode and ran independently in decoupled mode [3][4]. The laser type and wavelength are not stated on the NSSDC-derived record accessed [3].\n\nScanning multi-beam pulsed lidar (Chang'e-3). The obstacle-avoidance lidar used a pulsed laser split into 16 beams by a grating. A dual-galvanometer scanner with two mirrors moved the beams over a total field of about 30 degrees by 30 degrees, with each mirror axis spanning -15 to +15 degrees, and the full field scanned in 0.1 s. The beams are received by a multi-array detector [6]. This produces a three-dimensional range image, so it is a scanning lidar rather than a single rangefinder; it is included because its ranging role overlaps with this entry.\n\nFrequency-modulated continuous-wave Doppler lidar (NDL). The NDL transmits three laser beams, each with linearly modulated frequency. The returned signal is processed with a fast Fourier transform to give line-of-sight range and velocity for each beam. The platform velocity vector is found by combining the three line-of-sight velocities using the known beam pointing [7][8]. The ALHAT paper describes the wavelength of the prototype NDL as 1.55 micrometres, an eye-safe value [7]. The IM-1 flight unit's wavelength is not stated in the sources accessed.\n\nPulsed time-of-flight at 1.57 micrometres (ALHAT LAlt). The long-range laser altimeter used a moderate-power laser at an eye-safe energy level, with a wavelength of 1.57 micrometres. Its pulses are a few nanoseconds long, and a high-resolution time-of-flight counter provides the distance [7].",
+      "scientific_importance": "Laser ranging adds an accurate height profile to images, making it valuable for topographic mapping and for connecting images to the lunar shape. The Apollo altimeters gave altitude measurements that supported mapping and topographic work [2][3]. The Apollo 15 NSSDC-derived page states a 1 m resolution and an accuracy of plus or minus 2 m [2]. These are instrument values as reported on that page and should be checked against the original report before reuse.\n\nFor landing, a range and velocity sensor can provide information that cameras alone do not. The NDL on IM-1 recorded range data beyond its designed range, which the authors describe as exceeding expectations [8]. Their analysis also shows that craters can be identified in the beam range data [8]. For future landers, the scientific and navigation value depends on validation against trajectory reconstruction or ground truth, which the IM-1 analysis illustrates [8].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a laser rangefinder. The examples differ in purpose, laser, beam configuration, platform and age. Several values are not directly comparable. A value is given only when the named source states it, and 'not publicly specified' is used otherwise. The comparison table in the Markdown article contains only values stated for the examples and is not a ranking.",
+        "examples": [
+          {
+            "name": "Apollo 15 laser altimeter (Command and Service Module)",
+            "type": "Flown lunar orbital laser altimeter (Apollo 15 CSM, SIM bay)",
+            "status": "flown",
+            "measurand": "Slant range from the CSM to the lunar surface, parallel to the terrain camera's optical axis",
+            "laser_type": "Q-switched ruby laser (NASA Technical Reports Server abstract of Apollo 15 Laser Altimeter, Part D)",
+            "wavelength": "not publicly specified in sources accessed",
+            "modes": [
+              "Coupled: fires a pulse for each frame exposed by the metric camera",
+              "Decoupled: independent ranging about every 20 s when the metric camera is not operating"
+            ],
+            "resolution_m": 1,
+            "accuracy_m": "plus or minus 2",
+            "operating_history": "Operated normally until revolution 24, began to fail, and failed completely by revolution 38. Cause of failure not stated on the page accessed.",
+            "mounting": "Hard-mounted and aligned with the mapping camera subsystem on the top shelf of the SIM bay; shares a shelf-mounted optics protective cover with the mapping camera; deployed on a rail-type mechanism; crew could activate or deactivate it from command module controls.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "not publicly specified in sources accessed",
+            "conflicting_or_unverified_values": "The final S-216 analysis report was cited but not accessed; the link between the S-215 designation and S-216 is not confirmed on the page.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19720015192",
+              "https://klabs.org/images/lola/apollo/apollo_15_laser_altimeter.htm"
+            ],
+            "images": [],
+            "article_text": "Example 1: Apollo 15 laser altimeter (Command and Service Module). Status: flown. Mounted in the SIM bay with the mapping camera subsystem. Coupled and decoupled modes; 1 m resolution and plus or minus 2 m accuracy as stated on the NSSDC-derived page; operating history to revolution 38; wavelength, mass and power not stated."
+          },
+          {
+            "name": "Apollo 17 laser altimeter (Lunar Mapping Camera system)",
+            "type": "Flown lunar orbital laser altimeter (Apollo 17 CSM, Lunar Mapping Camera system)",
+            "status": "flown",
+            "measurand": "Altitude of the CSM above the lunar surface (ranging data)",
+            "laser_type": "not stated on the NSSDC-derived record accessed",
+            "wavelength": "not publicly specified in sources accessed",
+            "modes": [
+              "Coupled: timed to the camera exposure, about one ranging pulse every 24 s with the metric camera operating",
+              "Decoupled: ranges about once every 20 s when the camera is inoperative"
+            ],
+            "resolution_m": 1,
+            "accuracy_m": "not publicly specified in sources accessed",
+            "mounting": "Deployed on a rail-type mechanism and aligned with the metric camera on the top shelf of the SIM bay; shares an optics protective cover with that camera.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "not publicly specified in sources accessed",
+            "conflicting_or_unverified_values": "A secondary search summary described a ruby laser and a mass of about 50 lb (about 22.5 kg); not confirmed in a primary source and not used. Original SP-330 text not accessed. Pulse timing differs between a NASA history page (single exposure timing) and the NSSDC-derived page (about 24 s); the NSSDC-derived figure is used.",
+            "source_urls": [
+              "https://klabs.org/images/lola/apollo/apollo_17_laser_altimeter.htm"
+            ],
+            "images": [],
+            "article_text": "Example 2: Apollo 17 laser altimeter (Lunar Mapping Camera system). Status: flown. 1 m ranging resolution; coupled and decoupled modes; laser type, wavelength, accuracy, mass and power not stated on the NSSDC-derived page; primary SP-330 report cited but not accessed."
+          },
+          {
+            "name": "Chang'e-3 obstacle-avoidance lidar (cross-reference to 046 Lidar scanner)",
+            "type": "Lander-mounted pulsed scanning lidar for hazard detection during hover (cross-reference; classification as rangefinder is a boundary decision)",
+            "status": "described as flown on Chang'e-3; used during hovering per paper; no in-flight data reported",
+            "measurand": "Three-dimensional range image of the target area during hover",
+            "laser_type": "Pulsed laser split into 16 beams by a grating",
+            "wavelength": "not publicly specified in paper",
+            "field_of_view_deg": "about 30 x 30 (total field)",
+            "scan_mechanism": "Dual galvanometer scanner (scanning and pointing mirrors), each axis -15 to +15 degrees; full field scanned in 0.1 s",
+            "detector": "Multi-array detector receiving the 16 beams in parallel; detector type not specified",
+            "operating_altitude_m": "about 100 above surface; scans a 50 m x 50 m area",
+            "obstacle_detection_target": "rocks or potholes taller than about 20 cm",
+            "accuracy": "Reconstructed three-dimensional surface accuracy can reach about 4 cm after calibration; sensor range accuracy not stated",
+            "range_max_m": "not publicly specified in paper",
+            "pre_calibration_error": "Intrinsic-parameter errors could create a false obstacle up to about 1.4 m high before calibration",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "Laser exit window width about 120 mm; other dimensions not publicly specified",
+            "source_urls": [
+              "https://doi.org/10.3390/s22197366"
+            ],
+            "images": [],
+            "article_text": "Example 3: Chang'e-3 obstacle-avoidance lidar (cross-reference to 046). Status: described as flown on Chang'e-3 and used during hovering; no in-flight data reported. Scanning lidar; 30 x 30 degree field; 16 beams; about 4 cm reconstructed surface accuracy after calibration; wavelength, range, mass and power not given."
+          },
+          {
+            "name": "Intuitive Machines IM-1 Navigation Doppler Lidar (NDL)",
+            "type": "Flown lunar lander Doppler lidar (three-beam FMCW) for range and velocity during descent (NASA Langley instrument)",
+            "status": "flown on IM-1 (Odysseus); IM-1 launched 15 February 2024 and landed 22 February 2024",
+            "measurand": "Line-of-sight range and velocity along three beams; altitude and velocity vector derived from them",
+            "laser_type": "Frequency-modulated continuous-wave (FMCW) coherent lidar with three beams",
+            "wavelength": {
+              "prototype_NDL_2014_morpheus": "1.55 micrometres (eye-safe), per ALHAT paper",
+              "IM-1_flight_unit": "not publicly specified in sources accessed"
+            },
+            "design_range_km": "5 and below",
+            "flight_performance": {
+              "beam_A_range_km": "more than 20",
+              "beams_B_and_C_range_km": "about 10 and below",
+              "data_duration_s": {
+                "beam_A": 629,
+                "beam_B": 324,
+                "beam_C": 336
+              },
+              "all_three_beams_on_surface_s": 324,
+              "altitude_for_all_three_beams_km": "about 8",
+              "max_beam_velocity_m_s": 218
+            },
+            "prototype_precision_morpheus_2014": {
+              "velocity_cm_s": 0.2,
+              "altitude_cm": 30,
+              "max_velocity_m_s": 70,
+              "max_altitude_km": 2.2
+            },
+            "imu_data_limit": "IMU data limited to the last 184 s of the trajectory (about 2 km altitude and below) due to telemetry limits after landing",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "not publicly specified in sources accessed",
+            "conflicting_or_unverified_values": "Press reports disagree on how much NDL measurements contributed to the in-flight landing; not used. Prototype precision values are not assumed to apply to the flight unit.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20250008015/downloads/AAS_NDL_Karlgaard.pdf",
+              "https://ntrs.nasa.gov/api/citations/20170009170/downloads/20170009170.pdf"
+            ],
+            "images": [],
+            "article_text": "Example 4: IM-1 Navigation Doppler Lidar. Status: flown on IM-1 (Odysseus), February 2024. Three-beam FMCW lidar; beam A range beyond 20 km, beams B and C about 10 km; durations 629 s, 324 s and 336 s; prototype precision values from 2014 Morpheus flights; IM-1 wavelength and mass not stated."
+          },
+          {
+            "name": "ALHAT long-range laser altimeter (LAlt) prototype",
+            "type": "Engineering prototype long-range laser altimeter; flown on the Morpheus rocket-propelled test vehicle in 2014 (terrestrial test, not lunar)",
+            "status": "prototype; terrestrial flight test on Morpheus, 2014; not flown on the Moon",
+            "measurand": "Altitude and range (time of flight)",
+            "laser_type": "Moderate-power, eye-safe pulsed laser with pulses a few nanoseconds long",
+            "wavelength": "1.57 micrometres",
+            "precision_statements": [
+              "0.5 m precision from about 20 km altitude (paper)",
+              "Paper states the current sensor can operate from over 50 km with about 5 cm precision (paper claim, not independently verified)"
+            ],
+            "original_design_intent": "Long-range terrain-relative navigation from 15 km or more altitude",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "not publicly specified in sources accessed",
+            "field_of_view": "not publicly specified in sources accessed",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20170009170/downloads/20170009170.pdf"
+            ],
+            "images": [],
+            "article_text": "Example 5: ALHAT long-range laser altimeter (prototype). Status: prototype, flown on Morpheus in 2014 (terrestrial). Wavelength 1.57 micrometres; 0.5 m precision from about 20 km; 50 km and 5 cm statement is the paper's claim; mass and power not given."
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are published only for the Chang'e-3 lidar's laser exit window (about 120 mm width). Other examples do not publish dimensions in the sources accessed, so no general dimension is stated. Instruments differ in optics, beam geometry and mounting, and their sizes should not be compared directly.",
+        "mass_and_weight": "No mass is published in the sources accessed for any example in a verified primary source. The Apollo 17 secondary claim of about 50 lb (about 22.5 kg) is not used. Mass for the Apollo 15 and Apollo 17 altimeters, the Chang'e-3 lidar, the IM-1 NDL and the ALHAT LAlt is not publicly specified in the sources accessed.",
+        "power_requirements": "No power value is published in the sources accessed for any example. The ALHAT paper describes its laser as moderate power without giving a value. Power for the Apollo, Chang'e-3, IM-1 NDL and ALHAT examples is not publicly specified in the sources accessed."
+      },
+      "environmental_and_operational_requirements": "Laser rangefinders on the Moon operate in vacuum and under strong thermal cycling. Their optics, detectors and mechanical alignment must remain stable. The Apollo altimeters shared optics covers and mounts with mapping cameras, so alignment with the camera was part of the design [2][3].\n\nAlignment and calibration are critical for accurate ranging. The Chang'e-3 paper found that intrinsic-parameter errors could produce false obstacles up to about 1.4 m high, which must be corrected before the data can be trusted [6]. The ALHAT programme calibrated each sensor individually and checked alignment on the host vehicle before flight tests [7]. The IM-1 analysis shows terrain features appear in beam data and that trajectory reconstruction depends on the quality of inertial and terrain data [8].\n\nLaser safety is an operational constraint. The ALHAT and NDL papers both describe eye-safe wavelengths or energy levels [7]. The sources accessed do not specify the exposure limits applied to the lunar instruments.",
+      "limitations": "A single-beam rangefinder measures distance along its line of sight and does not measure terrain shape without motion or scanning. Multi-beam and scanning systems improve coverage but add calibration needs and data volume [6][8].\n\nRange measurements can be affected by terrain features such as craters and boulders. The IM-1 analysis identified craters in beam range data [8]. The analysis also shows that the inertial data available for reconstruction were limited by what could be sent back to Earth after landing [8].\n\nEach example uses a different instrument, mission and documentation type. The Apollo values come from NSSDC-derived and NASA historical records. The Chang'e-3 values come from a calibration research paper. The IM-1 values come from a trajectory reconstruction analysis. The ALHAT values come from a prototype test paper. These values should not be applied to another instrument.",
+      "transportation_and_deployment": {
+        "overview": "Two of the five examples were orbital laser altimeters carried on the Apollo Command and Service Module. The Chang'e-3 lidar and IM-1 NDL are lander-based descent sensors, and the ALHAT LAlt was a prototype flown on a terrestrial test vehicle. Interfaces therefore differ by example, and no general transportation chain applies to all laser rangefinders.",
+        "transportation_process": [
+          "Orbital examples (Apollo 15 and Apollo 17): integrate the altimeter with the mapping camera subsystem on the Command and Service Module SIM bay; launch, lunar transfer, orbit insertion and commissioning were part of the Apollo mission sequence. The sources accessed do not describe interfaces for a new lunar orbiter.",
+          "Descent example (IM-1 NDL): integrate the three-beam NDL on the Odysseus lander for descent navigation; the NDL was described as a secondary sensor, and its mechanical and electrical interfaces are not described in the sources accessed.",
+          "Test-vehicle example (ALHAT prototype): integrate the sensors onto the Morpheus test vehicle, with individual alignment and calibration before flight tests.",
+          "Surface-lander example (Chang'e-3 lidar): described as a lander payload; mounting interfaces and mission integration are not described in the sources accessed. Ground calibration before the mission is reported."
+        ],
+        "deployment_methods": "The Apollo altimeters were deployed on rail-type mechanisms in the SIM bay and were not surface-deployed instruments. The Chang'e-3 lidar is a fixed lander-mounted scanning sensor. The IM-1 NDL is a fixed descent sensor with three beams, and the ALHAT LAlt was mounted on the Morpheus test vehicle.",
+        "historical_examples": "Apollo 15 and Apollo 17 Command and Service Module altimeters (orbital); Chang'e-3 obstacle-avoidance lidar (lander, described as flown); IM-1 Navigation Doppler Lidar on Odysseus (lander, flown February 2024); ALHAT LAlt prototype on Morpheus (terrestrial test, 2014).",
+        "compatibility_assessment": "No compatibility with a specific lander, rover or spacecraft is asserted in this article. The IM-1 NDL is described as flown on Odysseus, but compatibility with any other lander would require verified interface documents for the named vehicle.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 15 and Apollo 17 laser altimeters were early space-based laser ranging instruments used for lunar mapping and altitude determination [1][2][3]. The Apollo altimeters provided altitude data for mapping and topographic work and were part of the historical record of Apollo lunar science [2][3].\n\nThe Chang'e-3 lander carried a lidar intended to support selection of a safe landing site by building a three-dimensional map of the surface during hover [6]. The IM-1 NDL flew as a NASA payload on a commercial lunar lander mission [8].\n\nThe ALHAT programme is a NASA technology development effort. Its laser altimeter and NDL were tested on the Morpheus vehicle before the IM-1 flight [7].",
+      "limitations_and_uncertainties": "Apollo 15 laser type and wavelength: the NASA report abstract describes a Q-switched ruby laser [1]; the wavelength is not stated in the sources accessed [2]. Apollo 15 accuracy and failure cause: the NSSDC-derived page gives 1 m resolution and plus or minus 2 m accuracy and the failure timeline [2]; the primary S-216 report was not accessed [2][5]. Apollo 17 laser specification: the NSSDC-derived page does not give laser type, wavelength, accuracy, mass or power [3]; the primary SP-330 text was not accessed [4]. Chang'e-3 lidar: wavelength, maximum range, detector, mass, power and dimensions are not stated; the 4 cm accuracy is a reconstructed surface value after calibration, not a sensor range accuracy; in-flight performance is not reported; classification as a rangefinder rather than a lidar scanner is a boundary decision for 046. IM-1 NDL flight unit: the 1.55 micrometre wavelength and the prototype precision values are not necessarily those of the flight unit; flight-unit wavelength, mass, power and beam geometry are not verified; press reports disagree about whether NDL measurements were used during powered descent, and this is not resolved here. ALHAT paper year: the publication year was not confirmed from the text accessed. Not included: NASA Goddard Reconfigurable Laser Ranger (technology page returned HTTP 404, no specification verified); a Chandrayaan-3 Laser Doppler Velocimeter (ISRO page returned HTTP 404; not described). No image is included; no official direct image asset was verified for any example.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "number": 1,
+          "title": "Apollo 15 Laser Altimeter, Part D",
+          "publisher": "Robertson, F. L. (Jet Propulsion Laboratory) and Kaula, W. M.; Apollo 15 Preliminary Science Report, NASA SP-289 (1972); NASA Technical Reports Server record 19720015192",
+          "url": "https://ntrs.nasa.gov/citations/19720015192",
+          "notes": "Abstract: Q-switched ruby laser, transmitting optics, counting timer, receiving optics, photomultiplier. Download not available on the record."
+        },
+        {
+          "number": 2,
+          "title": "Apollo 15 Command and Service Module laser altimeter (NSSDC ID 1971-063A-05)",
+          "publisher": "NSSDC-derived record hosted on klabs.org (site title 'NASA Office of Logic Design'); secondary mirror",
+          "url": "https://klabs.org/images/lola/apollo/apollo_15_laser_altimeter.htm",
+          "notes": "Purpose, coupled and decoupled modes, 1 m resolution, plus or minus 2 m accuracy, mounting, failure timeline (rev 24 to rev 38). Cites S-216 (Sjogren, JPL, January 1975)."
+        },
+        {
+          "number": 3,
+          "title": "Apollo 17 Command and Service Module laser altimeter (NSSDC ID 1972-096A-09)",
+          "publisher": "NSSDC-derived record hosted on klabs.org (site title 'NASA Office of Logic Design'); secondary mirror",
+          "url": "https://klabs.org/images/lola/apollo/apollo_17_laser_altimeter.htm",
+          "notes": "Purpose, 1 m ranging resolution, coupled (about 24 s) and decoupled (20 s) timing, mounting; laser type, wavelength, accuracy, mass and power not stated. Cites SP-330 and S-216."
+        },
+        {
+          "number": 4,
+          "title": "Apollo 17 laser altimeter (Wollenhaupt, W. R. et al.), Apollo 17 Preliminary Science Report",
+          "publisher": "NASA, SP-330 (1973), pp. 33-41 to 33-44",
+          "url": null,
+          "notes": "Cited in reference 3; primary text not accessed in this run; no verified direct URL recorded."
+        },
+        {
+          "number": 5,
+          "title": "Apollo Laser Altimeter Analysis, S-216 (Final Report)",
+          "publisher": "Sjogren, W. L., Jet Propulsion Laboratory, Pasadena; January 1975",
+          "url": null,
+          "notes": "Cited in references 2 and 3; not accessed in this run; link to S-215 designation not confirmed."
+        },
+        {
+          "number": 6,
+          "title": "Fast Positioning Model and Systematic Error Calibration of Chang'E-3 Obstacle Avoidance Lidar for Soft Landing",
+          "publisher": "Wang, D., Chen, X., Liu, J., Liu, Z., Zheng, F., Zhao, L., Li, J. and Mi, X.; Sensors (Basel) 22(19), 7366 (2022); DOI 10.3390/s22197366",
+          "url": "https://doi.org/10.3390/s22197366",
+          "notes": "16-beam grating split, dual galvanometer scanner, 30 x 30 degree field, 0.1 s full-field scan, 100 m operating altitude, 50 m x 50 m area, 20 cm obstacle target, about 4 cm calibrated surface accuracy, 1.4 m pre-calibration error, ground calibration Aug 2012 and Mar 2013, Chang'e-3 launch 2 Dec 2013."
+        },
+        {
+          "number": 7,
+          "title": "Flight Testing ALHAT Precision Landing Technologies Integrated Onboard the Morpheus Rocket Vehicle",
+          "publisher": "Carson, J. M. III, Robertson, E. A., Trawny, N. and Amzajerdian, F.; NASA Technical Reports Server record 20170009170 (publication year not confirmed from text accessed)",
+          "url": "https://ntrs.nasa.gov/api/citations/20170009170/downloads/20170009170.pdf",
+          "notes": "ALHAT LAlt at 1.57 micrometres, 0.5 m precision from about 20 km, claim of about 5 cm precision over 50 km; prototype NDL at 1.55 micrometres with 0.2 cm/s and 30 cm precision at up to 70 m/s and 2.2 km; Morpheus 2014 terrestrial flight tests."
+        },
+        {
+          "number": 8,
+          "title": "Navigation Doppler Lidar Performance Assessment and Trajectory Reconstruction of the Intuitive Machines IM-1 Lunar Landing (AAS 25-519)",
+          "publisher": "Karlgaard, C. D., Lugo, R., Shidner, J. D., Hines, G. D., Amzajerdian, F., Gragossian, A., Litton, D. K. and Angster, S. R.; NASA Technical Reports Server record 20250008015 (2025)",
+          "url": "https://ntrs.nasa.gov/api/citations/20250008015/downloads/AAS_NDL_Karlgaard.pdf",
+          "notes": "IM-1 launched 15 Feb 2024, landed 22 Feb 2024; NDL designed for 5 km and below; beam A range beyond 20 km, beams B and C about 10 km; durations 629 s, 324 s, 336 s; 324 s with all three beams on surface (about 8 km); beam velocities to 218 m/s; IMU data limited to last 184 s; craters in beam data."
+        },
+        {
+          "number": 9,
+          "title": "NGLR-1 (Next Generation Lunar Retroreflector-1) mission page",
+          "publisher": "International Laser Ranging Service (ILRS)",
+          "url": "https://ilrs.gsfc.nasa.gov/missions/satellite_missions/current_missions/ngl1_general.html",
+          "notes": "Passive cube-corner retroreflector flown on Firefly Blue Ghost Mission 1 (launch 15 Jan 2025); ranging by Earth-based stations; used to show that the retroreflector is a target, not a rangefinder in this article's scope."
+        },
+        {
+          "number": 10,
+          "title": "Laser ranging retroreflector",
+          "publisher": "Faller, J. E. et al.; Apollo 15 Preliminary Science Report; NASA Technical Reports Server record 19720015178",
+          "url": "https://ntrs.nasa.gov/citations/19720015178",
+          "notes": "Used only to distinguish Apollo laser ranging retroreflector arrays (Earth-based ranging targets) from the Apollo laser altimeter."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No direct image asset was verified from an official source for any laser rangefinder example in this run, so no image_url values are included. Third-party mirror and search-result image pages were not used. Section-level image arrays are present but empty by design."
+  },
+  "data_quality_notes": [
+    "No image: no official direct image asset URL was verified for any example. Candidate Apollo 15 SIM bay images were found only on third-party mirrors (not used). No NDL flight-unit image was verified. The NASA image library should be searched for Apollo 15/17 altimeter hardware and Odysseus NDL photographs before the article is revised.",
+    "Scope boundary: the catalogue does not define the distinction between 046 (Lidar scanner), 047 (Laser altimeter) and 048 (Laser rangefinder). The Apollo altimeters and Chang'e-3 lidar are included as boundary examples. The orchestrator should confirm this split.",
+    "Apollo 15 laser altimeter: wavelength, mass, power and dimensions are not stated in the sources accessed. Accuracy (plus or minus 2 m) and resolution (1 m) come from an NSSDC-derived page that cites the S-216 final report, which was not accessed. The laser type (Q-switched ruby) comes from the NASA NTRS abstract of Apollo 15 Laser Altimeter, Part D.",
+    "Apollo 17 laser altimeter: primary SP-330 text was not accessed. The NSSDC-derived page gives 1 m resolution and timing but not the laser type, wavelength, accuracy, mass or power. A secondary search summary claimed a ruby laser and about 50 lb mass; not confirmed and not used. A NASA history page offered in search results did not support the altimeter claims and is not cited.",
+    "Chang'e-3 obstacle-avoidance lidar: the paper reports flight use during hover but no in-flight data. Wavelength, maximum range, mass, power, dimensions and detector type are not given. The 4 cm figure is a calibrated reconstructed surface accuracy, not a sensor range accuracy. The paper's 2022 publication date is taken from the DOI record; the Chang'e-3 landing date was not separately verified.",
+    "IM-1 Navigation Doppler Lidar: flight-unit wavelength, precision, mass, power and dimensions are not stated in the sources accessed. The 1.55 micrometre wavelength and 0.2 cm/s / 30 cm precision values are for the 2014 Morpheus prototype and are not assumed to apply to the flight unit. Press reports disagree on whether NDL measurements were used in powered descent; not resolved.",
+    "ALHAT LAlt prototype: the 50 km operation and 5 cm precision are paper claims and were not independently verified. Mass, power, dimensions and field of view are not stated. The ALHAT paper's publication year was not confirmed from the text accessed (NTRS record 20170009170).",
+    "Searches that did not yield verified primary specifications: NASA Goddard Reconfigurable Laser Ranger (technology page returned HTTP 404); Chandrayaan-3 Laser Doppler Velocimeter (ISRO page returned HTTP 404). Neither is described in the article, and no specification is recorded for either.",
+    "Out of scope and cross-referenced: NGLR-1 (passive retroreflector; ILRS page) and the Apollo Laser Ranging Retroreflector arrays are not rangefinders. LRO LOLA and SELENE/Kaguya LALT belong to 047 and were not researched in this run.",
+    "No lunar location or landing-site recommendations are made. No lander, rover or spacecraft compatibility is asserted for any example."
+  ]
+}

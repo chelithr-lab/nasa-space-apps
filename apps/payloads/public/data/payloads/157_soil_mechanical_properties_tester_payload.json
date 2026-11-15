@@ -1,0 +1,179 @@
+{
+  "catalogue_id": 157,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 8,
+    "name": "Regolith and soil analysis"
+  },
+  "payload": {
+    "number": 157,
+    "name": "Soil mechanical properties tester",
+    "article": {
+      "overview": "A soil mechanical properties tester is a class of instrument that measures the strength-related behaviour of lunar regolith, such as cohesion, internal friction angle, density and bearing capacity. Measurements are made by pressing a plate or cone into the soil, digging or trenching it, or turning a shear vane in it, and then interpreting the force and displacement data with soil mechanics theory. The data are needed to design lander footpads, anchors, excavation equipment and any future surface construction. The catalogue entry describes a generic payload class rather than one standard flight instrument, so the examples in this article are individual historical and proposed instruments, not a universal specification.",
+      "description": "Lunar regolith is a loose, fine-grained layer of broken rock and glass that covers the Moon's surface. Its mechanical behaviour differs from that of most terrestrial soils, which are usually moist, cemented or differently graded. A soil mechanical properties tester gathers direct or indirect evidence of how the regolith resists loading, digging and penetration. Historically, this evidence came from the Surveyor surface sampler, which dug, scraped and trenched the surface while its motor current was recorded, and from the Apollo Self-Recording Penetrometer, which pushed a plate or cone into the ground while recording force against depth. Apollo-era analyses also used trenching and vane shear observations [2]. A modern instrument would need to measure the properties most relevant to its mission, such as strength at the surface, strength with depth, or both.",
+      "scientific_purpose_and_applications": "The purpose of such an instrument is partly scientific and partly engineering. Scientifically, the strength parameters help to characterise the regolith's physical state, including its density and porosity, and how these change with depth and across the surface [7][2]. Engineering uses include supplying data for footpads, anchors, excavation tools and surface structures, and checking whether soil can support a lander or rover before hardware is committed [3]. Both Surveyor and Apollo measurements were used in this way, although the sources consulted do not show the full extent of their use in later design decisions [1][4].",
+      "operating_principle": "An instrument of this class applies a controlled load to the regolith and records the response. In a penetrometer, a plate or cone is pushed into the soil and the force is recorded as a function of depth. The Apollo SRP recorded penetration on a drum through a cable and a calibrated spring, with a reference plane resting on the surface [4]. Interpreting penetration resistance requires a failure model in which cohesion and friction angle control the bearing capacity of the cone or plate, and several combinations of those two parameters can fit the same data [4]. A surface sampler performs bearing tests (pressing its scoop or plate into the surface), trenching tests and impact tests. For Surveyor 7, motor current was recorded during the bearing and trenching tests and, with preflight calibrations, converted into forces [1]. A shear vane tests strength by rotating a bladed element in the soil. In one laboratory study, a modified shear vane was judged the most promising of the instruments tested [3].",
+      "scientific_importance": "Lunar regolith is not well described by terrestrial soil models. Apollo-era and Surveyor-era investigations showed that the regolith has interlocking cohesion and tensile strength in the absence of moisture or particle cementation [2]. Strength data also help to infer density, porosity and layering in the upper regolith [7]. Such data underpin both science about the regolith's physical state and every engineering activity that must dig, anchor or build on the surface. Because the strength values reported for the Moon depend on the instrument, the test method and the interpretation model, each value must be traced to the specific instrument and test.",
+      "physical_specifications": {
+        "note": "There is no single universal mass, size or strength specification for a soil mechanical properties tester. The examples below describe specific instruments. Values left blank were not found in the sources consulted and are not estimated.",
+        "examples": [
+          {
+            "name": "Apollo Lunar Self-Recording Penetrometer (SRP, also catalogued as LSRP)",
+            "type": "Historical lunar instrument, flown on Apollo 15 and Apollo 16",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "bearing_plate_cm": [
+              2.54,
+              12.7
+            ],
+            "cone_apex_angle_deg": 30,
+            "cone_base_areas_cm2": [
+              1.29,
+              3.22
+            ],
+            "max_penetration_depth_cm": 76,
+            "max_recordable_force_n": 215,
+            "measurement": "Penetration resistance as a function of depth, recorded on a drum",
+            "power_consumption_w": null,
+            "qualification": "Dimensions, force range and depth from the Apollo 16 SRP report [4]. Apollo 15 PDS record [5] gives no mass, dimensions or power. Mass and power are not stated in the sources consulted.",
+            "source_urls": [
+              "https://an.rsl.wustl.edu/apollo/data/a16/station4/srp/docs/srp_psr.html",
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:lsrp.a15l"
+            ],
+            "images": []
+          },
+          {
+            "name": "Surveyor soil mechanics surface sampler (Surveyor 3 and Surveyor 7)",
+            "type": "Historical lunar instrument, flown on Surveyor 3 and Surveyor 7 landers",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "construction": "Designed and built by Hughes Aircraft Company; Surveyor 7 unit described as essentially identical to Surveyor 3 unit [1].",
+            "functions": "Dig, scrape and trench the surface; carry material in front of cameras [6].",
+            "operating_temperature_range_f": [
+              -167,
+              180
+            ],
+            "reported_test_counts_surveyor_3_search_summary": "7 bearing, 4 trench, 13 impact tests; penetrations 3.8 to 5 cm; trench depth 17.5 cm [6]. Not verified against primary record.",
+            "reported_test_counts_surveyor_7_search_summary": "16 bearing, 7 trench, 2 impact tests [6]. Not verified against primary record.",
+            "force_data": "Surveyor 3 force and motor-current data reported as not obtained because of post-landing telemetry problems (search summary [6]). Surveyor 7 motor current recorded and converted to force using preflight calibrations [1].",
+            "power_consumption_w": null,
+            "qualification": "Surveyor 7 record [1] gives temperature range and construction. Mass and dimensions not stated in sources consulted.",
+            "source_urls": [
+              "https://authors.library.caltech.edu/51433",
+              "https://www.airandspace.si.edu/collection-objects/soil-sampler-lunar-lander-surveyor/nasm_A19700123000"
+            ],
+            "images": []
+          },
+          {
+            "name": "Modified shear vane tester (laboratory concept)",
+            "type": "Proposed concept evaluated in laboratory tests on lunar simulants; not flown",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "finding": "Judged the most promising of the instruments tested, and said to allow extraction of several important soil parameters; none of the field instruments tested was judged adequate for a low-cohesion, frictional soil [3].",
+            "measured_values": null,
+            "power_consumption_w": null,
+            "qualification": "Laboratory study; no flight. The text consulted gives no measured soil parameter values [3].",
+            "source_urls": [
+              "https://arxiv.org/abs/2306.01080"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions and proportions: the best-documented dimensions are those of the Apollo SRP bearing plate and cones, which are small compared with a lander [4]. No overall dimensions were found for the SRP or the Surveyor surface sampler in the sources consulted [5][6].",
+        "mass_and_weight": "Mass and weight: no mass was found in the sources consulted for either the Apollo SRP or the Surveyor surface sampler [5][1]. Mass values should not be inferred from other instruments or from mission-level packages.",
+        "power_requirements": "Power requirements: power source and consumption were not specified in the sources consulted. For the Surveyor sampler, motor current was recorded during tests [1]."
+      },
+      "environmental_and_operational_requirements": "The sampler and penetrometer operated in the lunar vacuum and thermal environment, which exposes equipment to large temperature swings. The Surveyor 7 record reports a sampler operating range of +180 degrees F to -167 degrees F [1]. The Apollo SRP was operated by astronauts on the surface, with its reference plane resting on the regolith while a cone or the bearing plate was pushed in [4]. A vacuum-chamber penetrometer study reported that off-gassing disturbed simulant strength results, although slowing the pump rate reduced the disturbance [8]. Strength results depend on density, layering and test location, so the site and depth of each test should be recorded alongside the data.",
+      "limitations": "The class has no universal specification, and penetration and trenching data are indirect. Results depend on interpretation models and assumptions about soil friction [4]. Several reported values are available only as search summaries and are flagged in the uncertainties section below. Laboratory results on simulants may not reproduce lunar behaviour. In one laboratory study, none of the field instruments tested was judged adequate for a low-cohesion, frictional soil [3].",
+      "transportation_and_deployment": {
+        "overview": "Historical examples were delivered as part of uncrewed Surveyor landers (the surface sampler) and as a crew-operated experiment on Apollo 15 and Apollo 16 (the SRP) [1][4][5]. The sources consulted do not give interface, mass or power data that would allow compatibility with any particular lander to be assessed.",
+        "transportation_process": [
+          "Integrate the instrument or sampler onto the lander or into the surface payload on Earth, which for Surveyor meant mounting the sampler on the spacecraft [1].",
+          "Launch and transfer to the Moon.",
+          "Land and operate the instrument on the surface. For Surveyor, the sampler dug, pressed and trenched the surface while its motor current was recorded and cameras imaged the sampled material [1][6].",
+          "For Apollo 15 and 16, astronauts operated the SRP at test stations on the surface, with the reference plane resting on the regolith [4][7].",
+          "Record and return data, using the SRP's recording drum and Surveyor telemetry [4][6]."
+        ],
+        "deployment_methods": "Surveyor: the sampler was mounted on the lander and operated by command, with data limited by telemetry [1][6]. Apollo: the SRP was operated manually by astronauts during EVA [4][7]. A future instrument's deployment method would depend on its mission design.",
+        "historical_examples": "Surveyor 3 and Surveyor 7 carried soil mechanics surface samplers [1][6]. Apollo 15 and 16 carried the Self-Recording Penetrometer [4][5]. A modified shear vane was evaluated in the laboratory as a concept [3].",
+        "compatibility_assessment": "Not assessed. Compatibility with a specific lander would need verified mass, dimensions, mounting interface, deployment method, power and data interfaces, none of which were verified here.",
+        "images": []
+      },
+      "historical_significance": "The Surveyor soil mechanics surface sampler was the first surface soil scoop carried on a lunar mission, according to a search summary of the Smithsonian record [6]. The Apollo SRP produced penetration-resistance profiles at several Apollo 15 and 16 stations [4][5][7]. Apollo-era strength values were obtained largely by indirect methods such as trenching, penetration and vane shear [2]. Later mission and laboratory work built on these data, but the sources consulted do not establish a continuous lineage of flown soil tester designs.",
+      "limitations_and_uncertainties": "'Soil mechanical properties tester' describes a class of instruments, not one design, and the examples are not interchangeable. Penetrometer results depend on an interpretation model. The SRP report notes that many combinations of cohesion and friction angle satisfy the same penetration equation, so unique values need additional measurements, such as two cone sizes in the same soil or resistance at two depths in a homogeneous deposit [4]. The SRP analysis assumes a soil-to-plate friction ratio of 0.5, taken from friction tests on a ground-basalt simulant rather than lunar soil [4], and its failure model was checked only in model tests on dense, fine, sandy soils [4]. Apollo-era strength values, including friction angles between 30 and 50 degrees and a lower-bound cohesion of 0.03 to 0.10 kN/m2 at the Apollo 14 trench site, come from a search summary of NASA soil mechanics material and were not verified in full text [7]. For Surveyor 3, force and motor-current data were reported as not obtained because of telemetry problems after landing, according to a search summary that was not checked against the primary record [6]. A vacuum-chamber penetrometer study reported that off-gassing affected simulant strength results and that slower pumping reduced the disturbance, but its PDF could not be read in this run [8]. The generic environmental and deployment discussion is an engineering summary, not a certified design specification.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Soil Mechanics Surface Sampler",
+          "publisher": "R. F. Scott and F. I. Roberson, Journal of Geophysical Research (American Geophysical Union), 74(25), 6175-6214, 1969; DOI 10.1029/JB074i025p06175",
+          "url": "https://authors.library.caltech.edu/51433"
+        },
+        {
+          "title": "Mechanical Properties of Lunar Regolith and Lunar Soil Simulant",
+          "publisher": "S. W. Perkins, University of Colorado Center for Space Construction First Annual Symposium, 13 October 1989; NASA NTRS 19940004207",
+          "url": "https://ntrs.nasa.gov/citations/19940004207"
+        },
+        {
+          "title": "Soil Test Apparatus for Lunar Surfaces (arXiv:2306.01080)",
+          "publisher": "L. A. Rahmatian and P. T. Metzger, arXiv, submitted 1 June 2023",
+          "url": "https://arxiv.org/abs/2306.01080"
+        },
+        {
+          "title": "Apollo 16 Preliminary Science Report: Self Recording Penetrometer",
+          "publisher": "NASA Apollo lunar surface experiments documentation (Washington University RSL archive copy)",
+          "url": "https://an.rsl.wustl.edu/apollo/data/a16/station4/srp/docs/srp_psr.html"
+        },
+        {
+          "title": "Apollo 15 LM Lunar Self-Recording Penetrometer (PDS instrument context record)",
+          "publisher": "NASA Planetary Data System (via PSI ARC Nav)",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:lsrp.a15l"
+        },
+        {
+          "title": "Soil Sampler, Lunar Lander Surveyor (object record)",
+          "publisher": "Smithsonian National Air and Space Museum. Primary record not retrieved in this run; cited claims come from a search summary only.",
+          "url": "https://www.airandspace.si.edu/collection-objects/soil-sampler-lunar-lander-surveyor/nasm_A19700123000"
+        },
+        {
+          "title": "Apollo soil mechanics experiment summary (Apollo 14-16 trench, penetrometer and strength results)",
+          "publisher": "NASA Apollo lunar surface experiments documentation (Washington University RSL archive copy). Not retrieved in full; cited claims come from a search summary only.",
+          "url": "https://an.rsl.wustl.edu/apollo/data/a16/station4/srp/docs/soilmechanics_psr.pdf"
+        },
+        {
+          "title": "Vacuum-chamber electric cone penetrometer study of lunar simulant strength",
+          "publisher": "NASA NTRS 20090023168. PDF not readable in this run; cited claims come from a search summary only.",
+          "url": "https://ntrs.nasa.gov/api/citations/20090023168/downloads/20090023168.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo SRP example": "payload.article.physical_specifications.examples[0].images",
+      "Surveyor sampler example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. No images are included in this version because no direct image asset could be verified in this run."
+  },
+  "data_quality_notes": [
+    "Catalogue name is generic. The article covers a class of instruments and three examples, not one named flight instrument.",
+    "Primary text read: Apollo 16 SRP report (srp_psr.html), PDS Apollo 15 SRP record, Perkins 1989 NTRS abstract, arXiv 2306.01080 abstract page, and the Scott and Roberson 1969 record (abstract only; full JGR PDF text not read).",
+    "Search-summary-only claims, not verified in full text: Surveyor 3 and 7 test counts and Surveyor 3 telemetry gap (ref 6); Apollo 14-16 strength values, Apollo 16 test count and Apollo 14 trench cohesion bound (ref 7); vacuum cone penetrometer results (ref 8).",
+    "Fetch failures: NASA ALSJ soil mechanics chapter PDFs for Apollo 15 and 16 returned 404; Smithsonian si.edu object page returned 403 and the www.airandspace.si.edu host did not resolve; NTRS 19750023910 and 20090023168 PDFs returned binary content that was not readable in this run.",
+    "arXiv 2306.01080 metadata is inconsistent: submitted June 2023, but the text says it was presented at Earth and Space 2010. The article cites the arXiv record as published.",
+    "No images verified and no image URLs added. Apollo and Surveyor imagery exists in NASA and Smithsonian archives but was not verified here.",
+    "Mass, dimensions and power for the SRP and the Surveyor sampler are not publicly specified in the sources consulted and are left null.",
+    "Figures from search results for other sources (far-side DEM friction angle near 48 degrees and cohesion about 1.08 kPa; WHU-1 simulant pressure effect) were excluded because their provenance was not checked."
+  ]
+}

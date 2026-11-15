@@ -1,0 +1,171 @@
+{
+  "catalogue_id": 218,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 218,
+    "name": "Hydrogen reduction reactor",
+    "article": {
+      "overview": "A hydrogen reduction reactor is a high-temperature vessel in which lunar regolith (the loose, dusty soil that covers the Moon) is heated in hydrogen gas. Oxygen-bearing minerals, mainly iron oxides such as ilmenite, react with the hydrogen and release their oxygen as water vapour. The water can be condensed and electrolysed to recover oxygen, while the hydrogen is recycled. The oxygen could support breathing, life support or rocket propellant, so the process is studied as a way of reducing the mass that must be launched from Earth. This article describes the reactor class rather than one flight instrument. The examples reviewed are a NASA ground field-test system (ROxygen, 2008), a static-reactor concept developed by The Open University for the European Space Agency (ESA) PROSPECT lunar analysis package, and published design studies.",
+      "description": "A hydrogen reduction system normally has four linked parts. (1) Feed system: regolith is excavated, transported and fed into the reactor. The NASA ROxygen feed-system paper describes moving regolith from an excavator-hauler into an elevated reactor inlet. (2) Reactor: the regolith is heated to a high temperature in a hydrogen atmosphere. The NASA ROxygen feed-system paper states that the hot regolith (~1000 C) must be expelled from the reactor after reaction. (3) Water handling: water vapour leaves the reactor and is condensed, either by a cooled surface (a cold finger in static designs) or by a condenser in a flowing-gas design. (4) Electrolysis and hydrogen recycling: a 1990 NASA-supported design study describes reacting ilmenite with hydrogen near 1000 C to make water, then electrolysing the water to provide oxygen and recycle the hydrogen. Designs differ mainly in how they move gas and solids. Flowing-gas (dynamic) designs circulate hydrogen through the regolith. Static designs keep a sealed sample in hydrogen and rely on condensation to remove water, which avoids gas pumps but may slow the reaction if water vapour is not removed efficiently.",
+      "scientific_purpose_and_applications": "The main application is in-situ oxygen production. Oxygen is the largest mass component of propellant and breathable air that would otherwise need to be shipped from Earth, so even a small-scale process could reduce resupply mass for a lunar base or lunar surface operations. Hydrogen reduction also has scientific value. Laboratory experiments on lunar samples and simulants measure how much oxygen or water can be released, how fast the reaction proceeds and how the mineral composition of the regolith affects the yield. A NASA presentation summary reported in search results states that hydrogen reduction works well mainly where iron oxide content is high and that hydrogen does not reduce silicon oxides. This statement has not been checked against the primary presentation and is recorded as a claim to verify.",
+      "operating_principle": "For ilmenite, the representative overall reaction is FeTiO3 + H2 -> Fe + TiO2 + H2O. This is general chemistry, shown to explain the principle; it is not a measured yield. Two practical limits control the process. Equilibrium limit: the reaction is reversible. A patent cited in search results reports an equilibrium conversion of only about 3 to 19 per cent for ilmenite between 700 and 1,200 C, so each pass of hydrogen converts only a small fraction and unreacted hydrogen must be recycled. This figure comes from a search-result summary and has not been verified against the patent text. Water removal: removing water vapour shifts the reaction toward product formation. Flowing-gas systems carry water away in the gas stream. Static systems rely on condensation or diffusion, which is why the Open University tested whether a static system could work. A 2019 study cited in search results (Sargeant et al., Planetary and Space Science) reports a maximum measured yield of 3.40 +/- 0.17 wt% O2 at 1000 C, compared with a theoretical maximum of 10.5 wt% O2 for the same feedstock. The same summary reports that yield depends on feedstock composition and hydrogen pressure. This study was not accessible during this review, so the figures are treated as unverified.",
+      "scientific_importance": "Hydrogen reduction is one of the oxygen-extraction routes that has been tested most often in laboratory and field settings. The ROxygen work and the Open University static-reactor experiments connect laboratory chemistry with hardware that could operate in a lunar-analogue environment. They show that the process has been studied as a complete system, including regolith feeding, hot-solid removal and water collection, rather than only as a chemical reaction. A search-result summary of a NASA presentation states that hydrogen reduction and carbothermal reduction are the only two methods demonstrated at relevant scale without human intervention. This is a presentation summary and is not verified here. The carbothermal method is a separate process and is outside this payload article.",
+      "physical_specifications": {
+        "note": "There is no single universal mass, size or power value for a hydrogen reduction reactor. Each design is sized by its intended oxygen output, its feedstock and its thermal and mechanical architecture. The examples below describe specific prototypes, concepts or studies. Values are listed only where a source was read and the value can be attributed to it.",
+        "examples": [
+          {
+            "name": "NASA ROxygen hydrogen reduction system (2008 field test)",
+            "type": "Ground prototype and field test (not flown)",
+            "status": "Field-tested on Earth in November 2008; not flown.",
+            "field_test": "Performed on Mauna Kea, Hawaii, in November 2008, using volcanic ash (tephra) as a regolith simulant. The 2009 NASA feed-system paper calls tephra a good simulant for the hydrogen reduction process.",
+            "reactor_configuration": "A search-result summary of NASA documents describes a fluidised-bed reactor combined with an auger. This was not confirmed in the full paper, which could not be read.",
+            "oxygen_output": "A search-result summary reports a projected output of about 660 kg of oxygen per year, described as roughly two-thirds of the initial-outpost scale. This is a projection, not a measured result, and the primary NASA source was not verified.",
+            "mass_dimensions_power": "Not stated in the sources read; not publicly specified in the verified material.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20110011479"
+            ],
+            "images": []
+          },
+          {
+            "name": "ProSPA static hydrogen reduction concept (ESA / Open University)",
+            "type": "Laboratory prototype and planned lander instrument concept",
+            "status": "Not confirmed as flown. Planned flight reported in search-result summaries but not verified.",
+            "design": "ProSPA is described as a static system: the sample is not swept by a gas flow, and water vapour is condensed on a cold finger. The Open University 2021 paper in Planetary and Space Science is the cited laboratory work; its full text was not accessible during this review.",
+            "test_samples": "Search-result summaries describe small laboratory samples of about 45 to 50 mg, including a lunar simulant, a lunar meteorite and two Apollo soils. These figures are unverified.",
+            "mission_status": "The 2024 PROSPECT paper (Frontiers in Space Technology) describes the wider sample acquisition and analysis package. Search-result summaries report that ProSPA was first aimed at a Russian Luna-27 lander and was later associated with a NASA CLPS polar-lander mission. These claims conflict with the date in an older Open University news item and have not been confirmed against ESA or NASA mission pages. No flight is confirmed.",
+            "mass_dimensions_power": "Not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://oro.open.ac.uk/77316",
+              "https://doi.org/10.3389/frspt.2024.1331828"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar oxygen plant design study (1990 NASA ASEE summer study)",
+            "type": "Paper design study (proposed concept, not built)",
+            "status": "Proposed concept; not built.",
+            "design_target": "The study aimed to design a plant producing 5 metric tonnes of liquid oxygen per year from lunar soil. This is a design target, not a measured result.",
+            "process": "Ilmenite reacted with hydrogen at 1000 C to produce water, followed by electrolysis to recover oxygen and recycle hydrogen. The 1000 C figure is a design condition in the study; the abstract does not state that it was measured.",
+            "mass_power_size": "The study's abstract states that equipment size, mass and power are reported, but those values were not in the abstract and were not verified in the full report.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19910017795"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mini-ROXY concept (2023 white paper)",
+            "type": "Proposed concept described in a white paper",
+            "status": "Proposed concept; no test status verified.",
+            "description": "White paper by a multi-institution team led from Airbus, including Fraunhofer IFAM, TU Bergakademie Freiberg, the German Aerospace Center (DLR) and other institutions. Its stated purpose is to advance an efficient regolith oxygen-extraction method.",
+            "values": "The landing page did not provide reactor type, test status, temperatures, throughput or any mass, power or size values. None are reported here.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20230018323"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No dimensions are verified for any hydrogen reduction reactor example. The examples are not directly comparable: they differ in purpose, scale, test environment and maturity. No comparison table is provided because the sources do not give comparable values for the same design.",
+        "mass_and_weight": "No mass is verified for any example. Mass would drive launch requirements, lander capacity and structural design, and must be taken from a named design and source before comparison.",
+        "power_requirements": "Not verified for any example. Condensing water and reheating hydrogen require large heating and cooling loads, which would have to be supplied from the lunar surface power system. The size of that load is not quantified in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "High temperature: the reactor must operate and discharge material at about 1000 C. The NASA feed-system paper identifies expulsion of hot spent regolith as a key handling step. Hydrogen handling: hydrogen is flammable, and large hydrogen flows must be stored, metered, recycled and kept leak-tight. The 1990 study and later reviews identify large hydrogen volumes as a design challenge. Thermal loads: condensing water and reheating hydrogen require large heating and cooling loads, supplied from the lunar surface power system; the quantity is not verified for any example. Abrasive regolith: the NASA feed-system paper states that the valves must handle abrasive material and heat. Lunar environment: the reactor must withstand lunar surface temperature cycles, dust and radiation; its insulation and dust-protection requirements are engineering considerations and are not quantified here. Automation: a search-result summary of a NASA presentation states that automation remains a challenge for most oxygen-from-regolith methods. This claim is unverified.",
+      "limitations": "Low per-pass conversion: equilibrium limits mean only part of the hydrogen reacts on each pass, so recycling and gas handling are central to the design. The ilmenite equilibrium range cited above is unverified. Feedstock dependence: yields depend strongly on iron oxide content and mineral composition. A search-result summary reports poor hydrogen utilisation at 1200 C and below in older NASA-era work; this was not verified in the primary source. Heat and energy: large heating and cooling loads and hydrogen recirculation increase power and thermal demands. Static-system risk: without gas flow, water vapour may slow the reaction. Search-result summaries of Open University modelling suggest diffusion through hydrogen is fast enough for the reaction to proceed, but this has not been verified against the 2021 paper. Maturity gap: the reviewed sources include a ground field test (2008), laboratory prototypes and design studies. No flight demonstration or lunar operation of a hydrogen reduction reactor was identified.",
+      "transportation_and_deployment": {
+        "overview": "A hydrogen reduction reactor would be a surface system. Integration on Earth would include the reactor, hydrogen storage, the regolith feed and removal system, the water condenser and, for a complete ISRU chain, an electrolyser and oxygen storage. Launch mass and volume, landing loads and thermal and mechanical interfaces are not verified for any example. The article does not assert compatibility with any named lander.",
+        "transportation_process": [
+          "Integrate the reactor, hydrogen storage, feed and removal system, water condenser and any electrolyser into a lander payload compartment on Earth (dimensions and mass not verified).",
+          "Launch and transfer to the Moon (launch vehicle and trajectory not specified for this payload).",
+          "Deliver to the lunar surface with a lander (no lander compatibility verified).",
+          "Deploy the regolith feed and removal interfaces and connect power, thermal and data systems.",
+          "Commission the reactor with a hydrogen supply and water collection path, then begin regolith feeding."
+        ],
+        "deployment_methods": "Regolith must be excavated and delivered to the reactor. The ROxygen feed-system work used an excavator-hauler to move regolith into an elevated reactor inlet. For the ProSPA concept, the reactor and analysis functions are described as part of a sample acquisition and analysis package that includes a drill (PROSPECT, 2024). The deployment sequence, power and data interfaces for ProSPA have not been verified. Operations: once installed, the reactor requires regular feeding, hot-solid removal, hydrogen replenishment and water collection. These steps are described in the ROxygen and design-study sources; their frequency and duration are not specified in the verified sources.",
+        "historical_examples": "The 2008 ROxygen field test on Mauna Kea is the main NASA example of hydrogen reduction hardware tested in a lunar-analogue setting. The 1990 design study is an early published system-level concept. The ProSPA static-reactor work is a more recent European line of research linked to a planned lunar analysis package. None of these examples is confirmed to have operated on the Moon.",
+        "compatibility_assessment": "Compatibility with any lander or landing site cannot be assessed from the verified sources. Future assessment would need the reactor's mass, dimensions, mounting points, landing loads, hydrogen and thermal interfaces, power and data requirements, compared with verified lander specifications.",
+        "images": []
+      },
+      "historical_significance": "The 2008 ROxygen field test is a NASA milestone for hydrogen reduction hardware, showing that the feed, reaction and removal steps could be exercised outside the laboratory in a lunar-analogue setting. The 1990 design study provides an early published system-level concept. The Open University static-reactor work is a more recent European line of research linked to a planned lunar analysis package. None of these examples is confirmed to have operated on the Moon.",
+      "limitations_and_uncertainties": "Several primary sources could not be read: the 2021 Open University paper (HTTP 403), the 2019 yield study (not accessible), the 2024 PROSPECT paper (binary PDF, metadata only) and the ASCE ROxygen paper (HTTP 403). Claims drawn from these sources are based on search-result summaries and are flagged in the text. The 2009 NASA feed-system paper and the 2023 Mini-ROXY record were read in abstract form, and the 1990 design study was read in abstract form. Full-text specifications remain unverified. No mass, dimensions, power or sensitivity values are verified for any example. The 660 kg/yr ROxygen projection, the 3.40 wt% yield and the 3 to 19 per cent equilibrium range are unverified. ProSPA's flight status is unconfirmed, and the planned lander has been reported differently in different sources. No direct image URL was verified from an official source page, so the article contains no embedded images. Lunar landing-site or location recommendations are deferred by the user and are not included. The 1990 design study is a paper concept; its scale and power values should be checked against the full report before reuse.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "id": 1,
+          "authors": "Mueller, R. P.; Townsend, I. I. III",
+          "year": 2009,
+          "title": "Lunar Regolith Simulant Feed System for a Hydrogen Reduction Reactor System",
+          "publisher": "NASA NTRS (paper presented at 2nd Symposium on Space Resource Utilization, 47th AIAA Aerospace Sciences Meeting, Orlando, FL); document KSC-2009-006",
+          "publication_date": "2009-01-05",
+          "url": "https://ntrs.nasa.gov/citations/20110011479",
+          "verification": "Abstract page read; full PDF not readable."
+        },
+        {
+          "id": 2,
+          "authors": "Radhakrishnan, Ramalingam",
+          "year": 1990,
+          "title": "Design of a lunar oxygen production plant",
+          "publisher": "NASA NTRS; NASA/ASEE Summer Faculty Fellowship Program 1990, Vol. 2; accession 91N27109",
+          "publication_date": "1990-12-01",
+          "url": "https://ntrs.nasa.gov/citations/19910017795",
+          "verification": "Abstract page read; full PDF not read."
+        },
+        {
+          "id": 3,
+          "authors": "Seidel, A.; Monchieri, E.; Kubler, U.; Pal, U.; Pohle, G.; Redlich, C.; Charitos, A.; Vogt, D.; D'Angelo, O.; Kollmer, J.; Hyers, R.; Zabel, P.; Kulkarni, K.; Kiewiet, L.; Sinha-Ray, S.",
+          "year": 2023,
+          "title": "Mini Roxy: the Next Step Towards an Efficient Method for Oxygen Extraction From Regolith",
+          "publisher": "NASA NTRS, white paper, document 20230018323",
+          "publication_date": "2023-12-20",
+          "url": "https://ntrs.nasa.gov/citations/20230018323",
+          "verification": "Record page read; abstract text not available on the page; full PDF not read."
+        },
+        {
+          "id": 4,
+          "authors": "Trautner, R.; et al.",
+          "year": 2024,
+          "title": "PROSPECT: A comprehensive sample acquisition and analysis package for lunar science and exploration",
+          "publisher": "Frontiers in Space Technology, 5, 1331828",
+          "publication_date": "2024",
+          "url": "https://doi.org/10.3389/frspt.2024.1331828",
+          "verification": "Metadata verified from the PDF; body text not readable."
+        },
+        {
+          "id": 5,
+          "authors": "Open University authors (not verified from page)",
+          "year": 2021,
+          "title": "Hydrogen reduction of lunar samples in a static system for a water production demonstration on the Moon",
+          "publisher": "Planetary and Space Science (per search-result metadata)",
+          "publication_date": "2021",
+          "url": "https://oro.open.ac.uk/77316",
+          "verification": "Metadata from search results only; page returned HTTP 403."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image URLs were verified, so the image registry is empty and no image placements are recorded."
+  },
+  "data_quality_notes": [
+    "Primary full-text reads were not possible for several sources: the 2009 NASA ROxygen feed-system paper (binary PDF; abstract page only), the 2019 yield study, the 2021 Open University paper (HTTP 403), the 2024 PROSPECT paper (binary PDF; metadata only) and the ASCE ROxygen paper (HTTP 403). Claims from these sources come from search-result summaries and are labelled as unverified in the article text.",
+    "No numerical mass, dimensions, power, throughput or yield value has been verified against a primary source. The values 660 kg/yr (ROxygen projection), 3.40 +/- 0.17 wt% O2 (2019 yield study) and 3 to 19 per cent equilibrium conversion (patent) are unverified.",
+    "The 5 metric tonne per year liquid oxygen figure is a design target from the 1990 design study, not a measured result.",
+    "ProSPA flight status is unconfirmed; search-result summaries conflict on the planned lander (Luna-27 versus NASA CLPS) and on the date.",
+    "No direct image asset URLs were verified from official source pages, so the image registry is empty. Image sourcing for a future revision should target NASA Image and Video Library or NTRS records for ROxygen and ProSPA hardware.",
+    "Hydrogen reduction is not flight-proven in the sources reviewed. The 2008 ROxygen test was a ground field test."
+  ]
+}

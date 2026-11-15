@@ -1,0 +1,159 @@
+{
+  "catalogue_id": 298,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 298,
+    "name": "Autonomous power management system",
+    "article": {
+      "overview": "An autonomous power management system is a control and energy-management layer for a power network, not a single fixed instrument. On a lunar surface base it would decide how generation (solar or nuclear), storage and loads share power, and how faults are isolated, with limited or delayed human intervention. The sources reviewed describe the concept at proof-of-concept, modelling and laboratory-test stages. No flown lunar system was identified.",
+      "description": "An autonomous power management system monitors the sources, storage and consumers on a power network, then issues commands to converters, switches and loads so that the network stays stable and its highest-priority loads keep running when conditions change. It is intended to act without waiting for an operator to respond to each change. NASA's power technology listing describes an autonomous energy management capability for future lunar and Martian surface power networks, including coordination of bi-directional power transfer [1]. Lunar surface power is expected to be organised as a microgrid, a local network of generation, storage and loads that is managed as one system [2].",
+      "scientific_purpose_and_applications": "This is an engineering and operations function rather than a scientific measurement instrument. Its purpose is to keep a surface power network reliable and safe while it supplies habitats, science instruments and other equipment. The 2025 review argues that future extraterrestrial installations need power systems that are highly reliable, resilient, safe and autonomous, able to serve varied electrical loads [2]. The applications named in the sources are lunar base power networks and the coordination of power transfer between distributed surface assets [1][2]. The sources do not describe a scientific data product produced by the controller itself.",
+      "operating_principle": "A common engineering approach is hierarchical control, which separates fast local control from slower network-wide decisions. In general terms, element-level controllers regulate individual converters and detect local faults, while a grid-level or supervisory controller allocates available power, resolves conflicts between sources and loads, and reconfigures the network after a fault. This is the general principle only; the specific layer functions of the lunar studies below were not verified from full texts. The 2022 poster [4] is titled \"Development of Hierarchical Control for a Lunar Habitat DC Microgrid Model Using Power Hardware-in-the-Loop\". The title indicates a hierarchical control structure evaluated with power hardware in the loop, meaning real power hardware is connected to a simulated network. The 2023 paper [5] is titled \"Supervisory On-line Optimal Control of an Electric Power Microgrid Design for Lunar Habitation\", which indicates a supervisory optimisation layer. The abstracts and methods for both were not accessible, so their control laws, test configurations and outcomes are not described here.",
+      "scientific_importance": "Lunar surface power is a prerequisite for habitats, science instruments and resource processing, so the reliability of the power network affects every other system that depends on it. The 2025 review of microgrids for extraterrestrial habitats states that these installations need a power system that is highly reliable, resilient, safe and autonomous [2]. The importance of autonomous power management therefore lies in keeping a distributed network stable and reliable without requiring a human to act at every change. Whether this has been achieved on the Moon has not been demonstrated in the sources reviewed.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an autonomous power management system. The function can be implemented in software and in controllers distributed across converters, computers or a central unit, so mass, volume and power are not defined for the class as a whole. The examples below are technology entries and studies. The sources reviewed publish no mass, dimensions, power consumption or lifetime values for any of them.",
+        "examples": [
+          {
+            "name": "NASA Advanced Energy Management System (AEMS)",
+            "type": "NASA technology development entry (not a flight unit)",
+            "stage": "Proof-of-concept",
+            "technology_readiness_level": 3,
+            "scope": "Autonomous energy management for future lunar and Martian surface power networks, including bi-directional power transfer coordination.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "flight_status": "Not flown",
+            "qualification": "TRL 3 per NASA power technology listing last updated 29 July 2026. An earlier aggregated search result gave TRL 4; the NASA page is used as the authoritative value.",
+            "source_urls": [
+              "https://www.nasa.gov/power/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Hierarchical control of a lunar habitat DC microgrid model (2022)",
+            "type": "Conference poster on a DC microgrid model for a lunar habitat (Sandia National Laboratories, with a NASA Glenn co-author)",
+            "stage": "Modelling and power hardware-in-the-loop study, as indicated by the title; test configuration and results not accessible",
+            "technology_readiness_level": null,
+            "scope": "Hierarchical control of a lunar habitat DC microgrid model.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "flight_status": "Not flown",
+            "qualification": "Numerical performance not provided in the record. Abstract not provided on the OSTI record.",
+            "source_urls": [
+              "https://www.osti.gov/biblio/2003456"
+            ],
+            "images": []
+          },
+          {
+            "name": "Supervisory on-line optimal control of a lunar habitation microgrid (2023)",
+            "type": "Conference paper proposed for AIAA SciTech Forum, January 2023 (NASA Glenn authors listed on the record)",
+            "stage": "Proposed for presentation; simulation or hardware basis not verified",
+            "technology_readiness_level": null,
+            "scope": "Supervisory on-line optimal control of an electric power microgrid design for lunar habitation.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "flight_status": "Not flown",
+            "qualification": "Abstract not provided on the OSTI record; numerical performance not provided.",
+            "source_urls": [
+              "https://www.osti.gov/biblio/2006139"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for an autonomous power management system as a class, nor for any of the examples in the sources reviewed.",
+        "mass_and_weight": "Not publicly specified for an autonomous power management system as a class, nor for any of the examples in the sources reviewed.",
+        "power_requirements": "Not publicly specified for an autonomous power management system as a class, nor for any of the examples in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "The autonomous controller is electronics and software, so the relevant environment is that of the surface power network it manages. Planned lunar power infrastructure has been described with surface temperatures of up to 120 °C by day and -220 °C at night [6]. The 2025 review highlights that harsh environments cause degradation of microgrid components, which is a central concern for any power management system placed in that environment [2]. Radiation, thermal cycling, dust and vacuum qualification for an autonomous power management controller were not found in the sources reviewed [1][2]. Operationally, the function must keep the network stable and reliable with limited human oversight [1][2]. Specific requirements for control latency, fault-recovery time and availability were not published in the sources reviewed.",
+      "limitations": "The function has not been flown or demonstrated on the lunar surface in the sources reviewed. The NASA entry is at TRL 3 [1]. The abstracts of the 2022 poster and the 2023 paper, and the full texts of the 2025 review and the 2020 presentation, could not be read [2][3][4][5]. Statements about those items are limited to titles and metadata. No mass, dimensions, power, lifetime or performance values are published for the function. The function is a control layer, so its behaviour depends on the power hardware and network architecture it manages, which varies from design to design.",
+      "transportation_and_deployment": {
+        "overview": "This is not normally a standalone payload. An autonomous power management system would be delivered as part of a power network, with controllers integrated into converters, distribution units or central equipment, and software installed on them. The sources do not describe Earth integration, launch, transfer, landing delivery, setup, or power and data interfaces for the controller itself.",
+        "transportation_process": [
+          "Earth integration: not described in the sources reviewed for the controller itself.",
+          "Launch and lunar transfer: not described for the controller itself.",
+          "Landing delivery and deployment: the closest planned example, the LunaGrid concept, describes a mobile power station that lands, drives up to 2 km, lays cable and deploys its array [6]. These are 2023 forecasts.",
+          "Power and data interfaces: the LunaGrid article describes cables linking solar power stations [6]; controller data interfaces are not described in the sources reviewed."
+        ],
+        "deployment_methods": "The LunaGrid article describes solar power stations linked by cables, with a mobile power station that lands, drives up to 2 km, lays cable and deploys its array [6]. It describes the mobile station as able to level itself and move to a distant position, but it does not describe control software or autonomy levels [6]. The planned first node demonstration is forecast for 2026 and a full grid by 2028; these forecasts were made in 2023 and their current status could not be confirmed [6].",
+        "historical_examples": "No flown or lunar-deployed autonomous power management controller was identified. The LunaGrid concept [6] is a planned power-grid architecture with an automated deployment element, not a demonstrated autonomous controller.",
+        "compatibility_assessment": "No verified interface evidence was found for integrating the controller with any named lander, rover or habitat, so no compatibility is asserted.",
+        "images": []
+      },
+      "historical_significance": "NASA has been developing autonomous power management for lunar and Martian networks, as shown by its power technology listing [1] and a 2020 NASA Glenn presentation on the constraints, issues and trade-offs of a flexible, reliable lunar surface micro-grid [3]. The 2022 and 2023 conference work [4][5] shows ground-based development of hierarchical and supervisory control approaches. The historical significance is currently limited to these development studies, since no flight demonstration was identified.",
+      "limitations_and_uncertainties": "The function has not been flown or demonstrated on the lunar surface in the sources reviewed, so all performance statements in this article concern concepts, studies and laboratory or modelling work. NASA lists the AEMS at TRL 3, which is a proof-of-concept stage [1]. An earlier aggregated search result gave TRL 4 for the same entry; the NASA page, updated 29 July 2026, gives TRL 3, and TRL 3 is used here [1]. The abstracts of the 2022 hierarchical-control poster [4] and the 2023 supervisory-control paper [5] were not available, so their methods, test configurations and results are not described. The 2020 NASA Glenn microgrid presentation [3] and the 2023 IEEE Spectrum article [6] are forecasts or early-stage presentations rather than measured results. No mass, dimensions, power, control latency, fault-recovery time or lifetime values were found for an autonomous power management system.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Power technology listing, Advanced Energy Management System entry",
+          "publisher": "NASA",
+          "date": "Last updated 2026-07-29",
+          "url": "https://www.nasa.gov/power/"
+        },
+        {
+          "title": "Microgrids for Extraterrestrial Habitats: A Review of Technologies, Needs, and Challenges",
+          "publisher": "IEEE Access (authors: Chebbo, Gultekin, Bazzi, Young, Kozak; NTRS record 20250002250)",
+          "date": "2025-01-20",
+          "url": "https://ntrs.nasa.gov/citations/20250002250"
+        },
+        {
+          "title": "Micro-grid for Future Planetary Surface Needs",
+          "publisher": "NASA Glenn Research Center (authors: Csank, Soeder; NTRS record 20205010535)",
+          "date": "2020-11-20 (NTRS record acquired)",
+          "url": "https://ntrs.nasa.gov/citations/20205010535"
+        },
+        {
+          "title": "Development of Hierarchical Control for a Lunar Habitat DC Microgrid Model Using Power Hardware-in-the-Loop",
+          "publisher": "Sandia National Laboratories, SAND2022-7464C (IEEE PVSC 2022 poster, proposed)",
+          "date": "2022-06-01",
+          "url": "https://www.osti.gov/biblio/2003456"
+        },
+        {
+          "title": "Supervisory On-line Optimal Control of an Electric Power Microgrid Design for Lunar Habitation",
+          "publisher": "AIAA SciTech Forum 2023 (proposed), DOI 10.2514/6.2023-1391",
+          "date": "2023-01 (proposed presentation)",
+          "url": "https://www.osti.gov/biblio/2006139"
+        },
+        {
+          "title": "How to Build a Power Grid on the Moon",
+          "publisher": "IEEE Spectrum (authors: Landreneau, Schricker)",
+          "date": "2023-06-24",
+          "url": "https://spectrum.ieee.org/moon-base"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No images were researched or included for this payload, so the image registry is empty."
+  },
+  "data_quality_notes": [
+    "Catalogue match confirmed: ID 298, name 'Autonomous power management system', category 15 'Lunar technology and infrastructure experiments'.",
+    "This payload is a control and energy-management function, not a single flown instrument. No flight-proven autonomous power management system for the Moon was identified.",
+    "NASA AEMS entry: TRL 3 per the NASA power technology listing updated 2026-07-29. An earlier aggregated search result gave TRL 4; the primary NASA page is used.",
+    "PDF full texts for the 2025 review (NTRS 20250002250) and the 2020 NASA Glenn presentation (NTRS 20205010535) could not be extracted by the research tool; only NTRS landing-page metadata and abstracts were used.",
+    "OSTI records for the 2022 poster (2003456) and 2023 paper (2006139) list no abstract; their methods, test configurations and results are not described.",
+    "No mass, dimensions, power, lifetime, latency or fault-recovery values were published for the function; all such fields are null or 'not publicly specified'.",
+    "LunaGrid status (first node demonstration forecast for 2026, full grid by 2028) is a 2023 forecast and its current status is unverified.",
+    "A NASA Glenn Autonomous Power Controller presentation (2021) and related 2023 slides were seen only in search summaries and were not read in full; they are not cited in the article.",
+    "The TechPort record for the AEMS entry (project 184865), linked from the NASA listing, was not reviewed.",
+    "No images were researched, verified or included. image_urls_added is false.",
+    "No lander, rover or habitat compatibility is asserted."
+  ]
+}

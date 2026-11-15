@@ -1,0 +1,370 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 1,
+    "name": "Geophysical and lunar interior instruments"
+  },
+  "payload": {
+    "number": 17,
+    "name": "Gravity gradiometer",
+    "article": {
+      "scope_note": "Scope reading: this article covers the gravity gradiometer as a class of instrument that measures the spatial gradient of gravity (the gravity gradient tensor) rather than gravitational acceleration itself. It covers the rotating and differential-accelerometer sensing types that have been built or proposed, one flown Earth-orbit example (ESA GOCE Electrostatic Gravity Gradiometer), and lunar proposals and studies. Absolute and relative gravimeters are payload 016 (Gravimeter). Ranging-based gravity-field missions such as GRAIL are outside this article because they infer the field from spacecraft separation rather than sensing gradients directly. Payloads 024 (Libration measurement instrument) and 025 (Tidal deformation sensor) are also outside this scope.",
+      "overview": "A gravity gradiometer measures the rate at which gravity changes across a small distance. A single gravimeter at one point gives the local gravitational acceleration. Two accelerometers separated by a short distance, or a rotating proof-mass system, give the difference between those accelerations, which is the gradient. The gradient falls off more quickly with distance from a mass than the gravitational field itself, so gradient measurements are more sensitive to near-surface and local mass structure [1][2].\n\nOn the Moon, no gravity gradiometer has been flown. The main lunar proposals date from the early 1970s. A 1971 NASA-funded study by Hughes Research Laboratories described a spinning lunar orbiter at about 30 km altitude carrying a rotating gravity gradiometer, with the aim of mapping mascon structures [1]. A 1982 report reproduced a JPL-sponsored assessment that judged the rotating design the best candidate for a polar lunar mapping mission [2]. The only flown gravity gradiometer in this article is ESA's Electrostatic Gravity Gradiometer on the GOCE satellite, which mapped Earth's gravity field from low orbit from 2009 until 2013 [4][5]. The lunar figures in this article are proposals and laboratory results, not flight measurements.",
+      "description": "A gravity gradient is the spatial rate of change of the gravitational acceleration. In three dimensions it is described by a symmetric 3 x 3 tensor with nine entries, of which five are independent because the tensor is trace-free for a point in empty space. A gradiometer measures some or all of these components. Gradient measurements are usually reported in Eotvos units (E.U.), where 1 E.U. equals 10^-9 s^-2. The Hughes reports give the lunar surface gradient as about 1800 E.U. [1], which is about 1.8 x 10^-6 s^-2.\n\nTwo broad sensing approaches appear in the sources read. In a rotating gradiometer, proof masses are mounted on a spinning or rotating frame. Gravity gradients produce forces that vary at twice the rotation frequency, while linear acceleration of the instrument produces forces at the rotation frequency. The two can therefore be separated in the measurement [1]. In a differential-accelerometer gradiometer, pairs of accelerometers are placed at either end of a short arm. The difference between their outputs gives the gradient along that arm, and common-mode accelerations cancel. The GOCE Electrostatic Gravity Gradiometer uses this approach [4].\n\nGradiometers differ from the gravimeter (payload 016) in what they measure and where they are most useful. A gravimeter measures the total acceleration at one point, which includes the effect of distant mass. A gradiometer responds mainly to nearby mass, so it resolves local anomalies that a single gravity measurement would blur [1][2].",
+      "scientific_purpose_and_applications": "The main purpose of a lunar gravity gradiometer would be to map mass anomalies: local variations in density in the crust and near-surface, including mascons, buried impact basins and possibly lava tubes. The 1971 Hughes study calls an orbiting gradiometer the first element of future lunar exploration for developing a detailed gravity anomaly map. It also notes that gradient data are a direct measurement of the field at each point, which needs less processing than Doppler tracking data [1]. The study modelled a simulated terrain with density variations and found that a rotating gradiometer passing overhead could resolve anomalies in a range from 10 E.U. down to 1 E.U. [1]. These are laboratory-based simulations, not lunar measurements.\n\nA second purpose is to support lunar geodesy and interior modelling. Gravity data constrain the density distribution inside the Moon. The 1982 Hughes study describes a gravity gradiometer as a complement to a polar mapping mission, with the goal of higher-resolution mass distribution than a gravity-field mission from ranging alone could provide [2]. The GRAIL mission, which used spacecraft-to-spacecraft ranging, returned a much more accurate global gravity field and was not a gradiometer mission [6]. A lunar gradiometer would therefore address local structure, not replace the global field that GRAIL has already mapped.\n\nApplications outside the Moon include Earth geodesy, where GOCE mapped the geoid and gravity anomalies [4][5], and planetary geodesy for asteroids and outer-planet satellites. The 1971 and 1982 Hughes reports both state these applications, but the sources read do not quantify them for other bodies.",
+      "operating_principle": "The rotating gradiometer described by Hughes uses a pair of quadrupole proof-mass systems mounted on a torsional sensor that rotates about its axis. Each quadrupole has two end masses on a frame. In a gravity gradient field, the differential force on the end masses creates a torque. Because the sensor rotates, the torque appears at twice the rotation frequency. The sensor is rotated at one-half of its torsional resonant frequency [1]. The 1971 report explains that a gradient of 1800 E.U. at the lunar surface would deflect the sensor by about 10^-7 rad in typical orbital designs, and that a threshold signal of 1 E.U. corresponds to an angular response of about 5 x 10^-11 rad [1]. Measuring such small angles requires a high-Q torsional system with very low noise.\n\nOn a spinning spacecraft, the sensor is fixed to the spacecraft frame and the spin provides the rotation. The gravity gradient is constant in the sensor's rotating frame, so it does not contribute to the dynamic response. The background bias from the spacecraft is therefore averaged out and does not need calibration [1]. A static gradiometer, in contrast, must be calibrated against its own background gradient.\n\nThe GOCE EGG works differently. Its proof masses are held centred in a cage by electrostatic feedback. The electric field needed to keep each mass centred is the measured quantity, and the difference between the three arms gives the diagonal components of the gradient, together with the linear and angular accelerations of the spacecraft [4]. ESA describes the sensor as about 100 times more sensitive than any accelerometer previously flown [4]. This is ESA's own comparison and is not verified against a published specification in this article.",
+      "scientific_importance": "Gradiometer data can resolve local mass structure that other lunar measurements cannot. Gravimeters and ranging missions give the field at a larger scale, while magnetometers and seismometers record different physical quantities. The Hughes studies argue that a gradiometer on a polar orbiter would provide mapping of the lunar mass distribution with resolution set by the orbit altitude and sensor noise [1][2]. The 1971 concept gave a resolution element roughly equal to the altitude, so about 30 km at 30 km altitude [1].\n\nThe 1971 study describes the rotating gradiometer as the first device that had demonstrated sensitivity to the very small forces involved in gravity gradiometry while also being rugged enough for either orbital or earthbound use [1]. The 1982 report presents the rotating design as having the highest projected sensitivity among three candidate gradiometers evaluated for a lunar polar mapping mission [2]. These statements are from the Hughes reports and their sponsors. They are not independent assessments.\n\nThe GOCE mission showed that a gravity gradiometer could operate in orbit and produce global gradient-based products for Earth [4][5]. The lunar relevance is therefore a demonstration of the technology class in space, not a demonstration at the Moon.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, power or sensitivity for a gravity gradiometer. The examples below include laboratory sensors, lunar orbital concepts, a flown Earth-orbit instrument and proposals with no published hardware. Values are given only for the named instrument and source. Where a value is not stated in the sources read, the article says so. Sensitivity in the Hughes and Draper reports is quoted at a 10 s integration time in E.U.; the comparison table is limited to that shared metric.",
+        "examples": [
+          {
+            "name": "Hughes Rotating Gravity Gradiometer (RGG), laboratory models",
+            "type": "Laboratory rotating gradiometer (not flown)",
+            "status": "Laboratory models only. Not flown. The 1971 report describes a laboratory research model with a sensitivity suitable for many applications [1].",
+            "measured_noise_1971": "In an acoustically isolated test with a 10 s time constant, the sensor noise was 1.44 cm, equivalent to 5.2 E.U. rms [1]. The report notes this was a factor of four to eight better than earlier tests [1].",
+            "projected_noise_1982": "A study of the RGG-2 sensor expected that replacing a damping resistor with an active artificial resistor would reduce thermal noise from 0.3 E.U. to 0.15 E.U. at a 10 s integration time. A future design with electronic cooling was expected to reach 0.03 E.U. at 10 s. Both figures are projections, not measurements [2].",
+            "status_of_1982_hardware": "Two government-owned RGG sensors were transferred to the 1982 contract and inspected. The report judged them physically complete but could not operate them, because the punched paper tapes that loaded the program were lost. The estimate for returning them to operating condition in a laboratory was nine months and $200,000 (1982 figure) [2].",
+            "lunar_orbit_configuration_parameters_1982_table_ocr": {
+              "source_label": "LPO Rotating Gravity Gradiometer Parameters (1982 table, OCR-derived)",
+              "sensor_weight_kg_each": 16,
+              "electronics_weight_kg_each": 3,
+              "sensor_volume": "39 cm long by 22 cm diameter, about 11,400 cm3",
+              "electronics_volume": "37 x 15 x 8 cm, about 4,440 cm3",
+              "power": "18 W plus 2 to 10 W of heater power",
+              "operating_temperature_c": {"min": 0, "max": 55},
+              "survival_temperature_c": "lower limit -20; upper limit not legible in OCR text",
+              "caveat": "OCR-read table; check against the scanned page before reuse."
+            },
+            "mass_kg": "16 per sensor (1982 table, OCR-derived)",
+            "dimensions_cm": "sensor 39 long x 22 diameter; electronics 37 x 15 x 8 (1982 table, OCR-derived)",
+            "power_w": "18 plus 2 to 10 heater (1982 table, OCR-derived)",
+            "sensitivity_E_at_10s": {"demonstrated_1982_table": 1.0, "projected_1982_table": 0.1},
+            "source_refs": [1, 2],
+            "images": []
+          },
+          {
+            "name": "1971 lunar selenodesy satellite concept (Hughes rotating gradiometer)",
+            "type": "Proposed lunar orbiter concept (not built)",
+            "status": "Proposed concept. Not built. The 1971 study describes a spin-stabilised lunar orbiter with a rotating gradiometer [1].",
+            "spacecraft_geometry": "Cylindrical structure 3.5 ft (about 1.07 m) in diameter and 3 ft (about 0.91 m) high. Total weight given as 160 lb (about 72.6 kg, converted) [1].",
+            "spin_and_sensor_frequency": "Nominal spin 1 to 3 revolutions per second. Sensor torsional resonance set at twice the spin rate, giving 2 to 6 Hz [1].",
+            "power": "Average power demand during non-eclipse flight estimated at about 100 W, requiring about 10 ft2 (about 0.93 m2) of projected solar-array area. The battery supplies the eclipse period; the report describes a fully redundant system [1].",
+            "orbit_and_coverage": "30 km altitude polar orbit, nearly parallel to the Sun vector. Ground tracks spaced about 31 km apart at the equator. Planned mission duration one-half of a lunar day, or about 14 Earth days [1].",
+            "integration_time_s": "3 to 10 usable; shorter times would increase data storage and transmission problems without a significant improvement in final resolution [1].",
+            "delivery_assumption": "Delivery and orbit placement by an Apollo spacecraft [1]. Historical assumption, not a compatibility assessment.",
+            "mass_kg": "Total spacecraft about 72.6 kg (160 lb, converted). Gradiometer-alone mass not stated.",
+            "power_w": "About 100 average, non-eclipse, whole spacecraft [1]",
+            "not_stated": "Gradiometer-alone mass, flight-design sensor accuracy in E.U., and lifetime are not stated in the sources read.",
+            "source_refs": [1],
+            "images": []
+          },
+          {
+            "name": "1972 De Bra, Harrison and Muller lunar orbiting gradiometer proposal",
+            "type": "Published proposal (not flown)",
+            "status": "Published proposal. Not flown. The paper describes a lunar orbiting gravity gradiometer experiment based on the Hughes design [3].",
+            "orbit_and_coverage": "Near-circular polar orbit at about 30 km average altitude, covering the whole lunar surface in fourteen days [3].",
+            "accuracy_claim": "Search-level summary states an accuracy in the range 0.1 to 0.5 E.U. could be expected for a lunar orbiter. Full paper text not accessible; reported as a summary claim and not verified [3].",
+            "mascon_mapping_claim": "Summary states mascon gradient anomalies could be mapped to 1 % accuracy. Not verified against the paper [3].",
+            "mass_kg": "not publicly specified in the sources read",
+            "power_w": "not publicly specified in the sources read",
+            "source_refs": [3],
+            "images": []
+          },
+          {
+            "name": "Bell Aerospace Rotating Accelerometer Gravity Gradiometer (candidate)",
+            "type": "Candidate gradiometer evaluated in 1982 (not flown)",
+            "status": "One of three candidate gradiometers evaluated in a 1982 study for JPL, reproduced in the Hughes report [2]. Not flown.",
+            "sensitivity_E_at_10s": {"demonstrated": 1.7, "projected": 0.4},
+            "mass_kg": "not stated in the sources read",
+            "power_w": "not stated in the sources read",
+            "source_refs": [2],
+            "images": []
+          },
+          {
+            "name": "Draper Laboratory Spherical Gravity Gradiometer (candidate)",
+            "type": "Candidate gradiometer evaluated in 1982 (not flown)",
+            "status": "One of three candidate gradiometers evaluated in the same 1982 study. Not flown [2].",
+            "sensitivity_E_at_10s": {"demonstrated": 0.3, "projected": 0.3},
+            "mass_kg": "not stated in the sources read",
+            "power_w": "not stated in the sources read",
+            "source_refs": [2],
+            "images": []
+          },
+          {
+            "name": "Hughes rotating gradiometer terrain-simulation test (laboratory)",
+            "type": "Laboratory simulation (not a flight test)",
+            "status": "The 1971 study describes a scaled laboratory simulation of a lunar spacecraft at 30 km altitude over mascon structures, using a computer program to predict the response [1]. Not a flight test. Basis for the 10 E.U. to 1 E.U. anomaly-resolution claim in the Scientific Purpose section.",
+            "source_refs": [1],
+            "images": []
+          },
+          {
+            "name": "ESA Electrostatic Gravity Gradiometer (EGG) on GOCE",
+            "type": "Flown Earth-orbit gravity gradiometer",
+            "status": "Flown. GOCE launched in March 2009 and was in orbit until its fuel ran out on 21 October 2013 [4][5]. The EGG measured Earth's gravity field in three dimensions. ESA describes it as the first gradiometer in space [5].",
+            "sensor_configuration": "Six three-axis accelerometers forming three gradiometer arms, each with an accelerometer separation of 0.5 m [4].",
+            "measurement_band": "5 mHz to 100 mHz for gravity measurements [4]",
+            "accelerometer_sensitivity": "2 x 10^-12 m s^-2 per root hertz, as stated on ESA's page [4]",
+            "mass_kg": 180,
+            "power_w": 100,
+            "mass_and_power_note": "As stated on ESA's EGG page (AI-summarised fetch). Not clear whether these values refer to the gradiometer alone or the gradiometer assembly. Not used as lunar specifications.",
+            "structure_stability": "0.2 ppm/K, as stated on ESA's page [4]",
+            "dimensions_cm": "not stated on the page read",
+            "gradient_accuracy": "No numeric gradient accuracy on ESA's page. Mission press release states only that the data were the most accurate gravity data ever available [5].",
+            "source_refs": [4, 5, 8],
+            "images": [
+              {
+                "id": "goce_gradiometer_flight_model_electronics",
+                "description": "ESA caption: Gradiometer Flight Model electronics and Core Structural Thermal, from ESA's 2007 GOCE article page.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2007/03/gradiometer_flight_model_electronics_and_core_structural_thermal/9515677-4-eng-GB/38257/image-thumb__38257__fit_medium/Gradiometer_Flight_Model_electronics_and_Core_Structural_Thermal.f69159e6.webp",
+                "source_page_url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/GOCE/Scientists_view_GOCE_satellite",
+                "publisher": "European Space Agency (ESA)",
+                "credit": "ESA (credit line not shown on the page read)",
+                "caption": "Gradiometer Flight Model electronics and Core Structural Thermal, as captioned by ESA. The sub-elements shown are not labelled in the caption.",
+                "notes": "Direct ESA media asset (HTTP 200, image/webp, verified by request). Caption taken from an AI-summarised read of the ESA source page, not raw HTML. ESA reuse licence not confirmed on the page read. Query string removed from the ESA rendition URL.",
+                "section_placements": [
+                  "physical_specifications.examples[6]"
+                ]
+              },
+              {
+                "id": "goce_satellite_profile_flight_model",
+                "description": "Profile of the GOCE satellite flight model at Alcatel Alenia Space, Turin, Italy.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2007/03/profile_of_goce_satellite_flight_model_in_alcatel_alenia_space_turin_italy/10034188-2-eng-GB/101135/image-thumb__101135__fit_medium/Profile_of_GOCE_satellite_flight_model_in_Alcatel_Alenia_Space_Turin_Italy.653f6ebe.webp",
+                "source_page_url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/GOCE/Scientists_view_GOCE_satellite",
+                "publisher": "European Space Agency (ESA)",
+                "credit": "ESA (credit line not shown on the page read)",
+                "caption": "Profile of GOCE satellite flight model in Alcatel Alenia Space Turin, Italy, as captioned by ESA.",
+                "notes": "Direct ESA media asset (HTTP 200, image/webp, verified by request). Caption taken from an AI-summarised read of the ESA source page. ESA reuse licence not confirmed. Query string removed.",
+                "section_placements": [
+                  "physical_specifications.examples[6]"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cold-atom gradiometer concepts (Earth-focused)",
+            "type": "Proposed concepts (not flown; not lunar)",
+            "status": "Several cold-atom interferometer gradiometer concepts proposed for Earth gravity-field missions, including a 2019 concept study and preliminary design [7] and an Italian study called MOCASS for a low Earth orbiter. None is described for the Moon in the sources read. The 2019 study reports that only a quasi-inertial operating mode would clearly outperform GOCE, depending on demanding orbit and stability requirements; read from a search summary only [7].",
+            "specifications": "No performance figures used in this article.",
+            "source_refs": [7],
+            "images": []
+          }
+        ],
+        "comparison_table_candidate_gradiometers_1982": {
+          "metric": "Sensitivity at 10 s integration time, E.U. (1982 Hughes report, reproducing Table 3-1 of a JPL-sponsored SAI study)",
+          "rows": [
+            {
+              "instrument": "Rotating Accelerometer Gravity Gradiometer (Bell Aerospace)",
+              "demonstrated_E": 1.7,
+              "projected_E": 0.4
+            },
+            {
+              "instrument": "Spherical Gravity Gradiometer (Draper Laboratory)",
+              "demonstrated_E": 0.3,
+              "projected_E": 0.3
+            },
+            {
+              "instrument": "Rotating Gravity Gradiometer (Hughes)",
+              "demonstrated_E": 1.0,
+              "projected_E": 0.1
+            }
+          ],
+          "note": "Table taken from a JPL-sponsored study as reproduced in the Hughes report; not checked against the original JPL report. The Hughes RGG was ranked highest on projected sensitivity; the report notes it still needed refinement to remove residual sensitivity to axial vibration at twice spin speed [2]."
+        },
+        "dimensions_and_proportions": "There is no single dimension set for a gravity gradiometer. The 1982 RGG configuration table (OCR-derived) gives a sensor of 39 cm long by 22 cm diameter and electronics of 37 x 15 x 8 cm [2]. The 1971 lunar orbiter concept is a cylinder 3.5 ft (about 1.07 m) in diameter and 3 ft (about 0.91 m) high [1]. The GOCE EGG arms are 0.5 m separation [4]. Dimensions for the GOCE EGG as a unit were not stated on the page read.",
+        "mass_and_weight": "The 1982 RGG table gives 16 kg per sensor and 3 kg per electronics unit (OCR-derived) [2]. The 1971 concept gives a total spacecraft weight of 160 lb (about 72.6 kg, converted) [1]. The GOCE EGG page gives 180 kg, which may refer to the gradiometer or its assembly [4]. Mass is not stated for the Bell or Draper candidates, the 1972 proposal, or any lunar flight instrument in the sources read.",
+        "power_requirements": "The 1982 RGG table gives 18 W for the electronics plus 2 to 10 W of heater power [2]. The 1971 lunar concept gives an average of about 100 W during non-eclipse flight for the whole spacecraft, requiring about 10 ft2 (about 0.93 m2) of solar-array projected area [1]. The GOCE EGG page gives 100 W [4]. The sources read do not give a separate lunar sensor power figure."
+      },
+      "environmental_and_operational_requirements": "A lunar gradiometer must measure very small angular and linear signals in the presence of much larger accelerations.\n\nNoise and integration time. The Hughes studies quote sensitivity at a 10 s integration time. Shorter integration would increase data volume without a significant improvement in resolution, and longer integration would reduce the spatial resolution of the map [1][2].\n\nVibration and acoustic isolation. The 1971 noise test was carried out in an acoustically isolated environment, and the 1971 report attributes earlier noise to air currents in the room and to acceleration sensitivity caused by arm unbalance [1]. The 1982 report states that the RGG has a residual sensitivity to axial vibration at twice the spin speed, which must be designed out for earth-based systems. It states that this would not cause problems in an orbital mapping system [2].\n\nThermal behaviour. The 1982 table gives an operating range of 0 C to 55 C for the RGG and a survival range starting at -20 C [2]. The 1971 study reports a temperature-dependent sensor drift and gives temperature tests from 24 C to 60 C [1]. These values come from OCR-read text and laboratory tests, not from a lunar thermal analysis.\n\nSpin and attitude. The 1971 concept depends on spacecraft spin at 1 to 3 revolutions per second, with the sensor fixed to the spacecraft and rotated by its spin [1]. The gradient measurement depends on the spin being stable enough to keep the sensor's resonance and rotation locked.\n\nPower and heaters. The 1982 RGG table gives 18 W of electronics power plus 2 to 10 W of heater power [2]. The 1971 concept gives about 100 W average for the whole spacecraft [1]. Power for the flight design was not separately stated for the sensor in the sources read.\n\nThermal stability in orbit. The GOCE EGG structure is stated to have a stability of 0.2 ppm/K [4]. The lunar concepts do not give a thermal stability figure for the gradiometer structure.\n\nThe lunar surface environment (vacuum, extreme temperature swings, micrometeoroid impacts) is not covered directly in the Hughes reports. The gradiometer proposals are orbital, so the surface environment is relevant only to a surface-deployed gradiometer, which the sources read do not consider.",
+      "limitations": "The main limitation is sensitivity. The 1971 study notes that the gradient signal from a lunar surface anomaly is small, and that a useful threshold of 1 E.U. requires very low noise [1]. The 1982 study reports demonstrated sensitivity of 1.0 E.U. for the RGG and projects 0.1 E.U. for a future design [2]. The lunar gradient signal from a mascon depends strongly on its depth and size, so the detectable structures depend on both sensitivity and orbit altitude.\n\nGradient measurements are also averaged over the instrument's footprint. The 1971 concept gives a resolution element roughly equal to the orbit altitude, so a 30 km orbit gives about 30 km resolution [1]. The 1971 report notes that lower orbits would greatly increase resolution and sensitivity, but would require measurements over many lunar rotations to cover the surface. It proposes lowering the orbit to 15 km or less after an initial global map [1].\n\nA gradiometer also responds to spacecraft-generated gradients and accelerations. The rotating design avoids the spacecraft background gradient by operating in the rotating frame [1], but the sources read do not quantify residual spacecraft effects for any lunar mission.\n\nThere is no flown lunar example, so lunar performance is not established. The 1982 sensitivity values are laboratory and projected figures, and the 1971 concept was never built.",
+      "transportation_and_deployment": {
+        "overview": "No lunar gravity gradiometer has been transported to or deployed on the Moon. The discussion covers the concepts and the one flown example in Earth orbit. No lander or spacecraft compatibility is asserted.",
+        "transportation_process": [
+          "Lunar orbiter concept (1971): spin-stabilised spacecraft placed in a 30 km polar orbit, with the sensor mounted at the centre of mass and its torsional axis aligned with the spin axis [1].",
+          "Lunar orbiter concept (1971): delivery assumed by an Apollo spacecraft [1]. Cruise, insertion and commissioning sequence not described in the sources read.",
+          "Lunar orbiter concept (1971): the report states the sensor could be checked periodically during the mission [1].",
+          "Earth-orbit example (GOCE EGG): March 2009 start of orbit; mission ended when fuel ran out on 21 October 2013; re-entry expected about two weeks later, without an exact date in the release [5].",
+          "Surface payload: no surface gradiometer concept described in the sources read."
+        ],
+        "deployment_methods": "The 1971 concept is a spin-stabilised orbiter with a fixed sensor. The sources read do not describe the spacecraft integration, cruise, orbit insertion, or sensor calibration after insertion for any lunar concept. The GOCE EGG integration on the spacecraft is not described in detail in the sources read.",
+        "historical_examples": "The 1971 Hughes lunar concept (not flown); the 1972 De Bra, Harrison and Muller proposal (not flown); GOCE with the EGG (flown in Earth orbit, March 2009 to October 2013).",
+        "compatibility_assessment": "No compatibility is asserted with any named lander, rover or spacecraft. The 1971 assumption of delivery by an Apollo spacecraft is historical and does not establish compatibility with any current vehicle. A future assessment would need the instrument's mass, dimensions, mounting interface, power, thermal requirements, spin or attitude requirements, and deployment method.",
+        "images": []
+      },
+      "historical_significance": "The lunar gravity gradiometer has a history of proposals rather than flights. In 1971, Hughes Research Laboratories, under a NASA Marshall contract, described a rotating gradiometer for a spinning lunar orbiter [1]. The 1972 De Bra, Harrison and Muller paper proposed a related lunar orbiting experiment [3]. The 1982 study, sponsored by NASA Headquarters, reviewed the two rotating gradiometers held by the sponsor and reproduced a JPL-sponsored comparison that judged the rotating design the best option for a polar lunar mapping mission [2].\n\nThe technology reached orbit on Earth with GOCE. The EGG was the first gravity gradiometer in space, according to ESA [5]. That mission produced global gravity-field products and demonstrated the gradiometer class in orbit, but it did not measure the Moon.\n\nBy contrast, GRAIL, launched in 2011, mapped the lunar gravity field using spacecraft-to-spacecraft ranging and returned a far more accurate and detailed global field than earlier models [6]. GRAIL did not use a gradiometer, so the gradiometer's lunar role remains unfilled by flight hardware.",
+      "limitations_and_uncertainties": "No flown lunar gradiometer. The article contains no lunar flight measurement. All lunar values are proposed, projected or laboratory figures.\n\n1971 and 1982 Hughes reports. Both were read from their PDF text layers. The 1982 instrument parameter table is OCR-derived and partly garbled; the survival upper limit and the power split between sensor and electronics are not legible. Values should be checked against the scanned pages.\n\nSensitivity figures are not comparable across sources. The 1971 laboratory noise of 5.2 E.U. rms and the 1982 demonstrated noise of 1.0 E.U. were obtained with different hardware and test conditions. Both are at a 10 s time constant, but they are not measurements of the same configuration.\n\nDe Bra, Harrison and Muller (1972). The full paper was not read because the Springer page redirected to a login page. The accuracy figure (0.1 to 0.5 E.U.) and the mascon mapping figure (1 %) are search-level summary claims only. Author initials are not confirmed.\n\n1971 concept mass. The 160 lb figure is a total spacecraft weight, not a mass for the gradiometer alone.\n\nGOCE EGG figures. The 180 kg mass, 100 W power, bandwidth, arm length and structure stability were read from an AI-summarised fetch of ESA's Earth Online page, not from raw page text. The page does not give gradient accuracy or EGG dimensions.\n\nGOCE launch and re-entry. The launch timing is taken from ESA's press release statement 'Since March 2009'. The launch site and vehicle, which appeared in a search summary, were not verified. The re-entry date is not stated exactly in the release.\n\nGRAIL. GRAIL figures come from a 2012 NASA abstract. Later degree-1500 field products that appeared in search results were not verified and are not used.\n\nCold-atom concepts. The 2019 concept study [7] and other cold-atom concepts were read only from search summaries. No figures are used.\n\nArtemis III gravity requirements (arXiv:2009.03514). A 2020 study reporting an Eotvos requirement for lunar gradiometry appeared in search results. Its PDF text could not be extracted in this run, so its figures are not used.\n\nImage rights. The three ESA images were checked for HTTP 200 and an image content type. The ESA reuse licence was not confirmed on the page read, and the captions come from the summarised page read in this run. No lunar gradiometer image was found.\n\nLunar landing sites. This article does not recommend lunar landing sites or locations. That is deferred by the user.",
+      "images": [
+        {
+          "id": "goce_satellite_flight_model_lead",
+          "description": "Flight model of the GOCE satellite at the Alcatel Alenia Space facility in Turin, Italy.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2007/03/goce_satellite_flight_model_in_alcatel_alenia_space_turin_italy/10247355-3-eng-GB/128107/image-thumb__128107__fit_large/GOCE_satellite_flight_model_in_Alcatel_Alenia_Space_Turin_Italy.062d6346.webp",
+          "source_page_url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/GOCE/Scientists_view_GOCE_satellite",
+          "publisher": "European Space Agency (ESA)",
+          "credit": "ESA (credit line not shown on the page read)",
+          "caption": "GOCE satellite flight model at Alcatel Alenia Space, Turin, Italy. The GOCE carried the EGG, but this image does not show the gradiometer alone.",
+          "notes": "Direct ESA media asset (HTTP 200, image/webp, verified by request). Shown as the lead image of the ESA article page read in this run. ESA reuse licence not confirmed. Query string removed.",
+          "section_placements": [
+            "overview"
+          ]
+        },
+        {
+          "id": "goce_gradiometer_flight_model_electronics",
+          "description": "ESA caption: Gradiometer Flight Model electronics and Core Structural Thermal, from ESA's 2007 GOCE article page.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2007/03/gradiometer_flight_model_electronics_and_core_structural_thermal/9515677-4-eng-GB/38257/image-thumb__38257__fit_medium/Gradiometer_Flight_Model_electronics_and_Core_Structural_Thermal.f69159e6.webp",
+          "source_page_url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/GOCE/Scientists_view_GOCE_satellite",
+          "publisher": "European Space Agency (ESA)",
+          "credit": "ESA (credit line not shown on the page read)",
+          "caption": "Gradiometer Flight Model electronics and Core Structural Thermal, as captioned by ESA. The sub-elements shown are not labelled in the caption.",
+          "notes": "Direct ESA media asset (HTTP 200, image/webp, verified by request). Caption taken from an AI-summarised read of the ESA source page, not raw HTML. ESA reuse licence not confirmed. Query string removed.",
+          "section_placements": [
+            "physical_specifications.examples[6]"
+          ]
+        },
+        {
+          "id": "goce_satellite_profile_flight_model",
+          "description": "Profile of the GOCE satellite flight model at Alcatel Alenia Space, Turin, Italy.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2007/03/profile_of_goce_satellite_flight_model_in_alcatel_alenia_space_turin_italy/10034188-2-eng-GB/101135/image-thumb__101135__fit_medium/Profile_of_GOCE_satellite_flight_model_in_Alcatel_Alenia_Space_Turin_Italy.653f6ebe.webp",
+          "source_page_url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/GOCE/Scientists_view_GOCE_satellite",
+          "publisher": "European Space Agency (ESA)",
+          "credit": "ESA (credit line not shown on the page read)",
+          "caption": "Profile of GOCE satellite flight model in Alcatel Alenia Space Turin, Italy, as captioned by ESA.",
+          "notes": "Direct ESA media asset (HTTP 200, image/webp, verified by request). Caption taken from an AI-summarised read of the ESA source page. ESA reuse licence not confirmed. Query string removed.",
+          "section_placements": [
+            "physical_specifications.examples[6]"
+          ]
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "goce_satellite_flight_model_lead",
+          "description": "Flight model of the GOCE satellite at the Alcatel Alenia Space facility in Turin, Italy.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2007/03/goce_satellite_flight_model_in_alcatel_alenia_space_turin_italy/10247355-3-eng-GB/128107/image-thumb__128107__fit_large/GOCE_satellite_flight_model_in_Alcatel_Alenia_Space_Turin_Italy.062d6346.webp",
+          "source_page_url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/GOCE/Scientists_view_GOCE_satellite",
+          "publisher": "European Space Agency (ESA)",
+          "credit": "ESA (credit line not shown on the page read)",
+          "caption": "GOCE satellite flight model at Alcatel Alenia Space, Turin, Italy. The GOCE carried the EGG, but this image does not show the gradiometer alone.",
+          "notes": "Direct ESA media asset (HTTP 200, image/webp, verified by request). Shown as the lead image of the ESA article page read in this run. ESA reuse licence not confirmed. Query string removed.",
+          "section_placements": [
+            "overview"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Gravity Gradient Study, Final Report (Contract NAS 8-24788)",
+          "author": "C. C. Bell (Hughes Research Laboratories, Hughes Aircraft Company)",
+          "publisher": "Hughes Research Laboratories, prepared for NASA George C. Marshall Space Flight Center",
+          "date": "July 1971",
+          "url": "https://ntrs.nasa.gov/api/citations/19720010678/downloads/19720010678.pdf",
+          "notes": "NTRS record 19720010678 (https://ntrs.nasa.gov/citations/19720010678). Read via local PDF text layer; some OCR-affected passages. Figures for the 1971 noise test, lunar gradient, selenodesy concept and terrain simulation are from this report."
+        },
+        {
+          "number": 2,
+          "title": "Rotating Gravity Gradiometer Study, Final Report (NASA Contract NASW-3514)",
+          "author": "Robert L. Forward (Principal Investigator)",
+          "publisher": "Hughes Research Laboratories",
+          "date": "30 April 1982",
+          "url": "https://ntrs.nasa.gov/api/citations/19830002134/downloads/19830002134.pdf",
+          "notes": "NTRS record 19830002134 (https://ntrs.nasa.gov/citations/19830002134). Read via local PDF text layer. The sensitivity comparison table is reproduced from a JPL-sponsored SAI study and was not checked against that study. The LPO parameter table is OCR-derived."
+        },
+        {
+          "number": 3,
+          "title": "A Proposed Lunar Orbiting Gravity Gradiometer Experiment",
+          "author": "De Bra, Harrison and Muller (initials not confirmed)",
+          "publisher": "The Moon (Springer)",
+          "date": "1972 (volume 4, page 103, per abstract record)",
+          "url": "https://link.springer.com/article/10.1007/BF00562918",
+          "notes": "Full text not read (Springer redirected to a login page). Accuracy and mascon-mapping claims are from search-level summaries only. Abstract record: https://ui.adsabs.harvard.edu/abs/1972Moon....4..103D/abstract"
+        },
+        {
+          "number": 4,
+          "title": "Electrostatic Gravity Gradiometer (EGG), instrument description",
+          "author": "ESA Earth Online",
+          "publisher": "European Space Agency",
+          "date": "not stated on the page read",
+          "url": "https://earth.esa.int/eogateway/instruments/egg/description",
+          "notes": "Figures (six accelerometers, 0.5 m arms, 5 to 100 mHz band, 2 x 10^-12 m s^-2 per root Hz, 180 kg, 100 W, 0.2 ppm/K) read from an AI-summarised fetch, not raw page text."
+        },
+        {
+          "number": 5,
+          "title": "ESA's GOCE mission comes to an end",
+          "author": "European Space Agency",
+          "publisher": "ESA",
+          "date": "21 October 2013",
+          "url": "https://www.esa.int/Newsroom/Press_Releases/ESA_s_GOCE_mission_comes_to_an_end",
+          "notes": "Source for fuel exhaustion on 21 October 2013, the 'since March 2009' orbit statement, the 'first in space' gradiometer statement and the 'most accurate gravity data' quote. Re-entry date not stated exactly."
+        },
+        {
+          "number": 6,
+          "title": "Gravity Recovery and Interior Laboratory (GRAIL) Mission: Mission Status and Initial Science Results",
+          "author": "Gregory A. Neumann",
+          "publisher": "NASA Goddard Space Flight Center (NASA Technical Reports Server)",
+          "date": "14 October 2012 (DPS 44th Annual Meeting abstract)",
+          "url": "https://ntrs.nasa.gov/citations/20120016928",
+          "notes": "Abstract record 20120016928. Describes Ka-band satellite-to-satellite ranging (no gradiometer), launch 10 September 2011, primary mapping ended 29 May 2012."
+        },
+        {
+          "number": 7,
+          "title": "Concept study and preliminary design of a cold atom interferometer for space gravity gradiometry",
+          "author": "Trimeche et al.",
+          "publisher": "arXiv",
+          "date": "2019 (arXiv:1903.09828)",
+          "url": "https://arxiv.org/pdf/1903.09828",
+          "notes": "Bibliographic details from a search result. Full text not read; no figures used."
+        },
+        {
+          "number": 8,
+          "title": "Scientists view GOCE satellite",
+          "author": "European Space Agency",
+          "publisher": "ESA",
+          "date": "30 March 2007 (archive date shown on the page read)",
+          "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/GOCE/Scientists_view_GOCE_satellite",
+          "notes": "Source page for the three ESA images. Page read through an AI-summarised fetch. Credit lines not shown on the page read."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "GOCE EGG example": "payload.article.physical_specifications.examples[6].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images; no lunar hardware imaged in the sources read)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. Direct ESA image assets were verified by HTTP request (200, image/webp), but the captions and page context came from an AI-summarised read of the ESA source page, so direct_image_assets_verified_from_official_pages is recorded as false."
+  },
+  "data_quality_notes": [
+    "Scope: class-level article on the gravity gradiometer (gradient or tensor sensing). Absolute and relative gravimeters are payload 016. GRAIL-type ranging-based gravity-field missions are outside scope. Libration (024) and tidal deformation (025) are outside scope.",
+    "No flown lunar gravity gradiometer was found. All lunar figures (1971 concept, 1972 proposal, 1982 projected sensitivities) are proposals, projections or laboratory results and are labelled as such.",
+    "The 1982 Hughes RGG parameter table (sensor 16 kg each, electronics 3 kg each, 18 W plus 2 to 10 W heater, 0 C to 55 C operating) is OCR-derived and partly garbled. The survival upper limit is not legible. Check against the scanned NTRS 19830002134 page before reuse.",
+    "Sensitivity figures from different sources are not directly comparable: 1971 measured sensor noise 5.2 E.U. rms (10 s time constant, acoustically isolated lab test); 1982 demonstrated RGG 1.0 E.U. (10 s); 1982 projected RGG 0.1 E.U. (10 s); 1982 projected RGG thermal noise 0.15 E.U. then 0.03 E.U. with future design (projections, not measurements).",
+    "The 1982 candidate comparison (Bell 1.7/0.4, Draper 0.3/0.3, Hughes 1.0/0.1 E.U. demonstrated/projected) is reproduced from a JPL-sponsored SAI study via the Hughes report and was not checked against the original SAI report.",
+    "The 1971 concept total weight of 160 lb (about 72.6 kg, converted) is a spacecraft figure, not a gradiometer-alone mass. Gradiometer-alone mass and power for the 1971 design are not stated.",
+    "The 1972 De Bra, Harrison and Muller proposal: full text not accessible (Springer login redirect). Accuracy claim of 0.1 to 0.5 E.U. and mascon mapping claim of 1 % come from search-level summaries and are not verified. Author initials not confirmed.",
+    "GOCE EGG figures (six accelerometers, 0.5 m arms, 5 to 100 mHz band, 2 x 10^-12 m s^-2 per root Hz, 180 kg, 100 W, 0.2 ppm/K) were read from an AI-summarised fetch of an ESA page, not raw text. The 180 kg and 100 W may refer to the gradiometer assembly rather than the EGG alone. EGG dimensions and gradient accuracy were not stated.",
+    "GOCE timing: the March 2009 orbit start and the 21 October 2013 fuel exhaustion are from ESA's press release. The exact re-entry date is not stated in that release. The launch site and vehicle, which appeared in a search summary, were not verified.",
+    "GRAIL is cited only as a ranging-based lunar gravity mission (Ka-band, primary mapping ended 29 May 2012) from a NASA abstract. It is not a gradiometer. Later degree-1500 field products from search results were not verified and are not used.",
+    "A 2020 arXiv study on Artemis III gravity requirements (arXiv:2009.03514) appeared in search results with Eotvos requirement claims. Its PDF text could not be extracted in this run, so its figures are not used.",
+    "Cold-atom gradiometer concepts (Trimeche et al. 2019 and others) are Earth-focused and not flown. They were read only from search summaries; no figures are used.",
+    "Images: three direct ESA media assets (GOCE flight model lead image, GOCE flight-model profile, gradiometer flight-model electronics) returned HTTP 200 with image/webp. ESA reuse licence and credit lines were not confirmed on the page read. No lunar gradiometer or lunar hardware image was found, so the transportation and deployment section has no images and the overview uses a GOCE image.",
+    "Source-page fidelity: the ESA image source page was read through an AI-summarised fetch. direct_image_assets_verified_from_official_pages is recorded as false for this reason.",
+    "No lander, rover or spacecraft compatibility is asserted for any concept. The 1971 Apollo delivery assumption is historical only.",
+    "No lunar landing-site or location recommendations are included; those are deferred by the user."
+  ]
+}

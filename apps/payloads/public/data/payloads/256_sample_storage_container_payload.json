@@ -1,0 +1,327 @@
+{
+  "catalogue_id": 256,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 13,
+    "name": "Sample collection, preservation and return"
+  },
+  "payload": {
+    "number": 256,
+    "name": "Sample storage container",
+    "article": {
+      "overview": "A sample storage container is a sealed vessel that holds lunar material from the moment it is collected until it is opened for study. Its job is to keep the sample as close as possible to its condition at collection, which means limiting contamination, loss of gases and other volatile components, and mechanical damage during launch, return and handling. The Apollo missions used aluminium containers with seals, numbered Teflon bags and a vacuum-sealed core container. NASA's current work on frozen sample return (FROSTE) is developing a cryogenic secondary sealed container for samples from permanently shadowed regions. No sample storage container has been verified as flown for that purpose.",
+      "description": "A sample storage container is the containment part of a sample-return chain. It is not a scientific instrument in the usual sense. Instead, it is a barrier between the lunar environment and the Earth environment, and between the sample and the materials that might react with it. In practice, a container has to do several jobs at once. It must seal the sample, resist the shock of launch and landing, keep contamination out, and, where needed, keep the sample at a stable temperature or pressure. For a secondary-school reader, the key idea is that a lunar rock or soil sample is only useful if scientists can still measure what it was like on the Moon. Some lunar material contains gases, water-bearing or volatile compounds and other components that can escape or change if the sample warms, is exposed to air, or is handled roughly. A storage container is designed to slow or prevent those changes. The Apollo containers were designed around a lunar-like vacuum and sealed packaging. Newer concepts for polar samples aim to keep the sample frozen throughout the return journey.",
+      "scientific_purpose_and_applications": "The purpose of a sample storage container is to preserve the scientific value of returned material. Chemistry and volatiles: gases and volatile compounds can be lost or altered if a sample is exposed to Earth air or warmed. Apollo-era vacuum-sealed containers were intended to keep a lunar-like environment around the samples. Contamination control: lunar material must be kept clean so that terrestrial contamination does not confuse analyses of organic molecules, water or trace elements. Apollo-era work used clean and inert materials and controlled processing environments. Future-proofing: some samples were sealed so that later, more sensitive analytical methods could be applied. The Apollo 17 sample 73001 is an example of a sample that was kept sealed for decades. Polar and cryogenic science: samples from permanently shadowed regions may contain ices and volatile components, and preserving them may require cryogenic conditions. NASA's Lunar Deep Freeze Challenge materials and the FROSTE project describe this as a goal.",
+      "operating_principle": "A sample storage container works by controlling the environment around the sample. There are three broad approaches, and real systems can combine them. (1) Sealing and vacuum: the container is closed with one or more seals so that the sample is isolated from the outside. Apollo-era containers were built with multiple seals and were closed under vacuum so that the internal pressure was below the ambient pressure of the lunar environment. Sources describe the aluminium rock box as having a triple seal and as intended to preserve a lunar-like vacuum and protect samples from shock on the flight home. Whether those seals still hold a vacuum after decades is uncertain. (2) Inert, clean materials: materials such as PTFE (Teflon) are used as inner packaging because they are chemically inert and easy to keep clean. Apollo samples were placed in numbered Teflon bags inside the container, and a metal mesh liner was used to absorb impacts. (3) Cryogenic temperature control: keeping a sample frozen requires removing heat from the container and limiting heat leaks into it. The FROSTE secondary sealed container described in NASA's 2026 record uses a phase change material tank, a thermal connection to an external cryocooler, and insulation to limit heat transfer. Design details such as mass, dimensions and temperatures are not stated in the record. The Apollo container descriptions reviewed do not mention a power requirement, and the container does not sample or analyse anything. Cryogenic concepts may need power for active cooling or may use stored cold materials, as the FROSTE and Deep Freeze Challenge descriptions indicate.",
+      "scientific_importance": "Lunar samples are among the most valuable scientific resources returned from another world. Their value depends on how well they were preserved. Containment and handling decisions made at collection and return determine which measurements remain possible later, so container design is part of the science, not only of the engineering. NASA describes sample 73001 as one of the last few lunar samples it has kept unopened. Secondary coverage reports that its opening required specialised gas-extraction tools. Future sample return programmes may collect samples that are more sensitive than those from the Apollo era, including polar materials that could be altered by warming. Preserving those samples is therefore a scientific requirement in its own right.",
+      "physical_specifications": {
+        "note": "There is no single universal specification for a sample storage container. Sizes, masses, materials and seals depend on the sample type, mission architecture and preservation goal. Values below apply only to the named hardware or concept. Where a value is not publicly stated in the sources reviewed, this is stated as not stated or not publicly specified.",
+        "examples": [
+          {
+            "name": "Apollo Lunar Sample Return Container (ALSRC)",
+            "type": "Flown hardware",
+            "status": "Flown. Smithsonian collection record titles associate ALSRC units with the Apollo 11, 12, 14, 16 and 17 missions. The flight history of each unit should be checked against its own record.",
+            "design": "An aluminium box with a triple seal, lined with an aluminium mesh to absorb shock. The purpose was to keep a lunar-like vacuum around the samples during the return flight. Search-indexed Smithsonian record summaries report that numbered Teflon bags held the samples.",
+            "reported_dimensions_and_mass_unverified": [
+              {
+                "record": "Apollo 11 unit (nasm_A19710813000), search-indexed summary",
+                "overall_dimensions": "20 1/2 in wide x 12 1/2 in deep x 8 in tall (about 52.07 x 31.75 x 20.3 cm)",
+                "mass": "19.4 lb (about 8.8 kg)",
+                "materials": "Case listed as 7075 aluminium; mesh liner listed as 2024 aluminium alloy"
+              },
+              {
+                "record": "Apollo 12 and 16 unit (nasm_A19772508000), search-indexed summary",
+                "overall_dimensions": "8 in high x 19 in wide x 11 3/4 in deep (about 20.3 x 48.3 x 29.8 cm)",
+                "mass": "15.9 lb (about 7.2 kg)"
+              },
+              {
+                "record": "Apollo 12 unit (nasm_A19772507000), search-indexed summary",
+                "overall_dimensions": "closed 3-D size listed as 28.9 x 51.4 x 20.6 cm",
+                "mass": "6.8 kg"
+              }
+            ],
+            "quantities_reported": "Secondary sources report that 16 containers were built by Union Carbide at its Y-12 facility under NASA contract, and that nine sealed containers were returned from the Moon during the Apollo programme. These counts are unverified.",
+            "power_requirements": "Not stated",
+            "dimensions_and_mass_verification_status": "Search-indexed summaries only; the Smithsonian pages returned HTTP 403 on direct fetch. The records disagree on the Apollo 12 mass and on the orientation of the Apollo 11 dimensions.",
+            "source_urls": [
+              "https://www.si.edu/object/alsrc-apollo-lunar-sample-return-container-apollo-11:nasm_A19710813000",
+              "https://si.edu/object/alsrc-apollo-lunar-sample-return-container-apollo-12-and-16:nasm_A19772508000"
+            ],
+            "images": [
+              {
+                "id": "smithsonian_alsrc_apollo11_record",
+                "description": "Smithsonian National Air and Space Museum collection record for the Apollo 11 Apollo Lunar Sample Return Container.",
+                "image_type": "Museum collection record (no direct image asset verified)",
+                "image_url": null,
+                "source_page_url": "https://www.si.edu/object/alsrc-apollo-lunar-sample-return-container-apollo-11:nasm_A19710813000",
+                "publisher": "Smithsonian National Air and Space Museum",
+                "credit": "Smithsonian National Air and Space Museum",
+                "caption": "Apollo Lunar Sample Return Container, Apollo 11 (record nasm_A19710813000). Not embedded; linked reference only.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "No direct image asset URL was verified. The Smithsonian page returned HTTP 403 on direct fetch in this review, so the record was not checked directly. Image rights and reuse conditions apply."
+              }
+            ]
+          },
+          {
+            "name": "Apollo 17 core sample 73001 and its Core Sample Vacuum Container (CSVC)",
+            "type": "Flown hardware",
+            "status": "Flown. Sample 73001 was collected during Apollo 17 in December 1972 and is the lower half of a double drive tube. NASA describes it as first vacuum sealed on the Moon and then stored in a second protective outer vacuum tube inside nitrogen-purged processing cabinets at the Johnson Space Center. A secondary source (Astronomy magazine) describes the sealed storage as a Core Sample Vacuum Container (CSVC), an air-tight apparatus. The NASA feature does not use the CSVC term.",
+            "dimensions": "Not publicly specified in the sources reviewed",
+            "mass": "Not publicly specified in the sources reviewed",
+            "internal_pressure": "Not stated in the NASA feature; no vacuum level at opening was found",
+            "opening": "NASA gives March 23, 2022 as the opening date and refers to preparatory work and the main extrusion event on March 21 and 22. The sources reviewed do not agree on which date marks the opening; verify against the NASA release.",
+            "power_requirements": "Not stated",
+            "source_urls": [
+              "https://www.nasa.gov/general/fifty-years-later-curators-unveil-one-of-last-sealed-apollo-samples",
+              "https://www.astronomy.com/observing/rare-apollo-lunar-sample-will-have-its-opening-day/"
+            ],
+            "images": [
+              {
+                "id": "nasa_apollo17_73001_drive_tube_closeup",
+                "description": "Close-up of Apollo 17 lunar core sample 73001 being taken out of its drive tube for the first time since it was collected in December 1972.",
+                "image_type": "NASA curation photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2022/03/jsc2022e017003-1.jpg",
+                "source_page_url": "https://www.nasa.gov/general/fifty-years-later-curators-unveil-one-of-last-sealed-apollo-samples",
+                "publisher": "NASA",
+                "credit": "NASA/Robert Markowitz",
+                "caption": "A close-up of Apollo 17 lunar core sample 73001 being taken out of its drive tube for the first time since it was collected by Apollo astronauts in December 1972.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct NASA asset URL taken from the NASA feature page HTML, with no query string. Verified over HTTP (200, image/jpeg). Image identifier jsc2022e017003 is taken from the file name."
+              }
+            ]
+          },
+          {
+            "name": "FROSTE Secondary Sealed Container (subscale development article)",
+            "type": "Engineering development test article (not flown)",
+            "status": "Engineering development. The NASA NTRS record describes an additively manufactured subscale test article for a secondary sealed container, presented at the National Space and Missile Materials Symposium in June 2026. It is not flight hardware.",
+            "architecture": "An outer container assembly houses a phase change material (PCM) tank. The PCM tank is described as a single monolithic Scalmalloy component with an internal lattice to reduce thermal gradients. Primary containers holding the regolith sit inside the PCM tank. The tank is suspended by support rings with G10 insulating components. A thermal connection assembly links the tank to an external cryocooler through a thermal strap. IMLI surrounds the tank to inhibit radiative heat transfer. PTFE spring seals are used at critical interfaces.",
+            "mass": "Not stated",
+            "dimensions": "Not stated",
+            "temperatures": "Not stated (described only as cryogenic)",
+            "cryocooler_capacity": "Not stated",
+            "pcm_material_and_quantity": "Not stated",
+            "number_of_primary_containers": "Not stated",
+            "power_requirements": "Not stated; cryocooler is external to the container assembly",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20260004465"
+            ],
+            "images": []
+          },
+          {
+            "name": "NASA Lunar Deep Freeze Challenge (requirements, not hardware)",
+            "type": "Challenge requirements (closed)",
+            "status": "A closed NASA-sponsored challenge that described the requirement for cryogenic containment. It is a set of targets, not a flown or qualified system.",
+            "stated_targets": "Keep lunar samples at or below -150 C during storage and return. Use novel small-footprint, lightweight, low- or no-power containment. Anticipated time from collection to Earth splashdown of about two weeks.",
+            "not_stated_on_page_reviewed": "Numeric system mass limit, numeric power limit and minimum sample mass. The page lists the submission deadline only as the year 2021.",
+            "unverified_secondary_summary_values": "Search summaries mention a 2020 submission deadline, a 20 kg system mass limit, a 75 W power cap and a 20 cm x 30 cm sample container model. These are not confirmed on the fetched page and are not used as specifications.",
+            "power_requirements": "Low or no power (qualitative only); no numeric value stated",
+            "source_urls": [
+              "https://techconnect.org/nasa-lunar-deep-freeze-challenge-2/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo ALSRC dimensions reported in search-indexed Smithsonian summaries are not directly comparable with the Apollo 17 CSVC, for which no dimensions are publicly specified, or with the FROSTE subscale test article, for which dimensions are not stated. A summary table in the Markdown article shows these entries side by side with their status and caveats. The entries should not be treated as comparable designs.",
+        "mass_and_weight": "The Apollo ALSRC mass is reported at about 8.8 kg for the Apollo 11 unit and about 7.2 kg for the Apollo 12 and 16 unit in search-indexed summaries, with a 6.8 kg figure for an Apollo 12 unit. These records disagree and are unverified. The Apollo 17 CSVC mass is not publicly specified. The FROSTE mass and the Deep Freeze Challenge mass limit are not stated in the sources reviewed.",
+        "power_requirements": "Not stated for the Apollo containers in the sources reviewed. The FROSTE cryogenic concept uses an external cryocooler; its power and capacity are not stated. The Deep Freeze Challenge asked for low- or no-power containment without a numeric limit on the page reviewed."
+      },
+      "environmental_and_operational_requirements": "A sample storage container must survive the Moon, the launch environment and the Earth environment. Vacuum and outgassing: materials inside the container should not release gases that contaminate the sample. Apollo-era practice used PTFE, stainless steel and aluminium, but volatile preservation may change material choices, and metals can be sensitive to some reactive species such as hydrogen sulphide. Temperature: for polar samples the target is at or below -150 C, and the sample must not warm enough to lose volatiles or melt ice. Mechanical shock and vibration: launch, landing and handling impose shock loads, and Apollo containers used aluminium mesh to absorb impacts. Cleanliness and quarantine: samples must be kept free of terrestrial contamination. A 1976 NASA report describes the Apollo-era processing facility at Johnson Space Center as built to process lunar material while maintaining quarantine status. Handling: containers must be opened in controlled environments. Secondary summaries report that Apollo containers were opened in nitrogen-purged gloveboxes at Johnson Space Center.",
+      "limitations": "Seal integrity after decades: the Apollo containers look sealed from the outside, but it is doubtful that they still hold a lunar-level vacuum. Secondary sources report this concern, and it has not been verified for any specific container in this review. Volatile loss in warm containers: the Apollo container descriptions reviewed do not describe cryogenic capability, so volatile components may be lost if a sample warms during return or storage. Mass and volume: a container adds mass and volume to the return vehicle, and mass for the Apollo unit and the cryogenic concepts must be checked against verified mission data. Cryogenic technology: NASA's development work on cryogenic containment is at an early stage in the sources reviewed, and the FROSTE record describes a subscale test article, not a flight-ready container. Unverified numbers: several numerical values for the Apollo containers come from search-indexed summaries of museum records and should not be used as design values.",
+      "transportation_and_deployment": {
+        "overview": "A sample storage container is part of a sample-return chain rather than a surface payload that is deployed. The relevant steps are collection and sealing on the Moon, launch from the Moon and transfer to Earth, Earth processing, and storage and curation.",
+        "transportation_process": [
+          "Collection and sealing on the Moon: astronauts or robotic systems collect a sample and seal it into a container. For the Apollo 17 sample 73001, NASA reports that the sample was first vacuum sealed on the Moon.",
+          "Launch from the Moon and transfer to Earth: sealed containers travel with the return vehicle.",
+          "Earth processing: containers were taken to the Lunar Receiving Laboratory at Johnson Space Center. A 1976 NASA experiment report describes a high-vacuum complex built to process lunar material while maintaining quarantine status, and states that the scientific requirement for vacuum sample processing was dropped after Apollo 12.",
+          "Storage and curation: sealed samples are stored in nitrogen-purged cabinets or other controlled environments."
+        ],
+        "deployment_methods": "Not applicable in the usual sense. The container is not normally deployed on the surface. Where a container is used as a surface payload element, for example as a cold stowage unit on a lander, its integration would need to be assessed against the lander's interfaces. For sample-return payloads, containment, handling, sealing, transfer and return-chain constraints apply directly. For cryogenic concepts, the cold chain must be maintained from collection to splashdown, and containers must be compatible with the transfer systems of each vehicle in the return chain. The Deep Freeze Challenge describes a chain across several vehicles, including a human landing system, Gateway and Orion; this is a requirement description, not an assessment of compatibility.",
+        "historical_examples": "Apollo sample return: sealed lunar sample containers (ALSRC) and the Apollo 17 vacuum-sealed core sample 73001 were returned to Earth and processed at Johnson Space Center. The FROSTE secondary sealed container is an engineering development article and has not flown.",
+        "compatibility_assessment": "No compatibility claim is made for any named lander, spacecraft or transfer system. Verified interface specifications are not available in the sources reviewed. Any future assessment would need mass, dimensions, mounting or transfer interfaces, power and thermal requirements and the cold-chain duration, all verified against the target vehicle's documentation.",
+        "images": []
+      },
+      "historical_significance": "The Apollo missions used sealed containers to bring lunar samples back to Earth. Sample 73001 from Apollo 17 is a notable example of sealed-sample history. It was first vacuum sealed on the Moon and stored in an outer vacuum tube in nitrogen-purged cabinets at the Johnson Space Center. NASA reports that the sample was opened in March 2022 after preparatory work and a controlled extrusion. NASA's feature describes it as one of the last few lunar samples it has kept unopened. Secondary coverage links the opening to the Apollo Next Generation Sample Analysis (ANGSA) programme and states that the Apollo 17 experience should help Artemis planning.",
+      "limitations_and_uncertainties": "Container specifications: the Apollo ALSRC dimensions and masses come from search-indexed summaries of Smithsonian records, which could not be fetched directly, and the records disagree on some values. Count of sealed containers: secondary news summaries describe nine sealed containers returned from the Moon and three unopened containers from Apollo 15, 16 and 17. NASA's feature gives no count. Seal and vacuum status: no measured internal pressure or leak-rate data for any Apollo container were found in the sources reviewed. Cryogenic container performance: the FROSTE record gives no temperatures, masses, heat leaks or cryocooler capacity, and the Deep Freeze Challenge page gives no numeric mass or power limit. Artemis and current curation hardware: current JSC work on cold storage was indicated in secondary material but not verified against primary Artemis documentation. Images: two direct NASA image assets were verified over HTTP; no verified direct image asset was found for the Smithsonian ALSRC records, which are linked rather than embedded. Compatibility: no lander, rover, spacecraft or sample-return vehicle interface has been verified for any container described here.",
+      "images": [
+        {
+          "id": "nasa_apollo17_73001_processing_team",
+          "description": "The Apollo 17 core sample 73001 processing team in front of the newly opened sample at NASA's Johnson Space Center in Houston.",
+          "image_type": "NASA curation group photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/03/jsc2022e017040.jpg",
+          "source_page_url": "https://www.nasa.gov/general/fifty-years-later-curators-unveil-one-of-last-sealed-apollo-samples",
+          "publisher": "NASA",
+          "credit": "NASA (individual photographer credit not extracted from source page)",
+          "caption": "The Apollo 17 core sample 73001 processing team in front of the newly opened sample at NASA's Johnson Space Center in Houston. From left, Charis Krysher, Andrea Mosie, Juliane Gross and Ryan Zeigler.",
+          "section_placements": [
+            "overview",
+            "historical_significance"
+          ],
+          "notes": "Direct NASA asset URL taken from the NASA feature page HTML, with no query string. Verified over HTTP (200, image/jpeg). Individual photographer credit should be verified on the source page before republication."
+        },
+        {
+          "id": "nasa_apollo17_73001_drive_tube_closeup",
+          "description": "Close-up of Apollo 17 lunar core sample 73001 being taken out of its drive tube for the first time since it was collected in December 1972.",
+          "image_type": "NASA curation photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/03/jsc2022e017003-1.jpg",
+          "source_page_url": "https://www.nasa.gov/general/fifty-years-later-curators-unveil-one-of-last-sealed-apollo-samples",
+          "publisher": "NASA",
+          "credit": "NASA/Robert Markowitz",
+          "caption": "A close-up of Apollo 17 lunar core sample 73001 being taken out of its drive tube for the first time since it was collected by Apollo astronauts in December 1972.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct NASA asset URL taken from the NASA feature page HTML, with no query string. Verified over HTTP (200, image/jpeg). Image identifier jsc2022e017003 is taken from the file name."
+        },
+        {
+          "id": "smithsonian_alsrc_apollo11_record",
+          "description": "Smithsonian National Air and Space Museum collection record for the Apollo 11 Apollo Lunar Sample Return Container.",
+          "image_type": "Museum collection record (no direct image asset verified)",
+          "image_url": null,
+          "source_page_url": "https://www.si.edu/object/alsrc-apollo-lunar-sample-return-container-apollo-11:nasm_A19710813000",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Smithsonian National Air and Space Museum",
+          "caption": "Apollo Lunar Sample Return Container, Apollo 11 (record nasm_A19710813000). Not embedded; linked reference only.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "No direct image asset URL was verified. The Smithsonian page returned HTTP 403 on direct fetch in this review, so the record was not checked directly. Image rights and reuse conditions apply."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "nasa_apollo17_73001_processing_team",
+          "description": "The Apollo 17 core sample 73001 processing team in front of the newly opened sample at NASA's Johnson Space Center in Houston.",
+          "image_type": "NASA curation group photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/03/jsc2022e017040.jpg",
+          "source_page_url": "https://www.nasa.gov/general/fifty-years-later-curators-unveil-one-of-last-sealed-apollo-samples",
+          "publisher": "NASA",
+          "credit": "NASA (individual photographer credit not extracted from source page)",
+          "caption": "The Apollo 17 core sample 73001 processing team in front of the newly opened sample at NASA's Johnson Space Center in Houston. From left, Charis Krysher, Andrea Mosie, Juliane Gross and Ryan Zeigler.",
+          "section_placements": [
+            "overview",
+            "historical_significance"
+          ],
+          "notes": "Direct NASA asset URL taken from the NASA feature page HTML, with no query string. Verified over HTTP (200, image/jpeg). Individual photographer credit should be verified on the source page before republication."
+        }
+      ],
+      "historical_significance_images": [
+        {
+          "id": "nasa_apollo17_73001_processing_team",
+          "description": "The Apollo 17 core sample 73001 processing team in front of the newly opened sample at NASA's Johnson Space Center in Houston.",
+          "image_type": "NASA curation group photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/03/jsc2022e017040.jpg",
+          "source_page_url": "https://www.nasa.gov/general/fifty-years-later-curators-unveil-one-of-last-sealed-apollo-samples",
+          "publisher": "NASA",
+          "credit": "NASA (individual photographer credit not extracted from source page)",
+          "caption": "The Apollo 17 core sample 73001 processing team in front of the newly opened sample at NASA's Johnson Space Center in Houston. From left, Charis Krysher, Andrea Mosie, Juliane Gross and Ryan Zeigler.",
+          "section_placements": [
+            "overview",
+            "historical_significance"
+          ],
+          "notes": "Direct NASA asset URL taken from the NASA feature page HTML, with no query string. Verified over HTTP (200, image/jpeg). Individual photographer credit should be verified on the source page before republication."
+        }
+      ],
+      "references": [
+        {
+          "title": "Fifty years later, curators unveil one of last sealed Apollo samples",
+          "publisher": "NASA",
+          "date": "2022 (opening of Apollo 17 sample 73001 on March 23, 2022, per the NASA feature)",
+          "url": "https://www.nasa.gov/general/fifty-years-later-curators-unveil-one-of-last-sealed-apollo-samples",
+          "verification_status": "Fetched and read. Image assets on this page verified over HTTP."
+        },
+        {
+          "title": "Rare Apollo lunar sample will have its opening day",
+          "publisher": "Astronomy magazine",
+          "date": "2022-02-08 (last updated 2023-05-18)",
+          "url": "https://www.astronomy.com/observing/rare-apollo-lunar-sample-will-have-its-opening-day/",
+          "verification_status": "Fetched and read (secondary source). Source of the CSVC term."
+        },
+        {
+          "title": "Apollo Experiment Report: Lunar-Sample Processing in the Lunar Receiving Laboratory High-Vacuum Complex",
+          "publisher": "NASA Johnson Space Center (author: D. R. White)",
+          "date": "1976-08-01",
+          "url": "https://ntrs.nasa.gov/citations/19760023161",
+          "pdf_url": "https://ntrs.nasa.gov/api/citations/19760023161/downloads/19760023161.pdf",
+          "verification_status": "Citation record fetched and read. Full PDF not read in this review."
+        },
+        {
+          "title": "Development of an Additively Manufactured Subscale Secondary Sealed Container for the NASA FROSTE Project",
+          "publisher": "NASA Technical Reports Server (authors: M. S. Forton, C. J. Adair, B. Hyla, R. Anderson, J. D. Sims)",
+          "date": "2026 (presented June 22-25, 2026; NTRS record 20260004465)",
+          "url": "https://ntrs.nasa.gov/citations/20260004465",
+          "verification_status": "Citation record fetched and read. Slide deck (PPTX) not read in this review."
+        },
+        {
+          "title": "NASA Lunar Deep Freeze Challenge",
+          "publisher": "TechConnect (Advanced Technology International)",
+          "date": "Challenge page lists deadline year 2021; secondary summaries mention 2020",
+          "url": "https://techconnect.org/nasa-lunar-deep-freeze-challenge-2/",
+          "verification_status": "Fetched and read. Page marked closed. Deadline year conflict noted."
+        },
+        {
+          "title": "ALSRC, Apollo Lunar Sample Return Container, Apollo 11 (nasm_A19710813000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "date": "Not stated in search summary",
+          "url": "https://www.si.edu/object/alsrc-apollo-lunar-sample-return-container-apollo-11:nasm_A19710813000",
+          "verification_status": "Listed in search results only; direct fetch returned HTTP 403. Dimensions and mass taken from search-indexed summaries and unverified."
+        },
+        {
+          "title": "ALSRC, Apollo Lunar Sample Return Container, Apollo 12 and 16 (nasm_A19772508000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "date": "Not stated in search summary",
+          "url": "https://si.edu/object/alsrc-apollo-lunar-sample-return-container-apollo-12-and-16:nasm_A19772508000",
+          "verification_status": "Listed in search results only; not fetched. Dimensions and mass taken from search-indexed summaries and unverified."
+        },
+        {
+          "title": "NASA image assets jsc2022e017003-1.jpg and jsc2022e017040.jpg (linked from the 73001 feature)",
+          "publisher": "NASA",
+          "date": "2022-03",
+          "url": "https://www.nasa.gov/wp-content/uploads/2022/03/jsc2022e017003-1.jpg",
+          "additional_urls": [
+            "https://www.nasa.gov/wp-content/uploads/2022/03/jsc2022e017040.jpg"
+          ],
+          "verification_status": "Both direct asset URLs returned HTTP 200 with image/jpeg content type when checked over HTTP."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "historical significance": "payload.article.historical_significance_images",
+      "Apollo ALSRC example": "payload.article.physical_specifications.examples[0].images",
+      "Apollo 17 sample 73001 CSVC example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images; no verified image for this section)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. The Smithsonian record has image_url null because no direct image asset was verified; it is linked rather than embedded."
+  },
+  "data_quality_notes": [
+    "Apollo ALSRC dimensions and masses come from search-indexed summaries of Smithsonian records. The Smithsonian pages (www.si.edu, www.airandspace.si.edu) returned HTTP 403 or DNS errors on direct fetch, so the figures are not verified against the primary record. The Apollo 11, Apollo 12 and Apollo 12/16 records disagree on the Apollo 12 mass and on the orientation of the Apollo 11 dimensions.",
+    "Counts of Apollo sealed containers (16 built by Union Carbide at Y-12; nine sealed containers returned; three remaining unopened from Apollo 15, 16 and 17) come from secondary news and search summaries. NASA's 73001 feature gives no count. Treated as unverified.",
+    "The Apollo 17 CSVC term comes from the Astronomy magazine article, not the NASA feature, which describes the storage as an outer vacuum tube in nitrogen-purged cabinets.",
+    "Opening date for sample 73001: NASA gives March 23, 2022 as the opening date and refers to preparatory work and the main extrusion on March 21 and 22. Secondary sources differ on this; verify against the NASA release before citing a date.",
+    "Individual photographer credit for NASA image jsc2022e017040 was not extracted from the source page. Verify before republication.",
+    "No direct image asset verified for the Smithsonian ALSRC records; image_url is null and the record is linked only.",
+    "Discover magazine search summary states that Apollo sealed containers probably no longer hold lunar-level vacuum. This is a secondary claim and has not been verified in a primary source.",
+    "The FROSTE NTRS record gives no mass, dimensions, temperatures, cryocooler capacity, PCM material, number of primary containers or Scalmalloy properties. The slide deck (PPTX) on the NTRS page was not read in this review.",
+    "The NASA Lunar Deep Freeze Challenge page is marked closed and gives only a year (2021) as the deadline. Secondary summaries mention a November 2020 deadline, a 20 kg system mass limit, a 75 W power cap and a 20 cm x 30 cm container model. None of these were confirmed on the fetched page and none are used as specifications.",
+    "The 1976 NASA report (NTRS 19760023161) was read only through its citation record and abstract. Its full PDF exceeds the fetch size limit and was not read; statements about processing are limited to the abstract.",
+    "Current Artemis sample container design, cold curation hardware (including any cold glovebox procurement) and any lander or spacecraft interface were not verified against primary Artemis documentation in this review. No compatibility claim is made.",
+    "The Apollo 12 and 16 Smithsonian record and the Discover magazine article were listed in search results only and were not fetched.",
+    "Image copyright and reuse conditions for NASA imagery should be confirmed on the NASA image use policy before republication. Public-domain status is not assumed."
+  ]
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#04070d">
+  <meta name="description" content="Explore the Moon, trace lunar missions, and discover the payloads they carry.">
+  <title>Serenity | Immersive Explorers Update</title>
+  <link rel="stylesheet" href="home-assets/home.css?v=continuous">
+  <script defer src="home-assets/home.js?v=continuous"></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="shell topbar">
+    <a class="brand" href="./" aria-label="Serenity home"><span class="mark" aria-hidden="true"></span><span>serenity<sup>™</sup></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#lunar-explorer">Lunar Explorer</a>
+      <a href="#mission-explorer">Mission Explorer</a>
+      <a href="#payload-explorer">Payload Explorer</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="motion-toggle" type="button" hidden>Pause motion</button>
+      <a class="nav-launch" href="#lunar-explorer">Explore <span aria-hidden="true">↓</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="headline">
+      <div class="shell hero-inner">
+        <figure class="moon-scene">
+          <span class="orbit orbit-outer" aria-hidden="true"></span>
+          <span class="orbit orbit-inner" aria-hidden="true"></span>
+          <img src="home-assets/moon.webp" alt="Partially illuminated lunar globe rendered from NASA LRO imagery" width="1152" height="1152" fetchpriority="high">
+          <span class="orbital-mark" aria-hidden="true"></span>
+          <figcaption>NASA LRO surface mosaic <span aria-hidden="true">/</span> Illustrative lighting</figcaption>
+        </figure>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> NASA Space Apps Challenge · CLPS</p>
+          <h1 id="headline">The Moon,<br><em>understood.</em></h1>
+          <p class="intro">Explore the lunar surface, follow the missions that travelled there, and discover what they carried.</p>
+          <div class="actions">
+            <a class="button primary" href="#lunar-explorer">Explore <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="explorer-scenes">
+      <section class="scene lunar-scene" id="lunar-explorer" aria-labelledby="lunar-title" data-view="horizon">
+        <div class="scene-stage lunar-stage" aria-hidden="true">
+          <div class="lunar-orbit lunar-orbit-outer"></div>
+          <div class="lunar-orbit lunar-orbit-inner"></div>
+          <img class="scene-globe" src="home-assets/moon.webp" alt="" width="1152" height="1152" loading="lazy">
+          <div class="lunar-light"></div>
+          <div class="lunar-sample-grid"></div>
+          <p class="lunar-grid-note">49 samples · ≈4 km spacing</p>
+          <div class="lunar-selection"><i></i><span>Selected site</span></div>
+          <p class="stage-label">Lunar surface · Illustrative overlay</p>
+        </div>
+        <div class="shell scene-shell">
+          <div class="scene-copy">
+            <p class="eyebrow">Terrain &amp; illumination</p>
+            <h2 id="lunar-title">Lunar <em>Explorer</em></h2>
+            <p class="scene-intro">Choose a site. Change the simulation time. See how the surrounding lunar terrain changes what that site can see.</p>
+            <div class="scene-options" role="group" aria-label="Lunar science topics">
+              <button type="button" data-option="horizon" aria-pressed="true">Local horizon</button>
+              <button type="button" data-option="earth" aria-pressed="false">Earth visibility</button>
+              <button type="button" data-option="polar" aria-pressed="false">Polar atlas</button>
+            </div>
+            <p class="scene-detail" aria-live="polite">A crater rim can block low-angle sunlight. Serenity checks whether the Sun’s centre, part of its disk, or the entire disk clears the local skyline.</p>
+            <button class="button secondary feature-link" type="button" data-destination="lunar">Open Lunar Explorer <span aria-hidden="true">↗</span></button>
+            <p class="link-status" role="status"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene mission-scene" id="mission-explorer" aria-labelledby="mission-title" data-view="departure">
+        <div class="scene-stage mission-stage" aria-hidden="true">
+          <canvas class="flight-canvas"></canvas>
+          <span class="mission-earth"><span>Earth</span></span>
+          <div class="mission-moon"><img src="home-assets/moon.webp" alt="" width="1152" height="1152" loading="lazy"><span>Moon</span></div>
+          <p class="stage-label">Illustrative flight path · Not to scale</p>
+        </div>
+        <div class="shell scene-shell scene-shell-right">
+          <div class="scene-copy">
+            <p class="eyebrow">Flight histories</p>
+            <h2 id="mission-title">Mission <em>Explorer</em></h2>
+            <p class="scene-intro">Follow the missions that reached for the Moon, from early probes to commercial landers. See where they went and what they set out to do.</p>
+            <div class="scene-options" role="group" aria-label="Illustrative flight stages">
+              <button type="button" data-option="departure" aria-pressed="true">Departure</button>
+              <button type="button" data-option="transfer" aria-pressed="false">Transfer</button>
+              <button type="button" data-option="arrival" aria-pressed="false">Arrival</button>
+            </div>
+            <p class="scene-detail" aria-live="polite">The journey begins near Earth. The next step depends on the spacecraft’s destination and mission profile.</p>
+            <button class="button secondary feature-link" type="button" data-destination="mission">Open Mission Explorer <span aria-hidden="true">↗</span></button>
+            <p class="link-status" role="status"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene payload-scene" id="payload-explorer" aria-labelledby="payload-title" data-view="imaging">
+        <div class="scene-stage payload-stage" aria-hidden="true">
+          <div class="instrument-orbit"></div>
+          <div class="instrument-orbit instrument-orbit-outer"></div>
+          <div class="instrument-chassis">
+            <span class="instrument-plate"></span>
+            <span class="instrument-mount"></span>
+            <span class="instrument-lens"></span>
+            <span class="instrument-array"></span>
+            <span class="instrument-antenna"></span>
+          </div>
+          <div class="instrument-beam"></div>
+          <div class="instrument-tag"><i></i><span>Optical sensor</span></div>
+          <p class="stage-label">Illustrative lunar instrument</p>
+        </div>
+        <div class="shell scene-shell">
+          <div class="scene-copy">
+            <p class="eyebrow">Instruments &amp; experiments</p>
+            <h2 id="payload-title">Payload <em>Explorer</em></h2>
+            <p class="scene-intro">Meet the instruments and technology a mission brings to the Moon, and discover what each was designed to measure or demonstrate.</p>
+            <div class="scene-options" role="group" aria-label="Illustrative payload types">
+              <button type="button" data-option="imaging" aria-pressed="true">Imaging</button>
+              <button type="button" data-option="power" aria-pressed="false">Power</button>
+              <button type="button" data-option="radio" aria-pressed="false">Communications</button>
+            </div>
+            <p class="scene-detail" aria-live="polite">A camera can study terrain, recognise features, and document what happens around a lander.</p>
+            <button class="button secondary feature-link" type="button" data-destination="payload">Open Payload Explorer <span aria-hidden="true">↗</span></button>
+            <p class="link-status" role="status"></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="shell footer">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true"></span><span>serenity<sup>™</sup></span></a>
+    <span>NASA Space Apps Challenge project</span>
+    <a href="https://svs.gsfc.nasa.gov/4720/">Lunar imagery · NASA SVS ↗</a>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>

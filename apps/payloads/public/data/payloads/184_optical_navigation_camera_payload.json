@@ -1,0 +1,272 @@
+{
+  "catalogue_id": 184,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 9,
+    "name": "Navigation, communication and geodesy"
+  },
+  "payload": {
+    "number": 184,
+    "name": "Optical navigation camera",
+    "article": {
+      "overview": "An optical navigation camera is an imaging instrument that helps a spacecraft or lander estimate its position, velocity and orientation by interpreting images of the Moon, the Earth, the stars or the lunar surface. Flown examples include the Orion Optical Navigation camera on NASA's uncrewed Artemis I mission in 2022 [1][3], the Terrain Relative Navigation and hazard cameras on Intuitive Machines' Nova-C lander [7][8], the vision-based navigation camera used during JAXA's SLIM landing in January 2024 [9][10], and the Lander Hazard Detection and Avoidance Camera on ISRO's Chandrayaan-3 lander in 2023 [5][6]. These systems serve different functions and have different designs, so there is no single standard specification for the class.",
+      "description": "An optical navigation camera records images and passes them to onboard software. The software extracts features such as craters, landmarks, the limb of a planetary body or star patterns, and compares them with known positions or stored maps. The results are combined with data from inertial sensors and other instruments in a navigation filter that estimates the spacecraft's state. In the Orion system, the OpNav camera is one of several navigation sensors, alongside inertial measurement units, GPS receivers and star trackers, and it supplies images that contribute to the navigation solution [3][4]. Optical navigation is attractive because a camera is comparatively light, passive and independent of a continuous radio link, which matters when communication delays or outages are possible. Its accuracy depends on the quality of the reference maps, the image-processing algorithms, the illumination and the calibration of the camera.",
+      "scientific_purpose_and_applications": "The primary purpose of an optical navigation camera is navigational rather than scientific: it provides information that helps the vehicle know where it is and how it is moving. The sources reviewed describe several applications: orbit and state determination for spacecraft far from Earth [3][4], a backup source of navigation data if communication with the ground is lost [3], terrain-relative navigation during powered descent [8][9], and identification of safe touchdown sites [5][7]. Images collected for navigation may also help engineers assess algorithm performance under real lunar lighting, which ground testing cannot fully reproduce [4]. Ground-side monitoring of camera images and navigation results during landing has also been used, as reported for SLIM [10]. Scientific use of such images is secondary and depends on mission planning.",
+      "operating_principle": "In terrain-relative navigation, the camera captures images of the surface during descent. Software detects landmarks, most often craters, and matches them against a map of known positions. The matched features give an estimate of the vehicle's position relative to the mapped terrain, which the navigation filter uses to correct drift from the inertial sensors [8][9]. In SLIM, crater-based matching against a crater map was used to determine position during landing, and a reported weakness of the method is that it can fail when few craters are detectable or when the sun is low [9]. Orion's OpNav system uses images of the Earth and Moon, taken at different phases and distances, to support orientation and navigation [1][2][3]. Image quality depends on exposure, sun angle, shadow and camera calibration.",
+      "scientific_importance": "An optical navigation camera does not usually measure the Moon's properties directly, but its importance lies in making precise and safe lunar operations possible. Accurate navigation is needed to reach a planned orbit, to land within a chosen area and to avoid hazards such as boulders or steep slopes. Flight experience from Artemis I, Chandrayaan-3, SLIM and Nova-C gives engineers evidence on how image-based navigation performs in real lunar lighting, which ground tests cannot fully reproduce [4][9]. The reported landing accuracy of about 100 m for SLIM, which comes from secondary summaries rather than the primary paper, is an important benchmark for future precision landings in complex terrain, but it has not been verified against the primary source [9].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, resolution or field of view for an optical navigation camera. The examples below are specific flown or announced systems. Where a value is not published in the sources retrieved for this article, it is recorded as not publicly specified. In several cases the camera is only one part of a larger navigation or sensor package, so its mass and power cannot be separated from its processor, mounting and harness in public sources.",
+        "examples": [
+          {
+            "name": "Orion Optical Navigation (OpNav) camera, Artemis I",
+            "type": "Flown spacecraft navigation camera",
+            "flight_status": "Flown on NASA Artemis I (uncrewed, November 2022)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "field_of_view": null,
+            "resolution": null,
+            "summary": "Flown on NASA's uncrewed Artemis I mission in November 2022 as part of the Orion Optical Navigation system. Summaries of the NASA navigation paper describe the OpNav camera as one of Orion's navigation sensors, alongside three inertial measurement units, two GPS receivers and two star trackers [3]. NASA's image record for flight day six shows a black-and-white view of the Moon taken with the camera on 21 November 2022 [1]. A companion image from the Canadian Space Agency's record of the same camera shows craters on the Moon [2]. Summaries of a NASA-hosted paper report over 500 images of Earth taken under varied ranges and lighting [4], and, in a separate paper, over one thousand images of Earth and the Moon collected during the test campaign, including twenty Moon passes [3]. These counts have not been confirmed against the full texts. Mass, dimensions, field of view, resolution and power for the OpNav camera are not publicly specified in the sources retrieved.",
+            "qualification": "Mass, dimensions, field of view, resolution and power not publicly specified in the sources retrieved.",
+            "source_urls": [
+              "https://www.nasa.gov/image-detail/amf-art001e000194-opnav-6/",
+              "https://asc-csa.gc.ca/eng/multimedia/search/image/17593",
+              "https://ntrs.nasa.gov/api/citations/20230000714/downloads/AAS-23-057_Artemis_1_Navigation_HoltDsouzaWasinger_FINALfinal.pdf"
+            ],
+            "images": [
+              {
+                "id": "orion_opnav_artemis_i_flight_day_6",
+                "description": "Black-and-white image of the lunar surface taken by Orion's optical navigation camera on flight day six of Artemis I.",
+                "image_type": "Mission imagery photograph",
+                "image_url": "https://images-assets.nasa.gov/image/art001e000194%20opnav%206/art001e000194%20opnav%206~large.jpg",
+                "source_page_url": "https://www.nasa.gov/image-detail/amf-art001e000194-opnav-6/",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "Orion used its optical navigation camera to capture this black-and-white photo of the Moon on flight day six of Artemis I (21 November 2022).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL taken from the NASA image page's download link (1920 x 1517 px per the page). Not independently requested in this run, so direct_image_assets_verified_from_official_pages is false. The NASA page gives no explicit credit line beyond the producer (JSC); NASA brand and usage guidelines apply."
+              },
+              {
+                "id": "csa_orion_opnav_lunar_surface_artemis_i",
+                "description": "Black-and-white image of the Moon's craters taken by Orion's optical navigation camera on the sixth day of Artemis I.",
+                "image_type": "Mission imagery photograph (image record)",
+                "image_url": null,
+                "source_page_url": "https://asc-csa.gc.ca/eng/multimedia/search/image/17593",
+                "publisher": "Canadian Space Agency (NASA credit)",
+                "credit": "NASA",
+                "caption": "Black-and-white image of the craters of the Moon, taken by Orion's optical navigation camera on the sixth day of the Artemis I mission.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Image asset URL not verified: the CSA record gives only a relative image path with no domain. Shown as a linked-only reference in the article. Caption and credit taken from the CSA record as summarised in this run."
+              }
+            ]
+          },
+          {
+            "name": "Intuitive Machines Nova-C terrain-relative and hazard-relative navigation cameras (Redwire)",
+            "type": "Commercial lander landing-phase navigation and hazard cameras",
+            "flight_status": "Carried on IM-1 and IM-2 per company statements; post-flight documentation not checked",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "field_of_view": null,
+            "resolution": null,
+            "summary": "The Nova-C lander design, as described in a 2022 AAS paper, uses two optical cameras: one for terrain-relative navigation (TRN) and one for hazard-relative navigation (HRN), each co-boresighted with a laser range finder [8]. Redwire supplied the cameras. The company's release for the second commercial mission, IM-2, says it delivered TRN and hazard detection and avoidance cameras from its Sentinel product line. The release does not say which camera performs which role, and it gives no mass, resolution, field of view or power [7]. The release describes SentinelCam as built on the flight heritage of Redwire's SpectraCam and Argus systems [7]. For IM-1, the company states that its cameras identified nine suitable touchdown locations in the targeted south polar region [7]. These are company statements that have not been checked against Intuitive Machines' post-flight documentation.",
+            "qualification": "Company-stated capabilities only; mass, resolution, field of view and power not stated in the release. The release describes high dynamic range imaging.",
+            "source_urls": [
+              "https://ir.rdw.com/news-events/press-releases/detail/157/redwire-camera-technology-to-launch-on-board-intuitive-machines-second-commercial-mission-to-the-moon",
+              "https://ssdl1.gatech.edu/sites/default/files/ssdl-files/papers/conferencePapers/AAS%2022-113.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "SLIM vision-based navigation camera (JAXA)",
+            "type": "Flown lunar lander vision-based navigation camera",
+            "flight_status": "Flown on SLIM (landed January 2024)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "field_of_view": null,
+            "resolution": null,
+            "summary": "SLIM, the Smart Lander for Investigating the Moon, landed in January 2024 and used vision-based navigation with crater-map matching for position determination during landing [9]. Secondary summaries of the flight-results paper report a pinpoint landing accuracy of about 100 m, navigation performed 14 times across seven regions during landing, and an obstacle-detection test at about 50 m altitude that identified safe points within the navigation camera's field of view [9]. A ground-in-the-loop system monitored the camera images and navigation results in real time during descent, according to a 2025 SpaceOps paper [10]. The primary JAXA mission page returned no usable text in this research run, and the full paper was not retrieved, so these figures are unverified. Camera mass, resolution and field of view are not publicly specified in the sources retrieved.",
+            "qualification": "Accuracy and timing figures are from secondary summaries and are unverified against the primary paper. Camera hardware specifications not publicly specified in the sources retrieved.",
+            "source_urls": [
+              "https://www.bohrium.com/paper-details/vision-based-navigation-and-obstacle-detection-flight-results-in-slim-lunar-landing/1066934955608637446-4075",
+              "https://publications.spaceops.org/2025/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chandrayaan-3 Lander Hazard Detection and Avoidance Camera (LHDAC)",
+            "type": "Flown lander hazard-detection camera",
+            "flight_status": "Flown on Chandrayaan-3 (2023); far-side images released before the 23 August 2023 landing attempt",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "field_of_view": null,
+            "resolution": null,
+            "summary": "The Lander Hazard Detection and Avoidance Camera (LHDAC) was developed by ISRO at its Space Applications Centre in Ahmedabad and is listed among the lander sensors on ISRO's mission page, alongside a Lander Position Detection Camera and a Lander Horizontal Velocity Camera [5]. The mission page lists the lander's touchdown limits as a vertical velocity of 2 m/s or less, a horizontal velocity of 0.5 m/s or less and a slope of 12 degrees or less. These are mission requirements, not camera specifications [5]. News reports state that the camera helps the lander select a safe spot, free of boulders or deep trenches, within a 4 km by 2.4 km landing site, and that ISRO released far-side images from the camera on 19 August 2023, before a landing attempt on 23 August 2023 [6]. Public specifications for resolution, field of view, frame rate, mass and power were not found.",
+            "qualification": "Hazard-detection rather than strictly optical-navigation function. Camera specifications not publicly specified in the sources retrieved.",
+            "source_urls": [
+              "https://www.isro.gov.in/ISRO_EN/Chandrayaan3_Details.html",
+              "https://deccanchronicle.com/nation/in-other-news/210823/chandrayaan-3-isro-releases-images-of-lunar-far-side-area-captured-by.html"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are not publicly specified for any of the four examples in the sources retrieved. The examples therefore cannot be compared on engineering grounds, and no proportions are asserted for a generic optical navigation camera.",
+        "mass_and_weight": "Mass is not publicly specified for any of the four examples in the sources retrieved. Mass cannot be inferred from the spacecraft or lander totals, because those figures include other subsystems.",
+        "power_requirements": "Power consumption is not publicly specified for any of the four examples in the sources retrieved. No power budget is asserted for a generic optical navigation camera."
+      },
+      "environmental_and_operational_requirements": "Optical navigation cameras must operate in vacuum, across large temperature swings and in strong, low-angle sunlight that can produce high-contrast or saturated images. They need a stable mount and accurate calibration, because small changes in alignment or focus can shift the estimated position. The Redwire release describes high dynamic range imaging for bright, high-contrast lunar surfaces [7]. Illumination is a central operational constraint: the SLIM crater-based method may fail under low sun elevation [9], and shadows or glare can reduce the number of usable landmarks. Operation also depends on the host vehicle's data-handling and communication architecture, particularly where images are monitored on the ground [10]. Radiation, micrometeoroid and thermal qualification levels for these cameras are not publicly specified in the sources retrieved.",
+      "limitations": "Optical navigation depends on visible features and suitable lighting. Crater-based matching can struggle when few craters are detectable or when the sun is low [9]. Reference maps can be too coarse for some sites. The Orion navigation paper is discussed in terms of performance against pre-flight error models, so its results are relative to those models [3]. The systems described here serve different purposes and cannot be treated as equivalent. Many public sources give no mass, resolution, field of view, power or accuracy budget, so no comparative engineering table is provided. This article is not a design specification for a new camera.",
+      "transportation_and_deployment": {
+        "overview": "An optical navigation camera is normally a fixed component of a spacecraft or lander, not a separately deployed payload. Its integration is therefore part of the host vehicle's design, covering mounting, alignment, calibration, thermal control, power, data handling and sun-exposure constraints.",
+        "transportation_process": [
+          "Integrate and align the camera with the spacecraft's other navigation sensors on Earth, and calibrate it against known targets.",
+          "Launch the spacecraft; the camera is protected within the launch configuration.",
+          "Operate the camera during cruise and check-out, as the Artemis I OpNav images show [1][3].",
+          "Use camera images during the mission phase that needs them, such as descent for terrain-relative navigation [8][9].",
+          "Downlink images and navigation telemetry for ground monitoring, as in the SLIM ground-in-the-loop system [10]."
+        ],
+        "deployment_methods": "No separate deployment of the camera is reported in the sources retrieved. The camera is mounted on the host vehicle, and its field of view is fixed relative to the vehicle or to any gimbal the design uses. Landing-phase cameras point towards the terrain, while orbital navigation cameras point towards the Earth or the Moon [3].",
+        "historical_examples": "Orion's OpNav camera was operated during Artemis I [1][3]. The Chandrayaan-3, Nova-C and SLIM landers each carried landing-phase cameras, described above [5][7][9].",
+        "compatibility_assessment": "Compatibility with a specific lander or spacecraft has not been assessed here. Camera mass, mounting interfaces, data rate, power and field-of-view requirements are not publicly specified for these examples, so no lander compatibility is asserted.",
+        "images": []
+      },
+      "historical_significance": "Optical navigation for lunar and planetary missions has developed from ground-based imaging and crater-matching research into flight demonstrations. NASA describes Orion's OpNav system as a first-of-its-kind navigation capability, demonstrated in space on Artemis I in 2022 [4]. Chandrayaan-3's hazard camera was used in its 2023 landing attempt [5][6], Nova-C cameras were supplied for IM-1 and IM-2 [7], and JAXA's SLIM demonstrated vision-based landing with crater-map matching in January 2024 [9]. Taken together, these flights show that image-based navigation and hazard detection have moved from concept to flight practice, although the public performance data remain limited.",
+      "limitations_and_uncertainties": "The payload name 'optical navigation camera' describes a function rather than one standard instrument. The examples differ in purpose: some are navigation cameras, some are hazard-detection cameras and some are mixed-use landing cameras. Public sources provide few numerical specifications. The Orion and SLIM accuracy and count figures in this article come from abstracts or search-level summaries of papers whose full texts were not retrieved for this run. The Redwire statements are company claims. Lander compatibility, radiation tolerance, technology readiness and lifetimes are not established by the sources. The article is not a design specification for a new camera.",
+      "images": [
+        {
+          "id": "orion_opnav_artemis_i_flight_day_6",
+          "description": "Black-and-white image of the lunar surface taken by Orion's optical navigation camera on flight day six of Artemis I.",
+          "image_type": "Mission imagery photograph",
+          "image_url": "https://images-assets.nasa.gov/image/art001e000194%20opnav%206/art001e000194%20opnav%206~large.jpg",
+          "source_page_url": "https://www.nasa.gov/image-detail/amf-art001e000194-opnav-6/",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Orion used its optical navigation camera to capture this black-and-white photo of the Moon on flight day six of Artemis I (21 November 2022).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA image page's download link (1920 x 1517 px per the page). Not independently requested in this run, so direct_image_assets_verified_from_official_pages is false. The NASA page gives no explicit credit line beyond the producer (JSC); NASA brand and usage guidelines apply."
+        },
+        {
+          "id": "csa_orion_opnav_lunar_surface_artemis_i",
+          "description": "Black-and-white image of the Moon's craters taken by Orion's optical navigation camera on the sixth day of Artemis I.",
+          "image_type": "Mission imagery photograph (image record)",
+          "image_url": null,
+          "source_page_url": "https://asc-csa.gc.ca/eng/multimedia/search/image/17593",
+          "publisher": "Canadian Space Agency (NASA credit)",
+          "credit": "NASA",
+          "caption": "Black-and-white image of the craters of the Moon, taken by Orion's optical navigation camera on the sixth day of the Artemis I mission.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Image asset URL not verified: the CSA record gives only a relative image path with no domain. Shown as a linked-only reference in the article. Caption and credit taken from the CSA record as summarised in this run."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "orion_opnav_artemis_i_flight_day_6",
+          "description": "Black-and-white image of the lunar surface taken by Orion's optical navigation camera on flight day six of Artemis I.",
+          "image_type": "Mission imagery photograph",
+          "image_url": "https://images-assets.nasa.gov/image/art001e000194%20opnav%206/art001e000194%20opnav%206~large.jpg",
+          "source_page_url": "https://www.nasa.gov/image-detail/amf-art001e000194-opnav-6/",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Orion used its optical navigation camera to capture this black-and-white photo of the Moon on flight day six of Artemis I (21 November 2022).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA image page's download link (1920 x 1517 px per the page). Not independently requested in this run, so direct_image_assets_verified_from_official_pages is false. The NASA page gives no explicit credit line beyond the producer (JSC); NASA brand and usage guidelines apply."
+        }
+      ],
+      "references": [
+        {
+          "title": "Artemis I Flight Day Six: Orion Captures the Moon (image record art001e000194 opnav 6)",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/image-detail/amf-art001e000194-opnav-6/"
+        },
+        {
+          "title": "The lunar surface captured by Orion's optical navigation camera - Artemis I (image record 17593)",
+          "publisher": "Canadian Space Agency",
+          "url": "https://asc-csa.gc.ca/eng/multimedia/search/image/17593"
+        },
+        {
+          "title": "Artemis I navigation (AAS 23-057)",
+          "publisher": "NASA Technical Reports Server; Holt, D'Souza and Wasinger",
+          "url": "https://ntrs.nasa.gov/api/citations/20230000714/downloads/AAS-23-057_Artemis_1_Navigation_HoltDsouzaWasinger_FINALfinal.pdf"
+        },
+        {
+          "title": "Orion Optical Navigation (OpNav) system overview (PDF, hosted copy)",
+          "publisher": "Georgia Tech SEAL (hosted copy); R. Inman",
+          "url": "https://seal.ae.gatech.edu/sites/default/files/2024-09/InmanRebecca.pdf"
+        },
+        {
+          "title": "Chandrayaan-3 mission details",
+          "publisher": "ISRO",
+          "url": "https://www.isro.gov.in/ISRO_EN/Chandrayaan3_Details.html"
+        },
+        {
+          "title": "Chandrayaan-3: ISRO releases images of lunar far side area captured by lander camera (news report, 2023)",
+          "publisher": "Deccan Chronicle",
+          "url": "https://deccanchronicle.com/nation/in-other-news/210823/chandrayaan-3-isro-releases-images-of-lunar-far-side-area-captured-by.html"
+        },
+        {
+          "title": "Redwire camera technology to launch on board Intuitive Machines' second commercial mission to the Moon (press release, 24 February 2025)",
+          "publisher": "Redwire",
+          "url": "https://ir.rdw.com/news-events/press-releases/detail/157/redwire-camera-technology-to-launch-on-board-intuitive-machines-second-commercial-mission-to-the-moon"
+        },
+        {
+          "title": "Nova-C precision landing and hazard avoidance paper (AAS 22-113)",
+          "publisher": "American Astronautical Society, hosted by Georgia Tech SSDL",
+          "url": "https://ssdl1.gatech.edu/sites/default/files/ssdl-files/papers/conferencePapers/AAS%2022-113.pdf"
+        },
+        {
+          "title": "Vision-based navigation and obstacle detection flight results in SLIM lunar landing (abstract page)",
+          "publisher": "Bohrium (aggregator)",
+          "url": "https://www.bohrium.com/paper-details/vision-based-navigation-and-obstacle-detection-flight-results-in-slim-lunar-landing/1066934955608637446-4075"
+        },
+        {
+          "title": "SpaceOps 2025 paper on ground-in-the-loop monitoring for the SLIM landing (paper id 0078)",
+          "publisher": "SpaceOps 2025",
+          "url": "https://publications.spaceops.org/2025/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Orion Optical Navigation (OpNav) camera example": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "SpaceOps paper (ref 10): the paper URL carried a query string (?id=0078), which the URL policy removes. The cleaned URL points to the SpaceOps 2025 index, not directly to the paper, so the paper itself was not located by a valid clean link.",
+    "Research run: 7 web searches and 8 page reads (one read returned a connection reset and was retried). Several PDF fetches (refs 3, 4, 8 and 10) returned binary content only, so their claims come from search-result summaries and are flagged as such in the article.",
+    "The NASA image asset URL (registry id orion_opnav_artemis_i_flight_day_6) was taken from the image page's download link as reported by a summarising fetch. It has not been independently requested, so it is not marked as verified.",
+    "The CSA image record gives only a relative image path with no domain, so its image_url is null and it appears as a linked-only reference.",
+    "SLIM accuracy (about 100 m), navigation count and obstacle-detection figures come from an aggregator abstract page and a search summary. The JAXA mission page returned no body text. These are unverified against the primary paper.",
+    "Redwire statements, including the IM-1 nine-site claim, are company statements and have not been checked against Intuitive Machines post-flight documentation.",
+    "Orion OpNav image counts differ between summaries (over 500 images of Earth, and over one thousand images with twenty Moon passes). Both are reported with attribution and neither is confirmed against full text.",
+    "The Chandrayaan-3 LHDAC is a hazard-detection camera. It is included because it supports landing-site selection, but it is not strictly an optical navigation sensor.",
+    "No public mass, dimensions, power, field of view, resolution, lifetime or environmental qualification values were found for any of the four cameras. All are recorded as null or not publicly specified."
+  ]
+}

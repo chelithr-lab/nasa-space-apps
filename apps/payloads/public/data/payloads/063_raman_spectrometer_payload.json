@@ -1,0 +1,274 @@
+{
+  "catalogue_id": 63,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 63,
+    "name": "Raman spectrometer",
+    "article": {
+      "article_version": "v1 (2026-11-12)",
+      "payload_environment": "Mixed: one Raman instrument flown on Mars (SHERLOC, Perseverance); one lunar rover instrument planned for Chang'e-7 and not confirmed launched in the sources accessed; one lunar-oriented breadboard concept; one laboratory prototype; no lunar Raman instrument confirmed operating on the Moon.",
+      "scope": {
+        "in_scope": "Raman spectrometers intended to analyse planetary surfaces or samples in situ, including rover- or arm-mounted instruments and lunar-oriented concept or prototype instruments.",
+        "out_of_scope": "Laboratory Raman analysis of returned samples; orbital reflectance and imaging spectrometers; laser-induced breakdown spectroscopy (LIBS); elemental analysers such as APXS and XRF.",
+        "cross_references": [
+          {"catalogue_id": 60, "catalogue_name": "Laser-Induced Breakdown Spectroscopy (LIBS)", "relation": "Laser-based elemental analysis; a Raman instrument measures molecular vibrations, LIBS measures light emitted from a laser-generated plasma."},
+          {"catalogue_id": 75, "catalogue_name": "Laser-induced plasma spectrometer", "relation": "Laser-based elemental analysis; not duplicated here."},
+          {"catalogue_id": 74, "catalogue_name": "Laser-induced fluorescence spectrometer", "relation": "Fluorescence is a separate light-emission process; Raman and fluorescence signals can overlap, as in SHERLOC."},
+          {"catalogue_id": 61, "catalogue_name": "Near-infrared spectrometer", "relation": "Reflectance spectroscopy using sunlight rather than an instrument laser."},
+          {"catalogue_id": 62, "catalogue_name": "Visible and infrared spectrometer", "relation": "Reflectance spectroscopy using sunlight rather than an instrument laser."},
+          {"catalogue_id": 35, "catalogue_name": "Hyperspectral imager", "relation": "Remote reflectance mapping; not duplicated here."},
+          {"catalogue_id": 78, "catalogue_name": "Reflectance spectrometer", "relation": "Remote reflectance spectroscopy; not duplicated here."},
+          {"catalogue_id": 54, "catalogue_name": "Alpha Particle X-ray Spectrometer (APXS)", "relation": "Elemental composition; not duplicated here."},
+          {"catalogue_id": 55, "catalogue_name": "X-ray fluorescence spectrometer", "relation": "Elemental composition; not duplicated here."},
+          {"catalogue_id": 80, "catalogue_name": "Mineralogical mapping instrument", "relation": "Mineral mapping at surface scale; not duplicated here."}
+        ]
+      },
+      "status_summary": {
+        "flown_and_operating_mars": "SHERLOC on NASA's Perseverance rover",
+        "flight_model_stage_not_flown_in_sources_accessed": "ExoMars Raman Laser Spectrometer (RLS), ESA",
+        "planned_lunar_rover_payload_pre_launch_in_sources_accessed": "Lunar Raman Spectrometer (LRS), Chang'e-7 (China)",
+        "breadboard_or_concept_not_flown": "LunaR breadboard concept (Cloutis et al. 2022)",
+        "laboratory_prototype_not_flown": "Compact remote time-gated Raman spectrometer (Zhao et al. 2025)"
+      },
+      "overview": "A Raman spectrometer identifies minerals and other materials by measuring how they scatter laser light. A small fraction of the scattered light changes colour, and the size of that change depends on the vibrations of the molecular bonds and crystal lattice in the sample. Each material therefore produces a characteristic set of peaks, a fingerprint, that can be matched to a known mineral or compound. This article covers Raman spectrometers intended to analyse planetary surfaces or samples in situ, including instruments mounted on a rover or arm, and concept or prototype instruments aimed at lunar use. Flown Raman hardware in the sources accessed is on Mars (SHERLOC, Perseverance). The Chang'e-7 Lunar Raman Spectrometer is a planned lunar rover payload that was pre-launch in the sources accessed, and no lunar Raman instrument is confirmed operating on the Moon. The LunaR concept and a 2025 laboratory time-gated prototype are breadboard or prototype work and have not flown.",
+      "description": "A Raman spectrometer has four functional parts. (1) An excitation source: a laser, typically at visible wavelengths (for example 532 nm, green) or deep-ultraviolet wavelengths, illuminates a small spot on the sample. The LunaR concept uses a 532 nm continuous-wave laser [1]; SHERLOC uses a pulsed 248.6 nm deep-ultraviolet laser [8]. (2) Optics: a telescope, microscope or fibre-coupled optical head focuses the laser onto the target and collects the scattered light; some designs include autofocus. (3) Filtering: filters or gating remove the much stronger light at the laser wavelength (Rayleigh scattering) so that only the weak Raman-shifted light reaches the detector. (4) A spectrometer and detector: a dispersive element separates the collected light by wavelength, and a detector records intensity against wavelength. Software converts the wavelength axis into a Raman shift in reciprocal centimetres (cm-1), the standard unit for Raman spectra. Some designs measure at contact or close range; others use a stand-off or remote configuration. The Lunar Raman Spectrometer of Chang'e-7 is described as a rover payload with a microscopic imaging channel (pixel array of at least 256 x 256) [2]; its working distance is not stated in the published specification.",
+      "scientific_purpose_and_applications": "The main purpose of a planetary Raman spectrometer is to identify the molecular and crystalline composition of a surface or sample at the scale of a single grain or small patch, without returning the sample to Earth. Applications stated in the sources accessed: (a) Mineral identification. Raman spectra can distinguish many minerals, including silicates, oxides, carbonates and sulphates, and can identify different crystal forms of the same chemical composition. The ESA RLS page states that RLS is used to characterise minerals formed by water-related processes and igneous minerals and their alteration products [6]. (b) Organic and biosignature-related analysis. The ESA RLS page states that RLS is intended to identify organic compounds and search for signs of life [6]. SHERLOC's stated goal is to detect and identify organic compounds in its target area on Mars [8]. (c) Sample triage. The ESA RLS page states that RLS can rapidly measure samples so that they can be passed to other instruments, such as the MOMA instrument [6]. For a lunar application, the Chang'e-7 LRS is described by its developers as a lunar in-situ composition instrument [2]. Its value would lie in identifying minerals and possibly volatile-related compounds in place, complementary to remote reflectance spectroscopy. This article does not assert that any lunar Raman instrument has yet produced such results.",
+      "operating_principle": "Most light scattered by a sample has the same wavelength as the excitation laser (elastic or Rayleigh scattering). A very small fraction of the photons is inelastically scattered. In Raman scattering, the scattered photon has gained or lost an amount of energy equal to a molecular vibration. The Raman shift is the difference, in cm-1, between the laser wavelength and the scattered wavelength. The LunaR paper uses a Raman efficiency of 0.01 percent at 532 nm in its link-budget model; that is a modelled assumption, not a measured value for lunar material [1]. The low efficiency explains why Raman instruments need high-power or well-collimated lasers, sensitive detectors and long integration times. Two engineering issues dominate the design. (i) Fluorescence and background: some samples fluoresce strongly under visible light and can swamp the weaker Raman signal. Deep-ultraviolet excitation, as used in SHERLOC, can move the Raman bands to a spectral region where many materials fluoresce less [8]. Time-gating records only light arriving within nanoseconds of a laser pulse and suppresses slower background light; the 2025 lunar-oriented prototype reports a gating width below 20 ns and background suppression under solar illumination in laboratory tests [10]. (ii) Laser exposure and damage: a high-energy pulse can damage or alter a sample; SHERLOC's published per-pulse energy of about 9 microjoules and its survey and detail scan doses illustrate how exposure is controlled [8].",
+      "scientific_importance": "Raman spectroscopy gives different information from elemental analysis. Elemental instruments such as APXS or LIBS report which chemical elements are present; Raman spectroscopy reports how those elements are bonded and arranged. Two materials with similar bulk chemistry, such as different carbon phases or polymorphs of the same compound, can be distinguished by Raman but not by elemental analysis alone, which is why Raman instruments are often described as complementary to elemental instruments. On the Moon, where surfaces are dominated by silicate minerals and glass, the main scientific value would be to determine the mineral phases present in soils, rocks and possibly volatile-bearing deposits. The LunaR paper's lunar-oriented scope and the Chang'e-7 LRS specification both reflect this aim [1][2]. No lunar Raman result is verified in the sources accessed. On Mars, SHERLOC's published spectral library of 51 organic compounds was built to support identification of organic signatures in Raman and fluorescence spectra [8]. This illustrates the reference work needed for any planetary Raman instrument: a measured library of spectra for compounds that might be present.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a Raman spectrometer. The examples differ in mission, laser wavelength, optical design, development stage and published detail, so their numbers should not be ranked or compared as if they described one design. Each value is tied to a named instrument and source; where a source does not publish a value, the text says not publicly specified and no value is inferred. Mass, dimensions and power are not publicly specified in a consistent form for most examples, so examples are described mainly by published optical parameters and development stage.",
+        "examples": [
+          {
+            "name": "SHERLOC (Scanning Habitable Environments with Raman and Luminescence for Organics and Chemicals), Mars 2020 Perseverance rover",
+            "type": "Flown planetary Raman and fluorescence spectrometer (Mars)",
+            "flight_status": "Flown and operating on Mars. The Astrobiology 2023 spectral library paper states that Perseverance is equipped with seven scientific instruments, including SHERLOC [8].",
+            "description": "Deep-ultraviolet Raman and fluorescence spectrometer mounted on the turret at the end of the rover's robotic arm. Raman and fluorescence signals are acquired simultaneously because of the deep-ultraviolet excitation [8].",
+            "laser_wavelength_nm": 248.6,
+            "laser_type": "Pulsed deep-ultraviolet neon-copper laser [8]",
+            "laser_energy_per_pulse_uj": 9,
+            "laser_energy_per_pulse_source": "Astrobiology 2023 paper: approximately 9 microjoules per pulse for SHERLOC [8]. The paper's Brassboard analog measured 3-4 microjoules per pulse at ambient conditions.",
+            "fluorescence_spectral_range_nm": [250, 355],
+            "peak_position_uncertainty_cm_1": 5,
+            "peak_position_uncertainty_note": "Reported as spectral uncertainty of +/-5 cm-1 for peak positions; this is not the spectral resolution, which is not stated [8].",
+            "spectral_resolution_cm_1": null,
+            "spot_size_um": null,
+            "spot_size_note": "Not stated in the spectral library paper [8]. Older and secondary summaries give about 50 micrometres or under 100 micrometres, and the value depends on instrument version; no spot size is adopted.",
+            "mass_kg": null,
+            "dimensions": "not publicly specified in the sources accessed",
+            "power_consumption_w": null,
+            "field_of_view": null,
+            "source_urls": [
+              "https://doi.org/10.1089/ast.2022.0023",
+              "https://science.nasa.gov/photojournal/mars-2020s-sherloc-instrument"
+            ],
+            "images": [
+              {
+                "id": "sherloc_engineering_model_pia23894",
+                "description": "Close-up of an engineering model of SHERLOC, the Raman and fluorescence spectrometer on NASA's Perseverance rover.",
+                "image_type": "Engineering model photograph",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia23/pia23894/PIA23894.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/mars-2020s-sherloc-instrument",
+                "publisher": "NASA Science Photojournal (PIA23894)",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "Close-up of an engineering model of SHERLOC. The visible part is the instrument's autofocus camera. This is an engineering model, not the flight hardware on Mars.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct JPEG asset verified with HTTP 200 and image/jpeg content type on 2026-11-12. The source page also lists a TIFF download. The source page states the image was added 05/26/2020. NASA media reuse conditions were not checked on a rights page and the image is not treated as public domain."
+              }
+            ]
+          },
+          {
+            "name": "ExoMars Raman Laser Spectrometer (RLS)",
+            "type": "Planetary Raman spectrometer for the ESA ExoMars rover (Pasteur payload)",
+            "flight_status": "Flight-model stage per the ESA page, which records a flight model and states mass and power for it. The page was last updated 12 March 2020 and states that the instrument is currently in its design phase, so status may be out of date. Secondary sources state a rover launch not earlier than 2028 [7]. Not flown in the sources accessed.",
+            "units": [
+              "Optical head",
+              "Spectrometer unit",
+              "Electronics unit"
+            ],
+            "units_source": "ESA page [6]. The ESA page does not mention an instrument control and excitation unit.",
+            "mass_kg": null,
+            "mass_text_esa": "slightly over 2kg in total including all necessary interconnecting harnesses [6]",
+            "mass_kg_secondary_wikipedia": 2.4,
+            "mass_conflict_note": "Wikipedia gives 2.4 kg, attributed to ESA and conference material [7]. The ESA value is taken as the primary figure; the conflict is unresolved.",
+            "power_consumption_w": null,
+            "power_text_esa": "as little as ~30W of electrical power during operation [6]",
+            "power_range_w_secondary_wikipedia": [20, 30],
+            "laser_wavelength_nm": 532,
+            "laser_wavelength_source": "Wikipedia only (secondary) [7]; not confirmed against an ESA or instrument-team primary document in this run.",
+            "spectral_range_cm_1_secondary": [150, 3800],
+            "spectral_range_source": "Wikipedia only (secondary) [7]; not confirmed against a primary document.",
+            "dimensions": "not publicly specified in the sources accessed",
+            "purpose_per_esa": "Identify organic compounds and search for signs of life; identify biologically linked mineral products; characterise minerals formed by water-related processes and igneous minerals and their alteration products; rapidly measure samples so they can be passed to other instruments such as MOMA [6].",
+            "source_urls": [
+              "https://exploration.esa.int/web/mars/-/45103-rover-instruments",
+              "https://en.wikipedia.org/wiki/Raman_Laser_Spectrometer"
+            ],
+            "images": [],
+            "image_note": "The ESA page does not give a verifiable direct image URL; no image is shown. An INTA page with a flight-model photograph was returned HTTP 503 and was not retrieved."
+          },
+          {
+            "name": "Lunar Raman Spectrometer (LRS), Chang'e-7 rover payload",
+            "type": "Planned lunar surface Raman spectrometer (rover payload)",
+            "flight_status": "Planned. Chinese state media (23 May 2026) states Chang'e-7 is scheduled for the second half of 2026 [5]. A cislunarspace.cn article dated August 2026 states the launch is expected in August or Q3 2026 [4]. No launch confirmation was found; a rocketlaunch.org listing gives a 2027 date and a delay [11]. LRS is not confirmed as flown or operating.",
+            "rover_payloads_listed": [
+              "Panoramic camera",
+              "Rover magnetometer",
+              "Lunar Raman spectrometer (LRS)",
+              "Lunar penetrating radar",
+              "In-situ measuring system of volatiles on the lunar surface (IsMSV)"
+            ],
+            "rover_payloads_source": "National Science Review paper, Table 4 and text [2]. The Planetary Society page lists the same rover payloads [3].",
+            "spectral_range_cm_1": [300, 6000],
+            "spectral_resolution_cm_1": "better than 10",
+            "microscopic_imaging_pixels": "at least 256 x 256",
+            "laser_wavelength_nm": null,
+            "laser_power": null,
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "dimensions": null,
+            "working_distance": null,
+            "source_urls": [
+              "https://doi.org/10.1093/nsr/nwad329",
+              "https://www.planetary.org/space-missions/change-7",
+              "https://english.www.gov.cn/news/202605/23/content_WS6a118ca1c6d00ca5f9a0b33c.html"
+            ],
+            "images": [],
+            "image_note": "No verified direct image asset was located for the LRS in this run."
+          },
+          {
+            "name": "LunaR Raman spectrometer breadboard concept",
+            "type": "Lunar-oriented Raman spectrometer breadboard and conceptual design",
+            "flight_status": "Breadboard and conceptual design. Not described as flown. Laboratory tests used a commercial BWTek iRaman 532 nm unit. Breadboard test results are deferred to a companion paper (Kruzelecky et al., in preparation at the time of publication) that was not located [1].",
+            "spectral_range_cm_1_abstract": [150, 4000],
+            "spectral_range_note": "The abstract calls this a wavelength range, but the values are Raman shifts. Table 4 lists a minimum of 200-3600 cm-1 [1].",
+            "spectral_range_cm_1_table4_minimum": [200, 3600],
+            "spectral_resolution_cm_1": {"minimum": 6, "desired": 4},
+            "laser_wavelength_nm": 532,
+            "laser_type": "Continuous wave",
+            "laser_power_mw": "Not stated consistently. Table 4: 150 minimum, 1000 desired. Table 5: 30 / 100 / 150 (minimum / typical / maximum). Table 6 link budget: 500 (0.5 W), a modelled estimate.",
+            "mass_kg": "Design requirement below 3 kg (Table 4). The paper states the initial design may overpass 3 kg and that the final breadboard was redesigned. No measured breadboard mass is reported.",
+            "dimensions": null,
+            "power_consumption_w": null,
+            "scan_time": "About 90 minutes for a complete spectral scan of a target (abstract); about 1 minute per spectrum at a signal-to-noise ratio above 100:1 (Section 5); about 2 hours per target of interest in the minimum mission case (Section 6.2.1) [1].",
+            "configuration_note": "The paper describes a rover-mounted, downward-looking concept with a one-dimensional across-track scan. This is a concept only.",
+            "source_urls": [
+              "https://www.frontiersin.org/articles/10.3389/fspas.2022.1016359"
+            ],
+            "images": [],
+            "image_note": "No image was verified for this concept; paper figures were not used."
+          },
+          {
+            "name": "Compact remote time-gated Raman spectrometer (lunar in-situ prototype)",
+            "type": "Laboratory prototype",
+            "flight_status": "Laboratory prototype; the abstract describes spectra obtained in the lab and feasibility demonstration, not flight qualification. No flight is mentioned in the abstract [10].",
+            "laser_wavelength_nm": 532,
+            "laser_type": "Passively Q-switched pulsed laser [10]",
+            "gating_width_ns_upper_bound": 20,
+            "operating_range_m": [1.1, 3.0],
+            "optimal_delay_ns": [20, 33],
+            "optics": "40 mm zoom telescope; fibre-optic delay line; miniature spectrometer; intensified CCD [10]",
+            "spectral_range_cm_1": null,
+            "spectral_resolution_cm_1": null,
+            "mass_kg": null,
+            "dimensions": null,
+            "power_consumption_w": null,
+            "source_urls": [
+              "https://doi.org/10.3390/rs17050860"
+            ],
+            "images": [],
+            "image_note": "No image verified.",
+            "relation_to_lrs": "A search-result text for the paper states that the Chang'e-7 rover will carry the first Lunar Raman Spectrometer. This was not verified in the full text (the PDF body was not readable) and is treated as unconfirmed."
+          }
+        ],
+        "dimensions_and_proportions": "The examples have different optical designs and envelopes. SHERLOC's dimensions are not publicly specified in the sources accessed. ESA's RLS dimensions are not stated on the ESA page. The LRS and LunaR dimensions are not publicly specified in the sources accessed (LunaR gives a mass requirement only). The time-gated prototype dimensions are not stated in the readable paper text. Dimensions should not be inferred from optical parameters such as focal length or telescope size.",
+        "mass_and_weight": "SHERLOC: not publicly specified in the sources accessed. ExoMars RLS: slightly over 2 kg including interconnecting harnesses per ESA [6]; Wikipedia gives 2.4 kg [7]; the conflict is unresolved. LRS: not stated in the NSR text retrieved [2]. LunaR: design requirement below 3 kg, no measured breadboard mass [1]. Prototype: not stated.",
+        "power_requirements": "SHERLOC: not publicly specified. ExoMars RLS: as little as about 30 W during operation per ESA [6]; Wikipedia gives 20-30 W [7]. LRS: not stated in the NSR text retrieved [2]. LunaR: the paper gives a laser input voltage of 4.5-5.5 VDC and a modelled link-budget laser power of 0.5 W; instrument power consumption is not given [1]. Prototype: not stated."
+      },
+      "environmental_and_operational_requirements": "A lunar Raman spectrometer would operate in vacuum, with large surface temperature changes, strong sunlight and deep shadow, radiation and fine dust. Solar background: sunlight contains light at many wavelengths and can overwhelm a weak Raman signal; the time-gated prototype was designed to address this problem [10]. The DUV approach used by SHERLOC on Mars reduces overlap with fluorescence background [8], but lunar daylight conditions differ from Mars and have not been tested for a lunar Raman instrument. Focus and standoff: a Raman signal is strongest when the laser focuses on the target. SHERLOC uses an autofocus camera [9]; dust, surface roughness and rover motion complicate focusing. Sample state: a surface instrument measures material in its natural state, which changes the expected signal and background compared with a prepared sample. The LunaR concept measures a line of points on a surface [1]. Thermal control: lasers and detectors need thermal control; no thermal requirement for the lunar LRS is published in the text retrieved [2]. Power and time: the LunaR concept's scan time of about 90 minutes per complete scan [1] suggests that rover-scale Raman analysis would need planned traverse stops and power budgets. Other operational values are not publicly specified for the LRS.",
+      "limitations": "Raman scattering is inherently weak; integration time, laser power and detector sensitivity trade off against measurement speed and sample damage. Many natural materials fluoresce, and fluorescence can mask Raman peaks; wavelength choice and time-gating are mitigations, not universal solutions. Raman libraries cover a finite set of reference compounds, so unknown or mixed materials can produce peaks that are hard to assign without a reference library, as SHERLOC's library-building effort illustrates [8]. A Raman instrument analyses a small spot; SHERLOC's spot size is not confirmed by the primary paper used here. Interpreting a surface requires many measurements and an understanding of heterogeneity. Most lunar Raman designs are breadboards or prototypes; the LRS is the most advanced lunar example in the sources accessed, but its mass, power and laser parameters are not publicly specified. Value conflicts: the ESA RLS mass (about 2 kg) and Wikipedia's 2.4 kg differ [6][7]; LunaR laser power is given with conflicting values across tables [1].",
+      "transportation_and_deployment": {
+        "overview": "A Raman spectrometer on the Moon would be a surface payload, most likely part of a rover or arm-mounted system. The Chang'e-7 LRS is described as a rover payload [2][3]. The LunaR concept is described as rover-mounted with a downward-looking scan [1]. SHERLOC is documented as mounted on an arm turret on Mars [9]. These are documented or proposed configurations; none establishes lunar lander or rover compatibility.",
+        "transportation_process": [
+          "Integrate the instrument on Earth into the spacecraft or rover, including optical alignment and thermal protection.",
+          "Launch the spacecraft on a launch vehicle.",
+          "Transfer the spacecraft to the Moon.",
+          "Land or deliver the rover or surface system.",
+          "Release or deploy the rover, arm or instrument head.",
+          "Position the instrument at the target, focus it, and operate it with power and data interfaces."
+        ],
+        "deployment_methods": "For the Chang'e-7 LRS, a rover payload needs stowage, release, mobility integration and traverse-based operation. The NSR paper lists the rover payloads but the mounting configuration, arm or positioning method, and power and data interfaces for the LRS are not stated in the text retrieved [2]. The Planetary Society states that the rover is based on the Yutu design from Chang'e-3 and Chang'e-4 [3]. For the LunaR concept, a rover-mounted downward-looking scan is described [1]. For SHERLOC, the instrument is positioned by the robotic arm on Mars [9].",
+        "historical_examples": "SHERLOC has operated on Perseverance on Mars [8][9]. The ExoMars RLS was developed for ESA's rover mission but had not flown in the sources accessed [6][7]. No lunar Raman instrument is confirmed operating on the Moon in the sources accessed.",
+        "compatibility_assessment": "No lunar lander or rover compatibility is asserted for any Raman spectrometer in this article. The Chang'e-7 LRS would need verified mounting and interface details from CNSA or the mission team before any compatibility could be stated. LunaR's rover-mounted scan is a concept only.",
+        "images": []
+      },
+      "historical_significance": "Raman spectroscopy has a short history in planetary exploration. SHERLOC has been operating on Mars on NASA's Perseverance rover [8][9], and the ExoMars RLS was developed for ESA's rover mission but had not flown in the sources accessed [6][7]. On the Moon, the Chang'e-7 LRS would be a significant step if it flies and operates, because the sources accessed describe it as a lunar Raman instrument on a rover [2][3]. The 2025 time-gated prototype reflects continued lunar-oriented development [10]. No lunar Raman measurement is confirmed in the sources accessed.",
+      "limitations_and_uncertainties": "Chang'e-7 status: the launch was planned for the second half of 2026 [4][5]; the article found no confirmation of launch, arrival at the Moon, or LRS operation, and a conflicting listing gives a 2027 date [11]. The LRS should be treated as planned until a primary CNSA or mission-team source confirms its status. LRS mass, power and laser parameters are not stated in the NSR text retrieved [2]; LRS laser wavelength, working distance and sample-handling method are unresolved. ESA RLS values: the ESA page is dated 12 March 2020 and states the instrument is in design [6]; Wikipedia values for mass, power, laser and spectral range are secondary [7] and not checked against an ESA or instrument-team primary source. SHERLOC mass, dimensions and power are not stated in the spectral library paper [8]; a flight-instrument mass or power has not been verified. No lunar Raman spectrum from a surface instrument is confirmed in the sources accessed. LunaR breadboard test results are deferred to a companion paper that was not located [1]; LunaR performance values are design requirements or model assumptions. Time-gated prototype: spectral range, resolution, mass and power were not readable in the paper retrieved [10]; its relation to the LRS is not verified. Other planetary Raman capabilities, including any remote Raman mode on other rover instruments, were not researched in this run and are not described.",
+      "images": [
+        {
+          "id": "sherloc_engineering_model_pia23894",
+          "description": "Close-up of an engineering model of SHERLOC, the Raman and fluorescence spectrometer on NASA's Perseverance rover.",
+          "image_type": "Engineering model photograph",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia23/pia23894/PIA23894.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/mars-2020s-sherloc-instrument",
+          "publisher": "NASA Science Photojournal (PIA23894)",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Close-up of an engineering model of SHERLOC. The visible part is the instrument's autofocus camera. This is an engineering model, not the flight hardware on Mars.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct JPEG asset verified with HTTP 200 and image/jpeg content type on 2026-11-12. The source page also lists a TIFF download. NASA media reuse conditions were not checked on a rights page and the image is not treated as public domain."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {"number": 1, "title": "LunaR: Overview of a versatile Raman spectrometer for lunar exploration", "authors": "Cloutis, E. A., Caudill, C., Lalla, E. A., et al.", "publisher": "Frontiers in Astronomy and Space Sciences, 9", "date": "2022-10-07", "doi": "10.3389/fspas.2022.1016359", "url": "https://www.frontiersin.org/articles/10.3389/fspas.2022.1016359"},
+        {"number": 2, "title": "Scientific objectives and payload configuration of the Chang'E-7 mission", "authors": "Wang, C., Jia, Y., Xue, C., et al.", "publisher": "National Science Review, 11(2)", "date": "2023-12-29 (corrected 2024-02-13)", "doi": "10.1093/nsr/nwad329", "url": "https://doi.org/10.1093/nsr/nwad329"},
+        {"number": 3, "title": "Chang'e-7: China's water-hunting lunar south pole mission (mission page)", "authors": null, "publisher": "The Planetary Society", "date": "not visible on page", "doi": null, "url": "https://www.planetary.org/space-missions/change-7"},
+        {"number": 4, "title": "Change-7 Scheduled for Q3 Launch, Focusing on Lunar South Pole Water Ice Detection", "authors": null, "publisher": "cislunarspace.cn (secondary)", "date": "2026-08-01", "doi": null, "url": "https://cislunarspace.cn/en/space-news/2026/08/2026-08-01-chang-e-7-q3-launch-lunar-south-pole/"},
+        {"number": 5, "title": "Chang'e-7 lunar exploration mission scheduled for the second half of 2026 (Xinhua)", "authors": null, "publisher": "English.gov.cn / Xinhua", "date": "2026-05-23", "doi": null, "url": "https://english.www.gov.cn/news/202605/23/content_WS6a118ca1c6d00ca5f9a0b33c.html"},
+        {"number": 6, "title": "The ExoMars Rover Instrument Suite: RLS - Raman Spectrometer", "authors": null, "publisher": "ESA (last update 12 March 2020)", "date": "2020-03-12", "doi": null, "url": "https://exploration.esa.int/web/mars/-/45103-rover-instruments"},
+        {"number": 7, "title": "Raman Laser Spectrometer (secondary source; revision last edited 15 July 2024)", "authors": null, "publisher": "Wikipedia", "date": "2024-07-15 (revision)", "doi": null, "url": "https://en.wikipedia.org/wiki/Raman_Laser_Spectrometer"},
+        {"number": 8, "title": "A Deep Ultraviolet Raman and Fluorescence Spectral Library of 51 Organic Compounds for the SHERLOC Instrument Onboard Mars 2020", "authors": "Razzell Hollis, J., Sharma, S., Abbey, W., et al.", "publisher": "Astrobiology, 23(1), 1-23", "date": "2023 (issue); online 2022-12-30", "doi": "10.1089/ast.2022.0023", "url": "https://doi.org/10.1089/ast.2022.0023"},
+        {"number": 9, "title": "Mars 2020's SHERLOC Instrument (Photojournal PIA23894)", "authors": null, "publisher": "NASA Science Photojournal / NASA/JPL-Caltech", "date": "2020-05-26 (image added)", "doi": null, "url": "https://science.nasa.gov/photojournal/mars-2020s-sherloc-instrument"},
+        {"number": 10, "title": "Development and Testing of a Compact Remote Time-Gated Raman Spectrometer for In Situ Lunar Exploration", "authors": "Zhao, H., Liu, X., Xu, W., et al.", "publisher": "Remote Sensing, 17(5), 860", "date": "2025 (issue; exact date not confirmed)", "doi": "10.3390/rs17050860", "url": "https://doi.org/10.3390/rs17050860"},
+        {"number": 11, "title": "Chang'e 7 Mission (listing; not read in full; states a 2027 date and delay)", "authors": null, "publisher": "rocketlaunch.org", "date": "not visible", "doi": null, "url": "https://rocketlaunch.org/mission-long-march-5-change-7"}
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "physical_specifications.examples[0]": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url, source_page_url and reference URLs in this file have query strings and fragments removed. The SHERLOC direct JPEG asset was verified with HTTP 200 and image/jpeg content type and is listed on its NASA source page. No other image asset was verified, so the ExoMars RLS and Chang'e-7 LRS entries carry no images. Overview and transportation image arrays are empty because no verified image is displayed in those sections."
+  },
+  "data_quality_notes": [
+    "Chang'e-7 status: the official plan is the second half of 2026 [5]; an August 2026 secondary article expects an August or Q3 2026 launch [4]; a rocketlaunch.org listing gives a 2027 date and delay [11]. No launch or lunar arrival was confirmed in the sources accessed. The LRS is recorded as planned, not flown.",
+    "LRS specifications are from the NSR paper Table 4 as read in the first 100,000 characters of the page text (page length about 164,000 characters). Spectral range 300-6000 cm-1 and resolution better than 10 cm-1 are as stated. Mass, power, laser wavelength and laser power are not stated in the text retrieved; this has not been confirmed against the rest of the page or a Chinese primary source.",
+    "ExoMars RLS: the ESA page (last update 12 March 2020) gives a mass slightly over 2 kg and power as little as about 30 W, but also says the instrument is in design. Wikipedia gives 2.4 kg and 20-30 W and gives the laser (532 nm) and spectral range (150-3800 cm-1); those are secondary values and conflict with or are not confirmed by the ESA page. Mass conflict unresolved.",
+    "SHERLOC mass, dimensions, power and field of view are not stated in the Astrobiology 2023 paper text read [8]. Spot size is not stated there; secondary summaries conflict (about 50 micrometres versus under 100 micrometres), so no spot size is recorded. Flight status is from the same paper, which states that Perseverance carries SHERLOC.",
+    "SHERLOC photograph: an engineering model, not flight hardware. The direct JPEG asset returned HTTP 200 (image/jpeg). Reuse conditions on the NASA rights page were not checked, so the image is not treated as public domain.",
+    "No verified image for ExoMars RLS: the INTA ExoMars Raman page returned HTTP 503 and no ESA direct image URL was found in search. No image was invented; the entry carries no images.",
+    "LunaR: the tables give conflicting laser power values (150 mW minimum / 1000 mW desired; 30/100/150 mW; 0.5 W link-budget model). The breadboard test results are in a companion paper (Kruzelecky et al., in preparation at publication) that was not located. The rover-mounted downward-looking configuration was taken from a search-result summary of the paper and not confirmed in the full text.",
+    "Zhao et al. 2025 (time-gated prototype): the MDPI page returned HTTP 403 and the PDF body was not readable by the fetch tool, so only the abstract-level values are recorded. The statement that the Chang'e-7 rover will carry the first Lunar Raman Spectrometer appears only in a search-result text and is not verified.",
+    "Image rights: no image rights beyond the NASA source page were checked for the SHERLOC photograph. The NSR and Wikipedia pages were not used for any image.",
+    "Other planetary Raman capabilities, such as any remote Raman mode on Mars 2020 SuperCam or other rover instruments, were not researched in this run and are not described.",
+    "Chinese-language sources: a Chinese-language review and a Chinese search snippet mention the Chang'e-7 Raman spectrometer but give no technical specifications; they are not used as evidence in this article.",
+    "No lunar landing-site recommendations are included. Mission target areas are described only as reported for mission context, and are not a site recommendation."
+  ]
+}

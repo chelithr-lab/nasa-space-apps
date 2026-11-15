@@ -1,0 +1,318 @@
+{
+  "catalogue_id": 274,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 274,
+    "name": "Robotic deployment mechanism",
+    "article": {
+      "overview": "A robotic deployment mechanism moves a payload, rover, instrument, boom, arm or sensor from a stowed position on a lander or spacecraft into an operating position on a planetary surface. It uses motors, springs, cables, pulleys, hinges, ramps or other actuators, and may be commanded remotely or assisted by people. 'Robotic deployment mechanism' describes a function rather than one standard design, so this article reviews published examples rather than a single instrument. The examples reviewed here fall into different categories that should not be merged. The Apollo Lunar Roving Vehicle (LRV) was deployed with crew assistance and was used on the Apollo 15, 16 and 17 missions [1]. The Luna 17 and Chang'e-3 landers carried ramps that allowed the robotic rovers Lunokhod 1 and Yutu to leave the lander [4][5]. The Surveyor 3 surface sampler was a motor-driven scoop arm on a lander that landed in April 1967 [2][3][6]; it is a deployable arm rather than a payload-release mechanism. The catalogue lists 'Robotic manipulator arm' separately (payload ID 267); this article treats the Surveyor device only as a deployable arm example.",
+      "description": "Deployment hardware usually performs four linked tasks. First, restraint and release: holding the payload safely during launch and landing, then releasing it on command. Second, motion from stowed to operating position: moving the payload from a compact configuration to its working configuration, which may involve unfolding, lowering, tilting or extending. Third, surface transfer: giving the vehicle or instrument a safe route onto the ground, such as a ramp, a cable-lowered frame or an extended arm. Fourth, setup and verification: confirming that the payload is level, connected and in its intended configuration, often with telemetry or imagery from the lander. The Apollo LRV was folded and stored on the Lunar Module and lowered to the surface by pulleys and braked reels, with crew assistance [1]. The Luna 17 lander let down two pairs of ramps on opposite sides of the spacecraft, and Lunokhod 1 descended a pair of these ramps to the surface [5]. The Chang'e-3 lander carried forklift-type ramps from which the Yutu rover deployed to the right rear of the lander [4]. The Surveyor 3 sampler was an extendable arm mounted on the spacecraft that could dig trenches and make bearing tests [2][6].",
+      "scientific_purpose_and_applications": "A deployment mechanism is an enabling capability rather than a primary science instrument. Its value lies in placing a payload where it can make measurements or travel to places that the lander could not reach by itself. Mobility beyond the lander: the LRV allowed the Apollo 15, 16 and 17 crews to travel away from the Lunar Module. NSSDC reports maximum ranges from the Lunar Module of 5.0 km (Apollo 15), 4.5 km (Apollo 16) and 7.6 km (Apollo 17) [1]. Robotic surface exploration: Lunokhod 1 and Yutu were robotic rovers that used lander ramps to reach the surface [4][5]. Soil measurement: the Surveyor 3 sampler was used to dig trenches and make bearing tests, which provided direct mechanical data on the surface material [2][6][3].",
+      "operating_principle": "Three operating principles appear in the examples reviewed. Cable- and reel-assisted lowering (Apollo LRV): the LRV was folded and stored in Lunar Module quad 1 with the underside of the chassis facing out. NSSDC states that one astronaut climbed the egress ladder and released the rover, while the second astronaut on the ground lowered it 'through the use of reels and tapes.' NSSDC describes the deployment system as 'a system of pulleys and braked reels using ropes and cloth tapes' [1]. The procedure was crew-operated and was not an autonomous robotic process. Ramp-based rover egress (Luna 17 and Chang'e-3): both landers carried ramps that extended from the lander body. The Orbital Focus Luna 17 timeline states that once on the Moon the Luna 17 lander let down two pairs of ramps on opposite sides of the spacecraft, while its descent entry refers to a pair of ramps, and it lists Lunokhod 1 leaving the lander at 06:28 UTC on 17 November 1970 [5]. The Planetary Society caption for a Chang'e-3 lander photograph describes forklift-type ramps from which the rover deployed to the right rear of the lander [4]. A simple ramp converts the rover's own mobility into a method of leaving the lander, but its safety depends on the slope, surface and ramp stiffness, which are not published for these missions in the sources reviewed. Motor-driven arm extension (Surveyor 3): the Smithsonian record describes the sampler as an extendable scoop manufactured by the Hughes Aircraft Company, consisting of a claw-like device at the end of a frame that extends several feet through a gear drive and electrical motor [2]. The Scott and Roberson 1968 paper states that, when the sampler was adapted for Surveyor 3, a means for measuring current drawn by the motors during operation was incorporated [3].",
+      "scientific_importance": "Deployment mechanisms determine when and where a robotic or crewed system can reach the surface. For Apollo, the LRV extended the area that astronauts could survey and sample. For Luna 17 and Chang'e-3, the ramps allowed mobile rovers to begin surface operations after a single landing. For Surveyor 3, the arm provided direct measurements of surface mechanical behaviour, and Scott and Roberson's 1968 paper reports the lunar surface tests and analyses from this sampler [3]. The scientific return of each deployment depends on the instruments and experiments carried after deployment. The sources reviewed do not quantify scientific output from the deployment mechanisms themselves.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, force, speed or actuator specification for a robotic deployment mechanism. The design depends on the payload being moved, the lander interface, the landing environment and whether the operation is crewed, commanded or automatic. The values below describe named examples only. Where a value is not published in the sources reviewed, it is stated as not publicly specified. Tables are not used because the four examples differ in kind and do not provide directly comparable data.",
+        "examples": [
+          {
+            "name": "Apollo Lunar Roving Vehicle deployment system",
+            "type": "Crewed deployment of a folding rover from the Lunar Module quad 1 bay",
+            "flight_status": "Flown. NSSDC gives range data for the Apollo 15, 16 and 17 missions, on which the LRV was used [1].",
+            "mass_kg": 210,
+            "payload_capacity_additional_kg": 490,
+            "frame_length_m": 3.1,
+            "wheelbase_m": 2.3,
+            "max_height_m": 1.14,
+            "ground_clearance_fully_loaded_cm": 36,
+            "wheel_diameter_cm": 81.8,
+            "wheel_width_cm": 23,
+            "steering_radius_m": 3.1,
+            "power_source": "Two 36-volt silver-zinc potassium hydroxide non-rechargeable batteries with a capacity of 121 amp-hr [1]",
+            "deployment_hardware": "Folding chassis stored in quad 1; a system of pulleys and braked reels using ropes and cloth tapes; crew-operated lowering from the Lunar Module [1].",
+            "deployment_mechanism_values": "Lowering force, reel speed, tape load and deployment time are not publicly specified in the NSSDC summary.",
+            "source_urls": [
+              "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html"
+            ],
+            "images": [
+              {
+                "id": "lrv_deployment_art",
+                "description": "NSSDC illustration labelled 'Lunar Roving Vehicle Deployment' for the Apollo Lunar Roving Vehicle deployment.",
+                "image_type": "Illustration (type inferred from file name and page layout; not stated on source page)",
+                "image_url": "https://nssdc.gsfc.nasa.gov/planetary/image/lrv_deployment_art.jpg",
+                "source_page_url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html",
+                "publisher": "NASA National Space Science Data Center",
+                "credit": "NASA NSSDC; illustrator not named",
+                "caption": "Illustration labelled 'Lunar Roving Vehicle Deployment' on NSSDC's Apollo LRV page. The page says it shows an earlier version of the planned deployment.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct NASA NSSDC image URL verified over HTTP (200, image/jpeg); no query string or fragment. The NSSDC page lists two images with this caption (lrv_display.jpg and lrv_deployment_art.jpg); lrv_deployment_art.jpg is used on the basis of file name and page layout. Artist/illustrator and rights are not stated; confirm before republication."
+              }
+            ]
+          },
+          {
+            "name": "Luna 17 lander ramps for Lunokhod 1",
+            "type": "Ramps on a robotic lander, used by a remotely commanded rover to leave the lander",
+            "flight_status": "Flown. Luna 17 landed in Mare Imbrium on 17 November 1970, and Lunokhod 1 left the lander at 06:28 UTC the same day [5]. These dates come from the Orbital Focus timeline, a secondary source.",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in the sources reviewed.",
+            "ramp_description": "Two pairs of ramps on opposite sides of the spacecraft in the Orbital Focus narrative; the timeline entry for Lunokhod 1's descent refers to a pair of ramps [5].",
+            "actuator_and_load_values": "Not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://www.orbitalfocus.uk/Diaries/Luna/Luna17.php"
+            ],
+            "images": []
+          },
+          {
+            "name": "Surveyor 3 surface sampler arm",
+            "type": "Motor-driven arm carrying a scoop, mounted on a Surveyor lunar lander and operated through the spacecraft",
+            "flight_status": "Flown on Surveyor 3. The Surveyor archive records a landing at 00:04:42 UTC on 20 April 1967 and last contact at 00:04 UTC on 4 May 1967 [6]. The archive states that the surface sampler accumulated 18 hours of operation [6]; the Smithsonian record gives a total of 18 hr 22 min over 10 separate occasions [2].",
+            "other_missions": "The Smithsonian record states that the sampler was never deployed on Surveyor 4 because of the mission failure, and that performance was flawless during 36 hr of operation between 11 and 23 January 1968 on Surveyor 7 [2].",
+            "mass_kg": null,
+            "folded_dimensions_cm": [
+              50.2,
+              30.5,
+              19
+            ],
+            "extension_length_m": "Not verified. A secondary summary cites about 1.5 m; this was not checked against the Scott and Roberson paper and is not used as a specification.",
+            "motor_torque_and_power": "Not publicly specified in the sources reviewed.",
+            "mounting_and_modifications": "Scott and Roberson state that the sampler was added to the Surveyor 3 payload after Surveyor 1 succeeded, although it had originally been planned for later Surveyors. It was adapted to match the mounting position and electronics interface of the approach television camera, modified to work within Surveyor 3's reduced telemetry and commanding capability, had some planned measurement systems removed, and gained a means of measuring motor current [3].",
+            "source_urls": [
+              "https://airandspace.si.edu/collection-objects/soil-sampler-lunar-lander-surveyor/nasm_A19700123000",
+              "https://sic.lpl.arizona.edu/surveyor-digitization/surveyor-iii",
+              "https://authors.library.caltech.edu/51451"
+            ],
+            "images": [
+              {
+                "id": "smithsonian_surveyor_soil_sampler_gallery",
+                "description": "Smithsonian gallery image of the Surveyor lunar lander soil sampler, identified as NASM-A19700123000cp01.",
+                "image_type": "Museum collection object photograph",
+                "image_url": null,
+                "source_page_url": "https://airandspace.si.edu/collection-media/NASM-A19700123000cp01",
+                "publisher": "Smithsonian National Air and Space Museum",
+                "credit": "Smithsonian National Air and Space Museum",
+                "caption": "Smithsonian gallery image for the Soil Sampler, Lunar Lander, Surveyor object record. The page shows no caption text for the image.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "No direct asset URL without query parameters was verified, so image_url is null. The Smithsonian display and download endpoints (ids.si.edu deliveryService and download) require query parameters and were not used. Usage conditions apply; consult Smithsonian terms of use before republication. Referenced in the Markdown as a linked source-page image reference, not an embedded image."
+              }
+            ]
+          },
+          {
+            "name": "Chang'e-3 lander ramps for Yutu",
+            "type": "Forklift-type ramps on a Chinese lunar lander, from which the Yutu rover deployed",
+            "flight_status": "Flown. The Planetary Society caption dates the lander photograph to on or about 21 December 2013 and shows the ramps [4]. Secondary search results describe a landing on 14 December 2013 and a deployment several hours later; these were not verified against an official CNSA or CAST source and are not used as specifications.",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in the sources reviewed.",
+            "ramp_description": "Forklift-type ramps from which the rover deployed to the right rear of the lander [4].",
+            "actuator_and_load_values": "Not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://www.planetary.org/space-images/change-3-lander-from-the-southeast"
+            ],
+            "images": [
+              {
+                "id": "change3_lander_southeast",
+                "description": "Chang'e-3 lander photographed from the southeast, showing the forklift-type ramps at the right rear.",
+                "image_type": "Surface photograph taken by the Yutu rover",
+                "image_url": "https://planetary.s3.amazonaws.com/web/assets/pictures/20141219_Lander3_20131221.jpg",
+                "source_page_url": "https://www.planetary.org/space-images/change-3-lander-from-the-southeast",
+                "publisher": "The Planetary Society (hosting record); original image credited to CNSA and CAS",
+                "credit": "CNSA and Chinese Academy of Sciences (CAS); the Planetary Society page asks users to credit both",
+                "caption": "Chang'e 3 lander from the southeast, December 21, 2013. Yutu took this photo as it toured around the lander.",
+                "section_placements": [
+                  "physical_specifications.examples[3]"
+                ],
+                "notes": "Direct image URL verified over HTTP (200, image/jpeg); no query string or fragment. The source page states that no official usage guidelines were found and that noncommercial reuse with attribution appears to be allowed; this is not formally confirmed. Image is hosted by a third party rather than an official agency, so it is not counted as an official-page verification."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "The four examples do not provide comparable dimensional, mass or power data. The Apollo LRV is a crewed vehicle with published mass, dimensions and battery data. The Luna 17 and Chang'e-3 ramps are lander structures whose dimensions are not published in the sources reviewed. The Surveyor sampler is a small arm with a folded envelope given by the museum record. These values should not be compared directly. Any engineering value needed for a new design must be taken from the specific mission documentation.",
+        "mass_and_weight": "The Apollo LRV is documented at 210 kg with an additional 490 kg payload capacity [1]. The Surveyor sampler's folded envelope is documented by the Smithsonian [2], but its mass is not publicly specified in the sources reviewed. The Luna 17 and Chang'e-3 ramp masses are not publicly specified. Mass values should not be compared across these examples, because they describe different kinds of hardware.",
+        "power_requirements": "For the Apollo LRV, NSSDC describes two 36-volt silver-zinc potassium hydroxide non-rechargeable batteries with a capacity of 121 amp-hr [1]. The power requirements of the Surveyor sampler motor and of any ramp actuators are not publicly specified in the sources reviewed. The Surveyor sampler's motor-current measurement is described in the Scott and Roberson paper [3], but no power value is given in the abstract."
+      },
+      "environmental_and_operational_requirements": "Deployment mechanisms operate in the lunar environment: no substantial atmosphere, wide temperature swings, dust, and lighting that changes with the lunar day. The Apollo LRV navigation system included a Sun-shadow device that could give a manual heading based on the direction of the Sun, so solar geometry was part of its operating environment [1]. Surface conditions matter. The Surveyor sampler was designed to dig trenches and make bearing tests [2][6], so soil strength and cohesion directly affect its performance. Ramps depend on a surface that can support the rover and a slope that the rover can descend. The sources reviewed do not publish slope or bearing limits for the Luna 17 or Chang'e-3 ramps. Thermal conditions also affect deployment, but the sources reviewed do not publish thermal tolerance data for the LRV deployment hardware, the ramps or the Surveyor sampler.",
+      "limitations": "Generic class: the four examples use different mechanisms and are not interchangeable. Crew dependence: the Apollo LRV deployment depended on astronaut actions. It is a useful historical deployment reference, but it is not an example of autonomous robotic deployment. Limited published engineering data: the sources reviewed do not publish actuator forces, ramp load limits, deployment timing or failure statistics for the Luna 17 and Chang'e-3 ramps. Mission-specific results: Surveyor 3 operated for a limited period, and the Surveyor 4 unit was not deployed. Results from one mission do not describe the others. Secondary sourcing: some details, particularly the Luna 17 ramp description and departure time, and the Chang'e-3 landing and deployment timing, rely on secondary sources.",
+      "transportation_and_deployment": {
+        "overview": "A robotic deployment mechanism is normally integrated into a lander, rover or spacecraft, so its transportation constraints belong to the host system. The sections below describe each example's path from Earth to the surface only as far as the sources reviewed allow.",
+        "transportation_process": [
+          "Earth integration and launch: the Apollo LRV was folded and stored in the Lunar Module quad 1 bay before flight [1]. Lunokhod 1 was carried on Luna 17 and descended the lander's ramps [5]. The Surveyor sampler was mounted on the Surveyor 3 spacecraft [3]. The Chang'e-3 rover was carried on the lander until it deployed from the ramps [4]. The launch vehicles and integration sequences are not described in detail in the sources reviewed.",
+          "Lunar transfer and landing delivery: each example reached the Moon as part of a larger spacecraft or lander. The sources reviewed do not describe the transfer trajectories in enough detail to assess them for any deployment mechanism.",
+          "Deployment, setup, power and data: the Apollo LRV was lowered from the Lunar Module by its crew using tapes, reels and pulleys [1], as shown in the NSSDC illustration (an earlier planned sequence, according to the NSSDC page). The Luna 17 rover drove down the lander's ramps [5]. The Chang'e-3 Yutu rover deployed from the lander's forklift-type ramps [4]. The Surveyor sampler operated through the spacecraft, and the Surveyor 3 configuration had to work within reduced telemetry and commanding capability [3]. The sources reviewed do not describe the power or data interfaces of the ramps or the sampler.",
+          "Thermal and mechanical interfaces: the Apollo LRV's lowering loads are not published in the NSSDC summary [1]. The Surveyor sampler's electronics interface and camera mounting location were changed for Surveyor 3 [3]. The thermal and mechanical interfaces of each ramp or arm are not published in the sources reviewed.",
+          "Compatibility: no compatibility with a specific lander, rover or spacecraft is asserted in this article. Compatibility would require verified mass, dimension, mounting, landing-load, ramp or arm-geometry, power and communication interface data for the flight configuration."
+        ],
+        "deployment_methods": "Deployment methods reviewed are: crew-assisted cable and reel lowering of the Apollo LRV from the Lunar Module [1]; ramps from robotic landers for Lunokhod 1 (Luna 17) and Yutu (Chang'e-3) [4][5]; and a motor-driven extendable arm on Surveyor 3 [2][3], which is a deployable arm rather than a release mechanism.",
+        "historical_examples": "The Apollo LRV deployment let crews travel several kilometres from the Lunar Module on three missions [1]. The Luna 17 ramps were used to put the remotely controlled rover Lunokhod 1 onto the surface [5]. The Chang'e-3 ramps were used by the Yutu rover [4]. The Surveyor 3 sampler provided direct mechanical measurements of lunar soil by a robotic arm [3][6].",
+        "compatibility_assessment": "No compatibility with a specific lander, rover or spacecraft is asserted. Compatibility for any future deployment mechanism would need to be assessed from verified mass, dimensions, mounting points, landing loads, ramp or arm geometry, power, communications and thermal interfaces for the flight configuration. The sources reviewed do not provide these for a generic robotic deployment mechanism.",
+        "images": [
+          {
+            "id": "lrv_deployment_art",
+            "description": "NSSDC illustration labelled 'Lunar Roving Vehicle Deployment' for the Apollo Lunar Roving Vehicle deployment.",
+            "image_type": "Illustration (type inferred from file name and page layout; not stated on source page)",
+            "image_url": "https://nssdc.gsfc.nasa.gov/planetary/image/lrv_deployment_art.jpg",
+            "source_page_url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html",
+            "publisher": "NASA National Space Science Data Center",
+            "credit": "NASA NSSDC; illustrator not named",
+            "caption": "Illustration labelled 'Lunar Roving Vehicle Deployment' on NSSDC's Apollo LRV page. The page says it shows an earlier version of the planned deployment.",
+            "section_placements": [
+              "overview",
+              "physical_specifications.examples[0]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct NASA NSSDC image URL verified over HTTP (200, image/jpeg); no query string or fragment. The NSSDC page lists two images with this caption (lrv_display.jpg and lrv_deployment_art.jpg); lrv_deployment_art.jpg is used on the basis of file name and page layout. Artist/illustrator and rights are not stated; confirm before republication."
+          }
+        ]
+      },
+      "historical_significance": "The Apollo LRV deployment let crews travel several kilometres from the Lunar Module on three missions [1]. The Surveyor 3 sampler provided direct mechanical measurements of lunar soil by a robotic arm, and Scott and Roberson's 1968 paper is a primary technical record of those tests [3]. The Luna 17 ramps were used to put the remotely controlled rover Lunokhod 1 onto the surface [5]. The Chang'e-3 ramps were used by the Yutu rover [4].",
+      "limitations_and_uncertainties": "Luna 17 ramp detail: the ramp description and departure time rely on the Orbital Focus timeline, a secondary source. A NASA or Soviet primary source was not verified for these details; the Orbital Focus narrative and timeline differ in describing two pairs versus a pair of ramps. Lunokhod 1 physical values: no mass, dimensions or actuator values for Lunokhod 1 or its ramps are verified in this article. Chang'e-3 sequence: the Planetary Society caption confirms the forklift-type ramps and the rover's exit to the right rear. Landing and deployment timing from search results could not be confirmed against an official CNSA or CAST technical source, and the abstract of a CAST IAC-14 paper located during research did not describe the ramp mechanism. Surveyor sampler arm length: the 1.5 m extension length is reported in a secondary summary but is not verified against the Scott and Roberson paper. Surveyor sampler image: no direct image asset URL was verified; the museum record is referenced by its source page only. Apollo LRV images: NSSDC lists two images with the caption 'Lunar Roving Vehicle Deployment'; the page text does not say which file it refers to as the earlier planned sequence, and this article uses lrv_deployment_art.jpg on the basis of file name and page layout. Generic specifications: no verified mass, force, speed or actuator specification applies to a generic robotic deployment mechanism.",
+      "images": [
+        {
+          "id": "lrv_deployment_art",
+          "description": "NSSDC illustration labelled 'Lunar Roving Vehicle Deployment' for the Apollo Lunar Roving Vehicle deployment.",
+          "image_type": "Illustration (type inferred from file name and page layout; not stated on source page)",
+          "image_url": "https://nssdc.gsfc.nasa.gov/planetary/image/lrv_deployment_art.jpg",
+          "source_page_url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html",
+          "publisher": "NASA National Space Science Data Center",
+          "credit": "NASA NSSDC; illustrator not named",
+          "caption": "Illustration labelled 'Lunar Roving Vehicle Deployment' on NSSDC's Apollo LRV page. The page says it shows an earlier version of the planned deployment.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct NASA NSSDC image URL verified over HTTP (200, image/jpeg); no query string or fragment. The NSSDC page lists two images with this caption (lrv_display.jpg and lrv_deployment_art.jpg); lrv_deployment_art.jpg is used on the basis of file name and page layout. Artist/illustrator and rights are not stated; confirm before republication."
+        },
+        {
+          "id": "change3_lander_southeast",
+          "description": "Chang'e-3 lander photographed from the southeast, showing the forklift-type ramps at the right rear.",
+          "image_type": "Surface photograph taken by the Yutu rover",
+          "image_url": "https://planetary.s3.amazonaws.com/web/assets/pictures/20141219_Lander3_20131221.jpg",
+          "source_page_url": "https://www.planetary.org/space-images/change-3-lander-from-the-southeast",
+          "publisher": "The Planetary Society (hosting record); original image credited to CNSA and CAS",
+          "credit": "CNSA and Chinese Academy of Sciences (CAS); the Planetary Society page asks users to credit both",
+          "caption": "Chang'e 3 lander from the southeast, December 21, 2013. Yutu took this photo as it toured around the lander.",
+          "section_placements": [
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Direct image URL verified over HTTP (200, image/jpeg); no query string or fragment. The source page states that no official usage guidelines were found and that noncommercial reuse with attribution appears to be allowed; this is not formally confirmed. Image is hosted by a third party rather than an official agency, so it is not counted as an official-page verification."
+        },
+        {
+          "id": "smithsonian_surveyor_soil_sampler_gallery",
+          "description": "Smithsonian gallery image of the Surveyor lunar lander soil sampler, identified as NASM-A19700123000cp01.",
+          "image_type": "Museum collection object photograph",
+          "image_url": null,
+          "source_page_url": "https://airandspace.si.edu/collection-media/NASM-A19700123000cp01",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Smithsonian National Air and Space Museum",
+          "caption": "Smithsonian gallery image for the Soil Sampler, Lunar Lander, Surveyor object record. The page shows no caption text for the image.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "No direct asset URL without query parameters was verified, so image_url is null. The Smithsonian display and download endpoints (ids.si.edu deliveryService and download) require query parameters and were not used. Usage conditions apply; consult Smithsonian terms of use before republication. Referenced in the Markdown as a linked source-page image reference, not an embedded image."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lrv_deployment_art",
+          "description": "NSSDC illustration labelled 'Lunar Roving Vehicle Deployment' for the Apollo Lunar Roving Vehicle deployment.",
+          "image_type": "Illustration (type inferred from file name and page layout; not stated on source page)",
+          "image_url": "https://nssdc.gsfc.nasa.gov/planetary/image/lrv_deployment_art.jpg",
+          "source_page_url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html",
+          "publisher": "NASA National Space Science Data Center",
+          "credit": "NASA NSSDC; illustrator not named",
+          "caption": "Illustration labelled 'Lunar Roving Vehicle Deployment' on NSSDC's Apollo LRV page. The page says it shows an earlier version of the planned deployment.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct NASA NSSDC image URL verified over HTTP (200, image/jpeg); no query string or fragment. The NSSDC page lists two images with this caption (lrv_display.jpg and lrv_deployment_art.jpg); lrv_deployment_art.jpg is used on the basis of file name and page layout. Artist/illustrator and rights are not stated; confirm before republication."
+        }
+      ],
+      "references": [
+        {
+          "title": "The Apollo Lunar Roving Vehicle",
+          "publisher": "NASA National Space Science Data Center",
+          "date": "undated web page",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html"
+        },
+        {
+          "title": "Soil Sampler, Lunar Lander, Surveyor (NASM A19700123000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "date": "undated museum object record",
+          "url": "https://airandspace.si.edu/collection-objects/soil-sampler-lunar-lander-surveyor/nasm_A19700123000"
+        },
+        {
+          "title": "Soil mechanics surface sampler: Lunar surface tests, results, and analyses",
+          "authors": "R. F. Scott and F. I. Roberson",
+          "publisher": "Journal of Geophysical Research, 73(12), 4045-4080, American Geophysical Union",
+          "date": "1968-06-15",
+          "doi": "10.1029/JB073i012p04045",
+          "url": "https://authors.library.caltech.edu/51451",
+          "notes": "Canonical repository record used; abstract reviewed. Full PDF not read. The DOI resolver returned HTTP 403 to an automated check, so the DOI is taken from the repository record."
+        },
+        {
+          "title": "Chang'e 3 lander from the southeast",
+          "publisher": "The Planetary Society",
+          "date": "image record; photograph dated on or about 2013-12-21",
+          "url": "https://www.planetary.org/space-images/change-3-lander-from-the-southeast",
+          "notes": "Credit requested by the source: CNSA and CAS."
+        },
+        {
+          "title": "Luna 17 timeline",
+          "publisher": "Orbital Focus (curated by Robert Christy)",
+          "date": "undated web page",
+          "url": "https://www.orbitalfocus.uk/Diaries/Luna/Luna17.php",
+          "notes": "Secondary source."
+        },
+        {
+          "title": "Surveyor III",
+          "publisher": "Surveyor Archive Project, Lunar and Planetary Laboratory, University of Arizona",
+          "date": "undated archive page",
+          "url": "https://sic.lpl.arizona.edu/surveyor-digitization/surveyor-iii"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo Lunar Roving Vehicle deployment example": "payload.article.physical_specifications.examples[0].images",
+      "Surveyor 3 surface sampler example": "payload.article.physical_specifications.examples[2].images",
+      "Chang'e-3 ramps example": "payload.article.physical_specifications.examples[3].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. Smithsonian image_url is null because no clean direct asset URL was verified."
+  },
+  "data_quality_notes": [
+    "Catalogue check: payload 274 name 'Robotic deployment mechanism' and category 14 'Robotics, mobility and deployment technology' confirmed against lunar_payloads_catalogue_320.md.",
+    "Luna 17: the ramp description and Lunokhod 1 departure time (06:28 UTC, 17 November 1970) come from the Orbital Focus timeline, a secondary source. The narrative says two pairs of ramps; the timeline entry for the descent refers to a pair. No NASA or Soviet primary source was verified for these details.",
+    "Chang'e-3: landing (14 December 2013) and deployment timing come only from secondary search results and were not verified against an official CNSA or CAST source. The Planetary Society caption confirms the forklift-type ramps and is the only source used for the ramp description.",
+    "Surveyor 3: the approximately 1.5 m extension length is from a secondary summary and is not verified; it is excluded from specifications. Mass, motor torque and power are not publicly specified.",
+    "Scott and Roberson (1968): only the repository abstract was read; the full PDF was not read. The DOI resolver returned HTTP 403 to an automated check.",
+    "Apollo LRV image: NSSDC's caption table lists two images with the caption 'Lunar Roving Vehicle Deployment' (lrv_display.jpg and lrv_deployment_art.jpg). The page text does not name which file it refers to as the earlier planned sequence. lrv_deployment_art.jpg is used on the basis of file name and page layout; the image type and illustrator are not stated by the source.",
+    "Smithsonian Surveyor sampler image: one gallery image (NASM-A19700123000cp01) with no caption text. The ids.si.edu endpoints require query parameters, so no clean direct asset URL was used and image_url is null; the image is referenced by its source page only.",
+    "Rights and reuse: NSSDC does not state rights for the LRV illustration; the Smithsonian record states usage conditions apply; the Planetary Society page asks users to credit CNSA and CAS. No public-domain status is asserted for any image.",
+    "Claims removed from the earlier draft because the fetched sources did not support them: Surveyor 7 thermal end-of-operation statement; Chang'e-3 'transfer mechanism' (secondary press only); Luna 17 'either pair' statement; 'pantograph' description of the Surveyor arm; NSSDC crew cabling and tripod steps; and 'impact tests' for the Surveyor sampler.",
+    "Compatibility: no lander, rover or spacecraft compatibility is asserted. Verified interface data (mass, dimensions, mounting, landing loads, ramp or arm geometry, power, communications) were not found for any of the four examples.",
+    "Full-resolution image downloads were not checked; only HTTP status and content type were verified for the two direct image URLs.",
+    "Research breadth: primary-source checks were limited to NSSDC, the Smithsonian object record, the Caltech repository record for Scott and Roberson, the Surveyor archive and the Planetary Society image page. Official CNSA, CAST, Soviet and ISRO-style primary technical documentation for Luna 17 and Chang'e-3 was not located."
+  ]
+}

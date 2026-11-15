@@ -1,0 +1,182 @@
+{
+  "catalogue_id": 212,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 212,
+    "name": "Dust mitigation experiment",
+    "article": {
+      "overview": "A dust mitigation experiment is a payload that tests how to keep lunar regolith dust off, or remove it from, surfaces that matter for operations, such as thermal radiators, solar panels, camera lenses and, in future, spacesuit visors and seals. Dust was a serious operational problem during the Apollo missions, affecting seals, visors, thermal control and instruments, and causing inhalation and irritation problems [3]. This catalogue entry describes a broad class of experiment rather than one standard instrument. This article covers two documented examples. The first is NASA's Electrodynamic Dust Shield (EDS), which NASA reports removed dust from glass and thermal radiator surfaces during Firefly's Blue Ghost Mission 1 lunar operations, which concluded on 16 March 2025 [5][6]. The second is the Regolith Adherence Characterization (RAC) payload, a set of passive material samples that was scheduled to fly on the same lander [4]. The sources reviewed give no quantitative flight data for either example, so the flight results are described as reported rather than measured in detail.",
+      "description": "Dust mitigation experiments test technologies that reduce how much dust sticks to, or builds up on, hardware. The sources describe two broad approaches. Active approaches use electrical energy. The EDS embeds electrodes in a high-dielectric-strength substrate and drives them with a low-power, low-frequency signal that creates a travelling electric field wave; the resulting dielectrophoretic and electrostatic forces move dust particles off the surface [1]. Passive approaches change the material or surface finish so that dust adheres less strongly. The RAC payload tests candidate polymers, a carbon-fibre composite and a metal alloy, each with a laser-ablation surface pattern [4]. Both approaches have been evaluated in ground tests, but the EDS authors state that their tests used simulated rather than actual lunar conditions [1], and the RAC authors stress that performance must be assessed in the actual lunar environment [4].",
+      "scientific_purpose_and_applications": "The main purpose of a dust mitigation experiment is engineering validation: finding out whether a dust-control technology works in the real lunar environment before a mission depends on it. The RAC authors describe the payload as an opportunity to evaluate dust-mitigation technologies in the actual lunar environment, and note that lunar dust is hazardous to humans and adheres to exposed surfaces, which can degrade performance and cause failures [4]. The EDS team named painted Kapton and glass as target materials, with possible uses on radiators, camera lenses and solar panels [2]. NASA lists further possible uses, including solar panels, camera lenses, spacesuits, boots and helmet visors, but these are listed as applications rather than as tested surfaces [5]. Flight data may also show how lunar dust behaves on surfaces over time, although the sources reviewed do not report such scientific measurements from these payloads.",
+      "operating_principle": "The EDS works by moving dust rather than wiping it. Its electrodes are energised in a pattern that makes the electric field travel across the surface, and the resulting electrostatic and dielectrophoretic forces carry dust grains with it [1]. For transparent applications, the electrodes are indium tin oxide on glass or transparent film [1]. In simple terms, the shield uses electrical fields to push dust away instead of brushes or wipers. Passive dust mitigation works through the choice and finish of a material. A surface with a particular texture or chemistry can make dust particles touch it less and stick less strongly. The RAC payload tests such pre-selected surfaces in the lunar environment, but the sources reviewed do not describe the adhesion mechanism for each material [4].",
+      "scientific_importance": "Dust is an engineering hazard on the Moon, and the Apollo missions showed that ground tests can underestimate it. A 2005 NASA review of Apollo dust effects lists nine categories of effect, among them seal failures, vision obscuration, thermal control problems, false instrument readings and inhalation and irritation, and concludes that the severity of the dust problems was consistently underestimated by ground tests [3]. The EDS authors report that some Apollo-era equipment neared failure after only 75 hours on the lunar surface [1]. Flight demonstrations are therefore scientifically as well as technically useful: they show how dust behaves in the real environment and whether laboratory efficiency figures hold under lunar conditions.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a dust mitigation experiment. Each technology has its own hardware, and the two examples below differ in kind: one is an active electrical device, the other a set of passive material samples. Their figures must not be compared directly.",
+        "examples": [
+          {
+            "name": "Electrodynamic Dust Shield (EDS)",
+            "type": "NASA Kennedy Space Center active dust-removal technology; reported flight demonstration on Firefly Blue Ghost Mission 1",
+            "mass_kg": 0.5,
+            "volume_cm3": 350,
+            "mass_volume_status": "Pre-flight design expectations from a 2015 paper; not confirmed flown values",
+            "power": "not stated",
+            "electrode_configuration": "Embedded electrodes in a high-dielectric-strength substrate, driven by a low-power, low-frequency signal creating a travelling electric field wave; transparent indium tin oxide electrodes on glass or transparent film",
+            "ground_test_performance": "96% to 99% reflectance-based dust removal efficiency for thermal radiator surfaces in simulated lunar conditions; solar-radiator output restored to values very close to initial output (no percentage given)",
+            "flight_status": "Reported as flown on Firefly Blue Ghost Mission 1; NASA reports removal from glass and thermal radiator surfaces, without quantitative removal data. ISS exposure mentioned in secondary coverage only and not verified.",
+            "qualification": "Ground tests under simulated conditions (one-sixth gravity at 1 mPa, lunar simulant); the authors state these are not actual lunar or flight conditions.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20150016082",
+              "https://www.nasa.gov/image-article/NASAs-dust-shield-successfully-repels-lunar-regolith-on-moon/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Regolith Adherence Characterization (RAC) payload",
+            "type": "Passive materials and surfaces lunar test payload designed by Alpha Space for NASA",
+            "mass_kg": null,
+            "dimensions": "not stated",
+            "material_classes": [
+              "two polymers",
+              "carbon fibre reinforced composite",
+              "metal alloy (each with laser-ablation topographic patterning)"
+            ],
+            "flight_status": "Scheduled on Firefly Blue Ghost lander with a 2023 launch year in the paper; flight outcome not confirmed from a primary source",
+            "qualification": "Not stated; sample count, mass, dimensions and power not stated",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20210024439"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The only dimension given is a 2015 flight-version volume estimate of 350 cm³ for the EDS [1]. External dimensions are not stated for the RAC payload [4]. Electrode spacing and substrate geometry are not stated for the EDS.",
+        "mass_and_weight": "The EDS flight-version design was expected to have a mass of 500 g in 2015 [1]; this is a pre-flight expectation, not a confirmed flown value. The RAC mass is not stated [4]. Mass figures from these different designs should not be compared.",
+        "power_requirements": "The EDS is described as driven by a low-power, low-frequency signal, but its power draw, drive voltage and frequency are not stated in the sources reviewed [1]. The RAC payload is described as a passive materials test [4], and the sources do not state a power figure for it."
+      },
+      "environmental_and_operational_requirements": "The sources reviewed give no numerical environmental requirements for either example. The general lunar conditions still apply to both approaches: a vacuum with no substantial atmosphere, large surface temperature changes, and exposure to radiation and micrometeoroids. These are engineering context rather than sourced figures. The EDS was tested under simulated conditions of one-sixth gravity at 1 mPa with lunar simulant, and the authors state that these were not actual lunar or flight conditions [1]. Whether the electrodes and substrate retained performance through the thermal cycling expected on the lunar surface is not stated in the sources reviewed. For the RAC payload, the lunar surface is the test environment itself, and the paper does not state a survival requirement [4].",
+      "limitations": "Laboratory efficiency is not flight performance. The 96% to 99% figures for the EDS come from simulated-condition tests on thermal radiator reflectance [1]. NASA's 2025 report on the Blue Ghost test provides before-and-after imagery but no quantitative removal data, such as percentage cleared, duration or number of activation cycles [5]. NASA's article describes the test surfaces as covered in lunar dust and dirt and does not explicitly say whether real regolith or a simulant was used, so that point is treated as unconfirmed [5]. The RAC payload's sample count, dimensions, mass and flight outcome are not confirmed [4]. The EDS power draw and electrode electrical parameters are not stated [1]. The catalogue entry is a generic class, so two examples cannot describe every dust mitigation experiment.",
+      "transportation_and_deployment": {
+        "overview": "Both examples were designed to reach the Moon as payloads on a commercial lunar lander, not as crewed or mobile surface systems. The EDS flight was reported as part of Blue Ghost Mission 1 [5][6], and the RAC payload was scheduled for the same lander [4]. The sources do not describe the stowage, mounting interfaces, power or data connections for either payload, nor any lander-specific compatibility assessment.",
+        "transportation_process": [
+          "Integrate the dust mitigation hardware on Earth, either on the lander or on the surface it is designed to protect, such as a radiator or glass sample.",
+          "Launch the lander on a launch vehicle and transfer it towards the Moon.",
+          "Land the lander on the lunar surface and begin the experiment's operations [5].",
+          "Return the experiment's data through the lander's communications system; the sources do not describe this interface for either payload.",
+          "The sequence above is a generalised outline, not a verified description of either payload's interfaces."
+        ],
+        "deployment_methods": "Based on the reported designs, the EDS is an electrode substrate applied to a protected surface, such as glass or a radiator, rather than a deployed instrument [1][2]. The RAC payload exposes material samples to the lunar surface [4]. Neither source describes robotic deployment or astronaut handling. Whether any part of either payload was moved or deployed after landing is not stated in the sources reviewed.",
+        "historical_examples": "Apollo crews and equipment experienced dust effects without any dust-mitigation hardware of this kind [3]. The EDS flight on Blue Ghost Mission 1 is the lunar surface demonstration reported by NASA [5][6]. The RAC payload is a lunar test of passive materials that was scheduled for the same lander [4].",
+        "compatibility_assessment": "No compatibility assessment with a named lander is verified beyond the reported Blue Ghost Mission 1 flight of the EDS and the scheduled RAC flight [4][5]. Mass, volume, mounting, power and data interfaces for any future dust mitigation payload would need to be checked against verified lander specifications before use.",
+        "images": []
+      },
+      "historical_significance": "Dust was a documented operational problem on Apollo [3]. NASA Kennedy Space Center documented the EDS concept in 2015 as a planned lunar surface experiment and an ISS test, both then future work [1][2]. NASA reports that the EDS was tested on the lunar surface on Blue Ghost Mission 1 in March 2025 [5][6], which is a significant engineering milestone for this technology. The RAC work shows that passive surface selection was also being prepared for a lunar test [4]. The lasting significance of these experiments depends on whether quantitative results are later published, and the sources reviewed do not yet provide that.",
+      "limitations_and_uncertainties": "Primary-source coverage is incomplete. For [1] and [4] only the NTRS record pages were read, because the full PDFs could not be extracted by the web tool, so electrode specifications, test sample sizes and RAC sample counts may appear in the full papers. The EDS flight outcome is taken from NASA's public article and secondary press, and the sources report dates slightly differently. The RAC flight status is unconfirmed: the 2022 paper gives a 2023 schedule and secondary coverage reports conflicting launch dates. The 2015 paper's flight mass and volume are expectations, not confirmed flown values. Apollo dust effects are taken from the abstract of a 2005 NASA technical memorandum [3]; the full PDF was not read. Other reported activities, such as a suborbital lunar-gravity test campaign, appear only in secondary search coverage and are excluded because no primary source was read.",
+      "images": [
+        {
+          "id": "nasa_eds_blue_ghost_image_article",
+          "description": "NASA image article describing the Electrodynamic Dust Shield lunar surface test on Blue Ghost Mission 1, with before-and-after dust-removal imagery.",
+          "image_type": "Agency image article (source page only)",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/image-article/NASAs-dust-shield-successfully-repels-lunar-regolith-on-moon/",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "NASA article on the Electrodynamic Dust Shield lunar test; the direct image asset was not verified.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "No direct asset URL was verified, so image_url is null. The source page is the reference for the before-and-after images. Check NASA rights and reuse terms before republication."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "nasa_eds_blue_ghost_image_article",
+          "description": "NASA image article describing the Electrodynamic Dust Shield lunar surface test on Blue Ghost Mission 1, with before-and-after dust-removal imagery.",
+          "image_type": "Agency image article (source page only)",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/image-article/NASAs-dust-shield-successfully-repels-lunar-regolith-on-moon/",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "NASA article on the Electrodynamic Dust Shield lunar test; the direct image asset was not verified.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "No direct asset URL was verified, so image_url is null. The source page is the reference for the before-and-after images. Check NASA rights and reuse terms before republication."
+        }
+      ],
+      "references": [
+        {
+          "authors": "Johansen, M. R., Mackey, P. J., Hogue, M. D., Cox, R. E., Phillips, J. R., Calle, C. I.",
+          "year": "2015",
+          "title": "History and Flight Development of the Electrodynamic Dust Shield",
+          "publisher": "NASA Kennedy Space Center; AIAA SPACE 2015, Pasadena, CA; report KSC-E-DAA-TN25743",
+          "url": "https://ntrs.nasa.gov/citations/20150016082"
+        },
+        {
+          "authors": "Zeitlin, N., Calle, C., Hogue, M., Johansen, M., Mackey, P.",
+          "year": "2015",
+          "title": "Electrodynamic Dust Shield for Lunar/ISS Experiment Project",
+          "publisher": "NASA Kennedy Space Center; brief communication KSC-E-DAA-TN25543 (15 August 2015)",
+          "url": "https://ntrs.nasa.gov/citations/20150016160"
+        },
+        {
+          "authors": "Gaier, J. R.",
+          "year": "2005",
+          "title": "The Effects of Lunar Dust on EVA Systems During the Apollo Missions (NASA/TM-2005-213610)",
+          "publisher": "NASA Glenn Research Center",
+          "url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20050160460.pdf"
+        },
+        {
+          "authors": "Das, L., Wohl, C. J., Gordon, K. L., Kang, J. H., Wiesner, V. L., King, G. C., Hocker, J. A., Choi, S. H.",
+          "year": "2022",
+          "title": "Evaluation of Materials and Surfaces for Lunar Regolith Adherence Characterization (RAC) Payload Samples",
+          "publisher": "AIAA SciTech Forum, San Diego (presented 3-7 January 2022); NASA NTRS record",
+          "url": "https://ntrs.nasa.gov/citations/20210024439"
+        },
+        {
+          "authors": "NASA",
+          "year": "2025",
+          "title": "NASA's dust shield successfully repels lunar regolith on Moon (image article, page dated 27 March 2025)",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/image-article/NASAs-dust-shield-successfully-repels-lunar-regolith-on-moon/"
+        },
+        {
+          "authors": "AIAA",
+          "year": "2025",
+          "title": "NASA Demonstrates Its Electric Moon Dust Shield Works on Lunar Surface (secondary news excerpt, 4 April 2025)",
+          "publisher": "AIAA",
+          "url": "https://aiaa.org/2025/04/04/nasa-demonstrates-its-electric-moon-dust-shield-works-on-lunar-surface/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images"
+    },
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. No direct image asset URL was verified; the single image entry has image_url null with a linked source-page reference."
+  },
+  "data_quality_notes": [
+    "Only NTRS landing-page records were readable for references 1, 2 and 4; the full PDFs could not be extracted by the web tool. Claims rely on abstract and landing-page text.",
+    "Reference 3 (Apollo dust effects) was read from the abstract of the NASA technical memorandum only.",
+    "The 96% to 99% efficiency figures are 2015 ground-test results from reference 1, not flight data.",
+    "NASA's 2025 article (reference 5) says the test surfaces were glass and thermal radiator surfaces; it does not state whether real regolith or a simulant was used. Treated as unconfirmed.",
+    "EDS flight-version mass (500 g) and volume (350 cm3) are 2015 pre-flight expectations, not confirmed flown values.",
+    "RAC flight status is unconfirmed; the paper gives a 2023 schedule and secondary sources report conflicting dates.",
+    "EDS power draw, electrode voltage and frequency, and RAC sample count, mass and dimensions are not stated in the sources read.",
+    "No direct image asset URL was verified from an official page. One linked source-page image reference (image_url null) is included.",
+    "The suborbital lunar-gravity test campaign and the earlier ISS exposure appear only in secondary search coverage and are not presented as established."
+  ]
+}

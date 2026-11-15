@@ -1,0 +1,51 @@
+{
+  "name": "@serenity/payloads",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Explore the scientific payloads carried by lunar missions. Companion app to Serenity Lunar Explorer.",
+  "scripts": {
+    "catalogue": "node tools/build-catalogue.mjs",
+    "catalogue:check": "node tools/build-catalogue.mjs --check",
+    "predev": "npm run catalogue",
+    "dev": "vite",
+    "prebuild": "npm run catalogue",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:smoke": "playwright test e2e/all-payloads.spec.ts"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router": "^7.18.5"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^9.39.5",
+    "@playwright/test": "^1.65.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^5.2.0",
+    "eslint": "^9.39.5",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.2.0",
+    "jsdom": "^26.1.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.72.2",
+    "vite": "^7.3.8",
+    "vitest": "^3.2.7"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

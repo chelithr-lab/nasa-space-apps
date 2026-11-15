@@ -1,0 +1,294 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 50,
+    "name": "Digital terrain mapping system",
+    "article": {
+      "overview": "A digital terrain mapping system is the complete chain that turns lunar observations into a digital terrain model (DTM): a grid in which each cell records a ground height. Payload 028 (Terrain mapping camera) describes one instrument class, the stereo camera. This entry describes the system around such instruments: the geometric data sources (stereo images, laser altimetry, or both), the orbit and pointing data that locate them, the processing that matches, adjusts and merges them, and the validation and archived products that result. In scope: system architecture; the DTM production chain; fusion and co-registration of altimetry with stereo-derived heights; product validation and known artefacts; flown examples in which a system or its data products are documented. Out of scope: detailed camera hardware (payloads 028, 029 and 030); laser altimeter hardware (payload 047); lidar hardware (payload 046); laser rangefinder hardware (payload 048); general photogrammetric methodology (payload 049); and surface profiling (payload 051). Articles for entries 047 to 051 have not all been written, so these boundaries are provisional. The Chandrayaan-1 Terrain Mapping Camera and the Chandrayaan-2 TMC-2 are treated in payload 028, not here.",
+      "description": "A DTM is a model of the bare ground surface, sometimes called a digital elevation model (DEM). Many sources use the two terms interchangeably, and this article does the same unless a source makes a distinction. A terrain model can be built from three kinds of measurement. Stereo imagery: two or more overlapping images taken from different angles are matched, and a feature's apparent sideways shift (parallax) depends on its height; stereo gives dense relative heights, but its absolute accuracy depends on camera geometry and orbit data. Laser altimetry: a laser pulse is sent to the surface and the round-trip time is measured, giving a sparse set of very accurate absolute heights along the ground track, not a dense grid on its own. Ancillary geometry: precise spacecraft position, attitude and camera-model information are needed to convert images or ranges into heights on a defined reference surface. A digital terrain mapping system combines these inputs. In the examples examined, altimetry provides the absolute height reference while stereo supplies dense detail. Processing typically involves camera calibration and map projection, bundle adjustment, stereo matching to generate heights, co-registration of stereo DEMs to altimetry, mosaicking, and quality flags such as slope maps and good-pixel maps [6][3].",
+      "scientific_purpose_and_applications": "Terrain models support several scientific and engineering goals. Geology and crater morphology: heights and slopes reveal the shape of craters, mare ridges, scarps and volcanic features, constraining how the surface formed and evolved. Geodesy: a global height grid tied to a precise altimetric reference supports lunar geodesy; LOLA heights are the altimetric input to the merged SLDEM product [1][3]. Landing and surface-operations planning: NASA states that LOLA provides topographic data for safe landings [8]. This article recommends no landing site; the user has deferred location recommendations until a date-dependent 3D Moon visualisation is available. Interpreting other remote-sensing data: heights are needed to correct illumination and to interpret spectral and thermal data.",
+      "operating_principle": "The system combines a sparse set of accurate heights with a dense set of relative heights. Stereo branch: overlapping images taken from different angles are matched pixel by pixel; the shift between matching features is converted into height using the camera geometry. Bundle adjustment refines the geometry so the images agree with each other. In the Ames Stereo Pipeline (ASP) chain used for the LROC NAC products described below, these steps run in sequence, followed by DEM generation [6]. Altimetry branch: a laser altimeter fires pulses at the surface and measures the return time for each pulse; converting time to range and combining it with the spacecraft's known orbit gives a height at each footprint. LOLA measures these heights at a 28 Hz pulse rate with five beams [1][8]. Fusion: stereo DEMs are co-registered to the altimetry, meaning they are shifted and adjusted until they agree with the altimetry heights. The merged result keeps the dense stereo detail while inheriting the absolute accuracy of the laser data. Barker et al. describe the merged SLDEM2015 product, built from about 4.5 billion LOLA heights and about 43,200 SELENE-derived DEMs [2][3].",
+      "scientific_importance": "A consistent global height model is a basic input to lunar geology, geodesy and mission planning. The global products discussed here are built from stereo DEMs derived from the SELENE Terrain Camera and from altimetry measured by LOLA [2][3][4]. Their value comes from combining the two rather than from either data type alone. JAXA describes SLDEM2013, released in March 2014, as a global elevation mosaic built mainly from SELENE Terrain Camera stereo images, with some Multi-band Imager stereo data and LRO laser ranging, and gives its vertical accuracy as 'nearly 10 meters or better' [4]. The later SLDEM2015 product, distributed by the NASA PGDA and the USGS, uses a different merge and reports a typical vertical accuracy of about 3 to 4 m [3][5][10]. These products share a name root but are not the same data product, and their accuracy statements should not be compared as if they described one dataset.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a digital terrain mapping system. The class is defined by the function of producing a DTM. Its inputs may be stereo cameras, laser altimeters, or both, and its output may be a ground-processing product rather than a flight instrument. Values below are attached to the named example and source. Where a value is not published in the sources accessed, the text says so. The examples are not presented as directly comparable, and no comparison table is given.",
+        "examples": [
+          {
+            "name": "SLDEM merged lunar DEM (LOLA with SELENE stereo DEMs)",
+            "type": "Flown-data product; not a flight instrument",
+            "status": "The inputs were collected by LRO and SELENE, which have flown. The merged product is a ground-built data product.",
+            "sldem2015_coverage": "Data in the global subdirectory cover +/-60 degrees in latitude and 360 degrees in longitude [3].",
+            "sldem2015_resolution": "PDS gives an effective resolution of about 60 m at the equator; USGS gives about 59 m at 512 pixels per degree [3][10].",
+            "sldem2015_input_data": "43,200 DEMs from SELENE and 4.5 billion surface heights from LOLA [3].",
+            "sldem2015_vertical_accuracy": "Typical vertical accuracy of about 3 to 4 m [3][10].",
+            "sldem2013_jaxa": "Main input is 10 m/pixel Terrain Camera stereo imagery, with some Multi-band Imager stereo data and LOLA laser ranging. JAXA gives a vertical accuracy of 'nearly 10 meters or better'. Grid resolution and latitude coverage are not stated in the JAXA release note [4].",
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/LRO/LOLA/SLDEM.htm",
+              "https://pgda.gsfc.nasa.gov/products/54",
+              "https://darts.isas.jaxa.jp/en/topics/2014/20140317topic"
+            ],
+            "images": [
+              {
+                "id": "usgs_lola_sldem_merge_60n60s_512ppd",
+                "description": "Grey-scale rendering of the LRO LOLA and Kaguya Terrain Camera merged lunar elevation model, 60 degrees north to 60 degrees south, 512 pixels per degree.",
+                "image_type": "Grey-scale rendering of merged lunar DEM (1200 x 380 pixel file)",
+                "image_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/LRO_LrocKaguya_DEMmerge_60N60S_full.jpg",
+                "source_page_url": "https://www.usgs.gov/media/images/lro-lola-and-kaguya-terrain-camera-dem-merge-60n60s-512ppd",
+                "publisher": "USGS Astrogeology Science Center",
+                "credit": "USGS Astrogeology Science Center",
+                "caption": "LRO LOLA and Kaguya Terrain Camera DEM Merge 60N60S 512ppd (SLDEM2015 product).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "HTTP 200 (image/jpeg) verified by curl; image content viewed and matches the grey-scale merged DEM. The asset path contains 'thumbnails' and the file is 1200 x 380 pixels, so it is a preview-size rendering, not a verified full-resolution product, even though the USGS page labels the URL as the Original file. The USGS source page returned HTTP 403 to curl and was read through WebFetch. USGS page states Public Domain; this was not independently confirmed from a rights statement beyond the page text."
+              }
+            ]
+          },
+          {
+            "name": "LROC NAC stereo DTMs produced with ISIS and the Ames Stereo Pipeline (ASPDTM)",
+            "type": "Flown camera data (LROC Narrow Angle Camera on LRO); ground-processing system",
+            "status": "LRO launched 18 June 2009 and is listed by NASA as an active mission [9]. The NAC hardware is described in payload 028.",
+            "processing_producer": "Institut fur Planetologie, Universitat Munster, Germany [6]",
+            "software": "USGS ISIS versions 3.5.2 and 5.0.0 for calibration and map projection; Ames Stereo Pipeline for bundle adjustment, stereo matching and DEM generation; ASP script lronac2mosaic.py for preprocessing and mosaicking [6]",
+            "reference_dem_for_projection": "118 m/pixel LOLA reference DEM [6]",
+            "outputs": "GeoTIFF DEM (elevation in metres relative to datum), slope map (degrees), good-pixel map, hillshade map; colour hillshades, orthomosaics and a readme also provided [6]",
+            "output_grid_spacing": "Not stated on the ODE page; check the readme or RDR SIS [6]",
+            "known_artefacts": "Artefacts appear in some, but not all, NAC DEMs; users should inspect the shaded relief and good-pixel map before use [6]",
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://ode.rsl.wustl.edu/Mars/pagehelp/Content/Missions_Instruments/Lunar%20Reconnaissance%20Orbiter%20(LRO)/LROC/SDR/ASPDTM.htm"
+            ],
+            "images": []
+          },
+          {
+            "name": "LRO Lunar Orbiter Laser Altimeter (LOLA) as absolute height reference",
+            "type": "Flown instrument on LRO",
+            "status": "Flown on LRO. Hardware detail is in payload 047 (Laser altimeter).",
+            "beams": 5,
+            "laser_repetition_rate_hz": 28,
+            "nominal_vertical_accuracy": "Nominal accuracy of 10 cm stated in the Smith et al. (2010) abstract [1][12]. The NASA LOLA page reports '3-5 times greater vertical accuracy' than prior methods but gives no absolute figure or comparison baseline [8].",
+            "mass_kg": null,
+            "power_w": null,
+            "laser_wavelength_nm": null,
+            "source_urls": [
+              "https://doi.org/10.1007/s11214-009-9512-y",
+              "https://science.nasa.gov/mission/lro/lola/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not applicable as a single system. The ground-produced merged DEM and the NAC DTM outputs have no physical dimensions; the LOLA and NAC hardware dimensions are not verified in this run and are not stated here. See payloads 028 and 047.",
+        "mass_and_weight": "Not publicly specified for the system as a whole. LOLA mass is not verified in this run (null). The NAC and TMC masses are given in payload 028.",
+        "power_requirements": "Not publicly specified for the system as a whole. LOLA power is not verified in this run (null)."
+      },
+      "environmental_and_operational_requirements": "Orbit: the LRO altimetry and NAC stereo DTMs were produced from lunar orbit [1][6]. The LRO orbit altitude during DTM collection is not stated in the sources accessed and is recorded as not publicly specified. The SELENE Terrain Camera is described as operating at 100 km altitude in payload 028, which cites the PDS Geosciences Node Terrain Camera page for this. Illumination and viewing geometry: stereo matching depends on lighting that makes features visible and on the angle between views; the ASPDTM page notes that stereo pairs are selected by overlap and temporal proximity [6]. Position and attitude knowledge: accurate spacecraft position and pointing are required for both branches, and errors propagate directly into height errors [3][6]. Ground processing: the chain requires significant computing and archive capacity; no computing requirement for the ASPDTM or SLDEM chain is publicly specified in the sources accessed. Thermal and power constraints belong to the individual instruments and are covered in payloads 028 and 047.",
+      "limitations": "Resolution and accuracy trade-off: the merged SLDEM2015 grid is about 60 m at the equator, much coarser than the NAC stereo DTMs [3][10][6], so dense high-resolution detail depends on the stereo products while absolute accuracy depends on the altimetry. Coverage: SLDEM2015 covers +/-60 degrees in latitude and therefore does not cover the polar regions [3]; NAC DTM products cover only areas imaged and processed [6]. Artefacts: some NAC DEMs contain artefacts not present in all DEMs [6]. Co-registration dependence: the quality of a merged product depends on how well stereo DEMs are co-registered to altimetry; the PDS page names the method only through the title 'Coregistered with Selene Data' [3]. Version and naming: SLDEM2013 (JAXA) and SLDEM2015 (PDS, USGS, PGDA) are different products with different accuracy statements [3][4][5]. Ground truth: heights measured from orbit are not independently verified by surface measurements in the sources accessed.",
+      "transportation_and_deployment": {
+        "overview": "A terrain mapping system based on orbital data is an orbiter-based capability, not a surface payload. Its hardware is integrated into orbiters, and the ground-processing chain is not transported. No deployment method applies because the system does not deploy to the surface.",
+        "transportation_process": [
+          "Orbiter integration: the LRO orbiter carries LOLA and the NAC cameras [8][9]. The SELENE orbiter carried the Terrain Camera, described in payload 028. For these orbiter examples the relevant interfaces are spacecraft integration, mounting and alignment, thermal control, pointing knowledge, power and data handling.",
+          "Launch and transfer: LRO was launched on 18 June 2009 and NASA lists it as an active mission. The launch vehicle and site are not stated on the NASA page accessed [9]. SELENE launch and transfer details are not stated in the sources accessed for this article.",
+          "Commissioning and operations: commissioning, orbit adjustment and operations are instrument-team functions and are not described in detail in the sources accessed.",
+          "Ground delivery: archived products are distributed through the NASA PGDA, USGS, PDS Geosciences Node and JAXA DARTS [3][4][5][10].",
+          "Compatibility: no lander or rover compatibility is claimed. No verified interface evidence for any named lander or rover was found."
+        ],
+        "deployment_methods": "Not applicable: the system is orbital and ground-processed and does not deploy to the surface.",
+        "historical_examples": "LRO (launched 18 June 2009) carries LOLA and the NAC cameras [9]. SELENE carried the Terrain Camera used for SLDEM2013 [4]. Launch details for SELENE are not stated in the sources accessed.",
+        "compatibility_assessment": "No lander, rover or spacecraft compatibility is asserted for this system. The orbiter examples are not verified for any surface-lander interface.",
+        "images": []
+      },
+      "historical_significance": "The SELENE Terrain Camera stereo images were used to build SLDEM2013, which JAXA released in 2014 [4]. LOLA, which flies on LRO, provides the altimetric reference for the later merged SLDEM2015 product, distributed through NASA PGDA and USGS [2][3][5]. The NAC stereo DTM production chain built on ISIS and ASP extended high-resolution topography analysis to targeted areas [6][7]. Together these examples show a shift from single-instrument terrain products toward merged, multi-source global models.",
+      "limitations_and_uncertainties": "SLDEM naming and accuracy conflict: JAXA's SLDEM2013 and the PDS/USGS/PGDA SLDEM2015 are described with different inputs, resolutions and accuracy statements; neither claim has been independently re-derived in this run [3][4][5]. Barker et al. bibliographic details: cited as Icarus 273 (2016), pp. 346-355, with an online date of August 2015; the PDS page cites 2015. The DOI page could not be read in full, so title and year were checked against MIT and NTRS records and the PDS page [2][3][11]. LOLA abstract: the five-beam, 28 Hz and 10 cm statements are verified from the Smith et al. (2010) publication record; the full paper was not read [1][12]. LOLA mass, power and wavelength: not verified in this run and recorded as null [8]. ASPDTM grid spacing: not stated on the ODE page; secondary summaries of NAC DTM resolution were not verified [6]. Image resolution: the USGS asset is 1200 x 380 pixels and is not a verified full-resolution product [10]. No landing-site recommendations are made, and no lander compatibility is asserted [8][9]. Processing specification: computing, storage and software version requirements are not publicly specified in the sources accessed.",
+      "images": [
+        {
+          "id": "usgs_lola_sldem_merge_60n60s_512ppd",
+          "description": "Grey-scale rendering of the LRO LOLA and Kaguya Terrain Camera merged lunar elevation model, 60 degrees north to 60 degrees south, 512 pixels per degree.",
+          "image_type": "Grey-scale rendering of merged lunar DEM (1200 x 380 pixel file)",
+          "image_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/LRO_LrocKaguya_DEMmerge_60N60S_full.jpg",
+          "source_page_url": "https://www.usgs.gov/media/images/lro-lola-and-kaguya-terrain-camera-dem-merge-60n60s-512ppd",
+          "publisher": "USGS Astrogeology Science Center",
+          "credit": "USGS Astrogeology Science Center",
+          "caption": "Credit: USGS Astrogeology Science Center. Image identified as the LRO LOLA and Kaguya Terrain Camera DEM Merge 60N60S 512ppd product (SLDEM2015).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "HTTP 200 (image/jpeg) verified by curl; image content viewed. Preview-size file (1200 x 380 pixels) rather than a verified full-resolution product. USGS source page returned HTTP 403 to curl and was read through WebFetch. USGS page states Public Domain."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "usgs_lola_sldem_merge_60n60s_512ppd",
+          "description": "Grey-scale rendering of the LRO LOLA and Kaguya Terrain Camera merged lunar elevation model, 60 degrees north to 60 degrees south, 512 pixels per degree.",
+          "image_type": "Grey-scale rendering of merged lunar DEM (1200 x 380 pixel file)",
+          "image_url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/LRO_LrocKaguya_DEMmerge_60N60S_full.jpg",
+          "source_page_url": "https://www.usgs.gov/media/images/lro-lola-and-kaguya-terrain-camera-dem-merge-60n60s-512ppd",
+          "publisher": "USGS Astrogeology Science Center",
+          "credit": "USGS Astrogeology Science Center",
+          "caption": "Image identified by the USGS Astrogeology Science Center as the LRO LOLA and Kaguya Terrain Camera DEM Merge 60N60S 512ppd product. Public domain according to the USGS page.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Same image as the master registry entry; repeated in the overview array because it is displayed in the Overview. See registry notes for verification status."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "The Lunar Orbiter Laser Altimeter Investigation on the Lunar Reconnaissance Orbiter Mission",
+          "authors": "Smith, D. E., Zuber, M. T., Jackson, G. B., et al.",
+          "publisher": "Space Science Reviews",
+          "publication_date": "2010 (vol. 150, no. 1-4, pp. 209-241)",
+          "doi": "10.1007/s11214-009-9512-y",
+          "url": "https://doi.org/10.1007/s11214-009-9512-y",
+          "notes": "Abstract statements (5 beams, 28 Hz, nominal accuracy 10 cm) verified via the publication record at reference 12. DOI page not read in full (publisher redirect)."
+        },
+        {
+          "number": 2,
+          "title": "A new lunar digital elevation model from the Lunar Orbiter Laser Altimeter and SELENE Terrain Camera",
+          "authors": "Barker, M. K., et al.",
+          "publisher": "Icarus",
+          "publication_date": "2016 (vol. 273, pp. 346-355); online August 2015",
+          "doi": "10.1016/j.icarus.2015.07.039",
+          "url": "https://doi.org/10.1016/j.icarus.2015.07.039",
+          "notes": "Year conflict: Icarus volume 273 dated 2016 versus online date August 2015 (MIT/NTRS records) and 2015 on the PDS page. Full text and DOI page not read in full. Claims checked against PDS SLDEM page [3] and secondary summaries."
+        },
+        {
+          "number": 3,
+          "title": "LRO LOLA Digital Elevation Model Coregistered with Selene Data (SLDEM), help page",
+          "authors": null,
+          "publisher": "NASA PDS Geosciences Node, ODE",
+          "publication_date": null,
+          "doi": null,
+          "url": "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/LRO/LOLA/SLDEM.htm",
+          "notes": "Source of SLDEM2015 coverage (+/-60 degrees), resolution (about 60 m at equator), inputs (43,200 SELENE DEMs; 4.5 billion LOLA heights), accuracy (3-4 m typical), and reference to Barker et al. 2015 (doi 10.1016/j.icarus.2015.07.039)."
+        },
+        {
+          "number": 4,
+          "title": "SLDEM2013 is released from the Kaguya (SELENE) data archive",
+          "authors": null,
+          "publisher": "JAXA DARTS",
+          "publication_date": "March 2014",
+          "doi": null,
+          "url": "https://darts.isas.jaxa.jp/en/topics/2014/20140317topic",
+          "notes": "Source of SLDEM2013 inputs (TC 10 m/pixel stereo, MI stereo, LOLA ranging) and accuracy statement 'nearly 10 meters or better'. Grid resolution and latitude coverage not stated. Publication date partly inferred from page URL and listing ('2014.03')."
+        },
+        {
+          "number": 5,
+          "title": "High-resolution Lunar Topography (SLDEM2015)",
+          "authors": null,
+          "publisher": "NASA Planetary Geodesy and Data Archive (PGDA)",
+          "publication_date": null,
+          "doi": null,
+          "url": "https://pgda.gsfc.nasa.gov/products/54",
+          "notes": "Product distribution page for the merged LOLA and SELENE DEM. Confirms product availability; content reviewed was limited to the record."
+        },
+        {
+          "number": 6,
+          "title": "LROC Special Data Record: NAC Digital Elevation Model Generated Using ISIS and ASP (ASPDTM)",
+          "authors": null,
+          "publisher": "NASA PDS Geosciences Node, ODE (produced by Institut fur Planetologie, Universitat Munster)",
+          "publication_date": null,
+          "doi": null,
+          "url": "https://ode.rsl.wustl.edu/Mars/pagehelp/Content/Missions_Instruments/Lunar%20Reconnaissance%20Orbiter%20(LRO)/LROC/SDR/ASPDTM.htm",
+          "notes": "Source of processing chain (ISIS 3.5.2 and 5.0.0; ASP bundle adjustment, stereo matching and DEM generation), outputs, 118 m LOLA reference DEM, and artefact caveat. Output DEM grid spacing not stated on the page."
+        },
+        {
+          "number": 7,
+          "title": "Extracting accurate and precise topography from LROC narrow angle camera stereo observations",
+          "authors": "Henriksen, M. R., Manheim, M. R., Burns, K. N., et al.",
+          "publisher": "Icarus",
+          "publication_date": "2017",
+          "doi": "10.1016/j.icarus.2016.05.012",
+          "url": "https://doi.org/10.1016/j.icarus.2016.05.012",
+          "notes": "Cited in payload 028 as reference 8. Not re-fetched in this run; used only for the statement on LROC NAC stereo topography extending to targeted areas."
+        },
+        {
+          "number": 8,
+          "title": "Lunar Orbiter Laser Altimeter (LOLA), mission page",
+          "authors": null,
+          "publisher": "NASA Science",
+          "publication_date": null,
+          "doi": null,
+          "url": "https://science.nasa.gov/mission/lro/lola/",
+          "notes": "Source of 28 Hz pulse rate, purpose statement (topographic data for safe landings) and '3-5 times greater vertical accuracy' comparison. No absolute accuracy, mass, power or wavelength given. Page last updated Nov 2024 per the page."
+        },
+        {
+          "number": 9,
+          "title": "Lunar Reconnaissance Orbiter (LRO), mission page",
+          "authors": null,
+          "publisher": "NASA Science",
+          "publication_date": "Launch 18 June 2009",
+          "doi": null,
+          "url": "https://science.nasa.gov/mission/lro/",
+          "notes": "Source of LRO launch date (June 18, 2009), 'Active Mission' label, and LOLA as one of seven instruments. Launch vehicle and orbit not stated."
+        },
+        {
+          "number": 10,
+          "title": "LRO LOLA and Kaguya Terrain Camera DEM Merge 60N60S 512ppd",
+          "authors": null,
+          "publisher": "USGS Astrogeology Science Center",
+          "publication_date": "February 4, 2015 (credit line)",
+          "doi": null,
+          "url": "https://www.usgs.gov/media/images/lro-lola-and-kaguya-terrain-camera-dem-merge-60n60s-512ppd",
+          "notes": "Source page for the registry image. Gives about 59 m at equator at 512 ppd, 3-4 m typical vertical accuracy, about 43,200 stereo-derived tiles and Public Domain statement. Page returned HTTP 403 to curl; content read through WebFetch."
+        },
+        {
+          "number": 11,
+          "title": "A new lunar digital elevation model from the Lunar Orbiter Laser Altimeter and SELENE Terrain Camera (MIT DSpace record)",
+          "authors": "Barker, M. K., et al.",
+          "publisher": "MIT DSpace",
+          "publication_date": "2015 (record date)",
+          "doi": null,
+          "url": "https://dspace.mit.edu/handle/1721.1/118411",
+          "notes": "Used to check the Barker et al. publication year. Record shows an August 2015 date."
+        },
+        {
+          "number": 12,
+          "title": "The Lunar Orbiter Laser Altimeter Investigation on the Lunar Reconnaissance Orbiter Mission (publication record)",
+          "authors": "Smith, D. E., et al.",
+          "publisher": "Penn State Research Database (pure.psu.edu)",
+          "publication_date": "2010",
+          "doi": null,
+          "url": "https://pure.psu.edu/en/publications/the-lunar-orbiter-laser-altimeter-investigation-on-the-lunar-reco/",
+          "notes": "Publication record containing the abstract sentence 'LOLA has 5 beams and operates at 28 Hz, with a nominal accuracy of 10 cm.' Used as the verified source for the abstract statements."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "SLDEM merged lunar DEM example": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. The single registry image returned HTTP 200 (image/jpeg) via direct request and was viewed; its source page was read via WebFetch because direct request returned HTTP 403. Section-level image objects are repeated intentionally so each section can render its own image. Other source URLs were checked for HTTP status or read via WebFetch as recorded in each reference's notes."
+  },
+  "data_quality_notes": [
+    "SLDEM naming and accuracy conflict: JAXA's SLDEM2013 (TC stereo, MI stereo and LOLA; accuracy 'nearly 10 meters or better') and the PDS/USGS/PGDA SLDEM2015 (LOLA plus 43,200 SELENE DEMs; accuracy about 3-4 m) are different products. Neither accuracy claim was independently re-derived.",
+    "Barker et al. (Icarus 273) publication year conflict: 2016 in volume metadata versus online August 2015 in MIT/NTRS records and 2015 on the PDS page. The DOI page was not read in full; the title was checked against the MIT record and the PDS page.",
+    "LOLA hardware figures are incomplete: 5 beams and 28 Hz are verified (Smith et al. 2010 abstract; NASA LOLA page), and the 10 cm nominal accuracy is verified from the abstract record. LOLA mass, power and laser wavelength were not verified (null). The NASA LOLA fact sheet could not be fetched within size limits.",
+    "ASPDTM output DEM grid spacing is not stated on the ODE page. Secondary summaries of NAC DTM resolution (2-5 m/pixel) were not verified and are not used.",
+    "The only registry image is a 1200 x 380 pixel rendering at a URL whose path contains 'thumbnails'. It is the file the USGS page labels as the Original, but it is not a verified full-resolution product. The USGS page returned HTTP 403 to curl.",
+    "No ASPDTM or other NAC DTM figure was verified as a direct asset, so no image is shown for Example 2; the source page is cited in text instead.",
+    "Orbit altitude for LRO during DTM collection, SELENE launch and transfer details, and computing or software requirements for the production chains are not publicly specified in the sources accessed. No lander or rover compatibility is asserted. Boundaries with payloads 046 to 051 are provisional until those articles exist."
+  ]
+}

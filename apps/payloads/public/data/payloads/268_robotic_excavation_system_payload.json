@@ -1,0 +1,295 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 268,
+    "name": "Robotic excavation system",
+    "article": {
+      "overview": "A robotic excavation system is a mobile machine that digs, collects and moves loose planetary material, usually lunar regolith, the layer of fragmented dust and rock that covers the Moon. On the Moon, such a system would mainly support in-situ resource utilisation (ISRU), in which local materials are processed instead of being carried from Earth. NASA's ISRU Pilot Excavator (IPEx) is the most fully documented NASA example reviewed for this article. Its design is described as TRL 5, and it has been tested in ground facilities at the Kennedy Space Center. No robotic lunar excavator was identified in the sources reviewed as having flown to the Moon.",
+      "description": "A robotic excavation system combines three functions: it digs into regolith, collects the material and transports or deposits it. NASA describes IPEx as a robot that works as both a bulldozer and a dump truck to mine and haul lunar regolith [R1]. A typical design uses a digging tool, a mobility system, actuators that position the tool, and a control and sensing system. The main engineering challenge is reaction force. The Moon's surface gravity is about one-sixth of Earth's [R7], and NASA's RASSOR design was developed specifically to handle the reaction forces of excavation in such reduced gravity [R4]. The RASSOR and IPEx designs address this with paired bucket drums: hollow cylinders fitted with scoops that rotate in opposite directions, so that their reaction forces partly cancel [R3, R4]. The IPEx design also includes dust tolerance features, such as an actuated radiator cover, phase-change material for thermal control and camera modules with removable electrodynamic dust shields [R3].",
+      "scientific_purpose_and_applications": "The primary purpose of a robotic excavation system is engineering and resource production rather than scientific measurement. Its main applications identified in the sources are: (1) resource supply for ISRU. NASA's IPEx project states that a 30 kg-class robot would excavate up to 10,000 kg of lunar regolith in a single lunar day [R1, R2]. This figure is a mission goal, not a measured performance. The earlier RASSOR concept was described as delivering regolith to a separate plant that extracts oxygen by hydrogen reduction; four units were described as producing about 10 tonnes of oxygen per year in that nominal concept [R4]. This is a mission-concept estimate, not a demonstrated result. (2) Construction. A commercial prototype demonstrated in early 2026 was described by its developer as an early step toward automated lunar construction [R6]. This is a trade-press account of company statements. (3) Mobility and site work. The IPEx project describes its excavator as able to dig and move material across the surface [R1]. (4) Test and training platforms. A student Lunar Autonomy Challenge uses a digital twin of IPEx, according to the NASA page [R1]. The NASA page does not give a date for this challenge.",
+      "operating_principle": "Most reviewed designs use counter-rotating bucket drums. In IPEx, two sets of drums dig in opposite directions so that their forces offset each other, allowing a low-mass robot to excavate in reduced gravity [R2, R3]. The RASSOR design uses the same counter-rotating principle in an earlier, smaller form [R3, R4]. The IPEx actuator design comprises three custom actuators: mobility, shoulder and excavation. A 2025 IEEE Aerospace Conference paper reports that each actuator completed accelerated life testing, but that only the bucket-drum actuator completed a full concept-of-operations test without a restart. The same paper reports failure modes found during testing and minor design changes for each actuator [R2]. The modular bucket-drum prototype described in a 2025 arXiv paper operates as a continuous excavator in its standard test mode. The reported continuous rate was 777.54 kg/h with 0.022 Wh/kg, and a batch cycle was calculated at 172.02 kg/h with 0.86 Wh/kg. These values come from sandbox tests of a 3D-printed prototype [R5]. Autonomy is incomplete in the reviewed examples. NASA states that the IPEx team has begun testing approaches to drive the excavator autonomously [R1]. The arXiv prototype paper states that it has no force or torque sensors, no material-quantity sensors and no autonomous depth-of-cut control, and it lists these as future work [R5].",
+      "scientific_importance": "Regolith is the most abundant lunar resource that could be used locally [R2]. A robotic excavation system is therefore an enabling technology: it addresses the question of how to collect and process regolith in low gravity, under dust, thermal and power constraints. The reaction-force management in counter-rotating drum designs is a specific technical contribution to that problem. Its scientific importance is indirect, because the systems described are not primarily designed to measure the lunar interior or surface composition.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a robotic excavation system. The mass, power and size of an excavator depend on its excavation goal, the regolith it is designed to handle, its mobility system and the lander or rover that carries it. The examples below are specific projects or prototypes. Values are tied to the named example and source, and unreported values are stated as not publicly specified. The four examples are not directly comparable: IPEx and RASSOR are NASA engineering designs with published design goals; the MoonBot-related paper reports sandbox results for a small laboratory prototype; the Astroport result is a trade-press account with no published specifications. Their figures should not be combined into a single performance table.",
+        "examples": [
+          {
+            "name": "NASA ISRU Pilot Excavator (IPEx)",
+            "type": "Engineering model and ground-test robotic excavator; TRL 5 design status per NASA papers",
+            "mass_kg": null,
+            "mass_description": "Described as a '30-kg-class' robot. A precise mass was not reported in the accessible text of the sources reviewed.",
+            "dimensions_description": "Not publicly specified in the sources reviewed.",
+            "power_description": "Not publicly specified in the sources reviewed.",
+            "excavation_goal": "Up to 10,000 kg of regolith in a single lunar day [R1]. This is a design goal, not a measured performance.",
+            "subsystems": "The TRL 5 design overview covers four subsystems: regolith delivery, mobility, cameras and dust mitigation, and thermal control. Avionics and software are deferred to a separate publication [R3].",
+            "flight_status": "No flight is reported in the sources reviewed.",
+            "source_urls": [
+              "https://www.nasa.gov/infrastructure-pilot-excavator/",
+              "https://ntrs.nasa.gov/citations/20250000003",
+              "https://ntrs.nasa.gov/citations/20240008162"
+            ],
+            "images": [
+              {
+                "id": "ipex_trl5_demo_photo",
+                "description": "Photo of NASA ISRU Pilot Excavator (IPEx) in a darkened test facility.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2024/09/ipex-trl-5-demo.png",
+                "source_page_url": "https://www.nasa.gov/infrastructure-pilot-excavator/",
+                "publisher": "NASA",
+                "credit": "NASA (credit line not recovered in the page text extracted for this article; verify on the source page)",
+                "caption": "Photo of IPEx in a darkened test facility with minimal lighting, as captioned on the NASA page.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct NASA asset URL checked over HTTP (200, image/png). Query strings and fragments removed. The NASA source page is the authoritative context."
+              }
+            ]
+          },
+          {
+            "name": "RASSOR (precursor concept)",
+            "type": "Precursor engineering prototype; NASA's TRL 4 implementation of the bucket-drum concept, according to the IPEx design overview",
+            "mass_kg": null,
+            "mass_description": "NASA's 2015 note describes RASSOR as a lightweight excavator under 100 kg, as a design goal.",
+            "dimensions_description": "Not publicly specified in the sources reviewed.",
+            "power_description": "Not publicly specified in the sources reviewed.",
+            "testing": "NASA's Kennedy Space Center tested a RASSOR-type robot in its Granular Mechanics and Regolith Operations Lab in 2025 in a simulated-dust structure-building test, according to a secondary news summary. This summary was not verified against a NASA primary page.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20150022134",
+              "https://ntrs.nasa.gov/citations/20240008162"
+            ],
+            "images": []
+          },
+          {
+            "name": "Modular bucket-drum prototype (MoonBot-related research)",
+            "type": "Laboratory prototype evaluated in sandbox tests. The arXiv paper describes it as part of the modular MoonBot robotic system, which it describes as part of the Japanese Moonshot program.",
+            "mass_kg": 4.8,
+            "mass_description": "4.8 kg for the bucket-drum tool as reported in the arXiv paper.",
+            "internal_volume_l": {
+              "without_buckets": 14.06,
+              "with_buckets_inside_drum": 18.39,
+              "with_all_buckets": 20.96
+            },
+            "dimensions_description": "Overall drum length and diameter not stated. Bucket height 3.2 cm.",
+            "prototype_material": "3D-printed PLA",
+            "drive_system": "24 V, 50 W EC motor with 936:1 ceramic planetary gearhead, driven by an EPOS4 Disk 60/8 controller in profile velocity mode, as reported in the arXiv text.",
+            "power_description": "The text reports a measured average excavation power of 16.74 W (estimated). A table in the same paper lists 146.74 W for the excavation condition. These values are inconsistent and require verification against the full paper.",
+            "excavation_performance": {
+              "continuous_rate_kg_per_h": 777.54,
+              "continuous_energy_wh_per_kg": 0.022,
+              "batch_rate_kg_per_h_calculated": 172.02,
+              "batch_energy_wh_per_kg_calculated": 0.86,
+              "integrated_test_note": "The extracted text reports an integrated test labelled 'Dragon' with an average of 839.16 kg/h. The label is not explained in the extracted text, so this test is not described in the article."
+            },
+            "test_conditions": "Sandbox tests using dry Tohoku silica sand in a 3 m x 4 m sandbox at 0.08 m depth. Gravity and vacuum conditions are not stated for these tests; vacuum testing is not described.",
+            "source_urls": [
+              "https://arxiv.org/abs/2511.00492v1"
+            ],
+            "images": []
+          },
+          {
+            "name": "Astroport-Astrolab prototype excavator payload",
+            "type": "Commercial prototype excavator payload reported after a field demonstration in early 2026",
+            "mass_kg": null,
+            "mass_description": "Not publicly specified in the reviewed article.",
+            "dimensions_description": "Not publicly specified in the reviewed article.",
+            "power_description": "Not publicly specified in the reviewed article.",
+            "platform": "The article states that the excavator is meant to ride on Astrolab's FLEX rover. This is a stated intention in a trade-press article, not a verified interface specification.",
+            "test_status": "The article does not say whether the test was ground or flight testing. It describes the demonstration as a proof of concept.",
+            "source_urls": [
+              "https://www.militaryaerospace.com/uncrewed/news/55355066/astroport-astrolab-complete-lunar-excavator-field-demonstration"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No universal dimensions exist for a robotic excavation system. The IPEx dimensions were not reported in the accessible text of the sources reviewed. RASSOR's design goal is described as under 100 kg, with dimensions not stated in the sources reviewed. The arXiv prototype's drum is a small laboratory unit with an internal volume of 14.06 L without buckets (18.39 L with buckets inside the drum), and its overall length and diameter are not stated. The Astroport prototype's dimensions are not publicly specified.",
+        "mass_and_weight": "Mass is normally expressed in kilograms and determines launch and lander requirements. The IPEx mass is described as '30-kg-class' (approximate). RASSOR is described as under 100 kg (design goal, 2015). The arXiv bucket-drum tool has a reported mass of 4.8 kg, which is a laboratory prototype value and not a flight mass. The Astroport prototype mass is not publicly specified.",
+        "power_requirements": "Power values must be tied to the named system and test. The arXiv prototype has a 50 W motor rating; its measured average excavation power is reported as 16.74 W in the text, with a conflicting 146.74 W value in a table. IPEx power is not publicly specified in the sources reviewed. Flight power and communications architecture for any lunar excavator is not publicly specified in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "NASA describes the Moon as having about one-sixth of Earth's surface gravity, a very thin exosphere that is not breathable, and no protection from solar radiation or meteoroid impacts [R7]. Surface temperatures reach about 127 degrees Celsius in full sunlight and drop to about -173 degrees Celsius in darkness [R7]. The surface is covered by powdery regolith, and fractured bedrock lies beneath it [R7]. For a robotic excavator, these conditions create several requirements. Dust and abrasion: the IPEx design includes dust mitigation features [R3], and the arXiv paper notes that the prototype was not engineered for abrasive regolith and was tested in dry sand [R5]. Thermal control: the IPEx design uses an actuated radiator cover and phase-change material [R3]; the arXiv paper states that the prototype was not engineered for extreme temperatures [R5]. Lighting and navigation: NASA reports that harsh low-angle lighting and featureless terrain make autonomous navigation difficult [R1]. Obstacles and compaction: the arXiv paper reports that stones and boulders can jam the inlet and that deeper, more compacted regolith reduces performance [R5]. Power and communications: the sources reviewed do not specify the power or communications architecture for a flight IPEx or any flight excavator.",
+      "limitations": "No robotic lunar excavator flight was identified in the sources reviewed. IPEx is documented as a TRL 5 design [R2, R3]. The NASA page does not state a manifest or launch date [R1]. Precise mass and dimensions for IPEx were not recovered from the accessible text of the NASA and conference sources reviewed. The MoonBot-related results come from a laboratory prototype in sandbox tests with dry silica sand; they do not establish performance in vacuum, at lunar temperatures or on realistic lunar regolith [R5]. The arXiv paper reports no force sensing, no material sensing and no autonomous depth-of-cut control [R5]. The IPEx 10,000 kg-per-lunar-day figure is a goal and not a measured performance [R1].",
+      "transportation_and_deployment": {
+        "overview": "As a surface payload, a robotic excavation system would need to be integrated on Earth into a launch configuration, launched and transferred to the Moon, delivered to the surface by a lander or as part of a rover, deployed, and then powered and connected to data and thermal interfaces. No deployment method was verified for IPEx or any other excavator in the sources reviewed.",
+        "transportation_process": [
+          "Earth integration and launch: the sources reviewed do not publish launch configuration or stowage data for IPEx or any other excavator.",
+          "Lunar transfer and landing delivery: no delivery vehicle or lander is verified as carrying IPEx or any excavator in the sources reviewed. The IEEE actuator paper describes IPEx as designed for a future technology demonstration [R2].",
+          "Deployment and mobility: the IPEx design includes a mobility subsystem and actuators for mobility, shoulder and excavation [R2, R3]. The arXiv paper describes a distributed concept in which a cargo vehicle collects regolith from several excavating units, presented as an option to evaluate rather than a planned task [R5].",
+          "Rover integration: the Astroport prototype is described as intended to ride on Astrolab's FLEX rover [R6]. This is a stated intention in a trade-press article and is not a verified interface specification or a lander compatibility claim.",
+          "Power, data and thermal interfaces: the IPEx thermal design is documented [R3]. Power and data interfaces for a flight system are not publicly specified in the sources reviewed."
+        ],
+        "deployment_methods": "No deployment method for IPEx or any other lunar excavator was verified in the sources reviewed. The IPEx design is described as a self-propelled excavator with a mobility subsystem [R3]; how it would be released from a lander or carrier is not stated.",
+        "historical_examples": "No robotic lunar excavator has been reported as deployed on the Moon in the sources reviewed. Ground-test examples include IPEx and RASSOR at the Kennedy Space Center [R1, R3, R4], and a commercial prototype field demonstration reported in early 2026 [R6].",
+        "compatibility_assessment": "No compatibility is asserted with any named lander, rover or spacecraft. Compatibility would require the verified mass, dimensions, mounting interfaces, landing loads, deployment method, power and communications requirements of both the excavator and the carrier. The Astroport-Astrolab rover association is a stated intention in a trade-press article and is not verified interface evidence.",
+        "images": []
+      },
+      "historical_significance": "RASSOR: NASA's Kennedy Space Center developed RASSOR as a lightweight counter-rotating excavator for reduced-gravity regolith mining [R4]. It is the TRL 4 precursor of the bucket-drum design used in IPEx [R3]. IPEx: NASA's IPEx project extends the RASSOR concept to a TRL 5 design with more developed subsystems and dust tolerance features [R3]. Actuator testing in 2025 is reported in a NASA-authored conference paper [R2]. Modular bucket-drum research: a 2025 arXiv paper reports sandbox tests of a 3D-printed bucket-drum prototype for a modular Japanese robotic concept [R5]. Commercial prototype: in early 2026, a commercial excavator prototype was reported as having completed a field demonstration with a lunar rover platform [R6].",
+      "limitations_and_uncertainties": "Flight status: no flight of a robotic lunar excavator was identified in the sources reviewed. The Astroport article does not state whether its test was a ground or flight test [R6]. IPEx specifications: the accessible text of the NASA and conference sources did not provide IPEx mass, dimensions, power or measured excavation rate. The NASA IEEE actuator paper and the ASCEND24 design overview were available only as abstracts or record pages through the tools used for this article; the full PDFs were not readable in this run. Power discrepancy: the arXiv paper's excavation power is inconsistent between the text (16.74 W) and a table (146.74 W) [R5]. Integrated test: the arXiv paper reports an integrated test labelled 'Dragon' with an average rate of 839.16 kg/h; the extracted text does not explain this label, so the test is not described in this article [R5]. RASSOR 2.0: secondary search results mention a 66 kg mass and an excavation rate for a RASSOR 2.0 concept; these were not verified against a primary NASA source and are not used. Competition context: Lunabotics descriptions were drawn from secondary news sources; the NASA Lunabotics page could not be retrieved during this run, so competition rules and dates are not used. Mission schedule: no launch date, manifest or lander assignment was verified for IPEx or any other excavator. Images: only images with direct asset URLs checked over HTTP and a NASA source page are included; images from the arXiv paper were not verified and are not included.",
+      "images": [
+        {
+          "id": "ipex_trl5_demo_photo",
+          "description": "Photo of NASA ISRU Pilot Excavator (IPEx) in a darkened test facility.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2024/09/ipex-trl-5-demo.png",
+          "source_page_url": "https://www.nasa.gov/infrastructure-pilot-excavator/",
+          "publisher": "NASA",
+          "credit": "NASA (credit line not recovered in the page text extracted for this article; verify on the source page)",
+          "caption": "Photo of IPEx in a darkened test facility with minimal lighting, as captioned on the NASA page.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA asset URL checked over HTTP (200, image/png). Query strings and fragments removed. The NASA source page is the authoritative context."
+        },
+        {
+          "id": "ipex_artist_depiction",
+          "description": "Artist depiction of NASA's IPEx lunar excavator.",
+          "image_type": "Artist depiction",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2024/10/rassor-ipex-forreview-1.jpg",
+          "source_page_url": "https://www.nasa.gov/infrastructure-pilot-excavator/",
+          "publisher": "NASA",
+          "credit": "Johns Hopkins APL/Steve Gribben/Beverly Jensen (as credited on the NASA source page)",
+          "caption": "Artist depiction of NASA's IPEx lunar excavator.",
+          "section_placements": [
+            "overview",
+            "operating_principle"
+          ],
+          "notes": "Direct NASA asset URL checked over HTTP (200, image/jpeg). Query strings and fragments removed. The file name refers to RASSOR, but the NASA caption identifies the depiction as IPEx. Artist depiction, not a photograph of hardware."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "ipex_artist_depiction",
+          "description": "Artist depiction of NASA's IPEx lunar excavator.",
+          "image_type": "Artist depiction",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2024/10/rassor-ipex-forreview-1.jpg",
+          "source_page_url": "https://www.nasa.gov/infrastructure-pilot-excavator/",
+          "publisher": "NASA",
+          "credit": "Johns Hopkins APL/Steve Gribben/Beverly Jensen (as credited on the NASA source page)",
+          "caption": "Artist depiction of NASA's IPEx lunar excavator.",
+          "section_placements": [
+            "overview",
+            "operating_principle"
+          ],
+          "notes": "Direct NASA asset URL checked over HTTP (200, image/jpeg). Query strings and fragments removed. The file name refers to RASSOR, but the NASA caption identifies the depiction as IPEx."
+        }
+      ],
+      "operating_principle_images": [
+        {
+          "id": "ipex_artist_depiction",
+          "description": "Artist depiction of NASA's IPEx lunar excavator.",
+          "image_type": "Artist depiction",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2024/10/rassor-ipex-forreview-1.jpg",
+          "source_page_url": "https://www.nasa.gov/infrastructure-pilot-excavator/",
+          "publisher": "NASA",
+          "credit": "Johns Hopkins APL/Steve Gribben/Beverly Jensen (as credited on the NASA source page)",
+          "caption": "Artist depiction of NASA's IPEx lunar excavator.",
+          "section_placements": [
+            "overview",
+            "operating_principle"
+          ],
+          "notes": "Direct NASA asset URL checked over HTTP (200, image/jpeg). Query strings and fragments removed."
+        }
+      ],
+      "references": [
+        {
+          "id": "R1",
+          "title": "Infrastructure Pilot Excavator (IPEx)",
+          "publisher": "NASA",
+          "date": "Page updated 9 November 2026 as displayed on the page",
+          "url": "https://www.nasa.gov/infrastructure-pilot-excavator/"
+        },
+        {
+          "id": "R2",
+          "title": "Design and Testing of TRL5 IPEx Actuators",
+          "publisher": "IEEE Aerospace Conference (NASA NTRS record 20250000003)",
+          "authors": "Clark, C. J.; Smith, J. D.; Nick, A. J.; Ortega, V. V.; Schuler, J. M.; Dyas, J. E.; Lahl, J.",
+          "date": "1-8 March 2025 (conference dates; paper date not stated on record)",
+          "url": "https://ntrs.nasa.gov/citations/20250000003"
+        },
+        {
+          "id": "R3",
+          "title": "ISRU Pilot Excavator (IPEx) Technology Readiness Level 5 Design Overview",
+          "publisher": "AIAA ASCEND (NASA NTRS record 20240008162)",
+          "authors": "Schuler, J. M., et al.",
+          "date": "30 July - 1 August 2024 (conference dates; paper date not stated on record)",
+          "url": "https://ntrs.nasa.gov/citations/20240008162"
+        },
+        {
+          "id": "R4",
+          "title": "RASSOR: Regolith Advanced Surface Systems Operations Robot",
+          "publisher": "NASA Kennedy Space Center (KSC-E-DAA-TN27481; NASA NTRS record 20150022134)",
+          "authors": "Gill, T. R.; Mueller, R.",
+          "date": "2015-11-17",
+          "url": "https://ntrs.nasa.gov/citations/20150022134"
+        },
+        {
+          "id": "R5",
+          "title": "Design and Development of a Modular Bucket Drum Excavator for Lunar ISRU",
+          "publisher": "arXiv (arXiv:2511.00492v1); arXiv record states acceptance at IEEE iSpaRo 2025",
+          "authors": "Giel, S.; Hurrell, J.; Santra, S.; Mishra, A.; Uno, K.; Yoshida, K.",
+          "date": "2025-11-01 (submission date)",
+          "url": "https://arxiv.org/abs/2511.00492v1"
+        },
+        {
+          "id": "R6",
+          "title": "Astroport, Astrolab complete lunar excavator field demonstration",
+          "publisher": "Military & Aerospace Electronics (trade press)",
+          "authors": "Whitney, J.",
+          "date": "2026-02-04",
+          "url": "https://www.militaryaerospace.com/uncrewed/news/55355066/astroport-astrolab-complete-lunar-excavator-field-demonstration"
+        },
+        {
+          "id": "R7",
+          "title": "Moon Facts",
+          "publisher": "NASA Science",
+          "date": "Not stated in extracted text",
+          "url": "https://science.nasa.gov/moon/facts/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "operating_principle": "payload.article.operating_principle_images",
+      "IPEx example": "payload.article.physical_specifications.examples[0].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images; the article contains no image in this section)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. Direct image URLs were checked over HTTP with HEAD requests (status 200; content types image/jpeg and image/png)."
+  },
+  "data_quality_notes": [
+    "IPEx mass, dimensions, power and measured excavation rate were not recovered. The ASCEND24 design overview and IEEE 2025 actuator paper were available only as NTRS record pages and abstracts; the full PDFs could not be read in this run (the ASCEND24 PDF was saved locally but could not be rendered; the IEEE 2025 PDF exceeded the fetch size limit).",
+    "IPEx '30-kg-class' mass is taken from the IEEE 2025 abstract and is approximate. No precise mass was verified.",
+    "IPEx TRL 5 status is stated in the ASCEND24 title and abstract and in the IEEE 2025 abstract. A secondary search summary mentioned a TRL 6 'flight-ready' target; this was not verified on a NASA primary page and is not used in the article.",
+    "The NASA IPEx page states 'up to 10,000 kg of regolith' in a single lunar day as the excavation goal. It is a goal, not a measured performance.",
+    "The NASA IPEx page does not state a manifest or launch date. A secondary summary described the demonstration as unmanifested; this was not verified and is not used.",
+    "The IPEx image ipex-trl-5-demo.png is a photograph in a darkened test facility, per the NASA page caption. The NASA page text recovered for this article does not show a credit line for this image; the credit field is marked accordingly.",
+    "The file name rassor-ipex-forreview-1.jpg refers to RASSOR, but the NASA page caption identifies the image as an artist depiction of IPEx. The caption and credit are used as published.",
+    "The NASA page thumbnail ipex-in-fligh-thumbnail.png was not used because it is a thumbnail and its context is not verified.",
+    "RASSOR design goal 'under 100 kg' is taken from the NASA 2015 KSC note abstract. RASSOR 2.0 figures (66 kg mass; a daily excavation figure) appeared only in secondary search summaries and were not verified; they are not used.",
+    "The 2025 RASSOR test in the Granular Mechanics and Regolith Operations Lab is from a secondary news summary and is not verified against a NASA primary page. It is mentioned in the physical specifications section with that caveat.",
+    "The arXiv paper (2511.00492v1) reports 16.74 W average excavation power in the text and 146.74 W in Table III. The text value is consistent with the stated 0.022 Wh/kg at 777.54 kg/h, but the discrepancy must be checked in the full paper.",
+    "The arXiv paper's bucket-drum mass (4.8 kg) and volume figures are for a laboratory prototype and are not flight masses. The paper does not state overall drum length or diameter.",
+    "The arXiv paper reports an integrated test labelled 'Dragon' (839.16 kg/h average). The label is not explained in the extracted text and this test is not described in the article.",
+    "The arXiv paper is affiliated with the Japanese Moonshot program per its text. The fetched text does not name JAXA; JAXA affiliation is not asserted.",
+    "The arXiv paper figures (4 figures) were not verified as direct asset URLs and are not included in the article or JSON image registry.",
+    "Astroport-Astrolab field demonstration details (date, site, flight or ground test, mass, dimensions, power) are not stated in the trade-press article. The FLEX rover platform association is a stated intention, not verified interface evidence.",
+    "The NASA Lunabotics page (https://www.nasa.gov/lunabotics) returned HTTP 404 during this run. Competition descriptions rely on secondary news sources and are not used for specifications.",
+    "The NASA Moon Facts page did not show a publication date in the extracted text.",
+    "NASA image direct URLs were checked with HTTP HEAD requests only (status 200 and image content types). Full-resolution downloads were not checked.",
+    "No lunar landing-site or location recommendations are included, consistent with the user's deferral.",
+    "No compatibility claims with named landers, rovers or spacecraft are asserted; the Astrolab FLEX association is recorded only as a stated intention in the trade-press article."
+  ]
+}

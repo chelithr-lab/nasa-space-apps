@@ -1,0 +1,216 @@
+/*
+ * Design tokens: "Night-side Glass" (Stage 1 of the interface redesign).
+ * Everything here uses the --lg- prefix so nothing in the existing styles is overwritten.
+ * Colour ratios are checked by src/ui/designTokens.test.ts, which reads THIS file.
+ *
+ * Fonts (exactly three families, as specified for Serenity):
+ *   Inter Bold          : headings, page and panel titles, environment names, instrument labels
+ *   Economica 400/700   : interface text, values, tables, captions, technical information
+ *   Darker Grotesque 400: the Serenity wordmark ONLY (.sg-wordmark)
+ * Inter Bold is shipped in src/assets/fonts. Economica and Darker Grotesque must be added by hand, see the README.
+ */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Economica';
+  src: url('../assets/fonts/Economica-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Economica';
+  src: url('../assets/fonts/Economica-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url('../assets/fonts/DarkerGrotesque-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Approved colours */
+  --lg-ground: #101820;
+  --lg-panel: #202d38;
+  --lg-text: #d8e0e6;
+  --lg-text-2: #8e9eaa;
+  --lg-blue: #6489a5;
+  --lg-amber: #d4a45f;
+  /* Derived to meet contrast on the panel colour */
+  --lg-panel-2: #27343f;
+  --lg-panel-3: #2f3b46;
+  --lg-text-2l: #a3b1bc;
+  --lg-blue-text: #8fb0cb;
+  --lg-heading: #e4eaf0; /* display headings: light, never black */
+  --lg-ctl: #62788a;
+  --lg-hair: rgba(216, 224, 230, 0.1);
+  /* Semantic */
+  --lg-green: #7fb08f;
+  --lg-red: #e07a6e;
+  --lg-grey: #5f6e7a;
+
+  /* Fonts */
+  --lg-font-head: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --lg-font-ui: 'Economica', 'Arial Narrow', 'Segoe UI', system-ui, sans-serif;
+  /* The wordmark face. The fallback is only for a glyph the font lacks (for example the trademark sign). */
+  --lg-font-mark: 'Darker Grotesque', 'Inter', 'Segoe UI', sans-serif;
+
+  /* Type scale (Economica is small for its size, so the UI sizes are larger than a typical 13 px scale) */
+  --lg-fs-display: 44px;
+  --lg-fs-heading-xl: 32px;
+  --lg-fs-heading: 22px;
+  --lg-fs-panel-title: 12px;
+  --lg-fs-body: 16px;
+  --lg-fs-data: 15px;
+  --lg-fs-readout: 28px;
+  --lg-fs-caption: 14px;
+
+  /* Shape and depth */
+  --lg-radius: 12px;
+  --lg-radius-sm: 8px;
+  --lg-shadow-1: 0 16px 40px rgba(0, 0, 0, 0.42), 0 2px 8px rgba(0, 0, 0, 0.3);
+  --lg-shadow-2: 0 22px 54px rgba(0, 0, 0, 0.55), 0 3px 8px rgba(0, 0, 0, 0.4);
+  --lg-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  /*
+   * FROSTED GLASS: tune these five numbers, everything else follows.
+   *   alpha  : how opaque the tinted surface is (0.70 = 30 percent transparent)
+   *   blur   : backdrop blur radius
+   *   sat    : backdrop saturation
+   *   dim    : backdrop brightness. Below 1 it darkens what is behind, which keeps text readable over a bright Moon.
+   *   alpha-dense : for panels full of small text (Lunar Solar Intelligence, the mission dossier)
+   */
+  --lg-panel-rgb: 32 45 56;
+  --lg-glass-alpha: 0.7;
+  --lg-glass-alpha-dense: 0.84;
+  --lg-glass-blur: 24px;
+  --lg-glass-sat: 1.15;
+  --lg-glass-dim: 0.65;
+  --lg-glass-border: rgba(216, 224, 230, 0.16);
+  --lg-glass-bg: rgb(var(--lg-panel-rgb) / var(--lg-glass-alpha));
+  --lg-glass-bg-dense: rgb(var(--lg-panel-rgb) / var(--lg-glass-alpha-dense));
+  --lg-glass-filter: blur(var(--lg-glass-blur)) saturate(var(--lg-glass-sat)) brightness(var(--lg-glass-dim));
+  /* G2 near-solid, and the fallback when blur is unavailable or switched off */
+  --lg-near-solid-bg: rgb(var(--lg-panel-rgb) / 0.96);
+
+  /* Motion */
+  --lg-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --lg-dur-open: 180ms;
+  --lg-dur-close: 140ms;
+  --lg-dur-fade: 80ms;
+  --lg-open-slide: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --lg-dur-open: 80ms;
+    --lg-dur-close: 80ms;
+    --lg-open-slide: 0px;
+  }
+}
+
+/* Surface tiers. G1 is the only one that blurs. */
+.lg-g1 {
+  background: var(--lg-glass-bg);
+  -webkit-backdrop-filter: var(--lg-glass-filter);
+  backdrop-filter: var(--lg-glass-filter);
+  border: 1px solid var(--lg-glass-border);
+  border-radius: var(--lg-radius);
+  box-shadow: var(--lg-highlight), var(--lg-shadow-1);
+  color: var(--lg-text);
+}
+.lg-g1.lg-dense { background: var(--lg-glass-bg-dense); }
+.lg-g2 {
+  background: var(--lg-near-solid-bg);
+  border: 1px solid var(--lg-hair);
+  border-radius: var(--lg-radius);
+  box-shadow: var(--lg-highlight), var(--lg-shadow-2);
+  color: var(--lg-text);
+}
+.lg-g3 {
+  background: var(--lg-panel);
+  border: 1px solid var(--lg-hair);
+  border-radius: var(--lg-radius);
+  color: var(--lg-text);
+}
+/* Set by the frame-time governor, or by the user: all glass becomes the near-solid tier. */
+/* No backdrop-filter in this browser: use the near-solid tier. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .lg-g1, .lg-g1.lg-dense { background: var(--lg-near-solid-bg); }
+}
+:root[data-glass='solid'] .lg-g1 {
+  background: var(--lg-near-solid-bg);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+/* Type roles */
+/* Inter Bold is a static bold: presence comes from size, tight line height, tight tracking and a light colour. */
+.lg-display { font: 700 var(--lg-fs-display) / 1.06 var(--lg-font-head); letter-spacing: -0.025em; color: var(--lg-heading); }
+.lg-heading-xl { font: 700 var(--lg-fs-heading-xl) / 1.1 var(--lg-font-head); letter-spacing: -0.02em; color: var(--lg-heading); }
+.lg-heading { font: 700 var(--lg-fs-heading) / 1.15 var(--lg-font-head); letter-spacing: -0.015em; color: var(--lg-heading); }
+.lg-panel-title {
+  font: 700 var(--lg-fs-panel-title) / 1.3 var(--lg-font-head);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.lg-body { font: 400 var(--lg-fs-body) / 1.4 var(--lg-font-ui); }
+.lg-data { font: 700 var(--lg-fs-data) / 1.35 var(--lg-font-ui); font-variant-numeric: tabular-nums; }
+.lg-readout { font: 700 var(--lg-fs-readout) / 1 var(--lg-font-ui); font-variant-numeric: tabular-nums; }
+.lg-caption { font: 400 var(--lg-fs-caption) / 1.3 var(--lg-font-ui); color: var(--lg-text-2l); }
+
+/* Visible focus on every control (WCAG 1.4.11 and 2.4.7). */
+:where(button, input, select, textarea, a, [tabindex]):focus-visible {
+  outline: 2px solid var(--lg-blue-text);
+  outline-offset: 2px;
+}
+
+/* Status shapes: colour is never the only signal. */
+.lg-status { display: inline-flex; align-items: center; gap: 6px; }
+.lg-status::before { content: ''; width: 12px; height: 12px; flex: none; box-sizing: border-box; }
+.lg-status[data-state='direct-sunlight']::before { background: var(--lg-green); border-radius: 50%; }
+.lg-status[data-state='terrain-obstruction']::before {
+  background: linear-gradient(90deg, var(--lg-amber) 50%, transparent 50%);
+  border: 2px solid var(--lg-amber);
+  border-radius: 50%;
+}
+.lg-status[data-state='geometric-darkness']::before { border: 2px solid var(--lg-text-2l); border-radius: 50%; }
+.lg-status[data-state='unknown']::before {
+  background: repeating-linear-gradient(135deg, var(--lg-text-2l) 0 2px, transparent 2px 4px);
+  border: 2px solid var(--lg-text-2l);
+}
+
+/* Serenity wordmark. Darker Grotesque Regular, thin and understated, used here and nowhere else. */
+.sg-brand { display: inline-flex; flex-direction: column; gap: 9px; margin: 0; font-weight: 400; line-height: 1; }
+a.sg-brand { color: inherit; text-decoration: none; }
+.sg-wordmark {
+  font-family: var(--lg-font-mark);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--lg-text);
+}
+/* Trademark sign: 50 percent of the wordmark, raised to the cap line. line-height 0 so it cannot change the line box. */
+.sg-wordmark sup { font-size: 0.5em; line-height: 0; letter-spacing: 0; vertical-align: baseline; position: relative; top: -0.55em; margin-left: 0.08em; }
+.sg-descriptor {
+  font-family: var(--lg-font-ui);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--lg-text-2l);
+  line-height: 1;
+  padding-left: 2px;
+}

@@ -1,0 +1,263 @@
+{
+  "catalogue_id": 210,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 210,
+    "name": "ISRU technology demonstrator",
+    "article": {
+      "overview": "An ISRU technology demonstrator is a payload that tests whether a planetary surface system can use local materials, such as lunar regolith or polar volatiles, to produce something useful rather than carrying every consumable from Earth. In-situ resource utilisation (ISRU) is the general term for this approach. The catalogue name describes a purpose rather than one standard instrument, so the examples below range from a flown lunar drill-and-analyser test (PRIME-1) and a flown oxygen-production unit on Mars (MOXIE) to an ESA lunar oxygen payload that is still at target-specification and ground-prototype stage.",
+      "description": "An ISRU technology demonstrator usually combines three functions: acquiring or locating a local material, processing it or measuring its composition, and reporting what the process produced. Some demonstrators test only one step, such as drilling and sampling, while others attempt a full chain from raw regolith to a stored product such as oxygen or water. Because the term describes a purpose rather than a hardware design, each example has to be judged on its own specification, flight status and measured results.",
+      "scientific_purpose_and_applications": "The purpose is engineering and resource validation: to show whether a process can work in the lunar environment, how much product it yields, how much power, heat and time it needs, and how sensitive it is to regolith properties. Results inform later production systems and crewed missions, which would otherwise have to carry consumables from Earth. Volatile measurements also contribute to lunar science, including the distribution of water and other volatiles in polar regions. The sources name oxygen for life support and, with hydrogen, rocket propellant as the main applications, and identify polar water ice as a possible source of both hydrogen and oxygen that still needs prospecting [7].",
+      "operating_principle": "Operating principles differ between demonstrators. PRIME-1 drilled into the surface with the TRIDENT drill, which was designed to bring regolith samples up for volatile analysis, and its MSolo mass spectrometer was intended to measure volatiles as they came off the samples [1][2]. MOXIE extracted oxygen from the Martian atmosphere over 16 runs [3][4]. ESA's lunar payload is intended to extract oxygen from regolith, but the extraction process is not named in the sources reviewed. ESA's 2022 page attributes an electrolysis-based process to a separate ESTEC ground prototype, which was tested on simulated regolith [5][6].",
+      "scientific_importance": "Demonstrators reduce the risk of depending on resources that have not been verified in place. A demonstrator that produces oxygen, or that detects and measures volatiles, turns assumptions about the lunar environment into measured performance. MOXIE showed at small scale that oxygen can be made from the Martian atmosphere, with a total of 122 grams over 16 runs at 98% purity or better [3][4]. PRIME-1 showed that its drill could complete its full range of motion on the lunar surface, but no lunar volatile result was reported, so its scientific contribution remains limited [1][2].",
+      "physical_specifications": {
+        "note": "There is no universal specification for an ISRU technology demonstrator. The examples below range from a flown lunar drill-and-analyser test with no published mass or dimensions, to a flown Mars oxygen unit with published mass, size and power, to a development payload with target performance but no published hardware size. Figures apply only to the named example and its source.",
+        "examples": [
+          {
+            "name": "PRIME-1 (Polar Resources Ice Mining Experiment-1)",
+            "type": "Flown lunar drill and volatile-analysis technology demonstration",
+            "status": "Flown on Intuitive Machines IM-2 (Athena lander), launched 26 February 2025 from NASA Kennedy; partial mission outcome",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "drill": {
+              "name": "TRIDENT (The Regolith and Ice Drill for Exploring New Terrain)",
+              "maximum_depth": "Up to about three feet below the surface, as stated by NASA"
+            },
+            "volatile_analyser": {
+              "name": "MSolo (Mass Spectrometer Observing Lunar Operations)",
+              "description": "Described by NASA as a commercial off-the-shelf mass spectrometer modified for space. INFICON is named as a partner; the page does not say what hardware it supplied.",
+              "reported_result": "Detected elements likely due to gases emitted from the lander's propulsion system. No lunar volatile or ice detection reported."
+            },
+            "qualification": "Mass, dimensions and power are not published in the sources reviewed. Not to be treated as specifications for other ISRU demonstrators.",
+            "source_urls": [
+              "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/",
+              "https://www.nasa.gov/news-release/nasa-receives-some-data-before-intuitive-machines-ends-lunar-mission/"
+            ],
+            "images": [
+              {
+                "id": "prime1_im2_lander_on_side",
+                "description": "Intuitive Machines' IM-2 lander lying on its side in a South Pole crater, with the PRIME-1 drill deployed.",
+                "image_type": "Lander photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+                "source_page_url": "https://www.nasa.gov/news-release/nasa-receives-some-data-before-intuitive-machines-ends-lunar-mission/",
+                "publisher": "NASA",
+                "credit": "Intuitive Machines",
+                "caption": "IM-2 lying on its side in a South Pole crater, with the PRIME-1 drill deployed (paraphrased from NASA's caption).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL taken from the NASA news release page markup, with the resize query parameter removed; the full-size file is at the same path. Caption paraphrased from the page. Not downloaded to check resolution. Shows the lander's attitude rather than PRIME-1 hardware in detail."
+              }
+            ]
+          },
+          {
+            "name": "MOXIE (Mars Oxygen In-situ Resource Utilization Experiment)",
+            "type": "Flown off-Moon ISRU oxygen-production instrument on the Perseverance rover",
+            "status": "Flown on NASA's Perseverance rover on Mars; operated 2021 to 2023 (NASA completion article dated September 2023)",
+            "mass_kg": 17.1,
+            "external_dimensions_cm": [
+              23.9,
+              23.9,
+              30.9
+            ],
+            "power_consumption_w": 300,
+            "oxygen_production": {
+              "total_grams": 122,
+              "extraction_runs": 16,
+              "final_run_grams": 9.8,
+              "most_efficient_rate_grams_per_hour": 12,
+              "specification_rate_up_to_grams_per_hour": 10,
+              "purity": "98% or better"
+            },
+            "qualification": "Figures are for the MOXIE instrument on Mars only and do not transfer directly to lunar operation. NASA's two rate figures (10 and 12 grams per hour) differ and are both reported.",
+            "source_urls": [
+              "https://www.nasa.gov/missions/mars-2020-perseverance/perseverance-rover/nasas-oxygen-generating-experiment-moxie-completes-mars-mission/",
+              "https://science.nasa.gov/mission/mars-2020-perseverance/science-instruments/"
+            ],
+            "images": [
+              {
+                "id": "moxie_installation_perseverance",
+                "description": "Members of NASA's Mars 2020 project install the MOXIE instrument into the Perseverance rover.",
+                "image_type": "Spacecraft integration photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2018/06/pia23154-16.jpg",
+                "source_page_url": "https://www.nasa.gov/missions/mars-2020-perseverance/perseverance-rover/nasas-oxygen-generating-experiment-moxie-completes-mars-mission/",
+                "publisher": "NASA",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "MOXIE is lowered into the chassis of NASA's Perseverance in 2019.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL taken from the NASA completion article markup, with the resize query parameter removed. Shows integration of a Mars instrument, not a lunar image."
+              }
+            ]
+          },
+          {
+            "name": "ESA lunar oxygen-extraction payload",
+            "type": "Development payload with target performance (not flown)",
+            "status": "Team selected 2022 (ESA archived page); ESTEC ground prototype reported 2020 (ESA archived page); no launch date stated",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified; described as compact",
+            "power_consumption_w": null,
+            "power_description": "Described as low power, running on the solar power available within a single fortnight-long lunar day. No wattage published.",
+            "performance_target": {
+              "oxygen_mass_grams": [
+                50,
+                100
+              ],
+              "extraction_fraction_percent": 70,
+              "operating_window": "Within a 10 day period"
+            },
+            "prototype": "ESTEC laboratory oxygen plant tested on simulated moondust and regolith simulant, not lunar material; no output figure given.",
+            "qualification": "Target values are not measured results. Extraction process not named in the 2022 source.",
+            "source_urls": [
+              "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Team_chosen_to_make_first_oxygen_on_the_Moon",
+              "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/ESA_opens_oxygen_plant_making_air_out_of_moondust"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The three examples are not comparable in size. PRIME-1 has no published dimensions. MOXIE is a 23.9 x 23.9 x 30.9 cm instrument with a published 17.1 kg mass. The ESA payload is described only as compact. A new demonstrator's dimensions would depend on its drill, reactor or analyser design, its thermal management and its mounting interface.",
+        "mass_and_weight": "Only one of the three examples has a published mass: MOXIE, at 17.1 kg [4]. PRIME-1 and the ESA payload have no published mass in the sources reviewed. Mass affects lander capacity, structural support and deployment design, so a mass value should be taken only from the named instrument and source.",
+        "power_requirements": "MOXIE's published power consumption is 300 W [4]. PRIME-1 has no published power figure. The ESA payload is described as low power and solar-powered over a lunar day, without a published wattage [5]."
+      },
+      "environmental_and_operational_requirements": "A lunar ISRU demonstrator must survive the same surface environment as other payloads: vacuum, large temperature swings between lunar day and night, dust and radiation. Processes that drill, heat or electrolyse regolith add requirements for stable mounting, heat management and power. Attitude matters in practice. PRIME-1's lander came to rest on its side, which NASA reported prevented the drill and other instruments from fully operating before the batteries were depleted [2]. MOXIE operated in the Martian atmosphere, so its environmental results do not transfer directly to the Moon [3].",
+      "limitations": "A demonstrator's value depends on how long it operates and how much usable data it returns. PRIME-1 completed some instrument checkouts and returned 250 megabytes of data for NASA in total, but the release gives no per-instrument breakdown [2]. The MSolo detections were described as likely due to gases from the lander's propulsion system, so the mission provides no lunar volatile measurement [2]. ESA's oxygen mass and extraction fraction are targets rather than measured results [5], and the ESTEC prototype was tested on simulant rather than lunar regolith [6].",
+      "transportation_and_deployment": {
+        "overview": "Surface ISRU demonstrators are delivered by lunar landers, as PRIME-1 was on IM-2 [1][2]. The standard surface-payload steps apply: Earth integration, launch, lunar transfer, landing, deployment, and connection of power and data. For PRIME-1, the landing attitude determined what could be operated after touchdown [2]. No specific lander is assessed here as compatible with a future demonstrator.",
+        "transportation_process": [
+          "Integrate the demonstrator with the lander on Earth.",
+          "Launch and transfer to the Moon.",
+          "Land on the surface. PRIME-1's lander came to rest on its side [2].",
+          "Deploy the drill and instruments. PRIME-1's drill was deployed from the lander, between its legs [2].",
+          "Connect power and data. The PRIME-1 sources do not describe these interfaces in detail, so they are not assessed here."
+        ],
+        "deployment_methods": "PRIME-1's drill was deployed from the lander [2]. ESA's payload is intended to be compact and to fly on a range of landers [5], but its deployment method is not specified.",
+        "historical_examples": "PRIME-1 flew on IM-2 in 2025 [1]. MOXIE operated on Mars from 2021 to 2023 [3]. ESA's lunar payload was selected in 2022 but has no published launch date [5].",
+        "compatibility_assessment": "No compatibility with a named lander is asserted. ESA's 2022 statement says only that the payload must be able to fly on a range of potential landers, including ESA's European Large Logistics Lander [5].",
+        "images": []
+      },
+      "historical_significance": "PRIME-1 flew on IM-2 in 2025 as a South Pole drilling and volatile-detection test. It is the most direct flown example in this article of a lunar ISRU-style demonstrator, and its results were partial [1][2]. MOXIE showed at small scale that oxygen can be produced from the Martian atmosphere [3][4]. ESA's oxygen work moved from a 2020 ESTEC ground prototype to a 2022 payload selection, but the sources reviewed show no flight [5][6].",
+      "limitations_and_uncertainties": "The name 'ISRU technology demonstrator' describes a purpose, not one design, so its examples are not interchangeable. PRIME-1 has no published mass or dimensions and did not return conclusive volatile results; MOXIE is a Mars instrument whose figures cannot be transferred to the Moon; the ESA payload has target performance but no published mass, size or demonstrated output. Several sources are dated (the ESA portal was last updated in 2019 and the ESA payload selection is from 2022), so current status must be checked before reuse.",
+      "images": [
+        {
+          "id": "prime1_im2_lander_on_side",
+          "description": "Intuitive Machines' IM-2 lander lying on its side in a South Pole crater, with the PRIME-1 drill deployed.",
+          "image_type": "Lander photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+          "source_page_url": "https://www.nasa.gov/news-release/nasa-receives-some-data-before-intuitive-machines-ends-lunar-mission/",
+          "publisher": "NASA",
+          "credit": "Intuitive Machines",
+          "caption": "IM-2 lying on its side in a South Pole crater, with the PRIME-1 drill deployed (paraphrased from NASA's caption).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA news release page markup, with the resize query parameter removed; the full-size file is at the same path. Caption paraphrased from the page. Not downloaded to check resolution. Shows the lander's attitude rather than PRIME-1 hardware in detail."
+        },
+        {
+          "id": "moxie_installation_perseverance",
+          "description": "Members of NASA's Mars 2020 project install the MOXIE instrument into the Perseverance rover.",
+          "image_type": "Spacecraft integration photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2018/06/pia23154-16.jpg",
+          "source_page_url": "https://www.nasa.gov/missions/mars-2020-perseverance/perseverance-rover/nasas-oxygen-generating-experiment-moxie-completes-mars-mission/",
+          "publisher": "NASA",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "MOXIE is lowered into the chassis of NASA's Perseverance in 2019.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL taken from the NASA completion article markup, with the resize query parameter removed. Shows integration of a Mars instrument, not a lunar image."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "prime1_im2_lander_on_side",
+          "description": "Intuitive Machines' IM-2 lander lying on its side in a South Pole crater, with the PRIME-1 drill deployed.",
+          "image_type": "Lander photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+          "source_page_url": "https://www.nasa.gov/news-release/nasa-receives-some-data-before-intuitive-machines-ends-lunar-mission/",
+          "publisher": "NASA",
+          "credit": "Intuitive Machines",
+          "caption": "IM-2 lying on its side in a South Pole crater, with the PRIME-1 drill deployed (paraphrased from NASA's caption).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA news release page markup, with the resize query parameter removed; the full-size file is at the same path. Caption paraphrased from the page. Not downloaded to check resolution. Shows the lander's attitude rather than PRIME-1 hardware in detail."
+        }
+      ],
+      "references": [
+        {
+          "title": "Polar Resources Ice Mining Experiment 1 (PRIME-1)",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/mission/polar-resources-ice-mining-experiment-1-prime-1/"
+        },
+        {
+          "title": "NASA Receives Some Data Before Intuitive Machines Ends Lunar Mission",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/news-release/nasa-receives-some-data-before-intuitive-machines-ends-lunar-mission/"
+        },
+        {
+          "title": "NASA's Oxygen-Generating Experiment MOXIE Completes Mars Mission",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/missions/mars-2020-perseverance/perseverance-rover/nasas-oxygen-generating-experiment-moxie-completes-mars-mission/"
+        },
+        {
+          "title": "Mars 2020 Perseverance science instruments (MOXIE tech specifications)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/mars-2020-perseverance/science-instruments/"
+        },
+        {
+          "title": "Team chosen to make first oxygen on the Moon",
+          "publisher": "ESA (archived, 9 March 2022)",
+          "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Team_chosen_to_make_first_oxygen_on_the_Moon"
+        },
+        {
+          "title": "ESA opens oxygen plant making air out of moondust",
+          "publisher": "ESA (archived, 17 January 2020)",
+          "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/ESA_opens_oxygen_plant_making_air_out_of_moondust"
+        },
+        {
+          "title": "In-Situ Resource Utilisation (ISRU) Demonstration Mission",
+          "publisher": "ESA Exploration Portal (last updated 2019)",
+          "url": "https://exploration.esa.int/web/moon/-/60127-in-situ-resource-utilisation-demonstration-mission"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "PRIME-1 example": "payload.article.physical_specifications.examples[0].images",
+      "MOXIE example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Catalogue name 'ISRU technology demonstrator' is generic; the article is written at class level with three labelled examples rather than a single instrument.",
+    "PRIME-1 mass, dimensions and power are not published in the sources reviewed; null is used rather than an estimate.",
+    "MOXIE rate figures differ between NASA sources (10 g/h specification table; 12 g/h most efficient rate in the completion article). Both are reported.",
+    "MOXIE is a Mars instrument and is included only as a labelled off-Moon example.",
+    "ESA payload sources are archived pages (2020 and 2022) and the ESA exploration portal was last updated in 2019. Current status was not verified.",
+    "ORACLE (Italian/ASI carbothermal oxygen demonstrator) was seen only in search-result summaries, not fetched from a primary source, and is therefore not included as an example. Flight status unverified.",
+    "PRIME-1 image caption is paraphrased from NASA's release page; the image was not downloaded to check resolution.",
+    "NASA's release body text gives a landing distance above 1,300 feet while its caption gives about 820 feet; the article does not rely on either figure."
+  ]
+}

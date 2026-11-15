@@ -1,0 +1,258 @@
+{
+  "catalogue_id": 190,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 9,
+    "name": "Navigation, communication and geodesy"
+  },
+  "payload": {
+    "number": 190,
+    "name": "Lunar communications antenna",
+    "article": {
+      "overview": "A lunar communications antenna is the radiating part of a radio system that links a lunar surface asset, such as a lander, rover or station, to an orbiting relay or to Earth. Its design sets how tightly radio energy is focused, which directions the link can use, and how much of the signal survives the journey. This entry describes the payload class rather than one hardware design, so the examples below are separate systems and are not interchangeable. They are the NASA JPL User Terminal, which is planned to fly on Firefly's Blue Ghost Mission 2 [2]; the SSTL S-band antenna for ESA's Lunar Pathfinder relay, which is in development [3][4]; a 2021 return-link antenna contract for Masten's XL-1 lander [5]; and published research antennas reviewed in 2023 [1].\n\nNone of the lunar surface or relay antennas described here is confirmed as flown in the sources reviewed. The surface examples are planned or in development, and the research antennas are laboratory designs [1][2][3][5].",
+      "description": "A lunar communications antenna is usually one part of a larger radio chain. The chain normally includes a radio (transmitter and receiver), a radiating element, a feed, a mounting and, for directional systems, a pointing mechanism. Some designs add software that sets the radio protocol. JPL describes its User Terminal as a compact, lightweight software-defined radio plus antenna and related hardware, built by Vulcan Wireless in coordination with JPL [2]. SSTL describes its SANT as a 0.86 m parabolic reflector fed by a backfire helix and mounted on a pointing mechanism [3]. The Optisys contract for Masten's XL-1 covered the system from the radiating element through control electronics and software [5].\n\nLunar surface antennas must work in rough terrain. The 2023 review notes that craters create multiple delayed copies of a signal, and that empirical studies identify multipath propagation as the primary constraint rather than weak signal strength [1]. The review also states that strong reflections from the conductive lunar surface can produce deep nulls in signal reception [1].",
+      "scientific_purpose_and_applications": "The purpose of a lunar communications antenna is to provide a reliable radio link for data and commands. For a surface asset, the link can run to a relay orbiter, to Earth or to other surface assets. JPL states that the User Terminal tests a compact, low-cost S-band radio system for future far-side missions, so that far-side missions could communicate with one another and with relay orbiters [2].\n\nJPL also states that the User Terminal implements a new S-band two-way version of the Proximity-1 protocol for short-range links between surface assets and lunar orbiters, and that the standard was specified in 2024 [2]. A second User Terminal on the LuSEE-Night payload is expected to send that instrument's data through Lunar Pathfinder after the lander stops operating [2]. SSTL states that its SANT antenna communicates with assets on the lunar surface and in lunar orbit [3].",
+      "operating_principle": "A lunar communications antenna converts an electrical signal from the radio into a radio wave on transmit, and the reverse on receive. A directional antenna concentrates energy into a narrow beam, which increases gain, but the beam must then be pointed at its target. A fixed installation can be aimed by its mounting, or a pointing mechanism can steer it. The SSTL pointing mechanism is described as able to point up to 25 degrees off-centre [3]. The general relationship between beam width, gain and pointing accuracy is standard antenna engineering and is not drawn from a specific cited source.\n\nThe published examples show the range of approaches. The SSTL SANT uses a 0.86 m parabolic CFRP reflector with a backfire helix feed in the 2.0 to 2.3 GHz S-band, with gain stated as greater than 20 dB [3]. The review describes an X-band all-metal short-backfire reflector, designed at 8.425 GHz, that it says supports Earth links from both the lunar surface and lunar orbit [1].\n\nSurface antennas are also affected by the lunar ground. The review states that lunar regolith permittivity and conductivity vary with location and change antenna radiation patterns [1].",
+      "scientific_importance": "Communication links decide what a lander or rover can return. A lander that cannot reach an orbiter or Earth must store data or wait for a visible relay. JPL states that its User Terminal is designed to test a low-cost link that could enable future far-side communication [2]. The antenna is the interface between the radio and the environment, so its performance constrains science data volume and mission planning. The sources reviewed do not publish quantitative data-return figures for these specific antennas.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar communications antenna. Mass, size, frequency and gain depend on the design, on the link being served (surface to orbit, surface to surface or surface to Earth) and on the mission. The examples below are specific systems or published research designs. Only values attributed to a named source are given, and unpublished values are marked as not stated.",
+        "examples": [
+          {
+            "name": "JPL User Terminal (NASA JPL, for Firefly Blue Ghost Mission 2)",
+            "type": "Compact S-band software-defined radio and antenna; planned test payload for surface and relay links",
+            "status": "Planned; not flown in the sources reviewed. JPL states slated launch to the Moon's far side in 2026 on Blue Ghost Mission 2; JPL page dated 2025-08-26; current status not verified.",
+            "mass_kg": null,
+            "dimensions": "Not stated.",
+            "antenna": "Antenna type and gain not stated in the source reviewed.",
+            "power": "Not stated.",
+            "frequency_band": "S-band (new two-way Proximity-1 implementation, specified 2024, per JPL)",
+            "communications": "Commissioning exchange with ESA Lunar Pathfinder; second unit on LuSEE-Night relays data via Lunar Pathfinder after lander operations end; can communicate with Firefly Elytra Dark. Lander operations expected about one lunar day (about 14 Earth days); LuSEE-Night expected to run at least 1.5 years.",
+            "builder": "Vulcan Wireless (Carlsbad, California), in coordination with JPL, per JPL page",
+            "source_urls": [
+              "https://www.jpl.nasa.gov/images/pia26596-jpls-user-terminal-payload-delivered-to-firefly/"
+            ],
+            "images": [
+              {
+                "id": "jpl_user_terminal_firefly_delivery",
+                "description": "JPL User Terminal payload delivered to Firefly Aerospace for integration with the Blue Ghost Mission 2 lunar lander.",
+                "image_type": "Official NASA JPL photograph (image PIA26596)",
+                "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA26596.jpg",
+                "source_page_url": "https://www.jpl.nasa.gov/images/pia26596-jpls-user-terminal-payload-delivered-to-firefly/",
+                "publisher": "NASA Jet Propulsion Laboratory",
+                "credit": "Firefly Aerospace, as stated on the JPL image page",
+                "caption": "JPL's User Terminal payload delivered to Firefly (JPL image PIA26596, August 2025).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct JPG URL taken from the asset list on the JPL image page. The URL returned a JPEG (JFIF) response when fetched, but the picture content was not inspected visually; identification relies on the JPL page title and caption. Reuse terms were not checked, and no public-domain status is asserted."
+              }
+            ]
+          },
+          {
+            "name": "SSTL SANT antenna for ESA Lunar Pathfinder",
+            "type": "S-band antenna and antenna pointing mechanism; in development",
+            "status": "In development; not flown. SSTL functional test reported February 2024; ESA gives launch not earlier than November 2026 on Blue Ghost Mission 2; SSTL 2024 item said towards end of 2025. Conflict unresolved.",
+            "mass_kg": "Antenna pointing mechanism: 9.3 (11.3 with antenna installed). Applies to the mechanism, not the full relay spacecraft.",
+            "antenna": "0.86 m parabolic CFRP reflector fed by a backfire helix; 2.0 to 2.3 GHz S-band; gain stated as greater than 20 dB",
+            "pointing": "Novel pointing mechanism rotating two swashplates; up to 25 degrees off-centre",
+            "power": "Not stated.",
+            "design_life": "Not stated in the pages reviewed for this entry.",
+            "communications": "ESA: two S-band links to lunar assets on the surface and in lunar orbit, and an X-band link to Earth. SSTL: communicates with surface and lunar-orbit assets.",
+            "source_urls": [
+              "https://www.sstl.co.uk/media-hub/latest-news/2024/lunar-antenna-vid-in-test",
+              "https://bsgn.esa.int/service/lunar-pathfinder/"
+            ],
+            "images": [
+              {
+                "id": "sstl_lunar_antenna_on_test_2024",
+                "description": "SSTL S-band antenna and antenna pointing mechanism for Lunar Pathfinder, shown on test at SSTL's Guildford laboratory.",
+                "image_type": "Company news photograph",
+                "image_url": "https://www.sstl.co.uk/getattachment/636761da-bc41-4289-b93f-13b864a12693/Lunar-Antenna-on-test-Jan-24.jpg",
+                "source_page_url": "https://www.sstl.co.uk/media-hub/latest-news/2024/lunar-antenna-vid-in-test",
+                "publisher": "Surrey Satellite Technology Limited (SSTL)",
+                "credit": "Not stated on the page reviewed",
+                "caption": "Lunar antenna on test (SSTL news item, 5 February 2024).",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "The page gave a relative attachment path; the full URL on the sstl.co.uk host was built from it and returned a JPEG when fetched. Identification as the SANT antenna relies on the filename and the news-item text; the picture was not inspected visually. Reuse terms were not checked."
+              }
+            ]
+          },
+          {
+            "name": "Masten XL-1 return-link antenna system (Optisys contract)",
+            "type": "Complete return-link communications system (radiating element to electronics and software)",
+            "status": "Contracted April 2021 for Masten XL-1 lunar lander under NASA CLPS; described as upcoming; no flight reported in the source. Masten bankruptcy and XL-1 status from search results only; not verified.",
+            "mass_kg": "Not stated.",
+            "dimensions": "Not stated.",
+            "power": "Not stated.",
+            "frequency_band": "Not stated.",
+            "data_rate": "Not stated.",
+            "source_urls": [
+              "https://www.microwavejournal.com/articles/35883-masten-space-systems-selects-optisys-to-design-and-supply-return-link-antenna-system"
+            ],
+            "images": []
+          },
+          {
+            "name": "Published research antennas (reviewed 2023; not flown)",
+            "type": "Laboratory and research designs: NASA GRC CMMA and fHCFA patches; X-band all-metal short-backfire reflector",
+            "status": "Research designs; none described in the review as a flown lunar communications antenna.",
+            "figures": [
+              "CMMA patch (NASA GRC): 2.05 GHz; 6 dBi directivity in text (n/a in table); 12 x 12 x 11 mm; fractional bandwidth 6.3%",
+              "fHCFA patch (NASA GRC): 2.3 GHz and 16.8 GHz; 1.6 dBi (S) and 7.3 dBi (Ku); 5 x 5 x 4.5 mm",
+              "X-band all-metal short backfire: design 8.425 GHz; gain 13.4 to 15.6 dB (cylindrical), 12.5 to 14.2 dB (hexagonal); supports Earth links from surface and orbit per review"
+            ],
+            "mass_kg": "Not stated for any antenna in the review.",
+            "power": "Not stated in the figures reviewed.",
+            "source_urls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC10748255/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The sizes reported range from millimetre-scale research patches [1] to the 0.86 m reflector of the SSTL SANT [3]. The JPL User Terminal's dimensions are not stated [2]. These sizes are not comparable because the designs differ in frequency and function.",
+        "mass_and_weight": "The only mass published in the sources reviewed for a named lunar communications antenna is for the SSTL pointing mechanism, at 9.3 kg, or 11.3 kg with the antenna installed [3]. No mass is given for the JPL User Terminal [2] or the Masten/Optisys system [5], and the review gives no mass for any antenna [1].",
+        "power_requirements": "No power figure was found for the JPL User Terminal [2], the SSTL SANT [3][4] or the Masten/Optisys system [5]. The research antenna figures reviewed do not include power [1]."
+      },
+      "environmental_and_operational_requirements": "Lunar surface antennas face a harsh thermal environment. The review reports daytime surface temperatures near the equator of about 120 °C (400 K) and night-time temperatures of about -130 °C (140 K) [1]. It also reports that a persistent dust cloud can affect equipment, with dust mattering more at millimetre-wave frequencies, where it can cause backscatter, delay-related interference, polarisation shifts and energy absorption [1]. Intense solar radiation is listed as a challenge; the review states that all-metal antennas tolerate it, but gives no quantitative figure [1].\n\nPropagation is also an operational requirement. Craters produce multiple delayed copies of a signal, and the review states that multipath is the primary constraint [1]. Regolith permittivity and conductivity vary with location and can change radiation patterns [1]. The sources reviewed for the named systems give no qualification or environmental test levels for the JPL User Terminal, the SSTL SANT or the Masten/Optisys system. These limits must come from mission documentation, which was not reviewed.",
+      "limitations": "Specifications are specific to each system and must not be transferred to other lunar communications antennas. The JPL User Terminal has no published mass, dimensions, power or antenna figures [2]. The SSTL figures come from a February 2024 news item [3] and may have changed since. The Masten/Optisys system has no published figures and its flight status is unverified [5]. The research antennas were built for their own tests and are not like-for-like comparisons [1]. Terrain multipath and regolith variation can change link performance at any site [1]. No landing site or location is recommended in this entry.",
+      "transportation_and_deployment": {
+        "overview": "A lunar communications antenna is carried by a host spacecraft, and the host determines how it is transported. The sources reviewed describe two host types: surface landers (the JPL User Terminal on Blue Ghost Mission 2, and the Masten XL-1 lander) and an orbiter relay (the SSTL SANT on Lunar Pathfinder). Mounting, mass budgets, power and data interfaces were not verified against any interface document, so no compatibility is asserted beyond the mission statements below.",
+        "transportation_process": [
+          "**Surface payload: JPL User Terminal on Firefly Blue Ghost Mission 2.** Earth integration: JPL reports that the User Terminal was delivered to Firefly Aerospace for integration [2]. Launch and lunar transfer: JPL states that the lander is slated to launch to the Moon's far side in 2026 under NASA's CLPS initiative [2]. No launch date or transfer profile was found on a primary page. Landing and mounting: the landing sequence and mounting position are not described in the sources reviewed. A search summary said the payload would be installed atop the lander, but this was not confirmed on a primary page and is not used here. Deployment and operations: after landing, the User Terminal is used to commission Lunar Pathfinder, and a second unit on LuSEE-Night is expected to relay data through Lunar Pathfinder after the lander stops operating. JPL expects lander operations to last about one lunar day [2]. Power and data interfaces with the lander were not published.",
+          "**Surface payload: Masten XL-1 return-link antenna (2021 contract).** Optisys was to supply the system for the XL-1, which was scheduled to land at the lunar south pole under CLPS [5]. Integration, launch and landing details were not found in the sources reviewed, and the flight status is unknown.",
+          "**Orbiter relay: SSTL SANT on ESA Lunar Pathfinder.** SSTL built the antenna and pointing mechanism in-house for Lunar Pathfinder [3]. ESA reports that the proto-flight model was about 50 percent through assembly, integration and test, that all but one flight unit had been delivered to SSTL, and that electrical and thermal interfaces were frozen, with residual RFC, EMI and EMC tests planned for December 2025 [4]. ESA gives a launch not earlier than November 2026 on Firefly's Blue Ghost Mission 2 and states that Lunar Pathfinder flies as part of that mission [4]. Orbit insertion, commissioning and pointing operations are not described in the pages reviewed. The pointing mechanism can move the antenna up to 25 degrees off-centre [3].",
+          "**Rover and sample-return payloads.** Not applicable. No rover-mounted or sample-return example was identified in the sources reviewed."
+        ],
+        "deployment_methods": "A lunar communications antenna is deployed by its host. For the JPL User Terminal, deployment is operational: commissioning of Lunar Pathfinder and relay of LuSEE-Night data after landing [2]. For the SSTL SANT, deployment is orbital, with the pointing mechanism able to steer the antenna up to 25 degrees off-centre [3][4]. No deployable-mechanism figures were found for any named system.",
+        "historical_examples": "Masten XL-1 contract with Optisys (2021) [5]; JPL User Terminal (planned, 2026 target) [2]; SSTL SANT (functional test, 2024) [3]; research antennas reviewed in 2023 [1].",
+        "compatibility_assessment": "No compatibility is asserted for the JPL User Terminal, the SANT or the Masten system with any named lander or spacecraft beyond the mission statements above. JPL and ESA state the carriage relationships but give no interface data [2][4].",
+        "images": []
+      },
+      "historical_significance": "The examples date from 2021 to 2025 and reflect early commercial and government work on lunar communications. Masten's 2021 selection of Optisys shows an early effort to supply a complete return-link antenna system for a CLPS lander [5]. JPL's release describes a new S-band two-way implementation of the Proximity-1 protocol for short-range links between surface assets and lunar orbiters, with the standard specified in 2024 [2]. The SSTL SANT was tested in February 2024 [3] and is intended for the ESA Lunar Pathfinder relay [4]. The review places these efforts within a wider body of lunar communications and antenna research and describes earlier research antennas in the same field [1]. None of the surface or relay antennas in this entry is shown in the sources reviewed to have operated on the Moon.",
+      "limitations_and_uncertainties": "- **Launch status.** The JPL page (dated 26 August 2025) says 2026 [2]. SSTL's February 2024 item expected a launch 'towards the end of 2025' [3]. ESA gives not earlier than November 2026 [4]. The status as of 13 November 2026 was not verified, and these pages may be out of date.\n- **Specifications.** No mass, power, dimensions or antenna figures for the JPL User Terminal were published on the page reviewed [2]. The SSTL mass covers the pointing mechanism only [3]. No power figure was found for the SANT [3][4].\n- **Flight status.** No lunar surface communications antenna in this entry is confirmed as flown. Search results indicated that Masten Space Systems filed for bankruptcy at a date not confirmed here, and that the XL-1 is not known to have flown; this was not checked against a primary source [5].\n- **Relay link count.** ESA describes two S-band links to lunar assets and an X-band link to Earth [4]. SSTL describes the SANT as serving surface and orbital assets [3]. No full link budget was found.\n- **Surface-to-surface role.** JPL describes the S-band protocol as serving short-range links between surface assets and lunar orbiters [2]. No second primary source was found for a surface-to-surface role.\n- **Research antenna figures.** The CMMA gain is given as 6 dBi directivity in the review's text but n/a in its table [1]. The review contains other internal inconsistencies, so its values should be checked against the original papers before reuse. The review was read to about 100,000 of about 151,700 characters, and later sections were not reviewed.\n- **Related lander radios.** Vulcan Wireless describes S-band and X-band radios for Firefly's Blue Ghost Mission 1 lander, but the page reviewed gives no antenna, mass, power, data-rate or launch figures [6]. These are lander radios, not the JPL User Terminal.\n- **Unread source.** NASA Glenn's 2021 cognitive antenna slide deck was identified [7], but its PDF could not be parsed, so no figures from it are used.\n- **Images.** The JPL and SSTL image URLs returned JPEG files when fetched, but the picture content was not inspected visually. The JPL image is identified from its page caption [2] and the SSTL image from its filename and news item [3]. Reuse rights were not checked.\n- **Compatibility and environment.** No interface document or environmental test level was reviewed for any named system, so no compatibility or qualification is asserted.",
+      "images": [
+        {
+          "id": "jpl_user_terminal_firefly_delivery",
+          "description": "JPL User Terminal payload delivered to Firefly Aerospace for integration with the Blue Ghost Mission 2 lunar lander.",
+          "image_type": "Official NASA JPL photograph (image PIA26596)",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA26596.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/images/pia26596-jpls-user-terminal-payload-delivered-to-firefly/",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "credit": "Firefly Aerospace, as stated on the JPL image page",
+          "caption": "JPL's User Terminal payload delivered to Firefly (JPL image PIA26596, August 2025).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct JPG URL taken from the asset list on the JPL image page. The URL returned a JPEG (JFIF) response when fetched, but the picture content was not inspected visually; identification relies on the JPL page title and caption. Reuse terms were not checked, and no public-domain status is asserted."
+        },
+        {
+          "id": "sstl_lunar_antenna_on_test_2024",
+          "description": "SSTL S-band antenna and antenna pointing mechanism for Lunar Pathfinder, shown on test at SSTL's Guildford laboratory.",
+          "image_type": "Company news photograph",
+          "image_url": "https://www.sstl.co.uk/getattachment/636761da-bc41-4289-b93f-13b864a12693/Lunar-Antenna-on-test-Jan-24.jpg",
+          "source_page_url": "https://www.sstl.co.uk/media-hub/latest-news/2024/lunar-antenna-vid-in-test",
+          "publisher": "Surrey Satellite Technology Limited (SSTL)",
+          "credit": "Not stated on the page reviewed",
+          "caption": "Lunar antenna on test (SSTL news item, 5 February 2024).",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "The page gave a relative attachment path; the full URL on the sstl.co.uk host was built from it and returned a JPEG when fetched. Identification as the SANT antenna relies on the filename and the news-item text; the picture was not inspected visually. Reuse terms were not checked."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "jpl_user_terminal_firefly_delivery",
+          "description": "JPL User Terminal payload delivered to Firefly Aerospace for integration with the Blue Ghost Mission 2 lunar lander.",
+          "image_type": "Official NASA JPL photograph (image PIA26596)",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA26596.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/images/pia26596-jpls-user-terminal-payload-delivered-to-firefly/",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "credit": "Firefly Aerospace, as stated on the JPL image page",
+          "caption": "JPL's User Terminal payload delivered to Firefly (JPL image PIA26596, August 2025).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct JPG URL taken from the asset list on the JPL image page. The URL returned a JPEG (JFIF) response when fetched, but the picture content was not inspected visually; identification relies on the JPL page title and caption. Reuse terms were not checked, and no public-domain status is asserted."
+        }
+      ],
+      "references": [
+        {
+          "title": "A Review of Lunar Communications and Antennas: Assessing Performance in the Context of Propagation and Radiation (Serria, E. et al.), Sensors 23(24), 9832, doi:10.3390/s23249832",
+          "publisher": "Sensors (MDPI), via PubMed Central",
+          "date": "2023-12-14",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10748255/"
+        },
+        {
+          "title": "JPL's User Terminal payload delivered to Firefly (image PIA26596)",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "date": "2025-08-26 (page date)",
+          "url": "https://www.jpl.nasa.gov/images/pia26596-jpls-user-terminal-payload-delivered-to-firefly/"
+        },
+        {
+          "title": "SSTL Lunar Antenna Functional Test (5 Feb 2024)",
+          "publisher": "Surrey Satellite Technology Limited (SSTL)",
+          "date": "2024-02-05",
+          "url": "https://www.sstl.co.uk/media-hub/latest-news/2024/lunar-antenna-vid-in-test"
+        },
+        {
+          "title": "Lunar Pathfinder (ESA Business Support and Global Navigation service page)",
+          "publisher": "European Space Agency",
+          "date": "undated page; reviewed 2026-11-13",
+          "url": "https://bsgn.esa.int/service/lunar-pathfinder/"
+        },
+        {
+          "title": "Masten Space Systems selects Optisys to design and supply return link antenna system",
+          "publisher": "Microwave Journal",
+          "date": "2021-04-27",
+          "url": "https://www.microwavejournal.com/articles/35883-masten-space-systems-selects-optisys-to-design-and-supply-return-link-antenna-system"
+        },
+        {
+          "title": "Vulcan Wireless is headed to the moon (news item; year not shown on page)",
+          "publisher": "Vulcan Wireless",
+          "date": "undated (article dated 'Feb 10' on page)",
+          "url": "https://www.vulcanwireless.com/news-events/vulcan-wireless-is-headed-to-the-moon"
+        },
+        {
+          "title": "Cognitive Antenna (IEEE CCAA Workshop slide deck; identified only, PDF not parsed)",
+          "publisher": "NASA Glenn Research Center via NASA NTRS",
+          "date": "2021",
+          "url": "https://ntrs.nasa.gov/api/citations/20210017704/downloads/Cognitive%20Antenna-2021%20IEEE%20CCAA%20Workshop.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "JPL User Terminal example": "payload.article.physical_specifications.examples[0].images",
+      "SSTL SANT example": "payload.article.physical_specifications.examples[1].images"
+    },
+    "url_policy": "All image_url and source_page_url values and all reference URLs have query strings and fragments removed. Image URLs were checked by fetching (both returned JPEG). Picture content was not inspected visually; identification relies on source-page captions and filenames."
+  },
+  "data_quality_notes": [
+    "'Lunar communications antenna' is a payload class; examples are system-specific and not interchangeable.",
+    "JPL image URL (original_images/jpegPIA26596.jpg) returned JPEG bytes; content not visually inspected; identification relies on the JPL caption.",
+    "SSTL image URL was built from a relative attachment path on sstl.co.uk; it returned JPEG bytes; identification by filename and news-item context only.",
+    "Blue Ghost Mission 2 and Lunar Pathfinder launch dates conflict (JPL 2026; ESA not earlier than November 2026; SSTL 2024 item towards end of 2025). Current status not verified as of 2026-11-13.",
+    "Masten bankruptcy and XL-1 flight status come from search results only and are unverified.",
+    "JPL surface-to-surface role is described in search summaries; the JPL page describes links between surface assets and lunar orbiters.",
+    "Research antenna figures come from Serria et al. (2023) review; the review was read to about 100,000 of about 151,700 characters; CMMA gain is inconsistent between text and table.",
+    "NASA Glenn cognitive antenna deck (NTRS 20210017704) identified but unreadable as fetched; no figures used.",
+    "Vulcan Wireless Blue Ghost Mission 1 radio news item gives no antenna, mass, power, data-rate or launch figures; not used as a physical example."
+  ]
+}

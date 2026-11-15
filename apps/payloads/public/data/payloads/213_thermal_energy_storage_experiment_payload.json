@@ -1,0 +1,162 @@
+{
+  "catalogue_id": 213,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 213,
+    "name": "Thermal energy storage experiment",
+    "article": {
+      "overview": "Thermal energy storage experiments on the Moon would use lunar regolith, the loose soil that covers the surface, as a store for heat collected from sunlight. The regolith would be heated during the lunar day and would release that heat during the lunar night, when solar power is unavailable. The most detailed publicly identified work on this idea is NASA's LUTHER (Lunar Thermal Energy from Regolith) ground experiment at the NASA Lewis Research Center in the early 1990s, together with analyses of regolith heat stores known as thermal wadis. The reviewed sources describe laboratory tests, planned measurements and computer models. None of them reports a regolith thermal storage system operating on the Moon.",
+      "description": "A thermal energy storage payload would use the regolith itself, or a material processed from it, as a heat reservoir. Heat from a solar concentrator or an electrical heater raises the temperature of the soil. Regolith is generally a poor conductor of heat, so the performance of a store depends strongly on the regolith's specific heat, its thermal conductivity and, if the material is melted, its latent heat. The LUTHER experiment was designed to measure these properties as functions of vacuum, particle size and density, using a basalt simulant heated to a melting temperature of 1162 °C (1435 K). The concept differs from a battery because it stores energy as heat, which must be used locally or extracted, rather than delivered as electricity on demand.",
+      "scientific_purpose_and_applications": "The main purpose of this class of experiment is to determine whether lunar soil can store useful amounts of thermal energy for the lunar night, and to measure the material properties needed to design such a store. The reviewed sources identify three applications. The first is keeping lightweight rovers and other surface equipment above survival temperatures through the lunar night. The second is a solar dynamic power system that runs on sunlight during the day and on stored heat at night. The third is the link to in-situ resource utilisation: the storage medium is the local regolith, so the experiment tests whether a material processed on the surface can also serve as a thermal store. The LUTHER work also examined melt pattern, material compatibility and volatile gas emission, which matter for any heated regolith system.",
+      "operating_principle": "A regolith thermal store absorbs heat from a source and holds it in the soil. The reviewed sources describe two modes of storage. In sensible storage, the regolith temperature rises without changing phase. In latent storage, the regolith is heated to its melting range, so that additional heat is absorbed as the material melts and is released again as it solidifies. Heat must then flow out of the store during the night, either to a rover, to equipment or to a power conversion system. The LUTHER apparatus used an alumina ceramic canister filled with simulated regolith, a radiative or conductive heater, heat shields, a cold jacket and 19 Type B platinum-rhodium thermocouples. Its planned tests were to run in a vacuum chamber at 10^-6 torr. Colozza's 1991 model showed that a thermal cycle of day heating and night cooling reaches a steady state after about 15 cycles in the modelled case.",
+      "scientific_importance": "Lunar regolith properties at high temperatures are important for any heated regolith system but are not well documented in the reviewed sources. Analyses such as Colozza's 1991 work show that the thermal response of regolith depends on temperature-dependent properties and that repeated day and night cycling leads to a steady-state temperature pattern. The 1994 Baker, Calogeras and Richter experiment reported that simulated lunar soil could be melted to form a cavity using a flux equivalent to a 2000:1 solar concentrator, and the authors presented this as evidence of feasibility. The importance of this class of experiment therefore lies in converting model assumptions into measured property data and in testing whether melting and cavity formation can be controlled.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a thermal energy storage experiment. The examples below are a laboratory test rig, a laboratory solar-flux test and a set of analytical concepts. Their sizes and performance values are not comparable and must not be read as specifications for a flight payload. Mass and power values were not publicly specified in the reviewed sources.",
+        "examples": [
+          {
+            "name": "LUTHER (Lunar Thermal Energy from Regolith) ground experiment",
+            "type": "Laboratory prototype (ground test rig; completion of tests and availability of results not confirmed)",
+            "canister": {
+              "material": "Alumina ceramic",
+              "diameter_cm": 25.4,
+              "length_cm": 45.7,
+              "source": "NTRS 19930007428 (stated as 10 in by 18 in in SAE 929277)"
+            },
+            "heat_shield_count": 9,
+            "thermocouple_count": 19,
+            "thermocouple_type": "Type B platinum-rhodium",
+            "heater_configuration": "Radiative or conductive heater, used in two separate tests",
+            "test_vacuum": "10^-6 torr (SAE 929277 abstract); 10^-4 Pa (NTRS 19930007428 summary)",
+            "regolith_melt_temperature_c": 1162,
+            "regolith_melt_temperature_note": "Target melting temperature of the simulant under test (1435 K); not a measured value.",
+            "simulant": "Basalt mined and processed by the University of Minnesota, described as closely resembling Apollo-returned basalt",
+            "measured_properties_reported": "None reported in the reviewed abstracts",
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://saemobilus.sae.org/content/929277",
+              "https://ntrs.nasa.gov/citations/19930007428"
+            ],
+            "images": []
+          },
+          {
+            "name": "Simulated lunar soil melting test (Baker, Calogeras and Richter, 1994)",
+            "type": "Laboratory experiment with simulated lunar soil",
+            "heating": "Radiative heating element with a flux described as equivalent to a 2000:1 solar concentrator",
+            "concentration_ratio": "2000:1 (primary and secondary concentrators, as stated)",
+            "result_reported": "Cavity formed in simulated soil; authors present this as evidence that melting lunar soil with a solar concentrator is feasible",
+            "heat_flux": null,
+            "melt_temperature_c": null,
+            "energy_storage_density": null,
+            "test_scale": null,
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://saemobilus.sae.org/papers/feasibility-using-situ-lunar-soil-a-latent-thermal-energy-storage-media-941328"
+            ],
+            "images": []
+          },
+          {
+            "name": "Thermal wadi and regolith heat-store analyses (Colozza 1991; Balasubramaniam et al. 2010)",
+            "type": "Analytical concept; no hardware reported in the reviewed sources",
+            "sizing_result": "In Colozza's 1991 model, a molten sphere 4.76 m in diameter is needed to keep the core near the low end of the melting range through one lunar night. Balasubramaniam et al. (2010) modelled solar-heated regolith wadis for equatorial conditions, checked a 1-D model against 2-D and 3-D computations, and considered water or aluminium stakes as modifications to the regolith. Numerical wadi dimensions and temperatures were not read.",
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19920005262",
+              "https://ntrs.nasa.gov/citations/20100015637"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The reviewed hardware example, LUTHER, used a 25.4 cm diameter by 45.7 cm long alumina canister. The sphere in Colozza's 1991 model was 4.76 m in diameter. These sizes describe different scales: one is a laboratory test vessel and the other a modelled buried melt zone. They should not be compared as design targets.",
+        "mass_and_weight": "No mass was found in the reviewed sources for any thermal energy storage example. Mass for a flight system would depend on the container, insulation, heat source, power and thermal-control hardware, none of which is specified in the reviewed records. Mass values are therefore recorded as null.",
+        "power_requirements": "Heater power and solar concentrator power for LUTHER were not stated in the reviewed abstracts. The 1994 experiment is described by its concentration ratio (2000:1) rather than by electrical or thermal power. Power requirements for a lunar system are not publicly specified in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A lunar thermal store must withstand vacuum, large day-night temperature swings and repeated thermal cycling. Colozza's model considered regolith cycled between day and night, with steady state reached after about 15 cycles. LUTHER was designed around a 10^-6 torr vacuum and melting of regolith at 1162 °C, and its planned tests included gas emission and material compatibility, because melting regolith may release gases and the melt may interact with container materials. The length of the lunar night is not stated in the reviewed records; it is roughly two Earth weeks, a general background figure that is not drawn from the cited sources. A surface installation also needs stable, insulated mounting so that heat is not lost to the supporting structure during the night.",
+      "limitations": "The reviewed evidence is mostly analytical or laboratory-scale. The LUTHER abstracts describe planned tests and do not report measured property values, so this article gives no measured melt range, specific heat, thermal conductivity or latent heat. The Baker et al. experiment reports a cavity but, in the reviewed record, does not give heat flux, melt temperature or energy storage density. Lunar gravity, flight-condition vacuum, long-duration cycling and dust effects are not shown to have been tested by the reviewed ground or analytical sources. A thermal store also needs a heat source and an energy-delivery method, and the reviewed records do not specify one for a flight design.",
+      "transportation_and_deployment": {
+        "overview": "A thermal energy storage system would normally be a surface installation. Much of its storage mass would be the lunar regolith already on site, so the transported mass would be dominated by the heat-collection hardware, containers, insulation and control electronics. The reviewed sources do not specify such hardware for a flight design.",
+        "transportation_process": [
+          "Integrate heat-collection hardware, containment, insulation, sensors and controls on Earth.",
+          "Launch the system and transfer it towards the Moon.",
+          "Land the system on a suitable surface, or deliver it to a site prepared by other assets.",
+          "Deploy and orient any solar concentrator or heater array, then connect power and data systems.",
+          "Check thermal insulation and ground contact, then begin heating and monitoring cycles."
+        ],
+        "deployment_methods": "The reviewed sources do not describe a deployment method for a flight system. Any deployment would depend on the heat-collection concept (solar concentrator, electrical heater or another option) and on whether the storage medium is excavated, sintered or left in place. Not publicly specified.",
+        "historical_examples": "LUTHER (NASA Lewis, early 1990s) and the Baker et al. 1994 test were ground experiments and did not fly. The thermal wadi concept has been analysed as a surface feature, but no lunar deployment is documented in the reviewed sources.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted. The system's mass, dimensions, landing loads, heat source, power and interface requirements are not specified in the reviewed sources, so compatibility cannot be assessed.",
+        "images": []
+      },
+      "historical_significance": "The reviewed record shows a NASA effort in the early 1990s to test regolith as a thermal store. It comprises Colozza's 1991 analysis, the LUTHER test design described by Richter in 1992 and 1993, and the laboratory melting results reported by Baker et al. in 1994. The concept was revisited in 2010 through thermal wadi analyses. These works established the concept and identified the measurements needed, but they do not show a flight demonstration. Other historical records of lunar surface-layer heat storage appeared in search summaries and were not reviewed in full.",
+      "limitations_and_uncertainties": "This article covers a technology concept rather than a single flown instrument. The reviewed sources include a ground test design (LUTHER), a laboratory melting experiment and analytical models. No measured LUTHER results were found in the abstracts reviewed, and the full NASA CR-191050 report could not be read. The 4.76 m figure applies to a specific model, not to a built system. The 10^-6 torr and 10^-4 Pa vacuum values appear in different records and are presented as reported. Figures from the full LUTHER reports may exist, but none was verified for this article. Mass, power, energy density and lander compatibility are not publicly specified in the reviewed records.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Analysis of lunar regolith thermal energy storage",
+          "authors": "Anthony J. Colozza",
+          "publisher": "NASA Technical Reports Server (NASA-CR-189073; conference paper)",
+          "publication_date": "1991-11-01",
+          "url": "https://ntrs.nasa.gov/citations/19920005262"
+        },
+        {
+          "title": "Experimental Determination of In Situ Utilization of Lunar Regolith for Thermal Energy Storage",
+          "authors": "Scott W. Richter",
+          "publisher": "SAE International (SAE Technical Paper 929277; DOI 10.4271/929277)",
+          "publication_date": "1992",
+          "url": "https://saemobilus.sae.org/content/929277"
+        },
+        {
+          "title": "Experimental Determination of in Situ Utilization of Lunar Regolith for Thermal Energy Storage",
+          "authors": "Scott W. Richter",
+          "publisher": "NASA Technical Reports Server (NASA-CR-191050; E-7516)",
+          "publication_date": "1993-01-01",
+          "url": "https://ntrs.nasa.gov/citations/19930007428"
+        },
+        {
+          "title": "Feasibility of Using In-Situ Lunar Soil as a Latent Thermal Energy Storage Media",
+          "authors": "Karl Baker, James E. Calogeras, Scott W. Richter",
+          "publisher": "SAE International (SAE Technical Paper 941328)",
+          "publication_date": "1994",
+          "url": "https://saemobilus.sae.org/papers/feasibility-using-situ-lunar-soil-a-latent-thermal-energy-storage-media-941328"
+        },
+        {
+          "title": "An Extension of Analysis of Solar-Heated Thermal Wadis to Support Extended-Duration Lunar Exploration",
+          "authors": "R. Balasubramaniam, S. A. Gokoglu, K. R. Sacksteder, R. S. Wegeng, N. H. Suzuki",
+          "publisher": "NASA Technical Memorandum NASA/TM-2010-216255; AIAA Paper 2010-797",
+          "publication_date": "2010-04-01",
+          "url": "https://ntrs.nasa.gov/citations/20100015637"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No verified direct image asset was found for this payload, so no image objects are included."
+  },
+  "data_quality_notes": [
+    "No image was verified for this payload. No image URL was invented, and the image arrays are empty. Figures in the full LUTHER reports (NASA-CR-191050, SAE 929277) may exist but could not be checked.",
+    "The NASA CR-191050 PDF (NTRS 19930007428) was retrieved but could not be read in this session, so its measured results, if any, are not reflected here.",
+    "The LUTHER abstracts in SAE 929277 and NTRS 19930007428 describe planned tests. No measured melt range, specific heat, thermal conductivity or latent heat is reported.",
+    "The vacuum level is given as 10^-6 torr in SAE 929277 and as 10^-4 Pa in NTRS 19930007428. These are presented as reported; they are of similar magnitude but are not the same unit.",
+    "Lunar night length (roughly two Earth weeks) is general background and is not drawn from the cited sources.",
+    "A 2022 NASA power planning document (NTRS 20220005893) and a 1968 NASA technical memorandum (NTRS 19680010894) appeared in search summaries only. They were not read in full and are not used as sources in this article.",
+    "The 4.76 m molten sphere diameter is a model result from Colozza (1991) and does not describe a built system."
+  ]
+}
