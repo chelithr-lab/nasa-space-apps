@@ -1,0 +1,413 @@
+{
+  "catalogue_id": 94,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 4,
+    "name": "Subsurface exploration and drilling"
+  },
+  "payload": {
+    "number": 94,
+    "name": "Lunar subsurface tomography system",
+    "article": {
+      "article_version": "v1 (2026-11-13)",
+      "payload_environment": "No lunar subsurface tomography system confirmed flown or operating. The sources cover one laboratory prototype, one NASA-funded radar concept, one simulation-only muon concept and one radio-array concept.",
+      "status_summary": {
+        "flown_and_operating_moon": "None confirmed in the sources accessed",
+        "laboratory_prototype_not_flown": "INSPECT3R, Lawrence Berkeley National Laboratory [1][2]",
+        "funded_development_not_flown": "SPARCI, Southwest Research Institute, NASA DALI award announced March 2024 [4]",
+        "simulation_only_concept": "Upward-going cosmic-ray muon tomography (Hu et al. 2026 preprint) [5]; GScan muon tracker simulation (Pinto and Tiit 2023) [6]",
+        "instrument_concept_not_flown": "ARIA, Askaryan Regolith Imaging Array (EPSC-DPS 2025 abstract) [7]"
+      },
+      "scope": "In scope: instruments or concepts that build a three-dimensional map of the lunar subsurface (composition, layering, voids or buried objects). Out of scope: seismic tomography and instruments already covered by other catalogue entries, such as 6 Seismic sensor array, 7 Active seismic source, 93 Subsurface acoustic sensor, 95 Regolith excavation instrument and 102 Ice detection radar.",
+      "overview": "A lunar subsurface tomography system would build a three-dimensional picture of the material beneath the surface, such as its elemental composition, density, layering, or buried voids and objects. Tomography means reconstructing an internal structure from many measurements taken from different positions, directions or times, so the result is a map rather than a single reading or a one-dimensional depth profile. The catalogue entry describes a capability rather than one named instrument. In the sources accessed for this article, no lunar subsurface tomography system has flown or been confirmed operating on the Moon.\n\nThis article therefore treats the entry as a payload class and examines four technically distinct approaches at different stages of development: INSPECT3R, a laboratory prototype that maps elements in three dimensions using active neutron interrogation; SPARCI, a NASA-funded radar concept for regolith and megaregolith imaging; an upward-going cosmic-ray muon concept supported only by simulation; and ARIA, a radio-frequency array concept. None is flight-qualified. Their values are laboratory results, design targets or simulation outputs, and the article keeps those categories separate.",
+      "description": "Subsurface tomography in planetary science usually works in three steps. A probe (neutrons, muons, radio waves or another signal) is sent into the ground or is received from it. The instrument records how that signal is changed or produced at different positions and times. An inversion step then converts those records into an estimate of a property in each small three-dimensional cell, called a voxel (a three-dimensional pixel). The depth reach and resolution depend on the probe, and the four examples below cover different depth ranges and different properties.\n\nTwo terms need explanation. Associated Particle Imaging (API) is a neutron technique in which a neutron generator also emits an alpha particle with each neutron. Detecting the alpha particle tells the instrument the approximate direction and time of the neutron, so gamma rays produced when that neutron interacts with the ground can be assigned to a location. Dielectric properties describe how a material stores and slows electromagnetic energy; they control how fast radar travels through regolith, so they set how echo timing is converted into depth.",
+      "scientific_purpose_and_applications": "The purpose of a subsurface tomography system is to determine what lies below the surface and how it is arranged. The sources accessed name several science targets. ARIA's authors list subsurface ice, regolith thickness, buried impact deposits, volcanic unit stratigraphy and geothermal heat flux as targets [7]. The INSPECT3R team tests elemental composition with depth and the detection of a buried meteorite in regolith simulants [1][2]. SwRI describes SPARCI as a means of determining the thickness and density of the regolith and of imaging the megaregolith below it [4]. The muon preprint proposes non-invasive probing of shallow voids and of water [5].\n\nPossible applications follow from these targets, including hazard and void mapping before surface operations, subsurface composition for resource assessment, and site engineering. The sources accessed do not establish any of these uses for a named mission, so they should be read as plausible applications rather than established ones.",
+      "operating_principle": "INSPECT3R. A deuterium-tritium neutron generator emits neutrons, and each neutron is accompanied by an alpha particle. Detecting an alpha particle tags the neutron's direction and time. Gamma rays that arrive within a short window after the alpha tag are counted, which suppresses background, and their energies identify the elements present. The Berkeley Lab article reports gamma-ray signatures of titanium, aluminium, iron, magnesium and oxygen in its regolith-simulant tests [2].\n\nSPARCI (ground-penetrating radar). Radar pulses are transmitted into the ground and reflections are recorded from boundaries where dielectric properties change. Echo timing gives depth only if the wave speed is known, which is why ARIA's authors argue that an independent measure of regolith dielectric properties is valuable [7]. SwRI describes SPARCI's transmitters as large antennas deployed by astronauts and its receivers as smaller antennas carried by a rover [4].\n\nUpward-going muon tomography. Cosmic rays striking the regolith can produce hadrons that escape upward, and some of these decay in flight to produce muons. The number of such muons reaching a detector above the surface depends on the material and geometry below it, so a void or a water-bearing zone may change the flux. The preprint states that the flux depends on detector altitude under a flat-terrain assumption [5]. An earlier preprint proposed a related muon tracking approach for water-ice mapping, supported by simulations [6].\n\nARIA. Cosmic-ray showers in the regolith emit radio signals through the Askaryan effect. ARIA combines an active radar receiving signals at 250–750 MHz, passive detection of cosmic-ray radio events, and passive radiometry over 250–1500 MHz for temperature profiling, using interferometry for three-dimensional imaging [7].",
+      "scientific_importance": "Three-dimensional maps of composition or structure would separate regolith from bedrock and buried materials, locate subsurface ice or volatiles where they exist, and provide subsurface context for landing sites and surface operations. Tomography adds lateral information that single-point or one-dimensional instruments cannot provide, and it can locate buried objects.\n\nThe INSPECT3R laboratory results are the most concrete evidence in this class. Under controlled conditions they show that elemental contrast in layered simulants, and a buried meteorite, could be imaged at centimetre-to-decimetre scales [1][2]. Laboratory conditions do not establish performance on the Moon. The ARIA concept argues that cosmic-ray radio events could measure regolith dielectric properties directly instead of assuming them [7]. This would be a significant gain if demonstrated, but it is a proposal. A 2026 laboratory study of backscattered fast-neutron API imaging, from the same research group as INSPECT3R, reports a proof-of-concept for distinguishing hydrogen-rich from hydrogen-deficient materials, and states that quantitative hydrogen retrieval and depth sensitivity are outside its scope [3].",
+      "physical_specifications": {
+        "note": "There is no universal physical specification for a lunar subsurface tomography system. The class spans different physical principles (neutron, radar, muon and radio detection) with different sources, geometries and depth ranges, so the examples below are not directly comparable. None has a published flight-qualified specification. Where a value is given, it is tied to its source and to the status of the hardware or concept it describes.",
+        "examples": [
+          {
+            "name": "INSPECT3R (In-Situ Nuclear Spectrometer with 3D Resolution), Lawrence Berkeley National Laboratory",
+            "status": "Laboratory prototype, tested with regolith simulants and a buried meteorite; not flown [2]",
+            "text": "INSPECT3R was developed at Lawrence Berkeley National Laboratory's Accelerator Technology and Applied Physics (ATAP) Division with NASA Goddard Space Flight Center and the Johns Hopkins University Applied Physics Laboratory, with NASA funding [2]. It is an active neutron instrument, and its laboratory results are as follows [2].",
+            "reported_values": [
+              "Horizontal test: regolith components placed side by side were separated with a horizontal resolution of about 9 cm [2].",
+              "Layered test: elemental composition determined to a depth of 45 cm, with estimated depth resolution of 10 cm [2].",
+              "Buried meteorite (iron-nickel, Toluca) in a large box of soil: detected with about 10 cm resolution to roughly 30 cm depth, with its position pinpointed to centimetre-level accuracy [2].",
+              "Figures show the meteorite at 10, 18 and 35 cm burial and an iron-to-silicon ratio profile across the box [2].",
+              "Block labels in the team's schematic read 8 cm wide and 10 cm high. The article text gives 9 cm horizontal resolution; the two values have not been reconciled against the primary paper [2].",
+              "Developer targets: the team states the prototype is too heavy and uses too much power for a planetary mission, and gives targets of about 10–12 kg and under 50 W [2]."
+            ],
+            "not_publicly_specified": [
+              "Prototype mass and power draw",
+              "Neutron source output and generator specification",
+              "Environmental tolerance and flight qualification"
+            ],
+            "images": [
+              {
+                "id": "IMG-094-02",
+                "description": "Schematic comparing a conventional active neutron approach (neutron generator on a lander or rover, neutron scattering, gamma-ray detector) with INSPECT3R (neutron generator with an alpha detector defining a neutron cone, and a grid of blocks labelled 8 cm wide and 10 cm high beneath the surface).",
+                "image_type": "schematic diagram",
+                "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/Screenshot-2025-12-03-at-12.21.25-PM.png",
+                "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+                "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+                "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+                "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+              },
+              {
+                "id": "IMG-094-03",
+                "description": "Photograph of the neutron test apparatus: a rock sample on a white stage in the foreground, beneath an aluminium-frame assembly with a cylindrical housing and equipment racks.",
+                "image_type": "photograph",
+                "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/XBD-202511-182-007.jpeg",
+                "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+                "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+                "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+                "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+              },
+              {
+                "id": "IMG-094-04",
+                "description": "Four-panel figure of a regolith-simulant test: (a) photograph of four labelled simulant bags in a box labelled 30 cm by 30 cm by 15 cm; (b) schematic with a neutron source labelled 55 cm above simulant blocks at 25 cm depth; (c) two-dimensional count map with the four simulants marked; (d) gamma-ray spectra for anorthosite, ilmenite, bronzite and olivine.",
+                "image_type": "multi-panel figure (photograph, schematic, count map, spectra)",
+                "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/Screenshot-2025-12-05-at-7.45.23-AM.png",
+                "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+                "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+                "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+                "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+              },
+              {
+                "id": "IMG-094-05",
+                "description": "Four-panel figure of the buried-meteorite test: (a) three-dimensional elemental maps with the meteorite arrowed for top placement, 10 cm and 18 cm burial, and a background case; (b) Fe/Si ratio against distance from source for background and 10, 18 and 35 cm burial; (c) photograph of an iron-nickel Toluca meteorite labelled 12 cm by 17 cm.",
+                "image_type": "multi-panel figure (3D maps, profile plot, photograph)",
+                "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/XBD-202511-182-016.jpeg",
+                "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+                "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+                "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+                "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+              },
+              {
+                "id": "IMG-094-06",
+                "description": "Photograph of three researchers beside a shallow metal tray of soil in which an iron-nickel meteorite sample is partly buried.",
+                "image_type": "photograph",
+                "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/Screenshot-2025-12-05-at-7.24.23-AM.png",
+                "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+                "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+                "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+                "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+              }
+            ],
+            "citations": [
+              1,
+              2
+            ]
+          },
+          {
+            "name": "SPARCI (Synthetic Pulse Artemis Radar for Crustal Imaging), Southwest Research Institute",
+            "status": "NASA-funded development (award announced March 2024); no hardware flown or reported as built in the sources accessed [4]",
+            "text": "SwRI describes SPARCI as a novel ground-penetrating radar for lunar crustal imaging. The principal investigator is David Stillman. The award was made under NASA's Development and Advancement of Lunar Instrumentation (DALI) programme, for $2,041,000 over three years, and was announced on 13 March 2024 [4]. The release says SPARCI uses much wider bandwidth than the Apollo 17 Surface Electrical Properties experiment, but it gives no frequency values [4].\n\nIts stated targets are the regolith, whose thickness and density SPARCI is to determine, and the megaregolith, which is believed to lie between 0.4 and 5 km deep [4]. The deployment concept uses two large transmitting antennas, described as 172 m and 40 m long and designed to be deployed by astronauts, with a robotic rover carrying much smaller receiving antennas [4]. The antenna lengths came from an automated summary of the release and must be checked against the release text before use.",
+            "reported_values": [
+              "Award: $2,041,000 over three years (NASA DALI) [4].",
+              "Megaregolith depth: believed to be 0.4 to 5 km [4].",
+              "Transmitting antennas: 172 m and 40 m long, astronaut-deployed (to be checked against the release) [4]."
+            ],
+            "not_publicly_specified": [
+              "Operating frequency band",
+              "Receiver dimensions, mass and power",
+              "Regolith depth target as a number"
+            ],
+            "images": [],
+            "citations": [
+              4
+            ]
+          },
+          {
+            "name": "Upward-going cosmic-ray muon tomography concept (lunar subsurface tomography with upward-going muons)",
+            "status": "Simulation-only concept in a 2026 arXiv preprint; no measurement or flight reported [5]",
+            "text": "Hu et al. (2026) propose using upward-going muons produced in the lunar regolith to probe shallow subsurface structure [5]. The Moon has dense regolith below and near-vacuum above, so hadrons that escape upward can decay in flight and provide a muon source, which surface or near-lunar-orbit detectors could observe [5]. Monte Carlo simulations examine energy spectra, angular distributions and integrated fluxes for several theoretical and detector configurations [5]. The abstract states that the flux depends on detector altitude under a flat-terrain assumption, which the authors suggest could non-invasively probe shallow voids [5].\n\nIn the case studies a 1 m² detector is assumed. The authors report that cavity-induced flux variations would be observable in less than two minutes of data, and that weaker water signals would be distinguishable after about 36 minutes [5]. These are simulation outputs, and the abstract gives no absolute flux values. An earlier preprint by Pinto and Tiit (2023) reports preliminary GEANT4 simulations of a cosmic-ray muon tracking system, developed by GScan, for mapping water-ice on the Moon and Mars [6]; its abstract gives no detector mass, size or power. Neither source reports a lunar or flight measurement [5][6].",
+            "reported_values": [
+              "Detector area in case studies: 1 m² (simulated) [5].",
+              "Cavity-induced flux variation observable in less than two minutes with a 1 m² detector (simulated) [5].",
+              "Weaker water signal distinguishable after about 36 minutes of data (simulated) [5]."
+            ],
+            "not_publicly_specified": [
+              "Absolute flux values",
+              "Detector mass, power and size for the GScan tracker [6]",
+              "Background and detector efficiency assumptions (not in the abstracts accessed)"
+            ],
+            "images": [],
+            "citations": [
+              5,
+              6
+            ]
+          },
+          {
+            "name": "ARIA (Askaryan Regolith Imaging Array)",
+            "status": "Instrument concept under development; abstract only; no prototype, test campaign or flight reported [7]",
+            "text": "ARIA is a radio-frequency concept for characterising planetary subsurfaces, presented by Bramson, Gorham, Costello and the ARIA proposal team at the EPSC-DPS Joint Meeting in 2025 [7]. It is described as a stationary, dual-polarisation bistatic antenna array for a lunar surface deployment, using interferometry to build three-dimensional subsurface images at a landing site [7]. It combines active radar, passive detection of radio emission from cosmic-ray cascades in the regolith, and passive radiometry for temperature profiling [7].\n\nThe authors argue that cosmic-ray radio events could calibrate the active radar and measure regolith dielectric properties directly, which conventional ground-penetrating radar must assume. They describe this as an extension of the approach NASA's ANITA balloon programme used on Antarctic ice [7]. Orbital detection of cosmic-ray radio showers is described only as a simulation result, and the abstract reports no ARIA detection [7]. Its science targets include subsurface ice, regolith thickness, buried impact deposits, volcanic stratigraphy and geothermal heat flux [7].",
+            "reported_values": [
+              "Active radar receive band: 250–750 MHz, as stated in the abstract [7].",
+              "Passive radiometer band: 250–1500 MHz, as stated in the abstract [7]."
+            ],
+            "not_publicly_specified": [
+              "Mass, power and size",
+              "Antenna dimensions and array size",
+              "Data rate and operating mode timing"
+            ],
+            "images": [],
+            "citations": [
+              7
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Only INSPECT3R's laboratory set-up has published dimensions in the sources accessed. The regolith simulant box is labelled 30 cm by 30 cm by 15 cm, and the buried meteorite is labelled 12 cm by 17 cm in the team's figure [1][2]. No flight envelope is published for any example, and the four examples should not be compared on size.",
+        "mass_and_weight": "INSPECT3R: the prototype mass is not stated; the team's target is about 10–12 kg [2]. SPARCI: not publicly specified [4]. Muon concept: not specified; the case study assumes a 1 m² detector area, which is an area, not a mass [5]. GScan tracker: not stated in the abstract [6]. ARIA: not stated [7].",
+        "power_requirements": "INSPECT3R: the team's target is under 50 W; the prototype's power draw is not stated [2]. SPARCI, the muon concept and ARIA: not publicly specified [4][5][7]. Power for the neutron generator and for the radar transmitter is not separately stated in the sources accessed."
+      },
+      "environmental_and_operational_requirements": "The sources accessed give no environmental tolerance (thermal, radiation, vibration, shock or vacuum qualification) for any example, so none is stated here. The following operational consequences follow from the stated principles. They are engineering inferences, not measured requirements. INSPECT3R would need a neutron generator, alpha detection and gamma-ray spectroscopy within the power and mass limits described above [2]. SPARCI depends on astronauts deploying long transmitting antennas and a rover carrying receivers [4]. Radar and radio concepts depend on the electrical behaviour of the regolith at the target depths, which ARIA's authors note would otherwise have to be assumed [7]. Muon concepts depend on flat-terrain assumptions and on detector altitude [5].",
+      "limitations": "- No example has flown, operated on the Moon, or been measured in a lunar environment. The INSPECT3R results use terrestrial simulants and a buried meteorite in a box [2].\n- INSPECT3R: the team states that the current prototype is too heavy and uses too much power for a planetary mission [2]. Its results come from short-range laboratory geometry, so its depth and resolution figures do not carry over to field depths.\n- SPARCI: frequency band, receiver design, and mass and power are not publicly stated. The megaregolith depth is described as believed, not measured [4].\n- Muon concept: a preprint with simulation only, a flat-terrain assumption, and a 1 m² detector case study [5]. Background, efficiency and statistical assumptions are not given in the abstract accessed.\n- ARIA: a concept abstract in which the cosmic-ray method is modelled rather than demonstrated [7].\n- The four techniques sense different depths and properties, so resolution and depth figures are not directly comparable across examples.",
+      "transportation_and_deployment": {
+        "overview": "Most examples are surface payloads. INSPECT3R would be carried on a lander or rover; SPARCI would rely on astronaut-deployed transmitters and a rover-carried receiver array [4]; ARIA is described as a stationary surface array [7]. The muon concept could use surface detectors or near-lunar-orbit detectors [5]. No lunar landing site or location is recommended, because the user has deferred location work.",
+        "transportation_process": [
+          "Earth integration: the INSPECT3R prototype is above the mass and power limits its team sets for a planetary mission, so integration would first need miniaturisation and environmental testing [2]. No integration data are published for the other examples.",
+          "Launch and lunar transfer: not specified for any example in the sources accessed.",
+          "Landing delivery: no lander or rover interface evidence is available for any example.",
+          "Deployment and setup: SPARCI's astronaut-deployed transmitters and rover-carried receivers [4]; ARIA's stationary array geometry for interferometry [7]; the muon concept's detector placement on the surface or in orbit [5].",
+          "Power, data and thermal or mechanical interfaces: not specified. The only stated power figure is INSPECT3R's target of under 50 W [2].",
+          "Orbital integration for the muon concept: a near-lunar-orbit detector would need spacecraft integration, pointing and operations analysis, which the preprint abstract does not address [5]."
+        ],
+        "deployment_methods": "Surface examples require different deployment steps: long transmitting antennas and a rover-carried receiver array for SPARCI [4]; a stationary array for ARIA [7]; and placement of the INSPECT3R neutron instrument on a lander or rover, for which no interface is specified. Interface details for these methods are not publicly specified.",
+        "historical_examples": "The Apollo 17 Surface Electrical Properties experiment is the precedent that SwRI names for lunar electromagnetic sounding, against which SPARCI's bandwidth is compared [4]. No lunar subsurface tomography deployment has taken place.",
+        "compatibility_assessment": "No lander, rover or spacecraft compatibility is verified for any example, and the sources accessed do not name a lunar delivery system for any of them. No compatibility is asserted in this article.",
+        "images": []
+      },
+      "historical_significance": "No lunar subsurface tomography system has flown, so the class has no operational history. The sources accessed show a recent development sequence. The Apollo 17 Surface Electrical Properties experiment is the earlier lunar electromagnetic sounding precedent that SwRI uses for comparison [4]. INSPECT3R's laboratory results were published in npj Space Exploration in 2025 [1][2]. SPARCI's NASA DALI award was announced in March 2024 [4]. The ARIA concept was presented at the 2025 EPSC-DPS Joint Meeting [7], and the muon proposal appeared as preprints in 2023 and 2026 [5][6]. These milestones establish concepts and laboratory evidence, not operational capability.",
+      "limitations_and_uncertainties": "- Primary INSPECT3R paper not opened: the publisher link redirected to a sign-in page, so its figures come from the Berkeley Lab article [2]. The article's own values differ on horizontal resolution (9 cm in the text, 8 cm in a figure label) and on meteorite depth (about 30 cm in the text, figure positions at 10, 18 and 35 cm).\n- Secondary listings reported a voxel volume of up to 50 × 50 × 30 cm and a technology readiness level of 4 for INSPECT3R. These were not verified in a primary source and are not used as claims in this article.\n- SPARCI: the radar's frequency band, receiver design, mass and power are not stated. Antenna lengths came from an automated summary of the release and need checking.\n- Muon concept: only the abstract page of a v2 preprint was reviewed. Peer-review status, affiliations and full-text methods were not verified.\n- ARIA: only the EPSC-DPS2025 abstract was reviewed; full methods and numbers are not available here.\n- Images: six INSPECT3R images from the Berkeley Lab article were checked for direct URL and content, but their captions, credits and reuse rights were not extracted. No verified images exist for SPARCI, the muon concept or ARIA.\n- The catalogue name is generic. The four-example framing is an editorial choice, not a published taxonomy.",
+      "images": [
+        {
+          "id": "IMG-094-01",
+          "description": "Laboratory photograph of three researchers in a test room: one kneels beside a small apparatus holding a rock sample, and two stand beside an aluminium-frame rig with electronics, cabling and a monitor.",
+          "image_type": "photograph",
+          "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/lead-2.jpg",
+          "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+          "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+          "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+          "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+        },
+        {
+          "id": "IMG-094-02",
+          "description": "Schematic comparing a conventional active neutron approach (neutron generator on a lander or rover, neutron scattering, gamma-ray detector) with INSPECT3R (neutron generator with an alpha detector defining a neutron cone, and a grid of blocks labelled 8 cm wide and 10 cm high beneath the surface).",
+          "image_type": "schematic diagram",
+          "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/Screenshot-2025-12-03-at-12.21.25-PM.png",
+          "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+          "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+          "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+          "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+        },
+        {
+          "id": "IMG-094-03",
+          "description": "Photograph of the neutron test apparatus: a rock sample on a white stage in the foreground, beneath an aluminium-frame assembly with a cylindrical housing and equipment racks.",
+          "image_type": "photograph",
+          "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/XBD-202511-182-007.jpeg",
+          "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+          "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+          "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+          "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+        },
+        {
+          "id": "IMG-094-04",
+          "description": "Four-panel figure of a regolith-simulant test: (a) photograph of four labelled simulant bags in a box labelled 30 cm by 30 cm by 15 cm; (b) schematic with a neutron source labelled 55 cm above simulant blocks at 25 cm depth; (c) two-dimensional count map with the four simulants marked; (d) gamma-ray spectra for anorthosite, ilmenite, bronzite and olivine.",
+          "image_type": "multi-panel figure (photograph, schematic, count map, spectra)",
+          "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/Screenshot-2025-12-05-at-7.45.23-AM.png",
+          "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+          "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+          "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+          "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+        },
+        {
+          "id": "IMG-094-05",
+          "description": "Four-panel figure of the buried-meteorite test: (a) three-dimensional elemental maps with the meteorite arrowed for top placement, 10 cm and 18 cm burial, and a background case; (b) Fe/Si ratio against distance from source for background and 10, 18 and 35 cm burial; (c) photograph of an iron-nickel Toluca meteorite labelled 12 cm by 17 cm.",
+          "image_type": "multi-panel figure (3D maps, profile plot, photograph)",
+          "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/XBD-202511-182-016.jpeg",
+          "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+          "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+          "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+          "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+        },
+        {
+          "id": "IMG-094-06",
+          "description": "Photograph of three researchers beside a shallow metal tray of soil in which an iron-nickel meteorite sample is partly buried.",
+          "image_type": "photograph",
+          "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/Screenshot-2025-12-05-at-7.24.23-AM.png",
+          "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+          "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+          "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+          "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "IMG-094-01",
+          "description": "Laboratory photograph of three researchers in a test room: one kneels beside a small apparatus holding a rock sample, and two stand beside an aluminium-frame rig with electronics, cabling and a monitor.",
+          "image_type": "photograph",
+          "image_url": "https://atap.lbl.gov/wp-content/uploads/sites/3/2025/12/lead-2.jpg",
+          "source_page_url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+          "publisher": "Lawrence Berkeley National Laboratory, Accelerator Technology and Applied Physics (ATAP) Division (publisher of source page)",
+          "credit": "Not extracted from the source page; rights and reuse terms not verified.",
+          "caption": "Not extracted from the source page; the content description is based on visual inspection of the image.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset URL checked (HTTP 200, image content viewed). Source and asset URLs contain no query string or fragment. Rights and reuse not verified."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "An in-situ 3D elemental imager for planetary missions based on active neutron interrogation",
+          "authors": "Ayllon Unzueta, M.; Chou, L.; Luque Gutierrez, J. C.; Meyer, J.; Newman, S. B.; Peplowski, P. N.; Persaud, A.; Wilson, J. T.; Parsons, A. M.",
+          "publisher": "npj Space Exploration",
+          "date": "2025 (day not verified)",
+          "doi": "10.1038/s44453-025-00012-x",
+          "url": "https://doi.org/10.1038/s44453-025-00012-x",
+          "access_note": "Publisher page not opened (redirected to sign-in). Volume 1, article 12 and author list taken from the Berkeley Lab article [2]; a 2026 paper's reference list [3] confirms title and lists the first author with several co-authors. Check the author list against the DOI record."
+        },
+        {
+          "number": 2,
+          "title": "A new imager could help unearth the mineral wealth of planets and asteroids",
+          "authors": "Lawrence Berkeley National Laboratory, ATAP Division",
+          "publisher": "Lawrence Berkeley National Laboratory (ATAP news)",
+          "date": "undated on source page (accessed 2026-11-13)",
+          "doi": null,
+          "url": "https://atap.lbl.gov/news/a-new-imager-could-help-unearth-the-mineral-wealth-of-planets-and-asteroids/",
+          "access_note": "Secondary source for INSPECT3R results; text and figures inspected."
+        },
+        {
+          "number": 3,
+          "title": "Concept development of an active fast neutron backscatter imaging technique for planetary subsurface studies",
+          "authors": "Šilek, D.; Ayllon Unzueta, M.; Hardgrove, C.; Persaud, A.",
+          "publisher": "Nuclear Instruments and Methods in Physics Research Section A (Elsevier)",
+          "date": "2026-08-01",
+          "doi": "10.1016/j.nima.2026.171443",
+          "url": "https://doi.org/10.1016/j.nima.2026.171443",
+          "access_note": "Peer-reviewed; PDF read from eScholarship (https://escholarship.org/uc/item/4ct3p7fj). Diacritics in the author name were garbled in text extraction; check the spelling against the DOI record."
+        },
+        {
+          "number": 4,
+          "title": "SwRI receives $2 million NASA grant to develop lunar-regolith-measuring instrument",
+          "authors": "Southwest Research Institute (SwRI)",
+          "publisher": "Southwest Research Institute",
+          "date": "2024-03-13",
+          "doi": null,
+          "url": "https://www.swri.org/press-release/swri-receives-2-million-nasa-grant-develop-lunar-regolith-measuring-instrument",
+          "access_note": "Press release read through an automated summary; antenna lengths and depth values need checking against the release text."
+        },
+        {
+          "number": 5,
+          "title": "The muon Moonshot: Moon subsurface tomography with upward-going muons",
+          "authors": "Hu, Z.; Gao, L.; You, Z.; Li, Q.; Li, Q.; Yu, Y.; Chen, L.; Zhang, X.; Sun, Z.",
+          "publisher": "arXiv (astro-ph.EP)",
+          "date": "2026-07-11 (v1); 2026-08-20 (v2)",
+          "doi": null,
+          "url": "https://arxiv.org/abs/2607.10403",
+          "access_note": "Preprint; abstract page read (summary). Full text, peer-review status and affiliations not verified."
+        },
+        {
+          "number": 6,
+          "title": "Mapping water on the Moon and Mars using a muon tomograph",
+          "authors": "Pinto, O. L.; Tiit, J. M.",
+          "publisher": "arXiv (physics.ins-det)",
+          "date": "2023-10-12",
+          "doi": null,
+          "url": "https://arxiv.org/abs/2310.08174",
+          "access_note": "Abstract page read (summary); simulation-based. Submission comments mention a journal submission that was not verified."
+        },
+        {
+          "number": 7,
+          "title": "ARIA (Askaryan Regolith Imaging Array): An instrument concept for novel radio frequency characterization of planetary subsurfaces",
+          "authors": "Bramson, A.; Gorham, P.; Costello, E.; ARIA proposal team",
+          "publisher": "EPSC-DPS Joint Meeting 2025 (Copernicus Meetings)",
+          "date": "2025",
+          "doi": null,
+          "url": "https://meetingorganizer.copernicus.org/EPSC-DPS2025/EPSC-DPS2025-1208.html",
+          "access_note": "Conference abstract read through a summary; quotations limited."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[0]": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url, source_page_url and reference URLs have query strings and fragments removed; scheme, host, path and extensions are unchanged."
+  },
+  "data_quality_notes": [
+    "Interpretation: the catalogue name is generic and no lunar subsurface tomography instrument is confirmed flown. The article covers four technically distinct examples, and the grouping is editorial.",
+    "INSPECT3R: the npj Space Exploration paper was not opened (publisher page redirected to sign-in). Values come from the Berkeley Lab article [2]; the citation and author list come from that article and from a 2026 paper's reference list [3]. Publication date not verified.",
+    "INSPECT3R values conflict across sources: horizontal resolution 9 cm (text) vs 8 cm (figure label); meteorite depth about 30 cm (text) vs burial positions 10, 18 and 35 cm (figure). Both are reported, not reconciled.",
+    "Unverified secondary values, not used as claims: voxel volume up to 50 x 50 x 30 cm and TRL 4 (secondary listings only).",
+    "INSPECT3R mass and power: the team describes the current prototype as too heavy and power-hungry; the 10–12 kg and under 50 W figures are presented as team targets, not measured values.",
+    "SPARCI: all values from the SwRI press release read through an automated summary. Antenna lengths (172 m and 40 m) and the 0.4–5 km megaregolith depth must be checked against the release text. No frequency band is published in the sources accessed.",
+    "Muon concept: abstract page of a v2 preprint only. Peer-review status, affiliations and full methods not verified. The 1 m², under-two-minute and about-36-minute figures are simulation outputs from the abstract summary.",
+    "GScan muon tracker (Pinto and Tiit 2023): abstract page only; no mass, size or power reported in the abstract. Peer-review status not checked.",
+    "ARIA: conference abstract read through a summary; quoted frequency bands are as stated there. Full paper not reviewed.",
+    "Images: six images from the Berkeley Lab article were downloaded (HTTP 200, image/jpeg or image/png) and visually inspected. Captions, credit lines and reuse rights were not extracted or verified. No images were verified for SPARCI, the muon concept or ARIA.",
+    "Glean internal search returned no relevant internal documents on this topic; no internal sources are cited.",
+    "Lunar location recommendations are deferred by the user and are not included.",
+    "Progress ledger not updated: lunar_payload_generation_progress.md was not edited, as the run instructions for this payload prohibit it."
+  ]
+}

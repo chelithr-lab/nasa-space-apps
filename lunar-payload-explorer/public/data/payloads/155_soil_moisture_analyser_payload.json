@@ -1,0 +1,187 @@
+{
+  "catalogue_id": 155,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 8,
+    "name": "Regolith and soil analysis"
+  },
+  "payload": {
+    "number": 155,
+    "name": "Soil moisture analyser",
+    "article": {
+      "overview": "A soil moisture analyser is an in-situ instrument that estimates how much water or water ice is present in a soil or regolith sample, usually from the electrical or thermal behaviour of the material. On the Moon, the main reason to measure water content is the search for water ice in permanently shadowed regions near the poles. The sources reviewed describe prototypes and one planned flight instrument. None establishes a routinely operated, flight-proven dedicated soil moisture analyser on the Moon.",
+      "description": "The name describes a class of instruments rather than one standard design. Two broad approaches appear in the sources reviewed. Dielectric or impedance probes insert electrodes into the ground and measure how the regolith's electrical properties change; liquid water has a much higher relative permittivity than dry mineral grains, so small amounts of water change the measured response, and ice also alters the response but differently from liquid water. Evolved-gas analysers collect a sample, heat it, and identify the water vapour released with laser absorption spectroscopy or mass spectrometry; the Chang'e-7 LUWA is the clearest example in the sources reviewed. Because lunar near-surface regolith is usually very dry, the main engineering challenge is sensitivity at low water-content levels, typically a fraction of one weight percent, while the instrument is exposed to temperature extremes and vacuum.",
+      "scientific_purpose_and_applications": "The main purposes are to measure water and ice content in regolith, which supports polar volatile science and assessment of in-situ resources; to provide ground-truth measurements that can be compared with orbital neutron, radar and infrared observations; to measure the dielectric or conductive properties of regolith, which relate to its physical state and to electrical interactions with equipment; and to support future resource-prospecting and surface-operations planning. The NASA JPL impedance-probe brief states that the instrument is intended for lunar and planetary soils and suggests terrestrial uses in desert and sand research and agriculture. These terrestrial uses are stated in the source as possible applications and were not evaluated in this article.",
+      "operating_principle": "Impedance-type probe (NASA JPL, NPO-44261): the brief describes two electrodes protruding slightly from a cylinder near its tip. The cylinder is pushed into the ground so that the soil contacts the electrodes. The instrument measures the magnitude and phase angle of the impedance as a function of frequency. From this response, the brief states that the instrument can estimate the presence of water or ice, their conductivity, and the regolith's dielectric constant. The brief describes an earlier version that used four stainless-steel screw electrodes in a sample jar with a commercial impedance spectrometer; the new design removes the jar. Permittivity sensor (TUM, Gscheidle et al. 2024): a flat patch electrode with signal, ground and guard electrodes is driven with a square-wave excitation; the response is measured in the time domain and Fourier-transformed, and permittivity is inferred from capacitance in an RC circuit. The article investigates 6.25 Hz to 10 kHz. The authors use the Looyenga mixing rule to relate multi-frequency permittivity to porosity and water content, but this inference was not validated for water in the reported experiments. Evolved-gas analyser (CNSA Chang'e-7 LUWA): according to the calibration-framework paper, the detection chain is drilling, sampling, sealing, heating and analysis. Water is released by thermal extraction and then quantified, and the D/H isotope ratio is used to investigate its origin. The LUWA combines a tunable diode laser absorption spectrometer (TDLAS), a time-of-flight mass spectrometer (TOF-MS) and a differential optical absorption spectrometer (DAS).",
+      "scientific_importance": "Water in lunar regolith matters for three reasons. It informs the Moon's volatile history and the origin of water delivered to the lunar surface. It is a potential resource for life support, propellant and other in-situ uses. It is also an indicator of the thermal and illumination conditions in permanently shadowed regions. The Chang'e-7 calibration paper states that existing orbital data and returned samples do not resolve the occurrence mode, abundance, vertical variability or origin of polar water ice, and that direct in-situ measurement with a calibrated instrument is intended to address these gaps. This motivation is stated in the source; the article does not treat the planned measurements as achieved results.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a soil moisture analyser. The sources reviewed describe prototypes and one planned instrument with different architectures, so their values must not be compared directly. Where a value is not stated in the source, it is marked as not publicly specified.",
+        "examples": [
+          {
+            "name": "NASA JPL Electrical Properties Probe (impedance probe), NPO-44261",
+            "type": "Laboratory prototype (not flown)",
+            "source_title": "Improved Instrument for Detecting Water and Ice in Soil",
+            "source_publication": "NASA Tech Briefs NPO-44261, March 2009; authors at JPL/Caltech",
+            "flight_status": "Not flown. The source does not mention flight testing or lunar surface testing.",
+            "electrodes_and_form": "Two electrodes protruding slightly near the tip of a cylinder, which is pushed into the ground. The brief suggests mounting in a drill wall or integration into a rover tread.",
+            "frequency_range": "20 Hz to 500 kHz, as stated in the brief.",
+            "water_or_ice_detection": "The brief states detection of water or ice as low as 0.1 weight percent and measurement of concentration above 0.5 weight percent. An overview section gives a range of 0.05% to 10% in silica sand with accuracy of a few percent. These figures are not fully consistent and are reported as stated; they are unverified until the full brief has been checked.",
+            "temperature_range": "The brief gives conflicting values (-25 to +65 C in the body text and 25 to -65 C in the overview). The sign error in the overview is likely, but this article does not resolve it.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "impedance_range": "Not publicly specified in the text reviewed.",
+            "sensitivity": "Not publicly specified beyond the detection ranges above.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20090011196",
+              "https://www.techbriefs.com/component/content/article/4978-npo-44261"
+            ],
+            "images": []
+          },
+          {
+            "name": "TUM permittivity sensor (Gscheidle et al., 2024)",
+            "type": "Laboratory prototype (not flown)",
+            "source_title": "Permittivity sensor development for lunar and planetary surface exploration",
+            "source_publication": "Frontiers in Space Technologies, 4, 1303180 (2024), DOI 10.3389/frspt.2023.1303180",
+            "flight_status": "Not flown. Laboratory and simulation results only. The authors state a plan to reach TRL 6 within about a year, as reported in the text reviewed.",
+            "electrodes_and_form": "Flat patch with signal, ground and guard electrodes. Prototype described as 6.5 cm on a side; simulated electrode diameter 60 mm.",
+            "measurement_principle": "Square-wave RC excitation measured in the time domain and Fourier-transformed; permittivity inferred from capacitance.",
+            "frequency_range_investigated_hz": [6.25, 10000],
+            "mass_kg": "18 g total system per Section 2.1; the discussion states the current system is under 100 g including harness. The two statements are inconsistent and both are reported; electrode-only mass not given.",
+            "dimensions_cm": "Prototype 6.5 cm side length; electronics box dimensions not given.",
+            "power_w": "Average 1.5 W from non-optimised back-end electronics; onboard computer power described as negligible without a figure.",
+            "sensing_depth_cm": "About 5 cm (simulated, 60 mm electrode, 10% of peak potential threshold).",
+            "data_volume": "About 570 kB per 2-second measurement (Section 2.2); about 500 kB in the discussion.",
+            "temperature_range": "Laboratory experiments at -40 to 40 C; electronics thermal tests at -40 to 60 C. Electrode cryogenic testing planned, not reported.",
+            "calibration": "Electronics parasitic capacitance 8.565 pF; linear fit r-squared 0.997 over 0-220 pF test capacitors (10% nominal uncertainty). For JSC-1A regolith simulant (relative permittivity 5.0), measured capacitance was 12.70 pF against a predicted 9.34 pF.",
+            "water_content_performance": "No water-content results reported. Intended 1% water resolution stated as a goal; detection limit and accuracy not given. Looyenga mixing-rule inference not validated for water.",
+            "source_urls": [
+              "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2023.1303180/full"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-7 Lunar soil Water molecule Analyser (LUWA)",
+            "type": "Planned flight instrument (flight status not confirmed)",
+            "source_title": "Ground calibration test method for Chang'E-7 Lunar soil Water molecule Analyzer",
+            "source_publication": "Chinese Journal of Space Science, 46(2), 465-474 (2026), DOI 10.11728/cjss2026.02.2025-0151",
+            "flight_status": "Not confirmed as flown at the date of this article. Search-result reports indicate the launch planned for 2026 may have been delayed; not confirmed from a primary source.",
+            "modules": [
+              "Tunable Diode Laser Absorption Spectrometer (TDLAS)",
+              "Time-of-Flight Mass Spectrometer (TOF-MS)",
+              "Differential optical Absorption Spectrometer (DAS)"
+            ],
+            "detection_chain": "Drilling, sampling, sealing, heating and analysis; water released by thermal extraction, quantified, and D/H isotope signatures determined.",
+            "performance": "The calibration framework covers response functions, background and temperature effects, detection limits, linearity, accuracy, repeatability and traceability. The English abstract gives no numerical detection limits, quantification range, heating profile, mass or power values. All reported results are ground or test-platform results using regolith simulants.",
+            "unverified_conference_claims": "A 2026 EGU conference abstract surfaced in search results reports ground-test detection of water ice at 0.01 wt% in evolved-gas mode and quantification within 0.1-4.5 wt%. The full abstract was not opened; these values are not used as specifications.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://www.cjss.ac.cn/en/article/doi/10.11728/cjss2026.02.2025-0151"
+            ],
+            "images": []
+          },
+          {
+            "name": "PRIME-1 MSolo mass spectrometer with TRIDENT drill (related system)",
+            "type": "Flight system on Intuitive Machines IM-2 (Athena), related rather than dedicated soil moisture analyser",
+            "source_publication": "NASA Polar Resources Ice Mining Experiment-1 (PRIME-1); NASA NTRS record 20260003150 (2026 deck, not readable in this run)",
+            "flight_status": "Reported as flown on IM-2 in 2025, per search-result summaries. The primary NASA deck could not be read.",
+            "reported_outcome": "A 2025 Planetary Science Journal paper, as summarised in search results and not opened, states that TRIDENT was deployed horizontally because the lander landed off-nominally and that its actuators, sensors and heaters worked as designed. MSolo flight data analysis was pending in the search results. One secondary source reports MSolo detected only anthropogenic gases; NASA material found in search results describes the instrument as validated. These accounts conflict and the flight water-detection result cannot be stated from the sources reviewed.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20260003150/downloads/MSolo%20PRIME-1%20overview%20and%20results%20-%20LSSW.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The sources describe very different forms: a cylinder pushed into the ground with exposed electrodes (NASA JPL, 2009), a flat patch electrode on a rectangular prototype (TUM, 2024), and a multi-module analyser operated after drilling and heating (CNSA Chang'e-7 LUWA). These architectures are not directly comparable, and a new soil moisture analyser's dimensions would be set by its measurement method, sensitivity target, thermal management and mounting requirements.",
+        "mass_and_weight": "Mass is not publicly specified for the NASA JPL impedance probe, the Chang'e-7 LUWA or the MSolo instrument within the text reviewed. The TUM prototype is reported as 18 g for the total system in one section and under 100 g including harness in another; the two values are inconsistent and are not resolved here.",
+        "power_requirements": "The TUM prototype average power is 1.5 W from non-optimised back-end electronics. Power is not publicly specified for the NASA JPL impedance probe, LUWA or MSolo within the text reviewed."
+      },
+      "environmental_and_operational_requirements": "A soil moisture analyser must function in vacuum with large diurnal temperature swings and radiation exposure. Instruments that heat or handle samples must control sample temperature. A water-sensitive instrument must avoid contamination from the lander and from its own outgassing and must account for sublimation of ice during sample handling. The Chang'e-7 calibration paper and the TUM paper both address temperature effects; the TUM paper identifies electronics operation between -40 and 60 C as a tested range, and electrode performance at cryogenic temperatures has not been reported. The NASA JPL impedance-probe brief does not state an environmental qualification. Mechanically, a probe must be pressed into or placed on undisturbed regolith with good ground contact, and the TUM paper identifies shielding and noise susceptibility as open issues.",
+      "limitations": "Sensitivity at low water content is the central challenge: lunar regolith is typically dry, so the instrument must resolve water fractions of a fraction of one weight percent. Only prototypes have reported performance in this range, and performance values are inconsistent within one source. Impedance and permittivity responses depend on grain size, density, mineralogy, temperature and the form of the water (liquid, ice or vapour); mixing-rule models are not validated for lunar water-bearing regolith in the reviewed sources. Probe-type instruments measure a local volume near the electrodes, while evolved-gas instruments measure a single drilled and heated sample; neither provides a global measurement. The reviewed sources are prototypes, simulations, ground-test papers and one flight system whose data analysis was pending.",
+      "transportation_and_deployment": {
+        "overview": "A soil moisture analyser would reach the Moon as part of a lander or rover payload, with integration, launch, transfer and landing following the host mission's architecture. The analyser must then be deployed onto or into the regolith. Surface payload only; no orbiter or sample-return configuration is assessed.",
+        "transportation_process": [
+          "Integrate the analyser into a lander, rover or mini-flying probe payload on Earth.",
+          "Launch the host spacecraft and transfer it toward the Moon.",
+          "Land the host system on the lunar surface.",
+          "Deploy the analyser by drill-wall mounting, rover-tread integration, pushing a probe into regolith, or a drilled-and-sealed sample chain, depending on the design.",
+          "Connect power, thermal control and data interfaces to the host system."
+        ],
+        "deployment_methods": "The NASA JPL impedance-probe brief suggests mounting in a drill wall or integration into a rover tread, and states the cylinder is simply pushed into the ground. The TUM rover-based sensor concept was reported in search results and was not verified in the article read. The Chang'e-7 LUWA is designed to be carried on the mini-flying probe, according to the calibration-framework abstract and search-result summaries; the abstract describes the sample chain but does not state which vehicle subsystem performs each step. PRIME-1 flew on IM-2 as reported in search results.",
+        "historical_examples": "No soil moisture analyser with a dedicated water-content measurement has been established as operated on the lunar surface in the sources reviewed. The NASA JPL impedance probe (2009) is a laboratory prototype. PRIME-1 on IM-2 (2025) is the most significant flown related example in the sources reviewed, although its water-detection result is unverified here. Chang'e-7 LUWA flight status is not confirmed.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted. Compatibility would require verified interface data (mass, mounting, power, data and thermal interfaces), which were not available in the sources reviewed.",
+        "images": []
+      },
+      "historical_significance": "No soil moisture analyser with a dedicated water-content measurement has been established as operated on the lunar surface in the sources reviewed. The NASA JPL impedance-probe concept, published in 2009, is a laboratory prototype. The PRIME-1 system is the most significant flown example in the sources reviewed, with its water-detection result still unverified in this article. The Chang'e-7 LUWA would be the first in-situ water-ice analyser for a permanently shadowed region if it operates as described, but this has not been confirmed.",
+      "limitations_and_uncertainties": "The name describes a class of instruments rather than one standard design, so the three examples and the related system must not be treated as interchangeable. The main gaps are listed below. Each gap is reported as stated in the sources, and unresolved conflicts are not settled by this article. Unverified flight status: the Chang'e-7 launch and LUWA operational status were not confirmed after August 2026 reports. Inconsistent source values: the NASA JPL brief gives conflicting detection and temperature ranges; the TUM paper gives two different mass values and two data-volume values; these are reported as stated and not resolved. Missing specifications: mass, dimensions and power are not publicly specified for the NASA JPL impedance probe, LUWA and MSolo within the text reviewed. Conflicting PRIME-1 accounts: the MSolo flight water-detection result and the anthropogenic-gas claim could not be reconciled. Image research: image sources were not verified in this run; no image is included and no image URL is asserted. Full-text checks: several claims come from search summaries rather than full documents (the 2025 Planetary Science Journal paper, the 2026 EGU abstracts and the NPO-41822 brief) and are labelled where used.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Improved Instrument for Detecting Water and Ice in Soil (NPO-44261)",
+          "publisher": "NASA Technical Reports Server (Buehler, Chin, Keymeulen, McCann, Seshadri, Anderson; JPL/Caltech)",
+          "publication_date": "2009-03",
+          "url": "https://ntrs.nasa.gov/citations/20090011196"
+        },
+        {
+          "title": "Improved Instrument for Detecting Water and Ice in Soil (NPO-44261), web summary",
+          "publisher": "NASA Tech Briefs",
+          "publication_date": "2009-03",
+          "url": "https://www.techbriefs.com/component/content/article/4978-npo-44261"
+        },
+        {
+          "title": "Permittivity sensor development for lunar and planetary surface exploration",
+          "publisher": "Frontiers in Space Technologies (Gscheidle, Witzel, Smolka, Reiss); DOI 10.3389/frspt.2023.1303180",
+          "publication_date": "2024",
+          "url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2023.1303180/full"
+        },
+        {
+          "title": "Ground calibration test method for Chang'E-7 Lunar soil Water molecule Analyzer (English abstract)",
+          "publisher": "Chinese Journal of Space Science (Li, Lu, Qiu, Cui, Guo, Ren, Sun, Luo, Zhang, Chen, Xu, Yao, Ruan, Zhang, Chen, Li, Cao); DOI 10.11728/cjss2026.02.2025-0151",
+          "publication_date": "2026",
+          "url": "https://www.cjss.ac.cn/en/article/doi/10.11728/cjss2026.02.2025-0151"
+        },
+        {
+          "title": "MSolo PRIME-1 overview and results (slide deck; identified in search, not readable in this run)",
+          "publisher": "NASA NTRS record 20260003150",
+          "publication_date": "2026",
+          "url": "https://ntrs.nasa.gov/api/citations/20260003150/downloads/MSolo%20PRIME-1%20overview%20and%20results%20-%20LSSW.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples": "payload.article.physical_specifications.examples[i].images (all currently empty)",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (currently empty)"
+    },
+    "url_policy": "No image URLs are included. All source_urls and reference URLs have query strings and fragments removed. No image asset URL has been asserted because image research was not completed in this run."
+  },
+  "data_quality_notes": [
+    "Image research not completed: no images are included in the master registry or section-level arrays, and no image_url values are asserted. Image research should be completed before this article is treated as fully sourced.",
+    "NASA JPL NPO-44261 brief contains internally inconsistent values for the water/ice detection range (0.1 wt% vs 0.5 wt% vs 0.05%-10%) and the temperature range (-25 to +65 C vs 25 to -65 C). Values reported as stated; full PDF not yet checked.",
+    "TUM permittivity sensor article gives 18 g and under 100 g for total mass, and 570 kB and about 500 kB for data volume per measurement. Both pairs are reported; the discrepancy is unresolved.",
+    "Chang'e-7 LUWA: the English abstract gives no numerical detection limits, quantification range, mass or power. A 2026 EGU abstract (not opened) reports ground-test values that are not used as specifications.",
+    "Chang'e-7 launch and LUWA operational status are not confirmed after August 2026 search-result reports; search results indicate a possible delay to 2027 that could not be confirmed from a primary source.",
+    "PRIME-1 MSolo: the NASA 2026 deck (NTRS 20260003150) could not be read. Flight water-detection results are not stated. Accounts conflict (anthropogenic-gas-only claim from one secondary source vs NASA statement that the instrument was validated).",
+    "Search results mentioned NPO-41822 (earlier impedance-probe brief), a 2025 Planetary Science Journal TRIDENT paper, and a TUM rover-wheel concept. These were not opened and are used only as labelled background.",
+    "Web-search and page-read budget: 6 WebSearch calls and 6 WebFetch calls. The Frontiers PDF fetch returned compressed binary content; the HTML full-text page was used instead.",
+    "All numerical values in this article are tied to a named instrument and source; none are presented as achieved flight performance except where a source explicitly states ground or flight context."
+  ]
+}

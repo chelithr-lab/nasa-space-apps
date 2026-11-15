@@ -1,0 +1,385 @@
+{
+  "catalogue_id": 175,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 9,
+    "name": "Navigation, communication and geodesy"
+  },
+  "payload": {
+    "number": 175,
+    "name": "Navigation transponder",
+    "article": {
+      "overview": "A navigation transponder is a radio device that receives a signal and returns or broadcasts a signal in a controlled way, so that a user can measure distance (range), relative speed (Doppler) and time. On the Moon these measurements can help a lander, rover or orbiter determine its position without depending entirely on ground stations on Earth. The catalogue does not define the term further, so this article treats it as the general class of lunar radio navigation beacons and transponders. Two kinds of evidence are discussed: flown hardware (NASA's Lunar Node-1 beacon, flown on the Intuitive Machines IM-1 lander in 2024 with brief surface operation) and development or proposed concepts (Lunar Pathfinder, a relay spacecraft with a ranging transponder still in development, and the ESA ATLAS lunar radio navigation architecture, validated by simulation only).",
+      "description": "A lunar navigation transponder normally has a radio receiver, a transmitter, a clock or time reference, and an antenna. In a simple beacon the device transmits a known signal that Earth-based or orbiting receivers can time and track. In a two-way transponder the device receives an incoming ranging signal and sends it back in a coherent way, so the round-trip time and frequency shift can be measured precisely. NASA describes the LN-1 payload as an S-band navigation beacon built at NASA's Marshall Space Flight Center, using CubeSat-class components and the MAPS (Multi-spacecraft Autonomous Positioning System) algorithms, transmitting one-way pseudonoise (PN) ranging signals and Doppler-trackable carriers to Deep Space Network (DSN) antennas. The ESA ATLAS concept is a two-way coherent system in which a constellation of satellites in lunar orbit carries transponders that share ranging and time-transfer signals. Lunar Pathfinder, being developed by Surrey Satellite Technology Ltd (SSTL) with ESA as a core customer, is a relay satellite whose navigation role is to carry a GNSS receiver for weak Earth-satellite signals and a standard X-band transponder for ranging, with a retroreflector on the same panel.",
+      "scientific_purpose_and_applications": "The main purpose of a navigation transponder is to make positioning and timing possible where Earth's global navigation satellite systems do not directly serve the user. Potential uses include surface navigation (giving landers and rovers a position estimate or a reference for onboard navigation); orbit determination (measuring lunar orbiter trajectories more precisely, which benefits science missions and relay satellites); time transfer (distributing a common time reference across a lunar network for synchronised measurements and ranging); and reduced dependence on ground assets, since LN-1 was designed partly to demonstrate navigation without relying solely on large Deep Space Network resources. Accurate orbit determination also improves the interpretation of gravity measurements and reduces uncertainty in spacecraft positions used by other instruments. The sources reviewed do not quantify any scientific result from these transponders, because the flown LN-1 data are limited and the other systems are not yet operational.",
+      "operating_principle": "Radio navigation on the Moon uses three basic observables. Range: the time taken for a signal to travel between two points is converted to distance; a two-way link avoids the need for a synchronised clock at the far end. Doppler: the frequency of a carrier shifts as a spacecraft moves towards or away from a receiver, giving relative velocity. Time transfer: a clock aboard the transponder is compared with a reference clock on the ground or on another spacecraft. LN-1 relies on one-way transmissions, with ranging based on PN codes and one-way Doppler tracking; the NTRS abstract describes its clock as disciplined by an onboard Space Chip Scale Atomic Clock. The ATLAS architecture is designed around a two-way coherent link: the onboard transponder must establish a coherent link to the ground and support spread-spectrum chip rates of 20-25 Mcps, while also supporting a non-coherent mode for asynchronous time transfer (Sesta et al., 2025).",
+      "scientific_importance": "Navigation is not a science measurement in its own right, but it determines the quality of many lunar measurements. Seismometers, laser retroreflectors, gravity experiments and surface instruments all depend on knowing where they are and when their data were taken, so a lunar navigation capability independent of direct-to-Earth links can improve the scientific return of other payloads. The LN-1 flight is significant as a flight test of a lunar-surface navigation beacon with a published technical description. The NTRS record states that LN-1 provided data to the DSN during cruise and on the surface, and that surface results were compared with one-way Doppler, two-way Doppler and orbital visual verification of the landing site. Its scientific importance currently lies in demonstrating methods rather than in a validated performance figure.",
+      "physical_specifications": {
+        "note": "There is no single universal specification for a navigation transponder. A relay satellite, a surface beacon and a constellation of orbiting transponders have very different masses, power budgets and antenna requirements. The examples below describe only instruments for which the sources give usable information. Where a value is not published, this is stated. A comparison table is not included because the examples differ in purpose, maturity and measurement method.",
+        "examples": [
+          {
+            "name": "Lunar Node-1 (LN-1)",
+            "type": "Flown lunar surface navigation beacon (flown on IM-1; limited surface operations)",
+            "mass_kg": 2.8,
+            "external_dimensions_cm": null,
+            "dimensions_note": "The NASA science page gives 'approximately 175x220x300 cm in volume'. These figures are inconsistent with a 2.8 kg CubeSat-class payload and are not used. Dimensions are treated as not reliably published.",
+            "frequency_band": "S-band (specific carrier frequency not stated in sources reviewed)",
+            "power_consumption_w": null,
+            "power_note": "Not stated. The NASA page says long-term operation depends on power generation and storage provided by the host vehicle.",
+            "clock": "Disciplined by an onboard Space Chip Scale Atomic Clock (NTRS abstract).",
+            "key_components": [
+              "Radiator hat",
+              "Antenna mount adapter",
+              "SWIFT SL-X transmitter",
+              "FPGA-based controller board",
+              "Power conditioning electronics"
+            ],
+            "qualification": "Passed vibration, electromagnetic interference and thermal vacuum testing at Marshall Space Flight Center in 2020 and 2021; passed RF compatibility testing with the Deep Space Network at DTF-21 in early 2021 (NASA science page).",
+            "source_urls": [
+              "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+              "https://ntrs.nasa.gov/citations/20240011676"
+            ],
+            "images": [
+              {
+                "id": "ln1_test_chamber",
+                "description": "Lunar Node-1 payload in the test chamber at the Deep Space Network's Development and Test Facility (DTF)-21.",
+                "image_type": "Engineering test photograph",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-1.jpg",
+                "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "The Lunar Node-1 payload in the test chamber at the Deep Space Network's Development and Test Facility (DTF)-21.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+              },
+              {
+                "id": "ln1_interior_views",
+                "description": "Interior views of Lunar Node-1 showing the primary components.",
+                "image_type": "Engineering hardware detail photograph",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-4.png",
+                "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "Interior views of LN-1. These images provide a look inside the payload showing the primary components.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+              },
+              {
+                "id": "ln1_rf_compatibility_test",
+                "description": "LN-1 Principal Investigator Evan Anzalone performing RF compatibility testing at DTF-21.",
+                "image_type": "Engineering test photograph",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-6.png",
+                "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "LN-1 Principal Investigator, Evan Anzalone, performing RF Compatibility Testing at DTF-21.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+              },
+              {
+                "id": "ln1_concept_of_operations",
+                "description": "Concept of operations diagram showing the dual data paths exercised by the LN-1 payload.",
+                "image_type": "Technical diagram",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-7.png",
+                "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "Concept of Operations. This diagram shows the dual data paths being exercised by the LN-1 payload.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+              },
+              {
+                "id": "ln1_environmental_testing",
+                "description": "LN-1 successfully passed vibration, electromagnetic interference and thermal vacuum testing.",
+                "image_type": "Engineering test photograph",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-8.png",
+                "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "LN-1 successfully passed vibration, electromagnetic interference testing, and thermal vacuum testing.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+              }
+            ]
+          },
+          {
+            "name": "Lunar Pathfinder ranging transponder and navigation receiver",
+            "type": "Development relay satellite (not flown as of sources reviewed)",
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "ranging_transponder": "Standard X-band transponder used for ranging (ESA and SSTL material, search-result summary).",
+            "navigation_receiver": "ESA NaviMoon GNSS receiver intended to detect weak GPS and Galileo signals from lunar orbit.",
+            "projected_positioning_accuracy_m": "around 100 (projected by ESA material; not a measured value)",
+            "orbit": "Elliptical Lunar Frozen Orbit (ELFO), planned",
+            "planned_operational_lifetime_years": 8,
+            "power_consumption_w": null,
+            "launch_date_status": "Provisional. SSTL lunar services page and a Wikipedia summary give a 2027 target on Firefly Blue Ghost Mission 2. Earlier sources gave 2023, 2025 and 2026; the date has slipped repeatedly.",
+            "source_urls": [
+              "https://sstl.co.uk/what-we-do/lunar-mission-services",
+              "https://www.esa.int/ESA_Multimedia/Images/2024/11/Lunar_Pathfinder"
+            ],
+            "images": []
+          },
+          {
+            "name": "ESA ATLAS lunar radio navigation architecture",
+            "type": "Proposed architecture validated by simulation (not flown)",
+            "constellation_size_satellites": 4,
+            "orbit_type": "Elliptical lunar frozen orbits with apolune over the southern hemisphere",
+            "transponder_requirements": "Two-way coherent link to ground; spread-spectrum chip rates of 20-25 Mcps; non-coherent mode for asynchronous time transfer.",
+            "simulated_performance": "Abstract reports orbit accuracy from a few centimetres to 10 m. Averaged Monte Carlo results: mean position accuracy below 1 m and velocity accuracy below 0.1 mm/s after a four-day data batch. Signal-in-space error up to 20 m after 10 h (95th percentile). These are simulation results, not flight measurements.",
+            "ground_support": "Small parabolic dishes of about 26 cm diameter at K-band (22-27 GHz); tracking planned at existing ESTRACK sites (Cebreros, New Norcia, Malargue).",
+            "timeline_status": "Authors state an 'initial deployment for the 2026-2027 timeframe' linked to ESA's Moonlight programme. This is a planned timeline, not a confirmed schedule.",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "source_urls": [
+              "https://navi.ion.org/content/72/2/navi.701",
+              "https://nebula.esa.int/sites/default/files/neb_tec_studies/3297/public/ATLAS_Executive_Summary.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are not reliably published for any of the examples. The LN-1 volume figure on the NASA page is internally inconsistent with its 2.8 kg mass and is not used. A new navigation transponder's size would depend on its antenna, clock, power and thermal design, and on how its mounting interface is set by the host vehicle.",
+        "mass_and_weight": "The only mass with a source in this article is LN-1's approximately 2.8 kg, from the NASA science page. Masses for Lunar Pathfinder and ATLAS were not verified. Mass affects launch and lander capacity, so a transponder for a specific mission must have its mass confirmed against that mission's manifest.",
+        "power_requirements": "Not publicly specified for LN-1. The NASA page notes that long-term operation depends on the host vehicle's power. Power values for Lunar Pathfinder and ATLAS were not verified."
+      },
+      "environmental_and_operational_requirements": "A lunar navigation transponder must survive vacuum, extreme temperature cycles, radiation and launch loads. Its clock and radio electronics are temperature-sensitive, so thermal control and stable mounting matter for ranging accuracy. The NASA page reports that LN-1 passed vibration, electromagnetic interference and thermal vacuum testing, and RF compatibility testing with the DSN. Operationally, a beacon that depends on a host lander for power has a limited duration. A surface transponder needs a clear view of the sky and, for two-way systems, a link to Earth or to another spacecraft. Radio interference from the host vehicle could degrade ranging; the sources do not quantify this effect.",
+      "limitations": "Flight evidence is limited: LN-1 is the only flown example in this article and operated briefly on the surface. A single surface transponder gives range and Doppler information that depends on receiver geometry and Earth visibility, so full positioning typically needs additional references. Accuracy figures for ATLAS are simulated and the Lunar Pathfinder figure is a projection. The ranging and time-transfer accuracy of any such transponder depends on its clock, and the LN-1 sources state that evaluation of the flight oscillator is continuing. A host-powered beacon may be limited to the lifetime of its host vehicle.",
+      "transportation_and_deployment": {
+        "overview": "Navigation transponders reach the Moon as part of a lander, relay or constellation mission. The flown example, LN-1, was carried as a CLPS payload on a commercial lander. Other examples are not verified for transportation.",
+        "transportation_process": [
+          "Integrate the transponder with the lander or spacecraft on Earth, including its antenna and power interfaces.",
+          "Launch the host vehicle on a launch vehicle.",
+          "Transfer the host vehicle towards the Moon.",
+          "For surface systems, land the host vehicle on the lunar surface; for orbital systems, insert the spacecraft into its target orbit and commission it.",
+          "Power on the transponder and establish its ranging and telemetry links with receivers on Earth or in orbit."
+        ],
+        "deployment_methods": "LN-1 was integrated into the Intuitive Machines NOVA-C lander and operated from the lander after landing; it did not require separate deployment in the sources reviewed. For orbital systems such as Lunar Pathfinder and ATLAS, deployment would be via orbit insertion and commissioning, which is not described in detail in the sources reviewed.",
+        "historical_examples": "LN-1 flew on the IM-1 mission. The lander landed on 22 February 2024 and was recorded as the first American commercial uncrewed landing on the Moon. Because of the touchdown orientation, LN-1 operated for two 15-minute surface transmissions rather than the planned continuous beacon, according to a NASA Marshall summary. NASA also reports that LN-1 provided backup support to the lander's onboard navigation. The NTRS abstract reports daily transmissions to the DSN during transit and a planned 7-10 days of surface operation. Lunar Pathfinder is planned to reach lunar orbit through NASA's CLPS initiative in exchange for NASA using its services; more recent sources place it on Blue Ghost Mission 2.",
+        "compatibility_assessment": "Compatibility with a named lander is verified only for the LN-1 flight on IM-1. For any other transponder, compatibility would need to be assessed using mass, dimensions, mounting points, landing loads, power, antenna placement and link budget against verified lander specifications. No compatibility claim for Lunar Pathfinder, ATLAS or any other lander is made here.",
+        "images": [
+          {
+            "id": "ln1_flight_payload_on_lander",
+            "description": "Lunar Node-1 flight payload installed on the Intuitive Machines NOVA-C lander for the IM-1 mission.",
+            "image_type": "Flight integration photograph",
+            "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-2.png",
+            "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+            "publisher": "NASA",
+            "credit": "Intuitive Machines/Nick Rios (as credited on NASA source page)",
+            "caption": "The Lunar Node-1 flight payload installed on the Intuitive Machines NOVA-C lander for the IM-1 mission.",
+            "section_placements": [
+              "overview",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+          }
+        ]
+      },
+      "historical_significance": "LN-1 is a flight demonstration of a lunar navigation beacon, built with CubeSat-class components, that was carried as a CLPS payload. Its flight on IM-1 is significant as a demonstration of an autonomous navigation approach during a real lunar landing, even though operations were brief. Whether it is the first such demonstration has not been verified in the sources reviewed. The Lunar Pathfinder programme extends the idea to a dedicated relay satellite with a navigation receiver, and ATLAS proposes a constellation approach for a future lunar navigation service. Neither has been demonstrated in flight in the sources reviewed.",
+      "limitations_and_uncertainties": "Dimensions of LN-1 are not reliably published because the NASA page's volume figure is inconsistent with its 2.8 kg mass [1]. LN-1 power consumption and its exact S-band frequency are not stated. No quantitative LN-1 ranging accuracy or clock stability result is stated in the sources reviewed, and the full post-mission report was not located. The Lunar Pathfinder accuracy figure is a projection and its launch date is provisional; its mass, power and dimensions were not verified [6][7]. The ATLAS results are simulations of a proposed system and its deployment timeline is a stated plan [4][5]. A JPL poster reported through search results describes Iris transponder inter-spacecraft ranging with about 15 m positioning from a single orbiter; the PDF could not be parsed, so this claim is unverified and is not used in the specifications [8]. The NASA Langley reverse-ephemeris concept (LAR-TOPS-361) is described only as a concept; no hardware figures are published in the source reviewed [9]. Image asset resolution and reuse terms for the NASA images were not individually checked.",
+      "images": [
+        {
+          "id": "ln1_flight_payload_on_lander",
+          "description": "Lunar Node-1 flight payload installed on the Intuitive Machines NOVA-C lander for the IM-1 mission.",
+          "image_type": "Flight integration photograph",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-2.png",
+          "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+          "publisher": "NASA",
+          "credit": "Intuitive Machines/Nick Rios (as credited on NASA source page)",
+          "caption": "The Lunar Node-1 flight payload installed on the Intuitive Machines NOVA-C lander for the IM-1 mission.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+        },
+        {
+          "id": "ln1_test_chamber",
+          "description": "Lunar Node-1 payload in the test chamber at the Deep Space Network's Development and Test Facility (DTF)-21.",
+          "image_type": "Engineering test photograph",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-1.jpg",
+          "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "The Lunar Node-1 payload in the test chamber at the Deep Space Network's Development and Test Facility (DTF)-21.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+        },
+        {
+          "id": "ln1_interior_views",
+          "description": "Interior views of Lunar Node-1 showing the primary components.",
+          "image_type": "Engineering hardware detail photograph",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-4.png",
+          "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Interior views of LN-1. These images provide a look inside the payload showing the primary components.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+        },
+        {
+          "id": "ln1_rf_compatibility_test",
+          "description": "LN-1 Principal Investigator Evan Anzalone performing RF compatibility testing at DTF-21.",
+          "image_type": "Engineering test photograph",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-6.png",
+          "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "LN-1 Principal Investigator, Evan Anzalone, performing RF Compatibility Testing at DTF-21.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+        },
+        {
+          "id": "ln1_concept_of_operations",
+          "description": "Concept of operations diagram showing the dual data paths exercised by the LN-1 payload.",
+          "image_type": "Technical diagram",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-7.png",
+          "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Concept of Operations. This diagram shows the dual data paths being exercised by the LN-1 payload.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+        },
+        {
+          "id": "ln1_environmental_testing",
+          "description": "LN-1 successfully passed vibration, electromagnetic interference and thermal vacuum testing.",
+          "image_type": "Engineering test photograph",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-8.png",
+          "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "LN-1 successfully passed vibration, electromagnetic interference testing, and thermal vacuum testing.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "ln1_flight_payload_on_lander",
+          "description": "Lunar Node-1 flight payload installed on the Intuitive Machines NOVA-C lander for the IM-1 mission.",
+          "image_type": "Flight integration photograph",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/11/ln-1-2.png",
+          "source_page_url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+          "publisher": "NASA",
+          "credit": "Intuitive Machines/Nick Rios (as credited on NASA source page)",
+          "caption": "The Lunar Node-1 flight payload installed on the Intuitive Machines NOVA-C lander for the IM-1 mission.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL taken from the NASA source page markup with the ?w= query parameter removed. Resolution of the clean URL was not individually checked."
+        }
+      ],
+      "references": [
+        {
+          "title": "Deploying and Demonstrating Navigation Aids on the Lunar Surface (Lunar Node-1)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/science-research/science-enabling-technology/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+          "notes": "Fetched. Primary source for LN-1 hardware, mission and test information."
+        },
+        {
+          "title": "Lunar Node-1: Initial Flight Results and the Role of Surface Pseudolites in Lunar Navigation",
+          "publisher": "Anzalone, E. and Statham, T. L., NASA Marshall Space Flight Center; ION GNSS+ 2024 (NASA NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/20240011676",
+          "publication_date": null,
+          "notes": "Fetched (abstract only). Publication date not stated on the record; meeting dates 16-20 September 2024."
+        },
+        {
+          "title": "NASA Lights Beacon on Moon With Autonomous Navigation System Test",
+          "publisher": "NASA Marshall Space Flight Center",
+          "url": "https://www.nasa.gov/centers-and-facilities/marshall/nasa-lights-beacon-on-moon-with-autonomous-navigation-system-test",
+          "notes": "Search-result summary only; not fetched. Used for IM-1 landing orientation and two 15-minute surface transmissions."
+        },
+        {
+          "title": "ATLAS: Orbit Determination and Time Transfer for a Lunar Radio Navigation System",
+          "publisher": "Sesta, A. et al., NAVIGATION: Journal of the Institute of Navigation, vol. 72, no. 2",
+          "url": "https://navi.ion.org/content/72/2/navi.701",
+          "publication_date": "2025",
+          "doi": "10.33012/navi.701",
+          "notes": "Fetched (first 100,000 characters of 145,691)."
+        },
+        {
+          "title": "ATLAS Executive Summary",
+          "publisher": "ESA",
+          "url": "https://nebula.esa.int/sites/default/files/neb_tec_studies/3297/public/ATLAS_Executive_Summary.pdf",
+          "notes": "Search-result summary only; not fetched."
+        },
+        {
+          "title": "Lunar Pathfinder (ESA multimedia image listing, November 2024)",
+          "publisher": "ESA",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2024/11/Lunar_Pathfinder",
+          "notes": "Search-result only. The ESA navigation article URL returned HTTP 404 and was not used."
+        },
+        {
+          "title": "SSTL Lunar Mission Services",
+          "publisher": "Surrey Satellite Technology Ltd",
+          "url": "https://sstl.co.uk/what-we-do/lunar-mission-services",
+          "notes": "Search-result summary of the 2027 launch target; not fetched."
+        },
+        {
+          "title": "Minimalist lunar navigation with Iris transponder inter-spacecraft ranging (poster R24234)",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "url": "https://www.jpl.nasa.gov/site/research/media/posters/2024/R24234p.pdf",
+          "notes": "PDF could not be parsed. Claims from search summary are unverified and not used in specifications."
+        },
+        {
+          "title": "LAR-TOPS-361: reverse-ephemeris lunar surface positioning concept",
+          "publisher": "NASA Langley Research Center (Technology Transfer Opportunities)",
+          "url": "https://technology.nasa.gov/t2media/tops/pdf/LAR-TOPS-361.pdf",
+          "notes": "Search-result summary only; concept without published hardware figures."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Lunar Node-1 (LN-1) example": "payload.article.physical_specifications.examples[0].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Catalogue ID 175, exact name 'Navigation transponder' and category 'Navigation, communication and geodesy' (category 9) were confirmed against lunar_payloads_catalogue_320.md.",
+    "The catalogue does not define 'navigation transponder'; the article scopes it to lunar radio navigation beacons and transponders, which is an interpretive choice.",
+    "LN-1 volume figure on the NASA page (approximately 175x220x300 cm) is inconsistent with its 2.8 kg mass and was not used; external_dimensions_cm is null.",
+    "LN-1 power consumption and exact S-band frequency are not publicly specified in the sources reviewed.",
+    "Lunar Pathfinder accuracy (around 100 m) is a projection from ESA material seen in search results, not a measurement; its launch date (2027) is provisional and has slipped repeatedly.",
+    "ATLAS figures are simulation results for a proposed, unflown architecture.",
+    "The JPL R24234 poster PDF could not be parsed; its Iris ranging claim (about 15 m) is unverified and excluded from specifications.",
+    "The ESA ATLAS executive summary, NASA Marshall IM-1 summary, SSTL page, NASA Langley TOPS listing and ESA Lunar Pathfinder image listing were checked via search-result summaries only, not by full page fetch.",
+    "The ESA Lunar Pathfinder navigation article URL returned HTTP 404 and was not used as a source.",
+    "NASA LN-1 image URLs are taken from the NASA science page markup with the ?w= query parameter removed. Their resolution and reuse terms were not individually checked, so direct_image_assets_verified_from_official_pages is false.",
+    "Search results and fetched pages contained no instructions directed at the research agent."
+  ]
+}

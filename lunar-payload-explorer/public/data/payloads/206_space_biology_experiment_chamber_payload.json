@@ -1,0 +1,234 @@
+{
+  "catalogue_id": 206,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 10,
+    "name": "Biological and life-science experiments"
+  },
+  "payload": {
+    "number": 206,
+    "name": "Space biology experiment chamber",
+    "article": {
+      "overview": "A space biology experiment chamber is a sealed or tightly controlled enclosure that holds living organisms, such as seeds, plants, microbes or yeast, so that their responses to the lunar environment can be observed. On the Moon, such a chamber would be used to study how biological systems respond to reduced gravity, radiation, temperature extremes and the lunar surface environment. The only lunar surface example described here that has operated is the Chang'e-4 Biological Experiment Payload, flown in January 2019 [1]. The other examples are in development or proposed and, according to the sources read, have not flown [4][5][3].",
+      "description": "A space biology experiment chamber is a self-contained habitat for a small biological sample. It typically combines a sealed or closed container, a way to supply water, nutrients or light, some form of temperature control, and sensors or imaging so that growth or activity can be recorded remotely. Because the chamber must keep its contents alive without an Earth-like environment, it is an engineering problem as well as a biological one. The term covers several different designs. The Chang'e-4 Biological Experiment Payload was a small sealed tin that carried plant seeds, insect pupae and yeast [1]. The Lunar Plant Growth Experiment (LPX) is a proposed sealed plant chamber [3]. The LEIA BioSensor is a yeast-based fluidic instrument in development [4][5]. These examples differ in purpose, size and technology, so they should not be treated as one standard design.",
+      "scientific_purpose_and_applications": "The main purpose of a lunar space biology chamber is to find out how living systems behave beyond Earth orbit and on a planetary surface. Possible investigations include whether seeds germinate and plants grow under lunar gravity and radiation, how microorganisms and cells respond to radiation, and how biological material changes during a lunar night [3][4]. Results can inform future life-support design, food production and crewed exploration, and can help separate the effects of gravity from those of radiation and temperature. The sources read do not provide a complete, peer-reviewed set of lunar results from these chambers, so the scientific conclusions remain limited.",
+      "operating_principle": "A biological chamber keeps a sample alive and measurable. Its containment shell isolates the organisms from the lunar vacuum and surface and prevents release of biological material. Inside, a water or nutrient reservoir starts the experiment after landing, a light path or internal lighting provides illumination, and a heater or thermal insulation keeps the sample within its tolerance. Observations are made by cameras, gas sensors or optical readouts. The LEIA BioSensor, for example, releases a nutrient liquid into dormant yeast held in microfluidic cards, then reads growth and metabolic activity with a three-colour LED system and a dye [5]. The Chang'e-4 container used a light pipe to carry sunlight inside for photosynthesis studies [1].",
+      "scientific_importance": "Living systems are sensitive to gravity, radiation, temperature and confinement, and the Moon offers a combination of these conditions that cannot be fully reproduced on Earth. Biological experiments on the lunar surface could test whether plants, microbes and cells respond differently in that environment, which matters for future crew health and life-support planning. The Chang'e-4 experiment showed that a small sealed biological container could be carried to the lunar far side and operated there, and press reports describe the sprouting of cotton seeds [1][2]. The evidence from that single run is limited, and the reported results are not yet fully documented in the sources read. LEIA is designed to pair yeast responses with radiation measurements on the lunar surface, which would connect biological and radiation data in the same environment, if it flies as planned [4][5].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, power or sensor specification for a space biology experiment chamber. The values below apply only to the named example and source. Where a value is not published in the sources read, it is given as not stated.",
+        "examples": [
+          {
+            "name": "Chang'e-4 Biological Experiment Payload (BEP)",
+            "type": "Flown lunar surface biology experiment, carried on the Chang'e-4 mission in January 2019",
+            "mass_kg": null,
+            "container_mass_note": "CGTN describes the container as a small tin weighing under 3 kg; no exact figure is given.",
+            "external_dimensions_cm": null,
+            "interior_volume_l": null,
+            "volume_note": "A search-result summary gives an interior biology volume of about 0.42 L. This could not be confirmed from a source read and is not used.",
+            "power_consumption_w": null,
+            "enclosure": "Sealed container. Press summaries describe a closed aluminium container; material not confirmed in the sources read.",
+            "organisms_reported": [
+              "Cotton",
+              "Potato",
+              "Arabidopsis",
+              "Rapeseed",
+              "Fruit fly pupae",
+              "Yeast"
+            ],
+            "light_delivery": "A light pipe carries sunlight into the container; pipe geometry not stated.",
+            "temperature_control": "Described as a key engineering challenge, with new materials and technologies tested; target temperatures and methods not stated in the article read.",
+            "operational_duration": "Not stated in the CGTN article. Press summaries report a run of about 212 hours (roughly nine days) against a planned 100 days. Unverified against the peer-reviewed paper.",
+            "reported_result": "Press summaries report that cotton seeds sprouted and that the sprouts later died during the lunar night, when temperatures were reported to fall to about -52 C. Press accounts disagree on other species. Germinated seed counts not stated in the article read.",
+            "qualification": "Flown on Chang'e-4. The peer-reviewed paper (Xie et al., 2023) was not read in full; device and result details come from press coverage that cites it.",
+            "source_urls": [
+              "https://news.cgtn.com/news/3d3d674d306b544f31457a6333566d54/index.html",
+              "https://doi.org/10.1016/j.actaastro.2023.10.023"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Explorer Instrument for space biology Applications (LEIA)",
+            "type": "In-development lunar surface biosensor and radiation-detector suite; pre-launch as of the sources read",
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "power_consumption_w": null,
+            "biosensor_configuration": "16 microfluidic cards, each with 16 microwells (256 samples plus calibration standards)",
+            "organism": "Baker's yeast, shipped dormant and activated after landing by releasing a nutrient liquid",
+            "readout": "Three-colour LED system and a dye measure growth and metabolic activity",
+            "heritage": "BioSensor based on the BioSentinel CubeSat, launched in 2022 aboard Artemis I",
+            "radiation_detectors": [
+              "ARES charged-particle spectrometer, built at NASA Johnson Space Center",
+              "Mini-FND neutron detector, built by Southwest Research Institute"
+            ],
+            "programme_and_delivery": "Funded through a PRISM grant; selected for CLPS delivery in June 2022. NASA states delivery was planned for 2026 and names no lander.",
+            "status": "Pre-launch as of the sources read (August 2023 article and NASA page). Current status, launch and landing not confirmed.",
+            "mass_dimensions_power_temperature": "Not stated in the sources read.",
+            "source_urls": [
+              "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+              "https://astrobiology.com/2023/08/24/lunar-explorer-instrument-for-space-biology-applications-leia/"
+            ],
+            "images": [
+              {
+                "id": "leia_fluidic_card_stack",
+                "description": "LEIA fluidic card stack: a microwell fluidic card between control electronics.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2023/09/leia-1.jpg",
+                "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+                "publisher": "NASA Science",
+                "credit": "No photo credit listed on the source page",
+                "caption": "A LEIA card stack showing a microwell fluidic card between control electronics.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Asset URL returned image content on fetch (JPEG, about 331 KB) with no query string. Visual content was not independently reviewed; caption paraphrased from the NASA source page. Full-resolution download not checked."
+              },
+              {
+                "id": "leia_ares_minifnd_diagram",
+                "description": "Diagram of the ARES, BioSensor and Mini-FND hardware for LEIA.",
+                "image_type": "Technical diagram",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2023/09/leia-2.png",
+                "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+                "publisher": "NASA Science",
+                "credit": "No photo credit listed on the source page",
+                "caption": "Diagram of the ARES, BioSensor and Mini-FND hardware.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Asset URL returned image content on fetch (PNG, about 295 KB) with no query string. Visual content was not independently reviewed; caption paraphrased from the NASA source page. Full-resolution download not checked."
+              }
+            ]
+          },
+          {
+            "name": "Lunar Plant Growth Experiment (LPX), proposed",
+            "type": "Proposed sealed plant-growth chamber; not flown according to the NASA record",
+            "mass_kg": null,
+            "volume_litres": null,
+            "volume_note": "Not stated in the NASA record read. A search-result summary gives about 1 litre in a 1U form; not used.",
+            "internal_power_w": 5,
+            "power_note": "About 5 W internal power, as listed in the NASA record (proposed figure).",
+            "plant_payload": "More than 50 Arabidopsis seeds",
+            "mission_run": "Water added after landing; run of at least 10 days",
+            "monitoring": "Cameras to watch growth; CO2 tracked inside the sealed chamber",
+            "thermal_requirement": "Arabidopsis needs 20-25 C, optimum 22-23 C. The record proposes a thermostatically controlled heater to hold this range, and ties thermal feasibility to surface temperatures at the landing latitude. This article does not evaluate that and does not recommend any site.",
+            "heritage": "Record states hardware builds on technology flown on the ISS in December 2019 and on the Phytofuge canister for the Techshot MVP centrifuge, both rated TRL 9 in the source.",
+            "qualification": "Proposal presented in a NASA presentation; not flight hardware per the source.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20205011821"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Only the Chang'e-4 container has a described enclosure, and its exact dimensions were not stated in the sources read [1]. LEIA's fluidic cards are described by count (16 cards with 16 microwells each), not by an overall envelope [4]. The LPX volume is not stated in the NASA record read [3]. Chamber volume is a central design choice because it limits the amount of biological material, gas supply and thermal mass that can be carried.",
+        "mass_and_weight": "The Chang'e-4 container was described as a small tin weighing under 3 kg; no exact figure is given [1]. LEIA and LPX masses are not stated in the sources read. Mass affects launch, lander capacity and deployment design.",
+        "power_requirements": "LPX's internal power is listed as about 5 W in the NASA record, which is a proposed figure [3]. Chang'e-4 and LEIA power values were not stated in the sources read. Heating for cold periods is likely to drive power needs, but no source read quantifies this for these examples."
+      },
+      "environmental_and_operational_requirements": "A lunar biology chamber must survive the lunar day-night cycle, when surface temperatures swing widely. Press summaries report that the Chang'e-4 sprouts died during a lunar night when temperatures fell to about -52 C; this is not verified [1][2]. The LPX record gives a plant temperature window of 20-25 C and proposes heating to keep within it [3]. Radiation exposure, reduced gravity, limited communications and the need for automated operation are further requirements. LEIA is designed to operate with minimal crew involvement and to send data directly to Earth [4][5]. Gas exchange, humidity and contamination control are also needed for any longer run, but the sources read do not quantify these for the examples.",
+      "limitations": "A sealed chamber limits what can be observed and sampled. Once closed, the sample cannot be handled, and in-situ readouts are restricted to imaging, gas or optical sensors. Automated operation, limited data rates and short mission windows constrain experiments. Sample sizes are small, so a single run has low statistical power. Several other proposals appeared in search results (for example ALEPH and LEAF), but they were not verified in this run and are not described here.",
+      "transportation_and_deployment": {
+        "overview": "Surface chambers travel as part of a lander's payload. Chang'e-4 BEP was carried on the Chang'e-4 mission [1]; integration with the lander and deployment method are not described in the sources read. LEIA is planned for delivery through NASA's CLPS programme, attached to a commercial lunar lander; the lander is not named in the NASA source [4][5].",
+        "transportation_process": [
+          "Integrate the chamber with its sample, power, data and thermal interfaces on Earth.",
+          "Launch on a launch vehicle and transfer toward the Moon.",
+          "Land the payload with a lunar lander.",
+          "Set up the chamber on the surface and activate water or nutrient release where the design requires it.",
+          "Operate under automated control and relay data to Earth."
+        ],
+        "deployment_methods": "The sources read do not describe a deployment mechanism for any example. For LEIA, the payload is attached to a lander under CLPS [4][5]. For LPX, the record describes adding water after landing and monitoring growth with cameras [3].",
+        "historical_examples": "Chang'e-4 BEP was carried on the Chang'e-4 mission in January 2019 [1]. LEIA was selected for CLPS delivery in June 2022 [5].",
+        "compatibility_assessment": "No compatibility with a named lander has been verified for any example, and none is assessed here. Interface specifications for chamber mass, mounting, landing loads, power and data would be needed first.",
+        "images": []
+      },
+      "historical_significance": "CGTN describes the Chang'e-4 Biological Experiment Payload as the first biological experiment on the Moon [1]. The Acta Astronautica paper title describes it as the first biological experiment on the lunar surface for humankind [2]. LEIA was selected for CLPS delivery in June 2022 and is described as the first biology payload on CLPS [5].",
+      "limitations_and_uncertainties": "Almost all the evidence for these chambers comes from a small number of sources: one news article for the Chang'e-4 BEP, one NASA technical presentation for LPX, and NASA and secondary web pages for LEIA. The Chang'e-4 paper (Xie et al., 2023) was not read in full because the publisher page did not resolve in this run, so its device and result details come from press coverage that cites it. Specific gaps: Chang'e-4 container material, exact mass, interior volume, temperature control, operating duration and germination counts are not confirmed from a primary source. LEIA's current status, launch date and landing outcome are not confirmed; the planned 2026 delivery is in the past relative to this run and no later status was found. LPX has no volume, mass or flight status beyond proposed. No lander compatibility has been verified for any example. Two LEIA image assets were confirmed to return image content, but their visual content was not independently reviewed and full-resolution versions were not checked. No verified image assets were found for Chang'e-4 BEP or LPX.",
+      "images": [
+        {
+          "id": "leia_fluidic_card_stack",
+          "description": "LEIA fluidic card stack: a microwell fluidic card between control electronics.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/09/leia-1.jpg",
+          "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+          "publisher": "NASA Science",
+          "credit": "No photo credit listed on the source page",
+          "caption": "A LEIA card stack showing a microwell fluidic card between control electronics.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Asset URL returned image content on fetch (JPEG, about 331 KB) with no query string. Visual content was not independently reviewed; caption paraphrased from the NASA source page. Full-resolution download not checked."
+        },
+        {
+          "id": "leia_ares_minifnd_diagram",
+          "description": "Diagram of the ARES, BioSensor and Mini-FND hardware for LEIA.",
+          "image_type": "Technical diagram",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/09/leia-2.png",
+          "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+          "publisher": "NASA Science",
+          "credit": "No photo credit listed on the source page",
+          "caption": "Diagram of the ARES, BioSensor and Mini-FND hardware.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Asset URL returned image content on fetch (PNG, about 295 KB) with no query string. Visual content was not independently reviewed; caption paraphrased from the NASA source page. Full-resolution download not checked."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Chang'e-4 Lunar mission: The first ever biological experiment on the Moon",
+          "publisher": "CGTN",
+          "date": "2019-01",
+          "url": "https://news.cgtn.com/news/3d3d674d306b544f31457a6333566d54/index.html"
+        },
+        {
+          "title": "The first biological experiment on lunar surface for Humankind: Device and results",
+          "publisher": "Acta Astronautica (Xie et al.)",
+          "date": "2023",
+          "url": "https://doi.org/10.1016/j.actaastro.2023.10.023"
+        },
+        {
+          "title": "Novel Hardware for a Lunar Plant Experiment",
+          "publisher": "NASA Technical Reports Server (McKay, Kiss, Bowman, Horne, Choudhury)",
+          "date": "2021-01 (presentation; Lunar Surface Science Workshop)",
+          "url": "https://ntrs.nasa.gov/citations/20205011821"
+        },
+        {
+          "title": "Growing Yeast on the Moon to Study Radiation Risks to Human Explorers",
+          "publisher": "NASA Science",
+          "date": "2023-09-26 (updated 2024-08-14)",
+          "url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers"
+        },
+        {
+          "title": "Lunar Explorer Instrument for space biology Applications (LEIA)",
+          "publisher": "Astrobiology.com",
+          "date": "2023-08-24",
+          "url": "https://astrobiology.com/2023/08/24/lunar-explorer-instrument-for-space-biology-applications-leia/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "Lunar Explorer Instrument for space biology Applications (LEIA) example": "payload.article.physical_specifications.examples[1].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Chang'e-4 BEP: the CGTN article gives no container volume, temperature range, duration or germination count. Press-derived figures (about 0.42 L interior volume, about 212 hours run time, about -52 C) are unverified and kept out of the structured numeric fields.",
+    "Chang'e-4 BEP: species lists differ between sources; the CGTN list is used. A secondary source lists silkworm eggs and tomato seeds, which the CGTN list does not include; this was not verified.",
+    "Xie et al. (2023), Acta Astronautica: the publisher redirect did not return readable text in this run, so the paper was not read. Its device details are unverified.",
+    "LEIA: NASA's page predates the planned 2026 delivery and the astrobiology.com article dates from August 2023. Current launch and landing status is unknown.",
+    "LEIA images: the two asset URLs were confirmed to return image content only; their visual content and captions (paraphrased from the NASA page) were not independently checked.",
+    "LPX: the 1 L / 1U volume appears only in a search-result summary and is not in the NASA record read; it is not used.",
+    "Other proposals mentioned in search results (ALEPH, LEAF) were not verified and are not described.",
+    "No lander or site compatibility is asserted for any example. No lunar location recommendations are included, as deferred by the user."
+  ]
+}

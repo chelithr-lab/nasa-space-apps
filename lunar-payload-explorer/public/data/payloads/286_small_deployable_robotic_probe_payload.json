@@ -1,0 +1,331 @@
+{
+  "catalogue_id": 286,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 286,
+    "name": "Small deployable robotic probe",
+    "article": {
+      "overview": "“Small deployable robotic probe” is a catalogue entry for a class of small robots or probes that are carried to the Moon by a lander or rover and released to explore terrain that larger vehicles cannot reach easily. The name is generic and does not describe one instrument. The best-documented flown example in the sources reviewed is LEV-2 (nicknamed SORA-Q), a palm-sized transformable rover that JAXA reports was released from the SLIM lander in January 2024 and operated autonomously while sending images through a companion hopping robot, LEV-1 [1][3]. Two further examples, a NASA concept for a redeployable sensor probe and a Japanese university concept for swarms of exploratory robots, are documented only at proposal or conference-abstract level [4][5].",
+      "description": "In this category, a small deployable robotic probe is a compact robotic system that is stowed on a lander or rover, released onto the surface, and then moves, transforms or positions itself to make measurements or observations. Its defining features are small size and mass, access to places that a fixed lander or a large rover cannot easily reach, and reliance on a host spacecraft for transport, release and often communication. The LEV-2 rover is folded into a sphere of about 8 cm before deployment and changes into a wheeled rover after release [1]. Concept systems in the same class use insertion capsules that carry robots onto the surface and then act as relays [5]. No single design is shared by all probes in this class, so the description applies to the category rather than to one hardware model.",
+      "scientific_purpose_and_applications": "For LEV-2 the demonstrated purpose was technological and operational: to show that a very small robot can be released from a lander, change its form, move away and send images of its host lander back autonomously [1][3]. JAXA reports that its images confirmed the rover's transformation, movement, onboard imaging and wireless transfer to LEV-1 [3]. Photographs of SLIM from the rover were also used to show the lander's unusual attitude after landing, which the Wikipedia summary describes as landing on its nose [6]. The NASA MoonSHOT concept is intended to find, characterise and map lunar resources at local scale, including polar water ice and hydrogen [4]. The Chuo University concept aims to use robot swarms to settle unknown and explored areas, such as lava domes, with capsules acting as relays [5]. Applications therefore include resource mapping, reconnaissance of features that are hard to reach, and extending the coverage of a host lander.",
+      "operating_principle": "JAXA describes three linked functions for LEV-2. First, after release from the lander, the robot changes from a folded sphere into a wheeled rover using an eccentric rotation mechanism that JAXA says reduces sinking into soft soil [1]. Second, it controls its own posture autonomously: it detects attitude anomalies and runs recovery sequences without ground intervention [1]. Third, it images its surroundings, uses onboard image processing to recognise the lander, and selects which images to transmit [1][3]. No direct Earth link is described, so images are sent wirelessly to LEV-1, which relays them to Earth [1][3]. The Chuo University concept uses insertion capsules that release robots and then serve as communication relays [5]. The NASA MoonSHOT concept is a deployable analytical instrument whose measurement principle is not described in the abstract reviewed [4].",
+      "scientific_importance": "Small deployable probes matter because they can extend the reach of a host lander or rover at low mass. The 2024 SLIM flight is significant because JAXA describes LEV-2 as the first rover to carry out fully autonomous exploration of the lunar surface, and describes the coordinated operation of LEV-1 and LEV-2 as a first [1][3]. These are JAXA's own claims and have not been independently assessed in this article. The June 2026 Science Robotics paper is the peer-reviewed record of these results [2], but its full text could not be accessed for this article.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a deployable probe. The three examples below differ in maturity and purpose, so their numbers should not be compared directly. Values are given only where a source states them; “not publicly specified” means no reliable value was found in the sources reviewed.",
+        "examples": [
+          {
+            "name": "LEV-2 (SORA-Q) transformable palm-sized rover",
+            "type": "Flown lunar surface hardware (released from SLIM, January 2024)",
+            "developers": "JAXA with TOMY Company, Ltd., Sony Group Corporation and Doshisha University",
+            "mass_kg": 0.228,
+            "mass_note": "JAXA June 2026 value. Wikipedia gives 250 g; see the uncertainties section.",
+            "sphere_diameter_cm": 8,
+            "diameter_before_transformation_mm": 78,
+            "cameras": "Two (front and rear); resolution not stated",
+            "mobility": "Eccentric rotation mechanism; changes from a folded sphere into a wheeled rover. Wheel count not stated in the JAXA sources.",
+            "power_consumption_w": null,
+            "communications": "No direct Earth link described; wireless link to LEV-1, which relayed its images to Earth",
+            "measured_results": "Two surface images. Front-camera image estimated at about 5.08 m from the lander (offline analysis). About 0.13 m displacement and about 180 degrees of rotation between the two images, using a rock as reference. Operation of at least about 108 minutes. 240 onboard image-processing runs. Partial transmission data loss.",
+            "qualification": "Flown and operated on the Moon, per JAXA. Environmental qualification levels, thermal control and power system figures are not publicly specified in the sources reviewed.",
+            "sources": "[1][3][6]",
+            "source_urls": [
+              "https://global.jaxa.jp/press/2026/06/20260618-1_e.html",
+              "https://global.jaxa.jp/press/2024/01/20240125-4_e.html",
+              "https://en.wikipedia.org/wiki/LEV-2"
+            ],
+            "images": [
+              {
+                "id": "lev2_external_view_folded_and_deployed",
+                "description": "Figure 3 of the JAXA release: LEV-2 in its folded spherical form (left) and deployed wheeled form (right), with labelled front camera, rear camera, wheel and stabilizer.",
+                "image_type": "Engineering illustration (rendered diagram)",
+                "image_url": "https://global.jaxa.jp/press/2026/06/images/20260618-1_04.png",
+                "source_page_url": "https://global.jaxa.jp/press/2026/06/20260618-1_e.html",
+                "publisher": "JAXA",
+                "credit": "JAXA (Figure 3, press release of 18 June 2026)",
+                "caption": "Figure 3: external view of LEV-2 before and after deployment, with the front camera, rear camera, wheel and stabilizer labelled.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct JAXA asset URL checked (HTTP 200, image/png). A rendered diagram, not a flight photograph. It shows the sphere-to-wheel transformation described in the text."
+              },
+              {
+                "id": "lev2_front_camera_image_with_slim",
+                "description": "Front-camera image from LEV-2 on the lunar surface with the SLIM lander at right, boxed in red. A horizontal band across the image shows degraded data.",
+                "image_type": "Flight image from the lunar surface (rover front camera)",
+                "image_url": "https://global.jaxa.jp/press/2026/06/images/20260618-1_02.png",
+                "source_page_url": "https://global.jaxa.jp/press/2026/06/20260618-1_e.html",
+                "publisher": "JAXA",
+                "credit": "JAXA (Figure 1, press release of 18 June 2026)",
+                "caption": "Figure 1: front-camera image taken by LEV-2 after it reached the surface. The red frame marks SLIM. JAXA reports that part of this image was lost in transmission.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct JAXA asset URL checked (HTTP 200, image/png). JAXA estimates, from offline analysis, that the image was taken about 5.08 m from the lander."
+              },
+              {
+                "id": "lev2_rear_camera_image_and_projection",
+                "description": "Figure 2 of the JAXA release: panel A shows the recovered left portion of a rear-camera image; panel B shows a projected view with SLIM at upper right. Red frames mark a rock-like surface area used as a reference.",
+                "image_type": "Flight image from the lunar surface (rear camera, partial, with projection)",
+                "image_url": "https://global.jaxa.jp/press/2026/06/images/20260618-1_03.png",
+                "source_page_url": "https://global.jaxa.jp/press/2026/06/20260618-1_e.html",
+                "publisher": "JAXA",
+                "credit": "JAXA (Figure 2, press release of 18 June 2026)",
+                "caption": "Figure 2: A, the recovered left part of the rear-camera image (only partial data was received); B, projected view. Red frames mark the reference area used for the motion estimate.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct JAXA asset URL checked (HTTP 200, image/png). Only the left portion of the rear-camera image was recovered, according to JAXA."
+              }
+            ]
+          },
+          {
+            "name": "NASA MoonSHOT redeployable sensor probe",
+            "type": "Engineering concept; TRL 4 in the 2019 abstract; not flown",
+            "developers": "NASA-affiliated authors (P. Sobron et al.), Lunar and Planetary Science Conference 2019",
+            "mass_kg": 3,
+            "dimensions_cm": null,
+            "power_w": null,
+            "mission_concept": "Deployable analytical payload that finds, characterises and maps lunar resources at local scale from a small lander or rover. Target resources named in the abstract: polar water ice, hydrogen, helium-3 and regolith minerals.",
+            "status": "TRL 4 in the 2019 abstract; no later status found. The record title says redeployable and the abstract says deployable.",
+            "sources": "[4]",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20190002731"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chuo University exploratory-robot swarm with insertion capsules (MOONSHOT programme project)",
+            "type": "Proposed system concept; no hardware, mission or TRL status stated",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "architecture": "Insertion capsules each carry small exploration robots and are loaded into the lander one at a time. Capsules placed on the surface deploy their robots within a lava dome. After release the capsules act as communication relay stations.",
+            "stated_goal": "Evolvable robot swarms with shared intelligence to settle unknown and explored areas.",
+            "sources": "[5]",
+            "source_urls": [
+              "https://moonshot.r.chuo-u.ac.jp/kunii/en/research/4-1/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The only dimension stated for the flown LEV-2 rover is its size. JAXA gives approximately 8 cm in spherical form and 78 mm in diameter before transformation [1]. Wikipedia also gives 8 cm [6]. The MoonSHOT and Chuo concepts do not publish dimensions in the sources reviewed [4][5].",
+        "mass_and_weight": "JAXA's June 2026 release gives a mass of 228 g for LEV-2 [1]. The Wikipedia summary gives 250 g [6]. This article uses the primary JAXA figure and records the discrepancy. The NASA MoonSHOT abstract gives a 3 kg mass [4]. No mass is published for the Chuo concept [5].",
+        "power_requirements": "No power consumption figure was found for LEV-2 or the two concepts in the sources reviewed. Press coverage suggests that loss of contact after about 100 minutes may have been caused by LEV-1 hopping damage or battery depletion [7]. This is a press attribution, not a JAXA finding."
+      },
+      "environmental_and_operational_requirements": "The sources reviewed do not publish environmental qualification limits (temperature, radiation, vibration or vacuum test levels) for LEV-2 or for the two concept systems [1][4][5]. The Chuo University project page says its robots are to undergo space environmental tests, but no results are reported [5]. General lunar conditions that any surface probe must tolerate include vacuum, large day-night temperature swings, low gravity and abrasive fine dust. These are general context rather than values from the reviewed sources and are not quantified here. Operationally, LEV-2 relied on LEV-1 for relay and so depended on that hopper's survival, while its behaviour was autonomous by design [1][3].",
+      "limitations": "A single probe of this class carries very little: LEV-2 has two cameras, no described direct Earth link, and a small mass, so its science return depends on relay hardware and operating time. In the SLIM mission, all data return depended on LEV-1. Contact was lost after about 108 minutes of rover operation, which JAXA's summary places at least about that long, and press coverage says this was roughly 20 to 30 minutes earlier than the team had hoped [1][7]. Part of the image data was lost in transmission [1]. Autonomy is limited to the behaviours designed in advance, such as the recovery sequences for anomalies that were anticipated [1]. The two concept systems have no demonstrated hardware performance [4][5].",
+      "transportation_and_deployment": {
+        "overview": "The surface-probe case applies to LEV-2 and to the concepts, all of which depend on a host lander or insertion capsule. The flown example was carried to the Moon by the SLIM lander and released during descent, just before touchdown [1][3][6]. No lunar-transfer or landing-trajectory data specific to the rover were found in the sources reviewed.",
+        "transportation_process": [
+          "Earth integration: LEV-2 and its companion LEV-1 were mounted on the SLIM lander before launch [3].",
+          "Launch: JAXA reports that LEV-2 was launched on 7 September 2023 aboard SLIM [1]. The launch vehicle and transfer trajectory are not stated in the sources reviewed.",
+          "Lunar transfer and orbit: not publicly specified in the sources reviewed for the rover.",
+          "Landing delivery and release: LEV-1 and LEV-2 were released from SLIM just before the main lander touched down. Wikipedia says release occurred while the lander was hovering [3][6].",
+          "Deployment and setup: after reaching the surface the rover unfolded into its wheeled form on its own and began operations without ground intervention [1].",
+          "Power, data and thermal interfaces: LEV-2 sent data wirelessly to LEV-1, which relayed it to Earth [1][3]. The power source, thermal control and mechanical interface with SLIM are not publicly specified in the sources reviewed."
+        ],
+        "deployment_methods": "LEV-2 used release from the lander, followed by autonomous transformation from a sphere into a rover [1][3]. The Chuo University concept uses insertion capsules that are loaded into the lander one at a time, placed on the surface, and then deploy their robots within a lava dome [5]. The NASA MoonSHOT concept is described as deployable from a small lander or rover, but its deployment mechanism is not described in the abstract reviewed [4].",
+        "historical_examples": "The flown example is the LEV-2 and LEV-1 pair released from SLIM in January 2024 [1][3]. Other small-robot concepts, such as hopping robots and walking rovers, appear in search results but were not verified for this article and are not included.",
+        "compatibility_assessment": "LEV-2's flight compatibility with SLIM is documented by JAXA [1][3]. No compatibility with any other lander, rover or spacecraft is verified for this payload class. The MoonSHOT and Chuo concepts have no verified lander interface in the sources reviewed [4][5].",
+        "images": [
+          {
+            "id": "slim_lander_on_lunar_surface_2024",
+            "description": "Image of the SLIM lander on the lunar surface, released by JAXA in January 2024 and relayed from LEV-2 through LEV-1 during a wireless-transfer test.",
+            "image_type": "Flight image from the lunar surface (released by JAXA; described as a test transfer image)",
+            "image_url": "https://global.jaxa.jp/press/2024/01/images/20240125-4_e_01.jpg",
+            "source_page_url": "https://global.jaxa.jp/press/2024/01/20240125-4_e.html",
+            "publisher": "JAXA",
+            "credit": "JAXA/TOMY/Sony Group Corporation/Doshisha University (credit line visible on the image)",
+            "caption": "An image of SLIM on the lunar surface (JAXA press release, 25 January 2024).",
+            "section_placements": [
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct JAXA asset URL checked (HTTP 200, image/jpeg). JAXA describes the image as a test of wireless transfer through LEV-1."
+          }
+        ]
+      },
+      "historical_significance": "JAXA describes LEV-2 as the world's smallest and lightest lunar exploration rover, a claim made in January 2024 [3]. It also describes LEV-2 as the world's first rover to conduct fully autonomous lunar surface exploration, and the first coordinated surface exploration by two cooperating robots [1][3]. The June 2026 Science Robotics paper is the peer-reviewed record of these results [2]. The NASA MoonSHOT and Chuo University concepts show how the category is being developed, but neither has a flight history [4][5].",
+      "limitations_and_uncertainties": "The payload name describes a category rather than one design, so the main uncertainty is scope: this article covers one flown rover and two concepts, not every small probe. Several figures conflict across sources. LEV-2 mass is 228 g in JAXA's 2026 release and 250 g in Wikipedia [1][6]. Operating time is at least about 108 minutes in JAXA's summary and about 100 minutes in Wikipedia [1][6]. The SLIM landing is given as 20 January 2024 (JST) by JAXA and as 19 January 2024 by other sources [3][7]. Power, thermal design, wheel count, camera resolution and environmental qualification are not publicly specified in the sources reviewed. The full Science Robotics paper could not be retrieved (publisher page returned HTTP 403), so measurements are taken from JAXA's summary [1][2]. The MoonSHOT data date from 2019 and the Chuo project page is undated [4][5]. Other proposals in this class were not verified. This article makes no lunar location recommendation.",
+      "images": [
+        {
+          "id": "lev2_science_robotics_june_2026_cover",
+          "description": "Science Robotics June 2026 cover photograph of the LEV-2 (SORA-Q) rover on a fine, sand-like surface, reproduced in the JAXA press release.",
+          "image_type": "Journal cover photograph (rover product photograph, not lunar imagery)",
+          "image_url": "https://global.jaxa.jp/press/2026/06/images/20260618-1_01.jpg",
+          "source_page_url": "https://global.jaxa.jp/press/2026/06/20260618-1_e.html",
+          "publisher": "JAXA (press release); cover reprinted with permission from AAAS",
+          "credit": "Reprinted with permission from AAAS, as stated in the JAXA release",
+          "caption": "Cover of Science Robotics, June 2026, featuring the LEV-2 (SORA-Q) rover.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct JAXA asset URL checked (HTTP 200, image/jpeg). Rights: JAXA states the cover is reprinted with AAAS permission. Not public domain; reuse needs permission from AAAS or JAXA."
+        },
+        {
+          "id": "lev2_external_view_folded_and_deployed",
+          "description": "Figure 3 of the JAXA release: LEV-2 in its folded spherical form (left) and deployed wheeled form (right), with labelled front camera, rear camera, wheel and stabilizer.",
+          "image_type": "Engineering illustration (rendered diagram)",
+          "image_url": "https://global.jaxa.jp/press/2026/06/images/20260618-1_04.png",
+          "source_page_url": "https://global.jaxa.jp/press/2026/06/20260618-1_e.html",
+          "publisher": "JAXA",
+          "credit": "JAXA (Figure 3, press release of 18 June 2026)",
+          "caption": "Figure 3: external view of LEV-2 before and after deployment, with the front camera, rear camera, wheel and stabilizer labelled.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct JAXA asset URL checked (HTTP 200, image/png). A rendered diagram, not a flight photograph. It shows the sphere-to-wheel transformation described in the text."
+        },
+        {
+          "id": "lev2_front_camera_image_with_slim",
+          "description": "Front-camera image from LEV-2 on the lunar surface with the SLIM lander at right, boxed in red. A horizontal band across the image shows degraded data.",
+          "image_type": "Flight image from the lunar surface (rover front camera)",
+          "image_url": "https://global.jaxa.jp/press/2026/06/images/20260618-1_02.png",
+          "source_page_url": "https://global.jaxa.jp/press/2026/06/20260618-1_e.html",
+          "publisher": "JAXA",
+          "credit": "JAXA (Figure 1, press release of 18 June 2026)",
+          "caption": "Figure 1: front-camera image taken by LEV-2 after it reached the surface. The red frame marks SLIM. JAXA reports that part of this image was lost in transmission.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct JAXA asset URL checked (HTTP 200, image/png). JAXA estimates, from offline analysis, that the image was taken about 5.08 m from the lander."
+        },
+        {
+          "id": "lev2_rear_camera_image_and_projection",
+          "description": "Figure 2 of the JAXA release: panel A shows the recovered left portion of a rear-camera image; panel B shows a projected view with SLIM at upper right. Red frames mark a rock-like surface area used as a reference.",
+          "image_type": "Flight image from the lunar surface (rear camera, partial, with projection)",
+          "image_url": "https://global.jaxa.jp/press/2026/06/images/20260618-1_03.png",
+          "source_page_url": "https://global.jaxa.jp/press/2026/06/20260618-1_e.html",
+          "publisher": "JAXA",
+          "credit": "JAXA (Figure 2, press release of 18 June 2026)",
+          "caption": "Figure 2: A, the recovered left part of the rear-camera image (only partial data was received); B, projected view. Red frames mark the reference area used for the motion estimate.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct JAXA asset URL checked (HTTP 200, image/png). Only the left portion of the rear-camera image was recovered, according to JAXA."
+        },
+        {
+          "id": "slim_lander_on_lunar_surface_2024",
+          "description": "Image of the SLIM lander on the lunar surface, released by JAXA in January 2024 and relayed from LEV-2 through LEV-1 during a wireless-transfer test.",
+          "image_type": "Flight image from the lunar surface (released by JAXA; described as a test transfer image)",
+          "image_url": "https://global.jaxa.jp/press/2024/01/images/20240125-4_e_01.jpg",
+          "source_page_url": "https://global.jaxa.jp/press/2024/01/20240125-4_e.html",
+          "publisher": "JAXA",
+          "credit": "JAXA/TOMY/Sony Group Corporation/Doshisha University (credit line visible on the image)",
+          "caption": "An image of SLIM on the lunar surface (JAXA press release, 25 January 2024).",
+          "section_placements": [
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct JAXA asset URL checked (HTTP 200, image/jpeg). JAXA describes the image as a test of wireless transfer through LEV-1."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lev2_science_robotics_june_2026_cover",
+          "description": "Science Robotics June 2026 cover photograph of the LEV-2 (SORA-Q) rover on a fine, sand-like surface, reproduced in the JAXA press release.",
+          "image_type": "Journal cover photograph (rover product photograph, not lunar imagery)",
+          "image_url": "https://global.jaxa.jp/press/2026/06/images/20260618-1_01.jpg",
+          "source_page_url": "https://global.jaxa.jp/press/2026/06/20260618-1_e.html",
+          "publisher": "JAXA (press release); cover reprinted with permission from AAAS",
+          "credit": "Reprinted with permission from AAAS, as stated in the JAXA release",
+          "caption": "Cover of Science Robotics, June 2026, featuring the LEV-2 (SORA-Q) rover.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct JAXA asset URL checked (HTTP 200, image/jpeg). Rights: JAXA states the cover is reprinted with AAAS permission. Not public domain; reuse needs permission from AAAS or JAXA."
+        }
+      ],
+      "references": [
+        {
+          "title": "LEV-2 (SORA-Q) lunar rover: Science Robotics publication and technical results (English press release)",
+          "authors": "JAXA",
+          "publisher": "JAXA",
+          "date": "2026-06-18",
+          "url": "https://global.jaxa.jp/press/2026/06/20260618-1_e.html",
+          "notes": "Primary source for LEV-2 mass, size, cameras, launch date, autonomy, measured results and figures 1 to 3."
+        },
+        {
+          "title": "From ball to rover: Transformable palm-sized rover SORA-Q for autonomous lunar exploration",
+          "authors": "D. Hirano et al.",
+          "publisher": "Science Robotics (AAAS)",
+          "date": "2026-06-10",
+          "url": "https://doi.org/10.1126/scirobotics.aec8039",
+          "notes": "Peer-reviewed paper, DOI 10.1126/scirobotics.aec8039. Not read in full: the publisher page returned HTTP 403. Cited for its existence and bibliographic details."
+        },
+        {
+          "title": "Press release on the SLIM landing and the release of LEV-1 and LEV-2 rovers",
+          "authors": "JAXA",
+          "publisher": "JAXA",
+          "date": "2024-01-25",
+          "url": "https://global.jaxa.jp/press/2024/01/20240125-4_e.html",
+          "notes": "Deployment timing, relay through LEV-1, autonomy claims and the SLIM image."
+        },
+        {
+          "title": "Redeployable Sensor Probe for In-Situ Lunar Resource Mapping from Small Landers",
+          "authors": "P. Sobron et al.",
+          "publisher": "NASA NTRS, Lunar and Planetary Science Conference",
+          "date": "2019-03-18",
+          "url": "https://ntrs.nasa.gov/citations/20190002731",
+          "notes": "Abstract record; full PDF not read. The 3 kg mass and TRL 4 are as stated in the abstract at that date."
+        },
+        {
+          "title": "4-1. Developing small exploratory robots adapted to the lunar environment based on exploration plans",
+          "authors": "Chuo University, MOONSHOT project (Y. Kunii)",
+          "publisher": "Chuo University",
+          "date": null,
+          "url": "https://moonshot.r.chuo-u.ac.jp/kunii/en/research/4-1/",
+          "notes": "Project page. No specifications, mission status or TRL stated."
+        },
+        {
+          "title": "LEV-2",
+          "authors": "Wikipedia contributors",
+          "publisher": "Wikipedia (secondary source)",
+          "date": null,
+          "url": "https://en.wikipedia.org/wiki/LEV-2",
+          "notes": "Secondary. Used only for the 250 g mass, 8 cm size, two-camera count and the run-time figure, and flagged where it conflicts with JAXA."
+        },
+        {
+          "title": "How Japanese scientists sent a real-life Transformer to the moon",
+          "authors": "Space.com",
+          "publisher": "Space.com (press coverage)",
+          "date": null,
+          "url": "https://space.com/astronomy/moon/how-japanese-scientists-sent-a-real-life-transformer-to-the-moon",
+          "notes": "Press coverage read through a search summary only. Source of the suspected causes of lost contact. This is not a JAXA finding."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "primary_science_paper_full_text_reviewed": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[0]": "payload.article.physical_specifications.examples[0].images",
+      "transportation_and_deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "LEV-2 mass conflicts: 228 g in the JAXA 2026 release (used) versus 250 g in Wikipedia.",
+    "LEV-2 size: approximately 8 cm spherical (JAXA) versus 78 mm before transformation (JAXA related links); both recorded.",
+    "Operating time: at least about 108 minutes (JAXA 2026) versus about 100 minutes (Wikipedia and press coverage). Wikipedia's two-hour running-time figure is not used.",
+    "SLIM landing date: 20 January 2024 JST (JAXA) versus 19 January 2024 (other sources). The Wikipedia infobox date of January 2025 is treated as an error.",
+    "The Science Robotics paper (DOI 10.1126/scirobotics.aec8039) returned HTTP 403; measurements come from JAXA's press release and must be checked against the paper before publication.",
+    "The cause of lost contact (LEV-1 hopping damage or battery depletion) is press attribution from Space.com, not a JAXA finding.",
+    "The Chuo University and NASA MoonSHOT entries are concepts; no hardware status, dimensions or power are verified. The NASA MoonSHOT name is unrelated to the Chuo MOONSHOT programme project.",
+    "Image rights: the Science Robotics cover is reprinted with AAAS permission according to JAXA. Other JAXA images are subject to JAXA reuse terms and are not public domain.",
+    "No compatibility with any lander other than SLIM is verified. The general lunar-environment paragraph is context, not sourced figures."
+  ]
+}

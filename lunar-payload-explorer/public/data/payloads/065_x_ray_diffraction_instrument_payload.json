@@ -1,0 +1,355 @@
+{
+  "catalogue_id": 65,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 65,
+    "name": "X-ray diffraction instrument",
+    "article": {
+      "overview": "An X-ray diffraction (XRD) instrument identifies minerals from the way their crystal lattices scatter a beam of X-rays. When a collimated X-ray beam passes through a powdered sample, the crystalline grains diffract the X-rays at angles that depend on the spacing of their atomic planes, so the resulting pattern acts as a fingerprint of the crystal structures present [6]. Unlike an elemental analyser, an XRD instrument can distinguish minerals that share the same elements but have different crystal structures, and it can estimate how much of each mineral is present [1]. The first X-ray diffractometer flown in space is the CheMin instrument on the Mars Science Laboratory rover [1]. No XRD instrument has been confirmed to operate on the Moon in the sources accessed for this article; the lunar instruments described here are proposals, concepts or prototypes.",
+      "description": "A planetary XRD instrument has four functional parts. (1) An X-ray source. The MSL CheMin instrument uses a cobalt X-ray source that produces a collimated beam about 70 micrometres in diameter [1]. (2) A sample presentation system. CheMin receives sieved powder (grains below 150 micrometres) in portions of 40 to 50 mg, and stores them in 27 reusable disc-shaped cells, each 8 mm in diameter and 175 micrometres thick, with X-ray-transparent Mylar or Kapton windows. Piezoelectric actuators vibrate each cell pair to induce convective grain motion, so that many randomly oriented grains are sampled [1]. (3) An area detector. CheMin's X-ray CCD records both the position and the energy of photons that pass through the sample, in transmission geometry, so that diffracted photons form a two-dimensional pattern [1][2]. (4) Data processing. Downlinked two-dimensional patterns are converted to one-dimensional patterns and analysed with Rietveld refinement and full-pattern fitting to identify and quantify the minerals present [1][4]. Some XRF capability is also possible with the same detector, but on CheMin the quantitative XRF function was descoped before flight, so bulk chemistry relied on the companion APXS instrument [1].",
+      "scientific_purpose_and_applications": "The main purpose of a planetary XRD instrument is to determine the crystalline mineralogy of a surface sample: which minerals are present, in what proportions, and with what crystal structure and composition. The CheMinX design white paper states that XRD paired with quantitative XRF can identify all minerals present above about 1 wt. %, quantify minerals above about 3 wt. %, report the abundance of X-ray amorphous material, and give the valence states of elements such as iron. These figures are design goals and capabilities stated by the instrument team, not measured results for a lunar instrument [1]. Proposed lunar applications include comparing surface and drilled regolith with Apollo sample mineralogy.A proposed South Pole-Aitken basin mission notes that Apollo and Luna samples may give a biased view of the Moon because they come from a limited set of locations [5]. Mineralogy from an in situ XRD instrument could therefore test global hypotheses about lunar differentiation, impact mixing and the composition of excavated deep crust [5]. Applications are proposals and have not been demonstrated on the Moon.",
+      "operating_principle": "Crystalline materials scatter X-rays coherently from regularly spaced atomic planes. Constructive interference occurs at angles satisfying Bragg's law, nλ = 2d sinθ, where λ is the X-ray wavelength, d is the spacing between atomic planes and θ is the angle of incidence. A powdered sample contains many randomly oriented grains, so every set of planes in every mineral contributes a diffraction peak at a characteristic position. The set of peak positions and intensities is therefore a fingerprint of the crystal structures present [6]. In CheMin's transmission geometry, the position on the area detector at which a photon arrives is linked to the diffraction angle, so the detector records a two-dimensional pattern that is later converted to an intensity-versus-angle pattern [1][6]. Fluorescence is produced by the same X-rays when they excite characteristic emission lines of elements in the sample. Because XRF is an energy-dependent process, a detector that measures photon energy can record it alongside diffraction [1]. Because the sample is a powder, grain size and packing matter. CheMin's vibrated cells keep grains moving so that many grain orientations are sampled, which relaxes the requirement for fine preparation [1][3]. CheMinX keeps a vibrated sample method but uses single-use cells in a cartridge to avoid clogging [1].",
+      "scientific_importance": "For planetary geology, XRD is the most diagnostic method for mineralogy that can be carried out on a spacecraft, improved upon only by sample return and terrestrial laboratories [1]. It can identify and quantify crystalline minerals, detect X-ray amorphous material (such as glassy or poorly crystalline phases), and measure mineral compositions from lattice parameters [1][4]. For the Moon, quantitative mineralogy from an in situ site would link surface compositions to the lunar magma ocean and impact history, and would test whether returned samples represent the wider surface [5]. The value of such measurements is scientific and has been argued in proposals, but no lunar XRD dataset is currently available to confirm the expected performance.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an XRD instrument. The examples below are different designs and stages of development: one flown on Mars, one field prototype, one preliminary design, one lunar proposal and one concept with a prototype setup. They are not directly comparable, because their sample handling, detectors, X-ray sources and operating modes differ, and because most of the lunar designs have no published mass or power in the sources accessed.",
+        "examples": [
+          {
+            "name": "Chemistry and Mineralogy instrument (CheMin), Mars Science Laboratory",
+            "type": "Flown instrument on Mars (not lunar)",
+            "status": "Flown and operated on Mars, Curiosity rover",
+            "mass_kg": 10.5,
+            "dimensions_cm": null,
+            "power_consumption_w": {
+              "value": null,
+              "note": "Steady power not stated in accessed text. Operational energy is about 500 W-h per night of analysis [1]."
+            },
+            "x_ray_source": "Cobalt (Co) X-ray source; collimated beam about 70 micrometres in diameter [1].",
+            "detector": "Cooled X-ray CCD in transmission geometry, recording position and energy of photons [1].",
+            "sample_handling": "Sieved powder (below 150 micrometres), 40 to 50 mg portions; 27 reusable cells, 8 mm diameter, 175 micrometres thick, with Mylar or Kapton windows; piezoelectric vibration [1].",
+            "analysis_time": "Typically 22 hours in total, split over three nights; about 200 Mbit of data per night [1].",
+            "xrf_capability": "Quantitative XRF descoped before flight; XRF data are qualitative and bulk chemistry relied on APXS [1].",
+            "construction": "Dimensions shown in a figure in millimetres; numeric dimensions not extracted from accessed text [1].",
+            "qualification": "Operated on Mars. A drill-feed anomaly on sol 1536 prevented nominal operation of the sample-handling system; CheMin then accepted powdered samples directly from the drill bit [1].",
+            "summary": "The MSL CheMin instrument is the first X-ray diffractometer flown in space [1]. It is a combined XRD/XRF instrument that operates in transmission mode, and its design is the basis for the lunar and planetary proposals below [1][4]. The white paper states that CheMin's size, mass and power restrict its use to flagship-class missions and that smaller rovers need further miniaturisation and simpler sample collection [1]. CheMin is the only flown example in this article, and it is included as heritage, not as a lunar instrument.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20205005011/downloads/Rampe_etal_CheMinX_DS_white_paper_2020.pdf",
+              "https://science.nasa.gov/photojournal/chemistry-and-mineralogy-instrument-installed-in-mars-rover"
+            ],
+            "images": [
+              {
+                "id": "chemin_sample_cells_pia16172",
+                "description": "CheMin sample-cell assemblies that hold vibrated soil and powder samples.",
+                "image_type": "Photograph of flight instrument sample cells (Mars mission instrument)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia16/pia16172/PIA16172.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/shake-it-up-chemin",
+                "publisher": "NASA Science Photojournal (PIA16172)",
+                "credit": "NASA/Ames/JPL-Caltech",
+                "caption": "Cells that hold CheMin soil samples. The source page explains that each cell pair is vibrated (about 2,000 times per second) so that the X-ray beam samples all grains, which lets poorly prepared samples be analysed.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct JPEG URL returned HTTP 200 with image/jpeg on 2026-11-13 (about 31 KB, matching the page's stated download size of 30.46 KB). Description and vibration rate are taken from the page; the image was not visually inspected by the author. Reuse rights not checked; not treated as public domain."
+              }
+            ]
+          },
+          {
+            "name": "Terra portable XRD/XRF (field prototype)",
+            "type": "Field prototype (not flown)",
+            "status": "Field-tested prototype; not flown",
+            "mass_kg": 14.5,
+            "dimensions_cm": null,
+            "power_consumption_w": {
+              "value": 75,
+              "note": "Stated in figure caption for the Terra instrument [1]; includes case, batteries and embedded computer for the mass figure."
+            },
+            "x_ray_source": "Not stated in accessed text.",
+            "detector": "Same detector and XRD geometry as the CheMinX design [1].",
+            "sample_handling": "Not stated in accessed text.",
+            "analysis_time": "Typical analysis 15 minutes to 1 hour [1].",
+            "xrf_capability": "Not stated in accessed text.",
+            "construction": "Field instrument with case, batteries and embedded computer [1].",
+            "qualification": "Deployed in the 2007 AMASE field campaign [1]. This is an analogue deployment, not a space qualification.",
+            "summary": "Terra is a portable XRD/XRF instrument used in a 2007 field deployment, which the CheMinX white paper cites as demonstration of the XRD geometry proposed for CheMinX [1]. The mass and power values quoted for Terra include its case, batteries and embedded computer and describe a field instrument, not a flight design. Terra is included only to show how a smaller XRD system can be configured on the ground.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20205005011/downloads/Rampe_etal_CheMinX_DS_white_paper_2020.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "CheMinX (next-generation XRD/XRF, preliminary design)",
+            "type": "Preliminary flight-instrument design (not flown)",
+            "status": "Preliminary mechanical design; not flown",
+            "mass_kg": 5.0,
+            "dimensions_cm": null,
+            "power_consumption_w": {
+              "value": null,
+              "note": "Not stated in accessed text; the white paper says reduced power relative to CheMin is expected but gives no figure [1]."
+            },
+            "x_ray_source": "Not stated in accessed text.",
+            "detector": "CCD in direct illumination for XRD, plus an internal silicon drift detector (SDD) for concurrent XRF [1]. Hybrid-pixel detectors are under investigation.",
+            "sample_handling": "Single-use sample cells in a cartridge and dispenser arrangement with a fixed tuning fork, to avoid the clogged-cell problem of CheMin [1].",
+            "analysis_time": "A 10-fold reduction in data-collection time is stated as a design goal [1].",
+            "xrf_capability": "Concurrent XRF using the SDD [1].",
+            "construction": "Preliminary mechanical design with dimensions shown in millimetres; projected mass 5 kg [1].",
+            "qualification": "Not qualified; development uses NASA PICASSO grant work on the sample subsystem [1].",
+            "summary": "CheMinX is a next-generation design based on CheMin's principles, with a more compact geometry and a lower-cost sample system [1]. The mass of 5 kg is a projected value for a preliminary mechanical design [1]. The white paper presents CheMinX primarily for Mars. The EPSC2018 abstract mentions landed missions to Earth's Moon and other bodies as possible targets for next-generation XRD instruments, without giving a specific lunar design [3].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20205005011/downloads/Rampe_etal_CheMinX_DS_white_paper_2020.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "METRIC (Mineralogical, Elemental and Tomographic Reconnaissance Investigation for CLPS)",
+            "type": "Proposed lunar lander payload suite (not flown)",
+            "status": "Proposal; no mission selection or schedule confirmed in accessed sources",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": {
+              "value": null,
+              "note": "Not stated in accessed text [4][5]."
+            },
+            "x_ray_source": "Not stated in accessed text [4][5].",
+            "detector": "CCD (for XRD and micro-CT attenuation imaging) [4].",
+            "sample_handling": "Honeybee Robotics PlanetVac pneumatic system delivers sieved regolith from a lander footpad; an SPEAR drill collects regolith from a fixed position under the lander [4][5].",
+            "analysis_time": "Not stated in accessed text.",
+            "xrf_capability": "Optimised XRF geometry for major, minor and trace elements [4].",
+            "construction": "Two-instrument suite: XRD/XRF and X-ray micro-CT, with near-infrared cameras for geological context; the micro-CT uses a 3 mm diameter, 10 mm long graphite tube [4].",
+            "qualification": "Not stated in accessed text.",
+            "summary": "METRIC is a proposed suite of two instruments for a CLPS lunar lander: an XRD/XRF instrument based on CheMin heritage, and an X-ray micro-CT scanner for three-dimensional internal structure of regolith [4]. The stated detection goals are about 1 wt. % for minerals identified and about 3 wt. % for quantification, and about 5 wt. % for mineral composition from lattice parameters [4]. The micro-CT is described with a voxel resolution of 30 micrometres [4]. The accessed texts give no mass, power or dimensions for the METRIC instruments, and no lander is named as a host [4][5].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20220002240/downloads/METRIC%20COSPAR_ScanCopy.pdf",
+              "https://ntrs.nasa.gov/api/citations/20230000383/downloads/LPSC_METRIC.docx.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "TOMOX (X-ray tomographer for lunar and planetary exploration)",
+            "type": "Concept with preliminary prototype setup (not flown)",
+            "status": "Concept; funded under an Italian Space Agency call per the abstract; no flight status",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": {
+              "value": null,
+              "note": "Not stated in accessed text [6]."
+            },
+            "x_ray_source": "Radioactive sources: iron-55 (primarily for XRD, based on MARS-XRD heritage) and cadmium-109 (to enhance XRF excitation) [6].",
+            "detector": "Silicon drift detector (SDD) for XRF and a stand-alone CCD for XRD, recording the spatial position of events [6].",
+            "sample_handling": "Sources and detectors move on a hemispherical support around a fixed sample, so the sample is observed from one position [6].",
+            "analysis_time": "Not stated in accessed text.",
+            "xrf_capability": "XRF and XRD in one geometry; a stated goal is 3D chemical and mineralogical mapping of the exposed surface [6].",
+            "construction": "Hemispherical support; preliminary prototype setup shown in a figure [6].",
+            "qualification": "Not stated in accessed text.",
+            "summary": "TOMOX is described as an XRF and XRD tomographer that would map chemistry and mineralogy in three dimensions over the exposed surface of a sample without destroying it [6]. It is based on heritage from the MARS-XRD instrument that was developed for ExoMars [6][7]. The use of radioactive sources is a handling and licensing constraint that a flight design would need to address. The accessed abstract gives no mass, power or flight schedule.",
+            "source_urls": [
+              "https://meetingorganizer.copernicus.org/EPSC2017/EPSC2017-679.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are not published in a comparable form across the examples. The CheMin instrument's dimensions are shown in a figure in millimetres in the CheMinX white paper, and the numeric values were not extracted from the accessed text [1]. Preliminary CheMinX dimensions are likewise shown only in a figure [1]. No dimensions are stated for METRIC or TOMOX in the accessed texts [4][5][6].",
+        "mass_and_weight": "Mass is stated for CheMin (10.5 kg, from a figure caption) and for the preliminary CheMinX design (projected 5 kg), both in the CheMinX white paper [1]. The Terra field instrument is quoted at 14.5 kg including its case, batteries and computer [1]. The METRIC and TOMOX mass values are not stated in the accessed sources [4][5][6].",
+        "power_requirements": "A single steady power value is not published for most examples. CheMin's operational energy is about 500 W-h per night of analysis [1]. Terra is quoted at 75 W [1]. CheMinX is expected to need less power than CheMin, but no figure is given [1]. METRIC and TOMOX power is not stated in accessed sources [4][5][6]."
+      },
+      "environmental_and_operational_requirements": "**Thermal environment.** NASA's Moon facts page gives a surface temperature of about 127 degrees C in full sunlight and about minus 173 degrees C in darkness, without stating the location [8]. An instrument on a lunar surface must therefore be designed for a very wide temperature range, and its detector cooling and electronics must tolerate the lunar day-night cycle. Thermal design values for specific instruments are not stated in the accessed sources.\n\n**Vacuum and dust.** NASA describes the Moon as having a very thin and tenuous exosphere that is not breathable [8]. Sample handling must therefore work in vacuum and with fine regolith; the METRIC concept handles dust by pneumatic transfer and sieving [4].\n\n**Radiation.** The CheMinX white paper emphasises energy-selective detection of XRD photons because of the radiation environment at Mars [1]. No lunar radiation environment requirement for an XRD detector is stated in the accessed sources.\n\n**Sample requirements.** CheMin accepts grains below 150 micrometres in 40 to 50 mg portions [1]. The METRIC concept delivers sieved regolith to its XRD and micro-CT instruments [4].",
+      "limitations": "No XRD instrument has been confirmed to operate on the Moon. The only flown XRD instrument identified is CheMin on Mars [1]. CheMin's size, mass and power restrict it to flagship-class missions, and its complex sample collection and handling system has been a limitation on smaller missions [1]. Its reusable sample cells can be clogged and cannot always be emptied after analysis, and its quantitative bulk chemistry depends on a companion instrument [1]. Conventional powder XRD typically needs grains of about 10 micrometres or less; CheMin relaxes this by vibrating a coarser sieved sample, and the signal still depends on sample absorption and packing [1][3]. Radioactive X-ray sources, as proposed for TOMOX, add handling and licensing constraints [6]. Mineral detection limits and XRF sensitivities quoted for METRIC are design goals and have not been measured on lunar material [4].",
+      "transportation_and_deployment": {
+        "overview": "Lunar XRD concepts in the accessed sources assume delivery to the surface by a commercial lander. NASA's CLPS programme buys end-to-end delivery services, including payload integration, mission operations, launch and landing [9]. The METRIC proposal is the only lunar XRD concept in the accessed sources with a stated delivery concept: the lander would carry the instruments, and a pneumatic sample system on a footpad would deliver regolith to them [4][5]. No lander is named, and no compatibility with a specific lander or interface has been verified.",
+        "transportation_process": [
+          "Integrate the instrument into a lander payload compartment on Earth, including thermal, power and data interfaces, which are not specified in the accessed sources.",
+          "Launch on a commercial launch vehicle and transfer to the Moon (CLPS service scope) [9].",
+          "Land the instrument suite on the lunar surface with the lander; the CLPS service scope covers landing [9].",
+          "Deploy the sample system: a footpad-mounted pneumatic system (PlanetVac) delivers sieved regolith to the instruments, and a drill collects regolith from a fixed position under the lander in the METRIC concept [4][5].",
+          "Operate the instrument on the surface, with analysis times that the accessed sources do not state for a lunar instrument.",
+          "Return data through the lander's communication system; data volumes and timing are not stated for a lunar XRD [1]."
+        ],
+        "deployment_methods": "Surface deployment in the METRIC concept uses a fixed sampling position under the lander, with sieved regolith delivered from a footpad system to an XRD/XRF instrument and a micro-CT instrument [4][5]. CheMin's heritage shows a sample-delivery chain that required sieving and portioning, and the CheMinX design aims to simplify this with single-use cells [1]. No deployment mechanism for a specific lunar lander is verified.",
+        "historical_examples": "CheMin on Mars is the reference for flight heritage. Its data formed the first quantitative mineralogy of the Martian surface, and it operated for more than five years [1][3]. The ESA MARS-XRD development of 2005 targeted a flight instrument with a goal mass below 0.8 kg, as a laboratory breadboard and engineering-model stage [7]. ExoMars has since been re-planned as the Rosalind Franklin mission, and the accessed sources do not confirm whether MARS-XRD is on its current payload list [12]. The lunar XTRA concept, an extraterrestrial regolith analyser for lunar soil, is described in the CheMinX white paper as a proposal; no flight status was found in the sources accessed [1].",
+        "compatibility_assessment": "Compatibility with a specific lander or rover is not verified for any XRD example. The METRIC concept assumes a CLPS-type lander with a footpad sample system, but no lander is named and no interface document was accessed [4][5][9].",
+        "images": []
+      },
+      "historical_significance": "The historical significance of XRD instruments is that CheMin showed in situ XRD could be done on another planet, and that its data changed the understanding of Martian mineralogy [1][3]. For the Moon, no XRD instrument has yet been flown, so the field depends on proposals such as METRIC and on the heritage of CheMin. A single search of Chinese lunar mission payloads found X-ray fluorescence instruments but no lunar XRD instrument; that search was limited and is not a complete review of Chinese mission payloads.",
+      "limitations_and_uncertainties": "The evidence base is narrow. Only one XRD instrument has flown, and it operated on Mars, not the Moon. The lunar examples are proposals whose mass, power and performance are either unstated or are design goals. The following gaps remain: (a) no published mass or power for METRIC or TOMOX in the accessed texts; (b) no verified lander interface; (c) no measured lunar XRD data; (d) the CheMin dimensions were not extracted from a figure; (e) the status of MARS-XRD and XTRA was not confirmed; (f) the search for lunar XRD flights was limited to one query.",
+      "images": [
+        {
+          "id": "chemin_installation_pia13231",
+          "description": "CheMin instrument being installed in the Curiosity rover (Mars Science Laboratory), 15 June 2010.",
+          "image_type": "Photograph of flight hardware during integration (Mars mission instrument)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia13/pia13231/PIA13231.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/chemistry-and-mineralogy-instrument-installed-in-mars-rover",
+          "publisher": "NASA Science Photojournal (PIA13231)",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Engineers from the Mars Science Laboratory team guide the CheMin instrument, suspended inverted, as it is installed in the Curiosity rover on 15 June 2010. This is flight hardware for a Mars mission, not a lunar instrument.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct JPEG URL returned HTTP 200 with image/jpeg on 2026-11-13; source page read via WebFetch (page image-addition date 28 June 2010). Description is taken from the page caption; the image was not visually inspected by the author. NASA media reuse conditions were not checked and the image is not treated as public domain."
+        },
+        {
+          "id": "chemin_sample_cells_pia16172",
+          "description": "CheMin sample-cell assemblies that hold vibrated soil and powder samples.",
+          "image_type": "Photograph of flight instrument sample cells (Mars mission instrument)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia16/pia16172/PIA16172.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/shake-it-up-chemin",
+          "publisher": "NASA Science Photojournal (PIA16172)",
+          "credit": "NASA/Ames/JPL-Caltech",
+          "caption": "Cells that hold CheMin soil samples. The source page explains that each cell pair is vibrated (about 2,000 times per second) so that the X-ray beam samples all grains, which lets poorly prepared samples be analysed.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct JPEG URL returned HTTP 200 with image/jpeg on 2026-11-13 (about 31 KB, matching the page's stated download size of 30.46 KB). Description and vibration rate are taken from the page; the image was not visually inspected by the author. Reuse rights not checked; not treated as public domain."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "chemin_installation_pia13231",
+          "description": "CheMin instrument being installed in the Curiosity rover (Mars Science Laboratory), 15 June 2010.",
+          "image_type": "Photograph of flight hardware during integration (Mars mission instrument)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia13/pia13231/PIA13231.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/chemistry-and-mineralogy-instrument-installed-in-mars-rover",
+          "publisher": "NASA Science Photojournal (PIA13231)",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Engineers from the Mars Science Laboratory team guide the CheMin instrument, suspended inverted, as it is installed in the Curiosity rover on 15 June 2010. This is flight hardware for a Mars mission, not a lunar instrument.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct JPEG URL returned HTTP 200 with image/jpeg on 2026-11-13; source page read via WebFetch (page image-addition date 28 June 2010). Description is taken from the page caption; the image was not visually inspected by the author. NASA media reuse conditions were not checked and the image is not treated as public domain."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "CheMinX: A Next Generation XRD/XRF for Quantitative Mineralogy and Geochemistry on Mars",
+          "authors": "Rampe, E. B., Blake, D., Sarrazin, P., Bristow, T., Gailhanou, M., Lafuente, B., Tu, V., Zacny, K. and Downs, R.",
+          "publisher": "NASA Decadal Survey white paper, NASA NTRS",
+          "date": "2020",
+          "url": "https://ntrs.nasa.gov/api/citations/20205005011/downloads/Rampe_etal_CheMinX_DS_white_paper_2020.pdf"
+        },
+        {
+          "number": 2,
+          "title": "CheMin instrument paper (full title not verified in accessed sources)",
+          "authors": "Blake, D. F., et al.",
+          "publisher": "Space Science Reviews, 170, 341-399, DOI 10.1007/s11214-012-9905-1 (bibliographic details from the reference list of ref. 4; article not opened)",
+          "date": "2012",
+          "url": "https://link.springer.com/doi/10.1007/s11214-012-9905-1"
+        },
+        {
+          "number": 3,
+          "title": "The CheMin X-ray Diffractometer: Results from Mars and Prospects for Next Generation XRD Instruments",
+          "authors": "Blake, D., Sarrazin, P. and Bristow, T.",
+          "publisher": "EPSC Abstracts, Vol. 12, EPSC2018-560",
+          "date": "2018",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2018/EPSC2018-560.pdf"
+        },
+        {
+          "number": 4,
+          "title": "Mineralogical, Elemental and Tomographic Reconnaissance Investigation for CLPS (METRIC)",
+          "authors": "Rampe, E. B., Cannon, K., Sarrazin, P., Blake, D. F., Obbard, R. W., Lucey, P., Bergman, D., Taylor, G. J. and Vaniman, D. T.",
+          "publisher": "COSPAR abstract, NASA NTRS",
+          "date": "2022",
+          "url": "https://ntrs.nasa.gov/api/citations/20220002240/downloads/METRIC%20COSPAR_ScanCopy.pdf"
+        },
+        {
+          "number": 5,
+          "title": "Mineralogical, Elemental, and Tomographic Reconnaissance Investigation for CLPS (METRIC): A Proposed Mission to the Lunar South Pole-Aitken Basin",
+          "authors": "Cannon, K. M., Rampe, E. B., Malaret, E., et al.",
+          "publisher": "Lunar and Planetary Science Conference abstract, NASA NTRS",
+          "date": "2023 (NTRS record; exact date not verified)",
+          "url": "https://ntrs.nasa.gov/api/citations/20230000383/downloads/LPSC_METRIC.docx.pdf"
+        },
+        {
+          "number": 6,
+          "title": "TOMOX: an x-ray tomographer for lunar and planetary exploration",
+          "authors": "Marinangeli, L., Pompilio, L., Baliva, A., et al.",
+          "publisher": "EPSC Abstracts, Vol. 11, EPSC2017-679",
+          "date": "2017",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2017/EPSC2017-679.pdf"
+        },
+        {
+          "number": 7,
+          "title": "X-ray diffractometer (XRD) (ExoMars technology page, published 15 September 2005)",
+          "authors": "European Space Agency",
+          "publisher": "ESA",
+          "date": "2005",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/X-ray_diffractometer_XRD"
+        },
+        {
+          "number": 8,
+          "title": "Moon facts",
+          "authors": "NASA Science",
+          "publisher": "NASA Science",
+          "date": "undated (accessed 2026-11-13)",
+          "url": "https://science.nasa.gov/moon/facts/"
+        },
+        {
+          "number": 9,
+          "title": "Commercial Lunar Payload Services (CLPS)",
+          "authors": "NASA",
+          "publisher": "NASA reference page",
+          "date": "undated (accessed 2026-11-13)",
+          "url": "https://www.nasa.gov/reference/commercial-lunar-payload-services/"
+        },
+        {
+          "number": 10,
+          "title": "Chemistry and Mineralogy Instrument Installed in Mars Rover (PIA13231)",
+          "authors": "NASA/JPL-Caltech",
+          "publisher": "NASA Science Photojournal",
+          "date": "2010",
+          "url": "https://science.nasa.gov/photojournal/chemistry-and-mineralogy-instrument-installed-in-mars-rover"
+        },
+        {
+          "number": 11,
+          "title": "Shake it up, CheMin (PIA16172)",
+          "authors": "NASA/Ames/JPL-Caltech",
+          "publisher": "NASA Science Photojournal",
+          "date": "2012",
+          "url": "https://science.nasa.gov/photojournal/shake-it-up-chemin"
+        },
+        {
+          "number": 12,
+          "title": "FAQ: The rebirth of ESA's ExoMars Rosalind Franklin mission",
+          "authors": "European Space Agency",
+          "publisher": "ESA",
+          "date": "undated (search summary only; page not fetched in full)",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars/FAQ_The_rebirth_of_ESA_s_ExoMars_Rosalind_Franklin_mission"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[0]": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All URL query strings and fragments removed. Both direct CheMin JPEG asset URLs were checked for HTTP 200 and image/jpeg content type and are listed on their NASA Photojournal source pages. No verified image exists for the Terra, CheMinX, METRIC or TOMOX examples, so those carry no images. The transportation image array is empty because no verified image is shown in that section."
+  },
+  "data_quality_notes": [
+    "CheMin mass of 10.5 kg is from a figure caption in the CheMinX white paper (ref. 1). The CheMin dimensions are in a figure in millimetres and were not extracted; dimensions are left null.",
+    "CheMin power: the white paper gives operational energy of about 500 W-h per night of analysis (ref. 1), not a steady power. A pre-flight figure of about 40 W seen only in a search summary was not read and is not used.",
+    "The CheMin 2012 instrument paper (ref. 2) was not opened; its bibliographic details come from the reference list of METRIC (ref. 4).",
+    "METRIC: mass, power, dimensions, sample-handling power and development schedule are not stated in the accessed texts (refs. 4, 5). Detection limits are design goals from a proposal, not measurements.",
+    "TOMOX: the accessed abstract gives sources, detectors and a prototype setup, but no mass, power, dimensions, funding amount or flight status (ref. 6).",
+    "CheMinX mass of 5 kg is a projected value for a preliminary mechanical design (ref. 1). The 10-fold data-time reduction is a design goal.",
+    "Terra mass (14.5 kg) and power (75 W) are from a figure caption in ref. 1 and describe a field instrument including case, batteries and computer.",
+    "MARS-XRD: the 2005 ESA page (ref. 7) gives a target mass below 0.8 kg as a goal. Flight status is not confirmed. Ref. 12 was used only as a search summary for the Rosalind Franklin schedule and was not fetched in full; MARS-XRD is not confirmed on the current payload list.",
+    "XTRA: described in ref. 1 as a proposed lunar regolith analyser (Blake et al. 2019, LPS abstract 1144). That abstract was not accessed, and no specifications are given.",
+    "No lunar XRD flight was identified. The search for Chinese lunar XRD payloads was a single query; it found X-ray fluorescence instruments only. Absence of a flown lunar XRD is therefore not proven beyond the sources searched.",
+    "Lunar surface temperatures (about 127 degrees C in sun, about minus 173 degrees C in darkness) are from the NASA Moon facts page (ref. 8), which does not state the location. The page describes a very thin exosphere, so no claim of no atmosphere is made. A secondary-source figure of 14 Earth days for a lunar day-night cycle was not verified on NASA's page and is omitted.",
+    "Images: both CheMin image URLs returned HTTP 200 with image/jpeg and are on NASA Photojournal pages. Their descriptions come from page captions and fetched page text; the image files were not visually inspected by the author. Reuse rights were not checked, and the images are not treated as public domain.",
+    "CLPS (ref. 9): the NASA reference page describes services generally. No lander compatibility or interface is claimed for this payload.",
+    "No landing site or location recommendation is included, as deferred by the user."
+  ]
+}

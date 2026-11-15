@@ -1,0 +1,383 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 58,
+    "name": "Neutron spectrometer",
+    "article_version": "v1",
+    "research_date": "2026-11-13",
+    "article": {
+      "overview": "A neutron spectrometer detects neutrons and sorts them by energy. Neutrons that leave the lunar surface carry information about the material they have passed through, because hydrogen is especially effective at slowing neutrons down. Neutron spectrometers have therefore been used mainly to search for hydrogen in the regolith, which may be present as water ice, hydroxyl or hydrated minerals. Scope of this article: neutron spectrometers and closely related neutron-detection instruments used for lunar composition and hydrogen investigations. It includes two flown orbital neutron spectrometers (Lunar Prospector and LRO LEND), a flown lander neutron and dosimetry instrument (Chang'e-4 LND), a flown Apollo subsurface neutron probe, a proposed active neutron instrument (ADRON-LR), and a planetary heritage design (Mars Odyssey HEND) that did not operate on the Moon. Out of scope or cross-referenced: gamma-ray spectrometers are catalogue entry 57 (Gamma-ray spectrometer) and are not described here; hydrogen detectors using other methods are catalogue entry 100 (Hydrogen detector); catalogue entry 101 (Neutron-based hydrogen detector) is a neutron-based sibling entry whose scope should be defined in its own article; general radiation monitoring is covered by catalogue entries 114 (Radiation dosimeter) and 128 (Neutron radiation detector), to which the Chang'e-4 LND is cross-referenced for radiation-environment aspects. No lunar landing-site or location recommendations are made.",
+      "description": "Neutrons are uncharged particles found in atomic nuclei. On the Moon, neutrons are produced when high-energy cosmic rays and solar particles strike the regolith and trigger nuclear reactions in the surface materials. Some of these neutrons escape into space, where orbiting or surface instruments can count them. Their energy depends on how they were produced and how many collisions they have made with nuclei in the regolith. Neutrons are often grouped by energy. Thermal neutrons are very slow, epithermal neutrons are intermediate, and fast neutrons are high-energy. Hydrogen has nuclei of about the same mass as a neutron, so each collision with hydrogen removes a large share of a neutron's energy. Hydrogen-rich material therefore reduces the number of epithermal neutrons that escape. Scientists use this effect to search for hydrogen, but they must still account for other materials and for the changing flux of incoming cosmic rays.",
+      "scientific_purpose_and_applications": "Polar hydrogen mapping: Lunar Prospector (1998-1999) and LRO LEND (from 2009) mapped neutron emission to search for hydrogen-rich deposits, especially in permanently shadowed polar craters. Hydrogen depth and distribution: neutron measurements mainly sample the upper part of the regolith. Secondary sources summarise the Lunar Prospector sensitivity as roughly the top metre, but the exact depth depends on material, instrument and model. Active neutron sensing: the proposed ADRON-LR instrument would emit pulses of neutrons and measure the returning neutrons and gamma-rays to estimate hydrogen content in the shallow subsurface. Radiation environment: neutron measurements also characterise the radiation environment for future human and robotic activities; Chang'e-4 LND and the LEND high-energy channel contribute to this purpose. Subsurface neutron flux: the Apollo 17 Lunar Neutron Probe measured neutron activity below the surface, which tests models of neutron production and transport in regolith.",
+      "operating_principle": "Most lunar neutron spectrometers count neutrons with helium-3 (3He) proportional counters. When a slow neutron is captured by a helium-3 nucleus, the reaction releases charged particles that deposit energy in the gas, producing an electrical pulse that can be counted. Energy selection is achieved in several ways. Cadmium and tin shields: cadmium strongly absorbs thermal neutrons below about 0.4 eV, so a cadmium-shielded counter responds mainly to epithermal neutrons, while a tin-shielded counter also responds to thermal neutrons; in Lunar Prospector, thermal neutron counts were derived from the difference between the two counter responses (PDS NSINST catalogue). Collimation and moderation: LEND's collimated sensors sit inside a collimator with external polyethylene for slowing incoming neutrons and internal boron-10 layers that absorb them, so the sensors record mainly neutrons from a defined field of view (PDS LEND SIS). Scintillator detection of fast neutrons: LEND's SHEN instrument uses a stilbene scintillator, which produces light flashes when fast neutrons interact with it, and sorts them into 16 energy channels from about 300 keV to more than 15 MeV (PDS LEND SIS). Active pulsed neutron method: the ADRON-LR design uses a pulsed generator that fires short bursts of 14 MeV neutrons into the ground; detectors then measure the neutrons and gamma-rays that return after each burst (EPSC 2013 abstract). Interpreting counts requires models of cosmic-ray flux, neutron production and transport in regolith; hydrogen abundance is inferred indirectly.",
+      "scientific_importance": "Lunar Prospector recorded a reduction in epithermal neutron counts over both lunar poles, consistent with additional hydrogen there. Secondary summaries of later reanalysis, which should be checked against the original papers, report an average water-equivalent hydrogen abundance of about 106 +/- 11 ppm at each pole, with local maxima of 131 ppm (north) and 112 ppm (south) (Miller et al., 2012, as summarised in search results). Those summaries also report a localised fast-neutron signature near Shackleton Crater, suggesting a more concentrated deposit. LEND continues the mapping programme on LRO. NASA's detail page for the LEND south polar map states that blue areas indicate higher hydrogen concentrations and possible ice; the scale units are not labelled on the image itself. Neutron data alone cannot establish the chemical form of the hydrogen. Water ice, hydrated minerals and solar-wind-implanted hydrogen would each be consistent with a hydrogen signal, so neutron maps must be combined with other measurements, such as infrared, radar or in situ sampling, to identify the form.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a neutron spectrometer. The instruments below differ in architecture, detector type, mission role and flight status. Values are tied to a named instrument and source. Where no reliable value was found, the field is marked 'not publicly specified'.",
+        "examples": [
+          {
+            "name": "Lunar Prospector Neutron Spectrometer (NS)",
+            "type": "Flown orbital neutron spectrometer",
+            "flight_status": "Flown on the Lunar Prospector orbiter; data cited in search results cover January 1998 to July 1999.",
+            "detectors": "Two identical helium-3 gas proportional counters, each about 5 cm in diameter and 20 cm long. One has a 0.75 mm cadmium shield and detects epithermal neutrons above 0.25 eV. The other has a 0.75 mm tin shield and detects thermal and epithermal neutrons.",
+            "mass_kg": 3.9,
+            "power_w": 2.5,
+            "mass_and_power_note": "About 3.9 kg and roughly 2.5 W, as stated in the PDS instrument catalogue, which cites Binder et al. (1998). The 2004 Feldman et al. paper was not checked directly.",
+            "mounting": "On one of the spacecraft's three booms, sharing a chassis with the Alpha Particle Spectrometer.",
+            "fast_neutron_note": "Fast neutrons are measured by the Alpha Particle Spectrometer's ACS, not by the NS itself (PDS NSINST catalogue).",
+            "not_publicly_specified": "Electronics box dimensions and any sensitivity figure for the NS.",
+            "qualification": "Flown instrument. Values are tied to the PDS catalogue and to the Feldman et al. 2004 summary; the Feldman paper itself was not checked.",
+            "source_urls": [
+              "https://pds.nasa.gov/data/lp-l-6-ephemeris-v1.0/lp_0013/CATALOG/NSINST.CAT",
+              "https://doi.org/10.1029/2003JE002207"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Reconnaissance Orbiter Lunar Exploration Neutron Detector (LEND)",
+            "type": "Flown orbital neutron spectrometer and neutron telescope",
+            "flight_status": "Flown on NASA's Lunar Reconnaissance Orbiter. The LRO launch was in June 2009 (per the Spaceflight Now mission summary). Current operating status was not verified in this run.",
+            "sensors": "Eight helium-3 sensors. Four are uncollimated: STN1, STN2, STN3 and SETN. Four are collimated: CSETN1-4, enclosed in a collimator module with cadmium shields. The high-energy SHEN scintillator sits in the central hole of the collimation unit.",
+            "collimator_design": "External polyethylene for moderation of impacting neutrons, and internal boron-10 absorbing layers.",
+            "energy_range": "SHEN outputs data in 16 channels from 300 keV to more than 15 MeV. Its field of view is 40 degrees half width at half maximum.",
+            "horizontal_resolution_m": 5000,
+            "horizontal_resolution_note": "The PDS LEND SIS states mapping of epithermal neutrons with a horizontal resolution of 5 km at a stated LRO altitude of 50 km.",
+            "mass_kg": 25.8,
+            "power_w": 11.6,
+            "mass_and_power_note": "An instrument mass of 25.8 kg and an average power of 11.6 W, as stated in the Spaceflight Now mission summary. Not yet checked against the instrument paper (Mitrofanov et al., 2010).",
+            "dimensions": "Not publicly specified in the sources reviewed.",
+            "sensitivity_note": "A design sensitivity of about 100 ppm hydrogen by weight is reported in a secondary search summary of the 2010 paper; it was not verified against the paper itself. The PDS LEND SIS gives no numeric sensitivity.",
+            "qualification": "Flown instrument. Sensor layout and resolution are from the PDS LEND SIS; mass and power are from a secondary mission summary.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lro/lro-l-lend-2-edr-v1/lrolen_0xxx/document/lend_edr_sis.htm",
+              "https://pds.nasa.gov/data/pds3/backup/201606-junoPsiLroMer/lroLEND/zzold/inst.cat",
+              "https://spaceflightnow.com/atlas/av020/090610lro.html"
+            ],
+            "images": [
+              {
+                "id": "lend_south_polar_neutron_count_rate_map",
+                "description": "NASA Goddard Space Flight Center Scientific Visualization Studio map of neutron count rate at the lunar south pole, built from LEND data, with labelled south polar features.",
+                "image_type": "Scientific data visualisation (neutron count-rate map)",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2024/01/svs-lend-20130601-580-2.jpg",
+                "source_page_url": "https://science.nasa.gov/image-detail/svs-lend-20130601-580-2/",
+                "publisher": "NASA Goddard Space Flight Center Scientific Visualization Studio",
+                "credit": "NASA/GSFC/SVS/Роскосмос (as shown on the image)",
+                "caption": "Neutron count-rate map of the lunar south polar region built from LEND data. Blue shading indicates regions with higher hydrogen concentrations and possible ice, according to the NASA detail page.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct NASA asset URL with query parameters removed. The URL resolves as image/jpeg (about 293 KB) and the image was viewed. The image is a data visualisation, not an instrument hardware photograph. The NASA detail page lists 600 x 600 px and gives no license text beyond a link to NASA brand and usage guidelines; the full-resolution download was not checked and reuse terms should be confirmed before republication."
+              }
+            ]
+          },
+          {
+            "name": "Chang'e-4 Lunar Lander Neutron and Dosimetry (LND)",
+            "type": "Flown lander neutron and dosimetry instrument",
+            "flight_status": "Part of the Chang'e-4 lander payload. The paper states that the lander and rover launched on 7 December 2018 and landed on 3 January 2019 (UTC) on the lunar farside.",
+            "detectors": "A telescope of ten segmented 500 micrometre-thick silicon solid-state detectors, labelled A to J, each with an inner and an outer segment.",
+            "measurement_role": "Charged-particle spectra to 30 MeV/nucleon; neutron measurements in about the 1-20 MeV range; dose quantities from 20 keV to 390 MeV. Thermal neutron counts are reported at a 10-minute cadence.",
+            "time_resolution": "Dose rate and LET at up to 1-minute cadence; thermal neutron counts at 10 minutes; high-resolution data at 1 hour.",
+            "thermal_environment": "The operational case was modelled from -20 C to +55 C at the bracket interface. The measured first-lunar-day range was -7.97 C to 48.10 C.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "Not stated in the arXiv preprint text reviewed (full text read in two passes). The only mass figure is the 1.04 g detector mass used for normalisation.",
+            "scope_note": "LND is primarily a dosimetry and radiation-environment instrument, not a hydrogen-mapping neutron spectrometer. See catalogue entries 114 and 128.",
+            "qualification": "Flown on the lander. Characteristics are from the arXiv preprint of Wimmer-Schweingruber et al. (2020); the Space Science Reviews version was not checked directly.",
+            "source_urls": [
+              "https://doi.org/10.1007/s11214-020-00725-3",
+              "https://arxiv.org/pdf/2001.11028"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 17 Lunar Neutron Probe (LNP)",
+            "type": "Flown subsurface neutron probe",
+            "flight_status": "Flown on Apollo 17 in 1972. The NASA SP-330 Apollo 17 preliminary science report includes a chapter on the Lunar Neutron Probe Experiment (Experiment 18-1, Woolum, Burnett and Bauman).",
+            "measurement": "The chapter abstract, as seen in the NASA technical report index, states that the probe was designed to measure neutron capture rates to a depth of 2 m in the regolith and discusses U-235 fission rates, concluding that the experimental results agree well with theoretical calculations.",
+            "designation_and_classification": "A secondary source gives the designation S-229. The NASA Apollo 17 page classifies the LNP as one of four surface experiments not part of the ALSEP suite; the NASA SP-4009 appendix lists 'Neutron Probe' as ALSEP-related, with flights on Apollo 12, 14, 15, 16 and 17. These sources conflict and were not resolved in this run.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "Not publicly specified in the sources reviewed.",
+            "qualification": "Flown instrument. Depth and measurement purpose are from a chapter abstract; the full chapter and data tables were not read.",
+            "source_urls": [
+              "https://www.nasa.gov/wp-content/uploads/static/history/afj/ap17fj/pdf/a17_psr.pdf",
+              "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a17/a17.alsepdep.html",
+              "https://apolloexplorer.co.uk/books/SP-4009/v4app9_a.htm"
+            ],
+            "images": []
+          },
+          {
+            "name": "ADRON-LR active neutron instrument",
+            "type": "Proposed active neutron and gamma-ray instrument",
+            "flight_status": "Developed at the Russian Space Research Institute (IKI) for the Luna-25 mission. Luna-25 launched on 10 August 2023 and was lost in a crash on the lunar surface in August 2023, after a propulsion manoeuvre left it in an unintended orbit (Spaceflight Now, 20 August 2023). The cause is described as preliminary. The sources reviewed do not report that ADRON-LR operated on the Moon.",
+            "method": "A pulsed generator emitting 14 MeV neutrons; detectors record returning neutrons and gamma-rays. A 2013 EPSC abstract states that the data allow estimates of average hydrogen content down to about 60 cm.",
+            "calibration": "Ground calibration covered soil models from dry ground (1% water) to water ice (100%), as reported in a calibration paper attributed to Golovin et al. (Solar System Research); the publication year is inconsistent across sources (2017 DOI versus 2021 in a search summary).",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "Not publicly specified in the sources reviewed.",
+            "compatibility_note": "The instrument was associated with the Luna-25 lander and later linked to Luna-Resurs in planning documents. No compatibility with any other lander is asserted.",
+            "qualification": "Proposed or lost-mission instrument. Method and depth are from an EPSC abstract; calibration from a secondary search summary.",
+            "source_urls": [
+              "https://doi.org/10.1134/S0038094617030066",
+              "https://meetingorganizer.copernicus.org/EPSC2013/EPSC2013-475.pdf",
+              "https://spaceflightnow.com/2023/08/20/russias-luna-25-lander-crashes-on-the-moon/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mars Odyssey High Energy Neutron Detector (HEND)",
+            "type": "Planetary heritage design (flown at Mars, not on the Moon)",
+            "flight_status": "Part of the Gamma-Ray Spectrometer suite on NASA's Mars Odyssey orbiter. It did not operate on the Moon. Included because the LEND documentation describes LEND as the follow-on to HEND.",
+            "detectors": "Five detectors measuring neutrons from about 0.4 eV to 15 MeV, with a stilbene scintillator for neutrons above 1 MeV.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "Not given in the sources reviewed for this article.",
+            "qualification": "Planetary heritage only; not a lunar specification.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/ody/ody-m-grs-5-ahd-v1/odgh1_xxxx/document/grs_hend_processing.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The instruments differ too much for a single specification table to be meaningful. The Lunar Prospector NS and the LRO LEND are both orbital neutron spectrometers, but they differ in detector count, collimation, scintillator channels and mission architecture. LND and Apollo LNP dimensions are not publicly specified in the sources reviewed, and ADRON-LR dimensions are not available. These values should not be read as design targets for a new instrument.",
+        "mass_and_weight": "Lunar Prospector NS: about 3.9 kg (PDS catalogue, citing Binder et al., 1998). LEND: 25.8 kg (Spaceflight Now mission summary, not yet checked against the instrument paper). LND, Apollo LNP and ADRON-LR: not publicly specified in the sources reviewed. Masses are not comparable across architectures.",
+        "power_requirements": "Lunar Prospector NS: roughly 2.5 W (PDS catalogue). LEND: average 11.6 W (Spaceflight Now mission summary). LND, Apollo LNP and ADRON-LR: not publicly specified in the sources reviewed. The ADRON-LR pulsed generator power requirement is not publicly specified."
+      },
+      "environmental_and_operational_requirements": "Orbital operation: LEND's stated horizontal resolution depends on the LRO altitude of 50 km (PDS LEND SIS). Neutron counts from orbit depend on altitude, pointing and the illumination and cosmic-ray environment. Surface operation: the LND measured temperatures from -7.97 C to 48.10 C on the first lunar day, against a modelled operational case of -20 C to +55 C (arXiv preprint). Lunar surface thermal swings, the lack of atmosphere and micrometeoroid exposure are general constraints on surface instruments. Subsurface operation: the Apollo LNP was designed to measure neutron capture to 2 m in regolith, which implies that the probe was placed below the surface; the deployment method and thermal provisions are not verified in this article. Active neutron operation: the ADRON-LR design requires a pulsed neutron generator and the associated power and control; the power requirement is not publicly specified. Counting statistics: neutron counts are low and can vary with cosmic-ray flux, so integration time, averaging and background subtraction affect how precisely hydrogen can be mapped.",
+      "limitations": "Hydrogen is not uniquely water: a neutron signal indicates hydrogen content but not its chemical form. Orbital neutron maps have coarse spatial resolution (LEND horizontal resolution of 5 km at 50 km altitude) and sample only the upper regolith. Published analyses disagree on how much of the collimated-sensor signal comes from the Moon rather than from the spacecraft or surrounding neutrons; Mitrofanov et al. (2010) and Eke et al. (2012) reach different conclusions, as summarised in search results, and this article does not adopt a numeric resolution of that dispute. Hydrogen abundance is inferred using models of neutron production and transport in regolith, and model uncertainties propagate into abundance estimates. Radiation-dosimetry instruments such as LND measure the radiation environment rather than the chemical composition of the regolith.",
+      "transportation_and_deployment": {
+        "overview": "Neutron spectrometers have been carried on lunar orbiters (Lunar Prospector NS, LRO LEND), on a lander (Chang'e-4 LND), as a subsurface probe deployed during an Apollo surface mission (Apollo 17 LNP) and as a proposed active lander instrument (ADRON-LR). Each configuration has different integration and deployment interfaces. No compatibility with any named lander, rover or spacecraft is asserted beyond the historical missions described.",
+        "transportation_process": [
+          "Orbiter payloads: integrate the instrument into the spacecraft on Earth, launch it, transport it to the Moon and insert it into lunar orbit. Commissioning, pointing calibration and data-volume constraints are operational interfaces. The Lunar Prospector NS was mounted on one of three booms; LEND is described in a secondary search summary as a fixed, nadir-pointing instrument at a lower corner of the LRO spacecraft, to be checked against NASA LRO documentation. The LEND SIS notes approximately 0.26 Gbit of measurement data per day and operational modes MEASUREMENTS, STAND-BY and OFF.",
+          "Lander payload (Chang'e-4 LND): launched with the Chang'e-4 lander and rover on 7 December 2018 and landed on 3 January 2019 (arXiv preprint). A secondary summary describes the instrument as housed in the lander's instrument compartment, with a zenith-viewing sensor head and a separate electronics box; power, thermal and data interfaces are not described in detail in the sources reviewed.",
+          "Subsurface probe (Apollo 17 LNP): inserted into the lunar subsurface during Apollo 17 surface activities. The specific deployment method and any transport or stowage configuration are not verified in this article.",
+          "Proposed lander instrument (ADRON-LR): associated with the Luna-25 lander, which did not complete its surface mission. Any other lander integration would require verified mass, power, thermal, mechanical and data-interface specifications."
+        ],
+        "deployment_methods": "Orbital instruments are deployed by spacecraft configuration (a boom for Lunar Prospector NS; a fixed mount for LEND as described in a secondary source). The LND is a fixed lander-mounted instrument. The Apollo 17 LNP was placed into the subsurface during surface activities; the method is not verified. ADRON-LR was designed as a lander-mounted pulsed instrument; its deployment interface is not verified.",
+        "historical_examples": "Apollo 17 LNP (1972) subsurface probe; Lunar Prospector NS (1998-1999) orbital spectrometer on a boom; LRO LEND (from 2009) fixed orbital instrument; Chang'e-4 LND (landed 3 January 2019) lander-mounted dosimeter; Luna-25 (2023) associated with the proposed ADRON-LR, which did not complete its mission.",
+        "compatibility_assessment": "No compatibility is asserted with any named lander, rover or spacecraft beyond the historical missions described. Any future integration would require verified mass, dimensions, mounting points, power, thermal and data interfaces for the specific host vehicle.",
+        "images": []
+      },
+      "historical_significance": "Apollo 17 (1972): the LNP provided subsurface neutron measurements in the Apollo era, testing neutron transport in regolith against calculations. Lunar Prospector (1998-1999): the NS recorded reduced epithermal neutron counts over both poles, a global-scale signal consistent with enhanced hydrogen there, which motivated subsequent investigation of polar volatiles. LRO LEND (2009 onward): extended neutron mapping with higher resolution and added the SHEN fast-neutron channel; it remains one of the principal sources of polar hydrogen maps. Chang'e-4 LND (2019): performed active dosimetry on the lunar surface, which was the stated chief scientific goal of the instrument. ADRON-LR (2023 attempt): associated with Luna-25, which did not complete its mission; included to document the proposed active-neutron approach. Mars Odyssey HEND: a planetary precedent, not a lunar instrument.",
+      "limitations_and_uncertainties": "LEND mass and power come from a secondary mission summary rather than from the instrument paper (Mitrofanov et al., 2010); the full paper was not accessed because the publisher page redirected to a login. Lunar Prospector NS mass and power come from a PDS catalogue entry citing Binder et al. (1998); the 2004 Feldman et al. paper was not checked directly. LND mass, dimensions and power are not stated in the arXiv preprint reviewed; the published Space Science Reviews version was not checked. The Apollo LNP designation (S-229) and ALSEP classification are unresolved, the depth figure comes from a chapter abstract, and the full SP-330 chapter, data tables and deployment method were not verified. ADRON-LR operational status, mass, power and dimensions are not confirmed, and its calibration publication year is inconsistent across sources. Chandrayaan-1 HEND: no source found confirmed that a neutron detector flew on Chandrayaan-1; this article does not treat it as flown. Mars Odyssey HEND is included only as planetary heritage. Hydrogen abundance figures (106 +/- 11 ppm; 131 and 112 ppm maxima) and the 100 ppm LEND sensitivity come from secondary summaries and have not been checked against the original papers. LEND operating status in 2026 was not verified. Images: only one image has a verified direct asset; no verified instrument hardware photographs were found for Lunar Prospector NS, LEND, LND, Apollo LNP or ADRON-LR. Internal enterprise sources were not searched in this run.",
+      "images": [
+        {
+          "id": "lend_south_polar_neutron_count_rate_map",
+          "description": "NASA Goddard Space Flight Center Scientific Visualization Studio map of neutron count rate at the lunar south pole, built from LEND data, with labelled south polar features.",
+          "image_type": "Scientific data visualisation (neutron count-rate map)",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2024/01/svs-lend-20130601-580-2.jpg",
+          "source_page_url": "https://science.nasa.gov/image-detail/svs-lend-20130601-580-2/",
+          "publisher": "NASA Goddard Space Flight Center Scientific Visualization Studio",
+          "credit": "NASA/GSFC/SVS/Роскосмос (as shown on the image)",
+          "caption": "Neutron count-rate map of the lunar south polar region built from LEND data. Blue shading indicates regions with higher hydrogen concentrations and possible ice, according to the NASA detail page.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct NASA asset URL with query parameters removed. The URL resolves as image/jpeg (about 293 KB) and the image was viewed. The image is a data visualisation, not an instrument hardware photograph. The NASA detail page lists 600 x 600 px and gives no license text beyond a link to NASA brand and usage guidelines; the full-resolution download was not checked and reuse terms should be confirmed before republication."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lend_south_polar_neutron_count_rate_map",
+          "description": "NASA Goddard Space Flight Center Scientific Visualization Studio map of neutron count rate at the lunar south pole, built from LEND data, with labelled south polar features.",
+          "image_type": "Scientific data visualisation (neutron count-rate map)",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2024/01/svs-lend-20130601-580-2.jpg",
+          "source_page_url": "https://science.nasa.gov/image-detail/svs-lend-20130601-580-2/",
+          "publisher": "NASA Goddard Space Flight Center Scientific Visualization Studio",
+          "credit": "NASA/GSFC/SVS/Роскосмос (as shown on the image)",
+          "caption": "Neutron count-rate map of the lunar south polar region built from LEND data. Blue shading indicates regions with higher hydrogen concentrations and possible ice, according to the NASA detail page.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct NASA asset URL with query parameters removed. The URL resolves as image/jpeg (about 293 KB) and the image was viewed. The image is a data visualisation, not an instrument hardware photograph. The NASA detail page lists 600 x 600 px and gives no license text beyond a link to NASA brand and usage guidelines; the full-resolution download was not checked and reuse terms should be confirmed before republication."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Lunar Prospector gamma-ray, neutron and alpha-particle spectrometers",
+          "authors": "Feldman, W. C. et al.",
+          "publisher": "Journal of Geophysical Research",
+          "year": 2004,
+          "volume": "109",
+          "url": "https://doi.org/10.1029/2003JE002207",
+          "notes": "Title and details from search summary; not checked against the full text."
+        },
+        {
+          "number": 2,
+          "title": "Lunar Prospector Neutron Spectrometer instrument catalogue (NSINST.CAT)",
+          "publisher": "NASA Planetary Data System",
+          "url": "https://pds.nasa.gov/data/lp-l-6-ephemeris-v1.0/lp_0013/CATALOG/NSINST.CAT",
+          "notes": "Cites Binder et al. (1998) for mass and power; not accessed directly."
+        },
+        {
+          "number": 3,
+          "title": "The spatial distribution of polar hydrogen deposits on the Moon",
+          "authors": "Eke, V. R. et al.",
+          "publisher": "arXiv",
+          "identifier": "arXiv:0810.2478",
+          "url": "https://arxiv.org/pdf/0810.2478",
+          "notes": "Search summary only."
+        },
+        {
+          "number": 4,
+          "title": "Reanalysis of Lunar Prospector and LRO neutron data for polar hydrogen abundance",
+          "authors": "Miller, R. S. et al.",
+          "publisher": "Journal of Geophysical Research: Planets",
+          "year": 2012,
+          "url": "https://doi.org/10.1029/2012JE004112",
+          "notes": "Title as paraphrased from search summary; search summary only."
+        },
+        {
+          "number": 5,
+          "title": "Lunar Exploration Neutron Detector for the NASA Lunar Reconnaissance Orbiter",
+          "authors": "Mitrofanov, I. G. et al.",
+          "publisher": "Space Science Reviews",
+          "year": 2010,
+          "volume": "150",
+          "pages": "183-207",
+          "url": "https://link.springer.com/article/10.1007/s11214-009-9608-4",
+          "notes": "Bibliographic details from search; publisher page redirected to a login and the full text was not accessed. The DOI is 10.1007/s11214-009-9608-4."
+        },
+        {
+          "number": 6,
+          "title": "LEND Science Information Summary (lend_edr_sis.htm)",
+          "publisher": "NASA Planetary Data System",
+          "url": "https://pds-geosciences.wustl.edu/lro/lro-l-lend-2-edr-v1/lrolen_0xxx/document/lend_edr_sis.htm",
+          "notes": "Read. Source of sensor layout, SHEN range, collimator design and 5 km resolution at 50 km altitude."
+        },
+        {
+          "number": 7,
+          "title": "LRO LEND instrument catalogue (inst.cat)",
+          "publisher": "NASA Planetary Data System",
+          "url": "https://pds.nasa.gov/data/pds3/backup/201606-junoPsiLroMer/lroLEND/zzold/inst.cat",
+          "notes": "Read. Gives instrument description; no mass, power or dimension fields."
+        },
+        {
+          "number": 8,
+          "title": "LRO mission summary (LEND mass and power)",
+          "publisher": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/atlas/av020/090610lro.html",
+          "notes": "Secondary source. Source of the 25.8 kg mass, 11.6 W average power and June 2009 launch."
+        },
+        {
+          "number": 9,
+          "title": "LEND Water South Pole (image detail page)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/image-detail/svs-lend-20130601-580-2/",
+          "notes": "Source page for the LEND map. Direct image asset: https://science.nasa.gov/wp-content/uploads/2024/01/svs-lend-20130601-580-2.jpg"
+        },
+        {
+          "number": 10,
+          "title": "The Lunar Lander Neutron and Dosimetry (LND) Experiment on Chang'E 4",
+          "authors": "Wimmer-Schweingruber, R. F. et al.",
+          "publisher": "Space Science Reviews",
+          "year": 2020,
+          "volume": "216",
+          "article_number": "104",
+          "doi": "10.1007/s11214-020-00725-3",
+          "url": "https://doi.org/10.1007/s11214-020-00725-3",
+          "notes": "The arXiv preprint (https://arxiv.org/pdf/2001.11028) was read in full. The published version was not checked directly."
+        },
+        {
+          "number": 11,
+          "title": "Apollo 17 Preliminary Science Report (NASA SP-330), Experiment 18-1: Lunar Neutron Probe Experiment",
+          "authors": "Woolum, D. S., Burnett, D. S., Bauman, C. A.",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/wp-content/uploads/static/history/afj/ap17fj/pdf/a17_psr.pdf",
+          "notes": "Chapter abstract seen in the NASA technical report index; full text not read."
+        },
+        {
+          "number": 12,
+          "title": "Apollo Lunar Surface Journal: Apollo 17 ALSEP deployment",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a17/a17.alsepdep.html",
+          "notes": "Search summary only; the direct fetch returned 404. Source of the NASA classification of the LNP as not part of ALSEP, which conflicts with reference 13."
+        },
+        {
+          "number": 13,
+          "title": "NASA SP-4009 Appendix 9 (ALSEP experiment list, S-229 Neutron Probe)",
+          "publisher": "Apollo Explorer (mirror of NASA SP-4009)",
+          "url": "https://apolloexplorer.co.uk/books/SP-4009/v4app9_a.htm",
+          "notes": "Search summary only; the direct fetch failed with a connection error."
+        },
+        {
+          "number": 14,
+          "title": "ADRON-LR Instrument for Active Neutron Sensing of the Lunar Matter Composition",
+          "authors": "Golovin, D. V. et al.",
+          "publisher": "Solar System Research",
+          "doi": "10.1134/S0038094617030066",
+          "url": "https://doi.org/10.1134/S0038094617030066",
+          "notes": "The year is inconsistent across sources (DOI suggests 2017; a search summary cites 2021). Not accessed directly."
+        },
+        {
+          "number": 15,
+          "title": "EPSC 2013 abstract 475: ADRON-LR pulsed-neutron measurement concept",
+          "publisher": "European Planetary Science Congress 2013",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2013/EPSC2013-475.pdf",
+          "notes": "Search summary only. Source of the 14 MeV pulsed generator and the approximately 60 cm hydrogen depth estimate."
+        },
+        {
+          "number": 16,
+          "title": "Russia's Luna 25 lander crashes on the Moon",
+          "publisher": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2023/08/20/russias-luna-25-lander-crashes-on-the-moon/",
+          "notes": "News coverage. Cause described as preliminary."
+        },
+        {
+          "number": 17,
+          "title": "Mars Odyssey GRS/HEND processing documentation",
+          "publisher": "NASA Planetary Data System",
+          "url": "https://pds-geosciences.wustl.edu/ody/ody-m-grs-5-ahd-v1/odgh1_xxxx/document/grs_hend_processing.pdf",
+          "notes": "Search summary read. Source of the five-detector HEND description (0.4 eV to 15 MeV)."
+        },
+        {
+          "number": 18,
+          "title": "Lunar Prospector",
+          "publisher": "Britannica",
+          "url": "https://www.britannica.com/topic/Lunar-Prospector",
+          "notes": "Secondary reference for the 1999 impact and polar hydrogen interpretation."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "LEND example": "payload.article.physical_specifications.examples[1].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. Reference URLs have also been stripped of query strings and fragments."
+  },
+  "data_quality_notes": [
+    "LEND mass (25.8 kg) and average power (11.6 W) come from a Spaceflight Now mission summary, not from the instrument paper (Mitrofanov et al., 2010). The paper's publisher page redirected to a login. LEND dimensions are not publicly specified in the sources reviewed.",
+    "Lunar Prospector NS mass (about 3.9 kg) and power (about 2.5 W) come from a PDS instrument catalogue entry that cites Binder et al. (1998). The 2004 Feldman et al. paper was not checked directly. NS electronics dimensions and sensitivity are not publicly specified in the sources reviewed.",
+    "LND (Chang'e-4) mass, dimensions and power are not stated in the arXiv preprint text, which was read in full. The published Space Science Reviews version was not checked. The LND flight and landing dates come from the same preprint.",
+    "Apollo 17 LNP: the designation S-229 is unverified. NASA's Apollo 17 page classifies the LNP as not part of ALSEP, while the NASA SP-4009 appendix lists it as ALSEP-related. The 2 m depth comes from a chapter abstract. The full SP-330 chapter, data tables and deployment method were not verified (the PDF and the PDS XML label were not usable from the fetch tool).",
+    "ADRON-LR: operational status, mass, power and dimensions are not confirmed. The Golovin et al. publication year is inconsistent across sources (2017 DOI vs 2021 in a search summary). The Luna-25 crash cause is preliminary.",
+    "Chandrayaan-1 HEND: no source found confirmed that a neutron detector flew on Chandrayaan-1; it is excluded from the flown examples. Mars Odyssey HEND is included only as planetary heritage and did not operate on the Moon.",
+    "Hydrogen abundance figures (106 +/- 11 ppm; 131 and 112 ppm maxima; Miller et al., 2012) and the approximately 100 ppm LEND design sensitivity come from secondary search summaries and have not been checked against the original papers. The Miller et al. title is paraphrased.",
+    "The Mitrofanov et al. (2010) versus Eke et al. (2012) disagreement on the lunar share of the collimated-sensor signal is reported qualitatively from search summaries; no numeric value is adopted.",
+    "LEND mounting (fixed, nadir-pointing, at a lower corner of the LRO spacecraft) comes from a secondary search summary and should be checked against NASA LRO documentation.",
+    "LEND current operating status (2026) was not verified.",
+    "Image coverage: only one image has a verified direct asset (the NASA LEND south polar neutron count-rate map). It resolves as image/jpeg and was viewed, but its full-resolution download was not checked. No verified instrument hardware photographs were found for Lunar Prospector NS, LEND, LND, Apollo LNP or ADRON-LR. The LEND map is a data visualisation and is placed in the overview and the LEND example only.",
+    "Reuse rights: the NASA detail page gives no license text beyond a link to NASA brand and usage guidelines, which were not opened. Confirm reuse terms before republication.",
+    "Internal enterprise sources (Glean) were not searched in this run."
+  ]
+}

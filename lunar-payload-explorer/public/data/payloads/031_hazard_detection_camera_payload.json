@@ -1,0 +1,309 @@
+{
+  "catalogue_id": 31,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 31,
+    "name": "Hazard detection camera",
+    "article": {
+      "overview": "A hazard detection camera gives a landing or driving system the images it needs to find safe ground. A lander looking down during its final descent needs to know whether there are boulders, steep slopes or deep craters under it. A rover needs to know whether the next few metres of ground are safe to drive over. Most of these cameras use a wide field of view, and some use two cameras side by side so that the onboard computer can calculate distances to the terrain.\n\nOnly a small number of hazard cameras have been reported as flown. The Indian Space Research Organisation (ISRO) lists a Lander Hazard Detection & Avoidance Camera (LHDAC) among the sensors of its Chandrayaan-3 lander, which landed on the Moon in 2023 [1]. Its published mission pages do not give its mass, field of view or resolution. The best-documented flown hazard cameras are the Mars rover \"Hazcams\" on the Mars Exploration Rovers (2004 onward) [5], the Mars Science Laboratory (Curiosity, 2012 onward) [6], and Mars 2020 (Perseverance) [7]. These are flown Mars hardware, not lunar hardware, so their figures are analogues and must not be read as lunar performance. No dedicated Apollo-era hazard camera was identified in the sources read for this article.",
+      "description": "A hazard detection camera is an imaging system tuned for safety decisions rather than for detailed science. The typical parts are:\n\n- Optics. The Mars rover Hazcams use f-theta fisheye lenses. In an f-theta lens, the position of a point in the image is proportional to the angle at which the light arrives. This gives a very wide field of view with a nearly constant angular resolution across the centre of the frame. The MER and MSL instrument pages both describe this optical design [5][6].\n- Detector. The MER and MSL Hazcams use a 1024 × 2048 pixel charge-coupled device (CCD) with 12 µm square pixels, read out as 1024 × 1024 pixel images [5][6].\n- Stereo pairs. Many hazard cameras are arranged in pairs. Two images taken at the same time from slightly different positions let the computer work out the distance to each point in the scene. The result is a range map. The MSL and Mars 2020 instrument pages both describe range maps built from stereo pairs [6][7].\n- Housing and protection. The MSL Hazcam pairs have a cover assembly with Lexan windows, which protects the cameras from debris during descent and landing [6].\n- Electronics and heating. The MER Hazcam electronics box contains the CCD driver electronics and an analogue-to-digital converter, and uses a heater to stay above its minimum operating temperature of 218 K [5]. The MSL Hazcam also uses a heater [6].\n\nA hazard camera is therefore not one standard device. It is a family of imagers with a shared purpose.",
+      "scientific_purpose_and_applications": "The main purpose of a hazard detection camera is to protect a vehicle from ground hazards. For a lander, this means checking the landing area for boulders, trenches and slopes before touchdown. For a rover, it means checking the nearby ground before each drive. The Mars rover instrument pages describe these purposes directly: the MER Hazcams were intended to help the rover avoid obstacles, and the MSL Hazcams \"perform onboard hazard detection and avoidance\" [5][6].\n\nHazard cameras also serve science. The MER and MSL pages list secondary aims that include imaging rock and soil morphology, measuring the distribution of rocks around the rover, supporting robotic-arm operations, selecting near-field science targets, and calibrating or validating orbital remote-sensing data [5][6]. A lunar hazard camera could support the same kinds of near-field geology and mobility planning, but no lunar hazard camera with published science objectives was identified in the sources read.\n\nThe ISRO description of the Chandrayaan-3 LHDAC is more limited. ISRO's mission page names the camera as a \"Lander Hazard Detection & Avoidance Camera and Processing Algorithm\" [1]. Press coverage of the camera's images states that it supports landing-site selection by checking for a safe spot without boulders or deep trenches [2]. This is a secondary, news-level description and is not a technical specification.",
+      "operating_principle": "Hazard cameras work in two main ways.\n\nSingle-image mapping. A downward or forward-looking camera records the scene, and the onboard software looks for features such as boulders, shadows and slopes. The shadow of a rock and the brightness of a sunlit surface can help the software estimate height and slope. This depends on the lighting, and the MER page gives a nominal noontime exposure time of about 0.25 s on Mars [5], which shows how strongly exposure depends on sunlight.\n\nStereo range mapping. Two cameras with a known separation (the baseline) record the same terrain. The software matches features between the two images, and the disparity between them gives distance. The MSL instrument page gives a stereo baseline of 16.6 cm for each front pair and 10 cm for each rear pair [6]. The Mars 2020 page gives baselines of 25 cm for the front pairs and 93.4 cm for the rear pair [7]. A longer baseline gives better distance accuracy at longer range, but both Mars pages describe the Hazcams as operating mainly in the near field, within about 5 m [6][7].\n\nThe Chandrayaan-3 LHDAC is described by ISRO as a hazard detection and avoidance camera with a processing algorithm [1]. The sources read do not state whether it uses stereo imaging, a single camera or a combination with other sensors. Secondary commentary contradicts itself on whether the system is based on lidar or on cameras, and these claims were not used.",
+      "scientific_importance": "A safe landing depends on knowing the ground at the scale of the lander's footprint. A scientific mission can have an excellent instrument package and still fail if the lander touches down on a boulder or slope. Hazard cameras therefore protect the value of the other instruments on the lander or rover.\n\nHazard cameras also add to the scientific record. The Mars rover Hazcams produced continuous near-field imagery of the surface, which supports geological interpretation over the distances covered by each rover's traverse [5][6]. For the Moon, a hazard camera's images would show the surface at a scale between orbital images and close-up instrument images, a scale that is valuable for interpreting small-scale surface processes. This is a general reasoning point, not a result taken from a specific lunar measurement.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a hazard detection camera. Designs differ in optics, number of cameras, stereo baseline, housing and whether a heater is needed. The examples below are grouped by mission and are not directly comparable unless the comparison note says so. Where a value was not published in the source read, the article says so rather than estimating it.",
+        "examples": [
+          {
+            "name": "Chandrayaan-3 Lander Hazard Detection & Avoidance Camera (LHDAC)",
+            "type": "Flown lunar lander hazard detection and avoidance camera",
+            "status": "Flown on the Chandrayaan-3 lander (2023). Flight status established by ISRO mission page.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "Not publicly specified in the sources read.",
+            "field_of_view": "Not publicly specified in the sources read.",
+            "resolution": "Not publicly specified in the sources read.",
+            "frame_rate": "Not publicly specified in the sources read.",
+            "redundancy": "A secondary explainer describes primary and redundant units. Not confirmed by a primary source; not used as a specification.",
+            "operating_timing": "A ResearchGate paper summary suggests the camera is operated after a hover period. The full paper was not accessible (HTTP 403), so this is not used.",
+            "source_urls": [
+              "https://www.isro.gov.in/Chandrayaan3_Details.html",
+              "https://deccanchronicle.com/nation/in-other-news/210823/chandrayaan-3-isro-releases-images-of-lunar-far-side-area-captured-by.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mars Exploration Rover Hazard Avoidance Camera (Hazcam)",
+            "type": "Flown Mars rover hazard camera (Mars, not lunar)",
+            "status": "Flown on the Mars Exploration Rovers from 2004. Values as stated on the WUSTL PDS instrument page.",
+            "number_per_rover": 4,
+            "placement": "2 front, 2 rear; attached to a titanium bracket mounted outside the warm electronics box.",
+            "optics": "f/15, 5.58 mm focal length, f-theta fisheye",
+            "field_of_view_deg": {
+              "horizontal_vertical": 124,
+              "diagonal": 180
+            },
+            "angular_resolution_mrad_per_pixel": 2.1,
+            "detector": "1024 x 2048 pixel CCD, 12 micron square pixels, frame-transfer",
+            "output_image_pixels": "1024 x 1024",
+            "full_well_capacity_electrons": 160000,
+            "read_noise_rms_electrons": "approximately 20 (at 218 K)",
+            "quantum_efficiency": "approximately 43% at 700 nm peak",
+            "nominal_noontime_exposure_s": 0.25,
+            "minimum_operating_temperature_k": 218,
+            "calibration": "Calibrated over the flight range of temperatures; date not given on page.",
+            "filter_note": "Page is internally inconsistent: overview says broadband visible filter; filter section says red bandpass centred at 650 nm, FWHM about 140 nm.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "Not publicly specified on the page read.",
+            "source_urls": [
+              "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/MER/Instruments/MER%20Hazcam.htm",
+              "https://science.nasa.gov/photojournal/side-view-of-endurance-crater"
+            ],
+            "images": [
+              {
+                "id": "mer_hazcam_endurance_crater_pia06759",
+                "description": "Opportunity Hazard Avoidance Camera side view of Endurance Crater, sol 188 (4 August 2004).",
+                "image_type": "Flown Mars rover hazard camera photograph (Mars, not lunar)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia06/pia06759/PIA06759.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/side-view-of-endurance-crater",
+                "publisher": "NASA/JPL",
+                "credit": "NASA/JPL",
+                "caption": "Opportunity Hazard Avoidance Camera view of Endurance Crater, taken on sol 188 (4 August 2004). Shown for deployment and operating context only; not a lunar image.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct NASA Photojournal full-file JPEG URL (no query string) returned HTTP 200, image/jpeg, 85,148 bytes on check; the file name PIA06759 matches the source page identification. The source page alt text says 'front hazard-avoidance camera' while its description says 'rear'; camera position is not confirmed. Rights/reuse caveats not verified beyond the NASA Photojournal credit line."
+              }
+            ]
+          },
+          {
+            "name": "Mars Science Laboratory (Curiosity) Hazard Avoidance Camera (Hazcam)",
+            "type": "Flown Mars rover hazard camera (Mars, not lunar)",
+            "status": "Flown on the Mars Science Laboratory rover from 2012. Values as stated on the WUSTL PDS instrument page.",
+            "number_of_cameras": 8,
+            "placement": "Stereo pairs on the front and rear panels of the rover body; front boresight 68 cm and rear boresight 78 cm above the base of the wheels; pointed 45 degrees off nadir. One front pair is a redundant backup.",
+            "stereo_baseline_cm": {
+              "front_pairs": 16.6,
+              "rear_pairs": 10
+            },
+            "optics": "f/15, 5.58 mm focal length, f-theta fisheye",
+            "field_of_view_deg": {
+              "horizontal_vertical": 124,
+              "diagonal": 180
+            },
+            "angular_resolution_mrad_per_pixel": 2.1,
+            "detector": "1024 x 2048 pixel CCD, 12 micron square pixels",
+            "full_well_capacity_electrons": 170000,
+            "digitisation_bits": 12,
+            "read_noise_rms_electrons": "approximately 20 at -55 C",
+            "gain_e_per_dn": 50,
+            "quantum_efficiency": "approximately 43% at 700 nm peak",
+            "mass_each_kg": 0.245,
+            "mass_note": "Each camera, not including the cover.",
+            "power_heater_off_w": 2.2,
+            "heater_note": "The page also mentions a 'more powerful 3.5 W heater' on each MSL Hazcam.",
+            "primary_range": "Near field, less than 5 m",
+            "filter_note": "Page is internally inconsistent: overview says broadband visible filter; filter section says red bandpass centred at 650 nm.",
+            "dimensions": "Not publicly specified on the page read.",
+            "source_urls": [
+              "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/MSL/Instruments/MSL%20Hazcam.htm",
+              "https://science.nasa.gov/photojournal/tracks-from-eastbound-drive-on-curiositys-sol-22"
+            ],
+            "images": [
+              {
+                "id": "msl_hazcam_rear_pia15694",
+                "description": "Rear Hazard Avoidance Camera (Hazcam) image of tracks from an eastbound drive on Curiosity's Sol 22.",
+                "image_type": "Flown Mars rover hazard camera photograph (Mars, not lunar)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia15/pia15694/PIA15694.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/tracks-from-eastbound-drive-on-curiositys-sol-22",
+                "publisher": "NASA Photojournal (NASA Science)",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "Tracks from an eastbound drive on Curiosity's Sol 22, taken by the rear Hazard Avoidance Camera (Hazcam) of the Mars Science Laboratory, dated 28 August 2012 on the source page. Shown as an example of Hazcam imagery from Mars; not a lunar image.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct NASA Photojournal full-file JPEG URL (no query string) returned HTTP 200, image/jpeg, 49,862 bytes on check; the file name PIA15694 matches the source page identification as a rear Hazcam image. The page's display image URL carried a width query string that was removed; the clean full-file URL was used. Rights/reuse caveats not verified beyond the NASA Photojournal credit line."
+              }
+            ]
+          },
+          {
+            "name": "Mars 2020 (Perseverance) Hazard Avoidance Cameras (Hazcams)",
+            "type": "Flown Mars rover hazard camera (Mars, not lunar)",
+            "status": "Flown on Mars 2020 (Perseverance) from 2020. Configuration statements from the WUSTL PDS instrument page.",
+            "configuration": "Two stereo pairs (front) and one stereo pair (rear) of engineering cameras, with fisheye lenses; mounted at the front and rear ends of the warm electronics box.",
+            "stereo_baseline_cm": {
+              "front_pairs": 25,
+              "rear_pair": 93.4
+            },
+            "connection": "Two sets of front Hazcams, each connected to one of the two rover compute elements (RCE-A or RCE-B).",
+            "primary_range": "Near field, less than 5 m",
+            "field_of_view_deg": "Not attributed. The ECAM page's performance table (136 x 102 deg, 0.46 mrad/pixel) does not clearly separate the Hazcams from other engineering cameras in the extracted text, so these values are not used.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": "Not publicly specified in a Hazcam-specific source read.",
+            "source_urls": [
+              "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/M20/Instruments/M20%20ECAM.htm"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No single dimensions are given for the hazard camera class. Within the examples, the only dimensional statements are stereo baselines (MSL: 16.6 cm front and 10 cm rear; Mars 2020: 25 cm front and 93.4 cm rear), MSL boresight heights (68 cm front and 78 cm rear above the wheel base) and the MER and MSL focal length (5.58 mm). Camera housing dimensions were not publicly specified in the sources read, and the lunar Chandrayaan-3 LHDAC dimensions are not publicly specified.",
+        "mass_and_weight": "The only mass statement among the examples is the MSL Hazcam mass of 245 g per camera, excluding the cover [6]. The MER Hazcam mass is not stated on the page read [5]. The Chandrayaan-3 LHDAC mass is not publicly specified in the sources read [1]. No lunar hazard camera mass is recorded.",
+        "power_requirements": "The MSL Hazcam uses approximately 2.2 W per camera when the heater is off [6]. The page also mentions a 'more powerful 3.5 W heater' for each MSL Hazcam [6]. No MER Hazcam power value was stated on the page read [5]. The Chandrayaan-3 LHDAC power is not publicly specified in the sources read [1]. No lunar hazard camera power requirement is recorded."
+      },
+      "environmental_and_operational_requirements": "A lunar hazard camera must work through the thermal, dust and lighting conditions of its mission. The sources read give only Mars-specific environmental requirements. The MER electronics box must stay above 218 K, and a heater keeps it there [5]. The MSL page reports read noise at -55 C (218 K) [6]. The MER Hazcams were calibrated over the flight range of temperatures [5]. The MSL cover protects the cameras during descent and landing [6]. The MER page gives a nominal noontime exposure of about 0.25 s on Mars [5], which shows that sunlight level strongly affects exposure. No lunar-specific thermal, dust, radiation or lighting requirement for a hazard camera was verified in the sources read, so none is stated here. The lunar environment will differ from Mars in day-night thermal cycling, in the absence of an atmosphere, and in the lighting geometry during descent. These are general differences and are not quantified by any source read for this article.",
+      "limitations": "- **Near-field range.** The Mars Hazcams are described as imaging mainly within about 5 m of the rover [6][7]. They are therefore not a substitute for longer-range terrain mapping.\n- **Lighting dependence.** Images depend on sunlight. The MER exposure figure shows how strongly exposure varies with illumination [5]. A lunar hazard camera's performance in the low-sun conditions of a polar landing would need separate evidence.\n- **Wide-angle distortion.** Fisheye optics give a wide field, but the geometry of the image differs from a rectilinear view. The MER and MSL pages describe f-theta optics, in which image position is designed to be proportional to viewing angle [5][6]. Neither page gives the residual calibration error, so the geometric accuracy of these cameras is not quantified here.\n- **Single-camera versus stereo.** A single camera gives a picture without range information. Stereo pairs give range but need a baseline and careful calibration. The sources read do not report the accuracy of either approach for the LHDAC.\n- **Redundancy.** The MSL page describes a redundant front pair that is used only when the primary system fails [6]. Redundancy for the LHDAC is not verified from a primary source.\n- **Mismatched descriptions.** Both the MER and MSL pages describe a broadband filter in one section and a red bandpass filter in another [5][6].",
+      "transportation_and_deployment": {
+        "overview": "Hazard cameras are fixed, body-mounted imagers on the vehicle they protect. The Mars rover Hazcams were mounted on the vehicle body or warm electronics box, and no lunar mounting was verified. The article does not assert compatibility with any named lander or rover.",
+        "transportation_process": [
+          "Earth integration: the MER Hazcams were attached to a titanium bracket mounted outside the warm electronics box [5]; the MSL Hazcams were mounted on the front and rear panels of the rover body with cover assemblies [6]; the Mars 2020 Hazcams were mounted at the front and rear ends of the warm electronics box [7]. No lunar integration was verified.",
+          "Launch and lunar transfer: no launch-environment or transfer requirement for a hazard camera was verified. The Chandrayaan-3 LHDAC is part of a lander that was launched and flown to the Moon, but the sources read do not describe its launch environment or its mounting on the lander [1].",
+          "Landing delivery: hazard cameras on a lander are used during descent rather than deployed. The Chandrayaan-3 mission page lists the LHDAC among lander sensors and states touchdown limits of vertical velocity no more than 2 m/s, horizontal velocity no more than 0.5 m/s and slope no more than 12 degrees [1]. These are mission touchdown limits, not camera performance values.",
+          "Deployment and setup: no camera-specific deployment mechanism was identified. The MSL cover protects the cameras during descent and landing [6].",
+          "Power and data: the MSL Hazcam uses approximately 2.2 W per camera when the heater is off [6]. The MSL and Mars 2020 pages both state that the Hazcam images are used by the rover computer to build range maps [6][7]. No power or data interface for a lunar hazard camera was verified.",
+          "Thermal and mechanical interfaces: the MER electronics box has a heater to maintain its minimum operating temperature [5]. No lunar lander thermal or mechanical interface for a hazard camera was verified.",
+          "Compatibility: no compatibility is asserted between the payload class and any named lander, rover or spacecraft. The Chandrayaan-3 LHDAC is flown on the Chandrayaan-3 lander [1], but its integration details with that lander were not verified."
+        ],
+        "deployment_methods": "Hazard cameras on a lander are not deployed. They are fixed to the vehicle and used during descent. The Mars rover Hazcams were fixed body-mounted cameras with protective covers on some designs [5][6]. No camera-specific deployment mechanism was identified for a lunar hazard camera.",
+        "historical_examples": "The MER Hazcams and the MSL Hazcams were fixed, body-mounted cameras on Mars rovers [5][6]. The Mars 2020 Hazcams were mounted at the front and rear of the warm electronics box [7]. The Chandrayaan-3 LHDAC was flown on the Chandrayaan-3 lander [1]. No lunar hazard-camera deployment is documented in the sources read apart from this lander sensor listing.",
+        "compatibility_assessment": "No compatibility is asserted between the hazard detection camera class and any named lunar lander, rover or spacecraft. The only verified flight association is the Chandrayaan-3 LHDAC with the Chandrayaan-3 lander, listed on ISRO's mission page [1]. Interface details for that integration were not verified.",
+        "images": []
+      },
+      "historical_significance": "Hazard cameras have a short but important record on Mars. An Opportunity Hazard Avoidance Camera view of Endurance Crater was taken on sol 188 (4 August 2004), which shows the MER Hazcams were operating by that date [4]. A Curiosity rear Hazcam image of tracks from an eastbound drive was taken on Sol 22 after landing and is dated 28 August 2012 on its source page [3]. These images show how hazard cameras contribute to both mobility and geology.\n\nFor the Moon, the LHDAC on the Chandrayaan-3 lander is the flown hazard camera identified in this article. ISRO's mission page lists it among lander sensors [1], and news reports state that its far-side images were taken on 19 August 2023 and released on 21 August 2023 [2]. These reports are secondary and do not describe the camera's performance.\n\nThe ALHAT project's 2014 Morpheus flight tests were a significant step toward autonomous hazard detection, but they used a flash lidar rather than a passive camera [8]. This is an important precedent for hazard sensing, and it is discussed further under payloads 271 and 272.\n\nNo Apollo-era dedicated hazard camera was identified in the sources read. Apollo landing operations are therefore not used as an example of a hazard camera in this article.",
+      "limitations_and_uncertainties": "- **No lunar hazard camera specification.** The LHDAC's mass, power, dimensions, field of view, resolution and frame rate are not publicly specified in the sources read [1]. The LHDAC cannot be compared quantitatively with the Mars Hazcams.\n- **LHDAC operation and processing.** ISRO's page names a \"Processing Algorithm\" but does not describe it [1]. Secondary commentary contradicts itself on whether the system uses lidar or a camera. These claims are not used.\n- **LHDAC redundancy.** A secondary explainer describes primary and redundant units, but this was not confirmed by a primary source.\n- **Mars Hazcam source quality.** The MER and MSL values come from the WUSTL Analyst's Notebook instrument pages [5][6], not from the original JPL instrument papers. The JPL MER camera PDF was saved but could not be extracted for checking.\n- **Filter description conflict.** Both the MER and MSL pages describe a broadband visible filter in one section and a red bandpass filter in another [5][6]. The correct description was not resolved.\n- **MER Hazcam mass, power and dimensions.** These were not stated on the MER page read.\n- **Perseverance Hazcam values.** The Mars 2020 table could not be attributed to the Hazcams with confidence [7]. No Hazcam field of view, resolution, mass or power is recorded for this example.\n- **Image position.** The PIA06759 source page's alt text says \"front\" and its description says \"rear,\" so the position of the Opportunity camera that took the image is not confirmed [4].\n- **Apollo-era hazard imaging.** No Apollo-era dedicated hazard camera was identified. The Apollo landing-hazard history was not researched in this run.\n- **Lunar environment.** No lunar-specific thermal, dust, radiation or lighting requirement for a hazard camera was verified.\n- **Lander compatibility.** No interface evidence was found for any lunar lander carrying a hazard camera beyond the Chandrayaan-3 mission listing [1].\n- **Images.** Two direct NASA Photojournal image assets were verified [3][4]. No direct asset was verified for the LHDAC; the ISRO release of its images was not located on an official page.\n- **Lunar landing sites.** This article does not recommend lunar landing sites or locations. That is deferred by the user.",
+      "images": [
+        {
+          "id": "msl_hazcam_rear_pia15694",
+          "description": "Rear Hazard Avoidance Camera (Hazcam) image of tracks from an eastbound drive on Curiosity's Sol 22.",
+          "image_type": "Flown Mars rover hazard camera photograph (Mars, not lunar)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia15/pia15694/PIA15694.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/tracks-from-eastbound-drive-on-curiositys-sol-22",
+          "publisher": "NASA Photojournal (NASA Science)",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Tracks from an eastbound drive on Curiosity's Sol 22, taken by the rear Hazard Avoidance Camera (Hazcam) of the Mars Science Laboratory, dated 28 August 2012 on the source page. Shown as an example of Hazcam imagery from Mars; not a lunar image.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct NASA Photojournal full-file JPEG URL (no query string) returned HTTP 200, image/jpeg, 49,862 bytes on check; the file name PIA15694 matches the source page identification as a rear Hazcam image. The page's display image URL carried a width query string that was removed; the clean full-file URL was used. Rights/reuse caveats not verified beyond the NASA Photojournal credit line."
+        },
+        {
+          "id": "mer_hazcam_endurance_crater_pia06759",
+          "description": "Opportunity Hazard Avoidance Camera side view of Endurance Crater, sol 188 (4 August 2004).",
+          "image_type": "Flown Mars rover hazard camera photograph (Mars, not lunar)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia06/pia06759/PIA06759.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/side-view-of-endurance-crater",
+          "publisher": "NASA/JPL",
+          "credit": "NASA/JPL",
+          "caption": "Opportunity Hazard Avoidance Camera view of Endurance Crater, taken on sol 188 (4 August 2004). Shown for deployment and operating context only; not a lunar image.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct NASA Photojournal full-file JPEG URL (no query string) returned HTTP 200, image/jpeg, 85,148 bytes on check; the file name PIA06759 matches the source page identification. The source page alt text says 'front hazard-avoidance camera' while its description says 'rear'; camera position is not confirmed. Rights/reuse caveats not verified beyond the NASA Photojournal credit line."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "msl_hazcam_rear_pia15694",
+          "description": "Rear Hazard Avoidance Camera (Hazcam) image of tracks from an eastbound drive on Curiosity's Sol 22.",
+          "image_type": "Flown Mars rover hazard camera photograph (Mars, not lunar)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia15/pia15694/PIA15694.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/tracks-from-eastbound-drive-on-curiositys-sol-22",
+          "publisher": "NASA Photojournal (NASA Science)",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Tracks from an eastbound drive on Curiosity's Sol 22, taken by the rear Hazard Avoidance Camera (Hazcam) of the Mars Science Laboratory, dated 28 August 2012 on the source page. Shown as an example of Hazcam imagery from Mars; not a lunar image.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct NASA Photojournal full-file JPEG URL (no query string) returned HTTP 200, image/jpeg, 49,862 bytes on check; the file name PIA15694 matches the source page identification as a rear Hazcam image. The page's display image URL carried a width query string that was removed; the clean full-file URL was used. Rights/reuse caveats not verified beyond the NASA Photojournal credit line."
+        }
+      ],
+      "references": [
+        {
+          "title": "Chandrayaan-3 Details (mission page; lander sensors, LHDAC, touchdown limits)",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "url": "https://www.isro.gov.in/Chandrayaan3_Details.html",
+          "date": "not stated on page read"
+        },
+        {
+          "title": "Chandrayaan-3: ISRO releases images of Lunar far side area captured by Lander camera",
+          "publisher": "Deccan Chronicle (PTI-syndicated report); secondary news source",
+          "url": "https://deccanchronicle.com/nation/in-other-news/210823/chandrayaan-3-isro-releases-images-of-lunar-far-side-area-captured-by.html",
+          "date": "2023-08-21"
+        },
+        {
+          "title": "Tracks from Eastbound Drive on Curiosity's Sol 22 (PIA15694)",
+          "publisher": "NASA Photojournal (NASA Science)",
+          "url": "https://science.nasa.gov/photojournal/tracks-from-eastbound-drive-on-curiositys-sol-22",
+          "date": "2012-08-28"
+        },
+        {
+          "title": "Side View of \"Endurance Crater\" (PIA06759)",
+          "publisher": "NASA Photojournal (NASA Science; JPL)",
+          "url": "https://science.nasa.gov/photojournal/side-view-of-endurance-crater",
+          "date": "2004-08-04 (image of sol 188)"
+        },
+        {
+          "title": "Hazard Avoidance Camera (Hazcam), Mars Exploration Rover instrument page",
+          "publisher": "Washington University in St. Louis, Planetary Data System Analyst's Notebook",
+          "url": "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/MER/Instruments/MER%20Hazcam.htm",
+          "date": "not stated on page read"
+        },
+        {
+          "title": "Hazard Avoidance Camera (Hazcam), Mars Science Laboratory instrument page",
+          "publisher": "Washington University in St. Louis, Planetary Data System Analyst's Notebook",
+          "url": "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/MSL/Instruments/MSL%20Hazcam.htm",
+          "date": "not stated on page read"
+        },
+        {
+          "title": "Engineering cameras (ECAM), Mars 2020 instrument page (Hazcam configuration)",
+          "publisher": "Washington University in St. Louis, Planetary Data System Analyst's Notebook",
+          "url": "https://an.rsl.wustl.edu/help/Content/About%20the%20mission/M20/Instruments/M20%20ECAM.htm",
+          "date": "not stated on page read"
+        },
+        {
+          "title": "Lidar Sensor Performance in Closed-Loop Flight Testing of the Morpheus Rocket-Propelled Lander to a Lunar-Like Hazard Field",
+          "publisher": "AIAA SciTech 2015; NASA Technical Reports Server record 20160006855 (NASA Langley authors)",
+          "url": "https://ntrs.nasa.gov/citations/20160006855",
+          "date": "2015-01-05"
+        }
+      ],
+      "historical_significance_images": []
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[1]": "payload.article.physical_specifications.examples[1].images",
+      "physical_specifications.examples[2]": "payload.article.physical_specifications.examples[2].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Direct image URLs were checked for HTTP 200 and matched to their source pages. Source-page URLs without verified direct images are referenced in text only and are not recorded as image objects."
+  },
+  "data_quality_notes": [
+    "Chandrayaan-3 LHDAC specifications are not publicly specified in the sources read: mass, power, dimensions, field of view, resolution, frame rate and operating timing are all unverified. ISRO's mission page confirms the camera's name and flight role only.",
+    "The MER and MSL Hazcam values come from WUSTL PDS Analyst's Notebook instrument pages, not from the original JPL instrument papers. The JPL MER camera PDF was saved locally but could not be extracted to verify its values.",
+    "Both the MER and MSL instrument pages describe a broadband visible filter in one section and a red bandpass filter centred at 650 nm in another; the correct filter description was not resolved.",
+    "The Mars 2020 Hazcam entry records configuration only. The ECAM performance table could not be attributed to the Hazcams in the extracted text, so no Hazcam field of view, resolution, mass or power is recorded.",
+    "The PIA06759 source page's alt text says front and its description says rear for the Opportunity Hazcam; camera position for that image is not confirmed.",
+    "Only two direct NASA Photojournal image assets were verified (HTTP 200, image/jpeg). No direct image was verified for the LHDAC, and the ISRO release of its images was not located on an official page.",
+    "No Apollo-era dedicated hazard camera was identified, and lunar-specific thermal, dust, radiation and lighting requirements for hazard cameras were not verified.",
+    "No lander compatibility is asserted. The only lunar flight association is the Chandrayaan-3 LHDAC with the Chandrayaan-3 lander, listed on ISRO's mission page, and its interface details were not verified.",
+    "The ResearchGate paper on Chandrayaan-3 powered descent returned HTTP 403 and was not used. Secondary news coverage of the LHDAC was read as search summaries only, not as full articles."
+  ]
+}

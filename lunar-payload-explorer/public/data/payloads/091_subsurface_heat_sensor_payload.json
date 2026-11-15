@@ -1,0 +1,232 @@
+{
+  "catalogue_id": 91,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 4,
+    "name": "Subsurface exploration and drilling"
+  },
+  "payload": {
+    "number": 91,
+    "name": "Subsurface heat sensor",
+    "article": {
+      "article_version": "v1 (2026-11-13)",
+      "payload_environment": "Flown: Apollo 15 and Apollo 17 heat-flow probes (1971 deployments); Chandrayaan-3 ChaSTE (2023); Blue Ghost Mission 1 LISTER (March 2025). No engineering model or concept is treated as flight-proven.",
+      "scope": "In-ground temperature and thermal-property measurements of lunar or planetary regolith made with penetrating probes. Surface-only infrared thermometers and thermal cameras are out of scope.",
+      "overview": "A subsurface heat sensor is a temperature sensor, or an array of temperature sensors, placed in the regolith below the surface. Measuring how temperature changes with depth reveals how heat moves through the ground. When the rate at which the material conducts heat is also measured, the heat flowing up from the Moon's interior can be estimated. This article uses the catalogue name for instruments of this kind: the sensing elements and the probe bodies that carry them into the ground, with or without an internal heater.\n\n**Scope of this article.** The article covers in-ground temperature and thermal-property measurements of lunar or planetary regolith made with probes that penetrate the surface. It does not cover surface-only infrared thermometers or thermal cameras, which are treated by other catalogue entries. Three flown examples are described, each with a different design and deployment method. They are not directly comparable and are not ranked against one another.\n\n**Status summary.** The article distinguishes the following evidence:\n\n- **Flown, Apollo 15 and 17 (1971):** the Heat Flow Experiment (HFE) probes, emplaced by astronauts with a hand-operated drill. Apollo 15 probe specifications are taken from the NASA Planetary Data System (PDS) instrument description [1]. The Apollo 15 and 17 heat-flow results are reported in a 2015 NASA record [2].\n- **Flown, Chandrayaan-3 (2023):** the Chandra's Surface Thermophysical Experiment (ChaSTE) probe, a sensor-and-heater probe that measured regolith thermal conductivity near the Moon's south polar region [3].\n- **Flown, Blue Ghost Mission 1 (March 2025):** the Lunar Instrumentation for Subsurface Thermal Exploration with Rapidity (LISTER), which excavates a hole with pressurised gas while measuring temperature and thermal conductivity at depth [4][5].",
+      "description": "A subsurface heat sensor system has four functional parts.\n\n1. **Temperature sensing elements.** Most designs use resistance thermometers (for example platinum resistance elements) or thermocouples, placed at fixed or uneven spacings along a probe. Each element reports a temperature. A set of elements at known depths gives a temperature profile.\n2. **Probe body.** The sensors are mounted in a rod, a pair of rigid sections joined by a flexible link, or a penetrator-style tube. The body must survive insertion, conduct heat in a known way, and hold the sensors at known positions.\n3. **Heater (in many designs).** A heater placed in the probe allows an active measurement. A short heat pulse or a controlled heat input produces a temperature response that depends on the surrounding regolith's thermal conductivity. The Apollo probes had four heaters, and ChaSTE and LISTER both used heating in their conductivity measurements [1][3][5].\n4. **Electronics and data link.** The sensors are read by an electronics unit, which may be a box on the surface connected by cable, or electronics built into a lander. The Apollo 15 probes were wired to a central station by an 8 m cable [1].\n\nDeployment is the most important difference between the examples. The Apollo probes were placed in holes drilled by astronauts. ChaSTE was driven into the regolith by a motorised mechanism [3]. LISTER was pushed into a hole it had excavated with a jet of pressurised nitrogen [5].",
+      "scientific_purpose_and_applications": "The main purpose of a subsurface heat sensor is to measure the thermal state of the ground at depths that are not reached by the surface temperature cycle. Its main applications are:\n\n- **Estimating heat flow from the lunar interior.** Heat flow is the product of the thermal conductivity of the ground and the temperature gradient with depth. The Apollo HFE was designed for this purpose, and its published heat-flow values for Apollo 15 and Apollo 17 are 21 mW/m² and 16 mW/m² respectively, based on data through December 1974 [2].\n- **Characterising regolith thermal conductivity.** Thermal conductivity controls how strongly the surface temperature cycle penetrates. ChaSTE reported thermal conductivity values of about 0.0115 and 0.0124 W/(m·K) at 80 mm depth at its landing site [3]. These in-situ values constrain thermal models of the regolith.\n- **Validating thermal models.** Measured temperature profiles with depth are used to test models of heat transport in the regolith. LISTER's measurements at eight depths down to 1 m were designed to provide this kind of profile [5].\n\nThe sources reviewed do not state that any of these instruments has yet produced a full lunar heat-flow value from a new measurement. The LISTER paper describes the measurement of regolith temperature and conductivity, and does not report a heat-flow value in the abstract [5].",
+      "operating_principle": "The operating principle rests on Fourier's law of heat conduction, which states that heat flux is proportional to the thermal conductivity of the material multiplied by the temperature gradient. In the ground, the heat flux from the interior is q = k × (dT/dz), where k is the thermal conductivity in W/(m·K), dT/dz is the vertical temperature gradient in K/m, and q is the heat flux in W/m². Lunar heat flow is usually reported in mW/m². The Apollo results are reported in those units [2].\n\nA subsurface heat sensor measures the two quantities on the right-hand side:\n\n- **Temperature gradient.** Sensors at two or more depths measure temperature. The difference between sensors, divided by the depth separation, gives the gradient. The Apollo probes used a gradient bridge and a ring bridge, each with its own sensitivity [1]. Gradient accuracy depends on the difference between sensors, so the Apollo instrument description specifies a high-sensitivity mode with a resolution of 0.001 K [1].\n- **Thermal conductivity.** A heater produces a controlled heat input, and the temperature response is recorded. The Apollo probes ran a low-conductivity heating mode at 0.002 W and a high-conductivity mode at 0.5 W [1]. ChaSTE measured conductivity with active heating at 80 mm depth [3]. LISTER measured conductivity at each of its eight depths [5].\n\nTwo engineering issues affect the measurement. First, the probe must be in good thermal contact with undisturbed regolith. A hole that has been partly disturbed, or a probe that sits above the surface, gives a misleading gradient. Second, the regolith is a poor conductor, so the thermal response to a heat pulse can take hours to develop. The LISTER paper reports that each depth's thermal measurement took about two hours [5].",
+      "scientific_importance": "Lunar heat flow is one of the few direct measures of how the Moon loses internal heat. The heat flow from the lunar interior depends on the abundance of radioactive elements in the mantle and crust, and on the cooling history of the Moon. Because only a small number of in-situ heat-flow determinations exist on the Moon, the Apollo results are a key constraint on those models. The NASA record of the Apollo results states the 21 and 16 mW/m² values for Sites 15 and 17 [2].\n\nThe Chandrayaan-3 ChaSTE measurement and the LISTER measurements add new in-situ thermal data from different regions. ChaSTE's measurements were made at a high-latitude site [3], and LISTER's were made in Mare Crisium [5]. Such data provide a basis for comparing regolith thermal properties in different geological settings and with depth.\n\nThe NASA record [2] describes restoration of the Apollo heat-flow metadata. This article reports the published heat-flow values without an independent reanalysis.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a subsurface heat sensor. The three examples below differ in mission, probe construction, sensor count, depth capability and development history. Their numbers should not be ranked or compared as if they described one design. Each value is tied to a named instrument and source. Where a source does not publish a value, this article says \"not publicly specified\" and does not infer one.\n\nMass, probe diameter and total power are not publicly specified in the sources accessed for any of the three examples. The sources accessed give sensor counts, accuracies, depths and heater powers for some examples only.",
+        "examples": [
+          {
+            "name": "Apollo Heat Flow Experiment (HFE) probes, Apollo 15 and Apollo 17",
+            "type": "Heat-flow probe pair with platinum resistance elements and thermocouples, emplaced in drilled holes",
+            "development_status": "Flown and operated on the Moon (Apollo 15 probes placed 1971; Apollo 17 site 1972)",
+            "mass_kg": null,
+            "main_enclosure_diameter_cm": null,
+            "main_enclosure_height_cm": null,
+            "probe_cylinder_length_cm": 50,
+            "resistance_elements_per_probe": 8,
+            "thermocouples_per_probe": 4,
+            "heaters_per_probe": 4,
+            "power_consumption_w": {
+              "low_conductivity_heater": 0.002,
+              "high_conductivity_heater": 0.5,
+              "instrument_supply": "29 V DC from central station"
+            },
+            "accuracy": {
+              "gradient_bridge": "0.001 K high sensitivity; 0.01 K low sensitivity; 0.05 K absolute over 190-270 K",
+              "ring_bridge": "0.002 K differential; 0.05 K absolute over 190-270 K",
+              "thermocouples": "0.07 K over 70-400 K",
+              "reference_bridge": "0.01 K over 23-363 K"
+            },
+            "sensor_depths_probe1_cm": [
+              36,
+              45,
+              74,
+              83,
+              91,
+              100,
+              129,
+              138
+            ],
+            "electronics_box_nominal_temperature_k": [
+              278,
+              328
+            ],
+            "cable_length_m": 8,
+            "achieved_borestem_depth_cm": {
+              "probe_1": 162,
+              "probe_2": 160
+            },
+            "apollo_17_hole_depth_m": 2.5,
+            "endogenic_heat_flow_mw_m2": {
+              "apollo_15_site_15": 21,
+              "apollo_17_site_17": 16
+            },
+            "construction": "Two 50 cm cylinders per probe, as stated in the PDS instrument description",
+            "thermal_protection": "Electronics box with heaters, thermostats, layered aluminised mylar bag, fibreglass case, radiator plate and sunshield",
+            "qualification": "Not publicly specified in the sources accessed",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a15/instruments/a15a_hfe.txt",
+              "https://ntrs.nasa.gov/citations/20150004428"
+            ],
+            "images": [],
+            "article_text": "Apollo Heat Flow Experiment (HFE) probes — Apollo 15 and Apollo 17, flown on the Moon in 1971\n\n**Status:** flown and operated on the Moon. Apollo 15 probes were placed on 31 July 1971 (Probe 1) and 1 August 1971 (Probe 2) [1]. The NASA record covering Apollo 15 and 17 states that the probes measured surface and subsurface temperatures and that the data used in the heat-flow analysis run through December 1974 [2].\n\n**Apollo 15 probe design and specifications, from the PDS instrument description [1]:**\n\n- **Sensing elements per probe:** eight platinum resistance elements, four in each 50 cm cylinder, wired as two differential bridges per cylinder. These are the gradient (DTG) and ring (DTR) bridges [1].\n- **Thermocouples per probe:** four. One sits at the top of the upper cylinder, and three are cable thermocouples at 65 cm, 115 cm and 165 cm from it [1].\n- **Heaters per probe:** four, one around each gradient sensor housing [1].\n- **Cylinder length:** 50 cm each. Total assembled probe length is not given in the PDS description [1].\n- **Heater power:** 0.002 W in low-conductivity mode and 0.5 W in high-conductivity mode [1].\n- **Instrument supply:** 29 V DC from the central station [1].\n- **Electronics box:** nominally kept at 278–328 K by heating elements, thermostats, a layered aluminised mylar bag, a fibreglass case, a radiator plate and a sunshield [1].\n- **Cable:** 8 m to the electronics box [1].\n- **Mass, probe diameter, electronics box dimensions and total instrument power:** not given in the PDS description [1].\n\n**Measurement accuracy, from the PDS instrument description [1]:**\n\n- Gradient bridge: 0.001 K at high sensitivity, 0.01 K at low sensitivity, and 0.05 K absolute over 190–270 K.\n- Ring bridge: 0.002 K for differential temperature and 0.05 K absolute over 190–270 K.\n- Thermocouples: 0.07 K over 70–400 K.\n- Reference bridge: 0.01 K over 23–363 K.\n\n**Sensor depths as deployed, Probe 1, from the PDS instrument description [1]:** the eight resistance elements sit at 36 cm, 45 cm, 74 cm, 83 cm, 91 cm, 100 cm, 129 cm and 138 cm below the surface. Probe 2's upper section sat above the surface, so its readings were unusable for heat-flow studies [1].\n\n**Apollo 17 site:** the NASA record gives a hole depth of 2.5 m at the Apollo 17 site [2]. The Apollo 17 probe design and its sensor counts were not checked in this run, and no specification is attributed to the Apollo 17 probe here.\n\n**Heat-flow results:** Langseth's analysis, as reported in the NASA record, gives an endogenic heat flow of 21 mW/m² at Site 15 and 16 mW/m² at Site 17, using data through December 1974 [2].\n\nNo image is displayed in this example. A NASA Apollo 15 photograph of the ALSEP site with the heat-flow electronics was identified in search results, but a direct image asset could not be verified from an official page in this run."
+          },
+          {
+            "name": "Chandrayaan-3 ChaSTE (Chandra's Surface Thermophysical Experiment)",
+            "type": "Penetrating thermal-conductivity probe with temperature sensor array and internal heater",
+            "development_status": "Flown and operated on the lunar surface, Chandrayaan-3 (2023)",
+            "mass_kg": null,
+            "temperature_sensor_count": 10,
+            "temperature_sensor_placement": "Uneven intervals within the top 10 cm, per the Scientific Reports paper as summarised",
+            "temperature_sensor_type_reported": "Pt-1000 RTD (secondary summaries only; not confirmed in paper text reviewed)",
+            "heater": "Foil-type heater wound around the probe near the nose tip",
+            "insertion": "Controlled motorised penetration over 29 hours",
+            "thermal_conductivity_w_mk_at_80mm": {
+              "run_1": 0.0115,
+              "run_2": 0.0124
+            },
+            "thermal_conductivity_uncertainty_w_mk": {
+              "run_1": 0.0008,
+              "run_2": 0.0009
+            },
+            "power_consumption_w": null,
+            "qualification": "Not publicly specified in the sources accessed",
+            "source_urls": [
+              "https://doi.org/10.1038/s41598-025-91866-4"
+            ],
+            "images": [],
+            "article_text": "Chandrayaan-3 ChaSTE (Chandra's Surface Thermophysical Experiment) — flown on the Moon in 2023\n\n**Status:** flown and operated on the lunar surface at the Vikram landing site, in the high-latitude region studied in the Scientific Reports paper [3]. The mission operation dates given in secondary summaries have not been checked against an ISRO primary page, which could not be retrieved in this run.\n\n**Published values, as given in the Scientific Reports paper [3]:**\n\n- **Sensors:** ten temperature sensors at uneven intervals within the top 10 cm of the probe's insertion path. The sensor type is given in secondary summaries as Pt-1000 platinum resistance temperature devices, but this was not confirmed in the paper text reviewed.\n- **Heater:** a foil-type heater wound around the probe close to the nose tip.\n- **Insertion:** controlled motorised penetration over 29 hours.\n- **Thermal conductivity at 80 mm depth:** two active heating experiments gave about 0.0115 and 0.0124 W/(m·K), with uncertainties of ±0.0008 and ±0.0009 W/(m·K) [3].\n- **Density estimate:** packing density was estimated from the penetration motor current, and an empirical model using temperature and density matched the in-situ conductivity result [3].\n- **Temperature at 80 mm depth:** around −10 °C, as reported in secondary summaries [3].\n\n**Not publicly specified in the sources accessed:** probe mass, probe diameter, electronics mass and power, and the exact probe length in the primary paper.\n\n**Discrepancy:** secondary summaries give conflicting penetration depths, of about 10 cm and of 140 mm. The Scientific Reports paper's sensor layout within the top 10 cm is given as the more reliable description, but the 140 mm figure was not resolved in this run.\n\nNo image is displayed in this example. A direct image asset from an official ISRO or Space Physics Laboratory page could not be verified in this run."
+          },
+          {
+            "name": "LISTER (Lunar Instrumentation for Subsurface Thermal Exploration with Rapidity), Blue Ghost Mission 1",
+            "type": "Pneumatically excavating thermal probe measuring temperature and thermal conductivity at depth",
+            "development_status": "Flown on Blue Ghost Mission 1, Mare Crisium (March 2025)",
+            "mass_kg": null,
+            "temperature_sensor_count": null,
+            "measurement_depths": 8,
+            "achieved_depth_m": 1.0,
+            "nasa_pre_launch_target_depth_m": 3.0,
+            "measurement_time_per_depth_h": 2,
+            "excavation_method": "Pneumatic, using a jet of pressurised nitrogen",
+            "previous_robotic_record_cm": 8,
+            "power_consumption_w": null,
+            "qualification": "Not publicly specified in the sources accessed",
+            "source_urls": [
+              "https://www.nasa.gov/missions/artemis/nasa-payload-aims-to-probe-moons-depths-to-study-heat-flow",
+              "https://doi.org/10.3847/PSJ/ae0465"
+            ],
+            "images": [],
+            "article_text": "LISTER (Lunar Instrumentation for Subsurface Thermal Exploration with Rapidity), Blue Ghost Mission 1 — flown in March 2025\n\n**Status:** flown. The probe was deployed in Mare Crisium on Blue Ghost Mission 1 in March 2025 [5]. It is the Firefly Aerospace lander mission under NASA's Commercial Lunar Payload Services initiative [4]. The instrument was developed by Texas Tech University and Honeybee Robotics [4].\n\n**Published values, as given in the Planetary Science Journal abstract [5] and the NASA pre-launch article [4]:**\n\n- **Penetration depth achieved:** 1 m [5]. NASA's pre-launch article gave a target of three metres, with a thermal probe extended every half metre [4].\n- **Measurement depths:** thermal measurements of temperature and thermal conductivity at eight depths [5].\n- **Measurement time:** about two hours to complete the thermal measurement at each depth before the excavation continues [5].\n- **Excavation method:** pneumatic, using a jet of pressurised nitrogen that expands in the vacuum and lofts regolith out of the hole [5].\n- **Obstacle detection:** weight on the bit above a set threshold triggers a piston-like vibration called \"dithering\" while gas continues to flow [5].\n- **Previous robotic record:** the abstract states that the previous robotic record for in-situ lunar thermal measurements was 8 cm [5].\n\n**Not publicly specified in the sources accessed:** the number of individual temperature sensors, probe mass, probe dimensions and power consumption.\n\nThe NASA pre-launch article describes the probe as a \"custom-built thermal probe\" [4]. It does not state a sensor count.\n\nNo image of LISTER is displayed in this example. A NASA article image labelled as a science instrument on the Firefly Blue Ghost lander was found, but the depicted instrument is not confirmed as LISTER in the alt text, so it has not been used."
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for the ChaSTE and LISTER probes in the sources accessed. For Apollo 15, the PDS instrument description gives two 50 cm cylinders per probe, an 8 m cable and an electronics box, but gives no probe diameter, total assembled length or electronics box dimensions.",
+        "mass_and_weight": "Not publicly specified for any of the three examples in the sources accessed. The PDS description gives no Apollo probe mass.",
+        "power_requirements": "Apollo 15: heater power 0.002 W in low-conductivity mode and 0.5 W in high-conductivity mode; instrument supply 29 V DC from the central station; total instrument power not given. ChaSTE and LISTER power consumption is not publicly specified in the sources accessed."
+      },
+      "environmental_and_operational_requirements": "**Vacuum and thermal environment.** The probes operate in vacuum, where heat moves through the regolith mainly by conduction, and where the surface temperature swings strongly between day and night. The ChaSTE secondary summaries give peak surface temperatures of about 70 °C to 82 °C during the lunar day, and about −10 °C at 80 mm depth [3]. These values conflict between sources and should be treated as approximate. The primary paper was not read in full.\n\n**Electronics temperature.** The Apollo 15 electronics box was kept nominally at 278–328 K using heaters, thermostats and insulation [1]. Survival limits for the Apollo probes are not given in the PDS description [1].\n\n**Probe insertion.** The regolith must be penetrated without the probe losing its position or contact. Apollo 15 borestems reached 162 cm and 160 cm, short of the nominal 3 m target. The PDS description gives no single cause, although an obstruction at about 1 m in Probe 2's hole may have been a broken borestem [1]. LISTER reached 1 m, and its abstract does not state a limiting cause [5].\n\n**Power and timing.** Apollo heater power was 0.002 W in low-conductivity mode and 0.5 W in high-conductivity mode [1]. The LISTER and ChaSTE power budgets are not publicly specified in the sources accessed.",
+      "limitations": "- **Sparse in-situ heat-flow data.** Only two historical lunar heat-flow determinations, from Apollo 15 and 17, are reported in the sources reviewed [2]. The sensor designs and mission contexts differ, so their results are not a uniform dataset.\n- **Depth limits.** Apollo sensors reached about 1.4 m at Apollo 15 Probe 1 in the PDS description, and LISTER reached 1 m [1][5]. The depth needed to avoid the influence of the surface temperature cycle is not fixed by any of these instruments.\n- **Measurement time.** LISTER's thermal measurement at each depth took about two hours [5]. This limits how many depths can be measured in a mission, and how quickly a profile can be completed.\n- **Incomplete published specifications.** Mass, power and dimensions are not publicly specified for most examples in the sources accessed.\n- **Heater-dependent methods.** Thermal-conductivity values depend on the heater, the model used to interpret the response, and the assumed contact with the regolith [1][3][5].",
+      "transportation_and_deployment": {
+        "overview": "The three examples are surface payloads placed into the regolith. Each has different integration and deployment requirements.",
+        "transportation_process": [
+          "The Apollo HFE probes were carried to the Moon as part of the Apollo Lunar Surface Experiments Package (ALSEP), and were placed by astronauts during extravehicular activity. The NASA Apollo documentation [1] describes the drilling equipment used: an Apollo Lunar Surface Drill with borestems, bore bits, a treadle and a wrench.",
+          "ChaSTE was carried to the lunar surface on the Chandrayaan-3 lander [3]. The probe's penetration mechanism is part of the payload.",
+          "LISTER was carried to the surface by the Firefly Aerospace Blue Ghost Mission 1 lander under NASA's CLPS initiative [4][5]."
+        ],
+        "deployment_methods": "The Apollo probes were placed in holes drilled by astronauts. The borestems stayed in the hole as casing, and the probe rested on the bit at the bottom of the hole [1]. The Apollo 15 electronics box was placed 9 m north of the central station, and the probe holes were 4 m east and 4.5 m west of the central station [1].\n\nChaSTE was pushed into the regolith by a controlled, motorised penetration over 29 hours [3].\n\nLISTER excavates pneumatically. The probe is pushed into undisturbed regolith at each target depth after the gas flow is stopped, and the thermal measurement is completed before excavation continues [5].",
+        "historical_examples": "The Apollo 15 and Apollo 17 HFE deployments in 1971 and 1972 are the earliest in-situ lunar heat-flow measurements. ChaSTE (2023) and LISTER (2025) are more recent examples of the same class.",
+        "compatibility_assessment": "The lander and rover interface details for each mission are not reproduced here beyond what the cited sources state. The Blue Ghost lander compatibility of LISTER is recorded from NASA's CLPS description [4] and the Planetary Science Journal paper [5]. The Chandrayaan-3 interface for ChaSTE is recorded as \"on the lander\" [3]. No additional lander compatibility is asserted.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 15 and 17 HFE experiments are the in-situ lunar heat-flow measurements that the sources reviewed identify as the earliest and as the only prior determinations [2]. The probes were placed by astronauts and monitored for several years.\n\nChaSTE provided an in-situ thermal conductivity measurement at a high-latitude lunar site [3]. LISTER extended in-situ thermal measurement depth beyond the 8 cm previous robotic record stated in its abstract [5].",
+      "limitations_and_uncertainties": "- **Mass, power and dimensions.** These are not publicly specified for the ChaSTE and LISTER probes in the sources accessed, and the Apollo probe mass and total power are not given in the PDS description [1].\n- **Apollo 17 probe specifications.** The Apollo 17 probe design and its sensor counts were not checked in this run. Only the Apollo 17 hole depth and heat-flow value are attributed to the NASA record [2].\n- **Apollo timing.** The PDS description gives placement times of 31 July 1971 and 1 August 1971 [1]. Secondary summaries also describe Apollo 15 operations running to 1977. These were not checked against the Apollo Lunar Surface Journal in this run.\n- **ChaSTE depth and deployment.** Secondary summaries conflict on penetration depth (about 10 cm against 140 mm) and on deployment mechanism (rotation against motorised penetration). The primary Scientific Reports paper [3] was not read in full, so the penetration depth and the sensor-type claim (Pt-1000) are unverified.\n- **ChaSTE mission dates.** The sources accessed do not confirm the mission operation dates from an official ISRO page.\n- **LISTER sensor count.** The number of individual temperature sensors on LISTER is not stated in the sources accessed. The PSJ abstract [5] states eight measurement depths only.\n- **LISTER heat flow.** The sources accessed do not report a LISTER heat-flow value. Any future heat-flow result should be checked against the full paper before use.\n- **Images.** No image is embedded in this article because no direct image asset was verified from an official page for any example. This is a gap, not an absence of imagery.\n- **Lunar location.** This article does not recommend lunar landing sites, as requested for this workflow.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "number": 1,
+          "title": "Apollo 15 Heat Flow Experiment: Instrument Description (Apollo documentation, document_a15/instruments/a15a_hfe.txt)",
+          "authors": "NASA Planetary Data System, Geosciences Node",
+          "publisher": "NASA PDS",
+          "date": "undated",
+          "doi": null,
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a15/instruments/a15a_hfe.txt"
+        },
+        {
+          "number": 2,
+          "title": "Restoration of the Apollo Heat Flow Experiments Metadata (LPSC 2015 abstract, NTRS 20150004428)",
+          "authors": "Nagihara, S., Stephens, M. K., Taylor, P. T., Williams, D. R., Hills, H. K., Nakamura, Y.",
+          "publisher": "Lunar and Planetary Science Conference; NASA Technical Reports Server",
+          "date": "2015-03-16",
+          "doi": null,
+          "url": "https://ntrs.nasa.gov/citations/20150004428"
+        },
+        {
+          "number": 3,
+          "title": "Thermal conductivity of high latitude lunar regolith measured by Chandra's Surface Thermophysical Experiment (ChaSTE) onboard Chandrayaan 3 lander",
+          "authors": "Mathew, N., Prasad, K. D., et al.",
+          "publisher": "Scientific Reports",
+          "date": "2025-03",
+          "doi": "10.1038/s41598-025-91866-4",
+          "url": "https://doi.org/10.1038/s41598-025-91866-4"
+        },
+        {
+          "number": 4,
+          "title": "NASA payload aims to probe Moon's depths to study heat flow",
+          "authors": "NASA",
+          "publisher": "NASA",
+          "date": "2024-12-18",
+          "doi": null,
+          "url": "https://www.nasa.gov/missions/artemis/nasa-payload-aims-to-probe-moons-depths-to-study-heat-flow"
+        },
+        {
+          "number": 5,
+          "title": "The Lunar Instrumentation for Subsurface Thermal Exploration with Rapidity (LISTER) on Blue Ghost Mission 1 to Mare Crisium. I. Pneumatic Excavation of Regolith",
+          "authors": "Nagihara, S. et al.",
+          "publisher": "The Planetary Science Journal (IOP Publishing), 6, 232",
+          "date": "2025",
+          "doi": "10.3847/PSJ/ae0465",
+          "url": "https://doi.org/10.3847/PSJ/ae0465"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL fields in this file have query strings and fragments removed. No direct image asset was verified from an official page for any example, so no image is registered and no image URL is stored. The NASA LISTER-related image URL that was checked (HTTP 200, image/jpeg) is not used because the depicted instrument is not confirmed as LISTER."
+  },
+  "data_quality_notes": [
+    "Apollo 15 probe specifications come from the NASA PDS instrument description (a15a_hfe). Mass, probe diameter, total assembled length, electronics box dimensions, telemetry bandwidth and survival limits are not given in that description.",
+    "Apollo 17 probe design and sensor counts were not checked. Only the 2.5 m hole depth and the 16 mW/m2 heat-flow value are attributed to the NASA record [2] for Apollo 17.",
+    "Apollo heat-flow values (21 and 16 mW/m2) are taken from the 2015 NASA record [2], which reports Langseth's analysis of data through December 1974. The 1976 Langseth primary paper was not opened.",
+    "Apollo 15 placement dates (31 July and 1 August 1971) are from the PDS description. A conflicting summary of Lunar Surface Journal timing was not checked against the journal.",
+    "Apollo 15 borestem depths in the PDS description (162 cm and 160 cm) differ from the depths quoted in the NASA record [2] (1 m and 1.5 m). The article reports both as stated by their sources.",
+    "ChaSTE values come from the Scientific Reports paper [3] as summarised in search results. The full paper was not read. The DOI resolves (HTTP 302 at doi.org), but the article text was not reviewed.",
+    "ChaSTE sensor type (Pt-1000 RTD) comes only from secondary summaries and is not confirmed in the paper text reviewed.",
+    "ChaSTE penetration depth conflicts between secondary summaries (about 10 cm against 140 mm). Deployment mechanism also conflicts (motorised penetration against rotation). The article reports the paper-summary values and flags the conflict; the 140 mm figure is unresolved.",
+    "ChaSTE peak surface temperature differs between secondary sources (about 70 C and 82 C). The -10 C value at 80 mm is also from secondary summaries.",
+    "The ISRO Space Physics Laboratory ChaSTE page (spl.gov.in) could not be retrieved in this run because the host did not resolve. It is not cited.",
+    "ChaSTE mission operation dates are not confirmed from an official ISRO primary page.",
+    "LISTER: the Planetary Science Journal abstract [5] was read through the DLR repository record. The full paper was not read. The abstract gives 1 m reached and eight measurement depths; it does not give sensor count, mass or power.",
+    "LISTER: the NASA pre-launch article [4] gives a 3 m target depth, a custom-built thermal probe and a probe extension every half metre. It does not give a sensor count.",
+    "LISTER: a NASA image of a Firefly-supplied science instrument was identified (direct URL returned HTTP 200, image/jpeg). The depicted instrument is not confirmed as LISTER, so the image is not used.",
+    "No direct image asset was verified from an official page for any example. The article therefore carries no images, and the research_status image flags are false.",
+    "The NASA claim that LISTER was selected for a third lunar flight (January 2026) appeared only in secondary search results and is not included in the article.",
+    "No internal Glean or enterprise search was run for this payload. All sources are public.",
+    "The validator was run on this file set. Its side output, a .urls.txt file, was written next to the JSON by the validator."
+  ]
+}

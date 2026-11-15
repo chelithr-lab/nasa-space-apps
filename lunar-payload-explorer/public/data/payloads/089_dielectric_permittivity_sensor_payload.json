@@ -1,0 +1,348 @@
+{
+  "catalogue_id": 89,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 4,
+    "name": "Subsurface exploration and drilling"
+  },
+  "payload": {
+    "number": 89,
+    "name": "Dielectric permittivity sensor",
+    "article": {
+      "overview": "A dielectric permittivity sensor measures how strongly a material responds to an applied electric field, expressed as its relative permittivity (formerly called the dielectric constant). On a planetary surface, such measurements can help infer bulk density, porosity and water-ice content of the regolith, because water ice has a much higher relative permittivity than dry regolith, which is the contrast that makes ice detection possible [1][2]. The catalogue entry describes a measurement class rather than one standard instrument. The sources reviewed cover a flat patch-electrode prototype, a sensor built into a drill rod, an astronaut-placed analyser and a penetrometer-based design. Of these examples, only the Apollo 17 experiment has flown on the Moon, and it was an electromagnetic transmission experiment rather than a dedicated permittivity sensor [4].",
+      "description": "A dielectric permittivity sensor places an electrode in contact with, or inserted into, the material to be measured. The electrode and its front-end electronics convert the electrical response of the material into a capacitance or current value, which is then interpreted as relative permittivity [1][2]. Reported designs differ considerably. The TUM prototype uses a flat patch electrode placed against the surface, with its electronics in a separate unit [1]. The PROSPECT ProSEED sensor is carried in the drill rod and is engaged beyond about 40 cm depth in nominal operation [2]. The Lunar Dielectric Analyzer is a deployable instrument that astronauts place on the surface [3]. The Chang'e 8 Terrain Testing Instrument integrates a permittivity sensor with the shear vanes of a vane-cone penetrometer [6]. A permittivity sensor does not measure ice directly. It measures an electrical property from which ice content must be inferred, using a mixing model and assumptions about porosity and composition [1].",
+      "scientific_purpose_and_applications": "The main scientific purpose is to characterise the electrical properties of the shallow subsurface in situ. Such measurements can help (i) estimate bulk density and porosity of the regolith, which constrain its physical state [1][3][6]; (ii) search for water ice, because ice has a much higher permittivity than dry regolith [1][2][6]; and (iii) provide local, site-specific measurements that astronauts or landers can make at a chosen location, as proposed for the LDA [3]. Applications in resource assessment depend on the depth and accuracy achieved, which are not yet demonstrated on the Moon [2].",
+      "operating_principle": "In the TUM prototype, a square-wave excitation is applied to the electrode arrangement, the resulting voltage is recorded in the time domain, and a Fourier transform yields the capacitance. The effective permittivity is then fitted to a Looyenga (one-third power-law) mixing model to infer water content and porosity [1]. The PROSPECT ProSEED sensor instead emits an extremely low frequency (ELF) alternating current through a small electrode and senses the dielectric properties of the surrounding material [2]. The LDA is described only as an instrument that measures the dielectric properties of the lunar surface [3]. The Apollo 17 experiment used a different approach: a transmitter deployed near the Lunar Module and a receiver on the Lunar Rover measured the transmission, absorption and reflection of electromagnetic energy by the surface and subsurface [4]. In every case, an applied electric field interacts with the material, and the stored and dissipated energy depends on its permittivity and conductivity [1].",
+      "scientific_importance": "Ice is a key volatile for lunar exploration, and a measurement that can distinguish ice-bearing material from dry regolith would help plan sampling and resource prospecting [2][3]. Bulk density and porosity also constrain the physical state of the regolith in which other instruments operate, so a permittivity measurement adds context to surface and subsurface observations [1][3]. The contact-based impedance approach has heritage on other solar-system missions: the Huygens lander (Cassini-Huygens) and the Philae lander (Rosetta) carried impedance-based instruments that measured electrical properties of Titan's atmosphere and of a comet's surface respectively [1]. These are heritage examples, not evidence of permittivity measurements on the Moon.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a dielectric permittivity sensor. The examples differ in host platform, flight status and measurement approach. Values are tied to the named instrument and source, and are not comparable across designs unless stated. The one comparison table is limited to the TUM laboratory setup.",
+        "examples": [
+          {
+            "name": "Apollo 17 Surface Electrical Properties (SEP) experiment",
+            "type": "Historical flown lunar electromagnetic experiment (not a dedicated permittivity sensor)",
+            "flight_status": "Flown on Apollo 17",
+            "mass": "Not verified in sources reviewed",
+            "dimensions": "Not verified in sources reviewed",
+            "power": "Not verified in sources reviewed",
+            "measurement_description": "A transmitting antenna deployed near the Lunar Module and a receiving antenna on the Lunar Rover, used to obtain data on the transmission, absorption and reflection of electromagnetic energy by the surface and subsurface.",
+            "frequency_range": "1-32 MHz reported in abstract-level search metadata; not verified against the full report",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17l_sep.xml",
+              "https://ntrs.nasa.gov/api/citations/19750013120/downloads/19750013120.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Patch-electrode permittivity sensor prototype (TUM)",
+            "type": "Laboratory prototype; not flown",
+            "flight_status": "Not flown; TRL not stated for the prototype; TRL 6 described as planned",
+            "mass_g": 18,
+            "system_mass": "Below 100 g including harness (stated figure)",
+            "dimensions": "Two-layer PCB of 6.5 cm side length. A 60 mm electrode diameter and 30 mm outer radius are also given for simulation; the source does not reconcile these",
+            "frequency_range": "6.25 Hz to 10 kHz investigated; baseline sampling 20 kHz",
+            "power": "About 1.5 W average for the non-optimised back-end electronics; negligible power with an onboard computer is a SPICE model projection",
+            "operating_temperature": "Electronics rated -40 to 60 °C; laboratory experiments -40 to 40 °C",
+            "sensing_depth": "About 5 cm for a 60 mm electrode, from a COMSOL simulation (not measured)",
+            "data_volume": "About 500 kB per uncompressed measurement",
+            "lab_results_table": [
+              {
+                "material": "Air",
+                "predicted_capacitance_pF": 4.13,
+                "measured_capacitance_pF": 5.02,
+                "relative_permittivity": 1.0
+              },
+              {
+                "material": "Polyethylene",
+                "predicted_capacitance_pF": 6.12,
+                "measured_capacitance_pF": 7.42,
+                "relative_permittivity": 2.5
+              },
+              {
+                "material": "JSC-1A regolith simulant",
+                "predicted_capacitance_pF": 9.34,
+                "measured_capacitance_pF": 12.7,
+                "relative_permittivity": 5.0
+              },
+              {
+                "material": "Granite",
+                "predicted_capacitance_pF": 13.17,
+                "measured_capacitance_pF": 20.81,
+                "relative_permittivity": 8.0
+              }
+            ],
+            "source_urls": [
+              "https://www.frontiersin.org/articles/10.3389/frspt.2023.1303180/full"
+            ],
+            "images": [
+              {
+                "id": "tum_patch_electrode_prototype_figure1",
+                "description": "Figure 1 of Gscheidle et al. (2024): (A) photograph of the TUM patch electrode and custom electronics board; (B) schematic of the sensor electronics with parasitic capacitances.",
+                "image_type": "Journal figure: laboratory prototype photograph and circuit schematic",
+                "image_url": "https://www.frontiersin.org/files/Articles/1303180/frspt-04-1303180-HTML-r3/image_m/frspt-04-1303180-g001.jpg",
+                "source_page_url": "https://www.frontiersin.org/articles/10.3389/frspt.2023.1303180/full",
+                "publisher": "Frontiers in Space Technologies",
+                "credit": "Gscheidle, Witzel, Smolka and Reiss (TUM), Frontiers in Space Technologies",
+                "caption": "Figure 1. Patch electrode and electronics investigated in this study. (A) Picture of the patch electrode with a custom electronics board and annotations. (B) Schematic of the sensor electronics with parasitic capacitances.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset path from the publisher's image_m figure directory; the site's image-proxy wrapper was not used. The file resolved as image/jpeg and was visually checked. Reuse licence not verified in this run; check the article licence before republication."
+              }
+            ]
+          },
+          {
+            "name": "ProSEED permittivity sensor (ESA PROSPECT package)",
+            "type": "Planned flight element of PROSPECT; prototype tested in the laboratory",
+            "flight_status": "Not flown as of the 2024 source; current flight status not verified",
+            "mass": "Below 50 g including electronics (sensor)",
+            "power": "Below 300 mW without heaters (sensor)",
+            "measurement_duration": "1.5 to 16 s (default 5 s)",
+            "data_volume": "20 kB uncompressed (10 kB or less compressed)",
+            "operating_temperature": "Electronics -40 to +65 °C; electrode assembly -150 to +80 °C",
+            "frequency_range": "ELF AC signal, 1.5 to 200 Hz",
+            "relative_permittivity_range": "1 to 20",
+            "accuracy": "10% target accuracy (target value, not demonstrated)",
+            "electrode": "Emitting electrode diameter 10.8 mm; drill rod protrusion diameter 15 mm",
+            "ice_detection": "Target: detect ice below 1 wt% at about 125 K (target). A prototype detected water ice in cryogenic tests, described in the source as around -130 °C",
+            "host_drill": "ProSEED drill to 1,000 mm depth; sensor engaged beyond 40 cm in nominal operation; drill and positioner 23.4 kg; total ProSEED 31.8 kg including CEU 5.3 kg and harness 3.1 kg; drill box 257 x 228 x 1721 mm without PRJ and HDRM",
+            "source_urls": [
+              "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Dielectric Analyzer (LDA)",
+            "type": "Astronaut-deployed instrument in development; selected as an Artemis Program Deployed Instrument",
+            "flight_status": "Not flown; manifest not confirmed on the source page",
+            "mass": "Not publicly specified on the source page",
+            "dimensions": "Not publicly specified on the source page",
+            "power": "Not publicly specified on the source page",
+            "sensor_type": "Not stated on the source page",
+            "measurement_description": "Dielectric properties of the lunar surface, used to indicate regolith bulk density and how it changes with surface temperature, which bears on whether shallow subsurface ice exists",
+            "deployment": "Placed on the lunar surface by astronauts, where it operates as a small independent station",
+            "source_urls": [
+              "https://www.t.u-tokyo.ac.jp/en/press/pr2024-04-04-001"
+            ],
+            "images": [
+              {
+                "id": "lda_prototype_model_figure2",
+                "description": "Photograph of hardware presented as a prototype model of the Lunar Dielectric Analyzer (LDA), per the source-page caption. Shows an enclosed electronics board in a metal frame, with a hand holding a screwdriver in the foreground.",
+                "image_type": "Press-release photograph of prototype hardware",
+                "image_url": "https://www.t.u-tokyo.ac.jp/hs-fs/hubfs/press-release/2024/0404/001/fig2.jpg",
+                "source_page_url": "https://www.t.u-tokyo.ac.jp/en/press/pr2024-04-04-001",
+                "publisher": "University of Tokyo",
+                "credit": "University of Tokyo (press release)",
+                "caption": "Prototype model of the LDA.",
+                "section_placements": [
+                  "physical_specifications.examples[3]"
+                ],
+                "notes": "Identification as the LDA prototype rests on the source-page caption; no label on the hardware is visible in the image. Direct asset URL with the query string (width, height, name) removed; the file resolved as image/jpeg. Dimensions and mass cannot be read from the image."
+              }
+            ]
+          },
+          {
+            "name": "Terrain Testing Instrument (TTI), Chang'e 8",
+            "type": "Planned international payload; in development",
+            "flight_status": "Not flown; planned for the Chang'e 8 mission (2029 per search summary of the abstract)",
+            "mass": "Not verified. A secondary search summary reported about 1.5 kg; this was not confirmed against a primary source",
+            "dimensions": "Not verified",
+            "power": "Not verified",
+            "measurement_description": "Cone penetration resistance and shear strength from a vane-cone assembly, with an integrated permittivity sensor whose electrodes are integrated with the shear vanes, intended to infer bulk density and ice content",
+            "source_urls": [
+              "https://meetingorganizer.copernicus.org/EPSC2026/EPSC2026-748.html"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The examples span a 6.5 cm square prototype PCB [1], a 10.8 mm emitting electrode in a 15 mm drill-rod protrusion for PROSPECT [2], an astronaut-placed LDA with no published dimensions [3], and an Apollo 17 instrument with dimensions not verified [4]. Dimensions are not comparable across these designs.",
+        "mass_and_weight": "TUM prototype: 18 g, with the complete system stated as below 100 g including harness [1]. PROSPECT permittivity sensor: below 50 g including electronics. The ProSEED drill and positioner is 23.4 kg and the total ProSEED 31.8 kg including the CEU and harness; these are package-level figures and not permittivity-sensor masses [2]. LDA, Chang'e 8 TTI and Apollo 17 masses are not publicly specified in the verified sources.",
+        "power_requirements": "TUM prototype: about 1.5 W average for the non-optimised back-end electronics; negligible power with an onboard computer is a model projection [1]. PROSPECT permittivity sensor: below 300 mW without heaters. The ProSEED package limits of 50 W (line 1) and 200 W (line 2) are package-level interface limits, and the nominal operations cycle averages 85.6 W with a 200 W peak [2]. LDA, Chang'e 8 TTI and Apollo 17 power is not verified."
+      },
+      "environmental_and_operational_requirements": "Dielectric measurements depend on close electrical and mechanical contact between the electrode and the material. The TUM patch electrode was placed flat against the surface without a gap, and the authors describe the sensing depth as a simulation result rather than a measurement [1]. The TUM electronics are rated for -40 to 60 °C and were laboratory-tested between -40 and 40 °C [1]. The PROSPECT permittivity sensor electronics are specified for -40 to +65 °C and the electrode assembly for -150 to +80 °C [2]. Power is also a constraint: the TUM back-end drew about 1.5 W in its non-optimised laboratory form [1], while the PROSPECT permittivity sensor is specified below 300 mW without heaters [2]. The sources reviewed do not quantify dust tolerance, radiation tolerance or micrometeoroid protection for these sensors, so those properties are not publicly specified here.",
+      "limitations": "Permittivity alone does not identify ice. A measured value must be interpreted with a mixing model and assumptions about porosity and composition [1]. Electrode contact, air gaps, parasitic capacitance and calibration all affect the result. The TUM authors state that their sensor uncertainty must be reduced before the intended 1% resolution for water can be achieved [1]. The PROSPECT accuracy and ice-detection limit are target values rather than demonstrated lunar performance [2]. All TUM laboratory results used generic sand and JSC-1A lunar regolith simulant, not lunar samples or a field site [1].",
+      "transportation_and_deployment": {
+        "overview": "A permittivity sensor is a small component compared with a complete lunar payload. Its transportation requirements depend on how it is hosted: integrated into a drill (PROSPECT [2]), placed on the surface by astronauts (LDA [3]), or combined with a penetrometer on a lander or rover (Chang'e 8 TTI [6]). The TUM prototype is a laboratory device and has no flight configuration [1].",
+        "transportation_process": [
+          "Integrate the sensor into its host: the electrode and electronics in the ProSEED drill rod and drill system [2]; a patch electrode with a separate electronics board and shielded harness in the TUM prototype [1]; a hand-carried unit for the LDA [3].",
+          "Launch the spacecraft or lander on an Earth launch vehicle and transfer it towards the Moon. The launch vehicle and transfer profile are not specified in the sources reviewed for these instruments.",
+          "Land the host on the lunar surface. PROSPECT's first flight opportunity is described as a NASA CLPS mission designated CP-22, with a landing planned for 2026 at the time of the 2024 source; the lander provider is not named there [2].",
+          "Deploy the sensor: by drilling to 1,000 mm depth with the sensor engaged beyond 40 cm for PROSPECT [2]; by astronaut placement for the LDA [3]; by placing the patch electrode flat on the surface in laboratory tests [1]; or by penetration and shear-vane rotation for the Chang'e 8 TTI [6].",
+          "Connect power, data and thermal interfaces: PROSPECT's sensor is specified below 300 mW without heaters and produces up to 20 kB of uncompressed data per measurement [2]; the TUM back-end averaged about 1.5 W in its laboratory form [1]. The LDA power and data interfaces are not stated [3]."
+        ],
+        "deployment_methods": "Deployment depends on the host. PROSPECT's sensor is deployed through a drill and positioner that places it in the borehole at the sampled depth [2]. The LDA is deployed by astronauts, who place it on the lunar surface where it operates as a small independent station [3]. The TUM prototype is laid flat on the surface during laboratory tests and has not been tested in a deployment mechanism [1]. Chang'e 8's TTI uses a linear translation mechanism to drive the vane-cone into the regolith [6].",
+        "historical_examples": "The Apollo 17 experiment deployed a transmitter near the Lunar Module and a receiver on the Lunar Rover [4]. The Cassini-Huygens and Rosetta instruments were delivered by landers on other bodies [1]. No completed lunar permittivity sensor deployment is documented in the sources reviewed.",
+        "compatibility_assessment": "No compatibility with a specific lander, rover or drill is asserted in this article. The PROSPECT power and mass figures are for its own package or drill system, and the sources reviewed do not establish the CP-22 lander's interface compatibility with the sensor beyond the CLPS plan [2]. The LDA and Chang'e 8 TTI interface requirements are not publicly specified in the sources reviewed [3][6].",
+        "images": [
+          {
+            "id": "lda_artemis_deployment_artist_concept",
+            "description": "Artist's concept of an Artemis astronaut deploying an instrument on the lunar surface. Illustrative only; it is not an image of the Lunar Dielectric Analyzer itself.",
+            "image_type": "Artist's concept illustration",
+            "image_url": "https://www.t.u-tokyo.ac.jp/hs-fs/hubfs/press-release/2024/0404/001/fig1.jpg",
+            "source_page_url": "https://www.t.u-tokyo.ac.jp/en/press/pr2024-04-04-001",
+            "publisher": "University of Tokyo (press release page); image credited to NASA on that page",
+            "credit": "NASA, as credited on the University of Tokyo press release",
+            "caption": "Artist's concept of an Artemis astronaut deploying an instrument on the lunar surface.",
+            "section_placements": [
+              "overview",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct asset URL from the press-release figure with the query string (width, height, name) removed. The file resolved as image/jpeg on retrieval but was not visually inspected in this run. Reuse terms are those of NASA and the University of Tokyo and were not verified."
+          }
+        ]
+      },
+      "historical_significance": "Permittivity-based contact sensing has no completed lunar measurement among the sources reviewed. The Apollo 17 experiment established an early electromagnetic approach to lunar surface electrical properties [4][5]. Heritage from Cassini-Huygens, Rosetta and InSight, described in the TUM review, shows the technique's use on other bodies [1]. PROSPECT's permittivity sensor is a planned flight element rather than a flown instrument [2]. The LDA and the Chang'e 8 TTI are in development [3][6].",
+      "limitations_and_uncertainties": "The name 'dielectric permittivity sensor' describes a measurement class, not one design, so the specifications in this article belong to named instruments and must not be transferred between them. None of the sources reviewed reports a dedicated permittivity sensor making a flight measurement on the Moon. The Apollo 17 experiment is the only flown lunar example reviewed, and the sources describe it as an electromagnetic transmission experiment whose results were interpreted in terms of near-surface electrical properties [4][5]. Heritage from Cassini-Huygens, Rosetta and Apollo 17 is informative but different in purpose and configuration. Several values, including the PROSPECT accuracy, the PROSPECT ice-detection limit, the LDA specifications and the Chang'e 8 instrument mass, are targets, unpublished or unverified in this run.",
+      "images": [
+        {
+          "id": "lda_artemis_deployment_artist_concept",
+          "description": "Artist's concept of an Artemis astronaut deploying an instrument on the lunar surface. Illustrative only; it is not an image of the Lunar Dielectric Analyzer itself.",
+          "image_type": "Artist's concept illustration",
+          "image_url": "https://www.t.u-tokyo.ac.jp/hs-fs/hubfs/press-release/2024/0404/001/fig1.jpg",
+          "source_page_url": "https://www.t.u-tokyo.ac.jp/en/press/pr2024-04-04-001",
+          "publisher": "University of Tokyo (press release page); image credited to NASA on that page",
+          "credit": "NASA, as credited on the University of Tokyo press release",
+          "caption": "Artist's concept of an Artemis astronaut deploying an instrument on the lunar surface.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL from the press-release figure with the query string (width, height, name) removed. The file resolved as image/jpeg on retrieval but was not visually inspected in this run. Reuse terms are those of NASA and the University of Tokyo and were not verified."
+        },
+        {
+          "id": "tum_patch_electrode_prototype_figure1",
+          "description": "Figure 1 of Gscheidle et al. (2024): (A) photograph of the TUM patch electrode and custom electronics board; (B) schematic of the sensor electronics with parasitic capacitances.",
+          "image_type": "Journal figure: laboratory prototype photograph and circuit schematic",
+          "image_url": "https://www.frontiersin.org/files/Articles/1303180/frspt-04-1303180-HTML-r3/image_m/frspt-04-1303180-g001.jpg",
+          "source_page_url": "https://www.frontiersin.org/articles/10.3389/frspt.2023.1303180/full",
+          "publisher": "Frontiers in Space Technologies",
+          "credit": "Gscheidle, Witzel, Smolka and Reiss (TUM), Frontiers in Space Technologies",
+          "caption": "Figure 1. Patch electrode and electronics investigated in this study. (A) Picture of the patch electrode with a custom electronics board and annotations. (B) Schematic of the sensor electronics with parasitic capacitances.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset path from the publisher's image_m figure directory; the site's image-proxy wrapper was not used. The file resolved as image/jpeg and was visually checked. Reuse licence not verified in this run; check the article licence before republication."
+        },
+        {
+          "id": "lda_prototype_model_figure2",
+          "description": "Photograph of hardware presented as a prototype model of the Lunar Dielectric Analyzer (LDA), per the source-page caption. Shows an enclosed electronics board in a metal frame, with a hand holding a screwdriver in the foreground.",
+          "image_type": "Press-release photograph of prototype hardware",
+          "image_url": "https://www.t.u-tokyo.ac.jp/hs-fs/hubfs/press-release/2024/0404/001/fig2.jpg",
+          "source_page_url": "https://www.t.u-tokyo.ac.jp/en/press/pr2024-04-04-001",
+          "publisher": "University of Tokyo",
+          "credit": "University of Tokyo (press release)",
+          "caption": "Prototype model of the LDA.",
+          "section_placements": [
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Identification as the LDA prototype rests on the source-page caption; no label on the hardware is visible in the image. Direct asset URL with the query string (width, height, name) removed; the file resolved as image/jpeg. Dimensions and mass cannot be read from the image."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lda_artemis_deployment_artist_concept",
+          "description": "Artist's concept of an Artemis astronaut deploying an instrument on the lunar surface. Illustrative only; it is not an image of the Lunar Dielectric Analyzer itself.",
+          "image_type": "Artist's concept illustration",
+          "image_url": "https://www.t.u-tokyo.ac.jp/hs-fs/hubfs/press-release/2024/0404/001/fig1.jpg",
+          "source_page_url": "https://www.t.u-tokyo.ac.jp/en/press/pr2024-04-04-001",
+          "publisher": "University of Tokyo (press release page); image credited to NASA on that page",
+          "credit": "NASA, as credited on the University of Tokyo press release",
+          "caption": "Artist's concept of an Artemis astronaut deploying an instrument on the lunar surface.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL from the press-release figure with the query string (width, height, name) removed. The file resolved as image/jpeg on retrieval but was not visually inspected in this run. Reuse terms are those of NASA and the University of Tokyo and were not verified."
+        }
+      ],
+      "references": [
+        {
+          "title": "Permittivity sensor development for lunar and planetary surface exploration",
+          "authors": "Gscheidle C, Witzel T, Smolka A, Reiss P",
+          "publisher": "Frontiers in Space Technologies (vol. 4, 2023; published 10 January 2024)",
+          "date": "",
+          "doi": "10.3389/frspt.2023.1303180",
+          "url": "https://www.frontiersin.org/articles/10.3389/frspt.2023.1303180/full",
+          "notes": "Full text read. Source for the TUM prototype specifications, laboratory results, heritage list and TRL statement."
+        },
+        {
+          "title": "PROSPECT: A comprehensive sample acquisition and analysis package for lunar science and exploration",
+          "authors": "Trautner R et al.",
+          "publisher": "Frontiers in Space Technologies (vol. 5, 2024; published 3 April 2024)",
+          "date": "",
+          "doi": "10.3389/frspt.2024.1331828",
+          "url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+          "notes": "Full text read to the 100,000-character limit of the fetch tool; the final 2,819 characters were not read. Status statements are as of the 2024 publication date."
+        },
+        {
+          "title": "UTokyo instrument selected for NASA's Artemis deployed instrument program (press release)",
+          "authors": "",
+          "publisher": "University of Tokyo",
+          "date": "2024-04-04",
+          "doi": "",
+          "url": "https://www.t.u-tokyo.ac.jp/en/press/pr2024-04-04-001",
+          "notes": "Source for LDA selection, team, measurement purpose, astronaut deployment and figures 1 and 2."
+        },
+        {
+          "title": "Apollo 17 Lunar Surface Electrical Properties (SEP) instrument description (a17l_sep)",
+          "authors": "",
+          "publisher": "NASA Planetary Data System, Geosciences Node",
+          "date": "",
+          "doi": "",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17l_sep.xml",
+          "notes": "Source for the transmitter and receiver configuration. Mass, power, frequency and dates are not stated on this page."
+        },
+        {
+          "title": "Apollo 17 surface electrical properties experiment (NASA NTRS record 19750013120; title and authors not verified in this run)",
+          "authors": "",
+          "publisher": "NASA Technical Reports Server",
+          "date": "",
+          "doi": "",
+          "url": "https://ntrs.nasa.gov/api/citations/19750013120/downloads/19750013120.pdf",
+          "notes": "Identified from search metadata; full text not read. Used only for the 1-32 MHz operating range and the interpretation statement, both flagged as abstract-level."
+        },
+        {
+          "title": "Chang'e 8 Terrain Testing Instrument with integrated permittivity sensor (EPSC 2026 abstract EPSC2026-748)",
+          "authors": "Richter, Zou, Foing, Flahaut, Ye, Zhao (per search metadata)",
+          "publisher": "Europlanet Science Congress 2026 (Copernicus Meetings)",
+          "date": "",
+          "doi": "",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2026/EPSC2026-748.html",
+          "notes": "Abstract identified by search; full text not read. Used for the vane-cone design, permittivity integration and 2029 plan as reported in search summary."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[1]": "payload.article.physical_specifications.examples[1].images",
+      "physical_specifications.examples[3]": "payload.article.physical_specifications.examples[3].images",
+      "transportation_and_deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Scope of this run: article research used web search and fetch of the publisher, NASA PDS, University of Tokyo and Frontiers pages on the date of the run. Items labelled as abstract-level or search-metadata were not read in full.",
+    "Catalogue check: payload 089 is 'Dielectric permittivity sensor' under category 4, 'Subsurface exploration and drilling', per lunar_payloads_catalogue_320.md. The catalogue was not edited.",
+    "Flight status: no dedicated dielectric permittivity sensor is confirmed as having flown on the Moon in the sources reviewed. The Apollo 17 experiment is flown but is not a dedicated permittivity sensor.",
+    "Prototype and target values: TUM figures are laboratory prototype results; the TRL 6 status is planned. PROSPECT accuracy (10%) and the ice-detection limit (below 1 wt%) are targets. The PROSPECT ice test temperature is inconsistent between 125 K and around -130 °C in the same source.",
+    "TUM geometry discrepancy: the 6.5 cm PCB side length and the 60 mm electrode diameter with 30 mm outer radius are both given in the source; the difference is unexplained. The 6.5 cm figure is used for the prototype dimension.",
+    "Mission status: the PROSPECT CP-22 landing (2026) and 2025 delivery target come from the April 2024 source and were not verified against current NASA CLPS or ESA sources. The lander provider is not named in the source. No compatibility with a named lander is asserted.",
+    "LDA: no mass, dimensions, power or sensor type is given on the University of Tokyo page. The Artemis III association comes from secondary news search summary and is not confirmed by the page. The LDA prototype identification rests on the page caption.",
+    "Chang'e 8 TTI: source is a conference abstract read at search-summary level. The 1.5 kg mass and the planned launch timing are not verified; sources disagree on launch timing. No primary CNSA specification was found.",
+    "Apollo 17 experiment: the PDS overview gives configuration only. The 1-32 MHz range and interpretation statement come from abstract-level search metadata for NTRS record 19750013120; the full report was not read.",
+    "Images: three direct image URLs were verified to resolve as image/jpeg and their source pages were checked. The overview and transportation image (artist's concept) is not LDA-specific. No verified image was found for PROSPECT, the Apollo experiment or the Chang'e 8 TTI.",
+    "Licensing: image and figure reuse terms were not verified except where stated. Figures from Frontiers and the University of Tokyo must be cleared before republication.",
+    "Research status: the full technical-specification audit has not been completed; direct image assets were checked for resolution but full-resolution downloads were not checked against source-page metadata."
+  ]
+}

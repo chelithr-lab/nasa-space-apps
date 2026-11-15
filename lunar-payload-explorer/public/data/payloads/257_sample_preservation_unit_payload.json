@@ -1,0 +1,344 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 13,
+    "name": "Sample collection, preservation and return"
+  },
+  "payload": {
+    "number": 257,
+    "name": "Sample preservation unit",
+    "article": {
+      "overview": "A sample preservation unit is hardware whose job is to keep a sample in the condition it had on the Moon while the sample is collected, sealed, carried back, and opened on Earth. The term describes a function rather than one standard device. The sources reviewed describe several flown containers and sealing systems, plus one proposed cold-curation capability for future Artemis samples [1][3][4][6][8].\n\nThe best-documented historical example is the Apollo Lunar Sample Return Container (ALSRC), a triple-sealed aluminium box closed under vacuum so that its internal pressure did not exceed the lunar ambient pressure [1][2]. The Chinese Chang'e-5 and Chang'e-6 missions returned samples in sealed containers, handled through automated sampling and sealing hardware or transferred in lunar orbit [6][7][8]. NASA's Johnson Space Center (JSC) Curation office reports that it is preparing to receive Artemis samples, including volatile-rich samples from cold regions, that will need sub-zero or cryogenic handling [4].",
+      "description": "A sample preservation unit is a sealed container, or a set of containers and handling equipment, that protects a returned sample from three main risks. The first is loss of its original state, for example through exposure to air, moisture or temperature cycling. The second is shock and vibration during launch, flight and landing. The third is contamination, both of the sample by Earth materials and of the Earth environment by the sample.\n\nPreservation can therefore mean several things: keeping the sample under vacuum or an inert gas, keeping volatile components such as ices in a cold state, protecting the sample from mechanical damage, and keeping a documented chain of custody from collection to laboratory opening. The payload name covers the unit that provides this containment, not the sampling tool that collects the material.",
+      "scientific_purpose_and_applications": "The purpose of a sample preservation unit is to return material that is scientifically representative of its lunar setting. Chemical and physical measurements on lunar material are only meaningful if the sample has not been altered by the return journey or by handling on Earth. This matters most for volatile components, which can be lost when pressure or temperature changes, and for sample surfaces, which can react with oxygen and water vapour [4][9].\n\nApplications include the study of lunar geology and regolith history, the search for volatiles, and the preservation of samples for future analytical methods. NASA reports that one vacuum-sealed Apollo 17 drive tube section, collected in 1972, was opened in the present decade after about 50 years of storage [3]. Artemis planning explicitly includes preserving sub-zero and cryogenic samples from permanently shadowed regions [4].",
+      "operating_principle": "A sample preservation unit is generally passive in the sense that it relies on seals, a controlled gas environment and mechanical protection rather than on active instruments. In the Apollo design, the box was closed under vacuum, and an aluminium mesh liner absorbed impacts during the return flight [1][2]. Before closing on the Moon, the seals were protected by a Teflon film and a cloth cover, which were removed just before the box was shut [1][2].\n\nThe Chang'e-5 approach used automated sampling and sealing hardware. Secondary coverage describes a funnel that protected the container during deposition of regolith, and a sweeping action that removed excess material so that the lid could close [6][7][11]. A sealing system of this kind must control contamination and mechanical interference at the same time, because even a small amount of material on a seal can prevent closure.\n\nOn Earth, the approach changes to controlled-atmosphere handling. Early Apollo-era work showed that handling geologic samples in vacuum gloveboxes produced unacceptable contamination, so later processing moved to high-purity nitrogen under positive pressure [9]. Cold curation, as planned for Artemis, extends this principle by controlling temperature as well as atmosphere [4].",
+      "scientific_importance": "Returned samples are the only way to measure certain lunar materials directly in Earth laboratories. Their scientific value depends on how well their original state has been preserved, which makes the containment unit as important to the science as the sample itself.\n\nThe Apollo 17 drive tube sample 73001 illustrates the point. NASA reports that it was vacuum sealed on the Moon, has been stored in a protective outer vacuum container and an atmosphere-controlled environment since return, and was opened only recently [3]. The sample is therefore a test of long-term preservation as well as a scientific specimen.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a sample preservation unit. The examples below differ in purpose, construction, flight status and documentation. Values are given only for the specific container or system named, and the source is cited for each.",
+        "examples": [
+          {
+            "name": "Apollo Lunar Sample Return Container (ALSRC)",
+            "type": "Flown sample return container (Apollo program)",
+            "manufacturer": "Union Carbide Corporation, Nuclear Division (per Smithsonian records)",
+            "containers_per_mission": 2,
+            "flight_history": "Apollo 11 (July 1969, 21.8 kg of lunar material per the Smithsonian record); Apollo 12 and 16 (per the Smithsonian record). Opened at the Lunar Receiving Laboratory in Houston for the Apollo 11 container.",
+            "mass_kg_by_record": {
+              "Apollo 11 ALSRC record": 8.8,
+              "Apollo 12 and 16 ALSRC record": 7.2
+            },
+            "overall_dimensions_cm_by_record": {
+              "Apollo 11 ALSRC record, closed overall": "23.5 x 35.6 x 48.3",
+              "Apollo 11 ALSRC record, 3-D": "48.3 x 35.6 x 20.3",
+              "Apollo 12 and 16 ALSRC record": "20.3 x 48.3 x 29.8"
+            },
+            "materials": "7075 aluminium alloy case and 2024 aluminium alloy mesh lining (both records); silicone rubber, stainless steel and paint (Apollo 12 and 16 record).",
+            "sealing_and_protection": "Triple-seal aluminium box, closed under vacuum so that its internal pressure did not exceed the lunar ambient pressure. Teflon film and a cloth cover protected the seals on the Moon until closing. The aluminium mesh liner absorbed impacts during the return flight.",
+            "power_consumption_w": "Not publicly specified; no electrical interface is described in the sources reviewed.",
+            "source_urls": [
+              "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-11/nasm_A19710814000",
+              "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-12-and-16/nasm_A19772508000"
+            ],
+            "images": [
+              {
+                "id": "smithsonian_alsrc_apollo_11_opened_display",
+                "description": "Apollo Lunar Sample Return Container (Apollo 11) shown opened in the Smithsonian object gallery.",
+                "image_type": "Museum collection photograph",
+                "image_url": "https://airandspace.si.edu/sites/default/files/images/image-albums/5234h.jpg",
+                "source_page_url": "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-11/nasm_A19710814000",
+                "publisher": "Smithsonian National Air and Space Museum",
+                "credit": "Not stated in the fetched text. The object credit line reads 'Transferred from the National Aeronautics and Space Administration'.",
+                "caption": "Apollo Lunar Sample Return Container opened for display (Smithsonian object gallery).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL checked over HTTP on 2026-11-13 (status 200, image/jpeg, about 5.3 MB) and has no query string or fragment. The gallery lists it as the container opened for display. Smithsonian Terms of Use apply, and the page notes that usage conditions may apply to some images; rights are not independently confirmed beyond that."
+              },
+              {
+                "id": "smithsonian_alsrc_apollo_11_closed_case_gallery",
+                "description": "Closed Apollo 11 ALSRC aluminium case with hinged lid and latches (object gallery image).",
+                "image_type": "Museum collection photograph",
+                "image_url": null,
+                "source_page_url": "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-11/nasm_A19710814000",
+                "publisher": "Smithsonian National Air and Space Museum",
+                "credit": "Not confirmed",
+                "caption": "Closed Apollo 11 ALSRC case, from the Smithsonian object gallery (alt text: closed rectangular aluminium case with four hinges on the lid and latches).",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "The gallery image is served from an ids.si.edu delivery endpoint whose only working form depends on query parameters. Removing them would leave an unusable endpoint, so image_url is null under the URL policy. A linked source-page reference is used in the Markdown instead of an embedded image."
+              }
+            ],
+            "text": [
+              "The ALSRC was built by Union Carbide Corporation, Nuclear Division, and is described as a triple-sealed aluminium box [1][2]. The Smithsonian record for the Apollo 11 container states that the Apollo 11 mission carried 21.8 kg (47.7 lb) of lunar material from the Sea of Tranquility, that the sample-laden container was opened under controlled conditions at the Lunar Receiving Laboratory in Houston, and that the container was later transferred to the Smithsonian and put on display in 1970 [1]. The record also states that each mission used two of these containers [1][2].",
+              "The two Smithsonian records give different figures that should not be merged. The Apollo 11 record gives an overall closed size and a 3-D size, and the Apollo 12 and 16 record gives a single overall size. Both records list a 7075 aluminium alloy case and a 2024 aluminium alloy mesh lining, and the Apollo 12 and 16 record also lists silicone rubber, stainless steel and paint [1][2].",
+              "Both records are from the same museum and describe the same container type, but they are different records and the Apollo 11 record lists two size values. The differing masses are recorded as published and have not been reconciled [1][2]."
+            ]
+          },
+          {
+            "name": "Apollo 17 vacuum-sealed drive tube sample 73001",
+            "type": "Flown sealed sample section (Apollo 17)",
+            "mass_kg": "Not publicly specified",
+            "dimensions_cm": "Not publicly specified",
+            "power_consumption_w": "Not publicly specified",
+            "source_urls": [
+              "https://www.nasa.gov/humans-in-space/nasa-studies-new-50-year-old-lunar-sample-to-prep-for-return-to-moon"
+            ],
+            "images": [],
+            "text": [
+              "NASA reports that sample 73001 is the lower half of a double drive tube collected in December 1972 in the Taurus-Littrow Valley. It was sealed under vacuum on the Moon. NASA states that only two drive tubes were vacuum sealed on the Moon in this way, and that this is the first to be opened [3]. The sealed section has been kept inside a protective outer vacuum container and an atmosphere-controlled environment at JSC since return [3].",
+              "NASA describes a sequence in which the outer protective tube was opened first and its gas captured, followed by a multi-week process of piercing the inner container to collect any remaining lunar gas [3]. The source summaries used for this article differ on the detail of what the captured gas showed, so no result is stated here. The sources give no published container mass, dimensions or pressure values for this tube [3]."
+            ]
+          },
+          {
+            "name": "Chang'e-5 sampling, encapsulating and sealing system",
+            "type": "Flown automated sampling and sealing system (Chang'e-5, 2020)",
+            "mass_kg": "System 1.5 kg in total; sample container 360 g (secondary coverage, unverified)",
+            "dimensions_cm": "Not publicly specified",
+            "power_consumption_w": "Not publicly specified",
+            "source_urls": [
+              "https://doi.org/10.1360/sst-2021-0093",
+              "https://news.cgtn.com/news/2020-12-03/China-s-Chang-e-5-completes-lunar-surface-sampling-and-sealing-VUEJRIIBji/index.html",
+              "https://polyu.edu.hk/publications/pulse-polyu/issue/202012/polyu-in-the-news/polyu-made-space-instruments-complete-lunar-sampling-for-chang-e-5",
+              "https://www.leonarddavid.com/sampling-the-moons-surface-innovation-precision-and-reliability"
+            ],
+            "images": [],
+            "text": [
+              "The Chang'e-5 sampling, encapsulating and sealing system was developed for the Chinese lunar sample return mission. The primary paper is listed as Scientia Sinica Technologica, 2021 [5], but its full text could not be retrieved for this article, so the paper is cited only for its bibliographic identity.",
+              "Secondary coverage reports that the sealing and packaging system weighed 1.5 kg in total, of which the sample container weighed 360 g [11]. That figure is not verified against a primary source. The same coverage describes a robotic arm, guided by vision, that lifted the container into the ascender [11]. The Polytechnic University team reports that it built the primary sealing system and container with the China Academy of Space Technology [7][11]. CGTN reports that sealing happened on the Moon after sampling ended on 2 December 2020, so that the samples would be protected from the outside environment during the return [6]."
+            ]
+          },
+          {
+            "name": "Chang'e-6 sealed sample container",
+            "type": "Flown sealed sample container (Chang'e-6, 2024)",
+            "mass_kg": "Container capacity about 2 kg; returned sample mass 1,935.3 g (secondary news, unverified)",
+            "dimensions_cm": "Not publicly specified",
+            "power_consumption_w": "Not publicly specified",
+            "source_urls": [
+              "https://chinadailyhk.com/hk/article/585057",
+              "https://news.cgtn.com/news/2024-09-21/Chang-e-6-lunar-samples-from-moon-s-far-side-unveiled-1x57hdm2puE/p.html"
+            ],
+            "images": [],
+            "text": [
+              "Chinese news reports state that the Chang'e-6 ascender, after lunar orbit, docked with the orbiter-reentry capsule and transferred a sealed container holding the samples [8]. Reports give the container's capacity as about 2 kg and the returned sample mass as 1,935.3 g [8]. These are secondary news figures and have not been verified against a primary technical source.",
+              "CGTN reports that the samples were unsealed about three months after return, in a nitrogen-filled sealed cabinet at the Chinese Lunar Sample Laboratory [10]. The container's materials, seal type and contamination control design are not described in the sources reviewed."
+            ]
+          },
+          {
+            "name": "Artemis cold and sealed curation capability (proposed)",
+            "type": "Proposed JSC curation capability (not flown)",
+            "mass_kg": "Not publicly specified",
+            "dimensions_cm": "Not publicly specified",
+            "power_consumption_w": "Not publicly specified",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20260001318"
+            ],
+            "images": [],
+            "text": [
+              "JSC Curation, which holds all NASA extraterrestrial samples, plans cold sample curation for Artemis returns, with a focus on handling volatile-rich samples from cold regions at low temperatures and limiting changes to the samples [4]. The abstract describes the need as handling ices and volatile components at sub-zero or even cryogenic temperatures [4].",
+              "This is a proposed capability. The abstract gives no target temperatures, facility design, container specification or completion date [4]. Its status must not be described as operational or as flight hardware."
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions and proportions are only comparable between the two Apollo ALSRC records, which are the same container type. The Chang'e-5 container and the Apollo 17 tube have no comparable published geometry in the sources reviewed. The Apollo containers are about 20 to 48 cm in their larger dimensions and are described as cases rather than instruments [1][2].",
+        "mass_and_weight": "Mass values are reported only for the Apollo ALSRC records (8.8 kg for the Apollo 11 record and 7.2 kg for the Apollo 12 and 16 record) [1][2]. The Chang'e-5 system mass (1.5 kg, container 360 g) is secondary-source only [11]. No mass is published for the Apollo 17 tube or the Chang'e-6 container in the sources reviewed [3][8].",
+        "power_requirements": "No power requirement is stated for the Apollo ALSRC, which is described as a sealed container with no electrical interface in the sources reviewed [1][2]. Power requirements for the Chang'e-5 and Chang'e-6 systems and the proposed Artemis capability are not publicly specified in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A sample preservation unit must keep the sample in a controlled state while the sample passes through the lunar surface, the ascent, the return flight and Earth reception. The Apollo ALSRC kept a lunar-like vacuum around the samples and shielded them from the shocks of the return flight [1][2]. The Chang'e-5 and Chang'e-6 reports describe sealing to protect samples from the outside environment during return [6][8].\n\nCold curation adds a thermal requirement. Samples from permanently shadowed and other cold regions may contain ices and other volatiles that need sub-zero or cryogenic handling [4]. Earth-side handling of Apollo samples used high-purity nitrogen gloveboxes under positive pressure [9]. A numerical lunar surface temperature requirement for any specific unit is not given here, because the sources reviewed do not publish one for these containers.",
+      "limitations": "The term describes a function, so no single design can be assessed as representative. Each example reflects a different mission, era and set of documentation.\nMost of the Chang'e-5 and Chang'e-6 technical information comes from secondary news or search-excerpt coverage. Their masses, capacities and steps should be treated as provisional until primary technical papers are read in full.\nThe Apollo records give dimensions and masses but do not publish leak rates, seal performance data or internal pressures. The statement that the seals protected the vacuum is a design description, not a measured result [1][2].\nThe Artemis cold curation capability is proposed and described only in an abstract [4]. It has no demonstrated performance in the sources reviewed.",
+      "transportation_and_deployment": {
+        "overview": "A sample preservation unit is part of the sample return chain, not a payload that is deployed as a standalone instrument on the surface. Its role runs from the moment sample material is encapsulated on the surface, through transfer into an ascent vehicle, the return flight, and laboratory opening on Earth. Each handoff is a containment risk, so the interfaces between them are the key engineering constraints [1][2][6][8].",
+        "transportation_process": [
+          "Collect material and encapsulate it on the surface, using either a robotic sampler and funnel, as in Chang'e-5 [6][11], or astronaut-operated tools and containers, as in Apollo [1][2].",
+          "Seal the container on the surface. Apollo seals were protected by Teflon film and a cloth cover until closing [1][2]. Chang'e-5 used a sweeping action to clear the lid before closure [11].",
+          "Transfer the sealed container into the ascent vehicle. Chang'e-5 used a robotic arm to lift the container into the ascender [11]. Chang'e-6 transferred its sealed container from the ascender to the orbiter-reentry capsule in lunar orbit [8].",
+          "Return to Earth with mechanical protection. The Apollo container used an aluminium mesh liner to absorb impacts [1][2].",
+          "Receive and open on Earth under controlled conditions. Apollo containers were opened at the Lunar Receiving Laboratory [1][9]. Chang'e-6 samples were unsealed about three months after return in a nitrogen-filled cabinet [10]."
+        ],
+        "deployment_methods": "A sample preservation unit is not deployed. Containers are handled by a robotic arm or by astronauts, placed into an ascent vehicle, and carried to Earth. Deployment-type requirements therefore apply to the sample handling interface, not to the container itself. The sources reviewed give no details of mechanical interfaces for future landers.",
+        "historical_examples": "The Apollo 11 ALSRC flew in July 1969 [1]. The Apollo 17 sealed drive tube was collected in December 1972 and was opened in the present decade [3]. The Chang'e-5 system operated in 2020 [6][7], and the Chang'e-6 container returned samples in 2024 [8][10]. The Artemis cold curation capability is a planned development [4].",
+        "compatibility_assessment": "No compatibility claim is made with any named lander, ascender, capsule or rover. The sources reviewed do not provide verified interface data for any future vehicle, so compatibility cannot be assessed here. A future unit's compatibility would need its mass, volume, thermal and contamination requirements matched against an agreed vehicle interface.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 11 ALSRC is historically significant because it was the container used to return the first lunar rock and soil samples [1]. It went on public display in 1970 after transfer to the Smithsonian [1].\n\nThe Apollo 17 sealed drive tube shows that vacuum-sealed Apollo-era material was kept for about 50 years before it was opened [3]. The Chang'e-5 and Chang'e-6 missions show that sealed sample return has continued in a different national programme [6][8][10]. The Artemis curation work reflects the need to handle cold, volatile-rich samples that the Apollo containers were not designed to preserve [4].",
+      "limitations_and_uncertainties": "Apollo-era technical details, including the specific sealing sequence, are drawn from museum records rather than engineering test reports [1][2].\nThe Apollo 17 tube's gas and internal conditions are described in NASA's article but are not quantified there [3].\nThe Lunar Receiving Laboratory history (vacuum gloveboxes replaced by nitrogen processing) is taken from a NASA technical paper that could not be read in full [9]. It is therefore stated as reported and not independently checked.\nThe Chang'e-5 primary paper could not be retrieved, so its technical content is not used [5].\nThe Artemis cold curation facility, temperatures and timeline are not published in the sources read [4].",
+      "images": [
+        {
+          "id": "smithsonian_alsrc_apollo_11_opened_display",
+          "description": "Apollo Lunar Sample Return Container (Apollo 11) shown opened in the Smithsonian object gallery.",
+          "image_type": "Museum collection photograph",
+          "image_url": "https://airandspace.si.edu/sites/default/files/images/image-albums/5234h.jpg",
+          "source_page_url": "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-11/nasm_A19710814000",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Not stated in the fetched text. The object credit line reads 'Transferred from the National Aeronautics and Space Administration'.",
+          "caption": "Apollo Lunar Sample Return Container opened for display (Smithsonian object gallery).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL checked over HTTP on 2026-11-13 (status 200, image/jpeg, about 5.3 MB) and has no query string or fragment. The gallery lists it as the container opened for display. Smithsonian Terms of Use apply, and the page notes that usage conditions may apply to some images; rights are not independently confirmed beyond that."
+        },
+        {
+          "id": "smithsonian_alsrc_apollo_11_closed_case_gallery",
+          "description": "Closed Apollo 11 ALSRC aluminium case with hinged lid and latches (object gallery image).",
+          "image_type": "Museum collection photograph",
+          "image_url": null,
+          "source_page_url": "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-11/nasm_A19710814000",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Not confirmed",
+          "caption": "Closed Apollo 11 ALSRC case, from the Smithsonian object gallery (alt text: closed rectangular aluminium case with four hinges on the lid and latches).",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "The gallery image is served from an ids.si.edu delivery endpoint whose only working form depends on query parameters. Removing them would leave an unusable endpoint, so image_url is null under the URL policy. A linked source-page reference is used in the Markdown instead of an embedded image."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "smithsonian_alsrc_apollo_11_opened_display",
+          "description": "Apollo Lunar Sample Return Container (Apollo 11) shown opened in the Smithsonian object gallery.",
+          "image_type": "Museum collection photograph",
+          "image_url": "https://airandspace.si.edu/sites/default/files/images/image-albums/5234h.jpg",
+          "source_page_url": "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-11/nasm_A19710814000",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Not stated in the fetched text. The object credit line reads 'Transferred from the National Aeronautics and Space Administration'.",
+          "caption": "Apollo Lunar Sample Return Container opened for display (Smithsonian object gallery).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL checked over HTTP on 2026-11-13 (status 200, image/jpeg, about 5.3 MB) and has no query string or fragment. The gallery lists it as the container opened for display. Smithsonian Terms of Use apply, and the page notes that usage conditions may apply to some images; rights are not independently confirmed beyond that."
+        }
+      ],
+      "references": [
+        {
+          "title": "Apollo Lunar Sample Return Container (ALSRC), Apollo 11 (NASM A19710814000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "author": null,
+          "publication_date": "Not stated on the record",
+          "url": "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-11/nasm_A19710814000",
+          "access_note": "Museum object record read 2026-11-13. Primary museum record for the object."
+        },
+        {
+          "title": "ALSRC, Apollo Lunar Sample Return Container, Apollo 12 and 16 (NASM A19772508000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "author": null,
+          "publication_date": "Not stated on the record",
+          "url": "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-12-and-16/nasm_A19772508000",
+          "access_note": "Museum object record read 2026-11-13. Primary museum record for the object."
+        },
+        {
+          "title": "NASA Studies New 50-Year-Old Lunar Sample to Prep for Return to Moon (Apollo 17 sample 73001)",
+          "publisher": "NASA",
+          "author": null,
+          "publication_date": "Not confirmed (page byline date conflicts with the described events)",
+          "url": "https://www.nasa.gov/humans-in-space/nasa-studies-new-50-year-old-lunar-sample-to-prep-for-return-to-moon",
+          "access_note": "Read through a summarising fetch tool; quotations are not verbatim from the page."
+        },
+        {
+          "title": "Adaptive Curation at NASA Johnson Space Center - Preparing for Artemis Samples By Leveraging Proven Practices and Innovative Solutions (NTRS 20260001318)",
+          "publisher": "NASA Johnson Space Center (conference abstract, COSPAR 46th Scientific Assembly)",
+          "author": "Andrea D. Harrington, Juliane Gross, Michael C. Huh, Ryan A. Zeigler, Alissa Madera, Jemma Davidson",
+          "publication_date": "Not stated; conference held August 2026",
+          "url": "https://ntrs.nasa.gov/citations/20260001318",
+          "access_note": "Abstract only, read through a summarising fetch tool. Describes planned capability, not a completed facility."
+        },
+        {
+          "title": "Design and implementation of sampling, encapsulating, and sealing system of Chang'e-5",
+          "publisher": "Scientia Sinica Technologica (DOI 10.1360/sst-2021-0093)",
+          "author": "Xiangjin Deng, Yanhong Zheng, Shengyi Jin, Meng Yao (partial list from an aggregator page)",
+          "publication_date": "2021 (aggregator lists 2021-06-01)",
+          "url": "https://doi.org/10.1360/sst-2021-0093",
+          "access_note": "DOI resolved, but the article full text could not be retrieved. Only bibliographic metadata is used."
+        },
+        {
+          "title": "China's Chang'e-5 completes lunar surface sampling and sealing",
+          "publisher": "CGTN",
+          "author": null,
+          "publication_date": "2020-12-03",
+          "url": "https://news.cgtn.com/news/2020-12-03/China-s-Chang-e-5-completes-lunar-surface-sampling-and-sealing-VUEJRIIBji/index.html",
+          "access_note": "Secondary news source (state broadcaster); seen as a search excerpt."
+        },
+        {
+          "title": "PolyU-made space instruments complete lunar sampling for Chang'e 5",
+          "publisher": "The Hong Kong Polytechnic University (PolyU) news",
+          "author": null,
+          "publication_date": "2020-12 (from page path)",
+          "url": "https://polyu.edu.hk/publications/pulse-polyu/issue/202012/polyu-in-the-news/polyu-made-space-instruments-complete-lunar-sampling-for-chang-e-5",
+          "access_note": "Secondary university news item; seen as a search excerpt."
+        },
+        {
+          "title": "Chang'e-6 lunar far-side sample return report (China Daily HK)",
+          "publisher": "China Daily Hong Kong edition",
+          "author": null,
+          "publication_date": "2024-06-06",
+          "url": "https://chinadailyhk.com/hk/article/585057",
+          "access_note": "Secondary news source; seen as a search excerpt. Mass and container capacity figures are not verified against a primary technical source."
+        },
+        {
+          "title": "NASA technical paper on Lunar Receiving Laboratory and Apollo sample handling (NTRS 20120000717)",
+          "publisher": "NASA (NTRS)",
+          "author": "Not verified",
+          "publication_date": "Not verified",
+          "url": "https://ntrs.nasa.gov/api/citations/20120000717/downloads/20120000717.pdf",
+          "access_note": "The PDF could not be read in this session. Statements attributed to it come from a search excerpt only and are flagged as unverified."
+        },
+        {
+          "title": "Chang'e-6 lunar samples from the Moon's far side unveiled",
+          "publisher": "CGTN",
+          "author": null,
+          "publication_date": "2024-09-21 (from page path)",
+          "url": "https://news.cgtn.com/news/2024-09-21/Chang-e-6-lunar-samples-from-moon-s-far-side-unveiled-1x57hdm2puE/p.html",
+          "access_note": "Secondary news source; seen as a search excerpt."
+        },
+        {
+          "title": "Sampling the Moon's surface: innovation, precision and reliability (Chang'e-5 hardware coverage)",
+          "publisher": "Leonard David (online article)",
+          "author": "Leonard David",
+          "publication_date": "Not verified",
+          "url": "https://www.leonarddavid.com/sampling-the-moons-surface-innovation-precision-and-reliability",
+          "access_note": "Secondary article seen only as a search excerpt. Hardware masses and steps are unverified."
+        },
+        {
+          "title": "China plots better lunar sample return (The Register)",
+          "publisher": "The Register",
+          "author": null,
+          "publication_date": "2016-02-18",
+          "url": "https://www.theregister.co.uk/2016/02/18/chinese_space_agency_plots_better_lunar_sample_return/",
+          "access_note": "Secondary news report of a 2016 plan; describes intent, not built hardware."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo Lunar Sample Return Container (ALSRC) example": "payload.article.physical_specifications.examples[0].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. Image URLs that could only be served with query parameters are set to null, with a source-page reference instead."
+  },
+  "data_quality_notes": [
+    "Chang'e-5: the primary paper (DOI 10.1360/sst-2021-0093) resolved to the publisher, but the full text could not be retrieved, so no technical content from the paper is used. The author list comes from an aggregator page and is incomplete.",
+    "Chang'e-5 mass (1.5 kg system, 360 g container) and the funnel and sweeping steps come from search-excerpt coverage [11] and have not been checked against a primary source.",
+    "Chang'e-6 figures (about 2 kg container capacity, 1,935.3 g returned sample mass) are secondary news values [8] and are not verified. Sources differ in how they describe the container.",
+    "Apollo 17 sample 73001 [3]: the publication date is not confirmed. The byline date reported by the summarising tool (4 March 2022) conflicts with the February sampling steps the article describes. The sources also give different accounts of the captured gas, so no result is stated.",
+    "Lunar Receiving Laboratory and nitrogen-glovebox history [9] is based on a search excerpt; the NTRS PDF could not be read, so exact title and authors are not verified.",
+    "Artemis cold curation [4] is based on a conference abstract only. A companion conference record mentioned a cold-glovebox target and timeline, but it was not read in full and is not used.",
+    "Apollo ALSRC records [1][2] list different masses (8.8 kg and 7.2 kg) and different size formats. Both values are recorded as published and are not reconciled. The Apollo 11 record's rights entry reads 'Open Access (CCO)', which appears to be a typo for CC0; Smithsonian Terms of Use apply and rights were not independently confirmed.",
+    "Image URLs: one direct asset was checked over HTTP (status 200, image/jpeg). The Smithsonian gallery images served from ids.si.edu require query parameters and are therefore given image_url null, with a source-page link instead.",
+    "No lander, ascender, capsule or rover compatibility is asserted. No lunar location is recommended, consistent with the user's deferral.",
+    "Wikipedia-derived statements, including the total number of ALSRC units produced, were not verified and are omitted."
+  ]
+}

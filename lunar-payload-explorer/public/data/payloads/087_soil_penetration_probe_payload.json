@@ -1,0 +1,183 @@
+{
+  "catalogue_id": 87,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 4,
+    "name": "Subsurface exploration and drilling"
+  },
+  "payload": {
+    "number": 87,
+    "name": "Soil penetration probe",
+    "article": {
+      "overview": "A soil penetration probe measures how strongly the ground resists being pushed into it. A rod, shaft or cone is driven into regolith while the force needed and the depth reached are recorded. Because the resistance changes with soil density, grain structure and cohesion, the penetration record gives engineers and scientists a direct, if local, estimate of the strength of the surface and near-surface material. The measurement is a mechanical one: the probe does not need to return a sample to tell scientists how firm the soil is.",
+      "description": "A soil penetration probe is a relatively simple instrument in concept. Its main elements are a probe that is pushed into the ground (a cone, a rod or a plate), a means of applying and measuring force, and a means of referencing depth to the surface. The probe is driven vertically into the soil, the force and depth are recorded at each stage, and the results are interpreted with a soil-mechanics model. Two broad architectures appear in the historical record. In the first, a human operator applies the force by hand through a long shaft, and the instrument records the result on a mechanical drum, as in the Apollo Lunar Self-Recording Penetrometer [1][2]. In the second, an automated lander uses a mechanism to drive the probe, and the readings are transmitted back to Earth, as described for the Luna 13 penetrometer [4][5]. A third concept, the penetrator, is not designed to be pushed by hand or by a lander mechanism; it is dropped or fired at speed so that it embeds itself in the regolith, and its instruments remain in the ground [6]. The probe measures engineering properties of the soil. It does not, on its own, identify the chemical composition of the material it encounters, and it does not provide the mineralogical information obtained by the analytical payloads in categories 3 and 8 of the catalogue. Scope: this article covers devices whose primary purpose is to penetrate lunar regolith and measure resistance or strength, together with one related penetrator-based concept whose instruments were intended to sit below the surface. It does not cover core-sampling drills (catalogue entries 84 and 85), regolith samplers (86), ground-penetrating or lunar penetrating radar (81 and 82), or subsurface heat-flow probes treated separately in the catalogue. Cross-references: 84 and 85 retrieve material whereas a penetration probe records a force-depth response; 86 collects material for analysis; 9 and 10 are subsurface thermal instruments, and the Lunar-A penetrators were intended to carry a heat-flow probe; 81 to 83 are non-mechanical subsurface sounding. Evidence status: numerical values are drawn from NASA Planetary Data System (PDS) and Apollo mission documentation for the Apollo 16 instrument, and from a JAXA mission page for the cancelled Lunar-A penetrators. Several other values could not be verified from accessible sources and are marked as such.",
+      "scientific_purpose_and_applications": "The main purpose of a lunar soil penetration probe is to characterise the mechanical behaviour of regolith. Relevant engineering properties include the bearing capacity of the surface, the density and strength of the soil at different depths, and the variation of these properties across a site. Engineering support for surface operations: landers, rovers, habitats and drilling equipment all depend on the bearing capacity and stability of the ground they rest on. The Apollo soil-mechanics experiment was designed to obtain data on the characteristics and mechanical behaviour of the lunar soil at the surface and subsurface [3]. Geological interpretation: changes in penetration resistance with depth can reflect layering, compaction, or differences in grain size and cohesion that are otherwise difficult to observe from orbit or the surface. Model building: penetration data can be used to develop and test models of lunar soil behaviour and to compare the lunar surface with terrestrial soils and laboratory simulants. Support for other experiments: the Apollo 16 penetrometer data were intended to help interpret results from other surface activities and experiments [1].",
+      "operating_principle": "A penetration probe works by relating the force applied to the probe to the depth it reaches. A probe of known geometry, such as a cone of defined apex angle and base area, is driven into the soil. As it penetrates, the soil resists. The resistance depends on the strength of the soil and on the geometry of the probe. Engineers therefore use probes of more than one size, because the response of the soil to a cone of one size cannot by itself separate the contributions of soil strength and friction. For the Apollo Lunar Self-Recording Penetrometer, the force-measurement principle is mechanical. The astronaut pushes on the upper end of the instrument through an extension handle. This deflects a calibrated coil spring, which rotates a recording drum in proportion to the force applied. Depth is measured relative to a reference pad that rests on the surface. A retractor cable runs from the pad to the upper housing and moves a stylus along the drum to record the depth. The instrument therefore produces a single force-depth trace for each penetration [1]. The interpretation of the trace depends on a soil-mechanics model. The Apollo instrument's wedge-failure model was found to fit relatively dense, fine, sandy soils, and the friction ratio assumed in the analysis (a value of 0.5) came from friction tests on a basalt-based lunar soil simulant rather than on actual lunar soil [2]. Soil strength parameters cannot be uniquely determined from a single penetration: two cone sizes in the same soil, or two depths in a homogeneous deposit, are needed [2]. For a penetrator, the principle is different. The instrument is delivered at high speed to the surface and penetrates the regolith under its own momentum, after which its sensors remain in the ground. The Lunar-A design described by JAXA used penetrators approximately 80 cm high and 16 cm in diameter, with two-axis seismometers and a heat-flow probe installed in each [6].",
+      "scientific_importance": "Penetration measurements are important because they connect the surface of the Moon to its mechanical properties in a direct way. Orbital and surface photography show the morphology of a site; they do not show how firm the material is beneath the surface. A penetration profile can reveal whether the upper layer is loose or compacted, and whether the strength increases with depth, which matters for both science and engineering. The Apollo experiments are the principal source of such data for the lunar surface. The Apollo 16 penetrometer was used at two stations on the second EVA, with a total of eleven tests [1]. The results were recorded on a drum that the crew brought back to Earth; investigators then transcribed the etchings to charts, which were archived [1]. These data remain a reference point for later studies of lunar soil mechanics, although their interpretation depends on the assumptions described above [2]. Robotic penetration measurements added a second line of evidence. The Soviet Luna 13 mission carried a penetrometer on a boom, together with a separate radiation densitometer [4]. The density value sometimes quoted for this mission is discussed below and could not be verified in the sources accessed [5][7].",
+      "physical_specifications": {
+        "note": "There is no single universal specification for a soil penetration probe. The instrument's mass, geometry and recording method depend on whether it is hand-operated, lander-mounted or penetrator-based, and on the depth and force range it was designed for. The values below describe specific historical or proposed instruments only. Where a value could not be verified from an accessible source, this is stated rather than estimated.",
+        "examples": [
+          {
+            "name": "Apollo 16 Lunar Self-Recording Penetrometer (LSRP)",
+            "type": "Flown on the Moon; hand-operated by Apollo 16 crew during the second EVA",
+            "mass_kg": 2.3,
+            "maximum_penetration_depth_cm": 76,
+            "maximum_recordable_force_n": 215,
+            "bearing_plate_cm": [2.54, 12.7],
+            "cone_apex_angle_deg": 30,
+            "cone_base_areas_cm2": [1.29, 3.22, 6.45],
+            "cone_count_note": "The Preliminary Science Report describes two cones with base areas of 1.29 cm2 and 3.22 cm2 [2]. The PDS instrument document lists three cones, adding one with a base area of 6.45 cm2 [1]. The discrepancy is unresolved in the sources accessed and should be checked against Apollo flight documentation.",
+            "overall_length_and_shaft_diameter": "Not stated in the sources accessed.",
+            "power_consumption": "Not applicable in the sense of an electrical instrument; force measurement and recording are mechanical [1]. No electrical power figure was found in the sources accessed.",
+            "test_count_and_locations": "Eleven tests in total: four cone penetration tests at Station 4, and five cone penetration tests plus two plate-load tests in the Station 10 ALSEP area [1].",
+            "operation": "The astronaut pushes on the upper end while the cone or plate penetrates and the reference pad stays on the surface. After each run the astronaut manually advances an index register. The head was removed and stowed for return to Earth after testing [1].",
+            "known_limitation": "The reference pad could ride up the penetrometer shaft slightly if the instrument was vibrated after indexing, because friction was lower than expected. The effect on readings was described as small, and the archived dataset documents it [1].",
+            "sensor_configuration": "Calibrated coil spring rotates a recording drum in proportion to applied force; a retractor cable from the reference pad moves a stylus along the drum to record depth [1].",
+            "qualification": "Mass and penetration limits are taken from NASA PDS and Apollo Preliminary Science Report documentation for this specific instrument [1][2].",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a16lsrp_soil_mechanics/document/a16l_lsrp.txt",
+              "https://an.rsl.wustl.edu/apollo/data/a16/station4/srp/docs/srp_psr.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 15 Lunar Self-Recording Penetrometer (LSRP)",
+            "type": "Flown on the Moon; Apollo 15 LM instrument (specifications not separately verified)",
+            "mass_kg": null,
+            "dimensions": "Not verified for the Apollo 15 unit in the sources accessed.",
+            "sensor_configuration": "PSI record identifies the instrument and its soil-mechanics objective; the measurement principle was not described in the record accessed [3].",
+            "data_availability": "The PDS holds Apollo 15 penetrometer soil-mechanics data; the dataset itself was not opened in this review [3].",
+            "qualification": "Specifications for the Apollo 16 instrument should not be assumed to apply to the Apollo 15 instrument without checking the Apollo 15 PDS instrument document.",
+            "source_urls": [
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:lsrp.a15l"
+            ],
+            "images": []
+          },
+          {
+            "name": "Luna 13 penetrometer",
+            "type": "Flown on the Moon; robotic lander boom-mounted penetrometer (limited verified detail)",
+            "mass_kg": null,
+            "dimensions": "Not verified in the sources accessed.",
+            "penetrating_force_source": "Secondary sources describe the penetrating force as supplied by a minute explosive charge [5]. Not confirmed against a primary source.",
+            "density_result": "Secondary sources attribute a regolith density of about 800 kg/m3 to the penetrometer, while the densitometer is also described as having been used to infer near-surface density. The attribution could not be resolved and the value is not presented as a verified measurement of this instrument [5][7].",
+            "power_sensor_configuration_qualification": "Not publicly specified in the sources accessed.",
+            "source_urls": [
+              "https://solarviews.com/eng/luna13.htm",
+              "https://en.wikipedia.org/wiki/Luna_13",
+              "https://ntrs.nasa.gov/api/citations/19680016118/downloads/19680016118.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar-A penetrators",
+            "type": "Proposed penetrator-based concept; cancelled, not flown",
+            "mass_kg": null,
+            "dimensions": "Approximately 80 cm high and 16 cm in diameter, as stated by JAXA [6]. Other sources gave different dimensions for penetrator and carrier combinations; these were not used.",
+            "penetrator_mass": "Not stated on the JAXA page. The only mass given there is 540 kg for the whole spacecraft including fuel [6]. No penetrator mass is asserted.",
+            "penetration_depth_goal": "Not stated in the source accessed [6].",
+            "instruments": "Two-axis lunar seismometers and a heat-flow probe, installed on the penetrators [6].",
+            "status": "Planned launch in 2004; project cancelled in early 2007. Cited reasons: slow penetrator development, obsolete electronic components and hardened adhesives [6].",
+            "source_urls": [
+              "https://www.isas.jaxa.jp/en/missions/spacecraft/others/lunar-a.html"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Hand-operated penetrometers such as the Apollo LSRP are defined mainly by a long shaft, a reference pad and a recording housing, with interchangeable cones and a bearing plate. The Apollo 16 instrument reached a maximum depth of 76 cm [1][2]. Lander-mounted and penetrator designs are not comparable on these terms: the Lunar-A penetrator is described as approximately 80 cm high and 16 cm in diameter [6], and the Luna 13 penetrometer's dimensions were not verified. Overall length of the Apollo instrument was not stated in the sources accessed.",
+        "mass_and_weight": "The Apollo 16 LSRP has a stated mass of 2.3 kg [1]. The Apollo 15 mass was not verified separately. The Lunar-A penetrator mass was not stated on the source page [6]. The Luna 13 penetrometer mass was not verified. No universal mass is implied by these examples.",
+        "power_requirements": "The Apollo LSRP is described as mechanical; no electrical power figure was found in the sources accessed [1]. Power requirements for the Luna 13 penetrometer and the Lunar-A penetrators were not publicly specified in the sources accessed [6]."
+      },
+      "environmental_and_operational_requirements": "A soil penetration probe must operate in the lunar environment, which has no substantial atmosphere, large surface temperature variations and exposure to radiation and micrometeoroids. For a hand-operated instrument such as the Apollo penetrometer, the operational environment includes the physical capability of the astronaut, the reach and stance required to apply force through the shaft, and the need to read and record the trace before the instrument is repacked. The Apollo instrument's design allowed the recording drum to be returned to Earth for transcription [1]. For a lander-mounted instrument, the relevant requirements include the stiffness of the boom or mechanism, the ability to control the rate and direction of penetration, the force range, and the reliability of the measurement chain. For a penetrator, the requirements include survival of the impact, the thermal and mechanical integrity of the sensors after penetration, and the communication path to the orbiter or relay. The Lunar-A programme encountered difficulties with penetrator development, which illustrates how demanding these requirements are [6]. Interpretation of penetration data is also sensitive to the soil model used. The Apollo analysis relied on a friction ratio derived from a simulant and on a wedge-failure model fitted to a particular class of soil, so the environmental assumptions are part of the measurement [2].",
+      "limitations": "Local measurement: a penetration probe measures soil at one point along one line. Results at different stations on the Moon may differ, and the Apollo data are not automatically representative of other regions. Model dependence: the conversion of force-depth data into strength parameters depends on assumed soil models and friction values. The Apollo analysis used a wedge-failure model fitted to relatively dense, fine, sandy soils, and a friction ratio taken from a basalt-based simulant rather than from lunar soil [2]. Non-uniqueness: soil strength parameters cannot be uniquely determined from a single penetration; multiple cone sizes or depths are needed [2]. Depth and force limits: the Apollo instrument was limited to 76 cm of penetration and 215 N of force [1][2], so deeper or stiffer soil could not be characterised with this design. Instrument interaction: the reference pad could move up the shaft if vibrated after indexing, with a small effect on readings [1]. Delayed data: the Apollo recording drum had to be returned to Earth before the traces could be transcribed [1].",
+      "transportation_and_deployment": {
+        "overview": "The sources accessed describe a hand-operated instrument carried to the surface by Apollo crews, a lander-boom instrument on Luna 13, and a penetrator concept that was cancelled before flight. No compatibility with a named lander, rover or spacecraft is asserted.",
+        "transportation_process": [
+          "Apollo LSRP: carried to the surface by the crew as part of the Apollo lunar surface experiment equipment; the Apollo 15 instrument is identified in the PSI record as a lunar module instrument [3].",
+          "Apollo LSRP: operations on the second Apollo 16 EVA at Station 4 and in the Station 10 ALSEP area [1].",
+          "Earth integration into the lunar module, launch, lunar transfer, landing and crew deployment form the transport chain for the Apollo instruments; specific mounting interfaces within the lunar module were not verified in the sources accessed.",
+          "Luna 13: the penetrometer was mounted on a spring-loaded boom that was deployed after landing [4][5]; verified interface details for mounting, power and data link were not found.",
+          "Lunar-A: penetrators would have been delivered from an orbiting spacecraft to the surface; the mission was cancelled before flight, so release, orbit and impact interfaces are not verified from flight data [6]."
+        ],
+        "deployment_methods": "Apollo LSRP: an astronaut pushed the shaft into the soil while the reference pad remained on the surface [1]. Luna 13: the penetrometer was deployed on a spring-loaded boom after landing [4][5]. Lunar-A: penetrators were intended to embed in the regolith after high-speed delivery [6].",
+        "historical_examples": "The Apollo 15 and Apollo 16 penetrometers flew on crewed missions [1][3]. The Luna 13 penetrometer flew on a Soviet robotic lander in 1966 [4][5]. The Lunar-A penetrator concept was cancelled before flight [6].",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted. A new soil penetration probe would need its mass, dimensions, deployment method, power and data interfaces compared with verified spacecraft specifications before any lander could be considered compatible.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 15 and Apollo 16 penetrometers are among the first direct in-situ measurements of lunar soil strength by crewed missions. They produced a set of force-depth profiles that still form part of the reference data for lunar soil mechanics, and they demonstrated that a simple, hand-operated instrument could be used effectively on the surface [1][2][3]. The Luna 13 penetrometer represents an early robotic attempt to measure the mechanical properties of the lunar surface, carried out in the period of the first robotic soft landings on the Moon [4][5]. Its detailed results are not verified here, and the published density value should be treated as uncertain until the primary paper has been checked [5][7]. The Lunar-A penetrator concept represents an ambitious proposal to place seismometers and heat-flow sensors below the surface. Its cancellation shows how demanding penetrator-based architectures are, but the concept remains a useful reference point for later subsurface instruments [6].",
+      "limitations_and_uncertainties": "This article contains the following evidence gaps and uncertainties. The mass, dimensions and penetration limits of the Apollo 15 instrument were not verified separately from the Apollo 16 documentation [3]. The Apollo 16 sources disagree on whether the instrument had two cones or three [1][2], and this should be resolved against Apollo flight documentation. The Luna 13 penetrometer's mass, dimensions, penetration depth and mechanism were not verified from a primary source; the 800 kg/m3 density is attributed to the penetrometer by secondary sources, while the densitometer is also described as the instrument used to infer density, so the attribution is unresolved [4][5][7]. The Lunar-A penetrator mass is not stated in the source accessed and no mass is asserted [6]. No modern lunar soil penetration probe has been confirmed in the sources accessed, and the article does not describe any such instrument as flight-proven. No direct, verified image asset was found for any instrument in this article. Lunar landing-site or location recommendations are deferred by the user and are not included. Several documents identified in searches, including the Apollo 15 PDS dataset and the 1968 Soviet Luna-13 paper, were not read in a machine-readable form in this review, and claims that depend on them are marked as unverified.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Apollo 16 Lunar Self-Recording Penetrometer (LSRP), instrument document (a16l_lsrp.txt), soil mechanics data bundle",
+          "publisher": "NASA Planetary Data System (PDS) Geosciences Node",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a16lsrp_soil_mechanics/document/a16l_lsrp.txt",
+          "notes": "Provides mass (2.3 kg), maximum depth (76 cm), maximum force (215 N), bearing plate and cone geometry, recording method, deployment and test count. Publication date not stated in the document as accessed."
+        },
+        {
+          "title": "Apollo 16 Preliminary Science Report: Self Recording Penetrometer",
+          "publisher": "Apollo 16 soil mechanics experiment, hosted by Washington University in St. Louis (Apollo data archive)",
+          "url": "https://an.rsl.wustl.edu/apollo/data/a16/station4/srp/docs/srp_psr.html",
+          "notes": "Provides depth and force limits, the wedge-failure model, the friction ratio from simulant tests and the non-uniqueness of soil parameters. Publication date not stated as accessed."
+        },
+        {
+          "title": "LM Lunar Self-Recording Penetrometer (LSRP), Apollo 15 instrument record, urn:nasa:pds:context:instrument:lsrp.a15l",
+          "publisher": "Planetary Science Institute (PSI) ARCNAV, hosting NASA PDS context records",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:lsrp.a15l",
+          "notes": "Provides the instrument name and soil-mechanics objective for Apollo 15. Mass and dimensions were not present on the page as accessed."
+        },
+        {
+          "title": "Luna 13 (mission page)",
+          "publisher": "Solarviews (secondary source)",
+          "url": "https://solarviews.com/eng/luna13.htm",
+          "notes": "States that Luna 13 carried a mechanical soil-measuring penetrometer, a dynamograph and a radiation densitometer. Secondary source; image credit attributed to NSSDC, but no image was verified."
+        },
+        {
+          "title": "Luna 13",
+          "publisher": "Wikipedia (secondary source)",
+          "url": "https://en.wikipedia.org/wiki/Luna_13",
+          "notes": "Consulted as a search-result summary only, not opened in full. Used only for the landing date, the explosive-charge description and the 800 kg/m3 density attribution, all of which remain unverified."
+        },
+        {
+          "title": "LUNAR-A mission page",
+          "publisher": "Institute of Space and Astronautical Science (ISAS), Japan Aerospace Exploration Agency (JAXA)",
+          "url": "https://www.isas.jaxa.jp/en/missions/spacecraft/others/lunar-a.html",
+          "notes": "Provides cancellation status, the planned 2004 launch, penetrator dimensions (approximately 80 cm high, 16 cm diameter), the instruments carried and the cited reasons for cancellation."
+        },
+        {
+          "title": "Soviet Luna-13 instrument paper (1968), NASA NTRS translation, document 19680016118",
+          "publisher": "NASA Technical Reports Server (NTRS)",
+          "url": "https://ntrs.nasa.gov/api/citations/19680016118/downloads/19680016118.pdf",
+          "notes": "Identified in search. The scanned PDF could not be read in this review, so no figure is taken from it. Listed to show where the primary density derivation should be checked."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No direct image asset was verified for any instrument in this article, so the image registry is empty and source pages are cited in the text and references instead of embedded images."
+  },
+  "data_quality_notes": [
+    "Apollo 16 LSRP mass (2.3 kg) and penetration limits (76 cm depth, 215 N force) are taken from the NASA PDS instrument document [1]; the Preliminary Science Report [2] agrees on depth and force limits but does not state a mass in the excerpt accessed.",
+    "Apollo 16 LSRP cone count is unresolved: the Preliminary Science Report describes two cones (1.29 and 3.22 cm2 base areas) [2], while the PDS document lists three cones adding 6.45 cm2 [1].",
+    "Apollo 15 LSRP: the PSI record [3] confirms the instrument and its soil-mechanics objective only. Its mass, dimensions, penetration limits and measurement details were not verified separately from Apollo 16 data.",
+    "Luna 13 penetrometer: mass, dimensions, penetration depth and mechanism were not verified from a primary source. The 800 kg/m3 density is attributed to the penetrometer by secondary sources, while the densitometer is also described as the instrument used to infer density; the attribution is unresolved [4][5][7]. The scanned 1968 Soviet paper [7] could not be read in this review.",
+    "Luna 13 explosive-charge penetration mechanism appears only in a secondary source [5] and is not confirmed.",
+    "Lunar-A penetrator: dimensions (approximately 80 cm high, 16 cm diameter) are from the JAXA mission page [6]. Penetrator mass and penetration depth goal were not stated there and are not asserted. The mission was cancelled before flight; no flight data exist.",
+    "No modern lunar soil penetration probe has been confirmed operating on the Moon in the sources accessed. No example is described as flight-proven except the Apollo 15 and Apollo 16 LSRP instruments (crewed) and the Luna 13 penetrometer (robotic, detail limited).",
+    "No direct image asset (official or otherwise) was verified for any instrument. The image registry and all section-level image arrays are empty; no image URL has been invented. Source pages are cited in text and references.",
+    "No lander, rover or spacecraft compatibility is asserted for any example; compatibility_assessment is unverified.",
+    "Environmental and deployment statements in the article about the general lunar environment are engineering context rather than instrument-specific specifications and carry no numerical values.",
+    "Catalogue match: payload 087 is 'Soil penetration probe' in category 4 'Subsurface exploration and drilling' of lunar_payloads_catalogue_320.md. Progress ledger not modified per run instructions."
+  ]
+}

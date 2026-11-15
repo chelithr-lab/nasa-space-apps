@@ -1,0 +1,301 @@
+{
+  "catalogue_id": 90,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 4,
+    "name": "Subsurface exploration and drilling"
+  },
+  "payload": {
+    "number": 90,
+    "name": "Electrical resistivity probe",
+    "article": {
+      "overview": "An electrical resistivity probe measures how easily electrical energy moves through the ground beneath it. Resistivity is the inverse of conductivity, and it changes strongly with water content, temperature, porosity and mineral composition. Because very small amounts of liquid water or ice can alter the electrical behaviour of soil and rock by a large factor, electrical measurements are a potential way to detect water-bearing layers without returning samples to Earth [1][2].\n\nThe catalogue name describes a class of instruments, not one standard design. The examples in this article use different physical principles. None of them is a conventional direct-current resistivity survey of the kind used in terrestrial geophysics. The Apollo 17 experiment and the SwRI sounder infer subsurface electrical properties from electromagnetic waves or natural fields, and the NASA laboratory probe applies electrodes directly to the soil.\n\n**Status summary.** The article distinguishes four kinds of evidence:\n\n- **Flown on the Moon (1972):** the Apollo 17 Surface Electrical Properties (SEP) experiment, a radio-frequency interferometry sounder operated at Taurus-Littrow [1][2].\n- **Flown on the Moon (2025):** the SwRI-led Lunar Magnetotelluric Sounder (LMS), carried on Firefly's Blue Ghost Mission 1 to Mare Crisium [4][5]. Its interior-conductivity results are reported only in a 2026 conference abstract [6].\n- **Laboratory prototype, not flown:** the NASA Electrical Properties Probe (EPP), a two-electrode impedance probe described in NASA Tech Briefs [7].\n- **Planned, not verified:** ESA's PROSPECT payload, which is targeted for launch in 2027 according to the sources accessed [9]. A subsurface electrical sensor for PROSPECT was mentioned in an earlier search summary but could not be verified in the sources accessed.",
+      "description": "A resistivity-type probe applies or senses an electromagnetic field in the ground and measures the response. The quantities reported by the examples in this article are:\n\n- **Electrical conductivity or resistivity.** Conductivity is the ease with which charge moves through a material. Resistivity is its inverse. Wet materials are usually more conductive than dry ones.\n- **Relative dielectric constant (permittivity).** This describes how strongly a material stores electrical energy in an electric field. For lunar regolith and rock it is typically a few units, and it increases with density and water content.\n- **Loss tangent.** This is the fraction of energy absorbed by the material per cycle of an electromagnetic wave. It is a measure of how much a material attenuates radio waves.\n- **Depth profile.** Scientists combine measurements at several frequencies or distances, because lower frequencies and longer distances usually sample greater depths.\n\nThree measurement approaches appear in this article. A galvanic probe places electrodes in direct contact with the soil and measures impedance, as in the NASA EPP [7]. An active sounder transmits radio waves from a surface antenna and records the interference between waves travelling along the surface and waves travelling through the subsurface, as in the Apollo 17 SEP [1]. A magnetotelluric sounder records natural fluctuations in the electric and magnetic fields and infers how conductive the deep interior is, as in the SwRI LMS [4][6].",
+      "scientific_purpose_and_applications": "The main purposes of electrical probes in lunar science and resource assessment are:\n\n- **Layering and physical state of the regolith and near-surface rock.** The Apollo 17 SEP was designed to determine layering and to measure electrical properties as a function of depth [2]. The SEP team reported a dielectric constant rising from about 3.5 at the surface to about 6 to 8 at about 100 m depth [1].\n- **Detecting water or ice.** The SEP team searched for subsurface water and reported no significant water within 2 to 3 km at the Taurus-Littrow site [1]. The EPP was designed to estimate water or ice content in regolith simulants from impedance measurements [7].\n- **Interior conductivity and temperature.** The LMS is intended to probe upper-mantle electrical conductivity and temperature in a region outside the Procellarum KREEP Terrane [6]. This is a geophysical application, not a shallow resource survey.\n- **Porosity and density.** A 2018 reanalysis of the Apollo 17 SEP data, as summarised in its abstract, converted the dielectric constant into density and porosity and reported a sharp porosity decrease in the top 20 to 30 m [3].\n\nThese applications are complementary to seismic, thermal and neutron measurements. Each method is sensitive to different properties, so combining them can constrain the interpretation. This article does not claim that any electrical probe has yet located water on the Moon.",
+      "operating_principle": "**Radio-frequency interferometry (Apollo 17 SEP).** The SEP transmitter radiated continuous waves at 1, 2, 4, 8, 16 and 32 MHz in turn [1]. Waves travelling over the surface and waves refracted or reflected from below interfere at the receiver. The interference pattern changes with distance and frequency, and the team fitted layered models to these patterns to infer dielectric constant and loss tangent [1][3]. The SEP report states that minute amounts of water in rocks or subsoil can change electrical conductivity by several orders of magnitude [2], so the method is sensitive to moisture.\n\n**Impedance spectroscopy (NASA EPP).** The EPP has two electrodes near the tip of a cylinder that is pushed into the ground. The instrument measures the magnitude and phase angle of the electrical impedance over a frequency range of 20 Hz to 500 kHz. A typical measurement takes several seconds [7]. The impedance spectrum is used to estimate water or ice content, conductivity and dielectric constant of the material around the electrodes [7].\n\n**Magnetotelluric sounding (SwRI LMS).** A magnetotelluric sounder measures natural variations in the electric and magnetic fields at the surface. The ratio between the two depends on how conductive the materials beneath the instrument are, so conductivity can be estimated as a function of depth [4]. The LMS used four electrodes on cables and a magnetometer on an extendable mast [4][5].",
+      "scientific_importance": "The Apollo 17 SEP was an early attempt to measure electrical properties of the lunar subsurface in situ, and its data remain a reference point for radio-frequency sounding of the Moon [1][3]. Its reported results include low loss tangents, of 0.05 or less and possibly as low as 0.002, to depths of 2 to 3 km, and the conclusion that no significant liquid water was present at the site [1]. These conclusions are the authors' interpretation of a limited traverse. The SEP receiver overheated during later stages of the mission, and usable data were restricted to a traverse of about 2.5 km from the transmitter [1].\n\nThe LMS is described by its developers as the first extraterrestrial magnetotelluric experiment [6]. In the conference abstract summarised in the search results, the team compared the Mare Crisium site with the Apollo 12 site and estimated a mantle temperature difference below 100 K at about 200 km depth, at the one-sigma level [6]. These are preliminary results, not a peer-reviewed publication. An electrical probe that operates near the surface and in the subsurface would address a different question, namely whether water-bearing or ice-bearing layers exist within a few metres or tens of metres of the surface. The EPP was designed for that scale in laboratory tests [7].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, power or frequency specification for an electrical resistivity probe. The values below apply only to the named historical, flown, or prototype instruments and their cited sources. Where the sources give conflicting values, both are reported.",
+        "examples": [
+          {
+            "name": "Apollo 17 Surface Electrical Properties (SEP) experiment",
+            "article_text": "**Status.** Historical lunar experiment, flown on Apollo 17 in December 1972 and used at the Taurus-Littrow site [1].\n\n**Equipment.** The Apollo 17 documentation describes a deployable self-contained transmitter, a multiple-frequency transmitter antenna, a portable receiver/recorder carried on the Lunar Roving Vehicle, a wide-bandwidth mutually orthogonal receiver antenna and a retrievable data recorder [2]. The SEP report describes two orthogonal horizontal electric dipole antennas on the lunar surface and a receiver on the Lunar Roving Vehicle using three orthogonal electrically small loops [1].\n\n**Frequencies.** The SEP report gives 1, 2, 4, 8, 16 and 32 MHz [1]. The PDS overview gives 1, 2.4, 4, 8.1, 16 and 32.1 MHz [2]. The two sets are close but not identical, and both are reported here.\n\n**Deployment and range.** The SEP report states that the transmitting dipole antennas were deployed by the astronaut about 150 m east of the Lunar Module [1]. The PDS overview states that the crew set up the transmitter approximately 100 m from the Lunar Module [2]. The receiver operated normally out to a range of 1.7 km, was in an acquisition mode between 1.7 and 4.3 km, and was not usable beyond that [1].\n\n**Mass, dimensions and power.** Not publicly specified in the sources accessed. The report and the PDS overview do not give mass, enclosure dimensions or power consumption for the transmitter or receiver [1][2].\n\n**Measured electrical properties (reported by the SEP team).** The team reported a relative dielectric constant of about 3.5 near the surface, rising to 6 to 8 at about 100 m depth; a loss tangent no larger than 0.05, possibly as low as 0.002, to 2 to 3 km; and no significant water within 2 to 3 km of the surface [1]. The 2018 reanalysis summarised in its abstract reports loss tangents of about 0.01 [3].\n\n**Images.** No direct image asset for this example could be verified during this run. The PDS overview includes an SEP figure, but its direct image URL was not identified [2].",
+            "structured_specifications": {
+              "flight_status": "Flown on Apollo 17, December 1972",
+              "mass_kg": null,
+              "power_w": null,
+              "dimensions": "not publicly specified in sources accessed",
+              "frequencies_mhz_per_report": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                32
+              ],
+              "frequencies_mhz_per_pds_overview": [
+                1,
+                2.4,
+                4,
+                8.1,
+                16,
+                32.1
+              ],
+              "transmitter_distance_from_lm_m_per_report": 150,
+              "transmitter_distance_from_lm_m_per_pds_overview": 100,
+              "receiver_range_normal_km": 1.7,
+              "receiver_acquisition_mode_km": [
+                1.7,
+                4.3
+              ],
+              "relative_dielectric_constant": {
+                "surface_approx": 3.5,
+                "approx_100_m": "6 to 8"
+              },
+              "loss_tangent": {
+                "upper_bound": 0.05,
+                "possible_lower_value": 0.002,
+                "depth_km": "2 to 3"
+              },
+              "sources": [
+                1,
+                2,
+                3
+              ]
+            },
+            "images": []
+          },
+          {
+            "name": "SwRI Lunar Magnetotelluric Sounder (LMS)",
+            "article_text": "**Status.** Flown. The LMS was carried on Firefly's Blue Ghost Mission 1 and landed in Mare Crisium on 2 March 2025 according to SwRI [5]. Its sensors were switched on and deployed within hours of landing [5]. A 2026 conference abstract reports that the instrument operated until 12 March 2025 [6].\n\n**Hardware.** The SwRI description states that the package has five subsystems, weighing about 14 lb (approximately 6.4 kg, converted here) with connecting cables, and consumes about 11 W [4]. The stowed electrodes form a bundle roughly the size of a softball. The cables extend the electrodes up to 60 feet (about 18 m) apart at right angles, and the magnetometer sits on an extendable mast [4]. The SwRI deployment release describes a central electronics box, a magnetometer on an extendable mast and four spring-launched electrodes [5].\n\n**Mass and power.** Mass and power are given by SwRI as above [4]. The SwRI page states that the mass refers to the five subsystems plus connecting cables; the conversion to kilograms is an approximation made for this article.\n\n**Measured results.** The results below are preliminary and come from a conference abstract, not a peer-reviewed paper [6]:\n\n- A mantle temperature difference of under 100 K relative to the Apollo 12 site, at about 200 km depth, at the one-sigma level [6].\n- A measured surface magnetic field of about 65 nT, compared with predictions under 10 nT from satellite data, and an apparent plasma conductivity roughly ten times higher than expected. The abstract attributes some of the attenuation at certain frequencies to the magnetometer's distance from the surface [6].\n\n**Images.** Two direct image assets were checked and both resolved. The first is the EurekAlert hardware image, repeated here from the Overview. The second is an SwRI image labelled \"Image of LMS cables and parts\" on the SwRI deployment release [5].",
+            "structured_specifications": {
+              "flight_status": "Flown on Firefly Blue Ghost Mission 1; landed Mare Crisium 2 March 2025 (SwRI)",
+              "mass_kg_approx": 6.4,
+              "mass_lb_as_published": 14,
+              "mass_scope": "five subsystems plus connecting cables",
+              "power_w": 11,
+              "max_electrode_spacing_m_approx": 18,
+              "max_electrode_spacing_ft_as_published": 60,
+              "electrodes": 4,
+              "operation_end_per_abstract": "12 March 2025",
+              "sources": [
+                4,
+                5,
+                6
+              ]
+            },
+            "images": [
+              {
+                "id": "lms_hardware_eurekalert",
+                "description": "Lunar Magnetotelluric Sounder hardware: magnetometer on an extendable mast, central electronics box and four spring-launched electrodes.",
+                "image_type": "Instrument hardware photograph (press-release image)",
+                "image_url": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/543e9491-eeb7-45d5-b64a-98056284eaa9/Rendition/low-res/Content/Public",
+                "source_page_url": "https://www.eurekalert.org/multimedia/979736",
+                "publisher": "Southwest Research Institute (distributed via EurekAlert)",
+                "credit": "Southwest Research Institute",
+                "caption": "The SwRI-built LMS instrument for the Mare Crisium lander, with a magnetometer on an extendable mast, a central electronics box, and four spring-launched electrodes.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct EurekAlert media rendition URL with no query string. Checked: HTTP 200, image/png, image content visually reviewed. Rights and reuse conditions not verified. The EurekAlert record is a press-distribution page, not an agency archive."
+              },
+              {
+                "id": "swri_lms_cables_and_parts",
+                "description": "Lunar Magnetotelluric Sounder cables and parts, shown on the SwRI deployment release page.",
+                "image_type": "Instrument hardware photograph (press-release image)",
+                "image_url": "https://www.swri.org/sites/default/files/styles/large/public/d025811-3966-lunar-magnetotelluric-sounder.jpg",
+                "source_page_url": "https://www.swri.org/newsroom/press-releases/swri-led-sounder-instrument-deploys-across-lunar-surface",
+                "publisher": "Southwest Research Institute",
+                "credit": "Not shown on the source page; publisher is Southwest Research Institute",
+                "caption": "Image of LMS cables and parts (alt text on the SwRI deployment release page).",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Image URL taken from the page's image source with the image-style query string removed (the itok parameter). Checked: HTTP 200, image/jpeg, image content visually reviewed. Rights and reuse conditions not verified."
+              }
+            ]
+          },
+          {
+            "name": "NASA Electrical Properties Probe (EPP), laboratory prototype (NPO-44261)",
+            "article_text": "**Status.** Laboratory prototype. NASA Tech Briefs describes it as an engineering development item. The source does not report flight, vacuum testing or lunar use [7].\n\n**Geometry.** Two electrodes are housed near the tip of a cylinder that is pushed into the soil so that the electrodes contact the material directly. The previous version used a sample jar with four stainless-steel screws as a four-point probe [7].\n\n**Measurement.** Impedance spectroscopy from 20 Hz to 500 kHz. The source describes a typical run as taking several seconds [7].\n\n**Test media and conditions.** Dry silica sand, and silica sand moistened with 0.1 weight percent of a 0.1 M aqueous KCl solution. The article body reports tests at temperatures from -25 to +65 °C [7].\n\n**Sensitivity.** The article body states that the instrument can detect water or ice at about 0.1 weight percent and can measure concentrations above 0.5 weight percent [7]. The overview on the same page gives a detection range of 0.05 to 10 percent and an accuracy of \"a few percent\" and gives a temperature range of 25 °C to -65 °C. These figures conflict with the body text, and the body text is used here. The conflict is recorded in the JSON data-quality notes.\n\n**Mass and dimensions.** Not stated in the source [7]. The full technical support package, which may contain these values, is behind a login and was not accessed.\n\n**Images.** No image was identified for the EPP in the sources accessed.",
+            "structured_specifications": {
+              "flight_status": "Laboratory prototype; flight, vacuum testing and lunar use not reported in source",
+              "mass_kg": null,
+              "dimensions": "not stated in source",
+              "frequency_range_hz": [
+                20,
+                500000
+              ],
+              "measurement": "impedance magnitude and phase angle versus frequency",
+              "measurement_time": "several seconds per run",
+              "detection_limit_wt_percent_body_text": 0.1,
+              "measurement_above_wt_percent": 0.5,
+              "test_temperature_c": [
+                -25,
+                65
+              ],
+              "sources": [
+                7
+              ]
+            },
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo SEP and the SwRI LMS have no comparable published dimensions in the sources accessed. The SwRI sounder's stowed electrode bundle is described as roughly softball-sized [4], and the cable spread can reach about 18 m [4]. The EPP cylinder dimensions are not published in the sources accessed [7]. These values describe different architectures and should not be compared directly.",
+        "mass_and_weight": "The LMS has a stated package mass of about 14 lb (about 6.4 kg) for its five subsystems and cables [4]. No mass is published in the sources accessed for the Apollo SEP or the EPP [1][2][7]. Mass drives launch and lander requirements, so the absence of a figure for two of the three examples is a significant evidence gap.",
+        "power_requirements": "The LMS is stated to consume about 11 W [4]. The Apollo SEP and the EPP power figures are not publicly specified in the sources accessed."
+      },
+      "environmental_and_operational_requirements": "An electrical probe on the Moon must function in vacuum, under extreme surface temperature swings, and in a radiation environment. Its electronics need thermal control. The Apollo SEP receiver overheated during its operations, which stopped data collection on later stages of the mission [1]. This is a documented thermal lesson for any electronics on the lunar surface.\n\nElectrical measurements also depend on the surface and near-surface material. Moisture, temperature, porosity and the contact between electrodes and soil all affect the result. A galvanic probe such as the EPP requires good electrode contact with the material, which is more difficult to guarantee in loose regolith or on a rocky surface [7]. The LMS abstract notes that the distance between the magnetometer and the surface affected the induction signal at certain frequencies [6]. The NASA EPP laboratory tests cover -25 to +65 °C [7]. The lunar surface experiences a wider temperature range than this, and the EPP has not been qualified for that range in the sources accessed.\n\nRadio-frequency sounders are sensitive to interference from the lander, rover and other electronics. The SEP and LMS designs use antennas and cables placed away from the spacecraft to reduce this effect. The sources accessed do not quantify the interference levels for either mission.",
+      "limitations": "The main limitations of electrical probes, as shown by the examples above, are:\n\n- **Interpretation is model-dependent.** The Apollo 17 SEP team stated that no plane-layer model fitted the observations accurately, and that several models satisfied only some of the constraints [1]. Different models can yield different depths for the same data.\n- **Depth and resolution trade-off.** Lower frequencies sample deeper but with less resolution. The SEP's 1 MHz data were used to infer deep properties, while the 32 MHz data constrained the near surface [1].\n- **Limited spatial coverage.** The SEP covered a traverse of about 2.5 km from its transmitter [1]. A single instrument at one site cannot map a region.\n- **Data-quality constraints.** The SEP receiver was unusable beyond 4.3 km and overheated [1]. The LMS results are preliminary [6].\n- **Direct-contact probes need suitable ground.** The EPP is designed for direct insertion into soil [7] and has not been demonstrated on lunar regolith or rock in the sources accessed.",
+      "transportation_and_deployment": {
+        "overview": "A surface electrical probe would be delivered to the Moon by a lander as part of a surface payload, or as part of a larger lunar experiment package. Its deployment mechanism depends on whether it is a transmitter-receiver sounder, a magnetotelluric sounder or an electrode probe. The Apollo SEP and the SwRI LMS are the two flown examples in this article.",
+        "transportation_process": [
+          "Integrate the instrument, its cables and its electronics in the lander payload compartment on Earth.",
+          "Launch the lander on a launch vehicle and carry it through lunar transfer.",
+          "Land the payload on the lunar surface. The Blue Ghost Mission 1 landing in Mare Crisium carried the LMS [5].",
+          "Deploy the electrodes, antennas or mast. The Apollo 17 transmitter was carried and set up by astronauts [1]. The LMS electrodes were spring-launched and its mast extended after landing [5].",
+          "Connect power, thermal control and data. The Apollo SEP receiver recorder was returned to Earth [1][2]. The LMS sends data to Earth through the lander's communications [5]."
+        ],
+        "deployment_methods": "The Apollo 17 SEP used astronaut-deployed antennas and a receiver carried on the Lunar Roving Vehicle [1]. The LMS used a lander-deployed electrode and mast system [5]. The EPP is designed for insertion into soil by pushing the cylinder into the ground [7]. A drill-based approach, as planned for ESA's PROSPECT, would use a different deployment method, but the sensor details could not be verified [9].",
+        "historical_examples": "The Apollo 17 SEP was deployed by an astronaut crew during an extravehicular activity, with the receiver mounted on the rover [1]. The Blue Ghost Mission 1 landing carried the SwRI LMS to Mare Crisium in 2025 [4][5].",
+        "compatibility_assessment": "The sources accessed do not assess compatibility with any particular future lander. The LMS was flown on Blue Ghost Mission 1, which is a verified fact about that mission, but this article does not infer that the LMS design is compatible with other landers. Any future probe would need its mass, power, mounting, deployment and thermal requirements compared with the lander's verified specifications.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 17 SEP was one of several Apollo 17 surface experiments at Taurus-Littrow [1]. It demonstrated radio-frequency interferometry on the lunar surface and was the first in situ attempt to determine the electrical structure of the lunar subsurface to kilometre depths [1][3]. Its results contributed to the view that the Taurus-Littrow subsurface was dry to a depth of 2 to 3 km [1]. A 2018 reanalysis revisited the data [3].\n\nThe SwRI LMS is described as the first extraterrestrial magnetotelluric experiment [6], and its landing on Blue Ghost Mission 1 in 2025 marked a return of this type of measurement to the Moon [5][6]. The NASA EPP represents the laboratory development of direct-contact electrical probes for water and ice detection [7].",
+      "limitations_and_uncertainties": "- **Mass, dimensions and power are missing for two of three examples.** The Apollo 17 SEP and the NASA EPP do not have published mass, dimensions or power figures in the sources accessed [1][2][7]. The LMS mass and power come from SwRI and are approximate [4].\n- **Conflicting values in primary sources.** The Apollo 17 SEP transmitter distance is given as 150 m in the SEP report [1] and about 100 m in the PDS overview [2]. The SEP frequency lists differ slightly between these two sources [1][2]. The EPP overview and body disagree about detection ranges and temperature range [7].\n- **Preliminary LMS results.** The LMS conclusions come from a 2026 conference abstract [6]. A peer-reviewed publication was not found in the sources accessed.\n- **Apollo 17 reanalysis.** The 2018 reanalysis by Grimm is cited from its abstract summary [3]. Specific values were not verified against the full article text.\n- **PROSPECT electrical sensor not verified.** ESA's PROSPECT payload is planned to land in 2027 according to the sources accessed [9], but the electrical sensor described in an earlier search summary could not be verified in primary ESA material.\n- **Image rights.** Images from EurekAlert and SwRI may carry reuse conditions that were not checked. The Apollo SEP image could not be verified and is not included.\n- **Lunar resistivity context.** No flown instrument in the sources accessed is a direct-current resistivity probe in the sense used by terrestrial geophysics. The article uses the catalogue name for a class of instruments that measure electrical properties of the subsurface, and it does not imply that any one example performs a direct-current resistivity survey.",
+      "images": [
+        {
+          "id": "lms_hardware_eurekalert",
+          "description": "Lunar Magnetotelluric Sounder hardware: magnetometer on an extendable mast, central electronics box and four spring-launched electrodes.",
+          "image_type": "Instrument hardware photograph (press-release image)",
+          "image_url": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/543e9491-eeb7-45d5-b64a-98056284eaa9/Rendition/low-res/Content/Public",
+          "source_page_url": "https://www.eurekalert.org/multimedia/979736",
+          "publisher": "Southwest Research Institute (distributed via EurekAlert)",
+          "credit": "Southwest Research Institute",
+          "caption": "The SwRI-built LMS instrument for the Mare Crisium lander, with a magnetometer on an extendable mast, a central electronics box, and four spring-launched electrodes.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct EurekAlert media rendition URL with no query string. Checked: HTTP 200, image/png, image content visually reviewed. Rights and reuse conditions not verified. The EurekAlert record is a press-distribution page, not an agency archive."
+        },
+        {
+          "id": "swri_lms_cables_and_parts",
+          "description": "Lunar Magnetotelluric Sounder cables and parts, shown on the SwRI deployment release page.",
+          "image_type": "Instrument hardware photograph (press-release image)",
+          "image_url": "https://www.swri.org/sites/default/files/styles/large/public/d025811-3966-lunar-magnetotelluric-sounder.jpg",
+          "source_page_url": "https://www.swri.org/newsroom/press-releases/swri-led-sounder-instrument-deploys-across-lunar-surface",
+          "publisher": "Southwest Research Institute",
+          "credit": "Not shown on the source page; publisher is Southwest Research Institute",
+          "caption": "Image of LMS cables and parts (alt text on the SwRI deployment release page).",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Image URL taken from the page's image source with the image-style query string removed (the itok parameter). Checked: HTTP 200, image/jpeg, image content visually reviewed. Rights and reuse conditions not verified."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lms_hardware_eurekalert",
+          "description": "Lunar Magnetotelluric Sounder hardware: magnetometer on an extendable mast, central electronics box and four spring-launched electrodes.",
+          "image_type": "Instrument hardware photograph (press-release image)",
+          "image_url": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/543e9491-eeb7-45d5-b64a-98056284eaa9/Rendition/low-res/Content/Public",
+          "source_page_url": "https://www.eurekalert.org/multimedia/979736",
+          "publisher": "Southwest Research Institute (distributed via EurekAlert)",
+          "credit": "Southwest Research Institute",
+          "caption": "The SwRI-built LMS instrument for the Mare Crisium lander, with a magnetometer on an extendable mast, a central electronics box, and four spring-launched electrodes.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct EurekAlert media rendition URL with no query string. Checked: HTTP 200, image/png, image content visually reviewed. Rights and reuse conditions not verified. The EurekAlert record is a press-distribution page, not an agency archive."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "citation": "Simmons, G. (1974). Surface electrical properties experiment. MIT Center for Space Research report CSR-TR-74-1 (NASA-CR-141724). NASA Technical Reports Server.",
+          "url": "https://ntrs.nasa.gov/api/citations/19750013120/downloads/19750013120.pdf"
+        },
+        {
+          "number": 2,
+          "citation": "Williams, D.R. (2017). Overview of the Apollo 17 Surface Electrical Properties (SEP) Experiment. NASA Space Science Data Coordinated Archive, Apollo document PDS collection.",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17l_sep.pdf"
+        },
+        {
+          "number": 3,
+          "citation": "Grimm, R.E. (2018). New analysis of the Apollo 17 surface electrical properties experiment. Icarus, 314, 389-399. Abstract summary only; full text not reviewed.",
+          "url": "https://peeref.com/works/5325862"
+        },
+        {
+          "number": 4,
+          "citation": "Southwest Research Institute (2025). SwRI is sending its first instrument to the lunar surface to survey the Moon's interior. Press release (January 2025).",
+          "url": "https://www.swri.org/newsroom/press-releases/swri-sending-its-first-instrument-the-lunar-surface-survey-the-moon-s-interior"
+        },
+        {
+          "number": 5,
+          "citation": "Southwest Research Institute (2025). SwRI-led sounder instrument deploys across lunar surface. Press release.",
+          "url": "https://www.swri.org/newsroom/press-releases/swri-led-sounder-instrument-deploys-across-lunar-surface"
+        },
+        {
+          "number": 6,
+          "citation": "Lunar Magnetotelluric Sounder team (2026). EGU26-8526, European Geosciences Union General Assembly conference abstract.",
+          "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-8526.html"
+        },
+        {
+          "number": 7,
+          "citation": "NASA Tech Briefs. Electrical Properties Probe (NPO-44261).",
+          "url": "https://www.techbriefs.com/component/content/article/4978-npo-44261"
+        },
+        {
+          "number": 8,
+          "citation": "EurekAlert (Southwest Research Institute image record). Lunar Magnetotelluric Sounder multimedia record 979736.",
+          "url": "https://www.eurekalert.org/multimedia/979736"
+        },
+        {
+          "number": 9,
+          "citation": "European Space Agency. Prospect searching for water at the lunar poles. ESA web page (summarised from search results; not fetched in full).",
+          "url": "https://esa.int/Science_Exploration/Human_and_Robotic_Exploration/Prospect_searching_for_water_at_the_lunar_poles"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[1]": "payload.article.physical_specifications.examples[1].images (Lunar Magnetotelluric Sounder example)",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images used)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Name and category: exact catalogue entry 90 'Electrical resistivity probe' under '4. Subsurface exploration and drilling' (catalogue not edited).",
+    "No direct-current resistivity instrument was found flown on the Moon in the sources accessed. The flown examples are an RF interferometry sounder (Apollo 17 SEP, 1972) and a magnetotelluric sounder (SwRI LMS, 2025); both are included as the nearest matches and are described as such.",
+    "Apollo 17 SEP frequencies conflict slightly between the SEP report (1, 2, 4, 8, 16, 32 MHz) and the PDS overview (1, 2.4, 4, 8.1, 16, 32.1 MHz). Both are reported.",
+    "Apollo 17 SEP transmitter distance from the Lunar Module: about 150 m per the SEP report; approximately 100 m per the PDS overview. Both are reported.",
+    "Apollo 17 SEP mass, dimensions, power and antenna lengths are not publicly specified in the sources accessed; the full SEP report was checked and does not state them.",
+    "No direct image asset for the Apollo 17 SEP hardware or figure was verified; the PDS overview figure's direct URL was not identified. No Apollo SEP image is included.",
+    "LMS mass is published by SwRI as about 14 lb for five subsystems plus cables; the kilogram value (about 6.4 kg) is a conversion made for this article.",
+    "LMS landing date: SwRI press material gives 2 March 2025. Other sources cited in search results give 2 or 3 March (UTC differences). The operation end date (12 March 2025) and the preliminary science results come from a 2026 EGU conference abstract, not a peer-reviewed paper.",
+    "Grimm (2018, Icarus 314, 389-399): cited from its abstract summary only. The full text was not reviewed, so no porosity or loss-tangent values are used beyond the summarised abstract wording.",
+    "NASA EPP (NPO-44261): the overview and the article body conflict on detection range (0.05 to 10 percent overview versus about 0.1 percent detection and above 0.5 percent measurement in the body) and temperature range (25 C to -65 C overview versus -25 to +65 C body). The body text is used. Accuracy is stated only as 'a few percent'.",
+    "NASA EPP: the source does not report flight, vacuum or lunar testing; the source is an engineering technology brief and the full technical support package is behind a login.",
+    "PROSPECT (ESA): launch targeted for 2027 with Intuitive Machines (IM-4 per the search summary) according to the sources accessed. Its subsurface electrical sensor was not verified in primary ESA material; no PROSPECT electrical specification is included.",
+    "ESA PROSPECT source reference (reference 9) was taken from search-result summaries and was not fetched in full.",
+    "Image rights and reuse conditions for the EurekAlert and SwRI images were not verified. Both are press-release images, not archive images.",
+    "Source-page availability: automated HTTP checks returned 403 for the EurekAlert multimedia record (979736) and the NASA Tech Briefs page, and 302 for the peeref Grimm record. Content from the Tech Briefs page and the EurekAlert release that links to record 979736 was retrieved in an earlier fetch. The Grimm reference is not independently confirmed.",
+    "Lunar landing-site or location recommendations are excluded per the workflow deferral. Historical site names (Taurus-Littrow, Mare Crisium) are given only as the sites of the cited missions.",
+    "Stated status of ESA PROSPECT and the Goddard active-probe concept found in a search summary: the Goddard concept was not included because no primary source was accessed."
+  ]
+}

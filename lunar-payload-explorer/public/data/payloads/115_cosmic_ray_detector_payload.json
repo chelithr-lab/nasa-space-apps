@@ -1,0 +1,232 @@
+{
+  "catalogue_id": 115,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 6,
+    "name": "Radiation and space environment"
+  },
+  "payload": {
+    "number": 115,
+    "name": "Cosmic-ray detector",
+    "article": {
+      "overview": "A cosmic-ray detector is an instrument that measures high-energy charged particles arriving at a planetary body from outside the solar system (galactic cosmic rays) and from the Sun during solar energetic particle events [1][2]. In its simplest form it records how much energy each particle deposits in a sensitive material. More capable designs also estimate the linear energy transfer (LET), which describes energy deposited per unit path length, and in some cases identify the kind of particle [1]. The two best-documented examples in this article are CRaTER, which observes the radiation environment from lunar orbit [1][3][4], and LND, which measures the radiation and neutron environment on the lunar surface [2]. Both are relevant to human exploration, because radiation dose and its biological effects depend on the particle energies and types that these instruments measure [1][2].",
+      "description": "A typical cosmic-ray detector is a stack of thin solid-state detectors, usually made of silicon, arranged so that a particle passing through several layers can be identified. Each layer records the energy it deposits, and electronics combine the layer signals to estimate the particle's energy loss and, in some designs, its charge [1][2].\n\nThe CRaTER telescope stack consists of three pairs of thin (about 150 µm) and thick (1000 µm) silicon detectors, each 35 mm in diameter. Two sections of A-150 tissue-equivalent plastic (TEP), a synthetic analogue of human tissue, separate the pairs. The TEP sections are about 54 mm and 27 mm long [1]. The telescope is housed with a separate electronics box that processes the detector signals [1].\n\nThe LND sensor head is a stack of ten silicon detectors, labelled A to J, each with a nominal thickness of 500 µm, arranged as a charged-particle telescope. It also carries a 20 µm gadolinium (Gd) foil between detector pairs E and F and between G and H, which detects thermal neutrons. A thicker 250 µm Gd foil, sandwiched between two aluminium plates, shields one side of the sensor so that the direction of thermal neutrons can be inferred [2]. The LND sensor head and electronics box are described in [2].",
+      "scientific_purpose_and_applications": "The main purpose of a lunar cosmic-ray detector is to characterise the radiation environment that future crews and spacecraft will experience. CRaTER was designed to measure LET spectra of galactic and solar cosmic rays behind different thicknesses and types of material, including tissue-equivalent plastic. Its measurements were also intended to inform assessments of radiation effects on biological tissue analogues and to support modelling of how radiation penetrates shielding [1]. Because heavy ions produce rare but large responses, the paper notes that LET spectra must be accumulated over days, weeks or months to resolve their features [1].\n\nLND was designed for active dosimetry on the lunar surface. Its stated chief goal is to obtain the first active dosimetric measurements on the Moon's surface. It also observes fast neutrons produced when high-energy radiation interacts with the regolith, and thermal neutrons, which the paper identifies as a sensitive indicator of subsurface water content [2]. Its planned data products are a mix of one-minute, ten-minute and one-hour products, including charged-particle dose rate, LET spectra and thermal-neutron count rates [2].",
+      "operating_principle": "When a charged particle passes through a silicon detector, it deposits energy along its path. The energy loss per unit path length depends strongly on the particle's charge and only weakly on its mass, so a telescope of several detectors can estimate both how much energy is lost in each layer and which layers the particle crossed [1]. CRaTER uses paired thin and thick detectors because each pair covers a different LET range. The thin detectors measure high LET, and the thick detectors measure low LET [1]. Coincidence logic and on-board processing classify events, for example by whether a particle entered from the zenith direction and stopped in the stack, or whether it scattered or fragmented inside the telescope [1].\n\nLND uses a different mechanism for neutrons. Gadolinium captures thermal neutrons and emits conversion electrons, which the neighbouring silicon detectors can register. Fast neutrons and gamma rays are detected in the inner segment of detector C in anticoincidence with the other detector segments [2]. Signals from the sensor head are pulse-height analysed in the electronics box before being sent to the lander's instrument control unit [2].",
+      "scientific_importance": "The Moon has no thick atmosphere to attenuate incoming particles, so its surface and nearby orbit are directly exposed to galactic and solar radiation (general planetary-science background; not drawn from the cited sources). The LND paper describes radiation measurements near the Moon as remarkably scarce and states that a real dearth of data existed before recent orbital missions [2]. Direct measurements are therefore needed alongside models of the environment.\n\nEarlier and recent measurements have been reported as dose rates. The LND paper summarises the Chandrayaan-1 Radiation Dose Monitor (RADOM), which reported 0.227 mGy per day averaged over 20 November 2008 to 18 May 2009, rising to 0.257 mGy per day during the final three months of that mission. It also summarises CRaTER reporting about 0.22 to 0.27 mGy per day at a 50 km orbit [2]. These are values quoted secondhand in the LND paper; the CRaTER flight paper [1] gives instrument design and performance rather than these dose figures.\n\nCRaTER provides LET spectra rather than a single integrated dose. This matters because different particle energies and ion species produce different biological and electronic effects [1].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a cosmic-ray detector. Requirements vary with the particle energies to be measured, the required geometry factor, the platform (orbiter or lander) and the available mass, power and data resources. The two examples below are not interchangeable. CRaTER values for mass, power and telemetry come from the as-delivered flight unit [1][4]. The LND paper describes the architecture and geometry of a surface experiment, but does not give mass or power values [2].",
+        "examples": [
+          {
+            "name": "Cosmic Ray Telescope for the Effects of Radiation (CRaTER)",
+            "type": "Flown lunar orbital instrument. LRO was launched on 18 June 2009 [3]. NASA's LRO mission page labels the mission \"Active Mission\" but does not discuss CRaTER specifically [3]. CRaTER's own operating status was not confirmed from the sources accessed.",
+            "mass_kg": 5.53,
+            "mass_allocation_kg": 6.36,
+            "power_w": 6.66,
+            "power_allocation_w": 9.0,
+            "electronics_box_dimensions_cm": {
+              "length": 24.1,
+              "width": 23.0,
+              "height": 15.9
+            },
+            "telescope_assembly_dimensions": "Not stated in the sources accessed.",
+            "telemetry_max_kbps": 89.1,
+            "max_event_transmission_rate_per_s": 1200,
+            "spacecraft_power_interface": "28 VDC converted to +/-5 V and +5 V; thin-detector bias approximately +75 V, thick-detector bias approximately +225 V",
+            "data_interface": "Spacecraft 1553 network via four connectors on the digital processing board",
+            "sensor_configuration": "Three thin/thick silicon detector pairs (D1/D2, D3/D4, D5/D6) separated by two A-150 tissue-equivalent plastic absorbers (A1 about 54.0 mm, A2 about 27.0 mm), with aluminium end shields S1 and S2 (0.81 mm). Detectors are 35 mm diameter; thin detectors about 0.148 to 0.149 mm and thick detectors 1.000 mm silicon.",
+            "tep_density_g_cm3": 1.127,
+            "tep_composition_mass_percent": {
+              "carbon": 76.93,
+              "hydrogen": 10.33
+            },
+            "low_let_range": "0.09 to 85 keV/um, determined with thick detectors D2, D4 and D6",
+            "high_let_range": "2.3 keV/um to 2.2 MeV/um, determined with thin detectors D1, D3 and D5",
+            "let_resolution": "Below 0.3% of maximum LET in each range (RSS including detector and electronics noise and gain uncertainty)",
+            "minimum_geometric_factor_cm2_sr": 0.57,
+            "zenith_full_angle_fov_deg": 31.4,
+            "nadir_full_angle_fov_deg": 65.9,
+            "representative_coincidences": [
+              {
+                "coincidence": "D1-D2",
+                "field_of_view_deg": 169.0,
+                "geometric_factor_cm2_sr": 24.152,
+                "proton_threshold_mev": 12.7,
+                "threshold_direction": "zenith"
+              },
+              {
+                "coincidence": "D1-D4",
+                "field_of_view_deg": 53.4,
+                "geometric_factor_cm2_sr": 1.679,
+                "proton_threshold_mev": 90.8,
+                "threshold_direction": "zenith"
+              },
+              {
+                "coincidence": "D1-D6",
+                "field_of_view_deg": 31.4,
+                "geometric_factor_cm2_sr": 0.569,
+                "proton_threshold_mev": 114.5,
+                "threshold_direction": "zenith"
+              },
+              {
+                "coincidence": "D6-D5",
+                "field_of_view_deg": 170.0,
+                "geometric_factor_cm2_sr": 24.566,
+                "proton_threshold_mev": 17.7,
+                "threshold_direction": "nadir"
+              },
+              {
+                "coincidence": "D6-D4",
+                "field_of_view_deg": 65.9,
+                "geometric_factor_cm2_sr": 2.564,
+                "proton_threshold_mev": 63.9,
+                "threshold_direction": "nadir"
+              }
+            ],
+            "status": "Flown on LRO, launched 18 June 2009 (NASA). CRaTER-specific operating status not confirmed from sources accessed.",
+            "qualification": "Values are for the as-delivered flight unit (Table 1 of Spence et al. 2010, confirmed on the UNH instrument page). Allocations are design budgets, not measured values.",
+            "source_urls": [
+              "https://doi.org/10.1007/s11214-009-9584-8",
+              "https://crater.unh.edu/instrument.shtml",
+              "https://science.nasa.gov/mission/lro/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Lander Neutron and Dosimetry (LND) experiment",
+            "type": "Flown surface instrument. The Chang'E 4 lander and rover were launched at 18:23 UTC on 7 December 2018 and landed in the von Kármán crater at 02:26 UTC on 3 January 2019 [2]. LND is part of the lander's scientific payload and is mounted inside the -Y payload compartment [2].",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_and_power_status": "Not stated in the LND paper; not found in the sources accessed.",
+            "overall_dimensions_cm": null,
+            "top_window_cm": {
+              "width": 16,
+              "height": 23
+            },
+            "sensor_configuration": "Sensor head (SH) and electronics box (EB), linked by two harnesses to the lander's instrument control unit. Ten silicon solid-state detectors A to J (nominal 500 um) in a charged-particle telescope configuration, with 20 um and 250 um gadolinium foils for thermal-neutron detection.",
+            "detector_segment_areas_mm2": {
+              "inner_segment": 440.0,
+              "outer_segment_and_crosstalk_ring": 435.6
+            },
+            "geometry_factors_cm2_sr": {
+              "A1&B1": 0.58,
+              "A1&D1": 0.55,
+              "uncertainty": "less than 1%"
+            },
+            "fov_deg_from_lander_deck_normal": 13,
+            "thermal_modelled_c": {
+              "bracket_interface": {
+                "operational": [
+                  -20,
+                  55
+                ],
+                "non_operational": [
+                  -60,
+                  70
+                ]
+              },
+              "electronics_box_interface": {
+                "operational": [
+                  -20,
+                  55
+                ],
+                "non_operational": [
+                  -70,
+                  70
+                ]
+              }
+            },
+            "status": "Flown on Chang'E 4 lander; launched 18:23 UTC 7 December 2018; landed 02:26 UTC 3 January 2019 in von Karman crater.",
+            "qualification": "Architecture and geometry from the LND paper. Mass, power and overall dimensions are not published in the accessed text, so they are null.",
+            "source_urls": [
+              "https://arxiv.org/pdf/2001.11028",
+              "https://doi.org/10.1007/s11214-020-00725-3"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "For CRaTER, the electronics box is about 24.1 × 23.0 × 15.9 cm [1]. For LND, the paper gives only the top-window size and detector segment areas [2].",
+        "mass_and_weight": "CRaTER is 5.53 kg as delivered [1][4]. The LND mass is not available in the accessed text [2].",
+        "power_requirements": "CRaTER is 6.66 W as delivered [1][4]. The LND power is not available in the accessed text [2]."
+      },
+      "environmental_and_operational_requirements": "For an orbital instrument such as CRaTER, the environment is the polar lunar orbit of LRO, at a nominal altitude of 30 to 50 km. The telescope axis stays aligned along the nadir-zenith line during regular operations [1]. The instrument must withstand the spacecraft's thermal and electrical environment and communicate over the spacecraft's data network [1]. The nadir field of view is filled by the lunar surface in this orbit, which maximises the detection of albedo particles [1].\n\nFor a surface instrument such as LND, the main constraints are thermal and mechanical. The sensor head is thermally separated from the warm payload compartment by an MLI skirt. It radiates heat to space through a second-surface mirror tape and is kept close to the lander window so that it can view the sky [2]. The window opens by day and closes during the lunar night to conserve heat [2]. Power and data harnesses connect the sensor head to the electronics box, which connects to the lander's ICU [2].\n\nRadiation exposure is an operational requirement for the instrument itself, because its detectors experience the same environment they measure. The LND paper notes that the count rate in a non-isotropic field depends on detector orientation, which is why its segmented geometry is used to infer direction [2]. For CRaTER, extreme solar energetic particle events can saturate the deep-space-facing thick detector D2 through pulse pile-up, so the instrument has a rate-driven reconfiguration mode [1].",
+      "limitations": "The main limitations are measurement ambiguity and resource constraints. A LET measurement includes all ion species but cannot by itself resolve every species' mass [1]. Resolving species requires more detector material and resources, which is a design trade-off [1].\n\nA dosimeter measures integrated energy deposition and loses information about the spectral shape of the deposited energy and the particle distribution by ion type. A telescope with LET spectroscopy retains this information but requires more detector material and resources (general instrument-design background).\n\nSurface measurements depend on the instrument's orientation and field of view. The LND sensor head views the sky through its window, with a field of view about 13° from the normal to the lander deck. The window is closed during the lunar night, so no sky measurements are described for that period [2]. LND's silicon measurements also need modelling before they can be converted into tissue dose, which is a general limitation of silicon-based dosimetry rather than a specific LND result.",
+      "transportation_and_deployment": {
+        "overview": "CRaTER is an orbital instrument carried by the LRO spacecraft. LND is a surface instrument mounted inside the Chang'E 4 lander's payload compartment. Neither example requires a separate deployment mechanism in the sources accessed, apart from the lander's operation of the LND window [1][2].",
+        "transportation_process": [
+          "Integrate the instrument into the spacecraft or lander payload compartment on Earth.",
+          "Launch the spacecraft or lander on a launch vehicle.",
+          "Transfer towards the Moon and enter the operational orbit or descend to the surface.",
+          "For a surface payload, land the instrument on the surface and connect power and data through the lander interface.",
+          "For an orbiter payload, complete commissioning and begin measurements in the operational orbit."
+        ],
+        "deployment_methods": "The CRaTER instrument is fixed to the LRO spacecraft and has no separate deployment step described in the sources accessed [1]. The LND sensor head is fixed on a bracket in the lander payload compartment, and its re-closeable window is the only moving element described [2]. No robotic-arm or astronaut deployment of either instrument is described in the sources accessed.",
+        "historical_examples": "CRaTER was launched on LRO on 18 June 2009 [3]. LND was launched on the Chang'E 4 mission on 7 December 2018 and operated on the surface after the 3 January 2019 landing [2].",
+        "compatibility_assessment": "This article does not assess compatibility of either example with any other lander or spacecraft. The LND interface information is limited to the lander payload compartment and the instrument control unit [2], and the CRaTER interface information is limited to the LRO spacecraft's power, data network and mechanical mounting [1].",
+        "power_and_data": "CRaTER draws 28 VDC from the spacecraft and sends telemetry over the 1553 network at up to 89.1 kbit/s [1]. LND uses its own harnesses to the ICU, and its power and data interface is documented only at the architecture level [2].",
+        "images": []
+      },
+      "historical_significance": "CRaTER extended the record of direct radiation measurements in lunar orbit. Its design was framed around characterising the radiation environment that future lunar crews will face [1]. The LND paper states that Chandrayaan-1 and LRO are the only recent missions to report data on the Moon's radiation environment, apart from the Apollo 17 subsurface measurements of low-energy neutrons [2].\n\nLND is significant because the paper describes its chief goal as the first active dosimetric measurements on the lunar surface [2]. The Chang'E 4 mission was described in the same paper as the first mission to the far side of the Moon [2]. Whether the planned measurements were achieved is not established in the sources accessed for this article.",
+      "limitations_and_uncertainties": "- The CRaTER values in this article come from the instrument paper's as-delivered flight-unit table [1] and the UNH instrument page [4]. The paper's Table 1 gives both the flight value and the allocation; this article uses the flight values.\n- The CRaTER paper was accessed as a PDF copy from the ISSI website; the DOI landing page was not accessed directly [1].\n- Current operating status of CRaTER was not confirmed. The NASA LRO page labels the mission active but does not mention CRaTER [3].\n- The LND paper does not give mass, power or overall dimensions [2]. Further searches for LND mass and power did not locate a source.\n- The LND paper describes the instrument design and planned data products, not its flight measurements. No LND measured dataset was accessed, so this article reports no LND results.\n- No direct image asset URL was verified. Candidate sources were identified but not used: the UNH instrument page shows a flight-model photograph and an instrument-layout schematic, but its image sources are relative paths and were not downloaded [4]; the LND photograph credited in a secondary article to the Kiel project team was not confirmed [2]; and NASA Scientific Visualization Studio material on CRaTER is a conceptual cutaway rather than a flight photograph. The article therefore contains no embedded images.\n- The statement that the Moon has no thick atmosphere is general planetary-science background, not drawn from the cited sources.\n- The article does not assess compatibility of either example with any named lander, rover or spacecraft.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "CRaTER: The Cosmic Ray Telescope for the Effects of Radiation Experiment on the Lunar Reconnaissance Orbiter Mission",
+          "authors": "Spence, H. E., Case, A. W., Golightly, M. J., et al.",
+          "publisher": "Space Science Reviews 150, 243 (2010)",
+          "date": "2010",
+          "url": "https://doi.org/10.1007/s11214-009-9584-8"
+        },
+        {
+          "title": "The Lunar Lander Neutron and Dosimetry (LND) Experiment on Chang'E 4",
+          "authors": "Wimmer-Schweingruber, R. F., Yu, J., Bottcher, S. I., et al.",
+          "publisher": "Space Science Reviews 216, 104 (2020); arXiv:2001.11028",
+          "date": "2020",
+          "url": "https://arxiv.org/pdf/2001.11028"
+        },
+        {
+          "title": "Lunar Reconnaissance Orbiter (LRO), mission page",
+          "authors": null,
+          "publisher": "NASA Science",
+          "date": "launch 18 June 2009 (as stated on page)",
+          "url": "https://science.nasa.gov/mission/lro/"
+        },
+        {
+          "title": "CRaTER Instrument Overview",
+          "authors": null,
+          "publisher": "University of New Hampshire",
+          "date": null,
+          "url": "https://crater.unh.edu/instrument.shtml"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "CRaTER example": "payload.article.physical_specifications.examples[0].images",
+      "LND example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image objects are included in v2 because no direct asset URL was verified; see data_quality_notes."
+  },
+  "data_quality_notes": [
+    "v2 rerun: CRaTER resource and geometry values were corrected against the as-delivered flight-unit tables of Spence et al. (2010). v1 values superseded: LET range 0.2 to 7 MeV/um, fields of view 35 and 75 degrees, minimum geometric factor 0.7 cm2 sr, thin-detector thickness 140 um, TEP composition 77.5% C and 10.1% H, and mass 5.6 kg and power 9.0 W (preliminary and allocation values, not flight values).",
+    "No direct image asset URL was verified, so the registry is empty and no image is embedded. The UNH instrument page shows a flight-model photograph and an instrument-layout schematic, but its image sources are relative paths and were not downloaded; NASA SVS CRaTER material is a conceptual cutaway.",
+    "LND mass, power and overall dimensions are not published in the accessed LND paper; they are recorded as null.",
+    "CRaTER operating status is not confirmed by the sources accessed. NASA's LRO page labels the mission active but does not mention CRaTER.",
+    "Spence et al. (2010) full text was accessed through a PDF copy hosted by the ISSI website; the DOI landing page was not accessed directly.",
+    "The statement that the Moon has no thick atmosphere is general background and is not cited."
+  ]
+}

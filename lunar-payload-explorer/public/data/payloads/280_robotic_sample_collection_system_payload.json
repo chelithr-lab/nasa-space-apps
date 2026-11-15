@@ -1,0 +1,281 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 280,
+    "name": "Robotic sample collection system",
+    "article": {
+      "overview": "A robotic sample collection system is a payload that gathers soil, regolith or rock from a planetary surface without a crew member handling the material directly. On the Moon it typically combines a collection device (a scoop, a drill, a core tube or a grasping tool), a mechanism that moves the device, a container that holds the sample, and a means of sealing that container for the return journey to Earth. No single design defines this payload class. Luna 16 (1970) collected its sample with a fully automatic drill. The Chang'e-5 (2020) mission combined a drill with a scoop on a robotic arm. Apollo astronauts collected their samples by hand.",
+      "description": "A lunar sample collection system generally has four functional parts. The collection device is the part that contacts the ground: a scoop removes loose regolith from the surface, while a drill or coring tool reaches material below the surface, which may be less affected by space weathering and micrometeoroid bombardment. A positioning mechanism, such as a robotic arm, boom or fixed mechanism, moves the collection device to the chosen point. A sample handling and containment stage transfers the collected material to a container, holds it securely and, for a sample-return mission, seals it so that it cannot escape or become contaminated during launch, transfer and re-entry. Control and imaging provide the information operators or onboard software need to choose a site and confirm that sampling has been completed; some systems carry a close-range camera for this purpose. The payload is distinct from an ordinary drill or arm used for other tasks, because its main purpose is to acquire, retain and protect a sample for later scientific study.",
+      "scientific_purpose_and_applications": "The main purpose of a sample collection system is to obtain material that can be analysed in laboratories on Earth or in other facilities, including instruments too large, heavy or sensitive to fly to the Moon. Returned samples can be used to measure the age of rocks and soils, which helps constrain the timing of lunar volcanism and impacts; the chemical and mineral composition of material from different locations and depths; the presence and distribution of volatile or trace elements; and the effects of space weathering on surface material compared with material from greater depths. Depth is an important variable: surface regolith has been exposed to solar wind, cosmic rays and micrometeoroids for long periods, whereas material from below the surface may preserve a different record, so a drilling system can provide information that a scoop cannot. Robotic collection also extends the scientific reach of a mission because it does not need a crew and can collect material in locations that would otherwise be unavailable or too costly to reach. These are design advantages, not guaranteed outcomes; each mission's success depends on its own hardware and operations.",
+      "operating_principle": "Robotic sampling systems use a sequence of mechanical actions that depends on the design. A typical procedure is: the system is positioned over the chosen site using an arm, boom or fixed mechanism; a scoop or drill contacts the surface or is driven into the ground; the collection device retrieves material, for example a core or soil volume in a tube or cavity for a drill, or a quantity of loose regolith for a scoop; the sample is moved to a container or sample-handling mechanism; and the container is closed or sealed and held securely until the return journey. In the Luna 16 design, the withdrawn soil was lifted in an arc to a small spherical capsule mounted on the spacecraft bus. NASA's Beyond Earth history describes the automatic drill as running for about seven minutes, reaching a stop at 35 centimetres depth, withdrawing the sample and lifting it into the spacecraft, and notes that some soil apparently fell out during this procedure. The 101 g returned to Earth is therefore the mass recovered in the capsule, not the amount originally drilled. In the Chang'e-5 mission, as reported by Spaceflight Now, the lander first finished drilling underground rock specimens and sealed the material inside a return carrier, and then used a scoop at the end of a robotic arm to collect surface material over a sampling activity of about 19 hours.",
+      "scientific_importance": "Each returned lunar sample set gives scientists material that can be measured directly. Before 2020, the Apollo missions and the Soviet Luna missions were the main sources of returned lunar material. Luna 16 demonstrated that a fully automated surface sampling and return sequence could work without a crew, and Chang'e-5 and Chang'e-6 extended robotic sampling to combined scoop and drill sampling with larger returned masses. The scientific value of a robotic system depends on where it collects material, how much it collects, how well the sample is protected, and how well the collection is documented. Imaging, site selection and sample tracking are therefore part of the scientific importance of the payload, not only its mechanical function.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a robotic sample collection system. Masses, dimensions and power depend heavily on the mission architecture: whether the sampler is part of a lander, an ascent vehicle, a rover or a dedicated sample-return spacecraft. The values below describe specific flown or proposed examples. Where a value applies to a whole spacecraft rather than to the sampler alone, this is stated explicitly.",
+        "examples": [
+          {
+            "name": "Luna 16 automated drill and sample capsule",
+            "type": "Historical flown robotic sampler (Soviet Union, 1970)",
+            "status": "Flown",
+            "sampling_method": "Automatic drill that penetrated to a stop at 35 cm depth over about seven minutes; sample lifted in an arc to a small spherical capsule mounted on the spacecraft bus.",
+            "mission_objective": "Lunar sample return.",
+            "launch_date_utc": "1970-09-12T13:25:52Z",
+            "lunar_landing_utc": "1970-09-20T05:18Z",
+            "spacecraft_mass_at_landing_kg": 1880,
+            "sampler_mass_kg": null,
+            "sampler_dimensions_cm": null,
+            "sampler_power_w": null,
+            "returned_sample_mass_g": 101,
+            "instrument_list_note": "The Beyond Earth source lists a remote arm for sample collection among the scientific instruments carried by the spacecraft, and describes the automatic drill as the device that collected the core sample.",
+            "qualification": "The spacecraft mass at landing is a whole-spacecraft value and must not be read as the sampler's mass. The sampler's own mass, dimensions and power consumption are not separately stated in the source reviewed.",
+            "source_urls": [
+              "https://www.nasa.gov/sites/default/files/atoms/files/beyond-earth-tagged.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo astronaut-operated sampling tools",
+            "type": "Historical flown human-operated sampling tools (United States, 1969-1972); included as a comparison point, not a robotic system",
+            "status": "Flown",
+            "sampling_method": "Astronauts collected samples by hand with tools carried on the lunar surface.",
+            "mission_objective": "Crewed lunar surface exploration and sample collection.",
+            "programme_totals": {
+              "crew_members_walking_on_moon": 12,
+              "period": "1969-1972",
+              "documented_samples": 2196,
+              "exploration_hours_approx": 80,
+              "total_returned_mass_kg": 382
+            },
+            "sampler_mass_kg": null,
+            "sampler_dimensions_cm": null,
+            "sampler_power_w": null,
+            "qualification": "The 382 kg figure is a programme total for all Apollo missions and is not comparable with single-mission sampler values. Individual tool dimensions and masses are not stated because the NASA tool catalogue (JSC-23454) was identified but not retrieved for this article.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20060011039/downloads/20060011039.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-5 robotic arm scoop and drill sampler",
+            "type": "Flown robotic sampler (China, 2020)",
+            "status": "Flown",
+            "sampling_method": "Drill for underground rock specimens, sealed in a return carrier; scoop at the end of a robotic arm for surface material over about 19 hours of surface sampling.",
+            "mission_target_kg": 2,
+            "returned_sample_mass_g": 1731,
+            "returned_sample_mass_note": "Widely reported as about 1,731 g, citing CNSA. The primary CNSA news report could not be retrieved during this research.",
+            "landing_site_description": "Oceanus Procellarum, east of the volcanic plateau Mons Rümker, as reported by Spaceflight Now.",
+            "scoop_sampler_length_cm_approx": 35,
+            "drill_sampler_length_cm_approx": 30,
+            "sampler_dimension_source": "Hong Kong Polytechnic University press release; not checked against a CNSA or NASA specification.",
+            "close_range_camera_rating_c": 130,
+            "camera_rating_note": "PolyU describes the close-range camera on each sampler as rated to 130 degrees C. This is a component-level rating from an institutional source, not a full environmental specification for the sampler.",
+            "sampler_mass_kg": null,
+            "sampler_power_w": null,
+            "qualification": "Sampler dimensions come from an institutional press release. Sampler mass and power are not verified.",
+            "source_urls": [
+              "https://spaceflightnow.com/2020/12/02/chinese-probe-completes-sample-collection-work-on-lunar-surface/",
+              "https://polyu.edu.hk/media/media-releases/2020/1208_polyu_space_instruments_complete_lunar_sampling_for_chang_e-5",
+              "https://universetoday.com/149500/change-5-brought-home-1-7-kilograms-of-lunar-samples"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-6 far-side sampler",
+            "type": "Flown robotic sampler (China, 2024)",
+            "status": "Flown",
+            "sampling_method": "Not verified in the primary report reviewed. Secondary search summaries suggested a scoop and a drill, but no primary source confirming this was retrieved.",
+            "returned_sample_mass_g": 1935.3,
+            "returned_sample_mass_note": "CNSA handover statement reported by Global Times on 28 June 2024: the first batch weighs a total of 1,935.3 grams.",
+            "sampler_mass_kg": null,
+            "sampler_dimensions_cm": null,
+            "sampler_power_w": null,
+            "qualification": "No sampler mass, dimensions or power were verified for Chang'e-6.",
+            "source_urls": [
+              "https://globaltimes.cn/page/202406/1315027.shtml"
+            ],
+            "images": []
+          }
+        ],
+        "comparison_summary": [
+          {
+            "example": "Luna 16",
+            "status": "Flown, 1970",
+            "sampling_method": "Automatic drill, about 35 cm depth",
+            "returned_mass_reported": "101 g",
+            "sampler_specifications_verified": false
+          },
+          {
+            "example": "Apollo",
+            "status": "Flown, 1969-1972",
+            "sampling_method": "Astronaut-operated hand tools",
+            "returned_mass_reported": "382 kg total (all missions)",
+            "sampler_specifications_verified": false
+          },
+          {
+            "example": "Chang'e-5",
+            "status": "Flown, 2020",
+            "sampling_method": "Drill and robotic-arm scoop",
+            "returned_mass_reported": "about 1,731 g",
+            "sampler_specifications_verified": "partial (press release)"
+          },
+          {
+            "example": "Chang'e-6",
+            "status": "Flown, 2024",
+            "sampling_method": "Not verified",
+            "returned_mass_reported": "1,935.3 g",
+            "sampler_specifications_verified": false
+          }
+        ],
+        "dimensions_and_proportions": "The only sampler dimensions verified in this research are for the Chang'e-5 sampler: approximately 35 cm for the scoop sampler and approximately 30 cm for the drill sampler, as reported by PolyU. No dimensions are verified for the Luna 16 sampler, the Apollo tools or the Chang'e-6 sampler. The dimensions of any new sampler would depend on the sample size, the required depth, the geometry of the lander, and the clearance needed for the robotic arm.",
+        "mass_and_weight": "No sampler-only mass is verified for any of the four examples. The Luna 16 spacecraft mass at landing (1,880 kg) is a whole-spacecraft value; the Chang'e-5 returned sample mass (about 1,731 g) and the Chang'e-6 returned sample mass (1,935.3 g) are sample masses. These quantities are different and must not be compared as if they were the same. In engineering terms, the sampler mass drives launch cost and the lander's mass budget, so it should be determined for a given design rather than inferred from these examples.",
+        "power_requirements": "No sampler power figures are verified for any of the four examples in the sources reviewed. Power requirements for a new system would depend on its actuators, heaters and imaging system, and on the sampling duration. Recorded as not publicly specified for the examples in this article."
+      },
+      "environmental_and_operational_requirements": "A lunar sampler must operate in vacuum, under strong temperature variations, with abrasive dust and micrometeoroid exposure. It must also remain functional after the lunar night and survive the loads of launch, landing and return. The sample has its own requirements: it must be contained without contamination, kept free of terrestrial contamination, and sealed so that loose dust does not escape. Lunar dust is abrasive and can adhere to surfaces and seals, which constrains sealing mechanisms and the handling of containers after collection. Thermal behaviour matters for the sampler's electronics and actuators and for the sample container. PolyU reports that the close-range camera on the Chang'e-5 sampler is rated to 130 degrees C; this is a component-level rating from an institutional source, not a full environmental specification.",
+      "limitations": "Each system collects from a limited number of sites on a single mission, so the returned sample represents only a small region. A drilling or scooping action can disturb the material, mix layers or lose loose soil during transfer; the Luna 16 source notes that some soil apparently fell out during the procedure. Automatic systems depend on sensors, software and mechanisms working as designed, and a failure during sampling or transfer may leave a container empty or partly filled. The four examples use different sampler designs, sample masses and mission architectures, so only values explicitly reported by each source should be compared. A collected sample is only useful if it survives transfer to Earth, and sealing, containment and handling impose requirements that a surface-only sampler does not face.",
+      "transportation_and_deployment": {
+        "overview": "This is a surface payload. Its transportation and deployment chain covers Earth integration with the lander or ascent vehicle, launch, lunar transfer, landing, deployment of the sampling mechanism, sample collection and transfer into a container, and sealing for return. For sample-return missions, the sealed container is transferred to a return vehicle or capsule. The Chang'e-5 verified image below shows personnel removing samples from the return capsule and is used to illustrate the sample-return handling chain.",
+        "transportation_process": [
+          "Integrate the sampler with its lander or ascent vehicle on Earth, including interfaces for power, data and thermal control.",
+          "Launch the lander and sampler and send them on a trajectory to the Moon.",
+          "Land the lander, which places the sampler on the surface. The landing site is specified in mission documentation and is not chosen by this article.",
+          "Deploy the robotic arm, boom or fixed mechanism to move the collection device to the sampling point.",
+          "Collect the sample and move it into a container.",
+          "For a sample-return mission, seal the container and transfer it to a return vehicle or capsule. Chang'e-5 is reported to have sealed the drilled material inside a return carrier."
+        ],
+        "deployment_methods": "Deployment depends on the design. Luna 16 used an automatic drill and an arm-based sampling sequence with the sample lifted to a capsule on the spacecraft bus. Chang'e-5 used a drill and a scoop on a robotic arm mounted on the lander. Apollo tools were deployed by astronauts.",
+        "historical_examples": "Luna 16 (1970) demonstrated a fully automatic drill and sample-return sequence. Apollo (1969-1972) returned 382 kg of samples using astronaut-operated tools. Chang'e-5 (2020) used a drill and a robotic-arm scoop and returned about 1,731 g. Chang'e-6 (2024) returned 1,935.3 g from the far side; its sampling method is not verified.",
+        "compatibility_assessment": "No compatibility claim is made with any named lander, rover or spacecraft. A future sampler's compatibility would need to be assessed using its mass, dimensions, mounting points, landing loads, deployment method, power requirements, sample-container interface and sealing requirements, and only after comparison with verified spacecraft specifications.",
+        "images": [
+          {
+            "id": "change5_sample_removal",
+            "description": "Chang'e-5 mission personnel remove lunar samples from the return capsule.",
+            "image_type": "Sample-handling photograph (post-return)",
+            "image_url": "https://planetary.s3.amazonaws.com/web/assets/pictures/change-5-sample-removal.jpg",
+            "source_page_url": "https://www.planetary.org/space-images/change-5-sample-removal",
+            "publisher": "The Planetary Society (Bruce Murray Space Image Library)",
+            "credit": "Fu Yifei / Science and Technology Daily",
+            "caption": "Chang'e-5 mission personnel remove lunar samples from the capsule that safely carried them through Earth's atmosphere. Caption also describes about 1.7 kg of material and the first Moon sample return since 1976.",
+            "section_placements": [
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct image asset URL verified with an HTTP 200 response and with no query string or fragment. The source page was fetched and gives the photographer credit. Rights and reuse terms are not confirmed; the image should not be treated as public domain. Image shows post-return sample handling, not the sampler itself."
+          }
+        ]
+      },
+      "historical_significance": "Luna 16 is widely described as the first fully automatic recovery of lunar samples from the surface. NASA's history describes it as a landmark success after five consecutive failures in the Soviet programme, and its drill-and-capsule sequence showed that a robotic system could collect and return lunar material without a crew. The Apollo missions returned a far larger quantity of lunar material using astronauts and established the scientific framework for interpreting later samples. The Planetary Society's caption describes Chang'e-5 as returning about 1.7 kg of material and as the first Moon sample return since 1976. Chang'e-6 extended robotic sampling to the lunar far side and reported a returned mass of 1,935.3 g.",
+      "limitations_and_uncertainties": "No universal specification exists for a robotic sample collection system, and this article does not supply a single mass, size, power or lifetime for the class. Sampler mass, dimensions, power and drive-mechanism details are not verified for Luna 16, Apollo or Chang'e-6 in the sources reviewed. The Chang'e-5 sampler dimensions (about 35 cm and 30 cm) come from PolyU's press release and have not been checked against a CNSA or NASA specification. The Chang'e-5 returned mass (about 1,731 g) is widely reported and attributed to CNSA, but the primary CNSA news report could not be retrieved. The Chang'e-6 sampling method is not confirmed by a primary source. The Apollo tool catalogue (JSC-23454) was identified but not retrieved, so individual tool dimensions and masses are not stated. The Luna 16 arm and drill are described qualitatively. Only one image was verified; no verified images were located for Luna 16, the Apollo tools or Chang'e-6 in this research pass. The reuse terms of the Chang'e-5 image are not confirmed.",
+      "images": [
+        {
+          "id": "change5_sample_removal",
+          "description": "Chang'e-5 mission personnel remove lunar samples from the return capsule.",
+          "image_type": "Sample-handling photograph (post-return)",
+          "image_url": "https://planetary.s3.amazonaws.com/web/assets/pictures/change-5-sample-removal.jpg",
+          "source_page_url": "https://www.planetary.org/space-images/change-5-sample-removal",
+          "publisher": "The Planetary Society (Bruce Murray Space Image Library)",
+          "credit": "Fu Yifei / Science and Technology Daily",
+          "caption": "Chang'e-5 mission personnel remove lunar samples from the capsule that safely carried them through Earth's atmosphere. Caption also describes about 1.7 kg of material and the first Moon sample return since 1976.",
+          "section_placements": [
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct image asset URL verified with an HTTP 200 response and with no query string or fragment. The source page was fetched and gives the photographer credit. Rights and reuse terms are not confirmed; the image should not be treated as public domain. Image shows post-return sample handling, not the sampler itself."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "id": 1,
+          "title": "Beyond Earth: A Chronicle of Deep Space Exploration, 1958-2016 (2nd ed.), Luna 16 entry, pp. 94-96",
+          "authors": "Asif A. Siddiqi",
+          "publisher": "NASA History Program Office",
+          "date": "2018",
+          "url": "https://www.nasa.gov/sites/default/files/atoms/files/beyond-earth-tagged.pdf"
+        },
+        {
+          "id": 2,
+          "title": "Chinese probe completes sample collection work on lunar surface",
+          "authors": "Stephen Clark",
+          "publisher": "Spaceflight Now",
+          "date": "2020-12-02",
+          "url": "https://spaceflightnow.com/2020/12/02/chinese-probe-completes-sample-collection-work-on-lunar-surface/"
+        },
+        {
+          "id": 3,
+          "title": "Lunar Sample Compendium (draft)",
+          "authors": "Charles Meyer",
+          "publisher": "NASA Johnson Space Center",
+          "date": "2005",
+          "url": "https://ntrs.nasa.gov/api/citations/20060011039/downloads/20060011039.pdf"
+        },
+        {
+          "id": 4,
+          "title": "Chang'e-5 Brought Home 1.7 Kilograms of Lunar Samples",
+          "authors": null,
+          "publisher": "Universe Today",
+          "date": "2020",
+          "url": "https://universetoday.com/149500/change-5-brought-home-1-7-kilograms-of-lunar-samples"
+        },
+        {
+          "id": 5,
+          "title": "PolyU-developed space instruments complete lunar sampling for Chang'e 5",
+          "authors": null,
+          "publisher": "Hong Kong Polytechnic University",
+          "date": "2020-12-08",
+          "url": "https://polyu.edu.hk/media/media-releases/2020/1208_polyu_space_instruments_complete_lunar_sampling_for_chang_e-5"
+        },
+        {
+          "id": 6,
+          "title": "1,935.3 grams of lunar samples retrieved by Chang'e-6; China welcomes intl data sharing but urges US to remove obstacles",
+          "authors": "Fan Anqi; Deng Xiaoci",
+          "publisher": "Global Times",
+          "date": "2024-06-28",
+          "url": "https://globaltimes.cn/page/202406/1315027.shtml"
+        },
+        {
+          "id": 7,
+          "title": "Chang'e-5 Sample Removal (image page)",
+          "authors": null,
+          "publisher": "The Planetary Society",
+          "date": null,
+          "url": "https://www.planetary.org/space-images/change-5-sample-removal"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. The single verified image is repeated in the transportation section array; the master registry is deduplicated."
+  },
+  "data_quality_notes": [
+    "Luna 16 primary NASA NSSDC spacecraft records (IDs 1970-072A and 1970-088A) returned error pages and could not be read. Luna 16 facts are taken from NASA's Beyond Earth history (Siddiqi 2018), which is a NASA-hosted secondary history rather than the mission data archive.",
+    "The Beyond Earth source gives the Luna 16 landing coordinates as 0 deg 41 min S / 56 deg 18 min E; these are not used in the article because they are not needed for the payload description and the source's coordinate discussion is not re-verified here.",
+    "The Luna 16 sampler mass, dimensions and power are not stated in any source reviewed; recorded as null.",
+    "The Apollo tool catalogue JSC-23454 (Catalog of Apollo Lunar Surface Geological Sampling Tools and Containers, Allton 1989) was identified through search but not retrieved; the NASA Apollo Lunar Surface Journal page for tools returned HTTP 404 and a PDF copy returned binary content that could not be parsed. Individual Apollo tool specifications are not stated.",
+    "Apollo totals (12 crew members, 1969-1972, 2,196 documented samples, about 80 hours, 382 kg) come from the NASA Lunar Sample Compendium, which is labelled as a draft by its author and is not as comprehensive as the sample catalogues it references.",
+    "The Chang'e-5 primary CNSA news page (english.nao.cas.cn) could not be retrieved because of a certificate error. The 1,731 g returned mass is taken from secondary reporting that attributes it to CNSA.",
+    "A Chang'e-5 article in the journal Engineering (DOI 10.1016/j.eng.2021.03.007) was considered but excluded: the page states that the article has been retracted, and it was not used as a source.",
+    "The Chang'e-5 sampler dimensions (approximately 35 cm scoop, 30 cm drill) and the close-range camera rating (130 degrees C) come from a Hong Kong Polytechnic University press release. This is an institutional source reporting its own work; the values have not been checked against a CNSA or NASA specification.",
+    "The Chang'e-5 landing site and the Oceanus Procellarum / Mons Rumker location come from Spaceflight Now. The article describes these only as the historical mission site, not as a recommendation.",
+    "The Chang'e-5 landing and capsule return dates in December 2020 come from secondary reporting; they are not stated in the article's primary sources and are not cited as exact dates.",
+    "The Chang'e-6 sampling method (scoop and drill) was not confirmed by any primary source fetched during this research. The CAS English news page for the mission returned HTTP 404. The returned mass of 1,935.3 g is from Global Times, which reports the CNSA handover statement.",
+    "The Chang'e-5 image (planetary.s3.amazonaws.com) returned HTTP 200 on a HEAD request and the source page was fetched. The image was not downloaded at full resolution. The photographer credit comes from the Planetary Society page; reuse terms are not confirmed.",
+    "No verified direct image URLs were found for Luna 16, the Apollo sampling tools or Chang'e-6 in this research pass. No image is shown for these examples and none has been invented.",
+    "Power consumption and lifetime are not publicly specified for any of the four examples in the sources reviewed. The payload class does not have a universal power or mass value.",
+    "Reference URLs were checked over HTTP: all returned 200 except the Spaceflight Now article, which returned 403 to a scripted HEAD request. Its content was read through a fetch tool on 2026-11-13, so the page exists but was not re-verified by status code."
+  ]
+}

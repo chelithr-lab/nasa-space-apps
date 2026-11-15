@@ -1,0 +1,204 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 13,
+    "name": "Sample collection, preservation and return"
+  },
+  "payload": {
+    "number": 254,
+    "name": "Sample containment capsule",
+    "article": {
+      "overview": "A sample containment capsule is the sealed hardware that holds material collected on the Moon so that it can be stored, protected and carried back to Earth (or otherwise handled) without losing its scientific integrity. The term is used loosely in the literature: flown examples range from a sealed metal box carried on the lunar surface by astronauts (the Apollo Lunar Sample Return Container) to a sealed soil container housed inside a re-entry capsule (Luna 24, 1976) and a sample container housed inside a lunar ascender and transferred to a return capsule (Chang'e-5, 2020). This article therefore describes the payload class and its documented examples rather than a single standard design. The primary functions are containment (keeping the sample sealed from the external environment), preservation (limiting contamination, loss of volatiles and mechanical damage) and traceability of the sample from collection to laboratory analysis.",
+      "description": "A sample containment capsule typically includes a rigid outer shell, a sealed opening or lid, one or more seals, an internal liner or retention system and, in some designs, a sample cartridge, bag or funnel that guides material into the container. The container may be carried by astronauts, transferred by a mechanism, or housed inside a return vehicle. Its design must balance several requirements that can conflict: it must be sealed reliably, be light enough for launch and return, survive shock and thermal loads, and remain clean enough for the chemical analyses that will later be performed on the sample. Because the Moon has no atmosphere, the sample's natural environment is a near-vacuum, and volatile components can be lost if the sample is exposed to space. Containment hardware is therefore designed to preserve the sample's state in a controlled vacuum or sealed atmosphere, not merely to hold it.",
+      "scientific_purpose_and_applications": "The scientific purpose of a containment capsule is to deliver lunar material to Earth-based laboratories in a condition that allows meaningful analysis. Lunar samples can reveal the age of surfaces, the composition of the crust and mantle, the history of impacts and the space-weathering environment. Those interpretations depend on sample integrity: contamination from terrestrial organic material, moisture or oxidation can obscure the very signals scientists are trying to measure. The Apollo Lunar Sample Return Containers were designed to keep a lunar-like vacuum around the samples and to protect them from shock during the return flight, according to the Smithsonian's catalogue records for the Apollo 11 and Apollo 12/16 containers. The Chang'e-5 mission reported that its sealed samples were kept in a vacuum and shielded from the external environment during return to Earth (Xinhua, 2020).",
+      "operating_principle": "The operating principle is physical isolation and controlled closure. Material is collected and placed into the container, the container is closed or sealed, and the seal is maintained through transport. Key elements in the documented examples are: (1) Collection and loading. Apollo astronauts placed sample bags into the container on the lunar surface. Chang'e-5 used a sampler that deposited material into a container through a funnel, with a sweeping action that removed surplus material so that the lid could close (Leonard David, 2020). (2) Sealing. The Apollo containers used a triple seal between the body and lid. The Smithsonian Apollo 12/16 record states that the seal surfaces were protected by Teflon film and a cloth cover during loading and removed just before closing. Chang'e-5 reports describe a sealed packaging system. (3) Containment during transport. The Apollo containers included an aluminium mesh liner intended to absorb shock. Luna 24 carried its sealed soil container inside a spherical re-entry capsule (Wikipedia, citing NASA NSSDC). (4) Controlled opening. Apollo containers were opened under controlled conditions at the Lunar Receiving Laboratory in Houston (Smithsonian Apollo 11 record).",
+      "scientific_importance": "Returned lunar samples are among the most detailed sources of information about the Moon, because they can be analysed with laboratory instruments that cannot be flown to the Moon. The integrity of containment is therefore central to their scientific value. A container that leaks, is contaminated or is opened in an uncontrolled environment can compromise results that took decades of planning to obtain. The Apollo containers are historically important because they preserved samples that continue to be studied. The Luna 24 and Chang'e-5 missions also returned samples in sealed hardware. The payload class therefore has scientific significance beyond the hardware itself: it determines how much of a sample's original state can be trusted.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a sample containment capsule. The examples below are specific historical or flown hardware items, and their dimensions, masses and configurations are not directly comparable. A sealed box carried by astronauts (Apollo) and a container housed inside a return capsule (Luna 24) serve different architectural roles.",
+        "examples": [
+          {
+            "name": "Apollo Lunar Sample Return Container (ALSRC)",
+            "type": "Flown hardware (Apollo lunar landing missions)",
+            "flight_status": "Flown. The Smithsonian Apollo 12/16 record states that the unit flew on both missions. The Apollo 11 record states that two ALSRCs flew on each lunar landing mission.",
+            "materials": [
+              "7075 aluminium case (Smithsonian Apollo 11 and Apollo 12/16 records)",
+              "2024 aluminium alloy mesh liner (Smithsonian Apollo 11 and Apollo 12/16 records)",
+              "Silicone rubber seals, stainless steel and paint (Smithsonian Apollo 12/16 record)"
+            ],
+            "seal": "Triple seal between body and lid.",
+            "records": [
+              {
+                "source": "Smithsonian National Air and Space Museum, Apollo 11 ALSRC record",
+                "mass_kg": 8.8,
+                "mass_lb": 19.4,
+                "dimensions_as_listed": "20.5 in wide x 12.5 in deep x 8 in tall",
+                "dimensions_cm": [52.07, 31.75, 20.3],
+                "manufacturer": "Union Carbide, Nuclear Division (as listed in the record)"
+              },
+              {
+                "source": "Smithsonian National Air and Space Museum, Apollo 12 and 16 ALSRC record",
+                "mass_kg": 7.2,
+                "mass_lb": 15.9,
+                "dimensions_as_listed": "8 in high x 19 in wide x 11.75 in deep",
+                "dimensions_cm": [20.3, 48.3, 29.8]
+              }
+            ],
+            "record_discrepancy_note": "The two catalogue records give different mass and dimensional values for containers recorded as ALSRCs. The records do not explain the difference; this article does not reconcile them. Each value is attributed to the specific catalogue record.",
+            "power": "No power requirement is documented in the sources consulted. The records describe a sealed container; no powered function is described.",
+            "source_urls": [
+              "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-11/nasm_A19710813000",
+              "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-12-and-16/nasm_A19772508000"
+            ],
+            "images": []
+          },
+          {
+            "name": "Luna 24 soil sample container",
+            "type": "Flown hardware (Soviet lunar sample return mission, 1976)",
+            "flight_status": "Flown. Launch 9 August 1976; lunar landing 18 August 1976; Earth landing of the return capsule 22 August 1976 (Wikipedia, citing NSSDC and Siddiqi, 2018). Sources differ on the return date by one day.",
+            "container": "A cylindrical, hermetically sealed soil sample container located inside a spherical re-entry capsule (Wikipedia, citing NSSDC). The container is described as being on the ascent stage.",
+            "re_entry_capsule_secondary": {
+              "shape": "Spherical",
+              "diameter_cm": 50,
+              "mass_kg": 39,
+              "status": "Reported in one secondary source (Wikipedia, citing NSSDC); not verified against the NSSDC record itself."
+            },
+            "returned_sample_mass_g": 170.1,
+            "returned_sample_mass_status": "Reported by Wikipedia citing NSSDC; not verified against the NSSDC record itself.",
+            "drill_description": "Wikipedia describes a 90 cm extendable arm with a drilling rig and separately states that the lander pushed its drilling head about two metres into the nearby soil, without an inline citation. These figures are not reconciled in the source, and other secondary sources give different drill depths. Recorded as an open evidence gap.",
+            "container_mass_and_dimensions": "Not confirmed in the sources consulted.",
+            "power": "No container-level power requirement is documented in the sources consulted.",
+            "source_urls": [
+              "https://en.wikipedia.org/wiki/Luna_24"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-5 sample container and sealing system",
+            "type": "Flown hardware (Chinese lunar sample return mission, 2020)",
+            "flight_status": "Flown. Sampling was completed and the samples were stowed in a container inside the ascender (Xinhua, 2020-12-03). The Xinhua page gives the sampling end time as 10:00 p.m. Beijing Time on a Wednesday; the calendar date (2 December 2020) is inferred.",
+            "sampling_methods": "A drill was used for subsurface material and a robotic arm for surface material (Xinhua, 2020).",
+            "sealing_system_mass_kg": 1.5,
+            "container_mass_g": 360,
+            "mass_status": "Reported by a secondary blog (Leonard David, 2020). The original engineering source was not located.",
+            "sealing_functions": "A funnel protects the container from contamination during deposit, and a sweeping action removes excess sample so the lid can close (secondary blog, Leonard David, 2020).",
+            "temperature_note": "The secondary blog gives a heat tolerance of 130 degrees Celsius, which applies to the near-field cameras attached to each sampler, not to the samplers themselves. No sampler temperature tolerance is confirmed in the sources consulted.",
+            "container_dimensions_and_returned_sample_mass": "Not stated in the sources consulted.",
+            "source_urls": [
+              "https://english.spacechina.com/n17212/c3071264/content.html",
+              "https://www.leonarddavid.com/sampling-the-moons-surface-innovation-precision-and-reliability"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo 11 ALSRC record gives approximately 52 x 32 x 20 cm, and the Apollo 12/16 record gives approximately 20 x 48 x 30 cm (dimensions as listed in each record; see the discrepancy note). The Luna 24 and Chang'e-5 container dimensions are not confirmed. Sample containment hardware must be dimensioned for the sample volume, the seal geometry, the liner or cushioning, the handling interface and the transfer mechanism. The Luna 24 and Chang'e-5 containers are housed within return vehicles and are not directly comparable with the hand-carried Apollo box.",
+        "mass_and_weight": "Masses are recorded for the Apollo ALSRC (7.2 kg and 8.8 kg, per the two Smithsonian records), for the Luna 24 re-entry capsule (39 kg, secondary source) and for the Chang'e-5 container (360 g) and sealing system (about 1.5 kg, secondary source). These masses describe different subsystems and should not be compared as though they were the same payload.",
+        "power_requirements": "No power requirements are documented for the containment hardware in the sources consulted. The Apollo ALSRC records describe sealed containers with no powered function. The Chang'e-5 sampling and sealing system is part of a powered spacecraft, but the sources do not give a power figure for the packaging system alone."
+      },
+      "environmental_and_operational_requirements": "Containment hardware on the Moon must withstand a near-vacuum, large surface temperature variations, radiation, launch and landing loads, and the return flight through Earth's atmosphere. The Apollo containers used aluminium construction and a mesh liner to absorb shock, with silicone rubber seals and a triple-seal closure. Chang'e-5 used sealing and packaging hardware to keep the sample in a vacuum (as reported in Xinhua). Contamination control is an operational requirement. The Apollo containers were loaded on the surface with Teflon film and a cloth cover protecting the seal surfaces until just before closing. The Chang'e-5 packaging system used a funnel to protect the container during deposit. Operational requirements also include controlled opening on Earth, which the Smithsonian Apollo 11 record describes. Secondary sources (Wikipedia) describe latches designed for gloved astronauts; this has not been checked against a primary source.",
+      "limitations": "Seal reliability: a sealed container cannot recover its original state if the seal fails during transport, and seal performance depends on materials, geometry, closing procedure and handling. Shock and thermal loads: liners and shells protect the sample from shock and temperature extremes, but the specific loads and protection margins are not documented in the sources consulted. Limited public specification: public documentation for the Luna 24 and Chang'e-5 containers is sparse, and several figures come from secondary sources. Handling dependence: the Apollo containers depended on astronauts in pressurised suits; this article does not verify the secondary-source statements about latch and seal design against primary NASA documents. Not a certified design: the examples describe historical hardware and are not design specifications for a new containment capsule.",
+      "transportation_and_deployment": {
+        "overview": "A sample-return payload differs from a surface instrument: its key functions occur during collection, closure, transfer and return rather than during long-term surface operation.",
+        "transportation_process": [
+          "Earth integration: each Apollo ALSRC was loaded with sample bags and other containment devices before flight (Smithsonian Apollo 12/16 record).",
+          "Lunar surface (Apollo): astronauts placed samples into the container on the surface; Teflon film and a cloth cover protected the seals during loading and were removed just before closing (Smithsonian Apollo 12/16 record).",
+          "Lunar surface (Chang'e-5): drilling and robotic-arm sampling collected material, and the samples were stowed in a container inside the ascender (Xinhua, 2020).",
+          "Ascent and transfer: Luna 24 carried its sealed container inside a spherical re-entry capsule on the ascent stage (Wikipedia, citing NSSDC). For Chang'e-5, a design paper on an in-orbit sample container transfer mechanism is listed in the references but could not be accessed in this run, so transfer details are not described.",
+          "Return chain: Apollo containers were opened under controlled conditions at the Lunar Receiving Laboratory in Houston (Smithsonian Apollo 11 record). Chang'e-5 sample handling on return is not described in the sources fetched in this run.",
+          "No compatibility is asserted with a named lander, rover or spacecraft. Compatibility would require verified interface data for the containment hardware and the receiving vehicle."
+        ],
+        "deployment_methods": "Apollo containers were carried and closed by astronauts on the lunar surface. Chang'e-5 collection used a drill and a robotic arm. Luna 24 collected soil with a drilling rig on an extendable arm, with the sealed container housed in the ascent stage and capsule. Deployment of containment hardware is therefore an operational sequence of collection, closure, transfer and return rather than a deployment of a standalone instrument.",
+        "historical_examples": "Apollo Lunar Sample Return Containers (Apollo 11 to 17, per Wikipedia; Apollo 11 and 12/16 confirmed by Smithsonian records); Luna 24 (1976); Chang'e-5 (2020).",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted. Compatibility would require verified interface data for the containment hardware, including mass, dimensions, closure and handling interfaces, thermal and vacuum requirements, and the receiving vehicle's accommodation of the container.",
+        "images": []
+      },
+      "historical_significance": "The Apollo Lunar Sample Return Containers were used on crewed lunar landing missions between 1969 and 1972. The Smithsonian records confirm their use on Apollo 11 and Apollo 12/16. Secondary sources state that 16 units were built by Union Carbide's Nuclear Division at the Y-12 facility for NASA, and that the containers flew from Apollo 11 to Apollo 17; the 16-unit count is not confirmed against a primary NASA or DOE source in this run. Luna 24 was launched on 9 August 1976 and returned about 170 g of lunar soil; secondary sources describe it as the last Soviet lunar sample return mission. Chang'e-5 returned lunar samples in December 2020; secondary sources describe it as the first lunar sample return since Luna 24, a comparison not checked against a primary source in this run.",
+      "limitations_and_uncertainties": "Two Apollo catalogue records differ in mass and dimensions, and the reasons are not stated in the records. Luna 24 drill depth: one secondary source gives a 90 cm extendable arm and another states a drilling depth of about two metres; these are not reconciled. Luna 24 return date: sources differ (22 or 23 August 1976); the 22 August 1976 Earth-landing date is used with a secondary citation. The NASA NSSDC catalogue entry for Luna 24 (1976-081A) could not be accessed in this run; figures attributed to NSSDC come through Wikipedia. Chang'e-5 container dimensions, returned sample mass and transfer mechanism parameters were not confirmed; the mass figures (1.5 kg system, 360 g container) come from a secondary blog. An earlier search excerpt suggested samplers tolerate 200 degrees Celsius; the fetched text attributes 130 degrees Celsius to the cameras, not the samplers, so the 200 degree claim is not used. Secondary sources describe cleanliness requirements for parts-per-billion contamination analysis; these are not included because the primary text was not verified.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "ALSRC, Apollo Lunar Sample Return Container, Apollo 11",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "url": "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-11/nasm_A19710813000",
+          "access_status": "Fetched. Used for mass, dimensions, materials, triple seal, vacuum purpose, two ALSRCs per landing mission, and controlled opening at the Lunar Receiving Laboratory."
+        },
+        {
+          "title": "ALSRC, Apollo Lunar Sample Return Container, Apollo 12 and 16",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "url": "https://airandspace.si.edu/collection-objects/alsrc-apollo-lunar-sample-return-container-apollo-12-and-16/nasm_A19772508000",
+          "access_status": "Fetched. Used for mass, dimensions, materials including silicone rubber seals, mission use, and Teflon film protection during loading."
+        },
+        {
+          "title": "Apollo Lunar Sample Return Container",
+          "publisher": "Wikipedia (secondary)",
+          "url": "https://en.wikipedia.org/wiki/Apollo_Lunar_Sample_Return_Container",
+          "access_status": "Fetched. Secondary source; used only for the 16-unit count and the 1969 to 1972 flight years, neither confirmed against a primary source."
+        },
+        {
+          "title": "China's Chang'e-5 completes sampling on moon",
+          "publisher": "Xinhua (via english.spacechina.com)",
+          "url": "https://english.spacechina.com/n17212/c3071264/content.html",
+          "publication_date": "2020-12-03 (page update date)",
+          "access_status": "Fetched. Used for sampling methods, container stowed in the ascender, and the vacuum statement. Sampling end date inferred."
+        },
+        {
+          "title": "Sampling the Moon's Surface: Innovation, Precision and Reliability",
+          "publisher": "Leonard David (personal blog, Leonard David's INSIDE OUTER SPACE)",
+          "url": "https://www.leonarddavid.com/sampling-the-moons-surface-innovation-precision-and-reliability",
+          "publication_date": "2020-12-09",
+          "access_status": "Fetched. Secondary blog; used for sealing system mass (1.5 kg), container mass (360 g), funnel and sweeping action. Original engineering source not located."
+        },
+        {
+          "title": "Luna 24",
+          "publisher": "Wikipedia (secondary; citing NASA NSSDC and Siddiqi, 2018)",
+          "url": "https://en.wikipedia.org/wiki/Luna_24",
+          "access_status": "Fetched. Secondary; launch and landing dates, returned sample mass, container and re-entry capsule description. The cited NASA NSSDC Master Catalog record for spacecraft 1976-081A (NSSDC display page, reached via the NSSDC site) returned an error page in this run and was not accessed."
+        },
+        {
+          "title": "Design of In-Orbit Sample Container Transfer Mechanism for Chang'E-5 Lunar Sample Return Mission",
+          "publisher": "MDPI, Aerospace",
+          "url": "https://www.mdpi.com/2226-4310/10/12/992",
+          "access_status": "Not accessed. The publisher returned HTTP 403. Listed for the title only; no claims in this article rely on its text."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo Lunar Sample Return Container example": "payload.article.physical_specifications.examples[0].images",
+      "Luna 24 soil sample container example": "payload.article.physical_specifications.examples[1].images",
+      "Chang'e-5 sample container example": "payload.article.physical_specifications.examples[2].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All source_page_url values in this file have query strings and fragments removed. No direct image URLs were verified, so no image_url values are recorded. The Smithsonian ALSRC records reference gallery images served from ids.si.edu with file identifiers only in query strings; those query-string URLs were not used because removing the query would make them unusable, and their visual content was not verified.",
+    "image_status": "No image objects were added. The article includes no images because no direct asset URL with verified content was obtained within this run."
+  },
+  "data_quality_notes": [
+    "Smithsonian ALSRC records (Apollo 11 and Apollo 12/16) give different mass and dimensions for containers recorded as ALSRCs. The discrepancy is not explained by the records and is not reconciled in this article.",
+    "Luna 24 drill depth is inconsistent in the sources consulted: a 90 cm extendable arm (Wikipedia, cited to NSSDC) versus a drilling head pushed about two metres into the soil (Wikipedia, no inline citation) and other secondary depths. Recorded as unresolved.",
+    "Luna 24 Earth-landing date differs between sources (22 or 23 August 1976). The 22 August 1976 date is used with a secondary citation.",
+    "The NASA NSSDC record for Luna 24 (1976-081A) returned an error page in this run. Figures attributed to NSSDC (re-entry capsule 50 cm and 39 kg; returned sample 170.1 g) rest on Wikipedia and are unverified against the primary record.",
+    "Chang'e-5 sealing system mass (1.5 kg) and container mass (360 g) come from a secondary personal blog (Leonard David, 2020); the original engineering source was not located.",
+    "Chang'e-5 sampler temperature tolerance: an earlier search excerpt stated 200 degrees Celsius; the fetched blog text attributes 130 degrees Celsius to the near-field cameras, not the samplers. No sampler tolerance is confirmed and the 200 degree claim is not used.",
+    "Chang'e-5 sampling end date (2 December 2020) is inferred from a Wednesday in the Xinhua page. Chang'e-5 landing date (17 December 2020) and the Chang'e-5 National Science Review publication details (15 October 2021) appeared only in search-result excerpts and were not verified on fetched pages; they are not used as article facts.",
+    "The Chang'e-5 in-orbit sample container transfer mechanism paper (MDPI Aerospace) returned HTTP 403 and could not be accessed. Its transfer distance and mechanism details (including a reported transfer of about 626 mm seen only in a search excerpt) are not used.",
+    "The 16-unit ALSRC production count and the Apollo 11 to 17 flight range come from Wikipedia and are not confirmed against a primary NASA or DOE document.",
+    "The DOE Y-12 newsletter (D. Ray Smith, 28 July 2009) could not be text-extracted from the retrieved PDF in this run; it is listed in this note only and no claims depend on it.",
+    "Claims that the Apollo containers were closed under vacuum, that sealing and cleanliness specifications apply to parts-per-billion analysis, and that the latch and seal design was shaped by human-factor testing came only from secondary sources and search excerpts; they are not included as article facts except where noted as secondary.",
+    "No direct image assets were verified. The Smithsonian ALSRC records list gallery images (file identifiers NASM-A19710813000_DSH02, _DSH06, _DSH07, _DSH08 and _DSH10 for the Apollo 11 record) whose visual content was not checked; they are not included.",
+    "No compatibility with any named lander, rover or spacecraft is asserted; transportation_compatibility_verified_for_specific_landers is false.",
+    "Full technical audit is not complete (technical_specifications_fully_audited is false). Several numerical values rely on secondary sources as stated above."
+  ]
+}

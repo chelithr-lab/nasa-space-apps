@@ -1,0 +1,419 @@
+{
+  "catalogue_id": 109,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 5,
+    "name": "Water, ice and volatile detection"
+  },
+  "payload": {
+    "number": 109,
+    "name": "Water ice concentration analyser",
+    "article": {
+      "version": "v2",
+      "date": "2026-11-13",
+      "supersedes": "water_ice_concentration_analyser_payload_109.md (v1), retained unchanged",
+      "payload_environment": "Mixed. One NASA drill and mass spectrometer pair (PRIME-1: TRIDENT and MSOLO) flew on Intuitive Machines' IM-2 lander, which landed on its side on 6 March 2025 and ended operations early; no lunar water measurement is reported by NASA. One ESA sample-acquisition and analysis package (PROSPECT) is in development for a planned 2027 flight. One volatile mass spectrometer (NGMS) was assessed at technical readiness level 8 and did not fly to the Moon.",
+      "overview": "A water ice concentration analyser is a lunar payload that estimates how much water ice, and other releasable volatile material, a regolith sample contains. Concentration is usually expressed as a mass fraction, for example weight per cent (wt%) of the sample. Most designs in this class follow the same chain: a drill or sampler collects regolith from the surface or subsurface, the sample is kept cold and sealed, it is heated so that volatiles are released as gas, and a mass spectrometer identifies and measures the gas. The water content is then inferred from the amount of water released compared with the mass of sample processed.\n\n**Scope of this article.** The catalogue entry is a payload class rather than a single named instrument. This article treats three documented examples separately:\n\n- **PRIME-1 (NASA):** the TRIDENT drill and the MSOLO mass spectrometer. The hardware flew on IM-2. NASA reports that the hardware demonstrated its range of motion and that MSOLO detected elements it attributed to the lander's propulsion gases. NASA does not report a lunar water measurement [2][5].\n- **PROSPECT (ESA):** the ProSEED drill and the ProSPA analytical laboratory. This is a flight package in development, with a launch date of 2027 stated on the ESA page [7].\n- **Neutral Gas Mass Spectrometer (NGMS):** a time-of-flight volatile analyser with a gas chromatograph and pyrolysis oven, developed for the Russian Luna-27 programme. It did not fly to the Moon [4].\n\n**Evidence status.** The article uses the following categories:\n\n- **Flown on a lander, operational water result not reported:** TRIDENT and MSOLO within PRIME-1 [2][5].\n- **Flight in development, not yet flown:** PROSPECT [3][7].\n- **Assessed at technical readiness level 8 (per its abstract), not flown:** NGMS [4].\n- **Laboratory test only, cryogenic thermal-vacuum chamber with water-doped simulant:** the MSOLO and TRIDENT monitoring campaign [1].",
+      "description": "A water ice concentration analyser has four functional stages. (1) Sample acquisition: a drill or sampler brings regolith from depth, where water ice may be more stable, to the instrument. PROSPECT's ProSEED drill is designed to acquire cryogenic samples to a depth of up to 1 m and deliver them to the analyser. NASA describes the TRIDENT drill as reaching about three feet below the surface. (2) Sample handling and sealing: samples are held cold and transferred quickly so that water is not lost; PROSPECT receives samples in a solids inlet system, seals them in miniaturised ovens, and heats them. (3) Volatile release and gas processing: a heated oven, or a monitor at the drill, releases volatiles into a gas-handling system; in PROSPECT the analytical package processes the released gas before analysis; the NGMS combines a gas chromatograph and a pyrolysis oven upstream of its mass spectrometer. (4) Analysis: a mass spectrometer measures the mass-to-charge ratio and abundance of species present. MSOLO is a residual gas analyser that monitors water (mass-to-charge ratio 18) and other species; ProSPA carries two types of mass spectrometer. Supporting sensors are common: PROSPECT includes multispectral cameras imaging the drill working area and sealed samples, temperature sensors, and a permittivity sensor integrated in the drill rod.",
+      "scientific_purpose_and_applications": "The main scientific purpose of this payload class is to measure how much water ice and other volatiles are present in lunar polar regolith. Early orbital and impact data indicated hydrogen-bearing volatiles in the lunar south pole. The LCROSS impact experiment reported water ice in the impact zone of the Cabeus crater at approximately 5.6 ± 2.9% by mass, a value quoted in reference 1 and not re-derived here. In-situ measurement is needed because the amount, the form and the depth distribution of the ice are not yet known. Applications include resource prospecting to locate and characterise volatile-bearing regolith and to plan drilling depth and sampling strategy; in-situ resource utilisation (ISRU) demonstration, in which extracted water could be processed into oxygen and hydrogen (the PROSPECT paper lists ISRU demonstration as one of its aims); volatile inventory and origin science, since PROSPECT aims to determine the form, quantity and origin of water and hydroxyl in polar regolith; and volatile analysis of the exosphere and regolith, which is a design goal of the NGMS.",
+      "operating_principle": "Water concentration is inferred in three steps. Release: water ice must become gas before it can be measured; PROSPECT heats sealed samples in ovens, whereas the MSOLO laboratory campaign monitored volatiles released from the cuttings pile during drilling. Detection: the mass spectrometer records gas composition, with the water peak at mass-to-charge ratio 18 as the main signal. Quantification: the water measured is compared with the mass of sample processed to estimate wt%. Relative quantification compares signal intensities between samples under the same conditions; absolute quantification needs a calibration that relates the signal to a known water content. The MSOLO laboratory study showed that relative quantification is possible from raw signals, but that absolute quantification needs more data. The calibration relating water fluence to signal had a coefficient of determination (R²) of 0.75, and the calibration is valid only under the conditions in which it was developed. Two physical losses limit accuracy: water can sublimate from the sample into vacuum during drilling, transfer and handling, and can leak from seals or valves during analysis. PROSPECT models these losses and designs its handling to limit them. The MSOLO test campaign found that cuttings-pile dynamics also affected the signal.",
+      "scientific_importance": "Water ice concentration analysers address a measurement gap that orbital remote sensing cannot close. Remote data can indicate hydrogen-bearing material, but cannot determine the concentration, depth profile and chemical form of volatiles in regolith [1][3]. A successful in-situ instrument would therefore tell mission planners not only whether water is present, but how much is recoverable and at what depth.\n\nThe importance of this payload class is also methodological. The MSOLO campaign showed that a commercially derived mass spectrometer could monitor water release during drilling in a simulated permanently shadowed region [1]. PROSPECT's design is a complete chain from drilling to sealed analysis [3]. Both highlight that the sample-handling chain, not only the spectrometer, controls the accuracy of the result [1][3]. The IM-2 flight showed that the same class of hardware could be operated on a lunar surface, but the flight data that NASA released did not yield a reported water measurement [2][5].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power specification for a water ice concentration analyser. The three examples are not directly comparable: one is a commercially derived mass spectrometer and drill that flew on a lander with an incomplete operational record; one is a complete sample-acquisition and analysis package in development; and one is a volatile mass spectrometer that did not fly. Numerical values apply only to the named instrument and source.",
+        "examples": [
+          {
+            "name": "PRIME-1 TRIDENT drill and MSOLO mass spectrometer (NASA)",
+            "type": "Lunar lander payload; flown on IM-2; operational water result not reported",
+            "status": "Launched 26 February 2025 on Intuitive Machines IM-2 (Nova-C). Landed 6 March 2025 on its side in a crater. NASA reports the hardware demonstrated its full range of motion and that MSOLO detected elements likely due to propulsion-system gases; no lunar water measurement is reported.",
+            "msolo_description": "Modified commercial off-the-shelf mass spectrometer based on INFICON's Transpector MPH residual gas analyser, ruggedised with radiation-resistant parts and structural and thermal enhancements. Mass-to-charge range 1 to 100; crossbeam ion source with two redundant linear filaments.",
+            "msolo_mass_kg": null,
+            "msolo_power_w": null,
+            "msolo_mass_note": "Flight mass and power not confirmed in a primary source in this run. Search-indexed summaries of NASA presentations give about 3.5 kg and about 20 W for the bare Transpector MPH (pre-flight, undated), and below 7.5 kg for the complete MSolo unit. These are leads only and are not used as verified values.",
+            "trident_drill_mass_kg": null,
+            "trident_drill_mass_note": "A search-indexed summary of a NASA PRIME-1 payload page gives 16 kg; the page could not be confirmed in this run (fetch returned HTTP 404). Not used as a verified value.",
+            "trident_drill_reach": "About three feet (about 1 m) below the surface, per NASA PRIME-1 description.",
+            "trident_actuator_power_note": "A 2024 LPSC abstract, seen only as a search-indexed summary, describes rotary and percussive actuators at about 200 W each. Not verified in a primary source here.",
+            "laboratory_campaign": "2019 thermal-vacuum test: average chamber pressure 1.6 × 10⁻⁶ Torr; regolith about −178 °C; about 100 kg of water-doped lunar highlands simulant in three layers (dry, measured at about 0.2 wt% water; 2.5 wt%; 5 wt%); four holes drilled with TRIDENT; MSOLO monitored cuttings. Lowest-concentration bites (hole 1, bites 1 to 3) gave peak currents of 5.95 × 10⁻⁹ A, 5.0 × 10⁻⁹ A and 4.2 × 10⁻⁹ A, against an instrument baseline of 3.71 × 10⁻¹³ A. The authors report that 0.2 wt% water could still be detected. These are laboratory results, not lunar regolith measurements.",
+            "flight_outcome": {
+              "nasa_release_2025_03_07": "NASA received about 250 megabytes of data; IM-2 completed some instrument checkouts. The lander was on its side and its batteries were depleted before the drill and other instruments could be fully operated. The release does not state whether TRIDENT collected or returned any soil or ice, and does not state that MSOLO detected water.",
+              "msolo_overview_2026_excerpt": "A search-indexed excerpt of NASA's April 2026 MSOLO overview (NTRS 20260003150) reports a planned operating period of about 10 days, an actual period of about 0.5 days, lower sensitivity than in transit, and an unknown cause (possibly dust). The PDF could not be parsed in this run; these statements are unverified in full text."
+            },
+            "images": [],
+            "images_note": "No PRIME-1 hardware image was verified in this run."
+          },
+          {
+            "name": "PROSPECT ProSEED drill and ProSPA analytical laboratory (ESA)",
+            "type": "Flight package in development; not flown",
+            "status": "ESA page (publication 29 August 2024) describes development for Intuitive Machines' Nova-C lander, planned launch 2027, operating period 5 to 10 Earth days. The page refers to the mission as CP-22; a search-indexed summary links it to IM-4. Unresolved.",
+            "mass_kg_total": 44.8,
+            "mass_breakdown_kg": {
+              "proseed_total": 31.8,
+              "control_electronics_unit": 5.3,
+              "drill_and_positioner": 23.4,
+              "harness": 3.1,
+              "prospa_total": 13,
+              "prospa_analytical_package": 10.35,
+              "prospa_solids_inlet_system": 2.65
+            },
+            "mass_note": "Values from the 2024 design paper, including margins, carried from v1.",
+            "static_envelopes_mm": {
+              "drill_box_without_positioner_rotation_joint": [
+                257,
+                228,
+                1721
+              ],
+              "drill_box_with_positioner_rotation_joint_and_hold_down_mechanisms": [
+                497,
+                290,
+                1721
+              ],
+              "prospa_analytical_package": [
+                277,
+                135,
+                374
+              ],
+              "prospa_solids_inlet_system": [
+                256,
+                301.2,
+                150
+              ]
+            },
+            "power_interface": "28 V over two feeders; maximum 50 W on line 1 and 200 W on line 2.",
+            "data_interface": "RS422 serial link, optionally redundant.",
+            "operational_temperature_range_c": [
+              -50,
+              50
+            ],
+            "non_operational_temperature_range_c": [
+              -50,
+              60
+            ],
+            "spectrometers": "ProSPA contains an ion-trap mass spectrometer and a magnetic-sector mass spectrometer (static and dynamic analysis modes listed in Table 3). Water requirements are set for water ice contents up to about 10 wt%. Table 3 detailed numbers not reproduced here.",
+            "demonstration_model": "A demonstration model of ProSEED drilled successfully to 1 m in gas concrete, brick layers and NU-LHT-2M lunar regolith simulant with rocky inclusions, at temperatures down to below −150 °C; cryogenic sample acquisition and delivery to representative hardware followed. Not flight hardware.",
+            "images": [
+              {
+                "id": "proseed_drill_box_subassemblies",
+                "description": "Labelled drawing of the ProSEED drill box and subassemblies: radiator, drill rod, mandrel and drill translation joint, positioner rotation joint and base tower, brush assembly, imaging-system interface and external and internal hold-down mechanisms.",
+                "image_type": "Technical drawing (labelled)",
+                "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g003.webp",
+                "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+                "publisher": "Frontiers in Space Technologies",
+                "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+                "caption": "Labelled drawing of the ProSEED drill box and its main subassemblies.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run. The v1 caption's reference to multi-layer insulation being omitted was not confirmed and is removed."
+              },
+              {
+                "id": "prospa_system_diagram",
+                "description": "ProSPA System Diagram (Open University drawing PRO-PA-DW-OU-0001, issue 5): schematic of the analytical laboratory, gas supply subsystem, gas processing subsystem, magnetic sector and ion trap mass spectrometers, solids inlet system and local electronics system.",
+                "image_type": "Technical schematic (system diagram)",
+                "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g007.webp",
+                "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+                "publisher": "Frontiers in Space Technologies",
+                "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+                "caption": "ProSPA System Diagram showing valves, ovens, cold fingers, the ion trap and magnetic sector mass spectrometers, the gas supply subsystem and the solids inlet system.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run. The drawing is labelled as an Open University document dated 7 September 2023."
+              },
+              {
+                "id": "prospa_assembly_layout",
+                "description": "Labelled layout of the ProSPA instrument assembly: local electronics box, cold finger baffle and radiator, cold finger support structure, solids inlet system interface and baseplate.",
+                "image_type": "Engineering layout (labelled)",
+                "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g010.webp",
+                "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+                "publisher": "Frontiers in Space Technologies",
+                "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+                "caption": "Labelled layout of the ProSPA instrument assembly.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run. The v1 description of two spectrometers in this layout was replaced with the labels that are visible in the figure."
+              },
+              {
+                "id": "prospect_engineering_model_photos",
+                "description": "Composite of engineering-model photographs: drill rod with insulation, drill box on an aluminium test rig with cabling, aluminium electronics box, solids-inlet funnel and carousel assembly, and a unit with a PROSPECT integration label.",
+                "image_type": "Engineering model photograph (composite)",
+                "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g011.webp",
+                "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+                "publisher": "Frontiers in Space Technologies",
+                "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+                "caption": "Engineering-model photographs of PROSPECT hardware, including the drill, the solids inlet funnel and carousel, and the electronics box.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run. Individual items are identified from visible features, not from an article caption."
+              }
+            ]
+          },
+          {
+            "name": "Neutral Gas Mass Spectrometer (NGMS)",
+            "type": "Volatile analyser for Luna 25 and Luna 27; did not fly to the Moon",
+            "status": "Assessed at technical readiness level 8 per its abstract; not flown.",
+            "description": "Compact time-of-flight mass spectrometer integrated with a gas chromatograph and pyrolysis oven. Analyses CHON compounds, water and noble gases in polar regolith and in the exosphere.",
+            "mass_kg": 3.2,
+            "power_w": {
+              "maximum_nominal": 23,
+              "standby_less_than": 6.8,
+              "nominal_operation": 19.0
+            },
+            "performance": "Mass resolution better than 1000; dynamic range up to six decades within a one-second integration time.",
+            "detection_limits_estimated_from_tests": {
+              "hydrocarbons_by_mass": 2e-10,
+              "noble_gases_by_mass": 2e-09,
+              "note": "Estimates from tests in regolith; not measured lunar values; no water detection limit stated in the abstract."
+            },
+            "flight_status": "Did not fly to the Moon for programmatic reasons. Design served as baseline for NIM (ESA JUICE), MANIaC (Comet Interceptor) and CODEX (NASA DIMPLE, for in-situ dating of lunar rocks).",
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The three examples have very different envelopes and should not be compared as one class. PROSPECT's drill box is a long box of about 1.7 m length; its ProSPA analytical package and solids inlet system are separate units. The PRIME-1 drill and MSOLO dimensions are not confirmed in a primary source in this run. Any new analyser's dimensions would be set by its drill reach, sample volume, thermal insulation and mounting requirements.",
+        "mass_and_weight": "Spacecraft mass is normally expressed in kilograms and affects launch requirements, lander capacity, structural support and deployment design. Confirmed mass values in this article are PROSPECT (44.8 kg total design figure, 2024 paper) and NGMS (3.2 kg). TRIDENT and MSOLO flight masses are not confirmed in a primary source in this run; search-indexed leads are recorded in the example notes but not used as verified values.",
+        "power_requirements": "PROSPECT: 28 V interface with 50 W and 200 W feeder limits. NGMS: 19.0 W nominal, 23 W maximum nominal, less than 6.8 W standby. PRIME-1: the drill actuator power and the MSOLO flight power are not confirmed in a primary source in this run."
+      },
+      "environmental_and_operational_requirements": "A lunar water ice analyser must work in an environment very different from Earth. Permanently shadowed regions, the target environment for many of these measurements, are extremely cold; the PRIME-1 laboratory test used regolith at about −178 °C, and ProSEED's demonstration model was tested down to below −150 °C. The instrument must control its own temperature, survive launch vibration and landing loads, and hold the vacuum and pressure range its spectrometers need. PROSPECT's control electronics and ProSPA interfaces are specified for −50 °C to +50 °C in operation. Sample handling must limit volatile loss. The power available at the lunar poles is limited, which constrains the NGMS, and the IM-2 flight showed that a lander's post-landing power and attitude can limit the payload's operating time.",
+      "limitations": "The MSOLO calibration had an R² of 0.75, was highly variable, and depends on temperature and pressure conditions not fully matched to the Moon. The MSOLO campaign supports relative quantification, not an accurate absolute water concentration. Sublimation and leakage can reduce the water measured compared with the regolith, so loss models are needed. The MSOLO test used water-doped simulant, not lunar regolith. No flight water measurement is reported for PRIME-1, PROSPECT or NGMS in the sources read.",
+      "transportation_and_deployment": {
+        "overview": "A water ice concentration analyser is usually delivered to the Moon as a lander-mounted surface payload, either as a dedicated package or as one component of a larger experiment set. The PRIME-1 hardware flew on a commercial lunar lander; PROSPECT is designed as a package of drill, analytical package and control electronics for a commercial lander accommodation.",
+        "transportation_process": [
+          "Integrate the drill, spectrometer and electronics into the lander or payload compartment on Earth.",
+          "Launch on a launch vehicle; PRIME-1 launched on IM-2 from Kennedy Space Center on 26 February 2025.",
+          "Transfer towards the Moon and land on the surface; IM-2 touched down on 6 March 2025 and was later confirmed to be on its side in a crater.",
+          "Deploy the drill on its positioner base; PROSPECT's external hold-down mechanisms secure the drill during launch and are released for operation.",
+          "Connect power and data through the control electronics unit, and manage thermal and mechanical interfaces with the lander."
+        ],
+        "deployment_methods": "PROSPECT's drill uses a positioner rotation joint and a drill rod carrying temperature sensors and a permittivity sensor. Sampling tools are a push tube for small samples and an auger mechanism for larger volumes. The PRIME-1 drill is TRIDENT; NASA's PRIME-1 page carries an image caption dated 6 March 2025 stating that the drill was deployed.",
+        "historical_examples": "PRIME-1 on IM-2 is the flown precedent for a drill and spectrometer pair in this class; NASA's release reports that hardware operated but no water result was reported. The NGMS was descoped from the Luna 25 mission.",
+        "compatibility_assessment": "PRIME-1's flight on IM-2 is confirmed by NASA. PROSPECT is described by ESA as planned for an Intuitive Machines Nova-C lander with a 2027 launch date. No further compatibility is asserted for any other named lander, because interface evidence has not been verified. The PROSPECT paper describes the accommodation concept as one in which the package sits on a poleward-facing lander after landing; the exact wording was not fully verified.",
+        "images": [
+          {
+            "id": "prospect_configuration_diagram",
+            "description": "Labelled configuration diagram of the PROSPECT units: drill box structure, two external hold-down mechanisms, harness to the control electronics unit (CEU), ProSPA analytical package (AP) and ProSPA solids inlet system (SIS).",
+            "image_type": "Technical configuration diagram (labelled)",
+            "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g001.webp",
+            "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+            "publisher": "Frontiers in Space Technologies",
+            "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+            "caption": "Labelled configuration diagram of the PROSPECT units (drill box structure, external hold-down mechanisms, harness to the CEU, ProSPA AP and ProSPA SIS).",
+            "section_placements": [
+              "overview",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run; the v1 caption (lander-accommodation view) was corrected. Placed in the overview and transportation sections only."
+          }
+        ]
+      },
+      "historical_significance": "Water ice in lunar polar regions has been a major scientific question since hydrogen-bearing volatiles were first inferred from orbital data. LCROSS confirmed water ice in the Cabeus crater impact zone, a result quoted in reference 1. The Luna 25 and Luna 27 programmes shaped the design of the NGMS and of the PROSPECT package. PRIME-1 is the flown example of this payload class; NASA's account of its IM-2 operations is now available, and it reports no lunar water measurement. The NGMS did not fly, but its architecture has been carried forward into three other instruments: NIM, MANIaC and CODEX. These are important precedents, even though none of them is a lunar water ice analyser.",
+      "limitations_and_uncertainties": "- **Flight outcome of PRIME-1.** The launch and landing are confirmed. NASA reports that the hardware moved through its full range and that MSOLO saw elements attributed to propulsion gases, but it does not report a lunar water result or whether TRIDENT collected any soil or ice [5]. The 2026 MSOLO overview excerpt indicates a short operating period and reduced sensitivity, but its full text was not parsed [6].\n- **Landing position.** The NASA release gives two different distances from the intended site, about 820 feet in an image caption and more than 1,300 feet in the body text. The difference is not explained [5].\n- **PROSPECT flight status and designation.** The ESA page gives a 2027 launch date and refers to \"CP-22.\" A search-indexed summary links the mission to IM-4. This was not resolved in a primary source [7][8].\n- **MSOLO and TRIDENT specifications.** Flight mass, power and volume of MSOLO, and the TRIDENT mass and power, are not confirmed in a primary source in this run [1][2][8][9].\n- **Calibration.** The MSOLO calibration is a laboratory relationship with R² of 0.75. It is not a validated lunar calibration [1].\n- **Water detection limits.** For PROSPECT, the paper sets requirements for water up to about 10 wt%. Its Table 3 is referenced, and the detailed numbers were not extracted in full. For NGMS, the detection limits given apply to hydrocarbons and noble gases, not water [3][4].\n- **Figures.** All five PROSPECT figures were viewed directly in this run. Captions were written from the visible content. Image resolution and the article's licence statement were not checked on the article page itself [3].\n- **Search and source coverage.** Six web searches and about 17 page or image reads were used in this run. Several specification values come only from search-indexed summaries, which are labelled as such. The NASA PRIME-1 payload page and a second NASA URL returned HTTP 404 in this run. The NGMS and PROSPECT technical figures are carried from the v1 article, which read the original papers, and were not re-read in this run.\n- **Later developments.** Sources read date from 2024 to 2026. Any results from the PROSPECT mission, or further PRIME-1 analysis after April 2026, were not checked.",
+      "images": [
+        {
+          "id": "prospect_configuration_diagram",
+          "description": "Labelled configuration diagram of the PROSPECT units: drill box structure, two external hold-down mechanisms, harness to the control electronics unit (CEU), ProSPA analytical package (AP) and ProSPA solids inlet system (SIS).",
+          "image_type": "Technical configuration diagram (labelled)",
+          "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g001.webp",
+          "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+          "publisher": "Frontiers in Space Technologies",
+          "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+          "caption": "Labelled configuration diagram of the PROSPECT units (drill box structure, external hold-down mechanisms, harness to the CEU, ProSPA AP and ProSPA SIS).",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run; the v1 caption (lander-accommodation view) was corrected. Placed in the overview and transportation sections only."
+        },
+        {
+          "id": "proseed_drill_box_subassemblies",
+          "description": "Labelled drawing of the ProSEED drill box and subassemblies: radiator, drill rod, mandrel and drill translation joint, positioner rotation joint and base tower, brush assembly, imaging-system interface and external and internal hold-down mechanisms.",
+          "image_type": "Technical drawing (labelled)",
+          "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g003.webp",
+          "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+          "publisher": "Frontiers in Space Technologies",
+          "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+          "caption": "Labelled drawing of the ProSEED drill box and its main subassemblies.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run. The v1 caption's reference to multi-layer insulation being omitted was not confirmed and is removed."
+        },
+        {
+          "id": "prospa_system_diagram",
+          "description": "ProSPA System Diagram (Open University drawing PRO-PA-DW-OU-0001, issue 5): schematic of the analytical laboratory, gas supply subsystem, gas processing subsystem, magnetic sector and ion trap mass spectrometers, solids inlet system and local electronics system.",
+          "image_type": "Technical schematic (system diagram)",
+          "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g007.webp",
+          "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+          "publisher": "Frontiers in Space Technologies",
+          "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+          "caption": "ProSPA System Diagram showing valves, ovens, cold fingers, the ion trap and magnetic sector mass spectrometers, the gas supply subsystem and the solids inlet system.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run. The drawing is labelled as an Open University document dated 7 September 2023."
+        },
+        {
+          "id": "prospa_assembly_layout",
+          "description": "Labelled layout of the ProSPA instrument assembly: local electronics box, cold finger baffle and radiator, cold finger support structure, solids inlet system interface and baseplate.",
+          "image_type": "Engineering layout (labelled)",
+          "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g010.webp",
+          "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+          "publisher": "Frontiers in Space Technologies",
+          "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+          "caption": "Labelled layout of the ProSPA instrument assembly.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run. The v1 description of two spectrometers in this layout was replaced with the labels that are visible in the figure."
+        },
+        {
+          "id": "prospect_engineering_model_photos",
+          "description": "Composite of engineering-model photographs: drill rod with insulation, drill box on an aluminium test rig with cabling, aluminium electronics box, solids-inlet funnel and carousel assembly, and a unit with a PROSPECT integration label.",
+          "image_type": "Engineering model photograph (composite)",
+          "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g011.webp",
+          "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+          "publisher": "Frontiers in Space Technologies",
+          "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+          "caption": "Engineering-model photographs of PROSPECT hardware, including the drill, the solids inlet funnel and carousel, and the electronics box.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run. Individual items are identified from visible features, not from an article caption."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "prospect_configuration_diagram",
+          "description": "Labelled configuration diagram of the PROSPECT units: drill box structure, two external hold-down mechanisms, harness to the control electronics unit (CEU), ProSPA analytical package (AP) and ProSPA solids inlet system (SIS).",
+          "image_type": "Technical configuration diagram (labelled)",
+          "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g001.webp",
+          "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+          "publisher": "Frontiers in Space Technologies",
+          "credit": "Trautner et al. (2024), Frontiers in Space Technologies, CC BY as stated in the article",
+          "caption": "Labelled configuration diagram of the PROSPECT units (drill box structure, external hold-down mechanisms, harness to the CEU, ProSPA AP and ProSPA SIS).",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct figure URL with no query string or fragment. Visually viewed in this run; the v1 caption (lander-accommodation view) was corrected. Placed in the overview and transportation sections only."
+        }
+      ],
+      "references": [
+        {
+          "id": 1,
+          "authors": "Aguilar Ayala, R., Crabtree, M. A., Hancock, M. L., et al.",
+          "year": 2025,
+          "title": "Mass Spectrometry Monitoring of Drilling Operations in Water-Doped Lunar Simulant under Cryogenic Conditions",
+          "publisher": "NASA Technical Reports Server, document 20250007225 (preprint; NTRS record dated 21 September 2025)",
+          "url": "https://ntrs.nasa.gov/citations/20250007225",
+          "status": "Read in v1; carried forward"
+        },
+        {
+          "id": 2,
+          "authors": "NASA",
+          "year": 2025,
+          "title": "PRIME-1 (Polar Resources Ice Mining Experiment-1) mission page, last updated 11 March 2025",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/prime-1",
+          "status": "Read in v1 and re-read in this run; the page's sidebar contains later-dated items and its PRIME-1 content may be out of date"
+        },
+        {
+          "id": 3,
+          "authors": "Trautner, R., Barber, S. J., Fisackerly, R., et al.",
+          "year": 2024,
+          "title": "PROSPECT: A comprehensive sample acquisition and analysis package for lunar science and exploration",
+          "publisher": "Frontiers in Space Technologies, 5, 1331828 (published 3 April 2024)",
+          "doi": "10.3389/frspt.2024.1331828",
+          "url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828",
+          "status": "Text carried from v1; figures viewed in this run"
+        },
+        {
+          "id": 4,
+          "authors": "Fausch, R., Elsener, H. R., Hofer, L., et al.",
+          "year": 2025,
+          "title": "Advancing Lunar Exploration: The Neutral Gas Mass Spectrometer for Regolith and Exosphere Analysis",
+          "publisher": "2025 IEEE Aerospace Conference, pp. 1–14",
+          "doi": "10.1109/AERO63441.2025.11068730",
+          "url": "https://doi.org/10.1109/AERO63441.2025.11068730",
+          "status": "Carried from v1"
+        },
+        {
+          "id": 5,
+          "authors": "NASA",
+          "year": 2025,
+          "title": "NASA Receives Some Data Before Intuitive Machines Ends Lunar Mission (news release)",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/news-release/nasa-receives-some-data-before-intuitive-machines-ends-lunar-mission/",
+          "status": "Read in this run"
+        },
+        {
+          "id": 6,
+          "authors": "Captain, J., Aguilar Ayala, B., Hancock, M., Archer, D., McAdam, A., Jarnot, A., Gawronska, A., Kleinhenz, J., Carro, R.",
+          "year": 2026,
+          "title": "Prime-1: MSolo Overview and Results",
+          "publisher": "NASA Technical Reports Server, document 20260003150; Lunar Surface Science Workshop, 22–23 April 2026",
+          "url": "https://ntrs.nasa.gov/citations/20260003150",
+          "status": "Record page read in this run; PDF could not be parsed; results statements from a search-indexed excerpt, unverified in full text"
+        },
+        {
+          "id": 7,
+          "authors": "ESA",
+          "year": 2024,
+          "title": "Prospect – searching for water at the lunar poles (publication date 29 August 2024; page contains 2026 media)",
+          "publisher": "European Space Agency",
+          "url": "https://esa.int/Science_Exploration/Human_and_Robotic_Exploration/Prospect_searching_for_water_at_the_lunar_poles",
+          "status": "Read in this run"
+        },
+        {
+          "id": 8,
+          "authors": "Various",
+          "year": null,
+          "title": "Search-indexed summaries only, not opened: LPSC 2024 TRIDENT abstract (https://ntrs.nasa.gov/api/citations/20240000585/downloads/LPSC24%20TRIDENT%20Glass.pdf); a NASA PRIME-1 payload page summary giving a 16 kg drill mass (source page not confirmed); ESA/PROSPECT status summaries (CP-22 or IM-4, Luna-27 redirection, Peregrine 1 PITMS flight)",
+          "publisher": "Various",
+          "url": null,
+          "status": "Leads only; not used as verified values"
+        },
+        {
+          "id": 9,
+          "authors": "Captain, J. (NASA)",
+          "year": null,
+          "title": "EuroHEMS presentation (search-indexed summary only): Transpector MPH mass about 3.5 kg and power about 20 W (pre-flight, undated); INFICON news on the IM-2 flight; MoonLode blog giving complete MSolo mass below 7.5 kg",
+          "publisher": "NASA / INFICON / MoonLode",
+          "url": "https://www.hems-workshop.org/12thWS_EUROHEMS/Presentations/Captain.pdf",
+          "status": "Leads only; not used as verified values"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "PROSPECT example (ProSEED and ProSPA)": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "v2 supersedes v1. v1 is retained unchanged.",
+    "Corrected: the PRIME-1 operational outcome is now known from NASA's 7 March 2025 release. The lander landed on its side and its batteries were depleted before the drill and other instruments could be fully operated. NASA does not report a lunar water measurement.",
+    "Corrected: the v1 caption for the PROSPECT overview image (g001) described a lander-accommodation view. The image is a labelled configuration diagram.",
+    "Corrected: the v1 caption for the ProSEED drill box image referred to multi-layer insulation being omitted; this was not confirmed on viewing and has been removed.",
+    "Unresolved: the landing distance from the intended site is given as about 820 feet in an image caption and as more than 1,300 feet in the body text of the NASA release.",
+    "Unresolved: PROSPECT is described as CP-22 by ESA with a 2027 launch date; a search-indexed summary links it to IM-4.",
+    "Unverified: flight MSOLO mass and power, and TRIDENT mass and power. Search-indexed leads (about 3.5 kg and 20 W for the Transpector MPH; under 7.5 kg for MSolo; 16 kg for TRIDENT; about 200 W per actuator) are recorded as leads and set to null in the structured fields.",
+    "Unverified: the MSOLO overview excerpt (about 0.5 days operation and reduced sensitivity) was seen only in a search-indexed excerpt; the NTRS PDF could not be parsed.",
+    "Carried from v1 without re-reading in this run: PROSPECT mass and envelope figures (2024 paper), NGMS figures (2025 IEEE paper), and the MSOLO laboratory campaign values (NTRS 20250007225).",
+    "Image licence: CC BY is stated for the Frontiers figures in the v1 article read; the article page itself was not re-fetched in this run.",
+    "Search and read budget used in this run: 6 web searches and about 17 page or image reads (including two HTTP 404 responses and one unparseable PDF)."
+  ]
+}

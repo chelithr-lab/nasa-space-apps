@@ -1,0 +1,189 @@
+{
+  "catalogue_id": 150,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 7,
+    "name": "Lunar exosphere and atmospheric instruments"
+  },
+  "payload": {
+    "number": 150,
+    "name": "Exospheric gas detector",
+    "article": {
+      "overview": "An exospheric gas detector is an instrument that identifies and measures the gases in a planetary exosphere, the outermost and most tenuous part of a body's atmosphere, where gas molecules are so sparse that they rarely collide with one another. On the Moon, such an instrument is used to determine which gases are present, how much of each is there, and where they come from and how they are lost. Three flown or launched examples are described here: the Apollo 17 Lunar Atmospheric Composition Experiment (LACE) [1]; the Neutral Mass Spectrometer (NMS) on NASA's LADEE orbiter, which NASA reports confirmed neon in the lunar exosphere for the first time [4]; and the Peregrine Ion Trap Mass Spectrometer (PITMS), which did not reach the Moon and therefore did not measure the native exosphere [8]. A further design, the University of Bern Neutral Gas Mass Spectrometer (NGMS), has been built but not flown [9].",
+      "description": "An exospheric gas detector is usually a mass spectrometer, which sorts ions by their mass-to-charge ratio. Gas molecules from the exosphere enter the instrument through an inlet or aperture. They are ionised, commonly by an electron beam, and then separated in electric or magnetic fields, or trapped in a radio-frequency field, before reaching a detector. The output is a mass spectrum, a record of how many ions of each mass arrive. The examples described here use different analysers. LACE is described as a miniature mass spectrometer [1]. The LADEE NMS is a quadrupole instrument with a mass range to 150 Dalton [3]. The PITMS is an ion trap instrument [7], and the NGMS is a time-of-flight instrument [9]. A secondary summary states that the LADEE NMS was derived from the NGIMS instrument flown on the CONTOUR mission [6]. The primary instrument description is Mahaffy et al. [2], which was identified but could not be accessed in this run. The general description above is engineering background and is not drawn from a single cited design. Because the exosphere is extremely thin, a detector can be affected by gases released by its own spacecraft or lander, a problem that the PITMS mission illustrates [8].",
+      "scientific_purpose_and_applications": "The main purpose of an exospheric gas detector is to measure the composition of the exosphere and to learn where its gases come from and how they are lost. NASA states that the LADEE NMS measurements showed how gases are supplied to the exosphere and how they are lost [4]. According to NASA, most of the exosphere comes from the solar wind, some gas comes from lunar rocks, and about 20 percent of the helium originates from the Moon, likely from radioactive decay of thorium and uranium, at a rate of seven liters per second at standard pressure [4]. NASA also reports that abundances vary with time of day: argon peaks around dawn, neon at about 4 a.m. and helium at about 1 a.m. [4]. The total argon amount rose and then fell by about 25 percent during the mission. NASA attributes this change to possible tide-driven outgassing but states that the cause is not confirmed [4]. The underlying work is described by Benna et al. [5], which could not be accessed in full in this run. These results inform models of solar-wind interaction, surface outgassing and the Moon's interaction with its environment. A detector can also test whether lander or spacecraft contamination masks natural exospheric signals, which was a central goal of the PITMS [7][8].",
+      "operating_principle": "A typical detector draws in exospheric molecules through an inlet, ionises a fraction of them, and separates the ions by mass. The PITMS design ionises molecules by electron impact, traps them in a radio-frequency field, and releases them sequentially to a detector to build a mass spectrum [8]. The LADEE NMS is a quadrupole instrument, in which electric fields select ions of a chosen mass-to-charge ratio. The instrument can operate in open-source modes (tilt or survey mode and ion mode) and a closed-source mode (ram mode) [3]. The NGMS is a time-of-flight instrument. Ions are accelerated along a flight path, and their time of arrival at a detector identifies their mass. A grid-less ion mirror (reflectron) records all masses at once [9]. The LACE sensor is described as a miniature mass spectrometer whose aperture faced upward to sample gases arriving at the surface [1]. In every case, measurement quality depends on the inlet's exposure to the exosphere and on how well the instrument's own outgassing is separated from natural signals.",
+      "scientific_importance": "The lunar exosphere is too tenuous to be studied effectively from images of the surface, so its composition is measured directly, in situ or from orbit. Its composition helps show where lunar gases come from and how they escape to space. NASA states that the LADEE Neutral Mass Spectrometer confirmed neon in the exosphere for the first time, after decades of speculation [4]. Repeated measurements show how gas abundances change with time of day, which a single snapshot cannot. The Apollo 17 LACE operated for ten lunations, and its authors reported that thermal escape is the fastest loss mechanism for hydrogen and helium [1]. A surface instrument samples gas arriving at one site, while an orbiter samples the exosphere as it moves over the surface. The two approaches are complementary [1][4].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power for an exospheric gas detector. The examples below are different designs: a 1972 surface experiment, an orbiter instrument, a lander instrument and a built but unflown surface-and-orbit instrument. Values are given only where a source states them. The LADEE NMS mass, size and power values come from a secondary summary [6] and are not checked against the instrument's primary documentation. The PITMS design values come from a secondary summary of the 2025 peer-reviewed results [8] and from the pre-launch ESA article [7]. Values for each example relate only to that example.",
+        "examples": [
+          {
+            "name": "Apollo 17 Lunar Atmospheric Composition Experiment (LACE)",
+            "type": "Historical surface instrument",
+            "flight_status": "Flown on Apollo 17 as part of the Apollo Lunar Surface Experiments Package (ALSEP) [1].",
+            "technology": "Miniature mass spectrometer, with its aperture facing upward to measure gases arriving at the surface [1].",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "mass_range": "Not stated in the accessed record [1].",
+            "operation": "Deployed in Taurus-Littrow Valley and operated for ten lunations, mostly collecting nighttime data [1]. A secondary summary gives a deployment date of 12 December 1972, states that daytime heating caused high outgassing which limited daytime operation, and gives 17 October 1973 as the date the sweep high voltage dropped to zero. These dates were not checked against a primary document.",
+            "reported_results": "Thermal escape is the fastest loss mechanism for hydrogen and helium. Heavier gases are mainly lost through photoionisation followed by acceleration by the solar-wind electric field. Argon and helium are the dominant gases, most lunar helium appears to be of solar-wind origin, and trace methane, ammonia and carbon dioxide were also present [1].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19760025001"
+            ],
+            "images": []
+          },
+          {
+            "name": "LADEE Neutral Mass Spectrometer (NMS)",
+            "type": "Orbital instrument on NASA's Lunar Atmosphere and Dust Environment Explorer (LADEE)",
+            "flight_status": "Flown on LADEE. Measurements of the exosphere covered about seven months [4].",
+            "technology": "High-sensitivity quadrupole mass spectrometer with unit mass resolution. Open-source (tilt or survey and ion) and closed-source (ram) modes, and an adaptive scan mode that can search bands of mass values for unexpected species [3].",
+            "mass_kg": 11.3,
+            "dimensions_cm": [43, 25, 37],
+            "power_w": {
+              "average_power": 34.4
+            },
+            "mass_range": "PDS page states 'to 150 Dalton' [3]. A secondary summary gives 1 to 150 u [6]; other secondary summaries give 2 to 150 Da. The lower limit is unresolved.",
+            "operation": "Secondary summary: the NMS switches between m/z values within its range in 30 milliseconds; science-mode data return 3.5 kbit/s; ultimate sensitivity for most species described as a few particles per cubic centimetre [6]. These values were not checked against calibration or interface documents.",
+            "reported_results": "Exosphere composition is mostly helium, argon and neon. Neon was confirmed for the first time [4].",
+            "source_urls": [
+              "https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/LADEE/nms.html.old",
+              "https://www.nasa.gov/missions/nasas-ladee-spacecraft-finds-neon-in-lunar-atmosphere",
+              "https://spaceflight101.com/ladee/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Peregrine Ion Trap Mass Spectrometer (PITMS)",
+            "type": "Lander-mounted instrument on Astrobotic's Peregrine lander (CLPS mission)",
+            "flight_status": "Launched on the Peregrine lander, which suffered a propulsion anomaly that prevented it reaching the Moon. The instrument collected 80 spectra in cislunar space [8].",
+            "technology": "Ion trap mass spectrometer [7]. A secondary summary of the 2025 results describes electron-impact ionisation and radio-frequency ion trapping, with a design target of mass-to-charge ratios from 10 to 150 Da and a mass resolution of about 0.5 amu [8].",
+            "mass_kg": 1.6,
+            "dimensions_cm": "Described as 'the size of half a shoebox'; no numerical dimensions given [7].",
+            "power_w": {
+              "approximate_range": [4, 12]
+            },
+            "mass_range": "Design target 10 to 150 Da [8] (secondary summary).",
+            "operation": "The pre-launch ESA article states that the lander was to operate for 240 hours and that the instrument would record molecules over a lunar day to separate natural exospheric gases from those released by the lander [7].",
+            "reported_results": "Did not measure the native lunar exosphere. Detected water, MON-25 oxidizer from a propulsion leak and traces of combustion products, attributed to the lander [8] (secondary summary).",
+            "source_urls": [
+              "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/PITMS_a_mini_mass_spectrometer_for_the_Moon",
+              "https://doi.org/10.3847/psj/ad9927"
+            ],
+            "images": []
+          },
+          {
+            "name": "University of Bern Neutral Gas Mass Spectrometer (NGMS)",
+            "type": "Built but not flown instrument",
+            "flight_status": "Two flight units (NGMS-PFM and NGMS-FS) were still at the University of Bern and waiting for a mission. Linked to the Luna-Resurs mission; no launch date or confirmed assignment is given [9].",
+            "technology": "Compact time-of-flight neutral gas mass spectrometer with a grid-less ion mirror (reflectron) that records all masses at once. Part of a Gas Analytical Package coupled to a miniaturised gas chromatograph [9].",
+            "mass_kg": 3.5,
+            "dimensions_cm": [26, 15, 18],
+            "power_w": 25,
+            "mass_range": "Not stated [9].",
+            "operation": "Exosphere mode measures gas through the exhaust tube from a lander on the surface or from an artificial lunar orbit. Gas-chromatograph mode is also available [9]. Operating temperature -30 °C to 80 °C [9]. Ion optical system length about 25 cm [9].",
+            "reported_results": "Not applicable; instrument not flown.",
+            "source_urls": [
+              "https://www.luna-ngms.unibe.ch/instrument/index_eng.html"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The four examples differ in mass, size, power and analyser type, so their values should not be read as directly comparable. The LACE, built in an earlier era, does not have a stated mass or power in the accessed record [1]. The LADEE NMS, the PITMS and the NGMS give values in their own sources, which use different definitions of mass and power [3][6][7][9]. A new detector would need its dimensions, mass and power set by its mass range, sensitivity, thermal environment and data interface. None of these are specified here, because no verified requirement set for a new payload was found.",
+        "mass_and_weight": "Reported masses are 11.3 kg for the LADEE NMS (secondary summary [6]), 1.6 kg for the PITMS [7] and about 3.5 kg for the NGMS [9]. No mass is stated for LACE in the accessed record [1]. These values relate to specific instruments and should not be generalised.",
+        "power_requirements": "Reported power values are an average of 34.4 W for the LADEE NMS (secondary summary [6]), 4 to 12 W for the PITMS [7] and 25 W for full operation of the NGMS [9]. No power is stated for LACE in the accessed record [1]."
+      },
+      "environmental_and_operational_requirements": "An exospheric gas detector must operate in ultra-high vacuum and tolerate large temperature changes. The NGMS is specified for an operating temperature range of -30 °C to 80 °C and 25 W for full operation [9]. According to a secondary summary, LACE operation was limited during the lunar day because daytime heating caused high outgassing [1]. The instrument's inlet must face the exosphere, and the lander or spacecraft must not contaminate the sample. The PITMS results show how large lander outgassing can be: the authors report more water offgassing than from other planetary spacecraft, and they conclude that CLPS instruments must account for lander cleanliness [8]. The LADEE NMS operated from an orbiter for about seven months [4]. A new detector's environmental and operational requirements would depend on its mass range, sensitivity, mounting, thermal environment and data interface.",
+      "limitations": "Mass-spectrometer measurements can be ambiguous. The mass-to-charge ratio alone may not distinguish species of similar mass. A secondary summary describes LACE neon results as model-dependent because of calibration ambiguity between singly and doubly ionised species. A secondary search summary of LADEE NMS results also describes an ambiguous 28-unit ion and unexpected signals at mass-to-charge 12 and 28, which may indicate carbon-bearing molecules. These statements were not checked against the primary papers. A single surface instrument samples one site, and an orbiter samples the exosphere along its orbit. Spacecraft and lander outgassing, and rocket exhaust, can alter the very thin gas being measured [8]. Sensitivity is also limited. The LADEE NMS is described in a secondary summary as having ultimate sensitivity of a few particles per cubic centimetre for most species [6], and no primary sensitivity figure was checked.",
+      "transportation_and_deployment": {
+        "overview": "Surface examples were carried to the Moon as part of a lunar surface package (LACE, on Apollo 17) or were designed for a lander (PITMS on Peregrine, and the NGMS concept). The orbital example (LADEE NMS) was carried on an orbiter. No compatibility with a named lander has been verified for any example.",
+        "transportation_process": [
+          "Integrate the instrument into a lunar surface package or a lander payload on Earth. For LACE, the instrument was part of the Apollo ALSEP package [1].",
+          "Launch it toward the Moon. The PITMS was planned for launch on a ULA Vulcan rocket from Cape Canaveral [7].",
+          "Transfer to the Moon and deliver it to the surface by a lander, or insert the instrument into a lunar orbit for an orbiter payload.",
+          "Deploy and set up the instrument. LACE was installed by the Apollo 17 astronauts in Taurus-Littrow Valley, with its aperture facing upward [1].",
+          "Connect power, data and thermal interfaces. The NGMS exosphere mode can be operated from a lander on the surface or from an artificial lunar orbit [9]. Interface compatibility has not been verified for any named lander."
+        ],
+        "deployment_methods": "LACE was installed by astronauts as part of ALSEP [1]. The PITMS was designed as a lander-mounted instrument [7][8]. The LADEE NMS operated from the LADEE orbiter [3][4]. Orbiter integration and insertion details for LADEE were not verified in this run.",
+        "historical_examples": "The Apollo 17 LACE measured gases at the surface over ten lunations [1]. The LADEE NMS measured the exosphere from orbit for about seven months [4]. The PITMS, delivered by a CLPS lander, did not reach the Moon [8].",
+        "compatibility_assessment": "No lander or spacecraft compatibility is asserted. The NGMS, PITMS and any new detector would need a verified mass budget, power budget, mounting interface, thermal interface and data interface for a named vehicle before compatibility could be assessed.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 17 LACE measured the lunar atmosphere from the surface over ten lunations. Its reported results on thermal escape and solar-wind-derived helium remain the basis for much of the discussion above [1]. The LADEE NMS measurements, covering about seven months, confirmed neon in the lunar exosphere for the first time and characterised its variation with time of day [4]. The PITMS mission, which did not reach the Moon, provided a practical lesson for future CLPS instruments about lander cleanliness and contamination [8].",
+      "limitations_and_uncertainties": "The term 'exospheric gas detector' describes a class of instruments rather than one standard design. The examples differ in mass, power, mass range and analyser type, and their values must not be treated as interchangeable. The following evidence gaps were identified: (1) the full LACE report [1] was identified, but its mass, mass range, power and dimensions were not extracted in this run; (2) the Mahaffy et al. instrument paper [2] could not be accessed and the Benna et al. paper [5] returned a 403 error, so statements about them rely on NASA summaries [4] and search-result abstracts; (3) the LADEE NMS mass, size, power and sensitivity values come from a secondary summary [6], and the lower mass-range limit is unresolved (1 u or 2 Da); (4) the PITMS flight outcome and design values rely on a secondary summary of the 2025 paper [8], which was not accessed in full; (5) no direct image asset was verified, so the article contains no images; (6) no lander or spacecraft compatibility has been verified for any example; (7) the NGMS has no confirmed launch date or flight assignment [9]; (8) the LACE dates (12 December 1972 deployment and 17 October 1973 loss of sweep high voltage) come from a secondary summary and have not been checked against a primary source.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Lunar atmospheric composition experiment (NASA CR-150946)",
+          "publisher": "NASA Technical Reports Server (J. H. Hoffman, University of Texas at Dallas)",
+          "url": "https://ntrs.nasa.gov/citations/19760025001"
+        },
+        {
+          "title": "The Neutral Mass Spectrometer on the Lunar Atmosphere and Dust Environment Explorer mission (Mahaffy et al.)",
+          "publisher": "Space Science Reviews (year inferred from DOI; not checked against the article; not accessed)",
+          "url": "https://doi.org/10.1007/s11214-014-0043-9"
+        },
+        {
+          "title": "LADEE Neutral Mass Spectrometer (NMS) instrument description",
+          "publisher": "NASA Planetary Data System, Atmospheres Node",
+          "url": "https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/LADEE/nms.html.old"
+        },
+        {
+          "title": "NASA's LADEE Spacecraft Finds Neon in Lunar Atmosphere",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/missions/nasas-ladee-spacecraft-finds-neon-in-lunar-atmosphere"
+        },
+        {
+          "title": "LADEE/NMS helium, neon and argon results (full title not verified; Benna et al.)",
+          "publisher": "Geophysical Research Letters (not accessed; HTTP 403)",
+          "url": "https://doi.org/10.1002/2015GL064120"
+        },
+        {
+          "title": "LADEE mission summary (secondary source; cleaned from a query-string URL)",
+          "publisher": "Spaceflight101",
+          "url": "https://spaceflight101.com/ladee/"
+        },
+        {
+          "title": "PITMS: a mini mass spectrometer for the Moon",
+          "publisher": "European Space Agency",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/PITMS_a_mini_mass_spectrometer_for_the_Moon"
+        },
+        {
+          "title": "The Peregrine Ion Trap Mass Spectrometer (PITMS): Results from a CLPS-delivered Mass Spectrometer (Cohen et al.)",
+          "publisher": "The Planetary Science Journal, 6(1), 14 (2025); not accessed in full",
+          "url": "https://doi.org/10.3847/psj/ad9927"
+        },
+        {
+          "title": "Neutral Gas Mass Spectrometer (NGMS) instrument description",
+          "publisher": "University of Bern",
+          "url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image objects were included because no direct image asset was verified in this run."
+  },
+  "data_quality_notes": [
+    "Catalogue ID 150, name 'Exospheric gas detector' and category 7 'Lunar exosphere and atmospheric instruments' confirmed against lunar_payloads_catalogue_320.md.",
+    "No images were researched or included; image_urls_added is false.",
+    "LACE: only the NTRS record (Hoffman 1975, NASA CR-150946) was read; the full report was not extracted. The deployment date, loss-of-voltage date and daytime outgassing statement come from a secondary search summary.",
+    "LADEE NMS: mass, size, power, data rate, scan time and sensitivity come from Spaceflight101 (secondary) and were not checked. The cited URL is the query-string-free form of a page returned as /ladee/?p=132; the cleaned URL itself was not fetched.",
+    "LADEE NMS mass-range lower limit is unresolved: 2 Da in PDS/NASA-derived summaries versus 1 u in Spaceflight101.",
+    "Benna et al. 2015 (GRL) and Mahaffy et al. (Space Science Reviews) could not be accessed (HTTP 403 and a login redirect). The Mahaffy year (2014) is inferred from the DOI. The full Benna title was not verified.",
+    "PITMS: design values and flight outcome come from a secondary summary of Cohen et al. 2025 (PSJ, DOI 10.3847/psj/ad9927), which could not be accessed (HTTP 403). The launch date on the ESA page is a planned, pre-launch date.",
+    "NGMS: mass range and mass resolution are not stated; no launch date is given."
+  ]
+}

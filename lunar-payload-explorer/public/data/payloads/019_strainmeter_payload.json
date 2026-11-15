@@ -1,0 +1,312 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 1,
+    "name": "Geophysical and lunar interior instruments"
+  },
+  "payload": {
+    "number": 19,
+    "name": "Strainmeter",
+    "article": {
+      "scope_note": "Scope reading: this article covers the strainmeter as a class of instrument that measures the change in length (strain) of rock or ground over a baseline, whether a borehole, a surface laser arm or a long laser interferometer. The article is weighted towards lunar concepts because the only lunar strainmeter design examined is proposed, not flown. Terrestrial strainmeters are described only to explain the operating principle and calibration problems. Overlapping payloads are cross-referenced and not repeated: gravimeters (payload 016), tiltmeters (payload 018), tidal deformation sensors (payload 025) and seismometers (payloads 001 to 004).",
+      "overview": "A strainmeter measures how much a piece of rock or ground stretches or shortens. Strain is the change in length divided by the original length. Strain signals from tides, earthquakes and slow tectonic loading are very small, so the instrument must resolve small fractional length changes over its baseline, which may be metres or kilometres depending on the design. On the Moon, a strainmeter would measure how the interior deforms under Earth tides, under moonquakes and under gravitational waves.\n\nNo flown lunar strainmeter was identified in the sources read. The Apollo surface experiments recorded seismic and gravity-related signals. The Apollo 17 Lunar Surface Gravimeter had tidal deformation among its stated objectives according to a secondary search summary, but it is a gravimeter and is covered under payload 016. The main lunar strainmeter design in the sources read is the Laser Interferometer Lunar Antenna (LILA), a proposed installation with two phases: LILA-Pioneer and the advanced LILA-Horizon [1][2]. Both are proposed concepts. Neither has been built or flown in the sources read.\n\nThe overview figure comes from the LILA science paper. It compares the projected noise curves of the two LILA phases with moonquake-related signal amplitudes and marks the lunar normal-mode frequencies below 3 mHz [2]. It is a model figure, not a measured record.",
+      "description": "A strainmeter measures a change in length between two points. Most instruments do this with a long baseline or a pair of plates, and the output is reported as strain. The EarthScope primer uses extension as positive strain and contraction as negative [3].\n\nTwo practical families are relevant. Borehole strainmeters are installed in a narrow hole in solid rock and are anchored to the borehole wall. The EarthScope primer describes a standard borehole installation at about 100 m depth in a borehole of about 10 cm diameter, with an instrument about 2 m long containing four gauges that measure horizontal linear strain at different angles. Depth is chosen to reduce surface noise [3]. Borehole instruments are operated on Earth; they are a terrestrial reference, not lunar hardware. Laser strainmeters measure the change in length of a long optical path, usually an interferometer arm. The LILA concept is a laser strainmeter of this type. Its arms are long enough that a small fractional change in length becomes a measurable change in optical phase [1][2].\n\nOn the Moon, a strainmeter would sense the interior through the surface. A deformation is recorded where the instrument sits, and the signal reflects the properties of the rock around it. The LILA papers argue that a lunar strainmeter could record the Moon's normal modes, which are slow free oscillations of the whole body, and could record moonquakes at very low frequency [2].",
+      "scientific_purpose_and_applications": "Gravitational-wave measurement. LILA is primarily described as a gravitational-wave detector with a stated target of sub-hertz gravitational waves [1][2]. The Moon is argued to act as a resonant amplifier at low frequencies, because gravitational waves set the lunar ground into motion and the Moon's own response increases the amplitude at its normal-mode frequencies [2].\n\nNormal modes and deep interior. The LILA interior-science paper states that a strainmeter would be able to measure the Moon's normal modes from 1 mHz to 10 mHz at high signal-to-noise ratio, and that detection of the solid inner core's translational mode below 0.1 mHz may be possible [2]. These are projections that depend on the noise model and on assumed lunar attenuation.\n\nComparison with inertial seismometers. The paper argues that inertial seismometers need an acceleration noise level of about 10^-16 m/s^2/sqrt(Hz) to detect normal modes below 5 to 10 mHz, and that such a level is unlikely to be reached [2]. This is a comparison of requirements in the paper, not a demonstrated performance comparison.\n\nMoonquake and seismic context. The Apollo seismic record provides the reference signal and event catalogue used by the LILA interior paper. The paper refers to multiple Apollo landings and Apollo seismic data and discusses the Apollo instrument noise floor [2]. A strainmeter would add a different measurement type to the same signals: strain, rather than acceleration or velocity.",
+      "operating_principle": "A laser strainmeter compares the phase of light that has travelled along two paths, or along a single path of known length. When the ground deforms, the path length changes and the light phase shifts. The LILA design uses a laser at 1064 nm wavelength [1]. The Pioneer phase is described as an L-shaped interferometer with two arms [2]. Summaries of the paper describe the Pioneer as operating as two single-arm strainmeters rather than as a Michelson interferometer [1]; this wording should be checked against the full text before reuse.\n\nThe main noise sources in the LILA model are the following [1][2]. Thermal Brownian noise in the optics: the model gives a conservative value of 6 x 10^-32 m^2/Hz at 1 Hz and an optimistic value of 1.2 x 10^-33 m^2/Hz. The paper's design goal is to be limited by this thermal noise across most target frequencies. Thermal noise scales roughly as 1/f in this model and dominates below about 1 Hz for the conservative value [2]. Shot noise in the optical readout: the model gives 5.4 x 10^-32 m^2/Hz for a readout power term of 100 mW; this term is independent of frequency [2]. Laser frequency noise: the stated requirement is a fractional frequency stability of about 10^-24 per sqrt(Hz), corresponding to about 3 x 10^-10 Hz/sqrt(Hz) for the laser frequency. The paper says an on-board high-finesse cavity could achieve this, but this has not been demonstrated [2]. Dust scattering: the model estimates about 1.6 x 10^-35 m^2/Hz, which the paper describes as well below shot noise [2].\n\nLunar ground motion itself is not treated as noise in the LILA model; it is treated as the signal of interest, and the model assumes no measured lunar seismic background [2]. The Pioneer and Horizon configurations use the same optical noise model with different arm lengths and angles. The projected Pioneer curve lies above the Horizon curve across the plotted band. These curves are projections, not measurements.",
+      "scientific_importance": "A lunar strainmeter would add a measurement type that the Apollo experiments did not make as a dedicated instrument. The Apollo seismometers measured motion, not strain. The Apollo 17 gravimeter's tidal-deformation objective, according to a secondary summary, was a secondary objective of a gravity instrument, not a dedicated strain measurement. A strainmeter would measure how the ground stretches under the same forces that produce seismic signals, which can help separate effects that look similar in seismic records. The LILA papers argue that the instrument could measure normal modes that inertial seismometers are unlikely to resolve at the needed level [2].\n\nThe scientific value depends on the lunar attenuation model. The LILA papers use an assumed quality factor (Q) for the Moon, with amplification of up to about 10^2 at 1 Hz and about 10^4 at 1 mHz [2]. They also state that deep-mantle partial melting may limit the low-frequency Q to about 500 or less, and that megaregolith scattering reduces Q above about 0.1 Hz [2]. The normal-mode frequencies used in the model come from a published Q model and normal-mode code cited by the paper [2]. These are modelling inputs, not measured lunar values.\n\nTerrestrial strainmeters are established for tectonic deformation and tides. Borehole strainmeters are calibrated against Earth tides and corrected for barometric pressure and borehole curing in the standard workflow; rainfall is not corrected in that workflow [3]. The lunar concept would face a different calibration problem. The sources read do not describe a lunar reference tide record at a candidate instrument location, and the LILA paper notes that the lunar seismic background is unmeasured [2].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a strainmeter. Terrestrial borehole instruments, terrestrial laser strainmeters and lunar laser concepts have very different baselines, sensitivities and mounting arrangements. The examples below are named instruments or concepts, and each value is tied to its source. Most lunar values come from concept designs, not flown hardware. The LILA papers give geometry, wavelength and modelled noise, but no mass, power, dimensions, mirror size, laser power source or operating temperature range for a flight design.",
+        "examples": [
+          {
+            "name": "LILA-Pioneer (Laser Interferometer Lunar Antenna, initial phase)",
+            "type": "Proposed lunar laser strainmeter concept (not flown)",
+            "status": "Proposed concept. No build, prototype, technology readiness level or launch date is stated in the sources read [1][2].",
+            "description": "Proposed L-shaped laser interferometer with two arms of 5 km each in the noise model. The Pioneer phase is described as an initial deployment with two 5 km arms [2]. One paper gives an L-shape arm range of 3 to 5 km in its introduction [1]. The model uses an opening angle of 90 degrees [1][2]. The paper calls the Pioneer curve a target sensitivity and states that it achieves the gravitational-wave sensitivity required for astrophysical sources across the millihertz to decihertz band. The numerical sensitivity is shown only in the figure, and values were not read from it [1][2].",
+            "sensor_configuration": "L-shaped laser interferometer, two arms of 5 km in the model; operates as two single-arm strainmeters per a summary of the paper [1].",
+            "arm_length_km": 5,
+            "opening_angle_deg": 90,
+            "laser_wavelength_nm": 1064,
+            "mounting": "Monolithic optical bench anchored to the lunar surface. Bench material not stated [1].",
+            "suspension": "Unsuspended; no suspension system, so suspension thermal noise is excluded from the model [1].",
+            "temperature_assumption_k": 300,
+            "temperature_assumption_note": "Model assumes about 300 K, described as near ambient average and not cryogenic [1]. Flight temperature range not stated.",
+            "model_parameters": {
+              "thermal_model_beam_size_mm": 0.5,
+              "scattering_estimate_beam_width_cm": 1,
+              "photodiode_power_mw_assumed": 500,
+              "mirror_dimensions_mass_loss_angle": "not given"
+            },
+            "noise_targets_and_model_values": {
+              "thermal_brownian_conservative_m2_per_hz_at_1hz": "6e-32",
+              "thermal_brownian_optimistic_m2_per_hz_at_1hz": "1.2e-33",
+              "shot_noise_m2_per_hz_at_100mw": "5.4e-32",
+              "dust_scattering_m2_per_hz": "1.6e-35",
+              "status": "Model estimates and targets, not measurements. Pioneer target uses the optimistic thermal value [2]."
+            },
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_cm": null,
+            "specifications_status": "Mass, power, dimensions, mirror parameters and flight temperature range not publicly specified in the sources read.",
+            "source_refs": [
+              1,
+              2
+            ],
+            "images": [
+              {
+                "id": "lila_strain_figure_noise_curves",
+                "description": "Characteristic strain versus frequency for projected LILA Pioneer (5 km) and LILA Horizon (40 km) noise curves, compared with moonquake-related signal curves (legend labels DMQ and SMQ) and lunar normal-mode frequencies below 3 mHz.",
+                "image_type": "Model figure (projected noise curves and signal curves)",
+                "image_url": "https://arxiv.org/html/2509.15452v1/strain_figure.png",
+                "source_page_url": "https://arxiv.org/html/2509.15452v1",
+                "publisher": "arXiv (author-posted preprint)",
+                "credit": "Authors of arXiv:2509.15452 (v1)",
+                "caption": "Projected noise curves for LILA-Pioneer (5 km arm) and LILA-Horizon (40 km arm), with moonquake-related characteristic-strain curves and normal-mode frequencies below 3 mHz. Model figure only.",
+                "section_placements": [
+                  "overview_images",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct arXiv asset URL with no query string or fragment. Verified 2026-11-12 by HTTP HEAD (200, image/png) and by downloading and viewing the file (1920 x 1440 PNG). Source page https://arxiv.org/html/2509.15452v1 returned HTTP 200. The figure was read by eye; no values were taken from it. Rights: the arXiv record of arXiv:2509.15452 is CC BY-NC-SA 4.0, which restricts reuse, including commercial use and adaptations; check the licence before republication. Not an official space-agency image."
+              }
+            ]
+          },
+          {
+            "name": "LILA-Horizon (Laser Interferometer Lunar Antenna, advanced phase)",
+            "type": "Proposed advanced lunar laser strainmeter concept (not flown)",
+            "status": "Proposed advanced phase. The paper describes Horizon as a projection. No build status or schedule is stated [1][2].",
+            "description": "Triangular observatory with three arms of 40 km each. The noise model uses an opening angle of 60 degrees and an arm length of 40 km for the low-frequency case [1][2]. The paper states that Horizon would increase gravitational-wave sensitivity to the cosmological horizon in the millihertz to decihertz band. This is a projection and is not quantified in the abstract [1]. The modelled curve in the figure lies below the Pioneer curve across the band [2].",
+            "sensor_configuration": "Triangular laser interferometer observatory, three arms of 40 km in the model.",
+            "arm_length_km": 40,
+            "opening_angle_deg": 60,
+            "suspension": "Unsuspended in the model, with the same optical noise model as the Pioneer phase [1].",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_cm": null,
+            "specifications_status": "Mass, power, dimensions and flight temperature range not publicly specified in the sources read.",
+            "source_refs": [
+              1,
+              2
+            ],
+            "images": []
+          },
+          {
+            "name": "Gladwin-type borehole strainmeter (terrestrial reference, operational on Earth)",
+            "type": "Terrestrial borehole strainmeter (not lunar hardware)",
+            "status": "Operational on Earth. The EarthScope primer describes the standard instrument used in this network [3].",
+            "description": "Typical installation depth about 100 m in a borehole of about 10 cm diameter, chosen to reduce surface noise. The instrument is about 2 m long with four stacked gauges measuring horizontal linear strain at different angles. The raw measurement is a change in capacitance between a fixed plate and a mobile plate that moves with the borehole wall, converted to a linear change in distance [3]. The primer states the instrument is precise to nanostrain levels; no numerical noise floor or frequency band is given in the text read. Calibration: manufacturer or laboratory calibration, which the primer says often relies on assumptions that fail, and calibration against predicted and observed Earth tides at inland sites away from ocean loading [3]. Standard corrections: borehole curing trend, Earth tides, barometric pressure. Rainfall is not corrected in the standard workflow, and sporadic offsets are reviewed case by case [3].",
+            "installation_depth_m": "about 100",
+            "borehole_diameter_cm": "about 10",
+            "instrument_length_m": "about 2",
+            "gauges": 4,
+            "principle": "Capacitance between fixed and mobile plates, converted to linear distance change [3].",
+            "frequency_band": "not stated numerically; primer says deformation spanning seconds to weeks",
+            "sensitivity": "precise to nanostrain levels (primer wording; no numerical value given)",
+            "primer_unit_inconsistency": "The primer's parenthetical equates nanostrain precision with shortening a 1 km baseline by 1 mm. By the page's own unit definitions, 1 mm over 1 km is a microstrain, so the parenthetical does not match the definitions. Not used.",
+            "mass_kg": null,
+            "power_w": null,
+            "source_refs": [
+              3
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 17 Lunar Surface Gravimeter (overlap with payload 016, not a strainmeter)",
+            "type": "Flown lunar surface gravimeter (overlap, not described in detail here)",
+            "status": "Flown on the Moon (Apollo 17). Tidal deformation is listed among its objectives in a secondary search summary, with its primary goal being gravitational-wave detection and its operation limited by problems with the suspended mass [4].",
+            "description": "Included only to mark the nearest flown lunar instrument to a deformation measurement in the sources consulted. The PDS document could not be read as a binary PDF in this run. No specifications are given here.",
+            "specifications_status": "Not verified in this run.",
+            "source_refs": [
+              4
+            ],
+            "images": []
+          }
+        ],
+        "comparison_table_lila_concepts": {
+          "rows": [
+            {
+              "parameter": "Stated status",
+              "lila_pioneer": "Proposed",
+              "lila_horizon": "Proposed advanced phase"
+            },
+            {
+              "parameter": "Geometry",
+              "lila_pioneer": "L-shaped, two arms",
+              "lila_horizon": "Triangular, three arms"
+            },
+            {
+              "parameter": "Arm length (model value)",
+              "lila_pioneer": "5 km",
+              "lila_horizon": "40 km"
+            },
+            {
+              "parameter": "Opening angle",
+              "lila_pioneer": "90 degrees",
+              "lila_horizon": "60 degrees"
+            },
+            {
+              "parameter": "Laser wavelength",
+              "lila_pioneer": "1064 nm",
+              "lila_horizon": "Not separately stated; same optical model assumed"
+            },
+            {
+              "parameter": "Suspension",
+              "lila_pioneer": "Unsuspended",
+              "lila_horizon": "Unsuspended in the model"
+            },
+            {
+              "parameter": "Mass, power, dimensions",
+              "lila_pioneer": "Not publicly specified",
+              "lila_horizon": "Not publicly specified"
+            },
+            {
+              "parameter": "Noise basis",
+              "lila_pioneer": "Thermal and shot noise model, optimistic thermal value",
+              "lila_horizon": "Same model with 40 km arm"
+            }
+          ],
+          "note": "The two LILA phases share one noise model and differ in geometry and arm length. They are not comparable to any flown instrument."
+        },
+        "dimensions_and_proportions": "No single dimension set applies to a strainmeter. The LILA concepts are defined by arm length and opening angle: 5 km arms at 90 degrees for Pioneer and 40 km arms at 60 degrees for Horizon [1][2]. The borehole reference instrument is about 2 m long, installed at about 100 m depth in a borehole of about 10 cm diameter [3]. Mirror dimensions, optical bench dimensions and any package dimensions are not publicly specified for the lunar concepts.",
+        "mass_and_weight": "Not publicly specified for any LILA phase in the sources read. The terrestrial borehole primer read does not give an instrument mass. Mass determines lander requirements, so it is needed before any compatibility assessment.",
+        "power_requirements": "Not publicly specified for LILA-Pioneer or LILA-Horizon in the sources read. The LILA model uses a 100 mW readout power term and assumes 500 mW photodiodes for Pioneer, but the spacecraft or lander power budget is not described [1][2]."
+      },
+      "environmental_and_operational_requirements": "A lunar strainmeter would have to hold its optical or mechanical reference over long periods in a severe thermal environment. The LILA model assumes about 300 K for the optics [1][2]. The paper describes a thermal design goal of limiting noise to thermal Brownian noise and does not give a flight thermal control design [1]. The temperature range the instrument would have to survive on the Moon is not stated in the sources read.\n\nDust must be controlled. The LILA model estimates dust scattering as well below shot noise [2]. The paper describes baffles and electrostatic precipitators as options for dust control, without quantifying them [1].\n\nThe instrument would have to be decoupled from its platform and from lander disturbances. The LILA design is unsuspended and uses a monolithic bench anchored to the surface [1]. The paper does not give a lander vibration budget.\n\nThe Moon's ground response is also an environmental factor. The amplification model depends on the lunar Q and on the normal-mode structure of the Moon, both of which are model inputs [2].\n\nPower and data requirements are not stated in the sources read for either LILA phase.",
+      "limitations": "The lunar strainmeter examined here is a proposed concept. The LILA papers present results as model projections and state that the lunar seismic background is unmeasured [2]. The results depend on noise assumptions, especially the thermal noise value. The conservative and optimistic thermal values differ by a factor of about 50 [1][2], and the Pioneer target uses the optimistic value [2].\n\nThe mirror actuators are another limitation. The paper identifies piezoelectric actuators on the mirrors as the lossiest element in the model, and it suggests electro-optic modulators as an alternative that is not modelled [1].\n\nThe laser frequency stability requirement depends on an on-board high-finesse cavity that has not been demonstrated in the sources read [2].\n\nThe Moon's response is modelled, not measured. The Q values are assumptions, and the paper notes that 3D shallow structure is neglected in the mode calculation [2].\n\nEarth strainmeters are not direct analogues. Borehole instruments are coupled to rock and calibrated against Earth tides. A lunar instrument would have a different coupling and no equivalent calibration reference in the sources read [2][3].",
+      "transportation_and_deployment": {
+        "overview": "The LILA concepts are surface installations. No orbiter role is described. No lander, rover or spacecraft is named, and no compatibility is asserted.",
+        "transportation_process": [
+          "Surface payload (LILA-Pioneer concept): according to the LILA interior paper, the Pioneer would be deployed from a single lander and a Lunar Terrain Vehicle, and the range of the lunar terrain vehicle limits the baseline [2].",
+          "The paper's conclusions assume modest astronaut participation at unspecified locations [2]. These statements describe assumed concept deployment, not a verified interface.",
+          "The sources read do not describe stowage, release, leveling, thermal or power connections, or the cable and data route from the instrument to a lander.",
+          "Orbiter payload: not applicable to the LILA concepts."
+        ],
+        "deployment_methods": "Per the LILA interior paper, Pioneer deployment is assumed from a single lander and a Lunar Terrain Vehicle, with the baseline limited by the vehicle's sortie range [2]. The stowage and release design is not described in the sources read.",
+        "historical_examples": "No flown lunar strainmeter was identified. The Apollo 17 gravimeter (payload 016 overlap) is the closest flown lunar instrument to a deformation measurement in the sources consulted, but it is not a strainmeter [4].",
+        "compatibility_assessment": "No compatibility with any lander, rover or spacecraft is asserted. A future assessment would need the instrument's mass, dimensions, mounting interface, power, data rate and deployment method, none of which are published in the sources read.",
+        "siting_note": "The sources read do not provide a verified siting constraint. A line-of-sight horizon distance appeared in a search summary but was not confirmed in the paper text read, so it is not used. This article makes no lunar location recommendation; those are deferred by the user.",
+        "images": []
+      },
+      "historical_significance": "No flown lunar strainmeter was identified in the sources read. The Apollo seismic experiments recorded moonquakes and seismic signals, and the LILA interior paper draws on the Apollo event catalogue and instrument noise data [2]. Borehole strainmeters on Earth are an established instrument class used for tectonic deformation and tidal studies [3]. The LILA papers draw on this terrestrial experience and argue that technologies developed for terrestrial observatories form a basis for the lunar concept [1]. The lunar concept's significance is conditional: it depends on the concept being built and on the modelled noise being achieved.",
+      "limitations_and_uncertainties": "No flown lunar strainmeter identified: the search found only concept papers and the Apollo 17 gravimeter. This is a search result, not a complete survey of Apollo, Chinese, Soviet or Indian lunar instruments.\n\nSummary-based extraction: the LILA numbers, geometry and assumptions were extracted from arXiv HTML pages by a summarising tool. Equation and section references in the summaries were not checked against the PDFs.\n\nArm-length discrepancy: one LILA paper gives the Pioneer L-shape as 3 to 5 km in its introduction [1], while the interior paper gives two 5 km arms [2]. The 5 km value is used in the model in both papers.\n\nPioneer configuration wording: summaries say the Pioneer operates as two single-arm strainmeters, not as a Michelson interferometer [1]. This should be checked against the full text.\n\nThermal noise value: the optimistic and conservative values differ by a factor of about 50 [1][2], and the choice is not justified in the summaries read.\n\nFigure values: the projected noise curves are shown only in the figure, and no numerical values were taken from it. The legend abbreviations DMQ and SMQ are presumed to refer to deep and shallow moonquake signals; this was not confirmed in the text read.\n\nLaser frequency stabilisation: the on-board cavity that would achieve the stated stability is not demonstrated in the sources read [2].\n\nLunar attenuation and modes: the Q model and normal-mode frequencies come from a referenced model and code that were not read [2]. Individual mode frequencies are not listed in the text read.\n\nLunar seismic background: not measured for the Moon, and not included in the LILA model [2].\n\nMass, power, dimensions and temperature range: not publicly specified for any LILA phase in the sources read.\n\nSiting: no verified siting constraint in the sources read.\n\nLander interface: no lander, rover or spacecraft interface is verified for LILA-Pioneer or LILA-Horizon.\n\nApollo 17 gravimeter: the PDS document could not be read in this run. The tidal-deformation objective comes from a secondary search summary and is not verified.\n\nTerrestrial strainmeter values: the EarthScope primer states nanostrain precision but its parenthetical example does not match its own unit definitions. No noise floor or frequency band is taken from the primer.\n\nOther concepts: the Lunar Gravitational-Wave Antenna (LGWA) concept was seen only as a search result and is not described [5]. Lunar strainmeter concepts beyond LILA were not reviewed.\n\nImages: one direct image asset was verified (the LILA strain figure on arXiv). No official space-agency image of a strainmeter was verified.\n\nLicence: the LILA interior paper (arXiv:2509.15452) is CC BY-NC-SA 4.0 on arXiv, which restricts reuse of its figure. The LILA gravitational-wave paper (arXiv:2508.18437) is CC BY 4.0 on arXiv.\n\nLunar landing sites: this article does not recommend lunar landing sites or locations. That is deferred by the user.",
+      "images": [
+        {
+          "id": "lila_strain_figure_noise_curves",
+          "description": "Characteristic strain versus frequency for projected LILA Pioneer (5 km) and LILA Horizon (40 km) noise curves, compared with moonquake-related signal curves (legend labels DMQ and SMQ) and lunar normal-mode frequencies below 3 mHz.",
+          "image_type": "Model figure (projected noise curves and signal curves)",
+          "image_url": "https://arxiv.org/html/2509.15452v1/strain_figure.png",
+          "source_page_url": "https://arxiv.org/html/2509.15452v1",
+          "publisher": "arXiv (author-posted preprint)",
+          "credit": "Authors of arXiv:2509.15452 (v1)",
+          "caption": "Projected noise curves for LILA-Pioneer (5 km arm) and LILA-Horizon (40 km arm), with moonquake-related characteristic-strain curves and normal-mode frequencies below 3 mHz. Model figure only.",
+          "section_placements": [
+            "overview_images",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct arXiv asset URL with no query string or fragment. Verified 2026-11-12 by HTTP HEAD (200, image/png) and by downloading and viewing the file (1920 x 1440 PNG). Source page https://arxiv.org/html/2509.15452v1 returned HTTP 200. The figure was read by eye; no values were taken from it. Rights: the arXiv record of arXiv:2509.15452 is CC BY-NC-SA 4.0, which restricts reuse; check the licence before republication. Not an official space-agency image."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lila_strain_figure_noise_curves",
+          "description": "Characteristic strain versus frequency for projected LILA Pioneer (5 km) and LILA Horizon (40 km) noise curves, compared with moonquake-related signal curves (legend labels DMQ and SMQ) and lunar normal-mode frequencies below 3 mHz.",
+          "image_type": "Model figure (projected noise curves and signal curves)",
+          "image_url": "https://arxiv.org/html/2509.15452v1/strain_figure.png",
+          "source_page_url": "https://arxiv.org/html/2509.15452v1",
+          "publisher": "arXiv (author-posted preprint)",
+          "credit": "Authors of arXiv:2509.15452 (v1)",
+          "caption": "Projected noise curves for LILA-Pioneer (5 km arm) and LILA-Horizon (40 km arm), with moonquake-related characteristic-strain curves and normal-mode frequencies below 3 mHz. Model figure only.",
+          "section_placements": [
+            "overview_images",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct arXiv asset URL with no query string or fragment. Verified 2026-11-12 by HTTP HEAD (200, image/png) and by downloading and viewing the file. Rights: CC BY-NC-SA 4.0 on the arXiv record."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Fundamental Noise and Gravitational-Wave Sensitivity of the Laser Interferometer Lunar Antenna (LILA)",
+          "authors": "Creighton, T.; Lognonné, P.; Panning, M. P.; Trippe, J.; Quetschke, V.; Jani, K.; et al. (author list truncated on the arXiv page: '11 other authors')",
+          "publisher": "arXiv:2508.18437 (v1), 9 pages, 1 figure",
+          "publication_date": "2025-08-25",
+          "url": "https://arxiv.org/abs/2508.18437",
+          "read_status": "Abstract page and HTML version read through a summarising fetch. Numbers, equation and section references were extracted by that tool and not checked line by line against the PDF. Licence CC BY 4.0 per the arXiv page."
+        },
+        {
+          "number": 2,
+          "title": "Potential for Lunar Interior Science by the Gravitational-Wave Detector LILA",
+          "authors": "Panning, M. P.; Lognonné, P.; Creighton, T.; Trippe, J.; Quetschke, V.; Majstrorović, J.; Jani, K.",
+          "publisher": "arXiv:2509.15452 (v1)",
+          "publication_date": "2025-09-18",
+          "url": "https://arxiv.org/html/2509.15452v1",
+          "read_status": "Abstract page and HTML version read through a summarising fetch; Figure 1 image (strain_figure.png) downloaded and viewed directly. Licence CC BY-NC-SA 4.0 per the arXiv record. Companion LILA design reference (arXiv:2508.11631, cited by this paper) was not read."
+        },
+        {
+          "number": 3,
+          "title": "Borehole Strainmeter Overview (introductory material)",
+          "authors": "EarthScope Consortium",
+          "publisher": "EarthScope strain tools documentation (readthedocs)",
+          "publication_date": null,
+          "url": "https://earthscopestraintools.readthedocs.io/en/latest/pages/IntroductoryMaterial.html",
+          "read_status": "Read through a summarising fetch. Depth, diameter, instrument length, gauge count, calibration method and correction list extracted by that tool."
+        },
+        {
+          "number": 4,
+          "title": "Apollo 17 Lunar Surface Gravimeter (LSG) instrument document",
+          "authors": "NASA Apollo Scientific Experiments document set",
+          "publisher": "NASA Planetary Data System Geosciences Node",
+          "publication_date": null,
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17a_lsg.pdf",
+          "read_status": "Cited at catalogue level only. The PDF could not be read in this run (binary response). The tidal-deformation objective comes from a secondary search summary and is not verified."
+        },
+        {
+          "number": 5,
+          "title": "Lunar Gravitational-Wave Antenna (LGWA) baseline payload document",
+          "authors": "NASA (search result)",
+          "publisher": "NASA Science",
+          "publication_date": "2023-05 (per upload path)",
+          "url": "https://science.nasa.gov/wp-content/uploads/2023/05/146_d0272724eb95b6467b73d1c73d722a71_BPS___LGWA.pdf",
+          "read_status": "Seen only as a search-result entry; not read. Cited only to mark the LGWA concept as outside this article's detailed description."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images (LILA strain figure; arXiv asset verified)",
+      "LILA-Pioneer example": "payload.article.physical_specifications.examples[0].images (same figure)",
+      "LILA-Horizon, borehole reference, Apollo 17 gravimeter examples": "no verified images (empty arrays)",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (empty; no image is shown in that section of the Markdown)"
+    },
+    "url_policy": "All image_url and source_page_url values, and all reference URLs, in this file have query strings and fragments removed. The direct figure URL https://arxiv.org/html/2509.15452v1/strain_figure.png returned HTTP 200 image/png on 2026-11-12. The source page https://arxiv.org/html/2509.15452v1 returned HTTP 200."
+  },
+  "data_quality_notes": [
+    "Scope: class-level article on the strainmeter, weighted towards lunar concepts because no lunar strainmeter has been flown in the sources read. Gravimeter (016), tiltmeter (018), tidal deformation sensor (025) and seismometer (001 to 004) overlaps are cross-referenced, not repeated.",
+    "No flown lunar strainmeter was identified. The closest flown instrument is the Apollo 17 Lunar Surface Gravimeter, whose tidal-deformation objective comes from a secondary search summary; its PDS document could not be read in this run.",
+    "All LILA numbers were extracted from arXiv HTML and abstract pages by a summarising fetch tool. Equation, section and value references in those summaries were not checked against the PDFs.",
+    "LILA arm length discrepancy: one paper gives the Pioneer L-shape as 3 to 5 km in its introduction [1]; the interior paper gives two 5 km arms [2]. The 5 km value is used in the model in both papers.",
+    "LILA Pioneer configuration wording: summaries say it operates as two single-arm strainmeters rather than a Michelson interferometer [1]. Check against the full text.",
+    "Thermal Brownian noise: conservative value 6e-32 m^2/Hz at 1 Hz and optimistic value 1.2e-33 m^2/Hz differ by about 50 times [1][2]. The Pioneer target uses the optimistic value [2]; this choice drives the result and is not justified in the summaries read.",
+    "Projected noise curves appear only in the figure; no numerical values were read from it. Figure legend abbreviations DMQ and SMQ are presumed to mean deep and shallow moonquake signals and were not confirmed in the text read.",
+    "The laser frequency stability requirement (about 10^-24 per sqrt(Hz), about 3e-10 Hz/sqrt(Hz)) depends on an on-board high-finesse cavity that the paper says could achieve it; this has not been demonstrated [2].",
+    "The lunar Q model (amplification up to about 10^2 at 1 Hz and 10^4 at 1 mHz; low-frequency Q capped near 500 by deep-mantle melting) and the normal-mode frequencies come from a referenced model and code that were not read [2]. Individual mode frequencies are not listed in the text read.",
+    "The lunar seismic background is unmeasured and is not included in the LILA noise model [2].",
+    "A line-of-sight horizon distance for siting appeared in a search summary but was not confirmed in the paper text read; it is not used. No verified siting constraint is given.",
+    "Mass, power, dimensions, mirror parameters and flight temperature range are not publicly specified for any LILA phase in the sources read.",
+    "The EarthScope primer states nanostrain precision, but its parenthetical example does not match its own unit definitions (1 mm over 1 km is a microstrain). No noise floor or frequency band is taken from the primer.",
+    "Lunar Gravitational-Wave Antenna (LGWA) is seen only as a search result and is not described in detail.",
+    "Image: one direct image asset was verified (LILA strain figure on arXiv, 1920 x 1440 PNG, downloaded and viewed). It is a model figure, not a measurement. No official space-agency image of a strainmeter was verified.",
+    "Licence: the figure's source paper (arXiv:2509.15452) is CC BY-NC-SA 4.0 on arXiv, which restricts reuse. The companion LILA paper (arXiv:2508.18437) is CC BY 4.0 on arXiv.",
+    "No lander, rover or spacecraft compatibility is asserted for any example, and no lunar landing-site or location recommendation is included, in line with the user's deferral."
+  ]
+}

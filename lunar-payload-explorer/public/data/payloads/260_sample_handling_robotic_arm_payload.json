@@ -1,0 +1,308 @@
+{
+  "catalogue_id": 260,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 13,
+    "name": "Sample collection, preservation and return"
+  },
+  "payload": {
+    "number": 260,
+    "name": "Sample handling robotic arm",
+    "article": {
+      "overview": "A sample handling robotic arm is a manipulator carried by a lander, rover or other surface system. It collects regolith and rock, moves the material or its container to a containment or packaging system, and supports sealing and transfer toward a return vehicle. In the two lunar sample-return missions reviewed for this article, China's Chang'e-5 (2020) and Chang'e-6 (2024), a robotic arm on the lander carried the sampling tools and, in Chang'e-5, the sample-processing end effector. The arm sits between the surface sampling devices and the ascent and return chain, so the sample is not handled by people. The payload name describes a class of hardware rather than one standard design. The examples are a flown arm on each of two lunar missions and a non-lunar European sample-transfer arm that is still in development. The three examples are not directly comparable.",
+      "description": "A sample handling arm is a jointed mechanical manipulator. At its tip it carries an end effector, the tool that touches the sample. Depending on the mission, the end effector may hold a scoop, a gripper, a container interface or a sample-processing system. Sampling devices such as drills may be mounted on the same arm or on a separate mechanism. For lunar sample return, the arm must do more than pick up material. Samples must be kept separate, protected from cross-contamination, held in a container that can be sealed, and transferred to an ascent or return system without human intervention. eoPortal's Chang'e-5 mission description states that the sample-processing end effector could be separated from the arm for transfer to the ascender, that a sample-processing system using vibration and separation kept several samples apart, and that the sample container was sealed in a vacuum container inside the ascender. Those descriptions come from mission-level reporting and have not been checked against the flight configuration.",
+      "scientific_purpose_and_applications": "The main scientific purpose of a sample handling arm is to make sample return possible and to keep the returned material useful for analysis. Samples are only valuable if their location, depth, mass, sealing state and contamination history can be documented. A handling arm therefore supports three purposes. First, collection at chosen points: an arm can reach a sampling site that a fixed installation cannot, and Chang'e-5 combined an arm-mounted scoop with a drill to collect surface and subsurface material. Second, controlled transfer: the arm moves samples or containers between sampling tools, sealed containers and the ascent or return system, reducing the number of steps where material could be lost, mixed or contaminated. Third, documentation and curation: sample-handling tasks can be linked to imaging, position data and sealing records that help scientists interpret the sample later. Beyond the Moon, ESA's Sample Transfer Arm was designed for Mars Sample Return and has been described as potentially useful for Moon and low Earth orbit missions. No lunar application of that arm has been verified in the sources reviewed.",
+      "operating_principle": "A surface sample-handling arm is a sequence of controlled motions, each linked to a sensing or verification step. A generic sequence is: the lander or rover positions the arm near the sampling site, using cameras or other sensors where available; the arm moves a sampling tool such as a scoop or drill to the surface or to depth; the sample is collected and moved into a holding or processing interface; the end effector or sample container is separated or presented to the next system; and the container is sealed and transferred to an ascent or return vehicle. In the Chang'e-5 mission, the surface arm collected material with a scoop, while a separate rotary-percussive drilling system obtained subsurface core material. The sample-processing system separated individual samples so that they did not mix. Once the sample container was sealed in the ascender, a transfer mechanism moved it to the return capsule in lunar orbit. eoPortal reports that the transfer used a robotic system whose specifications are not published. For Chang'e-6, the Planetary Society summarised the surface sequence as drilling into the Moon and then using a robotic arm to collect rock and soil, and the sample container was moved from the ascent vehicle to the return module in lunar orbit. The ESA Sample Transfer Arm uses a gripper with two tools, fingers that grip sample tubes and a plunger that pushes them into a container, driven by a single motor. A remote centre of compliance mechanism connects the last joint of the arm to the end effector.",
+      "scientific_importance": "Sample return is one of the most direct ways to study the Moon. Returned material can be analysed in laboratories with instruments that are too large, too heavy or too delicate for a spacecraft. Robotic handling determines how much of the sample remains usable and how well its context is preserved. Chang'e-5 returned 1.731 kg of lunar material. Chang'e-6 returned 1,935.3 g, reported by China's National Space Administration on 28 June 2024. The Planetary Society describes Chang'e-6 as collecting the first lunar far-side samples. The scientific value of these samples depends on the handling chain, because records of sampling location, depth, sealing and transfer are needed to interpret the material correctly.",
+      "physical_specifications": {
+        "note": "There is no single mass, size or joint configuration for a sample handling robotic arm. The examples describe individual flown hardware, a flown mission system and a non-lunar prototype. Values are attributed to the source where they were found. Where a value was not reported, this record says so. The Chang'e-5 and Chang'e-6 arms are not described with dimensions, masses or joint specifications in the sources reviewed, and the ESA arm's mass and degrees of freedom are not stated in the ESA sources reviewed.",
+        "examples": [
+          {
+            "name": "Chang'e-5 lander sampling arm and drill",
+            "type": "Flown lunar sampling arm (Chang'e-5, 2020)",
+            "status": "Flown on the Chang'e-5 lunar lander, which landed near Mons Rümker on 1 December 2020.",
+            "arm_degrees_of_freedom": 4,
+            "arm_length_m": null,
+            "arm_mass_kg": null,
+            "end_effector": "Scoop plus sample-processing system using vibration and separation mechanisms to keep several samples apart; the end effector can separate from the arm for transfer to the ascender.",
+            "drill": "Rotary-percussive coring drill that takes an intact core up to 2 m deep, stored in a Kevlar tube. Drill diameter not reported.",
+            "sample_target_kg": "About 2 kg planned, roughly 0.5 kg drilled and 1.5 kg scooped.",
+            "sample_returned_kg": 1.731,
+            "host_lander_context": "Reported dry mass over one metric tonne; fuelled mass up to 3,800 kg. Ascender mass is reported as about 500 kg in one section and 300 to 400 kg during docking in another. These are host-level values, not the arm mass.",
+            "qualification": "Arm and drill descriptions are from mission-level reporting and may differ from the flight configuration. Arm length and arm mass were not reported.",
+            "source_urls": [
+              "https://eoportal.org/satellite-missions/chang-e-5"
+            ],
+            "images": [
+              {
+                "id": "c5_sampling_arm_drill_sketch",
+                "description": "Sketch of the Chang'e-5 lander sampling arm showing the rotary-percussive drilling mechanism, penetrating mechanism and coring drill.",
+                "image_type": "Technical sketch",
+                "image_url": "https://eoportal.org/api/cms/documents/d/eoportal/chang-e5_autof-jpeg",
+                "source_page_url": "https://eoportal.org/satellite-missions/chang-e-5",
+                "publisher": "eoPortal",
+                "credit": "eoPortal (figure as published on the mission page; original rights holder not stated)",
+                "caption": "Sketch of the Chang'e-5 lander's sampling arm and drilling mechanisms. The eoPortal caption describes this as a robotic arm and sampling scoop sketch, but the labelled parts in the image are the drilling and penetrating mechanisms and coring drill.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct eoPortal figure asset URL with no query string or fragment; HTTP 200 image/jpeg checked in this run. Image is 850 x 644 pixels, so this is not a full-resolution download. The caption and the labelled content disagree; this record follows the labelled content."
+              }
+            ]
+          },
+          {
+            "name": "Chang'e-6 lander sampling arm",
+            "type": "Flown lunar sampling arm (Chang'e-6, 2024)",
+            "status": "Flown on the Chang'e-6 lunar lander, which landed at Apollo Basin in the South Pole-Aitken Basin on 1 June 2024.",
+            "arm_degrees_of_freedom": null,
+            "arm_length_m": null,
+            "arm_mass_kg": null,
+            "sampling_method": "The lander drilled into the Moon and then used a robotic arm to collect rock and soil, according to the Planetary Society.",
+            "sample_returned_g": 1935.3,
+            "sample_returned_source_note": "Reported by China's National Space Administration on 28 June 2024 in a Chinese-language report. The report does not state how much came from the arm and how much from the drill. A second-hand search summary of a scientist statement gave a scoop/drill split of about 1,610 g from scooping; this was not verified against a primary source and is not used as a fact here.",
+            "transfer": "The sample container entered the return module in lunar orbit, as reported in the Space.com headline. The exact transfer date and channel size could not be verified from the page text.",
+            "qualification": "Arm dimensions, mass and joint configuration are not reported in the sources reviewed.",
+            "source_urls": [
+              "https://planetary.org/space-missions/change-6",
+              "https://www.chinanews.com.cn/gn/2024/06-28/10242075.shtml",
+              "https://www.space.com/china-chang-e-6-moon-sample-return-transfer-orbiter"
+            ],
+            "images": []
+          },
+          {
+            "name": "ESA Sample Transfer Arm",
+            "type": "Non-lunar prototype and engineering model (Mars Sample Return concept)",
+            "status": "Prototype and engineering-model stage. ESA reported in October 2024 that a heated test campaign of prototypes was under way. The sources reviewed do not state a flight status or qualification status.",
+            "arm_degrees_of_freedom": null,
+            "arm_length_m": 2.5,
+            "arm_mass_kg": null,
+            "end_effector": "Two tools, fingers that grip sample tubes and a plunger that pushes them into a container, driven by a single motor.",
+            "compliance_mechanism": "Remote centre of compliance mechanism connecting the last joint of the arm to the end effector.",
+            "engineering_model": "End effector assembled by Added Value Solutions (AVS) in Spain; ESA states that the engineering model confirmed the mechanism works as intended.",
+            "qualification": "Not stated in the ESA sources reviewed. A search-result summary gave a seven-degree-of-freedom arm; this was not verified against a primary ESA source and is not recorded here as a value.",
+            "source_urls": [
+              "https://www.esa.int/ESA_Multimedia/Images/2025/05/Gripping_exploration",
+              "https://blogs.esa.int/to-mars-and-back/"
+            ],
+            "images": [
+              {
+                "id": "esa_sta_engineering_model_end_effector",
+                "description": "Engineering-model end effector of the ESA Sample Transfer Arm, assembled by AVS, showing its two tools.",
+                "image_type": "Engineering-model hardware photograph",
+                "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2025/05/gripping_exploration/26693626-1-eng-GB/Gripping_exploration.jpg",
+                "source_page_url": "https://www.esa.int/ESA_Multimedia/Images/2025/05/Gripping_exploration",
+                "publisher": "European Space Agency",
+                "credit": "AVS (Added Value Solutions)",
+                "caption": "Engineering-model end effector of the ESA Sample Transfer Arm. Photo credit: AVS (Added Value Solutions), as listed by ESA.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct ESA media asset URL with the download query parameter removed; HTTP 200 image/jpeg checked in this run. Image is 878 x 1107 pixels, the only full-size file ESA lists is a 222.3 KB download, so this is not a verified full-resolution original. ESA states 'No ESA licences available'; check reuse terms before republication. Image shows an engineering model, not flight hardware."
+              }
+            ]
+          },
+          {
+            "name": "Apollo hand-held sampling tools (non-robotic historical comparator)",
+            "type": "Flown historical hand-operated tools (not a robotic arm)",
+            "status": "Flown on Apollo lunar surface missions. These were hand-held tools, not manipulators.",
+            "arm_degrees_of_freedom": null,
+            "dimensions_and_mass": "Not recorded; the catalogue was not read in this run.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/19890008919/downloads/19890008919.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No universal dimensions exist for a sample handling arm. For the Chang'e-5 and Chang'e-6 arms, arm length and joint dimensions were not reported in the sources reviewed. The ESA Sample Transfer Arm is reported as 2.5 m long. The examples are not directly comparable, because they differ in purpose, maturity and host system.",
+        "mass_and_weight": "Arm mass is not reported for any of the examples in the sources reviewed. Chang'e-5 host-lander and ascender masses are host-level values and must not be read as arm masses. The ESA arm mass is not stated in the ESA sources reviewed.",
+        "power_requirements": "Not publicly specified for any of the examples in the sources reviewed. Chang'e-5 host-lander power, thermal and data interfaces were not found in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A lunar sample handling arm must work in vacuum, large temperature swings, and a fine, abrasive, electrostatically active dust environment. Engineering considerations include thermal control, since actuators, seals and sensors must tolerate the lunar day and night; dust and abrasion, since regolith can jam joints, seals and grippers and can contaminate samples; contamination control, since samples must be kept separate from each other and from the spacecraft; sealing and containment, since the sample container must be closed and held in a controlled state before transfer; and remote operation, since communication delays and limited bandwidth mean that motion sequences must be planned, verified and executed with onboard sensing. Chang'e-5 kept its sample container sealed inside the ascender, and its sample-processing system used separation mechanisms to address contamination. These are engineering considerations, not certified requirements for any particular payload.",
+      "limitations": "Public detail on Chang'e-5 and Chang'e-6 arm dimensions, mass and joint configuration is limited. Chang'e-5 descriptions come from pre-launch reporting and may not match the flight configuration. The ESA Sample Transfer Arm is a prototype and engineering model, so its results cannot be presented as flight performance. The Chang'e-5 container transfer system is described only in general terms, and its specification was not published. The sources reviewed do not show a lunar robotic sample-handling arm that has been tested in a sealed glovebox with regolith transfer.",
+      "transportation_and_deployment": {
+        "overview": "A sample handling arm is normally part of a lander or surface system. For a sample-return mission, the arm and its sampling tools must be integrated into the lander, delivered to the surface, deployed and operated, and then connected to the sealing and transfer chain.",
+        "transportation_process": [
+          "Earth integration and launch: the arm is mounted on the lander before launch. On Chang'e-5, the lander, ascender and return capsule formed a stack launched on a Long March 5 rocket; the reported spacecraft stack mass is about 8.2 t.",
+          "Lunar transfer and landing: the Chang'e-5 lander landed on 1 December 2020. The Chang'e-6 lander was launched on 3 May 2024 and landed on 1 June 2024.",
+          "Deployment and operation: the Chang'e-5 arm and drill are lander-mounted systems used for surface collection. The Chang'e-6 lander used a drill and then a robotic arm to collect rock and soil.",
+          "Containment and transfer: the Chang'e-5 sample container was sealed inside the ascender; an ascent vehicle docked with the orbiter-returner and the container was transferred into the return capsule. Chang'e-6 followed a similar chain, with the sample container moved from the ascender to the return module in lunar orbit.",
+          "Interfaces: power, thermal, mechanical and data interfaces for the arms are not described in detail in the sources reviewed."
+        ],
+        "deployment_methods": "The arm is used after landing to collect material. Chang'e-5 used a four-degree-of-freedom arm with a scoop and a separate rotary-percussive drill; Chang'e-6 used a drill and a robotic arm. Detailed arm deployment sequences and interface specifications were not found.",
+        "historical_examples": "Chang'e-5 (2020) and Chang'e-6 (2024) are the two lunar sample-return missions reviewed here that used a lander-mounted robotic arm for sample handling. Apollo missions used hand-held tools rather than robotic arms. The ESA Sample Transfer Arm is a non-lunar prototype and is not a deployment example.",
+        "compatibility_assessment": "No verified interface evidence was found that would support compatibility with any named lander, rover or return system beyond the flown Chang'e missions. This record does not claim compatibility with any lander or spacecraft.",
+        "images": [
+          {
+            "id": "c5_sampling_arm_drill_sketch",
+            "description": "Sketch of the Chang'e-5 lander sampling arm showing the rotary-percussive drilling mechanism, penetrating mechanism and coring drill.",
+            "image_type": "Technical sketch",
+            "image_url": "https://eoportal.org/api/cms/documents/d/eoportal/chang-e5_autof-jpeg",
+            "source_page_url": "https://eoportal.org/satellite-missions/chang-e-5",
+            "publisher": "eoPortal",
+            "credit": "eoPortal (figure as published on the mission page; original rights holder not stated)",
+            "caption": "Sketch of the Chang'e-5 lander's sampling arm and drilling mechanisms. The eoPortal caption describes this as a robotic arm and sampling scoop sketch, but the labelled parts in the image are the drilling and penetrating mechanisms and coring drill.",
+            "section_placements": [
+              "overview",
+              "physical_specifications.examples[0]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct eoPortal figure asset URL with no query string or fragment; HTTP 200 image/jpeg checked in this run. Image is 850 x 644 pixels, so this is not a full-resolution download. The caption and the labelled content disagree; this record follows the labelled content."
+          }
+        ]
+      },
+      "historical_significance": "Chang'e-5 and Chang'e-6 are the two lunar sample-return missions reviewed here that used a lander-mounted robotic arm for sample handling. Chang'e-6 was reported as the first collection of far-side lunar samples. Apollo missions used hand-held tools rather than robotic arms. The ESA Sample Transfer Arm shows the design direction for sample-transfer arms in Mars Sample Return planning, but it has not flown.",
+      "limitations_and_uncertainties": "Public specifications for the flown Chang'e arms are sparse. Some Chang'e-5 numbers come from pre-launch mission reporting. The Chang'e-6 split between arm-collected and drill-collected material was not verified from a primary Chinese source. The ESA arm's mass, degrees of freedom and qualification status are not stated in the sources reviewed. The eoPortal page gives two different ascender masses for Chang'e-5. The MDPI design study on an in-orbit sample container transfer mechanism was found in search results, but the publisher page returned HTTP 403 in this run, so its contents are not used as a fact here.",
+      "images": [
+        {
+          "id": "c5_sampling_arm_drill_sketch",
+          "description": "Sketch of the Chang'e-5 lander sampling arm showing the rotary-percussive drilling mechanism, penetrating mechanism and coring drill.",
+          "image_type": "Technical sketch",
+          "image_url": "https://eoportal.org/api/cms/documents/d/eoportal/chang-e5_autof-jpeg",
+          "source_page_url": "https://eoportal.org/satellite-missions/chang-e-5",
+          "publisher": "eoPortal",
+          "credit": "eoPortal (figure as published on the mission page; original rights holder not stated)",
+          "caption": "Sketch of the Chang'e-5 lander's sampling arm and drilling mechanisms. The eoPortal caption describes this as a robotic arm and sampling scoop sketch, but the labelled parts in the image are the drilling and penetrating mechanisms and coring drill.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct eoPortal figure asset URL with no query string or fragment; HTTP 200 image/jpeg checked in this run. Image is 850 x 644 pixels, so this is not a full-resolution download. The caption and the labelled content disagree; this record follows the labelled content."
+        },
+        {
+          "id": "esa_sta_engineering_model_end_effector",
+          "description": "Engineering-model end effector of the ESA Sample Transfer Arm, assembled by AVS, showing its two tools.",
+          "image_type": "Engineering-model hardware photograph",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2025/05/gripping_exploration/26693626-1-eng-GB/Gripping_exploration.jpg",
+          "source_page_url": "https://www.esa.int/ESA_Multimedia/Images/2025/05/Gripping_exploration",
+          "publisher": "European Space Agency",
+          "credit": "AVS (Added Value Solutions)",
+          "caption": "Engineering-model end effector of the ESA Sample Transfer Arm. Photo credit: AVS (Added Value Solutions), as listed by ESA.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct ESA media asset URL with the download query parameter removed; HTTP 200 image/jpeg checked in this run. Image is 878 x 1107 pixels, the only full-size file ESA lists is a 222.3 KB download, so this is not a verified full-resolution original. ESA states 'No ESA licences available'; check reuse terms before republication. Image shows an engineering model, not flight hardware."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "c5_sampling_arm_drill_sketch",
+          "description": "Sketch of the Chang'e-5 lander sampling arm showing the rotary-percussive drilling mechanism, penetrating mechanism and coring drill.",
+          "image_type": "Technical sketch",
+          "image_url": "https://eoportal.org/api/cms/documents/d/eoportal/chang-e5_autof-jpeg",
+          "source_page_url": "https://eoportal.org/satellite-missions/chang-e-5",
+          "publisher": "eoPortal",
+          "credit": "eoPortal (figure as published on the mission page; original rights holder not stated)",
+          "caption": "Sketch of the Chang'e-5 lander's sampling arm and drilling mechanisms. The eoPortal caption describes this as a robotic arm and sampling scoop sketch, but the labelled parts in the image are the drilling and penetrating mechanisms and coring drill.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct eoPortal figure asset URL with no query string or fragment; HTTP 200 image/jpeg checked in this run. Image is 850 x 644 pixels, so this is not a full-resolution download. The caption and the labelled content disagree; this record follows the labelled content."
+        }
+      ],
+      "references": [
+        {
+          "id": 1,
+          "title": "Chang'e-5 (China's Lunar Sample Return Mission) / CE-5",
+          "publisher": "eoPortal",
+          "publication_date": null,
+          "url": "https://eoportal.org/satellite-missions/chang-e-5"
+        },
+        {
+          "id": 2,
+          "title": "Chang'e-6, collecting the first lunar farside samples",
+          "publisher": "The Planetary Society",
+          "publication_date": null,
+          "url": "https://planetary.org/space-missions/change-6"
+        },
+        {
+          "id": 3,
+          "title": "嫦娥六号带回1935.3克月球样品 交接至中国科学院 (Chang'e-6 returned 1,935.3 g of lunar samples; handed over to the Chinese Academy of Sciences)",
+          "publisher": "China News Service (chinanews.com.cn)",
+          "publication_date": "2024-06-28",
+          "url": "https://www.chinanews.com.cn/gn/2024/06-28/10242075.shtml"
+        },
+        {
+          "id": 4,
+          "title": "Chang'e 6 mission's far-side moon samples enter return-to-Earth module in lunar orbit",
+          "publisher": "Space.com",
+          "publication_date": null,
+          "url": "https://www.space.com/china-chang-e-6-moon-sample-return-transfer-orbiter",
+          "notes": "Headline confirmed; article body was not accessible, so no body facts are taken from it."
+        },
+        {
+          "id": 5,
+          "title": "Gripping exploration (image)",
+          "publisher": "European Space Agency",
+          "publication_date": "2025-05-08",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2025/05/Gripping_exploration"
+        },
+        {
+          "id": 6,
+          "title": "To Mars and back (ESA blog)",
+          "publisher": "European Space Agency",
+          "publication_date": "2024-10-16",
+          "url": "https://blogs.esa.int/to-mars-and-back/",
+          "notes": "The original post was identified with a query parameter (p=720) that has been removed under the URL policy. The cleaned URL is the blog index and may not show the specific post directly; verify before citing."
+        },
+        {
+          "id": 7,
+          "title": "Chang'e-5 sampling arm sketch (figure asset)",
+          "publisher": "eoPortal",
+          "publication_date": null,
+          "url": "https://eoportal.org/api/cms/documents/d/eoportal/chang-e5_autof-jpeg"
+        },
+        {
+          "id": 8,
+          "title": "Apollo lunar sample hand tool catalog (JSC-23454)",
+          "publisher": "NASA Johnson Space Center (Judith Allton)",
+          "publication_date": "1989",
+          "url": "https://ntrs.nasa.gov/api/citations/19890008919/downloads/19890008919.pdf",
+          "notes": "Scanned PDF; located but not read in this run. Used only for the general statement that Apollo crews used hand-held tools."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Chang'e-5 lander sampling arm and drill example": "payload.article.physical_specifications.examples[0].images",
+      "ESA Sample Transfer Arm example": "payload.article.physical_specifications.examples[2].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Catalogue check: payload 260 'Sample handling robotic arm' and category 13 'Sample collection, preservation and return' confirmed against lunar_payloads_catalogue_320.md (category heading at line 289; payload at line 303).",
+    "Chang'e-5 arm: degrees of freedom (4) and the drill details are from eoPortal's mission summary, which cites pre-launch reporting. Arm length, arm mass and drill diameter are not reported.",
+    "Chang'e-5 host-lander masses: eoPortal gives an ascender mass of about 500 kg in one section and 300 to 400 kg during docking in another. Both values are recorded as host-level values, not arm mass.",
+    "Chang'e-5 transfer system: eoPortal states a robotic system of unknown specifications moved the container. No specification is recorded.",
+    "Chang'e-5 image caption: the eoPortal caption describes the figure as a robotic arm and sampling scoop sketch, but the labelled parts in the image are the drilling and penetrating mechanisms and coring drill. The image is recorded with its labelled content.",
+    "Chang'e-6 arm: the Planetary Society says the lander drilled and then used a robotic arm to collect rock and soil. Arm specifications are not reported. The eoPortal Chang'e-6 page returned navigation text only and was not used for facts.",
+    "Chang'e-6 sample mass: 1,935.3 g is taken from the China News Service report of 28 June 2024. The report does not say how the sample was collected. A second-hand search summary gave a scoop/drill split of about 1,610 g; it is not verified and not used.",
+    "Chang'e-6 transfer: the Space.com headline confirms that samples moved into the return module in lunar orbit. The article body was not accessible, so the exact transfer date and channel size are not recorded.",
+    "ESA Sample Transfer Arm: length 2.5 m and the prototype test status are from the ESA blog post. The post was identified with a query parameter (p=720) that is removed by the URL policy. Degrees of freedom, mass and qualification are not stated in the ESA sources reviewed. A search-result summary gave seven degrees of freedom; this was not verified and is not recorded as a value.",
+    "ESA image: ESA lists AVS as photo credit and states 'No ESA licences available'. The image asset was HTTP-checked and is 878 x 1107 pixels, but the only full-size file listed by ESA is a 222.3 KB download, so it is not verified as a full-resolution original. Reuse terms must be checked before republication.",
+    "eoPortal figure: HTTP-checked and inspected; 850 x 644 pixels. Original rights holder and credit are not stated on the page, so the credit is recorded as eoPortal as published.",
+    "MDPI design study on the Chang'e-5 in-orbit sample container transfer mechanism: found in search results but the publisher page returned HTTP 403 in this run. Not used as a fact.",
+    "Apollo hand tools: the NASA catalogue JSC-23454 was located, but the scanned PDF could not be read in this run. Dimensions and masses for the Apollo tools are not recorded.",
+    "PolyU Surface Sampling and Packing System: an institutional publicity summary for Chang'e-5 and Chang'e-6 was found in search results, but was not fetched. It is not used as a fact.",
+    "Image licences: no image licence beyond the publisher statements above was verified. No image is presented as public domain.",
+    "Lunar location recommendations are deferred by the user and are not included.",
+    "No lander, rover or return-system compatibility is claimed; no verified interface evidence was found."
+  ]
+}

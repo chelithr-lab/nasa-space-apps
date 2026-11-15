@@ -1,0 +1,169 @@
+{
+  "catalogue_id": 196,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 10,
+    "name": "Biological and life-science experiments"
+  },
+  "payload": {
+    "number": 196,
+    "name": "Plant growth experiment",
+    "article": {
+      "overview": "A plant growth experiment is a biological payload that tests whether plants can germinate, grow and be observed on the Moon, and how lunar conditions affect them. Only one plant experiment with reported results has been flown on the lunar surface: the Biological Experiment Payload (BEP) carried on China's Chang'e-4 lander, which landed on the far side of the Moon on 3 January 2019 [2]. Its cotton seeds were reported to have sprouted, but the plants later died [2]. A second design, NASA's LEAF (Lunar Effects on Agricultural Flora) growth chamber, was selected for further development for NASA's Artemis III mission and has not flown [3][4].",
+      "description": "A plant growth payload has to keep living seeds or seedlings alive in an environment that is otherwise hostile to them. Typical elements include a sealed or controlled enclosure, a water supply, a light path or light source, temperature regulation, and sensors or cameras that record germination and growth. The lunar surface adds further demands: the payload must tolerate a long lunar night with very low temperatures, and it has to cope with radiation and partial gravity (about one-sixth of Earth's gravity). Plant experiments are therefore both a test of biology and a test of the hardware that keeps the biology alive.",
+      "scientific_purpose_and_applications": "The scientific purpose is to find out how the lunar environment affects plant photosynthesis, growth and stress responses. NASA describes LEAF as intended to investigate the lunar surface environment's effects on space crops, observing photosynthesis, growth and stress responses under space radiation and partial gravity, to inform plant-grown food and life support on the Moon [3][4]. The Chang'e-4 BEP had a similar aim: its stated purpose was to test how low gravity, intense radiation and intense light affect terrestrial organisms, and it combined plants (producers), fruit fly eggs (consumers) and yeast (decomposers) in one micro-ecosystem [2].\n\nPotential applications include locally grown fresh food for crews, oxygen and carbon dioxide exchange in closed life-support systems, and a low-cost biological test bed for future surface habitats. These applications are goals stated by the experiment teams and are not yet demonstrated on the Moon.",
+      "operating_principle": "Plants convert light, water and carbon dioxide into biomass through photosynthesis. A lunar plant payload must therefore supply water, a workable temperature range, light and air, and it must record what the plants do. The Chang'e-4 BEP used sunlight admitted through a guide tube rather than artificial light, and it carried 18 mL of water inside its sealed canister [2]. The LEAF plan includes water delivered to the seeds, nutrients, a controlled climate, thermal protection and an air supply containing carbon dioxide; the light source, intensity and spectrum have not been published [4].",
+      "scientific_importance": "Whether plants can grow on the Moon is an open biological question with direct engineering consequences. A plant system that works in lunar conditions could contribute to a closed-loop life-support architecture, but only if it can grow reliably over many weeks rather than days. The Chang'e-4 result is the only flown evidence in these sources, and it shows germination rather than sustained growth. The lead investigator stated that plant health and safety still need study, saying: \"Whether it is healthy or not needs further research\" [2]. The scientific importance of a plant growth payload therefore lies mainly in the controlled data it could return on how plants respond to the lunar environment, and in the engineering lessons it provides for thermal and life-support design.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a plant growth payload. The two examples below differ in status and in how much is published: one is a flown instrument with published hardware figures, and the other is a selected instrument for which NASA has not published mass, size or power values. The figures are tied to named instruments and sources and should not be treated as a comparable design family.",
+        "examples": [
+          {
+            "name": "Chang'e-4 Biological Experiment Payload (BEP)",
+            "type": "Flown lunar surface experiment (Chang'e-4 lander, January 2019)",
+            "status": "Flown; operated on the lunar far side after the 3 January 2019 landing. Results reported by secondary coverage and one news article.",
+            "developer": "Chongqing University",
+            "mass_kg": 2.608,
+            "height_mm": 198,
+            "diameter_mm": 173,
+            "total_volume_l": 0.82,
+            "bio_activity_volume_l": 0.42,
+            "power_w": null,
+            "contents": [
+              "Seeds of cotton, potato, Arabidopsis and rape",
+              "Fruit fly eggs",
+              "Yeast",
+              "18 mL of water"
+            ],
+            "light_source": "Sunlight admitted through a guide tube; no artificial light",
+            "radiation_shielding": "Not designed to shield against radiation",
+            "thermal_control": "Set to 24 degrees C within hours of landing; could not maintain a comfortable temperature during the lunar night (external -52 degrees C, later -190 degrees C)",
+            "reported_results": "Cotton, rapeseed and potato seeds reported to have sprouted (report dated 15 January 2019); the same source states potatoes never sprouted, fruit flies never hatched and sprouted plants later died. Run lasted about nine days against a planned 100.",
+            "data_quality": "Power figure not stated in sources reviewed. Conflicting reports on which seeds germinated and on heating arrangements; not verified.",
+            "source_urls": [
+              "https://www.universetoday.com/163831/china-set-up-a-tiny-farm-on-the-moon-in-2019-how-did-it-do/",
+              "https://doi.org/10.1016/j.actaastro.2023.10.023"
+            ],
+            "images": []
+          },
+          {
+            "name": "NASA LEAF (Lunar Effects on Agricultural Flora)",
+            "type": "Plant growth chamber selected for further development for Artemis III (proposed; not flown)",
+            "status": "Selected for further development for Artemis III; not flown; no measured results.",
+            "lead": "Christine Escobar, Space Lab Technologies, LLC, Boulder, Colorado",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "planned_species": [
+              "Wolffia (duckweed)",
+              "Brassica rapa",
+              "Arabidopsis thaliana"
+            ],
+            "design_intent": "Growth enclosure comparable to indoor-farm units on Earth; water and nutrients to seeds; thermal protection; air supply containing carbon dioxide. Light source, intensity and spectrum not published.",
+            "operating_concept": "Crew deploys chamber and stays a few days; samples brought back; images and data transmitted to Earth; plants left behind may grow until power runs out, about two weeks at most.",
+            "launch_timing": "Artemis III, no earlier than September 2026 (per June 2024 article); NASA release states final manifesting undecided.",
+            "source_urls": [
+              "https://www.nasa.gov/news-release/nasa-selects-first-lunar-instruments-for-artemis-astronaut-deployment/",
+              "https://skyatnightmagazine.com/space-science/leaf-grow-plants-on-the-moon"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar greenhouse design studies (not quantified)",
+            "type": "Proposed design concepts (not flown; not quantified)",
+            "status": "Proposed concept; primary documents not retrieved during this research.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The only published enclosure dimensions are for the Chang'e-4 BEP: 198 mm high and 173 mm in diameter, with a total volume of 0.82 L and a bio-activity space of 0.42 L [2]. No dimensions have been published for LEAF [3][4].",
+        "mass_and_weight": "The Chang'e-4 BEP had a mass of 2.608 kg [2]. Neither NASA's selection release [3] nor the LEAF article [4] gives a mass for LEAF, so no comparison of mass is possible.",
+        "power_requirements": "No power figure is given for the Chang'e-4 BEP [2]. For LEAF, no power figure is published; the plan states that plants left behind keep growing only until the system runs out of power, about two weeks at most [4]."
+      },
+      "environmental_and_operational_requirements": "The Moon's lunar night drives the most severe thermal requirement. The Chang'e-4 BEP recorded external temperatures of -52 °C during the lunar night, later reaching -190 °C, and it could not hold a comfortable internal temperature [2]. The LEAF concept addresses the same problem through thermal protection against hot and cold swings [4]. Radiation is a second requirement: the Chang'e-4 BEP was not designed to shield against it [2], and NASA describes LEAF as studying plant responses under space radiation [3]. Light supply, water delivery, carbon dioxide supply and the handling of partial gravity are also operating requirements, although published sources give few quantitative values for them.",
+      "limitations": "The Chang'e-4 result is a single, short, partly failed run, and it cannot show whether plants can sustain growth on the Moon. The sources conflict on which seeds germinated, and the payload's power and heating arrangements are not verified. The LEAF design has no measured results and no published mass, size or power. Both designs are constrained by the available power and by the limited time a surface mission can sustain biological samples, and LEAF's own plan says plants left behind may stop growing after about two weeks when power runs out [4].",
+      "transportation_and_deployment": {
+        "overview": "Only the Chang'e-4 BEP has a documented surface delivery path: it rode on the Chang'e-4 lander, which reached the far side on 3 January 2019. LEAF is planned as a crew-deployed chamber for Artemis III, but its mass, interfaces and compatibility with any named lander have not been published.",
+        "transportation_process": [
+          "Integrate the sealed canister or chamber into a lander or surface system on Earth (not described in detail by the sources reviewed).",
+          "Launch and transfer to the Moon as part of the mission.",
+          "Land on the surface with the lander.",
+          "Deploy the chamber (LEAF: crew deployment for a few days) or operate the sealed unit as part of the lander (Chang'e-4 BEP).",
+          "Provide power, data and thermal control; for LEAF, transmit images and data to Earth."
+        ],
+        "deployment_methods": "For Chang'e-4 BEP, the sources reviewed do not describe a separate deployment mechanism. For LEAF, the crew deploys the chamber on the surface; the sources do not describe a robotic deployment.",
+        "historical_examples": "The Chang'e-4 BEP is the only flown lunar plant experiment with reported results in these sources. It landed on the far side on 3 January 2019 as part of the Chang'e-4 mission.",
+        "compatibility_assessment": "No verified lander, rover or spacecraft interface was found for either design. Compatibility would need mass, dimensions, mounting, power, thermal and data interfaces from verified sources, none of which is published for LEAF or the Chang'e-4 BEP.",
+        "images": []
+      },
+      "historical_significance": "The Chang'e-4 BEP is the basis for the claim that the first biological experiment on the lunar surface has been carried out; the 2023 paper title describes its device and results in those terms [1]. The mission landed on the far side on 3 January 2019 [2], and the germination reports date from January 2019 [2]. Because the sprouts died and the run ended after about nine days [2], the historical significance lies mainly in demonstrating that a biological payload can be sent to the Moon and produce early observations, rather than in demonstrating sustained plant growth.",
+      "limitations_and_uncertainties": "- The primary 2023 Acta Astronautica paper [1] was identified through its DOI, but the full text was not accessible during this research. Its bibliographic details come from secondary coverage, and no numerical value in this article is taken from the paper itself. The device figures are taken from the Universe Today article [2].\n- Sources conflict on which seeds sprouted. The Universe Today article [2] reports that cotton, rapeseed and potato sprouted and then states that the potatoes never sprouted. Some secondary coverage reports that only one cotton sprout was visible in early images, and that some circulating images came from an Earth-based control experiment. These claims were not verified against a primary source.\n- Secondary coverage reports that the canister had no battery-powered heater, and a 3D reconstruction reportedly showed the cotton plant growing two leaves before it died. Neither claim could be verified against a primary source, so neither is stated as fact in this article.\n- LEAF's launch timing is based on the June 2024 LEAF article [4] and NASA's 2024 release [3]. NASA states that final manifesting was not decided [3]. The current status of LEAF on Artemis III has not been checked against current NASA sources.\n- No mass, dimensions or power figures are published for LEAF [3][4].\n- A European lunar greenhouse design study was identified in searches, but the primary document could not be retrieved, so no design requirements from it are used here.\n- No verified direct image asset URL was confirmed for either example, so the article contains no embedded images.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "The first biological experiment on lunar surface for Humankind: Device and results",
+          "authors": "Xie, G. et al.",
+          "publisher": "Acta Astronautica",
+          "publication_date": "2023",
+          "url": "https://doi.org/10.1016/j.actaastro.2023.10.023",
+          "notes": "Bibliographic details from secondary coverage; full text not accessed. No values taken from the paper."
+        },
+        {
+          "title": "China Set Up a Tiny Farm on the Moon in 2019. How Did it Do?",
+          "authors": "Matthew Williams",
+          "publisher": "Universe Today",
+          "publication_date": null,
+          "url": "https://www.universetoday.com/163831/china-set-up-a-tiny-farm-on-the-moon-in-2019-how-did-it-do/",
+          "notes": "Source for Chang'e-4 BEP device figures, contents, thermal environment and results."
+        },
+        {
+          "title": "NASA Selects First Lunar Instruments for Artemis Astronaut Deployment (RELEASE24-047)",
+          "authors": null,
+          "publisher": "NASA",
+          "publication_date": "2024-03-26",
+          "url": "https://www.nasa.gov/news-release/nasa-selects-first-lunar-instruments-for-artemis-astronaut-deployment/",
+          "notes": "Source for LEAF selection, lead, science goal and status; states no mass, size or power."
+        },
+        {
+          "title": "Could astronauts grow plants on the Moon? One experiment is heading to the lunar surface to find out",
+          "authors": null,
+          "publisher": "Sky at Night Magazine",
+          "publication_date": "2024-06",
+          "url": "https://skyatnightmagazine.com/space-science/leaf-grow-plants-on-the-moon",
+          "notes": "Source for planned LEAF species, chamber concept, operating concept and predictions (predictions are not measurements)."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Chang'e-4 BEP example": "payload.article.physical_specifications.examples[0].images",
+      "LEAF example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No verified direct image asset URLs were found for this payload, so no images are included."
+  },
+  "data_quality_notes": [
+    "Research relied on 7 web searches and 11 page fetch attempts; 3 pages were read successfully (Universe Today, NASA release RELEASE24-047, Sky at Night LEAF article). The Acta Astronautica paper (DOI), the ScienceDirect and Elsevier pages, the Chongqing/CAST news item, the NTRS presentation, and the DLR greenhouse papers could not be read.",
+    "Chang'e-4 BEP device figures (mass 2.608 kg, 198 mm x 173 mm, 0.82 L total volume, 0.42 L bio-activity space) come from one news article (Universe Today); they are not verified against the Acta Astronautica paper or a CNSA/CAST primary source.",
+    "Sources conflict on which Chang'e-4 BEP seeds germinated. The Universe Today article states both that potatoes sprouted and that they never sprouted; this is recorded, not resolved.",
+    "Secondary coverage reports a 2-leaf cotton plant in a 3D reconstruction, a missing battery-powered heater, and Earth-control images in circulation; none could be verified and none is stated as fact.",
+    "LEAF has no published mass, size or power. Its launch timing (no earlier than September 2026) comes from a June 2024 article and a March 2024 NASA release, and the current Artemis III manifest was not checked.",
+    "A European lunar greenhouse design study (DLR/ESA context) was identified in search results but its primary PDFs could not be retrieved; no design requirements from it are used.",
+    "No verified direct image asset URL was confirmed for any example; the article has no embedded images and the image arrays are empty by design."
+  ]
+}

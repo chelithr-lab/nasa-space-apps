@@ -1,0 +1,249 @@
+{
+  "catalogue_id": 110,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 5,
+    "name": "Water, ice and volatile detection"
+  },
+  "payload": {
+    "number": 110,
+    "name": "Volatile release analyser",
+    "version": "v2",
+    "mode": "rerun",
+    "article": {
+      "overview": "A volatile release analyser is an instrument class for identifying and measuring volatiles, meaning substances that leave a solid and pass into the gas phase when heated, after they have been released from lunar material. On the Moon, the main reasons to measure volatiles are to establish whether water and other compounds, such as methane, are present in regolith and in what amounts [1][2]. That information matters for science and for in-situ resource utilisation (ISRU), the use of local materials to support long-duration exploration [1].",
+      "description": "A volatile release analyser typically has four functional stages. This is a general description drawn from the examples below, not a standard design. (1) Sample acquisition: material is collected from the surface or from a shallow depth, for example by a drill that deposits sample into an oven, as the RESOLVE design does [7]. (2) Controlled heating: the sample is heated in a sealed or partly sealed volume so that volatile compounds are released. The RESOLVE oven (OVEN) heats regolith and transfers the evolved gases onward [7]. The VAPoR abstract describes heating powdered regolith or rock drill fines to 1400 °C in vacuum [6]. The SwRI LASVEGAS announcement describes heating a small surface sample [2]. (3) Gas transfer: the released gases move through orifices and a chamber to the analysis unit. The SwRI VAPORR page describes a probe with several subsystems but does not name them [1]. In the RESOLVE design, a connecting line called the LOVEN line carries gas from the oven to the LAVA subsystem [7]. (4) Analysis: the gas is identified and quantified. Documented approaches include laser absorption spectroscopy (LASVEGAS [2]), gas chromatography with mass spectrometry (the RESOLVE LAVA subsystem [7]) and mass spectrometry of pyrolysis products (the VAPoR concept [6]). The output is not limited to a yes-or-no answer. A well-designed analyser can, in principle, separate species by their release temperature and by their spectral or mass signatures, which helps distinguish water from other gases released from the same sample. Whether a specific instrument can do this depends on its design, which must be checked for each example.",
+      "scientific_purpose_and_applications": "The purpose of a volatile release analyser is to measure which volatiles a lunar sample contains, how much is present, and at what temperature they release. Three applications are particularly important. Resource assessment for ISRU: SwRI states that VAPORR is intended to measure which volatiles are present in lunar soil, so that ISRU plants can learn how to exploit regolith resources [1]. Testing remote-sensing inferences: Lunar Prospector's neutron spectrometer detected hydrogen, which NASA describes as \"assumed to be in the form of water\" [3]. A remote measurement of this kind cannot by itself show how volatiles are released from a particular soil sample or in what chemical form they occur. A heating analyser is designed to provide that information. Understanding volatile origin and distribution: the LCROSS mission impacted the Cabeus crater at the lunar south pole on 9 October 2009 [4]. On 13 November 2009 NASA stated that the data \"indicates that the mission successfully uncovered water … near the Moon's south pole\" [4]. NASA's page does not give a water abundance for that water [4].",
+      "operating_principle": "The general principle is controlled heating followed by gas identification. Three documented approaches illustrate the range of designs. Their evidence levels differ, and the descriptions below separate what the sources state from what they only imply. Laser absorption spectroscopy (LASVEGAS, SwRI): according to the SwRI announcement, a sample is heated and the released gas flows into a cylindrical chamber in which laser light reflects between mirrors at each end. Each molecular species absorbs light at characteristic wavelengths, and the instrument measures how strongly each species absorbs in order to determine its abundance [2]. The announcement also states that the instrument can measure gases in planetary atmospheres such as Mars's [2]. Gas chromatography and mass spectrometry after oven heating (RESOLVE LAVA): a 2015 NASA Kennedy Space Center report describes the OVEN subsystem as obtaining, weighing and heating regolith and transferring the evolved gases to LAVA through the LOVEN line. LAVA's main instrument is a gas chromatograph-mass spectrometer (GC-MS) [7]. The report compares two commercial off-the-shelf mass spectrometers for LAVA: a baseline magnetic-sector instrument from OI Analytical and an alternative quadrupole instrument from Inficon [7]. Pyrolysis and mass spectrometry (VAPoR, NASA Goddard): the VAPoR abstract describes a vacuum pyrolysis mass spectrometer, built on heritage from the Sample Analysis at Mars (SAM) instrument, that heats powdered regolith or rock drill fines to detect water, noble gases and organic compounds [6]. The paper presents a laboratory breadboard rather than a flight unit [6]. The full paper was not accessible in this run, so this description rests on the abstract as shown in a search result. Probe-based gas capture (VAPORR, SwRI): SwRI describes a probe with several subsystems that measure volatiles [1]. A 2020 internally funded SwRI study modelled the flow of gas from heated regolith into the probe [1]. The page does not describe the measurement technique used by the subsystems [1].",
+      "scientific_importance": "Volatiles in lunar regolith are of scientific interest because they bear on how water-bearing material arrives at the Moon and is lost from it. This general statement is not tied to one source in this article. The question of how much water-bearing material exists at the lunar poles, and in what form, has been addressed largely by remote sensing and by impact experiments. Lunar Prospector and LCROSS are the main examples in the sources read for this article [3][4]. NASA's Lunar Prospector page calls the hydrogen result \"the first direct evidence of water ice at the lunar poles\", while also stating that the hydrogen was assumed to be water [3]. That wording shows why in-situ measurement of volatile release is needed. Two caveats apply. First, NASA describes the water identification from Lunar Prospector as an assumption [3]. Second, NASA's estimate of water ice at the poles is given as \"possibly about 330 million short tons (300 million metric tons)\" at each pole, with no stated uncertainty or method [3]. The LCROSS announcement does not give a water abundance for the plume [4].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, power or performance specification for a volatile release analyser. The examples use different architectures, and their published information is uneven. No comparison table is provided because the examples are not directly comparable. None of them has a verified numerical mass, dimension or power figure in the sources read.",
+        "examples": [
+          {
+            "name": "VAPORR (Volatiles Analyzer and Prospector), SwRI",
+            "type": "Development instrument concept",
+            "flight_status": "Not stated on the SwRI page [1]. Pre-flight development is inferred from the phrase \"intended to support\". No flight record was found.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "analyser_type": "Not stated. The labelled schematic shows a chamber labelled \"QMS\"; in common usage this denotes a quadrupole mass spectrometer, but this is an inference from the label, not a stated specification.",
+            "subsystems": "The page refers to \"different subsystems\" without naming them [1]. The schematic shows a gas analyser chamber, a plasma reactor, a lance cone with gas inlet and outlet orifices, conductance orifices and a laser window.",
+            "modelling_evidence": "A 2020 internally funded SwRI study built a three-dimensional solid model and solved the gas flow under lunar conditions. The page states that the probe's efficiency \"is primarily geometrically driven\" and that the results can serve as a benchmark for future probe design trade-off studies [1]. The page gives no numerical efficiency values [1]. A search-result summary of the same study reports a capture percentage at a stated insertion depth; that figure does not appear on the SwRI page and is not used here.",
+            "source_urls": [
+              "https://www.swri.org/markets/electronics-automation/computational-modeling-simulation-tools/computational-fluid-dynamics/volatiles-analyzer-prospector-vaporr-instrument"
+            ],
+            "images": [
+              {
+                "id": "vaporr_probe_schematic",
+                "description": "Labelled cross-section schematic of the SwRI VAPORR probe showing the gas analyser chamber, plasma reactor, lance cone and laser window in regolith.",
+                "image_type": "Technical schematic (labelled cross-section)",
+                "image_url": "https://www.swri.org/sites/default/files/styles/paragraphs_responsive_image_style/public/3d-render-vaporr-probe.jpg",
+                "source_page_url": "https://www.swri.org/markets/electronics-automation/computational-modeling-simulation-tools/computational-fluid-dynamics/volatiles-analyzer-prospector-vaporr-instrument",
+                "publisher": "Southwest Research Institute",
+                "credit": "No credit line shown on the page; published by SwRI",
+                "caption": "SwRI VAPORR probe graphic, presented on the SwRI page as a 3D rendering of the probe's subsystems.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Responsive web derivative of the SwRI image; the clean URL (query string removed) returned HTTP 200 image/jpeg. The analyser chamber label \"QMS\" is an inference about analyser type and is not stated by SwRI. Dimension annotations on the image are not used as specifications. Full-resolution download not checked."
+              },
+              {
+                "id": "vaporr_lance_cone_cfd_flux",
+                "description": "Computational fluid dynamics plot of net molar flux on the VAPORR lance cone embedded in regolith.",
+                "image_type": "Simulation result plot (computational fluid dynamics)",
+                "image_url": "https://www.swri.org/sites/default/files/styles/paragraphs_responsive_image_style/public/vaporr-molecular-flow-analysis.jpg",
+                "source_page_url": "https://www.swri.org/markets/electronics-automation/computational-modeling-simulation-tools/computational-fluid-dynamics/volatiles-analyzer-prospector-vaporr-instrument",
+                "publisher": "Southwest Research Institute",
+                "credit": "Southwest Research Institute (no separate credit line shown)",
+                "caption": "Net molar flux (mol/m²-s) on the VAPORR lance cone from the 2020 molecular-flow analysis. This is a simulation result, not a measurement.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Responsive web derivative; the clean URL (query string removed) returned HTTP 200 image/jpeg. The exponent on the colour bar is not clearly legible in the published file. Full-resolution download not checked."
+              }
+            ],
+            "notes": "The 78.9% capture figure seen in a search-result summary is not on the SwRI page and is excluded."
+          },
+          {
+            "name": "LASVEGAS (Laser Absorption Spectrometer for Volatiles and Evolved Gas), SwRI",
+            "type": "Development instrument",
+            "flight_status": "At the SwRI announcement of 27 May 2020 the instrument \"is yet to be selected for flight on a mission\" [2]. No later flight selection was found in the sources read.",
+            "funding": "NASA DALI programme: $3 million in 2020 to adapt the design for the lunar surface. NASA MatISSE programme: $3 million in 2019 for a version for Europa and similar icy worlds [2].",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "size_description": "\"about half the size of a paper towel roll\"; mass, volume and power described only as \"extremely compact, low mass, low volume and low power\" [2].",
+            "performance": "The announcement gives no detection limits, precision, wavelength range, sample mass or operating temperature [2].",
+            "source_urls": [
+              "https://www.swri.org/press-release/nasa-lunar-lasvegas-spectrometer-planetary-materials"
+            ],
+            "images": [],
+            "notes": "No LASVEGAS image was verified, so none is included."
+          },
+          {
+            "name": "VAPoR (Volatile Analysis by Pyrolysis of Regolith), NASA concept",
+            "type": "Laboratory breadboard instrument concept (2010 paper)",
+            "flight_status": "The paper presents a laboratory breadboard, not a flight unit [6].",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "capability": "The abstract states the instrument will be able to heat powdered regolith samples or rock drill fines up to 1400 °C in vacuum [6].",
+            "tests": "According to the abstract, the breadboard made evolved-gas measurements on an Apollo 16 regolith sample and a fragment of the Murchison meteorite, and compared the results with existing data [6].",
+            "source_urls": [
+              "https://doi.org/10.1016/j.pss.2010.03.006"
+            ],
+            "images": [],
+            "notes": "Full text not accessible in this run. Temperature and heritage details rest on the abstract as shown in a search result."
+          },
+          {
+            "name": "RESOLVE (Regolith and Environment Science and Oxygen and Lunar Volatile Extraction) payload, NASA Resource Prospector",
+            "type": "Payload concept",
+            "components_2015": "Neutron Spectrometer, Near Infrared Spectrometer, drill, OVEN and LAVA subsystem [7].",
+            "flight_status": "The Resource Prospector rover mission that was to carry RESOLVE was ended in April 2018 [8]. NASA stated that \"selected robotic instruments will be among the early deliveries to the Moon on CLPS missions\" [8]. Whether RESOLVE hardware or the LAVA subsystem will fly is not verified in the sources read.",
+            "development_status_2015": "The 2015 report states that various subsystems, including LAVA, were in the Engineering Test Unit phase, to be verified as space-flight rated [7].",
+            "test_performance": "In the 2015 integrated test with water-doped regolith, OVEN was taken to a 150 °C setpoint, and gas chromatograph runs were recorded once the setpoint was reached. The test used only the gas chromatograph, because the mass spectrometer needs pumps that were not part of the flight-forward design [7].",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20150022135/downloads/20150022135.pdf",
+              "https://spacepolicyonline.com/news/nasa-resource-prospector-no-longer-a-good-fit-for-lunar-program/"
+            ],
+            "images": [],
+            "notes": "The parts of the 2015 report read do not give payload-level mass, dimensions or power. No RESOLVE or LAVA image was verified."
+          }
+        ],
+        "dimensions_and_proportions": "No verified dimensions exist for an example volatile release analyser. The only physical description retrieved is the LASVEGAS size comparison, \"about half the size of a paper towel roll\" [2]. The VAPORR schematic carries dimension annotations that are not stated as specifications and are not used here.",
+        "mass_and_weight": "No verified mass figure exists for any example. Spacecraft engineering normally expresses mass in kilograms. Mass would be set by the sample-handling, heating and analysis architecture, which differs between examples.",
+        "power_requirements": "No verified power figure exists for any example. LASVEGAS is described only as \"low power\" [2]."
+      },
+      "environmental_and_operational_requirements": "A volatile release analyser must operate in the lunar surface environment, which has no substantial atmosphere, large temperature variation between day and night, radiation exposure and micrometeoroid impacts. These are standard lunar-surface engineering considerations. The sources read for this article do not give numerical values for them, so no figures are referenced here. Operationally, the analyser must handle sample acquisition, controlled heating and gas analysis without contaminating later measurements. In the 2015 RESOLVE test, the first water reading was marginally higher than expected for a gas chromatograph that had just turned on. The report suggests this may have come from the crucible heating and releasing surface water, and that the team planned to address it operationally for flight [7]. The same test kept the manifold pressure below 40 psia to avoid damaging the gas chromatograph, by venting pressure from the oven [7].",
+      "limitations": "Heating changes the sample: heating may decompose or transform compounds before they are measured, so the measured release may not match the original form of a volatile. Sample representativeness: a sample from one location does not characterise a wider region, and results depend on sampling depth, grain size and location. Identification versus quantification: detecting a gas is different from quantifying its abundance, and both depend on calibration. The 2015 RESOLVE report describes calibration curves for water [7], but no detection-limit values were retrieved from the sources read. Test conditions: the 2015 RESOLVE integrated test ran at normal gravity and atmospheric pressure, unlike lunar conditions, and used only the gas chromatograph [7]. Limited comparability: probe-based, laser-absorption and mass-spectrometry designs measure different things and cannot be compared directly without matched test conditions.",
+      "transportation_and_deployment": {
+        "overview": "A volatile release analyser would be delivered to the Moon as part of a surface payload, on a lander or rover that also performs sample acquisition or receives regolith samples. Integration on Earth would need to address sealing, contamination control, thermal interfaces for heating and data links. Launch and lunar transfer would follow the carrier's profile.",
+        "transportation_process": [
+          "Integrate the analyser and its sealing, thermal and data interfaces with the carrier on Earth, with contamination control.",
+          "Launch and transfer to the Moon on the carrier's profile.",
+          "Land the carrier, which performs sample acquisition or receives regolith samples.",
+          "Deliver the sample to the analyser's oven or sample volume, as the RESOLVE drill-to-oven design does [7].",
+          "Connect power, thermal and data interfaces for heating and analysis."
+        ],
+        "deployment_methods": "Surface deployment depends on the carrier's sampling or handling mechanism. In the RESOLVE concept the drill acquires the sample and deposits it into the oven [7]. No deployment method for a specific analyser has been verified.",
+        "historical_examples": "The 2015 RESOLVE integrated test used a rover-hosted drill and oven to take water-doped regolith into the gas chromatograph [7]. The rover mission that was to carry RESOLVE was ended in April 2018 [8].",
+        "compatibility_assessment": "No compatibility with a specific lander, rover or spacecraft has been verified for any example. NASA's VIPER mission page states that the rover is \"delivered to Mons Mouton by a Blue Origin Blue Moon MK-1 lander\", as announced on 19 September 2025 [5]. That is a delivery statement for a different payload and does not establish compatibility with any volatile release analyser. The page does not clearly state the current status of VIPER, and its own text gives inconsistent instrument counts [5].",
+        "images": []
+      },
+      "historical_significance": "Remote and impact experiments indicated hydrogen and water-related material at the lunar poles. Lunar Prospector's neutron spectrometer results were announced in March 1998 [3], and LCROSS's 2009 impact produced a water announcement in November of that year [4]. These results motivated in-situ volatile measurement concepts, including VAPORR, LASVEGAS, VAPoR and RESOLVE [1][2][6][7]. NASA ended the Resource Prospector rover mission that carried RESOLVE in April 2018 [8]. No volatile release analyser of the types described here is verified as having flown.",
+      "limitations_and_uncertainties": "The catalogue name identifies a class of instrument rather than a standard design or a flown instrument. The functional interpretation used in this article is inferred from the name. Apart from the VAPoR 1400 °C capability and the RESOLVE 150 °C test setpoint, which are design or test values and not performance specifications, no numerical specification is verified for any example. Unverified specifications: mass, dimensions, power, detection limits, sample mass and operating temperature ranges are not stated for any example, and are null in this JSON. Inaccessible sources: the ScienceDirect page for the VAPoR paper returned an access error, and the DOI redirected to a page that could not be read. The VAPoR description therefore rests on the abstract as shown in a search result. A European lunar volatile study (L-VRAP) was identified in searches but could not be read, and is not described. Search-only figures: a search-result summary of the 2020 SwRI study gives a capture percentage; the SwRI page does not contain it, so it is not used. Flight status: no example is verified as flown. LASVEGAS was not selected for flight at its 2020 announcement, and no later selection was found. VAPORR's status is inferred as pre-flight. The RESOLVE hardware status after the 2018 cancellation is not verified. Images: two VAPORR images were verified as resolving JPEG assets on the SwRI site and were viewed. Only responsive web derivatives were checked, not full-resolution downloads. No images were verified for LASVEGAS, VAPoR, RESOLVE or LAVA.",
+      "images": [
+        {
+          "id": "vaporr_probe_schematic",
+          "description": "Labelled cross-section schematic of the SwRI VAPORR probe showing the gas analyser chamber, plasma reactor, lance cone and laser window in regolith.",
+          "image_type": "Technical schematic (labelled cross-section)",
+          "image_url": "https://www.swri.org/sites/default/files/styles/paragraphs_responsive_image_style/public/3d-render-vaporr-probe.jpg",
+          "source_page_url": "https://www.swri.org/markets/electronics-automation/computational-modeling-simulation-tools/computational-fluid-dynamics/volatiles-analyzer-prospector-vaporr-instrument",
+          "publisher": "Southwest Research Institute",
+          "credit": "No credit line shown on the page; published by SwRI",
+          "caption": "SwRI VAPORR probe graphic, presented on the SwRI page as a 3D rendering of the probe's subsystems.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Responsive web derivative of the SwRI image; the clean URL (query string removed) returned HTTP 200 image/jpeg. The analyser chamber label \"QMS\" is an inference about analyser type and is not stated by SwRI. Dimension annotations on the image are not used as specifications. Full-resolution download not checked."
+        },
+        {
+          "id": "vaporr_lance_cone_cfd_flux",
+          "description": "Computational fluid dynamics plot of net molar flux on the VAPORR lance cone embedded in regolith.",
+          "image_type": "Simulation result plot (computational fluid dynamics)",
+          "image_url": "https://www.swri.org/sites/default/files/styles/paragraphs_responsive_image_style/public/vaporr-molecular-flow-analysis.jpg",
+          "source_page_url": "https://www.swri.org/markets/electronics-automation/computational-modeling-simulation-tools/computational-fluid-dynamics/volatiles-analyzer-prospector-vaporr-instrument",
+          "publisher": "Southwest Research Institute",
+          "credit": "Southwest Research Institute (no separate credit line shown)",
+          "caption": "Net molar flux (mol/m²-s) on the VAPORR lance cone from the 2020 molecular-flow analysis. This is a simulation result, not a measurement.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Responsive web derivative; the clean URL (query string removed) returned HTTP 200 image/jpeg. The exponent on the colour bar is not clearly legible in the published file. Full-resolution download not checked."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Volatiles Analyzer and Prospector (VAPORR) Instrument",
+          "publisher": "Southwest Research Institute",
+          "date": "Accessed 13 November 2026",
+          "url": "https://www.swri.org/markets/electronics-automation/computational-modeling-simulation-tools/computational-fluid-dynamics/volatiles-analyzer-prospector-vaporr-instrument"
+        },
+        {
+          "title": "NASA awards SwRI $3 million to develop lunar LASVEGAS",
+          "publisher": "Southwest Research Institute",
+          "date": "27 May 2020",
+          "url": "https://www.swri.org/press-release/nasa-lunar-lasvegas-spectrometer-planetary-materials"
+        },
+        {
+          "title": "Lunar Prospector mission page",
+          "publisher": "NASA Science",
+          "date": "Not stated on page",
+          "url": "https://science.nasa.gov/mission/lunar-prospector/"
+        },
+        {
+          "title": "LCROSS mission page",
+          "publisher": "NASA Science",
+          "date": "Not stated on page",
+          "url": "https://science.nasa.gov/mission/lcross/"
+        },
+        {
+          "title": "VIPER mission page (delivery announcement of 19 September 2025)",
+          "publisher": "NASA Science",
+          "date": "Announcement 19 September 2025",
+          "url": "https://science.nasa.gov/mission/viper/"
+        },
+        {
+          "title": "VAPoR – Volatile Analysis by Pyrolysis of Regolith – an instrument for in situ detection of water, noble gases, and organics on the Moon",
+          "publisher": "Planetary and Space Science, 58(7–8), 1007–1017 (ten Kate, I. L., et al.)",
+          "date": "2010",
+          "url": "https://doi.org/10.1016/j.pss.2010.03.006"
+        },
+        {
+          "title": "LAVA Subsystem Integration and Testing for the RESOLVE Payload of the Resource Prospector Mission: Mass Spectrometers and Gas Chromatography",
+          "publisher": "NASA Kennedy Space Center (internship report, E. Stewart)",
+          "date": "7 August 2015",
+          "url": "https://ntrs.nasa.gov/api/citations/20150022135/downloads/20150022135.pdf"
+        },
+        {
+          "title": "NASA: Resource Prospector No Longer a Good Fit for Lunar Program",
+          "publisher": "SpacePolicyOnline (news article quoting NASA)",
+          "date": "3 May 2018",
+          "url": "https://spacepolicyonline.com/news/nasa-resource-prospector-no-longer-a-good-fit-for-lunar-program/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "physical_specifications.examples[0]": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "v2 rerun dated 2026-11-13. The v1 files (volatile_release_analyser_payload_110.md, .json and .urls.txt) are retained unchanged.",
+    "Search budget: 6 WebSearch calls. WebFetch calls: 11 in total, of which 7 returned usable content. ScienceDirect returned HTTP 403; the DOI and an ESA link redirected, and the redirect targets were not usable or not followed.",
+    "VAPoR paper full text not accessed. Its abstract details (1400 °C, SAM heritage, breadboard, Apollo 16 and Murchison tests) come from a search-result summary of the abstract. A search-result summary of a 2012 IEEE paper reports heating above 1300 °C; that paper was not read, so the 1400 °C abstract value is used with this caveat.",
+    "The European L-VRAP study (nebula.esa.int) redirected to an ESA homepage. It was not followed and is not described.",
+    "A search-result summary of the 2020 SwRI study reports a 78.9% capture figure at a stated insertion depth. The SwRI page does not contain it, so it is excluded.",
+    "NTRS 20150022135 is a 2015 NASA KSC LAVA integration internship report by E. Stewart. The v1 article gave this NTRS ID a different title; this v2 file uses the document's actual title.",
+    "Resource Prospector cancellation (April 2018) is verified through a SpacePolicyOnline article dated 3 May 2018, which quotes NASA. The NASA primary statement was not read directly.",
+    "The NASA VIPER page does not clearly state current status and gives inconsistent instrument counts (three in the overview, four in a sidebar). A search-result summary reports a July 2024 NASA announcement to discontinue VIPER development; this was not confirmed on the NASA page and is not stated as fact in the article.",
+    "Images: the two VAPORR images were checked at responsive web-derivative URLs (HTTP 200, image/jpeg) and viewed. Full-resolution downloads were not checked. The SwRI page shows no credit line for either image.",
+    "The LASVEGAS page image is titled 'Surface of the Moon with astronauts and equipment' and is generic. It was not used because it is not verified to show the instrument."
+  ]
+}

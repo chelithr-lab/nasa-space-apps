@@ -1,0 +1,149 @@
+{
+  "catalogue_id": 297,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 297,
+    "name": "Lunar construction material tester",
+    "article": {
+      "overview": "No dedicated flight instrument named Lunar construction material tester was identified in this research run, so this entry describes a payload class rather than a single verified design. Such a payload would carry test specimens of candidate construction materials, most often regolith-based bricks, binders or sintered tiles, and measure how they change under lunar-relevant conditions. The closest verified examples are two space-exposure experiments in which regolith-based materials were mounted outside spacecraft in low Earth orbit. They show that some regolith-based materials can survive orbital exposure, but they are not tests on the Moon.",
+      "description": "A lunar construction material tester would carry specimens of candidate building materials and expose them to the conditions that would affect them during use. It would normally record the state of each specimen before and after exposure and compare it with identical control samples kept on Earth. The same approach can support mechanical tests, such as compressive strength, as well as thermal and radiation exposure checks. Because lunar regolith is not available in bulk on Earth, many studies use simulants that match the chemistry or mineralogy of lunar soil, so the results depend on how closely a simulant represents real regolith.",
+      "scientific_purpose_and_applications": "The purpose of such a payload is engineering and materials validation as much as lunar geology. Its results can help determine whether regolith-based materials are durable enough for potential uses such as landing pads, roads, shelters and shielding, and which processing methods are practical with limited energy, water and equipment. Exposure data can show whether a material degrades in vacuum, temperature cycling and ultraviolet radiation, and whether its strength changes over time. Such evidence would be needed before in-situ resource utilisation could be relied on in a lunar construction programme.",
+      "operating_principle": "Specimens are prepared on Earth using a binder or a sintering process, then cured, mounted on a test structure, and either exposed in the target environment or transported to a test facility. Geopolymers form when an aluminosilicate source, such as regolith or clay, reacts with an alkaline activator at modest temperature. Sintering instead fuses grains of soil at high temperature, often with pressure. After exposure, specimens are returned or measured in place, and tests such as compressive strength, visual inspection, mass change and thermal imaging are used to assess performance. The key measurement is the comparison between exposed specimens and identical controls stored on Earth, which separates the effects of the environment from natural variability between samples.",
+      "scientific_importance": "Lunar construction is expected to rely heavily on local materials, because transporting large quantities of building material from Earth is costly. A construction material tester addresses the basic engineering question of whether material made from lunar soil can meet the performance needed for infrastructure. Space exposure is important because many laboratory tests cannot reproduce the combined effects of vacuum, temperature extremes and radiation. Without flight data, designers would depend on simulant studies whose relevance to real regolith remains uncertain.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar construction material tester. The examples below are space-exposure experiments rather than a standard payload design, and the sources reviewed do not publish mass, dimensions, power or lifetime for the specimen sets. Those values are therefore recorded as null, not estimated.",
+        "examples": [
+          {
+            "name": "University of Delaware geopolymer exposure (MISSE-20, ISS exterior)",
+            "type": "Flown space-exposure experiment (low Earth orbit; not operated on the lunar surface)",
+            "status_detail": "Thin geopolymer plates made from commercially available simulated lunar and Martian regolith, with geopolymer binders, mounted outside the International Space Station for about six months as part of NASA's MISSE-20 mission. The news release states that the geopolymers did not deteriorate and that some specimens returned with higher measured strength than identical samples stored on Earth. No numerical strength values, sample counts, error bars or test method are given in the release.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "compressive_strength_mpa": null,
+            "unverified_secondary_report": "Secondary press coverage reports 60.3 MPa for a lunar-simulant composition after exposure, compared with 44.7 MPa for Earth controls. This could not be confirmed against the primary paper and is not used as a specification.",
+            "source_urls": [
+              "https://cbe.udel.edu/news/2026/07/09/from-clay-to-construction/",
+              "https://doi.org/10.1016/j.asr.2026.02.080"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar-soil brick exposure on Tiangong (HUST)",
+            "type": "Flown space-exposure experiment (low Earth orbit; not operated on the lunar surface)",
+            "status_detail": "Huazhong University of Science and Technology reports that 74 lunar-soil bricks were launched to Tiangong aboard Tianzhou-8 on 15 November 2024 and formed part of the ninth batch of experiments conducted outside the station. Exposure periods of one, two and three years were planned. The first unit, reported as R5, completed a one-year mission and was retrieved on 14 November aboard Shenzhou-21; the year is inferred as 2025 from the news date.",
+            "sample_count": 74,
+            "launch_vehicle": "Tianzhou-8 (launch date 15 November 2024)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "composition_detail": "Not stated in the HUST release. Unverified secondary summaries describe a simulant matched to Chang'e-5 soil chemistry with hot-press sintering.",
+            "mechanical_or_thermal_results": null,
+            "source_urls": [
+              "https://english.hust.edu.cn/info/1102/4282.htm",
+              "https://www.space.com/space-exploration/human-spaceflight/building-blocks-how-china-plans-to-make-bricks-on-the-moon-for-lunar-habitats"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified in the sources reviewed for either example. Dimensions are recorded as null, not estimated. A lunar version would need its specimen geometry set by the intended test standard and by the handling and mounting constraints of its carrier.",
+        "mass_and_weight": "Not publicly specified in the sources reviewed. Mass is recorded as null for each example. Any future mass figure would need to be tied to a named experiment and source.",
+        "power_requirements": "Not publicly specified in the sources reviewed. Passive exposure of specimens may require little or no power, but this has not been verified for either example."
+      },
+      "environmental_and_operational_requirements": "A lunar construction material would be exposed to vacuum, large day-night temperature swings, ultraviolet and charged-particle radiation, micrometeoroid impacts and fine abrasive dust. Lunar dust is a particular concern because it can abrade surfaces and interfere with mechanical systems. A tester must protect its specimens during transport and then expose them in a controlled way. Surface placement also needs a defined support condition, because uneven or disturbed ground can change the loads applied to a specimen. Exact environmental tolerances for a specific tester are not publicly specified in the sources reviewed.",
+      "limitations": "The most important limitation is that the verified examples are not lunar surface tests. Both were exposed in low Earth orbit, which differs from the lunar surface in gravity, dust, thermal cycling and radiation environment. Most materials were simulants rather than returned lunar regolith. Primary papers, measured data sets and full test methods were not accessible in this run, so the verified claims rest on university and national news releases. Sample sizes, replicate counts and statistical tests are not published in the sources reviewed.",
+      "transportation_and_deployment": {
+        "overview": "A lunar construction material tester could be delivered as a self-contained specimen package on a surface lander or as an experiment on a larger lunar mission. No verified lander, rover or spacecraft interface was identified for this payload, so the process below is generic and not tied to any named vehicle.",
+        "transportation_process": [
+          "Prepare and cure specimens on Earth, together with identical control samples kept on Earth.",
+          "Integrate the specimens into a flight carrier, with protection during launch.",
+          "Launch the payload and transfer it towards the Moon.",
+          "Land the payload, or place it on the surface by robotic or crewed means.",
+          "Deploy the specimens to a defined exposure position, away from disturbing equipment.",
+          "Record initial condition, expose the specimens, and either return them or measure them in place."
+        ],
+        "deployment_methods": "Not publicly specified for a lunar version. The verified space-exposure examples were mounted on the exterior of existing orbital platforms (University of Delaware news release and HUST news item). The MISSE-20 exposure and the Tiangong exposure are the closest verified examples of flown construction-material exposure, and both are orbital rather than lunar.",
+        "historical_examples": "MISSE-20 exposure on the International Space Station (University of Delaware) and the Tiangong brick exposure (HUST). Both are orbital rather than lunar.",
+        "compatibility_assessment": "Not assessed against any named lander, rover or spacecraft. No verified mass, dimension, power or interface data for a lunar construction material tester were found, so no compatibility claim is made.",
+        "images": []
+      },
+      "historical_significance": "Space-exposure testing of regolith-based construction materials is an early but important step. The University of Delaware and Huazhong University of Science and Technology teams both used orbital exposure to test whether materials made from lunar-like soil survive the space environment. Their reported results suggest that such materials can persist in orbit, but whether they can be placed, shaped and loaded on the lunar surface remains an open engineering question. China has publicly described plans for lunar brick-making as part of future habitat development.",
+      "limitations_and_uncertainties": "The payload name describes a class of materials test rather than a single standard instrument. The examples in this article are orbital exposure experiments on simulant materials, and they are not interchangeable with one another or with a future lunar test. Numerical values such as mass, dimensions, power, strength and exposure lifetime must always be tied to a named experiment and source. Strength values reported in secondary press coverage are not verified, and the Tiangong composition and processing details are unverified. This article is a research summary, not a certified design specification.",
+      "evidence_gaps": [
+        "No dedicated lunar construction material tester was identified under this name, so the payload class is described rather than a specific instrument.",
+        "The primary MISSE-20 paper was not retrieved; the NSF Public Access Repository record for a related PDF could not be read as text.",
+        "No mass, dimensions, power, lifetime or sensor/strength specifications are publicly specified in the sources reviewed.",
+        "No verified lunar-surface exposure result for a construction material was identified.",
+        "No verified images were located in this run."
+      ],
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "UD researchers are developing materials to build infrastructure on the moon and beyond",
+          "publisher": "University of Delaware",
+          "date": "2026-07-09",
+          "url": "https://cbe.udel.edu/news/2026/07/09/from-clay-to-construction/"
+        },
+        {
+          "title": "Advances in Space Research, DOI 10.1016/j.asr.2026.02.080 (as stated on the University of Delaware news page; primary article not retrieved)",
+          "publisher": "Elsevier, Advances in Space Research",
+          "date": null,
+          "url": "https://doi.org/10.1016/j.asr.2026.02.080"
+        },
+        {
+          "title": "News item on lunar-soil bricks exposed on Tiangong",
+          "publisher": "Huazhong University of Science and Technology",
+          "date": "2025-11-24",
+          "url": "https://english.hust.edu.cn/info/1102/4282.htm"
+        },
+        {
+          "title": "Building blocks: How China plans to make bricks on the moon for lunar habitats (headline and standfirst retrieved only)",
+          "publisher": "Space.com",
+          "date": null,
+          "url": "https://www.space.com/space-exploration/human-spaceflight/building-blocks-how-china-plans-to-make-bricks-on-the-moon-for-lunar-habitats"
+        },
+        {
+          "title": "Advances in Space Research PDF record (text not extractable in this run; DOI in PDF metadata 10.1016/j.asr.2023.11.030, relationship to MISSE-20 study unverified)",
+          "publisher": "NSF Public Access Repository",
+          "date": null,
+          "url": "https://par.nsf.gov/servlets/purl/10554347"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "University of Delaware MISSE-20 example": "payload.article.physical_specifications.examples[0].images",
+      "Tiangong HUST example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image URLs were verified in this run, so no image objects are included. Section-level image arrays are empty and must be repeated intentionally if images are added later."
+  },
+  "data_quality_notes": [
+    "No dedicated instrument named Lunar construction material tester was identified; the article describes the payload class using two verified orbital exposure experiments as the nearest examples.",
+    "Research used 5 WebSearch calls and 8 WebFetch attempts. Usable page content was obtained only from the University of Delaware news page (cbe.udel.edu) and the HUST news item; the Space.com page returned only its headline and standfirst; the NSF PAR PDF returned raw PDF data; two publisher pages redirected and were not followed; one PMC page returned a browser verification screen.",
+    "The primary Advances in Space Research MISSE-20 paper was not retrieved. The DOI 10.1016/j.asr.2026.02.080 is as stated on the University of Delaware news page and was not independently resolved.",
+    "The NSF PAR PDF (DOI in metadata 10.1016/j.asr.2023.11.030) was not read as text and is not confirmed as related to the MISSE-20 study; it is cited only as an unread candidate source.",
+    "Secondary press coverage reports 60.3 MPa (lunar-simulant composition) versus 44.7 MPa (Earth control) after MISSE-20 exposure, and describes four formulations. These were not verified against the primary paper and are not used as specifications.",
+    "Secondary summaries describe the Tiangong brick simulant as matched to Chang'e-5 chemistry with hot-press sintering, and report a Zhou Yan remark that the bricks looked to be in good condition; the HUST release does not state these details, so they are not used as verified facts.",
+    "The HUST release gives the retrieval date as 14 November without a year; 2025 is inferred from the news item date of 24 November 2025.",
+    "No image URLs were verified. Image arrays are empty; no image URLs were invented or taken from search thumbnails.",
+    "Lunar location recommendations are deferred by the user and are not included."
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "catalogue_id": 226,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 226,
+    "name": "Lunar construction demonstrator",
+    "article": {
+      "overview": "A lunar construction demonstrator is a payload designed to show that useful structures, such as landing pads, roads, blast walls or radiation shielding, can be produced on the Moon from local material rather than from materials carried from Earth. Most work on this concept is still ground-based: researchers melt or sinter lunar regolith simulants with lasers, microwaves or concentrated sunlight and then test the resulting shapes. In the sources reviewed for this article, no lunar-surface construction demonstrator is confirmed to have flown; the examples discussed are proposals, laboratory prototypes or ground experiments [1][2][5].",
+      "description": "In-situ construction, in this context, means using material found at the site to make building components. A typical process has four stages: collecting or excavating regolith, conditioning or processing it, forming it into a shape, and then allowing it to cool or cure before it is placed and checked. The regolith is loose, fragmented rock and dust with no liquid water, and its fine particles are abrasive and can cling to surfaces, so each stage must be designed with these properties in mind. Two broad routes are being explored. One fuses or sinters the regolith with heat so that grains bond into a solid. The other uses a binder, or a robotic printer that deposits layers, to produce a shape that is then hardened. The sources reviewed here describe fusion-based routes in detail; the processing method used by ICON's Olympus concept is not described in the sources read [5].",
+      "scientific_purpose_and_applications": "The purpose of a lunar construction demonstrator is to test whether regolith-based structures can be produced reliably under lunar conditions, and to reduce the mass that must be launched from Earth for surface infrastructure. Possible applications include landing and launch pads that limit dust disturbed by rocket exhaust, roads that reduce dust and mobility costs, blast or radiation barriers and, eventually, habitat shells. The ESA PAVER project framed its ultimate goal as paving a road on the lunar surface [2]. The NASA-linked ICON concept has been reported to target a landing pad and blast shield as early products [10]. These are application goals; none of these structures has been built on the Moon in the sources reviewed.",
+      "operating_principle": "In the fusion-based approach, a concentrated energy source heats a thin layer of regolith above its melting or sintering temperature. The melt then solidifies as it moves away from the energy source, and successive layers or tracks are built up to form the element. The ESA PAVER project used a 12 kW carbon dioxide laser in the laboratory as a stand-in for concentrated sunlight. Its tests found that single-spot sintering produced a dense but glassy phase and that samples cracked during rapid cooling, while sintering single tracks with a moving laser reduced the cracking [1][2]. A Chinese prototype reported in 2025 uses a reflective concentrator with flexible fibre-optic transmission of solar energy to reach temperatures sufficient to fuse regolith; its performance figures were not verified in the sources read [8]. A microwave-induced sintering route, studied under ESA's MICROLITH project, has had a terrestrial demonstrator built [9].",
+      "scientific_importance": "Lunar construction demonstrators address a central question for future surface infrastructure: whether regolith, a material not previously used for structural engineering on another world, can be controlled to give strong, stable and reliable components. Ground tests on simulants cannot fully reproduce the mineralogy, grain size distribution, vacuum and thermal environment of the real Moon, so flight tests are needed to link laboratory results with operational performance. Gravity is one of the factors that cannot be tested on Earth without special facilities; MOONRISE used a drop tower to print simulated regolith structures under reduced gravity [7]. Regolith flow and slope-stability experiments are also relevant to any construction plan, and ICON's Duneflow payload flew in February 2025 to study these behaviours [4]. Successful demonstrations would reduce the uncertainty that currently prevents engineers from specifying regolith-based components for lunar missions.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar construction demonstrator. The examples below describe specific proposals, prototypes or ground experiments, and the values given apply only to those systems. Where a value has not been published in the sources reviewed, it is recorded as not publicly specified. Because none of the examples is flight hardware, no flight mass, power or dimension specification is claimed for the class.",
+        "examples": [
+          {
+            "name": "ICON Project Olympus (NASA-supported proposed concept)",
+            "type": "Proposed robotic lunar construction system",
+            "status": "Proposed; not flown as a construction demonstrator. Duneflow, ICON's first space-bound payload (February 2025), was a regolith flow and slope-stability test, not a construction test.",
+            "description": "Olympus is a robotic lunar construction concept developed by ICON with NASA support. Its stated design intent is to use lunar and Martian regolith as raw material [5]. Trade reporting from 2022 described a NASA award intended to take the technology to a lunar surface demonstration in 2026, with the contract running through 2028 [6]. A 2024 article described a plan in which Olympus would build a landing pad and blast shield [10]. These timelines are not confirmed by more recent primary sources, and the search results reviewed did not establish whether the demonstration has been scheduled or flown. ICON's first space-bound payload, Duneflow, flew on Blue Origin's New Shepard NS-29 flight in February 2025. It tested how lunar regolith simulants flow and how artificial slopes built from them remain stable, rather than printing any structure [4]. Mass, dimensions and power for Olympus are not publicly specified in the sources reviewed.",
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "source_reference_numbers": [4, 5, 6, 10],
+            "images": []
+          },
+          {
+            "name": "ESA PAVER laboratory sintering of lunar simulant",
+            "type": "Ground-based laboratory programme (closed project)",
+            "status": "Ground-based; no flight or lunar demonstration stated.",
+            "description": "PAVER ran from 1 June 2021 to 30 November 2022. BAM coordinated it, with LIQUIFER Systems Group, Aalen University and TU Clausthal as partners and DLR's Institute of Materials Physics in Space as an associated partner [2]. It used the EAC-1A lunar regolith simulant. The laboratory tests used a 12 kW carbon dioxide laser with a beam about 4.5 cm in diameter to produce triangular, hollow-centred tiles roughly 20 cm across, designed to interlock [1]. Each melt layer was about 1.8 cm deep, so thicker elements would need several layers [1][3]. The team's estimate that a 100 square metre landing pad, 2 cm thick, might take 115 days to build is a model-based projection, not a measured result [1]. The results were reported in Scientific Reports in 2023 [3]; the primary paper was not read for this article. The BAM project page lists the project as closed while still describing planned follow-on work [2]. No flight or lunar demonstration is stated [1][2].",
+            "mass_kg": null,
+            "dimensions": "Tiles roughly 20 cm across; single melt layer about 1.8 cm deep (laboratory tests)",
+            "power": "12 kW laboratory CO2 laser used as a stand-in for sunlight; not flight equipment",
+            "source_reference_numbers": [1, 2, 3],
+            "images": []
+          },
+          {
+            "name": "MOONRISE laser printing under simulated lunar gravity",
+            "type": "Ground-based gravity test",
+            "status": "Ground-based drop-tower work; not flown.",
+            "description": "MOONRISE is a project led by Laser Zentrum Hannover with the Technical University of Braunschweig, funded by the Volkswagen Foundation, and started in 2019 [7]. The project printed structures from simulated lunar regolith in the Einstein-Elevator drop tower of Leibniz University Hannover, to examine printing under reduced gravity [7]. The number, size and shape of the structures, and the duration of each test, are not stated in the source read [7]. The source's image of a laser on a lunar rover is an artist's impression of a concept and does not represent a flight test [7]. Mass, dimensions and power are not publicly specified.",
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "source_reference_numbers": [7],
+            "images": []
+          },
+          {
+            "name": "Tiandu regolith printer prototype (China)",
+            "type": "Ground-only laboratory prototype",
+            "status": "Ground-only; lunar deployment not yet demonstrated according to the reports.",
+            "description": "Engineers at the Deep Space Exploration Laboratory in Hefei reported in July 2025 a working prototype of a lunar regolith 3D printer that combines a high-precision reflective concentrator with flexible fibre-optic energy transmission [8]. Ground-based demonstrations melted and shaped regolith into lines, surfaces and three-dimensional bodies, which the reports describe as validating the concentrator, the optical energy transmission and the material-shaping processes [8]. The reports say lunar deployment has not yet been demonstrated [8]. Temperatures, throughput, power and mass were not verified. The original technical paper or laboratory release was not located, so these values are not publicly specified in the sources reviewed.",
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "source_reference_numbers": [8],
+            "images": []
+          },
+          {
+            "name": "ESA MICROLITH microwave-induced sintering study",
+            "type": "Ground-based study with terrestrial demonstrator",
+            "status": "Ground-based; a lunar demonstrator roadmap is reported but not verified as flown.",
+            "description": "MICROLITH evaluated microwave-induced sintering of regolith for bricks and for oxygen-extraction electrodes. According to the ESA project summary, a terrestrial demonstrator was designed and built, and a road map for a lunar demonstrator has been defined [9]. This entry is based on a search-result extract rather than the full study, and no mass, power or dimension values were verified.",
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "source_reference_numbers": [9],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions and proportions: the PAVER tiles were roughly 20 cm across and each melt layer was about 1.8 cm deep [1][3]. No dimensions are publicly specified for the ICON Olympus concept or the Tiandu prototype [5][8].",
+        "mass_and_weight": "Mass: no mass figure for a lunar-deployable construction system is publicly specified in the sources reviewed. The PAVER 12 kW laser is a laboratory light source, not flight equipment [1].",
+        "power_requirements": "Power: the PAVER sunlight-based concept uses a Fresnel lens described as a couple of metres across, which is a proposed approach rather than a planned mission [1]. No flight power requirement is publicly specified for any example."
+      },
+      "environmental_and_operational_requirements": "A lunar construction demonstrator would operate in vacuum, under strong day-night temperature swings and with abrasive, electrostatically active dust. Processes that melt regolith need sustained energy. The PAVER team identified sunlight-based heating as the long-term concept, with the laser used only as a laboratory proxy [1]. The energy source must therefore be sized and protected from dust, and the cooled products must survive thermal cycling without cracking. PAVER's observations of cracking during rapid cooling show why cooling control matters [2]. Lunar gravity, about one-sixth of Earth's, changes how molten material flows and how structures settle, and this has only been partly tested on the ground [7]. Dust control for optics and mechanisms is an engineering requirement that the sources do not quantify.",
+      "limitations": "The main limitations are energy demand, the use of simulants rather than returned lunar regolith in most tests, limited layer depth per pass, cracking during rapid cooling, and the absence of verified flight operation. Simulant behaviour may differ from real regolith, and results from laboratory tiles do not establish structural performance at full scale [2][3]. Several examples rely on secondary press reports, so dates and values may change once primary papers and agency documents are checked [3][8].",
+      "transportation_and_deployment": {
+        "overview": "A construction demonstrator is a surface payload, so its transportation chain would follow the surface-payload sequence: integration into a spacecraft or lander on Earth, launch, transfer to the Moon, delivery to the surface, deployment, setup, and connection of power, data and thermal interfaces. Two configurations are plausible. A self-contained robotic system, such as the Olympus concept, would need stowage, release and mobility or manipulation interfaces. A fixed processing unit would need a prepared surface and a dedicated energy source [5][10]. Deployment could use a robotic arm, a dedicated mechanism or crew installation; no deployment method has been verified for a specific system. Reports on Olympus describe a planned lunar-surface demonstration, but no lander, mission or interface document was verified, so no compatibility with a named lander is asserted [6][10]. Interfaces between a processing unit and the surface, including thermal exposure and dust, would require engineering assessment before integration.",
+        "transportation_process": [
+          "Integrate the processing unit into a spacecraft or lander payload compartment on Earth.",
+          "Launch it into space using a launch vehicle.",
+          "Transfer it towards the Moon.",
+          "Deliver it to the lunar surface with a lander.",
+          "Deploy and set up the unit on a prepared surface, using a robotic arm, a dedicated mechanism or crew installation.",
+          "Connect power, data and thermal interfaces, and assess dust exposure before operation."
+        ],
+        "deployment_methods": "Deployment could use a robotic arm, a dedicated mechanism or crew installation. No deployment method has been verified for a specific system.",
+        "historical_examples": "No lunar-surface construction demonstrator has been verified as deployed. ICON's Duneflow was a flight regolith-behaviour test on a suborbital vehicle, not a deployment of construction hardware [4].",
+        "compatibility_assessment": "No compatibility with a named lander is asserted. Reports on Olympus describe a planned lunar-surface demonstration, but no lander, mission or interface document was verified [6][10].",
+        "images": []
+      },
+      "historical_significance": "Lunar construction demonstration has so far progressed through laboratory, ground-simulation and drop-tower work. ESA's PAVER and MICROLITH projects, MOONRISE's gravity tests and the Chinese prototype each addressed a different part of the problem [2][7][8][9]. ICON's Duneflow flight in February 2025 was described as its first space-bound payload. It marked a move from ground work to a regolith experiment in space, although it was not a construction test [4]. No lunar-surface construction demonstrator has been verified as operating in the sources reviewed.",
+      "limitations_and_uncertainties": "The name lunar construction demonstrator describes a class of payloads rather than one standard design, and no single instrument or specification applies to the whole class. Most of the examples are ground experiments, and none is confirmed to have flown as a construction demonstrator. The PAVER 115-day pad estimate and the 1.8 cm melt depth are model or test-based values for specific simulant tests, not validated lunar performance. ICON's 2026 lunar demonstration target comes from reporting between 2022 and 2024 and is unconfirmed; the sources reviewed do not say whether it has moved [6][10]. Tiandu performance values come from secondary press reports and were not verified against a primary paper [8]. The primary PAVER paper in Scientific Reports could not be read in full, and the ICON LSIC slide deck could not be fetched, so their content is taken from summaries [3][5]. No image was verified from an official direct asset URL for this article, so no images are included.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "How to make roads on the Moon",
+          "publisher": "European Space Agency",
+          "date": "12 October 2023",
+          "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/How_to_make_roads_on_the_Moon"
+        },
+        {
+          "title": "PAVER: Paving the road for large area sintering of regolith (project page)",
+          "publisher": "Bundesanstalt fur Materialforschung und -prufung (BAM)",
+          "date": null,
+          "url": "https://www.bam.de/Content/EN/Projects/PAVER/paver.html"
+        },
+        {
+          "title": "Building Roads Out of Moon Dust (secondary report on Gines-Palomares et al., Laser melting manufacturing of large elements of lunar regolith simulant for paving on the Moon, Scientific Reports, 2023)",
+          "publisher": "Universe Today",
+          "date": "2023",
+          "url": "https://universetoday.com/163683/building-roads-out-of-moon-dust"
+        },
+        {
+          "title": "ICON's Project Duneflow completes successful space flight with Blue Origin",
+          "publisher": "ICON (newsroom)",
+          "date": "2025-02-20",
+          "url": "https://webflow.iconbuild.com/newsroom/icons-project-duneflow-completes-successful-space-flight-with-blue-origin"
+        },
+        {
+          "title": "ICON Olympus LSIC Slides",
+          "publisher": "Lunar Surface Innovation Consortium (JHU APL)",
+          "date": "2024-01-31",
+          "url": "https://lsic.jhuapl.edu/uploadedDocs/focus-files/2291-ICON%20Olympus%20LSIC%20Slides%2031JAN2024.pdf"
+        },
+        {
+          "title": "NASA gave ICON $57 million to build a 3D printer for structures on the Moon",
+          "publisher": "Singularity Hub",
+          "date": "2022-12-01",
+          "url": "https://singularityhub.com/2022/12/01/nasa-gave-icon-57-million-to-build-a-3d-printer-for-structures-on-the-moon/"
+        },
+        {
+          "title": "Project MOONRISE post",
+          "publisher": "Space Settlement Progress",
+          "date": "2021-01-31",
+          "url": "https://spacesettlementprogress.com/tag/project-moonrise/"
+        },
+        {
+          "title": "Prototype 3D Printer Capable of Working with Lunar Regolith Developed",
+          "publisher": "3DNatives",
+          "date": "2025",
+          "url": "https://www.3dnatives.com/en/prototype-3d-printer-capable-of-working-with-lunar-regolith-developed-140720256/"
+        },
+        {
+          "title": "MICROwaves heating for sintering of regoLITH (MICROLITH)",
+          "publisher": "European Space Agency (NEBULA)",
+          "date": null,
+          "url": "https://nebula.esa.int/content/microwaves-heating-sintering-regolith-microlith"
+        },
+        {
+          "title": "Building the future on the Moon with Project Olympus",
+          "publisher": "New Space Economy",
+          "date": "2024-04-29",
+          "url": "https://newspaceeconomy.ca/2024/04/29/building-the-future-on-the-moon-with-project-olympus/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image URLs were verified, so no image objects are included; the image arrays are empty by design."
+  },
+  "data_quality_notes": [
+    "No image was verified from an official direct asset URL in this run. Image arrays are empty and no image URLs were invented.",
+    "The primary PAVER paper (Scientific Reports, 2023) was not read; PAVER details come from the ESA and BAM pages and a secondary report.",
+    "The ICON LSIC slide deck fetch timed out; its content comes from a search-result summary only.",
+    "The ICON Olympus 2026 lunar demonstration target comes from 2022-2024 reporting and is unconfirmed.",
+    "The MICROLITH entry is based on a search-result extract, not the full ESA project page.",
+    "Tiandu performance values come from secondary press reports; the primary technical source was not located.",
+    "Reference 4 uses the webflow.iconbuild.com host as published in the ICON newsroom; the canonical ICON domain was not confirmed.",
+    "This is a class-level article. No lunar landing-site or location recommendations are included, as deferred by the user."
+  ]
+}

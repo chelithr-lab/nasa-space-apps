@@ -1,0 +1,186 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 313,
+    "name": "Instrument health monitoring system",
+    "article": {
+      "overview": "An instrument health monitoring system is the set of sensors, status flags and telemetry channels that tell engineers how a lunar instrument is doing: whether its temperatures, voltages and currents are within expected ranges, whether its operating modes changed as commanded, and whether its science data can be trusted. It is usually not a stand-alone scientific instrument. It is an engineering function built into a surface experiment package, a spacecraft or an instrument electronics unit. Historical Apollo surface experiments and a modern lunar orbiter radar both recorded this kind of housekeeping data, and the archived records show what such systems monitored and how their outputs were encoded.",
+      "description": "A lunar instrument operates in a harsh environment with no atmosphere, large day-night temperature swings and radiation exposure. Scientific measurements alone do not reveal whether a heater is switched on, a power converter is drifting, a sensor has failed or a command was carried out. A health monitoring system therefore measures engineering quantities alongside the science. Typical quantities include structural and electronics temperatures, supply voltages and rail monitors, current draw, heater or thermal-relay states, mode and status bits, and a log of commands received and acted upon. These values are sampled, multiplexed into the telemetry frame and sent to Earth. Ground teams compare them with expected ranges and use them to diagnose problems, plan operations and interpret the scientific data. Where the raw values are not converted to physical units in the archive, users need calibration information to interpret them.",
+      "scientific_purpose_and_applications": "The purpose of an instrument health monitoring system is to protect the science and the instrument, not to observe the Moon directly. Its main applications are fault detection, operating-mode verification, thermal control and data quality assessment. For example, a temperature reading can show whether an instrument stayed inside its survival range during the lunar night. A status bit can confirm whether a commanded mode change occurred. A supply-voltage record can help identify a degraded power conversion path before it causes a failure. Housekeeping records also let scientists separate instrumental changes from real lunar signals. If a seismic or magnetic record changes at the same time as an electronics temperature, the change may be instrumental rather than geophysical. Monitoring data can also support the long-term operating history of an instrument, which is important for reconstructing what was measured and when.",
+      "operating_principle": "A health monitoring system uses analogue sensors, such as temperature sensors, voltage and current monitors, and discrete status lines, to convert the physical condition of an instrument into electrical signals. These signals are digitised, usually as integer digital numbers (DN), and combined with time tags. In the Apollo Lunar Surface Experiments Package (ALSEP), engineering values were interleaved with science data in fixed-format telemetry frames. The Apollo 17 Lunar Surface Gravimeter (LSG) housekeeping channel carried ten raw analogue measurements, including seismic, tidal and free-mode sensor levels, plus seven further housekeeping parameters that indicated the condition of the instrument. Its science frames also carried six thermal-relay bits and several one-bit or two-bit experiment status indicators. The meaning of each status bit is defined in the ALSEP systems handbook, which this article cites but did not independently access. Interpretation requires the mapping from raw values to physical meaning, and that mapping is often documented separately from the data files.",
+      "scientific_importance": "Health monitoring is essential to producing reliable lunar science. Without engineering data, an unusual reading cannot be classified as either a geophysical event or an instrument artefact. The Apollo ALSEP archive shows this directly: the archive for the Apollo 17 LSG preserves raw science data, raw housekeeping data and command-verification logs as separate products, because all three are needed to reconstruct what the instrument measured. The Mini-RF housekeeping product from the Lunar Reconnaissance Orbiter (LRO) shows the same principle for a modern radar: its temperature, voltage and current records are archived alongside the radar data so that instrument state can be checked against each observation.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power figure for an instrument health monitoring system. In most lunar missions the monitoring function is embedded in another instrument or spacecraft subsystem, so its hardware is rarely reported separately. The values below describe the telemetry and data products of two specific flown examples. They do not describe the mass or power of the monitoring hardware, which the sources accessed did not publish.",
+        "examples": [
+          {
+            "name": "Apollo 17 ALSEP central station and Lunar Surface Gravimeter (LSG) housekeeping channel",
+            "type": "Historical flown lunar surface monitoring function",
+            "system_context": "Part of the Apollo Lunar Surface Experiments Package (ALSEP) deployed by Apollo 17 astronauts at the Apollo 17 site. The LSG was one of several ALSEP experiments. Its housekeeping channel reported on its own condition. The ALSEP central station also carried the telemetry framing, power distribution and housekeeping functions for the package.",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "housekeeping_parameters": {
+              "raw_analogue_measurements_per_record": 10,
+              "seismic_measurement": "AG-1",
+              "tidal_measurement": "AG-2",
+              "free_mode_measurement": "AG-3",
+              "additional_condition_parameters": "AG-4 to AG-10 (seven parameters)",
+              "storage": "ALSEP Word 33 for relay to Earth",
+              "missing_value_code": -9
+            },
+            "science_frame_status_fields": {
+              "temperature_relay_bits": "DG-11: 6-bit integer, one bit for each of six temperature relays (meaning defined in Table 6-XV of the Apollo 17 ALSEP systems handbook)",
+              "one_bit_status_indicators": "DG-12 and DG-14 to DG-18",
+              "two_bit_status_indicator": "DG-13 (values 0 to 3)"
+            },
+            "command_verification": "A time-ordered log of LSG commands that the Apollo 17 ALSEP received and acted upon, stored in ALSEP Word 7 as measurement numbers DA-5 and DA-6.",
+            "operational_span": "The ALSEP instruments operated from deployment until September 1977 at each landing site, according to the archive description. The archive collection covers 2 April 1975 to 30 June 1975 from recovered ARCSAV tapes.",
+            "qualification": "Flight-operated hardware. Hardware dimensions, mass and power for the monitoring electronics were not found in the sources accessed.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a17lsg_raw_arcsav/document/a17_lsg_raw_arcsav_descr.pdf"
+            ],
+            "images": [
+              {
+                "id": "apollo17_alsep_central_station_eva1",
+                "description": "Apollo Lunar Surface Experiment Package (ALSEP) central station photographed during Apollo 17 extravehicular activity 1.",
+                "image_type": "Historical lunar surface photograph (film)",
+                "image_url": null,
+                "source_page_url": "https://www.dvidshub.net/image/858961/apollo-17-alsep-central-station-during-eva-1",
+                "publisher": "NASA (courtesy photo, distributed by DVIDS)",
+                "credit": "NASA; DVIDS courtesy photo",
+                "caption": "Apollo Lunar Surface Experiment Package central station, Apollo 17 extravehicular activity 1. NASA identifier as17-147-22586.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "image_url is null. The DVIDS page offers only a 1000-pixel preview on a CDN and a full-resolution download that requires an account, so no direct asset URL was verified. The page lists the image as public domain; this was not independently verified. The article shows the image as a linked source-page reference."
+              }
+            ]
+          },
+          {
+            "name": "LRO Mini-RF instrument housekeeping telemetry",
+            "type": "Modern flown orbital radar instrument health telemetry (not a surface payload)",
+            "system_context": "The Mini-RF instrument aboard the Lunar Reconnaissance Orbiter is a hybrid dual-polarimetric side-looking synthetic aperture radar. Its raw housekeeping product records the health and status of the radar electronics during observations.",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "housekeeping_fields": {
+              "record_count": 945,
+              "record_length_bytes": 89,
+              "fields_per_record": 62,
+              "timing_fields": 3,
+              "temperature_fields_approx": 35,
+              "voltage_fields_approx": 25,
+              "current_fields": 3,
+              "power_and_rf_fields": 2
+            },
+            "example_product": "urn:nasa:pds:lro_minirf_bistatic:data_raw:lxt_2025177161038_hskraw, version 1.0, covering 2025-06-26 16:10:38.630Z to 16:26:22.630Z (about 15.7 minutes)",
+            "units": "Raw digital numbers (DN). The label does not include calibration or conversion to physical units.",
+            "qualification": "Flight-operated hardware. Field counts were read from the PDS label through a summarising fetch and should be rechecked against the label before reuse.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_minirf_bistatic/data_raw/2025_177/lxt_2025177161038_hskraw_v1.xml"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for the monitoring function itself. In the examples above, the monitoring channels are part of larger packages (an ALSEP experiment and an orbital radar), so their physical dimensions cannot be separated from those packages in the sources accessed.",
+        "mass_and_weight": "Not publicly specified for the monitoring function. Any future monitoring hardware should be budgeted in the mass of the host instrument or spacecraft subsystem, because a separate mass figure is rarely published.",
+        "power_requirements": "Not publicly specified for the monitoring function. Sensors and data acquisition electronics draw power from the host instrument. The Apollo 17 LSG science frames carried six temperature-relay status bits, but the sources accessed give no power draw for the relays or the monitoring electronics."
+      },
+      "environmental_and_operational_requirements": "A monitoring system must survive the same environment as the instrument it watches. The Moon has no substantial atmosphere, so temperature swings are driven by solar heating and radiative cooling. Lunar day and night each last about 14 Earth days, and NASA's Diviner measurements show surface temperatures near the equator of about 120 degrees Celsius (about 400 K) at local noon and about -130 degrees Celsius (about 140 K) at night. Temperature sensors and voltage monitors therefore need a wide, stable operating range. Sensor wiring must tolerate cold and thermal cycling. Electronics must be protected from radiation and the abrasive effects of lunar dust. Monitoring channels also consume telemetry bandwidth, so engineers typically sample them at lower rates than science data and combine them into fixed-format frames.",
+      "limitations": "Housekeeping data show what a sensor reports, not necessarily the true physical state. A temperature sensor can fail, drift or be poorly attached to the instrument it monitors. Raw values in archived products are often unitless digital numbers, so interpretation depends on calibration documents that may be incomplete or missing. Some status bits, such as the ALSEP sync flags, may have meanings that are not fully documented in the literature searched. Missing-value codes (for example, -9 in the Apollo 17 LSG housekeeping product) must be filtered before analysis. Finally, a health monitoring system cannot repair a fault. It can only detect and report one.",
+      "transportation_and_deployment": {
+        "overview": "A health monitoring system is not delivered separately. Its sensors and electronics travel as part of the instrument, lander or spacecraft they monitor. The deployment requirements of the host determine how the monitoring is carried.",
+        "transportation_process": [
+          "Integrate temperature sensors, voltage and current monitors, and status lines into the host instrument and its electronics on Earth.",
+          "Route monitoring channels through the host's telemetry or data-handling system to the spacecraft or lander.",
+          "Launch and transfer the host to the Moon as part of its normal payload or spacecraft configuration.",
+          "After landing or orbit insertion, verify each monitoring channel against known reference conditions before using the data for operations."
+        ],
+        "deployment_methods": "In the Apollo ALSEP case, astronauts deployed the central station and its experiments as a package. The archive describes the instruments as deployed by Apollo astronauts. In an orbital example such as the Mini-RF radar, no surface deployment was needed, and monitoring data were recorded during operations.",
+        "historical_examples": "The Apollo 17 ALSEP central station and LSG housekeeping channel, and the LRO Mini-RF housekeeping product, both illustrate the function described in this article.",
+        "compatibility_assessment": "Compatibility with a specific lander or spacecraft has not been assessed for this payload. Monitoring channels would need to be specified against each host's telemetry format, power budget and thermal interfaces. No lander or spacecraft is assigned in this article.",
+        "images": []
+      },
+      "historical_significance": "The Apollo ALSEP experiments were among the first long-term scientific installations on the Moon, and their archives preserve housekeeping and command-verification records as well as science data. The Apollo 17 LSG records show that the instrument's own condition, its thermal relays and its commands were logged alongside its measurements, which allowed later reprocessing. Operations continued at each ALSEP site until September 1977, according to the archive description. The LRO Mini-RF housekeeping product illustrates that the same engineering-telemetry principle continues in modern lunar missions.",
+      "limitations_and_uncertainties": "The article covers a generic function rather than a single design. The Apollo and Mini-RF examples differ in mission, instrument type and data format, and should not be treated as comparable designs. The monitoring hardware's mass and power were not found in the sources accessed. Several source facts were read from archive descriptions that cite primary documents (the ALSEP systems handbook, the ALSEP termination report and the Apollo 17 ALSEP systems documentation) which were not independently accessed. The Mini-RF field counts came from a summarising fetch of the PDS label. Lunar temperature values come from a NASA LRO fact sheet and are approximate.",
+      "images": [
+        {
+          "id": "apollo17_alsep_central_station_eva1",
+          "description": "Apollo Lunar Surface Experiment Package (ALSEP) central station photographed during Apollo 17 extravehicular activity 1.",
+          "image_type": "Historical lunar surface photograph (film)",
+          "image_url": null,
+          "source_page_url": "https://www.dvidshub.net/image/858961/apollo-17-alsep-central-station-during-eva-1",
+          "publisher": "NASA (courtesy photo, distributed by DVIDS)",
+          "credit": "NASA; DVIDS courtesy photo",
+          "caption": "Apollo Lunar Surface Experiment Package central station, Apollo 17 extravehicular activity 1. NASA identifier as17-147-22586.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "image_url is null. The DVIDS page offers only a 1000-pixel preview on a CDN and a full-resolution download that requires an account, so no direct asset URL was verified. The page lists the image as public domain; this was not independently verified. The article shows the image as a linked source-page reference."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Apollo 17 ALSEP ARCSAV Lunar Surface Gravimeter Raw Cleaned ASCII Data Collection (1975-092 to 1975-181), archive description",
+          "publisher": "NASA Planetary Data System, Geosciences Node",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a17lsg_raw_arcsav/document/a17_lsg_raw_arcsav_descr.pdf"
+        },
+        {
+          "title": "LRO Mini-RF bistatic raw housekeeping data product lxt_2025177161038_hskraw_v1 (PDS label)",
+          "publisher": "NASA Planetary Data System, Geosciences Node (LRO Mini-RF archive)",
+          "url": "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_minirf_bistatic/data_raw/2025_177/lxt_2025177161038_hskraw_v1.xml"
+        },
+        {
+          "title": "Lunar Reconnaissance Orbiter: Temperature Variation on the Moon (fact sheet)",
+          "publisher": "NASA Lunar Reconnaissance Orbiter",
+          "url": "https://science.nasa.gov/wp-content/uploads/2024/01/lrolitho7temperaturevariation27may2014.pdf"
+        },
+        {
+          "title": "Apollo 17, ALSEP Central Station during EVA 1 (image record, NASA identifier as17-147-22586)",
+          "publisher": "NASA, distributed by DVIDS",
+          "url": "https://www.dvidshub.net/image/858961/apollo-17-alsep-central-station-during-eva-1"
+        },
+        {
+          "title": "Apollo Lunar Surface Experiments Package Systems Handbook: Apollo 17, ALSEP 5 - Array E (cited by reference 1; not independently accessed)",
+          "publisher": "NASA Manned Spacecraft Center",
+          "url": "https://repository.hou.usra.edu/handle/20.500.11753/668"
+        },
+        {
+          "title": "Bates, J. R., et al., ALSEP Termination Report, NASA Reference Publication 1036, April 1979 (cited by reference 1; not independently accessed)",
+          "publisher": "NASA",
+          "url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19790014808.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "Apollo 17 ALSEP housekeeping example": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No direct image asset URL was verified, so image_url is null and the source page is linked."
+  },
+  "data_quality_notes": [
+    "No public mass, dimension or power figures were found for the monitoring hardware of either example; the corresponding fields are null.",
+    "The Apollo 17 LSG housekeeping and status-bit descriptions come from the PDS archive description, which cites the ALSEP systems handbook (Table 6-XV) for bit meanings. That handbook was not independently accessed, so the bit meanings are not stated here.",
+    "The archive description notes that the difference between edited and unedited ALSEP sync-status flags is not defined in the literature it searched. This gap is left open.",
+    "The LRO Mini-RF field counts and product metadata were read from the PDS label through a summarising fetch. They should be rechecked against the label before reuse.",
+    "The Mini-RF housekeeping values are raw digital numbers. The label does not provide calibration, so no physical values are given.",
+    "Lunar surface temperature values come from a NASA LRO fact sheet and are approximate. Sun-facing and shaded locations differ.",
+    "An attempt to access the Chandrayaan-3 ChaSTE payload page at the Space Physics Laboratory site failed because the domain did not resolve. No ChaSTE facts are included.",
+    "The DVIDS image is a single courtesy photograph. Its public-domain status was stated by the hosting page and was not independently verified. A direct, verified image URL was not obtained."
+  ]
+}

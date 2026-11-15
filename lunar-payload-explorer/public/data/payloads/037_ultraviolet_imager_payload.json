@@ -1,0 +1,363 @@
+{
+  "catalogue_id": 37,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 37,
+    "name": "Ultraviolet imager",
+    "article": {
+      "overview": "An ultraviolet (UV) imager is an instrument that forms a picture of a scene using light at wavelengths shorter than visible light. The class is defined by its wavelength band and its purpose rather than by one design. Here the scene may be the lunar surface, the exosphere around the Moon, the Earth's upper atmosphere and plasmasphere as seen from the Moon, or celestial targets. The Moon's own atmosphere is extremely thin, so most lunar UV imaging concerns the surface or the distant environment viewed from it.\n\nThe sources reviewed for this article describe the following examples. The Apollo 16 Far-Ultraviolet Camera/Spectrograph was operated on the lunar surface in April 1972 [1][2][3]. The Chang'e-3 Moon-based EUV camera imaged the Earth's plasmasphere from the lunar surface [5][6]. LRO's LAMP is a UV imaging spectrograph in lunar orbit that maps the Moon's surface using reflected UV light [7][8][9][10]. The SELENE (Kaguya) Upper-atmosphere and Plasma Imager included an extreme-UV telescope (TEX) that imaged the Earth's plasmasphere from lunar orbit [14][15][16]. The Lunar Ultraviolet Cosmic Imager (LUCI) and the Artemis-enabled Stellar Imager (AeSI) are proposed or in-study concepts only [17][18][19]. A Chang'e-3 lunar-surface UV telescope (LUT) is closely related but belongs to the telescope class (catalogue 230) and is only cross-referenced here [20].\n\nStatus is stated explicitly for each example in the Physical Specifications section. No example in this article is described as flight-proven unless a source reviewed for this run says it was flown and operated.",
+      "description": "A UV imager records an image in which each pixel shows the brightness of the scene in a defined ultraviolet band. Ultraviolet light is absorbed by many materials, including most ordinary glasses, so UV optics use special window materials (for example fluoride crystals), reflective multilayer mirrors, or a thin-film filter to select the wavelength band. The detector also has to be sensitive to single UV photons or to fluorescence from the image. Some designs record a single broad or narrow band; others record a whole spectrum at each position in the image.\n\nThe distinction between UV imaging and UV spectrometry matters for this class. A UV imager's primary output is a two-dimensional map of brightness at one band, or at a small number of bands, selected by filters, correctors or mirrors. A UV spectrometer's primary output is intensity as a function of wavelength for a given field of view or slit, and it may not form a spatial image at all. An imaging spectrograph such as LAMP combines both: it records spatially resolved images that are also dispersed into wavelength [8][10]. The distinction also applies to catalogue entries 077 (Ultraviolet spectrometer), 130 (Ultraviolet radiation detector), which measures UV flux or dose and usually does not form images, and 230 (Ultraviolet telescope), which is an astronomical telescope class. This article does not duplicate those entries.\n\nLunar UV imaging has a distinct advantage: the Moon has no thick atmosphere to absorb UV, and a lunar-based telescope can avoid several background-noise sources present in low-Earth-orbit instruments. The LUCI proposal states this advantage explicitly [17].",
+      "scientific_purpose_and_applications": "UV imagers serve four main scientific purposes in the sources reviewed.\n\n- **Surface composition and space weathering.** LAMP was designed to search for exposed water ice and frost in the Moon's permanently shadowed regions (PSRs) by using faint Lyman-alpha sky-glow and starlight, rather than direct sunlight, as the light source [9][12]. The NASA image caption describes PSRs as darker at far-ultraviolet wavelengths and redder than sunlit areas. It says this is consistent with highly porous soils and with water frost [12]. The image caption describes a consistency, not a measured frost abundance.\n- **Exosphere and geocorona.** The Apollo 16 camera was built to observe the Earth's upper atmosphere and geocorona, interplanetary space and celestial objects from the lunar surface [1]. The Smithsonian describes the Apollo 16 image of Earth's outermost atmosphere, the geocorona, as a region where oxygen and nitrogen glow in ultraviolet light [3].\n- **Magnetospheric plasma.** The Chang'e-3 EUV camera and the SELENE UPI-TEX were built to image helium ions (He+) in the Earth's plasmasphere at 30.4 nm [5][14]. Plasmaspheric images from the Moon give a global view of this region in a single exposure, which an orbit near the Earth cannot provide in the same way [14].\n- **Astronomical observations from the Moon.** The Apollo 16 camera recorded images of the Large Magellanic Cloud and other celestial targets in far-UV bands from the lunar surface [2][3].\n\nThe proposed LUCI and AeSI concepts target stellar and extragalactic sources and high-resolution UV imaging of stellar surfaces respectively [17][19]. None of these applications has been shown by the sources reviewed to be routinely delivered by a lunar UV imager today.",
+      "operating_principle": "Three principles recur across the examples.\n\nFirst, a wavelength is selected by materials and coatings. The Apollo 16 camera had two correctors that define the short-wavelength limit: a lithium fluoride (LiF) corrector gave imagery from 1050 to 1600 Å, and a calcium fluoride (CaF2) corrector gave imagery from 1250 to 1600 Å [2]. The Chang'e-3 EUV camera used a multilayer film mirror and a thin-film filter tuned to its band [5].\n\nSecond, the detector records photons. The Apollo 16 camera recorded images on film, then scanned the film with a microdensitometer and converted density to intensity using preflight calibration [2]. The SELENE UPI-TEX and Chang'e-3 EUV camera use photon-counting detectors. For UPI-TEX these are micro-channel plates with a resistive anode [14]; for the Chang'e-3 camera the photon-counting detector is named in the calibration paper [5]. The LUT telescope on Chang'e-3 used a UV-enhanced CCD operated in frame-transfer mode [20].\n\nThird, illumination or viewing geometry determines what the instrument sees. LAMP uses reflected Lyman-alpha sky-glow and starlight because PSRs receive no direct sunlight [9]. UPI-TEX could only operate when the spacecraft was in the lunar shade and visible from Earth [14]. The LUCI proposal planned a fixed zenith pointing with an optional attitude mechanism, and kept the Sun at least 40 degrees off the line of sight [17].",
+      "scientific_importance": "UV images show how light at short wavelengths is scattered, absorbed or emitted by surfaces, gases and plasmas. This information is not available from visible or thermal images. For the Moon, UV imaging of permanently shadowed regions is important because these regions receive no direct sunlight, so LAMP relies on UV sky-glow and starlight as its illumination [9]. For the Earth's magnetosphere, EUV images from the Moon map the plasmasphere over a large region in a single exposure [5][14].\n\nIn the sources reviewed, the lunar UV imaging examples fall into two groups: imaging of the Moon's surface from lunar orbit (LAMP), and imaging of the Earth's plasmasphere from the Moon (UPI-TEX and the Chang'e-3 EUV camera). The sources reviewed do not establish that any lunar UV imager has produced a validated global UV reflectance map of the lunar surface in a form comparable with the LRO mission products. The LAMP science team's published results are described in the LAMP paper [7], which was not read in full for this article.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a UV imager. The examples below differ in wavelength band, platform, detector, field of view and purpose. Their parameters are not directly comparable, and the table is included only for items that have a parallel meaning across the examples. Where a source does not publish a value, the table says \"not publicly specified\" rather than an estimate.\n\n**Dimensions and proportions.** The Apollo 16 camera record at the Smithsonian is a museum object, catalogue A19830142000, with overall dimensions of 49.5 × 78.7 × 53.3 cm [4]. The Smithsonian object record does not say that this museum object is the flown flight unit, so these dimensions are not attributed to the flown instrument. Dimensions for the Chang'e-3 EUV camera, LRO LAMP and the UPI-TEX telescope were not publicly specified in the sources read, except for the optical dimensions of the UPI-TEX telescope (120 mm aperture, 168 mm focal length) [14].\n\n**Mass.** No mass is published for the Chang'e-3 EUV camera, LAMP or UPI-TEX in the sources read for this article. A secondary Apollo 16 summary gives 22 kg for the camera, but this figure was not verified against a primary NASA or NRL document and is not used here. A launch-era press summary reported a LAMP mass of 6.1 kg and a power of 4.0 W, but this was not verified against primary LRO or LAMP documentation and is not used as a specification.\n\n**Power.** No power requirement is published for the Apollo 16 camera, the Chang'e-3 EUV camera, LAMP or UPI-TEX in the sources read for this article. The UPI-TEX and TVIS telescopes were operated only during specified viewing windows [14], but no power value is given.",
+        "comparison_table_markdown": "| Item | Apollo 16 FUV Camera/Spectrograph | Chang'e-3 Moon-based EUV camera | LRO LAMP | SELENE (Kaguya) UPI-TEX |\n|---|---|---|---|---|\n| Status in sources | Flown; operated on the lunar surface 21–23 April 1972 [1][2] | Flown on the Chang'e-3 mission; described as a Moon-based camera [5][6] | Flown on LRO, launched 18 June 2009 [11]; NASA lists LRO as an active mission [11] | Flown on SELENE (Kaguya), launched 14 September 2007; operations concluded 10 June 2009 [15] |\n| Platform | Lunar surface | Lunar surface (Chang'e-3 mission) | Lunar orbit | Lunar orbit |\n| Main observing target | Earth's geocorona, stars and deep-sky targets (including the Large Magellanic Cloud) [2][3] | Earth's plasmasphere (He+ emission) [5][6] | Lunar surface, especially permanently shadowed regions [9][12] | Earth's plasmasphere (He+ and O+ emission) [14] |\n| Published spectral band | Imagery 1050–1600 Å (LiF corrector) and 1250–1600 Å (CaF2 corrector) [2] | Centre wavelength 30.2 nm; bandwidth 4.6 nm (RAA abstract) [5]; 30.4 nm in EPSC 2024 abstract [6] | Not confirmed from a primary document in this run; secondary summaries give 57–196 nm [see Example 3] | 30.4 nm and 83.4 nm [14] |\n| Field of view | Direct imagery frames of about 20° diameter [2] | 14.7° [5] | Not publicly specified in sources read | 10° × 10° (128 × 128 pixels) [14] |\n| Angular or spatial resolution | About 2 arcmin at field centre, 3–4 arcmin typical at the edges [2] | 0.08° [5] | Not publicly specified in sources read | 500 km (spatial resolution stated by JAXA) [14] |\n| Detector type | Electrographic film, read by microdensitometer [2] | Photon-counting detector [5] | Not publicly specified in sources read | Micro-channel plates with resistive anode [14] |\n| Mass, power, dimensions | Not publicly specified in primary sources read; secondary figures not used | Not publicly specified in sources read | Not publicly specified in sources read; launch-era figures not used | Not publicly specified in sources read |",
+        "examples": [
+          {
+            "name": "Apollo 16 Far-Ultraviolet Camera/Spectrograph (NRL Experiment S-201)",
+            "type": "Historical lunar-surface far-UV electrographic camera with spectrograph mode",
+            "status": "flown",
+            "platform": "lunar surface (Apollo 16; operated 21-23 April 1972)",
+            "observing_targets": "Earth's geocorona, stars and deep-sky targets including the Large Magellanic Cloud",
+            "imaging_bands_angstrom": {
+              "LiF_corrector": [
+                1050,
+                1600
+              ],
+              "CaF2_corrector": [
+                1250,
+                1600
+              ]
+            },
+            "field_of_view_deg": "about 20 deg diameter for direct imagery (OCR of the scanned NRL text reads 200; the 20 deg spectrographic field supports this reading); full 20 deg along the dispersion in spectrographic mode",
+            "limiting_resolution_arcmin": "about 2 at field centre, about 4 near edges (LMC images 3-4)",
+            "spectral_resolution_angstrom": "about 30 (LiF corrector); about 40 (no corrector)",
+            "exposure_limits_min": {
+              "1050-1600 A imagery": 10,
+              "1250-1600 A imagery": 30
+            },
+            "detector": "electrographic film, scanned with a PDS microdensitometer",
+            "mass_kg": null,
+            "mass_note": "A secondary wiki summary gives 22 kg; not verified against a primary NASA or NRL document and not used.",
+            "power_w": "not publicly specified",
+            "museum_object_dimensions_cm": [
+              49.5,
+              78.7,
+              53.3
+            ],
+            "museum_object_note": "Smithsonian object A19830142000 (museum object record); not stated to be the flight unit.",
+            "images": [],
+            "photograph_reference": {
+              "image_id": "apollo16_fuv_camera_museum_object",
+              "source_page_url": "https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16",
+              "note": "Linked source-page reference only; no direct image URL used (see image registry notes)."
+            },
+            "article_text": "### Example 1: Apollo 16 Far-Ultraviolet Camera/Spectrograph (NRL Experiment S-201)\n\n**Status: flown.** The instrument was operated on the lunar surface during the Apollo 16 mission from 21 to 23 April 1972 [1][2]. The Naval Research Laboratory team's instrument paper appeared as an Applied Optics article in 1973 [1]. The Smithsonian describes the camera as the first telescope on the Moon during Apollo 16 [3].\n\n**Type.** The instrument combined an electrographic Schmidt camera, with interchangeable corrector plates, and a spectrograph mode with an objective grating and an electroformed-grid collimator [2]. Its direct-imaging mode used the LiF and CaF2 correctors described above [2].\n\n**Band and field.** Direct imagery covered 1050–1600 Å with LiF and 1250–1600 Å with CaF2 [2]. The direct-imaging frames covered circular fields of about 20° diameter [2]; the OCR of the scanned NRL text renders this value as \"200\", but the 20° spectrographic field stated in the same paper supports the reading. The spectrographic field was 20° full width along the dispersion direction [2].\n\n**Resolution and exposure.** Direct imagery had a limiting resolution of about 2 arcmin at field centre, degrading to about 4 arcmin near the edges [2]. Spectral resolution was about 30 Å in exposures with the LiF corrector and about 40 Å without the corrector [2]. Imagery exposures were up to 10 minutes for 1050–1600 Å and up to 30 minutes for 1250–1600 Å [2].\n\n**Recording and processing.** Images and spectra were recorded on photographic film, then scanned with a microdensitometer and converted to isointensity plots after calibration against preflight measurements and observations of interplanetary and geocoronal Lyman-alpha emission [2].\n\n**Observations.** The Large Magellanic Cloud was observed from the lunar surface on 22 April 1972 [2]. The Smithsonian states that the lunar-surface camera imaged Earth's outermost atmosphere, and that astronaut John Young used a telescope on the Moon to photograph star clouds, nebulae and Earth's outermost atmosphere [3]. The Smithsonian page does not state that this telescope and the NRL camera are the same instrument, so this article does not assume it.\n\n**Mass and power.** A secondary Apollo 16 summary gives 22 kg, but this figure was not verified in a primary NASA or NRL document. No power value is published in the sources read.\n\n**Museum object (not embedded).** The Smithsonian National Air and Space Museum holds a catalogue object, A19830142000, titled \"Camera, Lunar Surface Ultraviolet, Apollo 16\". The object record is available at [the Smithsonian object page](https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16) [4]. A direct photograph URL for this object was not used because the clean asset address returned HTTP 404 (see the image registry notes in the JSON)."
+          },
+          {
+            "name": "Chang'e-3 Moon-based EUV camera",
+            "type": "Extreme-UV camera (multilayer mirror, thin-film filter, photon-counting detector)",
+            "status": "flown on the Chang'e-3 mission",
+            "platform": "lunar surface (Chang'e-3 mission; lander mounting not described in the sources read)",
+            "observing_target": "Earth's plasmasphere (He+ emission)",
+            "centre_wavelength_nm": 30.2,
+            "centre_wavelength_nm_source": "RAA 2014 abstract (Chen et al.)",
+            "centre_wavelength_nm_conflict": "EPSC2024-478 abstract gives 30.4 nm for the predecessor Chang'e-3 camera; unresolved (full text of the 2014 paper not read).",
+            "bandwidth_nm": 4.6,
+            "field_of_view_deg": 14.7,
+            "angular_resolution_deg": 0.08,
+            "sensitivity": "0.11 counts per second per Rayleigh (RAA 2014 abstract)",
+            "detector": "photon-counting detector; multilayer film mirror; thin-film filter; two-axis pointing mechanism",
+            "mass_kg": "not publicly specified",
+            "power_w": "not publicly specified",
+            "dimensions": "not publicly specified",
+            "images": [],
+            "article_text": "### Example 2: Chang'e-3 Moon-based EUV camera\n\n**Status: flown.** The camera was developed for the Chang'e-3 mission and is described as the first Moon-based EUV camera for observing the Earth's plasmasphere [5]. The EPSC 2024 abstract describes the predecessor, a 30.4 nm EUV camera on Chang'e-3, as having \"successfully captured\" global plasmaspheric images [6].\n\n**Band.** The calibration paper's abstract gives a centre wavelength of 30.2 nm and a bandwidth of 4.6 nm [5]. The EPSC 2024 abstract gives 30.4 nm for the Chang'e-3 camera [6]. This discrepancy is not resolved in this article because the full text of the 2014 paper was not read.\n\n**Optical and detector characteristics.** The abstract gives a field of view of 14.7°, an angular resolution of 0.08° and a sensitivity of 0.11 counts per second per Rayleigh [5]. The subsystems are a multilayer film mirror, a thin-film filter, a photon-counting detector, a two-axis pointing mechanism, a protective cover, electronics and a thermal control unit [5]. Geometric, absolute photometric and relative photometric calibrations were carried out before launch at several temperatures, and correction matrices derived from them are applied to in-orbit images [5].\n\n**Mass, power and dimensions.** Not publicly specified in the abstract. The full text was not read for this article."
+          },
+          {
+            "name": "LRO Lyman Alpha Mapping Project (LAMP)",
+            "type": "Imaging ultraviolet spectrograph (described as an imaging UV spectrometer in the PDS context record)",
+            "status": "flown on LRO (LRO launched 18 June 2009; NASA lists LRO as an active mission)",
+            "platform": "lunar orbit",
+            "observing_target": "Permanently shadowed regions and the lunar surface, using reflected Lyman-alpha sky-glow and starlight",
+            "spectral_range_nm": "not confirmed from a primary document read for this article; secondary summaries give 57-196 nm (unverified)",
+            "lyman_alpha_line_nm_unverified": 121.6,
+            "field_of_view": "not publicly specified in sources read",
+            "detector": "not publicly specified in sources read",
+            "mass_kg": "not publicly specified",
+            "mass_note": "A launch-era press summary gave 6.1 kg and 4.0 W; not verified against primary LRO or LAMP documentation and not used.",
+            "power_w": "not publicly specified",
+            "dimensions": "not publicly specified",
+            "images": [
+              {
+                "id": "lamp_lyman_alpha_psr_map",
+                "description": "LAMP Lyman-alpha map of the Moon's south polar region showing permanently shadowed regions (PSRs) that are darker and redder at far-ultraviolet wavelengths than sunlit ground.",
+                "image_type": "Instrument data map (processed image)",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2024/01/lampwaterpsr.jpg",
+                "source_page_url": "https://science.nasa.gov/image-detail/lampwaterpsr/",
+                "publisher": "NASA Science (LRO LAMP team: NASA/GSFC/SwRI)",
+                "credit": "NASA/GSFC/SwRI",
+                "caption": "This image, produced by LAMP aboard NASA's LRO, shows features at the Moon's south pole in the regions that lie in perpetual darkness. Many PSRs are darker at far-ultraviolet wavelengths and redder than nearby sunlit surface areas; the darker tone is consistent with large surface porosity and the reddening with water frost, according to the source page.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset URL verified: HTTP 200, image/jpeg, fetched and saved as a JPEG (600 x 592 pixels as decoded; EXIF metadata reports a different size, so full-resolution download was not checked). The source page HTML (image-detail/lampwaterpsr/) lists lampwaterpsr.jpg as its image, and the page's caption and credit match this record. The page's resized variant (?w=300) was not used. The source page gives no specific licence and links NASA Brand and Usage Guidelines; reuse status is not treated as public domain. Page last updated 19 January 2024, per the source page."
+              }
+            ],
+            "article_text": "### Example 3: LRO Lyman Alpha Mapping Project (LAMP)\n\n![LAMP far-ultraviolet Lyman-alpha map of the Moon's south polar region, showing permanently shadowed regions that appear darker and redder than sunlit ground.](https://science.nasa.gov/wp-content/uploads/2024/01/lampwaterpsr.jpg)\n\n*Figure (same image as the Overview). NASA/GSFC/SwRI. Source: [NASA Science image page](https://science.nasa.gov/image-detail/lampwaterpsr/) [12].*\n\n**Status: flown on LRO.** LRO was launched on 18 June 2009, and NASA describes the mission as active [11]. NASA's SVS page describes LAMP as \"a spectrograph that images the ultraviolet region of the spectrum\" [8]. The PDS instrument context describes it as an imaging ultraviolet spectrometer [10]. The LAMP paper, Gladstone et al. (2010), is the principal instrument reference [7]; its full text was not read for this article.\n\n**Band and field.** The spectral range is not confirmed in a primary document read for this article. Secondary summaries give 57–196 nm and identify the Lyman-alpha line at 121.6 nm [unverified]. The instrument's field of view and detector type are not publicly specified in the sources read.\n\n**Heritage and design.** The ODE instrument page describes LAMP as \"a low-risk, high-heritage investigation based on a rebuild of an existing instrument\" [9]. The 2010 APS meeting poster gives the same basic description as an ultraviolet spectrograph on LRO and does not give the wavelength range or resolution [13].\n\n**Operating principle for the Moon's poles.** LAMP uses reflected Lyman-alpha sky-glow and starlight to see into the permanently shadowed regions, because these regions receive no direct sunlight [9]. The ODE page states that \"Reflected Lyman-alpha sky-glow and starlight produce sufficient signal\" [9].\n\n**Image.** The NASA Lyman-alpha map used in this article (see the Overview figure) shows the south polar region and the PSRs [12]. The image page is dated 19 January 2024, and gives the credit NASA/GSFC/SwRI [12].\n\n**Mass, power and dimensions.** Not publicly specified in primary sources read. The launch-era figures noted in the Physical Specifications introduction are not used here."
+          },
+          {
+            "name": "SELENE (Kaguya) Upper-atmosphere and Plasma Imager (UPI), TEX telescope",
+            "type": "Extreme-UV imaging telescope (TEX) of the UPI; the companion TVIS is a visible-light telescope and is not part of this UV class",
+            "status": "flown on SELENE (Kaguya): launched 14 September 2007; operations concluded 10 June 2009",
+            "platform": "lunar orbit",
+            "observing_target": "Earth's plasmasphere (He+ at 30.4 nm; O+ at 83.4 nm)",
+            "aperture_mm": 120,
+            "focal_length_mm": 168,
+            "field_of_view_deg": "10 x 10 (128 x 128 pixels)",
+            "wavelengths_nm": [
+              30.4,
+              83.4
+            ],
+            "spatial_resolution_km": 500,
+            "detector": "micro-channel plates with a resistive anode",
+            "operating_conditions": "operable only when the spacecraft is in the lunar shade and visible from Earth",
+            "cadence": "JAXA stated expected coverage every 10 minutes (design expectation, not measured)",
+            "companion_visible_telescope": "TVIS: 136 mm aperture, f = 320 mm, 428 to above 730 nm; 2.38 x 2.38 deg; cross-reference only, not UV",
+            "mass_kg": "not publicly specified",
+            "power_w": "not publicly specified",
+            "images": [],
+            "article_text": "### Example 4: SELENE (Kaguya) Upper-atmosphere and Plasma Imager, TEX telescope\n\n**Status: flown.** SELENE (Kaguya) was launched on 14 September 2007 and concluded operations on 10 June 2009 [15]. The Upper-atmosphere and Plasma Imager (UPI) had two telescopes: an extreme-UV telescope (TEX) that observed the plasmasphere and a visible telescope (TVIS) that observed the Earth's disk and aurora and airglow [14]. TVIS is a visible-light instrument and is not part of the UV imager class.\n\n**TEX characteristics.** The TEX telescope has an aperture of 120 mm with a focal length of 168 mm, a field of view of 10° × 10° recorded as 128 × 128 pixels, and two wavelengths: 30.4 nm and 83.4 nm [14]. It detects the resonance scattering of helium and oxygen ions and uses micro-channel plates with a resistive anode [14]. JAXA gives a spatial resolution of 500 km [14].\n\n**Operating conditions.** UPI could operate only when the spacecraft was in the lunar shade and visible from Earth [14]. JAXA stated an expected cadence of one plasma distribution image every 10 minutes [14]. This is a design expectation as published, not a measured cadence. The JAXA equipment page does not give mass, power or dimensions beyond the optical data above.\n\n**Archived products.** The DARTS archive lists a UPI-TEX plasmasphere dataset at helium 30.4 nm [16]. The dataset's exposure and unit details were not read in full for this article."
+          },
+          {
+            "name": "Lunar Ultraviolet Cosmic Imager (LUCI)",
+            "type": "Proposed wide-field far-UV imaging telescope (2014 proposal) and near-UV imager design (2016)",
+            "status": "proposed or design stage; no flight reported in the sources reviewed",
+            "platform": "2014: proposed lunar lander (Team Indus, Google Lunar X PRIZE). 2016: balloons, nanosatellites and spacecraft (balloon flight planned)",
+            "band_nm": {
+              "2014_proposal": [
+                130,
+                180
+              ],
+              "2016_design": "near-UV; nm band not given in the abstract"
+            },
+            "mass_kg": {
+              "2014_proposal": "not stated in abstract",
+              "2016_design": "below 2 (abstract)"
+            },
+            "power_w": "not publicly specified",
+            "field_of_view": "not publicly specified in abstracts read",
+            "detector": "not publicly specified in abstracts read",
+            "images": [],
+            "article_text": "### Example 5: Lunar Ultraviolet Cosmic Imager (LUCI), proposed\n\n**Status: proposal and design only.** No flight of LUCI is reported in the sources reviewed.\n\n**2014 proposal.** Safonova et al. proposed a small wide-field far-UV imaging telescope with a 130–180 nm band, to be flown on a lunar lander as an entry in the Google Lunar X PRIZE. The abstract gives a fixed zenith-pointing baseline with an optional mechanism for other attitudes and states that the Sun is kept at least 40 degrees off the line of sight [17]. The telescope mass and power are not stated in the abstract [17].\n\n**2016 design.** Mathew et al. describe an all-spherical-optics near-UV imager for balloons, nanosatellites and spacecraft. The abstract gives a mass below 2 kg and states that the team planned a high-altitude balloon flight [18]. No detector, field of view, power or nm band is given in the abstract [18]. A secondary summary gives a 200–320 nm band; this was not verified in the design paper [unverified].\n\n**Other concepts and reports (not examples).** The Artemis-enabled Stellar Imager (AeSI) is a NIAC-funded concept for a lunar long-baseline UV and optical imaging interferometer. The 2024 SPIE paper describes it as in feasibility study, with no prototype or flight described [19]. The Queqiao-2 relay satellite is described in an EPSC 2024 abstract as carrying a double-wavelength EUV camera at 30.4 nm and 83.4 nm. The abstract does not confirm that the instrument is operating [6]. The Chang'e-3 Lunar-based Ultraviolet Telescope (LUT), which is catalogued as 230, recorded more than 50,000 images according to its calibration paper; its mass and power are not stated there [20]."
+          }
+        ],
+        "dimensions_and_proportions": "**Dimensions and proportions.** The Apollo 16 camera record at the Smithsonian is a museum object, catalogue A19830142000, with overall dimensions of 49.5 × 78.7 × 53.3 cm [4]. The Smithsonian object record does not say that this museum object is the flown flight unit, so these dimensions are not attributed to the flown instrument. Dimensions for the Chang'e-3 EUV camera, LRO LAMP and the UPI-TEX telescope were not publicly specified in the sources read, except for the optical dimensions of the UPI-TEX telescope (120 mm aperture, 168 mm focal length) [14].",
+        "mass_and_weight": "**Mass.** No mass is published for the Chang'e-3 EUV camera, LAMP or UPI-TEX in the sources read for this article. A secondary Apollo 16 summary gives 22 kg for the camera, but this figure was not verified against a primary NASA or NRL document and is not used here. A launch-era press summary reported a LAMP mass of 6.1 kg and a power of 4.0 W, but this was not verified against primary LRO or LAMP documentation and is not used as a specification.",
+        "power_requirements": "**Power.** No power requirement is published for the Apollo 16 camera, the Chang'e-3 EUV camera, LAMP or UPI-TEX in the sources read for this article. The UPI-TEX and TVIS telescopes were operated only during specified viewing windows [14], but no power value is given."
+      },
+      "environmental_and_operational_requirements": "The lunar surface and lunar orbit impose different requirements. General engineering considerations, not drawn from the sources reviewed, include the following. For surface instruments the main requirements are thermal stability for the optics and detector, dust protection for windows and filters, and stable pointing for the duration of an image sequence. The Chang'e-3 camera's calibration covered several temperatures [5], which indicates that temperature dependence was considered. No temperature range or survival limit is published in the sources read for this article, so none is stated here.\n\nFor orbital instruments, the main constraints are the viewing geometry and the illumination. UPI-TEX was operable only in lunar shade while visible from Earth [14]. LAMP relies on the faint Lyman-alpha sky-glow and starlight because the PSRs receive no direct sunlight [9]. Both platforms need stable spacecraft attitude and pointing knowledge.\n\nUV imaging in the far-UV also depends on very low background. The LUCI proposal argues that the lunar environment removes several noise contributors present in low-Earth-orbit telescopes [17]. The LUCI proposal keeps the Sun at least 40 degrees off the line of sight at all times [17].",
+      "limitations": "The instruments described here are few, span different decades, and were built for different purposes. Their specifications therefore do not form a single class specification. Several limitations apply across the article.\n\n- The wavelength band for LAMP is not confirmed in a primary source read for this article.\n- The mass, power and dimensions are not publicly specified for most examples, and the two numerical values that circulate in secondary sources (22 kg for the Apollo camera; 6.1 kg and 4.0 W for LAMP) were not verified.\n- The Chang'e-3 EUV camera's centre wavelength is given as 30.2 nm in the 2014 calibration abstract and as 30.4 nm in the EPSC 2024 abstract. The primary full text was not read.\n- The UPI-TEX cadence is a JAXA design expectation, not a measured performance.\n- LUCI and AeSI are concepts only. LUCI's 2016 design was planned for a balloon flight, and no subsequent flight is reported in the sources reviewed.\n- The article does not recommend lunar landing sites, and it does not assert compatibility with any named lander, rover or spacecraft.",
+      "transportation_and_deployment": {
+        "overview": "**Surface payloads (Apollo 16 camera; Chang'e-3 EUV camera).** A surface UV imager must be integrated with an Earth-side payload configuration, launched, transferred to the Moon, delivered to the surface, deployed, aligned and connected to power and data. The Apollo 16 crew operated the camera on the lunar surface, and the NRL paper records that operation from 21 to 23 April 1972 [2][3]. The sources read do not give the detailed handling sequence. The Chang'e-3 EUV camera is described as Moon-based and was calibrated before launch [5]; the sources read do not describe its mounting on the lander in detail. No lander-specific interface evidence was reviewed for this article, so compatibility with any named lander is not asserted.\n\n**Orbiter payloads (LAMP; UPI-TEX).** An orbiter UV imager must be integrated with a spacecraft, launched, transferred to lunar orbit, commissioned and operated within the spacecraft's attitude and thermal limits. LAMP is an LRO instrument, and UPI was a SELENE (Kaguya) instrument [11][14][15]. The sources read do not give interface details, such as mounting, data rate or thermal interfaces, for either instrument.\n\n**Concept payloads (LUCI; AeSI).** LUCI was proposed as a lunar lander payload in the 2014 paper [17] and as a balloon and nanosatellite-compatible design in the 2016 paper [18]. Neither paper establishes a verified interface with a specific lander or spacecraft in the sources read. AeSI is a study of a lunar-surface interferometer and has no interface description in the abstract [19].",
+        "transportation_process": [
+          "Integrate the instrument with a lunar surface payload configuration or an orbiter, including optics, detector, electronics and thermal interfaces (not verified for any named lander or spacecraft).",
+          "Launch from Earth and transfer to the Moon or to lunar orbit.",
+          "Land (surface payloads) or insert into lunar orbit (orbiter payloads).",
+          "Deploy, align and commission the instrument, then connect power, data and pointing interfaces.",
+          "Operate within illumination and viewing windows (for example UPI-TEX shade and Earth-visibility windows; LAMP reflected sky-glow geometry)."
+        ],
+        "deployment_methods": "**Surface payloads (Apollo 16 camera; Chang'e-3 EUV camera).** A surface UV imager must be integrated with an Earth-side payload configuration, launched, transferred to the Moon, delivered to the surface, deployed, aligned and connected to power and data. The Apollo 16 crew operated the camera on the lunar surface, and the NRL paper records that operation from 21 to 23 April 1972 [2][3]. The sources read do not give the detailed handling sequence. The Chang'e-3 EUV camera is described as Moon-based and was calibrated before launch [5]; the sources read do not describe its mounting on the lander in detail. No lander-specific interface evidence was reviewed for this article, so compatibility with any named lander is not asserted.",
+        "historical_examples": "The Apollo 16 camera (Example 1) and the SELENE (Kaguya) UPI-TEX telescope (Example 4) are the flown examples in this article; see the Historical Significance section for the historical context.",
+        "compatibility_assessment": "**Concept payloads (LUCI; AeSI).** LUCI was proposed as a lunar lander payload in the 2014 paper [17] and as a balloon and nanosatellite-compatible design in the 2016 paper [18]. Neither paper establishes a verified interface with a specific lander or spacecraft in the sources read. AeSI is a study of a lunar-surface interferometer and has no interface description in the abstract [19]. **Orbiter payloads (LAMP; UPI-TEX).** An orbiter UV imager must be integrated with a spacecraft, launched, transferred to lunar orbit, commissioned and operated within the spacecraft's attitude and thermal limits. LAMP is an LRO instrument, and UPI was a SELENE (Kaguya) instrument [11][14][15]. The sources read do not give interface details, such as mounting, data rate or thermal interfaces, for either instrument.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 16 Far-Ultraviolet Camera/Spectrograph is described by the Smithsonian as the first telescope on the Moon during Apollo 16 [3]. The NRL and Carruthers papers document its lunar-surface operation and its astronomical and geocoronal observations [1][2]. It is the earliest UV imaging experiment operated from the lunar surface in the sources reviewed.\n\nSELENE (Kaguya) UPI-TEX produced plasmasphere images from lunar orbit, and the Chang'e-3 EUV camera extended that approach to the lunar surface [5][14]. The sources reviewed describe the Chang'e-3 camera as having captured global plasmaspheric images [6]. LRO LAMP is the most recent flown UV imaging spectrograph in this list, and its PSR map is the imagery from this class used in this article [12].",
+      "limitations_and_uncertainties": "The principal evidence gaps are listed here so that they can be checked against the primary documents.\n\n- The full text of the Gladstone et al. (2010) LAMP paper was not read, so LAMP's wavelength range, field of view, detector, mass and power remain unconfirmed [7].\n- The full text of the 2014 Chang'e-3 EUV camera paper was not read. The 30.2 nm and 30.4 nm centre-wavelength discrepancy is therefore open [5][6].\n- The full text of the 1973 Carruthers instrument paper was not read. Its NTRS record confirms the title, author, date and journal, but the instrument's mass and other specifications were not checked [1].\n- The Apollo 16 camera's mass (22 kg) and its post-mission status were not verified in a primary NASA document. The camera's disposition is not stated here.\n- The Smithsonian object photograph is not verified as a direct image asset, because the clean asset address returned HTTP 404 [4].\n- The status of the Queqiao-2 EUV camera is not confirmed beyond the EPSC 2024 abstract [6].\n- LUCI's band, field of view, detector and mass are only partly stated, and no flight is confirmed [17][18].\n- No ISRO Chandrayaan UV imager was identified in the ISRO payload pages consulted for this article. This search was not exhaustive.\n- The UPI-TEX cadence is a stated expectation, not a measured value [14].",
+      "images": [
+        {
+          "id": "lamp_lyman_alpha_psr_map",
+          "description": "LAMP Lyman-alpha map of the Moon's south polar region showing permanently shadowed regions (PSRs) that are darker and redder at far-ultraviolet wavelengths than sunlit ground.",
+          "image_type": "Instrument data map (processed image)",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2024/01/lampwaterpsr.jpg",
+          "source_page_url": "https://science.nasa.gov/image-detail/lampwaterpsr/",
+          "publisher": "NASA Science (LRO LAMP team: NASA/GSFC/SwRI)",
+          "credit": "NASA/GSFC/SwRI",
+          "caption": "This image, produced by LAMP aboard NASA's LRO, shows features at the Moon's south pole in the regions that lie in perpetual darkness. Many PSRs are darker at far-ultraviolet wavelengths and redder than nearby sunlit surface areas; the darker tone is consistent with large surface porosity and the reddening with water frost, according to the source page.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, fetched and saved as a JPEG (600 x 592 pixels as decoded; EXIF metadata reports a different size, so full-resolution download was not checked). The source page HTML (image-detail/lampwaterpsr/) lists lampwaterpsr.jpg as its image, and the page's caption and credit match this record. The page's resized variant (?w=300) was not used. The source page gives no specific licence and links NASA Brand and Usage Guidelines; reuse status is not treated as public domain. Page last updated 19 January 2024, per the source page."
+        },
+        {
+          "id": "apollo16_fuv_camera_museum_object",
+          "description": "Smithsonian National Air and Space Museum object record photograph of the Camera, Lunar Surface Ultraviolet, Apollo 16 (catalogue A19830142000).",
+          "image_type": "Museum object photograph (not embedded in article; source-page reference only)",
+          "image_url": null,
+          "source_page_url": "https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Transferred from the Johnson Spaceflight Center (object record credit line)",
+          "caption": "Camera, Lunar Surface Ultraviolet, Apollo 16, National Air and Space Museum object A19830142000. The museum object record lists overall dimensions of 49.5 x 78.7 x 53.3 cm.",
+          "section_placements": [],
+          "notes": "image_url is null. The object page's gallery image is served from ids.si.edu/ids/deliveryService with an id query string; the clean form without the query string returned HTTP 404, and the query-string form (not stored here) returned HTTP 200 image/jpeg. Under the URL policy the clean URL is unusable, so image_url is null. The image is not embedded in the Markdown; the Markdown refers to the source page with a link. The Smithsonian states that usage conditions apply and refers to its Terms of Use. Asset identity was not verified against the object page's direct image, so no image is claimed."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lamp_lyman_alpha_psr_map",
+          "description": "LAMP Lyman-alpha map of the Moon's south polar region showing permanently shadowed regions (PSRs) that are darker and redder at far-ultraviolet wavelengths than sunlit ground.",
+          "image_type": "Instrument data map (processed image)",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2024/01/lampwaterpsr.jpg",
+          "source_page_url": "https://science.nasa.gov/image-detail/lampwaterpsr/",
+          "publisher": "NASA Science (LRO LAMP team: NASA/GSFC/SwRI)",
+          "credit": "NASA/GSFC/SwRI",
+          "caption": "This image, produced by LAMP aboard NASA's LRO, shows features at the Moon's south pole in the regions that lie in perpetual darkness. Many PSRs are darker at far-ultraviolet wavelengths and redder than nearby sunlit surface areas; the darker tone is consistent with large surface porosity and the reddening with water frost, according to the source page.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, fetched and saved as a JPEG (600 x 592 pixels as decoded; EXIF metadata reports a different size, so full-resolution download was not checked). The source page HTML (image-detail/lampwaterpsr/) lists lampwaterpsr.jpg as its image, and the page's caption and credit match this record. The page's resized variant (?w=300) was not used. The source page gives no specific licence and links NASA Brand and Usage Guidelines; reuse status is not treated as public domain. Page last updated 19 January 2024, per the source page."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "citation": "Carruthers, G. R. (1973). Apollo 16 far-ultraviolet camera/spectrograph – Instrument and operations. Applied Optics, vol. 12, reprint record, NASA Technical Reports Server (NTRS 19730058363).",
+          "url": "https://ntrs.nasa.gov/citations/19730058363"
+        },
+        {
+          "number": 2,
+          "citation": "Carruthers, G. R. (1976). Apollo 16 far-ultraviolet imagery and spectra of the Large Magellanic Cloud. NASA Technical Reports Server (NTRS 19760022008, dated 15 June 1976).",
+          "url": "https://ntrs.nasa.gov/api/citations/19760022008/downloads/19760022008.pdf"
+        },
+        {
+          "number": 3,
+          "citation": "Smithsonian National Air and Space Museum, \"Apollo 16\" (mission story).",
+          "url": "https://airandspace.si.edu/explore/stories/apollo-missions/apollo-16"
+        },
+        {
+          "number": 4,
+          "citation": "Smithsonian National Air and Space Museum, object record \"Camera, Lunar Surface Ultraviolet, Apollo 16\" (catalogue A19830142000).",
+          "url": "https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16"
+        },
+        {
+          "number": 5,
+          "citation": "Chen, B., et al. (2014). Development and calibration of the Moon-based EUV camera for Chang'e-3. Research in Astronomy and Astrophysics, 14(12), 1654–1663.",
+          "url": "https://doi.org/10.1088/1674-4527/14/12/013"
+        },
+        {
+          "number": 6,
+          "citation": "European Planetary Science Congress 2024, abstract EPSC2024-478 (Queqiao-2 EUV camera and predecessor Chang'e-3 camera).",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-478.html"
+        },
+        {
+          "number": 7,
+          "citation": "Gladstone, G. R., et al. (2010). LAMP: The Lyman Alpha Mapping Project on NASA's Lunar Reconnaissance Orbiter Mission. Space Science Reviews, 150, 161–181.",
+          "url": "https://doi.org/10.1007/s11214-009-9578-6"
+        },
+        {
+          "number": 8,
+          "citation": "NASA Scientific Visualization Studio, \"LAMP: Peering Into the Lunar Dark\" (page last updated 3 May 2023).",
+          "url": "https://svs.gsfc.nasa.gov/10755"
+        },
+        {
+          "number": 9,
+          "citation": "NASA Lunar Orbital Data Explorer (ODE), LRO LAMP instrument page.",
+          "url": "https://ode.rsl.wustl.edu/Moon/pagehelp/Content/Missions_Instruments/Lunar%20Reconnaissance%20Orbiter%20(LRO)/LAMP/Intro.htm"
+        },
+        {
+          "number": 10,
+          "citation": "NASA Planetary Data System (PDS) context record, LRO LAMP instrument.",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:lamp.lro"
+        },
+        {
+          "number": 11,
+          "citation": "NASA Science, Lunar Reconnaissance Orbiter (LRO) mission page.",
+          "url": "https://science.nasa.gov/mission/lro/"
+        },
+        {
+          "number": 12,
+          "citation": "NASA Science image page, \"Lamp Lyman Alpha Map\" (NASA/GSFC/SwRI; page dated 19 January 2024).",
+          "url": "https://science.nasa.gov/image-detail/lampwaterpsr/"
+        },
+        {
+          "number": 13,
+          "citation": "Horvath, D. G., et al. (2010). Mapping of the Moon in the Ultraviolet: the Lyman Alpha Mapping Project. APS Joint Fall Meeting of the Texas Sections, abstract.",
+          "url": "https://meetings-archive.aps.org/tsf/2010/fp1/17/"
+        },
+        {
+          "number": 14,
+          "citation": "JAXA SELENE (Kaguya) project, Upper-atmosphere and Plasma Imager (UPI) equipment page.",
+          "url": "https://www.kaguya.jaxa.jp/en/equipment/upi_e.htm"
+        },
+        {
+          "number": 15,
+          "citation": "JAXA DARTS archive, SELENE (Kaguya) mission page.",
+          "url": "https://darts.isas.jaxa.jp/en/missions/kaguya"
+        },
+        {
+          "number": 16,
+          "citation": "JAXA DARTS archive, dataset \"SELENE UPI-TEX plasmasphere images (HeII 30.4 nm)\".",
+          "url": "https://darts.isas.jaxa.jp/datasets/darts:sln-e-tex-5-plasmasphere-v1.0/"
+        },
+        {
+          "number": 17,
+          "citation": "Safonova, M., et al. (2014). Prospect for UV observations from the Moon. Astrophysics and Space Science, 353(2). arXiv:1410.3266.",
+          "url": "https://arxiv.org/abs/1410.3266"
+        },
+        {
+          "number": 18,
+          "citation": "Mathew, J., et al. (2016). Prospect for UV observations from the Moon. II. Instrumental design of an ultraviolet imager LUCI. arXiv:1610.02220.",
+          "url": "https://arxiv.org/abs/1610.02220"
+        },
+        {
+          "number": 19,
+          "citation": "Rau, G., et al. (2024). Artemis-enabled Stellar Imager (AeSI): A lunar long-baseline UV/optical imaging interferometer. Proc. SPIE 13095. arXiv:2408.04699.",
+          "url": "https://arxiv.org/abs/2408.04699"
+        },
+        {
+          "number": 20,
+          "citation": "Chang'e-3 Lunar-based Ultraviolet Telescope (LUT), photometric calibration paper (arXiv:1412.3870; catalogue 230 cross-reference).",
+          "url": "https://arxiv.org/abs/1412.3870"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "LRO LAMP example": "payload.article.physical_specifications.examples[2].images"
+    },
+    "url_policy": "All image_url, source_page_url and reference URLs in this file have query strings and fragments removed. The LAMP direct image asset was verified (HTTP 200, image/jpeg) and is listed on its NASA source page. The Apollo 16 museum-object photograph has image_url null: its clean asset address returned HTTP 404, so it is referenced only by the linked source page and is not embedded in the Markdown."
+  },
+  "data_quality_notes": [
+    "Chang'e-3 Moon-based EUV camera centre wavelength conflict: the RAA 2014 abstract (Chen et al.) gives 30.2 nm with a 4.6 nm bandwidth; the EPSC2024-478 abstract gives 30.4 nm for the predecessor camera. The full text of the 2014 paper was not read, so the discrepancy is unresolved.",
+    "LRO LAMP specifications not verified from a primary document: spectral range (secondary summaries say 57-196 nm; the APS 2010 poster abstract read in full gives no range; NASA SVS says only 'the ultraviolet region'), field of view, detector, mass, power and dimensions are null or not publicly specified. A launch-era press summary's 6.1 kg and 4.0 W were not used. The Gladstone et al. (2010) Space Science Reviews full text was not read (DOI resolves; Springer login redirect encountered).",
+    "Apollo 16 Far-UV Camera/Spectrograph mass (22 kg) comes from a secondary wiki summary and is not verified; mass is null. The NRL paper (NTRS 19760022008) states the instrument was operated on the lunar surface 21-23 April 1972 and that imagery covered 1050-1600 A and 1250-1600 A; the Carruthers 1973 instrument paper (NTRS 19730058363) was read only as an NTRS record. The post-mission disposition of the camera was not verified against a NASA primary source.",
+    "Apollo 16 camera photograph: image_url is null. The Smithsonian object page's gallery image has a query-string delivery URL that returned HTTP 200 image/jpeg, but the clean URL returned HTTP 404, so the image cannot be stored under the URL policy.",
+    "Queqiao-2 EUV camera (30.4 nm and 83.4 nm) is reported in the EPSC2024-478 abstract as carried by Queqiao-2; operating status and performance are not confirmed. It is noted in prose only and not listed as an example.",
+    "LUCI (Lunar Ultraviolet Cosmic Imager) is proposed or at design stage only: the 2014 proposal (Safonova et al.) states 130-180 nm and a Team Indus lander; the 2016 design (Mathew et al.) gives a weight below 2 kg in the abstract, with no band in nm, detector, field of view or power. A secondary summary gives a 200-320 nm NUV band, which was not verified in the design paper. No flight is confirmed.",
+    "AeSI (Artemis-enabled Stellar Imager) is an in-study UV/optical interferometer concept (Rau et al. 2024, SPIE); no baseline, band, mass or power is stated in the arXiv abstract read, and it is not treated as a payload example.",
+    "Chandrayaan: no ISRO Chandrayaan UV imager was identified in the ISRO payload brochure and payload pages returned by search; this was not an exhaustive check of ISRO documentation.",
+    "The Chang'e-3 Lunar-based Ultraviolet Telescope (LUT) is cross-referenced to catalogue 230 (Ultraviolet telescope) and is not treated as a UV imager example here; its specifications (150 mm aperture, F/3.75, 1024 x 1024 CCD, 1.36 deg field) are from arXiv:1412.3870 and its author list was not recorded in this run.",
+    "UPI-TEX cadence ('every 10 minutes') is a JAXA statement of expected coverage, not a measured value. The DARTS dataset page was checked for its title and HTTP status only; exposure and unit details were not read in full.",
+    "Lander and spacecraft compatibility is not asserted for any example. The surface examples (Apollo 16, Chang'e-3) and orbiter examples (LAMP on LRO, UPI on SELENE/Kaguya) have no verified interface evidence in the sources read."
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "catalogue_id": 70,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 70,
+    "name": "Gas chromatograph",
+    "article": {
+      "overview": "A gas chromatograph (GC) separates a mixture of gases or vapours into its components before they are measured. A carrier gas pushes the sample through a long, narrow column whose inner wall is coated with a material that holds different molecules for different lengths of time, so the components leave the column in sequence [5]. A GC on its own reports when each component emerges and how much of it is present. For identification it is usually paired with a detector, most often a mass spectrometer, which sorts the arriving molecules by mass. On planetary missions a GC is used to analyse gases released when soil or rock is heated. No lunar gas chromatograph has been confirmed operating on the Moon in the sources accessed for this article. The examples below are a GC flown on Mars in the Sample Analysis at Mars (SAM) suite [5][6][7], a GC coupled to a neutral gas mass spectrometer planned for the Russian Luna-Resurs / Luna-27 lander, which the arXiv paper gives as planned for 2028 [1] while the Bern mission page lists an outdated 2025 date [2][3], and a GC-MS for the NASA Resource Prospector (RESOLVE) mission, which was tested in 2015 and then cancelled [4][8].",
+      "description": "A gas chromatograph has four functional parts in planetary use. First, a sample is introduced, either as a gas or as gas released by heating. In the Luna-27 design, regolith is loaded into a thermal analyser, TA-L, which contains eight single-use pyrolysis cells that can be heated to 1000 °C, plus a low-temperature desorption device for water and carbon dioxide already adsorbed in the regolith [1]. Second, a carrier gas moves the sample through the separation column. The SAM fact sheet describes helium as the carrier gas, pushing sample gas through a coated tube that is wound into a coil to save space, with lighter molecules exiting first and heavier molecules retained longer [5]. Third, the separated fractions pass to a detector. In the Luna-27 chain the GC-L output is passed to a detector, and the Bern project describes the NGMS as a time-of-flight mass spectrometer that receives gas pre-separated by a miniaturised GC [3]. In SAM, the separated gases are passed to a quadrupole mass spectrometer and a tunable laser spectrometer [5][6]. Fourth, software and telemetry record the detector signal against time, which is how the separated components are identified and quantified. Sources for the lunar examples describe the gas-analysis sequence as taking roughly 40 to 90 minutes per sample [1].",
+      "scientific_purpose_and_applications": "The purpose of a planetary gas chromatograph is to separate volatile compounds released from a solid sample so that they can be identified and measured one group at a time. For the Moon, the main target is the volatile fraction of regolith, including water and carbon dioxide and their isotopic forms. The Luna-27 Gas Analysis Package is described as a tool for comprehensive analysis of lunar soil, and its gas chromatograph is the stage that separates the gases released from pyrolysed samples before they reach the detectors [1]. The Bern project describes its miniaturised GC as pre-separating volatiles before the NGMS analyses them, which lets a compact mass spectrometer examine compounds that would otherwise overlap [3]. The RESOLVE mission described a GC-MS as the main instrument for identifying volatiles evolved from lunar regolith and for supporting in-situ resource utilisation, meaning the use of local materials for water, air and propellant [4]. On Mars, the SAM GC was designed to support analysis of atmospheric and solid samples, including organic compounds [5][6]. The sources accessed do not give an organic-detection limit for any lunar GC.",
+      "operating_principle": "A gas chromatograph works by partitioning. Each compound in a gas mixture moves through the column at a rate that depends on how strongly it interacts with the coating on the column wall. Compounds with weaker interaction leave first, so the column spreads a mixture out in time [5]. The time a compound takes to leave the column is its retention time, which is used to group signals. The detector then measures each group. A thermal conductivity detector responds to the change in gas composition, whereas a mass spectrometer ionises the molecules and sorts the fragments by mass-to-charge ratio. The SAM quadrupole mass spectrometer uses electric fields to sort charged molecules and fragments by mass, producing a mass spectrum [5]. For the Luna-27 chain, the gas chromatograph sits between a thermal analyser and downstream measurement units. The Russian and Bern descriptions give the sequence as thermal analyser, then GC-L, then detectors, with a diode laser spectrometer (DLS-L) embedded in the GC-L unit [1]. Two design issues are common to planetary instruments. First, the column and detectors must operate under the carrier-gas and vacuum conditions of the mission. Second, the time needed to separate and measure a sample must fit the mission's sample-handling timeline, which the Luna-27 description gives as 40 to 90 minutes [1].",
+      "scientific_importance": "A gas chromatograph gives information that elemental instruments cannot. It can separate and identify volatile compounds as distinct molecules, which matters where water, carbon compounds and other volatiles may be bound in the regolith in different forms. For lunar science, the key questions are the amount and isotopic composition of volatiles in the polar regolith and whether their chemistry records their origin. The Luna-27 instrument team states that in-situ isotopic measurements of volatiles could give a direct study of lunar soil without the contamination risk of returned samples, and it links the work to the Soviet Luna 16, 20 and 24 sample-return results [1]. The SAM mission, on Mars, provided a flown example of a GC combined with mass spectrometry and laser spectroscopy on a planetary surface [5][6][7]. The RESOLVE project treated GC-MS as the core technique for identifying volatiles in lunar regolith [4]. No lunar result from a gas chromatograph is verified in the sources accessed for this article.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power specification for a gas chromatograph payload. The three examples below describe different instruments in different development stages, and their numbers should not be compared as if they described one design. Each value is tied to a named instrument and source. Where a source does not publish a value, this article says 'not publicly specified' and does not infer one. The sources accessed do not publish a mass, power or dimensions for any lunar gas chromatograph on its own.",
+        "examples": [
+          {
+            "name": "SAM gas chromatograph (Mars Science Laboratory, Curiosity rover)",
+            "type": "Flown planetary instrument on Mars",
+            "status_note": "The SAM suite landed on Mars with the Curiosity rover on the evening of 5 August 2012 PDT [7]. This article does not confirm current operational status.",
+            "mass_kg": null,
+            "dimensions": "Described by NASA as roughly the size of a microwave oven for the whole SAM suite [5]. Separate GC dimensions are not publicly specified in the sources accessed.",
+            "power": "Not publicly specified in the sources accessed.",
+            "gc_configuration": "A long, narrow tube wound into a coil, with helium as the carrier gas [5]. The NASA fact sheet describes a single column. The number of columns is not reconciled across the sources accessed.",
+            "other_published_values": [
+              "Sample capacity: 74 sample cups; the mission goal was at least 74 samples over a core mission of two Earth years [5].",
+              "Oven temperature: about 1000 °C [5].",
+              "Companion detectors: a quadrupole mass spectrometer and a tunable laser spectrometer [5][6]."
+            ],
+            "source_urls": [
+              "https://science.gsfc.nasa.gov/sam/samfactsheet.html",
+              "https://science.nasa.gov/photojournal/sample-analysis-at-mars-instrument-side-panels-off"
+            ],
+            "images": [
+              {
+                "id": "sam_gc_instrument_suite_photo",
+                "description": "Sample Analysis at Mars (SAM) instrument suite photographed with its side panels removed, showing the gas chromatograph, quadrupole mass spectrometer and tunable laser spectrometer.",
+                "image_type": "Instrument photograph (NASA Photojournal)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia16/pia16100/PIA16100.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/sample-analysis-at-mars-instrument-side-panels-off",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "The Sample Analysis at Mars (SAM) instrument with side panels removed. NASA identifies the visible instruments as a tunable laser spectrometer, a quadrupole mass spectrometer and a gas chromatograph. The source page states the photograph was taken in 2010 at NASA Goddard Space Flight Center and does not state whether the unit is flight hardware or a test unit.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct NASA asset URL (JPG, about 1.08 MB) with no query string or fragment. The URL returned HTTP 200 with image/jpeg. Image checked visually. Flight or test status of the pictured unit is not stated on the source page."
+              }
+            ]
+          },
+          {
+            "name": "Luna-Resurs / Luna-27 gas chromatograph (GC-L) with neutral gas mass spectrometer (NGMS)",
+            "type": "Planned lunar lander payload, not flown in the sources accessed",
+            "status_note": "The Luna-27 lander is described as planned for the south polar region, with a landing and launch in 2028 [1]. The University of Bern mission page calls it a planned mission [2]. No launch has occurred.",
+            "mass_kg": null,
+            "dimensions": "GC-L dimensions: not publicly specified in the sources accessed. NGMS: 26 × 15 × 18 cm maximum size [3].",
+            "power": "GC-L power: not publicly specified in the sources accessed. NGMS: 25 W for full operation [3].",
+            "gc_configuration": "The Bern page describes a miniaturised GC developed with French and Russian collaborators that pre-separates volatiles before the NGMS analyses them. It gives no column type, length, stationary phase or temperature programme [3].",
+            "other_published_values": [
+              "NGMS mass: about 3.5 kg [3].",
+              "NGMS operating temperature range: −30 °C to +80 °C [3].",
+              "Pyrolysis oven: heats regolith samples to 1000 °C [3]. The Luna-27 description gives eight pyrolysis cells in the thermal analyser TA-L [1].",
+              "NGMS flight status: two NGMS flight units are held at the University of Bern, awaiting a mission [3]."
+            ],
+            "source_urls": [
+              "https://arxiv.org/pdf/2311.14608",
+              "https://www.luna-ngms.unibe.ch/instrument/index_eng.html"
+            ],
+            "images": [
+              {
+                "id": "luna_resurs_ngms_unit_photo",
+                "description": "Neutral Gas Mass-Spectrometer (NGMS) unit from the University of Bern, shown with a housing label reading 'Luna-Resource-1 Lander, Neutral Gas Mass-Spectrometer FU s/n 1'.",
+                "image_type": "Instrument photograph (university project page)",
+                "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110124/1_NGMS-PFM-1200_eng.jpg",
+                "source_page_url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html",
+                "publisher": "University of Bern (LUNA-NGMS project)",
+                "credit": "University of Bern (credit line not stated on the source page)",
+                "caption": "Neutral gas mass spectrometer (NGMS) for the Luna-Resurs lander. The source page caption describes the two NGMS flight instruments, NGMS-PFM and NGMS-FS, as still at the University of Bern and waiting for their next mission.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct university asset URL (JPG) with no query string or fragment. The URL returned HTTP 200 with image/jpeg and was checked visually. The housing label reads 'FU s/n 1' while the source caption refers to NGMS-PFM; this discrepancy is unresolved. The image shows the mass spectrometer, not the gas chromatograph. Reuse rights are not verified."
+              },
+              {
+                "id": "luna_ngms_cad_model",
+                "description": "CAD model of the Luna NGMS instrument from the University of Bern project page.",
+                "image_type": "Technical CAD rendering",
+                "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110299/1_NGMSCADmodelohneText_eng.jpg",
+                "source_page_url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html",
+                "publisher": "University of Bern (LUNA-NGMS project)",
+                "credit": "University of Bern (credit line not stated on the source page)",
+                "caption": "CAD model of the Luna NGMS instrument, shown in the operations-modes section of the source page.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct university asset URL (JPG) with no query string or fragment. The URL returned HTTP 200 with image/jpeg. The image was not visually inspected in this run; the caption is taken from the source page. The CAD model depicts the NGMS, not the gas chromatograph. Reuse rights are not verified."
+              }
+            ]
+          },
+          {
+            "name": "RESOLVE LAVA gas chromatograph-mass spectrometer (NASA Resource Prospector)",
+            "type": "Engineering integration and test hardware; mission cancelled before flight",
+            "status_note": "NASA's Resource Prospector mission was cancelled in April 2018 [8]. The 2015 integration work and field test were not flight operations [4].",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in the sources accessed.",
+            "power": "Not publicly specified in the sources accessed.",
+            "gc_configuration": "The report describes the LAVA GC-MS as the main instrument for volatiles from regolith and records a GC used alone in the 2015 field test. Column data are not given [4].",
+            "other_published_values": [
+              "Two candidate mass spectrometers were compared: a baseline magnetic-sector unit from OI Analytical and a quadrupole unit from Inficon [4].",
+              "The flight-forward design requires pumps for the mass spectrometer, which were not part of the 2015 field-test configuration [4]."
+            ],
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20150022135/downloads/20150022135.pdf",
+              "https://spacepolicyonline.com/news/nasa-resource-prospector-no-longer-a-good-fit-for-lunar-program/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "There is no single dimension set for a gas chromatograph payload. The SAM suite is described by NASA as roughly microwave-oven size [5]. The NGMS, which is the mass spectrometer paired with the Luna-27 GC-L, measures 26 × 15 × 18 cm [3]. The GC-L itself has no published dimensions in the sources accessed [1][3].",
+        "mass_and_weight": "The NGMS has a published mass of about 3.5 kg [3]. The DLS-L sub-unit inside the GC-L is listed at 650 g [1]. The GC-L, SAM GC and RESOLVE GC-MS have no published mass in the sources accessed.",
+        "power_requirements": "The NGMS is listed at 25 W for full operation [3]. The DLS-L is listed at 5 to 7 W in the table and below 5.5 W in the operating-mode text [1]. The SAM and GC-L power requirements are not publicly specified in the sources accessed."
+      },
+      "environmental_and_operational_requirements": "A lunar gas chromatograph must operate in lunar surface conditions, which include a near-vacuum atmosphere, large temperature swings and radiation. One Luna-27 source gives a lunar surface temperature range of −160 °C to +120 °C depending on illumination [1]. The Luna-27 lander is described as having an active surface lifetime of at least one Earth year and a sample analysis cycle of 40 to 90 minutes [1]. The NGMS, the mass spectrometer paired with the GC-L, has a published operating range of −30 °C to +80 °C [3]. The RESOLVE test campaign of 2015 was not representative of the lunar environment: it ran at one gravity and atmospheric pressure, whereas the flight design would operate at one-sixth gravity and high vacuum [4]. Operationally, the instrument chain depends on heating, carrier gas and the timing of sample handling, so pyrolysis temperature and sample size are design constraints that the sources describe only in general terms [1][3][4].",
+      "limitations": "A gas chromatograph reports the time and amount of each separated compound, not its exact molecular structure, unless it is paired with a detector such as a mass spectrometer. Pyrolysis can alter the chemistry of the sample, so the gases measured may not match the original volatile content of the regolith. The Luna-27 system uses eight single-use pyrolysis cells in TA-L [1], so the number of samples per mission is limited. The sources accessed do not publish detection limits, mass resolution or calibration results for any lunar GC. Any comparison of SAM, Luna-27 and RESOLVE must recognise that they differ in mission, development stage and instrument configuration.",
+      "transportation_and_deployment": {
+        "overview": "A lunar gas chromatograph would most likely be delivered as part of a lander's surface experiment package, with its sample inlet fed by a regolith-handling system, as in the Luna-27 design. A RESOLVE-type instrument would instead be mounted on a rover and fed from a separate oven subsystem. No lunar gas chromatograph is confirmed for a specific lander or rover in the sources accessed.",
+        "transportation_process": [
+          "Integrate the lander's Gas Analysis Package on Earth. The Luna-27 package includes TA-L, GC-L and DLS-L, and the DLS-L is embedded within the GC-L [1].",
+          "Launch on a launch vehicle toward a lunar south polar landing site. The Luna-27 mission is described as a heavy lander with a planned 2028 landing [1].",
+          "Land the lander and deploy its manipulator, the Lunar Manipulator Complex, which loads regolith samples into TA-L [1].",
+          "Route released gases from TA-L into GC-L, then to the DLS-L and mass spectrometer units. The DLS-L shares gas, data and power lines with the GC-L [1].",
+          "Maintain instrument temperatures within the published operating range. The NGMS is specified for −30 °C to +80 °C [3]."
+        ],
+        "deployment_methods": "For the Luna-27 concept, deployment is part of the lander's surface operations: the manipulator delivers regolith to the thermal analyser, and the gas chain runs automatically in the sequence described [1]. For RESOLVE, the design used a rover-mounted payload in which the OVEN subsystem heated regolith and sent gas to LAVA through the LOVEN transfer line [4].",
+        "historical_examples": "SAM is a flown example: its GC was carried on the Curiosity rover that landed on 5 August 2012 PDT [5][6][7]. The RESOLVE 2015 integrated field test showed the rover-payload integration path, but it was not a flight operation [4].",
+        "compatibility_assessment": "No lunar gas chromatograph is verified for a specific lander or rover in the sources accessed. The Luna-27 interface details, such as mass budget, mounting points and landing loads, are not published in the sources accessed, so compatibility cannot be assessed beyond the stated lander concept [1][2]. Compatibility with any other lander would need verified interface, mass, power and thermal data.",
+        "images": []
+      },
+      "historical_significance": "The most concrete flown GC example in this article is SAM. The Curiosity rover landed in Gale Crater on 5 August 2012 PDT, carrying a suite that includes a gas chromatograph and two detectors, and NASA publishes its oven, sample-cup and carrier-gas details [5][6][7]. On the Moon, the Russian Luna-Resurs programme has been the main effort. Its gas analysis package and NGMS were developed as an integrated chain and are described as planned for a lander mission [1][2][3]. The NASA RESOLVE programme developed a lunar-oriented GC-MS as the main volatile instrument, tested it in 2015, and then cancelled the mission in 2018 [4][8]. No lunar gas chromatograph is confirmed as operating on the Moon in the sources accessed.",
+      "limitations_and_uncertainties": "The payload name 'gas chromatograph' describes a class of instrument, not one design. The SAM, Luna-27 and RESOLVE examples differ in mission, development stage and configuration, so their values are not directly comparable.\n\n**Gaps in the evidence:**\n\n- No mass, power, dimensions, column data or separation performance are published for the Luna-27 GC-L in the sources accessed [1][3].\n- The Luna-27 launch date is 2028 in the arXiv paper [1], while the Bern mission page gives 2025 [2], and a search summary reports 2029 to 2030 without a primary source. The date is not confirmed.\n- The SAM column count differs: the NASA fact sheet describes one coiled column [5], while a search summary reports six columns. This was not resolved.\n- The DLS-L power is given as 5 to 7 W in the table and below 5.5 W in the text of the same paper [1].\n- The Bern NGMS photograph is labelled 'FU s/n 1' while its caption refers to NGMS-PFM [3].\n- The Bern source gives an NGMS image caption, but the image rights are not verified.\n- A 2015 Planetary and Space Science prototype paper on the Luna-Resurs GC-MS was identified in search but could not be read; ScienceDirect returned HTTP 403, so its specifications are not used here.\n- The RESOLVE internship report is an internal NASA KSC document. It is used for descriptive integration facts only, not for performance claims.",
+      "images": [
+        {
+          "id": "sam_gc_instrument_suite_photo",
+          "description": "Sample Analysis at Mars (SAM) instrument suite photographed with its side panels removed, showing the gas chromatograph, quadrupole mass spectrometer and tunable laser spectrometer.",
+          "image_type": "Instrument photograph (NASA Photojournal)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia16/pia16100/PIA16100.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/sample-analysis-at-mars-instrument-side-panels-off",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "The Sample Analysis at Mars (SAM) instrument with side panels removed. NASA identifies the visible instruments as a tunable laser spectrometer, a quadrupole mass spectrometer and a gas chromatograph. The source page states the photograph was taken in 2010 at NASA Goddard Space Flight Center and does not state whether the unit is flight hardware or a test unit.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA asset URL (JPG, about 1.08 MB) with no query string or fragment. The URL returned HTTP 200 with image/jpeg. Image checked visually. Flight or test status of the pictured unit is not stated on the source page."
+        },
+        {
+          "id": "luna_resurs_ngms_unit_photo",
+          "description": "Neutral Gas Mass-Spectrometer (NGMS) unit from the University of Bern, shown with a housing label reading 'Luna-Resource-1 Lander, Neutral Gas Mass-Spectrometer FU s/n 1'.",
+          "image_type": "Instrument photograph (university project page)",
+          "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110124/1_NGMS-PFM-1200_eng.jpg",
+          "source_page_url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html",
+          "publisher": "University of Bern (LUNA-NGMS project)",
+          "credit": "University of Bern (credit line not stated on the source page)",
+          "caption": "Neutral gas mass spectrometer (NGMS) for the Luna-Resurs lander. The source page caption describes the two NGMS flight instruments, NGMS-PFM and NGMS-FS, as still at the University of Bern and waiting for their next mission.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct university asset URL (JPG) with no query string or fragment. The URL returned HTTP 200 with image/jpeg and was checked visually. The housing label reads 'FU s/n 1' while the source caption refers to NGMS-PFM; this discrepancy is unresolved. The image shows the mass spectrometer, not the gas chromatograph. Reuse rights are not verified."
+        },
+        {
+          "id": "luna_ngms_cad_model",
+          "description": "CAD model of the Luna NGMS instrument from the University of Bern project page.",
+          "image_type": "Technical CAD rendering",
+          "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110299/1_NGMSCADmodelohneText_eng.jpg",
+          "source_page_url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html",
+          "publisher": "University of Bern (LUNA-NGMS project)",
+          "credit": "University of Bern (credit line not stated on the source page)",
+          "caption": "CAD model of the Luna NGMS instrument, shown in the operations-modes section of the source page.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct university asset URL (JPG) with no query string or fragment. The URL returned HTTP 200 with image/jpeg. The image was not visually inspected in this run; the caption is taken from the source page. The CAD model depicts the NGMS, not the gas chromatograph. Reuse rights are not verified."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "sam_gc_instrument_suite_photo",
+          "description": "Sample Analysis at Mars (SAM) instrument suite photographed with its side panels removed, showing the gas chromatograph, quadrupole mass spectrometer and tunable laser spectrometer.",
+          "image_type": "Instrument photograph (NASA Photojournal)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia16/pia16100/PIA16100.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/sample-analysis-at-mars-instrument-side-panels-off",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "The Sample Analysis at Mars (SAM) instrument with side panels removed. NASA identifies the visible instruments as a tunable laser spectrometer, a quadrupole mass spectrometer and a gas chromatograph. The source page states the photograph was taken in 2010 at NASA Goddard Space Flight Center and does not state whether the unit is flight hardware or a test unit.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct NASA asset URL (JPG, about 1.08 MB) with no query string or fragment. The URL returned HTTP 200 with image/jpeg. Image checked visually. Flight or test status of the pictured unit is not stated on the source page."
+        }
+      ],
+      "references": [
+        {
+          "title": "Spectrometer to Explore Isotopologues of Lunar Volatiles on Luna-27 Lander (Meshcherinov, Gazizov, Kazakov, Spiridonov, Lebedev, Vinogradov, Gerasimov)",
+          "publisher": "arXiv (IKI RAS and TU Wien authors); arXiv:2311.14608",
+          "date": "2023",
+          "url": "https://arxiv.org/pdf/2311.14608"
+        },
+        {
+          "title": "Luna-Resurs / Luna-27 mission page (LUNA-NGMS project)",
+          "publisher": "University of Bern",
+          "date": "undated web page, accessed 2026-11",
+          "url": "https://www.luna-ngms.unibe.ch/mission/index_eng.html"
+        },
+        {
+          "title": "NGMS instrument page (LUNA-NGMS project)",
+          "publisher": "University of Bern",
+          "date": "undated web page, accessed 2026-11",
+          "url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html"
+        },
+        {
+          "title": "LAVA Subsystem Integration and Testing for the RESOLVE Payload of the Resource Prospector Mission: Mass Spectrometers and Gas Chromatography (internship report)",
+          "publisher": "NASA Kennedy Space Center (E. M. Stewart)",
+          "date": "2015-08-07",
+          "url": "https://ntrs.nasa.gov/api/citations/20150022135/downloads/20150022135.pdf"
+        },
+        {
+          "title": "Sample Analysis at Mars (SAM) fact sheet",
+          "publisher": "NASA Goddard Space Flight Center",
+          "date": "undated web page, accessed 2026-11",
+          "url": "https://science.gsfc.nasa.gov/sam/samfactsheet.html"
+        },
+        {
+          "title": "Sample Analysis at Mars Instrument, Side Panels Off (PIA16100)",
+          "publisher": "NASA Science Photojournal",
+          "date": "2012-08-27 (image addition date)",
+          "url": "https://science.nasa.gov/photojournal/sample-analysis-at-mars-instrument-side-panels-off"
+        },
+        {
+          "title": "Mars Science Laboratory Curiosity Rover (mission page)",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "date": "undated web page, accessed 2026-11",
+          "url": "https://www.jpl.nasa.gov/missions/mars-science-laboratory-curiosity-rover-msl/"
+        },
+        {
+          "title": "NASA: Resource Prospector No Longer a Good Fit for Lunar Program (Marcia Smith)",
+          "publisher": "SpacePolicyOnline",
+          "date": "2018-05-03",
+          "url": "https://spacepolicyonline.com/news/nasa-resource-prospector-no-longer-a-good-fit-for-lunar-program/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "SAM gas chromatograph example": "payload.article.physical_specifications.examples[0].images",
+      "Luna-Resurs / Luna-27 GC-L and NGMS example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no verified images)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Lunar gas chromatograph specifications are not published in the sources accessed. The GC-L has no published mass, power, dimensions, column data, mass range, detection limit or calibration result. The Bern NGMS figures (3.5 kg, 26 × 15 × 18 cm, 25 W, −30 to +80 °C) belong to the mass spectrometer, not the GC.",
+    "The Luna-27 launch date conflicts across sources: 2028 in the arXiv paper [1]; 2025 on the Bern mission page, which appears outdated [2]; and 2029 to 2030 in a search summary without a primary source. The date is treated as planned and unconfirmed.",
+    "The Luna-27 status is planned. No primary Roscosmos, IKI or NPO Lavochkin statement from 2026 was found to confirm the schedule or the Gas Analysis Package status.",
+    "The DLS-L power is 5 to 7 W in Table 1 and below 5.5 W in the operating-mode text of the same arXiv paper [1]. Both are reported and not reconciled.",
+    "The Bern NGMS photograph is labelled 'FU s/n 1' while the source caption refers to NGMS-PFM. The image is shown with the label as displayed [3].",
+    "SAM column count is not reconciled: the NASA fact sheet describes one coiled column [5]; a search summary reports six columns, which was not verified against a primary source.",
+    "SAM mass, power and GC-specific dimensions are not publicly specified in the sources accessed. A search summary gives about 40 kg for the whole SAM suite, which was not verified on a NASA primary page and is not used.",
+    "Search-derived claims not used in the article because they could not be verified against a primary source: NGMS mass resolution up to m/Δm = 1200, Luna-Resurs prototype sensitivity around 10⁻¹⁶ mbar, and a two-column (hydrocarbon and noble-gas) GC design. These come from a 2018 EGU abstract and a HAL record surfaced by search.",
+    "A 2015 Planetary and Space Science paper on the Luna-Resurs GC-MS prototype was identified but could not be accessed (ScienceDirect HTTP 403; ResearchGate not retrieved). Its specifications are not used.",
+    "The 2015 RESOLVE report is a NASA KSC internship report. It is used only for descriptive integration facts and the RP'15 test configuration. The Resource Prospector cancellation date (23 April 2018) is from a 2018 SpacePolicyOnline article, not a NASA primary document.",
+    "Image rights: the NASA photojournal image (PIA16100) is credited to NASA. The University of Bern images are credited to the university, but the source page gives no credit line or reuse terms, so reuse rights are not verified.",
+    "Image verification: all three image URLs returned HTTP 200 with the expected image type. The SAM and NGMS flight-unit images were checked visually. The NGMS CAD image was checked for HTTP status and content type only.",
+    "The SAM photograph's flight or test status is not stated on the NASA source page.",
+    "The Mars SAM landing date (5 August 2012 PDT) is from the JPL mission page [7]. SAM's current operating status was not checked in this run.",
+    "No lunar landing-site or location recommendations are included, as deferred by the user."
+  ]
+}

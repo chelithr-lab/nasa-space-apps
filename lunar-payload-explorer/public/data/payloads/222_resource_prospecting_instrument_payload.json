@@ -1,0 +1,163 @@
+{
+  "catalogue_id": 222,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 222,
+    "name": "Resource prospecting instrument",
+    "article": {
+      "overview": "A resource prospecting instrument is a payload that searches for useful materials on the Moon, principally water ice and other hydrogen-bearing volatiles, so that in-situ resource utilisation (ISRU) can be assessed before it is attempted. The name describes a functional role rather than a single design. The two best-documented examples in this article are NASA's Resource Prospector instrument set, whose mission was cancelled in 2018 [4], and ESA's PROSPECT package, which a 2024 paper describes as in hardware manufacturing and integration [2]. The sources read in this run do not show that either has flown, and no value in this article describes flight hardware.",
+      "description": "A resource prospecting instrument is used before or during in-situ resource utilisation to find out whether usable materials are present, where they are, and in what form. On the Moon, the main target discussed in the sources is water ice and other volatiles at the lunar poles [1][5]. Prospecting instruments combine remote sensing, subsurface sensing and, in some designs, sample acquisition and heating, so that a laboratory-style analysis can be carried out on board. Prospecting is distinct from extraction: a prospector identifies and characterises a resource, whereas an extraction or processing system turns it into usable products. Two terms used here are explained for the general reader. Volatiles are substances that evaporate or release gas when heated. Permittivity describes how a material responds to an electric field, and differences in permittivity can help distinguish ice from dry regolith [1].",
+      "scientific_purpose_and_applications": "The purpose of a resource prospecting instrument is to locate, characterise and quantify resources that could support lunar operations, so that engineers and mission planners know where to dig, what form the resource takes and how much is present. For water, the key questions are whether ice or other hydrogen-bearing material is present, how deep it lies, and whether it is mixed with regolith in a form that can be extracted. ESA lists PROSPECT's measurement targets as water ice, sample composition and isotope ratios, and it also plans to test hydrogen-based extraction from minerals and oxygen extraction from regolith as ISRU demonstrations [1]. Isotope ratios add scientific value because they can help distinguish between different sources and histories of volatiles. That is a research question rather than a settled result for any instrument described here.",
+      "operating_principle": "Two broad approaches appear in the sources. The first is neutron spectroscopy. The Resource Prospector neutron spectrometer system (NSS) uses two helium-3 gas proportional counters, one covered by cadmium and one uncovered, to detect thermal and epithermal neutrons. Hydrogen-rich material changes the neutron population, and the instrument was designed to locate hydrogen-bearing deposits in roughly the top metre of regolith [5]. A search summary of the NASA instrumentation paper quotes a hydrogen sensitivity of about 0.5 wt% over approximately 80 to 100 cm depth; this figure was not verified against the full text [5].\n\nThe second approach combines sampling with heating and gas analysis. In the Resource Prospector concept, a near-infrared (NIR) spectrometer acted as a quick assay on drilled material, and only samples showing volatiles were heated in a sealed crucible, with the evolved gas measured by a gas chromatograph-mass spectrometer [5]. This description also comes from a search summary rather than the full paper.\n\nThe PROSPECT package uses a different combination. Its drill reaches up to one metre below the surface, a multispectral imaging system maps regolith composition and obstacles, and a permittivity sensor scans the subsurface for signs of water ice before and during sampling [1]. Samples are heated in ovens that reach nearly 1000 °C, and the released gas is analysed by an ion-trap and a magnetic-sector mass spectrometer to measure volatile species and isotope ratios [1][2].",
+      "scientific_importance": "Water and other volatiles are central to ISRU because their presence and accessibility determine whether consumables such as oxygen and water might be produced on the Moon rather than delivered from Earth [1][2]. A prospecting instrument provides the measurements needed to plan that work. Scientifically, measurements of volatile species and isotope ratios can inform the origin and history of lunar volatiles, but the sources read here describe these as stated measurement targets, not achieved results. The importance of any single instrument therefore depends on whether it is flown and whether its measurements are published.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power figure for a resource prospecting instrument, because the class includes remote spectrometers, subsurface probes, drills and on-board laboratories. The values below describe two specific examples and are tied to their sources. The two examples are not directly comparable, because one is a cancelled NASA instrument set with few published figures and the other is a design-stage European package with detailed design values.",
+        "examples": [
+          {
+            "name": "NASA Resource Prospector instrument set (RESOLVE heritage)",
+            "type": "Cancelled mission instrument set; not flown in the sources read",
+            "status": "Resource Prospector was cancelled as a mission in 2018. NASA stated that selected instruments would continue development for delivery to the Moon on commercial landers [4]. No flight of these instruments is described in the sources read.",
+            "neutron_spectrometer_detectors": "Two helium-3 gas proportional counters, one cadmium-covered and one uncovered (NASA instrumentation paper, search summary only) [5].",
+            "hydrogen_sensitivity_wt_percent_search_summary": 0.5,
+            "hydrogen_sensitivity_depth_cm_search_summary": "approximately 80 to 100",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "design_target_note": "Hydrogen sensitivity and depth figures are quoted from a search summary and are design targets, not measured performance [5].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20160005053/downloads/20160005053.pdf",
+              "https://spacepolicyonline.com/news/nasa-resource-prospector-no-longer-a-good-fit-for-lunar-program/"
+            ],
+            "images": []
+          },
+          {
+            "name": "ESA PROSPECT (ProSEED drill and ProSPA analysis package)",
+            "type": "Design-stage European prospecting package",
+            "status": "According to the 2024 paper, PROSPECT is in hardware manufacturing and integration and is not yet flight-qualified. The flight design will be built, tested and qualified to European engineering standards. No technology readiness level is stated [2].",
+            "mass_kg": {
+              "ProSEED_subsystem_total": 31.8,
+              "ProSEED_drill_and_positioner": 23.4,
+              "ProSPA_total": 13,
+              "ProSPA_analysis_package_AP": 10.35,
+              "ProSPA_sample_inlet_system_SIS": 2.65,
+              "package_total_approximate_per_ESA": 45
+            },
+            "dimensions_mm": {
+              "ProSEED_drill_box_without_PRJ_and_HDRM": [257, 228, 1721],
+              "ProSEED_drill_box_with_PRJ_and_HDRM": [497, 290, 1721],
+              "ProSPA_AP": [277, 135, 374],
+              "ProSPA_SIS": [256, 301.2, 150]
+            },
+            "power_w": {
+              "package_limit_line_1_max": 50,
+              "package_limit_line_2_max": 200,
+              "operations_cycle_average": 85.6,
+              "operations_cycle_peak": 200,
+              "per_unit_power_stated": false
+            },
+            "data_per_operational_cycle_mb_typical": 120,
+            "measurement_requirements_minimum_detectable_ug_per_g": {
+              "H2O": 414,
+              "H": 46,
+              "4He": 14,
+              "C": 124,
+              "N2": 81,
+              "F": 70,
+              "Cl": 30,
+              "S": 715
+            },
+            "measurement_requirements_isotope_targets": {
+              "deuterium_to_hydrogen_delta_2H_per_mil_max_uncertainty": 100,
+              "carbon_delta_13C_per_mil_max_uncertainty": 1,
+              "nitrogen_delta_15N_per_mil_max_uncertainty": 10,
+              "oxygen_delta_18O_per_mil_max_uncertainty": 1,
+              "oxygen_delta_17O_per_mil_max_uncertainty": 22
+            },
+            "source_urls": [
+              "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+              "https://esa.int/Science_Exploration/Human_and_Robotic_Exploration/Prospect_searching_for_water_at_the_lunar_poles"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The two examples differ in scale and architecture. The NASA Resource Prospector set has no verified dimensions in this run. The PROSPECT ProSEED drill box is about 257 × 228 × 1721 mm without the PRJ and HDRM items named in the paper, and the ProSPA analysis package and sample inlet system have their own dimensions as listed in the examples [2]. Dimensions for any new prospecting instrument must be set by its intended measurement method, its drill or sampling requirements and its mounting and thermal constraints.",
+        "mass_and_weight": "Mass is normally expressed in kilograms. The PROSPECT ProSEED subsystem is 31.8 kg and ProSPA is 13 kg, which together are consistent with the approximately 45 kg package total stated by ESA [1][2]. The NASA Resource Prospector set has no verified mass in this run. These masses are design figures and are not a general specification for prospecting instruments.",
+        "power_requirements": "The PROSPECT paper gives package-level power limits of 50 W on line 1 and 200 W on line 2, with an operations cycle averaging 85.6 W and peaking at 200 W [2]. No separate power figure is given for ProSPA or for each ProSEED unit. No verified power figure is available for the NASA Resource Prospector set."
+      },
+      "environmental_and_operational_requirements": "Prospecting at the lunar poles would take place in a thermally extreme environment with large day-night temperature swings, fine dust and no atmosphere [1]. PROSPECT's planned operations are limited to one lunar day, expected to last 5 to 10 Earth days, and the instrument is not designed to survive the lunar night [1]. Its ovens heat samples to nearly 1000 °C, which requires power and thermal management. The lander is expected to deploy a sun-shield over the drill site [1]. For neutron-based prospecting, the instrument must work near the surface and needs stable mounting. The sources read here do not give environmental test levels for either example.",
+      "limitations": "A prospecting instrument can indicate that hydrogen or volatiles are present, but it does not by itself establish how much usable ice exists or whether it can be recovered economically. Neutron sensing averages over the upper metre of regolith and does not on its own identify the chemical form of the hydrogen, so a separate measurement is needed to distinguish water ice from other hydrogen-bearing compounds [5]. Sample-based analysis depends on acquiring a representative sample, and PROSPECT's planned operations last only one lunar day [1]. Both examples are design-stage or cancelled, so the performance values cited here are requirements or design targets rather than demonstrated results [2][4].",
+      "transportation_and_deployment": {
+        "overview": "PROSPECT is described by ESA as delivered to the Moon by a commercial lander under NASA's Commercial Lunar Payload Services (CLPS) initiative. The NASA Resource Prospector set was planned as a rover-borne payload before its mission was cancelled. No transportation design is verified for either example in the sources read.",
+        "transportation_process": [
+          "Integrate the drill, positioner and analysis package with the lander on Earth. The total package mass is about 45 kg [1][2].",
+          "Launch on a launch vehicle and transfer towards the Moon. The launch year stated on ESA's page is 2027, but this was not confirmed against a current mission schedule [1].",
+          "Land with the commercial lander.",
+          "The lander lowers the payload near the surface, deploys a sun-shield over the drill site and releases the hold-downs [1].",
+          "Drill up to one metre into the regolith and collect about eight samples, depending on the time needed to acquire and analyse each one [1].",
+          "Operate for one lunar day, with power and communications provided through the lander [1]."
+        ],
+        "deployment_methods": "The ProSEED drill and positioner place the drill into the regolith. The positioner and drill box dimensions are given in the physical specifications section [2].",
+        "historical_examples": "The Resource Prospector project began as RESOLVE, a rover-borne prospecting and processing concept, and NASA cancelled the mission in 2018 [4][5]. PROSPECT was described in 2020 as part of Russia's Luna-27 mission [3]. Its later plan, as stated on ESA's newer page, involves delivery on a US commercial lander [1].",
+        "compatibility_assessment": "Compatibility with the Nova-C lander named on ESA's page has not been checked against lander interface documentation, so this article does not assert compatibility beyond ESA's stated plan. The assessment would need the payload's mass, dimensions, mounting points, landing loads, sun-shield and thermal interfaces, power and communications arrangements, which are not verified in the sources read [1][2].",
+        "images": []
+      },
+      "historical_significance": "The Resource Prospector project began as RESOLVE, a rover-borne prospecting and processing concept, and NASA cancelled the mission in 2018 [4][5]. NASA stated that the mission was no longer a good fit for its lunar program, while selected instruments continued development for delivery on commercial landers [4]. PROSPECT was described in 2020 as part of Russia's Luna-27 mission [3]. Its later plan, as stated on ESA's newer page, involves delivery on a US commercial lander [1]. In the sources read, neither example has produced flight data, so the historical significance of this payload class lies mainly in the design approaches it records and in the programme changes it shows.",
+      "limitations_and_uncertainties": "'Resource prospecting instrument' is a functional class, so values such as mass, power and sensitivity must always be tied to a named design and source. The Resource Prospector neutron and near-infrared figures used here come from a search summary of NASA's instrumentation paper, whose full text could not be retrieved in this run [5], so they are not verified against the primary document. The PROSPECT figures come from a 2024 peer-reviewed paper and describe design requirements and design-stage values [2]. Launch timing and lander assignment differ between ESA's 2020 and newer pages [1][3], and the most recent schedule was not confirmed. No image assets were verified, so the article contains no images.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Prospect: searching for water at the lunar poles",
+          "publisher": "European Space Agency (page dated 29 August 2024 as shown on the page)",
+          "url": "https://esa.int/Science_Exploration/Human_and_Robotic_Exploration/Prospect_searching_for_water_at_the_lunar_poles"
+        },
+        {
+          "title": "PROSPECT: A comprehensive sample acquisition and analysis package for lunar science and exploration (Trautner, R. et al.; Frontiers in Space Technologies 5, 2024, doi:10.3389/frspt.2024.1331828)",
+          "publisher": "Frontiers in Space Technologies",
+          "url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full"
+        },
+        {
+          "title": "One step closer to prospecting the Moon (archived content, 30 January 2020)",
+          "publisher": "European Space Agency",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/One_step_closer_to_prospecting_the_Moon"
+        },
+        {
+          "title": "NASA: Resource Prospector No Longer a Good Fit for Lunar Program (3 May 2018)",
+          "publisher": "SpacePolicyOnline",
+          "url": "https://spacepolicyonline.com/news/nasa-resource-prospector-no-longer-a-good-fit-for-lunar-program/"
+        },
+        {
+          "title": "Resource Prospector Instrumentation for Lunar Volatiles Prospecting, Sample Acquisition and Processing (NTRS 20160005053; full text not retrieved, search summary only)",
+          "publisher": "NASA Technical Reports Server",
+          "url": "https://ntrs.nasa.gov/api/citations/20160005053/downloads/20160005053.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No image URLs are included because no direct image asset URL was verified in this run."
+  },
+  "data_quality_notes": [
+    "Web research used 4 searches and 5 page fetches (one NASA PDF fetch failed because the binary text could not be extracted). Resource Prospector neutron and near-infrared figures come from search summaries of NASA NTRS 20160005053 and are unverified against the full text.",
+    "ESA sources conflict: a 2020 ESA article names Russia's Luna-27 mission as the carrier, while the 2024 ESA page names an Intuitive Machines Nova-C lander under CLPS. The newer page is used as the current plan. The Nova-C mission designation (IM-4 or CP-22) differs between search summaries and was not confirmed.",
+    "The 2027 launch year comes from a 2024 ESA quick-facts section and was not confirmed against a 2026 schedule.",
+    "PROSPECT figures are design-stage values from Trautner et al. (2024), not flight or measured performance. No TRL is stated.",
+    "No image assets were verified. No images are included in the article or JSON.",
+    "Lunar location recommendations are deferred by the user. The ESA-stated south polar operating region is not reproduced as a recommendation."
+  ]
+}

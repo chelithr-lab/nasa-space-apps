@@ -1,0 +1,358 @@
+{
+  "catalogue_id": 78,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 78,
+    "name": "Reflectance spectrometer",
+    "article": {
+      "overview": "A reflectance spectrometer measures how much light a surface reflects at many closely spaced wavelengths, typically from visible light into the near-infrared and sometimes into the shortwave infrared. Minerals, glasses and ice absorb light at characteristic wavelengths, so the shape of a measured reflectance spectrum (the position and depth of absorption bands) is used to infer surface composition. In the Lunar Payloads Explorer catalogue this entry is treated as an instrument class rather than a single instrument. The publicly documented examples reviewed for this article are orbital imaging spectrometers (Chandrayaan-1 Moon Mineralogy Mapper and Chandrayaan-2 Imaging Infrared Spectrometer), in-situ spectrometers on Chinese rovers and landers (the Visible and Near-Infrared Imaging Spectrometer on Chang'e-3 and Chang'e-4, and the Lunar Mineralogical Spectrometer on Chang'e-5), and an Earth-orbiting calibration CubeSat that observes the Moon (ARCSTONE). Because platforms, wavelength coverage, spatial sampling and calibration differ, the numbers below should not be compared across rows without reading the sources for each.",
+      "description": "Reflectance spectroscopy records the fraction of incident sunlight reflected from a target over a range of wavelengths. The spectrometer separates reflected light by wavelength and records an intensity for each band; the result is normally calibrated against a reference of known reflectance so that spectra can be compared between observations. Two implementations are relevant to the Moon. Imaging spectrometers record a full spectrum for every pixel of a scene, usually by sweeping across the surface from orbit with a pushbroom or whiskbroom design [1][2][3]. In-situ spectrometers record spectra of a small area on the ground, typically mounted on a rover mast or a lander, and may use a pointing mechanism to view successive targets [4][5][7]. Both kinds are described as reflectance spectrometers in this entry, but they answer different questions: orbital instruments provide regional maps, and in-situ instruments provide spectra at known locations.",
+      "scientific_purpose_and_applications": "The purpose of a lunar reflectance spectrometer is to identify minerals and other surface materials and to map their distribution. ISRO states that the roughly 0.75 to 2.5 micrometre region of its Chandrayaan-2 spectrometer contains diagnostic absorption features of major lunar minerals, and that the roughly 2.5 to 3.3 micrometre region is used to detect OH and H2O features near 3.0 micrometres [9]. Orbital instruments supply global context for interpreting other data and for choosing sampling sites [1][2][10]. In-situ instruments provide spectra of regolith at a known landing site, and their authors report using such spectra to study space weathering [4][8]. The Chang'e-5 Lunar Mineralogical Spectrometer is described as intended to determine mineral composition and total water content (OH + H2O) at the landing site [8]. Calibration use has also been proposed: NASA's ARCSTONE mission aims to use the Moon as a reference target for calibrating Earth-observing sensors [11][12].",
+      "operating_principle": "Light reflected from the surface is collected by fore-optics and separated by wavelength with a dispersive element. Two designs appear in the sources reviewed. The first is a grating-based imaging spectrometer. The Chandrayaan-2 IIRS is described as a grating-based hyperspectral imager with fore-optics and an Offner-type spectrometer using a convex multi-blazed grating [10]. The second is an acousto-optic tunable filter (AOTF) design, used in the Chang'e VNIS and LMS instruments, in which the filter selects the wavelength passed to the detector [4][5][7]. The Chandrayaan-1 M3 instrument samples the spectrum at a constant 10 nm interval from 430 to 3000 nm, with a spectral response full width at half maximum below 15 nm, and records 12-bit data with response stated to be linear to 1% [1][2]. The VNIS design includes a calibration unit with dust-proofing function [5]. Interpreting any of these spectra requires correction for illumination and viewing geometry before composition is inferred. The specific correction procedures used by each team were not described in the sources read for this article and are listed as an evidence gap.",
+      "scientific_importance": "Surface mineralogy records how the lunar crust formed and how impacts, volcanism and space weathering have modified it. Orbital reflectance maps provide the global context needed to interpret samples and in-situ measurements, while in-situ spectra provide ground truth at a known location [1][4]. The authors of the VNIS instrument description state that its measurements include the first in-situ spectral imaging detections on the lunar surface [4]. The Chang'e-5 LMS is reported to cover 0.48 to 3.2 micrometres with a 5 nm spectral interval in its hyperspectral mode, which the source links to mineral composition and total water content at the landing site [8]. Because the flown instruments use different wavelength ranges and platforms, their combined scientific value depends on cross-calibration, which is not established in the sources reviewed for this article.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a reflectance spectrometer. Instruments differ by platform (orbit, rover, lander or Earth-orbiting CubeSat), wavelength coverage, spectral and spatial sampling, and imaging or point-type design. The examples below are listed with their flight status and the source for each stated value. Values not confirmed in the sources read are shown as not verified and are not estimated. A comparison table is not given because the platform, spectral and spatial parameters are not comparable across these examples.",
+        "examples": [
+          {
+            "name": "Chandrayaan-1 Moon Mineralogy Mapper (M3)",
+            "type": "Orbital imaging spectrometer (pushbroom)",
+            "flight_status": "Flown on Chandrayaan-1; launched 22 October 2008; first data November 2008 [2]",
+            "platform": "Lunar orbit, nominal 100 km polar orbit [2]",
+            "wavelength_coverage": "430 to 3000 nm [1][2]",
+            "spectral_sampling": "10 nm, constant [1][2]",
+            "spectral_resolution": "Response FWHM less than 15 nm [2]",
+            "field_of_view": "24 degrees [2]",
+            "spatial_sampling": "IFOV 0.7 mrad; target-mode pixel about 70 m; global mode 140 m (2 by 2 binned) [2]",
+            "signal_to_noise": "Above 400 at the equatorial reference radiance; above 100 at the polar reference [1][2]",
+            "uniformity": "Spectral cross-track and spectral IFOV uniformity above 90 per cent [1]",
+            "radiometry": "12-bit digitisation, response linear to 1 per cent; absolute accuracy within 10 per cent [2]",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": null,
+            "notes": "The ODE page lists swath, mass, power and dimensions as not provided [2]. The 12-bit sampling is labelled measured on that page; other values are not labelled as measured or design. Search summaries gave 8.3 kg and 16 W, which were not confirmed on the primary pages and are not used here.",
+            "source_refs": [
+              1,
+              2,
+              3
+            ],
+            "source_urls": [
+              "https://doi.org/10.1029/2011JE003797",
+              "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/ISRO_Chandrayaan-1/M3/Intro.htm",
+              "https://www.usgs.gov/publications/moon-mineralogy-mapper-m3-imaging-spectrometer-lunar-science-instrument-description"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chandrayaan-2 Imaging Infrared Spectrometer (IIRS)",
+            "type": "Orbital hyperspectral imager (grating-based, Offner-type spectrometer)",
+            "flight_status": "Flown on the Chandrayaan-2 orbiter; launch date not verified in the sources read [9][10]",
+            "platform": "Lunar orbit; the Current Science paper gives values for a 100 km orbit [10]",
+            "wavelength_coverage": "About 0.8 to 5.0 micrometres [9][10]",
+            "spectral_sampling": "About 250 to 256 contiguous bands; the count differs by source [10]",
+            "spectral_resolution": "About 20 nm FWHM in the Current Science table; ISRO cites 20 to 25 nm [9][10]",
+            "field_of_view": "Not verified in the sources read",
+            "spatial_sampling": "About 80 m ground sampling and a 20 km nadir swath at 100 km orbit [10]",
+            "signal_to_noise": "Not verified in the sources read",
+            "uniformity": "Not verified in the sources read",
+            "radiometry": "Not verified in the sources read",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": null,
+            "notes": "Design: fore-optics and an Offner-type spectrometer with a convex multi-blazed grating [10]. ISRO describes the 0.75 to 2.5 micrometre region as containing diagnostic mineral features and the 2.5 to 3.3 micrometre region as used for OH and H2O features [9].",
+            "source_refs": [
+              9,
+              10
+            ],
+            "source_urls": [
+              "https://www.isro.gov.in/ISRO_EN/Chandrayaan2_science.html",
+              "https://i-scholar.in/index.php/CURS/article/download/209737/195039"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-3 Visible and Near-Infrared Imaging Spectrometer (VNIS) on the Yutu rover",
+            "type": "In-situ rover-mounted imaging spectrometer with two channels (acousto-optic tunable filters)",
+            "flight_status": "Flown on the Chang'e-3 lander and Yutu rover (2013; date from background knowledge) [4][5]",
+            "platform": "Front of the Yutu rover; viewing at 45 degrees from a height of 0.695 m [5]",
+            "wavelength_coverage": "VIS/NIR channel 0.45 to 0.95 micrometres; SWIR channel 0.9 to 2.4 micrometres [4][5]",
+            "spectral_sampling": "Not verified in the sources read",
+            "spectral_resolution": "2 to 12 nm (one source only; not verified) [5]",
+            "field_of_view": "Not verified in the sources read",
+            "spatial_sampling": "Not verified in the sources read",
+            "signal_to_noise": "Not verified in the sources read",
+            "uniformity": "Not verified in the sources read",
+            "radiometry": "Not verified in the sources read",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": null,
+            "notes": "Includes a calibration unit with dust-proofing function [5]. The authors state that its measurements include the first in-situ spectral imaging detections on the lunar surface [4]. Mass and power were not found in the sources read.",
+            "source_refs": [
+              4,
+              5
+            ],
+            "source_urls": [
+              "https://doi.org/10.1117/12.2069193",
+              "https://doi.org/10.1117/1.JRS.13.027502"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-4 Visible and Near-Infrared Imaging Spectrometer (VNIS) on the Yutu-2 rover",
+            "type": "In-situ rover-mounted imaging spectrometer (design carried over from Chang'e-3)",
+            "flight_status": "Flown on the Chang'e-4 lander and Yutu-2 rover on the lunar far side (2019; date from background knowledge) [6][5]",
+            "platform": "Rover-mounted; configuration not verified",
+            "wavelength_coverage": "Not verified in the sources read; the design is reported as carried over from Chang'e-3 [5][6]",
+            "spectral_sampling": "Not verified in the sources read",
+            "spectral_resolution": "Not verified in the sources read",
+            "field_of_view": "Not verified in the sources read",
+            "spatial_sampling": "Not verified in the sources read",
+            "signal_to_noise": "Not verified in the sources read",
+            "uniformity": "Not verified in the sources read",
+            "radiometry": "Not verified in the sources read",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": null,
+            "notes": "The MDPI article describing the Chang'e-4 VNIS and its in-flight verification [6] returned HTTP 403 when fetched, so none of its values are reported here.",
+            "source_refs": [
+              5,
+              6
+            ],
+            "source_urls": [
+              "https://www.mdpi.com/1424-8220/19/12/2806"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-5 Lunar Mineralogical Spectrometer (LMS)",
+            "type": "Lander-mounted in-situ spectrometer with VIS/NIR and IR modules (acousto-optic tunable filters)",
+            "flight_status": "Flown on the Chang'e-5 lander (2020; date from background knowledge); the search summary also reports reuse on Chang'e-6, not verified [7][8]",
+            "platform": "Lander; mounting not described in the sources read",
+            "wavelength_coverage": "0.48 to 3.2 micrometres overall [7][8]",
+            "spectral_sampling": "5 nm per band in the later paper [8]",
+            "spectral_resolution": "5 to 25 nm in the ground-test abstract [7]",
+            "field_of_view": "3 by 3 degrees in one abstract [7]; 4.24 by 4.24 degrees in a 2016 abstract [14]; not resolved",
+            "spatial_sampling": "Not verified in the sources read",
+            "signal_to_noise": "Not verified in the sources read",
+            "uniformity": "Not verified in the sources read",
+            "radiometry": "Not verified in the sources read",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": null,
+            "notes": "Module boundary differs by source: VIS/NIR 0.48 to 1.45 micrometres and IR 1.4 to 3.2 micrometres in a ground-test abstract [7]; imaging 480 to 950 nm and reflectance spectra 900 to 3200 nm in a later paper [8]. The ground-test abstract describes pre-launch design; the later paper describes the flight instrument, so the later figures are preferred but unverified.",
+            "source_refs": [
+              7,
+              8,
+              14
+            ],
+            "source_urls": [
+              "https://ui.adsabs.harvard.edu/abs/2015AGUFM.P11B2076L",
+              "https://doi.org/10.1007/s11214-022-00910-6",
+              "https://meetingorganizer.copernicus.org/EGU2016/EGU2016-5644.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "ARCSTONE (NASA Langley 6U CubeSat, Earth-orbit observation of the Moon)",
+            "type": "Single field-of-view spectrometer for lunar calibration (not a lunar-surface payload)",
+            "flight_status": "Flown in low-Earth orbit; NASA reports the primary technology demonstration completed in January 2026 and extended operations begun, with more than 240 lunar observations [11][12]",
+            "platform": "6U CubeSat, low-Earth Sun-synchronous orbit at 500 km altitude, per a NASA summary [11]",
+            "wavelength_coverage": "Not verified in the sources read",
+            "spectral_sampling": "Not verified in the sources read",
+            "spectral_resolution": "Not verified in the sources read",
+            "field_of_view": "Single field of view [11]",
+            "spatial_sampling": "Not verified in the sources read",
+            "signal_to_noise": "Not verified in the sources read",
+            "uniformity": "Not verified in the sources read",
+            "radiometry": "Absolute spectral reflectance accuracy stated as less than 0.5 per cent (k = 1) in one NASA document [13] and less than 1.0 per cent (k = 2) on a NASA science page [11]",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": null,
+            "notes": "Included because it is a reflectance spectrometer that observes the Moon, but it is not a lunar-surface or lunar-orbit payload. The accuracy figures use different confidence conventions and are not directly comparable. Post-January 2026 results were not checked.",
+            "source_refs": [
+              11,
+              12,
+              13
+            ],
+            "source_urls": [
+              "https://science.nasa.gov/mission/arcstone/",
+              "https://www.nasa.gov/blogs/smallsatellites/2026/01/28/nasas-arcstone-instrument-successfully-completes-primary-mission",
+              "https://ntrs.nasa.gov/citations/20205007143"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions and proportions are not publicly specified for the examples reviewed. The M3 primary instrument page does not list dimensions [2], and none of the other sources read gave a verified figure. Size should not be inferred from the platform or from the spacecraft.",
+        "mass_and_weight": "Mass is not verified for any example in this article. A mass of 8.3 kg for M3 appeared only in search summaries and a non-authoritative encyclopedia page disagreed with it (8 kg), so no mass is given. The primary M3 instrument paper [1] should be checked before any mass value is used.",
+        "power_requirements": "Power requirements are not verified for any example. A 16 W average power figure for M3 appeared in one search summary and was not confirmed on a primary page; a conflicting 22 W figure appeared on the non-authoritative encyclopedia page. Neither is used here."
+      },
+      "environmental_and_operational_requirements": "Reflectance measurements depend on stable illumination and viewing geometry. Solar elevation controls both reflectance and shadowing, so observation conditions must be recorded with each spectrum [1][5]. Surface instruments must operate through the lunar day-night thermal cycle, withstand dust, and maintain optical cleanliness; the VNIS design includes a dust-proofing calibration function [5]. Orbital instruments need stable pointing and thermal control, and M3's stated signal-to-noise and uniformity figures define the detector performance it was designed to reach [1][2]. Quantified thermal, radiation and dust-tolerance limits for these instruments were not verified in the sources read and are listed as gaps.",
+      "limitations": "Reflectance spectra do not identify composition uniquely: absorption features can overlap or be subtle, and grain size, mixtures and space weathering all change the spectrum [4][5]. In-situ instruments sample small areas, so a single spectrum may not represent the surrounding terrain. Orbital instruments are limited by spatial resolution; M3's target mode is stated as about 70 m per pixel [2]. The performance figures cited for each instrument (signal-to-noise, uniformity, accuracy) are values stated by the source, not independent test results. No platform compatibility for any named lander, rover or spacecraft is established by the sources reviewed.",
+      "transportation_and_deployment": {
+        "overview": "The sources reviewed describe reflectance spectrometers on four platform types: orbiters (M3 and IIRS) [2][9][10]; rovers (VNIS on Chang'e-3 and Chang'e-4) [4][6]; a lander (LMS on Chang'e-5) [7][8]; and an Earth-orbiting CubeSat (ARCSTONE) [11]. Transportation requirements therefore differ. The process below is a general outline for a surface or orbital reflectance spectrometer; it does not assert compatibility with any named lander, rover or spacecraft.",
+        "transportation_process": [
+          "Earth integration: the spectrometer is integrated into its host spacecraft, rover or lander with mechanical, thermal and data interfaces. Interface details for the flown examples were not verified.",
+          "Launch and transfer: the host spacecraft is launched and travels to the Moon. The Chandrayaan-1 launch date of 22 October 2008 is given by the ODE record [2].",
+          "Lunar orbit insertion or landing: orbital instruments operate in lunar orbit; M3 is described with a nominal 100 km polar orbit [2]. Surface instruments are delivered by a lander or rover.",
+          "Mounting and pointing: the VNIS is mounted at the front of the Yutu rover, viewing the surface at 45 degrees from a height of 0.695 m [5]. Mounting on the Chang'e-5 lander is not described in the sources reviewed.",
+          "Power, data and thermal interfaces: interface values for these instruments were not verified in the sources read.",
+          "Commissioning and calibration: in-flight calibration procedures are described only partly in the sources reviewed; the VNIS includes an onboard calibration unit [5]."
+        ],
+        "deployment_methods": "Orbital reflectance spectrometers are not deployed; they are operated by pointing the spacecraft and scanning the surface [2][10]. The VNIS is a fixed rover-mounted instrument whose viewing angle and height are set by the mounting [5]. Deployment of the Chang'e-5 LMS from its lander is not described in the sources reviewed. ARCSTONE is a 6U CubeSat planned for low-Earth Sun-synchronous orbit at 500 km altitude, according to a NASA summary [11]; its deployment details were not verified.",
+        "historical_examples": "Chandrayaan-1 M3 (orbital, first data in November 2008) [2]; Chang'e-3 VNIS on the Yutu rover [4][5]; Chang'e-4 VNIS, with a design carried over from Chang'e-3 [6]; Chang'e-5 LMS on the lander [7][8]; Chandrayaan-2 IIRS on the orbiter [9][10]; and ARCSTONE in Earth orbit, which NASA reports completed its primary technology demonstration [11][12].",
+        "compatibility_assessment": "No compatibility assessment is made for any named lander, rover or spacecraft. A future reflectance spectrometer would require a verified interface control document for the specific host platform. None was obtained for the examples in this article.",
+        "images": []
+      },
+      "historical_significance": "Reflectance spectrometers have been operated at the Moon from orbit since 2008, when M3 on Chandrayaan-1 began collecting data [2]. In-situ spectrometers followed on the Chinese rover and lander missions. The authors of the VNIS description state that its measurements include the first in-situ spectral imaging detections on the lunar surface [4]. Chandrayaan-2 IIRS extended the orbital coverage to about 0.8 to 5.0 micrometres [9][10]. ARCSTONE applied the spectrometer concept to Earth-orbit observation of the Moon for calibration purposes [11][12]. These statements are attributed to the sources cited and have not been independently assessed.",
+      "limitations_and_uncertainties": "Evidence gaps for this entry are substantial and are listed here rather than filled by estimates. (1) Mass, power and dimensions are not verified for any example. The M3 primary instrument page checked does not state them [2]; one search summary gave 8.3 kg and 16 W for M3, which was not confirmed on a primary page and is not used here. (2) The M3 page does not label its spectral values as measured or design values, and the M3 product specification document it links was not opened [2]. (3) The VNIS mass and power were not found. A power value of about 2 W appeared in a table whose row attribution was unclear and is not used. The VNIS spectral resolution of 2 to 12 nm comes from one summary only [5]. (4) The Chang'e-4 VNIS article returned HTTP 403 when fetched, so no Chang'e-4 specifications are given [6]. (5) The LMS module boundary differs between sources (0.48 to 1.45 and 1.4 to 3.2 micrometres in one ground-test abstract [7]; 480 to 950 and 900 to 3200 nm in a later paper [8]), and its field of view is 3 by 3 degrees in one abstract [7] and 4.24 by 4.24 degrees in a 2016 abstract [14]. The flight unit values were not confirmed against the primary paper. (6) IIRS band count is about 256 in the Current Science paper [10] and about 250 in a second IIRS record that was not cited here. The resolution of about 20 nm is given as 20 to 25 nm by ISRO [9]. The IIRS specifications were not checked against an instrument handbook. (7) ARCSTONE accuracy figures differ between sources: less than 0.5 per cent at k = 1 in one NASA document, and less than 1.0 per cent at k = 2 on a NASA science page [11][13]. Mission results after January 2026 were not checked [12]. (8) Lunar Flashlight carried an active 1 to 2 micrometre reflectometer that did not reach the Moon; this was found in a search summary only and is omitted. (9) Launch and landing dates for Chang'e-3, Chang'e-4, Chang'e-5 and Chandrayaan-2 are from background knowledge and were not checked against a fetched source. (10) No lander, rover or spacecraft compatibility has been verified, and no lunar location recommendations are included, consistent with the user's instruction.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "number": 1,
+          "title": "The Moon Mineralogy Mapper (M3) imaging spectrometer for lunar science: Instrument description, calibration, ... (title truncated on the fetched page)",
+          "authors": "Pieters, C. M. et al.",
+          "publisher": "Journal of Geophysical Research: Planets (AGU)",
+          "publication_date": "2011",
+          "url": "https://doi.org/10.1029/2011JE003797"
+        },
+        {
+          "number": 2,
+          "title": "Chandrayaan-1 M3 instrument introduction (Lunar Orbital Data Explorer)",
+          "authors": null,
+          "publisher": "Lunar Orbital Data Explorer, Washington University in St. Louis",
+          "publication_date": "not dated on page",
+          "url": "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/ISRO_Chandrayaan-1/M3/Intro.htm"
+        },
+        {
+          "number": 3,
+          "title": "Moon Mineralogy Mapper (M3) imaging spectrometer for lunar science: instrument description (USGS publication record)",
+          "authors": null,
+          "publisher": "U.S. Geological Survey",
+          "publication_date": null,
+          "url": "https://www.usgs.gov/publications/moon-mineralogy-mapper-m3-imaging-spectrometer-lunar-science-instrument-description"
+        },
+        {
+          "number": 4,
+          "title": "Visible and Near-Infrared Imaging Spectrometer (VNIS) for Chang'E-3, Proc. SPIE 9263",
+          "authors": "He, Z. et al. (author list not verified)",
+          "publisher": "SPIE",
+          "publication_date": "2014",
+          "url": "https://doi.org/10.1117/12.2069193"
+        },
+        {
+          "number": 5,
+          "title": "Spectrometers (section of Journal of Applied Remote Sensing 13(2), article 027502; full article title not verified)",
+          "authors": null,
+          "publisher": "SPIE, Journal of Applied Remote Sensing",
+          "publication_date": "2019 (volume 13 issue 2; date not verified on page)",
+          "url": "https://doi.org/10.1117/1.JRS.13.027502"
+        },
+        {
+          "number": 6,
+          "title": "The Scientific Information Model of Chang'e-4 Visible and Near-IR Imaging Spectrometer (VNIS) and In-Flight Verification (Sensors 19(12), 2806)",
+          "authors": null,
+          "publisher": "MDPI, Sensors",
+          "publication_date": "2019",
+          "url": "https://www.mdpi.com/1424-8220/19/12/2806"
+        },
+        {
+          "number": 7,
+          "title": "Ground Verification Test of Lunar Mineralogical Spectrometer on the Chang'e 5 Lunar Sample Return Lander (AGU Fall Meeting abstract P11B-2076)",
+          "authors": null,
+          "publisher": "AGU, via NASA ADS (bibcode 2015AGUFM.P11B2076L)",
+          "publication_date": "2015",
+          "url": "https://ui.adsabs.harvard.edu/abs/2015AGUFM.P11B2076L"
+        },
+        {
+          "number": 8,
+          "title": "Chang'e-5 Lunar Mineralogical Spectrometer description (DOI 10.1007/s11214-022-00910-6; title and authors not verified)",
+          "authors": null,
+          "publisher": "Springer, Space Science Reviews",
+          "publication_date": "2022",
+          "url": "https://doi.org/10.1007/s11214-022-00910-6"
+        },
+        {
+          "number": 9,
+          "title": "Chandrayaan-2 Science",
+          "authors": null,
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "publication_date": "not dated on page",
+          "url": "https://www.isro.gov.in/ISRO_EN/Chandrayaan2_science.html"
+        },
+        {
+          "number": 10,
+          "title": "Chandrayaan-2 Imaging Infrared Spectrometer (IIRS) description (Current Science; title and authors not verified)",
+          "authors": null,
+          "publisher": "Current Science (Indian Academy of Sciences)",
+          "publication_date": null,
+          "url": "https://i-scholar.in/index.php/CURS/article/download/209737/195039"
+        },
+        {
+          "number": 11,
+          "title": "ARCSTONE mission",
+          "authors": null,
+          "publisher": "NASA Science",
+          "publication_date": "not dated on page",
+          "url": "https://science.nasa.gov/mission/arcstone/"
+        },
+        {
+          "number": 12,
+          "title": "NASA's ARCSTONE instrument successfully completes primary mission (NASA Small Satellites blog)",
+          "authors": null,
+          "publisher": "NASA",
+          "publication_date": "2026-01-28",
+          "url": "https://www.nasa.gov/blogs/smallsatellites/2026/01/28/nasas-arcstone-instrument-successfully-completes-primary-mission"
+        },
+        {
+          "number": 13,
+          "title": "ARCSTONE accuracy citation, NASA NTRS 20205007143 (title not verified)",
+          "authors": null,
+          "publisher": "NASA Technical Reports Server",
+          "publication_date": "2020",
+          "url": "https://ntrs.nasa.gov/citations/20205007143"
+        },
+        {
+          "number": 14,
+          "title": "Lunar Mineralogical Spectrometer ground-test conference abstract, EGU2016-5644 (authors and title not verified)",
+          "authors": null,
+          "publisher": "EGU General Assembly 2016 (Copernicus Meetings)",
+          "publication_date": "2016",
+          "url": "https://meetingorganizer.copernicus.org/EGU2016/EGU2016-5644.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image URLs were added because none could be verified as direct assets from official pages in this run."
+  },
+  "data_quality_notes": [
+    "No image was verified. Direct image asset URLs were not found on official pages during this run, so the image registry is empty and image_urls_added is false. Image research for this payload remains open.",
+    "Mass, power and dimensions are not verified for any example. The primary M3 page [2] does not state them; the 8.3 kg and 16 W values from search summaries and the 8 kg and 22 W values from a non-authoritative encyclopedia page are conflicting and are not used.",
+    "The M3 primary instrument paper [1] was identified by DOI and its summary page was read, but its full text was not. The M3 spectral and radiometric values therefore come from the ODE instrument page [2] and the summary page, not from the full paper.",
+    "The M3 ODE page does not label its specification values as measured or design values, except that 12-bit sampling is labelled measured. The M3 Product Software Interface Specification linked from that page was not opened [2].",
+    "VNIS (Chang'e-3) mass and power were not found. The 2 W power value in one table had unclear row attribution and is not used. The 2 to 12 nm resolution comes from one summary only. The 0.695 m height and 45-degree viewing angle come from a review article summary [5] and were not read directly.",
+    "The Chang'e-4 VNIS article [6] returned HTTP 403 when fetched; its values are not reported. Chang'e-4 VNIS specifications are therefore not verified.",
+    "LMS module boundaries and field of view differ between sources [7][8][14]. The flight-unit values could not be confirmed against the primary paper [8], which was not accessible through the fetch tool.",
+    "IIRS band count (about 256 in [10], about 250 in a second record not cited) and resolution (about 20 nm in [10]; 20 to 25 nm per ISRO [9]) differ between sources. IIRS field of view, signal-to-noise and radiometric values were not verified.",
+    "ARCSTONE accuracy figures differ between sources ([11] and [13]) and use different confidence conventions. Its mission status is from a NASA blog dated 28 January 2026 [12]; later results were not checked. Its spectral range was not verified.",
+    "Lunar Flashlight carried an active reflectometer that did not reach the Moon. It appeared only in a search summary and is omitted from the article.",
+    "Launch and landing dates for Chang'e-3, Chang'e-4, Chang'e-5 and Chandrayaan-2, and the Chandrayaan-1 orbit date beyond the 22 October 2008 launch date, are from background knowledge and were not checked against a fetched source.",
+    "Several references (5, 6, 7, 8, 13, 14) were identified from search results and were not opened in full. Their titles and authors are marked as not verified where they could not be confirmed.",
+    "No platform compatibility, interface, deployment or lunar location claim is made for any lander, rover or spacecraft, consistent with the workflow rules."
+  ]
+}

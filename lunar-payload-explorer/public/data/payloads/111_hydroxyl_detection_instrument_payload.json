@@ -1,0 +1,212 @@
+{
+  "catalogue_id": 111,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 5,
+    "name": "Water, ice and volatile detection"
+  },
+  "payload": {
+    "number": 111,
+    "name": "Hydroxyl detection instrument",
+    "article": {
+      "overview": "A hydroxyl detection instrument is a spectrometer designed to identify the hydroxyl radical (OH) and molecular water (H2O) in lunar surface material or in the thin lunar exosphere. Orbital imaging spectrometers look for the characteristic absorption near 2.8 to 3.0 µm, where OH- and H2O-bearing materials absorb sunlight [1][3]. Documented examples include the Moon Mineralogy Mapper (M3) on Chandrayaan-1, the Imaging Infrared Spectrometer (IIRS) on Chandrayaan-2, the Lunar Trailblazer HVM3 imager, which was lost after its 2025 launch, and the HOLMS exospheric-OH concept. Hydroxyl and water have been reported on the sunlit Moon by several missions, but their abundance, chemical form and origin are still under investigation [1][8].",
+      "description": "The payload class covers instruments that measure how the lunar surface, or the exosphere above it, absorbs light at specific wavelengths. Most lunar minerals show strong absorptions near 1 and 2 µm. Water and hydroxyl produce features in the longer-wavelength region of about 2.5 to 3.0 µm, which the ISRO description of M3 identifies as the band used for possible volatiles [2][3]. Because OH and H2O absorb in overlapping regions, a measurement of one band alone is ambiguous. Instruments that can separate the two extend their coverage to longer wavelengths or use a second diagnostic band. The SOFIA observation of H2O at 6.1 µm is one example of such a diagnostic [8]. A separate class of instrument, represented here by HOLMS, looks for OH in the tenuous exosphere rather than in the surface material [9].",
+      "scientific_purpose_and_applications": "The main purpose is to determine the form, abundance and distribution of water and hydroxyl on the Moon. NASA describes the Lunar Trailblazer objective in these terms and notes its aim to detect signatures of water ice in reflected light and to locate micro-cold traps smaller than a football field [6]. The HVM3 description adds that the mission was to map the distribution of different forms of water on the lunar surface [7].\n\nApplications include:\n\n- Mapping surface hydration at different latitudes and terrains. Press summaries of Pieters et al. (2009) report that the M3 signal was strongest at cooler high latitudes and at several fresh feldspathic craters [1].\n- Distinguishing hydroxyl from molecular water. ISRO states that IIRS was designed to cover the 0.8 to 5 µm range for this purpose [4].\n- Tracking how water is stored and moved over the lunar day. The SOFIA team reported that further observations are planned to study water storage and migration during the lunar day [8].\n- Studying the exospheric water cycle. The HOLMS project record states that its measurements of exospheric OH are intended to address questions about the lunar water cycle [9].",
+      "operating_principle": "Passive imaging spectroscopy measures sunlight reflected from the surface. The instrument records reflectance in many narrow wavelength bands, producing a data cube with two spatial dimensions and one spectral dimension. Absorption features at characteristic wavelengths indicate which chemical bonds are present. For M3, ODE documents a constant 10 nm spectral sampling with a full width at half maximum below 15 nm [3]. The IIRS description gives about 250 contiguous bands between approximately 0.8 and 5.0 µm with a spectral resolution of about 20 to 25 nm [4].\n\nThe SOFIA FORCAST detection relied on the H-O-H bending vibration at 6.1 µm, which the SOFIA team identified as a diagnostic for water rather than hydroxyl [8]. HOLMS is a heterodyne spectrometer whose name indicates that it measures OH with high spectral sensitivity, but its detection chain and wavelength range are not given in the project record that was retrieved [9].",
+      "scientific_importance": "Water and hydroxyl on the Moon matter for three reasons: they record volatile delivery and loss, they constrain how the surface interacts with the solar wind and micrometeoroids, and they are a potential resource. The origin of the detected material remains unresolved. Pieters et al. (2009) argued that the M3 hydroxyl and water signal reflects ongoing formation and retention at the surface, because it does not follow neutron-spectrometer hydrogen maps [1]. Press summaries note that solar wind, outgassing and cometary impacts are all possible sources and that the balance between them is not known [1][5].\n\nThe SOFIA result gave a more direct molecular water detection on the sunlit Moon. The team reported a few hundred parts per million at high southern latitudes, an abundance that exceeds what could be adsorbed on lunar grains at the recorded surface temperatures, and noted that meteorites may not be the only source [8]. ISRO's Chandrayaan-1 summary links enhanced OH and water signatures at Compton-Belkovich to endogenic water released during volcanism [2].\n\nOther methods complement surface spectroscopy. The ISRO Chandrayaan-1 summary states that the Mini-SAR radar detected subsurface water ice in crater bases in permanently shadowed regions [2]. Neutron measurements from Lunar Prospector indicate hydrogen concentrations at both poles in shadowed craters, although hydrogen is not the same as water [10]. Reflectance instruments see only sunlit or near-surface material, so they cannot by themselves establish the amount of ice in permanently shadowed regions.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a hydroxyl detection instrument. The four examples below are documented designs at different stages: a flown orbital instrument, a second flown orbital instrument with unverified operating status, a lost mission instrument and a development concept. Where a mass, dimension, power or lifetime value was not found in the retrieved sources, it is recorded as not publicly specified. No such value has been estimated.",
+        "examples": [
+          {
+            "name": "Chandrayaan-1 Moon Mineralogy Mapper (M3)",
+            "type": "Flown orbital imaging spectrometer",
+            "status": "Flown; communication lost 29 August 2009 (ISRO)",
+            "launch_date": "2008-10-22",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "spectral_range": "430-3000 nm per ODE; 0.7-3.0 um per ISRO (sources differ; check PDS documentation)",
+            "spectral_sampling_nm": 10,
+            "spectral_response_fwhm_nm": "<15",
+            "spatial_resolution_m": {
+              "target_mode_nominal": 70,
+              "global_mode_2x2_binned": 140
+            },
+            "field_of_view_deg": 24,
+            "orbit": "Planned 100 km polar orbit (ODE); ISRO states orbit raised to 200 km in May 2009",
+            "reported_finding": "Widespread OH/H2O absorption near 2.8-3.0 um, strongest at cooler high latitudes and several fresh feldspathic craters (press summaries of Pieters et al., 2009; primary text not retrieved)",
+            "source_urls": [
+              "https://www.isro.gov.in/ISRO_EN/Chandrayaan-1_science.html",
+              "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/ISRO_Chandrayaan-1/M3/Intro.htm",
+              "https://www.science.org/doi/10.1126/science.1178658"
+            ],
+            "images": [],
+            "notes": "Mass, dimensions and power not publicly specified in retrieved sources."
+          },
+          {
+            "name": "Chandrayaan-2 Imaging Infrared Spectrometer (IIRS)",
+            "type": "Flown orbital imaging infrared spectrometer (operating status not verified)",
+            "status": "Flown; current operating status not verified in this run",
+            "launch_date": null,
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "spectral_range": "approximately 0.8-5.0 um",
+            "spectral_bands_approx": 250,
+            "spectral_resolution_nm": "approximately 20-25",
+            "spatial_resolution_m": 80,
+            "orbit": "100 km polar circular orbit (ISRO)",
+            "reported_finding": "Press coverage of a 2021 Current Science paper reports OH and H2O confirmed and water quantified; primary paper not retrieved",
+            "source_urls": [
+              "https://www.isro.gov.in/Chandrayaan2_science.html",
+              "https://www.deccanherald.com/india/isros-chandrayaan-2-instrument-detects-hydroxyl-water-molecules-on-the-moon-1018596.html"
+            ],
+            "images": [],
+            "notes": "Mass, dimensions and power not publicly specified in retrieved sources. Hydration latitude range (29-62 degrees N) from press coverage only."
+          },
+          {
+            "name": "Lunar Trailblazer HVM3 (High-resolution Volatiles and Minerals Moon Mapper)",
+            "type": "Imaging spectrometer on Lunar Trailblazer; mission lost",
+            "status": "Launched; mission ended by NASA 31 July 2025 without two-way communication",
+            "launch_date": "2025-02-26",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "spectral_range": "not stated in retrieved sources",
+            "spatial_resolution_m": "not stated in retrieved sources",
+            "source_urls": [
+              "https://science.nasa.gov/mission/lunar-trailblazer",
+              "https://www.jpl.nasa.gov/missions/lunar-trailblazer/"
+            ],
+            "images": [],
+            "notes": "Cause of loss (solar array orientation, battery depletion) reported by press coverage only; not confirmed in NASA or JPL pages retrieved."
+          },
+          {
+            "name": "HOLMS (Heterodyne OH Lunar Miniaturized Spectrometer)",
+            "type": "Development concept; not flown",
+            "status": "Project listed as inactive with end date 2025-06-22; goal to advance from TRL 4 to TRL 6",
+            "institutional_pi": "Amanda Hendrix, Planetary Science Institute",
+            "intended_platform": "Lander or rover on future NASA and/or commercial missions",
+            "target": "OH in the lunar exosphere",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "spectral_range": "not stated in retrieved record (a search snippet cites 311-317 nm and 0.1 nm; unverified)",
+            "source_urls": [
+              "https://www.psi.edu/"
+            ],
+            "images": [],
+            "notes": "PSI project record was read at a URL with a query string; the URL policy requires cleaning, which leaves only the domain root. The record cannot be linked directly."
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for any example in the retrieved sources. See examples[] for the values that were found.",
+        "mass_and_weight": "Not publicly specified for any example in the retrieved sources. No value has been estimated.",
+        "power_requirements": "Not publicly specified for any example in the retrieved sources."
+      },
+      "environmental_and_operational_requirements": "Hydroxyl detection depends on sunlight, a stable viewing geometry and an instrument that can resolve weak absorptions. Orbital imagers must maintain pointing and thermal stability over long data-collection periods, and the infrared detectors need temperature control to keep their noise low. Surface reflectance measurements in the 2.8 to 3.0 µm region also depend on the thermal emission of the surface, which can contaminate the measurement at high temperatures. This is a general engineering consideration; no retrieved source gives an operating temperature or tolerance for any of the four examples.\n\nThe exospheric concept has a different requirement set. HOLMS would need to observe OH above the surface from a lander or rover, so its pointing, thermal control and power requirements would depend on the platform. None of these requirements has been verified against a specific spacecraft.",
+      "limitations": "The main measurement limitations of the payload class are structural rather than specific to one instrument. Reflectance instruments observe only sunlit or near-surface material, so they cannot by themselves measure ice in permanently shadowed regions. OH and H2O overlap in many bands, so a single narrow band rarely identifies which species is present. Orbital instruments see the surface from one altitude and one viewing geometry per pass, so they cannot separate daily cycles without repeated observations. An exospheric instrument such as HOLMS measures a tenuous gas rather than surface material, so its results cannot be read directly as surface abundances. Finally, the lack of verified mass, power and tolerance data means that no example can yet be compared on engineering grounds.",
+      "transportation_and_deployment": {
+        "overview": "M3, IIRS and HVM3 are orbital payloads. Their transportation sequence is integration into a spacecraft, launch, lunar transfer, orbit insertion, commissioning, and then routine pointing, thermal and data operations. The Lunar Trailblazer case shows how strongly an orbital instrument depends on the spacecraft's power and attitude: NASA reports that the mission ended after loss of two-way communication, and press coverage links the failure to solar-array orientation [6][7]. The cause was not confirmed in the retrieved NASA sources.\n\nHOLMS is described as a lander or rover instrument [9]. Its deployment would require an assessment of stowage, power, data handling and placement, none of which is specified in the retrieved record. No lander, rover or spacecraft is named as compatible. Compatibility with any specific platform has not been verified.",
+        "transportation_process": [
+          "Integrate the orbital instrument into a spacecraft on Earth.",
+          "Launch the spacecraft and perform lunar transfer.",
+          "Insert into lunar orbit and commission the instrument.",
+          "Operate pointing, thermal and data interfaces during the survey.",
+          "For HOLMS (concept): integrate on a lander or rover, deploy, and connect power and data; no platform is verified."
+        ],
+        "deployment_methods": "Orbital instruments (M3, IIRS, HVM3) are not deployed on the surface. HOLMS is intended for a lander or rover platform; its deployment method is not specified in the retrieved record.",
+        "historical_examples": "Lunar Trailblazer (launched 2025-02-26, mission ended 2025-07-31) illustrates dependence on spacecraft power and attitude. Chandrayaan-1 M3 and Chandrayaan-2 IIRS are orbital examples.",
+        "compatibility_assessment": "No lander, rover or spacecraft is verified as compatible with any example. Compatibility has not been assessed.",
+        "images": []
+      },
+      "historical_significance": "Orbital hydroxyl and water detection began with M3 in 2009, when Pieters et al. reported an OH/H2O absorption across the lunar surface [1]. The SOFIA observation in 2020 gave a direct molecular water detection on the sunlit Moon at 6.1 µm, a diagnostic that M3 and IIRS did not provide [8]. The IIRS results reported in 2021 extended the observational case for a wavelength range that can separate OH from H2O [4][5]. The Lunar Trailblazer loss in 2025 means that its planned survey of water forms was not completed [6].",
+      "limitations_and_uncertainties": "- The primary text of Pieters et al. (2009) was not retrieved; the publisher page returned HTTP 403. The M3 findings above come from press summaries and the ISRO and ODE instrument pages [1][2][3].\n- The M3 spectral range differs between ODE (430 to 3000 nm) and ISRO (0.7 to 3.0 µm), and the operating orbit altitude is also given differently [2][3].\n- The IIRS hydration figures, including latitude range and the sunlit-terrain pattern, come from press coverage of a 2021 paper that was not retrieved [5].\n- The SOFIA abundance is calibrated against water-bearing glasses and has no uncertainty range on the source page [8].\n- The origin of the surface hydroxyl and water is unresolved in every source retrieved [1][8].\n- Mass, dimensions, power, lifetime and environmental tolerances are not publicly specified for any of the four examples.\n- The cause of the Lunar Trailblazer failure is reported by press coverage only and was not confirmed by the retrieved NASA sources [6][7].\n- HOLMS has no verified wavelength range, spectral resolution or flight date, and its project record is listed as inactive [9].\n- No direct image asset URL was verified in this run, so the article contains no embedded images.\n- No lander, rover or spacecraft compatibility has been assessed. No lunar landing-site recommendation is made, as deferred by the user.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Character and Spatial Distribution of OH/H2O on the Surface of the Moon Seen by M3 on Chandrayaan-1",
+          "publisher": "Science (Pieters et al., 2009), DOI 10.1126/science.1178658",
+          "url": "https://www.science.org/doi/10.1126/science.1178658"
+        },
+        {
+          "title": "Chandrayaan-1 science",
+          "publisher": "ISRO",
+          "url": "https://www.isro.gov.in/ISRO_EN/Chandrayaan-1_science.html"
+        },
+        {
+          "title": "Chandrayaan-1 M3 instrument page",
+          "publisher": "Planetary Data System / ODE, Washington University in St. Louis",
+          "url": "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/ISRO_Chandrayaan-1/M3/Intro.htm"
+        },
+        {
+          "title": "Chandrayaan-2 science",
+          "publisher": "ISRO",
+          "url": "https://www.isro.gov.in/Chandrayaan2_science.html"
+        },
+        {
+          "title": "ISRO's Chandrayaan-2 instrument detects hydroxyl, water molecules on the Moon (press coverage)",
+          "publisher": "Deccan Herald",
+          "url": "https://www.deccanherald.com/india/isros-chandrayaan-2-instrument-detects-hydroxyl-water-molecules-on-the-moon-1018596.html"
+        },
+        {
+          "title": "Lunar Trailblazer",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/lunar-trailblazer"
+        },
+        {
+          "title": "Lunar Trailblazer",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "url": "https://www.jpl.nasa.gov/missions/lunar-trailblazer/"
+        },
+        {
+          "title": "Molecular water detected on the sunlit Moon by SOFIA (SOFIA Science Center article)",
+          "publisher": "Honniball et al., Nature Astronomy (2020); SOFIA Science Center / IRSA",
+          "url": "https://irsa.ipac.caltech.edu/data/SOFIA/docs/publications/science-results-archive/sofia-detects-water-moon/index.html"
+        },
+        {
+          "title": "HOLMS, Heterodyne OH Lunar Miniaturized Spectrometer (project record)",
+          "publisher": "Planetary Science Institute",
+          "url": "https://www.psi.edu/"
+        },
+        {
+          "title": "Lunar Prospector Neutron Spectrometer data (PDS summary)",
+          "publisher": "NASA Planetary Data System, Geosciences node",
+          "url": "https://pds-geosciences.wustl.edu/missions/lunarp/reduced_special.html"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[i]": "payload.article.physical_specifications.examples[i].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values are free of query strings and fragments. No image assets were verified in this run, so the image arrays are empty."
+  },
+  "data_quality_notes": [
+    "v2 rerun of payload 111. v1 files (hydroxyl_detection_instrument_payload_111.md/.json) were not modified.",
+    "Pieters et al. (2009), Science, DOI 10.1126/science.1178658: the publisher page returned HTTP 403. M3 findings come from press summaries and from ISRO and ODE instrument pages, not the primary paper.",
+    "M3 spectral range conflict: ODE gives 430-3000 nm; ISRO gives 0.7-3.0 um. M3 orbit altitude: planned 100 km (ODE) vs 200 km from May 2009 (ISRO).",
+    "IIRS hydration findings (29-62 degrees N, sunlit-terrain pattern, space-weathering attribution) come from Deccan Herald press coverage of a 2021 Current Science paper that was not retrieved.",
+    "SOFIA abundance (a few hundred ppm) is calibrated against water-bearing glasses and has no uncertainty range on the source page.",
+    "Lunar Trailblazer: HVM3 spectral range, spatial resolution and mass are not stated on the NASA or JPL pages retrieved. Failure cause is from press coverage only.",
+    "HOLMS: the PSI project record was read at a query-string URL (?p=37983). Under the URL policy the cleaned URL is https://www.psi.edu/, which does not identify the record. The ADS abstract 2018cosp...42E1494H was located in search but not read. The 311-317 nm / 0.1 nm figures appear only in a search snippet and are not relied on.",
+    "Lunar Prospector reference (PDS summary) is from a search snippet; the page was not fetched.",
+    "No direct image asset URL was verified; image arrays are empty and image_urls_added is false.",
+    "Mass, dimensions and power are not publicly specified for any of the four examples in the retrieved sources. No values were estimated.",
+    "The statement that surface thermal emission can contaminate 2.8-3.0 um measurements is a general engineering consideration and is not sourced in this run.",
+    "Research budget used: 7 WebSearch calls and 10 page reads (Pieters 403, ADS 405 and the PDS M3 page returned no usable specifications)."
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "catalogue_id": 243,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 12,
+    "name": "Astronomical observation"
+  },
+  "payload": {
+    "number": 243,
+    "name": "X-ray telescope",
+    "article": {
+      "overview": "An X-ray telescope records X-rays emitted by astronomical, solar or planetary sources. Ordinary lenses and mirrors do not focus X-rays at normal incidence, so X-ray telescopes use specialised optics. Grazing-incidence (Wolter-type) mirrors reflect X-rays at very shallow angles, while lobster-eye optics use arrays of tiny square channels to focus X-rays. The focused X-rays are then recorded by X-ray-sensitive detectors. X-ray telescope describes a payload class rather than one standard design. In a lunar context, the sources reviewed describe three main roles: observing the solar X-rays that the Earth's magnetosphere scatters (LEXI), measuring fluorescent X-rays from the lunar surface to map its chemistry (CLASS, and proposed CubeX and Tokyo Metropolitan University concepts), and supporting X-ray pulsar navigation (CubeX concept). The examples in the physical specifications section are not interchangeable.",
+      "description": "An X-ray telescope or spectrometer in lunar service converts incoming X-ray photons into electrical signals, usually by means of a position-sensitive detector such as a microchannel plate (MCP), a CCD-type sensor or a silicon detector. Two broad measurement modes appear in the sources. Imaging of soft X-ray emission: a focusing optic forms an image of the source on a detector; LEXI, which observes soft X-rays between 0.1 and 2 keV, is an example. X-ray fluorescence (XRF) spectroscopy: incoming solar X-rays strike the lunar regolith and excite characteristic fluorescent X-rays from its elements. The energies of these lines identify the elements, and their intensities relate to abundance. The method therefore depends on the strength and spectrum of the Sun's X-ray output, which varies with solar activity. Chandrayaan-2's CLASS instrument uses this approach.",
+      "scientific_purpose_and_applications": "Magnetospheric physics: LEXI is designed to test whether macroscale dayside magnetopause reconnection is temporally stable or variable. Its objectives include tracking the subsolar magnetopause position during a north-to-south interplanetary magnetic field rotation, with a target measurement about every five minutes (a requirement stated in the pre-flight paper). Lunar surface chemistry: CLASS aims to map O, Mg, Al and Si globally at a stated goal of 12.5 km per pixel, and Ca, Ti and Fe in localised regions during enhanced solar activity. The Tokyo Metropolitan University simulation study proposes mapping oxygen, iron, magnesium, aluminium and silicon across the Moon, and sodium with a 25-unit array. Lunar navigation: CubeX was designed to test X-ray pulsar timing navigation (XNAV) by observing three to four millisecond pulsars to solve for spacecraft trajectory. Lunar-surface X-ray astronomy: a preprint (arXiv:2310.15215) argues that an observatory on the lunar surface could support larger X-ray collecting structures. This is a conceptual study, not a flight programme.",
+      "operating_principle": "Focusing: lobster-eye optics, as used in LEXI, consist of many micropores whose walls reflect X-rays so that they converge on a focal plane, giving a wide field of view. The LEXI pre-flight paper describes nine micropore optics tiled in a 3 x 3 array, each 4 cm x 4 cm, with 20 um square pores, a focal length of 37.5 cm and a 9.1 x 9.1 degree field of view. Miniature Wolter-I optics, as proposed for CubeX, use nested grazing-incidence mirrors to reach much finer angular resolution over a narrower field. Detection and spectroscopy: microchannel plates amplify single photon events, while swept charge devices (SCDs), a variant of X-ray CCD, measure the energy of each event. In XRF operation, the measured spectrum is compared with the known fluorescence lines of each element, and the intensity of each line is converted into an abundance estimate using models of the solar spectrum and the detector response.",
+      "scientific_importance": "Remote sensing of the lunar surface's major elements requires instruments that can resolve characteristic X-ray lines. CLASS is described as the largest-collecting-area soft X-ray spectrometer flown to the Moon at the time of its design. ISRO announced in October 2022 that CLASS had mapped lunar sodium for the first time, a result reported as published in The Astrophysical Journal Letters. The reviewed sources also note that sustained orbital observations build global coverage over time. For magnetospheric physics, LEXI addresses the coupling between the solar wind and Earth's magnetosphere from a vantage point on the Moon, outside the magnetosphere. This complements observations from orbit.",
+      "physical_specifications": {
+        "note": "No universal mass, size or power applies to X-ray telescopes or spectrometers. The values below describe specific instruments and proposals, and each must be read with its source and status. Status labels follow the source: flown, proposed, or simulated.",
+        "examples": [
+          {
+            "name": "LEXI (Lunar Environment heliospheric X-ray Imager)",
+            "type": "Flown lunar surface X-ray imager (Blue Ghost Mission 1, 2025)",
+            "status": "Flown. Landed 2 March 2025. Specifications from Table 1 of the pre-flight paper, treated as design values; not measured in flight.",
+            "energy_band_kev": [0.1, 2],
+            "field_of_view_deg": [9.1, 9.1],
+            "optics": "Nine lobster-eye micropore optics in a 3 x 3 array; each optic 4 cm x 4 cm, 20 um square pores, 60% open fraction, 150:1 pore length-to-width ratio; focal length 37.5 cm.",
+            "detector": "80 mm diameter KBr-coated microchannel plate; 75 mm open diameter; open area about 44.18 cm2; bias about +2,100 V.",
+            "angular_resolution": "Requirement 0.2 deg. Laboratory point-spread function at PANTER (Al-K 1.487 keV): full width at half maximum 12.43 arcmin (0.20 deg).",
+            "mass_kg": 11.1,
+            "power_w": 1.6,
+            "dimensions_cm": [86, 42, 19],
+            "science_data_rate_kbps": 40,
+            "instrument_background": "0.40 to 0.44 events per second per cm2, measured in dark tests.",
+            "qualification": "The paper does not state the exact boundary of the mass and dimension figures, so it is unclear whether they include all electronics.",
+            "source_urls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC11093736",
+              "https://link.springer.com/article/10.1007/s11214-024-01063-4",
+              "https://www.bu.edu/articles/2025/nasa-lands-on-moon-with-bu-telescope"
+            ],
+            "images": []
+          },
+          {
+            "name": "CLASS (Chandrayaan-2 Large Area Soft X-ray Spectrometer)",
+            "type": "Flown orbital X-ray spectrometer (Chandrayaan-2 orbiter)",
+            "status": "Flown. Measuring lunar X-ray fluorescence since September 2019. An X-ray spectrometer rather than an imaging telescope.",
+            "detector": "Array of swept charge devices (SCDs), a variant of X-ray CCD.",
+            "energy_band_kev": [0.5, 10],
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_cm": null,
+            "collecting_area": null,
+            "field_of_view": null,
+            "qualification": "Pre-launch calibration combined laboratory measurements and simulations; response matrices were checked against in-flight data. Mass, dimensions, power, collecting area and field of view not stated in the sources reviewed.",
+            "source_urls": [
+              "https://doi.org/10.1016/j.icarus.2021.114436",
+              "https://ui.adsabs.harvard.edu/abs/2021Icar..36314436P/abstract",
+              "https://cosmochemistry-papers.com/2021/03/25/chandrayaan-2-large-area-soft-x-ray-spectrometer-class-calibration-in-flight-performance-and-first-results/"
+            ],
+            "images": []
+          },
+          {
+            "name": "CubeX",
+            "type": "Proposed lunar mission concept (2017-2018)",
+            "status": "Proposed. No evidence found that it has flown. A NASA slide deck cited a 2023-2027 launch window, now passed.",
+            "optics": "Miniature Wolter-I X-ray optics (MiXO); angular resolution reported as better than 1 arcmin.",
+            "detector": "CMOS and silicon drift detector sensors on a common focal plane.",
+            "capabilities": "XRF imaging and X-ray pulsar navigation (XNAV) without moving parts; XNAV via sequential observation of 3-4 millisecond pulsars.",
+            "telescope_size_and_mass": "Reported as about 10 cm x 10 cm x 60 cm and just under 6 kg in one summary.",
+            "secondary_payload_figure": "Reported as about 43 kg in a 35 cm x 23 cm x 68 cm volume in another summary. Not reconciled with the 6 kg telescope figure; form factor described as 12U in one source and about 6U in another.",
+            "planned_orbit_and_duration": "Circular orbit of about 6,000 km; one year of science operations as a rideshare payload.",
+            "qualification": "Figures come from search-result summaries of the 2018 NASA paper and its slides. The full text could not be read.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20180006866"
+            ],
+            "images": []
+          },
+          {
+            "name": "Tokyo Metropolitan University lunar X-ray telescope orbiter concept",
+            "type": "Simulated proposal (2026)",
+            "status": "Simulated. Results are model outputs, not observations. No mission funding or schedule is described; the only funding cited supports the research itself.",
+            "telescope_mass_kg": "Less than 10 (as described in the summary of the study).",
+            "configurations": "One telescope, or a 5 x 5 array of 25 units on a Moon-orbiting satellite.",
+            "simulated_performance": "One telescope: five elements (O, Fe, Mg, Al, Si) on a 70 km x 70 km grid over about two years. 25-unit array: about one year at a 30 km x 30 km grid, adding sodium.",
+            "assumptions": "Baseline of 300 solar flares per year. The detector was tested under radiation far harsher than expected in lunar orbit.",
+            "source_urls": [
+              "https://sciencedaily.com/releases/2026/06/260606075508.htm",
+              "https://doi.org/10.1186/s40623-025-02326-2"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The LEXI pre-flight paper gives 86 cm x 42 cm x 19 cm. The CubeX concept describes a telescope of about 10 cm x 10 cm x 60 cm, with a separate 35 cm x 23 cm x 68 cm figure for a secondary payload. CLASS dimensions are not stated in the sources reviewed. The values describe different designs and boundaries and should not be compared directly.",
+        "mass_and_weight": "LEXI 11.1 kg (design); CubeX telescope just under 6 kg (proposed, one summary); Tokyo concept telescope below 10 kg (simulated). CLASS mass is not stated. Mass affects launch, lander capacity and structural design, and these examples fall in different mass classes for different reasons.",
+        "power_requirements": "LEXI 1.6 W (design value from the pre-flight paper). CLASS, CubeX and the Tokyo concept power values are not stated in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "Any X-ray instrument on the Moon operates in vacuum, with large temperature swings, exposure to radiation and micrometeoroid impacts, and mechanical loads during landing and deployment. Thermal survival: the Blue Ghost mission summary states that lunar night temperatures can fall as low as -208 deg F (about -133 deg C), which the source says would permanently disable the lander and its payloads. Firefly reported that the lander hardware was not designed to survive the lunar night, and its final data were received about five hours into the lunar night. Solar illumination: XRF measurements depend on solar X-rays reaching the surface. The 2026 concept notes that solar X-ray illumination is weak near the poles, which limits polar mapping. Detector life: the 2026 concept notes that detectors can degrade over long missions. Background environment: for CLASS, particle background in lunar orbit was studied over many months and its sources identified. For LEXI, the pre-flight paper reports a measured background of 0.40 to 0.44 events per second per cm2 in dark tests.",
+      "limitations": "Focusing X-ray telescopes have small effective collecting areas. The lunar-surface observatory preprint notes that focusing telescopes are limited to effective areas of order a few hundred cm2, and that surface operations could help address this. XRF signals depend on solar activity: CLASS targets Ca, Ti and Fe only during enhanced solar activity. LEXI covers only the 0.1 to 2 keV band, which limits the elements it can address. A single instrument cannot determine the location or depth of a source as a network can.",
+      "transportation_and_deployment": {
+        "overview": "LEXI, a surface example, was integrated on the Blue Ghost Mission 1 lander under NASA's CLPS task order 19D. Orbiter examples (CLASS, CubeX concept, Tokyo concept) follow a spacecraft integration, launch, cruise, orbit insertion and commissioning sequence. No future X-ray payload in this article has verified interface evidence for a specific lander or spacecraft.",
+        "transportation_process": [
+          "Integrate the instrument into the lander payload deck on Earth (LEXI was mounted on the top deck of Blue Ghost Mission 1).",
+          "Launch from Florida on 15 January 2025.",
+          "Spend about two weeks in lunar orbit before landing.",
+          "Land on 2 March 2025 in Mare Crisium.",
+          "After landing, trigger a latch to open a small door, exposing the telescope optics to space for the first time.",
+          "Operate on the lander's power and data systems; the mission reported more than 119 GB transmitted in total, which the source does not attribute to LEXI."
+        ],
+        "deployment_methods": "LEXI was deployed as a fixed payload on the lander's top deck, with a door mechanism exposing its optics after landing. No deployment mechanism was described for the orbiter concepts.",
+        "historical_examples": "LEXI flew on Blue Ghost Mission 1 (2025). CLASS flew on Chandrayaan-2 and has operated in lunar orbit since September 2019. CubeX was planned as a rideshare payload in a 6,000 km circular orbit but has not been shown to fly.",
+        "compatibility_assessment": "The LEXI-Blue Ghost pairing is documented. This does not establish compatibility for any other X-ray instrument. A future instrument's compatibility would need to be assessed using its mass, dimensions, mounting points, landing loads, power, data interface and thermal requirements against verified spacecraft specifications.",
+        "images": []
+      },
+      "historical_significance": "LEXI flew on Blue Ghost Mission 1 and was switched on after landing. Firefly reports that LEXI captured X-ray images of the solar wind interacting with the Earth's magnetic field, but gives no image counts or results. The Boston University team that built LEXI reported that the instrument was checked in real time to confirm it was healthy and recording at the expected rate. No peer-reviewed surface results were found. CLASS has operated in lunar orbit since September 2019 and produced elemental maps and an announced sodium map (October 2022).",
+      "limitations_and_uncertainties": "No quantitative LEXI surface observations or published post-landing results were found, and Firefly's account is a company statement. The reviewed sources do not state whether LEXI operated after the lunar night began; the only evidence is Firefly's claim that the hardware was not designed to survive the night. Mass, dimensions, power, collecting area and field of view for CLASS were not found and are not stated. The 2021 CLASS paper gives a goal of 12.5 km per pixel, while a 2025 review cites 155 km geochemical maps; the sources do not explain the difference, so neither value should be treated as an achieved product resolution without checking the papers. The CubeX 6 kg telescope, 43 kg secondary-payload and 12U/6U form-factor descriptions cannot be reconciled from the reviewed sources. The Tokyo concept is a simulation, so its grid resolutions and element counts are model outputs. The Springer version of the LEXI paper redirected to a sign-in page, so its content comes from the PMC copy; the CLASS Icarus abstract was read only through secondary summaries, and author order differs between sources. No direct image asset URLs were verified, so no images are included; images from NASA and other mission sources should be verified before publication.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "The Lunar Environment Heliophysics X-ray Imager (LEXI) Mission",
+          "authors": "Walsh, B. M., et al.",
+          "publisher": "Space Science Reviews, 220(4), 37",
+          "date": "2024-05-14",
+          "url": "https://link.springer.com/article/10.1007/s11214-024-01063-4",
+          "notes": "Content read from the PMC copy: https://pmc.ncbi.nlm.nih.gov/articles/PMC11093736"
+        },
+        {
+          "title": "Chandrayaan-2 Large Area Soft X-ray Spectrometer (CLASS): Calibration, In-flight performance and first results",
+          "authors": "Pillai, N. S., et al. (author order differs between sources)",
+          "publisher": "Icarus, 363, 114436",
+          "date": "2021-07",
+          "url": "https://doi.org/10.1016/j.icarus.2021.114436",
+          "notes": "Abstract listing: https://ui.adsabs.harvard.edu/abs/2021Icar..36314436P/abstract. Full text not read."
+        },
+        {
+          "title": "Summary of the CLASS paper",
+          "authors": null,
+          "publisher": "Cosmochemistry Papers (blog summary)",
+          "date": "2021-03-25",
+          "url": "https://cosmochemistry-papers.com/2021/03/25/chandrayaan-2-large-area-soft-x-ray-spectrometer-class-calibration-in-flight-performance-and-first-results/",
+          "notes": "Secondary summary."
+        },
+        {
+          "title": "Chandrayaan-2 spectrometer maps abundance of sodium on Moon for first time",
+          "authors": null,
+          "publisher": "The Week (news)",
+          "date": "2022-10-08",
+          "url": "https://www.theweek.in/news/sci-tech/2022/10/08/chandrayaan-2-spectrometer-maps-abundance-of-sodium-on-moon-for-first-time.html",
+          "notes": "Secondary news report of an ISRO announcement."
+        },
+        {
+          "title": "Success! BU Telescope Lands on the Moon Aboard NASA's Blue Ghost Mission 1",
+          "authors": null,
+          "publisher": "Boston University",
+          "date": "2025-03-03",
+          "url": "https://www.bu.edu/articles/2025/nasa-lands-on-moon-with-bu-telescope",
+          "notes": "Status snapshot as of the article date; does not report later LEXI status."
+        },
+        {
+          "title": "Firefly Aerospace successfully completes 14 days of surface operations on the Moon",
+          "authors": null,
+          "publisher": "Firefly Aerospace",
+          "date": "2025-03-17",
+          "url": "https://fireflyspace.com/news/firefly-aerospace-successfully-completes-14-days-of-surface-operations-on-the-moon",
+          "notes": "Company statement. Gives no LEXI quantitative results."
+        },
+        {
+          "title": "CubeX miniature Wolter-I X-ray telescope (SmallSat 2018, SSC18-V-05)",
+          "authors": "Kashyap et al.",
+          "publisher": "NASA NTRS",
+          "date": "2018",
+          "url": "https://ntrs.nasa.gov/citations/20180006866",
+          "notes": "Summary and slides only; full text not read. Figures from search-result summaries."
+        },
+        {
+          "title": "Lunar X-ray telescope orbiter simulation study",
+          "authors": "Toida, A., et al.",
+          "publisher": "Earth, Planets and Space, 78(1)",
+          "date": "2026",
+          "url": "https://doi.org/10.1186/s40623-025-02326-2",
+          "notes": "Original paper not opened. Summary read at https://sciencedaily.com/releases/2026/06/260606075508.htm (ScienceDaily, 2026-06-06)."
+        },
+        {
+          "title": "Lunar-surface X-ray astronomy concept (arXiv:2310.15215)",
+          "authors": null,
+          "publisher": "arXiv",
+          "date": "2023",
+          "url": "https://web3.arxiv.org/pdf/2310.15215",
+          "notes": "Search summary only; not read in full."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "LEXI example": "payload.article.physical_specifications.examples[0].images",
+      "CLASS example": "payload.article.physical_specifications.examples[1].images",
+      "CubeX example": "payload.article.physical_specifications.examples[2].images",
+      "Tokyo concept example": "payload.article.physical_specifications.examples[3].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image URLs were verified in this run, so no image objects are included; the image arrays are empty by design."
+  },
+  "data_quality_notes": [
+    "No direct image asset URLs were verified in this run. All image arrays are empty and research_status image fields are false.",
+    "LEXI mass (11.1 kg), power (1.6 W) and dimensions (86 x 42 x 19 cm) come from a pre-flight paper's Table 1, which does not label values as design or measured. They are treated as design values.",
+    "LEXI post-landing status is supported only by BU (2025-03-03) and Firefly (2025-03-17) statements. No quantitative LEXI surface data or post-landing results were found.",
+    "The Springer LEXI page redirected to a sign-in page; LEXI specifications were taken from the PMC copy of the same paper.",
+    "CLASS resolution: the 2021 paper gives a 12.5 km per pixel goal; a 2025 review cites 155 km geochemical maps. Unresolved.",
+    "CLASS mass, dimensions, power, collecting area and field of view are not publicly specified in the sources reviewed; recorded as null.",
+    "CubeX figures come from search-result summaries of a 2018 NASA paper. The 6 kg telescope and 43 kg secondary-payload figures and the 12U/6U form-factor descriptions are not reconciled.",
+    "The Tokyo Metropolitan University concept is a simulation. Its summary was read from ScienceDaily; the original paper was not opened.",
+    "The CLASS Icarus paper author order differs between sources; the abstract was read only through secondary summaries.",
+    "The arXiv:2310.15215 lunar-surface observatory preprint was cited from a search summary only.",
+    "The article describes X-ray telescope as a payload class; examples are not interchangeable and are not a single design specification."
+  ]
+}

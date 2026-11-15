@@ -1,0 +1,196 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 310,
+    "name": "Temperature reference sensor",
+    "article": {
+      "overview": "A temperature reference sensor is a high-accuracy thermometer whose readings serve as a benchmark. It is calibrated against traceable standards and then used either to check, correct or anchor the temperatures reported by other sensors on a payload, or to make a stable absolute temperature measurement against which small differences can be interpreted. No single lunar mission is confirmed in the sources reviewed as a dedicated payload called a temperature reference sensor. The catalogue name therefore describes a functional class of instrument. This article uses verified examples to show how that function has been implemented: the Apollo Heat Flow Experiment reference sensors, a 1970 NASA engineering thermometer built for the Lunar Heat Flow Program, flight platinum resistance thermometers on the Curiosity rover (Mars, included only as a calibration-practice example), the reference targets of the Lunar Reconnaissance Orbiter Diviner radiometer, and the Chandrayaan-3 ChaSTE probe as a modern lunar temperature measurement system.",
+      "description": "A temperature reference sensor is usually one element of a larger thermal measurement chain. Its role is to provide a trusted temperature value, and the quality of that value depends on three things. First, the sensing element: platinum resistance thermometers (PRTs) are widely used because the electrical resistance of platinum changes in a well-characterised way with temperature, whereas thermocouples generate a voltage from a temperature difference and need a reference junction at a known temperature, and thermistors are simpler but usually less stable over long periods. Second, calibration: NIST reports that PRTs are characterised at two or more well-defined calibration points, usually 0 degrees C and 100 degrees C. For the Curiosity sensors, the master reference thermometer was calibrated according to the International Temperature Scale of 1990 (ITS-90), and each flight sensor had to be calibrated and carry NIST traceability. Third, reference hardware: some systems include a reference thermocouple or reference bridge held in an isothermal block so that other readings can be referred to a known temperature. The Apollo Heat Flow Experiment electronics box contained such a reference, nominally kept between 278 K and 328 K according to the PDS instrument text. In a lunar setting, a reference sensor also helps separate the true thermal behaviour of the regolith from drift or offset in the instrument electronics. This matters most when the quantity of interest is a small temperature difference, as in heat-flow measurements.",
+      "scientific_purpose_and_applications": "The main purposes are absolute calibration, resolving small differences, monitoring instrument health and supporting data recovery. Absolute calibration provides a traceable temperature so that other sensors on the same payload, or on a companion instrument, can be checked or corrected. Heat-flow work depends on measuring temperature gradients; the Apollo Heat Flow Experiment reported high-sensitivity gradient differences of 0.001 K (PDS instrument text). Reference readings can reveal drift in the electronics or sensor elements over time. Calibration records are also part of the scientific record: the Apollo Heat Flow Experiment data were partly lost, and its temperature-sensor calibration records were among the last pieces recovered (Stanley, Eos, 2018).",
+      "operating_principle": "A platinum resistance thermometer measures temperature from the resistance of a platinum element. Resistance is read with a bridge circuit or, for better accuracy, a four-wire measurement that removes the effect of lead resistance. Calibration maps resistance to temperature at known fixed points and checks the result against a reference standard. A differential thermometer compares two matched sensing elements; because both see nearly the same environment, the difference between them can be measured more precisely than either absolute value. The Apollo Heat Flow Experiment used differential thermometers in this way, with elements in each of two probe cylinders (PDS instrument text). A thermocouple produces a voltage proportional to the temperature difference between its measuring junction and a reference junction, so an absolute reading needs the reference junction temperature to be known; this is the purpose of the reference thermocouple and reference bridge in the Apollo Heat Flow Experiment electronics. A radiometric reference works differently. The Diviner radiometer views internal blackbody targets held at a known temperature and periodic space views, converting detector counts into calibrated radiance (UCLA Diviner instrument description and a secondary calibration overview). This is a radiance reference rather than a contact thermometer, but it uses the same principle of a known standard against which a measurement is checked.",
+      "scientific_importance": "Temperature is a basic measurement in planetary science, but its meaning depends on its accuracy and traceability. Surface and subsurface temperatures control volatile stability, thermal cycling of rocks and regolith, and the heat that escapes from a planetary interior. A reference sensor makes it possible to compare measurements across time, between instruments and with laboratory standards. The Apollo Heat Flow Experiment shows why this matters. The Eos summary reports that the warming trend observed from 1971 to 1974 continued through 1977 (Stanley, Eos, 2018, describing the Nagihara et al. study in Journal of Geophysical Research: Planets; the original paper was not retrieved for this article). A secondary search summary further attributes the warming to increased solar absorption after probe installation, a surface-disturbance interpretation that was not verified against the Eos or Nagihara text.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a temperature reference sensor. Sensor sizes, masses and power needs vary with the sensing technology, the measurement range, the thermal environment and whether the sensor is a stand-alone thermometer or part of a larger probe. The examples below describe specific instruments. Values are given only where a source was retrieved for this article.",
+        "examples": [
+          {
+            "name": "Apollo Heat Flow Experiment (HFE) reference and temperature sensors",
+            "type": "Historical lunar instrument (flown)",
+            "status": "Four probes installed during the Apollo 15 and Apollo 17 missions in holes 1.0 to 2.4 metres deep (Stanley, Eos, 2018). The experiment ran from 1971 to 1977 (same source).",
+            "mass_kg": null,
+            "dimensions": null,
+            "power_requirements": "not publicly specified for the reference sensors alone in the sources retrieved",
+            "sensor_configuration_per_probe": "Eight platinum resistance elements, four in each of two cylinders, forming four bridges and two differential thermometers. Four thermocouples: one near the top of the upper cylinder and three in the cable (the document uses a numbering convention in which these are TC11 to TC14 for probe 1). Shared electronics: one reference thermocouple and one reference bridge in an isothermal block, nominally kept between 278 K and 328 K.",
+            "stated_accuracies": [
+              {"measurement": "Gradient bridge, high-sensitivity differences", "accuracy": "0.001 K", "range": "not stated"},
+              {"measurement": "Gradient bridge, low-sensitivity differences", "accuracy": "0.01 K", "range": "not stated"},
+              {"measurement": "Gradient bridge, absolute temperature", "accuracy": "0.05 K", "range": "190-270 K"},
+              {"measurement": "Ring bridge, differences", "accuracy": "0.002 K", "range": "not stated"},
+              {"measurement": "Ring bridge, absolute temperature", "accuracy": "0.05 K", "range": "190-270 K"},
+              {"measurement": "Thermocouples", "accuracy": "0.07 K", "range": "70-400 K"},
+              {"measurement": "Reference bridge", "accuracy": "0.01 K", "range": "23-363 K"}
+            ],
+            "calibration": "The PDS text does not describe a calibration procedure. Calibration records for the temperature-sensor probes were recovered later from old reports and memos from companies that helped develop the instruments (Stanley, Eos, 2018).",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a15/instruments/a15a_hfe.txt",
+              "https://eos.org/research-spotlights/the-case-of-the-missing-lunar-heat-flow-data-is-finally-solved"
+            ],
+            "images": []
+          },
+          {
+            "name": "Rugged, stable differential platinum resistance thermometer (Lunar Heat Flow Program)",
+            "type": "Engineering instrument developed for the Lunar Heat Flow Program. Prototype or flight status not confirmed.",
+            "status": "Felsenthal, Kleven and Lofgren (1970), NASA Technical Reports Server document 19710033220, contract NAS9-5829. The record states that the paper discusses construction, calibration and environmental testing.",
+            "mass_kg": null,
+            "dimensions": null,
+            "power_requirements": "not publicly specified",
+            "specifications": "Not publicly specified in the retrieved record. The NTRS abstract page gives no accuracy, stability, mass or environmental figures. The full text was not available for this article.",
+            "relationship_to_apollo_hfe": "The record does not state whether this design was used in the Apollo Heat Flow Experiment. This should not be assumed.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19710033220"
+            ],
+            "images": []
+          },
+          {
+            "name": "Curiosity rover MSL RTG platinum resistance thermometers (Mars; calibration-practice example only)",
+            "type": "Flight sensors on a Mars rover. Not a lunar payload. Included to illustrate flight-PRT calibration practice.",
+            "count_and_designs": "Four platinum resistance thermometers based on three designs from Sensing Devices Inc. (SDI), monitoring temperature inside the Multi-Mission Radioisotope Thermoelectric Generator (NIST).",
+            "resistance": "100 to 500 ohms at 0 degrees C (NIST)",
+            "measurement_range": "-200 degrees C to 661 degrees C (NIST)",
+            "size": "The longest sensor is described as about the size of a wooden matchstick. No dimensional value is given.",
+            "traceability": "Master reference thermometer calibrated to ITS-90. Each flight sensor calibrated with NIST traceability.",
+            "uncertainty_values": "None stated on the NIST page.",
+            "mass_kg": null,
+            "power_requirements": "not publicly specified",
+            "source_urls": [
+              "https://www.nist.gov/node/400911"
+            ],
+            "images": []
+          },
+          {
+            "name": "Diviner radiometer on-board blackbody and solar calibration targets (Lunar Reconnaissance Orbiter)",
+            "type": "Flown on a lunar orbiter. Radiometric reference system rather than a contact temperature sensor.",
+            "configuration": "The Diviner radiometer is a nine-channel infrared filter radiometer with two boresighted telescopes. The mounting arrangement allows views of the lunar surface, space and calibration targets, including blackbody and solar targets (UCLA Diviner instrument description).",
+            "blackbody_temperatures_stability_accuracy": "Not stated on the UCLA instrument page. A secondary calibration overview describes the method but gives no setpoint. The PDS calibration documentation would need to be consulted.",
+            "mass_kg": null,
+            "dimensions": null,
+            "power_requirements": "not publicly specified",
+            "source_urls": [
+              "https://www.diviner.ucla.edu/instrument-specs"
+            ],
+            "images": []
+          },
+          {
+            "name": "ChaSTE (Chandra's Surface Thermophysical Experiment), Chandrayaan-3",
+            "type": "Modern flown lunar surface probe. A measurement system that includes temperature sensors; not a reference standard in itself. Sensor accuracy was not verified against a primary source for this article.",
+            "configuration": "Per the ISRO Space Physics Laboratory page as reported in a search summary (the page could not be retrieved directly): ten Pt-1000 platinum resistance temperature sensors plus a heater in the probe, measuring vertical temperature in the top 100 mm of regolith. The SPL page describes a passive mode in which sensors are read about once per second.",
+            "accuracy": "No numerical accuracy figure verified. The source describes the platinum sensors as having strong linearity and good accuracy.",
+            "mass_kg": null,
+            "dimensions": null,
+            "power_requirements": "not publicly specified in the sources retrieved",
+            "published_results_note": "Secondary reports disagree on peak surface temperatures (one reports 332 K, another 355 K). These figures are not used as verified data in this article.",
+            "source_urls": [
+              "https://www.spl.gov.in/SPLv2/index.php/advanced-technologies/chandrayaan-3/ChaSTE-ch3.html"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No universal dimensions exist for a temperature reference sensor. Dimensions depend on the sensing technology, the measurement range and whether the sensor is a stand-alone thermometer or part of a probe. The Curiosity PRT's longest sensor is described only qualitatively (about the size of a wooden matchstick). Dimensions for the Apollo Heat Flow Experiment reference sensors and the Chandrayaan-3 ChaSTE sensors were not publicly specified in the retrieved sources.",
+        "mass_and_weight": "Mass of the reference sensors alone is not publicly specified for any example in the retrieved sources. Mass should not be inferred from probe or instrument totals.",
+        "power_requirements": "Power requirements of the reference sensors alone are not publicly specified in the retrieved sources. The Apollo Heat Flow Experiment's electronics box was nominally held between 278 K and 328 K, but no power figure was retrieved for it."
+      },
+      "environmental_and_operational_requirements": "A temperature reference sensor on the Moon must keep its calibration over a wide temperature range and through many thermal cycles. Its own electronics and reference components must be held at a stable temperature, or their drift must be characterised. The Apollo Heat Flow Experiment handled this with a reference bridge and thermocouple in an isothermal block whose nominal range was 278 K to 328 K (PDS instrument text). Sensors must also be thermally coupled to the material being measured while being protected from unwanted heat sources. For subsurface probes, sensor geometry and contact with the regolith determine what is actually measured. Stable mounting is also important, because movement of the support structure can change the thermal environment around the sensors. The sources reviewed did not provide a verified lunar surface temperature range for this article; engineering requirements should be taken from the specific mission environment rather than from this general description.",
+      "limitations": "Calibration evidence is incomplete for the lunar examples: the Apollo Heat Flow Experiment's calibration records were recovered from historical documents rather than from a complete calibration dataset (Stanley, Eos, 2018). Accuracy statements for the Apollo instrument come from a summarising fetch of the PDS text file and should be checked against the original text before engineering use. A reference sensor is only as useful as its calibration record; without records, the reference value cannot be trusted. Reference sensors can drift over time, which is why reference hardware and repeat calibrations are used; drift characteristics of the flown examples were not verified. The examples differ greatly in technology, purpose and flight status, and values must not be transferred between them.",
+      "transportation_and_deployment": {
+        "overview": "A temperature reference sensor may be delivered as a standalone instrument or as part of a larger surface or orbital payload. A surface reference sensor would need Earth integration, launch, lunar transfer and landing delivery, followed by deployment and connection to power and data systems. An orbiter reference target such as the Diviner blackbody is part of the instrument's mounting and calibration sequence and must be integrated, temperature-controlled and monitored with the instrument.",
+        "transportation_process": [
+          "Integrate the sensor or reference hardware into the lander or spacecraft payload on Earth, with thermal and mechanical interfaces defined.",
+          "Launch the payload using a launch vehicle.",
+          "Transfer it towards the Moon.",
+          "Deliver the surface element by lander, or retain the orbital reference hardware on the spacecraft.",
+          "Deploy or position the sensor probe where it is required, and connect power, data and any thermal control.",
+          "Verify calibration status and reference readings after commissioning."
+        ],
+        "deployment_methods": "The Apollo Heat Flow Experiment probes were installed during the Apollo 15 and 17 missions at depths of 1.0 to 2.4 metres (Stanley, Eos, 2018). The installation method is not described in the sources retrieved. For the Chandrayaan-3 ChaSTE probe, secondary reports describe a rotation-based insertion method; this was not verified against a primary source and is not relied on here.",
+        "historical_examples": "The Apollo Heat Flow Experiment (flown on Apollo 15 and 17) provides the main lunar example with reference sensors in its electronics. The Diviner radiometer (LRO) provides an orbital example of internal blackbody and space calibration views. ChaSTE (Chandrayaan-3) provides a modern surface example of in-situ platinum temperature sensing.",
+        "compatibility_assessment": "No lander, rover or spacecraft compatibility is asserted for this payload. Compatibility would require verified mass, dimension, mounting, load, power and communications data for a specific reference sensor and host spacecraft.",
+        "images": []
+      },
+      "historical_significance": "The Apollo Heat Flow Experiment is the main historical example of lunar subsurface temperature measurement with calibrated sensors. Its record shows the importance of calibration documentation: raw data and calibration records were partly lost and some were recovered decades later (Stanley, Eos, 2018). The 1970 Felsenthal et al. report documents a rugged, differential platinum thermometer built for the Lunar Heat Flow Program; whether its design flew is not confirmed. The Curiosity sensors show how flight platinum thermometers are calibrated to ITS-90 with NIST traceability. Diviner's calibration method shows how an orbiter can use internal blackbody and space views as a radiometric reference. Chandrayaan-3's ChaSTE provides a modern example of in-situ lunar temperature measurement using platinum sensors in a regolith probe.",
+      "limitations_and_uncertainties": "The Apollo Heat Flow Experiment is the only flown lunar example with a verified link to reference sensors in this article; its reference components are described in the PDS text, but their calibration uncertainties were not independently checked. The Nagihara et al. (2018) paper was not retrieved; claims attributed to it come from the Eos summary. The ISRO Space Physics Laboratory ChaSTE page could not be reached during this run; its description comes from a search summary, and accuracy and peak temperature values are unverified and disagree between secondary sources. The Diviner blackbody setpoint is not verified. The Lunar Heat Flow Program thermometer's construction, calibration, accuracy and environmental test data are not available in the retrieved record. Mass, dimensions and power are not publicly specified for the reference sensors in any retrieved source. No direct image asset URL was verified for this payload in this run. Lunar location recommendations are deferred by the user and not included.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "A rugged, stable, differential platinum resistance thermometer",
+          "publisher": "NASA Technical Reports Server (Felsenthal, Kleven and Lofgren, 1970; contract NAS9-5829)",
+          "url": "https://ntrs.nasa.gov/citations/19710033220"
+        },
+        {
+          "title": "Apollo Heat Flow Experiment (A15A HFE) instrument text",
+          "publisher": "NASA Planetary Data System, Apollo document collection",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a15/instruments/a15a_hfe.txt"
+        },
+        {
+          "title": "The case of the missing lunar heat flow data is finally solved (Stanley, Eos 99, doi:10.1029/2018EO100237)",
+          "publisher": "Eos",
+          "url": "https://eos.org/research-spotlights/the-case-of-the-missing-lunar-heat-flow-data-is-finally-solved"
+        },
+        {
+          "title": "Nagihara et al. 2018, Journal of Geophysical Research: Planets, doi:10.1029/2018JE005579 (title not retrieved; cited via reference 3, not read directly)",
+          "publisher": "Journal of Geophysical Research: Planets",
+          "url": "https://doi.org/10.1029/2018JE005579"
+        },
+        {
+          "title": "PML Goes to Mars: Far-Out Thermal Calibration",
+          "publisher": "National Institute of Standards and Technology",
+          "url": "https://www.nist.gov/node/400911"
+        },
+        {
+          "title": "Diviner Lunar Radiometer Experiment instrument specifications",
+          "publisher": "UCLA Diviner Lunar Radiometer Experiment",
+          "url": "https://www.diviner.ucla.edu/instrument-specs"
+        },
+        {
+          "title": "ChaSTE payload aboard Chandrayaan-3 (not retrieved directly; cited from a search summary)",
+          "publisher": "ISRO Space Physics Laboratory",
+          "url": "https://www.spl.gov.in/SPLv2/index.php/advanced-technologies/chandrayaan-3/ChaSTE-ch3.html"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo Heat Flow Experiment example": "payload.article.physical_specifications.examples[0].images",
+      "Felsenthal 1970 thermometer example": "payload.article.physical_specifications.examples[1].images",
+      "Curiosity MSL RTG PRT example": "payload.article.physical_specifications.examples[2].images",
+      "Diviner calibration targets example": "payload.article.physical_specifications.examples[3].images",
+      "ChaSTE example": "payload.article.physical_specifications.examples[4].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image objects were added for this payload because no direct image asset URL was verified in this run. Section-level image arrays are present and empty so that images can be added without changing the layout."
+  },
+  "data_quality_notes": [
+    "No image assets were verified for payload 310 in this run. All image arrays are empty and image_urls_added is false.",
+    "The PDS Apollo HFE instrument values were taken from a summarising fetch of the PDS text file and should be checked against the original text before engineering use.",
+    "The Nagihara et al. (2018) paper was not retrieved. Its claims are taken from the Eos summary (Stanley, 2018).",
+    "The ISRO SPL ChaSTE page could not be reached (DNS lookup failed on two attempts). ChaSTE details come from a search summary; accuracy and peak temperature figures are unverified and conflict between secondary sources.",
+    "The catalogue name 'Temperature reference sensor' is generic. No single verified lunar payload of this name was identified; examples are functional illustrations with stated flight status.",
+    "The Diviner blackbody setpoint, the Curiosity PRT dimensions and the mass and power of all reference sensors are not publicly specified in the retrieved sources."
+  ]
+}

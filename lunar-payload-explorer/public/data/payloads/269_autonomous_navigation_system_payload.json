@@ -1,0 +1,336 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 269,
+    "name": "Autonomous navigation system",
+    "article": {
+      "overview": "An autonomous navigation system enables a lunar rover or other surface vehicle to estimate its own position and heading, perceive terrain and obstacles, and choose and follow a route with limited real-time human control. \"Autonomous navigation system\" describes a class of functions rather than one standard instrument, so this article reviews published examples rather than a single design. The examples fall into different maturity states that should not be merged. The Apollo Lunar Roving Vehicle carried a crewed navigation system that flew on the Moon. The Yutu-2 rover operated on the lunar farside with ground-based teleoperation supported by onboard obstacle avoidance. The CADRE rovers are a NASA multi-rover autonomy demonstration whose flight status could not be confirmed from the sources reviewed. HI-RATE is a NASA technology development effort with no published performance results.",
+      "description": "Lunar navigation normally involves three linked functions: (1) localisation, estimating where the vehicle is and which way it is facing; (2) perception, measuring the terrain, slopes, rocks, craters and other hazards around it; and (3) planning and control, choosing a safe path and commanding the drive system. Different architectures distribute these functions differently. The Apollo rover relied on heading and distance sensors and a computer that tracked its position relative to the Lunar Module. The Yutu-2 rover used stereo cameras to build local terrain models, with a ground-side cost map used for path search and onboard software for local planning and emergency obstacle avoidance. The CADRE and HI-RATE descriptions emphasise onboard autonomy, with lidar and other sensing for HI-RATE and stereo cameras and multi-rover coordination for CADRE.",
+      "scientific_purpose_and_applications": "A navigation system is an enabling capability rather than a primary science instrument. Its value lies in allowing a vehicle to reach and measure places that would otherwise be impractical to access. Traverse and site access: NASA describes HI-RATE as a means to enable autonomous travel between exploration sites, relocation of surface assets and precise driving near lunar base infrastructure; NASA also lists lunar terrain vehicles, pressurized rovers and logistics vehicles as potential HI-RATE applications. Surface mapping: the CADRE project states that its formation-driving algorithm is intended to help the rovers map the lunar surface, using their cameras and sensors; the CADRE rovers also carry ground-penetrating radar to investigate the subsurface. Extended operations: the Apollo rover's navigation system allowed crews to record direction and distance during excursions and to keep track of their route back to the Lunar Module; Yutu-2 is reported to have operated on the lunar farside for more than 300 days. Cooperative exploration: CADRE is intended to show that multiple robots can cooperate and explore together autonomously, without direct moment-to-moment input from mission controllers.",
+      "operating_principle": "Three operating principles appear in the sources reviewed. Dead reckoning with heading and odometry: NASA's description of the Apollo Lunar Roving Vehicle states that navigation was based on continuously recording direction and distance through a directional gyro and an odometer. This data was input to a computer that kept track of the overall direction and distance back to the Lunar Module. A sun-shadow device could give a manual heading based on the direction of the Sun. Dead reckoning estimates position by integrating measured motion from a known starting point, so errors accumulate with distance travelled unless corrected. Vision-based terrain modelling with ground-side path planning: for Yutu-2, an ISPRS Annals paper on computer vision in teleoperation describes the rover capturing stereo images with its hazard avoidance cameras (Hazcam), navigation cameras (Navcam) and panoramic camera before each move. Local digital elevation models with 0.02 m resolution were routinely produced at each waypoint, and a 0.03 m resolution orthoimage from the descent images served as a base map. Terrain factors were combined with the rover's mobility characteristics into a cost map for path search. The abstract describes the rover as combining ground teleoperation with onboard control, including local planning and emergency obstacle avoidance. The abstract does not give a localisation accuracy figure. Lidar-based localisation and terrain assessment: NASA's HI-RATE page describes navigation software that combines lidar and other navigation sensors with high-performance computing to estimate rover position, assess terrain and obstacles, and plan routes. The approach is described as integrating autonomous navigation algorithms with flight-relevant sensors and computing. No performance metrics are published on the page. Multi-rover formation driving: for CADRE, the formation-driving algorithm is tested with rover prototypes and is intended to support surface mapping. The JPL mission overview describes the rovers as fully autonomous and multi-agent, meant to cooperate autonomously in daytime lunar conditions. Localisation and relative-navigation methods are not described on that page.",
+      "scientific_importance": "Navigation autonomy changes what a surface vehicle can do between commands. According to NASA's NSSDC summary, the Apollo rover reached maximum distances from the Lunar Module of 5.0 km (Apollo 15), 4.5 km (Apollo 16) and 7.6 km (Apollo 17). The NSSDC summary links these excursions to the rover's continuous direction and distance recording, but it gives no accuracy figure for that navigation data. Yutu-2 demonstrates a different approach, in which teleoperation remains central but onboard perception and obstacle avoidance manage local hazards. CADRE and HI-RATE explore a future in which multiple or longer-range rovers operate with reduced dependence on direct human control. The scientific importance of these approaches lies in improving coverage, safety and the efficiency of surface operations, but the sources reviewed do not quantify the resulting scientific return.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power figure for an autonomous navigation system. Navigation may be a dedicated instrument, a set of sensors and software integrated into a rover, or a computing and sensing package shared with other functions. The values below apply only to the named example and source. Where a value is not published in the sources reviewed, it is stated as not publicly specified.",
+        "examples": [
+          {
+            "name": "Apollo Lunar Roving Vehicle navigation system",
+            "type": "Historical lunar navigation subsystem on a crewed rover",
+            "flight_status": "Flown on the Moon during the Apollo 15, 16 and 17 missions. The NSSDC page describes the rover and its navigation system; the mission distances are from that page.",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in the NSSDC summary.",
+            "power": "Not publicly specified in the NSSDC summary.",
+            "sensors_and_components": [
+              "Directional gyro",
+              "Odometer",
+              "Computer tracking direction and distance back to the Lunar Module",
+              "Sun-shadow device giving a manual heading based on the direction of the Sun",
+              "Control and display modules in front of the handle giving speed, heading and pitch information"
+            ],
+            "accuracy": "Not publicly specified. The NSSDC page gives no accuracy or error figures for the navigation system.",
+            "qualification": "Not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Yutu-2 rover navigation and perception",
+            "type": "Lunar rover operated on the lunar farside, with teleoperation and onboard autonomy",
+            "flight_status": "Flown. The ISPRS abstract reports operation on the lunar farside for more than 300 days and a total travel distance of more than 300 m.",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in the abstract reviewed.",
+            "power": "Not publicly specified in the abstract reviewed.",
+            "sensors_and_products": [
+              "Hazard avoidance, navigation and panoramic cameras",
+              "Local digital elevation models at 0.02 m resolution at each waypoint",
+              "0.03 m resolution digital orthoimage from descent images used as a base map"
+            ],
+            "accuracy": "Localisation accuracy not given in the abstract reviewed. The full paper was not readable through the tools used for this article.",
+            "qualification": "Not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://isprs-annals.copernicus.org/articles/V-3-2020/595/2020/"
+            ],
+            "images": []
+          },
+          {
+            "name": "CADRE rover system",
+            "type": "Three small, fully autonomous rovers with a base station, designed for cooperative multi-rover exploration",
+            "flight_status": "Not confirmed as flown in the sources reviewed. The JPL mission overview describes the mission as en route to the Moon, delivered via NASA's Commercial Lunar Payload Services (CLPS) initiative. Launch date and landing outcome could not be verified; see limitations and data_quality_notes.",
+            "mass_kg": null,
+            "dimensions": "Described as suitcase-sized on the JPL overview page; no dimensions are stated.",
+            "power": "Not stated on the JPL overview page.",
+            "sensors_and_products": [
+              "Stereo cameras for surface measurement (JPL overview)",
+              "Ground-penetrating radar for the subsurface (JPL overview)"
+            ],
+            "accuracy": "Not stated.",
+            "qualification": "Development models were tested at JPL in 2022 (formation driving) and 2023 (Mars Yard tests). Flight models are described as bound for the Moon; no qualification results are stated in the sources reviewed.",
+            "source_urls": [
+              "https://www-robotics.jpl.nasa.gov/what-we-do/flight-projects/cooperative-autonomous-distributed-robotic-exploration-cadre/cadre-mission-overview/",
+              "https://science.nasa.gov/photojournal/cadre-rover-prototypes-drive-in-formation/",
+              "https://science.nasa.gov/photojournal/completed-cadre-rover-in-the-clean-room"
+            ],
+            "images": [
+              {
+                "id": "cadre_mars_yard_development_models",
+                "description": "Two full-scale CADRE development model rovers driven in the Mars Yard test terrain at JPL.",
+                "image_type": "Engineering development model photograph",
+                "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/images/e3-PIA26168_CADRE_Mars_Yard_tests.width-1024.jpg",
+                "source_page_url": "https://www.jpl.nasa.gov/images/pia26168-cadre-test-rovers-in-the-mars-yard/",
+                "publisher": "NASA Jet Propulsion Laboratory",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "Two full-scale development model rovers that are part of NASA's CADRE project were driven in the Mars Yard at JPL. One rover has a stand-in for solar panels and the other does not. These are engineering development models, not flight hardware.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset URL verified over HTTP (200, image/jpeg) and taken from the JPL Photojournal page; it is a width-1024 derivative served by the NASA/JPL image host, not the full-resolution original. The source page returned HTTP 403 to a scripted request but its content was read through the fetch tool. The main caption gives August 2023 as the test month while the figure captions give October 2023; the article does not rely on the test date. Usage conditions follow NASA media policy and were not separately checked."
+              },
+              {
+                "id": "cadre_completed_rover_clean_room",
+                "description": "Completed flight-bound CADRE rover in a JPL clean room with its solar panels open.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26169/PIA26169.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/completed-cadre-rover-in-the-clean-room",
+                "publisher": "NASA Science Photojournal / NASA JPL-Caltech",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "With its solar panels open, a small rover that is bound for the Moon sits in a clean room at NASA's Jet Propulsion Laboratory in Southern California (caption abridged).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[2]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct asset URL (PIA26169 download, 2.05 MB) verified over HTTP (200, image/jpeg). Photo taken 26 January 2024 per the source page. The source page's caption is longer than the summary given here; the caption above is abridged."
+              }
+            ]
+          },
+          {
+            "name": "HI-RATE navigation software and computing architecture",
+            "type": "NASA technology development led by Ames Research Center, with contributions from JPL and Johnson Space Center",
+            "flight_status": "Not flown. NASA describes the work as building a reusable reference architecture for combining navigation software, sensors and computing across mobility platforms. Planned resources span FY2025 to FY2028.",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified.",
+            "power": "Not publicly specified.",
+            "sensors_and_computing": [
+              "Lidar and other navigation sensors",
+              "High-performance space computing"
+            ],
+            "accuracy": "No performance metrics or operational milestones are published on the NASA page reviewed.",
+            "qualification": "Not publicly specified.",
+            "source_urls": [
+              "https://www.nasa.gov/technology/high-speed-intelligent-robust-autonomous-terrain-exploration/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The examples do not provide comparable dimensional, mass or power data. The Apollo rover's navigation hardware, Yutu-2's navigation sensors, CADRE's rovers and HI-RATE's architecture are different designs and should not be compared directly. Where a mass or dimension is needed for engineering purposes, it must be taken from the specific mission or hardware documentation.",
+        "mass_and_weight": "No verified mass value is available for a generic autonomous navigation system. The CADRE, Yutu-2, Apollo and HI-RATE sources reviewed do not publish comparable mass values for their navigation hardware.",
+        "power_requirements": "No verified power value is available for a generic autonomous navigation system. The sources reviewed do not publish power figures for the named navigation hardware."
+      },
+      "environmental_and_operational_requirements": "Navigation depends on the lunar surface environment and on the sensors used. The Apollo rover's navigation display included a sun-shadow device that could give a manual heading based on the Sun's direction, so solar geometry was part of the heading reference. The JPL overview describes the CADRE rovers as cooperating autonomously in daytime lunar conditions. Camera-based perception depends on illumination and terrain appearance, which is one reason the Yutu-2 system captured fresh stereo imagery before each move. The NASA HI-RATE page does not state the conditions under which its lidar-based approach has been tested. Navigation also depends on communication. The Yutu-2 abstract explicitly describes a mix of ground teleoperation and onboard autonomy. How much onboard autonomy a future system needs depends on communication delay, mission duration and the hazard level of the terrain; the sources reviewed do not quantify these trade-offs for any named system.",
+      "limitations": "Generic class: \"autonomous navigation system\" does not describe one design. Results from the Apollo rover, Yutu-2, CADRE and HI-RATE should not be treated as interchangeable. Dead-reckoning drift: systems that integrate heading and distance measurements accumulate error with distance travelled. The NSSDC page does not give an error figure for the Apollo navigation system. Teleoperation dependence: the Yutu-2 abstract describes ground teleoperation combined with onboard control that handles local planning and emergency obstacle avoidance and protection. The abstract does not quantify how much route decision-making stayed on the ground. Unpublished performance: HI-RATE has no published performance metrics. CADRE's localisation and relative-navigation methods are not described in the JPL page reviewed. Environmental sensitivity: camera-based and lidar-based perception depend on terrain and lighting conditions. The sources reviewed do not quantify these effects for any lunar system.",
+      "transportation_and_deployment": {
+        "overview": "A rover-type navigation system is integrated with its host vehicle, so transportation constraints belong to the rover or mobile platform rather than to a stand-alone navigation unit.",
+        "transportation_process": [
+          "Earth integration and launch: for CADRE, the JPL overview describes delivery to the Moon via the CLPS initiative. The launch vehicle and lander are not stated on that page. Secondary reporting identifies a commercial lunar lander mission, but that schedule and the associated launch vehicle were not verified against a primary source for this article.",
+          "Lunar transfer and landing delivery: the sources reviewed do not describe the transfer trajectory or landing configuration for the CADRE, HI-RATE or Yutu-2 deliveries in enough detail to assess them. The NSSDC text reviewed does not describe the Apollo rover's stowage or deployment procedure.",
+          "Deployment, setup, power and data: the JPL overview describes the CADRE rovers as fully autonomous and multi-agent, but it does not state their deployment method, power architecture or data-link specifications. The Apollo rover's control and display modules were mounted in front of its handle for the crew. The Yutu-2 abstract describes ground teleoperation of the rover, but it does not describe its data link.",
+          "Compatibility: no compatibility with a specific lander, rover or spacecraft is asserted in this article. Compatibility would require verified mass, dimension, mounting, landing-load, power and communication interface data for the flight configuration."
+        ],
+        "deployment_methods": "Not described in the sources reviewed for the CADRE, HI-RATE or Yutu-2 systems. The NSSDC captions include images labelled as Lunar Roving Vehicle deployment, but they are not used here as evidence of a specific procedure.",
+        "historical_examples": "The Apollo Lunar Roving Vehicle carried a navigation system that tracked direction and distance back to the Lunar Module, as described by NASA's NSSDC summary, and was used on the Apollo 15, 16 and 17 missions. Yutu-2 operated on the lunar farside with teleoperation and onboard obstacle avoidance. CADRE is a flight-bound multi-rover demonstration whose flight status could not be confirmed.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is verified. Compatibility would require verified interface data for the mass, dimensions, mounting points, landing loads, power and communications architecture of the specific flight configuration.",
+        "images": [
+          {
+            "id": "cadre_completed_rover_clean_room",
+            "description": "Completed flight-bound CADRE rover in a JPL clean room with its solar panels open.",
+            "image_type": "Engineering hardware photograph",
+            "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26169/PIA26169.jpg",
+            "source_page_url": "https://science.nasa.gov/photojournal/completed-cadre-rover-in-the-clean-room",
+            "publisher": "NASA Science Photojournal / NASA JPL-Caltech",
+            "credit": "NASA/JPL-Caltech",
+            "caption": "Completed flight-bound CADRE rover in a JPL clean room. The image shows a flight-bound rover before delivery, not a deployed unit.",
+            "section_placements": [
+              "overview",
+              "physical_specifications.examples[2]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct asset URL verified over HTTP (200, image/jpeg). Caption text as in the master registry; the source page's caption is longer than the summary given here."
+          }
+        ]
+      },
+      "historical_significance": "The Apollo Lunar Roving Vehicle carried a navigation system that tracked direction and distance back to the Lunar Module, as described by NASA's NSSDC summary, and was used on the Apollo 15, 16 and 17 missions. Its navigation approach allowed crews to range up to several kilometres from the lander. Yutu-2 extended surface operations on the lunar farside, with a published hybrid approach of teleoperation and onboard obstacle avoidance. CADRE and HI-RATE represent NASA's current direction toward cooperative and autonomous mobility, but their flight and performance histories are still incomplete in the sources reviewed.",
+      "limitations_and_uncertainties": "CADRE flight status: the sources reviewed do not confirm a launch or landing. The JPL page describes the mission as en route, and secondary reporting gave differing schedules. The status must be re-checked against current NASA and commercial lander information before the article is updated. HI-RATE performance: no performance metrics or milestones are published, and the HI-RATE page is a technology description rather than evidence of flight readiness. Yutu-2 localisation: the abstract reviewed does not give a localisation error or accuracy figure; the full paper and related localisation papers were not read in full. Apollo navigation accuracy: the NSSDC summary gives no accuracy figure. Technical reports about the Apollo navigation system exist, but the scanned NASA technical report found during research could not be read through the tools used for this article. Mars Yard test date: the JPL Photojournal caption for PIA26168 gives August 2023 as the test month, while its figure captions refer to an October 2023 test; this article does not rely on the test date. Image sourcing: two of the three verified image assets are NASA Science Photojournal assets; the third is a width-1024 derivative served by the NASA/JPL image host. Full-resolution downloads were not checked. Generic specifications: no verified mass, dimension, power or sensor-performance specification applies to a generic autonomous navigation system.",
+      "images": [
+        {
+          "id": "cadre_completed_rover_clean_room",
+          "description": "Completed flight-bound CADRE rover in a JPL clean room with its solar panels open.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26169/PIA26169.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/completed-cadre-rover-in-the-clean-room",
+          "publisher": "NASA Science Photojournal / NASA JPL-Caltech",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "With its solar panels open, a small rover that is bound for the Moon sits in a clean room at NASA's Jet Propulsion Laboratory in Southern California (caption abridged).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL (PIA26169 download, 2.05 MB) verified over HTTP (200, image/jpeg). Photo taken 26 January 2024 per the source page. The source page's caption is longer than the summary given here; the caption above is abridged."
+        },
+        {
+          "id": "cadre_formation_driving_prototypes",
+          "description": "Two plastic CADRE rover prototypes driving in formation during a test at JPL in 2022.",
+          "image_type": "Engineering test photograph",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia25/pia25666/PIA25666.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/cadre-rover-prototypes-drive-in-formation/",
+          "publisher": "NASA Science Photojournal / NASA JPL-Caltech",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "A pair of plastic prototypes of the CADRE rovers demonstrate driving in formation during a test at JPL in 2022.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "Direct asset URL verified over HTTP (200, image/jpeg). The source page lists the PIA number as PIA25666 in its figure link text, with a typographical variant PIA25866 in one link; the direct asset URL uses PIA25666. Prototype test image, not flight hardware."
+        },
+        {
+          "id": "cadre_mars_yard_development_models",
+          "description": "Two full-scale CADRE development model rovers driven in the Mars Yard test terrain at JPL.",
+          "image_type": "Engineering development model photograph",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/images/e3-PIA26168_CADRE_Mars_Yard_tests.width-1024.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/images/pia26168-cadre-test-rovers-in-the-mars-yard/",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "Two full-scale development model rovers that are part of NASA's CADRE project were driven in the Mars Yard at JPL. One rover has a stand-in for solar panels and the other does not. These are engineering development models, not flight hardware.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL verified over HTTP (200, image/jpeg); width-1024 derivative served by the NASA/JPL image host. The source page returned HTTP 403 to a scripted request but its content was read through the fetch tool. Test-date discrepancy between main and figure captions noted in data_quality_notes."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "cadre_completed_rover_clean_room",
+          "description": "Completed flight-bound CADRE rover in a JPL clean room with its solar panels open.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26169/PIA26169.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/completed-cadre-rover-in-the-clean-room",
+          "publisher": "NASA Science Photojournal / NASA JPL-Caltech",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "With its solar panels open, a small rover that is bound for the Moon sits in a clean room at NASA's Jet Propulsion Laboratory in Southern California (caption abridged).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL verified over HTTP (200, image/jpeg). Repeated from the master registry."
+        }
+      ],
+      "operating_principle_images": [
+        {
+          "id": "cadre_formation_driving_prototypes",
+          "description": "Two plastic CADRE rover prototypes driving in formation during a test at JPL in 2022.",
+          "image_type": "Engineering test photograph",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia25/pia25666/PIA25666.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/cadre-rover-prototypes-drive-in-formation/",
+          "publisher": "NASA Science Photojournal / NASA JPL-Caltech",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "A pair of plastic prototypes of the CADRE rovers demonstrate driving in formation during a test at JPL in 2022.",
+          "section_placements": [
+            "operating_principle"
+          ],
+          "notes": "Direct asset URL verified over HTTP (200, image/jpeg). Repeated from the master registry. Prototype test image, not flight hardware."
+        }
+      ],
+      "references": [
+        {
+          "title": "The Apollo Lunar Roving Vehicle",
+          "publisher": "NASA National Space Science Data Center (NSSDC)",
+          "author": "Dr. David R. Williams, NSSDCA, NASA Goddard Space Flight Center",
+          "date": "Last updated 19 May 2016",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html"
+        },
+        {
+          "title": "Computer vision in the teleoperation of the Yutu-2 rover",
+          "publisher": "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, V-3-2020, pp. 595-602",
+          "author": "J. Wang et al. (24 authors)",
+          "date": "2020-08-03",
+          "url": "https://isprs-annals.copernicus.org/articles/V-3-2020/595/2020/"
+        },
+        {
+          "title": "Cooperative Autonomous Distributed Robotic Exploration (CADRE): Mission Overview",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "author": null,
+          "date": null,
+          "url": "https://www-robotics.jpl.nasa.gov/what-we-do/flight-projects/cooperative-autonomous-distributed-robotic-exploration-cadre/cadre-mission-overview/"
+        },
+        {
+          "title": "CADRE Rover Prototypes Drive in Formation (PIA25666)",
+          "publisher": "NASA Science Photojournal / NASA JPL-Caltech",
+          "author": null,
+          "date": "2023-08-02",
+          "url": "https://science.nasa.gov/photojournal/cadre-rover-prototypes-drive-in-formation/"
+        },
+        {
+          "title": "Completed CADRE Rover in the Clean Room (PIA26169)",
+          "publisher": "NASA Science Photojournal / NASA JPL-Caltech",
+          "author": null,
+          "date": "2024-03-07",
+          "url": "https://science.nasa.gov/photojournal/completed-cadre-rover-in-the-clean-room"
+        },
+        {
+          "title": "CADRE Test Rovers in the Mars Yard (PIA26168)",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "author": null,
+          "date": "2024-03-07",
+          "url": "https://www.jpl.nasa.gov/images/pia26168-cadre-test-rovers-in-the-mars-yard/"
+        },
+        {
+          "title": "High-speed Intelligent Robust Autonomous Terrain Exploration (HI-RATE)",
+          "publisher": "NASA Technology",
+          "author": null,
+          "date": "Page updated 2026-11-04 (as shown on page)",
+          "url": "https://www.nasa.gov/technology/high-speed-intelligent-robust-autonomous-terrain-exploration/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "operating principle (vision-based and formation-driving images)": "payload.article.operating_principle_images",
+      "CADRE example subsection": "payload.article.physical_specifications.examples[2].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Image asset URLs were checked over HTTP. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "CADRE flight status not verified. The JPL mission overview (fetched) describes the mission as en route to the Moon and gives no launch date. Secondary sources gave conflicting schedules (a 2026 launch window in one report, a no-earlier-than Q1 2027 launch in another, from a search-result snippet of a reference page that was not fetched in full). No primary confirmation of launch or landing was found, so CADRE is not described as flown.",
+    "CADRE base station, mesh-network radio links and approximately 14-day surface lifetime appear only in secondary search-result snippets and were not confirmed against a primary NASA source. They are excluded from the specification fields.",
+    "CADRE rover mass, dimensions (beyond 'suitcase-sized'), power and sensor specifications are not stated on the primary JPL page reviewed. Set to null or 'not publicly specified'.",
+    "Apollo Lunar Roving Vehicle navigation: the NSSDC summary (fetched) gives the sensor architecture and mission distances but no accuracy or error figures. A 1974 NASA technical report (NTRS document 19740003321) was retrieved, but it is a scanned PDF that could not be read through the tools used, so its content (including any performance claims found only in search snippets) is not used. A second NASA LRV navigation document returned HTTP 404 and was not used.",
+    "Yutu-2 localisation accuracy and rover mass/power are not given in the ISPRS Annals abstract (fetched via its article page; the PDF is a binary file that could not be read). Accuracy claims, if any, must come from the full paper. The mission lander name for the Yutu-2 deployment is not stated in the abstract and is not asserted here.",
+    "Yutu-2 abstract numbers (0.02 m local DEM resolution; 0.03 m descent-image orthoimage resolution; more than 300 days on the lunar farside; more than 300 m total travel distance) are reported from the abstract only.",
+    "HI-RATE: NASA page (fetched) gives no performance metrics or milestones. The page's listed partners and FY2025-FY2028 planned resources are reported as stated. A search snippet also linked HI-RATE to the PROMISE rover and to the Space Qualified Rover Lidar; these were not verified on fetched pages and are excluded.",
+    "Mars Yard image PIA26168: the main caption gives August 2023 as the test month, while the figure captions refer to an October 2023 test. The source page returned HTTP 403 to curl; the page content was read through the fetch tool. The image asset itself was verified over HTTP (200, image/jpeg).",
+    "PIA25666 (formation driving): the source page's figure link text shows PIA25866, a probable typographical variant of PIA25666. The direct asset URL was verified with the PIA25666 filename.",
+    "The image asset for PIA26168 is a width-1024 derivative from the NASA/JPL image CDN, not the original full-resolution file; full-resolution downloads were not checked for any image (full_resolution_image_downloads_checked = false).",
+    "Image usage rights: all three images are credited to NASA/JPL-Caltech on the source pages. Reuse conditions beyond the credit line were not separately checked against NASA media policy.",
+    "Lunar Roving Vehicle deployment captions appear on the NSSDC page but were not used as evidence of a specific deployment procedure. No LRV images were added to the registry because direct asset URLs for the NSSDC images were not extracted.",
+    "No compatibility claim is made for any lander, rover or spacecraft. Transportation compatibility remains unverified (transportation_compatibility_verified_for_specific_landers = false).",
+    "Technical specifications are not fully audited (technical_specifications_fully_audited = false). Several source URLs and secondary-source details were checked only through fetched summaries, not full documents."
+  ]
+}

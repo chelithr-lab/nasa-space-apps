@@ -1,0 +1,153 @@
+{
+  "catalogue_id": 97,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 4,
+    "name": "Subsurface exploration and drilling"
+  },
+  "payload": {
+    "number": 97,
+    "name": "Core extraction mechanism",
+    "article": {
+      "overview": "A core extraction mechanism is the part of a drilling or coring system that holds an intact cylindrical sample of lunar regolith, separates it from the surrounding ground and retains it while it is lifted out of the hole and transferred for storage or return. There is no single standard design for this function. The best-documented examples are the Apollo drill-string core stems used on Apollo 15, 16 and 17 [1][2] and the Chang'e-5 flexible coring tube with a later sealing ring [3][4][5]. Specifications in this article apply only to these named systems.",
+      "description": "A core extraction mechanism is the part of a drilling system that turns a column of ground material into a sample that can be kept, moved and analysed. Its job has several steps. The mechanism must keep the core together as the drill advances, hold it while the tool is withdrawn, and pass it into a container or transfer device without losing the depth order of the material. The Apollo system did this with a string of hollow stems, each a rigid tube of about 40 cm, that were joined, driven into the ground and then withdrawn with the core inside [1][2]. The Chang'e-5 system used a rotary-percussive drill with a flexible coring tube, and a sealing ring was later designed to stop regolith particles entering the clearance fit between the core and the drill [3][4][5].",
+      "scientific_purpose_and_applications": "The purpose of a core extraction mechanism is to deliver an intact or minimally disturbed sample from below the surface to instruments or to a return container. A core allows layered or compositionally varied regolith to be examined in sequence, which a surface scoop cannot show. The Apollo deep-core drilling was planned to collect a 2 to 3 m deep core of lunar material [2], and the Chang'e-5 drill was designed to obtain intact cores up to two metres deep [3]. Both examples show that the core extraction step is central to what a drill can return from depth.",
+      "operating_principle": "In the Apollo system, the astronauts operated a battery-powered drill that the NASA Working on the Moon page describes as a rotary percussion drill running at 280 rotations per minute and 2270 blows per minute [2]. Stems were joined as the hole deepened. The Apollo 15 crew pulled the core string out by hand, and a jack was added to the treadle for later missions after the Apollo 15 crew had considerable difficulty [2]. In the Chang'e-5 system, the drill is a rotary-percussive mechanism with a flexible coring tube [3][5]. Pre-flight design sources state that the core is held in a flexible Kevlar tube for transfer to the ascent vehicle [3], but the flight reports reviewed do not confirm this detail. A 2022 analysis of the coring mechanism found that a regolith particle at the sampling entry lodged in the clearance fit, and that the pulling force of the flexible coring tube was measured separately in a load test [4].",
+      "scientific_importance": "A core is more informative than loose soil when the depth order of material is kept, but whether a given mechanism preserves that order must be shown for that mechanism. Both documented examples show how retention problems affect a sample. On Apollo 16 the core string was separated into two halves, each about 1.12 m long [2]. On Chang'e-5 a regolith particle lodged in the clearance fit of the coring mechanism, blocking the sampling entry, and a sealing ring with a sheath was later designed to block the gap through which particles entered and to reduce the high pulling force [4].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a core extraction mechanism. The examples below are the only systems for which this review found an accessible primary or institutional source. Values are tied to each named system and are not design values for a new payload.",
+        "examples": [
+          {
+            "name": "Apollo Lunar Surface Drill (ALSD) and deep core stems",
+            "type": "Historical lunar surface core-sampling drill; deployed on Apollo 15, 16 and 17 according to the Smithsonian object record. The Smithsonian page states that this museum object was used for training.",
+            "manufacturer": "Martin Marietta Aerospace",
+            "object_overall_dimensions_cm": [58, 24, 12],
+            "object_overall_mass_kg": 13.4,
+            "core_stem_length_cm_approx": 40,
+            "core_stem_construction": "Rigid but hollow tube segments; stems were joined together and driven into the surface.",
+            "max_reported_drilling_depth_m_approx": 3,
+            "max_reported_drilling_depth_note": "The Smithsonian states that joined stems enabled drilling as deep as 10 ft (about 3 m). The number of stems in the flight kit is not stated on that page.",
+            "drill_rate": "280 rotations per minute and 2270 blows per minute, as stated on the NASA Working on the Moon page.",
+            "apollo_16_core_half_length_m_approx": 1.12,
+            "extraction_method": "Apollo 15: crew pulled the drill handles by hand. Later missions used a jack on a treadle; the NASA page notes that long strokes of the jack handle were more effective than numerous short strokes.",
+            "bit_end_capping": "A cap was placed on the bit end of the string; the bit end of the deepest heat-flow stem was closed so that probes could be inserted afterwards.",
+            "power_requirements": "Battery-operated drill; battery capacity and power draw not stated in the sources reviewed.",
+            "qualification": "Mass and dimensions are from the Smithsonian object record for the museum drill. They should not be assumed to match every flight-kit unit.",
+            "source_urls": [
+              "https://airandspace.si.edu/collection-objects/drill-apollo-lunar-surface-alsd/nasm_A19750038000",
+              "https://nasa.gov/wp-content/uploads/static/history/alsj/WOTM/WOTM-Drilling.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-5 lunar sampling drill",
+            "type": "Robotic lunar sampling drill operated on the Chang'e-5 lander in December 2020.",
+            "design_core_depth_m": 2,
+            "design_core_depth_note": "The EO Portal page cites pre-flight Chinese papers for an intact core up to two metres using a rotary-percussive drilling mechanism. This is a design figure.",
+            "reported_penetration_m_approx": 1,
+            "reported_penetration_note": "Drilling ended at about 1 m according to the 2023 analysis cited as [4]. The EO Portal page reports drilling to about 2 m in post-landing summaries, which conflicts with this value.",
+            "reported_sample_mass_g": 259.72,
+            "reported_sample_note": "Reported as collected on 2 December 2020 in a summary of the International Journal of Robotics Research paper [5]. Full text was not retrieved.",
+            "core_containment": "Flexible Kevlar tube stated in pre-flight design sources [3]; not confirmed in the flight reports reviewed.",
+            "sealing_device": "A sealing ring with a sheath was designed by isolating the original clearance fit and was reported to reduce the high pulling force and seal well in drilling trials [4]. It was proposed for future penetrating drills.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_requirements": "Not publicly specified in the sources reviewed.",
+            "qualification": "Flight-operated on Chang'e-5. Drill mass, dimensions and power are not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://eoportal.org/satellite-missions/chang-e-5",
+              "https://doi.org/10.1016/j.asr.2021.12.004",
+              "https://doi.org/10.1177/02783649231187918"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo drill object is a compact cordless unit with a modular string of roughly 40 cm stems, which lets the drill string be extended by adding stems. The Chang'e-5 drill was a robotic rotary-percussive system with a flexible coring tube, and its dimensions are not publicly specified in the sources reviewed. The two systems therefore cannot be compared directly for size.",
+        "mass_and_weight": "The Apollo drill object is recorded at 13.4 kg overall, as stated on the Smithsonian object page [1]. The Chang'e-5 drill mass is not publicly specified in the sources reviewed. Mass is not a like-for-like comparison because the Apollo figure is for a museum object recorded by the Smithsonian and the Chang'e-5 figure is not published.",
+        "power_requirements": "The Apollo drill is battery-operated, but no battery or power figures were found in the sources reviewed. The Chang'e-5 drill power requirement is not publicly specified in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "Core extraction must work in lunar regolith, where particles can enter moving clearances and jam the mechanism [4]. The Chang'e-5 result shows that a clearance fit between the coring tube and the drill can become blocked and increase the force needed to withdraw the core [4]. The Apollo crews worked in pressurised suits, where it was difficult to align stem threads, and stems could turn while being swapped, so a wrench was used to hold the string [2]. Any new mechanism would need its retention, sealing and pulling-force behaviour tested in simulated lunar regolith and vacuum conditions; the sources reviewed do not publish a general qualification standard for this function.",
+      "limitations": "The phrase core extraction mechanism describes a function rather than one standard device, so no universal mass, size, pulling force or retention specification exists. The Apollo and Chang'e-5 systems are not interchangeable. The Apollo core stems depend on crew handling and a manual or jack-assisted extraction, which does not transfer to a robotic system. The Chang'e-5 flight reports reviewed do not describe the core-tube release or the transfer hardware in enough detail to be used as a verified design.",
+      "transportation_and_deployment": {
+        "overview": "A core extraction mechanism is delivered either as part of a crewed surface kit, as with the Apollo drill, or as part of a robotic lander's sampling system, as with Chang'e-5. No specific lander or rover compatibility is asserted in this article.",
+        "transportation_process": [
+          "Integrate the drill, stems or coring tube and any sealing hardware into the spacecraft or surface kit on Earth.",
+          "Launch the system and transfer it towards the Moon.",
+          "Land or deliver it to the surface, where Apollo crews carried and assembled the drill stems [2].",
+          "Drill and withdraw the core string, then cap or contain the sample.",
+          "Place the contained core or sealed sample into a storage or return carrier. The EO Portal page reports that on 2 December 2020 the Chang'e-5 lander sealed drilled material in a return carrier [3]."
+        ],
+        "deployment_methods": "Apollo: astronauts assembled and operated the drill with stem handling, a wrench and, after Apollo 15, a jack [2]. Chang'e-5: a robotic drill operated on the lander. The EO Portal page cites pre-flight papers for a flexible Kevlar tube that delivers the core to the ascent vehicle [3], but this is not confirmed by the flight reports reviewed.",
+        "historical_examples": "Apollo 15, 16 and 17 flew the Apollo drill and core stems [1][2]. Chang'e-5 operated a robotic drill in December 2020 [3][4][5].",
+        "compatibility_assessment": "Compatibility with a specific lander, rover or ascent vehicle cannot be assessed from the verified sources. Interface requirements such as mass, dimensions, mounting, power, containment and return-chain handling would need to be confirmed from verified spacecraft specifications before any compatibility claim is made.",
+        "images": []
+      },
+      "historical_significance": "The Apollo drill and core stems were used during the crewed lunar surface experiments of Apollo 15, 16 and 17 [1][2]. The Apollo 15 crew had considerable difficulty removing the drill string, which led to a jack being added for later missions [2]. Chang'e-5 demonstrated robotic drilling and core handling in December 2020, and its published analysis proposed a sealing device for future penetrating drills [4][5]. A Soviet Luna 24 drill is also relevant to this payload type, but no readable primary technical source was available for its capture mechanism, so it is not described here.",
+      "limitations_and_uncertainties": "The phrase core extraction mechanism describes a function rather than one standard device, so no universal mass, size, pulling force or retention specification exists. The Apollo and Chang'e-5 systems are not interchangeable. Sources also conflict on depth: the Smithsonian gives about 10 ft (roughly 3 m) for the Apollo drill [1], while the Chang'e-5 drill is designed for an intact core up to 2 m [3] but penetrated about 1 m in the reported results [4][5]. Apollo 15 deep-core dimensions and the Luna 24 mechanism could not be checked against readable primary sources and are excluded.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Drill, Apollo Lunar Surface (ALSD), inventory A19750038000",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "url": "https://airandspace.si.edu/collection-objects/drill-apollo-lunar-surface-alsd/nasm_A19750038000",
+          "date": "Not stated on the object page"
+        },
+        {
+          "title": "Drilling Tasks, Working on the Moon (Apollo Lunar Surface Journal)",
+          "publisher": "NASA",
+          "url": "https://nasa.gov/wp-content/uploads/static/history/alsj/WOTM/WOTM-Drilling.html",
+          "date": "Not stated on the page"
+        },
+        {
+          "title": "Chang'e-5 (China's Lunar Sample Return Mission) / CE-5",
+          "publisher": "Earth Observation Portal (eoportal)",
+          "url": "https://eoportal.org/satellite-missions/chang-e-5",
+          "date": "Page header shows last updated 24 November 2020; entries run to February 2022"
+        },
+        {
+          "title": "Analysis of the lunar regolith sample obstruction in the Chang'E-5 drill and its improvement",
+          "publisher": "Advances in Space Research (authors: Liang J., Tao L., Zhang W., Tang J., Pang Y., Jiang S.)",
+          "url": "https://doi.org/10.1016/j.asr.2021.12.004",
+          "date": "2022 (volume 69, issue 5, pp. 2248-2258)"
+        },
+        {
+          "title": "International Journal of Robotics Research article on the 2-m-class Chang'e-5 robotic drill",
+          "publisher": "International Journal of Robotics Research (SAGE)",
+          "url": "https://doi.org/10.1177/02783649231187918",
+          "date": "Not confirmed; the publisher page returned HTTP 403 and only search-result summaries were read"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images (empty: no verified direct image URL)",
+      "Apollo Lunar Surface Drill example": "payload.article.physical_specifications.examples[0].images (empty: no verified direct image URL)",
+      "Chang'e-5 lunar sampling drill example": "payload.article.physical_specifications.examples[1].images (empty: no image identified)",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (empty)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No direct image asset URL was verified, so no image objects are included. Smithsonian object photographs are referenced only by source page link in the Markdown article."
+  },
+  "data_quality_notes": [
+    "No image was included. The Smithsonian object page lists 13 photographs through ids.si.edu/ids/deliveryService URLs; the required max parameter is a query string, and removing it leaves no valid asset URL. The source page https://airandspace.si.edu/collection-objects/drill-apollo-lunar-surface-alsd/nasm_A19750038000 is cited instead. Smithsonian usage conditions apply.",
+    "The Apollo drill dimensions and mass (58 x 24 x 12 cm; 13.4 kg) are from the Smithsonian object record for a museum drill. The Smithsonian page says the object was used for training; it does not establish that the object is a flight unit.",
+    "The Apollo 15 deep-core stem total length, core length and sample mass were seen only in search-result snippets and a 2007 draft compendium. The NASA Lunar Sample Compendium PDF and the Springer Carrier 1974 paper could not be read, so those values are excluded.",
+    "The Chang'e-5 drilling depth conflicts across sources: 2 m is the pre-flight design figure and post-landing summaries on the EO Portal page; about 1 m is the penetration reported in the 2022 analysis and in the IJRR summary. The article reports both and does not choose one as a verified achievement.",
+    "The Chang'e-5 IJRR result (259.72 g at about 1 m) is taken from search-result summaries. The publisher page returned HTTP 403, so the full text and abstract were not read.",
+    "The Kevlar flexible tube for core containment is attributed to pre-flight design sources cited by the EO Portal page. The flight reports reviewed do not confirm it.",
+    "The Luna 24 drill was not described. Secondary sources give conflicting depths and capture details, and the primary NTRS PDF returned scanned images with no readable text.",
+    "Power requirements, drill masses for the Chang'e-5 system and any Apollo flight-kit stem counts are not publicly specified in the sources reviewed.",
+    "No lander, rover or ascent-vehicle compatibility is asserted. Lunar location recommendations are deferred by the user and are not included."
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 312,
+    "name": "Dust deposition monitor",
+    "article": {
+      "overview": "A dust deposition monitor measures how much lunar dust settles on, or adheres to, a surface over time, and how that build-up changes the performance of the surface. Dust matters because it can cover solar cells, optical surfaces and thermal radiators, and it can be lofted and redistributed by spacecraft exhaust and surface activity. The only dust deposition monitors that have operated on the Moon are the Apollo Dust, Thermal and Radiation Engineering Measurements (DTREM) packages, also called the Apollo Dust Detector experiments. They were emplaced on the surface by the crews of Apollo 11, 12, 14 and 15. Their sensors were exposed solar cells and thermistors, so the dust signal is indirect: dust-related loss of output is mixed with radiation and thermal damage. The units operated for up to nearly eight years, which makes them a valuable reference dataset. As of the primary source reviewed here (McBride et al., 2012), the data had only been partly restored. Newer instruments are at earlier stages. The Electrostatic Dust Analyzer (EDA), described as flight-qualified, measures lofted dust rather than settled dust, and the DUSTER payload that carries it has been selected for development but has not flown.",
+      "description": "A dust deposition monitor is a surface-mounted sensor, or a small set of sensors, whose measured property changes as dust accumulates. It differs from a lofted-dust detector: a deposition monitor records dust that has landed and stayed, whereas a lofted-dust detector records particles while they are moving above the surface. Three measurement concepts appear in the record. (1) Degradation of a sensing surface (flown): Apollo DTREM used the electrical output of solar cells. Dust on a cell blocks light, reducing output. Because radiation and temperature also reduce output, the cells are compared with one another (on Apollo 11, 14 and 15 units, a covered cell, an exposed cell and a pre-irradiated cell) and with thermistors. (2) Mass-sensitive crystal (concept): an EPSC 2025 abstract describes a Dust Electrostatic Collector based on a quartz crystal microbalance, whose resonant frequency shifts as mass is deposited. The concept uses locally generated electric fields to attract charged grains of up to about 10 µm. It is a concept abstract, not a flight result. (3) Optical particulate sensing (laboratory): a calibration study of a low-cost optical particulate-matter sensor, run in vacuum, reported that predicted deposited mass was within an order of magnitude of the reference deposition. The study notes caveats, and the sensor is a laboratory prototype.",
+      "scientific_purpose_and_applications": "The main purposes of a deposition monitor are: (1) engineering assessment, measuring how fast dust accumulates on surfaces that matter for operations, such as solar arrays, camera windows, radiators and mechanisms, so that mitigation can be designed and tested; (2) environmental science, providing time series of deposition that can be compared with models of dust transport, charging and levitation; and (3) reference and calibration, where a monitor with a known configuration can help interpret how dust, radiation and temperature change a surface. The Apollo DTREM objective was stated as determining the effects of lunar and meteoric dust, thermal stresses and radiation exposure on solar cells (McBride et al., 2012), and the use of covered, bare and pre-irradiated cells on some units supports that comparison. The Apollo data have been described as showing long-term signatures of dust deposition and of thermal and radiation damage, together with effects at lunar module ascent, sunrise, sunset and eclipses (McBride et al., 2012).",
+      "operating_principle": "Dust deposition monitors infer deposition from a change in a measured property. The general principle has three parts: a sensing surface whose property depends on the amount of dust on it (for solar cells, light transmission and therefore electrical output; for a crystal microbalance, resonant frequency); other sensors, such as thermistors or reference cells, to account for temperature and radiation effects; and a time-stamped record so that changes can be linked to particular events, such as sunrise, eclipse or launch-vehicle exhaust. For the Apollo DTREM, the primary measurement was the photovoltaic output of three solar cells per unit, recorded as counts from 0 to 255. The package cycled through six sensors (three solar cells and three thermistors) and transmitted a reading about every 54 seconds (McBride et al., 2012). Because the recorded signal combines dust, radiation and thermal effects, the analysis depends on relative changes in cell output rather than absolute voltages (McBride et al., 2012).",
+      "scientific_importance": "Dust deposition on the Moon matters for three reasons. It can reduce the output of power systems over time, which is a concern for any surface installation that depends on solar energy. It can degrade optical and thermal surfaces. And it changes the environment in which other surface instruments operate. The Apollo DTREM record is significant because it is one of the few long-duration in situ records of these effects. Secondary summaries of work by Hollick and O'Brien (2013) report that, for shielded cells, dust rather than radiation was the larger cause of degradation, and that the net dust accretion rate had an upper limit of order 100 µg cm-2 yr-1. These are press and secondary-summary values. The Hollick and O'Brien paper was not read in full for this article, so these figures are not used as verified values. A settled-dust monitor is also distinct from impact-based dust instruments. The Lunar Dust Experiment (LDEX) on LADEE, for example, is an orbital impact-ionisation detector for dust in the lunar exosphere, not a surface deposition monitor (NMSU LDEX description).",
+      "physical_specifications": {
+        "note": "There is no universal specification for a dust deposition monitor. Designs range from a box of solar cells and thermistors mounted on an existing experiment, to a dedicated microbalance concept, to a proposed lander instrument. Values below apply only to the named instrument and source.",
+        "examples": [
+          {
+            "name": "Apollo Dust, Thermal and Radiation Engineering Measurements (DTREM), also called Apollo Dust Detector Experiment",
+            "type": "Historical lunar instrument (flown)",
+            "status": "Flown. Apollo 11 unit part of EASEP, operated a few months from July 1969. Apollo 12, 14 and 15 units mounted on the ALSEP central station and operated until ALSEP shutdown in September 1977.",
+            "mass_kg": null,
+            "mass_note": "Not stated in the primary source reviewed. Secondary sources give about 270 g; not verified against a primary document and not entered here.",
+            "mounting_height_cm": null,
+            "mounting_note": "Secondary sources give about 100 cm above the surface; not verified and not entered here.",
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "sensors": "Three solar cells and three thermistors per unit, on a small box at the top north-west corner of the ALSEP central station sunshield.",
+            "cell_arrangement": "Apollo 11, 14 and 15: three cells facing upward, one with a cover glass, one exposed directly to space, one pre-irradiated (also with a cover glass). Apollo 12: three identical cells except orientation, facing east, west and up.",
+            "readout": "Readings sent back with central station housekeeping data (Word 33). Each sensor reading is a count from 0 to 255. Package cycled six sensors and transmitted about every 54.34 seconds.",
+            "operating_duration_reported": "Apollo 12 about 7.9 years; Apollo 14 about 6.7 years; Apollo 15 about 6.2 years (McBride et al., 2012).",
+            "measurement_principle": "Photovoltaic output of solar cells and temperatures from thermistors; analysis relies on relative changes in cell output.",
+            "qualification": "Flown on the lunar surface. Design life not stated in the primary source reviewed.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20120017948"
+            ],
+            "images": []
+          },
+          {
+            "name": "Electrostatic Dust Analyzer (EDA)",
+            "type": "Lunar surface dust instrument (flight-qualified, not flown); one of two instruments in the DUSTER payload",
+            "status": "Described by Wang et al. (2024) as a high-fidelity and flight-qualified instrument. DUSTER was selected for development for a future Artemis mission and has not flown (LASP, 2025).",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "measurement": "Charge, velocity, size (mass) and flux of electrostatically lofted dust particles. According to a search-summary description of the paper, charge and trajectory come from induced signals on wire-electrode arrays and mass is inferred from deflection of the particle's path by a deflection field.",
+            "performance": "The abstract states that a dust campaign met or exceeded requirements. Earlier engineering presentations listed design targets; these were not verified and are not entered here.",
+            "qualification": "Flight-qualified per the 2024 abstract; not flown.",
+            "source_urls": [
+              "https://doaj.org/article/d0d8413c13d94a119283c1ee84b6f6c9",
+              "https://lasp.colorado.edu/2025/12/05/lasp-instruments-target-a-trip-to-the-moon-aboard-future-nasa-artemis-mission/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Dust Electrostatic Collector with quartz crystal microbalance (concept)",
+            "type": "Proposed or prototype instrument concept",
+            "status": "Concept described in an EPSC 2025 abstract. No flight or laboratory performance figures verified.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "concept": "A quartz crystal microbalance whose resonant frequency shifts with deposited mass. Locally generated electric fields are intended to attract charged grains of up to about 10 µm.",
+            "source_urls": [
+              "https://meetingorganizer.copernicus.org/EPSC-DPS2025/EPSC-DPS2025-1506.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Levitated-dust lander instrument (DLR proposal)",
+            "type": "Proposed lander instrument concept",
+            "status": "Proposed. A concept for detecting levitated particles, not a settled-dust monitor.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "concept": "A pulsed 532 nm laser with a stereo camera system detects and characterises levitated dust at distances of up to about 10 m, according to a search summary of the DLR record.",
+            "source_urls": [
+              "https://elib.dlr.de/217115"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for a generic dust deposition monitor. The Apollo DTREM unit is described as a small box mounted on the ALSEP central station sunshield, but no verified overall dimensions were found. The flown and proposed examples differ in concept (solar-cell degradation, lofted-dust analysis, microbalance, levitated-dust detection), so their dimensions are not comparable.",
+        "mass_and_weight": "Not publicly specified in the verified sources for any named example. Secondary sources give about 270 g for the Apollo DTREM unit; this is not verified and is not used as a specification.",
+        "power_requirements": "Not publicly specified in the verified sources. The Apollo DTREM units were mounted on the ALSEP central station; the unit's own power draw and power source were not found in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A surface dust monitor must survive the lunar surface environment: large day-night temperature swings, radiation and micrometeoroid exposure. Its sensing surfaces must remain exposed to the environment they measure, so they cannot be shielded in the same way as the rest of the instrument. Thermal sensing is needed to correct the signal. Placement matters. Apollo DTREM data show effects at lunar module ascent, when exhaust can disturb dust (McBride et al., 2012). A monitor intended to measure natural deposition must therefore be placed and interpreted with awareness of nearby activity. Orientation also affects what is collected, and the Apollo units used different cell orientations.",
+      "limitations": "Solar-cell output responds to dust, radiation and temperature at once, so separating them requires reference cells and a model, and the result is relative rather than an absolute mass measurement. In the 2012 NASA report, translation and calibration tables existed for Apollo 14 and 15, Apollo 11 was planned, and Apollo 12 could not yet be fully restored; Apollo 12 raw counts were to be released first (McBride et al., 2012). Each unit measures one location and cannot describe spatial variability of deposition across the surface. The DTREM units did not share one cell configuration, so cross-site comparison needs careful treatment. Settled-dust monitoring and lofted-dust detection answer different questions: EDA and LDEX measure lofted or exospheric dust and do not directly measure accumulated deposition. Mass, mounting height and accretion-rate values drawn from secondary material are not confirmed by a primary source in this article.",
+      "transportation_and_deployment": {
+        "overview": "A surface dust monitor is a surface payload. A typical integration sequence includes mounting the sensors on a housing, testing thermal and electrical behaviour on Earth, integrating with the lander's power and data interfaces, launch, transfer to the Moon, delivery to the surface and deployment in a chosen position.",
+        "transportation_process": [
+          "Mount the sensors on a housing and test thermal and electrical behaviour on Earth.",
+          "Integrate with the lander or experiment package power and data interfaces.",
+          "Launch and transfer toward the Moon.",
+          "Deliver to the lunar surface.",
+          "Deploy in a chosen position with the sensing surfaces exposed to the environment they measure."
+        ],
+        "deployment_methods": "Apollo DTREM units were emplaced on the surface by the Apollo crews as part of the EASEP and ALSEP experiment packages. The Apollo 12, 14 and 15 boxes were mounted on the ALSEP central station, and their data were relayed through central station housekeeping (McBride et al., 2012). LASP reports that the two DUSTER instruments will be housed on a Mobile Autonomous Prospecting Platform (MAPP) rover and deployed by astronauts on a future Artemis mission (LASP, 2025). This is a developer-reported plan.",
+        "historical_examples": "Apollo DTREM units on Apollo 11, 12, 14 and 15 (1969 to 1977 operation, as reported in McBride et al., 2012).",
+        "compatibility_assessment": "No verified interface document for a named lander, rover or spacecraft was reviewed. This article does not claim compatibility with any specific lander. Compatibility would need to be assessed against verified mass, mounting, power, data and deployment requirements.",
+        "images": []
+      },
+      "historical_significance": "The Apollo DTREM packages were among the earliest in situ instruments to record dust-related surface changes on the Moon. Their combined operation ran from July 1969 to ALSEP shutdown in September 1977. Restoration work by the NASA Lunar Data Node aims to make these data available to researchers in a calibrated, digital form for the first time (McBride et al., 2012).",
+      "limitations_and_uncertainties": "The Hollick and O'Brien (2013) paper was not read in full; its dust-versus-radiation conclusions and accretion-rate limit are reported only through secondary summaries. The Apollo 12 cell configuration in McBride et al. (2012) (three identical cells facing east, west and up) does not include a covered-versus-bare comparison, so secondary summaries reporting covered-versus-bare results across Apollo 12, 14 and 15 need checking against mission-level documentation. Secondary summaries of Hollick and O'Brien mention seven horizontal solar cells, which does not match the three-cells-per-unit description in McBride et al. (2012). The Apollo 12 ALSEP Systems Handbook (Dust Detector Subsystem, section 7) was identified but not read because the file exceeded the tool's size limit. Mass, dimensions, power, sensor sensitivity (output change per unit mass deposited) and design life are not publicly specified in the verified sources. No flight data exist for the EDA, the quartz-crystal concept or the levitated-dust lander concept. Lander compatibility has not been assessed.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "id": "ref_01",
+          "authors": "McBride, M. J.; Williams, D. R.; Hills, H. K.; Turner, N.",
+          "year": 2012,
+          "title": "Restoration and Reexamination of Data from the Apollo 11, 12, 14, and 15 Dust, Thermal and Radiation Engineering Measurements Experiments",
+          "publisher": "NASA Technical Reports Server (Lunar Science Forum, 16-19 July 2012)",
+          "url": "https://ntrs.nasa.gov/citations/20120017948",
+          "access_note": "Full text read."
+        },
+        {
+          "id": "ref_02",
+          "authors": "Hollick, M.; O'Brien, B. J.",
+          "year": 2013,
+          "title": "Lunar weather measurements at three Apollo sites 1969-1976",
+          "publisher": "Space Weather",
+          "doi": "10.1002/2013SW000978",
+          "url": "https://doi.org/10.1002/2013SW000978",
+          "access_note": "Abstract access blocked; secondary summaries only."
+        },
+        {
+          "id": "ref_03",
+          "authors": "NASA Planetary Data System, Lunar Data Node",
+          "year": null,
+          "title": "Apollo 12 ALSEP Systems Handbook",
+          "publisher": "NASA PDS",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_common/alsep/a12_alsep_systems_handbook.pdf",
+          "access_note": "Identified; not read (file exceeded tool size limit)."
+        },
+        {
+          "id": "ref_04",
+          "authors": "Wang et al.",
+          "year": 2024,
+          "title": "Electrostatic Dust Analyzer for Dust Transport Measurements on the Lunar Surface",
+          "publisher": "The Planetary Science Journal, 5(2)",
+          "doi": "10.3847/PSJ/ad1ffe",
+          "url": "https://doaj.org/article/d0d8413c13d94a119283c1ee84b6f6c9",
+          "access_note": "Abstract from search summary; publisher page not accessible."
+        },
+        {
+          "id": "ref_05",
+          "authors": "Laboratory for Atmospheric and Space Physics (LASP)",
+          "year": 2025,
+          "title": "LASP instruments target a trip to the Moon aboard future NASA Artemis mission",
+          "publisher": "LASP, University of Colorado Boulder",
+          "url": "https://lasp.colorado.edu/2025/12/05/lasp-instruments-target-a-trip-to-the-moon-aboard-future-nasa-artemis-mission/",
+          "access_note": "Read. Page updated 2026-04-24 per page footer; status may have changed."
+        },
+        {
+          "id": "ref_06",
+          "authors": "EPSC-DPS Joint Meeting 2025 contributors",
+          "year": 2025,
+          "title": "Dust Electrostatic Collector (abstract EPSC-DPS2025-1506)",
+          "publisher": "EPSC-DPS Joint Meeting 2025",
+          "url": "https://meetingorganizer.copernicus.org/EPSC-DPS2025/EPSC-DPS2025-1506.html",
+          "access_note": "Search summary only."
+        },
+        {
+          "id": "ref_07",
+          "authors": "DLR",
+          "year": null,
+          "title": "Lunar Levitation Dust Instrument",
+          "publisher": "DLR elib",
+          "url": "https://elib.dlr.de/217115",
+          "access_note": "Search summary only."
+        },
+        {
+          "id": "ref_08",
+          "authors": "Horanyi, M. et al.",
+          "year": 2014,
+          "title": "The Lunar Dust Experiment (LDEX) on LADEE",
+          "publisher": "Space Science Reviews, 185",
+          "doi": "10.1007/s11214-014-0118-7",
+          "url": "https://atmos.nmsu.edu/data_and_services/atmospheres_data/LADEE/ldex.html",
+          "access_note": "Used for contrast only; instrument description via NMSU LDEX page, search summary only."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image URLs were verified in this run, so no image objects are included."
+  },
+  "data_quality_notes": [
+    "No direct image asset was verified, so payload.article.images, overview_images and all section-level image arrays are empty. The Markdown article contains no images.",
+    "Apollo DTREM mass (about 270 g) and mounting height (about 100 cm) appear only in secondary material and are not entered as specifications.",
+    "Accretion-rate limit (about 100 µg cm-2 yr-1) and the dust-versus-radiation conclusions come from secondary summaries of Hollick and O'Brien (2013); the full paper was not read.",
+    "Conflict to resolve: McBride et al. (2012) describes the Apollo 12 unit as three identical cells facing east, west and up, with no covered or bare comparison, whereas secondary summaries report covered-versus-bare results across Apollo 12, 14 and 15.",
+    "Conflict to resolve: secondary summaries of Hollick and O'Brien mention seven horizontal solar cells; McBride et al. (2012) describes three cells per unit.",
+    "The Apollo 12 ALSEP Systems Handbook was identified but not read because the file exceeded the tool size limit.",
+    "The EDA is described as flight-qualified in the 2024 abstract, but the DUSTER payload that carries it was selected for development and has not flown (LASP, 2025). Flight-qualified performance figures were not verified.",
+    "LASP reports a planned rover mounting and an Artemis surface deployment; these are developer-reported plans and do not establish interface compatibility.",
+    "Lunar location recommendations are deferred by the user; no landing site or location is recommended. The LASP article's reference to a site was not carried into this article."
+  ]
+}

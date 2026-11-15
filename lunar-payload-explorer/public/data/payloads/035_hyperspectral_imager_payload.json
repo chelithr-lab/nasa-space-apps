@@ -1,0 +1,437 @@
+{
+  "catalogue_id": 35,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 35,
+    "name": "Hyperspectral imager",
+    "article": {
+      "overview": "A hyperspectral imager is an imaging spectrometer that records a full spectrum for every pixel of an image. A broadband camera records a few wide bands and a multispectral imager records a few discrete bands; a hyperspectral instrument samples many contiguous, narrow bands, so that each pixel yields a spectrum that can be compared with the absorption features of minerals, ices and hydrated materials. The class is defined by spectral sampling and contiguity rather than by one design. This article covers the generic class and three lunar examples: the Moon Mineralogy Mapper (M3) on India's Chandrayaan-1 orbiter [1][2], the Imaging Infrared Spectrometer (IIRS) on Chandrayaan-2 [3][4][5], and the High-resolution Volatiles and Minerals Moon Mapper (HVM3) on NASA's Lunar Trailblazer [6][7][8]. M3 flew and returned a published dataset. IIRS is described by ISRO as operating on the Chandrayaan-2 orbiter, but its performance values here come from pre-launch documents. HVM3 was integrated on a spacecraft that launched in February 2025, but the sources accessed do not confirm any in-orbit HVM3 measurements before the mission ended [6][7][8].",
+      "description": "An imaging spectrometer records an image in which each pixel carries a spectrum rather than a single brightness value. A common pushbroom design images a line of ground onto a slit. A dispersive element then spreads the light by wavelength across a two-dimensional detector, so one detector axis is spatial and the other is spectral. Repeated lines, built up as the spacecraft moves, form a data cube with two spatial dimensions and one spectral dimension [8]. M3 is described as a pushbroom imaging spectrometer with a two-dimensional HgCdTe detector array [2]. HVM3 is also a pushbroom system whose linear field of view sweeps across the surface as the spacecraft moves [8]. IIRS disperses reflected sunlight with a grating into spectral bands [5].\n\nCalibration is central to any hyperspectral product. Raw detector numbers must be converted to radiance and then, where required, to reflectance, using dark, flat-field and calibration-target observations and a known mapping from detector element to wavelength. The M3 calibrated-radiance product is distributed through the Planetary Data System [1][9]. HVM3's pre-launch paper describes laboratory calibration of spectral response, radiometric response and flat field [8].\n\nThe class is therefore defined by what the instrument measures, not by one size or mounting. Catalogue entries 034 (Multispectral imager) and 036 (Infrared imager) cover coarser band sets and are cross-referenced rather than duplicated here. Entries 061 (Near-infrared spectrometer) and 062 (Visible and infrared spectrometer) cover spectrometers that may or may not form images, and are also cross-referenced.",
+      "scientific_purpose_and_applications": "The main purpose of a lunar hyperspectral imager is to map surface composition in place, so that mineral groups, hydrated material and volatile-related absorptions can be located on the ground. The sources accessed describe three connected goals:\n\n- **Mineralogy.** The M3 science goal is to characterise and map lunar surface mineralogy in the context of lunar geologic evolution. The stated topics include the highland crust, basaltic volcanism, impact craters and potential volatiles [2].\n- **Volatiles and water.** M3's spectral range was chosen so that the 2.5 to 3.0 µm region could be used for OH and H2O absorptions near 3000 nm [2]. IIRS aims to extend coverage to about 5 µm to confirm OH, H2O and water-ice signatures and to completely characterise the water and hydroxyl feature near 3.0 µm [3]. HVM3's mission goal is to understand the form, abundance and distribution of water across the lunar surface, including permanently shadowed regions, by measuring absorptions of water ice, adsorbed H2O and OH [8].\n- **Resource assessment.** The M3 pre-launch document describes an exploration goal of assessing and mapping lunar mineral resources at high spatial resolution to support future targeted missions [2]. This article does not recommend any location for such work.",
+      "operating_principle": "The measurement chain has four parts. Telescope optics form an image of the surface on a slit or line. A dispersive element, a grating in IIRS's case [5], separates the light by wavelength. A two-dimensional detector records spatial position along one axis and wavelength along the other. Motion of the spacecraft builds up the second spatial dimension, so that each frame of the detector is one line of ground across all wavelengths [8].\n\nM3 measured reflected solar energy with a two-dimensional HgCdTe detector array and a pushbroom design [2]. Its instrument paper reports 10 nm spectral sampling, a 24° field of view and a spatial sampling of 0.7 mrad [1]. HVM3 has a 43 mm focal length, an F-number of 3.4 and a 0.77 mrad pixel field of view. Its raw frames are converted to radiance images after dark-image subtraction; on the Moon, dark images are taken on the non-sunlit side in the science orbit [8].\n\nThe spectral measurement depends on the illumination. Reflected sunlight from the sunlit surface gives the usual reflectance spectra. For permanently shadowed regions, HVM3 is designed to use terrain-scattered illumination, which is much fainter than direct sunlight [8]. The measurement therefore depends on the lunar local time, the viewing geometry and the integration time, not only on the instrument.",
+      "scientific_importance": "Composition is the missing measurement that a broadband image cannot provide. Minerals and hydrated materials have narrow absorption features, and a set of closely spaced bands can identify them. The 2.5 to 3.0 µm region is important because OH and H2O absorptions appear near 3 µm [2][3]. ISRO's 2019 briefing states that M3 had detected hydroxyl and water-ice molecules at high lunar latitudes and that IIRS was intended to confirm those signatures by extending the range to 5 µm [3]. That is ISRO's characterisation of M3's results and is attributed here to ISRO. The M3 instrument team reports that its calibrated data were delivered to the Planetary Data System and that the 1,542 downlinked datasets cover more than 95% of the lunar surface [1]. The same team reports signal-to-noise above 400 at the equatorial reference radiance and above 100 at the polar reference radiance [1]. These are publisher-reported performance figures and have not been independently re-derived for this article.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a hyperspectral imager. The examples below differ in mission, orbit, spectral range, sampling and development status, so their numbers should not be ranked against one another. Each value is tied to the named instrument and source. Where a source does not publish a value, the text says \"not publicly specified\" and no value is inferred.",
+        "comparison_table_markdown": "| Item | Chandrayaan-1 M3 | Chandrayaan-2 IIRS | Lunar Trailblazer HVM3 |\n|---|---|---|---|\n| Status in sources | Flown on Chandrayaan-1; data acquired 2008-2009 [1] | On the Chandrayaan-2 orbiter; ISRO describes payloads as operational, IIRS-specific performance not verified here [3][4] | Calibrated and integrated before launch [8]; spacecraft launched Feb 2025 and mission ended Jul 2025 [6][7]; in-orbit HVM3 measurements not confirmed |\n| Spectral range | 0.43-3.0 µm in the post-mission paper [1]; nominal 0.7-3.0 µm in the pre-launch document [2] | About 0.8-5.0 µm [3][4][5] | 0.6-3.6 µm [8] |\n| Spectral sampling | 10 nm [1][2] | About 20 nm [3]; about 20-25 nm [4] | 10 nm, with FWHM below 15 nm [8] |\n| Spectral bands | 261 spectral elements, pre-launch [2]; PDS product lists 255 channels (global) and 85 channels (target) [9] | 256 contiguous bands [3]; about 250 bands [4] | Not separately stated in the sources accessed [8] |\n| Spatial resolution | 70 m/pixel from 100 km [2] | About 80 m [3][4] | 50-90 m/pixel; 77 m at 100 km [8] |\n| Field of view or swath | 24° field of view [1]; 40 km field of view from 100 km, pre-launch [2] | Not publicly specified in the sources accessed | 24° full-width and 12° half-width fields of view [8]; 20 km swath per EO Portal [7] |\n| Orbit | 100 km polar orbit [2] | 100 km polar circular orbit [4] | Science orbit nominal 100 ± 30 km [8] |\n| Mass | 8.2 kg, pre-launch document [2] | Not publicly specified in the sources accessed | 14 kg [8] |\n| Power | Not publicly specified in the sources accessed | Not publicly specified in the sources accessed | Not publicly specified in the sources accessed |\n| Dimensions | Not publicly specified in the sources accessed | Not publicly specified in the sources accessed | Not publicly specified in the sources accessed |\n| Detector | Two-dimensional HgCdTe array [2] | Not publicly specified in the sources accessed; grating dispersion [5] | Pixel format 640 × 480 [8] |",
+        "examples": [
+          {
+            "name": "Chandrayaan-1 Moon Mineralogy Mapper (M3)",
+            "type": "Flown lunar orbital imaging spectrometer (Chandrayaan-1 orbiter, NASA guest instrument)",
+            "status": "flown; data acquired 2008-2009 (post-mission paper) [1]",
+            "spectral_range_um": [
+              0.43,
+              3.0
+            ],
+            "spectral_range_basis": "0.43-3.0 um from the post-mission paper [1]; nominal 0.7-3.0 um from the pre-launch ISSDC document [2]",
+            "spectral_sampling_nm": 10,
+            "spectral_bands": {
+              "pre_launch_spectral_elements": 261,
+              "pds_channels_global_mode": 255,
+              "pds_channels_target_mode": 85,
+              "basis": "261 from pre-launch ISSDC document [2]; 255 and 85 from PDS CALIV3 product note [9]; not reconciled"
+            },
+            "spatial_resolution_m": 70,
+            "spatial_resolution_basis": "70 m/pixel from a 100 km orbit, pre-launch document [2]",
+            "field_of_view_deg": 24,
+            "field_of_view_basis": "24° field of view and 0.7 mrad spatial sampling [1]",
+            "swath_km": 40,
+            "swath_basis": "40 km field of view from a 100 km orbit, pre-launch document [2]",
+            "orbit": "100 km polar orbit (pre-launch document) [2]",
+            "mass_kg": 8.2,
+            "mass_basis": "8.2 kg, pre-launch ISSDC document [2]",
+            "power_w": "not publicly specified in the sources accessed",
+            "dimensions_mm": "not publicly specified in the sources accessed",
+            "detector": "Two-dimensional HgCdTe detector array (pre-launch document) [2]",
+            "qualification": "Mass is from a pre-launch configuration document. Published in-flight performance comes from the 2011 paper [1]. The 2011 paper gives SNR above 400 at the equatorial reference radiance and above 100 at the polar reference radiance, with uniformity above 90%. Communication was lost on 29 August 2009.",
+            "source_urls": [
+              "https://doi.org/10.1029/2011JE003797",
+              "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+              "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/ISRO_Chandrayaan-1/M3/CALIV3.htm"
+            ],
+            "article_text": "**Status: flown.** M3 flew as a guest instrument on India's Chandrayaan-1 orbiter, which was launched on 22 October 2008. The instrument was turned on on 18 November 2008, and communication with the spacecraft was lost on 29 August 2009 [1]. Over the mission, 1,542 downlinked datasets were acquired, covering more than 95% of the lunar surface [1].\n\n**Published performance.** The 2011 instrument paper describes M3 as covering 430 to 3000 nm with 10 nm spectral sampling, a 24° field of view and 0.7 mrad spatial sampling [1]. It reports signal-to-noise above 400 at the equatorial reference radiance and above 100 at the polar reference radiance, with spectral cross-track and spectral IFOV uniformity each above 90% [1]. The pre-launch ISSDC payload document gives a nominal range of 0.7 to 3.0 µm, 640 cross-track by 261 spectral elements, 70 m per pixel and 10 nm continuous spectral resolution from a nominal 100 km polar orbit, a 40 km field of view, a two-dimensional HgCdTe detector array and a mass of 8.2 kg [2]. The PDS CALIV3 product note lists 255 channels in global mode and 85 channels in target mode [9]. That channel count differs from the pre-launch document and is recorded as a discrepancy rather than resolved.\n\n**Evidence limits.** The 430 nm lower limit and the in-flight performance come from the post-mission paper, while the 0.7 µm limit and the mass come from a pre-launch document [1][2]. The paper reports that thermal and orbital conditions varied more than expected and constrained data quality [1]. Power and dimensions are not publicly specified in the sources accessed, so none are given. The 2011 paper was read through its record and abstract-level summary, not as full text.",
+            "images": [
+              {
+                "id": "m3_orientale_composite_pia11727",
+                "description": "Multi-wavelength composite image of the Orientale Basin region of the Moon, taken by NASA's Moon Mineralogy Mapper (M3).",
+                "image_type": "Instrument science image (NASA/JPL Photojournal)",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia11/pia11727/PIA11727.jpg",
+                "source_page_url": "https://photojournal.jpl.nasa.gov/catalog/PIA11727",
+                "publisher": "NASA/JPL (NASA Photojournal)",
+                "credit": "NASA/JPL (exact credit line on the Photojournal record not extracted in this run)",
+                "caption": "Different wavelengths of light provide new information about the Orientale Basin region of the Moon in a composite image taken by NASA's Moon Mineralogy Mapper, a guest instrument aboard ISRO's Chandrayaan-1 spacecraft.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 631 x 635 px, identified on the Photojournal record and NASA Science page PIA11727. Query-free URL. Reuse conditions not checked; full-resolution TIFF not downloaded."
+              },
+              {
+                "id": "m3_nearside_pia12235",
+                "description": "Nearside of the Moon: M3 data for the lunar hemisphere, from NASA's Moon Mineralogy Mapper on Chandrayaan-1.",
+                "image_type": "Instrument data image (NASA/JPL Photojournal)",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia12/pia12235/PIA12235.jpg",
+                "source_page_url": "https://photojournal.jpl.nasa.gov/catalog/PIA12235",
+                "publisher": "NASA/JPL (NASA Photojournal)",
+                "credit": "NASA/JPL (exact credit line on the Photojournal record not extracted in this run)",
+                "caption": "Images from NASA's Moon Mineralogy Mapper on ISRO's Chandrayaan-1 spacecraft showing data for the hemisphere of the Moon (Photojournal title: Nearside of the Moon).",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1280 x 896 px. The Photojournal record lists the M3 instrument and Chandrayaan-1 spacecraft. Query-free URL. Reuse conditions not checked."
+              }
+            ]
+          },
+          {
+            "name": "Chandrayaan-2 Imaging Infrared Spectrometer (IIRS)",
+            "type": "Orbital imaging spectrometer (Chandrayaan-2 orbiter)",
+            "status": "on the Chandrayaan-2 orbiter; ISRO's undated page states payloads are operational; IIRS-specific in-orbit performance not verified here [4]",
+            "spectral_range_um": [
+              0.8,
+              5.0
+            ],
+            "spectral_range_basis": "about 0.8-5.0 um [3][4][5]",
+            "spectral_sampling_nm": "about 20 nm (2019 briefing [3]); about 20-25 nm (ISRO science page [4])",
+            "spectral_bands": {
+              "contiguous_bands": 256,
+              "basis": "256 from the August 2019 ISRO briefing [3]; about 250 from the ISRO science page [4]; not reconciled"
+            },
+            "spatial_resolution_m": 80,
+            "spatial_resolution_basis": "about 80 m [3][4]",
+            "field_of_view_deg": "not publicly specified in the sources accessed",
+            "swath_km": "not publicly specified in the sources accessed",
+            "orbit": "100 km polar circular orbit [4]",
+            "mass_kg": "not publicly specified in the sources accessed",
+            "power_w": "not publicly specified in the sources accessed",
+            "dimensions_mm": "not publicly specified in the sources accessed",
+            "detector": "not publicly specified in the sources accessed; uses a grating to disperse reflected sunlight [5]",
+            "qualification": "Values are from a pre-launch briefing and an undated ISRO page. Orbiter launch date 22 July 2019 is from the ISRO science page [4]. No IIRS instrument paper was accessed.",
+            "source_urls": [
+              "https://www.issdc.gov.in/docs/ch2/chandrayaan2_payload.pdf",
+              "https://www.isro.gov.in/ISRO_EN/Chandrayaan2_science.html",
+              "https://www.isro.gov.in/Chandrayaan2begins.html"
+            ],
+            "article_text": "**Status: on the Chandrayaan-2 orbiter; IIRS in-orbit performance not verified here.** Chandrayaan-2 was launched on 22 July 2019. ISRO's undated science page states that the orbiter is in a 100 km by 100 km orbit around the Moon and that all payloads are operational [4]. The sources accessed do not give IIRS-specific in-orbit measurements.\n\n**Published configuration.** ISRO's August 2019 pre-launch briefing describes IIRS as measuring reflected solar radiation in 256 contiguous spectral bands from 100 km lunar orbit, over 0.8 to 5 µm, with a spatial resolution of 80 m and a spectral resolution of 20 nm. Its expected higher-level product is calibrated, radiometrically corrected reflectance spectra [3]. ISRO's science page gives a similar range of about 0.8 to 5.0 µm, a spatial resolution of about 80 m, a spectral resolution of about 20-25 nm and about 250 spectrally contiguous bands in a 100 km polar circular orbit [4]. IIRS uses a grating to disperse reflected sunlight into spectral bands [5]. Its objectives include global mineralogical and volatile mapping over about 0.8 to 5.0 µm and a complete characterisation of the water and hydroxyl feature near 3.0 µm [3].\n\n**Evidence limits.** The values are pre-launch configuration values, and the band count and spectral resolution differ between ISRO's two pages [3][4]. No mass, power, dimensions, detector technology or field of view were found in the sources accessed. ISRO states that the first illuminated IIRS image was acquired, but no image of that observation was verified for this article [5].",
+            "images": []
+          },
+          {
+            "name": "Lunar Trailblazer High-resolution Volatiles and Minerals Moon Mapper (HVM3)",
+            "type": "Orbital imaging spectrometer (integrated on the Lunar Trailblazer orbiter)",
+            "status": "pre-launch calibrated and integrated on the spacecraft [8]; spacecraft launched February 2025 and mission ended 31 July 2025 [6][7]; no in-orbit HVM3 measurements confirmed in the sources accessed",
+            "spectral_range_um": [
+              0.6,
+              3.6
+            ],
+            "spectral_range_basis": "0.6-3.6 um [8][7]",
+            "spectral_sampling_nm": 10,
+            "spectral_bands": {
+              "basis": "band count not separately stated in the sources accessed; spectral FWHM below 15 nm [8]"
+            },
+            "spectral_fwhm_nm": "below 15",
+            "spatial_resolution_m": "50-90 m/pixel (77 m at 100 km) [8]",
+            "pixel_field_of_view_mrad": 0.77,
+            "field_of_view_deg": {
+              "full_width": 24,
+              "half_width": 12,
+              "basis": "Table 1 and text of the 2026 paper [8]"
+            },
+            "focal_length_mm": 43,
+            "swath_km": "20 km per EO Portal [7]; not reconciled with the 24° full-width field of view [8]",
+            "orbit": "science orbit nominal 100 ± 30 km [8]",
+            "mass_kg": 14,
+            "mass_basis": "instrument mass 14 kg in the performance table of the 2026 paper, attributed to Bender et al. (2022) [8]",
+            "power_w": "not publicly specified for HVM3 in the sources accessed",
+            "dimensions_mm": "not publicly specified for HVM3 in the sources accessed",
+            "detector": "640 x 480 pixel format [8]",
+            "operating_temperatures_k": {
+              "telescope": "170-196",
+              "spectrometer": "165-190",
+              "detector": "118-121"
+            },
+            "qualification": "Pre-launch laboratory calibration. Key points state performance sufficient to measure 1% absorptions in permanently shadowed regions with terrain-scattered irradiance of 1 W m-2, from laboratory tests [8]. Launch date differs by one day between NASA [6] and EO Portal [7].",
+            "source_urls": [
+              "https://doi.org/10.1029/2025EA004456",
+              "https://science.nasa.gov/mission/lunar-trailblazer/",
+              "https://eoportal.org/satellite-missions/lunar-trailblazer"
+            ],
+            "article_text": "**Status: integrated on Lunar Trailblazer; the spacecraft launched in February 2025, but no in-orbit HVM3 measurements are confirmed in the sources accessed.** HVM3 was built at NASA's Jet Propulsion Laboratory and shipped to Lockheed Martin Space in Colorado for integration with the Lunar Trailblazer spacecraft [12]. The 2026 calibration paper reports that HVM3 completed assembly, testing, calibration and integration on the orbiter [8]. NASA states that Lunar Trailblazer launched on 26 February 2025, that operators lost contact the following day and that the mission ended on 31 July 2025 [6]. EO Portal gives the launch as 27 February 2025 (UTC), describes the instruments as ones that \"were going to collect measurements of the lunar surface\", and does not report HVM3 measurements [7]. The two sources differ by one day on the launch date, and both are recorded.\n\n**Published performance.** The 2026 paper, which describes HVM3 as slated for launch and reports pre-launch laboratory calibration, gives 600 to 3600 nm, 10 nm spectral sampling, spectral full width at half maximum below 15 nm and 50 to 90 m per pixel (77 m at 100 km) [8]. It gives a pixel field of view of 0.77 mrad, full and half-width fields of view of 24° and 12°, a focal length of 43 mm, a detector format of 640 by 480 pixels and an instrument mass of 14 kg [8]. Operational temperatures are 170 to 196 K for the telescope, 165 to 190 K for the spectrometer and 118 to 121 K for the detector [8]. The key points state that laboratory tests indicate performance sufficient to measure 1% absorptions in permanently shadowed regions with terrain-scattered irradiance of 1 W m⁻² [8]. This is a laboratory result, not an in-orbit measurement. EO Portal gives a 20 km swath [7], which is not reconciled with the 24° full-width field of view [8].\n\n**Evidence limits.** HVM3 power, dimensions and a separately stated band count were not found in the sources accessed. The spacecraft mass in EO Portal's table is not an HVM3 value and is not used [7].",
+            "images": [
+              {
+                "id": "hvm3_clean_room_pia25256",
+                "description": "HVM3 imaging spectrometer in a JPL clean room before spacecraft integration.",
+                "image_type": "Engineering hardware photograph (NASA/JPL Photojournal)",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25256/jpeg/PIA25256.jpg",
+                "source_page_url": "https://photojournal.jpl.nasa.gov/catalog/PIA25256",
+                "publisher": "NASA/JPL (NASA Photojournal)",
+                "credit": "NASA/JPL-Caltech (credit line as shown on the Photojournal record was not extracted in this run)",
+                "caption": "The HVM3 instrument sits in a JPL clean room in early December 2022. It was built at JPL and then shipped to Lockheed Martin Space in Colorado to be integrated with NASA's Lunar Trailblazer spacecraft.",
+                "section_placements": [
+                  "physical_specifications.examples[2]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1280 x 943 px. Query-free URL. Photojournal record describes the HVM3 instrument and the Lunar Trailblazer integration path. Reuse conditions not checked."
+              },
+              {
+                "id": "hvm3_instrument_pia25252",
+                "description": "Photograph of the High-resolution Volatiles and Minerals Moon Mapper (HVM3) released by NASA/JPL.",
+                "image_type": "Instrument photograph (NASA/JPL Photojournal)",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25252/PIA25252.jpg",
+                "source_page_url": "https://photojournal.jpl.nasa.gov/catalog/PIA25252",
+                "publisher": "NASA/JPL (NASA Photojournal)",
+                "credit": "NASA/JPL-Caltech (credit line as shown on the Photojournal record was not extracted in this run)",
+                "caption": "The High-resolution Volatiles and Minerals Moon Mapper (HVM3) is one of two instruments that will be carried aboard NASA's Lunar Trailblazer. The Photojournal caption was written before launch and gives a 2023 launch year.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1280 x 720 px. The Photojournal record identifies the HVM3 instrument and Lunar Trailblazer. Pre-launch caption retained as published. Reuse conditions not checked."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are not publicly specified for any of the three examples in the sources accessed. HVM3's focal length (43 mm) and entrance aperture (12.65 mm) are published [8], but they are optical parameters, not an envelope. The pre-launch M3 document does not give dimensions in the section accessed [2]. The IIRS sources accessed give no dimensions [3][4].",
+        "mass_and_weight": "Published masses: M3 8.2 kg in the pre-launch ISRO/ISSDC document [2]; HVM3 instrument mass 14 kg in the performance table of the 2026 calibration paper, which attributes the table to Bender et al. (2022) [8]. The IIRS mass is not publicly specified in the sources accessed. Spacecraft masses in the sources are not instrument masses and are not used.",
+        "power_requirements": "Power is not publicly specified for M3, IIRS or HVM3 in the sources accessed. HVM3's paper describes a power supply unit that provides clean power to the focal-plane array [8], but no power value is stated in the text read. No power value is inferred."
+      },
+      "environmental_and_operational_requirements": "A lunar hyperspectral imager in orbit operates in vacuum, under strong thermal cycling and in a radiation environment. Thermal control is therefore a design driver. HVM3 is an actively cooled instrument, with a cryocooler subsystem, and its operational temperatures are 165 to 196 K across the telescope and spectrometer, with the detector at 118 to 121 K [8]. M3's sources report that thermal and orbital conditions varied more than expected and constrained data quality [1].\n\nIllumination limits what can be measured. Reflected-sunlight spectra depend on solar geometry. Permanently shadowed regions require either terrain-scattered illumination, as HVM3 is designed for, or a different approach [8]. HVM3 also acquires dark images on the non-sunlit side of the Moon in its science orbit, and the dark-image integration time must match the science integration time [8]. The paper describes an instrument with no shutter, so this background subtraction is part of the operating sequence [8].\n\nOrbit altitude sets the ground scale. HVM3's pixel size is 50 to 90 m across its nominal 100 ± 30 km altitude range, and the footprint scales with altitude [8]. M3 uses 70 m per pixel from a nominal 100 km orbit [2]. Data handling is also a constraint: M3 acquired 1,542 downlinked datasets over its mission [1].",
+      "limitations": "A hyperspectral imager does not measure composition directly. It measures radiance or reflectance that must be interpreted, and spectral sampling, spatial resolution, signal-to-noise and swath trade against one another in any one design. The three examples should not be ranked on a single figure. They are also at different stages. M3 has a published post-mission record, IIRS's in-orbit performance was not verified in this article, and HVM3's published characterisation is pre-launch laboratory work. Several values are pre-launch: the M3 mass comes from a pre-launch document, and the Chandrayaan-2 values come from a 2019 briefing and an undated ISRO page [2][3][4]. Source conflicts are recorded rather than resolved: the M3 channel count (261 against 255 and 85), the IIRS band count and spectral resolution, the HVM3 swath against its 24° field of view, and the HVM3 launch date by one day [1][2][7][8][9]. Power and dimensions are not publicly specified for any of the three examples in the sources accessed.",
+      "transportation_and_deployment": {
+        "overview": "The three examples are orbiter payloads. Each is integrated into a spacecraft on Earth, launched, transferred to the Moon, inserted into lunar orbit and commissioned. For an orbiter payload, the relevant interfaces are spacecraft mounting and alignment, pointing knowledge (the mapping of each pixel depends on a known look direction), thermal control of cooled optics and detectors, power and data handling, and the orbit altitude that sets ground sampling [8].\n\nHVM3 is the example with the most documented integration sequence. It was built at JPL and shipped to Lockheed Martin Space in Colorado for integration with the spacecraft [12]. The 2026 paper describes a planned multi-month cruise phase with decontamination periods before science orbit [8]. The M3 and IIRS sources accessed do not describe their spacecraft-integration sequences. None of the three examples is delivered by a lander in these sources, and no lander is named.",
+        "transportation_process": [
+          "Integrate the imaging spectrometer into the orbiter on Earth, including mounting and alignment to the spacecraft's pointing frame.",
+          "Launch the orbiter and perform transfer to the Moon. Lunar Trailblazer launched in February 2025 [6][7]; the M3 and IIRS launch details are in [1] and [4].",
+          "Insert the orbiter into lunar orbit: a 100 km polar orbit for M3 and IIRS [2][4], and a nominal 100 ± 30 km science orbit for HVM3 [8].",
+          "Commission the instrument, including cooling, dark-image and calibration activities. The HVM3 paper describes these as post-launch activities [8].",
+          "Operate the instrument along the orbit, building the spectral image line by line as the spacecraft moves [8]."
+        ],
+        "deployment_methods": "Orbital hyperspectral imagers are not deployed. They are fixed to the spacecraft and operated in orbit, so the relevant engineering question is alignment and pointing rather than surface deployment. None of the sources accessed describes a surface deployment of these instruments.",
+        "historical_examples": "Orbiter examples: M3 on Chandrayaan-1 (2008-2009) [1]; IIRS on Chandrayaan-2 (orbiter launched 2019) [4]; HVM3 on Lunar Trailblazer (launched February 2025; mission ended July 2025) [6][7].",
+        "compatibility_assessment": "No compatibility with a lander, rover or specific spacecraft is asserted beyond the hosting relationships stated in the sources: M3 on Chandrayaan-1, IIRS on Chandrayaan-2 and HVM3 on Lunar Trailblazer. A new hyperspectral imager on another spacecraft would need verified mass, dimensions, power, pointing and data interface documents for that vehicle, and several of those values are not publicly specified for these three instruments.",
+        "images": [
+          {
+            "id": "hvm3_clean_room_pia25256",
+            "description": "HVM3 imaging spectrometer in a JPL clean room before spacecraft integration.",
+            "image_type": "Engineering hardware photograph (NASA/JPL Photojournal)",
+            "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25256/jpeg/PIA25256.jpg",
+            "source_page_url": "https://photojournal.jpl.nasa.gov/catalog/PIA25256",
+            "publisher": "NASA/JPL (NASA Photojournal)",
+            "credit": "NASA/JPL-Caltech (credit line as shown on the Photojournal record was not extracted in this run)",
+            "caption": "The HVM3 instrument sits in a JPL clean room in early December 2022. It was built at JPL and then shipped to Lockheed Martin Space in Colorado to be integrated with NASA's Lunar Trailblazer spacecraft.",
+            "section_placements": [
+              "physical_specifications.examples[2]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1280 x 943 px. Query-free URL. Photojournal record describes the HVM3 instrument and the Lunar Trailblazer integration path. Reuse conditions not checked."
+          }
+        ]
+      },
+      "historical_significance": "M3 is the best-documented example in this article. Its instrument team reports on-orbit validation, including an Earth-view dataset, and describes the result as the first imaging spectrometer measurement of this kind at the Moon [1]. Its archive of 1,542 downlinked datasets remains a major resource for lunar mineralogy and volatile studies [1][9]. ISRO describes IIRS as extending M3's 0.7 to 3 µm coverage to about 5 µm, to test the OH, H2O and water-ice signatures reported from M3 data [3]. HVM3 was designed for mapping water and minerals in permanently shadowed regions. Its mission ended before a record of in-orbit measurements is available in the sources accessed, so its documented contribution so far is its pre-launch calibration [6][8].",
+      "limitations_and_uncertainties": "- **M3 band count and channel definitions.** The pre-launch document gives 261 spectral elements [2], while the PDS CALIV3 product note gives 255 global-mode and 85 target-mode channels [9]. These are not reconciled here.\n- **M3 in-flight values and full text.** The 2011 paper was read through its USGS record and abstract-level summary [1]. Its full text, and any mass, power or dimension values in it, were not read in this run.\n- **IIRS performance.** All IIRS values are pre-launch or undated ISRO statements [3][4][5]. No IIRS instrument paper or in-orbit calibration record was accessed. The ISRO band count (256 against about 250) and spectral resolution (about 20 nm against about 20-25 nm) differ.\n- **HVM3 status and dates.** NASA and EO Portal differ by one day on the launch date, and EO Portal reports inconsistent mission-status dates [6][7]. The HVM3 paper describes pre-launch work [8]. The sources accessed contain no HVM3 in-orbit measurement record.\n- **HVM3 swath.** EO Portal gives a 20 km swath [7], whereas the paper gives a 24° full-width field of view [8]. The swath value is not reconciled and is not used as a derived geometry.\n- **HVM3 integration dates.** EO Portal says HVM3 was installed on the spacecraft in early December 2022 [7]. The JPL/Photojournal record places the instrument in a JPL clean room in early December 2022, before shipment for integration [12]. The installation date is therefore not stated as a single fact.\n- **Power and dimensions.** Not publicly specified for any of the three examples in the sources accessed. None is inferred.\n- **Images.** Image reuse conditions were not checked, and no full-resolution downloads were made. No IIRS image is included (see data_quality_notes).\n- **Cross-references.** Multispectral imaging is covered under 034, infrared imaging under 036, and near-infrared and visible-infrared spectrometers under 061 and 062. This article does not duplicate those entries.",
+      "images": [
+        {
+          "id": "m3_orientale_composite_pia11727",
+          "description": "Multi-wavelength composite image of the Orientale Basin region of the Moon, taken by NASA's Moon Mineralogy Mapper (M3).",
+          "image_type": "Instrument science image (NASA/JPL Photojournal)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia11/pia11727/PIA11727.jpg",
+          "source_page_url": "https://photojournal.jpl.nasa.gov/catalog/PIA11727",
+          "publisher": "NASA/JPL (NASA Photojournal)",
+          "credit": "NASA/JPL (exact credit line on the Photojournal record not extracted in this run)",
+          "caption": "Different wavelengths of light provide new information about the Orientale Basin region of the Moon in a composite image taken by NASA's Moon Mineralogy Mapper, a guest instrument aboard ISRO's Chandrayaan-1 spacecraft.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 631 x 635 px, identified on the Photojournal record and NASA Science page PIA11727. Query-free URL. Reuse conditions not checked; full-resolution TIFF not downloaded."
+        },
+        {
+          "id": "m3_nearside_pia12235",
+          "description": "Nearside of the Moon: M3 data for the lunar hemisphere, from NASA's Moon Mineralogy Mapper on Chandrayaan-1.",
+          "image_type": "Instrument data image (NASA/JPL Photojournal)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia12/pia12235/PIA12235.jpg",
+          "source_page_url": "https://photojournal.jpl.nasa.gov/catalog/PIA12235",
+          "publisher": "NASA/JPL (NASA Photojournal)",
+          "credit": "NASA/JPL (exact credit line on the Photojournal record not extracted in this run)",
+          "caption": "Images from NASA's Moon Mineralogy Mapper on ISRO's Chandrayaan-1 spacecraft showing data for the hemisphere of the Moon (Photojournal title: Nearside of the Moon).",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1280 x 896 px. The Photojournal record lists the M3 instrument and Chandrayaan-1 spacecraft. Query-free URL. Reuse conditions not checked."
+        },
+        {
+          "id": "hvm3_clean_room_pia25256",
+          "description": "HVM3 imaging spectrometer in a JPL clean room before spacecraft integration.",
+          "image_type": "Engineering hardware photograph (NASA/JPL Photojournal)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25256/jpeg/PIA25256.jpg",
+          "source_page_url": "https://photojournal.jpl.nasa.gov/catalog/PIA25256",
+          "publisher": "NASA/JPL (NASA Photojournal)",
+          "credit": "NASA/JPL-Caltech (credit line as shown on the Photojournal record was not extracted in this run)",
+          "caption": "The HVM3 instrument sits in a JPL clean room in early December 2022. It was built at JPL and then shipped to Lockheed Martin Space in Colorado to be integrated with NASA's Lunar Trailblazer spacecraft.",
+          "section_placements": [
+            "physical_specifications.examples[2]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1280 x 943 px. Query-free URL. Photojournal record describes the HVM3 instrument and the Lunar Trailblazer integration path. Reuse conditions not checked."
+        },
+        {
+          "id": "hvm3_instrument_pia25252",
+          "description": "Photograph of the High-resolution Volatiles and Minerals Moon Mapper (HVM3) released by NASA/JPL.",
+          "image_type": "Instrument photograph (NASA/JPL Photojournal)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25252/PIA25252.jpg",
+          "source_page_url": "https://photojournal.jpl.nasa.gov/catalog/PIA25252",
+          "publisher": "NASA/JPL (NASA Photojournal)",
+          "credit": "NASA/JPL-Caltech (credit line as shown on the Photojournal record was not extracted in this run)",
+          "caption": "The High-resolution Volatiles and Minerals Moon Mapper (HVM3) is one of two instruments that will be carried aboard NASA's Lunar Trailblazer. The Photojournal caption was written before launch and gives a 2023 launch year.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 1280 x 720 px. The Photojournal record identifies the HVM3 instrument and Lunar Trailblazer. Pre-launch caption retained as published. Reuse conditions not checked."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "m3_orientale_composite_pia11727",
+          "description": "Multi-wavelength composite image of the Orientale Basin region of the Moon, taken by NASA's Moon Mineralogy Mapper (M3).",
+          "image_type": "Instrument science image (NASA/JPL Photojournal)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia11/pia11727/PIA11727.jpg",
+          "source_page_url": "https://photojournal.jpl.nasa.gov/catalog/PIA11727",
+          "publisher": "NASA/JPL (NASA Photojournal)",
+          "credit": "NASA/JPL (exact credit line on the Photojournal record not extracted in this run)",
+          "caption": "Different wavelengths of light provide new information about the Orientale Basin region of the Moon in a composite image taken by NASA's Moon Mineralogy Mapper, a guest instrument aboard ISRO's Chandrayaan-1 spacecraft.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL verified: HTTP 200, image/jpeg, 631 x 635 px, identified on the Photojournal record and NASA Science page PIA11727. Query-free URL. Reuse conditions not checked; full-resolution TIFF not downloaded."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "The Moon Mineralogy Mapper (M3) imaging spectrometer for lunar science: Instrument description, calibration, on-orbit measurements, science data calibration and on-orbit validation",
+          "publisher": "Journal of Geophysical Research: Planets, 116, E10 (2011), DOI 10.1029/2011JE003797",
+          "url": "https://doi.org/10.1029/2011JE003797",
+          "notes": "Post-mission instrument paper. Accessed through its USGS publication record and abstract-level summary; full text not read in this run. DOI returned HTTP 403 to automated fetch; content obtained through the USGS record."
+        },
+        {
+          "number": 2,
+          "title": "Chandrayaan-1 Science Payloads (payload document, PDF), Moon Mineralogy Mapper section",
+          "publisher": "ISRO / ISSDC",
+          "url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+          "notes": "Pre-launch configuration document (future-tense wording). M3 section used: 0.7-3.0 um, 261 spectral elements, 70 m/pixel, 40 km FOV, 8.2 kg."
+        },
+        {
+          "number": 3,
+          "title": "Chandrayaan-2 Mission Orbiter Payloads (briefing PDF, 04 Aug 2019), IIRS and TMC-2 sections",
+          "publisher": "ISRO / ISSDC",
+          "url": "https://www.issdc.gov.in/docs/ch2/chandrayaan2_payload.pdf",
+          "notes": "Pre-launch briefing (future-tense wording). IIRS section used: 0.8-5 um, 256 contiguous bands, 80 m, 20 nm."
+        },
+        {
+          "number": 4,
+          "title": "Chandrayaan-2 Science (IIRS description, orbiter status; undated page)",
+          "publisher": "Indian Space Research Organisation",
+          "url": "https://www.isro.gov.in/ISRO_EN/Chandrayaan2_science.html",
+          "notes": "Undated page. Gives about 250 bands, 20-25 nm, about 80 m, 100 km polar circular orbit, orbiter launch 22 July 2019 and statement that all payloads are operational."
+        },
+        {
+          "number": 5,
+          "title": "Chandrayaan-2 begins spectroscopic studies of lunar surface (undated page)",
+          "publisher": "Indian Space Research Organisation",
+          "url": "https://www.isro.gov.in/Chandrayaan2begins.html",
+          "notes": "Source for IIRS dispersive grating description and statement that the first illuminated image was acquired by IIRS. Page image not used (see data_quality_notes)."
+        },
+        {
+          "number": 6,
+          "title": "Lunar Trailblazer mission page",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/lunar-trailblazer/",
+          "notes": "Launch on 26 Feb 2025; contact lost the following day; mission ended 31 July 2025. Does not mention HVM3 data collection."
+        },
+        {
+          "number": 7,
+          "title": "Lunar Trailblazer mission page and HVM3 parameter table",
+          "publisher": "ESA Earth Observation Portal",
+          "url": "https://eoportal.org/satellite-missions/lunar-trailblazer",
+          "notes": "Gives 27 Feb 2025 launch (UTC), 0.6-3.6 um, 10 nm, 50-90 m, 20 km swath. Mission-status entries are internally inconsistent on dates; the spacecraft mass figure is not an HVM3 value."
+        },
+        {
+          "number": 8,
+          "title": "Calibration and Performance of the High-resolution Volatiles and Minerals Moon Mapper (HVM3) on Lunar Trailblazer",
+          "publisher": "Earth and Space Science (2026), DOI 10.1029/2025EA004456",
+          "url": "https://doi.org/10.1029/2025EA004456",
+          "notes": "Pre-launch laboratory calibration paper (\"slated for launch\"). Full text read from the Oxford ORA repository copy: https://ora.ox.ac.uk/objects/uuid:01a1ca5d-a0dc-4664-aefb-5db84ff7b5d6/files/rxw42nb231. DOI returned HTTP 403 to automated fetch."
+        },
+        {
+          "number": 9,
+          "title": "Chandrayaan-1 M3 Calibrated Image Version 3 (CALIV3) product help page",
+          "publisher": "NASA PDS Geosciences Node / ODE",
+          "url": "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/ISRO_Chandrayaan-1/M3/CALIV3.htm",
+          "notes": "Gives 255 channels (global mode) and 85 channels (target mode), radiance product, PDS dataset ID CH1-ORB-L-M3-2-L1B-RADIANCE-V3.0. Does not state a wavelength range or ground sampling distance."
+        },
+        {
+          "number": 10,
+          "title": "PIA11727: Orientale Basin composite from NASA's Moon Mineralogy Mapper",
+          "publisher": "NASA/JPL Photojournal",
+          "url": "https://photojournal.jpl.nasa.gov/catalog/PIA11727",
+          "notes": "Photojournal record. Caption identifies M3 as a guest instrument aboard ISRO's Chandrayaan-1 spacecraft. Image asset verified (HTTP 200, JPEG)."
+        },
+        {
+          "number": 11,
+          "title": "PIA12235: Nearside of the Moon (M3 data)",
+          "publisher": "NASA/JPL Photojournal",
+          "url": "https://photojournal.jpl.nasa.gov/catalog/PIA12235",
+          "notes": "Photojournal record identifying the images as M3 data on Chandrayaan-1. Image asset verified (HTTP 200, JPEG)."
+        },
+        {
+          "number": 12,
+          "title": "PIA25256: Lunar Trailblazer's HVM3 Imaging Spectrometer Before Spacecraft Integration",
+          "publisher": "NASA/JPL Photojournal",
+          "url": "https://photojournal.jpl.nasa.gov/catalog/PIA25256",
+          "notes": "Photojournal record: HVM3 in a JPL clean room in early December 2022, shipped to Lockheed Martin Space in Colorado for integration. Image asset verified (HTTP 200, JPEG)."
+        },
+        {
+          "number": 13,
+          "title": "PIA25252: Key Lunar Trailblazer Instrument Passes Milestone",
+          "publisher": "NASA/JPL Photojournal",
+          "url": "https://photojournal.jpl.nasa.gov/catalog/PIA25252",
+          "notes": "Photojournal record (pre-launch wording: launching in 2023). Image asset verified (HTTP 200, JPEG)."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "M3 example": "payload.article.physical_specifications.examples[0].images",
+      "IIRS example": "payload.article.physical_specifications.examples[1].images (no verified image; empty array)",
+      "HVM3 example": "payload.article.physical_specifications.examples[2].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Each direct image URL was checked for HTTP 200 and image content type and identified on its Photojournal source page. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "M3 channel count differs by source: 261 spectral elements in the pre-launch ISSDC document [2] against 255 global-mode and 85 target-mode channels in the PDS CALIV3 product note [9]. Not reconciled.",
+    "M3 power and dimensions are not publicly specified in the sources accessed. The full text of the 2011 instrument paper [1] was not read; its statements come from the USGS record and abstract-level summary. The DOI returned HTTP 403 to automated fetch.",
+    "IIRS values are pre-launch (2019 briefing [3]) or from an undated ISRO page [4]. Band count (256 against about 250) and spectral resolution (about 20 nm against about 20-25 nm) differ. Mass, power, dimensions, detector and field of view are not publicly specified in the sources accessed. No IIRS instrument paper or in-orbit IIRS calibration record was accessed.",
+    "No IIRS image is included. The ISRO page image (chandrayan2_11_large.png.webp, HTTP 200) is captioned only as 'Chandrayaan-2 begins spectroscopic studies of lunar surface' and could not be visually confirmed as an IIRS observation within this run, so it was excluded.",
+    "HVM3 launch date differs by one day: NASA gives 26 February 2025 [6]; EO Portal gives 27 February 2025 UTC [7]. EO Portal's mission-status entries are also internally inconsistent.",
+    "HVM3 swath: EO Portal gives 20 km [7], which is not reconciled with the 24° full-width field of view in the 2026 paper [8]. HVM3 power and a separately stated band count are not found in the sources accessed.",
+    "HVM3 installation date: EO Portal says installed on the spacecraft in early December 2022 [7]; the Photojournal record places the instrument in a JPL clean room in early December 2022 before shipment to Lockheed Martin Space for integration [12]. Not resolved as a single fact.",
+    "No in-orbit HVM3 measurement record was found in the sources accessed. NASA's mission page [6] does not mention HVM3 data collection. The 2026 paper [8] is a pre-launch calibration paper and was read through the Oxford ORA repository copy; its DOI returned HTTP 403 to automated fetch.",
+    "Image reuse conditions for NASA Photojournal assets were not checked beyond the presence of each image on its source page. No full-resolution downloads were made. Credit lines on the Photojournal records were not extracted; credits are recorded as NASA/JPL.",
+    "Research used public primary and agency sources only. No internal EG (Glean) search was run for this payload, so no internal context is included.",
+    "Cross-referenced entries 034, 036, 061 and 062 are not duplicated; no lunar landing-site or location recommendation is made."
+  ]
+}

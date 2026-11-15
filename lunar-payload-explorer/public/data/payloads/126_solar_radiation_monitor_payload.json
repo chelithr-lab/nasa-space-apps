@@ -1,0 +1,206 @@
+{
+  "catalogue_id": 126,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 6,
+    "name": "Radiation and space environment"
+  },
+  "payload": {
+    "number": 126,
+    "name": "Solar radiation monitor",
+    "article": {
+      "overview": "A solar radiation monitor measures the intensity and spectrum of radiation emitted by the Sun, or the solar component of the radiation field, so that the solar input to a lunar science measurement or to the lunar radiation environment can be characterised. The best-documented flown example in the sources accessed is the Solar X-ray Monitor (XSM) on India's Chandrayaan-2 orbiter, which records the Sun's disk-integrated soft X-ray spectrum from lunar orbit [1][2][3]. XSM was built to supply the incident solar spectrum that the CLASS instrument needs in order to convert lunar-surface X-ray fluorescence into elemental abundances [1]. This revision adds pre-flight mass and power values for XSM, in-flight performance results, and three further examples: a flown particle monitor in lunar orbit, a planned lunar-surface particle monitor and a proposed radiation package. No lunar-surface solar radiation monitor is confirmed as flown in the sources accessed.",
+      "description": "A solar radiation monitor is a radiation detector pointed at the Sun, or one that records the solar component of the radiation field. Its job is to answer a simple question: how much radiation of a given type is the Sun delivering at the time of a measurement? For a lunar application, the answer may be needed in two ways. The first is to normalise a measurement made elsewhere, for example a surface X-ray fluorescence measurement that depends on the exciting solar spectrum. The second is to characterise the solar drivers of the radiation environment itself, such as solar energetic particles.\n\nChandrayaan-2's XSM is a solar X-ray spectrometer. It records the Sun's disk-integrated soft X-ray spectrum, not an image of the Sun, and it does so from a spacecraft in orbit around the Moon [1][2][3]. The term also covers particle instruments that measure solar energetic particles. Three examples in this article belong to that broader family: CRaTER on the Lunar Reconnaissance Orbiter, LUSEM and LURAD [5][6][8]. These instruments measure different radiation types, so they are not interchangeable with XSM.",
+      "scientific_purpose_and_applications": "The primary purpose of a solar radiation monitor is to measure solar radiation with enough time resolution and spectral detail to be used as an input to other science. In the Chandrayaan-2 case, the stated primary objective is to measure the solar X-ray spectrum incident on the Moon, so that elemental abundances can be estimated from the lunar-surface fluorescence observed by CLASS [1][2].\n\nApplications stated in the sources accessed are:\n\n- Normalising lunar surface X-ray fluorescence. ISRO states that XSM measures the solar X-ray spectrum at the same time as CLASS measures characteristic X-rays from the lunar surface, and that the incident solar spectrum is required to determine element concentrations [1].\n- Solar science. ISRO states that XSM data help in studying processes on the Sun [1]. The Physical Research Laboratory (PRL) team reports Chandrayaan-2 XSM observations of the quiet Sun during the 2019-2020 solar minimum, with a stated focus on elemental abundances in the quiescent corona [2].\n- Monitoring solar activity at small flare levels. ISRO states that XSM detects solar intensity variations much beyond the sensitivity limit of GOES [1]. The in-flight performance paper states that XSM detects flux levels at least two orders of magnitude lower than A1-class events [3]. Both are relative sensitivity statements; neither gives a numerical detection limit.\n- Solar particle monitoring (surface and proposed instruments). LUSEM is described by KASI as detecting high-energy particles, including solar energetic protons, and as monitoring the near-surface space environment when the Moon is inside and outside Earth's magnetotail [6]. The LURAD design study aims at spectroscopy of protons, electrons, heavy ions, gamma rays and neutrons for Gateway and lunar-surface use [8]. Neither instrument is confirmed as flown in the sources accessed.",
+      "operating_principle": "An X-ray spectrometer of this kind counts individual X-ray photons and records the energy of each one. The XSM detector is a Silicon Drift Detector (SDD) with a 30 mm² active area and 450 µm thickness, behind an 8 µm beryllium entrance window and held at −35 °C [4]. A photon that enters the silicon creates a charge cloud whose size is proportional to the photon energy, so the detector output can be sorted into energy channels to build a spectrum. Over an observation interval the spectrum is accumulated and light curves (counts against time) can be formed. The XSM data products described in the PRL paper include light curves at a one-second time cadence and spectra at a 60-second cadence [2].\n\nBecause XSM is fixed to the spacecraft, the Sun's position within its field of view changes continuously during each orbit. The effective area of the instrument therefore changes with time, and the analysis software applies either an effective-area correction or an ancillary response file [2]. The in-flight paper reports that the effective-area correction for one observing season is empirical, with no established physical origin for the discrepancy [3]. This is a measurement-processing requirement rather than a hardware feature.",
+      "scientific_importance": "Solar radiation drives the photon and particle environment of the lunar surface and exosphere, and it is also the excitation source for remote X-ray fluorescence analysis of the regolith. A monitor that records the solar input at the same time as a surface instrument allows the surface measurement to be normalised. The Chandrayaan-2 XSM example shows this pairing: ISRO states that XSM provides the solar spectrum needed to determine element concentrations from CLASS observations [1]. The PRL observations of the quiet Sun during the 2019–2020 solar minimum are reported as elemental abundance studies of the quiescent corona [2]. The in-flight paper reports that spectral performance in orbit matched the ground calibration [3], which supports the use of the pre-flight specification as a reference for the flown instrument.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a solar radiation monitor. Instruments in this class may be designed as surface monitors, orbital monitors or instruments integrated into a larger spacecraft, and their mass, dimensions, power and field of view depend on that design. The sources accessed publish specifications for one flown example, the XSM, and for one planned surface instrument in outline only. Values below apply only to the named instrument and are not generalised to other solar radiation monitors.",
+        "examples": [
+          {
+            "name": "Chandrayaan-2 Solar X-ray Monitor (XSM)",
+            "type": "Flown orbital solar X-ray spectrometer (Chandrayaan-2 orbiter)",
+            "status": "Flown. Launched 22 July 2019; commissioning observations 7-8 September 2019; regular operations from 12 September 2019. Current operating status not verified in the sources accessed.",
+            "mass_kg": 1.35,
+            "mass_basis": "Pre-flight specification table (ground calibration); not confirmed against the flight budget; not split by package",
+            "power_w": 6,
+            "power_basis": "Pre-flight specification table (ground calibration); not confirmed against the flight budget",
+            "external_dimensions_cm": null,
+            "dimensions_note": "Not stated in the sources accessed. Component dimensions only (detector diameter about 6.18 mm; collimator thickness 0.5 mm).",
+            "detector": "Silicon Drift Detector (SDD); 30 mm2 active area; 450 µm thickness; 8 µm beryllium entrance window; held at -35 °C",
+            "field_of_view": "±40° (40° half cone angle); pre-flight specification",
+            "aperture_area_mm2": 0.367,
+            "energy_band_kev": [
+              1,
+              15
+            ],
+            "energy_resolution": "Specified better than 180 eV at 5.9 keV; laboratory about 175 eV FWHM; in flight FWHM at 5.9 keV constant over six months and matched pre-launch values",
+            "time_cadence": "One second for light curves; 60 seconds for level-2 full spectra",
+            "sensitivity": "No numerical detection limit in the sources accessed. Agency statement of sensitivity beyond the GOES limit; in-flight paper states at least two orders of magnitude below A1-class events",
+            "environment": "Expected package temperature in lunar orbit -30 °C to +20 °C; detector held at -35 °C (ground-calibration paper). No qualification test results stated in the sources accessed.",
+            "known_in_flight_limitations": "Background about 0.15 counts per second during lunar occultation versus estimated cosmic X-ray background 0.1 counts per second, attributed to particle-induced background; instrumental background line near 7.5 keV from a thin nickel layer; before June 2020 the low-energy threshold affects spectra up to about 1.3 keV, so data below 1.3 keV from that period should be ignored; effective-area correction for one observing season is empirical.",
+            "details": "- Status: Flown. Launch 22 July 2019; commissioning observations 7-8 September 2019; regular operations from 12 September 2019. The in-flight paper reviews the first six months of operations and says the instrument had been in orbit for nearly one year at the time of writing. Current operating status not verified.\n- Platform: Chandrayaan-2 orbiter, lunar orbit.\n- Detector: Silicon Drift Detector, 30 mm2 active area, 450 µm thickness, 8 µm beryllium entrance window, -35 °C.\n- Aperture and field of view: ±40° field of view; aperture area 0.367 mm2 (pre-flight specification).\n- Energy band: 1-15 keV.\n- Energy resolution: specified better than 180 eV at 5.9 keV; laboratory about 175 eV FWHM; in flight constant over six months. ISRO's highest-resolution claim is an agency claim not checked independently.\n- Time cadence: 1 s for light curves; 60 s for level-2 full spectra.\n- Mass and power: 1.35 kg and 6 W, pre-flight specification table.\n- Dimensions: not stated; component dimensions only.\n- Environment: expected lunar-orbit package temperature -30 °C to +20 °C; detector held at -35 °C. No qualification results stated.\n- Sensitivity: no numerical detection limit given.\n- Known in-flight limitations: background about 0.15 counts/s during occultation; 7.5 keV instrumental line from nickel layer; data below 1.3 keV before June 2020 should be ignored.",
+            "source_urls": [
+              "https://www.isro.gov.in/Solar%20X-ray%20Monitor.html",
+              "https://arxiv.org/abs/2103.16643",
+              "https://arxiv.org/abs/2009.09759",
+              "https://arxiv.org/abs/2007.07326"
+            ],
+            "images": []
+          },
+          {
+            "name": "CRaTER on the Lunar Reconnaissance Orbiter",
+            "type": "Flown lunar-orbit particle radiation telescope (not solar-pointed)",
+            "status": "Flown on NASA's Lunar Reconnaissance Orbiter. Current operating status not verified in the sources accessed; most available sources date from 2006-2012.",
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "power_w": null,
+            "detector": "Silicon detectors with tissue-equivalent plastic (from search-result summaries; primary record not read)",
+            "measurements": "Galactic cosmic rays and solar energetic protons",
+            "details": "- Purpose: characterise the lunar radiation environment and its biological effects.\n- Measurements: galactic cosmic rays and solar energetic protons, using silicon detectors and tissue-equivalent plastic.\n- Mass, power, dimensions: not retrieved; the CRaTER record page returned HTTP 403 in this revision.",
+            "source_urls": [
+              "https://findscholars.unh.edu/display/publication46484"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Space Environment Monitor (LUSEM)",
+            "type": "Planned lunar-surface particle monitor (KASI, Korea)",
+            "status": "Planned. KASI page lists expected launch 2026 with no confirmed date or flight status. NASA CLPS page for IM-3 gives early 2027 and does not list LUSEM. Sources conflict; treated as not flown in the sources accessed.",
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "power_w": null,
+            "mass_power_dimensions_note": "Not stated in the sources accessed.",
+            "detector": "Two pairs of solid-state telescopes; each pair has one nadir-viewing and one zenith-viewing telescope; design draws on KSEM (GK2A)",
+            "energy_range_text": "Tens of keV to tens of MeV",
+            "carrier": "Intuitive Machines Nova-C lander, CP-11 (IM-3), per KASI page",
+            "landing_site_reported": "Reiner Gamma (KASI page); NASA page as fetched does not name a landing site",
+            "details": "- Status: planned; expected launch 2026 (KASI); early 2027 mission window (NASA CLPS page); LUSEM not listed on NASA page as fetched; sources conflict.\n- Detector: two pairs of solid-state telescopes, nadir and zenith in each pair.\n- Energy range: tens of keV to tens of MeV.\n- Carrier: Intuitive Machines Nova-C, CP-11 (IM-3).\n- Mass, power, dimensions: not stated.",
+            "source_urls": [
+              "https://pda.kasi.re.kr/lusem.php",
+              "https://www.nasa.gov/event/clps-flight-intuitive-machines-im-3"
+            ],
+            "images": []
+          },
+          {
+            "name": "LURAD (design study)",
+            "type": "Proposed radiation monitor package (design study, 2024)",
+            "status": "Design study with Monte Carlo feasibility study. Not described as flown or built in the abstract.",
+            "platforms": [
+              "Gateway",
+              "Lunar surface"
+            ],
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "power_w": null,
+            "mass_power_dimensions_note": "None given in the abstract, which refers only qualitatively to miniaturisation and mass reduction. Full paper not read.",
+            "measurement_goals": "Spectroscopy of protons, electrons, heavy ions, gamma rays and neutrons; microdosimetry for LET spectra across solar particle events and galactic cosmic rays; neutron detection for astronaut dose; lunar albedo neutrons for soil composition",
+            "technologies": "Fully depleted silicon monolithic active pixel sensors; scintillators read by silicon photomultipliers; silicon-on-insulator microdosimetry sensors",
+            "details": "- Status: design study with Monte Carlo feasibility study; not flown or built per abstract.\n- Platforms: Gateway and lunar surface.\n- Measurement goals and technologies as listed above.\n- Mass, power, dimensions: none given in the abstract.",
+            "source_urls": [
+              "https://arxiv.org/abs/2405.03187"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified in the sources accessed for the Chandrayaan-2 XSM example beyond component dimensions. No universal dimensions exist for solar radiation monitors.",
+        "mass_and_weight": "Chandrayaan-2 XSM: 1.35 kg as listed in the pre-flight specification table (ground calibration); not confirmed against the flight budget [4]. Mass not stated in the sources accessed for LUSEM or LURAD.",
+        "power_requirements": "Chandrayaan-2 XSM: 6 W as listed in the pre-flight specification table (ground calibration) [4]. Power not stated in the sources accessed for LUSEM or LURAD."
+      },
+      "environmental_and_operational_requirements": "A solar radiation monitor must survive the environment of its host platform. For an orbiting instrument, this includes thermal cycling, radiation exposure and mechanical loads during launch. For a surface instrument, it would also include the extreme lunar surface temperature range, the lack of a substantial atmosphere and the dust environment. The sources accessed do not publish the environmental qualification of the XSM instrument, so these requirements are described here as general engineering considerations rather than verified XSM values. The ground-calibration paper's expected lunar-orbit package temperature range of -30 °C to +20 °C is the only published environmental figure for XSM in the sources accessed [4].\n\nOperationally, a solar monitor must record the solar input with a time stamp that is synchronised to the science instrument it supports. The XSM observation period described by ISRO and the PRL paper shows that observations were scheduled around the spacecraft's viewing geometry [1][2]. The in-flight paper reports that the N-M season cadence is much lower than the D-D season cadence, and that background varies with spacecraft attitude changes and geotail passages [3]. ISRO notes that the flares observed during 30 September to 1 October 2019 were too weak for lunar composition studies because the Sun-Moon-spacecraft angle was close to 90 degrees rather than near zero [1].",
+      "limitations": "- The only flown solar-pointed example confirmed in the sources accessed is an orbital instrument. It does not establish the performance of a surface-deployed solar radiation monitor.\n- The published specifications cover mass, power, the energy band, detector class, energy resolution and time cadence. Dimensions, field of view in terms of sensitivity, and environmental qualification are not published in the sources accessed for XSM [1][3][4].\n- The sensitivity statements relative to GOES and to A1-class events are agency or paper statements without a published numerical detection limit in the sources accessed [1][3].\n- The XSM observations described date from 2019-2020. The sources accessed do not establish whether XSM is still operating.\n- LUSEM and LURAD have no confirmed flight history in the sources accessed.",
+      "transportation_and_deployment": {
+        "overview": "XSM is an orbiter payload. The relevant transportation chain for an orbiter payload is spacecraft integration on Earth, launch, cruise, orbit insertion, commissioning, and then pointing, thermal and data interfaces during operations. The sources accessed describe the XSM observation campaign and the commissioning period [3] but do not publish the Chandrayaan-2 integration or launch details for XSM specifically, so this section does not assert them.\n\nLUSEM is a surface payload. The KASI page states that it is carried on Intuitive Machines' Nova-C lander as part of CP-11 (IM-3) [6]. The deployment method, mounting, power and data interfaces are not published in the sources accessed. No compatibility assessment with the lander has been carried out, and none is asserted here. The NASA CLPS page gives an early 2027 launch window for the mission [7].\n\nLURAD is a design concept for Gateway and lunar-surface use [8]. No transportation or deployment plan is given in the abstract, so none is described. Compatibility for any of these instruments would have to be assessed from verified mass, dimensions, mounting points, landing loads, power and communications requirements, none of which are published in the sources accessed.",
+        "transportation_process": [
+          "Integrate the orbiter payload with its spacecraft on Earth.",
+          "Launch the spacecraft on a launch vehicle.",
+          "Cruise to the Moon and insert into lunar orbit.",
+          "Commission the instrument and verify its interfaces.",
+          "Operate with the pointing, thermal and data interfaces of the host spacecraft."
+        ],
+        "deployment_methods": "Not applicable to the flown XSM orbiter example as described in the sources accessed. For LUSEM, deployment method is not published in the sources accessed. No surface deployment method is confirmed for any solar radiation monitor.",
+        "historical_examples": "Chandrayaan-2 XSM is the only flown solar-pointed example identified in the sources accessed. Its integration and launch details are not published there. CRaTER on LRO is a flown lunar-orbit particle monitor, not solar-pointed.",
+        "compatibility_assessment": "No lander, rover or spacecraft compatibility is asserted. Compatibility would require verified mass, dimensions, mounting points, landing loads, power and communications data, none of which are published for XSM, LUSEM or LURAD in the sources accessed.",
+        "images": []
+      },
+      "historical_significance": "The Chandrayaan-2 XSM observations are significant because they tie a solar spectrometer to a lunar-orbit X-ray spectroscopy mission. ISRO presents XSM as the solar reference for the CLASS lunar-surface elemental analysis [1]. The PRL paper reports that the quiet-Sun observations during the 2019-2020 solar minimum were used to derive elemental abundances in the quiescent corona [2]. The in-flight paper reports that XSM's spectral performance in orbit matched its ground calibration over six months of operations [3]. The article does not claim that XSM has produced results beyond the publications and agency pages cited here.",
+      "limitations_and_uncertainties": "- **Surface examples not flown.** No lunar-surface solar radiation monitor is confirmed as flown in the sources accessed. LUSEM is planned and LURAD is a design study.\n- **Mass and power partly verified.** The 1.35 kg mass and 6 W power come from a pre-flight specification table [4]. The sources accessed do not confirm them against the flight budget, and no flight-based dimensions are published [3][4].\n- **Conflicting launch information for IM-3 and LUSEM.** The KASI page gives an expected 2026 launch for LUSEM [6]. The NASA CLPS page gives early 2027 for the mission and does not list LUSEM [7]. A search summary reported a different NASA payload listing. These sources conflict and have not been reconciled.\n- **CRaTER record not read.** The UNH record page returned an access error (HTTP 403). The CRaTER statements rest on search-result summaries [5] and should be checked against the primary Spence et al. (2010) paper before reuse.\n- **Agency claims not independently verified.** The statement that XSM has the highest energy resolution of any broadband solar X-ray spectrometer [1] has not been checked against independent data.\n- **Dates not fully reconciled.** The PRL paper reports 76 days of quiet-Sun observation in one place and 73 days in another, and states that three low-exposure days were excluded, without stating the reconciliation explicitly [2]. The in-flight paper uses a different 42-day set for its effective-area refinement [3].\n- **Imagery not verified.** No direct image asset URL was verified for any example in this revision, so no image is included.\n- **Search coverage limited.** This revision used four web searches and eight page fetch attempts, of which five succeeded. Other historical, prototype or proposed solar radiation monitors were not surveyed in depth, so the article does not represent the full range of instruments that have been built or proposed.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Solar X-ray Monitor (XSM) on Chandrayaan-2",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "date": null,
+          "url": "https://www.isro.gov.in/Solar%20X-ray%20Monitor.html"
+        },
+        {
+          "title": "Observations of the Quiet Sun During the Deepest Solar Minimum of the Past Century with Chandrayaan-2 XSM – Elemental Abundances in the Quiescent Corona (arXiv:2103.16643)",
+          "publisher": "Physical Research Laboratory, Ahmedabad (Vadawale, S. V. et al.), arXiv",
+          "date": null,
+          "url": "https://arxiv.org/abs/2103.16643"
+        },
+        {
+          "title": "Solar X-ray Monitor On Board the Chandrayaan-2 Orbiter: In-flight Performance and Science Prospects (arXiv:2009.09759)",
+          "publisher": "arXiv (author list not recorded in the fetched text)",
+          "date": null,
+          "url": "https://arxiv.org/abs/2009.09759"
+        },
+        {
+          "title": "Ground Calibration of Solar X-ray Monitor On-board Chandrayaan-2 Orbiter (arXiv:2007.07326)",
+          "publisher": "Mithun, N. P. S. et al., arXiv",
+          "date": null,
+          "url": "https://arxiv.org/abs/2007.07326"
+        },
+        {
+          "title": "CRaTER: The Cosmic Ray Telescope for the Effects of Radiation Experiment on the Lunar Reconnaissance Orbiter Mission",
+          "publisher": "University of New Hampshire (research information record; full record not retrieved)",
+          "date": null,
+          "url": "https://findscholars.unh.edu/display/publication46484"
+        },
+        {
+          "title": "Lunar Space Environment Monitor (LUSEM)",
+          "publisher": "Korea Astronomy and Space Science Institute (KASI), Planetary Data Archive",
+          "date": null,
+          "url": "https://pda.kasi.re.kr/lusem.php"
+        },
+        {
+          "title": "CLPS Flight: Intuitive Machines IM-3",
+          "publisher": "NASA",
+          "date": null,
+          "url": "https://www.nasa.gov/event/clps-flight-intuitive-machines-im-3"
+        },
+        {
+          "title": "LURAD radiation monitor package design study (arXiv:2405.03187)",
+          "publisher": "arXiv (author list not recorded in the fetched abstract)",
+          "date": "2024",
+          "url": "https://arxiv.org/abs/2405.03187"
+        }
+      ]
+    }
+  },
+  "research_status": {
+    "article_drafted": true,
+    "technical_specifications_fully_audited": false,
+    "image_urls_added": false,
+    "direct_image_assets_verified_from_official_pages": false,
+    "full_resolution_image_downloads_checked": false,
+    "transportation_compatibility_verified_for_specific_landers": false,
+    "lunar_location_recommendations": "Deferred by user; not included."
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No images are included because no direct image asset URL could be verified in this revision."
+  },
+  "data_quality_notes": [
+    "v2 rerun. Web searches used: 4. Page fetch attempts: 8, of which 5 succeeded. Failed: the arXiv 1910.09231 PDF (binary, not parsed); an ar5iv redirect that was not followed; and the UNH CRaTER record page (HTTP 403).",
+    "The XSM mass (1.35 kg) and power (6 W) come from the pre-flight specification table of arXiv:2007.07326 (Table 1). They are not confirmed against the flight budget. This corrects v1, which recorded these values as not publicly specified.",
+    "XSM in-flight performance (launch 22 July 2019; operations from 12 September 2019; FWHM about 175 eV at 5.9 keV; background about 0.15 counts/s) is from arXiv:2009.09759 (ar5iv HTML mirror read; canonical arXiv abstract URL used in references). The ground-calibration paper was read through its ar5iv mirror; canonical arXiv URL used.",
+    "CRaTER statements rest on search-result summaries only. The UNH record page could not be read (HTTP 403). The primary Spence et al. (2010) paper was not retrieved.",
+    "LUSEM: the KASI page gives expected launch 2026 and Reiner Gamma as site. The NASA CLPS IM-3 page (fetched) gives early 2027, names a South Pole Moon Base context, does not name a landing site and does not list LUSEM. A search summary reported that NASA lists LUSEM, which conflicts with the fetched NASA page. Flight status is not confirmed.",
+    "LURAD: the arXiv abstract was read; the full paper was not. No mass, power or dimensions are given in the abstract.",
+    "No lunar-surface solar radiation monitor is confirmed as flown in the sources accessed. Other historical, prototype or proposed solar radiation monitors were not surveyed in depth in this revision.",
+    "No image is included. No direct image asset URL was verified for any example in this revision."
+  ]
+}

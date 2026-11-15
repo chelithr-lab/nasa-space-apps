@@ -1,0 +1,406 @@
+{
+  "catalogue_id": 42,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 42,
+    "name": "Longwave infrared camera",
+    "article": {
+      "overview": "A longwave infrared camera is an imaging instrument that records thermal infrared radiation, the heat energy a surface emits rather than the sunlight it reflects. Because a warm surface emits in this region day and night, such an instrument can map surface temperature, and with several narrow wavelength bands it can also give clues to rock and soil composition [1][3]. The class is defined by its wavelength region and purpose rather than by one design. The sources reviewed here describe this region as thermal infrared and do not all use the conventional 8 to 14 micrometre label, so each band limit below is taken from its instrument's own documentation. The article covers lunar examples, both flown and lost, and non-lunar flight examples that show the same measurement approach at Mars and Earth. Shorter-wavelength cameras are covered in payloads 040 and 041, and the general infrared imager and thermal imaging camera classes in payloads 036 and 038. They are cross-referenced here, not repeated.",
+      "description": "Thermal infrared imagers measure how bright a surface is at wavelengths that the surface itself emits. The most common detector type in this class is the microbolometer. Each pixel is a small uncooled element whose electrical resistance changes as it absorbs heat, and that change is read out as the signal. The Lunar Thermal Mapper uses a 384 × 288 uncooled microbolometer array with a 35 µm pitch [1]. The other examples use different detector families. Diviner uses a linear thermopile array [4], and the Landsat 9 Thermal Infrared Sensor uses quantum well infrared photodetectors (QWIPs) in three focal-plane chips [13].\n\nBand selection is done with filters. LTM places 15 interference filters at an intermediate focus and re-images them onto its array [1]. The THEMIS infrared focal plane is covered by ten strip filters [10]. Diviner uses nine channels spread across two identical, boresighted telescopes [4]. TIRS uses two broad thermal bands [12][13].\n\nLTM and TIRS are pushbroom instruments, meaning they build an image by sweeping a line of detectors or filters across the ground as the spacecraft moves [1][13]. LTM sweeps its 15 filtered channels across the surface and uses time-delay integration synchronised with spacecraft motion, so that each channel sees the same ground in sequence [1]. Calibration normally uses an on-board blackbody for gain and a cold deep-space view for offset [1].\n\nThe 8 to 14 µm label is therefore a convention, not a sourced band limit for any example in this article. LTM's four broadband temperature channels run from 6.25 to 100 µm, and its 11 narrowband composition channels span about 7 to 10 µm [1]. The two TIRS bands are 10.6 to 11.19 µm and 11.50 to 12.51 µm [12].",
+      "scientific_purpose_and_applications": "The main purpose of a longwave infrared camera on a planetary body is to measure surface temperature and what it reveals about the surface, including thermal inertia, roughness and composition. LTM was designed to provide an independent temperature measurement, so that thermal effects on the mapped distribution of water could be investigated, and an independent measure of surface mineralogy [1].\n\nComposition is the second major application. Silicate minerals have an emissivity maximum near 8 µm, called the Christiansen feature, which depends on how the silicate structure is polymerised [1]. Diviner groups three narrow channels near 8 µm to map this feature, and LTM uses eleven narrow channels between about 7 and 10 µm for the same purpose [1].\n\nTemperature mapping also reveals thermal anomalies. Diviner has produced global thermal maps covering surface temperatures from below 30 K in permanently shadowed polar regions to above 400 K at the equator [1]. Earlier, the Apollo 17 Infrared Scanning Radiometer found night-time hot spots associated with ejecta from small, fresh impact craters [1].\n\nOutside the Moon, the Mars Odyssey THEMIS instrument combines five visible bands and an infrared system to determine the distribution of minerals [7]. Its designers note that the atmosphere of Mars is opaque at 14.88 µm and that water and ice strongly absorb in the infrared bands it uses [9]. On Earth, the Landsat TIRS bands were designed to support a split-window atmospheric correction [13].",
+      "operating_principle": "Each pixel records the thermal radiance that reaches its detector through a filter. Radiance is converted to temperature or emissivity only after calibration, so raw counts alone are not temperatures. In an uncooled microbolometer, absorbed heat changes the electrical resistance of the element [1]. A thermopile produces a voltage from a temperature difference across its junctions, which is the general principle of the Diviner detector array [4]. A quantum well infrared photodetector responds to infrared photons within engineered quantum wells; this is the general principle of the TIRS detector type [13].\n\nCalibration fixes the conversion. LTM uses an onboard blackbody target to set the gain and a view of cold space to set the offset [1]. Detector and filter temperature changes between calibration cycles are the limiting factor on LTM's absolute accuracy [1].\n\nLTM's optics are gold-coated all-reflective, with an f/1.5 beam at the detector. A two-mirror telescope feeds the filter assembly, and a three-mirror relay re-images the filters onto the microbolometer [1]. This layout lets many filters fit into a small volume while limiting crosstalk between channels [1].",
+      "scientific_importance": "Thermal infrared observations are one of the few ways to measure surface temperature across an entire planetary body from orbit. Bowles et al. describe the Diviner Lunar Radiometer Experiment as the most comprehensive global thermal infrared data set for the Moon, in lunar orbit on NASA's Lunar Reconnaissance Orbiter since 2009 [1]. LTM was designed so that thermal effects on mapped water distribution could be investigated [1].\n\nThermal imaging also complements reflectance spectroscopy. The Christiansen feature near 8 µm lets thermal channels discriminate silicate compositions [1], and both Diviner and LTM place narrow channels near that wavelength for this reason [1].\n\nEarlier thermal measurements established the basic behaviour these instruments extend. The Clementine Long Wave IR camera provided the first 55 to 200 m resolution thermal data of the Moon with a single channel centred at 8.75 µm, but its minimum detectable temperature of 200 K limited its use in the cold polar regions [1].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a longwave infrared camera. The four examples below differ in purpose, wavelength plan, detector, platform and status, so their numbers should not be read as comparable performance. Each subsection begins with the status of its hardware. LTM is flight hardware that launched but was lost with only limited telemetry. Diviner has been in lunar orbit since 2009, and its current operating status was not confirmed in this review [1]. THEMIS is a Mars orbital instrument, and TIRS is an Earth-observing sensor on Landsat 9. No prototype or proposed lunar longwave camera with verified specifications was found in this review. The historical lunar instruments are discussed in the Historical Significance section rather than given specification entries.",
+        "examples": [
+          {
+            "name": "Lunar Thermal Mapper (LTM), Lunar Trailblazer",
+            "type": "Lunar orbital pushbroom imaging filter radiometer (flight-model hardware; mission lost)",
+            "status": "Flight-model hardware installed on Lunar Trailblazer in February 2023 and launched in February 2025; only limited telemetry received; mission declared lost in July 2025; no LTM science data reported in the sources reviewed.",
+            "mass_kg": 4.5,
+            "mass_note": "Including multilayer insulation blanket (Bowles et al. 2026, Table 1 and Figure 2 caption).",
+            "dimensions_mm": "225 x 265 x 110 (including multilayer insulation blanket)",
+            "power_w": {
+              "average": 5,
+              "peak": 13,
+              "peak_condition": "during pointing-mirror rotation"
+            },
+            "band_um": "6.25 to 100: 15 filters; four broadband temperature channels (6.25-12.5, 12.5-25, 25-50, 50-100); eleven narrowband channels of about 40 cm-1 spanning about 7 to 10 (first five centres 7, 7.25, 7.5, 7.8, 8).",
+            "spatial_sampling_m": "40 to 70 per pixel at nominal orbit (Bowles et al. 2026)",
+            "detector": "384 x 288 uncooled microbolometer array, 35 um pitch, f/1.5 at detector",
+            "sensitivity_ground_test": "NEDT below 0.1 K at 400 K and below 1 K at 110 K for typical integration times (pre-flight ground testing, not in-flight)",
+            "calibration_range_k": "110 to 400",
+            "qualification": "Calibrated and tested at University of Oxford facilities; in-flight performance not reported (limited telemetry only).",
+            "source_urls": [
+              "https://doi.org/10.1029/2025JE009333",
+              "https://eoportal.org/satellite-missions/lunar-trailblazer",
+              "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin"
+            ],
+            "images": [
+              {
+                "id": "ltm_pia25831_flight_instrument",
+                "description": "Lunar Thermal Mapper (LTM) flight instrument, wrapped in insulation with only its scan mirror exposed, shown before shipment from the United Kingdom to the United States.",
+                "image_type": "Engineering hardware photograph (flight instrument, pre-shipment)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia25/pia25831/PIA25831.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin",
+                "publisher": "NASA Science Photojournal",
+                "credit": "Credits: University of Oxford",
+                "caption": "Lunar Trailblazer's Thermal Mapper (LTM) wrapped in insulation before shipment from the U.K. to the U.S.; NASA Photojournal PIA25831.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct asset URL taken from the source page's Downloads section (JPEG, 861.55 KB); HTTP 200 and JPEG signature confirmed; asset identified on source page as PIA25831. The page's alternative 'jpeg/' path returned 404 and was not used. Query strings removed from all URLs. Rights: NASA Photojournal credit to University of Oxford; reuse terms not separately verified."
+              }
+            ],
+            "article_text": "Status: flight-model hardware installed on NASA's Lunar Trailblazer spacecraft in February 2023 and launched in February 2025. Only limited telemetry was received after launch, and the mission was declared lost in July 2025. No LTM science data are reported in the sources reviewed [1][2].\n\nType: lunar orbital pushbroom imaging filter radiometer, University of Oxford design, UK Space Agency funded [1].\n\nMass and size: 4.5 kg and 225 × 265 × 110 mm, both including the multilayer insulation blanket [1].\n\nPower: 5 W average and 13 W peak during pointing-mirror rotation [1].\n\nSpectral plan: 15 infrared channels between 6.25 and 100 µm. Four broadband temperature channels cover 6.25 to 12.5, 12.5 to 25, 25 to 50 and 50 to 100 µm. Eleven narrowband composition channels of about 40 cm-1 each span about 7 to 10 µm, with the first five centres at 7, 7.25, 7.5, 7.8 and 8 µm [1].\n\nSpatial and detector: 40 to 70 m per pixel at the nominal orbit. Detector is a 384 × 288 uncooled microbolometer array with a 35 µm pitch, at f/1.5 [1].\n\nSensitivity: ground testing gave a noise-equivalent temperature difference below 0.1 K at 400 K and below 1 K at 110 K for typical integration times. These are pre-flight laboratory values, not in-flight measurements [1]."
+          },
+          {
+            "name": "Diviner Lunar Radiometer Experiment (LRO)",
+            "type": "Nine-channel infrared filter radiometer for pushbroom mapping (a radiometer rather than a single-band camera)",
+            "status": "Flown; in lunar orbit on NASA's Lunar Reconnaissance Orbiter since 2009 (Bowles et al. 2026); current operating status not confirmed in this review.",
+            "mass_kg": 11.0,
+            "mass_note": "Secondary source only (Spaceflight Now, 2009 launch coverage, undated page). Not found on the UCLA instrument page or in Bowles et al.; unverified.",
+            "dimensions_mm": null,
+            "power_w": {
+              "average": 24.7,
+              "note": "Secondary source only (Spaceflight Now, 2009); unverified."
+            },
+            "band_um": "Two reflected-solar channels; three narrow channels near 8 (Christiansen feature; exact edges not stated in sources read); four broadband thermal channels at 13-23, 25-41, 50-100 and 100-400 (Bowles et al. 2026). Spaceflight Now describes nine wavelengths between 7 and 200.",
+            "spatial_sampling_m": "Nominal per-detector instantaneous field of view approximately 179 x 307 (UCLA instrument page); 320 x 160 from the 50 km mapping orbit (Bowles et al. 2026). The two figures are not reconciled.",
+            "swath_km": "Approximately 3.75 at 50 km altitude (UCLA instrument page)",
+            "detector": "Linear, 21-element thermopile detector array at the focal plane of each of two identical, boresighted telescopes (A and B) (UCLA instrument page)",
+            "measurement_rate": "189 radiometric measurements every 0.128 s (UCLA instrument page)",
+            "qualification": "Not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://www.diviner.ucla.edu/instrument-specs",
+              "https://doi.org/10.1029/2025JE009333",
+              "https://spaceflightnow.com/atlas/av020/090610lro.html",
+              "https://science.nasa.gov/photojournal/diviner-following-integration-to-the-lunar-reconnaissance-orbiter-lro/",
+              "https://ui.adsabs.harvard.edu/abs/2010SSRv..150..125P/abstract"
+            ],
+            "images": [
+              {
+                "id": "diviner_pia12088_integration",
+                "description": "Diviner Lunar Radiometer Experiment instrument following integration to NASA's Lunar Reconnaissance Orbiter.",
+                "image_type": "Engineering hardware photograph (flight instrument on spacecraft)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia12/pia12088/PIA12088.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/diviner-following-integration-to-the-lunar-reconnaissance-orbiter-lro/",
+                "publisher": "NASA Science Photojournal",
+                "credit": "Credits: NASA/JPL",
+                "caption": "The Diviner instrument following integration to NASA's Lunar Reconnaissance Orbiter (LRO); NASA/JPL, PIA12088.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL taken from the source page's Downloads section (JPEG, 895.02 KB per page); HTTP 200 and JPEG signature confirmed; identified on source page as PIA12088. Query strings removed. The page's /dynamicimage/ preview URLs with query strings were not used."
+              }
+            ],
+            "article_text": "Status: flown. Bowles et al. state that Diviner has been in lunar orbit as part of NASA's Lunar Reconnaissance Orbiter mission since 2009 [1]. The Diviner integration photograph below is a NASA/JPL record of the instrument on the spacecraft [5]. Current operating status was not confirmed in this review.\n\nType: nine-channel infrared filter radiometer for pushbroom mapping. It is a radiometer, not a single-band camera, and is included because several of its channels lie in the longwave region [4].\n\nChannels: two reflected-solar channels; three narrow channels grouped near 8 µm for the Christiansen feature; four broadband thermal channels at 13 to 23, 25 to 41, 50 to 100 and 100 to 400 µm [1]. A 2009 launch article describes the instrument as using nine wavelengths between 7 and 200 µm [6]. The two descriptions disagree, and the instrument-team documentation should be used before relying on either.\n\nDetector and optics: a linear, 21-element thermopile detector array at the focal plane of each of two identical, boresighted telescopes, producing 189 radiometric measurements every 0.128 s [4].\n\nFootprint: the UCLA instrument page gives a nominal per-detector field of view of about 179 × 307 m and a mapping swath of about 3.75 km at 50 km altitude [4]. Bowles et al. give a spatial resolution of 320 × 160 m from the 50 km mapping orbit [1]. The two footprint figures are not reconciled in the sources reviewed.\n\nMass and power: 11.0 kg and 24.7 W average power, as reported in a 2009 launch article that is a secondary source [6]. These values do not appear on the UCLA instrument page or in Bowles et al. and have not been verified against instrument documentation."
+          },
+          {
+            "name": "Mars Odyssey Thermal Emission Imaging System (THEMIS)",
+            "type": "Mars orbital visible and infrared imager (non-lunar reference example)",
+            "status": "Flown on NASA's 2001 Mars Odyssey orbiter. The NASA page describes the instrument in the present tense without an explicit operating statement; no authoritative 2026 operating status was found in this review.",
+            "mass_kg": 11.2,
+            "mass_note": "From an undated NASA science page (24.7 lb, 11.2 kg).",
+            "dimensions_mm": null,
+            "power_w": {
+              "average": 14,
+              "note": "From an undated NASA science page."
+            },
+            "band_um": "Ten infrared filters, the first two sharing a centre wavelength; centres 6.78 (two bands), 7.93, 8.56, 9.35, 10.21, 11.04, 11.79, 12.57 and 14.88 (ODE band table). A NASA passage describes nine infrared bands.",
+            "spatial_sampling_m": "100 per pixel, infrared subsystem (ASU THEMIS FAQ)",
+            "detector": "Not publicly specified in the pages reviewed. Ten strip filters cover the infrared focal plane (ODE).",
+            "qualification": "Not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://science.nasa.gov/mission/odyssey/science-instruments/",
+              "https://themis.mars.asu.edu/about",
+              "https://christensen.asu.edu/instrument/themis",
+              "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/Mars_Odyssey/THEMIS/ODTGEO/IR/IRGEO1.htm",
+              "https://science.nasa.gov/photojournal/first-themis-image-of-mars/"
+            ],
+            "images": [
+              {
+                "id": "themis_pia03459_first_image",
+                "description": "First THEMIS thermal infrared image of Mars, taken 30 October 2001 during calibration and testing, showing the south polar CO2 ice cap.",
+                "image_type": "Thermal infrared science image (Mars orbiter)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia03/pia03459/PIA03459.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/first-themis-image-of-mars/",
+                "publisher": "NASA/JPL/Arizona State University (Photojournal)",
+                "credit": "NASA/JPL/Arizona State University",
+                "caption": "First THEMIS image of Mars, a thermal infrared view from Mars Odyssey taken 30 October 2001; NASA/JPL/ASU, PIA03459.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset URL from the source page's Downloads section (JPEG, 256.78 KB per page); HTTP 200 and JPEG signature confirmed; identified on source page as PIA03459. Query strings removed. Calibration-era image; the page does not state pixel dimensions."
+              }
+            ],
+            "article_text": "Status: flown on NASA's 2001 Mars Odyssey orbiter, a non-lunar reference example. The NASA science page describes THEMIS in the present tense but gives no explicit operating statement for the instrument, and no authoritative 2026 status was found in this review [7].\n\nType: Mars orbital visible and infrared imager. It combines a visible system with an infrared imaging system [7][8].\n\nInfrared bands: ten filters on the infrared focal plane, with the first two sharing a centre wavelength [9][10]. Band centres are 6.78 (two bands), 7.93, 8.56, 9.35, 10.21, 11.04, 11.79, 12.57 and 14.88 µm [10]. NASA's science page describes the infrared system as nine bands in one passage and as ten in another [7], and the ODE documentation lists ten [10].\n\nSpatial resolution: the infrared subsystem has a resolution of 100 m per pixel [9].\n\nMass and power: 11.2 kg and 14 W, as stated on an undated NASA science page [7]. The page gives no instrument dimensions.\n\nDetector technology: not specified in the pages reviewed [7][9][10]."
+          },
+          {
+            "name": "Landsat 9 Thermal Infrared Sensor (TIRS-2)",
+            "type": "Earth-observing pushbroom thermal sensor on Landsat 9; close copy of the Landsat 8 TIRS (Barsi et al. 2022)",
+            "status": "Flown; launched 27 September 2021 and operational since February 2022 (Barsi et al. 2022). Current status not re-verified in this review.",
+            "mass_kg": null,
+            "dimensions_mm": null,
+            "power_w": null,
+            "band_um": "Band 10: 10.6 to 11.19; Band 11: 11.50 to 12.51 (NASA Landsat spectral bands page).",
+            "spatial_sampling_m": "100 (resampled to 30) (NASA Landsat spectral bands page)",
+            "swath_km": 185,
+            "field_of_view_deg": 15,
+            "detector": "Three sensor chip assemblies, each 512 x 640 quantum well infrared photodetector (QWIP) arrays (Barsi et al. 2022).",
+            "measured_nedt_k": "Better than 0.05 K at 300 K for Band 10 and 0.07 K at 300 K for Band 11, July 2022 (in-flight measurement; Barsi et al. 2022).",
+            "qualification": "Mass, power and dimensions not found in the sources reviewed.",
+            "source_urls": [
+              "https://science.nasa.gov/mission/landsat/spectral-bands-and-applications",
+              "https://ntrs.nasa.gov/api/citations/20220016849/downloads/TIRS2_RadiometricPerformance.20220826.pdf"
+            ],
+            "images": [],
+            "article_text": "Status: flown. Landsat 9 was launched on 27 September 2021 and has been operational since February 2022 [13]. Its current status was not re-verified in this review.\n\nType: Earth-observing pushbroom thermal sensor, a close copy of the Landsat 8 TIRS [13].\n\nBands: Band 10 covers 10.6 to 11.19 µm and Band 11 covers 11.50 to 12.51 µm. Both are listed at 100 m resolution, resampled to 30 m [12].\n\nFocal plane: three sensor chip assemblies, each with 512 × 640 QWIP detectors, covering a 185 km swath with a 15° field of view [13].\n\nMeasured performance: in July 2022 the noise-equivalent temperature difference was better than 0.05 K at 300 K for Band 10 and 0.07 K at 300 K for Band 11 [13]. These are in-flight measurements.\n\nOperations: the March 2022 reset of the TIRS cryocooler electronics caused a change in detector responsivity, which was tracked and corrected [13].\n\nMass, power and dimensions: not found in the sources reviewed.\n\nNo verified direct image asset for TIRS was located in this review."
+          }
+        ],
+        "dimensions_and_proportions": "No single size applies to a longwave infrared camera. The LTM envelope is 225 x 265 x 110 mm including insulation [1]. Diviner and THEMIS dimensions are not stated in the sources reviewed, and the TIRS envelope is not found in the sources reviewed.",
+        "mass_and_weight": "LTM 4.5 kg including multilayer insulation [1]. Diviner 11.0 kg is a secondary-source value, unverified [6]. THEMIS 11.2 kg from an undated NASA page [7]. TIRS mass not found in the sources reviewed.",
+        "power_requirements": "LTM 5 W average and 13 W peak during pointing-mirror rotation [1]. Diviner 24.7 W average from a secondary source, unverified [6]. THEMIS 14 W from an undated NASA page [7]. TIRS power not found in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A longwave infrared camera must operate across a very wide temperature range. LTM was calibrated over 110 to 400 K [1], and Diviner's global maps cover surface temperatures from below 30 K in the polar shadows to above 400 K at the equator [1]. The detector must therefore be stable against its own temperature changes. LTM's uncooled microbolometer relies on frequent calibration views and on the detector and filter assembly holding a stable temperature between calibrations [1].\n\nThermal environment on the spacecraft matters. LTM carries a multilayer insulation blanket that is included in its mass and volume figures, and the pointing mirror has a Sun-safe position [1]. The Landsat 9 TIRS includes cryocooler electronics. A reset of that unit in March 2022 was followed by a change in detector responsivity, which the calibration team tracked and updated [13].\n\nObserving conditions depend on the target. On Mars, the atmosphere is opaque at 14.88 µm, so that band cannot see the surface [9]. On Earth, the TIRS bands were designed for split-window atmospheric correction [13]. Ground-based thermal observations of the Moon were limited by strong absorption in Earth's atmosphere at thermal infrared wavelengths, which is why early composition measurements came from balloon-borne observations [1].",
+      "limitations": "A longwave infrared camera measures emitted radiance, so its values depend on calibration and on the assumed emissivity. Absolute accuracy is set by the stability of the detector and filter temperature between calibrations, and LTM identifies this as its limiting factor [1].\n\nThe examples in this article do not share one band plan. Diviner has three narrow composition channels [1], LTM has eleven narrowband composition channels [1], and THEMIS has ten filters of about 1 µm bandwidth [10]. Comparing a single number, such as a resolution or band edge, across these instruments can mislead.\n\nNo lunar longwave camera result in this review is verified as a returned, operating data product from a flight that succeeded. LTM produced only limited telemetry before its mission was declared lost [1], so no LTM thermal map is reported in the sources reviewed.\n\nMinimum detectable temperature limits the usefulness of some instruments. The Clementine LWIR camera had a minimum detectable temperature of 200 K, which limited its use in permanently shadowed polar regions [1].",
+      "transportation_and_deployment": {
+        "overview": "A longwave infrared camera on a lunar mission is a body-mounted instrument. It needs thermal, pointing, power and data interfaces with its spacecraft rather than a separate deployment mechanism. The most detailed transport record in the sources reviewed is for LTM, which was integrated and shipped before its launch. Its case should not be generalised to every instrument in this class.",
+        "transportation_process": [
+          "Calibration and integration at the University of Oxford, where the flight model was tested in a calibration and thermal-vacuum facility before shipment [1][14].",
+          "Shipment from the United Kingdom to the United States, followed by transfer to Lockheed Martin Space in Colorado for integration with the spacecraft [14].",
+          "Installation on the Lunar Trailblazer spacecraft in February 2023, as stated by Bowles et al. [1].",
+          "Launch on a Falcon 9 from LC-39A in February 2025. The eoPortal page gives 00:16 UTC on 27 February 2025, although some passages in the same page give 26 February [2].",
+          "Early operations: only limited telemetry was received, which showed correct power, a transition from boot to application software, and a pointing mirror in the Sun-safe position [1].",
+          "Mission end: the mission was declared lost in July 2025 [1]."
+        ],
+        "deployment_methods": "no deployment is described for the LTM. The instrument views the surface through its pointing mirror, and pushbroom motion comes from spacecraft motion [1]. The mounting arrangements of Diviner, THEMIS and TIRS were not described in the sources reviewed.",
+        "historical_examples": "Diviner was integrated on the Lunar Reconnaissance Orbiter [5]. The Apollo 17 Infrared Scanning Radiometer and the Clementine LWIR camera are described in the Historical Significance section [1].",
+        "compatibility_assessment": "no compatibility with a named lander, rover or spacecraft is asserted. LTM's host was the spacecraft Lunar Trailblazer, which was about 200 kg with a width of 3.5 m and arrays deployed [1]. That describes a spacecraft, not a lander interface. For LTM, the stated interface quantities are the 5 W average and 13 W peak power, the 225 × 265 × 110 mm envelope, the 4.5 kg mass, and the pointing-mirror Sun-safe position [1]. No verified interface document for a lander or other host is available.",
+        "images": [
+          {
+            "id": "ltm_pia25831_flight_instrument",
+            "description": "Lunar Thermal Mapper (LTM) flight instrument, wrapped in insulation with only its scan mirror exposed, shown before shipment from the United Kingdom to the United States.",
+            "image_type": "Engineering hardware photograph (flight instrument, pre-shipment)",
+            "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia25/pia25831/PIA25831.jpg",
+            "source_page_url": "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin",
+            "publisher": "NASA Science Photojournal",
+            "credit": "Credits: University of Oxford",
+            "caption": "Lunar Trailblazer's Thermal Mapper (LTM) wrapped in insulation before shipment from the U.K. to the U.S.; NASA Photojournal PIA25831.",
+            "section_placements": [
+              "overview",
+              "physical_specifications.examples[0]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct asset URL taken from the source page's Downloads section (JPEG, 861.55 KB); HTTP 200 and JPEG signature confirmed; asset identified on source page as PIA25831. The page's alternative 'jpeg/' path returned 404 and was not used. Query strings removed from all URLs. Rights: NASA Photojournal credit to University of Oxford; reuse terms not separately verified."
+          }
+        ]
+      },
+      "historical_significance": "Thermal measurements of the Moon began with ground-based observations, and early composition work relied on balloon-borne observations [1]. Orbital thermal mapping followed. The Apollo 17 Infrared Scanning Radiometer used a single-element uncooled bolometer to measure thermal emission from 1.2 to 70 µm for 25% of the lunar surface at a spatial resolution of less than 10 km. It recorded temperatures from 80 to 400 K, to within 2 K, and found night-time hot spots associated with fresh impact ejecta [1]. The Clementine LWIR camera followed with 55 to 200 m data at 8.75 µm, but its 200 K minimum detectable temperature limited its polar use [1].\n\nDiviner has since provided what Bowles et al. describe as the most comprehensive global thermal infrared data set for the Moon [1]. The Lunar Thermal Mapper was built to add narrow composition channels and an independent temperature measurement, but the mission was lost before LTM returned science data [1][2].\n\nNon-lunar examples show the same method at other worlds. The first THEMIS image of Mars was taken on 30 October 2001 during calibration and testing, showing the south polar carbon dioxide ice cap and night-time temperatures [11]. Landsat 9 TIRS, launched in 2021, continues thermal sensing of Earth in the Landsat series with two thermal bands [12][13].",
+      "limitations_and_uncertainties": "The name longwave infrared camera describes a measurement class, not one design, so no single set of specifications applies. The article has treated each example separately.\n\nStatus evidence gaps. The LTM is documented as flight hardware that launched, but the sources reviewed do not report any LTM science data [1][2]. The current operating status of Diviner, THEMIS and Landsat 9 TIRS was not re-verified in this review. The NASA pages for THEMIS are undated, and the most recent operating statement found for Mars Odyssey came from a secondary, non-authoritative source [7].\n\nSpecification gaps. Diviner's mass and power come from a 2009 secondary article and were not confirmed against instrument documentation [6]. Diviner's wavelength range differs between sources [1][6]. Diviner's per-detector footprint differs between the UCLA page and Bowles et al. [1][4]. THEMIS band count differs between NASA and ASU pages [7][9]. TIRS mass, power and dimensions were not found in the sources reviewed, and THEMIS detector technology was not stated in the pages reviewed [7][9][10].\n\nHistorical data. Clementine LWIR and Apollo 17 ISR values are taken from Bowles et al., who cite the original instrument papers. The original papers were not read in this review [1].\n\nLunar proposed and prototype coverage. No proposed or prototype lunar longwave camera with verified specifications was located in this review, so none is described. A broader search of future lunar thermal missions would be needed before adding such entries.\n\nDirect image coverage. Three direct image assets were verified by HTTP response and JPEG signature. No verified direct image asset was located for the TIRS example or for the Clementine and Apollo instruments.",
+      "images": [
+        {
+          "id": "ltm_pia25831_flight_instrument",
+          "description": "Lunar Thermal Mapper (LTM) flight instrument, wrapped in insulation with only its scan mirror exposed, shown before shipment from the United Kingdom to the United States.",
+          "image_type": "Engineering hardware photograph (flight instrument, pre-shipment)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia25/pia25831/PIA25831.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin",
+          "publisher": "NASA Science Photojournal",
+          "credit": "Credits: University of Oxford",
+          "caption": "Lunar Trailblazer's Thermal Mapper (LTM) wrapped in insulation before shipment from the U.K. to the U.S.; NASA Photojournal PIA25831.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL taken from the source page's Downloads section (JPEG, 861.55 KB); HTTP 200 and JPEG signature confirmed; asset identified on source page as PIA25831. The page's alternative 'jpeg/' path returned 404 and was not used. Query strings removed from all URLs. Rights: NASA Photojournal credit to University of Oxford; reuse terms not separately verified."
+        },
+        {
+          "id": "diviner_pia12088_integration",
+          "description": "Diviner Lunar Radiometer Experiment instrument following integration to NASA's Lunar Reconnaissance Orbiter.",
+          "image_type": "Engineering hardware photograph (flight instrument on spacecraft)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia12/pia12088/PIA12088.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/diviner-following-integration-to-the-lunar-reconnaissance-orbiter-lro/",
+          "publisher": "NASA Science Photojournal",
+          "credit": "Credits: NASA/JPL",
+          "caption": "The Diviner instrument following integration to NASA's Lunar Reconnaissance Orbiter (LRO); NASA/JPL, PIA12088.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL taken from the source page's Downloads section (JPEG, 895.02 KB per page); HTTP 200 and JPEG signature confirmed; identified on source page as PIA12088. Query strings removed. The page's /dynamicimage/ preview URLs with query strings were not used."
+        },
+        {
+          "id": "themis_pia03459_first_image",
+          "description": "First THEMIS thermal infrared image of Mars, taken 30 October 2001 during calibration and testing, showing the south polar CO2 ice cap.",
+          "image_type": "Thermal infrared science image (Mars orbiter)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia03/pia03459/PIA03459.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/first-themis-image-of-mars/",
+          "publisher": "NASA/JPL/Arizona State University (Photojournal)",
+          "credit": "NASA/JPL/Arizona State University",
+          "caption": "First THEMIS image of Mars, a thermal infrared view from Mars Odyssey taken 30 October 2001; NASA/JPL/ASU, PIA03459.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL from the source page's Downloads section (JPEG, 256.78 KB per page); HTTP 200 and JPEG signature confirmed; identified on source page as PIA03459. Query strings removed. Calibration-era image; the page does not state pixel dimensions."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "ltm_pia25831_flight_instrument",
+          "description": "Lunar Thermal Mapper (LTM) flight instrument, wrapped in insulation with only its scan mirror exposed, shown before shipment from the United Kingdom to the United States.",
+          "image_type": "Engineering hardware photograph (flight instrument, pre-shipment)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia25/pia25831/PIA25831.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin",
+          "publisher": "NASA Science Photojournal",
+          "credit": "Credits: University of Oxford",
+          "caption": "Lunar Trailblazer's Thermal Mapper (LTM) wrapped in insulation before shipment from the U.K. to the U.S.; NASA Photojournal PIA25831.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL taken from the source page's Downloads section (JPEG, 861.55 KB); HTTP 200 and JPEG signature confirmed; asset identified on source page as PIA25831. The page's alternative 'jpeg/' path returned 404 and was not used. Query strings removed from all URLs. Rights: NASA Photojournal credit to University of Oxford; reuse terms not separately verified."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "The Lunar Trailblazer Lunar Thermal Mapper Instrument",
+          "publisher": "Bowles, N. E., Ehlmann, B. L., et al. (2026); Journal of Geophysical Research: Planets, 131, e2025JE009333; AGU/Wiley",
+          "url": "https://doi.org/10.1029/2025JE009333",
+          "notes": "Primary instrument paper for LTM (Table 1 and Table 2, flight status, detector, mass, power) and for Diviner and historical lunar thermal instruments as cited therein. Read in full from a local copy of the PDF."
+        },
+        {
+          "number": 2,
+          "title": "Lunar Trailblazer (mission page)",
+          "publisher": "European Space Agency, Earth Observation Portal (eoPortal)",
+          "url": "https://eoportal.org/satellite-missions/lunar-trailblazer",
+          "notes": "Launch date and launch vehicle; page's Quick-facts metadata conflicts with its own narrative."
+        },
+        {
+          "number": 3,
+          "title": "The Lunar Reconnaissance Orbiter Diviner Lunar Radiometer Experiment",
+          "publisher": "Paige, D. A., et al. (2010); Space Science Reviews, 150, 125; Springer",
+          "url": "https://ui.adsabs.harvard.edu/abs/2010SSRv..150..125P/abstract",
+          "notes": "Bibliographic record only; full text not read in this review. Cited for context on the Diviner instrument."
+        },
+        {
+          "number": 4,
+          "title": "Diviner Lunar Radiometer Experiment: Instrument Specifications",
+          "publisher": "UCLA Diviner Lunar Radiometer team",
+          "url": "https://www.diviner.ucla.edu/instrument-specs",
+          "notes": "Thermopile detector array, two telescopes, 189 measurements every 0.128 s, footprint and swath. No mass, power or wavelength ranges on this page."
+        },
+        {
+          "number": 5,
+          "title": "Diviner Following Integration to the Lunar Reconnaissance Orbiter (LRO)",
+          "publisher": "NASA/JPL, NASA Science Photojournal PIA12088",
+          "url": "https://science.nasa.gov/photojournal/diviner-following-integration-to-the-lunar-reconnaissance-orbiter-lro/",
+          "notes": "Source page for Diviner image; direct asset verified."
+        },
+        {
+          "number": 6,
+          "title": "Lunar Reconnaissance Orbiter launch coverage (2009)",
+          "publisher": "Spaceflight Now (secondary news source)",
+          "url": "https://spaceflightnow.com/atlas/av020/090610lro.html",
+          "notes": "Secondary source for Diviner mass (11.0 kg), average power (24.7 W) and wavelength description; undated page. Unverified against instrument documentation."
+        },
+        {
+          "number": 7,
+          "title": "Mars Odyssey science instruments (THEMIS)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/odyssey/science-instruments/",
+          "notes": "THEMIS mass 11.2 kg and power 14 W; band list; undated values; no operating statement for the instrument."
+        },
+        {
+          "number": 8,
+          "title": "About THEMIS and the Mars Odyssey mission",
+          "publisher": "Arizona State University, THEMIS team",
+          "url": "https://themis.mars.asu.edu/about",
+          "notes": "Describes a 5-visual and 9-infrared band system; mission status not stated."
+        },
+        {
+          "number": 9,
+          "title": "THEMIS instrument page and FAQ",
+          "publisher": "Arizona State University, Christensen group",
+          "url": "https://christensen.asu.edu/instrument/themis",
+          "notes": "Ten infrared filters, 100 m per pixel infrared resolution, band centres, and the 14.88 um atmospheric opacity statement."
+        },
+        {
+          "number": 10,
+          "title": "Odyssey THEMIS IR Geometric Projection V1 (IRGEO1) help page",
+          "publisher": "Orbital Data Explorer (ODE), Washington University in St. Louis",
+          "url": "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/Mars_Odyssey/THEMIS/ODTGEO/IR/IRGEO1.htm",
+          "notes": "Band table with centres and FWHM; ten ~1 um strip filters on the infrared focal plane."
+        },
+        {
+          "number": 11,
+          "title": "First THEMIS Image of Mars",
+          "publisher": "NASA/JPL/Arizona State University, NASA Science Photojournal PIA03459",
+          "url": "https://science.nasa.gov/photojournal/first-themis-image-of-mars/",
+          "notes": "Source page for THEMIS image; direct asset verified."
+        },
+        {
+          "number": 12,
+          "title": "Landsat spectral bands and applications",
+          "publisher": "NASA Science (Landsat program)",
+          "url": "https://science.nasa.gov/mission/landsat/spectral-bands-and-applications",
+          "notes": "Band 10 and Band 11 wavelengths and resolution (covers Landsat 8 and 9 together)."
+        },
+        {
+          "number": 13,
+          "title": "Early Radiometric Performance of Landsat-9 Thermal Infrared Sensor",
+          "publisher": "Barsi, J. A., et al. (2022); NASA Technical Reports Server document, publication venue not confirmed",
+          "url": "https://ntrs.nasa.gov/api/citations/20220016849/downloads/TIRS2_RadiometricPerformance.20220826.pdf",
+          "notes": "TIRS design (pushbroom, three SCAs of 512 x 640 QWIP detectors, 185 km swath, 15 degree FOV), launch and operations dates, in-flight NEDT, and the March 2022 cryocooler electronics reset."
+        },
+        {
+          "number": 14,
+          "title": "Lunar Trailblazer's Thermal Mapper Has Arrived at Lockheed Martin",
+          "publisher": "University of Oxford credit, NASA Science Photojournal PIA25831",
+          "url": "https://science.nasa.gov/photojournal/lunar-trailblazers-thermal-mapper-has-arrived-at-lockheed-martin",
+          "notes": "Source page for LTM flight-instrument image; direct asset verified."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "LTM example": "payload.article.physical_specifications.examples[0].images",
+      "Diviner example": "payload.article.physical_specifications.examples[1].images",
+      "THEMIS example": "payload.article.physical_specifications.examples[2].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. Each registry image was verified to return HTTP 200 with a JPEG signature, and each is identified on its NASA Photojournal source page. Section-level image objects are repeated intentionally."
+  },
+  "data_quality_notes": [
+    "LTM status: launched February 2025 and declared lost July 2025 after limited telemetry. No LTM science data are reported in the sources reviewed, so no LTM performance is in-flight measured. The eoPortal Quick-facts metadata conflicts with its narrative (instrument names and mission status label).",
+    "Diviner mass (11.0 kg) and average power (24.7 W) come only from a 2009 secondary news article (Spaceflight Now) and are not confirmed against instrument documentation. The UCLA instrument page and Bowles et al. (2026) give no mass or power.",
+    "Diviner wavelength description conflicts: Bowles et al. (2026) give thermal channels from 13 to 400 um plus three near 8 um and two reflected-solar channels, while Spaceflight Now gives nine wavelengths between 7 and 200 um. Band edges of the three 8 um channels were not stated in the sources read. The earlier summary of Paige et al. (2010), which gives 0.3 to 400 um, was taken from a search snippet only.",
+    "Diviner spatial resolution conflicts: UCLA gives a nominal per-detector instantaneous field of view of about 179 x 307 m, while Bowles et al. (2026) give 320 x 160 m from the 50 km mapping orbit. Neither has been reconciled.",
+    "THEMIS: NASA science page describes nine infrared bands in one passage, while ASU FAQ and ODE document ten filters. The operating status of Mars Odyssey and THEMIS was not confirmed from an authoritative 2026 source. Mass (11.2 kg) and power (14 W) come from an undated NASA page. THEMIS detector technology is not stated in the pages reviewed.",
+    "Landsat 9 TIRS: mass, power and dimensions were not found in the sources reviewed. Current operating status was not re-verified after the 2022 cryocooler electronics reset. The NASA band page covers Landsat 8 and 9 together, so the Band 10 and Band 11 figures are taken from that combined table and the Barsi et al. (2022) instrument description.",
+    "Lunar proposed and prototype longwave cameras with verified specifications were not located in this review. No lander, rover or spacecraft compatibility is asserted. Interface figures are given only for LTM, from Bowles et al. (2026).",
+    "Image verification: three direct asset URLs (PIA25831, PIA12088, PIA03459) returned HTTP 200 with JPEG signatures and are identified on their NASA Photojournal source pages. Full-resolution downloads were not checked. The 'jpeg/' path for PIA25831 returned 404 and was not used. No verified direct asset was located for TIRS, Clementine or Apollo 17 ISR, so no image is used for them.",
+    "Historical instruments (Apollo 17 Infrared Scanning Radiometer and Clementine LWIR camera) are described only from Bowles et al. (2026), which cites Mendell and Low (1974) and Lawson et al. (2000). The original papers were not read.",
+    "Reference 3 (Paige et al. 2010) is cited from an ADS index record; full text was not read in this review.",
+    "URL HTTP checks (curl, following redirects, 17 unique JSON URLs): 15 returned 200. The doi.org URL for Bowles et al. (2026) returned 403 to curl; the paper was read from a local PDF copy. The spaceflightnow.com page returned 403 to curl; its content was retrieved through WebFetch. The ADS abstract URL returned 405 to curl and was not retrieved; it is a bibliographic record only."
+  ]
+}

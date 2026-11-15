@@ -1,0 +1,340 @@
+{
+  "catalogue_id": 198,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 10,
+    "name": "Biological and life-science experiments"
+  },
+  "payload": {
+    "number": 198,
+    "name": "Radiation effects monitor",
+    "article": {
+      "overview": "A radiation effects monitor is a payload class that pairs a radiation sensor, which measures the particles and dose reaching a spacecraft or surface station, with a biological or biologically relevant measurement, so that the physical radiation environment can be linked to what happens in living cells. The catalogue name is generic and no single standard design exists, so this article describes the class through four documented examples. One is flown: BioSentinel, a 6U CubeSat that carried yeast into deep space on NASA's Artemis I mission, launched on 16 November 2022 [1][2]. Three are planned or proposed: the NASA LEIA yeast experiment for the lunar surface [4], the KASI LVRAD dosimeter suite [7], and the ESA-funded LURAD design study [5][6].",
+      "description": "In this class of instrument two kinds of measurement run side by side. The physical channel records what the radiation is: its type (protons, heavy ions, neutrons, gamma rays), its energy, its linear energy transfer (LET), which describes how densely it deposits energy along its path, and the dose delivered. The biological channel records how a living organism responds, for example whether yeast cells grow, change their metabolic activity or repair DNA breaks [2][4]. Comparing the two channels is the purpose: it shows which radiation features, and at what level, are associated with biological effects. A plain dosimeter reports only the physical channel, and a standard biology experiment may not record the radiation actually present. Whether a given payload delivers both channels has to be checked instrument by instrument.",
+      "scientific_purpose_and_applications": "The main purpose is to support radiation-risk assessment for crews on deep-space and lunar missions. NASA states that BioSentinel was designed to compare two yeast strains' responses to deep-space radiation, to better understand health risks for future crews and to inform ways to reduce them [1]. The LEIA design extends the approach to the lunar surface, where NASA identifies fast neutrons as a major part of the surface radiation field [4]. LVRAD aims to quantify the lunar surface radiation environment and its potential impact on biology [7]. The LURAD microdosimetry subsystem is designed to measure biological dose for astronaut radiation protection [5]. The applications named in these sources are therefore crew dose and risk assessment, lunar surface environment characterisation and biological sensitivity testing. Each depends on the quality of the physical and biological measurements, which are discussed under Limitations.",
+      "operating_principle": "The payload has two linked chains. In the biological chain, yeast (Saccharomyces cerevisiae) is held dormant in sealed microfluidic cards and is activated remotely by adding growth medium. The readout uses light-emitting diodes and photodiodes to measure growth as optical density, and a colour-changing redox dye to measure metabolic activity [1][2][4]. Yeast serves as an analogue for human cells, and BioSentinel measured the rates of DNA double-strand breaks and repair events in response to radiation [2]. In the physical chain, BioSentinel used a TimePix sensor, built by NASA JSC's RadWorks group, to measure dose and LET; these data were to be compared directly with the yeast repair data [2]. LEIA adds ARES, which records time-resolved dose, dose rate and energy deposition from charged particles, and a Mini-Fast Neutron Detector for high-energy neutrons [4]. LURAD proposes silicon pixel sensors for spectroscopy, scintillators read by silicon photomultipliers and silicon-on-insulator microdosimetry sensors [5].",
+      "scientific_importance": "Crew radiation risk depends on biological effects as well as on physical dose. Dose and particle type alone do not show how living tissue will respond, so measuring both in the same mission is what allows the link to be examined. NASA presents BioSentinel as the first long-duration biology experiment beyond low Earth orbit [1], and the SSC23 paper describes it as the first deep-space biology CubeSat mission [2]. Even though the deep-space yeast phase recorded no growth, the radiation detector kept collecting data after that phase [1][3], and the SSC23 paper reports successful commissioning [2].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power figure for a radiation effects monitor. The values below apply only to the named example. Where the sources do not publish a figure, it is recorded as not publicly specified.",
+        "examples": [
+          {
+            "name": "BioSentinel (Artemis I 6U CubeSat, flown)",
+            "type": "Flown deep-space biology and radiation CubeSat",
+            "status": "Launched 16 November 2022 on NASA's Space Launch System (SLS) for Artemis I, one of ten CubeSats on that flight; science operations began 5 December 2022; the spacecraft continues to operate in orbit around the Sun [1][2].",
+            "form_factor": "6U CubeSat (whole spacecraft)",
+            "spacecraft_mass": "About 30 pounds, as stated by NASA for the spacecraft [1].",
+            "payload_mass_kg": null,
+            "payload_dimensions_cm": null,
+            "power_consumption_w": null,
+            "biological_instrument": "BioSensor: yeast held in microfluidic cards and activated remotely; a three-colour LED readout and a dye showing cell activity; two strains, one common and one with impaired DNA repair [1][2].",
+            "radiation_instrument": "TimePix sensor, built by NASA JSC RadWorks, measuring dose and LET [2]. NASA's extension article describes the onboard detector as a linear energy transfer spectrometer [3].",
+            "source_urls": [
+              "https://www.nasa.gov/ames/biosentinel",
+              "https://ntrs.nasa.gov/citations/20230008421",
+              "https://www.nasa.gov/image-article/nasa-extends-biosentinels-mission-to-measure-deep-space-radiation"
+            ],
+            "images": [
+              {
+                "id": "nasa_biosentinel_spacecraft_illustration",
+                "description": "Illustration of the BioSentinel spacecraft with its four solar arrays deployed, facing the Sun.",
+                "image_type": "Mission illustration",
+                "image_url": null,
+                "source_page_url": "https://www.nasa.gov/image-article/nasa-extends-biosentinels-mission-to-measure-deep-space-radiation",
+                "publisher": "NASA",
+                "credit": "NASA/Daniel Rutter (as reported on the source page)",
+                "caption": "Now over 13 million miles from Earth, the BioSentinel spacecraft remains healthy and will continue to study deep space radiation until November 2024 (NASA caption, as reported on the source page).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "A direct asset URL was reported by page extraction but was not downloaded or verified, so image_url is null under the policy for unverified assets. The linked NASA source page is used instead. Confirm the asset URL and NASA reuse terms before republication."
+              }
+            ]
+          },
+          {
+            "name": "LEIA (Lunar Explorer Instrument for space biology Applications, planned)",
+            "type": "Planned lunar-surface biology and radiation payload; pre-flight status according to the source",
+            "status": "NASA plans delivery to the Moon through the Commercial Lunar Payload Services (CLPS) programme in 2026; the lander and provider are not named and flight qualification is not stated [4].",
+            "biological_instrument": "BioSensor based on the BioSentinel design: 16 fluidic cards with 16 microwells each (256 samples plus calibration standards); each well has three LEDs and a photodiode measuring optical density and metabolic activity through a redox dye [4].",
+            "radiation_instruments": [
+              "ARES (Airborne Radiological Enhanced-sensor System), developed at NASA JSC: time-resolved dose, dose rate and energy deposition from charged particles [4].",
+              "Mini-FND (Mini-Fast Neutron Detector), developed by Southwest Research Institute: high-energy neutrons, a miniaturised version of the ISS-RAD fast neutron detector [4]."
+            ],
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "source_urls": [
+              "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers"
+            ],
+            "images": [
+              {
+                "id": "nasa_leia_hardware_diagram",
+                "description": "Hardware diagram of the LEIA payload showing the ARES/BioSensor and Mini-FND elements.",
+                "image_type": "Technical diagram",
+                "image_url": null,
+                "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+                "publisher": "NASA",
+                "credit": "NASA (as reported on the source page)",
+                "caption": "Hardware diagram labelled ARES/BioSensor and Mini-FND on the NASA LEIA page.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Image listed on the NASA source page; direct asset URL not downloaded or verified, so image_url is null. Linked source-page reference used."
+              },
+              {
+                "id": "nasa_leia_fluidic_cards_manifold",
+                "description": "Fluidic cards with dormant yeast, shown in a manifold on the NASA LEIA page.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": null,
+                "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+                "publisher": "NASA",
+                "credit": "NASA (as reported on the source page)",
+                "caption": "LEIA BioSensor fluidic cards in a manifold.",
+                "section_placements": [
+                  "physical_specifications.examples[1]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Image listed on the NASA source page; direct asset URL not downloaded or verified, so image_url is null. Linked source-page reference used."
+              }
+            ]
+          },
+          {
+            "name": "LVRAD (Lunar Vehicle RAdiation Dosimeters, planned)",
+            "type": "Planned lunar-surface radiation dosimeter suite (KASI)",
+            "status": "Described in the future tense; no launch date, lander or operating status is given [7].",
+            "instruments": [
+              "PDS (Particle Dosimeter and Spectrometer): radiation energy [7].",
+              "TED (Tissue-Equivalent Dosimeter): radiation energy, with the name pointing to tissue-equivalent dosimetry [7].",
+              "NS-E (Epithermal Neutron Spectrometer): epithermal neutrons from the surface, which may indicate subsurface water [7].",
+              "NS-F (Fast Neutron Spectrometer): fast neutrons, which are rarer but more harmful to biology, with gamma spectroscopy to identify surface radioisotopes [7]."
+            ],
+            "heritage": "Draws on the LEO-DOS radiation dosimeter from the Korea Next Generation Small Satellite 2 (NEXTSat-2), per the KASI page [7].",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "source_urls": [
+              "https://pda.kasi.re.kr/lvrad.php"
+            ],
+            "images": []
+          },
+          {
+            "name": "LURAD (comprehensive radiation monitor package, ESA-funded design study)",
+            "type": "Proposed lunar orbit and surface radiation monitor (design study)",
+            "status": "Design study with a Monte Carlo feasibility assessment; no built or flown unit is described in the source read [5]. The ESA project record is reported as closed and states that future activities would be needed to reach higher TRL [6].",
+            "instruments": [
+              "Spectroscopic measurement of protons, electrons, heavy ions, gamma rays and neutrons [5].",
+              "Microdosimetry subsystem: LET(Si) spectra, neutron detection and biological dose for astronaut radiation protection [5]."
+            ],
+            "sensor_technologies": [
+              "Fully depleted silicon monolithic active pixel sensors [5].",
+              "Scintillators read by silicon photomultipliers [5].",
+              "Silicon-on-insulator microdosimetry sensors [5]."
+            ],
+            "mass_kg": null,
+            "mass_reported_unverified": "About 2.9 kg, as reported in a search-result summary of the June 2024 ESA final presentation [8]; the slide deck was not opened, so this is not a verified specification.",
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "source_urls": [
+              "https://arxiv.org/abs/2405.03187",
+              "https://nebula.esa.int/content/comprehensive-radiation-monitor-package-lunar-mission",
+              "https://indico.esa.int/event/503/contributions/9293/attachments/6009/10243/TEC_Final_Days_2024.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The only dimensional figure verified from a source is the 6U form factor of BioSentinel, which describes the whole spacecraft rather than a payload. LEIA, LVRAD and LURAD have no verified dimensions in the sources read. Comparing them would imply an equivalence that the sources do not support.",
+        "mass_and_weight": "NASA gives the BioSentinel spacecraft weight as about 30 pounds [1]. No verified payload mass is available for any example. A LURAD mass of about 2.9 kg appears only in a search-result summary of an ESA presentation [8]; it is not verified and is not used as a specification.",
+        "power_requirements": "No verified power requirement is available for any example. Power is not publicly specified in the sources read."
+      },
+      "environmental_and_operational_requirements": "The environment has two regimes. In deep space, the spacecraft is exposed to charged particles from the solar wind and galactic cosmic rays [4], and to solar particle events and coronal mass ejections. NASA reported at least ten solar events captured by BioSentinel's radiation detector at the time of its mission-extension article [3]. On the lunar surface, the sources describe fast and epithermal neutrons and gamma rays as components of the environment that LEIA and LVRAD are designed to measure [4][7]. Living organisms also need controlled handling: BioSentinel kept its yeast dormant until activation, and LEIA integrates its fluidic cards late in payload assembly so that the cells are fresher at launch [1][4]. The sources do not publish operating temperature ranges, humidity limits, thermal control or life-support requirements for any of the examples. These are evidence gaps, not assumed values.",
+      "limitations": "The class is defined by function, so measurements from one example cannot be transferred to another. The main limitations are:\n\n- Biological result: BioSentinel's deep-space yeast phase (December 2022 to April 2023, four two-week experiments) recorded no yeast growth. NASA concludes that deep-space radiation was not the cause and that the yeast most likely expired during long storage before launch [1]. The radiation data from that phase therefore cannot be paired with a biological response.\n- Spacecraft anomaly: after deployment the BioSentinel spacecraft unexpectedly tumbled and was stabilised with a contingency plan just before its battery ran out; commissioning was then reported as successful and was completed a week early [2].\n- Mission status: sources conflict on the end date. NASA's extension article gives operation until November 2024 at the latest [3]. NASA's Ames page reports measurements at the three-year mark (16 November 2025), gives no announced end date and was last updated on 16 July 2026 [1].\n- Planned systems: LEIA's flight status is not stated, and its 2026 delivery is a NASA plan [4]. LVRAD has no published dates or specifications [7]. LURAD is a design study [5] whose ESA project record is reported as closed [6].\n- Quantification: no quantitative dose-to-biology correlation was found in the sources read [2].",
+      "transportation_and_deployment": {
+        "overview": "Flown and planned examples reach different environments through different delivery chains, so this section is split by example. BioSentinel was one of ten CubeSats on NASA's SLS for Artemis I and was not a lunar-surface payload [1][2]. LEIA is planned for lunar-surface delivery through NASA's CLPS programme, but the lander and provider are not named in the source [4]. LVRAD is listed under CLPS on the KASI page, with no lander named [7]. LURAD is a design study, and no launch manifest or flight opportunity was identified [5][6].",
+        "transportation_process": [
+          "Integrate the biological cards and sensors into the spacecraft or lander compartment on Earth. For LEIA, the fluidic cards are integrated at the end of payload assembly [4].",
+          "Launch on the carrier vehicle. For BioSentinel this was SLS on 16 November 2022 [1].",
+          "Keep the biological material dormant in transit and activate it at the chosen time. BioSentinel activated its yeast remotely, and LEIA adds growth medium over several days [1][4].",
+          "Lunar transfer and landing: not verified for any named lander. LEIA's 2026 delivery is a NASA plan [4].",
+          "Deployment, power, data, thermal and mechanical interfaces: not specified in the sources read for any example."
+        ],
+        "deployment_methods": "BioSentinel's deployment date and method are not stated on the NASA page. The SSC23 paper reports that the spacecraft tumbled after deployment and was then stabilised [2]. For the lunar examples, no deployment method is specified in the sources read.",
+        "historical_examples": "BioSentinel is the best-documented flown example of a biology-plus-radiation payload in the sources read [1][2]. LEIA's BioSensor is described by NASA as based on the BioSentinel design, so the flight experience is directly relevant to its engineering [4].",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft has been verified. LEIA's CLPS delivery is described without a named provider, so mass, dimensions, mounting, landing loads and power interfaces cannot be compared with any lander specification from these sources.",
+        "images": [
+          {
+            "id": "nasa_leia_fluidic_cards_manifold",
+            "description": "Fluidic cards with dormant yeast, shown in a manifold on the NASA LEIA page.",
+            "image_type": "Engineering hardware photograph",
+            "image_url": null,
+            "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+            "publisher": "NASA",
+            "credit": "NASA (as reported on the source page)",
+            "caption": "LEIA BioSensor fluidic cards in a manifold.",
+            "section_placements": [
+              "physical_specifications.examples[1]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Image listed on the NASA source page; direct asset URL not downloaded or verified, so image_url is null. Linked source-page reference used."
+          }
+        ]
+      },
+      "historical_significance": "BioSentinel's significance lies in demonstrating a biology-plus-radiation experiment on a small deep-space platform. The SSC23 paper presents the platform's communications, navigation, attitude control and micro-propulsion systems as a reusable nanosatellite template, and records that many of its subsystems flew in deep space for the first time [2]. The mission's results are mixed: its biology goal was not met, but commissioning and recovery from the tumble were reported as successes [2]. LEIA is the planned lunar-surface successor, with its BioSensor based on the BioSentinel design [4]. LVRAD and LURAD address the physical side of the same question, namely how much of the lunar radiation environment reaches biology and crews, and LURAD is explicitly designed to estimate biological dose [5][7].",
+      "limitations_and_uncertainties": "The name 'radiation effects monitor' describes a class of instruments rather than one standard design, and the four examples are not interchangeable. Most numerical specifications are not publicly stated. Evidence is uneven. BioSentinel is flown and is documented by NASA pages and a 2023 conference paper, but its biological result is negative and the full conference paper was not read. LEIA's flight status is not stated and its delivery is a plan. LVRAD has no published specifications or dates in the source read. The LURAD ESA project record was redirected and was not read in full, so its closure status rests on a search summary [6]. Its reported mass of about 2.9 kg comes from a search summary of an ESA presentation that was not opened [8], so it is not used as a specification.\n\nEvidence gaps:\n\n- The full BioSentinel SSC23 paper (provided as a .docx) was not read; payload mass, power and TimePix specifications are unverified.\n- LEIA's lander, provider, delivery date and flight qualification are not stated in the source read.\n- LVRAD and LURAD launch opportunities, TRL and mass, power and dimensions are not verified.\n- Direct image asset URLs for the BioSentinel and LEIA images were not downloaded or checked for rights.\n- A search summary describes an unpublished ISS-based BioSentinel yeast result; it is not used as evidence here.",
+      "images": [
+        {
+          "id": "nasa_biosentinel_spacecraft_illustration",
+          "description": "Illustration of the BioSentinel spacecraft with its four solar arrays deployed, facing the Sun.",
+          "image_type": "Mission illustration",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/image-article/nasa-extends-biosentinels-mission-to-measure-deep-space-radiation",
+          "publisher": "NASA",
+          "credit": "NASA/Daniel Rutter (as reported on the source page)",
+          "caption": "Now over 13 million miles from Earth, the BioSentinel spacecraft remains healthy and will continue to study deep space radiation until November 2024 (NASA caption, as reported on the source page).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "A direct asset URL was reported by page extraction but was not downloaded or verified, so image_url is null under the policy for unverified assets. The linked NASA source page is used instead. Confirm the asset URL and NASA reuse terms before republication."
+        },
+        {
+          "id": "nasa_leia_hardware_diagram",
+          "description": "Hardware diagram of the LEIA payload showing the ARES/BioSensor and Mini-FND elements.",
+          "image_type": "Technical diagram",
+          "image_url": null,
+          "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+          "publisher": "NASA",
+          "credit": "NASA (as reported on the source page)",
+          "caption": "Hardware diagram labelled ARES/BioSensor and Mini-FND on the NASA LEIA page.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Image listed on the NASA source page; direct asset URL not downloaded or verified, so image_url is null. Linked source-page reference used."
+        },
+        {
+          "id": "nasa_leia_fluidic_cards_manifold",
+          "description": "Fluidic cards with dormant yeast, shown in a manifold on the NASA LEIA page.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": null,
+          "source_page_url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers",
+          "publisher": "NASA",
+          "credit": "NASA (as reported on the source page)",
+          "caption": "LEIA BioSensor fluidic cards in a manifold.",
+          "section_placements": [
+            "physical_specifications.examples[1]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Image listed on the NASA source page; direct asset URL not downloaded or verified, so image_url is null. Linked source-page reference used."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "nasa_biosentinel_spacecraft_illustration",
+          "description": "Illustration of the BioSentinel spacecraft with its four solar arrays deployed, facing the Sun.",
+          "image_type": "Mission illustration",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/image-article/nasa-extends-biosentinels-mission-to-measure-deep-space-radiation",
+          "publisher": "NASA",
+          "credit": "NASA/Daniel Rutter (as reported on the source page)",
+          "caption": "Now over 13 million miles from Earth, the BioSentinel spacecraft remains healthy and will continue to study deep space radiation until November 2024 (NASA caption, as reported on the source page).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "A direct asset URL was reported by page extraction but was not downloaded or verified, so image_url is null under the policy for unverified assets. The linked NASA source page is used instead. Confirm the asset URL and NASA reuse terms before republication."
+        }
+      ],
+      "references": [
+        {
+          "title": "BioSentinel mission page",
+          "publisher": "NASA Ames Research Center",
+          "date": "undated; page shows last update 16 July 2026",
+          "url": "https://www.nasa.gov/ames/biosentinel"
+        },
+        {
+          "title": "BioSentinel: Mission Summary and Lessons Learned From the First Deep Space Biology CubeSat Mission (SSC23-I-02)",
+          "publisher": "Napoli, M. et al., 37th Annual Small Satellite Conference, Logan, UT; NASA NTRS 20230008421",
+          "date": "2023-08",
+          "url": "https://ntrs.nasa.gov/citations/20230008421"
+        },
+        {
+          "title": "NASA Extends BioSentinel's Mission to Measure Deep Space Radiation",
+          "publisher": "NASA",
+          "date": "publication date not confirmed",
+          "url": "https://www.nasa.gov/image-article/nasa-extends-biosentinels-mission-to-measure-deep-space-radiation"
+        },
+        {
+          "title": "Growing Yeast on the Moon to Study Radiation Risks to Human Explorers (LEIA)",
+          "publisher": "NASA Science",
+          "date": "2023-09-26, last updated 2024-08-14 per page",
+          "url": "https://science.nasa.gov/technology/technology-highlights/growing-yeast-on-the-moon-to-study-radiation-risks-to-human-explorers"
+        },
+        {
+          "title": "LURAD: Design Study of a Comprehensive Radiation Monitor Package for the Gateway and the Lunar Surface",
+          "publisher": "Potiriadis, C. et al., Advances in Space Research 74(3), 1352-1365; arXiv:2405.03187",
+          "date": "2024-08-01",
+          "url": "https://arxiv.org/abs/2405.03187"
+        },
+        {
+          "title": "Comprehensive radiation monitor package for Lunar mission (ESA project record; page redirected, not read in full)",
+          "publisher": "European Space Agency, Nebula",
+          "date": "not stated",
+          "url": "https://nebula.esa.int/content/comprehensive-radiation-monitor-package-lunar-mission"
+        },
+        {
+          "title": "LVRAD (Lunar Vehicle RAdiation Dosimeters)",
+          "publisher": "Korea Astronomy and Space Science Institute (KASI)",
+          "date": "copyright 2023 per page",
+          "url": "https://pda.kasi.re.kr/lvrad.php"
+        },
+        {
+          "title": "LURAD final presentation, TEC Final Days 2024 (slide deck; not opened, cited only for an unverified mass figure)",
+          "publisher": "European Space Agency",
+          "date": "2024-06",
+          "url": "https://indico.esa.int/event/503/contributions/9293/attachments/6009/10243/TEC_Final_Days_2024.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": [
+        "nasa_biosentinel_spacecraft_illustration"
+      ],
+      "physical_specifications.examples[0]": [
+        "nasa_biosentinel_spacecraft_illustration"
+      ],
+      "physical_specifications.examples[1]": [
+        "nasa_leia_hardware_diagram",
+        "nasa_leia_fluidic_cards_manifold"
+      ],
+      "transportation_and_deployment": [
+        "nasa_leia_fluidic_cards_manifold"
+      ]
+    },
+    "url_policy": "All URL query strings and fragments removed. No direct image asset URL was verified, so image_url is null for every image; linked NASA source pages are used in the Markdown instead."
+  },
+  "data_quality_notes": [
+    "Catalogue ID 198, name 'Radiation effects monitor' and category 10 'Biological and life-science experiments' confirmed against lunar_payloads_catalogue_320.md.",
+    "'Radiation effects monitor' is a generic catalogue name. The article treats it as a class and covers four documented examples; no single standard design is implied.",
+    "The NASA BioSentinel fact-sheet PDF returned binary content and could not be read; it is not cited.",
+    "The ESA LURAD project page redirected to an authentication flow and was not read; its closure status comes from a search summary only.",
+    "The LURAD mass of about 2.9 kg comes from a search summary of an ESA June 2024 slide deck that was not opened; it is recorded as unverified and mass_kg is null.",
+    "Conflicting BioSentinel status: the NASA extension article gives operation until November 2024 at the latest, while the NASA Ames page reports November 2025 measurements, was last updated 16 July 2026, and gives no announced end date.",
+    "The BioSentinel onboard detector is a TimePix sensor in the SSC23 paper and a linear energy transfer spectrometer in the NASA extension article; both descriptions are reported.",
+    "The LEIA and BioSentinel image URLs were reported by page extraction and were not downloaded; image_url is null and linked source-page references are used.",
+    "LEIA acronym expansion taken from the NASA page extraction; the search summary used a different expansion.",
+    "The LVRAD source was read at https://pda.kasi.re.kr/lvrad.php?lang=en; the query string (lang=en) was removed per the URL policy, and the clean URL was not separately re-fetched.",
+    "No compatibility with any named lander, rover or spacecraft is claimed.",
+    "Lunar location recommendations are deferred by the user and are not included."
+  ]
+}

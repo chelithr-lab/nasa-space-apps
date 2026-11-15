@@ -1,0 +1,155 @@
+{
+  "catalogue_id": 211,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 211,
+    "name": "Solar energy experiment",
+    "article": {
+      "overview": "A solar energy experiment in the in-situ resource utilisation (ISRU) category tests how sunlight can supply the energy needed to process lunar regolith, for example by heating it so that oxygen or other products are released. The catalogue name does not identify a single instrument, so this article treats the payload as a class of concentrated-solar thermal ISRU experiments. The two best-documented examples are NASA's Carbothermal Reduction Demonstration (CaRD) and a 2026 laboratory solar pyrolysis experiment. Both are ground tests rather than lunar operations, and neither has published a complete set of mass, power or performance figures.",
+      "description": "Concentrated-solar experiments collect sunlight with a mirror or lens system and focus it onto a small target. In ISRU work the target is lunar regolith, or a simulant, held in a reactor. The concentrated light heats the material to high temperatures, which can drive chemical reactions that release oxygen. The concentrator can be a deployable, sun-tracking mirror array, a parabolic dish, or a heliostat that redirects sunlight from a fixed mirror onto the target. The approach is attractive because it uses sunlight rather than consumables carried from Earth. Its main difficulty is the lunar night: the sources read for this article cite a night of about 354 hours, so a solar process must either store energy or pause. The experiments summarised here show that concentrated sunlight can drive these reactions under laboratory or simulated conditions. The sources do not show a flight-ready system.",
+      "scientific_purpose_and_applications": "The purpose of this class of experiment is to determine whether concentrated sunlight can supply the high temperatures needed for ISRU reactions, and how much product is obtained per unit of solar energy. CaRD defines its performance metric as grams of oxygen per kilowatt-hour of solar energy at the primary mirror, and its authors state that the goal of a scaled-up system is useful quantities of oxygen for life support and propellant. The 2026 solar pyrolysis experiment reports its yield as a percentage of processed sample mass. Regolith is described as roughly 45% oxygen by mass, mostly bound in silicate minerals, so the feedstock is abundant; the energy cost of releasing that oxygen determines whether the process is practical. Laboratory reactors must also be tested under vacuum and simulated sunlight so that their results can be judged against the lunar environment.",
+      "operating_principle": "A typical design has four stages. First, a concentrator collects sunlight over a large area and directs it toward a small target. In CaRD, the concentrator is a deployable, sun-tracking mirror array that redirects sunlight through 90 degrees using crossed Dragone mirrors. Second, the concentrated light heats regolith inside a reactor held in vacuum. In the 2023 CaRD brassboard, a 2 kW Nd:YAG laser heated regolith simulant in a reactor built by Sierra Space. Third, the reaction releases gases that are analysed. CaRD gas analysis detected carbon monoxide, confirming that the solar carbothermal reaction occurred. Fourth, the gases are separated and the products are collected. In the 2026 solar pyrolysis dish experiment, a refrigerated copper condenser captured metal vapours, and argon carried released oxygen to a trace oxygen analyser. The sources describe two routes: carbothermal reduction, as used in CaRD, and pyrolysis, in which regolith is heated enough to vaporise its oxides, with the products then condensed out.",
+      "scientific_importance": "Oxygen production from regolith is a central goal of ISRU because oxygen is needed for life support and as a propellant component, and carrying it from Earth is costly. Solar thermal routes are attractive because they use sunlight rather than consumables. Ground experiments are the first step: they show whether the chemistry works, how much product forms per unit of energy, and how the hardware behaves in vacuum. The sources read for this article support those points only at demonstration level. The CaRD project confirmed carbon monoxide formation in an integrated prototype. The 2026 solar pyrolysis experiment measured 35 mg of oxygen, a 1.05% mass yield. Neither result is a lunar production rate, and the CaRD project did not report an oxygen quantity.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a solar energy experiment, which may range from a bench-scale reactor to a deployable concentrator. Values below describe specific ground experiments. Where no value is published, the field states that it is not publicly specified.",
+        "examples": [
+          {
+            "name": "CaRD prototype (NASA Glenn concentrator with Sierra Space carbothermal reactor)",
+            "type": "Ground prototype and brassboard (not flown)",
+            "mass_kg": null,
+            "concentrator": "Deployable, sun-tracking mirror array from NASA Glenn that redirects sunlight 90 degrees onto the target using crossed Dragone mirrors. Diameter, power density and efficiency are named as key metrics but are not publicly specified.",
+            "reactor": "Carbothermal reactor and fluid system by Sierra Space. Reactor throughput, temperature, power and mass are not reported in the sources read.",
+            "test_configurations": "2023 brassboard: 2 kW Nd:YAG laser heating regolith simulant in a 15 ft thermal-vacuum chamber at NASA Johnson Space Center. 2026 integrated prototype: heliostat mimicking lunar south pole sunlight at Johnson Space Center.",
+            "measured_result": "Gas analysis detected carbon monoxide, confirming the solar carbothermal reaction. No oxygen quantity is reported.",
+            "dimensions_cm": null,
+            "power_w": null,
+            "qualification": "Ground test results only. The 2026 presentation describes the prototype as end-to-end capable and states that steps toward a flight system are defined, but no flight is documented in the sources read.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20260004723",
+              "https://ntrs.nasa.gov/citations/20230001997"
+            ],
+            "images": []
+          },
+          {
+            "name": "Solar pyrolysis dish experiment (PROMES laboratory, France, 2026)",
+            "type": "Laboratory experiment (not flown)",
+            "mass_kg": null,
+            "concentrator": "2 m diameter parabolic dish with heliostat tracking and shutters to modulate flux, focusing onto a 2 cm focal spot.",
+            "reactor": "Glass vacuum sphere with the regolith pellet on a water-cooled steel holder. Argon carries released oxygen to a trace oxygen analyser. A refrigerated copper condenser captures metal vapours.",
+            "operating_conditions": "Chamber evacuated and then pressurised with 10 mbar of argon. Sustained oxygen production reported at solar power inputs of 1200 W to 1460 W.",
+            "measured_result": "35 mg of oxygen extracted. Mass yield of 1.05% of the total processed sample weight.",
+            "power_w": {
+              "approximate_range": [
+                1200,
+                1460
+              ]
+            },
+            "qualification": "The primary journal paper could not be accessed; these values come from a secondary summary of the 2026 study. Sample composition is described in the secondary summary as a simulant.",
+            "source_urls": [
+              "https://www.sciencedirect.com/science/article/pii/S0273117726001675",
+              "https://spacesettlementprogress.com/2026/04/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Solar furnace feasibility work on lunar minerals (1991 conference abstract)",
+            "type": "Laboratory feasibility and equilibrium modelling (historical, not flown)",
+            "mass_kg": null,
+            "concentrator": "Solar furnace; furnace size and temperature not stated in the abstract.",
+            "reactor": "Not specified in the abstract.",
+            "operating_temperature_k": "About 2000 K, presented as a preliminary conclusion. The abstract does not state whether this came from experiment, model or both.",
+            "measured_result": "Oxygen obtained from common lunar minerals in solar furnace experiments (qualitative). No numeric yield reported.",
+            "dimensions_cm": null,
+            "power_w": null,
+            "qualification": "Abstract only. The full paper was not read.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19910016719"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The examples differ in scale. The CaRD prototype uses a deployable concentrator whose diameter is not publicly specified. The 2026 solar pyrolysis experiment uses a 2 m dish focusing to a 2 cm spot in a laboratory. The 1991 work is an abstract-level feasibility study with no published geometry. A lunar concentrator would need its dimensions set by the collecting area needed for the target throughput, the stowage volume of the lander, and the stability needed for tracking. None of these values has been verified for a lunar design.",
+        "mass_and_weight": "No mass is publicly specified for any example read. The CaRD sources give no concentrator, reactor or system mass. The 2026 dish experiment is a laboratory apparatus with no published mass. Mass matters for launch and lander capacity, and a lunar system would also need a structure stiff enough to hold tracking accuracy.",
+        "power_requirements": "The 2026 dish experiment reports sustained oxygen production at solar power inputs of 1200 W to 1460 W, according to a secondary summary. The CaRD brassboard used a 2 kW laser as its heat source. That laser rating is a source rating, not a measured power delivered to the reactor, and the CaRD sources do not report delivered power. A solar system also needs power for tracking, deployment and control, which is not quantified in the sources read. The night-time power problem is discussed under environmental requirements."
+      },
+      "environmental_and_operational_requirements": "A lunar solar-thermal process must work in hard vacuum, under dust, with large temperature swings and with a lunar night of about 354 hours. The 1989 NASA study cited for the night states that providing power over the 354-hour lunar night is a major design problem, and that electrical storage is the most mature option while thermal storage can hold a lot of energy for its weight but loses heat by conduction and radiation at night. The CaRD prototype was tested in a thermal-vacuum chamber and used a heliostat to mimic lunar south pole sunlight. These are test conditions, not a site recommendation. Concentrator mirrors must hold their shape and tracking accuracy through thermal cycling, and the reactor must be sealed and protected from regolith contamination.",
+      "limitations": "The sources describe ground demonstrations and laboratory measurements. The CaRD sources report carbon monoxide detection but not an oxygen quantity, concentrator efficiency or delivered power. The 2026 solar pyrolysis result is a single laboratory measurement, reported in a secondary summary. The 1991 study is an abstract with no numeric yield. Solar processing also depends on the lunar night, which requires storage or an alternative power source, and none of the sources read describes a complete storage design for this payload. The conversion of carbon monoxide to usable oxygen is not described in the sources read.",
+      "transportation_and_deployment": {
+        "overview": "A solar energy experiment for ISRU would be delivered to the Moon as part of a lander or surface package. The concentrator, reactor and control electronics would need to be stowed for launch and then deployed and aligned on the surface.",
+        "transportation_process": [
+          "Integrate the concentrator, reactor, gas analysis and control electronics into a lander or surface payload compartment on Earth.",
+          "Launch the payload with a launch vehicle and transfer it toward the Moon.",
+          "Deliver it to the surface with a lunar lander.",
+          "Deploy the concentrator, then align it and begin sun tracking.",
+          "Connect power, thermal and data interfaces, and verify beam alignment before processing begins."
+        ],
+        "deployment_methods": "The CaRD sources describe a deployable, sun-tracking concentrator. Stowing, deployment, sun tracking and beam alignment are controlled by avionics and software developed at Kennedy Space Center. The deployment mechanism's mass, force and reliability are not publicly specified.",
+        "historical_examples": "The CaRD prototype and brassboard are ground tests rather than deployed hardware. The 1991 solar furnace work and the 2026 dish experiment are laboratory experiments. None of the sources read documents a solar energy experiment deployed on the Moon.",
+        "compatibility_assessment": "No compatibility with a named lander or spacecraft has been verified. Any assessment would need the concentrator mass, stowed volume, deployment loads, power and thermal interfaces, and the storage approach for the lunar night, compared against verified lander specifications.",
+        "images": []
+      },
+      "historical_significance": "The 1989 NASA Glenn study framed the lunar night as a central power problem for a solar-powered lunar base. The 1991 PSI Technology abstract reported that oxygen could be obtained from common lunar minerals in solar furnace experiments. The CaRD project, led at NASA Johnson Space Center with Glenn, Kennedy and Sierra Space, moved a solar-driven carbothermal reactor from a 2023 brassboard test to an integrated prototype test in 2026. The 2026 PROMES dish experiment is a separate laboratory measurement of oxygen yield from solar pyrolysis of regolith simulant.",
+      "limitations_and_uncertainties": "The name 'solar energy experiment' describes a class of experiments rather than one instrument. The examples in this article differ in goal, scale and reporting standard, so their figures are not directly comparable. The CaRD sources describe a ground test in which carbon monoxide detection confirmed the reaction, but they do not report an oxygen quantity, concentrator efficiency or delivered power. The 2026 solar pyrolysis result is a laboratory measurement of 35 mg of oxygen at a 1.05% mass yield, taken from a secondary summary because the primary paper could not be accessed. The 1991 result is an abstract-level feasibility statement with no reported yield. None of these sources establishes a lunar operating envelope, a flight design or a lander interface.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Prototype Demonstration of an Integrated Solar Concentrator System and Carbothermal Reactor Using Solar Energy to Extract Oxygen from Regolith",
+          "publisher": "NASA NTRS (presentation, Space Resources Roundtable, June 2026)",
+          "url": "https://ntrs.nasa.gov/citations/20260004723"
+        },
+        {
+          "title": "Carbothermal Reduction Demonstration: Laser Driven Reaction in a Thermal-Vacuum Environment and Project Status",
+          "publisher": "NASA NTRS (Paz, A. J., Johnson Space Center; LSIC Spring Meeting, April 2023)",
+          "url": "https://ntrs.nasa.gov/citations/20230001997"
+        },
+        {
+          "title": "Quantification of Oxygen Production from Solar Pyrolysis of Lunar Regolith (Robinot, J., Rodat, S., Abanades, S., Beche, E., Paillet, A., Cowley, A.; Advances in Space Research, 2026)",
+          "publisher": "Advances in Space Research (Elsevier, ScienceDirect)",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0273117726001675"
+        },
+        {
+          "title": "Extraction of oxygen from lunar regolith using solar pyrolysis (secondary summary blog post, April 2026)",
+          "publisher": "Space Settlement Progress (blog)",
+          "url": "https://spacesettlementprogress.com/2026/04/"
+        },
+        {
+          "title": "Oxygen production by pyrolysis of lunar regolith",
+          "publisher": "NASA NTRS (Senior, C. L., PSI Technology Co.; conference abstract, 1991)",
+          "url": "https://ntrs.nasa.gov/citations/19910016719"
+        },
+        {
+          "title": "Solar power for the lunar night (NASA Technical Memorandum 102127)",
+          "publisher": "NASA Lewis Research Center (Landis, G. A.; 1989)",
+          "url": "https://ntrs.nasa.gov/citations/19890017428"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image assets were verified, so no image objects are included; image_url values would be null if images were added."
+  },
+  "data_quality_notes": [
+    "No direct image asset URLs were verified from official pages in this run; the image registry is empty rather than populated with unverified URLs.",
+    "The NASA Johnson Space Center 2023 news article on the CaRD brassboard was read, but its canonical URL was not confirmed without a query string, so it is not cited; facts from it are limited to what the NTRS sources also support.",
+    "The primary Advances in Space Research paper (ScienceDirect) returned HTTP 403. Its yield figures (35 mg; 1.05%) are taken from a secondary blog summary. A peak solar flux value reported in a search excerpt (4.8 MW/m2) was not verified and is not used.",
+    "The CaRD 2026 presentation PDF and the CaRD ASCEND 2026 PDF returned binary content through WebFetch and could not be read. Any ground-test figures in those documents (for example, oxygen mass or power to reactor) are unverified and omitted.",
+    "No mass, dimensions or power are published for the CaRD prototype. Values marked null are not publicly specified in the sources read.",
+    "The 2010 PSI solar thermal ISRU analog test at Mauna Kea was seen only in a search excerpt of a presentation summary and is not included in the article."
+  ]
+}

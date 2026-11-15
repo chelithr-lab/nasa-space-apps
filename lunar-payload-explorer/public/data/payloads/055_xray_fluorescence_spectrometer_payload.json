@@ -1,0 +1,327 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 55,
+    "name": "X-ray fluorescence spectrometer",
+    "article": {
+      "overview": "An X-ray fluorescence (XRF) spectrometer identifies the chemical elements in a surface by measuring the characteristic X-rays those elements emit when excited by a higher-energy X-ray source. It is a chemistry instrument: it reports which elements are present and roughly how much of each, not which minerals they form. Scope of this entry: instruments whose measurement principle is XRF, meaning the detected lines are produced by X-ray excitation of the lunar surface. This covers orbital XRF spectrometers that use solar X-rays as the excitation source (Apollo 15 and 16 XRFS, SELENE/Kaguya XRS, Chandrayaan-2 CLASS) and a planned surface instrument with an internal X-ray source (ESA ALEXIS), plus one proposed compact orbital concept (Tokyo Metropolitan University). Out of scope with cross-references: 054 (Alpha Particle X-ray Spectrometer (APXS)), which is a separate entry and is not described here; 056 (X-ray spectrometer), which should be read alongside this entry for boundary decisions and is not restated here; 057 (Gamma-ray spectrometer), which measures gamma-ray lines and flew with the Apollo XRFS in the same service module bay; 060 (Laser-Induced Breakdown Spectroscopy (LIBS)) and 066 (Laser ablation instrument) for laser-based elemental analysis; and 063 (Raman spectrometer), 064 (Mössbauer spectrometer) and 065 (X-ray diffraction instrument) for mineral identification. Flight status is labelled per example: flown, planned, or proposed concept.",
+      "description": "An XRF spectrometer has four functional parts. An excitation source, here either the Sun or a small internal source, supplies X-rays that strike the surface. Atoms in the surface eject inner-shell electrons, and outer-shell electrons drop in to fill the gaps. The energy released in each drop is a fingerprint of the element and appears in the emitted X-ray spectrum. A detector measures the energy and count rate of the emitted X-rays, and a calibration system converts counts into element abundances. Detectors vary across the examples: gas-filled proportional counters (Apollo), charge-coupled devices (SELENE/Kaguya), swept charge devices (Chandrayaan-2 CLASS), and a planned surface system based on a pyroelectric X-ray generator (ESA ALEXIS). Field of view, energy range and spatial resolution also vary between designs and are covered per example.",
+      "scientific_purpose_and_applications": "The main purpose of an XRF spectrometer is to measure the major-element composition of a planetary surface. JAXA's stated aim for the SELENE XRS was to globally determine major elemental composition, with targets magnesium, aluminium, silicon, calcium, titanium and iron [2]. The Chandrayaan-2 CLASS description names magnesium, aluminium, silicon, calcium, titanium, iron and sodium as its targets [7]. Global element maps help in studying how the lunar crust formed and evolved, provide a reference for interpreting other remote-sensing data, and can support future in-situ resource assessment. ESA describes a planned surface XRF instrument as a possible in-situ resource utilisation (ISRU) monitoring tool, and proposes a handheld version for astronauts as a next step [1]. The ISRU use is a planned application, not a demonstrated one.",
+      "operating_principle": "Step 1, excitation: X-rays arrive at the surface. For the Apollo, SELENE and CLASS instruments the source is the Sun. The CLASS description states that it detects element-specific X-rays emitted when solar X-rays excite the surface [7]. A search summary of JAXA's SELENE pages describes the same solar-excited method for the XRS [2]. Solar X-ray flux varies with solar activity, so these instruments also need a solar monitor to normalise measurements. Step 2, emission: each element emits characteristic X-rays at specific energies, with heavier elements emitting at higher energies. Lighter elements, at or below neon, are harder to detect. ESA describes its planned XRF spectrometer as targeting elements heavier than neon [1], and the sources accessed give no sensitivity figures for lighter elements. Step 3, detection and spectrum: the detector records the energy and number of incoming X-ray photons, producing a counts-versus-energy spectrum in which peaks identify elements. Energy resolution, the sharpness of the peaks, determines how cleanly neighbouring lines separate. Step 4, calibration: intensities are converted to abundances using reference data and, in some designs, on-board calibration sources. The CLASS door carries radioactive isotopes with a titanium foil for calibration [7]. The SELENE design includes a separate solar monitor (SOL-B) and a calibrator (SOL-C) carrying a standard sample plate [2][3]. The ESA ALEXIS concept differs in step 1: its pyroelectric X-ray generator (PXG) is intended as an X-ray source that does not rely on radioactive material or an X-ray tube [1]. The ESA page gives no operating details beyond that.",
+      "scientific_importance": "XRF measurements from orbit give a direct chemical view of the lunar surface that does not depend on spectral colour interpretation. Element maps can separate terrains that look similar in visible-light images and can constrain bulk composition of crustal regions, which informs models of lunar origin and differentiation. The Apollo 15 and 16 measurements produced compositional maps covering about 20% of the lunar surface, from more than 100 hours of lunar-surface observations [4]. The SELENE and CLASS designs were built on this heritage. The SELENE team reported that its CCD-based energy resolution was about ten times better than that of the Apollo-era proportional counters [10]. Whether the SELENE mapping goal was reached is discussed under the SELENE example.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an XRF spectrometer. Designs differ in detector technology, field of view, energy coverage and whether they carry their own excitation source, so figures are grouped by named instrument and are not directly comparable across designs. Missing values are recorded as null or not publicly specified rather than estimated. Flight status for each example is given in its status field.",
+        "examples": [
+          {
+            "name": "Apollo 15 and Apollo 16 X-ray fluorescence spectrometer (XRFS)",
+            "type": "Orbital X-ray fluorescence spectrometer, solar-excited, installed in the scientific instrument module of the Command and Service Module",
+            "status": "Flown. Apollo 15 XRFS operated in lunar orbit from July 1971 (first data about 1:00 UT on 31 July 1971). Apollo 16 unit described as nearly identical [5]; its 1972 flight date is from the general mission record and is not separately verified.",
+            "detector": "Three large-area proportional counters, each 25 cm2 with a 0.0254 mm beryllium window. Detector 1 unfiltered, detector 2 magnesium filter, detector 3 aluminium filter (filter foils 0.0051 to 0.0127 mm thick). Each counter filled to 1 atm with 90% argon, 9.5% carbon dioxide and 0.5% helium; bias 2250 V [4].",
+            "energy_channels_kev": "Normal mode, detectors 1 to 3: seven equal-width channels from 0.69 to 3.00 keV, plus one channel above 3.00 keV. Solar monitor: seven channels from about 1.0 to 3.0 keV. Third mode: seven channels from 1.4 to 7.6 keV, plus one above 7.6 keV [4].",
+            "field_of_view": "About 60 degrees FWHM; actual response described as complicated [4].",
+            "spatial_resolution": "PDS label states 111 by 148 km and notes the actual resolution was probably different [4].",
+            "solar_monitor": {
+              "window_mm": 3.0,
+              "field_of_view_deg": 106,
+              "note": "Shielding described as insufficient and the monitor saturated; a second beryllium filter was added on Apollo 16 [4]."
+            },
+            "mass_kg": null,
+            "mass_note": "PDS catalogue gives 59 kg for the spectrometer processor assembly, which also housed the alpha spectrometer experiment [4]. XRFS-only mass not publicly specified.",
+            "power_consumption_w": null,
+            "power_note": "PDS catalogue gives 26 W in operation and 21 W in standby, including heaters, for the same shared processor assembly [4]. XRFS-only power not publicly specified.",
+            "dimensions_cm": null,
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lunar/a15c-l-xrfs-2-surface-xray-counts-v1/a15xr_0001/catalog/inst.cat",
+              "https://pds-geosciences.wustl.edu/lunar/a16c-l-xrfs-2-surface-xray-counts-v1/a16xr_0001/catalog/inst.cat"
+            ],
+            "images": [],
+            "image_note": "No direct image verified in this run. The Apollo 15 PDS catalogue entry is the source reference for this example [4]."
+          },
+          {
+            "name": "SELENE (Kaguya) X-ray Spectrometer (XRS)",
+            "type": "Lunar orbiter X-ray fluorescence spectrometer with CCD detectors and a solar monitor",
+            "status": "Flown on the SELENE (Kaguya) orbiter. JAXA page footer reads Copyright 2007 [2]; the 2007 launch year comes from search summaries. A 2009 JpGU abstract, seen in search results only, states the mapping goal was not achieved because of instrumental trouble and quiescent solar X-ray flux, while the solar monitor worked well [10].",
+            "detector": "XRF-A: 16 CCD chips with a 100 cm2 detection area [2].",
+            "energy_range_kev": "0.7 to 10 for XRF-A [2].",
+            "energy_resolution_ev": "Below 180 eV at -50 degC for an Fe-55 source (XRF-A) [2].",
+            "field_of_view": "12 x 12 degrees (XRF-A) [2].",
+            "spatial_resolution": "20 km at 100 km altitude; results section gives below 20 km [2].",
+            "solar_monitor": {
+              "name": "SOL-B",
+              "detector": "Two SiPIN diodes [2]",
+              "energy_range_kev": "1 to 20 [2]",
+              "energy_resolution_ev": "Below 500 at Fe-55 [2]",
+              "field_of_view_deg": "180 x 90 [2]",
+              "operating_condition": "The page lists an operating condition of below 0 degC; exact wording not confirmed [2]."
+            },
+            "calibrator": "SOL-C, carrying a standard sample plate to support quantitative analysis [2][3]. Specifications not reproduced.",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "dimensions_cm": null,
+            "source_urls": [
+              "https://www.selene.jaxa.jp/en/equipment/xrs_e.htm",
+              "https://www.kaguya.jaxa.jp/en/equipment/xrs_e.htm"
+            ],
+            "images": [
+              {
+                "id": "jaxa_selene_xrs_e_unit_photo",
+                "description": "Photograph of the SELENE XRS-E unit, labelled XRS-E on the JAXA XRS page.",
+                "image_type": "Instrument hardware photograph (JAXA web page)",
+                "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_xrs_001.jpg",
+                "source_page_url": "https://www.selene.jaxa.jp/en/equipment/xrs_e.htm",
+                "publisher": "JAXA (SELENE/Kaguya project)",
+                "credit": "Not stated on source page",
+                "caption": "Photograph of the XRS-E unit, labelled XRS-E on the JAXA page. Credit line not stated on the source page. The page does not say whether this is a flight or engineering unit.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct URL returned HTTP 200 (image/jpeg, 20929 bytes) with no query string. The image path was resolved from the JAXA page by a summarising fetch, not read from raw HTML. Visually inspected: circuit board labelled XRS-E. Flight versus engineering status not stated. Rights not checked."
+              },
+              {
+                "id": "jaxa_selene_xrf_a_detector_photo",
+                "description": "XRF-A lunar detector unit on a test bench, labelled XRF-A on the JAXA XRS page.",
+                "image_type": "Instrument hardware photograph (JAXA web page)",
+                "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_xrs_002.jpg",
+                "source_page_url": "https://www.selene.jaxa.jp/en/equipment/xrs_e.htm",
+                "publisher": "JAXA (SELENE/Kaguya project)",
+                "credit": "Not stated on source page",
+                "caption": "The XRF-A lunar detector unit on a test bench, labelled XRF-A on the JAXA page. Credit line not stated on the source page. The page does not say whether this is a flight or engineering unit.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct URL returned HTTP 200 (image/jpeg, 18158 bytes) with no query string. Image path resolved from the JAXA page by a summarising fetch, not raw HTML. Visually inspected: detector housing labelled XRF-A on a test bench. Flight versus engineering status not stated. Rights not checked."
+              },
+              {
+                "id": "jaxa_selene_sol_bc_photo",
+                "description": "SOL-B and SOL-C solar monitor and calibrator box, labelled SOL-BC on the JAXA XRS page.",
+                "image_type": "Instrument hardware photograph (JAXA web page)",
+                "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_xrs_003.jpg",
+                "source_page_url": "https://www.selene.jaxa.jp/en/equipment/xrs_e.htm",
+                "publisher": "JAXA (SELENE/Kaguya project)",
+                "credit": "Not stated on source page",
+                "caption": "The SOL-B and SOL-C solar monitor and calibrator box, labelled SOL-BC on the JAXA page. Credit line not stated on the source page. The page does not say whether this is a flight or engineering unit.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct URL returned HTTP 200 (image/jpeg, 17294 bytes) with no query string. Image path resolved from the JAXA page by a summarising fetch, not raw HTML. Visually inspected: box with lid labelled SOL-BC. Flight versus engineering status not stated. Rights not checked."
+              }
+            ]
+          },
+          {
+            "name": "Chandrayaan-2 Large Area Soft X-ray Spectrometer (CLASS)",
+            "type": "Non-imaging soft X-ray spectrometer on the Chandrayaan-2 orbiter, solar-excited XRF with gold-coated copper collimators",
+            "status": "Flown on the Chandrayaan-2 orbiter. ISRO science page, an undated snapshot, states the orbiter is healthy and all payloads are operational [7]. CLASS-specific status is inferred from that general statement.",
+            "heritage": "Designed on results from its predecessor C1XS, flown on Chandrayaan-1 [11].",
+            "energy_range_kev": {
+              "value": null,
+              "status": "Unresolved",
+              "candidates": [
+                "0.8 to 15 keV: arXiv 2013 paper and 2020 Current Science paper, as summarised by search results [6][11]",
+                "0.8 to 20 keV: August 2019 ISRO HQ payload document, as summarised by search results [8]"
+              ],
+              "note": "The ISRO payload PDF could not be read in this run."
+            },
+            "energy_resolution_ev": {
+              "value": null,
+              "status": "Unresolved",
+              "candidates": [
+                "Below 200 eV at 5.9 keV: arXiv 2013 paper, as summarised by search results [6]",
+                "165 eV at 5.9 keV: ISRO 2019 payload document, as summarised by search results [8]"
+              ]
+            },
+            "detector": "Array of 16 swept charge devices (SCDs), per search summaries [11]; not confirmed in a readable source.",
+            "field_of_view": "7 x 7 degrees FWHM [7].",
+            "spatial_resolution": "12.5 km x 12.5 km footprint at 100 km spacecraft altitude [7].",
+            "calibration": "Aluminium door shields the sensors and holds radioactive isotopes with a titanium foil for calibration [7].",
+            "target_elements": ["Mg", "Al", "Si", "Ca", "Ti", "Fe", "Na"],
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "dimensions_cm": null,
+            "source_urls": [
+              "https://arxiv.org/abs/1305.6218",
+              "https://www.isro.gov.in/Chandrayaan2_science.html",
+              "https://www.issdc.gov.in/docs/ch2/chandrayaan2_payload.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "ESA ALEXIS XRF Lunar Spectrometer",
+            "type": "Miniature surface XRF spectrometer with pyroelectric X-ray generator, planned for the ESA ALEXIS mission",
+            "status": "Planned, not flown. Technology readiness level (TRL) starting point of 4 inferred from the stated goal of raising TRL to 6 to 7; current level not confirmed. Page is labelled archive content with a publication date of 11 February 2024 [1].",
+            "excitation": "Pyroelectric X-ray generator (PXG). The page states the instrument uses no radioactive source and no X-ray tube [1].",
+            "detector": "Not specified on the page [1].",
+            "energy_range_kev": null,
+            "energy_resolution": "Article title claims a world record, but no numeric value is given [1].",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "dimensions_cm": null,
+            "qualitative_description": "Lightweight, low cost, low power and short measurement time [1]. No numeric values published.",
+            "partners": "Described as Belgian; no partner organisations named [1].",
+            "source_urls": [
+              "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/XRF_Lunar_Spectrometer_A_world_record_for_energy_resolution"
+            ],
+            "images": []
+          },
+          {
+            "name": "Compact orbital XRF imaging concept (Tokyo Metropolitan University)",
+            "type": "Proposed lobster-eye X-ray telescope with MEMS optics and CMOS detector, for chemical mapping from lunar orbit",
+            "status": "Proposed concept and simulation, not flown. Reported by a June 2026 university release, as summarised by search results and secondary coverage [12]. Team led by Airi Toida and Prof. Yuichiro Ezoe. Based on technology developed for the GEO-X small satellite mission.",
+            "reported_dimensions": "Approximately 3U, per secondary outlets; not verified against the primary paper [12].",
+            "reported_mass_kg": "Less than 10, per secondary outlets; not verified against the primary paper [12].",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "simulation_result": "Simulations suggest a full-surface chemical map is feasible within a few years, per secondary coverage [12]. Detector also tested under radiation conditions more severe than lunar orbit [12].",
+            "primary_publication": "Reported to be in Earth, Planets and Space; not accessed [12].",
+            "source_urls": [
+              "https://sciencedaily.com/releases/2026/06/260606075508.htm"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for any example in the sources accessed, except the approximately 3U size for the Tokyo concept reported in secondary outlets, which is unverified [12]. SELENE XRF-A field of view is 12 x 12 degrees and CLASS is 7 x 7 degrees FWHM; these are angular, not physical, dimensions [2][7].",
+        "mass_and_weight": "Publicly given only for the Apollo spectrometer processor assembly, shared with the alpha spectrometer: 59 kg [4]. XRFS-only mass not publicly specified. Other examples: not publicly specified in sources accessed; Tokyo concept reported as under 10 kg in secondary outlets, unverified [12].",
+        "power_requirements": "Publicly given only for the same Apollo shared processor assembly: 26 W in operation and 21 W in standby, including heaters [4]. Other examples: not publicly specified in sources accessed. SELENE SOL-B page lists an operating condition below 0 degC, without a power figure [2]."
+      },
+      "environmental_and_operational_requirements": "Orbital operation and solar dependence: the flown examples depend on solar X-ray flux as the excitation source, so signal depends on solar activity and illumination of the target area. The SELENE mapping goal was reported as not fully achieved partly because the solar X-ray flux was historically quiescent [10]. A solar monitor normalises measurements in all three flown designs [2][4][7]. Detector temperature: the SELENE XRF-A is specified at -50 degC for an Fe-55 energy-resolution measurement [2]; the SOL-B page lists an operating condition below 0 degC [2]. Gas-filled counters: the Apollo proportional counters used a 90% argon, 9.5% carbon dioxide, 0.5% helium mixture at 1 atm and a 2250 V bias, which implies a sealed gas system and a high-voltage supply [4]. Calibration: CLASS carries a radioactive calibration source behind its door [7], which constrains handling and licensing. Other designs use calibrators or sample plates [2][3]. Radiation and thermal environment: the sources accessed do not describe radiation-tolerance margins or thermal design limits for any example.",
+      "limitations": "Solar-dependent excitation: solar-excited instruments depend on the state of the Sun, and counting rates are low when solar X-ray flux is weak [10]. Spatial resolution: orbital footprints in the sources are of order 10 to 150 km. The Apollo label gives 111 by 148 km with a caveat that the true resolution was probably different [4]; SELENE gives 20 km at 100 km altitude [2]; CLASS gives 12.5 km at 100 km altitude [7]. Light elements: XRF is less sensitive to the lightest elements; ESA's planned instrument targets elements heavier than neon [1], and no sensitivity figures for lighter elements were found. This is a general property of the technique. Shallow sampling: XRF samples only the uppermost layer of a surface, a general property of the technique not quantified in the sources accessed. Uncertain specifications: CLASS energy range and energy resolution remain unresolved.",
+      "transportation_and_deployment": {
+        "overview": "The flown examples are orbital instruments: integrated into an orbiting spacecraft, launched, transferred to lunar orbit and commissioned in orbit. The surface-oriented ALEXIS instrument is planned but not flown. No compatibility with a named lander, rover or spacecraft is asserted.",
+        "transportation_process": [
+          "Apollo XRFS: installed in the scientific instrument module of the Command and Service Module [4]. Switched on about 84 hours ground elapsed time (GET) on the third orbit; observed the surface from lunar orbit; first data about 1:00 UT on 31 July 1971 [4].",
+          "SELENE XRS: flew on the SELENE (Kaguya) orbiter. The 2007 launch year is from search summaries [2]. Orbit, lifetime and commissioning dates not recorded in the page content read.",
+          "CLASS: carried by the Chandrayaan-2 orbiter [6][7]. Orbit-insertion and commissioning dates not recorded in the sources accessed.",
+          "ALEXIS: planned, with a flight model to follow; transport and surface deployment not described [1]."
+        ],
+        "deployment_methods": "For the flown examples, deployment is not a separate step: the instrument operates from its host spacecraft's orbit. For the planned ALEXIS instrument, the ESA page does not describe a deployment method, but mentions a possible handheld version for astronauts as a further step [1].",
+        "historical_examples": "Apollo 15 and 16 XRFS (orbital, 1971 and 1972) [4][5]; SELENE/Kaguya XRS (orbital, 2007) [2][3]; Chandrayaan-2 CLASS (orbital, operational per ISRO snapshot) [7]; ALEXIS (planned surface instrument) [1]; Tokyo compact orbital concept (proposed) [12].",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted for any example. SELENE and CLASS are tied only to their own orbiters. ALEXIS has no verified lander interface in the sources accessed. Power, data, thermal and pointing interfaces are not specified in the sources accessed, except the Apollo shared-unit power figures [4].",
+        "images": []
+      },
+      "historical_significance": "The Apollo 15 and 16 XRFS produced compositional maps of about 20% of the lunar surface during the early orbital missions [4]. The SELENE XRS was designed to extend orbital XRF mapping with a CCD detector and better energy resolution than the Apollo proportional counters, and its reported mapping goal was not fully achieved because of instrumental trouble and low solar flux [10]. CLASS built on C1XS heritage and is part of the Chandrayaan-2 orbiter's payload [6][7][11]. The planned ALEXIS instrument and the Tokyo concept show continuing interest in compact and low-mass XRF designs, with no flight results yet [1][12].",
+      "limitations_and_uncertainties": "CLASS specifications: energy range (0.8 to 15 keV vs 0.8 to 20 keV), energy resolution (below 200 eV vs 165 eV at 5.9 keV) and detector count remain unresolved; the ISRO payload sheet, the most authoritative candidate, could not be read in this run [8]. Apollo mass and power (59 kg; 26 W and 21 W) are for a shared processor assembly, not the XRFS alone [4]. SELENE energy range: the JAXA page gives 0.7 to 10 keV for XRF-A [2]; search summaries describe different ranges in other sources, and this was not reconciled. SELENE outcome: recorded from a search summary of a 2009 conference abstract [10]; current spacecraft and instrument status not verified. Apollo 16 details: seen in search results only [5]. ALEXIS: no numeric values published, and the TRL 4 starting point is inferred from the stated goal [1]. Tokyo concept: all figures from press coverage and simulation; primary paper not accessed [12]. Images: no verified image for the Apollo XRFS, CLASS or the Tokyo concept; image rights for JAXA and ESA images not checked [1][2].",
+      "images": [
+        {
+          "id": "esa_xrf_lunar_spectrometer_article_image",
+          "description": "Lead image of the ESA article XRF Lunar Spectrometer: A world record for energy resolution. The image content is not described on the source page.",
+          "image_type": "Article lead image (ESA web page)",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2024/06/xrf_lunar_spectrometer_a_world_record_for_energy_resolution/26167795-1-eng-GB/277563/image-thumb__277563__fit_large/XRF_Lunar_Spectrometer_A_world_record_for_energy_resolution.3f775e8d.webp",
+          "source_page_url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/XRF_Lunar_Spectrometer_A_world_record_for_energy_resolution",
+          "publisher": "ESA",
+          "credit": "Not stated on source page",
+          "caption": "Lead image on the ESA article XRF Lunar Spectrometer: A world record for energy resolution. Credit not stated.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct URL returned HTTP 200 (image/webp, 34704 bytes) with no query string. Not visually inspected in this run. Image content not described on the source page. Rights not checked. The image is a thumbnail-sized legacy media path from the ESA page."
+        },
+        {
+          "id": "jaxa_selene_xrs_e_unit_photo",
+          "description": "Photograph of the SELENE XRS-E unit, labelled XRS-E on the JAXA XRS page.",
+          "image_type": "Instrument hardware photograph (JAXA web page)",
+          "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_xrs_001.jpg",
+          "source_page_url": "https://www.selene.jaxa.jp/en/equipment/xrs_e.htm",
+          "publisher": "JAXA (SELENE/Kaguya project)",
+          "credit": "Not stated on source page",
+          "caption": "Photograph of the XRS-E unit, labelled XRS-E on the JAXA page. Credit line not stated on the source page. The page does not say whether this is a flight or engineering unit.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct URL returned HTTP 200 (image/jpeg, 20929 bytes) with no query string. The image path was resolved from the JAXA page by a summarising fetch, not read from raw HTML. Visually inspected: circuit board labelled XRS-E. Flight versus engineering status not stated. Rights not checked."
+        },
+        {
+          "id": "jaxa_selene_xrf_a_detector_photo",
+          "description": "XRF-A lunar detector unit on a test bench, labelled XRF-A on the JAXA XRS page.",
+          "image_type": "Instrument hardware photograph (JAXA web page)",
+          "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_xrs_002.jpg",
+          "source_page_url": "https://www.selene.jaxa.jp/en/equipment/xrs_e.htm",
+          "publisher": "JAXA (SELENE/Kaguya project)",
+          "credit": "Not stated on source page",
+          "caption": "The XRF-A lunar detector unit on a test bench, labelled XRF-A on the JAXA page. Credit line not stated on the source page. The page does not say whether this is a flight or engineering unit.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct URL returned HTTP 200 (image/jpeg, 18158 bytes) with no query string. Image path resolved from the JAXA page by a summarising fetch, not raw HTML. Visually inspected: detector housing labelled XRF-A on a test bench. Flight versus engineering status not stated. Rights not checked."
+        },
+        {
+          "id": "jaxa_selene_sol_bc_photo",
+          "description": "SOL-B and SOL-C solar monitor and calibrator box, labelled SOL-BC on the JAXA XRS page.",
+          "image_type": "Instrument hardware photograph (JAXA web page)",
+          "image_url": "https://www.kaguya.jaxa.jp/en/equipment/image/img_xrs_003.jpg",
+          "source_page_url": "https://www.selene.jaxa.jp/en/equipment/xrs_e.htm",
+          "publisher": "JAXA (SELENE/Kaguya project)",
+          "credit": "Not stated on source page",
+          "caption": "The SOL-B and SOL-C solar monitor and calibrator box, labelled SOL-BC on the JAXA page. Credit line not stated on the source page. The page does not say whether this is a flight or engineering unit.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct URL returned HTTP 200 (image/jpeg, 17294 bytes) with no query string. Image path resolved from the JAXA page by a summarising fetch, not raw HTML. Visually inspected: box with lid labelled SOL-BC. Flight versus engineering status not stated. Rights not checked."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "esa_xrf_lunar_spectrometer_article_image",
+          "description": "Lead image of the ESA article XRF Lunar Spectrometer: A world record for energy resolution. The image content is not described on the source page.",
+          "image_type": "Article lead image (ESA web page)",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2024/06/xrf_lunar_spectrometer_a_world_record_for_energy_resolution/26167795-1-eng-GB/277563/image-thumb__277563__fit_large/XRF_Lunar_Spectrometer_A_world_record_for_energy_resolution.3f775e8d.webp",
+          "source_page_url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/XRF_Lunar_Spectrometer_A_world_record_for_energy_resolution",
+          "publisher": "ESA",
+          "credit": "Not stated on source page",
+          "caption": "Lead image on the ESA article XRF Lunar Spectrometer: A world record for energy resolution. Credit not stated.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct URL returned HTTP 200 (image/webp, 34704 bytes) with no query string. Not visually inspected in this run. Image content not described on the source page. Rights not checked. The image is a thumbnail-sized legacy media path from the ESA page."
+        }
+      ],
+      "references": [
+        {"number": 1, "title": "XRF Lunar Spectrometer: A world record for energy resolution", "publisher": "ESA Enabling & Support (publication date reported as 11 February 2024; page labelled archive content)", "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/XRF_Lunar_Spectrometer_A_world_record_for_energy_resolution", "notes": "Accessed by summarising fetch. Source of the ALEXIS description, TRL 4 to 6-7 goal, PXG excitation, elements heavier than neon, and planned ISRU and handheld uses."},
+        {"number": 2, "title": "X-ray Spectrometer (XRS), SELENE mission equipment page", "publisher": "JAXA", "url": "https://www.selene.jaxa.jp/en/equipment/xrs_e.htm", "notes": "Accessed by summarising fetch. Source of XRF-A specifications (16 CCD, 100 cm2, below 180 eV at -50 degC, 0.7 to 10 keV, 12 x 12 deg, 20 km at 100 km), SOL-B specifications, objectives, and image references. Footer reads Copyright 2007."},
+        {"number": 3, "title": "X-ray Spectrometer (XRS), Kaguya mirror of equipment page", "publisher": "JAXA", "url": "https://www.kaguya.jaxa.jp/en/equipment/xrs_e.htm", "notes": "Page returned HTTP 200. The image files used in this article are hosted under this path. Page content was not separately summarised."},
+        {"number": 4, "title": "Apollo 15 XRFS instrument catalogue (inst.cat), NASA PDS Lunar Data Node", "publisher": "NASA Planetary Data System", "url": "https://pds-geosciences.wustl.edu/lunar/a15c-l-xrfs-2-surface-xray-counts-v1/a15xr_0001/catalog/inst.cat", "notes": "Accessed by summarising fetch. Source of detector, filter, gas-fill, bias, energy channels, FOV, resolution label, solar monitor, timing, coverage (about 20%), and shared processor mass and power (59 kg; 26 W; 21 W)."},
+        {"number": 5, "title": "Apollo 16 XRFS instrument catalogue (inst.cat), NASA PDS Lunar Data Node", "publisher": "NASA Planetary Data System", "url": "https://pds-geosciences.wustl.edu/lunar/a16c-l-xrfs-2-surface-xray-counts-v1/a16xr_0001/catalog/inst.cat", "notes": "Seen in search results only; not fetched. Used only for the statement that the Apollo 16 unit was nearly identical to Apollo 15."},
+        {"number": 6, "title": "Mapping lunar surface chemistry: new prospects with the Chandrayaan-2 Large Area Soft x-ray Spectrometer (CLASS)", "publisher": "S. Narendranath, P.S. Athiray, P. Sreekumar, V. Radhakrishna, A. Tyagi, B.J. Kellett and the CLASS team; arXiv:1305.6218 (2013), in press in Advances in Space Research", "url": "https://arxiv.org/abs/1305.6218", "notes": "Abstract page accessed; specifications not in the abstract. Energy range and resolution figures cited from search summaries only. Used for CLASS heritage and team."},
+        {"number": 7, "title": "Chandrayaan-2 Science", "publisher": "ISRO", "url": "https://www.isro.gov.in/Chandrayaan2_science.html", "notes": "Accessed by summarising fetch (undated snapshot). Source of CLASS description, non-imaging design, gold-coated copper collimators, 7 x 7 deg FWHM, 12.5 km footprint, calibration door with isotopes and titanium foil, target elements, and orbiter status statement."},
+        {"number": 8, "title": "Chandrayaan-2 payload document (August 2019 ISRO HQ document, as reported in search results)", "publisher": "ISRO / ISSDC", "url": "https://www.issdc.gov.in/docs/ch2/chandrayaan2_payload.pdf", "notes": "PDF could not be read in this run (binary returned). Used only as an unverified source of the 0.8 to 20 keV energy range and 165 eV at 5.9 keV, both from search summaries."},
+        {"number": 9, "title": "Grande et al., SELENE X-ray spectrometer paper, Earth, Planets and Space vol. 60, pp. 277-281 (2008)", "publisher": "Earth, Planets and Space (Springer Open), DOI 10.1186/BF03352792", "url": "https://earth-planets-space.springeropen.com/track/pdf/10.1186/BF03352792", "notes": "Seen in search results; not fetched. Not used for any specific figure in the article."},
+        {"number": 10, "title": "JpGU Meeting 2009 abstract P144-P020 on SELENE XRS mapping outcome", "publisher": "Japan Geoscience Union (JpGU)", "url": "https://www2.jpgu.org/meeting/2009/program/session/pdf/P144/P144-P020_e.pdf", "notes": "Seen in search results; not fetched. Source of the statement that the mapping goal was not achieved due to instrumental trouble and quiescent solar X-ray flux, and that the solar monitor worked well. Also cited for the approximately tenfold energy-resolution comparison with Apollo proportional counters."},
+        {"number": 11, "title": "Current Science CLASS article (2020), via i-scholar repository", "publisher": "Current Science (Indian Academy of Sciences)", "url": "https://i-scholar.in/index.php/CURS/article/download/193512/179364", "notes": "Seen in search results; not fetched. Source of the 0.8 to 15 keV range, 16 SCD detector count and C1XS heritage, as summarised by search results. The specific article behind the summary is not confirmed; a second i-scholar article (193481/179333) also appeared in results."},
+        {"number": 12, "title": "Compact X-ray fluorescence imaging spectrometer for lunar orbit (Tokyo Metropolitan University), June 2026, as reported by ScienceDaily", "publisher": "ScienceDaily (secondary coverage of Tokyo Metropolitan University research release)", "url": "https://sciencedaily.com/releases/2026/06/260606075508.htm", "notes": "Seen in search results; not fetched; secondary coverage. Source of the proposed concept, team, lobster-eye MEMS optics, CMOS detector, simulation results, and secondary-outlet size and mass figures (unverified)."}
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[1]": "payload.article.physical_specifications.examples[1].images"
+    },
+    "url_policy": "All image_url, source_page_url and source_urls values in this file have query strings and fragments removed. Four distinct images are in the master registry: one ESA article image (HTTP 200, image/webp) shown in the overview, and three JAXA SELENE XRS hardware photographs (each HTTP 200, image/jpeg) shown in the SELENE example. Each image was checked by HTTP status at its cleaned URL. The three JAXA photographs were also downloaded and visually inspected. The ESA image was not visually inspected. Section-level image objects are repeated intentionally so that each article section can render its own images without resolving IDs against the master registry. The Apollo XRFS, CLASS and Tokyo concept have no verified images and are referenced only by source page. A search-result ESA URL for an Al Worden XRF photo returned HTTP 404 and was not used."
+  },
+  "data_quality_notes": [
+    "CLASS specifications are unresolved. Energy range is 0.8 to 15 keV in a 2013 arXiv paper and a 2020 Current Science paper, as summarised by search results, but 0.8 to 20 keV in an August 2019 ISRO HQ payload document. Energy resolution is below 200 eV at 5.9 keV in the arXiv summary and 165 eV at 5.9 keV in the ISRO document. The ISRO payload PDF returned binary content and could not be read, so neither conflict is resolved. The 16 SCD detector count is from a search summary only.",
+    "Apollo XRFS mass (59 kg) and power (26 W operating, 21 W standby) are PDS figures for the spectrometer processor assembly shared with the alpha spectrometer. An XRFS-only mass and power are not publicly specified in the sources accessed.",
+    "SELENE XRS energy range of 0.7 to 10 keV for XRF-A comes from the JAXA page. Search summaries describe other values in other sources, which were not reconciled. The 2007 launch year comes from search summaries only. The mapping outcome comes from a 2009 JpGU abstract seen only in search results, and the current status of the instrument is not verified.",
+    "Image verification: the three JAXA SELENE photographs returned HTTP 200 as JPEG and were visually inspected. Their paths were resolved from the JAXA page by a summarising fetch rather than read from raw HTML, so direct_image_assets_verified_from_official_pages is recorded as false. Flight versus engineering status of the photographs is not stated by the page. Three further JAXA photographs (img_xrs_004, img_xrs_006, img_xrs_007) returned HTTP 200 but are not used. The ESA image returned HTTP 200 as WebP but was not visually inspected. Rights for all images are not checked, and full-resolution versions are not checked.",
+    "No verified image was found for the Apollo XRFS, CLASS or the Tokyo concept. A search-result URL for an ESA Al Worden XRF photo returned HTTP 404 and was not used. An NASA S71-2250 Scientific Instrument Module image appeared only on a third-party mirror and was not used.",
+    "The ESA ALEXIS page is labelled archive content, dated 11 February 2024. It gives no numeric values for energy resolution, energy range, mass, power or size. The TRL 4 starting point is inferred from the stated goal, and current development status is not confirmed.",
+    "The Tokyo Metropolitan University concept is supported only by secondary press coverage and simulation. Its approximately 3U size and under-10 kg mass are secondary-outlet figures and are unverified. The primary Earth, Planets and Space paper was not accessed.",
+    "Several cited sources were seen only in search results and not fetched: PDS Apollo 16 catalogue, Grande et al. 2008, JpGU 2009 abstract, Current Science 2020, and the ScienceDaily release. Statements drawn from them are labelled as search-summary-based in the article.",
+    "The NASA NTRS Apollo 15 XRF report (20180006866) returned binary PDF content and was not used. Adler et al. (1975, Space Science Instrumentation), cited in PDS material, was not accessed. A NASA CubeX XRF concept paper appeared in search results but was not used because no readable source was obtained.",
+    "The SELENE solar-excited method statement comes from a search summary of JAXA pages, while the fetched JAXA XRS page itself lists the solar monitor and calibrator. The Apollo 15 timing and coverage figures (about 20% of the surface; more than 100 hours of observations) come from the PDS label and were not independently checked.",
+    "Solar-excitation and light-element sensitivity statements in the operating principle, and the shallow-sampling statement in limitations, are general XRF physics. They are not quantified by any cited source for these instruments."
+  ]
+}

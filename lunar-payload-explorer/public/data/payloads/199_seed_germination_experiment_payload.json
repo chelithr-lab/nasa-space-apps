@@ -1,0 +1,296 @@
+{
+  "catalogue_id": 199,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 10,
+    "name": "Biological and life-science experiments"
+  },
+  "payload": {
+    "number": 199,
+    "name": "Seed germination experiment",
+    "article": {
+      "overview": "A seed germination experiment is a biological payload that tests whether seeds can sprout, and how far they can develop, when exposed to the conditions of the lunar surface. Germination is the first stage in a plant's life, when a seed takes up water and begins to grow a root and shoot, so it is a simple but sensitive test of whether the lunar environment, including its soil, gravity, radiation, temperature extremes and water supply, is compatible with life. The best-documented examples are China's Chang'e-4 Lunar Micro Ecosystem, in which cotton seeds sprouted on the far side of the Moon in January 2019 [1][2], and NASA Ames' Lunar Plant Experiment, a small sealed module for Arabidopsis seeds that has not been shown to have flown [5]. Ground studies with Apollo lunar regolith have also shown that seeds can sprout in lunar soil, although the seedlings grew more slowly and were less robust than controls [6][7].",
+      "description": "A seed germination experiment places seeds in a small, sealed and often temperature-controlled container, waters them, and records whether they sprout and how their early growth develops. Because the container must keep air, water and warmth in while excluding the lunar vacuum and dust, the payload is typically a miniature habitat rather than a single sensor. Monitoring may use a camera or a gas sensor, as in the NASA design [5]. The experiment does not measure a planetary property directly; it tests whether a living system can start to function on the Moon, and under what conditions it fails. Two lunar examples are discussed here: the Chang'e-4 Lunar Micro Ecosystem, which flew on a lander, and the NASA Ames Lunar Plant Experiment, which is a design study with no confirmed flight in the sources reviewed. A third entry, the Apollo regolith growth study, is a laboratory study on returned lunar samples carried out on Earth; it is included because it tests the same question with real lunar soil [6][7].",
+      "scientific_purpose_and_applications": "The purpose of a seed germination experiment is to test germination and early growth in lunar conditions, including lunar gravity and ionizing radiation, and to learn whether lunar material supports these processes [5]. Applications include informing future plant-growth modules for crewed or robotic surface missions, supporting research on lunar agriculture and life support, and providing biological evidence about the lunar environment that complements geological and physical measurements [5][6]. Germination is an early, low-complexity test, so it can reveal basic incompatibilities, such as failure to take up water or failure to survive the thermal cycle, before more demanding plant-growth work is attempted.",
+      "operating_principle": "Seeds are held in a sealed compartment with a small air volume. After landing, the compartment is watered, either by a pump released on command or by a device that releases stored water. In the NASA design, a small pump releases water after landing to start germination, and the module carries a camera and a carbon dioxide sensor to track growth activity [5]. In the Chang'e-4 device, 18 ml of water was carried and the biosphere was reported to be set to 24 °C within hours of landing [3], although a different account describes the unit as unheated [1]. Germination and early growth are detected by imaging the seedlings and by monitoring gas levels in the sealed volume. Scientists then compare lunar-sample growth with terrestrial controls, which is how the Apollo regolith study identified weaker growth and stress-associated gene activity [7].",
+      "scientific_importance": "Seeds are a convenient test of whether living things can start to grow in a new environment. Germination requires water, a usable temperature range and the energy stored within the seed, so a seed that sprouts on the Moon shows that the sealed environment and the lunar material met at least the first requirements for life. The results matter for three reasons. First, they inform future life-support and food-production concepts. Second, they show how plants respond to lunar gravity, which is about one sixth of Earth's, and to radiation, which the NASA Lunar Plant Experiment was designed to test [5]. Third, the Apollo regolith study showed that plants can take up and respond to lunar material, while also revealing stress-associated gene activity that helps define what would have to change before lunar soil could support useful plant growth [6][7].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a seed germination experiment. The examples below describe one flown lander-mounted device, one proposed design and one laboratory study. Their values are tied to each source and should not be compared as if the designs were identical.",
+        "examples": [
+          {
+            "name": "Chang'e-4 Lunar Micro Ecosystem (LME)",
+            "type": "Flown lunar lander-mounted device",
+            "status": "Flown and operated on the lunar far side from January 2019, according to the sources reviewed [1][3].",
+            "organisms": "Six: cotton, potato and rape seeds, yeast, fruit fly eggs and Arabidopsis thaliana [1][3].",
+            "mass_kg": 2.6,
+            "mass_kg_alternative_source": 2.608,
+            "dimensions_cm": {
+              "length": 18,
+              "diameter": 16,
+              "source": "Universe Today [1]"
+            },
+            "alternative_dimensions_mm": {
+              "height": 198,
+              "diameter": 173,
+              "source": "Phys.org 2023 [3]"
+            },
+            "volume_litres": {
+              "total": 0.82,
+              "biological_activity_space": 0.42
+            },
+            "water_ml": 18,
+            "power_consumption_w": null,
+            "heating": "Conflicting: one account describes the LME as unheated [1]; the other states the biosphere was set to 24 °C within hours of landing, with no heater type or power given [3].",
+            "results": "According to [1], only the cotton seeds produced positive results, and a 3D reconstruction shows two cotton leaves. According to [3], cotton, rape and potato seeds were reported sprouted on 15 January 2019, the potato later failed, Arabidopsis showed no growth, and the fruit fly eggs did not hatch. [3] does not state a cotton leaf count.",
+            "duration": "Conflicting: [1] states the cotton sprout died after the first lunar day (about 14 Earth days) when temperatures fell to -190 C. [3] states the run lasted nine days (eight elsewhere in the same article) against a planned 100 days.",
+            "qualification": "Flown hardware. Dimensions, mass and duration differ between the two secondary accounts; the primary Acta Astronautica paper [4] was not accessible in full.",
+            "source_urls": [
+              "https://universetoday.com/143614/chinas-lander-successfully-grew-some-cotton-plants-on-the-moon-fruit-flies-and-potatoes-didnt-fare-so-well/",
+              "https://phys.org/news/2023-10-china-tiny-farm-moon.html",
+              "https://doi.org/10.1016/j.actaastro.2023.10.023"
+            ],
+            "images": []
+          },
+          {
+            "name": "NASA Ames Lunar Plant Experiment (LPX)",
+            "type": "Engineering design with testing history; proposed lunar plant-growth module (no confirmed flight in the source reviewed)",
+            "status": "Design and testing; no lunar flight is confirmed in the source reviewed [5].",
+            "form_factor": "1U CubeSat-scale module, 10 cm on a side [5].",
+            "external_dimensions_cm": [10, 10, 10],
+            "mass_kg": 0.3,
+            "seeds": "About 50 Arabidopsis seeds in the seed module [5].",
+            "air_volume_litres_standard_pressure": 0.5,
+            "water_release": "A small pump releases water after landing, initiated by a 5-volt signal; the water volume is not stated [5].",
+            "instrumentation": "USB interfaces for a camera and a CO2 sensor [5]. CO2 figures on the source page come from simulation, not flight data [5].",
+            "power_consumption_w": null,
+            "power": "Not stated in the source reviewed [5].",
+            "heritage_and_thermal_notes": "A secondary search summary reports that the hardware is based on Hydra-1 ISS experiment hardware and that thermal control at a small lander is a constraint. These statements were not verified against a primary source read for this article.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20190028857"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo lunar regolith growth study (Arabidopsis)",
+            "type": "Earth-based laboratory study on returned Apollo regolith (not flight hardware)",
+            "status": "Laboratory study on returned Apollo samples on Earth; not flight hardware [6][7].",
+            "samples": "Regolith from the Apollo 11, 12 and 17 missions, with Arabidopsis grown in these samples and in a volcanic-ash simulant control [7].",
+            "germination": "The seeds sprouted within two days, and according to NASA's account, everything sprouted [7].",
+            "growth": "Lunar and control plants looked similar until about day six. After that, lunar-soil plants grew more slowly, had stunted roots, some had stunted leaves, and some showed reddish pigmentation [7]. By day 16, the lunar-soil plants showed clear physical differences from the simulant plants [7].",
+            "sample_dependence": "Plants grown in Apollo 11 regolith were less robust than those grown in Apollo 12 and Apollo 17 regolith [7].",
+            "stress_response": "At day 20, RNA analysis showed the plants were under stress, similar to responses seen with excess salt or heavy metals [7].",
+            "handling": "The regolith repelled water, so it had to be stirred to wet it evenly [7].",
+            "source_urls": [
+              "https://www.nature.com/articles/s42003-022-03334-8",
+              "https://www.nasa.gov/humans-in-space/scientists-grow-plants-in-lunar-soil/"
+            ],
+            "images": [
+              {
+                "id": "apollo_regolith_pipette_moistening",
+                "description": "Anna-Lisa Paul moistens lunar soil with a pipette during the Apollo regolith plant study.",
+                "image_type": "Laboratory photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2022/05/plants_in_soil_from_the_moon4.jpg",
+                "source_page_url": "https://www.nasa.gov/humans-in-space/scientists-grow-plants-in-lunar-soil/",
+                "publisher": "NASA",
+                "credit": "UF/IFAS photo by Tyler Jones",
+                "caption": "Paul moistens lunar soil with a pipette. The soil repelled water, so it had to be stirred to wet evenly.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct NASA image URL taken from the NASA source page text (query-free). Not independently re-fetched; rights and reuse terms should be checked on the NASA page before republication."
+              },
+              {
+                "id": "apollo_regolith_vial_genetic_analysis",
+                "description": "A plant from the Apollo regolith experiment placed in a vial for genetic analysis.",
+                "image_type": "Laboratory photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2022/05/plants_in_soil_from_the_moon3.jpg",
+                "source_page_url": "https://www.nasa.gov/humans-in-space/scientists-grow-plants-in-lunar-soil/",
+                "publisher": "NASA",
+                "credit": "UF/IFAS photo by Tyler Jones",
+                "caption": "A plant from the experiment is placed in a vial for genetic analysis.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct NASA image URL taken from the NASA source page text (query-free). Not independently re-fetched; rights and reuse terms should be checked on the NASA page before republication."
+              },
+              {
+                "id": "apollo_regolith_day16_simulant_comparison",
+                "description": "Day 16 comparison of lunar-soil plants (right) and volcanic-ash simulant plants (left) in the Apollo regolith study.",
+                "image_type": "Laboratory photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2022/05/plants_in_soil_from_the_moon5.jpg",
+                "source_page_url": "https://www.nasa.gov/humans-in-space/scientists-grow-plants-in-lunar-soil/",
+                "publisher": "NASA",
+                "credit": "UF/IFAS photo by Tyler Jones",
+                "caption": "By day 16, lunar-soil plants (right) showed clear physical differences from volcanic-ash simulant plants (left).",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct NASA image URL taken from the NASA source page text (query-free). Not independently re-fetched; rights and reuse terms should be checked on the NASA page before republication."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "The Chang'e-4 LME is a canister of roughly 18 cm by 16 cm according to one account and 198 mm by 173 mm according to another. The NASA LPX is a 1U CubeSat-scale module of 10 cm on a side. The Apollo study used no flight hardware. These values describe different designs and should not be compared directly.",
+        "mass_and_weight": "The Chang'e-4 LME is reported at 2.6 kg [1] or 2.608 kg [3]. The NASA LPX is reported at 0.3 kg [5]. The Apollo study has no flight mass.",
+        "power_requirements": "No power draw is stated for either the Chang'e-4 LME or the NASA LPX in the sources reviewed. The LPX pump requires a 5-volt signal [5]. The Chang'e-4 biosphere was reported to be set to 24 °C within hours of landing with no heater power given [3]."
+      },
+      "environmental_and_operational_requirements": "A lunar seed experiment must keep seeds and water within a workable temperature range through the lunar day and night. The surface experiences extreme temperature swings: the Chang'e-4 biosphere is reported to have reached -190 °C during the lunar night [1]. The environment is also at one sixth of Earth's gravity and exposes organisms to ionizing radiation, which the NASA design was intended to test [5]. The regolith is hydrophobic, so water does not spread evenly through it and must be stirred in during tests [7]. A payload must therefore manage heat, water, gas exchange and radiation exposure, and a payload without a night-time power source will lose its ability to regulate temperature when the Sun sets.",
+      "limitations": "The main limitation is evidence. Only one lunar germination device is reported as having operated on the surface, and its published descriptions disagree on heating, dimensions, duration and which seeds sprouted. The NASA design has not been shown to fly in the sources reviewed, and the Apollo study is a ground experiment on samples, not a flight result. Germination does not establish sustained growth, and one seed type or one sensor reading cannot characterise a whole biological system.",
+      "transportation_and_deployment": {
+        "overview": "The Chang'e-4 biosphere travelled as part of a national lander mission, and the sources reviewed describe it as operating on the lunar far side [1][3], but they do not describe its integration details. The NASA module is described as adaptable to various lunar landers and rovers, but no specific lander or rover is assigned in the source reviewed [5]. The Apollo regolith study had no transport requirement because it was carried out on Earth [7].",
+        "transportation_process": [
+          "Integrate the sealed container and its water supply into the lander or rover payload on Earth. For the Chang'e-4 device, the container was carried by the lander [1][3].",
+          "Launch and transfer to the Moon. The sources reviewed do not confirm launch-vehicle or transfer details for the Chang'e-4 device.",
+          "Land and deploy. The Chang'e-4 biosphere was reported set to 24 °C within hours of landing [3]; the source does not describe the deployment mechanism.",
+          "Connect power, data and thermal interfaces. The Chang'e-4 power draw is not stated; the NASA module requires a 5-volt pump signal and USB connections for its camera and CO2 sensor [5].",
+          "Operate and monitor. Germination is tracked with imaging and gas data within the thermal limits of the lunar day and night [5]."
+        ],
+        "deployment_methods": "The sources describe the seeds being carried sealed on the lander and activated after landing. No robotic handling or astronaut installation is described for the seed devices reviewed.",
+        "historical_examples": "The Chang'e-4 device flew in 2019 [1][3]. The NASA module is a design and testing example [5]. The Apollo regolith study is a laboratory example of lunar material tested on Earth [7].",
+        "compatibility_assessment": "No compatibility with a specific lander or rover is asserted. The NASA source describes the module as adaptable, but no interface document was reviewed for this article.",
+        "images": []
+      },
+      "historical_significance": "The Chang'e-4 biosphere, operating in January 2019, was widely reported as the first sprouting of seeds on the Moon [2]. Its most detailed account also records a clear negative result: only the cotton sprout appeared in that account, and it died when the lunar night arrived [1]. A 2023 Acta Astronautica paper by the team is cited in secondary coverage as the formal publication on the experiment [3][4], although the 2019-era coverage stated that no scientific papers would be published [1]; the status of that publication should be checked against the paper itself. The 2022 Apollo regolith study was reported by NASA as growing plants in lunar soil samples from Apollo missions, with the important caveat that growth was poorer than in controls [6][7]. The NASA Lunar Plant Experiment, first documented in 2015, remains a reference design for a small sealed lunar plant-growth module [5].",
+      "limitations_and_uncertainties": "The main evidence gaps are summarised below. The statements are drawn from the sources reviewed, and the conflicts between them are not resolved here.",
+      "images": [
+        {
+          "id": "nasa_lunar_soil_plates_led_lights",
+          "description": "Two researchers look at plates of lunar and control soil under LED lights in the Apollo regolith plant study.",
+          "image_type": "Laboratory photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/05/plants_in_soil_from_the_moon.jpg",
+          "source_page_url": "https://www.nasa.gov/humans-in-space/scientists-grow-plants-in-lunar-soil/",
+          "publisher": "NASA",
+          "credit": "UF/IFAS photo by Tyler Jones",
+          "caption": "Rob Ferl and Anna-Lisa Paul look at plates with lunar and control soils under LED lights.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct NASA image URL taken from the NASA source page text (query-free). Not independently re-fetched; rights and reuse terms should be checked on the NASA page before republication."
+        },
+        {
+          "id": "apollo_regolith_pipette_moistening",
+          "description": "Anna-Lisa Paul moistens lunar soil with a pipette during the Apollo regolith plant study.",
+          "image_type": "Laboratory photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/05/plants_in_soil_from_the_moon4.jpg",
+          "source_page_url": "https://www.nasa.gov/humans-in-space/scientists-grow-plants-in-lunar-soil/",
+          "publisher": "NASA",
+          "credit": "UF/IFAS photo by Tyler Jones",
+          "caption": "Paul moistens lunar soil with a pipette. The soil repelled water, so it had to be stirred to wet evenly.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct NASA image URL taken from the NASA source page text (query-free). Not independently re-fetched; rights and reuse terms should be checked on the NASA page before republication."
+        },
+        {
+          "id": "apollo_regolith_vial_genetic_analysis",
+          "description": "A plant from the Apollo regolith experiment placed in a vial for genetic analysis.",
+          "image_type": "Laboratory photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/05/plants_in_soil_from_the_moon3.jpg",
+          "source_page_url": "https://www.nasa.gov/humans-in-space/scientists-grow-plants-in-lunar-soil/",
+          "publisher": "NASA",
+          "credit": "UF/IFAS photo by Tyler Jones",
+          "caption": "A plant from the experiment is placed in a vial for genetic analysis.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct NASA image URL taken from the NASA source page text (query-free). Not independently re-fetched; rights and reuse terms should be checked on the NASA page before republication."
+        },
+        {
+          "id": "apollo_regolith_day16_simulant_comparison",
+          "description": "Day 16 comparison of lunar-soil plants (right) and volcanic-ash simulant plants (left) in the Apollo regolith study.",
+          "image_type": "Laboratory photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/05/plants_in_soil_from_the_moon5.jpg",
+          "source_page_url": "https://www.nasa.gov/humans-in-space/scientists-grow-plants-in-lunar-soil/",
+          "publisher": "NASA",
+          "credit": "UF/IFAS photo by Tyler Jones",
+          "caption": "By day 16, lunar-soil plants (right) showed clear physical differences from volcanic-ash simulant plants (left).",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct NASA image URL taken from the NASA source page text (query-free). Not independently re-fetched; rights and reuse terms should be checked on the NASA page before republication."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "nasa_lunar_soil_plates_led_lights",
+          "description": "Two researchers look at plates of lunar and control soil under LED lights in the Apollo regolith plant study.",
+          "image_type": "Laboratory photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2022/05/plants_in_soil_from_the_moon.jpg",
+          "source_page_url": "https://www.nasa.gov/humans-in-space/scientists-grow-plants-in-lunar-soil/",
+          "publisher": "NASA",
+          "credit": "UF/IFAS photo by Tyler Jones",
+          "caption": "Rob Ferl and Anna-Lisa Paul look at plates with lunar and control soils under LED lights.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct NASA image URL taken from the NASA source page text (query-free). Not independently re-fetched; rights and reuse terms should be checked on the NASA page before republication."
+        }
+      ],
+      "references": [
+        {
+          "title": "China's Lander Successfully Grew Some Cotton Plants on the Moon. Fruit Flies and Potatoes Didn't Fare So Well",
+          "publisher": "Universe Today",
+          "url": "https://universetoday.com/143614/chinas-lander-successfully-grew-some-cotton-plants-on-the-moon-fruit-flies-and-potatoes-didnt-fare-so-well/"
+        },
+        {
+          "title": "Cottoning on: Chinese seed sprouts on moon (January 2019)",
+          "publisher": "Phys.org",
+          "url": "https://phys.org/news/2019-01-cottoning-chinese-seed-moon.html"
+        },
+        {
+          "title": "Phys.org news article on the Chang'e-4 lunar biosphere study (October 2023)",
+          "publisher": "Phys.org",
+          "url": "https://phys.org/news/2023-10-china-tiny-farm-moon.html"
+        },
+        {
+          "title": "The first biological experiment on lunar surface for Humankind: Device and results (Xie G. et al., Acta Astronautica, 2023, DOI 10.1016/j.actaastro.2023.10.023)",
+          "publisher": "Elsevier, Acta Astronautica",
+          "url": "https://doi.org/10.1016/j.actaastro.2023.10.023"
+        },
+        {
+          "title": "Lunar Plant Experiment: Testing Plant Germination in Lunar Gravity and Ionizing Radiation (McKay C. et al., NASA Ames, 2015)",
+          "publisher": "NASA Technical Reports Server",
+          "url": "https://ntrs.nasa.gov/citations/20190028857"
+        },
+        {
+          "title": "Plants grown in Apollo lunar regolith present stress-associated transcriptomes that inform prospects for lunar exploration (Paul A-L., Ferl R. J. et al., Communications Biology, 12 May 2022)",
+          "publisher": "Nature Portfolio, Communications Biology",
+          "url": "https://www.nature.com/articles/s42003-022-03334-8"
+        },
+        {
+          "title": "Scientists Grow Plants in Lunar Soil (12 May 2022)",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/humans-in-space/scientists-grow-plants-in-lunar-soil/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo regolith growth study example": "payload.article.physical_specifications.examples[2].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Image URLs were taken from the NASA source page text and were not independently fetched; direct resolution and reuse terms remain to be checked. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Chang'e-4 LME dimensions, mass, heating and duration differ between Universe Today [1] and Phys.org [3]. Both are shown; neither is treated as authoritative.",
+    "Which Chang'e-4 seeds sprouted is inconsistent: [1] reports cotton only; [3] reports cotton, rape and potato sprouting on 15 January 2019, with potato later failing.",
+    "The 2023 Acta Astronautica paper [4] was cited via Phys.org and was not accessible in full (the Elsevier page redirected without content). Its leaf counts, power figures and operating data are not verified.",
+    "Coverage from 2019 [1] says no scientific papers would be published from the Chang'e-4 experiment, which conflicts with the 2023 Acta Astronautica publication cited in [3][4]. The publication status should be checked against the paper itself.",
+    "The LPX Hydra-1 heritage and thermal-latitude constraint come from a secondary search summary and are not verified against a primary source read for this article. No landing-site or latitude value is included in the article.",
+    "The Apollo regolith primary paper [6] was not opened (the Nature page redirected to a login). The DOI 10.1038/s42003-022-03334-8 is inferred from the URL on the NASA page and is not confirmed. Secondary coverage disagrees on whether mineral fertiliser was added to the regolith; this article does not assert a fertiliser regime.",
+    "Apollo study image URLs were taken from the NASA page text and were not independently fetched; direct resolution and reuse terms remain to be checked. The NASA 'humans-in-space' URL is the canonical article path inferred from search results; the page was fetched at a query-string variant that has been removed here.",
+    "No flight or measured power draw is published for either the Chang'e-4 LME or the NASA LPX in the sources reviewed; power fields are null.",
+    "The Chang'e-4 device, a flown example, is recorded as flown on the lunar surface in 2019 according to the two accounts reviewed. Its 2019 landing date is taken from secondary coverage (Phys.org 2019 article, not opened)."
+  ]
+}

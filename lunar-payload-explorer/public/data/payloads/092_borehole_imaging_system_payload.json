@@ -1,0 +1,294 @@
+{
+  "catalogue_id": 92,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 4,
+    "name": "Subsurface exploration and drilling"
+  },
+  "payload": {
+    "number": 92,
+    "name": "Borehole imaging system",
+    "article": {
+      "overview": "A borehole imaging system records the wall of a hole that has been drilled into the ground, so that scientists can see layering, texture, grain structure and fractures in the material exposed by the drill. The image is taken in place, at the moment the drill exposes the ground, rather than after a sample has been removed, transported and broken open. This makes it possible to link a visual record to a known depth, which is valuable when the aim is to understand how the subsurface is organised.\n\nOn the Moon, a borehole imaging system would be most useful in the upper metre or two of regolith, where layering and volatile-bearing material may be preserved by drilling. No lunar borehole imaging system is confirmed flown. The best-documented flown example is the WATSON imager on NASA's Perseverance rover on Mars, which imaged the first borehole drilled by that rover in 2021 [1]. The remaining examples in this article are Mars instruments not yet flown in the sources accessed, prototypes, and lunar concepts.\n\n**Scope of this article.** This article covers optical and camera-based systems that image the wall of a drilled hole, or the cuttings produced by a drill, for planetary exploration. It includes spectrometers embedded in a drill where they produce a spatially-resolved record of the borehole wall.\n\n- **In scope:** borehole-wall imagers, drill-embedded optical or spectral imaging heads, and drill-integrated cameras that image the cuttings pile.\n- **Out of scope:** the drill itself (covered by the drilling-system entries of this catalogue), stand-alone subsurface radar (for example entries 81 to 83), and laboratory microscopy of returned samples.\n\n**Cross-references to other catalogue entries (not duplicated here):**\n\n- 84 (Drilling system) and 85 (Core sampling drill): the drill that carries or provides access for the imaging system.\n- 86 (Regolith sampler) and 87 (Soil penetration probe): sampling and penetration devices.\n- 81 to 83 (ground-penetrating and radar sounders): non-optical subsurface sensing.\n- 88 (Subsurface imaging system): a related subsurface imaging entry; this article does not duplicate it.\n- 65 (X-ray diffraction instrument) and 62 (Visible and infrared spectrometer): mineralogical analysis, which a borehole imager may complement.\n\n**Status summary.** The article distinguishes four kinds of evidence:\n\n- **Flown and operating (Mars):** WATSON, a subsystem of the SHERLOC instrument on Perseverance [1].\n- **Flight-design or pre-flight stage, not flown in the sources accessed (Mars):** Ma_MISS, embedded in the ExoMars drill of the Rosalind Franklin rover [2][8][9][10].\n- **Prototype, not flown:** a planetary borehole-wall imager tested in field analogue sites [3].\n- **Lunar concepts, not flown:** i-Drill [4][5] and OptiDrill [6][7].",
+      "description": "A borehole imaging system has four functional parts:\n\n1. **Access.** A drill, probe or penetrating tool creates the hole. The imaging head either travels within the drill string, is mounted on or near the drill, or is lowered into a hole that already exists.\n2. **Illumination.** Most lunar and planetary designs need their own light source, because a borehole is dark and shadowed. WATSON uses white LEDs to illuminate the borehole [1]. The Ma_MISS concept is described with light delivered by optical fibre into the hole [2][8].\n3. **Optics and detection.** A lens, fibre-optic head, window or relay optics form an image of the hole wall on a detector. Some designs record a single view. Others rotate the head or the drill tip so that a sequence of adjacent rings is captured and combined into a complete image of the wall [8]. The i-Drill BoreCam is described as producing a depth-correlated 360-degree movie of the hole as drilling proceeds [4].\n4. **Data and depth reference.** Each image or spectrum must be tied to a depth or position within the hole. WATSON data can be used to derive depth measurements [1]. Without a depth reference, a borehole image shows structure but cannot place it accurately in the subsurface profile.\n\nSome designs also image the **cuttings** (the loose material brought up by the drill). The i-Drill SurfCam is described as a 3D imager that tracks the evolving cuttings pile at the surface [4]. OptiDrill is described as a rotary-percussive drill that integrates multispectral microscopic imaging with the drilling process [6][7].",
+      "scientific_purpose_and_applications": "The main purpose of a borehole imaging system is to record the stratigraphy, texture and structure of the subsurface at the depth the drill reaches. Stated or described applications, from the sources accessed, are:\n\n- **Stratigraphy and layering.** A continuous borehole record can show layer boundaries and changes in colour and texture with depth. The Hungarian borehole-wall imager team argues that recording the wall optically during or after drilling supports reconstruction of past environments [3].\n- **Context for samples.** A drill that carries a sample to a rover or lander is more useful if the sample's depth and surrounding material are documented. The ESA drill description states that each acquired core is delivered to the rover's analytical processing, so an image of the hole adds context to the sample record [2].\n- **Mineralogy at depth.** Ma_MISS is described as a spectrometer that would characterise the mineralogy and layering of the borehole wall at several depths, down to about 2 m [8][10].\n- **Preservation of undisturbed material.** OptiDrill is described as aimed at preserving regolith layering and undisturbed grains, which conventional core sampling may disturb [6][7].\n- **Volatile and resource context (lunar).** i-Drill is designed to combine borehole and surface imaging with a permittivity sensor for ice content in the upper metre of regolith [4][5]. This application is a design goal in the sources accessed. No lunar measurements are reported.",
+      "operating_principle": "A borehole imager measures light reflected from the wall of a hole. Because the wall is close to the optics and often poorly lit, designers must balance illumination, depth of field and the field of view available inside a narrow hole.\n\nWATSON illustrates a typical flown approach. Its white LEDs illuminate the hole, and the complete borehole picture is built from several images [1]. NASA notes that WATSON imaged the first Perseverance borehole at night, which reduces self-shadowing inside the hole that can occur in daylight [1]. The same source states that WATSON data can be used to derive depth measurements [1].\n\nRotating designs build the wall image in a different way. The Ma_MISS concept, described in a 2014 conference abstract, uses a relay optic that collects light from the hole wall and focuses it into an optical fibre. A ring image is built by rotating the drill tip, and adjacent rings are combined to give a complete image of the wall [8]. The 2012 Ma_MISS abstract describes the instrument as a miniaturised imaging spectrometer embedded in a drilling system [10]. The ESA drill page describes Ma_MISS more narrowly as a miniaturised infrared spectrometer for borehole exploration [2]. The sources therefore differ on whether the instrument is primarily an imager or a spectrometer, and this article reports that difference rather than resolving it.\n\nThe i-Drill BoreCam is described as using plenoptic (light-field) optics to produce a depth-correlated 360-degree view of the borehole during drilling [4][5]. Its SurfCam is described as a 3D imager of the cuttings at the surface [4].",
+      "scientific_importance": "Lunar regolith layering and its volatile content cannot be fully inferred from surface images or orbital remote sensing alone. A borehole imaging system offers a way to observe the material as it is exposed, at known depth, which complements sample analysis. Preserving the in-situ structure matters because a loose sample may mix layers during transport and handling. The lunar concepts in this article address this need. The Mars examples show that borehole imaging is technically feasible in a flown planetary context, although they do not show that the same design would work in lunar regolith.\n\nThe strongest published scientific case in the sources accessed is the combination of borehole imaging with other instruments at the same depth, such as mineralogy and volatile sensing. That combination is described in design papers [4][5][6][7] rather than demonstrated in flight data.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a borehole imaging system. Designs range from a flown Mars imager that is a subsystem of a larger rover instrument, through drill-embedded spectrometers, to concept drills that carry a camera. Where a value is given below, it applies to the named instrument or concept and the cited source only. Several examples have no published mass, dimensions or power in the sources accessed. In those cases the article says so rather than estimating values.",
+        "examples": [
+          {
+            "name": "WATSON imager (subsystem of SHERLOC), Perseverance rover",
+            "type": "Flown Mars borehole imager (operating)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "instrument_configuration": "Imager that uses white LEDs to illuminate the borehole; the borehole image is built from several images. Its data can be used to derive depth measurements.",
+            "reference_borehole_diameter_cm": 2.7,
+            "reference_borehole_note": "Diameter of the first Perseverance borehole (1.06 in); not an instrument dimension.",
+            "imaging_context": "First borehole imaged on the mission's 165th Martian day (sol), at night, to reduce self-shadowing.",
+            "qualification": "Flown and operating instrument as described by JPL. Instrument mass, dimensions and power are not stated in the sources accessed.",
+            "source_urls": [
+              "https://www.jpl.nasa.gov/images/pia24796-watson-image-of-perseverances-first-borehole/"
+            ],
+            "article_text": "WATSON, Perseverance, Mars\n\nWATSON is a flown imager on NASA's Perseverance rover. It is built by Malin Space Science Systems (MSSS) and is operated jointly by MSSS and JPL. NASA describes it as a subsystem of the SHERLOC instrument [1]. The first borehole it imaged was 1.06 inches (2.7 cm) in diameter [1]. That diameter describes the drilled hole, not the instrument. The sources accessed do not give WATSON's own mass, dimensions or power consumption, so these are not stated here.",
+            "images": [
+              {
+                "id": "watson_first_borehole_composite",
+                "description": "Composite image of the first borehole drilled by NASA's Perseverance rover on Mars, made from several WATSON images and taken at night.",
+                "image_type": "Composite image from flown Mars borehole imager",
+                "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA24796.jpg",
+                "source_page_url": "https://www.jpl.nasa.gov/images/pia24796-watson-image-of-perseverances-first-borehole/",
+                "publisher": "NASA/JPL-Caltech/MSSS",
+                "credit": "NASA/JPL-Caltech/MSSS",
+                "caption": "Composite of Perseverance's first borehole, imaged by the WATSON imager on sol 165 (Aug. 2021 release).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct download link (JPEG) listed on the official JPL page PIA24796; the query string and fragment are absent. The file itself was not downloaded or viewed in this run; the image was identified from the page's caption and download links. The page carries a NASA/JPL-Caltech/MSSS credit; check NASA media usage guidelines before republication."
+              }
+            ]
+          },
+          {
+            "name": "Ma_MISS (Mars Multispectral Imager for Subsurface Studies), ExoMars drill",
+            "type": "Drill-embedded miniaturised infrared / imaging spectrometer; not flown in the sources accessed",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "drill_maximum_sampling_depth_m": 2,
+            "drill_core_reference_size_cm": {
+              "diameter": 1,
+              "length": 3
+            },
+            "drill_tool_length_mm": 700,
+            "drill_extension_rods": {
+              "count": 3,
+              "length_mm_each": 500
+            },
+            "status": "Described as 'being designed' on ESA page last updated 1 September 2019; mission planned for 2028 per a 2024 EPSC abstract. Flight status not confirmed in the sources accessed.",
+            "source_urls": [
+              "https://exploration.esa.int/web/mars/-/43611-rover-drill",
+              "https://meetingorganizer.copernicus.org/EPSC2014/EPSC2014-355-1.pdf",
+              "https://ui.adsabs.harvard.edu/abs/2012LPICo1683.1097D",
+              "https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-365.html"
+            ],
+            "article_text": "Ma_MISS (Mars Multispectral Imager for Subsurface Studies), ExoMars drill, Mars\n\nMa_MISS is embedded in the drill of the ESA ExoMars (Rosalind Franklin) rover. The ESA drill page describes it as a miniaturised infrared spectrometer for borehole exploration [2]. The drill is designed to acquire soil cores down to a maximum depth of 2 m. Each core is about 1 cm in diameter and 3 cm long, and the drill tool is about 700 mm long, with three extension rods of about 500 mm each [2]. These drill dimensions belong to the drill, not to Ma_MISS, and the sources accessed do not give Ma_MISS's own mass, dimensions or power.\n\nStatus: the ESA drill page was last updated on 1 September 2019 and describes the drill as \"being designed\" [2]. A 2024 EPSC abstract states that the ExoMars mission is planned for 2028 [9]. The sources accessed do not confirm that Ma_MISS has flown. There are no images of Ma_MISS in this article because the ESA images on its drill page have no captions or credits and were not independently viewed.",
+            "images": []
+          },
+          {
+            "name": "Planetary borehole-wall imager (prototype), Hungarian development",
+            "type": "Prototype; field-tested at analogue sites; not flown",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "claimed_spatial_resolution_mm": 0.1,
+            "claimed_spatial_resolution_note": "Up to 0.1 mm, from a search summary of the 2019 paper; not verified against the full abstract.",
+            "field_test_sites": [
+              "desert riverbed, Morocco",
+              "salt flat, Atacama"
+            ],
+            "source_urls": [
+              "https://ui.adsabs.harvard.edu/abs/2019OAst...28...13K/abstract"
+            ],
+            "article_text": "Planetary borehole-wall imager (prototype), Hungarian development\n\nA borehole-wall imager developed in Hungary was characterised in a 2019 Open Astronomy paper [3]. The search summary of that paper reports prototype tests at a desert riverbed in Morocco and at a salt flat in the Atacama, to support ExoMars rover drilling work. It reports that the instrument can scan the borehole wall at up to 0.1 mm spatial resolution [3]. The full abstract was not retrieved in this run, so these values are taken from the search summary and are not verified against the paper. The sources accessed do not give the instrument's mass, dimensions or power. This is a prototype and has not been flown.",
+            "images": []
+          },
+          {
+            "name": "i-Drill (instrumented lunar drill)",
+            "type": "Lunar drill concept with borehole and surface imaging; not flown",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "target_depth": "upper ~1 m of lunar regolith",
+            "instruments": [
+              "BoreCam: depth-correlated 360-degree borehole camera (plenoptic optics)",
+              "SurfCam: 3D imager of the cuttings pile at the surface (plenoptic optics)",
+              "PerSen: permittivity sensor for ice content"
+            ],
+            "heritage": "SamCam camera of ESA PROSPECT programme (as stated in the 2020 paper)",
+            "flight_target_stated_in_2020_paper": "2021/22 (passed; current status not established)",
+            "source_urls": [
+              "https://oro.open.ac.uk/74745",
+              "https://core.ac.uk/download/374157328.pdf"
+            ],
+            "article_text": "i-Drill (instrumented lunar drill), concept\n\ni-Drill is a concept for an instrumented lunar drill developed by teams at the University of Glasgow, the Open University and Dynamic Imaging Analytics in response to an ESA call [4][5]. Its stated target is the upper ~1 m of regolith [4][5]. It pairs a borehole camera (BoreCam), which records a depth-correlated 360-degree view as the drill string advances, with a surface camera (SurfCam), which images the cuttings pile in 3D [4]. The imaging optics draw on heritage from the SamCam camera of ESA's PROSPECT programme [4]. A permittivity sensor (PerSen) for ice content is also part of the concept [4]. A 2020 paper gave a flight target of 2021/22 [4]. That date has passed, and the sources accessed do not report a flight or a current development status. The sources accessed do not give i-Drill's mass, dimensions, power or camera resolution.",
+            "images": []
+          },
+          {
+            "name": "OptiDrill (rotary-percussive drill with multispectral microscopic imaging)",
+            "type": "Lunar/planetary drill concept; not flown",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "development_status": "Development target TRL 4 by late 2025 (NASA PICASSO funding), with plans toward TRL 6; no quantitative test results reported in the secondary source.",
+            "source_urls": [
+              "https://www.hou.usra.edu/meetings/lpsc2025/pdf/1523.pdf",
+              "https://www.universetoday.com/articles/improving-in-situ-analysis-of-planetary-regolith-with-optidrill"
+            ],
+            "article_text": "OptiDrill (rotary-percussive drill with multispectral microscopic imaging), concept\n\nOptiDrill is a rotary-percussive drill concept with multispectral microscopic imaging integrated into a compact auger. It was presented at the 56th Lunar and Planetary Science Conference in 2025 by Palmowski et al. [6]. The secondary article in Universe Today describes the aim as preserving regolith stratigraphy and undisturbed grains, and as reaching reflectance spectra at micron scale [7]. The article reports a development target of TRL 4 by late 2025 under NASA PICASSO funding, with later plans toward TRL 6 [7]. It reports no quantitative test results. The sources accessed do not give OptiDrill's mass, dimensions, drilling depth, spectral range or power, so none is stated here.",
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "There is no single dimension for a borehole imaging system. The WATSON imager's own dimensions, the Ma_MISS dimensions, the Hungarian prototype's dimensions and the i-Drill and OptiDrill dimensions are not published in the sources accessed. The drill dimensions given for the ExoMars drill (about 700 mm tool, three rods of about 500 mm) describe the drill, not the imager. The 2.7 cm borehole diameter is a property of the hole drilled by Perseverance.",
+        "mass_and_weight": "Not publicly specified in the sources accessed for any example. No mass has been estimated.",
+        "power_requirements": "Not publicly specified in the sources accessed for any example. No power value has been estimated."
+      },
+      "environmental_and_operational_requirements": "A borehole imaging system on the Moon would operate in an environment with extreme temperature cycles, vacuum, ionising radiation and fine abrasive dust. Lunar regolith dust can coat optical windows and reduce image quality, so a sealed or protected optical path is a basic design requirement. The Perseverance experience shows that the hole interior can be dark and shadowed, so the instrument needs its own illumination, and the time of imaging matters. WATSON's first borehole was imaged at night to reduce self-shadowing [1]. On the Moon, the local lighting cycle would need to be considered separately because the lunar day and night each last about two weeks.\n\nThe imaging head must also be kept in a stable position relative to the hole, because motion of the drill or support structure would blur the image and make depth registration uncertain. The ESA drill description includes a positioning system that moves the drill to an operational position orthogonal to the terrain and an emergency jettison device if the drill becomes stuck [2]. These are Mars drill features and are cited as examples of the engineering constraints a drilling payload must address, not as lunar requirements.",
+      "limitations": "A borehole imager images only the wall it can see. It cannot identify composition unless it includes spectroscopy, and a visual image alone does not establish the mineral or volatile content of a layer. Image quality depends on illumination, optical cleanliness and the stability of the drill, and each of these may degrade during operation. Ring-scan designs require the drill to rotate or step precisely, and this adds mechanical complexity. Depth registration depends on the drill's own measurement of depth, which is an additional error source. The Mars examples were designed for Martian conditions, which differ from lunar ones in atmosphere, thermal behaviour and dust.",
+      "transportation_and_deployment": {
+        "overview": "A borehole imaging system for the Moon would be a surface payload that is integrated with a drill or probe. The integration sequence would be: integrate the imaging head with the drill on Earth; launch the drill and imaging system with the lander or rover; transfer to the Moon; deliver to the surface; deploy the drill to a working position; then start illumination, imaging and depth logging. Power, data and thermal control would need to be supplied by the drill or host vehicle.\n\nDeployment methods differ among the examples. For WATSON, the imager is a subsystem of the SHERLOC instrument on Perseverance [1]; the sources accessed do not describe its mounting on the rover. For the ExoMars drill, the sources describe a positioning system that moves the drill from a storage position at the front of the rover to an operational position [2]. For i-Drill and OptiDrill, the sources accessed describe drill concepts but state no lunar deployment method or lander interface [4][6][7].\n\n**Compatibility.** No lunar lander, rover or spacecraft has been verified as compatible with any of the borehole imaging concepts in this article. The mass, dimensions, power, data and mounting requirements of each concept are not published in the sources accessed, so no compatibility claim is made.",
+        "transportation_process": [
+          "Integrate the imaging head with the drill or probe on Earth.",
+          "Launch the drill and imaging system with the lander or rover.",
+          "Transfer to the Moon and deliver to the surface.",
+          "Deploy the drill to a working position.",
+          "Start illumination, imaging and depth logging, with power, data and thermal control supplied by the host vehicle."
+        ],
+        "deployment_methods": "Deployment differs by example: WATSON is a subsystem of the SHERLOC instrument on Perseverance (mounting not described in the sources accessed); the ExoMars drill uses a positioning system to move from storage to an operational position orthogonal to the terrain (ESA page, 2019). i-Drill and OptiDrill are drill concepts with no lunar deployment method or lander interface stated in the sources accessed.",
+        "historical_examples": "WATSON on Perseverance (Mars, flown); ExoMars drill with Ma_MISS (Mars, not yet flown in the sources accessed); i-Drill and OptiDrill (lunar concepts).",
+        "compatibility_assessment": "No lunar lander, rover or spacecraft has been verified as compatible with any borehole imaging concept in this article. Mass, dimensions, power, data and mounting requirements are not published in the sources accessed.",
+        "images": []
+      },
+      "historical_significance": "The first flown borehole imager on another planet is WATSON on Perseverance. It imaged the first borehole drilled by the rover, and NASA published the composite image in August 2021 [1]. The ExoMars Ma_MISS instrument and the Hungarian borehole-wall imager represent the European and Central European effort on borehole optical analysis for Mars [2][3][10]. The lunar concepts i-Drill (UK university teams) and OptiDrill (a Honeybee Robotics team) represent work on bringing borehole imaging to the Moon [4][5][6][7]. None of the lunar concepts has flown in the sources accessed.",
+      "limitations_and_uncertainties": "- **No lunar flight.** No lunar borehole imaging system is confirmed flown in the sources accessed. All lunar examples are concepts.\n- **Mars examples are not lunar.** WATSON is the only flown borehole imager in this article. It operates in a Martian environment that differs from the lunar environment.\n- **Ma_MISS status is uncertain.** The ESA page was last updated in 2019 and describes the drill as being designed [2]. The 2024 abstract gives a 2028 mission plan [9]. The article does not confirm integration status in a primary document. An older paper in the search summaries reports integration and testing, but that paper was not identified or read in this run [8].\n- **Ma_MISS type is inconsistent across sources.** The ESA page calls it an infrared spectrometer [2], and the 2012 abstract calls it an imaging spectrometer [10]. Both are reported.\n- **Hungarian borehole-wall imager.** The 2019 Open Astronomy abstract could not be retrieved (the publisher page returned an error). The 0.1 mm resolution and field-test sites come from a search summary, not the full paper [3].\n- **i-Drill performance and timeline.** The i-Drill entries are based on conference metadata and search-excerpt text. The LPSC 2020 full text was not read. The flight target of 2021/22 has passed, and the sources accessed do not show a current status [4][5].\n- **OptiDrill specifications.** The LPSC 2025 abstract PDF returned unreadable binary content in this run [6]. The specification and status details come from a secondary article [7], which reports no quantitative test results.\n- **Mass, dimensions, power and resolution.** For most examples these are not published in the sources accessed. Values are not estimated.\n- **Image verification.** The WATSON image URL is a download link listed on the official JPL page. The image file itself was not downloaded or viewed in this run. No ESA image is used, because the ESA drill page gives no caption or credit and the images were not viewed.\n- **Excluded source.** A coiled-tubing drill concept with a camera (REBELS) appeared in a search summary only. No primary source was found, so it is not described.",
+      "images": [
+        {
+          "id": "watson_first_borehole_composite",
+          "description": "Composite image of the first borehole drilled by NASA's Perseverance rover on Mars, made from several WATSON images and taken at night.",
+          "image_type": "Composite image from flown Mars borehole imager",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA24796.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/images/pia24796-watson-image-of-perseverances-first-borehole/",
+          "publisher": "NASA/JPL-Caltech/MSSS",
+          "credit": "NASA/JPL-Caltech/MSSS",
+          "caption": "Composite of Perseverance's first borehole, imaged by the WATSON imager on sol 165 (Aug. 2021 release).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct download link (JPEG) listed on the official JPL page PIA24796; the query string and fragment are absent. The file itself was not downloaded or viewed in this run; the image was identified from the page's caption and download links. The page carries a NASA/JPL-Caltech/MSSS credit; check NASA media usage guidelines before republication."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "watson_first_borehole_composite",
+          "description": "Composite image of the first borehole drilled by NASA's Perseverance rover on Mars, made from several WATSON images and taken at night.",
+          "image_type": "Composite image from flown Mars borehole imager",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA24796.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/images/pia24796-watson-image-of-perseverances-first-borehole/",
+          "publisher": "NASA/JPL-Caltech/MSSS",
+          "credit": "NASA/JPL-Caltech/MSSS",
+          "caption": "Composite of Perseverance's first borehole, imaged by the WATSON imager on sol 165 (Aug. 2021 release).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct download link (JPEG) listed on the official JPL page PIA24796; the query string and fragment are absent. The file itself was not downloaded or viewed in this run; the image was identified from the page's caption and download links. The page carries a NASA/JPL-Caltech/MSSS credit; check NASA media usage guidelines before republication."
+        }
+      ],
+      "references": [
+        {
+          "title": "WATSON Image of Perseverance's First Borehole",
+          "publisher": "NASA Jet Propulsion Laboratory (NASA/JPL-Caltech/MSSS)",
+          "url": "https://www.jpl.nasa.gov/images/pia24796-watson-image-of-perseverances-first-borehole/",
+          "date": "2021-08-11"
+        },
+        {
+          "title": "ExoMars Drill Unit",
+          "publisher": "European Space Agency",
+          "url": "https://exploration.esa.int/web/mars/-/43611-rover-drill",
+          "date": "last updated 2019-09-01"
+        },
+        {
+          "title": "Characterization and first results of the planetary borehole-wall imager — methods to develop for in-situ exploration",
+          "publisher": "Open Astronomy (author list not retrieved)",
+          "url": "https://ui.adsabs.harvard.edu/abs/2019OAst...28...13K/abstract",
+          "date": "2019",
+          "notes": "Volume 28, p. 13; ADS bibcode 2019OAst...28...13K. Abstract page not retrieved (publisher error); field details from search summary."
+        },
+        {
+          "title": "i-Drill: An Instrumented Drill for Surface and Sub-Surface Ground Truthing of Lunar Volatiles and Resources",
+          "publisher": "51st Lunar and Planetary Science Conference (Open Research Online record; authors per search metadata: S. J. Barber et al.)",
+          "url": "https://oro.open.ac.uk/74745",
+          "date": "2020",
+          "notes": "Record page not fetched (HTTP 403); details from search metadata."
+        },
+        {
+          "title": "i-Drill full-text PDF (LPSC 2020 paper)",
+          "publisher": "CORE / Open Research Online",
+          "url": "https://core.ac.uk/download/374157328.pdf",
+          "date": "2020",
+          "notes": "Full text not read in this run."
+        },
+        {
+          "title": "OptiDrill, 56th Lunar and Planetary Science Conference, abstract 1523",
+          "publisher": "Lunar and Planetary Institute (authors per secondary source: Palmowski et al.)",
+          "url": "https://www.hou.usra.edu/meetings/lpsc2025/pdf/1523.pdf",
+          "date": "2025",
+          "notes": "PDF returned unreadable binary content; not verified."
+        },
+        {
+          "title": "Improving In-Situ Analysis of Planetary Regolith with OptiDrill (secondary summary)",
+          "publisher": "Universe Today",
+          "url": "https://www.universetoday.com/articles/improving-in-situ-analysis-of-planetary-regolith-with-optidrill",
+          "date": "not stated in fetched text"
+        },
+        {
+          "title": "EPSC2014-355-1, Ma_MISS abstract",
+          "publisher": "Europlanet Science Congress 2014 (author list not retrieved)",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2014/EPSC2014-355-1.pdf",
+          "date": "2014",
+          "notes": "Known only from search summary."
+        },
+        {
+          "title": "EPSC2024-365, ExoMars mission timing abstract",
+          "publisher": "European Planetary Science Congress 2024",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-365.html",
+          "date": "2024",
+          "notes": "Known only from search summary."
+        },
+        {
+          "title": "A Miniaturized Imaging Spectrometer Embedded in a Drilling System: Ma_Miss",
+          "publisher": "Lunar and Planetary Institute Contributions no. 1683 (author list not retrieved)",
+          "url": "https://ui.adsabs.harvard.edu/abs/2012LPICo1683.1097D",
+          "date": "2012",
+          "notes": "Title record only; content from title."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "WATSON example": "payload.article.physical_specifications.examples[0].images",
+      "Ma_MISS, Hungarian prototype, i-Drill and OptiDrill examples": "payload.article.physical_specifications.examples[1-4].images (empty; no verified image)",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (empty; no verified image)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Only one image is included (WATSON composite). Its direct download URL is listed on the official JPL page PIA24796 and has no query string or fragment, but the file was not downloaded or viewed in this run. direct_image_assets_verified_from_official_pages is therefore recorded as false.",
+    "ESA ExoMars drill page images (sci.esa.int 2014 drill images) were not used: the page gives no caption, credit or licence text, and the images were not viewed.",
+    "Ma_MISS is described as an infrared spectrometer on the ESA page (2019) and as an imaging spectrometer in a 2012 title. Both descriptions are reported; flight status is not confirmed. The ESA page was last updated 2019-09-01 and describes the drill as being designed. The 2028 mission date comes from a 2024 EPSC abstract known only from a search summary.",
+    "Hungarian borehole-wall imager: the 0.1 mm resolution and field-test sites come from a search summary. The Open Astronomy abstract page returned an error and the full text was not read. Author list not retrieved.",
+    "i-Drill: specifications and the 2021/22 flight target come from the 2020 conference paper metadata and search excerpts. The full text was not read and the record page returned HTTP 403. The flight target has passed and no current status is established.",
+    "OptiDrill: the LPSC 2025 abstract PDF returned unreadable binary content. Development status (TRL 4 target by late 2025, TRL 6 planned) comes from a secondary Universe Today article; no quantitative test results are reported.",
+    "An older conference paper (search summary) reported that a Ma_MISS-related instrument was integrated into the drill and rover after calibration. That paper was not identified or read, so integration status is not verified.",
+    "REBELS (coiled-tubing drill with camera) appeared in a search summary only. No primary source was found, so it is excluded.",
+    "Mass, dimensions, power, spatial resolution and lunar compatibility are not published in the sources accessed for most examples. None has been estimated; each is recorded as null or 'not publicly specified'.",
+    "No lander, rover or spacecraft compatibility is asserted for any example.",
+    "Author names are not given for references 3, 8 and 10 because the author lists were not retrieved; titles and years come from search metadata.",
+    "Lunar day and night each last about two weeks; this general astronomical fact is stated without a source in this run.",
+    "Lunar location recommendations are deferred by the user and are not included."
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "catalogue_id": 292,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 292,
+    "name": "Radiation shielding experiment",
+    "article": {
+      "overview": "A radiation shielding experiment measures how effectively a material or structure reduces the ionising radiation reaching people or equipment. For the Moon, the main concern is galactic cosmic rays (GCR), high-energy particles from outside the Solar System, and solar particle events (SPE), intense bursts of particles from the Sun. The Moon has no global magnetic field or thick atmosphere to stop them, so surface habitats, spacecraft and crews would depend on shielding. The evidence reviewed covers three kinds of work: an instrument that has flown on a lunar orbiter and measured shielding effects [3], flown and ground-based tests of shielding in space or in beams [2][5], and a proposed in-situ regolith shielding measurement that has not been reported as flown [1].",
+      "description": "In its general form, a radiation shielding experiment places a detector behind a known thickness or mass of a shielding material and compares the measured radiation with a reference reading taken without shielding. Detectors used for this purpose include tissue-equivalent plastic (TEP) dosimeters, which simulate the radiation response of human soft tissue, and tissue-equivalent proportional counters (TEPCs) [2][3]. Materials studied include lunar regolith, the loose soil and rock covering the Moon's surface; hydrogen-rich plastics such as polyethylene; water; and aluminium, which is the traditional spacecraft reference material [1][2]. The experiment type can be flown on an orbiter, carried inside a spacecraft capsule, or placed on the surface. A surface version would need thick regolith layers, which the proposed concept describes as excavated and built in situ [1].",
+      "scientific_purpose_and_applications": "The purpose is to turn radiation-transport models into measured numbers. Shielding predictions depend on assumptions about particle spectra, material composition and density, and flight data test those assumptions. The CRaTER instrument was used to compare plastics and aluminium against cosmic-ray dose, a question that had previously been studied with ground beam tests and computer models [3]. Applications include habitat design (how much regolith or hydrogen-rich material a shelter needs), crew procedures (where to place a storm shelter), and spacecraft material selection. The Orion capsule on Artemis I carried the MARE experiment, which measured dose across differently shielded locations during a lunar test flight [5]. The proposed surface experiment would measure attenuation directly against regolith thickness, over a cited range of about 20 g/cm² to more than 100 g/cm² [1]. Units matter here. Areal density (g/cm²) is mass per unit area, and converting it to a physical thickness requires the material's bulk density, which was not confirmed for the lunar regolith case in the sources reviewed.",
+      "operating_principle": "The basic measurement is attenuation. A detector records dose or particle flux with and without a shield, or behind increasing thicknesses of shield material, and the ratio shows how much the shield reduces exposure. For dosimetry, TEP or TEPC detectors approximate how the energy of charged particles would be deposited in human tissue [2][3]. Galactic cosmic rays are mostly high-energy protons and heavier nuclei. Shielding can also produce secondary neutrons and fragments, which the 2011 laboratory study measured as a separate effect [2]. Hydrogen-rich materials tend to perform well per unit mass because their light nuclei slow and fragment incoming particles. The SWRI release quotes the CRaTER team saying that anything with high hydrogen content, including water, would work well [3]. The shielding effect is therefore not a single number. It depends on particle energy, the source event and the detector geometry.",
+      "scientific_importance": "Radiation dose is one of the main health and mission-design constraints for lunar crews. Shielding can reduce exposure but cannot remove it entirely, and the choice of material affects launch mass, which is costly. The CRaTER team reported that lightweight plastics are pound for pound more effective than aluminium at shielding cosmic radiation, and that the space-based results match earlier ground-based beam tests [3]. Measured data test whether models of shielding are reliable, especially for thick shields and high-energy particles. Flown data from CRaTER and MARE therefore add to the basis for design decisions, while the lunar-surface regolith measurement remains a proposal [1][3][5]. The scientific value lies in linking material properties, particle spectra and measured dose, rather than in any single instrument.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a radiation shielding experiment. The examples below range from a flown orbiter instrument and a flown uncrewed capsule experiment to a proposed surface measurement and laboratory tests. They measure different quantities under different conditions. None of the sources reviewed gave a mass, dimension, power or lifetime for a lunar surface shielding experiment. Where a value is absent from the sources, this article states that it is not publicly specified rather than estimating it. Shielding performance figures should be compared only within the same radiation type, material and measurement method.",
+        "examples": [
+          {
+            "name": "CRaTER, Lunar Reconnaissance Orbiter (flown)",
+            "status": "flown",
+            "description": "Status: flown. CRaTER (Cosmic Ray Telescope for the Effects of Radiation) is an instrument aboard NASA's Lunar Reconnaissance Orbiter, which launched in 2009 [3]. It measures energetic charged particles from galactic cosmic rays and solar particle events, and it gauges the dose after those particles pass through tissue-equivalent plastic [3]. Its published comparison of plastics with aluminium is the main shielding result cited here. According to the lead author Cary Zeitlin, lightweight plastics are \"pound-for-pound more effective\" than aluminium for shielding cosmic radiation, and the space-based results agree with earlier ground-based beam tests [3]. The 2013 press release gives no numerical shielding factors, so the size of the effect is not quantified in this article. The detailed Space Weather paper [4] was not opened in this run, so its quantitative results are not reported here. Mass, dimensions and power are not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://www.swri.org/node/9138",
+              "https://doi.org/10.1002/swe.20043"
+            ],
+            "images": []
+          },
+          {
+            "name": "Matroshka AstroRad Radiation Experiment (MARE), Artemis I Orion (flown, uncrewed)",
+            "status": "flown on an uncrewed lunar test flight, not on the lunar surface",
+            "description": "Status: flown on an uncrewed lunar test flight, not on the lunar surface. MARE was led by DLR and used two anthropomorphic mannequins, Helga and Zohar, with DLR's active radiation device M-42 placed inside them [5]. Helga flew unprotected, and Zohar wore the AstroRad radiation vest [5]. Other radiation instruments on the flight included NASA's HERA sensors and five ESA active dosimeters [5]. Artemis I launched on 16 November 2022 and lasted more than 25 days, reaching a maximum distance of 434,522 km from Earth [5]. DLR reports that dose rates between the most and least protected areas differed by a factor of four during the inner Van Allen belt passage, and that a 90-degree turn at the end of that flyby reduced the dose by 50 percent, which DLR calls unexpectedly large [5]. DLR also states that total dose in the storm shelter from large solar particle events is limited to a maximum of 150 millisieverts, with no acute radiation sickness expected at that dose [5]. DLR describes these as initial findings, and the mannequin comparison was still in progress when the report was written [5]. Mass, dimensions and power for this experiment are not stated in the sources reviewed.",
+            "source_urls": [
+              "https://www.dlr.de/en/latest/news/2024/orion-spacecraft-radiation-protection-tested-initial-findings-from-artemis-i-moon-mission"
+            ],
+            "images": []
+          },
+          {
+            "name": "Proposed in-situ regolith shielding measurement (proposed, not flown)",
+            "status": "proposed; not reported as flown",
+            "description": "Status: proposed; not reported as flown. A 2025 National Academies (NASEM) presentation on lunar galactic cosmic ray shielding, hosted on NASA's Technical Reports Server, describes a surface experiment in which detectors would sit under stacked hemispherical layers of regolith, with the aim of measuring attenuation as a function of thickness [1]. The cited thickness range is 20 g/cm² to more than 100 g/cm², with the regolith excavated and built in situ [1]. The slides state that regolith shielding characteristics are similar to aluminium and propose confirming layer thickness and measuring regolith composition and density [1]. The detector type, count, hemisphere radius and power requirements were not found in the sources reviewed. This entry rests on a presentation rather than a peer-reviewed or formal proposal, and the slide text was not read in full during this run.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20250006713/downloads/nasem_presentation%20v07012025%20vf.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Ground-based regolith and polyethylene shielding tests (Johnson et al., 2011)",
+            "status": "laboratory tests with accelerator and neutron beams; not a flight experiment",
+            "description": "Status: laboratory tests with accelerator and neutron beams; not a flight experiment. Johnson, Gersey, Wilkins and Zhou of Prairie View A&M University presented shielding tests at the 62nd International Astronautical Congress in 2011 [2]. The study compared ultra-high-molecular-weight polyethylene (UHMWPE) and aluminium as reference materials, simulated lunar regolith–polyethylene composites, and regolith mixed with UHMWPE and water [2]. Tests used a proton synchrotron at Loma Linda University and a spallation neutron source at LANSCE, with a tissue-equivalent proportional counter (TEPC) behind panels or mixtures of varying thickness [2]. The only shielding figure in the abstract is preliminary: adding 2 wt% water to regolith particles could increase shielding by about 6% [2]. The abstract does not state the baseline for that comparison. It reports no galactic cosmic ray or solar particle event results, and no thickness, absolute dose or aluminium comparison values [2].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20110012713"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified in the sources reviewed for any example in this article.",
+        "mass_and_weight": "Not publicly specified in the sources reviewed for any example in this article.",
+        "power_requirements": "Not publicly specified in the sources reviewed for any example in this article."
+      },
+      "environmental_and_operational_requirements": "A surface shielding experiment would face the general lunar environment: vacuum, large day–night temperature swings, and exposure to the same radiation it is measuring. The Artemis I flight gives a reference for the deep-space environment, which differs from the surface. MARE covered a 25-day journey with a maximum distance of 434,522 km from Earth [5]. The surface regolith concept would need a stable, level test site and enough regolith to build the thickness range, which the NASEM concept describes as excavated and built in situ [1]. Detectors must be calibrated against known particle fields, and tissue-equivalent dosimeters need stable readout over the mission duration. Environmental tolerances, power and data needs for a specific surface detector were not found in the sources reviewed.",
+      "limitations": "The main limitation is that the name describes a class of experiment, so no single performance figure applies to all radiation shielding experiments. Flown results depend on the radiation environment, source event and geometry of each mission. The Artemis I storm-shelter ratio applies to one capsule and one flight, and it is not a general protection factor [5]. DLR describes its findings as initial [5]. Ground tests with beams and neutron sources do not reproduce the full spectrum of galactic cosmic rays, and the 2011 abstract gives only a preliminary percentage [2]. The regolith-thickness experiment has not been reported as flown, so no surface measurement is available to confirm the proposed attenuation curve [1]. Converting areal density to thickness depends on bulk density, which would need measurement at the site. The SWRI release gives no numerical shielding factors for CRaTER [3], so claims about its size must be checked against the Space Weather paper [4].",
+      "transportation_and_deployment": {
+        "overview": "This section is written at class level. It does not assume that any named lander, rover or spacecraft carries a shielding experiment.",
+        "transportation_process": [
+          "Surface payload: a surface shielding experiment would be integrated into a lander or dedicated payload on Earth, launched, transferred to the Moon, and delivered to the surface by a lander. Its power and data interfaces would depend on the lander and on whether the detector runs autonomously. Thermal and mechanical interfaces would be needed for the detector electronics, and the regolith layers would be built after landing, as the NASEM concept describes [1].",
+          "Orbiter and capsule payloads: a detector on an orbiter, such as CRaTER on the Lunar Reconnaissance Orbiter [3], is integrated into the spacecraft, launched, transferred to the Moon, inserted into orbit and commissioned. Its pointing, thermal and data interfaces are set by the spacecraft. Experiments carried inside a crewed or uncrewed capsule, such as MARE in Orion, are integrated with the crew module and its instrument locations [5]."
+        ],
+        "deployment_methods": "Surface deployment would require a method for building or placing the regolith layers and for aligning the detector geometry, which the proposed concept treats as a key step [1]. The sources reviewed do not describe a robotic or crewed deployment method for a specific shielding experiment.",
+        "historical_examples": "The flown examples in this article are CRaTER on an orbiter [3] and MARE inside the Orion capsule on Artemis I [5]. Neither operated on the lunar surface. The laboratory tests [2] and the proposed surface concept [1] are not flight examples.",
+        "compatibility_assessment": "Compatibility with a specific lander, rover or spacecraft is not assessed in this article. Interface data needed for a surface shielding experiment, including mass, mounting, power, data and thermal limits, were not found in the sources reviewed.",
+        "images": []
+      },
+      "historical_significance": "The flown examples show that shielding performance can be measured in space, not only in models. CRaTER's data supported the finding that lightweight plastics compare favourably with aluminium for cosmic-ray dose, and the space results matched earlier beam tests [3]. MARE, on the first Artemis test flight, measured dose gradients inside a capsule and included a radiation vest and a storm-shelter configuration [5]. The 2011 laboratory work tested regolith mixtures against polyethylene and aluminium reference materials [2]. The proposed NASEM surface measurement would directly measure regolith shielding in situ if it flies, but it has not been reported as flown [1].",
+      "limitations_and_uncertainties": "The payload name describes a class of experiment rather than a single design. Flown and ground-based results must not be combined into one shielding figure, because they differ in radiation environment, material, detector and geometry [2][3][5]. The main evidence gaps are as follows. First, no lunar-surface regolith shielding measurement was found, and the NASEM concept [1] is a proposal whose slide text could not be read in full during this run. Second, the numerical CRaTER results are in the Space Weather paper [4], which was not opened here. Third, the 2011 abstract gives one preliminary percentage with no stated baseline [2]. Fourth, the MARE results are initial and cover one uncrewed flight [5]. Fifth, no mass, dimensions, power, lifetime or detector specifications were found for any surface shielding experiment. Sixth, no image assets were verified for this article. Values in this article are reported only where a source was read.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "NASEM presentation on lunar galactic cosmic ray shielding (2025), NASA Technical Reports Server record 20250006713",
+          "publisher": "National Academies of Sciences, Engineering, and Medicine (NASEM) / NASA NTRS",
+          "url": "https://ntrs.nasa.gov/api/citations/20250006713/downloads/nasem_presentation%20v07012025%20vf.pdf"
+        },
+        {
+          "title": "Radiation Shielding of Lunar Regolith/Polyethylene Composites and Lunar Regolith/Water Mixtures",
+          "publisher": "Johnson, Q. F., Gersey, B., Wilkins, R., Zhou, J.; 62nd International Astronautical Congress; NASA JSC-CN-24073",
+          "url": "https://ntrs.nasa.gov/citations/20110012713"
+        },
+        {
+          "title": "Moon Radiation Findings May Reduce Health Risks to Astronauts",
+          "publisher": "Southwest Research Institute (press release, 12 June 2013)",
+          "url": "https://www.swri.org/node/9138"
+        },
+        {
+          "title": "CRaTER galactic cosmic ray shielding measurements, Space Weather, DOI 10.1002/swe.20043 (not opened in this run)",
+          "publisher": "Zeitlin, C. et al.; Space Weather (AGU)",
+          "url": "https://doi.org/10.1002/swe.20043"
+        },
+        {
+          "title": "Orion spacecraft radiation protection tested: initial findings from Artemis I Moon mission",
+          "publisher": "DLR Institute of Aerospace Medicine (DLR news, 18 September 2024)",
+          "url": "https://www.dlr.de/en/latest/news/2024/orion-spacecraft-radiation-protection-tested-initial-findings-from-artemis-i-moon-mission"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No image objects are included because no direct image asset URL was verified in this run."
+  },
+  "data_quality_notes": [
+    "The catalogue name is generic. The article is class-level and does not attribute payload 292 to a single mission or instrument.",
+    "No lunar-surface radiation shielding measurement was found. The regolith-thickness experiment is a proposal, not a reported measurement.",
+    "The NASEM presentation PDF could not be rendered or text-extracted in this run. Its thickness range (20 to more than 100 g/cm2), detector concept and aluminium-similarity statement come from search-result summaries and must be checked against the slides.",
+    "The CRaTER Space Weather paper (DOI 10.1002/swe.20043) was not opened. Its title is taken from secondary coverage, and no quantitative CRaTER shielding factor is reported in this article.",
+    "The Johnson et al. (2011) abstract was read; the full paper was not available. The roughly 6 percent water effect is preliminary and has no stated baseline.",
+    "Artemis I MARE values (factor of four between areas, 50 percent reduction from the 90-degree turn, 150 mSv storm-shelter limit) come from the DLR 2024 news page, which calls them initial findings. The Nature paper was not opened.",
+    "Unverified search leads were excluded from the article: a 2024 DLR lunar-surface Geant4 study (a roughly 4 g/cm2 threshold seen only in a truncated snippet), an ASCEND 2021 statement of 3 to 7 m regolith thickness, and a 2025 AIP Advances lithium hydride Monte Carlo study.",
+    "Artemis II sensor counts and shielding-demo details were conflicting or unavailable in search results and are excluded. The FierceSensors article could not be fetched (HTTP 403).",
+    "No mass, dimensions, power, lifetime, sensitivity or environmental tolerance values were found in the sources reviewed for any shielding experiment. These are recorded as not publicly specified.",
+    "No image assets were verified from official pages in this run, so the article contains no image objects."
+  ]
+}

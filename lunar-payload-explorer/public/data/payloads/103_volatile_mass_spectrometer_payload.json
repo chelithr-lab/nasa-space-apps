@@ -1,0 +1,203 @@
+{
+  "catalogue_id": 103,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 5,
+    "name": "Water, ice and volatile detection"
+  },
+  "payload": {
+    "number": 103,
+    "name": "Volatile mass spectrometer",
+    "article": {
+      "overview": "A volatile mass spectrometer identifies and measures the gases and easily vaporised compounds (volatiles) that are present in, or released from, lunar material. It separates the molecules and atoms in a gas by their mass-to-charge ratio, so that scientists can tell whether water, hydrogen-bearing species and other volatiles are present and in what proportions. On the Moon, the main reason to build such an instrument is the search for water ice in permanently shadowed regions near the poles, where ice could be a resource for future human missions. Flown instruments in this broad class exist, but they are few and their results are limited. The Apollo 17 Lunar Atmospheric Composition Experiment (LACE) measured the tenuous lunar atmosphere rather than regolith volatiles. The LADEE Neutral Mass Spectrometer (NMS) orbited the Moon and measured the exosphere. The PRIME-1 Mass Spectrometer Observing Lunar Operations (MSOLO) was flown on the Intuitive Machines IM-2 Athena lander in 2025, but the lander ended on its side, and the instrument operated for about ten hours. The Chang'e-7 mission, planned for 2026, carries volatile instruments, but its launch status must be checked before use.",
+      "description": "A volatile mass spectrometer is a mass spectrometer designed to detect and quantify volatile molecules. Its sequence is the same in most designs. Gas molecules or atoms are admitted through an inlet and ionised, usually by electron impact. The ions are then separated by mass-to-charge ratio, most commonly in a quadrupole (four parallel rods carrying radio-frequency and direct-current voltages) or in a magnetic sector. A detector counts the ions that reach it. A scan across a range of masses produces a spectrum that can be matched to known molecules. Two broad architectures are relevant. Ambient-gas (neutral-gas) instruments sample the gas above the surface or in orbit; the Apollo 17 LACE and the LADEE NMS belong to this group and measure what is already in the exosphere, which is very thin. Sample-analysis instruments receive material that has been collected and heated, so that volatiles are driven off and passed into the spectrometer. PRIME-1 MSOLO, which was paired with the TRIDENT drill, was designed for this approach. The Chang'e-7 hopper's water-molecule analyser and the rover's in-situ volatiles measurement system are also described as sample-analysis systems in public descriptions.",
+      "scientific_purpose_and_applications": "The main scientific purposes are: detecting water and other volatiles in lunar soil, especially in permanently shadowed regions where ice may survive; measuring isotope ratios of hydrogen, nitrogen and other elements, which can help indicate where volatiles came from but require careful calibration; characterising the exosphere, including species such as helium, neon and argon and how their abundance varies over the lunar day; and supporting resource assessment, since knowing how much water is present, and at what depth, is necessary before any in-situ resource utilisation can be planned. The Planetary Society describes the Chang'e-7 hopper's water-molecule analyser as intended to detect water ice, methane and other volatiles using material that the hopper drills and extracts. This is a mission description, not a published measurement.",
+      "operating_principle": "Most volatile mass spectrometers use one of two mass-separation methods. A quadrupole mass filter has ions travel along the axis of four rods; a combination of radio-frequency and direct-current voltages allows only ions of one chosen mass-to-charge ratio to pass stably to the detector, and scanning the voltages sweeps through a range of masses. The LADEE NMS, which the NMSU archive describes as a highly sensitive quadrupole mass spectrometer, is an example of this approach. A magnetic sector deflects ions with a magnetic field, and the amount of deflection depends on mass and charge. Secondary descriptions classify the Apollo 17 LACE this way, but the fetched primary abstract does not state the analyser type, so this classification is unconfirmed in this article. For sample-analysis instruments, the material is heated in a controlled way so that different volatiles are released at different temperatures. The timing and sequence of releases can help identify both the molecules and the minerals that held them. This heating-and-release approach is the basis of the sample-analysis architecture used by PRIME-1 and the Chang'e-7 rover and hopper systems.",
+      "scientific_importance": "The importance of volatile measurements is closely tied to the question of lunar water. Remote sensing has detected hydrogen and hydroxyl signatures at the Moon's poles, but such signatures cannot by themselves identify the form or abundance of the material. Direct in-situ measurement can establish the species present and their abundance. The LADEE NMS was designed to measure the composition and variability of the lunar exosphere. The 2012 calibration paper describes a three-month science phase with orbital passes at or below 50 km, including repeated sampling near the sunrise terminator, where density is expected to be highest for some thermally released species. Search summaries also report that the NMS detected exospheric helium, argon and neon in its first months in orbit; those summaries were not verified against the primary instrument paper for this article. The Apollo 17 LACE, activated on 27 December 1972, was part of the Apollo Lunar Surface Experiments Package. Its primary report, which appears in NASA SP-330, is an early in-situ atmospheric measurement at the Moon.",
+      "physical_specifications": {
+        "note": "There is no single universal specification for a volatile mass spectrometer. Instruments differ greatly in analyser type, inlet design, sensitivity and mass range. The values below are tied to named instruments. Where a value could not be verified from a fetched primary source in this run, it is recorded as null rather than estimated.",
+        "examples": [
+          {
+            "name": "Apollo 17 Lunar Atmospheric Composition Experiment (LACE)",
+            "type": "Historical lunar atmospheric mass spectrometer (flown)",
+            "status": "Flown on Apollo 17, December 1972 to 1973.",
+            "instrument_type": "Described in the NASA abstract as a 'miniature mass spectrometer'. Secondary sources describe a magnetic-sector analyser; not confirmed in this article.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "deployment": "Installed in the Taurus-Littrow valley with its entrance aperture facing upward, to measure the downward flux of gases at the surface.",
+            "operating_pattern": "Activated about 50 hours after sunset. Operation paused during the lunar day because of high background gas levels at sunrise and resumed near each sunset. This cycle repeated for the second and third lunations.",
+            "reported_findings": "Search summaries report detection of helium, neon and argon, with an argon predawn enhancement, and a high-voltage fault that ended operation in October 1973. The primary report was not read in full, so these findings are unverified here.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19740010334"
+            ],
+            "images": []
+          },
+          {
+            "name": "LADEE Neutral Mass Spectrometer (NMS)",
+            "type": "Orbital exosphere mass spectrometer (flown)",
+            "status": "Flown on the LADEE orbiter. The NMSU archive lists the NMS as certified.",
+            "instrument_type": "Quadrupole mass spectrometer, described by the archive as a 'highly sensitivity quadrupole mass spectrometer'.",
+            "mass_range": "Archive gives a mass range 'to 150 Dalton' with 'unit mass resolution'.",
+            "operating_modes": "Open-source mode (tilt or survey mode and ion mode) and closed-source 'ram' mode. An adaptive scan mode allowed users to search bands of mass for unexpected species.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://atmos.nmsu.edu/data_and_services/atmospheres_data/LADEE/nms.html",
+              "https://ntrs.nasa.gov/citations/20120016981"
+            ],
+            "images": []
+          },
+          {
+            "name": "PRIME-1 Mass Spectrometer Observing Lunar Operations (MSOLO)",
+            "type": "Surface sample-analysis mass spectrometer (flown; short operation)",
+            "status": "Flown on the Intuitive Machines IM-2 Athena lander, which landed on 6 March 2025. Operation lasted about ten hours.",
+            "pairing": "Designed to analyse material brought up by the TRIDENT drill, which was developed separately by Honeybee Robotics.",
+            "testing": "A vibration test simulating launch loads and a mass-properties test on the flight unit were completed at Kennedy Space Center. The mass-properties test concluded on 22 November 2022.",
+            "instrument_type": "Search summaries describe a commercial off-the-shelf quadrupole mass spectrometer modified for spaceflight. Not verified against a fetched primary page in this run.",
+            "mass_range_amu": null,
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "operational_result": "NASA reports that TRIDENT and MSOLO started up and performed as intended after landing. A NASA presentation (Captain et al., April 2026) reports that surface sensitivity was lower than sensitivity in transit, possibly because of dust, and that the lander vented its propellant tanks while MSOLO was operating. The presentation PDF was not readable in this run, so these points come from a search summary of it.",
+            "source_urls": [
+              "https://www.nasa.gov/missions/artemis/clps/mass-spectrometer-destined-for-the-moon-finishes-testing-at-kennedy",
+              "https://www.nasa.gov/missions/artemis/clps/nasas-lunar-drill-technology-passes-tests-on-the-moon/",
+              "https://ntrs.nasa.gov/citations/20260003150"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-7 volatile systems",
+            "type": "Planned lunar south pole sample-analysis systems (not yet confirmed as flown)",
+            "status": "Planned. The Planetary Society page says the launch is planned for the second half of 2026. The launch has not been confirmed for this article.",
+            "components": "The rover carries an in-situ volatiles measurement system, which is named but not described in detail. The hopper carries a water-molecule analyser designed to detect water ice, methane and other volatiles.",
+            "instrument_type_and_performance": "Search summaries describe a heated-sample system with a quadrupole mass spectrometer as its main analyser, and a claimed nitrogen-isotope accuracy of better than 5 per cent in ground tests. The underlying 2024 Aerospace paper was not readable in this run, so these figures are unverified.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://www.planetary.org/space-missions/change-7",
+              "https://www.mdpi.com/2226-4310/10/7/657"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No single size applies to volatile mass spectrometers. The values available for the examples above are either absent from the fetched sources or unverified, so no dimensions are given. Dimensions depend on analyser design, inlet and vacuum-system requirements, and the integration constraints of the host spacecraft or rover.",
+        "mass_and_weight": "Mass values are null for every example in this run, because no primary mass value was verified. Mass determines launch, lander and deployment requirements, so this is an open evidence gap rather than an estimate. Do not infer mass from the presence of a flown instrument.",
+        "power_requirements": "Power values are null for every example in this run. Power needs depend on the heating and sampling system, the vacuum pumps and the operating schedule; they should be taken from the relevant mission specification rather than estimated."
+      },
+      "environmental_and_operational_requirements": "A volatile mass spectrometer must operate in vacuum, across large temperature swings, and close to a surface that may release contaminating gases. The Apollo 17 LACE was paused during the lunar day because sunrise produced high background gas levels, so any ambient-gas instrument needs a plan for operation at different solar illumination conditions. Contamination from the lander is a further concern. NASA's 2025 report on IM-2 states that the gases MSOLO detected were believed from the initial data to be 'anthropogenic, or human in origin'. The NASA presentation summary also mentions venting of lander propellant tanks while MSOLO was operating, so a lander's own exhaust or outgassing can compromise measurements, and the inlet and operating sequence must account for it. The presentation summary reports reduced surface sensitivity, possibly because of dust, which makes inlet protection and cleaning practical design concerns; this is not confirmed beyond the summary. Sample-analysis instruments need reliable heating and transfer of material into the spectrometer, which depends on the drill or scoop, the oven or heater, and the vacuum system. A mission must also allow enough power and operating time for sampling, heating, analysis and data return. The IM-2 mission planned about 10 days of surface operations but achieved closer to 10 hours.",
+      "limitations": "A mass spectrometer identifies molecules by mass, but it does not always distinguish between isomers or compounds with the same mass, so additional measurements may be needed for confirmation. Ambient-gas instruments measure the exosphere, which is very thin, and cannot by themselves determine the water content of regolith. Sample-analysis instruments depend on the sampling system working correctly; PRIME-1 did not reach its planned sampling and analysis phase before its lander's power ran out. Isotope measurements need careful calibration against standards, and claims of isotope accuracy should be tied to the source and the test conditions. Several performance statements in this article come from secondary search summaries or from presentations that were not readable in full, and should be treated as provisional until primary documents are checked.",
+      "transportation_and_deployment": {
+        "overview": "Volatile mass spectrometers have flown or been proposed as surface payloads (PRIME-1 MSOLO on the IM-2 Athena lander; Chang'e-7 rover and hopper systems) and as orbiter payloads (LADEE NMS). The sources read do not support a general statement about how any one instrument class is delivered.",
+        "transportation_process": [
+          "PRIME-1 MSOLO was delivered as part of the PRIME-1 payload on the Intuitive Machines Nova-C lander, Athena. NASA's 2023 article states that both MSOLO and TRIDENT were to be mounted to the Nova-C lander, with a target on a ridge near Shackleton crater at the lunar south pole.",
+          "The lander touched down on 6 March 2025 but came to rest on its side in a crater, preventing its solar cells from recharging; the mission ended after a short operational period.",
+          "The instruments started and, according to NASA, performed well. Sampling by the drill did not take place before power was lost (from the NASA presentation summary).",
+          "Chang'e-7: the Planetary Society describes a hopper carrying a water-molecule analyser and a rover carrying an in-situ volatiles measurement system. The preferred landing area is the rim of Shackleton crater, with a stated landing accuracy target of better than 100 metres. Integration and interface details were not verified.",
+          "LADEE NMS flew on an orbiter; the 2012 calibration paper describes orbital passes at or below 50 km and a science phase of about three months. Spacecraft integration and orbit insertion are not covered by the sources read."
+        ],
+        "deployment_methods": "PRIME-1: the TRIDENT drill was to bring regolith samples to MSOLO for analysis; the drill's actuators performed their planned motions after landing, according to NASA. Chang'e-7: the hopper drills and extracts material for its analyser, and the rover carries an in-situ volatiles system; deployment details beyond this outline were not verified. LADEE NMS: an ambient-gas instrument on an orbiter, operating through orbital passes.",
+        "historical_examples": "Apollo 17 LACE (1972 to 1973) was installed as part of ALSEP and deployed with its aperture facing upward. PRIME-1 MSOLO was flown on IM-2 Athena in 2025 and operated for about ten hours. LADEE NMS operated in lunar orbit.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft has been verified in this run. A future volatile mass spectrometer's compatibility should be assessed using its mass, dimensions, mounting, power, thermal and data requirements, together with the host's verified interface specifications. Do not assign an instrument to a specific lander on the basis of this article.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 17 LACE was among the first in-situ measurements of the lunar atmosphere, and its results are part of the Apollo 17 Preliminary Science Report (NASA SP-330). The LADEE NMS provided a more sensitive orbital survey of the exosphere in the 2010s. PRIME-1 MSOLO was intended to be the first in-situ resource demonstration on the Moon for water (NASA 2023 description). Although its surface operations were short, NASA's presentation summary describes the mission's main result as validating a commercial off-the-shelf mass spectrometer that can run in space and on the surface.",
+      "limitations_and_uncertainties": "No peer-reviewed composition results for MSOLO were found in this run; any composition claim should be tied to a published MSOLO science paper. The Apollo 17 LACE analyser type and most performance values are unverified here because the primary report was not read in full. The LADEE NMS fetched pages give the quadrupole type, mass range and resolution, but do not give mass, power or the operating period, and heritage details were searched for but not confirmed. The Chang'e-7 launch status must be confirmed: search snippets suggest a launch date in August 2026, but no confirmation was found, and the quadrupole and isotope-accuracy claims come from search summaries. No universal specification exists, and mass, dimensions and power are null for all examples in this run because no primary value was verified.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "id": "R1",
+          "title": "NASA's Lunar Drill Technology Passes Tests on the Moon",
+          "publisher": "NASA",
+          "publication_date": "2025-04-29",
+          "url": "https://www.nasa.gov/missions/artemis/clps/nasas-lunar-drill-technology-passes-tests-on-the-moon/"
+        },
+        {
+          "id": "R2",
+          "title": "Mass Spectrometer Destined for the Moon Finishes Testing at Kennedy",
+          "publisher": "NASA",
+          "publication_date": "2023-02-22",
+          "url": "https://www.nasa.gov/missions/artemis/clps/mass-spectrometer-destined-for-the-moon-finishes-testing-at-kennedy"
+        },
+        {
+          "id": "R3",
+          "title": "Prime-1: MSolo Overview and Results (presentation, Lunar Surface Science Workshop)",
+          "publisher": "NASA NTRS",
+          "authors": "Captain, J., et al.",
+          "publication_date": "2026-04",
+          "url": "https://ntrs.nasa.gov/citations/20260003150",
+          "notes": "PDF not read in full in this run; results points are from a search summary of the presentation."
+        },
+        {
+          "id": "R4",
+          "title": "Lunar atmospheric composition experiment (Apollo 17 Preliminary Science Report, NASA SP-330)",
+          "publisher": "NASA NTRS",
+          "authors": "Hoffman, J. H.; Hodges, R. R., Jr.; Johnson, F. S.; Evans, D. E.",
+          "publication_date": "1973",
+          "url": "https://ntrs.nasa.gov/citations/19740010334"
+        },
+        {
+          "id": "R5",
+          "title": "Calibration of the Neutral Mass Spectrometer for the Lunar Atmosphere and Dust Environment Explorer",
+          "publisher": "NASA NTRS (43rd Lunar and Planetary Science Conference)",
+          "authors": "Mahaffy, P. R., et al.",
+          "publication_date": "2012-03-20",
+          "url": "https://ntrs.nasa.gov/citations/20120016981"
+        },
+        {
+          "id": "R6",
+          "title": "LADEE Neutral Mass Spectrometer (NMS)",
+          "publisher": "NMSU Atmospheres Data Archive",
+          "url": "https://atmos.nmsu.edu/data_and_services/atmospheres_data/LADEE/nms.html"
+        },
+        {
+          "id": "R7",
+          "title": "Chang'e-7: China's water-hunting lunar south pole mission",
+          "publisher": "The Planetary Society",
+          "url": "https://www.planetary.org/space-missions/change-7"
+        },
+        {
+          "id": "R8",
+          "title": "Chang'e-7 lunar soil volatile analyser (Aerospace journal, 2024)",
+          "publisher": "MDPI Aerospace",
+          "publication_date": "2024",
+          "url": "https://www.mdpi.com/2226-4310/10/7/657",
+          "notes": "Identified in search results; not read in full in this run."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples": "Per-example images arrays (currently empty)",
+      "transportation_and_deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image URLs were verified for this payload in this run, so no image objects are included."
+  },
+  "data_quality_notes": [
+    "v2 rerun, 2026-11-13. The v1 article and JSON are unchanged.",
+    "No direct image asset URL was verified for this payload in this run. The image registry is empty and image_urls_added is false.",
+    "Mass, dimensions and power are null for every instrument example because no primary value was verified from a fetched source.",
+    "The PRIME-1 MSOLO operating results and lessons learned come from a search summary of the April 2026 NASA presentation (NTRS 20260003150). The PDF was not readable in this run.",
+    "The Apollo 17 LACE instrument type (magnetic sector versus miniature mass spectrometer) and the LACE findings are unverified against the primary report in this run.",
+    "The LADEE NMS quadrupole type, mass range (to 150 Dalton) and unit mass resolution come from the NMSU archive page. Mass, power and operating period were not stated in the fetched pages.",
+    "The Chang'e-7 launch status is unconfirmed. The Planetary Society page says the launch is planned for the second half of 2026. Search snippets suggest August 2026, but this is not confirmed.",
+    "The Chang'e-7 quadrupole analyser and the 5 per cent nitrogen-isotope accuracy claim come from search summaries of an Aerospace 2024 paper that was not readable in this run (HTTP 403).",
+    "The Luna-Resurs gas chromatograph neutral gas mass spectrometer surfaced in search results but was not included as an example, because its flight status was not verified."
+  ]
+}

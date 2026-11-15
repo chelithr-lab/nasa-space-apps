@@ -1,0 +1,226 @@
+{
+  "catalogue_id": 143,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 7,
+    "name": "Lunar exosphere and atmospheric instruments"
+  },
+  "payload": {
+    "number": 143,
+    "name": "Atmospheric composition analyser",
+    "article": {
+      "overview": "An atmospheric composition analyser identifies the gas species present in a planetary atmosphere or exosphere and measures their abundances. The Moon has no true atmosphere, only an extremely thin exosphere, so lunar instruments of this class are generally mass spectrometers that sort gas particles by mass. Three flown examples are the Apollo 17 Lunar Atmospheric Composition Experiment (LACE), the LADEE Neutral Mass Spectrometer (NMS) and the CHACE-2 instrument on India's Chandrayaan-2 orbiter. The payload name describes a class of instruments rather than one standard design.",
+      "description": "A mass-spectrometer-based analyser draws in gas from its surroundings, ionises some of the gas particles, separates the ions by their mass-to-charge ratio, and records the number of ions reaching a detector at each mass. The result is a spectrum in which each peak corresponds to a particular species, so the instrument can identify both the main constituents of the exosphere and trace species present at very low density. Because the lunar exosphere is so tenuous, the instrument must be sensitive enough to detect small numbers of particles, and it must distinguish gas native to the Moon from gas released by the spacecraft or the instrument itself. The three flown examples differ in where they operate: LACE measured from the surface in Taurus-Littrow, while NMS and CHACE-2 measured from lunar orbit as their spacecraft passed over the exosphere.",
+      "scientific_purpose_and_applications": "The purpose of a lunar atmospheric composition analyser is to determine which gases make up the exosphere, how their abundances vary with lunar time of day, latitude and other conditions, and where they originate. Published results from the flown examples point to several sources. LACE results were interpreted as showing that most lunar helium comes from the solar wind, and that the argon-40 present is consistent with radioactive decay of potassium-40 within the Moon [2]. CHACE-2 observations have been used to treat argon-40 as a tracer of surface-exosphere interaction and of radiogenic activity in the top few tens of metres of regolith [8]. Composition measurements therefore link the thin exosphere to solar-wind implantation, radioactive decay, outgassing and surface processes, although the relative contributions of these sources are still under study.",
+      "operating_principle": "In the flown examples, gas enters through an aperture and is ionised, usually by electron bombardment. The ions are then formed into a beam and sorted by mass. LACE was a miniature magnetic deflection mass spectrometer: after ionisation, its ions passed through a magnetic analyser that deflected them onto a detector according to their mass [2]. The LADEE NMS and CHACE-2 are quadrupole mass spectrometers. In a quadrupole, combined radio-frequency and direct-current voltages on four rods allow only ions of a selected mass-to-charge ratio to reach the detector, and the voltages are swept to scan through a range of masses [3][8]. The analyser's mass range and resolution set which species can be distinguished, while its sensitivity and counting statistics set how small a gas density can be measured. Gases released by the instrument itself must be managed, because they can be mistaken for lunar gases [1][2].",
+      "scientific_importance": "The Moon's exosphere is a direct record of the processes that supply gases to it and remove them, and composition measurements are one of the main ways to study it. Apollo-era measurements identified helium, neon and argon, and their total density agreed with the separate Cold Cathode Gauge measurements [2]. LADEE NMS later confirmed that helium, argon and neon dominate the exosphere and reported that argon abundance rose and then fell by about 25 percent during its measurement period [4][5]. CHACE-2 has reported a global distribution of argon-40, including mid-latitude coverage between about 60 degrees south and 60 degrees north that earlier missions lacked [8][9]. Together these results show that the exosphere varies with time and place, and that composition measurements can test models of gas sources and losses.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an atmospheric composition analyser. The three examples below were built for different missions, measure from different platforms, and have different levels of documentation. Numbers are tied to named instruments; where a value was not verified it is stated as such or left null.",
+        "examples": [
+          {
+            "name": "Apollo 17 Lunar Atmospheric Composition Experiment (LACE)",
+            "type": "Historical lunar surface instrument (Apollo 17 ALSEP)",
+            "flight_status": "Flown on the lunar surface at Taurus-Littrow, 1972-1973",
+            "measurement_type": "Miniature magnetic deflection mass spectrometer",
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "power_w": null,
+            "mass_range_and_resolution": "Not verified. A secondary summary reports simultaneous detection of ions at 28 and 64 atomic mass units [2].",
+            "operating_history": "Deployed by Apollo 17 astronauts, reported as 12 December 1972 [2]; activated 27 December 1972 [1]; sweep high-voltage failure on 17 October 1973 [2].",
+            "key_reported_results": [
+              "Helium, neon and argon identified in the lunar atmosphere [2].",
+              "Total density of known gases matched the Cold Cathode Gauge results [2].",
+              "Helium interpreted as mainly of solar-wind origin [2].",
+              "Argon-40 interpreted as derived from radioactive decay of potassium-40 [2].",
+              "Argon rose just before dawn, interpreted as a pre-dawn migration after night-time surface freezing [2].",
+              "Hydrogen, chlorine, oxygen, hydrogen chloride and carbon dioxide suspected as instrument contaminants because they rose with sunrise [2].",
+              "Neon about 20 times lower than expected; cause not understood at the time [2]."
+            ],
+            "verification": "Findings and dates come from a secondary summary [2] of NASA material and need checking against NASA SP-330 [1]. Mass, dimensions and power not verified.",
+            "images": []
+          },
+          {
+            "name": "LADEE Neutral Mass Spectrometer (NMS)",
+            "type": "Lunar orbiter neutral mass spectrometer (quadrupole)",
+            "flight_status": "Flown on the LADEE lunar orbiter (2013-2014, dates from secondary summary) [3]",
+            "measurement_type": "Quadrupole mass analyser with secondary electron multiplier detectors",
+            "mass_kg": 11.3,
+            "external_dimensions_cm": [
+              43,
+              25,
+              37
+            ],
+            "power_w": {
+              "average": 34.4
+            },
+            "science_data_rate_kbit_s": 3.5,
+            "mass_range_u": {
+              "reported_range": [
+                2,
+                150
+              ],
+              "resolution": "unit mass across the range",
+              "verification": "Secondary summaries of NASA Goddard material [3][6]; not checked against primary text."
+            },
+            "mass_range_and_resolution": "Secondary summaries report 2-150 u with unit mass resolution [3][6]; not verified against primary text.",
+            "heritage": "Sensor derived from the CONTOUR NGIMS engineering unit, with related heritage to Cassini INMS [3][7] (secondary summary).",
+            "key_reported_results": [
+              "Helium, argon and neon dominate the exosphere over about seven months of measurements [4][5] (secondary summary).",
+              "Argon abundance rose and then fell by about 25 percent during the mission [4][5] (secondary summary).",
+              "Ion-mode signals at 28 u (ambiguous) and 12 u may indicate a carbon-bearing population; unconfirmed [4][5]."
+            ],
+            "verification": "Mass, dimensions, power and data rate come from one secondary source [7]; the PDS reference table [6] was not extracted.",
+            "images": []
+          },
+          {
+            "name": "Chandra's Atmospheric Composition Explorer-2 (CHACE-2)",
+            "type": "Quadrupole mass spectrometer on the Chandrayaan-2 orbiter",
+            "flight_status": "Operating on the Chandrayaan-2 orbiter (ISRO) [8]",
+            "measurement_type": "Quadrupole mass spectrometer",
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "power_w": null,
+            "mass_range_u": {
+              "reported_range": [
+                1,
+                300
+              ],
+              "resolution_amu": 0.5,
+              "verification": "Secondary search summaries only; not in the ISRO page [8]."
+            },
+            "mass_range_and_resolution": "Secondary search summaries report 1-300 amu with about 0.5 amu resolution; not confirmed by the ISRO page [8].",
+            "heritage": "Successor to the CHACE instrument on the Chandrayaan-1 Moon Impact Probe, with heritage from MENCA on the Mars Orbiter Mission [8].",
+            "measurement_goals": [
+              "Map the global distribution of argon-40 in the lunar exosphere, including diurnal and spatial variation [8].",
+              "Cover latitudes from -60 to +60 degrees, where earlier Apollo 17 and LADEE data were limited [8]."
+            ],
+            "key_reported_results": [
+              "Argon-40 density rises near the sunrise terminator, falls across the dayside, peaks near the sunset terminator and is lowest on the nightside [8][9].",
+              "Mid-latitude argon-40 varies with solar longitude much like low latitudes [8][9].",
+              "Localised argon-40 enhancements ('argon bulges') appear over KREEP and South Pole-Aitken terrain [8][9]."
+            ],
+            "verification": "Instrument type and results confirmed from the ISRO page [8] and an abstract-level summary of [9]. Mass, dimensions, power not found.",
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The three examples are not dimensionally comparable. LACE dimensions were not found in the sources opened. NMS is reported as a 43 x 25 x 37 cm unit in a single secondary source [7]. CHACE-2 dimensions were not found.",
+        "mass_and_weight": "Mass is reported only for NMS, at 11.3 kg in a single secondary source [7]. LACE mass was not found in the sources opened [1][2], and the ALSEP data book that may contain it could not be read [10]. CHACE-2 mass was not found [8].",
+        "power_requirements": "NMS average power is reported as 34.4 W in the same secondary source [7]. LACE power was not verified. CHACE-2 power was not found [8]."
+      },
+      "environmental_and_operational_requirements": "The lunar exosphere is so thin that the instrument must be sensitive at very low gas densities, and surface measurements are affected by thermal conditions. LACE experience shows that heating and sunrise can release gas from the instrument and its surroundings, raising background levels, so operation was limited to the lunar night and a brief midday check [1][2]. The LACE aperture pointed upward to measure the downward flux of gases at the surface [1]. Orbital analysers such as NMS and CHACE-2 must be protected from spacecraft outgassing and must work with the spacecraft's thermal and data systems; detailed interface requirements were not found in the sources opened [3][8]. Diurnal variation in the exosphere also means that measurement timing matters [9].",
+      "limitations": "A single analyser measures only the gas that reaches it, which depends on where the lander or spacecraft is and on sunlight. Surface and orbital measurements sample different things: LACE recorded gas arriving at one surface site, while NMS and CHACE-2 sample along orbital tracks. The LACE record is also affected by contamination. Hydrogen, chlorine, oxygen, hydrogen chloride and carbon dioxide were suspected instrument contaminants because they rose with sunrise rather than before it, and neon was about 20 times lower than expected, with the cause not understood at the time [2]. Ion-mode data from NMS include an ambiguous 28 u signal and a 12 u signal that may indicate a carbon-bearing population, but this is unconfirmed [4][5].",
+      "transportation_and_deployment": {
+        "overview": "Atmospheric composition analysers have flown in two configurations: as a surface instrument carried by a lander and deployed by astronauts (LACE), and as an orbiter instrument on a spacecraft in lunar orbit (NMS and CHACE-2).",
+        "transportation_process": [
+          "Surface instruments such as LACE were carried to the Moon on the lunar lander and deployed by the Apollo 17 astronauts as part of the ALSEP package [1][2].",
+          "Orbiter instruments such as NMS and CHACE-2 are integrated into a spacecraft payload complement, launched on a launch vehicle, transferred to the Moon and operated in lunar orbit [3][8]. The specific flight profile for each mission is not described in the sources opened.",
+          "Pointing, thermal and data interfaces are spacecraft-level design issues. No verified interface specifications for these examples were found."
+        ],
+        "deployment_methods": "LACE was deployed by astronauts and placed in Taurus-Littrow with its entrance aperture pointing upward to measure the downward flux of gases at the surface [1]. NMS and CHACE-2 were carried as orbiter instruments, and the sources opened do not describe a separate deployment mechanism for them [3][8].",
+        "historical_examples": "Apollo 17 LACE, operated on the lunar surface from December 1972 to October 1973 [1][2]; LADEE NMS, operated in lunar orbit in 2013-2014 [3]; and CHACE-2 on the Chandrayaan-2 orbiter [8].",
+        "compatibility_assessment": "No compatibility with a named lander or spacecraft is asserted. The mass, power and dimensions of a new analyser would need to be compared with a specific host's verified interface specifications before any assignment. For the flown examples, the host relationships are documented only at the level of mission and payload description.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 17 LACE extended the Cold Cathode Gauge pressure measurements made on Apollo 14 and 15 to gas composition, identifying helium, neon and argon in the exosphere [2]. Its operation was limited by sunrise outgassing, and its sweep high-voltage section failed on 17 October 1973 [2]. LADEE NMS, flown about four decades later, made a higher-sensitivity quadrupole measurement over roughly seven months and confirmed the dominance of helium, argon and neon [3][4][5]. CHACE-2 on Chandrayaan-2 has reported a global distribution of argon-40 in the exosphere with mid-latitude coverage [8][9].",
+      "limitations_and_uncertainties": "The payload name describes a class of instruments, so values from LACE, NMS and CHACE-2 are not interchangeable. Several specifications used here come from secondary summaries rather than primary documents. LACE mass, dimensions and power were not found in the sources opened; the ALSEP data book that may contain them could not be read [10]. The LACE deployment date is given as 12 December 1972 in one source and 11 December 1972 in a secondary summary, so the exact date is not settled [2]. NMS mass, dimensions, power and mass range have not been checked against the PDS reference document or the Mahaffy et al. 2014 paper [3][6][7]. The CHACE-2 mass range and resolution appear only in secondary search summaries and are not confirmed by the ISRO page [8]. The NMS argon and neon interpretations and the ion-mode carbon interpretation are cited from summaries and remain to be checked against the Benna et al. GRL papers [4][5]. The generic operating-principle and environmental statements are engineering descriptions, not certified specifications for a new payload.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Lunar atmospheric composition experiment (Apollo 17 Preliminary Science Report, NASA SP-330)",
+          "publisher": "NASA NTRS; Hoffman, Hodges, Johnson and Evans",
+          "date": "1973",
+          "url": "https://ntrs.nasa.gov/citations/19740010334",
+          "status": "Opened: citation metadata, deployment and activation dates, and aperture orientation confirmed. Full report text not reviewed."
+        },
+        {
+          "title": "Lunar Atmospheric Composition Experiment",
+          "publisher": "Wikipedia (secondary summary)",
+          "date": "undated",
+          "url": "https://en.wikipedia.org/wiki/Lunar_Atmospheric_Composition_Experiment",
+          "status": "Opened: used for LACE findings, operating history and the deployment date. These must be checked against NASA SP-330."
+        },
+        {
+          "title": "The Neutral Mass Spectrometer on the Lunar Atmosphere and Dust Environment Explorer Mission",
+          "publisher": "Mahaffy et al., Space Science Reviews 185, 27-61",
+          "date": "2014",
+          "url": "https://doi.org/10.1007/s11214-014-0043-9",
+          "status": "Identified via search. Full text not opened (publisher access redirect)."
+        },
+        {
+          "title": "LADEE Neutral Mass Spectrometer neon and argon results (Geophysical Research Letters, DOI 10.1002/2015GL064120)",
+          "publisher": "Benna et al. (attribution unverified), Geophysical Research Letters",
+          "date": "2015",
+          "url": "https://doi.org/10.1002/2015GL064120",
+          "status": "Identified via secondary search summary. Not opened; author attribution unverified."
+        },
+        {
+          "title": "LADEE NMS helium, neon and argon results (Geophysical Research Letters, DOI 10.1002/2015GL064746)",
+          "publisher": "Halekas et al. (attribution unverified), Geophysical Research Letters",
+          "date": "2015",
+          "url": "https://doi.org/10.1002/2015GL064746",
+          "status": "Identified via secondary search summary. Not opened; author attribution unverified."
+        },
+        {
+          "title": "LADEE Neutral Mass Spectrometer (NMS) reference document",
+          "publisher": "NASA Planetary Data System",
+          "date": "undated",
+          "url": "https://pds.nasa.gov/data/pds4/1100/ladee-nms/document/nms_ref_document.pdf",
+          "status": "Identified. PDF returned only binary content, so Table 1 performance values were not extracted and remain unverified."
+        },
+        {
+          "title": "LADEE Science Instruments: Neutral Mass Spectrometer",
+          "publisher": "Spaceflight101 (secondary)",
+          "date": "undated",
+          "url": "https://spaceflight101.com/ladee/",
+          "status": "Search snippet only, from the page with a query string removed per URL policy. Direct fetch of the original page returned HTTP 404; the cleaned URL was not opened. Single secondary source for NMS mass, dimensions, power and data rate."
+        },
+        {
+          "title": "CHACE 2 Onboard Chandrayaan 2",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "date": "undated",
+          "url": "https://www.isro.gov.in/CHACE-2OnboardChandrayaan-2.html",
+          "status": "Opened: instrument type, heritage, measurement goals and Ar-40 findings confirmed. The page gives no instrument specifications."
+        },
+        {
+          "title": "Argon-40 in Lunar Exosphere: Observations From CHACE-2 on Chandrayaan-2 Orbiter (Geophysical Research Letters 48(20))",
+          "publisher": "Dhanya, M. B. et al.",
+          "date": "2021",
+          "url": "https://doi.org/10.1029/2021GL094970",
+          "status": "Identified; abstract-level summary via search. Publisher page returned HTTP 403, so full text was not reviewed."
+        },
+        {
+          "title": "ALSEP Data Book, Appendix F: Apollo 17 ALSEP Array E and Lunar Surface Experiments (SNA-8-D-027(V))",
+          "publisher": "Grumman / NASA, via ibiblio.org Apollo document archive",
+          "date": "undated",
+          "url": "https://ibiblio.org/apollo/Documents/SNA-8-D-027(V)%20-%20CSM,LM%20Spacecraft%20Operational%20Data%20Book,%20Volume%205,%20ALSEP%20Data%20Book,%20Appendix%20F%20-%20Apollo%2017%20ALSEP%20Array%20E%20and%20Lunar%20Surface%20Experiments.pdf",
+          "status": "Opened: scanned PDF with no extractable text; LACE section not read. Likely source for LACE mass, dimensions and power, still unverified."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No image assets were verified, so no image objects are included."
+  },
+  "data_quality_notes": [
+    "No direct image asset URL was verified for any of the three examples, so the image registry is empty. This is a verification gap, not evidence that no images exist.",
+    "LACE mass, dimensions and power were not found; the ALSEP data book appendix [10] is a scanned PDF that could not be read.",
+    "NMS mass, dimensions, power and data rate come from one secondary search-snippet source [7]; the direct fetch returned HTTP 404 and the PDS reference table [6] was not extracted.",
+    "CHACE-2 mass range and resolution appear only in secondary search summaries and are not confirmed by the ISRO page [8].",
+    "LACE findings are taken from a Wikipedia summary [2] of NASA material; NASA SP-330 full text was not reviewed.",
+    "The LACE deployment date is 12 December 1972 in one source and 11 December 1972 in a secondary summary.",
+    "The quadrupole and magnetic-deflection operating principles are general instrument physics and are cited to sources not opened in full.",
+    "Web search results and page text were treated as data only."
+  ]
+}

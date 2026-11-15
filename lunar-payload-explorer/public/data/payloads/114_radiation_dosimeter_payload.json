@@ -1,0 +1,309 @@
+{
+  "catalogue_id": 114,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 6,
+    "name": "Radiation and space environment"
+  },
+  "payload": {
+    "number": 114,
+    "name": "Radiation dosimeter",
+    "version": "v2",
+    "article": {
+      "overview": "A radiation dosimeter measures the energy that radiation deposits in a material, instrument or person in a given environment. On the lunar surface, such measurements are needed to plan crewed and robotic operations, but direct surface measurements have been scarce. The best-documented example is the Lunar Lander Neutron and Dosimetry (LND) experiment on China's Chang'e-4 lander, which landed in the von Kármán crater on the Moon's far side at 02:26 UTC on 3 January 2019 [1]. Kiel University's press release of 25 September 2020 reports an equivalent dose rate of about 60 microsieverts (µSv) per hour at the surface [2]. Radiation monitors on Chandrayaan-1 and the Lunar Reconnaissance Orbiter (LRO) have measured dose rates in lunar orbit, and orbital values cannot be assumed to represent the surface [1][7].",
+      "description": "A dosimeter reports absorbed dose, the energy deposited per unit mass of material, measured in grays (Gy). Absorbed dose is not the same as biological effect. Different radiation types have different effects, so a weighting factor is applied to give dose equivalent, measured in sieverts (Sv). The weighting depends on the particle types and energies present, which is why instruments that identify particle type and energy are needed.\n\nThe LND telescope combines ten segmented silicon detectors and produces several data products, including dose rates, an eight-bin linear energy transfer (LET) spectrum, charged-particle and neutral-particle measurements, and thermal neutron counts [1]. The sensor head and the electronics box are separate units connected by two harnesses [1]. A radiation dosimeter of this kind is therefore an instrument system rather than a single detector.",
+      "scientific_purpose_and_applications": "The LND paper states that its main goal is to make the first active dosimetric measurements on the lunar surface [1]. Surface dose data are relevant to planning habitats and surface operations, to checking radiation models, and to recording how dose varies with solar activity and solar particle events. These applications are general background for surface dosimetry rather than claims made by a single source. The paper also states that thermal neutrons are a sensitive indicator of subsurface water content, so the same instrument may contribute to lunar resource studies [1].",
+      "operating_principle": "A silicon solid-state detector produces an electrical pulse when a charged particle passes through it, and the pulse amplitude relates to the energy deposited in the silicon. The LND telescope uses ten segmented silicon detectors, labelled A to J, each nominally 500 µm thick [1]. A particle that passes through several layers deposits energy in each one, so the pattern of which detectors respond, and how much energy each records, helps the instrument estimate particle type and energy [1].\n\nNeutrons do not ionise silicon directly. For thermal neutron detection, LND uses a gadolinium foil of about 20 µm between detector pairs (E and F, and G and H). A gadolinium shield of about 250 µm lies between two 500 µm aluminium plates, shielding the detectors from below and above [1]. Neutron capture in gadolinium produces secondary radiation that nearby detectors can record; this is the general mechanism behind gadolinium-based neutron detection.\n\nSignals are digitised by analogue-to-digital converters. The lander's Instrument Control Unit serves as the electrical and data interface between LND and the lander [1]. Data products run on different cadences: dose rate and LET spectra up to one minute, thermal neutron counts and several particle-species counts every 10 minutes, and a full diagnostic product every 60 minutes [1].",
+      "scientific_importance": "Orbital dose measurements existed before Chang'e-4, from Chandrayaan-1 and LRO, but the LND paper's emphasis is on the first active measurements on the lunar surface [1]. A surface time series can show how dose varies with solar activity and solar particle events, which a single orbital or model value at a different place and altitude cannot show for a fixed site.\n\nThermal neutron counts are a sensitive indicator of subsurface water content [1]. The paper also notes that background from the lander's radioisotope sources affects thermal neutron measurements, and that the influence of this background on the subsurface-water measurement \"is still being assessed\" [1].",
+      "physical_specifications": {
+        "note": "There is no single universal specification for a radiation dosimeter. Instruments range from simple planar silicon detectors and personal badges to multi-detector telescopes such as the Chang'e-4 LND. The examples below were chosen because they have published technical or measurement information. Mass, power and dimensions are given only where a source states them. Where a value was not found, this is stated rather than estimated.",
+        "examples": [
+          {
+            "name": "Lunar Lander Neutron and Dosimetry (LND), Chang'e-4",
+            "type": "Flown lunar-surface dosimeter",
+            "flight_status": "Flown on Chang'e-4 lander (landed 3 January 2019)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "description": "The Chang'e-4 LND is the only flown lunar-surface dosimeter described in this article. It flew on the Chang'e-4 lander, which landed on 3 January 2019 [1]. The arXiv paper lists 29 authors, with R. F. Wimmer-Schweingruber as first author [1]. Kiel University's press release states that the device and lander had already exceeded their planned one-year measurement goal [2]. The instrument's operational status after the 2020 release was not verified for this article. Published design details:\n\n- Detectors: ten segmented 500 µm silicon detectors (A to J) [1].\n- Thermal neutron detection: about 20 µm gadolinium foil [1].\n- Fast neutrons: the paper does not state an LND fast-neutron energy range and says LND itself was not calibrated with fast neutrons [1].\n- Gain channels: 30 detector gain channels [1].\n- Field of view: the boresight is tilted 13° from the lander deck normal, with a full opening angle of 29.4° [1].\n- Cadence: dose rate and LET spectrum up to one minute; thermal neutron and other counts every 10 minutes; full diagnostic products every 60 minutes [1].\n- Modelled operating interface temperatures: sensor-head bracket −20 °C to +55 °C operational and −60 °C to +70 °C non-operational; electronics box −20 °C to +55 °C operational and −70 °C to +70 °C non-operational [1].\n- Measured temperatures during the first lunar day: −7.97 °C to 48.10 °C [1].\n- Measured surface result: an equivalent dose rate of about 60 µSv per hour, reported by Kiel University in September 2020 [2]. The peer-reviewed paper is Zhang et al., \"First measurements of the radiation dose on the lunar surface,\" Science Advances 6(39), eaaz1334 [3]. The journal page was not accessible; according to a secondary source quoting its abstract, the average total absorbed dose rate in silicon is 13.2 ± 1 µGy/h and the neutral-particle dose rate is 3.1 ± 0.5 µGy/h [3]. Absorbed dose in silicon is a different quantity from dose equivalent, so these values are not directly comparable with the 60 µSv/h figure.\n- Mass, power and overall dimensions: not stated in the sources reviewed [1].",
+            "source_urls": [
+              "https://arxiv.org/pdf/2001.11028",
+              "https://www.uni-kiel.de/en/details/news/203-moon-mission"
+            ],
+            "images": [
+              {
+                "id": "kiel_lnd_laboratory_photo",
+                "description": "Laboratory photograph of the Chang'e-4 LND sensor in Kiel before launch.",
+                "image_type": "Laboratory hardware photograph",
+                "image_url": "https://www.uni-kiel.de/fileadmin/user_upload/pressemitteilungen/2020/203-LND.jpg.webp",
+                "source_page_url": "https://www.uni-kiel.de/en/details/news/203-moon-mission",
+                "publisher": "Kiel University (press release)",
+                "credit": "© Stefan Kolbe, Uni Kiel",
+                "caption": "The LND in the laboratory in Kiel before the launch.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Asset path taken from the Kiel press page image link. The URL was fetched and resolved as image/webp (about 405 KB), but the picture content was not visually confirmed. Reuse terms not checked; credit as printed on the press page."
+              },
+              {
+                "id": "ce4_lander_lnd_accommodation_illustration",
+                "description": "Illustration of the Chang'e-4 lander showing the LND accommodation.",
+                "image_type": "Lander illustration",
+                "image_url": "https://www.uni-kiel.de/fileadmin/user_upload/pressemitteilungen/2020/203-LND-accommodation.png.webp",
+                "source_page_url": "https://www.uni-kiel.de/en/details/news/203-moon-mission",
+                "publisher": "Kiel University (press release); image credit CNSA/CLEP",
+                "credit": "© CNSA/CLEP",
+                "caption": "Chang'e-4 lander illustration showing the LND accommodation.",
+                "section_placements": [
+                  "physical_specifications.examples[0]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "The Kiel press page caption repeats the Yutu-2 caption and the alt text reads Illustration of the lander, so the caption needs confirmation with Kiel University. Asset path taken from the Kiel press page; not fetched directly."
+              }
+            ]
+          },
+          {
+            "name": "Radiation Dose Monitor (RADOM), Chandrayaan-1",
+            "type": "Orbital dosimeter (not a surface instrument)",
+            "flight_status": "Flown on Chandrayaan-1 orbiter; values as reported in [1]",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "description": "RADOM on India's Chandrayaan-1 orbiter is a flown orbital dosimeter. It measured in lunar orbit, not on the surface, so its values do not describe the surface. The values below are as reported in [1], which cites [7]. They were not checked against the original paper.\n\n- Reported dose rate: 0.227 mGy per day, averaged over 3545 hours of measurement time [1].\n- Reported later value: 0.257 mGy per day [1]. The period and orbital altitude for this value were not verified.\n- Mass, power and dimensions: not stated in the sources reviewed.",
+            "source_urls": [
+              "https://arxiv.org/pdf/2001.11028"
+            ],
+            "images": []
+          },
+          {
+            "name": "Cosmic Ray Telescope for the Effects of Radiation (CRaTER), Lunar Reconnaissance Orbiter",
+            "type": "Orbital radiation instrument (not a surface instrument)",
+            "flight_status": "Flown on Lunar Reconnaissance Orbiter; values as reported in [1]",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "description": "CRaTER on NASA's Lunar Reconnaissance Orbiter is a flown orbital radiation instrument. Like RADOM, it measures in orbit, not on the surface. The value below is as reported in [1], which cites a 2010 source by Spence et al. that was not accessed.\n\n- Reported dose rate: about 0.22 to 0.27 mGy per day in its 50 km orbit [1].\n- Mass, power and dimensions: not stated in the sources reviewed.",
+            "source_urls": [
+              "https://arxiv.org/pdf/2001.11028"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Vehicle Radiation Dosimeter system (LVRaD), planned, with laboratory data for a proposed sensor",
+            "type": "Planned lunar-surface dosimeter system with laboratory data for a proposed sensor",
+            "flight_status": "Planned; not flown",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "description": "LVRaD is a planned four-detector radiation package and has not flown. NASA's CLPS announcement (page dated 27 March 2026, updated 22 June 2026) describes LVRaD as \"a suite of four radiation detectors\" designed to quantify the radiation environment on the lunar surface, carried on an Intuitive Machines lunar delivery targeted for the Moon's South Pole region in 2030 [5]. The NASA page does not name a lander for LVRaD or give a separate date for it [5]. KASI's project page names the four sensors as the Particle Dosimeter and Spectrometer (PDS), the Tissue-Equivalent Dosimeter (TED), the Epithermal Neutron Spectrometer (NS-E) and the Fast Neutron Spectrometer (NS-F). It lists LEO-DOS on the Korea Next Generation Small Satellite 2 (NEXTSat-2) as heritage, and gives no sizes, mass, power or launch schedule [6]. The two agencies use slightly different names for the system: NASA's \"Lunar Vehicle Radiation Dosimeter system\" and KASI's \"Lunar Vehicle RAdiation Dosimeters\".\n\nThe 2021 Sensors paper describes a laboratory study of a silicon detector proposed for the LVRaD payload [4]:\n\n- The paper states that the proposed LVRAD payload is composed of four systems, and the PDS is one of them [4].\n- Sensor: an n-type, high-resistivity planar silicon photodiode with an effective active area of 20 mm × 20 mm and a thickness of 650 ± 30 µm, with resistivity above 5 kΩ·cm [4].\n- Laboratory gamma tests: 241Am at 59.5 keV, 109Cd at 88 keV, and 133Ba lines from 53.2 to 384 keV, plus high-energy Compton-edge sources spanning about 600 keV to 1.5 MeV [4].\n- Proton tests: 30 and 45 MeV protons from the KIRAMS MC50 cyclotron, degraded to about 16.2 and 36.1 MeV at the detector front [4].\n- High-gain to low-gain ratio of about 8 [4].\n- Energy resolution (FWHM; the paper prints no units): 0.55 ± 0.28 at 53.2 keV, improving to 0.05 ± 0.03 at 384 keV [4].\n- The paper states an aim to measure protons in the 10–100 MeV range with the silicon detector on the International Space Station [4].\n- Sensor mass, power and temperature range: not stated [4].",
+            "source_urls": [
+              "https://www.nasa.gov/missions/artemis/clps/nasa-selects-intuitive-machines-to-deliver-artemis-science-tech-to-moon/",
+              "https://pda.kasi.re.kr/lvrad.php",
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC8659465/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The LND sensor head and electronics box are separate units connected by two harnesses [1]. The paper gives detector geometric factors of 0.58 cm² sr for the A1 and B1 combination, 0.55 cm² sr for A1 and D1, and 22.23 cm² sr for the combined B and I configuration used for dosimetry [1]. The overall external dimensions of the sensor head and electronics box are not stated in the sources reviewed.",
+        "mass_and_weight": "The mass of the LND sensor head and electronics box is not stated in the sources reviewed. The only mass in the paper is 1.04 g, the detector mass used in a dose conversion calculation, which is not an instrument mass [1]. Mass for the other examples is not stated in the sources reviewed, and no values have been inferred.",
+        "power_requirements": "The paper describes the electronics box power supply and a harness that carries power, heater, thermistor and detector bias to the sensor head [1]. No power consumption value in watts is given in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "The LND observed the lunar surface during the lunar day. Its sensor head sits on a bracket close to the upper deck of the lander, and a top window gives it a sky view. The window is open during the lunar day and closed during the cold lunar night to conserve heat in the payload compartment [1]. The sensor head is insulated by a 10-layer multilayer-insulation skirt, and a second-surface mirror tape on its front panel helps it radiate heat to the sky [1]. The lunar night lasts about two weeks, and the instrument is switched off during it to conserve battery power [2]. The lander carries a radioisotope thermoelectric generator and three radioisotope heater units (RHUs) [1]. Modelled interface temperatures are given in Example 1. During the first lunar day, measured temperatures ranged from −7.97 °C to 48.10 °C [1].",
+      "limitations": "The LND measures the radiation field at one location, in the von Kármán crater region of the Chang'e-4 landing site [1]. It does not establish the radiation environment across the lunar surface. Its surface record covers the lunar day, so behaviour during the lunar night is not recorded [2]. The field of view is tilted 13° from the lander deck normal, so the measurement represents that viewing direction [1]. Dose equivalent is derived from absorbed dose using a model-based weighting, not a direct biological measurement. Thermal neutron measurements are affected by background from the lander's RTG and RHUs [1].",
+      "transportation_and_deployment": {
+        "overview": "The LND is a fixed instrument mounted in the −Y payload compartment of the Chang'e-4 lander. It has no separate deployment mechanism: the sensor head sits on a bracket close to the upper deck, with a window that gives it a sky view [1].",
+        "transportation_process": [
+          "Integrate the sensor head and electronics box into the lander's −Y payload compartment on Earth, with the sensor head on its bracket close to the upper deck and the window aligned to the sky [1].",
+          "Connect the two units with two harnesses: one for power supply, heater, thermistor and detector bias, and one for control signals and data readout [1].",
+          "Launch with the lander. The lander was launched in December 2018; the exact launch date and launch vehicle were not verified for this article.",
+          "Transfer to the Moon and land. The lander touched down at 02:26 UTC on 3 January 2019 in von Kármán crater [1].",
+          "After landing, open the window during the lunar day and close it during the lunar night to conserve heat [1].",
+          "Relay data to Earth through a relay spacecraft. The relay is not named in the sources reviewed for this article [1]."
+        ],
+        "deployment_methods": "No deployment of the LND is described. The window opening and the fixed sensor-head mount are the only mechanical operations described in the sources reviewed [1]. Landing and surface operations for the wider Chang'e-4 mission were not reviewed in detail for this article.",
+        "historical_examples": "Chang'e-4 is the flown lunar-surface example described here. Chandrayaan-1 and LRO carried orbital dosimeters, so no lander integration applies to them [1].",
+        "compatibility_assessment": "The LND was built for the Chang'e-4 lander and is not presented as compatible with any other lander. For LVRaD, NASA names an Intuitive Machines delivery targeted for the South Pole region in 2030 [5], but the page gives no LVRaD interface data. Compatibility with that lander therefore cannot be assessed from the sources reviewed.",
+        "images": [
+          {
+            "id": "ce4_lander_yutu2_photo",
+            "description": "Chang'e-4 lunar probe, captioned on the Kiel press page as photographed from the Yutu-2 rover.",
+            "image_type": "Lander image (alt text says Illustration; caption says photographed)",
+            "image_url": "https://www.uni-kiel.de/fileadmin/user_upload/pressemitteilungen/2020/203-CE4-Lander.jpg.webp",
+            "source_page_url": "https://www.uni-kiel.de/en/details/news/203-moon-mission",
+            "publisher": "Kiel University (press release); image credit CNSA/CLEP",
+            "credit": "© CNSA/CLEP",
+            "caption": "The Chang'e-4 lunar probe, photographed from the Yutu-2 rover.",
+            "section_placements": [
+              "overview",
+              "transportation_and_deployment"
+            ],
+            "notes": "Image type unconfirmed because the press page alt text reads Illustration while the caption says photographed. Asset path taken from the Kiel press page; not fetched directly."
+          },
+          {
+            "id": "ce4_lander_lnd_accommodation_illustration",
+            "description": "Illustration of the Chang'e-4 lander showing the LND accommodation.",
+            "image_type": "Lander illustration",
+            "image_url": "https://www.uni-kiel.de/fileadmin/user_upload/pressemitteilungen/2020/203-LND-accommodation.png.webp",
+            "source_page_url": "https://www.uni-kiel.de/en/details/news/203-moon-mission",
+            "publisher": "Kiel University (press release); image credit CNSA/CLEP",
+            "credit": "© CNSA/CLEP",
+            "caption": "Chang'e-4 lander illustration showing the LND accommodation.",
+            "section_placements": [
+              "physical_specifications.examples[0]",
+              "transportation_and_deployment"
+            ],
+            "notes": "The Kiel press page caption repeats the Yutu-2 caption and the alt text reads Illustration of the lander, so the caption needs confirmation with Kiel University. Asset path taken from the Kiel press page; not fetched directly."
+          }
+        ]
+      },
+      "historical_significance": "The LND team describes its measurements as the first active dosimetric measurements on the lunar surface [1]. The orbital instruments discussed above measured only in lunar orbit. RADOM reported a dose rate of 0.227 mGy per day averaged over 3545 hours of measurement, and CRaTER reported about 0.22 to 0.27 mGy per day at 50 km altitude, both as reported in [1]. Kiel University's September 2020 press release reports a surface equivalent dose rate of about 60 µSv per hour and states that ground-level exposure on Earth is well over 200 times lower [2]. NASA's 2026 CLPS announcement names LVRaD as a planned surface radiation package for a 2030 South Pole delivery [5].",
+      "limitations_and_uncertainties": "Correction in v2: the v1 article stated that the LND team attributes thermal-neutron background largely to the lander's RTG and RHUs. The LND paper does not say this. It states that small energy deposits in a single detector are dominated by background from the lander's RTG and RHUs, and that the influence of this background on the subsurface-water measurement is still being assessed [1].\n\nOther evidence gaps:\n\n1. The peer-reviewed surface paper [3] could not be accessed directly (HTTP 403). Its abstract values come from a secondary source and were not checked against the journal. The main surface value in this article is Kiel's 60 µSv per hour [2], which is a dose equivalent from a press release rather than the peer-reviewed paper.\n2. The LND sensor head and electronics box mass, power and overall dimensions are not stated in the sources reviewed [1].\n3. The LND's operational status after the 2020 press release was not verified.\n4. The RADOM and CRaTER values are as reported in [1] and were not checked against [7] or the 2010 source.\n5. LVRaD has not flown. Its sensor data come from a laboratory study [4], and its schedule comes from NASA [5] and KASI [6]. KASI's page gives no schedule. Secondary news reports of a flight-model target were not verified.\n6. The Kiel press page's alt text and captions conflict for the Chang'e-4 lander images. The alt text describes them as illustrations, while one caption describes a photograph from the Yutu-2 rover. Confirm with Kiel University before reuse [2].\n7. Direct image assets: only the LND laboratory image URL was resolved (image/webp, about 405 KB). Its content was not visually confirmed, and the other two asset URLs were not fetched.\n8. The launch date and the relay spacecraft name were not verified in this research.\n9. The LND paper used is an arXiv preprint; the published version was not verified.",
+      "images": [
+        {
+          "id": "kiel_lnd_laboratory_photo",
+          "description": "Laboratory photograph of the Chang'e-4 LND sensor in Kiel before launch.",
+          "image_type": "Laboratory hardware photograph",
+          "image_url": "https://www.uni-kiel.de/fileadmin/user_upload/pressemitteilungen/2020/203-LND.jpg.webp",
+          "source_page_url": "https://www.uni-kiel.de/en/details/news/203-moon-mission",
+          "publisher": "Kiel University (press release)",
+          "credit": "© Stefan Kolbe, Uni Kiel",
+          "caption": "The LND in the laboratory in Kiel before the launch.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Asset path taken from the Kiel press page image link. The URL was fetched and resolved as image/webp (about 405 KB), but the picture content was not visually confirmed. Reuse terms not checked; credit as printed on the press page."
+        },
+        {
+          "id": "ce4_lander_yutu2_photo",
+          "description": "Chang'e-4 lunar probe, captioned on the Kiel press page as photographed from the Yutu-2 rover.",
+          "image_type": "Lander image (alt text says Illustration; caption says photographed)",
+          "image_url": "https://www.uni-kiel.de/fileadmin/user_upload/pressemitteilungen/2020/203-CE4-Lander.jpg.webp",
+          "source_page_url": "https://www.uni-kiel.de/en/details/news/203-moon-mission",
+          "publisher": "Kiel University (press release); image credit CNSA/CLEP",
+          "credit": "© CNSA/CLEP",
+          "caption": "The Chang'e-4 lunar probe, photographed from the Yutu-2 rover.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Image type unconfirmed because the press page alt text reads Illustration while the caption says photographed. Asset path taken from the Kiel press page; not fetched directly."
+        },
+        {
+          "id": "ce4_lander_lnd_accommodation_illustration",
+          "description": "Illustration of the Chang'e-4 lander showing the LND accommodation.",
+          "image_type": "Lander illustration",
+          "image_url": "https://www.uni-kiel.de/fileadmin/user_upload/pressemitteilungen/2020/203-LND-accommodation.png.webp",
+          "source_page_url": "https://www.uni-kiel.de/en/details/news/203-moon-mission",
+          "publisher": "Kiel University (press release); image credit CNSA/CLEP",
+          "credit": "© CNSA/CLEP",
+          "caption": "Chang'e-4 lander illustration showing the LND accommodation.",
+          "section_placements": [
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ],
+          "notes": "The Kiel press page caption repeats the Yutu-2 caption and the alt text reads Illustration of the lander, so the caption needs confirmation with Kiel University. Asset path taken from the Kiel press page; not fetched directly."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "kiel_lnd_laboratory_photo",
+          "description": "Laboratory photograph of the Chang'e-4 LND sensor in Kiel before launch.",
+          "image_type": "Laboratory hardware photograph",
+          "image_url": "https://www.uni-kiel.de/fileadmin/user_upload/pressemitteilungen/2020/203-LND.jpg.webp",
+          "source_page_url": "https://www.uni-kiel.de/en/details/news/203-moon-mission",
+          "publisher": "Kiel University (press release)",
+          "credit": "© Stefan Kolbe, Uni Kiel",
+          "caption": "The LND in the laboratory in Kiel before the launch.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Asset path taken from the Kiel press page image link. The URL was fetched and resolved as image/webp (about 405 KB), but the picture content was not visually confirmed. Reuse terms not checked; credit as printed on the press page."
+        },
+        {
+          "id": "ce4_lander_yutu2_photo",
+          "description": "Chang'e-4 lunar probe, captioned on the Kiel press page as photographed from the Yutu-2 rover.",
+          "image_type": "Lander image (alt text says Illustration; caption says photographed)",
+          "image_url": "https://www.uni-kiel.de/fileadmin/user_upload/pressemitteilungen/2020/203-CE4-Lander.jpg.webp",
+          "source_page_url": "https://www.uni-kiel.de/en/details/news/203-moon-mission",
+          "publisher": "Kiel University (press release); image credit CNSA/CLEP",
+          "credit": "© CNSA/CLEP",
+          "caption": "The Chang'e-4 lunar probe, photographed from the Yutu-2 rover.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Image type unconfirmed because the press page alt text reads Illustration while the caption says photographed. Asset path taken from the Kiel press page; not fetched directly."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "citation": "Wimmer-Schweingruber, R.F., Yu, J., et al., 2020 (submitted 29 January 2020). The Lunar Lander Neutron and Dosimetry (LND) Experiment on Chang'E 4. arXiv:2001.11028. arXiv (preprint).",
+          "url": "https://arxiv.org/pdf/2001.11028"
+        },
+        {
+          "number": 2,
+          "citation": "Kiel University, 2020-09-25. First measurements of radiation levels on the Moon (press release). Kiel University.",
+          "url": "https://www.uni-kiel.de/en/details/news/203-moon-mission"
+        },
+        {
+          "number": 3,
+          "citation": "Zhang, S., Wimmer-Schweingruber, R.F., et al., 2020. First measurements of the radiation dose on the lunar surface. Science Advances 6(39), eaaz1334. Journal page not accessed (HTTP 403); abstract values taken from a secondary source. DOI 10.1126/sciadv.aaz1334.",
+          "url": "https://doi.org/10.1126/sciadv.aaz1334"
+        },
+        {
+          "number": 4,
+          "citation": "Kim, B., et al., 2021. A Study on the Performance of a Silicon Photodiode Sensor for a Particle Dosimeter and Spectrometer. Sensors 21(23), 8029. DOI 10.3390/s21238029.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8659465/"
+        },
+        {
+          "number": 5,
+          "citation": "NASA, 2026-03-27 (page updated 2026-06-22). NASA Selects Intuitive Machines to Deliver Artemis Science, Tech to Moon. NASA.",
+          "url": "https://www.nasa.gov/missions/artemis/clps/nasa-selects-intuitive-machines-to-deliver-artemis-science-tech-to-moon/"
+        },
+        {
+          "number": 6,
+          "citation": "Korea Astronomy and Space Science Institute (KASI). LVRAD (Lunar Vehicle RAdiation Dosimeters) project page, English version; the lang=en query string was removed per the URL policy.",
+          "url": "https://pda.kasi.re.kr/lvrad.php"
+        },
+        {
+          "number": 7,
+          "citation": "Dachev, T.P., et al., 2011. Advances in Space Research 48, 779. Cited in [1] for RADOM data; not accessed. DOI 10.1016/j.asr.2011.05.009.",
+          "url": "https://doi.org/10.1016/j.asr.2011.05.009"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Chang'e-4 LND example": "payload.article.physical_specifications.examples[0].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "v2 rerun of payload 114. The v1 files (radiation_dosimeter_payload_114.md, .json and .urls.txt) were not modified.",
+    "Correction to v1: the LND paper does not attribute thermal-neutron background to the lander RTG and RHUs. It states that small single-detector energy deposits are dominated by RTG and RHU background, and that the subsurface-water influence is still being assessed.",
+    "Correction to v1: the LVRaD Compton-edge sources span about 600 keV to 1.5 MeV; 53.2 keV is one of the 133Ba gamma lines.",
+    "Removed v1 details not verified in this research: the LND fast-neutron energy range, the launch time, the Queqiao relay name, the ETRI fabrication note, the 30 MeV low-gain proton claim for LVRaD, and the red-arrow caption.",
+    "Chang'e-4 LND surface value: the Kiel University press release (25 September 2020, about 60 µSv per hour) is the primary source used. The Science Advances abstract values (13.2 ± 1 µGy/h absorbed dose in silicon; 3.1 ± 0.5 µGy/h neutral-particle dose rate) come from a secondary source because the journal page returned HTTP 403.",
+    "Kiel press page image alt text and captions conflict for the Chang'e-4 lander images. Only the LND laboratory image asset was fetched (resolved as image/webp); the other two asset URLs were not fetched.",
+    "RADOM and CRaTER values are as reported in the LND paper and were not checked against the original papers.",
+    "LVRaD sensor values come from Kim et al. 2021, a laboratory study; the sensor was not flown. NASA and KASI pages give no sizes, mass, power or launch schedule.",
+    "The arXiv PDF could not be rendered locally; article values were checked against the arXiv HTML rendering (ar5iv) and the arXiv abstract."
+  ]
+}

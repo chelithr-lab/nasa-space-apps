@@ -1,0 +1,215 @@
+{
+  "catalogue_id": 248,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 13,
+    "name": "Sample collection, preservation and return"
+  },
+  "payload": {
+    "number": 248,
+    "name": "Regolith collection mechanism",
+    "article": {
+      "overview": "A regolith collection mechanism is an instrument or tool that gathers loose lunar soil (regolith) or the material beneath it, holds the sample and, in many cases, passes it to an analysis instrument or a return container. Historical examples include the Surveyor 3 surface sampler, the hand-operated scoops and core tubes used on the Apollo missions, the drill on Luna 16 and the surface samplers on Chang'e-5. Because lunar soil ranges from loose dust to compacted or cohesive material, no single collection method suits every site, and designers trade sample depth and sample integrity against mass, power and mechanical complexity.",
+      "description": "In this payload class, the collector is the element that contacts the ground: a scoop with a blade or lip, a tube driven or drilled into the surface, a set of flaps that dig and close, or a combined tool. Most designs also include an actuation system (a hand-operated handle, a robotic arm, a motor-driven mechanism or a piston), a way of retaining the sample, and a closure or seal when the sample must be kept for later study. The term describes a function rather than one standard instrument, so the mechanisms differ widely in size, mass and sophistication. Two terms are used in this article. Regolith is the fragmented layer of loose material that covers the lunar surface, produced by long exposure to impacts. A core is a column of material that can preserve layering with depth, whereas a scoop yields a mixed sample weighted toward the surface.",
+      "scientific_purpose_and_applications": "The main purpose is to obtain material that scientists can study directly. Samples provide information about mineral and chemical composition, grain size and maturity, the effects of space weathering and the history of impacts and volcanism. Cores are especially valuable because they can preserve layering, showing how material changed with depth. Collection mechanisms also support engineering studies. Surveyor 3's sampler measured how the soil supported loads and resisted digging, which helped show that the surface could support a lunar module [1]. Future uses could include geotechnical measurement and regolith processing for in-situ resource utilisation. NASA's Regolith Utilization Multi-tool concept, for example, combines collection with sieving and surface preparation [3]. This is a technology listing rather than a demonstrated flight system.",
+      "operating_principle": "Collection methods fall into a few broad families. A scoop is pushed, dragged or pressed into loose material, and its lip or closing lid retains the sample. Surveyor 3's sampler was used for soil tests: its operators dug trenches and carried out bearing and impact tests while the camera recorded the work [1]. Published descriptions of its arm and actuation are limited, so its mechanism is not described in detail here. Tubes are driven or drilled into the ground so that a column of material enters them. Apollo core and drive tubes were pounded into the soil using the extension handle [5][6]. Rotary or percussive drills can reach greater depth. Luna 16's drill is reported to have penetrated to about 35 cm in roughly seven minutes before stopping at an obstacle [4]. Flap-type samplers dig with flaps and capture material as they close. The Chang'e-5 Sampler B used teeth-like flaps, with a piston pushing sticky material into the container as the flaps opened. The Sampler A shovel used vibration and impact during closure to knock off excess material and break off large pieces [2]. Sorting mechanisms vibrate material through a sieve. NASA describes the Regolith Utilization Multi-tool concept as sorting regolith below 1 mm at 10 to 40 g/s, using shaker motors and a self-cleaning sieve. This is a design specification stated by the technology listing, not a demonstrated flight result [3]. After capture, the sample is transferred into a container, which for return missions must be sealed to protect it from contamination [8].",
+      "scientific_importance": "Surface images and orbital remote sensing cannot reveal the composition, age or internal layering of lunar soil with the precision of laboratory analysis. A collection mechanism turns part of the surface into a sample that can be examined on Earth or by an instrument on the spacecraft. The Apollo programme used scoops and core tubes to gather its samples, and its sealed containers were designed to isolate material during transfer [5][8]. Luna 16 showed in 1970 that a robotic spacecraft could drill, store and return lunar material [4]. Chang'e-5's surface samplers were reported to have collected and packaged material automatically in 2020 [2]. Because each mechanism selects material in a different way, the method itself affects the scientific result. A scoop favours the top layer, a core preserves depth and a sieve removes coarse fractions. Scientists therefore need to know how a sample was collected as well as what it contains.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a regolith collection mechanism. The examples below describe specific flown instruments or concepts, and their values apply only to the named design. Where a figure was not found in the sources reviewed for this article, it is marked as not publicly specified.",
+        "examples": [
+          {
+            "name": "Surveyor 3 surface sampler",
+            "type": "Flown historical lunar surface sampler (1967)",
+            "flight_status": "Flown",
+            "mass_kg": null,
+            "reach_from_lander_m": 1.5,
+            "dig_depth_cm": 18,
+            "tests_reported": "Four trenches, four bearing tests and thirteen impact tests, operated by ground command.",
+            "bearing_strength_kpa": 98,
+            "result": "Soil behaved much like moist sand, with a reported bearing strength of about 0.7 kg/cm2 (98 kPa), enough to support an Apollo lunar module.",
+            "mass_dimensions_power_and_arm_structure": "Not publicly specified in the source reviewed.",
+            "source_urls": [
+              "https://science.nasa.gov/surveyor-3"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo lunar surface sampling tools (scoops, core tubes and drive tubes)",
+            "type": "Flown hand-operated tools (1969 to 1972)",
+            "flight_status": "Flown",
+            "mass_kg": null,
+            "scoop_description": "Apollo 11 used a boxy aluminium scoop on an extension handle. Apollo 15 introduced an adjustable-angle, tapered scoop.",
+            "core_tube_description": "Apollo 11 funnel-bit tubes struggled in denser soil, so the bits were modified for Apollo 12 and 14. Apollo 15 introduced larger-diameter, thinner-walled tubes.",
+            "drill_core_depth_reports": "Sources disagree: one summary gives about 3 m, while a NASA curator paper lists 2 m.",
+            "sample_container": "Special Environmental Sample Containers were reported on all six successful lunar landing missions (search summary).",
+            "mass_and_dimensions": "Not verified in this run.",
+            "source_urls": [
+              "https://encyclopedia.com/science/news-wires-white-papers-and-books/tools-apollo-lunar-exploration",
+              "https://scisoc.confex.com/crops/2008am/webprogram/Paper48375.html",
+              "https://www.nasa.gov/wp-content/uploads/2019/04/02_allton_corrected_apollo.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Luna 16 drill and sample return",
+            "type": "Flown robotic drill and sample-return system (1970)",
+            "flight_status": "Flown",
+            "mass_kg": null,
+            "drill_deployment": "Deployed about an hour after landing; ran about 7 minutes and stopped at about 35 cm depth.",
+            "transfer": "The arm lifted the core and placed it in a spherical return capsule. Some material fell out of the drill during this step.",
+            "returned_sample_g": 101,
+            "design_stage_figures": "A 0.9 m sampling arm and a 13.6 kg drill mechanism are reported for pre-flight design studies; not confirmed as flight values.",
+            "drill_length_and_diameter": "Not stated in the source reviewed.",
+            "source_urls": [
+              "https://www.drewexmachina.com/2020/09/12/luna-16-the-first-robotic-sample-return/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-5 surface samplers (Sampler A and Sampler B)",
+            "type": "Flown automatic surface samplers (2020)",
+            "flight_status": "Flown",
+            "system_mass_kg": 1.5,
+            "sample_container_mass_g": 360,
+            "sampler_a": "Shovel-shaped, about 35 cm long, for loose regolith.",
+            "sampler_b": "About 30 cm long, with teeth-like flaps and a piston for sticky material.",
+            "cameras": "Each sampler has a near-field camera described as heat resistant up to 130 C.",
+            "mission_aim": "Up to 2 kg of lunar samples. The release reports that automatic collection and packaging were completed on the surface; the final sample mass is not given.",
+            "source_urls": [
+              "https://www.polyu.edu.hk/media/media-releases/2020/1208_polyu_space_instruments_complete_lunar_sampling_for_chang_e-5"
+            ],
+            "images": []
+          },
+          {
+            "name": "NASA Regolith Utilization Multi-tool (RUM)",
+            "type": "Technology concept (patent pending)",
+            "flight_status": "Concept; not flown",
+            "mass_kg": null,
+            "components": [
+              "Scoop",
+              "Regolith storage compartment",
+              "Self-cleaning sieve",
+              "De-blinder mechanism",
+              "Two shaker motors",
+              "Vibro-compactor surface",
+              "Grader blade",
+              "Rock-removal pry bar",
+              "Surface for geotechnical measurements"
+            ],
+            "stated_specification": "Sorts regolith below 1 mm at 10 to 40 g/s without clogging, as stated by the NASA listing.",
+            "technology_readiness_level": null,
+            "source_urls": [
+              "https://technology.nasa.gov/patent/KSC-TOPS-106"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No single set of dimensions applies to this payload class. Named examples are described in the examples array; Chang'e-5 sampler lengths (about 35 cm and about 30 cm) and the Surveyor 3 reach (1.5 m) are the best-supported figures.",
+        "mass_and_weight": "No single mass applies to this payload class. Chang'e-5 system mass (1.5 kg) and sample container mass (360 g) are published for that mission only. Other masses are not publicly specified in the sources reviewed.",
+        "power_requirements": "Not publicly specified in the sources reviewed for this article."
+      },
+      "environmental_and_operational_requirements": "Regolith collection takes place in vacuum, under extreme surface temperatures, in abrasive dust and with no atmosphere to carry heat or dust away. The sources reviewed show the environment's influence in several ways. Chang'e-5's near-field camera is described as heat resistant up to 130 °C, which shows that thermal limits apply even to small sensors on a sampler [2]. The collected soil must also carry the load of a lander, which Surveyor 3's bearing tests examined [1]. Samples must be protected from contamination after capture. The Apollo programme used containers designed to isolate samples during transfer, and later curation practice moved toward high-purity nitrogen under positive pressure [7][8]. Operationally, a digging sampler must cope with obstacles: Luna 16's drill stopped when it reached an obstacle at about 35 cm [4]. The requirements of any new design depend on the target soil type, depth, sample mass and return chain, none of which is fixed by this payload class.",
+      "limitations": "Each collection method samples a small volume at one location. A scoop mixes the upper layer, a core retains a single vertical column and a sieve removes coarse material, so no single method gives a representative sample of a whole site [3][5]. Depth is also limited. The Surveyor 3 sampler reached about 18 cm, and the Luna 16 drill stopped at about 35 cm [1][4]. Cohesive or sticky soil, rocks and obstacles can stop a sampler or change the sample mass. Some material may be lost during transfer; Luna 16's sample was reported to be smaller than expected because material fell from the drill during the lift [4]. Sample masses and dimensions from different missions should not be compared without checking how each value was defined.",
+      "transportation_and_deployment": {
+        "overview": "A collection mechanism is integrated on the lander or spacecraft on Earth, launched, transferred to the Moon and landed. Deployment can use a robotic arm, a dedicated mechanism or astronauts. For sample-return use, the collected material must also be sealed and transferred into a return container.",
+        "transportation_process": [
+          "Integrate the collection mechanism and sample container into the lander or spacecraft on Earth.",
+          "Launch the spacecraft and transfer it toward the Moon.",
+          "Land the spacecraft on the surface.",
+          "Deploy the sampler by robotic arm, dedicated mechanism or astronaut.",
+          "Collect the sample, then seal and transfer the container to the return stage or ascent vehicle."
+        ],
+        "deployment_methods": "Robotic arm (Surveyor 3 reach of up to 1.5 m; Luna 16 extendable arm; Chang'e-5 samplers on the lander), and hand-operated tools with an extension handle (Apollo) [1][2][4][5].",
+        "historical_examples": "Surveyor 3 carried its sampler to the surface on a lander [1]. Chang'e-5 samplers picked up and moved the sample container from the lander to the ascender, using vision guidance to place it precisely [2]. Luna 16 placed its drilled core into a spherical return capsule on the ascent stage [4]. Apollo samples were carried in Special Environmental Sample Containers designed to isolate material from contamination during transfer to the Lunar Receiving Laboratory [8].",
+        "compatibility_assessment": "Surveyor 3, Apollo, Luna 16 and Chang'e-5 each flew their collection hardware on specific spacecraft. For a new mechanism, compatibility with a particular lander, rover or sample-return chain must be checked against verified interface data. No such compatibility is assessed here.",
+        "images": []
+      },
+      "historical_significance": "Surveyor 3 (1967) carried the first Surveyor surface sampler. Its soil tests supported the conclusion that the lunar surface could bear an Apollo lunar module, and Apollo 12 recovered the scoop in November 1969 to study the effects of nearly two and a half years on the lunar surface [1]. The Apollo scoops and core tubes are an early benchmark for lunar surface sampling [5][6]. Luna 16 is widely described as the first fully robotic lunar sample return [4]. The RUM concept reflects current interest in combining collection, sieving and site preparation in one tool, but no flight record appears in the sources reviewed [3].",
+      "limitations_and_uncertainties": "This payload class is described from a small set of sources, and several figures come from search summaries rather than full primary documents. The sampler designs differ so widely that their values must not be compared directly. Values that conflict between sources are reported as conflicts rather than resolved, and figures marked as design-stage are not flight values.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Surveyor 3",
+          "publisher": "NASA Science",
+          "date": null,
+          "url": "https://science.nasa.gov/surveyor-3",
+          "access_status": "Opened and read"
+        },
+        {
+          "title": "PolyU-developed space instruments complete lunar sampling for Chang'e 5 (media release)",
+          "publisher": "Hong Kong Polytechnic University",
+          "date": "2020-12-08",
+          "url": "https://www.polyu.edu.hk/media/media-releases/2020/1208_polyu_space_instruments_complete_lunar_sampling_for_chang_e-5",
+          "access_status": "Opened and read"
+        },
+        {
+          "title": "Regolith Utilization Multi-tool (RUM), reference KSC-TOPS-106",
+          "publisher": "NASA Technology Transfer Portal",
+          "date": null,
+          "url": "https://technology.nasa.gov/patent/KSC-TOPS-106",
+          "access_status": "Opened and read"
+        },
+        {
+          "title": "Luna 16: the first robotic sample return",
+          "publisher": "Drew Ex Machina (secondary source)",
+          "date": "2020-09-12",
+          "url": "https://www.drewexmachina.com/2020/09/12/luna-16-the-first-robotic-sample-return/",
+          "access_status": "Opened and read; secondary source"
+        },
+        {
+          "title": "Tools, Apollo Lunar Exploration",
+          "publisher": "Encyclopedia.com",
+          "date": null,
+          "url": "https://encyclopedia.com/science/news-wires-white-papers-and-books/tools-apollo-lunar-exploration",
+          "access_status": "Search summary only; not opened in full"
+        },
+        {
+          "title": "345-7 Evolution of Geological Sampling Tool Design during the Apollo Lunar Missions",
+          "publisher": "Geological Society of America (2008 abstract)",
+          "date": "2008",
+          "url": "https://scisoc.confex.com/crops/2008am/webprogram/Paper48375.html",
+          "access_status": "Search summary only; not opened in full"
+        },
+        {
+          "title": "Apollo lunar sample curation and handling (Allton, NASA)",
+          "publisher": "NASA Johnson Space Center",
+          "date": null,
+          "url": "https://www.nasa.gov/wp-content/uploads/2019/04/02_allton_corrected_apollo.pdf",
+          "access_status": "PDF not readable in this run; search summary only"
+        },
+        {
+          "title": "Can, Sample Container, Special Environment, Lunar, Apollo (NASM A19740861000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "date": null,
+          "url": "https://www.airandspace.si.edu/es/collection-objects/can-sample-container-special-environment-lunar-apollo/nasm_A19740861000",
+          "access_status": "Search summary only; not opened"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No images were verified in this run, so the image arrays are empty."
+  },
+  "data_quality_notes": [
+    "No images were searched for, verified or included. Image arrays are empty and image_urls_added is false.",
+    "Surveyor 3: NASA page gives four bearing tests; search summaries reported different bearing-test counts. The NASA figure is used. The same NASA page contains an internal date inconsistency ('more than three years later' against the actual April 1967 to November 1969 interval); the article uses the 'nearly two and a half years' wording.",
+    "Luna 16: sources differ on core depth (35 cm, 36 cm, 38 cm) and on sample description (about 101 g returned, against 'a couple of hundred grams' for the core). The 0.9 m arm and 13.6 kg drill mechanism are design-stage values and are not used as flight specifications.",
+    "Apollo: drill core depth reported as about 3 m in one summary and 2 m in a NASA curator paper. Scoop and tube dimensions and masses were not verified. The NASA Apollo Lunar Surface Journal tools page returned HTTP 404 in this run, and the Smithsonian object record returned HTTP 403.",
+    "Chang'e-5: a press article reports a separate drilling system aimed at about 2 m depth. This is not verified. The final returned sample mass is not stated in the PolyU release.",
+    "The NSSDC Luna 16 spacecraft record could not be retrieved in this run.",
+    "Two NTRS PDF documents could not be read as text in this run.",
+    "RUM: NASA listing gives a sorting specification, patent-pending status, no TRL and no date. The specification is not demonstrated in the source."
+  ]
+}

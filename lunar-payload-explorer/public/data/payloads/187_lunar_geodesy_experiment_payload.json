@@ -1,0 +1,200 @@
+{
+  "catalogue_id": 187,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 9,
+    "name": "Navigation, communication and geodesy"
+  },
+  "payload": {
+    "number": 187,
+    "name": "Lunar geodesy experiment",
+    "article": {
+      "overview": "A lunar geodesy experiment measures the Moon's position, orientation, rotation and shape precisely enough to define and maintain a lunar reference frame, the coordinate system used to locate points on and around the Moon. Most of the historical capability comes from lunar laser ranging (LLR), in which ground stations fire short laser pulses at corner-cube retroreflectors on the surface or in orbit and measure the round-trip time. The sources reviewed here describe flown retroreflector arrays (Apollo 11, 14 and 15, and Lunokhod 1 and 2), an orbiter array on NASA's Lunar Reconnaissance Orbiter, a retroreflector built for ESA's Lunar Pathfinder relay mission, and a proposed multi-technique station called NovaMoon. The Lunar Pathfinder launch could not be confirmed from the sources reviewed for this article.",
+      "description": "Geodesy is the measurement of a body's shape, orientation, rotation and gravity field, and of the coordinate system that results from those measurements. A lunar geodesy experiment applies that purpose to the Moon. Its measurements let spacecraft, landers and navigation systems express positions in a common lunar frame, and they track how the Moon rotates and changes orientation. Two main measurement approaches appear in the sources reviewed here. The first is passive: a reflector on the surface or in orbit returns laser pulses fired from Earth. The second is active: a payload transmits or receives radio signals, such as a very long baseline interferometry (VLBI) transmitter or a navigation receiver. For the Lunar Pathfinder array, ESA says the laser retroreflector \"will allow the Lunar Pathfinder mission to be pinpointed by laser ranging stations back on Earth\" and that the work will \"open up new possibilities in lunar geodesy\" [3]. Because the catalogue entry names a class of experiments, this article describes several hardware examples rather than one standard design.",
+      "scientific_purpose_and_applications": "Defining a lunar reference frame: geodesy experiments supply the reference points used to define a lunar coordinate frame. The International Lunar Reference Frame (ILRF) preprint describes a first realisation that combines three lunar ephemeris solutions, INPOP21a, DE430 and EPM2021, and reports a combined mean error of 17.6 cm for 2010 to 2030 [7]. Earth-Moon distance and lunar orientation: an unmodelled orientation angle maps into range error. Murphy gives 1 nrad of angle as 1.7 mm of range at the lunar limb, and reports JPL libration-model residuals in the neighborhood of 18 mm for APOLLO and OCA combined [6]. Lunar interior and tides: Murphy reports a liquid core having a radius of approximately 350 km and a monthly-tide dissipation value of Q approximately 33 plus or minus 4 [6]. These are 2013 values. Later estimates differ, and they were not re-verified for this article. Gravity and relativity tests: Murphy reports a strong equivalence principle test at sensitivity eta approximately 3 x 10^-4 [6]. Navigation validation: NASA says the Lunar Pathfinder retroreflectors will validate navigation capabilities that will be critical to the Artemis missions [2]. ESA says the laser measurements serve as an independent check on the spacecraft, cross-checking GNSS-based position fixes [3]. Spacecraft ranging: NASA describes laser ranging as one of the most accurate methods available for measuring the distance between a spacecraft and Earth [2].",
+      "operating_principle": "Laser ranging to a retroreflector works in three steps. A ground station fires short laser pulses toward the Moon. The retroreflector, an array of corner-cube prisms, returns light along its incoming path [5]. The station measures the round-trip time of each returned photon, and the range is half that time multiplied by the speed of light. Murphy's review describes the APOLLO station, which transmits from a 3.5 m telescope at the Apache Point Observatory in New Mexico, with 2.3 W average power at 532 nm, 100 ps pulses at 20 Hz and 115 mJ per pulse [6]. For APOLLO, the per-photon timing error is 93 ps (14 mm). Including the retroreflector array error, total random uncertainty is 20 to 47 mm per photon [6]. Precision comes from combining many photons into normal points, and APOLLO's median statistical uncertainty per normal point is below 3 mm [6]. Timing has to be very tight: Murphy states that absolute time needs to be accurate only at the microsecond level, while relative timing must be known at the few-picosecond level [6]. Radio-based geodesy and navigation use different principles. The NovaMoon abstract lists a VLBI transmitter, a LunaNet-compatible receiver for navigation signals and high-stability atomic clocks as payload elements [8]. The reviewed sources do not give its measurement chain in detail, so this article does not describe it further.",
+      "scientific_importance": "Lunar laser ranging has provided millimetre-level range measurements over decades [6]. Murphy reports that range precision improved from a few decimetres at first to a few millimetres, and that the APOLLO station's median statistical uncertainty per normal point is below 3 mm [6]. Those ranges constrain the Moon's orientation, orbit and interior; for example, Murphy reports a liquid core of about 350 km radius and a tidal dissipation Q of about 33 [6]. The reference frame realised from these data is currently less precise than the ranging itself. The ILRF preprint attributes most of its origin error to the geometry of the retroreflector network, while LLR post-fit residuals are at the level of 2 to 3 cm [7]. A lunar geodesy experiment therefore matters both for improving the frame and for providing independent checks on navigation systems.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar geodesy experiment. The examples below include flown passive reflectors, an orbiter reflector, a built reflector whose launch is not confirmed, and a proposed active station. Values are tied to the named hardware and source. Where the reviewed sources give no value, this article says 'not publicly specified in reviewed sources'.",
+        "examples": [
+          {
+            "name": "Apollo laser retroreflector arrays (Apollo 11, 14 and 15)",
+            "type": "Flown passive lunar retroreflector arrays",
+            "status": "Flown on the Moon as passive optical reflectors.",
+            "corner_cubes": "100 each on Apollo 11 and Apollo 14; 300 on Apollo 15. Each cube is 3.8 cm in diameter and made of fused silica.",
+            "panel_size": "Apollo 11 palette given as 0.45 m square [5]; ILRS page gives a 46 cm aluminium panel [4]. The two values differ.",
+            "mass_kg": null,
+            "ranging_use": "As of 1994, 6,300 of 8,400 range measurements (75%) had been made to the Apollo 15 array [5].",
+            "source_urls": [
+              "https://ilrs.gsfc.nasa.gov/missions/satellite_missions/current_missions/ap11_reflector.html",
+              "https://tmurphy.physics.ucsd.edu/apollo/lrrr.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunokhod 1 and Lunokhod 2 retroreflectors",
+            "type": "Flown lunar rover retroreflectors",
+            "status": "Flown on the Soviet Luna 17 (1970) and Luna 21 (1973) rover missions; described as French-built.",
+            "corner_cubes": "14 per reflector in a triangular arrangement, 11 cm on a side, in a package 44 cm long and 19 cm across.",
+            "signal_behaviour": "Lunokhod 1 return is about 30 times weaker in lunar daylight than at night; Lunokhod 2 has become about five times weaker than its twin [5].",
+            "recovery": "Lunokhod 1 reflector re-found in April 2010 with help from the Lunar Reconnaissance Orbiter [5].",
+            "mass_kg": null,
+            "source_urls": [
+              "https://ilrs.gsfc.nasa.gov/missions/satellite_missions/current_missions/ap11_reflector.html",
+              "https://tmurphy.physics.ucsd.edu/apollo/lrrr.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Laser retroreflector array on NASA's Lunar Reconnaissance Orbiter",
+            "type": "Flown orbiter retroreflector array",
+            "status": "Flown on an orbiter (LRO). Specifications come from a secondary summary of a 2020 paper that could not be opened in full and are unverified.",
+            "reported_dimensions_cm": [15, 18, 5],
+            "reported_mass_g": 650,
+            "reported_corner_cubes": "Twelve 32 mm solid corner cubes in a 4 x 3 pattern (reported, unverified).",
+            "reported_result": "First two-way laser ranging to a lunar orbiter, from the Grasse station in France, with range residuals below 3 cm against the reconstructed LRO trajectory (reported, unverified in detail) [9].",
+            "design_basis": "The Lunar Pathfinder array was produced for NASA by KBR, based on this LRO design [3].",
+            "source_urls": [
+              "https://link.springer.com/10.1186/s40623-020-01243-w"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Pathfinder laser retroreflector array",
+            "type": "Built retroreflector array for a lunar relay mission (flight not confirmed)",
+            "status": "Built and formally accepted by ESA on 4 November 2022 [3]. Flight status not confirmed by sources reviewed.",
+            "developer": "NASA Goddard Space Flight Center developed the array; KBR produced it for NASA [1][2][3].",
+            "purpose": "Ranging to the spacecraft; independent check on GNSS-based position fixes [3]; navigation validation for Artemis [2].",
+            "engineering_data": "Number of corner cubes, dimensions, mass and power are not publicly specified in reviewed sources [2][3].",
+            "mission_context": "SSTL builds the spacecraft for ESA [2]; described as a telecommunications relay [3].",
+            "schedule": "ESA archive page says the spacecraft is due to be launched in 2025 [3]. No launch was confirmed in the reviewed sources.",
+            "mass_kg": null,
+            "source_urls": [
+              "https://earth.gsfc.nasa.gov/geo/projects/sgp/updates/nasa-delivers-first-flight-hardware-esa-lunar-pathfinder",
+              "https://www.nasa.gov/missions/lunar-orbiter/nasa-mirrors-on-esa-pathfinder-to-enhance-lunar-navigation",
+              "https://www.esa.int/Applications/Satellite_navigation/NASA_laser_reflector_for_ESA_satnav_on_Lunar_Pathfinder"
+            ],
+            "images": []
+          },
+          {
+            "name": "NovaMoon (proposed lunar reference station)",
+            "type": "Proposed multi-technique lunar station concept",
+            "status": "Proposal. Not flown.",
+            "elements": "Lunar laser retroreflector, VLBI transmitter, receiver for LunaNet-compatible navigation signals, high-stability atomic clocks and direct-to-Earth radio links [8].",
+            "proposed_host": "Scientific and navigation payload for ESA's Argonaut lander [8].",
+            "engineering_data": "Mass, dimensions, power and lifetime are not publicly specified in reviewed sources [8].",
+            "mass_kg": null,
+            "source_urls": [
+              "https://arxiv.org/abs/2602.08432"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Passive reflector arrays are small compared with robotic landers. The Apollo arrays use 3.8 cm corner cubes on panels of 0.45 m or 46 cm [4][5]. The Lunokhod reflectors are packaged 44 cm long by 19 cm across [5]. The LRO array is reported at 15 x 18 x 5 cm [9]. These figures describe different array geometries and packaging, so they are not directly comparable.",
+        "mass_and_weight": "The only mass figure in the reviewed sources is the LRO array's 650 g [9], which comes from a secondary summary of a 2020 paper that could not be opened in full. Masses for the Apollo, Lunokhod and Lunar Pathfinder arrays are not publicly specified in reviewed sources [3][4][5]. The NovaMoon concept has no mass figure [8].",
+        "power_requirements": "No reviewed source gives a power requirement for any example. The Apollo arrays are described as passive reflectors [6]. The power budgets of the active concepts, including NovaMoon and the Lunar Pathfinder spacecraft systems, were not found and are not estimated here."
+      },
+      "environmental_and_operational_requirements": "Retroreflector arrays on the Moon must survive vacuum, extreme thermal cycling and radiation, and they must keep their corner cubes oriented toward Earth. The Apollo 11 array was designed to minimise thermal gradients [5]. The Lunokhod data show that return strength depends strongly on lunar daylight [5]. Ground stations need a clear view of the Moon and a laser system with suitable energy and timing; APOLLO uses a 3.5 m telescope and 532 nm pulses [6]. Active radio and navigation elements, such as the VLBI transmitter and navigation receiver in NovaMoon, have their own power, thermal and link requirements that the reviewed sources do not quantify [8].",
+      "limitations": "Retroreflector ranging is only as good as the station, the orientation model and the photon return. Murphy shows that orientation (libration) errors translate directly into range errors [6]. Lunokhod return falls sharply in daylight [5]. A retroreflector gives range from a station on Earth; it does not define a reference frame on its own. Frame accuracy also depends on the geometry of the retroreflector network [7].",
+      "transportation_and_deployment": {
+        "overview": "The examples reach the Moon in different ways. The Lunokhod reflectors were carried by rover missions [5]. The Apollo arrays were placed during crewed surface missions. The Lunar Pathfinder array is to be carried by its relay spacecraft to lunar orbit [3]. NovaMoon is proposed for a lander [8]. The reviewed sources do not describe deployment procedures or lander compatibility in enough detail to assess them, so none is assumed here.",
+        "transportation_process": [
+          "Generic sequence, not verified for any specific mission: integrate the reflector array with its host lander, rover or spacecraft on Earth.",
+          "Launch and transfer toward the Moon.",
+          "Place or release the array on the surface, or insert the host spacecraft into lunar orbit.",
+          "Align the array toward Earth and commission the ranging chain.",
+          "Begin ground ranging, with orientation (libration) modelling applied to the data."
+        ],
+        "deployment_methods": "Lunokhod reflectors were carried by rovers [5]. The Apollo arrays were placed on the surface as part of crewed missions; the reviewed sources do not describe the procedure in detail. The Lunar Pathfinder array is to be mounted on an orbiting spacecraft; its mounting is not described in the reviewed sources.",
+        "historical_examples": "Apollo 11, 14 and 15 arrays and the Lunokhod 1 and 2 reflectors are historical surface examples [4][5]. The LRO array is an orbiter example [9].",
+        "compatibility_assessment": "Lander compatibility is not verified for any example. NASA and ESA say Lunar Pathfinder will be delivered to lunar orbit through NASA's Commercial Lunar Payload Services initiative, but no specific CLPS mission is named [3].",
+        "images": []
+      },
+      "historical_significance": "Apollo and Lunokhod reflectors have been the basis of lunar laser ranging for decades [5][6]. Ranging to the Apollo 15 array had reached 6,300 of 8,400 measurements by 1994 [5]. The Lunokhod 1 reflector was re-found in 2010 with help from LRO [5]. Murphy describes range precision improving from decimetres to millimetres over the history of the technique [6]. The LRO array is reported as the first two-way laser ranging to a lunar orbiter [9]; that claim is unverified in detail. The Lunar Pathfinder array is significant as a NASA-built reflector for an ESA navigation and relay mission, although its flight status is unconfirmed.",
+      "limitations_and_uncertainties": "The term \"lunar geodesy experiment\" describes a class of measurements rather than one standard instrument, and the examples here are not interchangeable. Values for mass, dimensions and power are tied to named hardware and sources, and several are unavailable. The Apollo panel size differs between two sources [4][5]. The LRO figures come from a secondary summary of a 2020 paper that could not be opened in full [9]. The ILRF is a 2025 preprint [7]. The Lunar Pathfinder array's configuration, mass and launch status are unconfirmed [2][3]. The NovaMoon concept is a proposal [8]. No verified direct image asset was located, so the article contains no images. The current operating status of the APOLLO station was not verified.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "NASA Delivers First Flight Hardware for ESA's Lunar Pathfinder",
+          "publisher": "NASA Goddard Space Flight Center",
+          "date": "2022 (date not shown on fetched page)",
+          "url": "https://earth.gsfc.nasa.gov/geo/projects/sgp/updates/nasa-delivers-first-flight-hardware-esa-lunar-pathfinder"
+        },
+        {
+          "title": "NASA Mirrors on ESA Pathfinder to Enhance Lunar Navigation",
+          "publisher": "NASA (Danny Baird)",
+          "date": "2022-07-07",
+          "url": "https://www.nasa.gov/missions/lunar-orbiter/nasa-mirrors-on-esa-pathfinder-to-enhance-lunar-navigation"
+        },
+        {
+          "title": "NASA laser reflector for ESA satnav on Lunar Pathfinder",
+          "publisher": "European Space Agency",
+          "date": "2022-11-10 (archive page)",
+          "url": "https://www.esa.int/Applications/Satellite_navigation/NASA_laser_reflector_for_ESA_satnav_on_Lunar_Pathfinder"
+        },
+        {
+          "title": "Apollo 11 reflector",
+          "publisher": "NASA ILRS",
+          "date": "last modified 2018-09-25",
+          "url": "https://ilrs.gsfc.nasa.gov/missions/satellite_missions/current_missions/ap11_reflector.html"
+        },
+        {
+          "title": "Lunar Retroreflectors",
+          "publisher": "T. W. Murphy Jr. (UCSD)",
+          "date": "undated",
+          "url": "https://tmurphy.physics.ucsd.edu/apollo/lrrr.html"
+        },
+        {
+          "title": "Lunar Laser Ranging: The Millimeter Challenge",
+          "publisher": "T. W. Murphy Jr., arXiv:1309.6294",
+          "date": "2013-09",
+          "url": "https://arxiv.org/abs/1309.6294"
+        },
+        {
+          "title": "Definition and Realization of the International Lunar Reference Frame",
+          "publisher": "S. Sosnica et al., arXiv:2510.15484",
+          "date": "2025-10-17 (submitted)",
+          "url": "https://arxiv.org/abs/2510.15484"
+        },
+        {
+          "title": "NovaMoon: A Strategic Lunar Reference Station for Positioning, Timing, and Largely Enhanced Science in the Earth-Moon System",
+          "publisher": "S. Molli et al., arXiv:2602.08432",
+          "date": "2026-02-09 (submitted)",
+          "url": "https://arxiv.org/abs/2602.08432"
+        },
+        {
+          "title": "Paper on the LRO laser retroreflector array (cited from a secondary summary; full text not opened)",
+          "publisher": "Earth, Planets and Space",
+          "date": "2020",
+          "url": "https://link.springer.com/10.1186/s40623-020-01243-w"
+        }
+      ],
+      "research_status_note": "Reference titles for [4] and [9] are shortened or paraphrased because the exact page titles were not confirmed."
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image URLs are included because no direct image asset was verified from an official page."
+  },
+  "data_quality_notes": [
+    "No direct image asset was verified; the article therefore has no images in the master registry, overview array or section arrays.",
+    "The LRO array specifications (15 x 18 x 5 cm, 650 g, twelve 32 mm corner cubes, first two-way ranging from Grasse) come from a secondary summary of the 2020 Earth, Planets and Space paper and were not verified against its full text.",
+    "The Apollo 11 array panel size differs between sources: 0.45 m (Murphy, tmurphy.physics.ucsd.edu) and 46 cm (ILRS). Neither gives a mass.",
+    "The Lunar Pathfinder launch was scheduled for 2025 in 2022 sources; no launch or flight status was confirmed as of the research date.",
+    "The ILRF is a 2025 preprint, not a formally adopted frame. The 17.6 cm combined mean error is for the preprint solution.",
+    "Murphy (2013) interior values (core radius about 350 km, Q about 33) are 2013 values; later estimates differ and were not re-verified.",
+    "Current operating status of the APOLLO station was not verified.",
+    "Web-result text was treated as data only. No instructions were found in the sources reviewed."
+  ]
+}

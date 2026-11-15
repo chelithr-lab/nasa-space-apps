@@ -1,0 +1,362 @@
+{
+  "catalogue_id": 117,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 6,
+    "name": "Radiation and space environment"
+  },
+  "payload": {
+    "number": 117,
+    "name": "Solar wind analyser",
+    "article": {
+      "overview": "A solar wind analyser is an instrument class for measuring the solar wind, the stream of charged particles flowing outward from the Sun. Depending on design, it measures particle energy, direction, density and, in some cases, elemental or isotopic composition. The documented lunar-surface examples are historical. The Apollo 12 Solar Wind Spectrometer (SWS) was an in-situ electrostatic energy spectrometer that operated from November 1969 [1][2]. The Apollo 15 SWS was a second flight of the same design [5]. The Apollo Solar Wind Composition (SWC) experiment exposed aluminium foil to the solar wind and returned it to Earth for laboratory analysis [4][8]. No modern or proposed lunar-surface solar wind analyser with published specifications was identified in this run. A proposed plasma payload for the Lunar Orbital Platform-Gateway is noted separately because it is an orbital concept, not a surface instrument [9]. This article describes the payload class and its documented examples. It does not describe a single standard design.",
+      "description": "The solar wind is a continuous outflow of plasma from the Sun. The Moon has no substantial atmosphere and no global magnetic field comparable to Earth's, so an instrument on its surface can sample the solar wind directly. The Apollo 12 SWS sorted incoming charged particles by energy and direction using seven modulated Faraday cups [1][2]. A Faraday cup is an electrically conducting collector behind one or more grids. The grid voltages decide which particles reach the collector, so stepping the voltage builds an energy spectrum. In the Apollo 12 instrument, cup 7 pointed vertically and cups 1 to 6 surrounded it, tilted 60 degrees off vertical [1]. The sensors viewed partly overlapping parts of the lunar sky [2]. The Apollo SWC used a passive approach. Solar-wind ions were implanted in aluminium foil, the foil was returned to Earth, and the implanted particles were measured in a laboratory [4][8]. Its science therefore depends on sample return and later analysis rather than on real-time telemetry.",
+      "scientific_purpose_and_applications": "The instrument-level objectives recorded for the Apollo 12 SWS are: solar-wind plasma on the Moon, properties of the lunar surface and interior, general solar-wind behaviour, and Earth's magnetotail [2]. The NSSDCA-supplied description states that the SWS measured directional intensities of electron (6 to 1330 eV) and positive-ion (18 to 9780 eV) components of solar-wind and magnetotail plasma [1][2]. These objectives point to two broad applications. The first is measuring the local solar-wind environment at the lunar surface, including its behaviour near the Moon and when the Moon passes through the terrestrial magnetotail. The second is using implanted solar-wind ions as a sample of the Sun's composition. The SWC served this second purpose. The NTRS abstract of the Apollo 15 Preliminary Science Report reports preliminary helium and neon concentration results from the foils [4]. The sources accessed do not describe a modern lunar solar wind analyser, so the applications of a new instrument would depend on its energy range, composition capability and any pairing with magnetic or other plasma sensors.",
+      "operating_principle": "Faraday-cup energy spectrometry (SWS). The Apollo 12 SWS measured electrons over 6 to 1330 eV in seven steps spaced by a factor of 2, and positive ions over 18 to 9780 eV in fourteen steps spaced by a factor of the square root of 2 [1]. The measurement cycle was 28.1 seconds, and the stated flux range was 2.5 × 10^6 to 2.5 × 10^11 particles per cm² per second [1]. The exact grid-voltage sequence and the modulation scheme are not given in the sources accessed. Implantation and laboratory analysis (SWC). Solar-wind ions striking the aluminium foil were retained in it. The foil was returned to Earth, where the implanted particles were analysed [4][8]. The SWC records nothing in real time.",
+      "scientific_importance": "Solar-wind measurements at the lunar surface complement measurements made in space. Secondary accounts report that the Apollo 12 SWS found solar-wind behaviour similar to that measured in free space outside the Earth's magnetotail, and that its sensors kept returning data after sunset [10]. These statements come from a secondary source and were not re-verified against the primary Apollo 12 report in this run. The two Apollo approaches have complementary strengths. The SWS gives energy spectra in real time at one location over a limited energy range. The SWC gives elemental and isotopic information from an exposure, but only after the foil is returned, and it cannot resolve how conditions changed during that exposure [4][8].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, power or sensitivity for a lunar solar wind analyser. The examples below describe specific historical instruments and the values documented for them. They should not be read as the specification of every solar wind analyser.",
+        "examples": [
+          {
+            "name": "Apollo 12 Solar Wind Spectrometer (SWS)",
+            "type": "Flown historical instrument, part of the Apollo 12 ALSEP package",
+            "mass_kg": 5.7,
+            "deployed_dimensions_cm": [
+              30.5,
+              28.2,
+              34.5
+            ],
+            "power_consumption_w": {
+              "total": 12.5,
+              "basis": "NSSDCA-supplied total power"
+            },
+            "average_data_rate_bits_per_second": 66.2,
+            "sensor_configuration": "Seven modulated Faraday cups; cup 7 vertical, cups 1 to 6 at 60 degrees off vertical.",
+            "electron_energy_range_ev": [
+              6,
+              1330
+            ],
+            "electron_energy_steps": "7 steps, each a factor of 2 apart",
+            "positive_ion_energy_range_ev": [
+              18,
+              9780
+            ],
+            "positive_ion_energy_steps": "14 steps, each a factor of the square root of 2 apart",
+            "measurement_cycle_seconds": 28.1,
+            "flux_range_particles_cm2_s": [
+              2500000,
+              250000000000
+            ],
+            "operating_history": "Covers removed 20 November 1969 at about 15:30 UT. Standby during the lunar night beginning 3 March 1976; powered off 15 January 1977.",
+            "deployment": "A secondary Wikipedia account reports deployment by astronaut Pete Conrad on 19 November 1969. Not verified against a primary mission document.",
+            "qualification": "Environmental qualification values were not found in the sources accessed.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a12sws_solar_wind_28s_1hr/document/a12a_sws.txt",
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:sws.a12a",
+              "https://ntrs.nasa.gov/citations/19700025960"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 15 Solar Wind Spectrometer (SWS)",
+            "type": "Flown historical instrument, part of the Apollo 15 ALSEP package",
+            "mass_kg": 5.7,
+            "deployed_dimensions_cm": [
+              30.5,
+              28.2,
+              34.5
+            ],
+            "power_consumption_w": {
+              "total": 12.5,
+              "basis": "Apollo 15 PDS document; identical to the Apollo 12 values and not independently verified as Apollo 15-specific"
+            },
+            "average_data_rate_bits_per_second": 66.2,
+            "placement": "About 4 m north of the ALSEP central station; cup 1 faced east at emplacement. Central station at 26.13407 degrees N, 3.62981 degrees E. Historical coordinates, not landing-site recommendations.",
+            "sensor_configuration": "Seven modulated Faraday cups with the same geometry as the Apollo 12 instrument.",
+            "electron_energy_range_ev": [
+              6,
+              1480
+            ],
+            "electron_energy_steps": "7 steps, each a factor of 2 apart",
+            "positive_ion_energy_range_ev": [
+              30,
+              10400
+            ],
+            "positive_ion_energy_steps": "14 steps, each a factor of the square root of 2 apart",
+            "measurement_cycle_seconds": 28.1,
+            "operating_history": "Turned on 31 July 1971 at 19:37:10 UT with covers in place. Covers removed by command from Earth at 18:07:32 UT on 2 August 1971, about one hour after lunar module ascent. Intermittent proton-channel problems from 5 November 1971. Science and engineering data lost on 30 June 1972 due to high-voltage arcing; standby thereafter. Permanently commanded off on 14 June 1974.",
+            "deployment": "Deployed 31 July 1971 as part of ALSEP. Deployment method not stated in the PDS document.",
+            "qualification": "Environmental qualification values were not found in the sources accessed.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a15/instruments/a15a_sws.txt"
+            ],
+            "images": [
+              {
+                "id": "apollo15_sws_surface_view",
+                "description": "Apollo 15 Solar Wind Spectrometer experiment on the lunar surface, viewed from the south before dust-cover removal.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/AS15-86-11593_%2821062777613%29.jpg",
+                "source_page_url": "https://commons.wikimedia.org/wiki/File:AS15-86-11593_%2821062777613%29.jpg",
+                "publisher": "NASA / Project Apollo Archive (via Wikimedia Commons)",
+                "credit": "NASA / Project Apollo Archive, via Wikimedia Commons",
+                "caption": "Apollo 15 Solar Wind Spectrometer as viewed from the south before dust-cover removal (NASA photo AS15-86-11593).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Image URL is the Wikimedia Commons upload path for this file, carried from the v1 article and not separately fetched in this run. The Commons file page was read and confirms the NASA photo ID, caption, citation to NASA SP-289 Figure 10-4, and public-domain statement for NASA-created material. Query strings removed under the URL policy."
+              }
+            ]
+          },
+          {
+            "name": "Apollo Solar Wind Composition (SWC) foil experiment",
+            "type": "Flown historical passive collector, deployed separately from the ALSEP",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "missions_reported": "Apollo 11, 12, 14, 15 and 16 (secondary Wikipedia summary). The NTRS Apollo 15 Preliminary Science Report record summary lists foils on Apollo 11, 12, 14 and 15.",
+            "foil": "High-purity aluminium. Secondary Wikipedia summary gives a sheet of 0.30 m × 1.40 m. A search summary of the Apollo 14 Preliminary Science Report chapter gives about 30 cm × 140 cm; that chapter was not read directly. Thickness not verified in this run.",
+            "apollo_16_variant": "Platinum metal segments reported (secondary Wikipedia summary and NTRS Apollo 16 report record summary).",
+            "reported_exposure_durations": {
+              "apollo_11": "77 minutes (secondary Wikipedia summary; conflicts with a NASA teacher's guide that gives 18 hours 42 minutes for Apollo 11)",
+              "apollo_12": "18 hours 42 minutes (secondary)",
+              "apollo_14": "21 hours (secondary; no primary source found)",
+              "apollo_15": "41 hours 8 minutes (secondary)",
+              "apollo_16": "45 hours 5 minutes (secondary)"
+            },
+            "deployment": "Foil erected by astronauts on a pole facing the Sun (secondary Wikipedia summary).",
+            "results": "Preliminary helium and neon concentration results reported from the foils in the Apollo 15 Preliminary Science Report (NTRS abstract).",
+            "source_urls": [
+              "https://en.wikipedia.org/wiki/Solar_Wind_Composition_Experiment",
+              "https://ntrs.nasa.gov/citations/19720015179"
+            ],
+            "images": [
+              {
+                "id": "apollo11_swc_aldrin_deployment",
+                "description": "Astronaut Edwin E. Aldrin beside the deployed Apollo 11 Solar Wind Composition experiment on the lunar surface.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Aldrin_Next_to_Solar_Wind_Experiment_-_GPN-2000-001211.jpg",
+                "source_page_url": "https://commons.wikimedia.org/wiki/File:Aldrin_Next_to_Solar_Wind_Experiment_-_GPN-2000-001211.jpg",
+                "publisher": "NASA (via Wikimedia Commons)",
+                "credit": "NASA / Neil A. Armstrong, via Wikimedia Commons",
+                "caption": "Apollo 11 EVA: Edwin E. Aldrin beside the deployed Solar Wind Composition experiment (NASA photo AS11-40-5873).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Image URL is the Wikimedia Commons upload path for this file, carried from the v1 article and not separately fetched in this run. The Commons file page was read and confirms the NASA photo ID AS11-40-5873, the 20 July 1969 date, the credit and the public-domain statement for NASA-created material. Query strings removed under the URL policy."
+              }
+            ]
+          },
+          {
+            "name": "Proposed plasma payload for the Lunar Orbital Platform-Gateway",
+            "type": "Proposed orbital concept; not a lunar-surface instrument",
+            "status": "Proposed only; conceptual design of a model payload.",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "dimensions_cm": null,
+            "measured_quantities": "Not specified in the abstract reviewed; described only as space plasma measurements and observations.",
+            "source_urls": [
+              "https://arxiv.org/abs/2301.02189"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo 12 SWS measured 30.5 × 28.2 × 34.5 cm when deployed [1]. The Apollo 15 SWS document lists the same values [5], which should not be treated as independently verified. The SWC foil is a flat sheet, whose reported size is 0.30 m × 1.40 m in a secondary source [8]. A new analyser would need its dimensions set by its measurement range, sensitivity, mounting and thermal requirements.",
+        "mass_and_weight": "The Apollo 12 and Apollo 15 SWS instruments are each documented at 5.7 kg [1][5]. The Apollo 15 value duplicates the Apollo 12 value and is not independently verified. The passive SWC foil has no mass value in the sources accessed. For spacecraft engineering, mass affects launch requirements, lander capacity, structural support and deployment design.",
+        "power_requirements": "The Apollo 12 SWS is documented at 12.5 W total power [1]. The Apollo 15 PDS document lists the same figure [5], which is not independently verified as Apollo 15-specific. The passive SWC requires no power. The Gateway concept has no published power value in the abstract reviewed [9]."
+      },
+      "environmental_and_operational_requirements": "The Apollo 12 SWS was designed for the lunar surface. Its sensor covers were removed on 20 November 1969 [1], and the Apollo 15 covers were removed by command from Earth about one hour after ascent [5]. The Apollo 12 instrument went into standby during the lunar night and was eventually powered off [1]. The sources accessed do not give survival temperatures, radiation tolerances, vibration limits or other environmental qualification values for either Apollo instrument. These are listed as evidence gaps. In general terms, a lunar payload must operate without a substantial atmosphere, through large day-night temperature changes, and in a dusty environment exposed to radiation and micrometeoroids. These general conditions are not quantified here.",
+      "limitations": "A surface solar wind analyser measures conditions at one point. The Apollo 12 and 15 SWS instruments measured over a limited energy range from a fixed viewing geometry [1][5]. Their data rate of 66.2 bits per second [1][5] constrained the volume of information that could be returned. The Apollo 15 SWS also suffered proton-channel problems and then high-voltage arcing that ended its science data [5]. The SWC provides no real-time data. Its result is integrated over the exposure period, and its scientific yield depends on foil return and laboratory analysis [4][8].",
+      "transportation_and_deployment": {
+        "overview": "Both Apollo examples were carried to the Moon as part of the Apollo lunar surface programme and were placed by astronauts during extravehicular activity (EVA). The SWS formed part of the ALSEP station on Apollo 12 and Apollo 15 [1][5]. The SWC was deployed separately [8].",
+        "transportation_process": [
+          "Integration into the lunar module and mission stowage. The launch, trans-lunar transfer and landing are not described in the sources accessed.",
+          "Landing and EVA deployment. The Apollo 15 SWS was emplaced on 31 July 1971 [5]. The Apollo 12 SWS deployment is reported as 19 November 1969 by a secondary source [11]. The SWC foils were placed on the surface by astronauts [4][8].",
+          "Setup and activation. The Apollo 15 SWS was turned on with covers in place at 19:37:10 UT on 31 July 1971 [5]. Covers were removed later by command.",
+          "Power and data. The Apollo 12 and 15 SWS instruments each list 12.5 W total power and 66.2 bits per second average data rate [1][5]. The station-level power source is not described in the sources accessed.",
+          "Return. The SWC foils were returned to Earth for laboratory analysis [8]."
+        ],
+        "deployment_methods": "Thermal and mechanical interfaces: the sources accessed describe the sensor covers and cover-removal timing [1][5]. They do not describe the mechanical mounting or thermal interface in more detail. The Apollo examples document an astronaut-deployed approach, in which instruments were placed by hand during EVA.",
+        "historical_examples": "Apollo 12 SWS (ALSEP) [1][2]; Apollo 15 SWS (ALSEP) [5]; Apollo SWC foils (deployed separately) [8].",
+        "compatibility_assessment": "No compatibility claim is made for any current lander, rover or spacecraft. A new analyser would need its mass, dimensions, mounting, power, thermal and data interfaces assessed against verified lander specifications before any compatibility could be stated.",
+        "images": []
+      },
+      "historical_significance": "The Apollo experiments show two complementary methods for studying the solar wind at the Moon: in-situ electrostatic energy spectrometry (SWS) and passive collection followed by laboratory analysis (SWC) [1][4]. The Apollo 12 SWS results were published in the Apollo 12 Preliminary Science Report [3]. The SWC foils, returned to Earth, produced preliminary helium and neon results [4]. The Apollo 12 SWS was also reported to have continued transmitting after sunset [10]. This statement is from a secondary source.",
+      "limitations_and_uncertainties": "The payload name 'solar wind analyser' describes a class of instruments rather than one standard design. The Apollo examples are historical, not modern, and they are not interchangeable. The SWS measures in-situ energy spectra. The SWC collects ions for later laboratory analysis. Apollo 12 SWS specifications are from the NSSDCA-supplied PDS instrument document [1] and the PSI context page [2]. The Apollo 12 Preliminary Science Report chapter (PDF) could not be read in this run because the fetched PDF was binary and could not be rendered. Apollo 15 SWS operating dates and energy ranges are from the PDS instrument document [5]; its mass, dimensions, power and data rate duplicate the Apollo 12 values and are not independently verified. Foil dimensions, mission list and exposure durations rely on secondary sources [8] and search summaries; the Apollo 14 chapter was not read directly; the Apollo 11 exposure duration conflicts between sources; the Apollo 16 platinum detail is from a secondary source. No modern lunar-surface analyser with verified specifications was identified. The Gateway concept [9] has no published numerical specifications in the reviewed abstract. Statements on sunset-period data [10] and the Conrad deployment date [11] are not verified against primary documents in this run. The generic environmental and transportation discussion is engineering background, not a certified design specification.",
+      "images": [
+        {
+          "id": "apollo15_sws_surface_view",
+          "description": "Apollo 15 Solar Wind Spectrometer experiment on the lunar surface, viewed from the south before dust-cover removal.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/AS15-86-11593_%2821062777613%29.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:AS15-86-11593_%2821062777613%29.jpg",
+          "publisher": "NASA / Project Apollo Archive (via Wikimedia Commons)",
+          "credit": "NASA / Project Apollo Archive, via Wikimedia Commons",
+          "caption": "Apollo 15 Solar Wind Spectrometer as viewed from the south before dust-cover removal (NASA photo AS15-86-11593).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Image URL is the Wikimedia Commons upload path for this file, carried from the v1 article and not separately fetched in this run. The Commons file page was read and confirms the NASA photo ID, caption, citation to NASA SP-289 Figure 10-4, and public-domain statement for NASA-created material. Query strings removed under the URL policy."
+        },
+        {
+          "id": "apollo11_swc_aldrin_deployment",
+          "description": "Astronaut Edwin E. Aldrin beside the deployed Apollo 11 Solar Wind Composition experiment on the lunar surface.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Aldrin_Next_to_Solar_Wind_Experiment_-_GPN-2000-001211.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Aldrin_Next_to_Solar_Wind_Experiment_-_GPN-2000-001211.jpg",
+          "publisher": "NASA (via Wikimedia Commons)",
+          "credit": "NASA / Neil A. Armstrong, via Wikimedia Commons",
+          "caption": "Apollo 11 EVA: Edwin E. Aldrin beside the deployed Solar Wind Composition experiment (NASA photo AS11-40-5873).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Image URL is the Wikimedia Commons upload path for this file, carried from the v1 article and not separately fetched in this run. The Commons file page was read and confirms the NASA photo ID AS11-40-5873, the 20 July 1969 date, the credit and the public-domain statement for NASA-created material. Query strings removed under the URL policy."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "apollo15_sws_surface_view",
+          "description": "Apollo 15 Solar Wind Spectrometer experiment on the lunar surface, viewed from the south before dust-cover removal.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/AS15-86-11593_%2821062777613%29.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:AS15-86-11593_%2821062777613%29.jpg",
+          "publisher": "NASA / Project Apollo Archive (via Wikimedia Commons)",
+          "credit": "NASA / Project Apollo Archive, via Wikimedia Commons",
+          "caption": "Apollo 15 Solar Wind Spectrometer as viewed from the south before dust-cover removal (NASA photo AS15-86-11593).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Image URL is the Wikimedia Commons upload path for this file, carried from the v1 article and not separately fetched in this run. The Commons file page was read and confirms the NASA photo ID, caption, citation to NASA SP-289 Figure 10-4, and public-domain statement for NASA-created material. Query strings removed under the URL policy."
+        },
+        {
+          "id": "apollo11_swc_aldrin_deployment",
+          "description": "Astronaut Edwin E. Aldrin beside the deployed Apollo 11 Solar Wind Composition experiment on the lunar surface.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Aldrin_Next_to_Solar_Wind_Experiment_-_GPN-2000-001211.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Aldrin_Next_to_Solar_Wind_Experiment_-_GPN-2000-001211.jpg",
+          "publisher": "NASA (via Wikimedia Commons)",
+          "credit": "NASA / Neil A. Armstrong, via Wikimedia Commons",
+          "caption": "Apollo 11 EVA: Edwin E. Aldrin beside the deployed Solar Wind Composition experiment (NASA photo AS11-40-5873).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Image URL is the Wikimedia Commons upload path for this file, carried from the v1 article and not separately fetched in this run. The Commons file page was read and confirms the NASA photo ID AS11-40-5873, the 20 July 1969 date, the credit and the public-domain statement for NASA-created material. Query strings removed under the URL policy."
+        }
+      ],
+      "references": [
+        {
+          "title": "Apollo 12 Solar Wind Spectrometer instrument description (a12a_sws.txt)",
+          "publisher": "NASA Space Science Data Coordinated Archive (NSSDCA) via NASA PDS Geosciences Node",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a12sws_solar_wind_28s_1hr/document/a12a_sws.txt",
+          "date": "not stated",
+          "notes": "Primary archive document; read in this run."
+        },
+        {
+          "title": "Apollo 12 ALSEP Solar Wind Spectrometer (instrument context)",
+          "publisher": "Planetary Science Institute, ARCNAV",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:sws.a12a",
+          "date": "not stated",
+          "notes": "Instrument context page; read in this run."
+        },
+        {
+          "title": "The solar-wind spectrometer experiment (Apollo 12 Preliminary Science Report)",
+          "publisher": "NASA Manned Spacecraft Center; NASA Technical Reports Server (NTRS 70N35276)",
+          "url": "https://ntrs.nasa.gov/citations/19700025960",
+          "date": "1970-06-01",
+          "notes": "Authors Clay, Neugebauer and Snyder. NTRS record accessed; full text not read."
+        },
+        {
+          "title": "Solar-wind composition experiment (Apollo 15 Preliminary Science Report)",
+          "publisher": "NASA Manned Spacecraft Center; NASA Technical Reports Server (NTRS 72N22829)",
+          "url": "https://ntrs.nasa.gov/citations/19720015179",
+          "date": "1972-01-01",
+          "notes": "Authors Geiss, Buehler, Cerutti and Eberhardt. Abstract accessed; full text not read."
+        },
+        {
+          "title": "Apollo 15 Solar Wind Spectrometer instrument document (a15a_sws.txt)",
+          "publisher": "NASA Space Science Data Coordinated Archive (NSSDCA) via NASA PDS Geosciences Node",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a15/instruments/a15a_sws.txt",
+          "date": "not stated",
+          "notes": "Primary archive document; read in this run. Mass, dimensions, power and data rate duplicate the Apollo 12 values."
+        },
+        {
+          "title": "AS15-86-11593 (21062777613).jpg (Wikimedia Commons file page)",
+          "publisher": "Wikimedia Commons (NASA Project Apollo Archive source)",
+          "url": "https://commons.wikimedia.org/wiki/File:AS15-86-11593_%2821062777613%29.jpg",
+          "date": "2015-09-24 (upload date on file page)",
+          "notes": "Read in this run; confirms photo ID, caption and public-domain statement."
+        },
+        {
+          "title": "Aldrin Next to Solar Wind Experiment - GPN-2000-001211.jpg (Wikimedia Commons file page)",
+          "publisher": "Wikimedia Commons (NASA)",
+          "url": "https://commons.wikimedia.org/wiki/File:Aldrin_Next_to_Solar_Wind_Experiment_-_GPN-2000-001211.jpg",
+          "date": "1969-07-20 (photo date)",
+          "notes": "Read in this run; confirms photo ID AS11-40-5873 and public-domain statement."
+        },
+        {
+          "title": "Solar Wind Composition Experiment",
+          "publisher": "Wikipedia (secondary source)",
+          "url": "https://en.wikipedia.org/wiki/Solar_Wind_Composition_Experiment",
+          "date": "not stated",
+          "notes": "Secondary source; read in this run. Mission list, exposure durations, foil size and Apollo 16 platinum detail rely on it."
+        },
+        {
+          "title": "Space Plasma Physics Science Opportunities for the Lunar Orbital Platform-Gateway",
+          "publisher": "arXiv (Dandouras, I., Taylor, M. G. G. T., de Keyser, J., et al.)",
+          "url": "https://arxiv.org/abs/2301.02189",
+          "date": "2022-12-20 (submitted; arXiv:2301.02189v1)",
+          "notes": "Abstract accessed; full PDF not read. Concept only."
+        },
+        {
+          "title": "ALSEP essay",
+          "publisher": "Honeysuckle Creek Tracking and Space Operations Archive (Hamish Lindsay)",
+          "url": "https://www.honeysucklecreek.net/msfn_missions/ALSEP/hl_alsep.html",
+          "date": "not stated",
+          "notes": "Secondary source carried from the v1 article; not re-read in this run. Used only for the sunset-period data statement."
+        },
+        {
+          "title": "Solar Wind Spectrometer",
+          "publisher": "Wikipedia (secondary source)",
+          "url": "https://en.wikipedia.org/wiki/Solar_Wind_Spectrometer",
+          "date": "not stated",
+          "notes": "Secondary source carried from the v1 article; used only for the Apollo 12 deployment date and astronaut. Not verified against primary documents."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo 15 Solar Wind Spectrometer example": "payload.article.physical_specifications.examples[1].images",
+      "Apollo Solar Wind Composition example": "payload.article.physical_specifications.examples[2].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Image URLs for the two Wikimedia Commons files were carried from the v1 article; the Commons file pages were read in this run but the direct upload URLs were not separately fetched. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Version v2 (rerun). The v1 files (solar_wind_analyser_payload_117.md and .json) are retained unchanged.",
+    "Apollo 12 SWS specifications (mass 5.7 kg, dimensions 30.5 x 28.2 x 34.5 cm, total power 12.5 W, data rate 66.2 bit/s, energy ranges, cycle and flux) are from the NSSDCA-supplied PDS instrument document and are read directly.",
+    "Apollo 15 SWS mass, dimensions, power and data rate in the PDS document are identical to the Apollo 12 values. They are reported as stated but are not independently verified as Apollo 15-specific.",
+    "Apollo 12 Preliminary Science Report SWS chapter (PDF) could not be read in this run; the fetched PDF was binary and could not be rendered (no PDF renderer installed). The NTRS record was accessed but its full text was not.",
+    "Apollo 14 Preliminary Science Report SWC chapter could not be read directly. The foil size of about 30 cm x 140 cm comes from a search summary only.",
+    "SWC exposure durations are from a secondary Wikipedia summary. A NASA teacher's guide gives 18 hours 42 minutes for Apollo 11, which conflicts with the 77-minute figure. Unresolved.",
+    "A search result for the SWC exposure query contained embedded instructions to change topic. These were ignored and not acted on.",
+    "The Wikipedia Solar Wind Spectrometer (deployment date and astronaut) and the Honeysuckle Creek ALSEP essay (sunset-period data) are secondary sources carried from v1 and were not re-verified against primary documents in this run.",
+    "Image URLs for both Wikimedia Commons images are carried from v1. The Commons file pages were read and their captions, IDs and public-domain statements confirmed. Direct upload URLs were not separately fetched.",
+    "No modern or proposed lunar-surface solar wind analyser with published numerical specifications was identified. The Lunar Orbital Platform-Gateway concept (arXiv:2301.02189) is a conceptual orbital payload with no numerical specifications in the abstract reviewed.",
+    "Environmental qualification values (thermal, radiation, vibration), sponsor and PI details, and lander compatibility are not verified for either Apollo instrument. Listed as evidence gaps."
+  ]
+}

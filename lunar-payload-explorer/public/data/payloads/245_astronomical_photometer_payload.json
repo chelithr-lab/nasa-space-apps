@@ -1,0 +1,233 @@
+{
+  "catalogue_id": 245,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 12,
+    "name": "Astronomical observation"
+  },
+  "payload": {
+    "number": 245,
+    "name": "Astronomical photometer",
+    "article": {
+      "overview": "An astronomical photometer measures how bright celestial objects are, usually at a chosen wavelength band, and turns that brightness into a calibrated magnitude. On the Moon, such an instrument can observe the sky without the blurring and absorption caused by Earth's atmosphere, and the Moon's very thin atmosphere and stable surface make it an attractive platform for long-term monitoring.\n\nThe only lunar-surface example in this article that is documented as a photometric instrument operating in its own right is the **Lunar-based Ultraviolet Telescope (LUT)** flown on China's Chang'e-3 lander, which was launched on 2 December 2013 and operated on the Moon for about 18 months [1][2][7]. Its published results include calibrated magnitude zero points and a reported photometric stability over that period [1][2]. The **Apollo 16 Far Ultraviolet Camera/Spectrograph** (1972) was an earlier lunar-surface ultraviolet telescope and camera; it is included for historical context rather than as a photometer [4][5]. Two further designs, the **Lunar Terrestrial Observatory** [3] and the **LUPINE** concept [8], are proposals only.",
+      "description": "A photometer does not, in general, produce a picture. It records how much light arrives from a chosen target, usually from a small area of sky, and compares it with a known reference. A widely used approach is to observe standard stars whose brightness is already well measured, then use them to set a zero point. This value links the instrument's raw count rate to a standard magnitude scale. Once calibrated, the photometer can track changes in a target's brightness over time.\n\nPhotometers are often simpler than imaging systems. They can be designed around a single detector and a filter or coating that restricts the wavelength band. The LUT used a 150 mm telescope with a UV-enhanced CCD detector and a UV-sensitive coating, and it made observations within a small field of view (about 1.36 by 1.36 degrees) [1].\n\nIn this article, astronomical photometer refers to instruments whose main output is the calibrated brightness of celestial objects. This is a broader class than any single design, so the examples below should not be treated as interchangeable.",
+      "scientific_purpose_and_applications": "Lunar astronomical photometers are designed to measure ultraviolet brightness of stars and other targets, where Earth's atmosphere absorbs most ultraviolet light [1]; to establish stable calibration references for other telescopes, which the LUT's 18-month result supports [2]; to study Earth from the Moon, as the proposed Lunar Terrestrial Observatory would have done by monitoring Earth's albedo (a proposal only, with no reported flight) [3]; and to measure the lunar exosphere, as the proposed LUPINE concept would do by observing 130.4 nm atomic oxygen fluorescence (a concept only) [8].",
+      "operating_principle": "A typical lunar photometer collects light with a telescope, passes it through a filter or coating that defines the wavelength band, and focuses it onto a detector. The LUT's detector is a UV-enhanced, frame-transfer CCD with 1024 x 1024 active pixels of 13 micrometres each. The telescope is a Ritchey-Chretien design with a 150 mm primary mirror and a focal ratio of F/3.75 (focal length 563 mm). It has a pointing flat mirror and a two-axis gimbal with a stated pointing accuracy of 0.05 degrees [1].\n\nBrightness is determined by aperture photometry: the total counts from a star are measured within a defined aperture, after removing background light, dark current and stray light. The counts are then compared with the standard-star magnitude to find the zero point. The LUT team's pipeline included overscan correction, bias and dark-current removal, flat-fielding, source extraction, cosmic-ray rejection and aperture photometry [1].\n\nThe LUT's published calibration used the AB magnitude system. Its first-six-month zero points were 17.54 +/- 0.09 mag (set A) and 17.52 +/- 0.07 mag (set B) [1].",
+      "scientific_importance": "The Moon lacks a substantial atmosphere, so it offers a stable observing position that is free of the absorption that limits ground-based ultraviolet astronomy. The LUT's published data show that a lunar-surface photometer can produce calibrated magnitudes over many observing runs. Across 51 runs of 17 IUE standards through June 2015, the authors reported an average zero point of 17.53 +/- 0.05 mag, consistent with the earlier six-month result, and concluded that performance did not drift over 18 months [2].\n\nThese results are important because they show the feasibility of a lunar UV photometric programme, not because they establish any new astrophysical result. They also reveal practical constraints, including stray light from sunlight and limited sky coverage, which future designs would need to address [2].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar astronomical photometer. The values below describe specific instruments and proposals. Where a value is not stated in the consulted source, it is recorded as not publicly specified rather than estimated.",
+        "examples": [
+          {
+            "name": "Lunar-based Ultraviolet Telescope (LUT), Chang'e-3",
+            "type": "Flown lunar-surface ultraviolet telescope and photometer",
+            "status": "Flown on the Chang'e-3 lander; operated about 18 months (early 2014 to June 2015 per the 2015 preprint)",
+            "mass_kg": null,
+            "overall_dimensions_cm": null,
+            "power_w": null,
+            "optical_design": {
+              "telescope_type": "Ritchey-Chretien",
+              "primary_aperture_mm": 150,
+              "focal_ratio": "F/3.75",
+              "focal_length_mm": 563,
+              "field_of_view_deg": [1.36, 1.36],
+              "pixel_scale_arcsec_per_pixel": 4.76,
+              "pointing_flat_mirror_mm": [200, 166],
+              "gimbal": "two-dimensional, 0.05 deg pointing accuracy"
+            },
+            "detector": {
+              "type": "UV-enhanced e2v CCD, frame transfer",
+              "catalogue_name_discrepancy": "Listed as AIMO CCD E2V47-20 in the text and AIMO CCD47-20 in the table; not resolved",
+              "active_pixels": [1024, 1024],
+              "pixel_size_um": 13
+            },
+            "passband": {
+              "coating": "NUV, transparency peak at 2500 Angstrom (250 nm)",
+              "effective_fwhm_angstrom": 1080,
+              "wavelength_weighted_effective_wavelength_angstrom": 3046,
+              "peak_efficiency_at_2500_angstrom": 0.08
+            },
+            "calibration": {
+              "magnitude_system": "AB",
+              "zero_point_set_A_mag": "17.54 +/- 0.09 (first six months)",
+              "zero_point_set_B_mag": "17.52 +/- 0.07 (first six months)",
+              "zero_point_18_month_mag": "17.53 +/- 0.05 (51 runs of 17 IUE standards through June 2015)",
+              "stated_calibration_accuracy_percent": 5
+            },
+            "thermal": {
+              "ccd_cooling": "Thermoelectric cooling up to 40 C below ambient",
+              "reported_operating_temperature": "about -40 C at dawn/dusk to -20 C at noon"
+            },
+            "qualification": "Mass, power and overall dimensions not stated in the consulted sources. Values are from the 2014 and 2015 arXiv preprints and may be superseded by later LUT results.",
+            "source_urls": [
+              "https://arxiv.org/abs/1412.3870",
+              "https://arxiv.org/abs/1510.01435"
+            ],
+            "images": [
+              {
+                "id": "lut_m101_pinwheel_galaxy_test_image",
+                "description": "Pinwheel Galaxy (M101) image reported as taken by the Lunar-based Ultraviolet Telescope on the Chang'e-3 lander.",
+                "image_type": "Scientific test image from lunar-surface telescope",
+                "image_url": null,
+                "source_page_url": "https://www.space.com/28180-china-moon-lander-pinwheel-galaxy-photo.html",
+                "publisher": "Space.com",
+                "credit": "Not verified",
+                "caption": "Pinwheel Galaxy (M101) as reported in press coverage of Chang'e-3 lunar-surface ultraviolet telescope observations.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "No direct image asset URL or credit was verified from the source page (page was truncated in review). Linked source-page reference only. Search-result snippets credited the Chinese Academy of Sciences, the Bruce Murray Space Image Library and The Planetary Society; this was not confirmed on the source page."
+              }
+            ]
+          },
+          {
+            "name": "Apollo 16 Far Ultraviolet Camera/Spectrograph",
+            "type": "Historical lunar-surface ultraviolet telescopic camera and spectrograph (context example, not a dedicated photometer)",
+            "status": "Flown on Apollo 16, April 1972",
+            "mass_kg": null,
+            "overall_dimensions_cm": [49.5, 78.7, 53.3],
+            "dimensions_note": "Overall dimensions describe a reconstructed back-up engineering model on display, not the flown unit (Smithsonian, A19830142000).",
+            "power_w": null,
+            "primary_collecting_system": "F/1, 3-inch Schmidt camera (Smithsonian description)",
+            "wavelength_range": "Not stated (described as ultraviolet)",
+            "qualification": "Smithsonian describes the object as one of two back-up units to the flown camera; the flown unit's location is not stated on that page.",
+            "source_urls": [
+              "https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16",
+              "https://ntrs.nasa.gov/citations/19730058363"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Terrestrial Observatory",
+            "type": "Proposed lunar-based Earth radiation budget monitoring experiment (proposal; not flown)",
+            "mass_kg": null,
+            "power_w": null,
+            "qualification": "The consulted abstract gives no number of photometers, aperture, filters, mass, power or pointing specification. Full article not available to this review.",
+            "source_urls": [
+              "https://digitalcommons.njit.edu/fac_pubs/12117"
+            ],
+            "images": []
+          },
+          {
+            "name": "LUPINE (notional concept)",
+            "type": "Notional zenith-pointing far-ultraviolet photometer for lunar surface, 130.4 nm atomic oxygen fluorescence (concept; not flown)",
+            "mass_kg": null,
+            "power_w": null,
+            "qualification": "Hardware not publicly specified in the consulted sources. Known to this review only from a search-result summary of a 2020 AGU abstract.",
+            "source_urls": [
+              "https://ui.adsabs.harvard.edu/abs/2020AGUFMP060...06D/abstract"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The LUT's overall dimensions are not stated in the consulted sources. The Apollo 16 camera's dimensions (49.5 x 78.7 x 53.3 cm) describe a reconstructed back-up engineering model and are not comparable with the LUT's telescope-and-detector configuration. The two proposals have no verified dimensions. The instruments have different optical designs, wavelength bands and purposes, so their values should not be compared directly.",
+        "mass_and_weight": "Mass decides how easily a photometer can be delivered and operated. No mass value is stated in the consulted sources for the LUT, the Apollo 16 camera or the two proposals, so no mass is quoted.",
+        "power_requirements": "The LUT's CCD is thermoelectrically cooled, which requires power, but the consulted source does not state a power figure. No power value is quoted for any example."
+      },
+      "environmental_and_operational_requirements": "The LUT's CCD could be cooled thermoelectrically by up to 40 C below ambient, with a reported operating temperature of about -40 C at dawn and dusk and about -20 C at local noon [2]. The cabin was closed at sunrise and sunset, the periods when dust is believed to be lifted, and no dust-related degradation was reported over 18 months [2]. The first reflection mirror was fully exposed during observations. The authors estimated about 10^17 solar-wind protons striking it over 18 months, an order-of-magnitude estimate based on stated assumptions, and a shield was designed to reduce proton damage [2]. Sunlight produces strong stray light, which requires a dedicated observing and data-reduction strategy [2]. Oxidation of the mirror is considered negligible because the lunar atmosphere is extremely thin [2]. During each run, pointing was fixed relative to the Moon, with a total shift of about 100 pixels [2].",
+      "limitations": "The LUT's sky coverage was limited to a cap around the north pole: about 3,600 deg2 in total, with about 400 deg2 available at any given time [2]. Strong sunlight causes stray light, which restricts when and how observations can be made [2]. Late-type stars have larger zero-point uncertainty, and the K/M star group showed the largest scatter (17.45 +/- 0.13 mag over 23 runs) [2]. Medium-scale flat-fielding residuals of tens of pixels add error, and the stated calibration accuracy is 5% [2].",
+      "transportation_and_deployment": {
+        "overview": "The LUT was delivered to the Moon as part of the Chang'e-3 lander's payload suite. The Apollo 16 camera was carried and operated by astronauts. The Lunar Terrestrial Observatory and LUPINE are proposals with no verified interface data.",
+        "transportation_process": [
+          "Integrate the photometer into the lander's payload compartment on Earth, with a stable mounting point, power for the detector cooler and a data link to Earth as engineering considerations (not verified LUT interface details).",
+          "Launch the lander: the LUT launched on 2 December 2013 on a Long March-3B (secondary source [7]).",
+          "Land on the Moon: Chang'e-3 touched down on 14 December 2013 (secondary source [7]); site reporting is inconsistent and not verified here.",
+          "Perform first light on 16 December 2013 [1].",
+          "Operate the instrument with its cabin closed at sunrise and sunset to protect it from dust [2]."
+        ],
+        "deployment_methods": "The LUT was mounted within the Chang'e-3 lander's cabin as part of the lander's payload suite [2]. The Apollo 16 camera was carried and operated by astronauts; the Smithsonian states that astronaut John Young operated it in studies of the geocorona [5]. Secondary coverage reports that it was placed in the lunar module's shadow to limit heat and glare and aimed by hand; this was not verified against primary mission documentation [4].",
+        "historical_examples": "The Apollo 16 Far Ultraviolet Camera/Spectrograph (April 1972) and the Chang'e-3 Lunar-based Ultraviolet Telescope (2013 to 2015) are the two flown lunar-surface ultraviolet telescopes discussed in this article.",
+        "compatibility_assessment": "No lander compatibility is asserted for the Lunar Terrestrial Observatory or LUPINE. The LUT's launch and landing dates are from secondary sources, and its detailed interface specifications were not available in the consulted sources.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 16 Far Ultraviolet Camera/Spectrograph operated on the lunar surface in April 1972. The Smithsonian describes it as \"the first astronomical telescope to observe from another planetary body\" [5]. Carruthers (1973) reported that the mission demonstrated the electronographic technique for space astronomy and the value of the lunar surface as a base for astronomical observations [4]. The LUT operated on the lunar surface for about 18 months, from early 2014 to June 2015 [2], and its photometric calibration results are the most extensively documented example of a lunar-surface astronomical photometer in this review [1][2]. Later operation after June 2015 was not verified. The Lunar Terrestrial Observatory [3] and LUPINE [8] remain proposals, not flown instruments.",
+      "limitations_and_uncertainties": "The main uncertainties are the limited primary-source coverage of the LUT (two arXiv preprints, from 2014 and 2015 [1][2]), the unverified mass, power and dimensions, the inconsistent landing-site reporting for Chang'e-3 [7], and the proposal-stage status of the Lunar Terrestrial Observatory [3] and LUPINE [8], which remain unverified beyond their abstracts or search summaries.",
+      "images": [
+        {
+          "id": "lut_m101_pinwheel_galaxy_test_image",
+          "description": "Pinwheel Galaxy (M101) image reported as taken by the Lunar-based Ultraviolet Telescope on the Chang'e-3 lander.",
+          "image_type": "Scientific test image from lunar-surface telescope",
+          "image_url": null,
+          "source_page_url": "https://www.space.com/28180-china-moon-lander-pinwheel-galaxy-photo.html",
+          "publisher": "Space.com",
+          "credit": "Not verified",
+          "caption": "Pinwheel Galaxy (M101) as reported in press coverage of Chang'e-3 lunar-surface ultraviolet telescope observations.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "No direct image asset URL or credit was verified from the source page (page was truncated in review). Linked source-page reference only. Search-result snippets credited the Chinese Academy of Sciences, the Bruce Murray Space Image Library and The Planetary Society; this was not confirmed on the source page."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Photometric Calibration on Lunar-based Ultraviolet Telescope for Its First Six Months of Operation on Lunar Surface",
+          "publisher": "arXiv (Wang, J. et al., 2015a)",
+          "url": "https://arxiv.org/abs/1412.3870"
+        },
+        {
+          "title": "18-Months Operation of Lunar-based Ultraviolet Telescope: A Highly Stable Photometric Performance",
+          "publisher": "arXiv (Wang, J. et al., 2015b)",
+          "url": "https://arxiv.org/abs/1510.01435"
+        },
+        {
+          "title": "The Lunar Terrestrial Observatory: Observing the Earth using photometers on the Moon's surface",
+          "publisher": "Advances in Space Research 43(7), 1083-1089 (Palle, E. and Goode, P. R., 2009); DOI 10.1016/j.asr.2008.11.022",
+          "url": "https://digitalcommons.njit.edu/fac_pubs/12117"
+        },
+        {
+          "title": "Apollo 16 far-ultraviolet camera/spectrograph - Instrument and operations",
+          "publisher": "Applied Optics (Carruthers, G. R., 1973); NASA NTRS 19730058363",
+          "url": "https://ntrs.nasa.gov/citations/19730058363"
+        },
+        {
+          "title": "Camera, Lunar Surface Ultraviolet, Apollo 16 (accession A19830142000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "url": "https://airandspace.si.edu/collection-objects/camera-lunar-uv-apollo-16"
+        },
+        {
+          "title": "Chinese Moon Lander Spots Pinwheel Galaxy from Lunar Surface (Photo)",
+          "publisher": "Space.com",
+          "url": "https://www.space.com/28180-china-moon-lander-pinwheel-galaxy-photo.html"
+        },
+        {
+          "title": "Chang'e 3 (encyclopedia entry; secondary source for launch, landing and operating dates)",
+          "publisher": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chang%27e_3"
+        },
+        {
+          "title": "Lunar Ultraviolet Photometric Investigation of Exospheres (LUPINE) concept abstract",
+          "publisher": "AGU 2020 (known from search-result summary only)",
+          "url": "https://ui.adsabs.harvard.edu/abs/2020AGUFMP060...06D/abstract"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "Lunar-based Ultraviolet Telescope (LUT) example": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No direct image asset URL was verified, so image_url is null for the single registered image and its linked source page is used instead."
+  },
+  "data_quality_notes": [
+    "No direct image asset URL was verified from an official page; image_url is null and the Space.com source page is used as a linked reference.",
+    "LUT mass, power and overall dimensions are not stated in the consulted sources.",
+    "The LUT detector name differs between the text (AIMO CCD E2V47-20) and the table (AIMO CCD47-20) in the 2014 preprint.",
+    "Chang'e-3 landing site is reported inconsistently (Sinus Iridum planned; some sources say Mare Imbrium). Not verified against CNSA primary documentation.",
+    "The Chang'e-3 launch and landing dates come from secondary sources (encyclopedic and press). The LUT first-light date (16 December 2013) comes from the 2014 preprint.",
+    "The Apollo 16 camera unit count is taken from the Smithsonian record; a secondary source describes a different count.",
+    "The LUPINE concept is known only from a search-result summary of a 2020 AGU abstract; the Lunar Terrestrial Observatory is known from its abstract only.",
+    "The M101 test image date and credit (press reports of 2 December and of a Chinese Academy of Sciences credit) were not verified against the source page, which was truncated in review.",
+    "The Apollo 16 camera operation details (placement in the lunar module shadow, hand-aiming) come from secondary coverage and are not verified against primary mission documentation.",
+    "Later LUT operation after June 2015 was not verified."
+  ]
+}

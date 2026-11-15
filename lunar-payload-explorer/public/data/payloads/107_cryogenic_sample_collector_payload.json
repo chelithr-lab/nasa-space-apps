@@ -1,0 +1,280 @@
+{
+  "catalogue_id": 107,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 5,
+    "name": "Water, ice and volatile detection"
+  },
+  "payload": {
+    "number": 107,
+    "name": "Cryogenic sample collector",
+    "article": {
+      "overview": "A cryogenic sample collector is a sampling system that acquires lunar material, typically icy or volatile-bearing regolith, and keeps it cold so that volatile components such as water ice are less likely to be lost before analysis. The catalogue gives only the name, so this article describes the class by its function rather than by one design. The best-documented example found in this review is the European Space Agency's PROSPECT package, whose ProSEED drill and Solids Inlet System (SIS) are designed to collect samples from up to 1 m depth, seal them in single-use ovens and deliver them for analysis [1]. The 2024 article describes the package as being in hardware manufacturing and integration [1]. No flown lunar cryogenic sample collector was identified in the sources read for this article, and PROSPECT's flight status as of November 2026 could not be verified.",
+      "description": "The term describes a function rather than one standard instrument. Its defining requirement is that a sample is acquired and held in a state that limits the loss of volatile material. The PROSPECT authors state that the package is \"designed for minimizing volatile loss from the sample between acquisition and analysis\" [1], and they list keeping the sample temperature as low as possible as a key requirement for reducing volatile loss [1]. Without such control, volatile species can be lost during drilling, transfer and sealing, so the measured composition of the sample may differ from the composition of the material in place.\n\nIn general terms, a surface collector of this type needs a drill or scoop, a sample-transfer interface, sealable containers, and thermal, power and data interfaces to the lander. In PROSPECT these functions are carried by the ProSEED drill, the SIS that receives and seals each sample, and the ProSPA analytical package [1].",
+      "scientific_purpose_and_applications": "The main purpose is to obtain samples of ice-bearing regolith whose volatile content can be studied without the losses that warming would cause. The PROSPECT article states that the package is intended for the acquisition of cryogenic samples from depths up to 1 m, followed by analysis of volatiles [1].\n\nOther applications, such as cold-curated sample return from other planetary bodies, are discussed in NASA planning and curation material that was identified by search but not read in full during this review. They are therefore not described further here.",
+      "operating_principle": "In the PROSPECT design the ProSEED drill reaches up to 1 m depth [1]. The article gives two sample volumes: a push-tube sample of about 45 mm³ for the analytical package and an internal-auger sample of about 5,000 mm³ [1]. Before acquisition the drill tip is allowed to cool for a typical period of 10 to 20 minutes [1]. Each sample is then transferred to the SIS and sealed in a single-use oven [1]. The SIS interface is specified for operation between −60 and 0 °C, ideally around −50 °C, and must not exceed 0 °C during surface operations [1]. The PTFE seal material tolerates temperatures up to 322 °C at the seal interface, and the heated zone inside the oven reaches up to 950 °C [1].\n\nThe sealed sample is then analysed in the ProSPA analytical package [1]. The cold stage is therefore the acquisition, transfer and sealing part of the chain, and the high-temperature heating happens later, inside the sealed oven during analysis. This sequence is an inference from the figures quoted above.",
+      "scientific_importance": "Samples that keep their volatile content could support composition measurements that warmed material cannot. The PROSPECT article treats volatile loss as the central design problem and states that the package is designed to minimise it between acquisition and analysis [1]. A surface collector of this kind therefore matters mainly for the accuracy of volatile measurements, not only for the amount of material collected. Its scientific value depends on how well volatile loss is controlled along the chain from acquisition to analysis. The sources read do not report a measured lunar result for PROSPECT, so the importance of this payload class is prospective.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a cryogenic sample collector. Values describe the PROSPECT package and the PRIME-1 TRIDENT drill as stated in the cited sources; the PROSPECT mass figures are whole-package values.",
+        "examples": [
+          {
+            "name": "PROSPECT ProSEED drill and ProSPA sample-handling chain (ESA)",
+            "type": "Lander-mounted sample acquisition and analysis package; hardware in manufacturing and integration per 2024 article; flight status not verified",
+            "total_mass_kg": 44.8,
+            "subsystem_mass_kg": {
+              "ProSEED": 31.8,
+              "ProSEED_CEU": 5.3,
+              "ProSEED_D_and_P": 23.4,
+              "ProSEED_harness": 3.1,
+              "ProSPA": 13.0,
+              "ProSPA_analytical_package": 10.35,
+              "ProSPA_SIS": 2.65
+            },
+            "dimensions_mm": null,
+            "power_and_data": null,
+            "sampling_depth_mm": {
+              "min": 0,
+              "max": 1000
+            },
+            "push_tube_sample_mm3": 45,
+            "internal_auger_sample_mm3": 5000,
+            "sis_operational_temperature_c": {
+              "min": -60,
+              "max": 0
+            },
+            "sis_ideal_temperature_c": -50,
+            "sis_non_operational_temperature_c": {
+              "min": -80,
+              "max": 80
+            },
+            "ptfe_seal_max_interface_temperature_c": 322,
+            "oven_heated_zone_max_temperature_c": 950,
+            "drill_tip_precooling_minutes": {
+              "min": 10,
+              "max": 20
+            },
+            "ground_test_results": "Laboratory drilling to 1 m in gas concrete and other materials at temperatures down to below -150 C, as reported in the 2024 article. Not flight data.",
+            "lifetime": null,
+            "qualification": "Design requirements and laboratory results from the 2024 article only. Dimensions, power and data volumes, lifetime and sensitivity values were not re-verified in this run and are set to null.",
+            "source_urls": [
+              "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full"
+            ],
+            "images": [
+              {
+                "id": "prospect_lander_accommodation_schematic",
+                "description": "Schematic of the PROSPECT elements in a typical lander accommodation configuration.",
+                "image_type": "Technical schematic (research article figure)",
+                "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g001.webp",
+                "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+                "publisher": "Frontiers in Space Technologies (Trautner et al., 2024)",
+                "credit": "Figure 1 of Trautner et al. (2024), Frontiers in Space Technologies",
+                "caption": "The elements of the PROSPECT package, schematically depicted in a typical accommodation configuration (caption paraphrased).",
+                "section_placements": [
+                  "physical_specifications.examples[0]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct figure URL taken from the article page's image source in this run; not fetched as a binary. Reuse rights follow the publisher's terms, which were not checked."
+              },
+              {
+                "id": "prospect_prosEED_drill_box",
+                "description": "ProSEED drill box and main subassemblies.",
+                "image_type": "Technical diagram (research article figure)",
+                "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g003.webp",
+                "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+                "publisher": "Frontiers in Space Technologies (Trautner et al., 2024)",
+                "credit": "Figure 3 of Trautner et al. (2024), Frontiers in Space Technologies",
+                "caption": "ProSEED drill box and main subassemblies. MLI is not shown in this depiction.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct figure URL taken from the article page's image source in this run; not fetched as a binary. Reuse rights follow the publisher's terms, which were not checked."
+              }
+            ]
+          },
+          {
+            "name": "PRIME-1 TRIDENT drill (NASA; built by Honeybee Robotics)",
+            "type": "Flown lunar drill and mass-spectrometer demonstration; not a cryogenic sample collector",
+            "mass_kg": null,
+            "length_m_approx": 1,
+            "drive": "Rotary and percussive actuators (augering drill)",
+            "mission": "IM-2 (Athena) landed 6 March 2025 about 400 m from Mons Mouton; lander on its side; operations about 10 hours against a planned 10 days",
+            "sample_delivery_confirmed": false,
+            "data_volume_gb_im2": 6.6,
+            "qualification": "Mass and dimensions not publicly specified in the NASA page read. NASA does not describe cold sample handling for this hardware.",
+            "source_urls": [
+              "https://www.nasa.gov/missions/artemis/clps/nasas-lunar-drill-technology-passes-tests-on-the-moon/"
+            ],
+            "images": [
+              {
+                "id": "prime1_lunar_surface_drill_deployed",
+                "description": "PRIME-1 suite on the lunar surface after the IM-2 landing, with the drill deployed between the lander legs.",
+                "image_type": "Lunar surface photograph (mission imagery)",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2025/04/prime-1-lunar-surface-crop.jpg",
+                "source_page_url": "https://www.nasa.gov/missions/artemis/clps/nasas-lunar-drill-technology-passes-tests-on-the-moon/",
+                "publisher": "NASA",
+                "credit": "Intuitive Machines, as credited on the NASA page",
+                "caption": "IM-2 image taken 6 March 2025 after the landing; the lander lies on its side near the intended landing site, and the PRIME-1 suite with the deployed drill is visible between the lander legs.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct image URL taken from the NASA page in this run; not fetched as a binary. The page states the caption and credit. The drill is not a cryogenic collector."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Not re-verified for PROSPECT in this run (set to null in Example 1). The PRIME-1 TRIDENT drill is about 1 m long per NASA; no other dimensions are publicly specified in the NASA page read.",
+        "mass_and_weight": "PROSPECT whole-package mass 44.8 kg; ProSEED 31.8 kg; ProSPA 13 kg (2024 article). Not comparable with a stand-alone collector. TRIDENT mass not publicly specified in the NASA page read.",
+        "power_requirements": "Not re-verified in this run; no power value is stated."
+      },
+      "environmental_and_operational_requirements": "A cryogenic collector must work in a lunar polar environment, which has no substantial atmosphere, very cold shadowed areas, high-energy radiation and micrometeoroid exposure. These general conditions are engineering considerations. The specific thermal values come from the PROSPECT design. The SIS must be held between −60 and 0 °C in operation, ideally near −50 °C [1], so the lander must support that thermal range. The seal tolerates up to 322 °C at its interface and the oven interior reaches up to 950 °C [1], so the sealing stage carries thermal constraints of its own. The thermal accommodation that would hold the SIS in range on a specific lander was not verified in this review.\n\nOperationally, a collector of this kind depends on the lander for power, data and thermal control. The PROSPECT power and data figures were not re-verified in this run, so no power or data requirement is stated here.",
+      "limitations": "The main limitation is that the sources read describe a design, its thermal requirements and laboratory tests, not a flight measurement of a cryogenic sample's volatile content on the Moon. PROSPECT's status as of November 2026 is not verified; the 2024 article gives plans for delivery in 2025 and a landing in 2026 [1]. The sources read do not describe cold storage for returning samples to Earth, so PROSPECT should not be treated as a complete cryogenic sample-return chain. The PRIME-1 drill did not confirm its penetration depth or sample delivery [2], so it provides no cryogenic sample data.",
+      "transportation_and_deployment": {
+        "overview": "A surface cryogenic sample collector would normally be delivered as part of a lander payload, with its drill, sample interface and analysis hardware integrated before launch. PROSPECT is described in a typical lander accommodation configuration, with the drill box, the ProSPA analytical package and its SIS, and the control electronics unit mounted on the lander [1]. Its transportation chain is therefore an integration, delivery and deployment chain.",
+        "transportation_process": [
+          "Integrate the drill box, the ProSPA analytical package with its SIS below it, and the control electronics unit on the lander in the accommodation configuration shown in the schematic.",
+          "Launch and transfer the lander towards the Moon. The 2024 article names CLPS mission CP-22 for a 2026 landing but does not describe the transfer profile.",
+          "Land the lander and deploy the ProSEED drill to acquire samples.",
+          "Acquire each sample, transfer it to the SIS and seal it in a single-use oven.",
+          "Analyse each sealed sample in the ProSPA analytical package."
+        ],
+        "deployment_methods": "Drill deployment of the ProSEED drill on the lander, as described in the 2024 article. Hold-down and release mechanisms were not verified in this run.",
+        "historical_examples": "No flown lunar cryogenic collector identified. The PRIME-1 TRIDENT drill flew on IM-2 in 2025 but NASA does not report cold sample collection by that hardware.",
+        "compatibility_assessment": "Compatibility with a specific lander has not been verified. The 2024 article names CP-22 as the planned flight; mass, dimensions, power, data and mounting requirements would need checking against a verified lander interface document.",
+        "images": [
+          {
+            "id": "prospect_lander_accommodation_schematic",
+            "description": "Schematic of the PROSPECT elements in a typical lander accommodation configuration.",
+            "image_type": "Technical schematic (research article figure)",
+            "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g001.webp",
+            "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+            "publisher": "Frontiers in Space Technologies (Trautner et al., 2024)",
+            "credit": "Figure 1 of Trautner et al. (2024), Frontiers in Space Technologies",
+            "caption": "The elements of the PROSPECT package, schematically depicted in a typical accommodation configuration (caption paraphrased).",
+            "section_placements": [
+              "physical_specifications.examples[0]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct figure URL taken from the article page's image source in this run; not fetched as a binary. Reuse rights follow the publisher's terms, which were not checked."
+          }
+        ]
+      },
+      "historical_significance": "The cryogenic sample collector is a relatively new concept in lunar exploration. In the sources read, its history is mainly the definition of the technical problem and its laboratory testing. A search snippet of the 2024 PROSPECT article indicates that the package was first developed for the Russian-led Luna-27 lander and later adapted to a NASA CLPS lander; this was not confirmed against the full text in this run [1]. In 2025 the PRIME-1 drill flew on IM-2. The lander's operation ended after about 10 hours, and PRIME-1 results were still being analysed when NASA's page was written [2]. No flown cryogenic collection result was identified.",
+      "limitations_and_uncertainties": "Evidence gaps: (1) PROSPECT's flight and landing status as of November 2026 was not verified; the planned 2026 landing comes from a 2024 article [1]. (2) The PROSPECT figures in this version were checked against the 2024 Frontiers article's HTML text, not its PDF. Dimensions, power, data, lifetime and sensitivity values from the earlier draft were not re-verified and are omitted. (3) Lunar cold-curation requirements, freezer designs and NASA cold-stowage challenges were identified only in search results and were not read in full; they are not used as evidence in this article. (4) NASA does not confirm the PRIME-1 drill depth or sample delivery, and the PRIME-1 data were still under analysis [2]. (5) Only two sources were read in full in this run, so this article is not a survey of cryogenic sampling concepts. Other concepts, including non-lunar hardware, should be added before the article is treated as a survey.",
+      "images": [
+        {
+          "id": "prospect_engineering_model_hardware",
+          "description": "PROSPECT Engineering Model hardware: ProSEED drill box with drill rod, SIS engineering model with tapping station and carousel, and ProSEED control electronics unit.",
+          "image_type": "Engineering hardware figure (research article)",
+          "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g011.webp",
+          "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+          "publisher": "Frontiers in Space Technologies (Trautner et al., 2024)",
+          "credit": "Figure 11 of Trautner et al. (2024), Frontiers in Space Technologies; credit line printed on the source page not separately checked",
+          "caption": "Engineering Model hardware of the PROSPECT payload (caption paraphrased from the article's figure description).",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct figure URL taken from the article page's image source in this run; not fetched as a binary. Reuse rights follow the publisher's terms, which were not checked."
+        },
+        {
+          "id": "prospect_lander_accommodation_schematic",
+          "description": "Schematic of the PROSPECT elements in a typical lander accommodation configuration.",
+          "image_type": "Technical schematic (research article figure)",
+          "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g001.webp",
+          "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+          "publisher": "Frontiers in Space Technologies (Trautner et al., 2024)",
+          "credit": "Figure 1 of Trautner et al. (2024), Frontiers in Space Technologies",
+          "caption": "The elements of the PROSPECT package, schematically depicted in a typical accommodation configuration (caption paraphrased).",
+          "section_placements": [
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct figure URL taken from the article page's image source in this run; not fetched as a binary. Reuse rights follow the publisher's terms, which were not checked."
+        },
+        {
+          "id": "prospect_prosEED_drill_box",
+          "description": "ProSEED drill box and main subassemblies.",
+          "image_type": "Technical diagram (research article figure)",
+          "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g003.webp",
+          "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+          "publisher": "Frontiers in Space Technologies (Trautner et al., 2024)",
+          "credit": "Figure 3 of Trautner et al. (2024), Frontiers in Space Technologies",
+          "caption": "ProSEED drill box and main subassemblies. MLI is not shown in this depiction.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct figure URL taken from the article page's image source in this run; not fetched as a binary. Reuse rights follow the publisher's terms, which were not checked."
+        },
+        {
+          "id": "prime1_lunar_surface_drill_deployed",
+          "description": "PRIME-1 suite on the lunar surface after the IM-2 landing, with the drill deployed between the lander legs.",
+          "image_type": "Lunar surface photograph (mission imagery)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2025/04/prime-1-lunar-surface-crop.jpg",
+          "source_page_url": "https://www.nasa.gov/missions/artemis/clps/nasas-lunar-drill-technology-passes-tests-on-the-moon/",
+          "publisher": "NASA",
+          "credit": "Intuitive Machines, as credited on the NASA page",
+          "caption": "IM-2 image taken 6 March 2025 after the landing; the lander lies on its side near the intended landing site, and the PRIME-1 suite with the deployed drill is visible between the lander legs.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct image URL taken from the NASA page in this run; not fetched as a binary. The page states the caption and credit. The drill is not a cryogenic collector."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "prospect_engineering_model_hardware",
+          "description": "PROSPECT Engineering Model hardware: ProSEED drill box with drill rod, SIS engineering model with tapping station and carousel, and ProSEED control electronics unit.",
+          "image_type": "Engineering hardware figure (research article)",
+          "image_url": "https://www.frontiersin.org/files/Articles/1331828/xml-images/frspt-05-1331828-g011.webp",
+          "source_page_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+          "publisher": "Frontiers in Space Technologies (Trautner et al., 2024)",
+          "credit": "Figure 11 of Trautner et al. (2024), Frontiers in Space Technologies; credit line printed on the source page not separately checked",
+          "caption": "Engineering Model hardware of the PROSPECT payload (caption paraphrased from the article's figure description).",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct figure URL taken from the article page's image source in this run; not fetched as a binary. Reuse rights follow the publisher's terms, which were not checked."
+        }
+      ],
+      "references": [
+        {
+          "title": "PROSPECT: A comprehensive sample acquisition and analysis package for lunar science and exploration",
+          "publisher": "Frontiers in Space Technologies, vol. 5 (Trautner et al., 2024-04-03)",
+          "url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full"
+        },
+        {
+          "title": "NASA's Lunar Drill Technology Passes Tests on the Moon (PRIME-1 on IM-2)",
+          "publisher": "NASA (publication date not captured in this review)",
+          "url": "https://www.nasa.gov/missions/artemis/clps/nasas-lunar-drill-technology-passes-tests-on-the-moon/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "PROSPECT example": "payload.article.physical_specifications.examples[0].images",
+      "PRIME-1 TRIDENT example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master registry."
+  },
+  "data_quality_notes": [
+    "v2 rerun. PROSPECT mass, thermal limits, sample volumes, drill depth and pre-cooling values were re-checked against the 2024 Frontiers article HTML text in this run; the PDF was not checked.",
+    "Values from the v1 draft that were not re-verified in this run (PROSPECT dimensions, power, data volumes, lifetime, sensitivity and the NASA Integrated Lunar Science Strategy quotes and temperature list) have been removed or set to null.",
+    "Frontiers figure URLs were taken from the article page's image sources in this run and were not fetched as binaries. The NASA image URL was taken from the NASA page and was not fetched as a binary.",
+    "Bibliographic author list 'Trautner, R. et al.' and volume 5 were carried from the v1 article and the figure numbering; not re-verified from the article header in this run.",
+    "NTRS PDFs 20190027333 and 20150011440 could not be read as text by the fetch tool and are not used as evidence.",
+    "PRIME-1 (NASA): drill depth and sample delivery to MSOLO are not confirmed by the NASA page; PRIME-1 data were still under analysis at the time of the page.",
+    "Research budget for this run: 6 web searches, 5 page fetches (2 article/page reads with content, 2 unreadable PDFs, 1 supplementary page with no relevant content)."
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "catalogue_id": 122,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 6,
+    "name": "Radiation and space environment"
+  },
+  "payload": {
+    "number": 122,
+    "name": "Energetic neutral atom analyser",
+    "article": {
+      "overview": "An energetic neutral atom (ENA) analyser detects atoms that carry kinetic energy but have no electrical charge. Charged particles are steered by electric and magnetic fields, but neutral atoms travel in straight lines and cannot be steered, so ENAs carry information about the plasma that produced them to a distant detector. An ENA analyser therefore works as a remote-sensing \"camera\" for plasma processes: it records where neutral atoms arrive from, how fast they travel, and which chemical species they are.\n\nIn the flown examples reviewed for this version, ENA analysers have been carried by spacecraft orbiting the Moon, Earth, Saturn and the Sun–Earth L1 point. No ENA analyser operating on the lunar surface was identified in the sources accessed. The best-documented lunar example is the Sub-keV Atom Reflecting Analyzer (SARA) on India's Chandrayaan-1 orbiter, whose CENA sensor measured hydrogen atoms reflected from the lunar surface [1][2][3].\n\n**Scope of this article.** The article covers ENA analysers for space-plasma and planetary-surface studies. The emphasis is on the flown SARA/CENA instrument on Chandrayaan-1. The IBEX-Lo and IBEX-Hi, IMAP-Lo and Cassini MIMI/INCA instruments are included as design lineages and comparison examples. The article does not cover ENA-free charged-particle analysers (catalogue entries 117–121: solar wind analyser, plasma analyser, Langmuir probe, ion spectrometer and electron spectrometer), nor ENA emission models that have no instrument behind them.",
+      "description": "An ENA analyser has three functional jobs: it must **reject charged particles** that would otherwise contaminate the measurement, **convert or detect the neutral atoms**, and **measure the arrival direction, energy and, where possible, mass** of each atom. Because neutral atoms cannot be directly deflected or focused by fields, the measurement chain has to produce a charged signal from the neutral atom before any energy or mass analysis can take place.\n\nThe SARA instrument on Chandrayaan-1 consisted of two sensors and a digital processing unit. CENA (Chandrayaan-1 Energetic Neutral Analyzer) is the ENA imaging mass analyser. SWIM (Solar Wind Monitor) is an ion mass analyser that measured the incoming plasma at the same time. The digital processing unit (DPU) commands and controls both sensors and interfaces them with the spacecraft [1].\n\nThe heliospheric ENA cameras flown on IBEX and IMAP follow a related but different architecture. IBEX carried two high-sensitivity, single-pixel neutral atom cameras [6][7]. IBEX-Lo covers about 0.01 to 2 keV and IBEX-Hi covers about 0.3 to 6 keV, with overlapping energy ranges. Each sensor has an approximately 7° × 7° field of view [7]. IMAP-Lo is described as a single-pixel camera with a large geometric factor. Its entry subsystem removes charged particles and defines the field of view, and its time-of-flight subsystem separates the species (H, D, He, O and Ne) [4].\n\nThe Cassini Magnetospheric Imaging Instrument (MIMI) included the Ion and Neutral Camera (INCA). NASA describes INCA as working like a pinhole camera that forms images from fast atoms rather than light. For each neutral atom that passed through its detectors, INCA recorded speed, composition and arrival direction [9].",
+      "scientific_purpose_and_applications": "ENA analysers address questions about how plasma interacts with bodies that have no global magnetic field and no thick atmosphere. The SARA mission was designed to study solar wind–Moon interaction using ENAs from the lunar surface as a diagnostic, while also monitoring the incoming solar wind ions [1]. Its results include a measurement that about 20% of incident solar-wind protons are reflected back to space as hydrogen ENAs, which contradicted earlier assumptions that the regolith absorbs almost all of the solar wind [1][2]. The paper notes that the same process is expected on other regolith-covered airless bodies such as Mercury, asteroids and Phobos [1].\n\nThe same SARA dataset detected a lunar magnetic anomaly with a mini-magnetosphere. The first ENA image of this structure showed a region about 360 km across at the surface, surrounded by a roughly 300 km thick zone of enhanced plasma flux, visible only in hydrogen atoms above 150 eV [3].\n\nHeliospheric ENA imagers (IBEX-Lo/Hi and IMAP-Lo/Hi/Ultra) apply the same principle to the outer boundary of the solar system. IBEX's ENA observations revealed an unexpected Ribbon of enhanced neutral emission extending over about 0.2 to 6 keV [7]. The IMAP mission summary describes its ENA suite as collectively covering about 10 eV to 300 keV, with a combined collection-power increase of about 15×, 25× and 35× relative to IBEX-Lo, IBEX-Hi and Cassini/INCA for IMAP-Lo, IMAP-Hi and IMAP-Ultra respectively [5]. Those figures are mission-level comparisons from a secondary directory and have not been checked against the instrument papers.\n\nCassini's INCA used ENAs in the same way at Saturn, tracing each atom back to where in the Saturn system it was produced [9].",
+      "operating_principle": "The SARA/CENA design gives a concrete example of the measurement chain [1]:\n\n1. **Charged-particle rejection.** An electrostatic deflector with two electrodes, one biased at +5 kV and one at ground, deflects ions below about 15 keV away from the entrance. Neutral particles pass through unaffected.\n2. **Conversion.** Neutral atoms strike a conversion surface at grazing incidence. This surface is a highly polished silicon wafer coated with magnesium oxide (MgO), which converts neutral atoms into positive ions.\n3. **Energy analysis.** The converted ions pass through a wave-type electrostatic energy analyser, which applies four variable potentials to a system of electrodes. The same structure forms an optical labyrinth that blocks ultraviolet photons; the paper cites a photon-rejection factor of 2×10⁻⁸ for a similar analyser on SOHO/CELIAS [1].\n4. **Time of flight and mass.** After a 2.4 kV post-acceleration, ions strike a start surface (a polished mono-crystalline tungsten plate) and produce secondary electrons that trigger a start microchannel plate (MCP). Ions reflected from the start surface, mostly as neutral atoms, travel to a stop MCP. The time between the start and stop pulses, together with the known path length, gives velocity; combined with the energy analysis, this gives mass [1].\n5. **Direction.** Position-sensitive anodes in the start MCP determine the arrival direction and the path length used for the time-of-flight calculation [1].\n\nIBEX-Lo works differently in detail. It is a time-of-flight mass spectrometer that registers neutral atoms as the negative ions they produce on impact with a conversion surface [8]. That surface is kept covered by a thin layer of water, replenished by outgassing from the sensor and spacecraft. The instrument therefore registers both negative ions formed directly and negative ions sputtered from the water layer [8]. Helium atoms rarely form negative ions directly, and are detected mainly through the sputtered products [8]. IBEX-Lo does not measure each atom's energy directly. Its electrostatic analyser (ESA) sets an energy passband, and the instrument accepts only ions within that range. Different energies are measured by switching the instrument to a different energy setting [8].\n\nThe IMAP-Lo and IBEX-Lo designs use a single-pixel camera architecture rather than the position-sensitive imaging used by SARA. In IMAP-Lo, the entry subsystem removes ions, electrons and ultraviolet photons and sets the field of view, and the time-of-flight subsystem separates species [4]. The boresight of IMAP-Lo can be articulated over about 60°–180° elongation from the spin axis to track the interstellar flow [4].",
+      "scientific_importance": "The SARA observations matter for two reasons. First, they changed the accepted picture of how much solar-wind hydrogen is absorbed by the lunar regolith, which affects estimates of the solar-wind hydrogen available for trapping in permanently shadowed regions near the poles and for water/OH formation [1]. Second, the mini-magnetosphere measurement demonstrated that neutral-atom imaging can probe the plasma environment around magnetic anomalies on an airless body [3].\n\nIBEX independently observed backscattered hydrogen ENAs from the Moon at much greater distance and reported an ENA albedo of about 10%; the SARA authors describe their results as consistent with this finding [1][6]. The NASA mission page states the IBEX objective as mapping the boundary of the solar system [6]. The IBEX Ribbon, which IBEX observations revealed, was an unexpected feature of the heliospheric boundary that defined much of the mission's early science [7].",
+      "physical_specifications": {
+        "note": "There is no universal specification for an ENA analyser. Each instrument is defined by its energy range, field of view, geometric factor, mass resolution and the spacecraft it flies on, and these differ between the lunar, Earth-orbit, Sun–Earth L1 and Saturn examples below. Where a value is not stated in a source it is reported as not publicly specified. Numbers in the tables below are taken from one instrument family and should not be compared directly with values from another.\n\nThe examples are ordered by the strength of their documentation.",
+        "examples": [
+          {
+            "name": "Sub-keV Atom Reflecting Analyzer (SARA): CENA and SWIM sensors with DPU, Chandrayaan-1",
+            "type": "Flown lunar-orbit ENA imaging mass analyser (CENA) with co-located ion mass analyser (SWIM)",
+            "system_mass_kg": 4.4,
+            "system_power_w": 17.1,
+            "sensor_mass_kg_per_sensor": null,
+            "sensor_mass_note": "Separate CENA, SWIM and DPU masses were not assigned unambiguously in the extracted table; 452 g and 1977 g appear without a confirmed sensor mapping. Not used as per-sensor values.",
+            "cena": {
+              "particle_measured": "Neutral atoms (ENAs)",
+              "energy_range": "10 eV to 3.3 keV",
+              "full_field_of_view_deg": "160 x 15 (text)",
+              "angular_resolution_fwhm_deg": "9 x 25 for E > 50 eV (table)",
+              "mass_groups": "H, O, Na/Mg/Si/Al group, K/Ca group, Fe group (table)",
+              "geometric_factor": "approximately 10^-2 cm^2 sr eV/eV at 3.3 keV (table)",
+              "viewing_directions": 7,
+              "viewing_geometry": "Nadir (Moon-facing) from the Chandrayaan-1 top deck",
+              "principle": "Electrostatic deflector (+5 kV and ground electrodes), MgO-coated silicon conversion surface at grazing incidence, wave-type electrostatic energy analyser, 2.4 kV post-acceleration, time-of-flight section with tungsten start surface and stop MCP, position-sensitive start anodes"
+            },
+            "swim": {
+              "particle_measured": "Ions",
+              "energy_range": "10 eV/q to 15 keV/q",
+              "energy_resolution_percent": 7,
+              "mass_range_amu": "1 to 40",
+              "full_field_of_view_deg": "180 x 9 (text)",
+              "angular_resolution_fwhm_deg": "4.5 x 22.5 (table)",
+              "geometric_factor": "approximately 5 x 10^-4 cm^2 sr eV/eV (0.5-3 keV, H+) (table)",
+              "viewing_directions": 16,
+              "viewing_geometry": "Mounted at about 90 degrees to CENA",
+              "principle": "Electrostatic deflector, cylindrical electrostatic analyser (127 degree deflection), 400 V post-acceleration, time-of-flight section with CCEM start and stop detectors"
+            },
+            "dpu": "Digital processing unit built around ADSP21060 DSP at 32 MHz with 4 Mb on-chip memory; MIL-STD-1553 spacecraft bus; mass and power not separately stated",
+            "orbit": "100 km polar lunar orbit; spacecraft three-axis stabilised",
+            "mission_dates": "Launch 22 Oct 2008; lunar orbit insertion 8 Nov 2008; first switch-on about two months after launch; commissioning complete end Jan 2009; regular operations from 5 Feb 2009",
+            "status": "Flown and operated; published observations",
+            "source_urls": [
+              "https://arxiv.org/abs/1012.1527",
+              "https://arxiv.org/abs/1012.2972",
+              "https://arxiv.org/abs/1011.4442"
+            ],
+            "images": []
+          },
+          {
+            "name": "IMAP-Lo (Interstellar Mapping and Acceleration Probe)",
+            "type": "Flown single-pixel ENA camera for low-energy neutrals (Sun-Earth L1 mission)",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_cm": null,
+            "energy_range_paper": "0.01 to 1 keV (ENA spectrum)",
+            "energy_range_eoportal": "5 to 1000 eV",
+            "energy_range_conflict_note": "The paper abstract and the eoPortal summary differ; both are reported.",
+            "species": "H, D, He, O, Ne (time-of-flight species separation)",
+            "boresight_elongation_deg": [
+              60,
+              180
+            ],
+            "field_of_view": "Defined by the entry subsystem; no numerical value confirmed in accessed primary text. A secondary search result cited a 9 degree figure from a design-study table; not verified and not used.",
+            "geometric_factor": "Described as large; no value stated in accessed text",
+            "collection_power_relative_to_ibex_lo": "about 15x (eoPortal summary)",
+            "background_note": "Design removes ion, electron and UV backgrounds relative to IBEX-Lo; no quantitative figures in accessed text",
+            "spacecraft_level": "Spacecraft about 900 kg, about 2.4 m x 0.9 m, about 500 W solar power (eoPortal; not instrument values)",
+            "mission_dates": "Launched 24 Sep 2025 (Falcon 9); L1 arrival 10 Jan 2026; science operations scheduled from 1 Feb 2026 (eoPortal); current status not verified",
+            "status": "Flown on IMAP; measured performance not verified from accessed sources",
+            "source_urls": [
+              "https://umimpact.umt.edu/en/publications/the-imap-lo-instrument/",
+              "https://directory.eoportal.org/satellite-missions/imap"
+            ],
+            "images": []
+          },
+          {
+            "name": "IBEX-Lo and IBEX-Hi (Interstellar Boundary Explorer)",
+            "type": "Flown Earth-orbit pair of single-pixel ENA cameras with overlapping energy ranges",
+            "mass_kg": null,
+            "spacecraft_mass_kg": 80,
+            "power_w": null,
+            "dimensions_cm": null,
+            "ibex_lo": {
+              "energy_range_kev": [0.01, 2],
+              "conversion_principle": "Neutral atoms convert to negative ions on a conversion surface kept covered by a thin water layer; ESA sets the energy passband; time-of-flight mass spectrometer",
+              "field_of_view_deg": "approximately 7 x 7",
+              "geometric_factor": "not stated in accessed source",
+              "mass_power_dimensions": "not stated in accessed sources"
+            },
+            "ibex_hi": {
+              "energy_range_kev": [0.3, 6],
+              "field_of_view_deg": "approximately 7 x 7",
+              "relative_sensitivity": "approximately 10 times more sensitive than IBEX-Lo at 1 keV",
+              "mass_power_dimensions": "not stated in accessed sources"
+            },
+            "sampling": "Sensors sample a 7 x 360 degree swath over each spin; spin axis directed approximately toward the Sun",
+            "mission_dates": "Launch 19 Oct 2008 (17:48 UT); Earth orbit",
+            "status": "Flown; instrument energy range and field of view verified in Fuselier et al. 2012; mass and power not verified",
+            "source_urls": [
+              "https://science.nasa.gov/mission/ibex/",
+              "https://doi.org/10.1088/0004-637X/754/1/14",
+              "https://arxiv.org/abs/1801.09460"
+            ],
+            "images": []
+          },
+          {
+            "name": "Cassini MIMI and INCA (Ion and Neutral Camera) on Cassini orbiter",
+            "type": "Flown Saturn-orbit ENA imager as part of the Magnetospheric Imaging Instrument (MIMI)",
+            "mimi_mass_kg": 16,
+            "mimi_average_power_w": 14,
+            "mimi_average_data_rate_kbps": 7,
+            "mimi_level_note": "MIMI whole-instrument values from NASA; not INCA-specific",
+            "inca": {
+              "energy_range_kev_per_nucleon": "7-3000 (NMSU table; secondary and garbled in extraction)",
+              "energy_range_conflict_note": "A NASA-hosted dataset description gives 7 keV/nucleon to 8 MeV/nucleon; a 2004 conference abstract gives 7-200 keV/nucleon. Not verified against the Krimigis et al. 2004 instrument paper.",
+              "field_of_view_deg": "120 x 90 (NMSU table)",
+              "geometric_factor_cm2_sr": {"oxygen": 2.4, "hydrogen": 0.6, "note": "as listed in NMSU table; values assigned by column position"},
+              "species": "H, O, heavies",
+              "angular_resolution_deg": "8 x 4 (E above 50 keV, NMSU table)",
+              "mass_kg": null,
+              "power_w": null
+            },
+            "function_note": "Images neutral atoms by recording speed, composition and arrival direction of each atom reaching its detectors; described by NASA as a pinhole-camera-like imager using fast atoms rather than light.",
+            "mission_dates": "Flown on Cassini orbiter in the Saturn system; mission dates not restated in this article",
+            "status": "Flown and operated; measured performance not verified from accessed sources",
+            "source_urls": [
+              "https://science.nasa.gov/mission/cassini/spacecraft/cassini-orbiter/magnetospheric-imaging-instrument",
+              "https://atmos.nmsu.edu/data_and_services/atmospheres_data/Cassini/inst-mimi.html"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No universal dimensions exist for an ENA analyser. SARA (Chandrayaan-1) dimensions are not stated in the accessed SARA paper. IMAP-Lo, IBEX-Lo/Hi and INCA instrument dimensions were not stated in accessed sources. IMAP spacecraft is about 2.4 m x 0.9 m (spacecraft level only).",
+        "mass_and_weight": "SARA complete package: 4.4 kg (system total including DPU). IBEX spacecraft: 80 kg (spacecraft level). IMAP spacecraft: about 900 kg (spacecraft level). Cassini MIMI: 16 kg (whole-instrument, NASA; not INCA-specific). No verified instrument-level mass for IMAP-Lo, IBEX-Lo/Hi or INCA. Per-sensor SARA masses not unambiguously assigned.",
+        "power_requirements": "SARA complete package: 17.1 W (system total). IMAP spacecraft: about 500 W solar power (spacecraft level). Cassini MIMI: 14 W average operating power (whole instrument, NASA; not INCA-specific). No verified instrument-level power for IMAP-Lo, IBEX-Lo/Hi or INCA; no per-sensor power for SARA CENA or SWIM."
+      },
+      "environmental_and_operational_requirements": "For the flown SARA example, the documented environmental and operational requirements are:\n\n- **Orbit and attitude:** a 100 km polar lunar orbit, with the spacecraft three-axis stabilised and CENA nadir-pointed [1].\n- **High voltage:** a +5 kV deflector electrode, a 2.4 kV post-acceleration for CENA and a 400 V post-acceleration for SWIM. These require outgassing before first switch-on; SARA was switched on two months after launch [1].\n- **Thermal and electronics:** the paper does not state an operating temperature range or thermal control design for SARA. The DPU clock is 32 MHz and telemetry uses a MIL-STD-1553 bus [1].\n- **Spacecraft sharing:** the SWIM field of view of 180° means that a few SWIM viewing directions look at the lunar surface, which affects interpretation of SWIM data [1].\n- **Power:** 17.1 W for the total SARA package [1].\n\nFor IBEX, the sources accessed describe a spin-stabilised spacecraft whose spin axis is directed approximately toward the Sun, with the sensors sampling a 7° × 360° swath of sky over each spin [7]. For IMAP-Lo, the accessed sources give mission-level operating conditions (Sun–Earth L1 orbit, three-year baseline with consumables for at least five years) but no instrument-level temperature, radiation or power requirements [5].\n\nEnvironmental tolerances for any ENA analyser on the lunar surface (thermal cycling, dust, radiation, vacuum, and illumination) are not verified in the sources accessed and are not stated here.",
+      "limitations": "- **Charged-particle and photon background.** Charged particles must be removed upstream, and ultraviolet photons must be suppressed. SARA relies on a deflector and an optical labyrinth to do this [1]. The IMAP-Lo paper claims a reduction in background relative to IBEX-Lo but gives no quantitative figure in the accessed text [4].\n- **Energy coverage.** An instrument covers only the energies it was designed for. SARA's CENA covers 10 eV to 3.3 keV [1], so it does not cover the higher-energy heliospheric range covered by IMAP-Hi (0.4–15.6 keV) or IMAP-Ultra (3–300 keV for hydrogen) [5].\n- **Energy selection.** IBEX-Lo selects energies with its ESA and does not measure each atom's energy directly. Its sensitivity to H atoms was calibrated in the laboratory only within limits, because monoenergetic neutral beams at relevant energies are difficult to produce, and the water layer on the conversion surface may differ between laboratory and space conditions [8].\n- **Energy loss.** The SARA paper notes that reflected lunar hydrogen ENAs have energies less than half those of the impinging solar-wind protons, which means the ENA energy spectrum is not a direct copy of the solar-wind spectrum [1].\n- **Interpretation.** Observed ENA flux depends on the instrument geometric factor and viewing geometry, and the SARA paper's error bars reflect knowledge of the geometric factor [1]. Absolute ENA fluxes therefore carry a calibration uncertainty that is not quantified in the accessed text.\n- **Table extraction.** Several SARA table values were recovered from a text extraction in which columns were misaligned, and several INCA values were taken from a garbled secondary table. Those values are flagged in the physical-specification section and in the JSON data-quality notes.",
+      "transportation_and_deployment": {
+        "overview": "The lunar ENA analyser flown so far has been an orbiter payload, carried as part of a spacecraft. The documented flight example is an orbiter payload (SARA on Chandrayaan-1, a 100 km polar lunar orbit). No surface ENA analyser was identified in the accessed sources. The surface-payload section of the article is conceptual and asserts no lander compatibility.",
+        "transportation_process": [
+          "Integrate SARA on the top deck of the Chandrayaan-1 spacecraft on Earth (integration procedure not described in the accessed paper).",
+          "Launch Chandrayaan-1 on 22 October 2008 (launch vehicle and fairing environment not described in the accessed paper).",
+          "Transfer to the Moon and insert into lunar orbit on 8 November 2008.",
+          "Operate SARA in a 100 km polar orbit after a two-month outgassing period before first switch-on, with commissioning completed by end January 2009 and regular operations from 5 February 2009.",
+          "For a hypothetical surface deployment (not verified): integrate the sensor on the lander or rover, with power, data, thermal control of high-voltage electronics and purge/outgassing before switch-on; no lander interface was verified."
+        ],
+        "deployment_methods": "SARA was not deployed; it was a fixed sensor mounted on the spacecraft deck, with CENA nadir-pointed and SWIM at about 90 degrees to CENA. IBEX and Cassini MIMI/INCA were likewise fixed sensors on their spacecraft; their integration and deployment procedures were not described in the accessed sources. No surface deployment method for an ENA analyser was verified.",
+        "historical_examples": "SARA on Chandrayaan-1 (orbiter, 2008-2009 operations); IBEX-Lo/Hi on IBEX (Earth orbit, from 2008); IMAP-Lo on IMAP (Sun-Earth L1, launched 2025); Cassini MIMI/INCA on Cassini (Saturn orbit).",
+        "compatibility_assessment": "No compatibility with any named lander, rover or spacecraft is asserted. The SARA paper describes compatibility only with the Chandrayaan-1 spacecraft. Surface compatibility was not verified.",
+        "images": []
+      },
+      "historical_significance": "SARA used a novel ENA imaging technique to study the lunar–solar wind interaction from a 100 km polar orbit on India's Chandrayaan-1 mission [1]. The SARA team reported that about 20% of incident solar-wind protons are reflected as hydrogen ENAs [1][2]. This result is contrary to the earlier view that the regolith absorbs almost all incident solar wind [1]. The first ENA image of a lunar magnetic anomaly mini-magnetosphere was also produced from SARA data [3].\n\nThe IBEX mission, launched in 2008, demonstrated ENA imaging of the heliosphere boundary from Earth orbit [6]. Its observations revealed the Ribbon, an unexpected feature extending over about 0.2 to 6 keV [7]. IMAP, launched in 2025, carries an updated ENA suite [5]. Both missions form the design and scientific lineage for IMAP-Lo, which describes itself as lineage-linked to IBEX-Lo [4]. Cassini's MIMI/INCA used ENA imaging to trace where in the Saturn system the atoms were produced [9].",
+      "limitations_and_uncertainties": "- **Instrument mass and power for IMAP-Lo, IBEX-Lo/Hi and INCA were not found in accessed primary text.** The IMAP-Lo paper is held behind a publisher paywall; the Springer-hosted full text returned an authentication redirect and a core.ac.uk copy returned HTTP 403. The IBEX-Lo sensor paper by Fuselier et al. (2009) was not retrieved.\n- **IMAP-Lo energy range conflicts between sources.** The paper abstract gives 0.01–1 keV [4] and the eoPortal summary gives 5–1000 eV [5]. The article reports both and does not resolve the difference.\n- **IMAP-Lo field of view is not stated as a number** in the accessed primary text [4].\n- **INCA specifications rest on a garbled secondary table.** The values from [10] were assigned by column position, and the INCA energy range conflicts with other secondary summaries. The Krimigis et al. (2004) instrument paper was not accessed.\n- **MIMI-level mass and power are not INCA values.** The 16 kg and 14 W figures from [9] describe the whole MIMI instrument.\n- **SARA table values.** The CENA and SWIM table entries in the SARA paper were extracted from a PDF with misaligned columns. Values quoted from the table (angular resolution, geometric factor, sensor mass) are given with their table source and should be checked against the paper before use in engineering work.\n- **Per-sensor SARA mass and power.** Separate CENA, SWIM and DPU masses and powers were not assigned unambiguously. Only the system total is given (4.4 kg, 17.1 W) [1].\n- **Measured versus target values.** The SARA ENA albedo (about 20%) is a measurement reported by the SARA team [1][2]. The IBEX ENA albedo (about 10%) is reported as an observation in the SARA paper, not from the IBEX paper directly [1].\n- **IBEX-Lo sensitivity.** The water-layer conversion surface and sputtered-ion contributions complicate absolute calibration for helium and hydrogen, and the laboratory calibration was limited [8].\n- **Lunar surface ENA analysers.** No flown surface ENA analyser was identified. Any statement about surface deployment in this article is a conceptual constraint, not a verified design.\n- **Image verification.** No direct image asset URL was verified for any figure in this version. See the JSON data-quality notes.\n- **Access and search limits.** The primary PDF copies of the Fuselier et al. (2009) IBEX-Lo sensor paper and of the IMAP-Lo paper returned HTTP errors (404, 503, 403) and could not be read. The Krimigis et al. (2004) MIMI paper was not retrieved. The IBEX-Lo specifications in this version come from the 2012 Fuselier et al. and 2018 Swaczyna et al. papers, which were read from downloaded copies.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "The Sub-keV Atom Reflecting Analyzer (SARA) Experiment Aboard Chandrayaan-1 Mission: Instrument and Observations",
+          "authors": "Bhardwaj, A. et al.",
+          "publisher": "arXiv (instrument and observations paper)",
+          "year": "2010",
+          "identifier": "arXiv:1012.1527",
+          "url": "https://arxiv.org/abs/1012.1527"
+        },
+        {
+          "title": "Extremely high reflection of solar wind protons as neutral hydrogen atoms from regolith in space",
+          "authors": "Wieser, M. et al.",
+          "publisher": "Planetary and Space Science 57(14-15), 2132-2134",
+          "year": "2009",
+          "identifier": "DOI 10.1016/j.pss.2009.09.012; accessed via arXiv:1012.2972",
+          "url": "https://arxiv.org/abs/1012.2972"
+        },
+        {
+          "title": "First observation of a mini-magnetosphere above a lunar magnetic anomaly using energetic neutral atoms",
+          "authors": "Wieser, M. et al.",
+          "publisher": "Geophysical Research Letters 37(5)",
+          "year": "2010",
+          "identifier": "DOI 10.1029/2009GL041721; accessed via arXiv:1011.4442",
+          "url": "https://arxiv.org/abs/1011.4442"
+        },
+        {
+          "title": "The IMAP-Lo Instrument",
+          "authors": "Schwadron, N. A. et al.",
+          "publisher": "Space Science Reviews 221(8), 121",
+          "year": "2025",
+          "identifier": "DOI 10.1007/s11214-025-01234-x; accessed via UM Impact publication page (abstract and author list only)",
+          "url": "https://umimpact.umt.edu/en/publications/the-imap-lo-instrument/"
+        },
+        {
+          "title": "IMAP (Interstellar Mapping and Acceleration Probe)",
+          "authors": null,
+          "publisher": "eoPortal Directory (secondary mission summary)",
+          "year": null,
+          "identifier": null,
+          "url": "https://directory.eoportal.org/satellite-missions/imap"
+        },
+        {
+          "title": "IBEX (Interstellar Boundary Explorer)",
+          "authors": null,
+          "publisher": "NASA Science (mission page)",
+          "year": null,
+          "identifier": null,
+          "url": "https://science.nasa.gov/mission/ibex/"
+        },
+        {
+          "title": "Heliospheric Neutral Atom Spectra Between 0.01 and 6 keV from IBEX",
+          "authors": "Fuselier, S. A. et al.",
+          "publisher": "The Astrophysical Journal 754:14 (2012)",
+          "year": "2012",
+          "identifier": "DOI 10.1088/0004-637X/754/1/14",
+          "url": "https://doi.org/10.1088/0004-637X/754/1/14"
+        },
+        {
+          "title": "Interstellar Neutral Helium in the Heliosphere from IBEX Observations. V. Observations in IBEX-Lo ESA Steps 1, 2, & 3",
+          "authors": "Swaczyna, P. et al.",
+          "publisher": "arXiv preprint",
+          "year": "2018",
+          "identifier": "arXiv:1801.09460",
+          "url": "https://arxiv.org/abs/1801.09460"
+        },
+        {
+          "title": "Magnetospheric Imaging Instrument (MIMI), Cassini orbiter",
+          "authors": null,
+          "publisher": "NASA Science (mission page)",
+          "year": null,
+          "identifier": null,
+          "url": "https://science.nasa.gov/mission/cassini/spacecraft/cassini-orbiter/magnetospheric-imaging-instrument"
+        },
+        {
+          "title": "Cassini instrument table: MIMI and INCA",
+          "authors": null,
+          "publisher": "New Mexico State University (secondary table; text extraction, values flagged)",
+          "year": null,
+          "identifier": null,
+          "url": "https://atmos.nmsu.edu/data_and_services/atmospheres_data/Cassini/inst-mimi.html"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No image asset URLs were verified, so the image registry is empty; figure source pages are cited in text and references only."
+  },
+  "data_quality_notes": [
+    "This is a v2 rerun. The v1 files (energetic_neutral_atom_analyser_payload_122.md and .json) are retained unchanged.",
+    "v2 adds verified IBEX-Lo and IBEX-Hi energy ranges (about 0.01 to 2 keV and 0.3 to 6 keV), the approximately 7 x 7 degree field of view and the measurement principle, taken from Fuselier et al. 2012 (ApJ 754:14) and Swaczyna et al. 2018 (arXiv:1801.09460). These were read from downloaded PDF copies with pdftotext. v1 had recorded these values as not stated.",
+    "IBEX-Lo/Hi instrument mass, power and dimensions remain unverified. The Fuselier et al. 2009 IBEX-Lo sensor paper could not be retrieved (HTTP 404 and 503 on mirror copies).",
+    "Cassini MIMI mass (16 kg), average power (14 W) and average data rate (7 kbit/s) are whole-instrument values from the NASA MIMI mission page. They are not INCA values.",
+    "INCA sensor values (energy 7-3000 keV/nucleon, field of view 120 x 90 degrees, geometric factor about 2.4 (O) and 0.6 (H) cm^2 sr, angular resolution 8 x 4 degrees) come from a garbled NMSU secondary table and were assigned by column position. INCA energy-range sources conflict (7-3000, 7-200, 7 keV to 8 MeV per nucleon). INCA mass and power were not stated in any accessed source. The Krimigis et al. 2004 instrument paper was not retrieved.",
+    "IMAP-Lo instrument paper (Space Science Reviews, DOI 10.1007/s11214-025-01234-x) is behind a publisher login; only the UM Impact abstract and author list were read. A secondary search result gave 11.5 kg and 3.46 W for a low-energy ENA class, described as IBEX heritage resource values; these were not used because the source describes them as IBEX resource values, not IMAP-Lo specifications.",
+    "IMAP-Lo energy range conflicts between sources: 0.01 to 1 keV (paper abstract) versus 5 to 1000 eV (eoPortal). Both are reported.",
+    "The SARA instrument paper was read from a local text extraction of arXiv:1012.1527 (pdftotext) in v1; v2 relies on that extraction unchanged. Table columns were misaligned in extraction; values taken from the table are flagged as table-derived. CENA energy range (10 eV to 3.3 keV) and full field of view (160 x 15 degrees) are from the body text.",
+    "Per-sensor SARA mass and power are not assigned: the extracted table shows 452 g and 1977 g without a verified mapping to CENA or SWIM. Only the system total (4.4 kg, 17.1 W) is used.",
+    "The SARA paper reports the ENA albedo measured by SARA (about 20% of incident solar-wind protons reflected as hydrogen ENAs). The IBEX ENA albedo (about 10%) is cited from the SARA paper's discussion, not from an IBEX paper read directly.",
+    "The eoPortal IMAP page is a secondary directory source; its mission-level values and the 15x, 25x and 35x collection-power comparisons are not checked against the IMAP instrument papers.",
+    "IMAP operational status after the scheduled 1 February 2026 start of science operations was not verified.",
+    "No lunar-surface ENA analyser was identified as flown. The surface-payload discussion is conceptual; no lander compatibility is asserted.",
+    "No direct image asset URL was verified for any figure in v2. The image registry and section arrays are empty; figures are referenced by source page only (arXiv:1012.1527 Figures 1 and 2).",
+    "The progress ledger (lunar_payload_generation_progress.md) was not edited, as the batch brief prohibits editing shared files."
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "catalogue_id": 142,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 7,
+    "name": "Lunar exosphere and atmospheric instruments"
+  },
+  "payload": {
+    "number": 142,
+    "name": "Exosphere analyser",
+    "article": {
+      "overview": "An exosphere analyser is an instrument that identifies and measures the gases in the Moon's exosphere, the very thin layer of atoms and molecules around the surface that does not form a true atmosphere [4][7]. Most instruments in this class are mass spectrometers, which ionise gas particles and sort them by mass so that each species can be counted. Repeated measurements show how the exosphere changes with the lunar day, with surface temperature, and with supply from the solar wind and from the Moon's interior [2][3]. The name describes a measurement function rather than one hardware design, so this article covers the class through five examples: one Apollo-era surface instrument, one lunar-orbit instrument, one lander instrument whose lander did not reach the surface, and two planned instruments.",
+      "description": "An exosphere analyser samples the gas particles that make up the exosphere and determines which species are present, in what amounts, and how these change with time. The exosphere is extremely sparse, so the instrument must collect and count individual particles over long periods [2][4]. The usual design is a compact mass spectrometer that ionises incoming molecules, separates the ions by mass, and records how many ions of each mass arrive at a detector.\n\nInstruments can be mounted on a lander, where they look at the gas near the surface, or fly on an orbiter, where they sample the gas the spacecraft passes through. The NGMS, for example, has an exosphere mode that works either from the lander on the surface or from lunar orbit [6]. The Apollo 17 LACE was oriented with its entrance aperture facing upward so that it could intercept the gases moving downward towards the surface [1].",
+      "scientific_purpose_and_applications": "The main purpose is to identify the species in the exosphere and measure their abundances. The species of interest include helium, neon and argon, along with other volatile species that may be released from the surface or trapped in cold regions [4][6]. LADEE's Neutral Mass Spectrometer reported that the exosphere is mostly helium, argon and neon, that about 20 percent of the helium originates in the Moon itself, probably from the radioactive decay of thorium and uranium, and that argon-40 comes from the decay of potassium-40 [3].\n\nTime-resolved data are central to these applications. The same LADEE study reported that argon levels rose and then fell by about 25 percent during the mission, and that the gases vary with time of day, with argon peaking at sunrise, neon around 4 a.m. and helium around 1 a.m. [3]. Such variation helps separate gas supplied by the solar wind from gas released by the surface, and helps test suggestions that the exosphere responds to processes such as tidal stress [3]. A landed analyser can also distinguish natural gases from signals produced by the lander itself, a purpose stated for the PITMS [4].",
+      "operating_principle": "Most exosphere analysers are mass spectrometers. Gas particles enter through an inlet or aperture, are ionised, and the resulting ions are separated by their mass-to-charge ratio before being counted at a detector. Because the exosphere is so sparse, the ion counts are small, so the instrument must be sensitive and protected from contamination [2][4].\n\nThe examples use different separation methods. The PITMS ionises molecules with electrons from a heated filament, holds the ions in an ion trap formed by precisely shaped electrodes, releases them in order of increasing mass-to-charge ratio, and uses arrival time to identify each mass [4]. The NGMS is a time-of-flight instrument: ions are accelerated to the same initial energy, travel through a field-free drift tube, and are reflected by a grid-less ion mirror (reflectron), so that all masses are recorded at the same time [6]. LADEE's NMS used a quadrupole analyser fed by a dual ion source, designed to measure both surface-reactive and inert species [2]. The Apollo 17 LACE is described as a miniature mass spectrometer, but the separation method is not described in the record read for this article [1].\n\nTwo practical issues recur across the examples. Ions of similar mass can be confused, as later reanalysis of LACE data showed for a signal at mass 22 [9]. Background gas from the instrument, the lander or the sunlit surface can also dominate the signal, which is why the PITMS team sought to distinguish lander-produced gases from natural ones [4], and why LACE operations were stopped during the lunar day when a high background gas level appeared at sunrise [1].",
+      "scientific_importance": "The exosphere is a sensitive record of processes at the surface and in the space environment. Gas supplied by the solar wind, gas released from rock by radioactive decay, and gas sputtered or thermally released from the surface all leave signatures in the gas population [2][3]. Measuring those signatures needs instruments that can resolve individual species and operate over long periods.\n\nThe Apollo 17 LACE provided an early in situ survey of the lunar atmosphere. It confirmed helium, neon and argon, but operated largely at night, so it gave no daytime data [1]. A later reanalysis by Killen and colleagues questioned the neon identification and noted that a mass-22 signal at sunrise could be either neon or doubly charged carbon dioxide [9].\n\nLADEE's NMS extended this work with systematic measurements over about seven months. It reported that the exosphere is mostly helium, argon and neon, that about 20 percent of the helium is lunar in origin, and that argon-40 forms a local enhancement over Mare Imbrium and Oceanus Procellarum, where surface potassium-40 is most abundant. The cause of that enhancement was not understood at the time of the report [3].\n\nPlanned and in-development instruments extend this record. The PITMS was designed to track how exospheric species change over a lunar day, where they come from, and whether they become trapped at the cold poles [4]. The NGMS would analyse gases from the exosphere and from regolith samples heated in an oven, to help determine the sources of lunar volatiles and how they are released from the crust [6]. The EMS-L is intended to study the Moon's thin exosphere on the LUPEX mission [7].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, power or sensor specification for an exosphere analyser. The examples below are different instruments built for different platforms and periods. Values are given only where a source states them, and each is tied to the named instrument. Where the sources read do not give a value, it is marked 'not stated'.",
+        "examples": [
+          {
+            "name": "Lunar Atmospheric Composition Experiment (LACE), Apollo 17",
+            "type": "Historical lunar surface instrument (flown)",
+            "flight_history": "Carried on Apollo 17 as part of the Apollo Lunar Surface Experiments Package (ALSEP) in the Taurus-Littrow valley. Activated on 27 December 1972, about 50 hours after sunset. It operated through the first lunar night, and the pattern was repeated for the second and third lunations, with operation stopped during the lunar day except for a brief check near noon [1].",
+            "measurement_geometry": "Entrance aperture oriented upward to intercept the downward flux of gases at the surface [1].",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_range_amu": null,
+            "known_constraints": "Sunrise brought a high background gas level, which required daytime shutdown [1].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19740010334"
+            ],
+            "images": []
+          },
+          {
+            "name": "LADEE Neutral Mass Spectrometer (NMS)",
+            "type": "Lunar-orbit instrument (flown on LADEE)",
+            "design": "Quadrupole analyser with a dual ion source, designed to measure inert and surface-reactive species, and to provide time-resolved helium and argon measurements over a mission that sampled several lunations [2].",
+            "results": "Mostly helium, argon and neon, with lunar-origin helium at about 20 percent and argon-40 linked to potassium-40 decay. Argon varied by about 25 percent over the mission [3].",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_range_da": null,
+            "mass_range_note": "Not stated in the abstract record read [2]. Search summaries of the full paper report 2 to 150 Da, not verified from the full text.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20160005797",
+              "https://www.nasa.gov/missions/nasas-ladee-spacecraft-finds-neon-in-lunar-atmosphere"
+            ],
+            "images": []
+          },
+          {
+            "name": "Peregrine Ion Trap Mass Spectrometer (PITMS)",
+            "type": "Lander-mounted instrument (flown on a lander that did not reach the surface)",
+            "mass_kg": 1.6,
+            "power_w": {
+              "approximate_range": [
+                4,
+                12
+              ]
+            },
+            "size_description": "About half a shoebox, per the ESA comparison.",
+            "mass_range_da": null,
+            "principle": "Ion trap mass spectrometry; electrons from a heated filament ionise incoming molecules, and the ions are released in order of increasing mass-to-charge ratio onto a detector [4].",
+            "partners": "ESA provided the Exospheric Mass Spectrometer at the core of PITMS. NASA Goddard provided structural, mechanical and thermal elements. The Open University and STFC RAL Space developed the spectrometer. Principal Investigator: Barbara Cohen (NASA GSFC) [4].",
+            "flight_history": "Launched on 8 January 2024 on Astrobotic's Peregrine Mission One. A propellant leak prevented a landing attempt, and the lander re-entered on 18 January 2024. NASA powered on PITMS on 11 January 2024 [5]. A NASA update, summarised in search results but not read directly for this article, reported that PITMS operated successfully and acquired spectra before and after its dust cover was opened.",
+            "protection": "The sensor was kept clean and covered until after landing, with a protective cover designed to open after landing [4].",
+            "source_urls": [
+              "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/PITMS_a_mini_mass_spectrometer_for_the_Moon",
+              "https://spaceflightnow.com/2024/01/19/astrobotics-peregrine-lunar-lander-ends-mission-in-fiery-reentry/"
+            ],
+            "images": [
+              {
+                "id": "pitms_mini_mass_spectrometer_ready",
+                "description": "PITMS mini mass spectrometer ready for a Moon mission.",
+                "image_type": "Engineering hardware photograph (ESA image)",
+                "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2023/11/mini_mass_spectrometer_ready_for_moon_mission/25186030-1-eng-GB/270048/image-thumb__270048__fit_large/Mini_mass_spectrometer_ready_for_Moon_mission.1ba42ae4.webp",
+                "source_page_url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/PITMS_a_mini_mass_spectrometer_for_the_Moon",
+                "publisher": "European Space Agency",
+                "credit": "ESA (credit line not checked)",
+                "caption": "The PITMS ready for its Moon mission.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct ESA media URL with no query string or fragment, taken from the ESA page. Credit line not checked for this article."
+              },
+              {
+                "id": "pitms_after_vacuum_tests",
+                "description": "PITMS after vacuum testing.",
+                "image_type": "Engineering hardware photograph (ESA image)",
+                "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2023/11/pitms_after_vacuum_tests/25186075-1-eng-GB/270071/image-thumb__270071__fit_medium/PITMS_after_vacuum_tests.6f310bf8.webp",
+                "source_page_url": "https://esa.int/ESA_Multimedia/Images/2023/11/PITMS_after_vacuum_tests",
+                "publisher": "European Space Agency",
+                "credit": "ESA (credit line not checked)",
+                "caption": "The PITMS after vacuum testing, November 2023.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct ESA media URL with no query string or fragment, taken from the ESA page. Credit line not checked for this article."
+              }
+            ]
+          },
+          {
+            "name": "Neutral Gas Mass Spectrometer (NGMS), University of Bern",
+            "type": "Planned lunar instrument (not yet flown). The University of Bern page calls it the Neutral Gas Mass Spectrometer.",
+            "design_values_not_measured": true,
+            "mass_kg": 3.5,
+            "mass_note": "Stated as 'about 3.5 kg' on the page; a design specification, not a measured value.",
+            "max_size_cm": [
+              26,
+              15,
+              18
+            ],
+            "power_w": 25,
+            "power_note": "Stated as 'can be fully operated with 25W'.",
+            "operating_temperature_c": [
+              -30,
+              80
+            ],
+            "mass_range_da": null,
+            "modes": [
+              "Exosphere mode: measures gas directly through the exhaust tube, from the lander on the surface or from lunar orbit.",
+              "Gas chromatograph mode: analyses volatiles released from regolith samples heated in a pyrolysis oven (up to 1000 C) with samples from a drill reaching 1 m depth.",
+              "Direct analysis of volatiles bypassing the gas chromatograph."
+            ],
+            "status": "Two flight units (NGMS-PFM and NGMS-FS) described as waiting for a next mission. The page refers to the Luna-Resurs mission and gives no launch date [6].",
+            "source_urls": [
+              "https://www.luna-ngms.unibe.ch/instrument/index_eng.html"
+            ],
+            "images": [
+              {
+                "id": "ngms_pfm_flight_instruments",
+                "description": "The two NGMS flight instruments (NGMS-PFM and NGMS-FS).",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110124/1_NGMS-PFM-1200_eng.jpg",
+                "source_page_url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html",
+                "publisher": "University of Bern",
+                "credit": "University of Bern (rights and reuse terms not checked)",
+                "caption": "The two NGMS flight instruments (NGMS-PFM and NGMS-FS).",
+                "section_placements": [
+                  "physical_specifications.examples[3]"
+                ],
+                "notes": "Direct university image URL with no query string or fragment, taken from the instrument page. Asset resolution and rights not checked."
+              },
+              {
+                "id": "ngms_sensor_components",
+                "description": "NGMS sensor components, including the ion source, drift region and detector.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110114/1_NGMS-IMG_6057-1200_eng.jpg",
+                "source_page_url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html",
+                "publisher": "University of Bern",
+                "credit": "University of Bern (rights and reuse terms not checked)",
+                "caption": "NGMS sensor components, including the ion source, drift region and detector.",
+                "section_placements": [
+                  "physical_specifications.examples[3]"
+                ],
+                "notes": "Direct university image URL with no query string or fragment, taken from the instrument page. Asset resolution and rights not checked."
+              }
+            ]
+          },
+          {
+            "name": "Exploration Mass Spectrometer for LUPEX (EMS-L), ESA",
+            "type": "Planned lunar instrument, in development for the JAXA-ISRO LUPEX polar mission",
+            "status": "ESA's October 2026 image caption describes a structural thermal model shown ready for shipment to JAXA. The instrument flies no earlier than 2028 on LUPEX [7].",
+            "specifications": "No mass, size, power or mass-range values are given on the ESA page [7].",
+            "protection": "The model was kept in a nitrogen-filled sealed bag because a mass spectrometer is highly sensitive to molecular contamination. Its multi-layer insulation is stored separately [7].",
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://www.esa.int/ESA_Multimedia/Images/2026/10/Exploration_mass_spectrometer_model_ready_for_shipping"
+            ],
+            "images": [
+              {
+                "id": "emsl_structural_thermal_model",
+                "description": "EMS-L structural thermal model ready for shipment to JAXA.",
+                "image_type": "Engineering hardware photograph (ESA image)",
+                "image_url": "https://media.esa.int/global/public/common/image/2026/10/401914/image-thumb__401914__fit_large/ems-l-stm-ready-for-shipment-to-jaxa-2026924-first-bag-9.200989e9.webp",
+                "source_page_url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Exploration_mass_spectrometer_model_ready_for_shipping",
+                "publisher": "European Space Agency",
+                "credit": "Kayser Italia; ESA Standard Licence",
+                "caption": "The EMS-L structural thermal model, ready for shipment to JAXA, with its nitrogen-filled protective bag.",
+                "section_placements": [
+                  "physical_specifications.examples[4]"
+                ],
+                "notes": "Direct ESA media URL with no query string or fragment, taken from the ESA page. Publication date 21 Oct 2026 per the page."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Only the NGMS has a stated maximum size (26 x 15 x 18 cm, design value). The PITMS is described only as about half a shoebox. LACE, the LADEE NMS and the EMS-L have no stated dimensions in the sources read. The values come from different instruments, sources and development stages and should not be used to rank the designs.",
+        "mass_and_weight": "Stated masses: PITMS 1.6 kg [4]; NGMS about 3.5 kg (design value) [6]. LACE, the LADEE NMS and the EMS-L have no stated mass in the sources read. These figures describe different instruments and should not be compared directly.",
+        "power_requirements": "PITMS 4 to 12 W [4]; NGMS fully operable on 25 W (design value) [6]. LACE, the LADEE NMS and the EMS-L have no stated power figures in the sources read."
+      },
+      "environmental_and_operational_requirements": "An exosphere analyser must work in an environment with very low gas density, large temperature swings and a surface that can release its own gas. Several design requirements follow from this.\n\nThermal control is central. The NGMS states an operating range of -30 to 80 degrees Celsius [6]. The EMS-L model is protected by multi-layer insulation against the cold lunar environment [7]. LACE stopped operating during the lunar day, after sunrise produced a high background gas level [1].\n\nContamination control is also critical. The EMS-L model is kept in a sealed, nitrogen-filled bag because molecular contamination would affect its sensitivity [7]. The PITMS kept its sensor covered until after landing [4].\n\nElectrical power is another constraint. The PITMS is quoted at 4 to 12 W [4], and the NGMS is quoted as fully operable on 25 W [6]. The power needed for the Apollo LACE and the LADEE NMS is not stated in the sources read.\n\nThe instrument must also separate the gases of interest from background gases created by the lander or the spacecraft. The PITMS team's stated purpose includes distinguishing natural signals from gases released by the lander [4].",
+      "limitations": "A single analyser measures the gas at one location or one orbital path. It cannot by itself map how the exosphere varies across the Moon. The LACE record shows that operating-time constraints can leave gaps: its data were mainly nocturnal [1].\n\nMass spectrometry depends on calibration. The LACE neon identification has been questioned by reanalysis [9], and mass-to-charge ambiguity can make it hard to separate species that have similar masses [9].\n\nSeveral instruments in this class have not flown, or have flown without producing published results in the sources read. The NGMS and EMS-L are not yet flown [6][7]. The PITMS flew on a lander that did not land, and the source read for this article does not report its measurements [5].",
+      "transportation_and_deployment": {
+        "overview": "Exosphere analysers have been deployed in three different ways: as part of a surface experiment package (LACE on Apollo 17), as an orbiter instrument (LADEE NMS), and as a lander-mounted instrument (PITMS on Peregrine Mission One). The NGMS would work from the lander or from lunar orbit [6].",
+        "transportation_process": [
+          "Integrate the analyser into the lander or spacecraft payload, with contamination controls maintained, as in the EMS-L model shipping arrangements [7].",
+          "Launch the spacecraft and transfer it towards the Moon.",
+          "For a surface instrument, land the lander and deploy or open the instrument, for example by opening the PITMS protective cover after landing [4].",
+          "For an orbital instrument, insert the spacecraft into lunar orbit and begin sampling the exosphere on the orbit path [2][6].",
+          "Power the instrument and begin measurements, with thermal and contamination management throughout."
+        ],
+        "deployment_methods": "The LACE was carried as part of the ALSEP surface experiments package on Apollo 17. The record read describes its installation as part of that package but does not describe its deployment steps in detail [1]. The PITMS was intended for surface operation from a lander, with its protective cover opened after landing [4]. The LADEE NMS was operated from an orbiter [2][3]. The NGMS would operate from either the lander surface or lunar orbit [6].",
+        "historical_examples": "The Apollo 17 LACE is the historical surface example [1]. The LADEE NMS is the flown orbital example [2][3]. The PITMS is a lander-mounted example that was launched on Peregrine Mission One but did not reach the surface [4][5].",
+        "compatibility_assessment": "No compatibility with a specific lander or spacecraft is assessed here. The PITMS was integrated on a commercial lander, but that lander did not land, so its integration does not establish compatibility with any other lander. Reported plans for the EMS-L transport were not verified against an official mission interface document in this article.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 17 LACE was an early in situ instrument for the lunar atmosphere, and its results established the basic gas species in the nighttime exosphere [1][9]. The LADEE NMS provided a longer, time-resolved record that showed how the exosphere changes over the lunar day and over the mission period [3]. The PITMS and NGMS show a move towards landed instruments designed for volatiles, and the EMS-L shows a continued ESA contribution to exosphere science on the LUPEX mission [4][6][7].",
+      "limitations_and_uncertainties": "- **Class versus design:** \"Exosphere analyser\" describes a function. The examples are not interchangeable, and values must always be read with the named instrument.\n- **LACE:** The mass range, mass, dimensions and power are not stated in the record read. The LACE shutdown date is uncertain: one secondary source gives October 1973 for a high-voltage failure, while a lower-reliability source gives operations until 1977. This was not resolved from primary records [1].\n- **LACE neon:** The neon identification is disputed by reanalysis [9]. The reanalysis abstract was read via search summary, not in full.\n- **LADEE NMS:** The full Mahaffy et al. 2014 paper was not readable through the tools used, so the mass range, mass, power and sensitivity are not verified [2]. The variation figures and helium and argon source estimates come from the NASA 2015 article [3], which summarises the peer-reviewed Benna et al. 2015 study in Geophysical Research Letters. That paper's full text was not accessed.\n- **PITMS:** The statement that the instrument operated successfully and acquired spectra comes from a NASA update summarised in search results, not from a page read directly [4][5]. No PITMS measurement results are reported in the sources read.\n- **NGMS:** Design values were stated by the University of Bern page without a measured or flight qualification. No launch date is given [6].\n- **EMS-L:** The 2026 status comes from an ESA image caption. Specifications are not published there, and no lander or rover interface has been verified [7].\n- **Images:** The NGMS image URLs were taken from the University of Bern page and were not downloaded to check asset resolution. Rights and reuse terms for those images, and the ESA credit line for the PITMS images, were not checked.",
+      "images": [
+        {
+          "id": "ladee_lunar_orbit_artist_concept",
+          "description": "Artist's concept of NASA's LADEE spacecraft in orbit above the Moon.",
+          "image_type": "Artist's concept (spacecraft)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2015/08/ladee-lunar-orbit.png",
+          "source_page_url": "https://www.nasa.gov/missions/nasas-ladee-spacecraft-finds-neon-in-lunar-atmosphere",
+          "publisher": "NASA",
+          "credit": "NASA Ames / Dana Berry",
+          "caption": "Artist's concept of NASA's Lunar Atmosphere and Dust Environment Explorer (LADEE) spacecraft in orbit above the Moon.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct NASA image URL with no query string or fragment, taken from the NASA source page. Shows the spacecraft, not the instrument. Asset resolution not checked."
+        },
+        {
+          "id": "pitms_mini_mass_spectrometer_ready",
+          "description": "PITMS mini mass spectrometer ready for a Moon mission.",
+          "image_type": "Engineering hardware photograph (ESA image)",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2023/11/mini_mass_spectrometer_ready_for_moon_mission/25186030-1-eng-GB/270048/image-thumb__270048__fit_large/Mini_mass_spectrometer_ready_for_Moon_mission.1ba42ae4.webp",
+          "source_page_url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/PITMS_a_mini_mass_spectrometer_for_the_Moon",
+          "publisher": "European Space Agency",
+          "credit": "ESA (credit line not checked)",
+          "caption": "The PITMS ready for its Moon mission.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct ESA media URL with no query string or fragment, taken from the ESA page. Credit line not checked for this article."
+        },
+        {
+          "id": "pitms_after_vacuum_tests",
+          "description": "PITMS after vacuum testing.",
+          "image_type": "Engineering hardware photograph (ESA image)",
+          "image_url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2023/11/pitms_after_vacuum_tests/25186075-1-eng-GB/270071/image-thumb__270071__fit_medium/PITMS_after_vacuum_tests.6f310bf8.webp",
+          "source_page_url": "https://esa.int/ESA_Multimedia/Images/2023/11/PITMS_after_vacuum_tests",
+          "publisher": "European Space Agency",
+          "credit": "ESA (credit line not checked)",
+          "caption": "The PITMS after vacuum testing, November 2023.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct ESA media URL with no query string or fragment, taken from the ESA page. Credit line not checked for this article."
+        },
+        {
+          "id": "ngms_pfm_flight_instruments",
+          "description": "The two NGMS flight instruments (NGMS-PFM and NGMS-FS).",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110124/1_NGMS-PFM-1200_eng.jpg",
+          "source_page_url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html",
+          "publisher": "University of Bern",
+          "credit": "University of Bern (rights and reuse terms not checked)",
+          "caption": "The two NGMS flight instruments (NGMS-PFM and NGMS-FS).",
+          "section_placements": [
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Direct university image URL with no query string or fragment, taken from the instrument page. Asset resolution and rights not checked."
+        },
+        {
+          "id": "ngms_sensor_components",
+          "description": "NGMS sensor components, including the ion source, drift region and detector.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://www.luna-ngms.unibe.ch/unibe/portal/fak_naturwis/b_paw/e_iphy/abt_wp/micro_lunangms/content/e1097679/e1110114/1_NGMS-IMG_6057-1200_eng.jpg",
+          "source_page_url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html",
+          "publisher": "University of Bern",
+          "credit": "University of Bern (rights and reuse terms not checked)",
+          "caption": "NGMS sensor components, including the ion source, drift region and detector.",
+          "section_placements": [
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "Direct university image URL with no query string or fragment, taken from the instrument page. Asset resolution and rights not checked."
+        },
+        {
+          "id": "emsl_structural_thermal_model",
+          "description": "EMS-L structural thermal model ready for shipment to JAXA.",
+          "image_type": "Engineering hardware photograph (ESA image)",
+          "image_url": "https://media.esa.int/global/public/common/image/2026/10/401914/image-thumb__401914__fit_large/ems-l-stm-ready-for-shipment-to-jaxa-2026924-first-bag-9.200989e9.webp",
+          "source_page_url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Exploration_mass_spectrometer_model_ready_for_shipping",
+          "publisher": "European Space Agency",
+          "credit": "Kayser Italia; ESA Standard Licence",
+          "caption": "The EMS-L structural thermal model, ready for shipment to JAXA, with its nitrogen-filled protective bag.",
+          "section_placements": [
+            "physical_specifications.examples[4]"
+          ],
+          "notes": "Direct ESA media URL with no query string or fragment, taken from the ESA page. Publication date 21 Oct 2026 per the page."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "ladee_lunar_orbit_artist_concept",
+          "description": "Artist's concept of NASA's LADEE spacecraft in orbit above the Moon.",
+          "image_type": "Artist's concept (spacecraft)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2015/08/ladee-lunar-orbit.png",
+          "source_page_url": "https://www.nasa.gov/missions/nasas-ladee-spacecraft-finds-neon-in-lunar-atmosphere",
+          "publisher": "NASA",
+          "credit": "NASA Ames / Dana Berry",
+          "caption": "Artist's concept of NASA's Lunar Atmosphere and Dust Environment Explorer (LADEE) spacecraft in orbit above the Moon.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct NASA image URL with no query string or fragment, taken from the NASA source page. Shows the spacecraft, not the instrument. Asset resolution not checked."
+        }
+      ],
+      "references": [
+        {
+          "title": "Lunar atmospheric composition experiment. In Apollo 17 Preliminary Science Report, NASA SP-330 (Hoffman, Hodges, Johnson and Evans, 1973)",
+          "publisher": "NASA",
+          "url": "https://ntrs.nasa.gov/citations/19740010334"
+        },
+        {
+          "title": "The Neutral Mass Spectrometer on the Lunar Atmosphere and Dust Environment Explorer Mission (Mahaffy et al., 2014), Space Science Reviews 185(1), DOI 10.1007/s11214-014-0043-9",
+          "publisher": "Springer, via NASA NTRS record",
+          "url": "https://ntrs.nasa.gov/citations/20160005797"
+        },
+        {
+          "title": "NASA's LADEE Spacecraft Finds Neon in Lunar Atmosphere (17 August 2015)",
+          "publisher": "NASA",
+          "url": "https://www.nasa.gov/missions/nasas-ladee-spacecraft-finds-neon-in-lunar-atmosphere"
+        },
+        {
+          "title": "PITMS: a mini mass spectrometer for the Moon",
+          "publisher": "European Space Agency",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/PITMS_a_mini_mass_spectrometer_for_the_Moon"
+        },
+        {
+          "title": "Astrobotic's Peregrine lunar lander ends mission in fiery reentry (19 January 2024)",
+          "publisher": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2024/01/19/astrobotics-peregrine-lunar-lander-ends-mission-in-fiery-reentry/"
+        },
+        {
+          "title": "NGMS instrument page (Neutral Gas Mass Spectrometer)",
+          "publisher": "University of Bern",
+          "url": "https://www.luna-ngms.unibe.ch/instrument/index_eng.html"
+        },
+        {
+          "title": "Exploration mass spectrometer model ready for shipping (21 October 2026)",
+          "publisher": "European Space Agency",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Exploration_mass_spectrometer_model_ready_for_shipping"
+        },
+        {
+          "title": "PITMS after vacuum tests (November 2023)",
+          "publisher": "European Space Agency",
+          "url": "https://esa.int/ESA_Multimedia/Images/2023/11/PITMS_after_vacuum_tests"
+        },
+        {
+          "title": "LACE data reanalysis, abstract EPSC2018-331 (Killen et al., 2018). Full title not verified from the abstract read.",
+          "publisher": "Europlanet Science Congress 2018",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2018/EPSC2018-331.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Lunar Atmospheric Composition Experiment (LACE) example": "payload.article.physical_specifications.examples[0].images",
+      "LADEE Neutral Mass Spectrometer example": "payload.article.physical_specifications.examples[1].images",
+      "PITMS example": "payload.article.physical_specifications.examples[2].images",
+      "NGMS example": "payload.article.physical_specifications.examples[3].images",
+      "EMS-L example": "payload.article.physical_specifications.examples[4].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Image URLs were taken from the source pages as read during research and were not independently downloaded. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "The payload name 'Exosphere analyser' describes a measurement function. The examples (LACE, LADEE NMS, PITMS, NGMS, EMS-L) are different instruments and must not be merged or compared as one design.",
+    "LACE: mass range, mass, dimensions and power are not stated in the NASA record read. The shutdown date is conflicting between a secondary source (October 1973) and a lower-reliability source (1977) and was not resolved.",
+    "LACE neon identification is disputed by reanalysis (Killen et al., EPSC2018 abstract). The abstract was read through a search summary and not in full.",
+    "LADEE NMS: the NASA NTRS abstract record (Mahaffy et al., 2014) does not state mass range, mass, power, dimensions or sensitivity. A 2 to 150 Da mass range appeared in a search summary and is not verified. The full paper was not accessible through the tools used.",
+    "The 2015 helium, neon and argon results are taken from the NASA article summarising Benna et al. (2015, Geophysical Research Letters). The GRL paper itself was not accessed (publisher page returned HTTP 403).",
+    "PITMS: the mass (1.6 kg), size and power (4 to 12 W) come from the ESA article. The claim that PITMS operated successfully after the Peregrine landing failure comes from a NASA update summarised in search results and was not read directly. No PITMS measurement results were available.",
+    "Peregrine Mission One did not land. Its reported anomaly and re-entry (18 January 2024) come from Spaceflight Now. The article makes no claim of lander compatibility.",
+    "NGMS values (about 3.5 kg, 26 x 15 x 18 cm maximum, 25 W, -30 to 80 C) are design values stated by the University of Bern page. They are not measured or flight-qualified values. Mass range is not stated.",
+    "EMS-L: ESA's 2026 image caption describes a structural thermal model and a 2028 or later launch on LUPEX. No mass, size, power or mass-range values are published on that page. A secondary report of tests on flight-like development models was not used.",
+    "Image URLs for NGMS were taken from the University of Bern instrument page and were not downloaded to confirm asset resolution. Rights and reuse terms for those images, and the ESA credit lines for the PITMS images, were not checked.",
+    "Two primary-source full texts (Mahaffy et al. 2014 PDF and Benna et al. 2015 GRL) were not readable with the tools used. The article relies on the abstract records and agency summaries for those papers, and says so in the Markdown article."
+  ]
+}

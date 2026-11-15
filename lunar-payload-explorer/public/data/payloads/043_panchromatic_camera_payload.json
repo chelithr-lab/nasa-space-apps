@@ -1,0 +1,370 @@
+{
+  "catalogue_id": 43,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 43,
+    "name": "Panchromatic camera",
+    "article": {
+      "overview": "A panchromatic camera is an imager that records light across one broad spectral band rather than splitting it into several narrow colour or wavelength bands. The term describes the spectral response of the detector and its optics, not a particular design, so it covers instruments of very different ages and missions. In this article, \"panchromatic\" is used only where a source states, or clearly describes, a single broad band.\n\nThe examples are: a stereo CCD camera on China's Chang'e-2 orbiter, which has one panchromatic band of 0.45–0.52 µm [1][2]; the ESA SMART-1 AMIE camera, which has a white-light channel plus three colour filters [3]; the Chandrayaan-1 Terrain Mapping Camera and the Chandrayaan-2 TMC-2, both described as panchromatic [4][5][6]; the Lunar Reconnaissance Orbiter Wide Angle Camera, which is a multispectral instrument with a monochrome mode [7][8]; and the black-and-white film Hasselblad cameras that Apollo crews used [9][10].\n\nStatus in this article is stated per example. Chang'e-2, SMART-1, Chandrayaan-1 and LRO are described in the sources as flown. Chandrayaan-2 TMC-2 is described as on the Chandrayaan-2 orbiter, but its current status was not confirmed. The Chandrayaan-1 TMC band and dimensions come from a pre-launch document, so they are configuration values, not measured in-flight performance. No flight-qualified-but-unflown or proposed panchromatic camera was verified in this run, so none is described.\n\nSeveral neighbouring entries overlap with this one and are covered there: high-resolution panchromatic imaging is in 027 (High-resolution camera), terrain mapping by stereo imaging in 028 (Terrain mapping camera), visible-light imaging in 039 (Visible-light camera), multispectral imaging in 034 (Multispectral imager), and wide-field imaging in 044 (Wide-angle camera). This article does not repeat their detail.",
+      "description": "A camera's spectral band is the range of wavelengths that its detector and filter combination records. A narrow band, such as one of several filters in a colour set, records a limited part of the spectrum and separates materials by how they absorb or reflect light in that part. A broad band records a wide range in one image. The sources describe the panchromatic band as one such wide band, so each pixel receives light from the whole band rather than one narrow part of it.\n\nUsing one broad band is a design choice. It collects more light across the band than a narrow filter does, which helps when the scene is dim or when fine spatial detail is needed. It also loses information about how the surface reflects different wavelengths. A single panchromatic image therefore shows brightness, shape and texture, but it cannot by itself say what minerals are present. Colour or multispectral data are needed for that.\n\nSeveral panchromatic examples in this article also extend beyond visible light. The Chandrayaan-1 TMC band runs to 0.85 µm [4], and the SMART-1 AMIE colour filters include 750, 900 and 950 nm [3]. This article therefore treats \"panchromatic\" as a description of one broad band and not as a synonym for \"visible only\". The Chang'e-2 band (0.45–0.52 µm) is narrower than the other examples, but it is still one band, and the source describes it as panchromatic [1].",
+      "scientific_purpose_and_applications": "The sources accessed describe several purposes for panchromatic lunar cameras:\n\n- **Stereo topography.** The Chang'e-2 stereo camera was used to produce lunar global topographic map products, labelled CE2DOM2014 and CE2DEM2014 in the 2014 conference abstract [1]. The Chandrayaan-1 TMC was defined in pre-launch documentation as a stereo camera to map the topography of both the near and far sides and to build a three-dimensional atlas with 5 m ground resolution [4]. Stereo and elevation products are covered in more depth in 028 (Terrain mapping camera).\n- **Geological context for other instruments.** ESA describes the AMIE camera as providing high-resolution images of selected lunar areas, supporting the interpretation of data from other SMART-1 instruments, and mapping sites in the South Pole–Aitken basin [3].\n- **Mission planning and landing-area imaging.** The Chang'e-2 paper states that its high-resolution images were used to select the Chang'e-3 landing site and to plan the Yutu rover's route [1]. This is a historical statement about how the images were used. This article makes no location recommendation.\n- **Historical crew photography.** Apollo crews used black-and-white film Hasselblad magazines for surface and command-module photographs [9][10]. The black-and-white photographs are a human-operated, film-based form of panchromatic imaging. The sources do not describe the film's spectral sensitivity, so this is not a verified panchromatic classification (see Limitations).",
+      "operating_principle": "Most of the orbital examples are pushbroom or area imagers. In a pushbroom camera, a line of detector elements views the surface across the ground track, and the spacecraft's motion builds the image one line at a time. The panchromatic band is set by the detector's spectral response together with the optical filter or coating. The sources describe the band itself rather than the physical coating.\n\nThe Chang'e-2 stereo camera uses a two-line time-delay-integration (TDI) CCD. The EPSC 2014 paper states that the two lines view the surface at forward +7.98° and backward −17.2° through a single lens [1]. TDI adds the signal from successive exposures of the same ground point, which improves sensitivity at a given speed. The paper lists selectable integration grades of 16, 32, 48, 64 and 96 and gains of 0.7, 1.0 and 2.0 [1].\n\nThe SMART-1 AMIE uses a CCD. ESA states that it has a white-light (panchromatic) channel and three colour filters at 750, 900 and 950 nm, and that the filters are deposited on the CCD. It also states that the colour bands measure the 1 µm absorption of pyroxene and olivine [3].\n\nThe Chandrayaan-1 TMC is described as operating in pushbroom mode, with three linear 4k-element detectors for fore (+25°), nadir (0°) and aft (−25°) views. The pre-launch document describes a single refractive optic that covers all three detectors [4].\n\nThe LRO WAC is a different type of instrument. The LROC specifications page lists seven filter centres (321, 360, 415, 566, 604, 643 and 689 nm). It also describes a five-filter visible mode, a two-filter ultraviolet colour mode, and a monochrome mode with a 1024 × 14 pixel push-frame format [7]. The page does not give a separate spectral range for the monochrome mode.\n\nThe Apollo lunar surface camera was a Hasselblad 70 mm camera with a 60 mm lens, used by the crew for black-and-white or colour film exposures. Its reseau plate placed a grid of crosses on the images [9]. The film chemistry sets its spectral sensitivity, and the sources accessed do not state that sensitivity.",
+      "scientific_importance": "Panchromatic images are a basic product of lunar imaging. Broad-band imaging gives a high-quality base for mapping shape, texture and surface contacts, and it is often combined with narrow-band colour data for composition. The Chang'e-2 stereo products are an example of this combination of imaging and topography. The EPSC 2014 abstract reports that the products have internal precision with planimetric displacement and height differences between neighbouring images both below two pixels (less than 14 m), and it reports a comparison with the LRO WAC digital elevation model with an average height difference of −2.8 m and a standard deviation of 116.0 m [1]. These are the authors' own comparisons, and the abstract does not describe how they were independently verified.\n\nThe SMART-1 AMIE provided high-resolution images that were used to provide geological context for other instruments [3]. The LRO WAC combines seven filters with a monochrome mode, giving a 75 m visible pixel scale and a 92° monochrome field of view [7]. These differences show why panchromatic and multispectral data are complementary: the panchromatic image gives brightness and texture, while colour or multispectral data show differences in surface reflectance.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a panchromatic camera. The examples differ in mission, altitude, detector technology, optics and band. Some are stereo or pushbroom imagers, some are multispectral instruments with a broad-band mode, and one is a film camera. The table below contains only values that the cited sources state. Where a source does not publish a value, the table says \"not publicly specified\". Each value is tied to a named instrument and is not meant to rank the instruments.\n\nDifferences in table values reflect differences in instrument design, mission altitude, phase and documentation type. The Chandrayaan-1 figures come from a pre-launch configuration document [4], not from in-flight measurement. The WAC power and mass are for the instrument as stated by the LROC page [7]. Values should not be combined or compared as if they described one product.",
+        "comparison_table_markdown": "| Item | Chang'e-2 stereo camera | SMART-1 AMIE | Chandrayaan-1 TMC | Chandrayaan-2 TMC-2 | LRO WAC | Apollo lunar surface Hasselblad |\n|---|---|---|---|---|---|---|\n| Status in sources | Flown on Chang'e-2 orbiter [1][2] | Flown on SMART-1 [3] | Flown on Chandrayaan-1 orbiter; TMC specifications from pre-launch document [4][5] | Described as on Chandrayaan-2 orbiter; current status not confirmed [6] | Flown on LRO [7][8] | Flown on Apollo missions; Apollo 11 magazine described [9][10] |\n| Spectral band | One panchromatic band, 0.45–0.52 µm [1] | White-light (panchromatic) channel plus 750, 900 and 950 nm colour filters [3] | 0.5–0.85 µm, panchromatic (pre-launch) [4] | 0.5–0.8 µm, panchromatic [6] | Seven filter centres, 321–689 nm; monochrome-mode band not published [7] | Not publicly specified (black-and-white film; sensitivity not stated) [9][10] |\n| Ground resolution | 7 m at 100 km orbit; 1.5 m at 15 km orbit (EPSC text) [1] | 35 m per pixel at 350 km perilune [3] | 5 m [4] | 5 m [6] | Visible pixel scale 75 m; UV 385 m (4 × 4 binned) [7] | Not publicly specified |\n| Swath or field of view | 43 km swath at 100 km; 9.2 km at 15 km (EPSC) [1] | Not publicly specified [3] | 20 km swath [4] | 20 km swath [6] | Monochrome 92°; visible 61°; UV 59° [7] | Hasselblad 70 mm camera with 60 mm lens [9] |\n| View configuration | Two-line stereo: forward +7.98°, backward −17.2° [1] | Single camera; orbit imaging [3] | Three linear detectors: fore +25°, nadir, aft −25° [4] | Described as miniature version of TMC [6] | Seven-filter visible and UV modes, plus monochrome [7] | Handheld by crew; film magazine [9][10] |\n| Detector | Two-line TDI CCD; 6144 pixels per line; 10.1 µm pixels [1] | CCD; format not stated on the ESA page [3] | Linear APS with in-built digitiser; 4k elements per line [4] | Not publicly specified | Kodak KAI-1001, 1024 × 1024 pixels [7] | 70 mm film [9][10] |\n| Mass | Not publicly specified | Not publicly specified for AMIE; total science payload 19 kg [3] | 6.3 kg (pre-launch document) [4] | Not publicly specified | 0.9 kg [7] | Not publicly specified |\n| Power | Not publicly specified | Not publicly specified [3] | Not publicly specified [4] | Not publicly specified | Peak 2.7 W; average 2.6 W [7] | Not applicable (film camera) |\n| Dimensions | Not publicly specified | Not publicly specified [3] | 370 mm × 220 mm × 414 mm (pre-launch document) [4] | Not publicly specified | Not publicly specified in sources accessed | Not publicly specified |",
+        "examples": [
+          {
+            "name": "Chang'e-2 stereo camera (CCD, panchromatic band)",
+            "type": "Flown lunar orbital stereo pushbroom imager (Chang'e-2 orbiter)",
+            "status": "flown",
+            "optical_heads": "Single lens with two viewing angles, forward and backward (eoportal; EPSC 2014 Table 1)",
+            "detector": "Two-line TDI CCD; 6144 pixels per line; 10.1 um pixels; 8-bit radiometric resolution (EPSC 2014 Table 1)",
+            "band_um": [
+              0.45,
+              0.52
+            ],
+            "band_type": "one panchromatic band (EPSC 2014 Table 1)",
+            "focal_length_mm": 144.3,
+            "stereo_view_angles_deg": {
+              "forward": 7.98,
+              "backward": -17.2
+            },
+            "ground_resolution_m": {
+              "100_km_orbit": 7,
+              "15_km_orbit": 1.5
+            },
+            "swath_km": {
+              "100_km_orbit": 43,
+              "15_km_orbit": 9.2
+            },
+            "conflicting_values": "eoportal Table 5 gives 1.05 m at 100 km x 15 km with 6.45 km swath; a search summary cited 1.3 m at 15 km; not used as values",
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://meetingorganizer.copernicus.org/EPSC2014/EPSC2014-344.pdf",
+              "https://eoportal.org/satellite-missions/chang-e-2"
+            ],
+            "images": [],
+            "name_in_article": "Chang'e-2 stereo camera (CCD, panchromatic band)",
+            "article_text": "Chang'e-2 stereo camera (CCD, panchromatic band)\n\n**Status: flown.** The Chang'e-2 spacecraft was launched on 1 October 2010 on a CZ-3C vehicle. The eoportal mission page states that it reached a 100 km × 100 km lunar orbit on 9 October 2010 and a 100 km × 15 km orbit on 26 October 2010 [2]. The page states that the camera produced data and a 7 m whole-Moon map, which it says was released in February 2012 [2]. The spacecraft's later status in that page is internally inconsistent, so this article does not give an end-of-mission date.\n\n**Published configuration.** The EPSC 2014 paper describes the stereo camera as a linear pushbroom instrument with two CCD lines, a 144.3 mm focal length, a 6144-pixel line (two CCD lines), a 10.1 µm pixel, and one panchromatic band of 0.45–0.52 µm [1]. It lists a radiometric resolution of 8 bits [1]. The eoportal page gives forward +8° and backward −17.2° viewing angles and states that the camera has a single lens with two angles of view [2]. The paper's text states a spatial resolution of 7 m at a 100 km orbit, with a 43 km image width, and 1.5 m at a 15 km orbit, with a 9.2 km image width [1].\n\n**Evidence limits.** The 15 km resolution differs between sources. The eoportal table gives 1.05 m with a 6.45 km swath at the 100 km × 15 km configuration [2], and a search summary cited a conference figure of 1.3 m. The mass, power, and the camera's status after the lunar mission were not stated in the sources accessed."
+          },
+          {
+            "name": "SMART-1 Advanced Moon micro-Imager Experiment (AMIE)",
+            "type": "Flown lunar orbital CCD camera with a white-light (panchromatic) channel and colour filters (SMART-1)",
+            "status": "flown; nominal science from 15 March 2005, extended until impact on 3 September 2006 (ESA page)",
+            "detector": "CCD; format not stated on the ESA page",
+            "bands": {
+              "panchromatic": "white-light channel",
+              "colour_filters_nm": [
+                750,
+                900,
+                950
+              ],
+              "filter_mounting": "deposited on the CCD"
+            },
+            "colour_band_purpose": "Measure the 1 um absorption of pyroxene and olivine (ESA page)",
+            "ground_resolution_m": {
+              "value": 35,
+              "altitude_km_perilune": 350
+            },
+            "focal_length_mm": null,
+            "fov_deg": null,
+            "mass_kg": null,
+            "power_w": null,
+            "related_payload_context": "ESA gives total science payload mass of 19 kg for SMART-1; this is not the AMIE mass",
+            "unverified_secondary_values": "Secondary search summaries gave other focal length, detector format, filter wavelengths, resolution and mass/power values; none confirmed in a primary source, none used",
+            "source_urls": [
+              "https://cosmos.esa.int/web/smart-1"
+            ],
+            "images": [
+              {
+                "id": "esa_smart1_amie_south_pole_mosaic",
+                "description": "Lunar image from the SMART-1 AMIE camera: South Pole mosaic.",
+                "image_type": "Lunar image from SMART-1 AMIE (ESA SMART-1 mission page)",
+                "image_url": "https://www.cosmos.esa.int/documents/385503/385511/Fig+3+smart1+south+mosaic+Foing-ellouzi+AMIE.jpg/0ebdeb42-b534-4ca1-8286-fac4e361dde4",
+                "source_page_url": "https://cosmos.esa.int/web/smart-1",
+                "publisher": "ESA Cosmos (SMART-1 mission page)",
+                "credit": "Foing, Ellouzi & ESA/SMART-1/AMIE",
+                "caption": "South Pole (Credit: Foing, Ellouzi & ESA/SMART-1/AMIE)",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL checked: HTTP 200 (image/jpeg) with the query string (?t=...) removed. The ESA SMART-1 page lists the image with this caption and credit (page extraction, 2026-11-12). Rights: ESA reuse conditions not verified; check before republication. Full-resolution version not checked."
+              }
+            ],
+            "name_in_article": "SMART-1 Advanced Moon micro-Imager Experiment (AMIE)",
+            "article_text": "SMART-1 Advanced Moon micro-Imager Experiment (AMIE)\n\n**Status: flown.** AMIE was an instrument on ESA's SMART-1 spacecraft. The ESA mission page gives the nominal science period as starting on 15 March 2005, with a one-year extension until impact on 3 September 2006 [3]. The page describes AMIE in the past tense as having provided CCD images of selected lunar areas [3].\n\n**Published configuration.** ESA describes AMIE as a compact, high-resolution camera for lunar topography and for imaging support to other instruments [3]. It has a white-light (panchromatic) channel and three colour filters at 750, 900 and 950 nm, deposited on the CCD. The ESA page states that the colour bands measure the 1 µm absorption of pyroxene and olivine [3]. The page gives a resolution of \"35 m pixel at 350 km perilune height\" [3]. It does not state focal length, field of view, mass or power for AMIE; it gives only the total science payload mass of 19 kg [3].\n\nThe South Pole mosaic below is a lunar image from AMIE. It shows the instrument's imaging output and is included here for context, not as a measurement of the instrument's performance.\n\n![Lunar image from the SMART-1 AMIE camera, South Pole, credited to Foing, Ellouzi and ESA/SMART-1/AMIE.](https://www.cosmos.esa.int/documents/385503/385511/Fig+3+smart1+south+mosaic+Foing-ellouzi+AMIE.jpg/0ebdeb42-b534-4ca1-8286-fac4e361dde4)\n\n*ESA SMART-1 page caption: \"South Pole (Credit: Foing, Ellouzi & ESA/SMART-1/AMIE)\" [3].*\n\n**Evidence limits.** Secondary search summaries gave focal length, a 1024 × 1024 pixel CCD, slightly different filter wavelengths (915 and 960 nm), other resolution figures and a mass and power figure. These were not confirmed in a primary source accessed in this run, so none is used. The primary instrument paper on the Hal open archive was not accessible (access denied by the server's bot protection), so the full AMIE instrument description could not be checked."
+          },
+          {
+            "name": "Chandrayaan-1 Terrain Mapping Camera (TMC)",
+            "type": "Flown lunar orbital stereo pushbroom imager (Chandrayaan-1 orbiter); configuration from pre-launch document",
+            "status": "flown on orbiter; TMC values are pre-launch configuration values, not in-flight measurements",
+            "band_um": [
+              0.5,
+              0.85
+            ],
+            "band_type": "panchromatic spectral region (ISSDC payload document, future tense)",
+            "ground_resolution_m": 5,
+            "swath_km": 20,
+            "view_angles_deg": {
+              "fore": 25,
+              "nadir": 0,
+              "aft": -25
+            },
+            "detector": "Three linear 4k-element Linear APS detectors with in-built digitiser; single refractive optic covering the three detectors",
+            "data_rate_mbps": "of the order of 50 (expected, per pre-launch document)",
+            "dimensions_mm": [
+              370,
+              220,
+              414
+            ],
+            "mass_kg": 6.3,
+            "power_w": null,
+            "source_urls": [
+              "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+              "https://www.issdc.gov.in/chandrayaan1.html"
+            ],
+            "images": [],
+            "name_in_article": "Chandrayaan-1 Terrain Mapping Camera (TMC)",
+            "article_text": "Chandrayaan-1 Terrain Mapping Camera (TMC)\n\n**Status: flown on the Chandrayaan-1 orbiter.** ISRO's mission page states that Chandrayaan-1 was launched on 22 October 2008 and that communication with the spacecraft was lost on 29 August 2009 [5]. TMC data are processed to Planetary Data System standards for archive and distribution [5].\n\n**Published configuration.** The pre-launch ISSDC payload document states that \"the TMC will image in the panchromatic spectral region of 0.5 to 0.85 µm, with a spatial/ ground resolution of 5 m and swath coverage of 20 km\" [4]. It describes three linear 4k-element detectors for fore (+25°), nadir and aft (−25°) views, a Linear Active Pixel Sensor with an in-built digitiser, an expected data rate of the order of 50 Mbps, a payload dimension of 370 mm × 220 mm × 414 mm and a mass of 6.3 kg [4]. The power is not stated in the document [4].\n\n**Evidence limits.** The document is pre-launch and uses future-tense wording, so these are configuration values, not measured performance. The full TMC design, including its stereo DTM role and its mapping results, is described in 028."
+          },
+          {
+            "name": "Chandrayaan-2 Terrain Mapping Camera-2 (TMC-2)",
+            "type": "Panchromatic lunar orbital imager described as on the Chandrayaan-2 orbiter (miniature version of the Chandrayaan-1 TMC)",
+            "status": "described as on-orbit; current operational status not confirmed in sources accessed",
+            "band_um": [
+              0.5,
+              0.8
+            ],
+            "band_type": "panchromatic (ISRO payload page)",
+            "ground_resolution_m": 5,
+            "swath_km": 20,
+            "orbit": "100 km lunar polar orbit (ISRO payload page)",
+            "stereo_configuration": "not stated on the ISRO page accessed",
+            "mass_kg": null,
+            "power_w": null,
+            "unverified_claims": "Catalogue-level abstract reported a more than 40% reduction in mass and power relative to Chandrayaan-1 TMC; not verified and not used",
+            "source_urls": [
+              "https://www.isro.gov.in/ISRO_EN/chandrayaan2-payloads.html"
+            ],
+            "images": [],
+            "name_in_article": "Chandrayaan-2 Terrain Mapping Camera-2 (TMC-2)",
+            "article_text": "Chandrayaan-2 Terrain Mapping Camera-2 (TMC-2)\n\n**Status: described as on the Chandrayaan-2 orbiter; current status not confirmed.** ISRO describes TMC-2 as \"a miniature version of the Terrain Mapping Camera used onboard the Chandrayaan 1 mission\" [6]. The ISRO page gives its operation from a 100 km lunar polar orbit [6]. The ISRO page accessed does not state the current operational status of the instrument, and the orbiter's launch and operating dates were not verified for this article.\n\n**Published configuration.** ISRO describes TMC-2 as having a \"panchromatic spectral band (0.5-0.8 microns)\", a \"high spatial resolution of 5 m\" and a swath of 20 km [6]. The page does not state the stereo configuration, mass, power or detector type [6].\n\n**Evidence limits.** A catalogue-level abstract reported that TMC-2 reduces mass and power by more than 40% relative to the Chandrayaan-1 TMC. That figure was not verified against a primary ISRO or Space Applications Centre document and is not used here."
+          },
+          {
+            "name": "Lunar Reconnaissance Orbiter Wide Angle Camera (WAC)",
+            "type": "Flown lunar orbital multispectral camera with a monochrome mode (LRO); not a dedicated panchromatic camera",
+            "status": "flown on LRO",
+            "filter_centres_nm": [
+              321,
+              360,
+              415,
+              566,
+              604,
+              643,
+              689
+            ],
+            "operating_modes": [
+              "five-filter visible mode",
+              "two-filter UV colour mode",
+              "monochrome mode (1024 x 14 pixel push frame)"
+            ],
+            "monochrome_band_um": "not publicly specified",
+            "fov_deg": {
+              "monochrome": 92,
+              "visible": 61,
+              "uv": 59
+            },
+            "focal_length_mm": {
+              "visible": 6.0,
+              "uv": 4.7
+            },
+            "pixel_scale_m": {
+              "visible": 75,
+              "uv_4x4_binned": 385
+            },
+            "pixel_scale_mrad": {
+              "visible": 1.5,
+              "uv_4x4_binned": 7.67
+            },
+            "detector": "Kodak KAI-1001, 1024 x 1024 pixels (LROC specifications page)",
+            "mass_kg": 0.9,
+            "power_w": {
+              "peak": 2.7,
+              "average": 2.6
+            },
+            "sensitivity_note": "The 400-750 nm sensitivity range on the LROC page applies to the Narrow Angle Cameras, not the WAC",
+            "source_urls": [
+              "https://lroc.im-ldi.com/about/specs",
+              "https://science.nasa.gov/mission/lro/"
+            ],
+            "images": [],
+            "name_in_article": "Lunar Reconnaissance Orbiter Wide Angle Camera (LROC WAC)",
+            "article_text": "Lunar Reconnaissance Orbiter Wide Angle Camera (LROC WAC)\n\n**Status: flown on LRO.** The WAC is one of the LROC cameras on the Lunar Reconnaissance Orbiter, which NASA Science lists as a mission [8]. The LROC specifications page gives the WAC's operating modes and specifications [7]. This example is included because the WAC has a monochrome mode that is a broad visible-light product. It is not a dedicated panchromatic camera, and the detailed WAC design and wide-field geometry belong in 044.\n\n**Published configuration.** The LROC specifications page lists seven WAC filter centres at 321, 360, 415, 566, 604, 643 and 689 nm, a five-filter visible mode, a two-filter ultraviolet colour mode and a monochrome mode [7]. It gives a visible pixel scale of 75 m/pixel and a UV pixel scale of 385 m/pixel with 4 × 4 binning [7]. Its fields of view are 92° (monochrome), 61° (visible) and 59° (UV), with focal lengths of 6.0 mm (visible) and 4.7 mm (UV) [7]. The detector is a Kodak KAI-1001 with 1024 × 1024 pixels, and the peak and average power are 2.7 W and 2.6 W [7]. The mass is 0.9 kg [7].\n\n**Evidence limits.** The 400–750 nm sensitivity range on the LROC page applies to the Narrow Angle Cameras, not to the WAC [7]. The page does not state a single broad-band panchromatic band for the WAC or a spectral range for the monochrome mode. Secondary search summaries gave different channel counts and a 100 m pixel scale, and these are not used here."
+          },
+          {
+            "name": "Apollo lunar surface Hasselblad camera (black-and-white film)",
+            "type": "Flown crew-operated 70 mm film camera with 60 mm lens (EVA camera); black-and-white film magazines",
+            "status": "flown on Apollo missions",
+            "lens": "60 mm (NASA Apollo 11 Lunar Surface Journal)",
+            "film": "Black-and-white magazine (39/Q, EVA camera); black-and-white film described by Smithsonian magazine record",
+            "spectral_sensitivity": "not publicly specified in sources accessed; panchromatic classification not verified",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_mm": null,
+            "source_urls": [
+              "https://nasa.gov/wp-content/uploads/static/history/alsj/a11/a11LM-Cams-Mags.html",
+              "https://airandspace.si.edu/collection-objects/film-magazine-hasselblad-70mm-apollo-11/nasm_A19791525000"
+            ],
+            "images": [],
+            "name_in_article": "Apollo lunar surface Hasselblad (black-and-white film)",
+            "article_text": "Apollo lunar surface Hasselblad (black-and-white film)\n\n**Status: flown on Apollo missions.** The NASA Apollo 11 Lunar Surface Journal describes the lunar surface camera as a 70 mm Hasselblad camera with a 60 mm lens, carried on the EVA [9]. The Smithsonian's Apollo 11 film magazine record states that it was used in the command module by Michael Collins and that the film was black and white [10].\n\n**Published configuration.** The NASA page describes a reseau plate that placed a grid of crosses on the images, and it states that the camera had a silver-coloured finish to reduce overheating [9]. The NASA page describes crews loading black-and-white film magazines alongside colour magazines [9]. The Smithsonian page describes the magazine as used for black-and-white photographs of the lunar surface and states that crews could switch magazines to change between colour and black-and-white film [10]. Frame size, magazine capacity, mass, power and dimensions are not stated on the pages accessed.\n\n**Evidence limits.** The sources accessed describe black-and-white film, not a panchromatic film classification, and they do not give the film's spectral sensitivity. The Smithsonian gallery images use query-string URLs and are not used here; the source page is cited in [10] instead."
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are published only for the Chandrayaan-1 TMC (370 mm x 220 mm x 414 mm, pre-launch document) [4]. Other examples do not publish dimensions in the sources accessed, so no general dimension is stated. Instruments differ in optics and mounting, and their sizes should not be compared directly.",
+        "mass_and_weight": "Published masses: Chandrayaan-1 TMC 6.3 kg (pre-launch document) [4]; LRO WAC 0.9 kg [7]. The AMIE mass is not stated on the ESA page [3]. Masses for the Chang'e-2 stereo camera, Chandrayaan-2 TMC-2 and the Apollo Hasselblad are not publicly specified in the sources accessed.",
+        "power_requirements": "Published power: LRO WAC peak 2.7 W and average 2.6 W [7]. Power for the other examples is not publicly specified in the sources accessed; the pre-launch TMC document does not state a power value [4]."
+      },
+      "environmental_and_operational_requirements": "Lunar cameras operate in vacuum and under strong thermal cycling. The Apollo surface camera's silver finish was described as preventing overheating [9]. Orbital imagers must maintain stable optics and alignment because the viewing geometry is part of the measurement.\n\nData handling is significant. The pre-launch Chandrayaan-1 TMC document gives an expected data rate of the order of 50 Mbps [4]. The Chang'e-2 stereo camera uses selectable TDI integration grades (16, 32, 48, 64 and 96) and gains (0.7, 1.0 and 2.0) [1], which trade sensitivity and signal level against operational settings.\n\nGround scale depends on altitude. The Chang'e-2 camera's resolution changes from 7 m at 100 km to 1.5 m at 15 km [1], so the same instrument gives different ground scales at different orbit heights. The LROC WAC resolution is given as a per-pixel angle and pixel scale on the specifications page [7].\n\nThe spectral band of a panchromatic camera also affects operational choices. A broad band gives more signal, but any scene-dependent interpretation requires colour or multispectral data from another instrument.",
+      "limitations": "A panchromatic image records brightness across one broad band. It does not identify composition by itself. The Chang'e-2, TMC and TMC-2 bands cover different wavelength ranges, so their images cannot be compared as if they recorded the same band. The AMIE colour filters measure absorption features, but its panchromatic channel does not.\n\nEach example is a different instrument, mission and documentation type. The Chandrayaan-1 TMC values are from a pre-launch document. The Chang'e-2 values combine a conference paper and a mission summary. The LROC values come from a specification page for an instrument with several modes. None of these values should be applied to another instrument.\n\nThe term \"panchromatic\" does not mean \"visible only\" in these examples. The TMC band extends to 0.85 µm, and AMIE's colour filters include 750–950 nm, so the sources describe wavelengths beyond the human visible range.\n\nFilm photography introduces its own limits. The Apollo examples are black-and-white film, and the sources do not state film sensitivity or confirm a panchromatic classification.",
+      "transportation_and_deployment": {
+        "overview": "Five of the six examples are orbital imagers: Chang'e-2, SMART-1 AMIE, Chandrayaan-1 TMC, Chandrayaan-2 TMC-2 and LRO WAC. For these, the relevant interfaces are spacecraft integration, mounting and alignment, thermal control, pointing knowledge, power and data handling, launch, lunar transfer, orbit insertion and commissioning. The Chang'e-2 stereo camera's orbit heights (100 km and 15 km) are reported in [1] and [2]. The Chandrayaan-2 TMC-2 orbit is described as a 100 km lunar polar orbit [6].",
+        "transportation_process": [
+          "Integrate the camera with its electronics, optics and alignment onto an orbiter payload configuration on Earth.",
+          "Launch the spacecraft and perform the lunar transfer.",
+          "Insert the orbiter into lunar orbit and commission the camera at the orbit altitude required for the intended ground scale.",
+          "For the Apollo example, the camera was carried to the surface by the crew and operated by hand; its handling is described in the NASA Apollo 11 pages [9].",
+          "Interfaces for orbital examples (thermal, pointing, power and data) are not documented for named spacecraft in the sources accessed, so no spacecraft compatibility is asserted."
+        ],
+        "deployment_methods": "The Apollo lunar surface Hasselblad was a crew-carried camera rather than a deployed instrument. The NASA Apollo 11 page describes the camera and its magazines in the Apollo 11 lunar module context [9].",
+        "historical_examples": "Orbiter examples: Chang'e-2 stereo camera, SMART-1 AMIE, Chandrayaan-1 TMC, Chandrayaan-2 TMC-2, LRO WAC. Crew-carried surface example: Apollo lunar surface Hasselblad.",
+        "compatibility_assessment": "No compatibility with a specific lander, rover or spacecraft is asserted in this article. Such an assertion would require verified interface documents for the named vehicle.",
+        "images": []
+      },
+      "historical_significance": "Panchromatic cameras have a long history in lunar exploration. Apollo crews used Hasselblad film cameras to photograph the lunar surface and the command module, and those black-and-white film photographs are part of the historical record [9][10]. Chandrayaan-1's TMC was designed to produce a three-dimensional atlas of the Moon, and its data are archived through ISRO's ISSDC system [4][5]. The Chang'e-2 stereo camera produced global topographic products and high-resolution images used in planning the Chang'e-3 mission [1][2]. SMART-1 AMIE provided high-resolution CCD images that ESA describes as supporting other SMART-1 instruments [3]. The LRO WAC is specified with seven filters and a monochrome mode on the Lunar Reconnaissance Orbiter [7][8].",
+      "limitations_and_uncertainties": "- **Chang'e-2 15 km resolution and swath.** Sources give 1.05 m with a 6.45 km swath (eoportal table) and 1.5 m with a 9.2 km width (EPSC text). A 1.3 m figure from a search summary was not confirmed [1][2].\n- **Chang'e-2 product release and status.** The EPSC 2014 abstract says that the products \"will be released in the future\", while the eoportal page states that a 7 m whole-Moon map was released in February 2012 [1][2]. The eoportal page is internally inconsistent about the spacecraft's later timeline [2].\n- **AMIE focal length, field of view, mass and power.** These are not stated on the ESA page accessed [3]. Secondary search summaries gave values for these and for filter wavelengths, but they were not confirmed in a primary source, so they are excluded. The primary instrument paper was not accessible [3].\n- **Chandrayaan-1 TMC in-flight performance.** The TMC specification is from a pre-launch document [4]. In-flight radiometric and geometric performance was not established from a primary post-mission source in this article.\n- **Chandrayaan-2 TMC-2 status and specifications.** The ISRO page gives the band, resolution and swath but not the current operating status, mass, power or detector [6]. A catalogue-level mass and power reduction claim was not verified and is not used numerically.\n- **LRO WAC monochrome band.** The LROC specifications page does not give a spectral range for the monochrome mode [7]. Its 400–750 nm sensitivity range is for the NAC, not the WAC [7].\n- **Apollo film sensitivity.** The NASA and Smithsonian pages describe black-and-white film but do not state its spectral sensitivity or film type beyond black and white [9][10]. The panchromatic classification of these photographs is therefore not verified.\n- **Image coverage.** The Smithsonian film-magazine gallery was not used as a direct image because its URLs depend on query parameters, which the URL policy removes. The source page is cited in [10].\n- **Cross-references.** High-resolution panchromatic imaging is covered under 027 (High-resolution camera); terrain mapping and stereo DTMs under 028 (Terrain mapping camera); visible-light imaging under 039 (Visible-light camera); multispectral imaging under 034 (Multispectral imager); and wide-field imaging under 044 (Wide-angle camera). This article does not duplicate those entries.",
+      "images": [
+        {
+          "id": "esa_smart1_amie_south_pole_mosaic",
+          "description": "Lunar image from the SMART-1 AMIE camera: South Pole mosaic.",
+          "image_type": "Lunar image from SMART-1 AMIE (ESA SMART-1 mission page)",
+          "image_url": "https://www.cosmos.esa.int/documents/385503/385511/Fig+3+smart1+south+mosaic+Foing-ellouzi+AMIE.jpg/0ebdeb42-b534-4ca1-8286-fac4e361dde4",
+          "source_page_url": "https://cosmos.esa.int/web/smart-1",
+          "publisher": "ESA Cosmos (SMART-1 mission page)",
+          "credit": "Foing, Ellouzi & ESA/SMART-1/AMIE",
+          "caption": "South Pole (Credit: Foing, Ellouzi & ESA/SMART-1/AMIE)",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL checked: HTTP 200 (image/jpeg) with the query string (?t=...) removed. The ESA SMART-1 page lists the image with this caption and credit (page extraction, 2026-11-12). Rights: ESA reuse conditions not verified; check before republication. Full-resolution version not checked."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "number": 1,
+          "title": "A New lunar global topographic map products from Chang'E-2 Stereo Camera Image Data (EPSC2014-344)",
+          "publisher": "Ren, X., Liu, J. J., Wang, F. F., Wang, W. R., Mu, L. L., Li, H. H., Li, C. L.; European Planetary Science Congress 2014",
+          "url": "https://meetingorganizer.copernicus.org/EPSC2014/EPSC2014-344.pdf",
+          "notes": "Chang'E-2 stereo camera Table 1 (band, focal length, pixel size, stereo angles); 7 m and 1.5 m resolution text; DEM comparison with LRO WAC; panchromatic band"
+        },
+        {
+          "number": 2,
+          "title": "Chang'e-2 mission page",
+          "publisher": "eoportal (ESA Earth Observation Portal)",
+          "url": "https://eoportal.org/satellite-missions/chang-e-2",
+          "notes": "launch and orbit history, stereo camera table (resolution, swath), status statements; internal timeline inconsistency noted"
+        },
+        {
+          "number": 3,
+          "title": "SMART-1 mission page",
+          "publisher": "ESA Cosmos",
+          "url": "https://cosmos.esa.int/web/smart-1",
+          "notes": "AMIE description, panchromatic channel and 750/900/950 nm colour filters, 35 m per pixel at 350 km perilune, status dates, South Pole image"
+        },
+        {
+          "number": 4,
+          "title": "Chandrayaan-1 Science Payloads (payload document, PDF)",
+          "publisher": "ISRO / ISSDC",
+          "url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+          "notes": "pre-launch TMC configuration: panchromatic 0.5-0.85 micron, 5 m, 20 km swath, fore/aft +/-25 deg, 6.3 kg, 370 x 220 x 414 mm, data rate"
+        },
+        {
+          "number": 5,
+          "title": "Chandrayaan-1 mission page",
+          "publisher": "ISRO / ISSDC",
+          "url": "https://www.issdc.gov.in/chandrayaan1.html",
+          "notes": "launch date 22 October 2008, loss of communication 29 August 2009, TMC data processed to PDS standards"
+        },
+        {
+          "number": 6,
+          "title": "Chandrayaan-2 Payloads page",
+          "publisher": "ISRO",
+          "url": "https://www.isro.gov.in/ISRO_EN/chandrayaan2-payloads.html",
+          "notes": "TMC-2 panchromatic 0.5-0.8 micron, 5 m, 20 km swath, 100 km lunar polar orbit, miniature version of Chandrayaan-1 TMC"
+        },
+        {
+          "number": 7,
+          "title": "LROC instrument specifications",
+          "publisher": "LROC (Arizona State University / LROC team)",
+          "url": "https://lroc.im-ldi.com/about/specs",
+          "notes": "WAC filter centres, monochrome and UV modes, fields of view, focal lengths, Kodak KAI-1001 detector, pixel scales, mass and power; NAC sensitivity 400-750 nm"
+        },
+        {
+          "number": 8,
+          "title": "Lunar Reconnaissance Orbiter (LRO) mission page",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/mission/lro/",
+          "notes": "mission context for the WAC; page content not re-read in detail in this run"
+        },
+        {
+          "number": 9,
+          "title": "Apollo 11 Lunar Surface Journal: Lunar Module cameras and magazines",
+          "publisher": "Eric M. Jones, NASA-hosted Apollo 11 Lunar Surface Journal",
+          "url": "https://nasa.gov/wp-content/uploads/static/history/alsj/a11/a11LM-Cams-Mags.html",
+          "notes": "EVA Hasselblad (70 mm), 60 mm lens, reseau plate, silver finish, black-and-white magazine 39/Q; no image on page verified"
+        },
+        {
+          "number": 10,
+          "title": "Film Magazine, Hasselblad, 70mm, Apollo 11 (object record A19791525000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "url": "https://airandspace.si.edu/collection-objects/film-magazine-hasselblad-70mm-apollo-11/nasm_A19791525000",
+          "notes": "black-and-white film magazine used in command module by Michael Collins; crews could switch colour and black-and-white magazines; gallery images use query-string URLs and are not used"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "physical_specifications.examples[1]": "payload.article.physical_specifications.examples[1].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. The single registry image was verified to return HTTP 200 (image/jpeg) without its query string and is listed on its ESA source page. The Smithsonian Apollo magazine gallery was not used as a direct image source because its image URLs depend on query parameters; it appears only as a source-page reference in the Markdown article. Section-level image objects are repeated intentionally so that each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Chang'e-2 stereo camera: the EPSC 2014 paper (Table 1) gives the panchromatic band (0.45-0.52 micron), focal length and detector values. Its text gives 7 m at 100 km and 1.5 m at 15 km. The eoportal table gives 1.05 m at 15 km with a 6.45 km swath, and a search summary cited 1.3 m; these are unresolved. Mass, power and post-mission status are not publicly specified in the sources accessed.",
+    "Chang'e-2 timeline and products: the eoportal page is internally inconsistent about the spacecraft's later timeline. The EPSC 2014 abstract says the CE2DOM2014 and CE2DEM2014 products will be released in the future, while eoportal says a 7 m whole-Moon map was released in February 2012. The release status is not verified.",
+    "SMART-1 AMIE: the ESA page gives the panchromatic channel, colour filters (750, 900, 950 nm), 35 m per pixel at 350 km perilune, and the status dates, but not focal length, field of view, mass or power. The primary AMIE instrument paper on the HAL archive was not accessible (bot protection), so the full instrument description is unverified. Secondary search summaries disagreed and were not used.",
+    "Chandrayaan-1 TMC: the band, 5 m resolution, 20 km swath, fore/aft angles, 6.3 kg mass and 370 x 220 x 414 mm dimensions come from a pre-launch ISSDC document written in future tense. In-flight radiometric and geometric performance was not established from a primary post-mission source; the power is not published.",
+    "Chandrayaan-2 TMC-2: band (0.5-0.8 micron), 5 m resolution and 20 km swath are from the ISRO payload page. Current operating status, launch and operating dates, mass, power and detector are not stated there. A catalogue-level mass and power reduction claim was not verified.",
+    "LRO WAC: the LROC specifications page gives seven filter centres, the monochrome and UV modes, fields of view, focal lengths, pixel scales, detector, mass and power. It does not give a broad-band panchromatic band or a spectral range for the monochrome mode. The 400-750 nm sensitivity range on that page applies to the NAC. Secondary summaries gave different channel counts and pixel scales and were not used.",
+    "Apollo lunar surface Hasselblad: NASA's Apollo 11 pages describe a 70 mm Hasselblad with a 60 mm lens and black-and-white magazines; the Smithsonian record describes black-and-white film. Neither gives the film's spectral sensitivity, so a panchromatic classification is not verified. Frame size, magazine capacity, mass and power are not stated.",
+    "Image coverage: only one image is in the registry, the ESA SMART-1 AMIE South Pole mosaic. Smithsonian Apollo film-magazine gallery images have query-string-dependent URLs and were not used. The Apollo NASA ALSJ page yielded no verified direct image of the camera or magazines. No image was included for the other examples because no verified direct asset was obtained in this run.",
+    "Image reuse rights for the ESA SMART-1 image are not verified; the credit line is 'Foing, Ellouzi & ESA/SMART-1/AMIE'. Check before republication. Full-resolution download not checked.",
+    "No lunar location recommendations are made. Spacecraft or lander compatibility is not asserted for any example."
+  ]
+}

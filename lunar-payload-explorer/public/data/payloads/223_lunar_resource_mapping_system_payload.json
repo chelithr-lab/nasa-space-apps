@@ -1,0 +1,217 @@
+{
+  "catalogue_id": 223,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 223,
+    "name": "Lunar resource mapping system",
+    "article": {
+      "overview": "A lunar resource mapping system is a class of instrument, or set of instruments, used to find out where useful materials are on the Moon and how much of them there is. The materials of interest include water ice and hydrated minerals in permanently shadowed craters, hydrogen held in the regolith, oxygen-bearing minerals and metals that could be extracted and used. The catalogue entry describes the mapping function, not one standard instrument. Historical and proposed examples differ widely in measurement technique, platform and mission outcome, so no single set of physical specifications applies to the class.",
+      "description": "Resource mapping systems answer a practical question: where is a resource, in what form, and at what concentration? Two broad families of method are used. Orbital systems observe the lunar surface from above. Imaging spectrometers measure reflected sunlight at many wavelengths, and absorption features reveal minerals and molecules such as water and hydroxyl. Radar systems probe the near-surface regolith by sending radio waves into the ground and recording the echoes. Neutron spectrometers measure neutrons produced when cosmic rays strike the surface; hydrogen-rich material slows and absorbs neutrons, so a drop in the neutron count can indicate hydrogen. Surface systems can sample the regolith or the gas released from it and measure composition in situ, using mass spectrometers and gas analysers. Mapping systems matter for ISRU because a resource that cannot be located and quantified cannot be planned for. Orbital maps help choose candidate regions, while surface measurements check and refine them.",
+      "scientific_purpose_and_applications": "The main purpose is to determine the distribution, form and abundance of volatiles (such as water ice and hydrogen-bearing compounds) and of minerals and elements in the lunar surface and near-surface. Scientific applications include the history of water delivery to the Moon, space weathering, the origin of hydrated minerals and the processes that trap volatiles in cold, permanently shadowed regions. Engineering applications include identifying candidate regions for ISRU, assessing the depth and purity of potential resources and supporting future surface operations.",
+      "operating_principle": "Different methods rely on different physical effects. Visible and infrared imaging spectroscopy uses absorption features in reflected sunlight: water and hydroxyl absorb near 3 micrometres, and silicate minerals show absorption bands in the near-infrared. Radar sounding records the strength and polarisation of backscatter, which depend on the dielectric properties of the material and can help distinguish ice-rich deposits from dry regolith. Neutron spectroscopy counts neutrons produced by cosmic rays; hydrogen moderates these neutrons, so counts at specific energies can infer hydrogen content, but the method cannot by itself tell whether hydrogen is present as water ice, hydrated minerals or solar-wind implanted hydrogen. In-situ gas and mass spectrometry samples gas released by heating or exposing regolith and separates ions by mass-to-charge ratio to identify species. Each method has detection limits set by sensitivity, probing depth and operating conditions, notably illumination in shadowed craters.",
+      "scientific_importance": "The Moon's polar regions contain permanently shadowed craters where water ice may survive for long periods. Orbital and surface evidence has pointed to such deposits, but their amount, distribution and form remain uncertain. Mapping systems provide the observations needed to test these models. Their results also feed into decisions about landing and operations for resource-based missions, which is why the catalogue places this class under ISRU.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, power or sensor specification for a lunar resource mapping system. The examples below are specific historical, flown, failed or proposed instruments. Values are given only where a source reviewed in this run states them; where no such value was found, the field is null and the status is recorded in the text. The examples differ in platform (orbiter, small satellite, rover, lander) and technique, so they are not directly comparable.",
+        "examples": [
+          {
+            "name": "Chandrayaan-1 Moon Mineralogy Mapper (M3)",
+            "type": "Flown orbital imaging spectrometer",
+            "platform": "Chandrayaan-1 orbiter (India), with NASA instrument team",
+            "launch_date": "2008-10-22",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_power_status": "Mass and power not stated on the USGS instrument page reviewed. A 2009 AGU abstract reports 8.3 kg and 16 W average power; that abstract could not be retrieved in this run, so these values are unverified and not recorded.",
+            "spectral_range_nm": [430, 3000],
+            "spectral_sampling_nm": 10,
+            "field_of_view_degrees": 24,
+            "spatial_sampling_mrad": 0.7,
+            "snr_equatorial_reference": "greater than 400",
+            "snr_polar_reference": "greater than 100",
+            "uniformity": "Spectral cross-track uniformity and spectral instantaneous field-of-view uniformity both reported as greater than 90 percent.",
+            "reported_outcome": "Reported to have produced a mineralogical map of the Moon and to have detected water and hydroxyl signatures in polar regions. Secondary coverage only; primary 2009 Science papers not retrieved in this run.",
+            "source_urls": [
+              "https://www.usgs.gov/publications/moon-mineralogy-mapper-m3-imaging-spectrometer-lunar-science-instrument-description",
+              "https://ui.adsabs.harvard.edu/abs/2009AGUFM.P23B1246G/abstract"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mini-RF synthetic aperture radar",
+            "type": "Flown orbital radar (two units)",
+            "platform": "Chandrayaan-1 (first unit, launched October 2008, data to August 2009); Lunar Reconnaissance Orbiter (second unit, launched June 2009)",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_power_status": "Mass and power not stated on the APL instrument page.",
+            "wavelengths_cm": [4.2, 12.6],
+            "reported_outcome": "APL describes the LRO unit as currently flying and as having collected radar data for more than a decade. Stated goal includes searching for water ice at the lunar poles. Current status taken from the APL page as accessed and may have changed.",
+            "source_urls": [
+              "https://jhuapl.edu/destinations/instruments/mini-rf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Prospector neutron spectrometer",
+            "type": "Flown orbital neutron spectrometer",
+            "platform": "Lunar Prospector",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_power_status": "Not verified in this run.",
+            "measurement": "Reduction in epithermal neutron counts over both polar regions, interpreted as hydrogen consistent with water ice in permanently shadowed craters covered by up to about 40 cm of regolith.",
+            "later_reanalysis": "Later analyses (including a 2008 arXiv reanalysis and a 2012 LRO LEND-based analysis) report water-equivalent hydrogen concentrations. These are not confirmed in this run, so no concentration value is recorded.",
+            "limitation": "Neutron data alone cannot distinguish hydrogen present as water ice, hydrated minerals or solar-wind implanted hydrogen.",
+            "source_urls": [
+              "https://openpolar.no/Record/craaas:10.1126%2Fscience.281.5382.1496"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Trailblazer High-resolution Volatiles and Minerals Moon Mapper (HVM3)",
+            "type": "Imaging spectrometer on a small satellite; launched but mission not successful",
+            "platform": "Lunar Trailblazer small satellite, launched as a rideshare on Intuitive Machines IM-2 (Falcon 9), 26 February 2025",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_power_status": "Mass, power, spectral channel count and spatial resolution not stated in the NASA announcement reviewed.",
+            "design_intent": "Designed to detect and map water and minerals, including at low illumination levels in permanently shadowed craters.",
+            "reported_outcome": "Contact lost 27 February 2025. NASA ended the mission on 31 July 2025 (announced 4 August 2025). NASA states the solar arrays were not properly oriented toward the Sun, depleting the batteries; described as the likely cause based on limited data, not a confirmed diagnosis. No HVM3 science data reported.",
+            "source_urls": [
+              "https://www.nasa.gov/feature/jpl/moon-water-imager-integrated-with-nasa-s-lunar-trailblazer",
+              "https://www.jpl.nasa.gov/news/nasas-lunar-trailblazer-moon-mission-ends/"
+            ],
+            "images": []
+          },
+          {
+            "name": "MSOLO (Mass Spectrometer Observing Lunar Operations), PRIME-1",
+            "type": "Flown surface gas mass spectrometer",
+            "platform": "Intuitive Machines IM-2 (Athena) lander, 2025",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_power_status": "Not verified in this run.",
+            "reported_outcome": "Planned mission about ten days; actual surface operation about 12 hours, ending when the lander battery ran out. Lander landed on its side in a small crater short of its target. Reduced sensitivity on the surface compared with transit; possible cause dust on the filament or ion source. Source is a NASA slide-deck summary (2026) read via search summary only, and secondary press; unverified. No measured lunar gas composition data verified.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20260003150/downloads/MSolo%20PRIME-1%20overview%20and%20results%20-%20LSSW.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Neutron Spectrometer System (VIPER rover)",
+            "type": "Planned rover-mounted neutron spectrometer; mission cancelled",
+            "platform": "VIPER rover (NASA discontinued development July 2024)",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_power_status": "Not verified in this run.",
+            "design_intent": "Older NASA material states it could measure total hydrogen volume up to about three feet (about 0.9 m) below the surface.",
+            "reported_outcome": "NASA has said VIPER instruments and components would be reused for future missions. Current status of NSS not confirmed.",
+            "source_urls": [],
+            "images": []
+          },
+          {
+            "name": "Volatile and Mineralogy Mapping Orbiter (VMMO), LVMM lidar",
+            "type": "Proposed orbital chemical lidar on a 12U CubeSat",
+            "platform": "Proposed 12U CubeSat for a frozen lunar orbit",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_power_status": "No performance or mass values verified.",
+            "design_intent": "Chemical lidar using 532 nm and 1560 nm fibre lasers, aimed mainly at the south pole, according to a university repository record. Proposed only; not flown.",
+            "source_urls": [
+              "https://ttu-ir.tdl.org/items/76300349-cf7b-4475-967d-7c38019384b3"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified as a class. Dimensions of the verified examples are not stated in the sources reviewed in this run. Because the examples differ in platform and technique, a single comparison would imply comparability that does not exist. A new mapping system's dimensions would depend on its measurement technique, spacecraft or rover accommodation and required sensitivity.",
+        "mass_and_weight": "Mass is normally expressed in kilograms and affects launch and lander capacity. Verified mass values are not available for the examples above; the mass fields are null. Mass and power for a new mapping system depend on its technique and platform and must be set against verified spacecraft specifications.",
+        "power_requirements": "Not publicly specified in the verified sources. Orbital radar and spectrometer power, and surface gas-analyser power, are not recorded here. The M3 figure of 16 W average in a 2009 AGU abstract is unverified and not recorded."
+      },
+      "environmental_and_operational_requirements": "Resource mapping instruments face the lunar environment, which has no substantial atmosphere, large temperature swings and radiation. Orbital systems need stable pointing and must handle changing illumination. Operations over permanently shadowed craters require instruments that can detect weak signals at low illumination, as HVM3 was designed to do. Radar systems need power, pointing and data handling in orbit. Surface gas analysers need thermal control, a clean sampling path and protection from dust; dust contamination is a documented concern in the MSOLO summary, though that summary is unverified.",
+      "limitations": "Orbital spectroscopy detects surface and near-surface signatures, not bulk composition at depth. Neutron measurements have coarse spatial resolution and cannot isolate the chemical form of hydrogen. Radar interpretation is ambiguous without independent calibration. Surface sampling is spatially limited to the landing or rover site. None of the examples has provided a complete, independently confirmed resource map of a polar region.",
+      "transportation_and_deployment": {
+        "overview": "Orbital mapping instruments are integrated into a spacecraft on Earth, launched, transferred to the Moon, inserted into lunar orbit and commissioned; pointing, thermal control and data downlink are the main interfaces. Surface mapping or gas-analysis instruments are integrated onto a lander or rover, delivered to the surface, deployed or positioned, and connected to power and data systems. The article does not assert compatibility with any named lander, rover or spacecraft.",
+        "transportation_process": [
+          "Integrate the instrument into a spacecraft, small satellite, rover or lander on Earth.",
+          "Launch on a launch vehicle; small satellites may fly as secondary payloads.",
+          "Transfer to the Moon and insert into lunar orbit, or land on the surface.",
+          "Commission and calibrate; for surface systems, deploy or position the instrument and connect power and data.",
+          "Operate for the planned mission, with pointing, thermal and data-downlink interfaces maintained."
+        ],
+        "deployment_methods": "Orbital instruments are operated from the spacecraft once in orbit. Surface instruments may be fixed to a lander deck, mounted on a rover or deployed by a mechanism; the planned VIPER neutron spectrometer was a rover-mounted component. Deployment method for any new system must be assessed against verified interface data.",
+        "historical_examples": "Chandrayaan-1 M3 and Mini-RF flew on an orbiter and produced mapping data. Lunar Trailblazer shows the dependence of a small satellite on its own power and attitude control after separation from the launch vehicle; its loss ended the mission before lunar operations. MSOLO flew on the IM-2 lander in 2025, with a short surface operation reported in unverified summaries. VIPER's neutron spectrometer was planned for a rover mission that was cancelled in July 2024.",
+        "compatibility_assessment": "A new mapping system's compatibility with a specific lander, rover or spacecraft cannot be assessed here. It would depend on mass, dimensions, mounting points, landing loads, power, data handling and thermal interfaces, none of which has been verified for a named mission.",
+        "images": []
+      },
+      "historical_significance": "Lunar Prospector's neutron measurements and Chandrayaan-1's spectral and radar observations established the modern picture of possible polar volatiles, and later orbital radar and neutron work continued that programme. Surface resource measurements have been limited so far. The MSOLO flight provided operational experience with a surface mass spectrometer, and the Lunar Trailblazer loss demonstrated the risk of relying on a small satellite that depends on its own power and attitude control.",
+      "limitations_and_uncertainties": "The catalogue name describes a mapping function, not a standard design; each example must be read on its own terms. Several primary sources could not be retrieved in this run, including the 1998 Lunar Prospector paper, the 2011 M3 instrument paper, the 2009 M3 AGU abstract and the MSOLO slide deck. Statements relying only on search summaries are identified as unverified. Mass, power, spectral channel count and resolution for HVM3 and mass and power for M3, Mini-RF and the other examples are not verified and are recorded as null. No measured lunar gas composition data from MSOLO have been verified. Mini-RF's current operating status is taken from the APL page as accessed. Lunar Prospector mission dates are not verified in this run.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Moon water imager integrated with NASA's Lunar Trailblazer",
+          "publisher": "NASA (JPL release, 22 December 2022)",
+          "url": "https://www.nasa.gov/feature/jpl/moon-water-imager-integrated-with-nasa-s-lunar-trailblazer"
+        },
+        {
+          "title": "NASA's Lunar Trailblazer Moon Mission Ends",
+          "publisher": "NASA JPL (news release 2025-099, 4 August 2025)",
+          "url": "https://www.jpl.nasa.gov/news/nasas-lunar-trailblazer-moon-mission-ends/"
+        },
+        {
+          "title": "Mini-RF instrument page",
+          "publisher": "Johns Hopkins University Applied Physics Laboratory",
+          "url": "https://jhuapl.edu/destinations/instruments/mini-rf"
+        },
+        {
+          "title": "The Moon Mineralogy Mapper (M3) imaging spectrometer for lunar science: Instrument description, calibration, on-orbit measurements, science data calibration and on-orbit validation",
+          "publisher": "USGS / Journal of Geophysical Research: Planets, 2011, DOI 10.1029/2011JE003797",
+          "url": "https://www.usgs.gov/publications/moon-mineralogy-mapper-m3-imaging-spectrometer-lunar-science-instrument-description"
+        },
+        {
+          "title": "M3 AGU Fall Meeting 2009 abstract P23B-1246 (not retrieved; mass and power unverified)",
+          "publisher": "AGU / NASA ADS",
+          "url": "https://ui.adsabs.harvard.edu/abs/2009AGUFM.P23B1246G/abstract"
+        },
+        {
+          "title": "Fluxes of Fast and Epithermal Neutrons from Lunar Prospector: Evidence for Water Ice at the Lunar Poles",
+          "publisher": "Feldman et al., Science 281, 1496-1500 (1998), DOI 10.1126/science.281.5382.1496 (record only; not retrieved)",
+          "url": "https://openpolar.no/Record/craaas:10.1126%2Fscience.281.5382.1496"
+        },
+        {
+          "title": "MSOLO PRIME-1 overview and results (slide deck, not readable as text in this run)",
+          "publisher": "NASA",
+          "url": "https://ntrs.nasa.gov/api/citations/20260003150/downloads/MSolo%20PRIME-1%20overview%20and%20results%20-%20LSSW.pdf"
+        },
+        {
+          "title": "Volatile and Mineralogy Mapping Orbiter (VMMO) proposal record",
+          "publisher": "Texas Tech University repository",
+          "url": "https://ttu-ir.tdl.org/items/76300349-cf7b-4475-967d-7c38019384b3"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No image assets were verified in this run, so the image registry and all section-level image arrays are empty."
+  },
+  "data_quality_notes": [
+    "Catalogue ID 223, name 'Lunar resource mapping system' and category 11 'In-situ resource utilisation (ISRU)' confirmed against lunar_payloads_catalogue_320.md before writing.",
+    "No direct image asset URLs were verified in this run; image arrays are empty and no image URLs were invented.",
+    "Primary sources not retrieved: Feldman et al. 1998 (Science, HTTP 403), M3 AGU 2009 abstract (ADS, HTTP 405), MSOLO NASA slide deck (no readable text), Lunar Trailblazer HVM3 spectral details (not in NASA page). Items relying on these are marked unverified.",
+    "Mass and power are null for all examples: no verified primary value was obtained in this run.",
+    "The source URLs for the Lunar Prospector and VMMO examples are record or search pages, not full primary documents.",
+    "Lunar Prospector launch and mission dates, and the claim that MSOLO flew on IM-2 in 2025, come from background knowledge or secondary search summaries and are not confirmed against primary sources in this run.",
+    "The VIPER cancellation (July 2024) and the planned reuse of NSS and MSOLO hardware are from secondary reporting; the current NSS status could not be confirmed.",
+    "Dates in the Trailblazer article (last-updated footer 22 June 2026 on the 2022 NASA page) do not change the 2022 content, which is an announcement and not an operational update."
+  ]
+}

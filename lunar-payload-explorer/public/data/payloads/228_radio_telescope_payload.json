@@ -1,0 +1,189 @@
+{
+  "catalogue_id": 228,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 12,
+    "name": "Astronomical observation"
+  },
+  "payload": {
+    "number": 228,
+    "name": "Radio telescope",
+    "article": {
+      "overview": "A radio telescope on the Moon receives radio waves from astronomical sources and measures their strength across frequency. Lunar examples are of interest because the far side of the Moon always faces away from Earth, which shields an instrument there from Earth-generated radio interference, and because the Moon has no thick ionosphere to block low frequencies in the way that Earth's ionosphere does. Four examples are reviewed here: the Chang'e-4 Low-Frequency Radio Spectrometer, which was operated from the far side after the lander landed in January 2019; ROLSES, which flew on an Intuitive Machines lander; LuSEE-Night, which is in development; and the FARSIDE concept, which is a proposed interferometric array.",
+      "description": "A radio telescope detects radio emission from natural astronomical sources and records it as a signal that scientists can analyse. Lunar radio telescopes typically consist of antennas, a receiver or spectrometer that measures signal power in each frequency channel, digitisers, an onboard processor or data store, and the power, thermal and communications systems needed to keep the instrument running. Because the instruments sit on the surface, their antennas are usually simple rods or wires rather than large dishes, and they measure the average sky spectrum over long periods rather than producing images. The examples below range from a spectrometer on a Chinese far-side lander to a proposed array of 128 antennas spread across about 10 km.",
+      "scientific_purpose_and_applications": "Low-frequency radio astronomy, roughly below 100 MHz, studies phenomena that are hard to observe from the ground because of Earth's ionosphere and radio noise. The sources reviewed identify several purposes. FARSIDE and LuSEE-Night target the Dark Ages global 21 cm signal from the early universe, with FARSIDE covering redshifts 50 to 100 [4] and LuSEE-Night covering 27 < z < 1100 [7]. FARSIDE also proposes monitoring radio bursts from nearby stars that are linked to coronal mass ejections and energetic particle events, imaging the entire sky about once per minute, and measuring radio activity across the solar system [4]. ROLSES is designed to study the radio and plasma wave environment of the Moon's nearside [5]. The Chang'e-4 spectrometer, called LFS on the Planetary Society page and LFRS in the technical paper, measures low-frequency emissions from the Sun and Moon [1][3].",
+      "operating_principle": "Radio antennas respond to the electric field of incoming waves, which induces small voltages at the antenna terminals. The receiver amplifies and filters the signal, and a spectrometer divides it into frequency channels and computes the power in each channel. ROLSES digitises its signals at 14 bits and 120 mega samples per second and uses an FPGA to perform FFT spectral analysis. It stores time-averaged spectra and also returns raw waveforms, which help in studying dust impacts on its antennas [5]. LuSEE-Night measures the sky between 0.1 and 50 MHz over several lunar nights [6]. FARSIDE would combine signals from 128 dual-polarisation antennas and 1,400 frequency channels in an interferometric array [4]. Scientists separate astronomical signal from instrument noise and lander-generated interference through calibration, which for the Chang'e-4 instrument required significant electromagnetic interference mitigation [3].",
+      "scientific_importance": "The far side of the Moon always faces away from Earth, which shields an instrument there from Earth-generated radio interference and from the ionosphere that limits low-frequency observations from the ground [1][5]. The Chang'e-4 lander carried a low-frequency spectrometer that was operated from the far side from 2019 [1][3]. LuSEE-Night and FARSIDE aim to measure the Dark Ages signal, a faint 21 cm signal from the early universe that is difficult to detect from Earth [4][7]. These instruments are pathfinders or concepts rather than established science programmes: they test whether radio instruments can survive and deliver usable data through the lunar environment and the far-side relay chain [1][6].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a radio telescope payload. The four examples below describe different architectures, frequency bands and maturity levels. Only values stated in the cited sources are given. Where a value is not published in those sources, it is marked as not stated.",
+        "examples": [
+          {
+            "name": "Chang'e-4 Low-Frequency Radio Spectrometer (LFRS)",
+            "type": "Flown lunar lander instrument (far side, 2019)",
+            "status": "Flown; operated on the Chang'e-4 lander. No later instrument-specific status found in the sources reviewed.",
+            "host": "Chang'e-4 lander (not the Yutu-2 rover)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "frequency_range_mhz": null,
+            "frequency_range_note": "Not stated in the sources reviewed. Secondary search summaries gave differing ranges and were not used.",
+            "sensitivity_w_m2_hz_1": "about 1e-18, from ground tests on a prototype model; reported as possible after EMI mitigation [3]",
+            "source_urls": [
+              "https://www.planetary.org/space-missions/change-4",
+              "https://www.eoportal.org/satellite-missions/chang-e-4",
+              "https://arxiv.org/abs/2012.04347"
+            ],
+            "images": []
+          },
+          {
+            "name": "LuSEE-Night (Lunar Surface Electromagnetic Experiment - Night)",
+            "type": "In-development pathfinder radio telescope for the lunar far side (flight not confirmed)",
+            "status": "Not confirmed as flown in the sources reviewed. Launch timing unresolved (late 2025 CS-3 in project page; late 2026 or 2027 in secondary results).",
+            "antenna_count": 4,
+            "antenna_configuration": "four horizontal monopole antennas in a cross configuration on a rotating platform",
+            "antenna_length_m": null,
+            "antenna_length_note": "Two 2023 Brookhaven newsroom articles disagree (about 3 m; about 6 m tip to tip). Not resolved here.",
+            "frequency_range_mhz": [0.1, 50],
+            "battery_capacity_kwh": 7,
+            "thermal_range_k": {
+              "lunar_night": 100,
+              "lunar_day": 390
+            },
+            "mission_duration_note": "Designed to operate through about two weeks of lunar night; the battery is recharged during lunar day.",
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://www.cosmo.bnl.gov/node/5",
+              "https://arxiv.org/abs/2407.07173"
+            ],
+            "images": []
+          },
+          {
+            "name": "ROLSES (Radio-wave Observations at the Lunar Surface of the photoElectron Sheath)",
+            "type": "Flown surface radio spectrometer on Intuitive Machines IM-1 (NASA CLPS)",
+            "status": "Flown. Initial observations reported; no quantitative results in the abstract.",
+            "host": "Intuitive Machines IM-1 (Odysseus), near the south pole at Malapert A (80 degrees S); tilted landing",
+            "antenna_count": 4,
+            "antenna_type": "radio monopole",
+            "antenna_length_m": 2.5,
+            "frequency_range_mhz": [0.002, 30],
+            "digitisation": "14-bit at 120 mega samples per second",
+            "onboard_processing": "FPGA FFT; time-averaged spectra stored and returned, raw waveforms also returned",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://arxiv.org/abs/2603.22600"
+            ],
+            "images": []
+          },
+          {
+            "name": "FARSIDE (Farside Array for Radio Science Investigations of the Dark ages and Exoplanets)",
+            "type": "Proposed NASA Probe-class concept (notional design); not flown",
+            "status": "Concept. The arXiv white paper describes a NASA-funded design study reported as broadly consistent with Probe requirements.",
+            "antenna_count": 128,
+            "antenna_polarisation": "dual-polarisation",
+            "array_extent_km": 10,
+            "frequency_range_mhz": [0.1, 40],
+            "channels": 1400,
+            "deployment": "rover-deployed antennas",
+            "base_station": "tethered to a base station for central processing, power and data transmission to the Lunar Gateway",
+            "mission_lifetime": null,
+            "mass_kg": null,
+            "power_w": null,
+            "source_urls": [
+              "https://arxiv.org/abs/1907.05407"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions vary widely between the examples. The Chang'e-4 LFRS dimensions are not published in the sources reviewed. LuSEE-Night uses monopole antennas whose length is reported inconsistently between 2023 newsroom articles. ROLSES antennas are 2.5 m each. For FARSIDE, the footprint of 128 antennas over about 10 km, not the individual antenna, defines the system geometry.",
+        "mass_and_weight": "No instrument mass was verified in the sources reviewed. The LuSEE-Night design was shaped by a mass limit that drove its battery choice [7]. For the other examples, mass is not stated in the sources reviewed.",
+        "power_requirements": "Power values are not published for these instruments in the sources reviewed. LuSEE-Night relies on a 7 kWh battery to span about two weeks of lunar night [7], which indicates an energy-driven design; the detailed power budget is in the full paper, which was not read in full. The Chang'e-4 LFRS power is not stated. FARSIDE uses a base station for power and data transmission [4]."
+      },
+      "environmental_and_operational_requirements": "The Moon's surface experiences large temperature swings and has no atmosphere to moderate them. LuSEE-Night's design context of about 100 K during the lunar night and 390 K during the lunar day [7] illustrates the thermal range that the electronics and thermal design must handle. Far-side instruments cannot communicate directly with Earth, so they require a relay satellite. The Planetary Society page notes that far-side missions require a relay satellite and identifies Queqiao as the relay for Chang'e-4 [1]. Electromagnetic interference from the lander and its environment is a major operational constraint for low-frequency spectrometers. The Chang'e-4 LFRS team reported very intense interference from the lander and its environment and needed mitigation before the sensitivity figure was achieved [3]. Antennas must be deployed after landing, and ROLSES was able to observe despite a tilted landing [5]. Power must be available through the lunar night, and LuSEE-Night's design relies on a 7 kWh battery for about two weeks of darkness [7].",
+      "limitations": "Instrument-level data are sparse. The sources reviewed give no verified mass or power for any of the four examples, and the only Chang'e-4 performance figure comes from a prototype model [3]. A single surface spectrometer measures the sky spectrum and the lander's radio environment. It does not locate sources on its own, and localisation needs an array [5]. Schedules for LuSEE-Night and FARSIDE are uncertain, and the sources conflict on dates. Far-side operation depends on a relay satellite, which is a single point of failure for data return [1]. Interference from lander systems can limit sensitivity [3].",
+      "transportation_and_deployment": {
+        "overview": "A radio telescope on the Moon is normally delivered by lander, either as a dedicated payload or as part of a larger surface mission. The examples reviewed illustrate three delivery routes. The first is a Chinese national lander with a relay satellite, which carried the Chang'e-4 LFRS [1][3]. The second is NASA's Commercial Lunar Payload Services (CLPS) programme, which carried ROLSES and is planned for LuSEE-Night [5][6]. The third is a proposed rover-deployed array with a base station, as in the FARSIDE concept [4]. The process below is generic for surface payloads. It is not a verified plan for any specific instrument.",
+        "transportation_process": [
+          "Integrate the instrument on Earth with its stowed antennas, electronics and thermal protection, together with the lander's power and data interfaces.",
+          "Launch the lander and transfer it towards the Moon. Far-side operation relies on a relay satellite for communication after landing [1].",
+          "Land on the surface. The ROLSES lander came to rest tilted, and observations were still made [5].",
+          "Deploy the antennas after landing. ROLSES antennas were stowed for launch and deployed after landing [5]. LuSEE-Night antennas are arranged on a rotating platform [6]. The FARSIDE concept uses a rover to place its antennas [4].",
+          "Connect power and data. LuSEE-Night depends on a 7 kWh battery through the lunar night [7]. FARSIDE relies on a base station for power and transmission [4].",
+          "Manage lander interference. The Chang'e-4 LFRS required electromagnetic interference mitigation for lander-generated noise [3]."
+        ],
+        "deployment_methods": "Deployment methods differ between the examples. ROLSES antennas were stowed for launch and deployed after landing [5]. LuSEE-Night antennas are arranged on a rotating platform [6]. The FARSIDE concept uses a rover to place its 128 antennas [4]. The Chang'e-4 LFRS deployment is not described in the sources reviewed, so it is not assessed here [3].",
+        "historical_examples": "Chang'e-4 landed in January 2019 and carried the LFRS on its lander [1][2][3]. ROLSES flew on IM-1 under CLPS, with a tilted landing near Malapert A [5]. LuSEE-Night is a planned CLPS payload [6]. FARSIDE is a proposed rover-deployed concept [4].",
+        "compatibility_assessment": "No specific lander has been assessed here for compatibility with these radio telescopes. The LuSEE-Night project page names CS-3 in its body text and a Firefly Blue Ghost Mission 2 caption, but the sources do not establish a verified interface for either [6]. A compatibility assessment would need the lander's mass and volume limits, landing loads, deployment envelope, power and data interfaces, and thermal and EMI environment, each compared with verified specifications.",
+        "images": []
+      },
+      "historical_significance": "The Chang'e-4 LFRS has the most operating history among the examples reviewed, and it showed how lander-generated interference can dominate low-frequency measurements [1][3]. ROLSES, flown on IM-1, is one of the early examples of a surface radio spectrometer operating after a tilted commercial landing. The sources reviewed report initial rather than published quantitative results [5]. LuSEE-Night is significant as a pathfinder for a far-side Dark Ages telescope [6][7]. FARSIDE is important as a concept that defines the scale of a future lunar interferometer, although its flight status remains unconfirmed [4].",
+      "limitations_and_uncertainties": "Flight status and schedules are the largest uncertainty. The Chang'e-4 LFRS and ROLSES are confirmed as having flown, while LuSEE-Night and FARSIDE are not confirmed as flown. The other gaps are listed below. LuSEE-Night launch and landing dates conflict across sources; the project page gives late 2025 via CS-3 [6], which the sources reviewed do not confirm, and secondary search results point to late 2026 or 2027. The Chang'e-4 LFRS frequency range, mass, power and dimensions are not verified; secondary summaries gave differing ranges and were not used. The ROLSES on-surface observing time, reported in a secondary summary as about 20 minutes, is not confirmed in the abstract and is not used [5]. The LuSEE-Night antenna length differs between two 2023 Brookhaven newsroom articles (about 3 m and about 6 m tip to tip); neither is linked because their URLs carry query parameters. The FARSIDE band is 100 kHz to 40 MHz in the arXiv abstract [4], and a secondary summary gave 150 kHz to 40 MHz. ROLSES-2 timing and the identity of the LuSEE-Night relay satellite are not verified. No images are included.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Chang'e-4 and Yutu-2: China's mission to the Moon's farside",
+          "publisher": "The Planetary Society",
+          "url": "https://www.planetary.org/space-missions/change-4"
+        },
+        {
+          "title": "Chang'e-4 Far Side Moon-landing Mission of China",
+          "publisher": "ESA eoportal",
+          "url": "https://www.eoportal.org/satellite-missions/chang-e-4"
+        },
+        {
+          "title": "Ground Experiments and Performance Evaluation of the Low-Frequency Radio Spectrometer Onboard the Lander of Chang'e-4 Mission (arXiv:2012.04347; DOI 10.1088/1674-4527/21/5/116)",
+          "publisher": "Zhu et al.; arXiv",
+          "url": "https://arxiv.org/abs/2012.04347"
+        },
+        {
+          "title": "FARSIDE: A Low Radio Frequency Interferometric Array on the Lunar Farside (arXiv:1907.05407)",
+          "publisher": "arXiv (Astro2020 Decadal Survey white paper)",
+          "url": "https://arxiv.org/abs/1907.05407"
+        },
+        {
+          "title": "The Radio-wave Observations at the Lunar Surface of the photoElectron Sheath (ROLSES) instrument onboard the Intuitive Machines-1 Mission to the Moon (arXiv:2603.22600)",
+          "publisher": "Gopalswamy et al.; arXiv",
+          "url": "https://arxiv.org/abs/2603.22600"
+        },
+        {
+          "title": "Lunar Surface Electromagnetic Experiment (LuSEE) - Night",
+          "publisher": "Brookhaven National Laboratory, Cosmology and Astrophysics Group",
+          "url": "https://www.cosmo.bnl.gov/node/5"
+        },
+        {
+          "title": "LuSEE-Night power requirements and power generation strategy (arXiv:2407.07173)",
+          "publisher": "arXiv",
+          "url": "https://arxiv.org/abs/2407.07173"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL strings in this file have query strings and fragments removed. No image URLs are included; a lander-rendering JPEG at a Brookhaven asset URL was retrieved and confirmed as a JPEG, but its source article URL carries query parameters, so it was not added."
+  },
+  "data_quality_notes": [
+    "LuSEE-Night launch and landing status is unconfirmed; sources conflict (late 2025 CS-3 in project page; late 2026 or 2027 in secondary search results).",
+    "LuSEE-Night antenna length conflicts between two 2023 Brookhaven newsroom articles (about 3 m; about 6 m tip to tip). Those article URLs carry query parameters and were not used as sources.",
+    "Chang'e-4 LFRS frequency range, mass and power are not verified. Secondary search summaries disagree (10 kHz to 40 MHz versus 0.1 to 40 MHz) and were not used.",
+    "Chang'e-4 instrument naming differs: LFS on the Planetary Society page; LFRS in the technical paper. The LFRS name is used here.",
+    "FARSIDE band: the arXiv abstract gives 100 kHz to 40 MHz and is used; a secondary summary gave 150 kHz to 40 MHz.",
+    "ROLSES on-surface observing duration (secondary summary: about 20 minutes) is unverified and not used.",
+    "Some arXiv PDF fetches and the FARSIDE PDF returned binary content; abstracts and HTML-derived summaries were used instead.",
+    "Firefly Blue Ghost Mission 2 status was not confirmed from a primary page.",
+    "No images were included in the registry or section arrays."
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "catalogue_id": 106,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 5,
+    "name": "Water, ice and volatile detection"
+  },
+  "payload": {
+    "number": 106,
+    "name": "Infrared water detection spectrometer",
+    "article": {
+      "overview": "An infrared water detection spectrometer measures the infrared light reflected by a planetary surface, recording it across many narrow wavelength bands. Water and hydroxyl (OH) absorb infrared light at specific wavelengths, so the shape of a surface spectrum can show where water-bearing material is present. When such an instrument is carried on an orbiter, it can map that material across large areas of the surface [1][4].\n\nThe catalogue name describes a class of instruments rather than one device. This article therefore covers three lunar-orbit examples that differ in wavelength coverage and flight history: the Imaging Infrared Spectrometer (IIRS) on India's Chandrayaan-2 orbiter, the Moon Mineralogy Mapper (M3) on Chandrayaan-1, and the High-resolution Volatiles and Minerals Moon Mapper (HVM3) built for NASA's Lunar Trailblazer, which never reached the Moon [1][5][6][7][8][9].",
+      "description": "A typical instrument has four functional parts. Fore-optics collect light from the scene and focus it onto a narrow entrance slit. A spectrometer section disperses the light by wavelength, usually with a diffraction grating. A focal-plane detector records intensity at each wavelength for every spatial pixel. Electronics and cooling keep the detector's own background signal low, because the weak water absorptions are small compared with the signal.\n\nIIRS is an example of this chain. Its fore-optics are a three-mirror anastigmat, and its spectrometer is an all-reflective Offner-type grating design feeding a mercury cadmium telluride (HgCdTe) detector array of 500 × 256 pixels that is cooled to 90 K [1]. The designers describe IIRS as an advanced version of the HySI, M3 and SIR-2 instruments flown on Chandrayaan-1 [1]. From a 100 km polar orbit, one pixel covers about 80 m of surface at nadir [1][2].\n\nHVM3 is described by NASA's Jet Propulsion Laboratory (JPL) as an instrument built to detect and map the locations of water and minerals on the Moon's surface [9]. The SPIE conference record describes it as a pushbroom short-wave infrared imaging spectrometer [11]. Its design is described as an Offner-type spectrometer based on NASA's Ultra-Compact Imaging Spectrometer, combined with a three-mirror anastigmat telescope similar to the one on M3 [12]. The full optical design paper was not readable in this run.",
+      "scientific_purpose_and_applications": "The main purpose of these instruments is to map hydration across the Moon. ISRO's stated objectives for IIRS are global mineralogical and volatile mapping of the Moon in the spectral range of about 0.8–5.0 µm, done for the first time, and a complete characterisation of the water/hydroxyl feature near 3.0 µm [2].\n\nThe longer wavelengths are used to address the nature of the hydration. The 2.5–3.5 µm region is intended to characterise whether OH, H2O or H2O-ice is present in the regolith or in exposed bedrock of nominally anhydrous minerals at crater central peaks and basin inner rings [1]. The same work aims to establish whether the water is endogenic (from the Moon's interior) or exogenic (delivered from outside), and what processes produced it [1]. ISRO's page places the fundamental OH/H2O band at about 2.5–3.3 µm, with absorptions near 3.0 µm [2].\n\nCold-trap ice is a second application. Li et al. (2018) used M3 reflectance data from shadowed terrain near both poles to identify several thousand pixels with water-ice absorption features. These occur within 20° of both poles [4].\n\nMineral mapping and volcanism are also in scope. IIRS is designed to detect diagnostic absorption features of major and minor lunar minerals, mainly in the 0.75–2.5 µm range [2]. The designers also state that its spatial resolution is intended to help map very young volcanic features and pyroclastic deposits, and that the data should support a global inventory of lunar hydration [1].",
+      "operating_principle": "The instrument records radiance that comes from the surface. At shorter wavelengths this is mostly reflected sunlight. At longer wavelengths, emission from the warm surface becomes significant. Chowdhury et al. state that thermal emission beyond about 2.0 µm contaminates the reflected signal and can obscure the weaker fundamental water absorptions, so the instrument must separate reflected and emitted radiance [1].\n\nFor each pixel, the measured spectrum is compared with the continuum shape. Band parameters such as band depth, band centre, band area and continuum slope are then computed to characterise minerals and OH/H2O [1]. IIRS uses about 250 contiguous spectral bands [2]. Its detector is held at 90 K so that dark current and dark noise stay low [1].\n\nFor cold traps in permanently shadowed terrain, Li et al. (2018) used M3 spectra from terrain that receives only indirect light. Most of their identified pixels agree with independent reflectance, UV-ratio and below-110 K temperature measurements [4].",
+      "scientific_importance": "Chandrayaan-1's Moon Mineralogy Mapper (M3) contributed substantially to detecting widespread hydration signatures across the Moon, along with more localised occurrences [1]. Pieters et al. (2009) reported the spatial distribution of OH/H2O seen by M3 in *Science* [5].\n\nM3's wavelength range, 0.46–2.98 µm, ends at about 3.0 µm, at the edge of the fundamental water band. Li et al. (2018) state that this range \"is too limited to properly discriminate OH/H2O species\" [4]. The extended range of IIRS, to 5.0 µm, is therefore intended to confirm and quantify what M3 detected [1][2].\n\nLi et al. (2018) reported diagnostic near-infrared water-ice absorptions in several thousand M3 pixels, each about 280 × 280 m, at surface-exposed locations in cold polar terrain. They report no positive detections below 70° latitude [4]. The importance of this result is that water ice accumulates in permanently shadowed regions. The detections show that exposed ice is present at the optical surface in only a small fraction of cold traps [4].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a water-detection spectrometer. The three examples differ in spectral coverage, spatial sampling, flight status and whether mass and power are published or verified. Only the spectral range is compared below, and each row uses a different source set.",
+        "comparison_table": [
+          {
+            "example": "IIRS, Chandrayaan-2 orbiter",
+            "spectral_range_um": "0.8-5.0 [2]",
+            "spatial_sampling": "About 80 m at nadir from 100 km [1][2]",
+            "flight_status": "Flown on a lunar orbiter inserted into lunar orbit on 20 August 2019 [3]. In-orbit performance not verified.",
+            "sources": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "example": "M3, Chandrayaan-1",
+            "spectral_range_um": "0.46-2.98 [4]; 430-3000 nm at 10 nm sampling [7]",
+            "spatial_sampling": "Target mode 70 m; global 140 m [7]. About 280 m pixels in the Li et al. polar analysis [4].",
+            "flight_status": "Flown; Chandrayaan-1 launched 22 October 2008 [6].",
+            "sources": [
+              4,
+              6,
+              7
+            ]
+          },
+          {
+            "example": "HVM3, Lunar Trailblazer",
+            "spectral_range_um": "0.6-3.6 [11][12]",
+            "spatial_sampling": "70 m per pixel [11]",
+            "flight_status": "Built for Lunar Trailblazer, which never reached the Moon. No HVM3 science data reported [8][9].",
+            "sources": [
+              8,
+              9,
+              11,
+              12
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "name": "IIRS (Imaging Infrared Spectrometer), Chandrayaan-2 orbiter (ISRO)",
+            "type": "Flight-grade imaging spectrometer on a lunar orbiter; in-orbit performance not verified in this run",
+            "flight_status": "Flown on the Chandrayaan-2 orbiter, launched 22 July 2019 on a GSLV Mk III-M1 vehicle and inserted into lunar orbit on 20 August 2019 [3]. The 2020 Current Science paper describes the instrument as \"designed, realized, space-qualified and ready to fly\" [1]. Current IIRS data quality not verified.",
+            "spectral_range_um": [
+              0.8,
+              5.0
+            ],
+            "spectral_bands_approx": 250,
+            "spectral_bands_note": "ISRO gives about 250 contiguous bands [2]. The Current Science paper is reported to give 256 channels; not confirmed from the paper text in this run [1].",
+            "spectral_sampling_nm_per_pixel": 16.85,
+            "spectral_bandwidth_fwhm_nm": "20-25",
+            "ground_sampling_distance_m_at_nadir": 80,
+            "orbit_altitude_km": 100,
+            "swath_km": 20,
+            "fore_optics": "Three-mirror anastigmat (TMA)",
+            "spectrometer_optics": "Offner-type convex grating spectrometer",
+            "effective_focal_length_mm": 75,
+            "f_number": 2.5,
+            "field_of_view_deg": 5.7,
+            "instantaneous_fov_mrad": 0.4,
+            "detector": "HgCdTe focal-plane array, 500 x 256 pixels, 30 um pixels, actively cooled to 90 K; detector consumes about 500 mW",
+            "cooler": "Rotary Stirling-type cooler; about 11.3 W during cool-down and 7.9 W during regulation as listed in Table 3 of the paper",
+            "mass_kg": 11.7,
+            "mass_status": "Carried from the v1 extraction of the Current Science paper table; not re-verified in v2.",
+            "size_mm": "560 x 330 x 510 (values as extracted from the paper's table; header garbled, read as mm; not re-verified in v2)",
+            "noise_equivalent_differential_radiance": "0.001-0.005 in the units printed in Table 7 (units uncertain in extraction; not re-verified in v2)",
+            "power_w_whole_instrument": null,
+            "measurement_role": "Imaging spectroscopy of reflected and emitted lunar surface radiance for minerals and OH/H2O, with a 2.5-3.5 um band for hydration features [1][2]",
+            "sources": [
+              1,
+              2,
+              3
+            ],
+            "images": []
+          },
+          {
+            "name": "M3 (Moon Mineralogy Mapper), Chandrayaan-1",
+            "type": "Flown lunar-orbit imaging spectrometer (historical example, 2008-2009 operations)",
+            "flight_status": "Flown aboard Chandrayaan-1, launched 22 October 2008 [6]. Operated during the 2008-2009 mission; exact end of operations unresolved, as Wikipedia gives two different end dates [15].",
+            "spectral_range_um": [
+              0.46,
+              2.98
+            ],
+            "spectral_range_source": "Li et al. (2018) [4]. The Lunar ODE M3 page gives 430-3000 nm [7]. The two short-wavelength limits were not reconciled.",
+            "spectral_sampling_nm": 10,
+            "spectral_sampling_source": "Lunar ODE M3 instrument page: 10 nm sampling, response FWHM below 15 nm [7]",
+            "spatial_sampling": "Target-mode pixel about 70 m; global-mode pixel about 140 m (binned 2 x 2) [7]. About 280 x 280 m pixels in the Li et al. polar analysis [4].",
+            "mass_kg": null,
+            "mass_status": "Not verified against a primary document. Reported values: 8 kg [14]; 8.3 kg [13]; 8.2 kg [15]. Left null.",
+            "power_w": null,
+            "power_status": "Not verified against a primary document. Reported values: 15 W [14]; about 16 W average [13]; below 20 W [15]. Left null.",
+            "archive": "PDS-archived products from Level 0 raw images to Level 1B radiance and Level 2 reflectance; identifiers beginning CH1-ORB-L-M3 [7]",
+            "measurement_role": "Mapping of OH/H2O absorption features near 3 um; cold-trap water-ice detections in polar regions reported by later analysis [4][5]",
+            "sources": [
+              4,
+              5,
+              6,
+              7,
+              13,
+              14,
+              15
+            ],
+            "images": []
+          },
+          {
+            "name": "HVM3 (High-resolution Volatiles and Minerals Moon Mapper), Lunar Trailblazer",
+            "type": "Imaging spectrometer built by JPL for a lunar-orbit mission that never reached the Moon; not flight-proven for lunar science",
+            "flight_status": "Lunar Trailblazer launched on 26 February 2025 as a rideshare on an IM-2 mission [8]. Operators lost contact the day after launch and could not establish two-way communications. NASA ended the mission on 31 July 2025 [9]. The spacecraft never reached the Moon and no HVM3 science data were reported [9].",
+            "measurement_role": "JPL-built imaging spectrometer to detect and map the locations of water and minerals [9]; NASA describes it as detecting and mapping the form and abundance of water [8]",
+            "spectral_range_um": [
+              0.6,
+              3.6
+            ],
+            "spectral_range_source": "Search excerpt of the SPIE abstract, doi:10.1117/12.2632552 [11]. Record page not readable in this run.",
+            "f_number": 3.4,
+            "f_number_source": "Search excerpt of the SPIE abstract [11]",
+            "spatial_resolution_m_per_pixel": 70,
+            "spatial_resolution_source": "Search excerpt of the SPIE abstract [11]",
+            "spectral_resolution_nm": 10,
+            "spectral_resolution_source": "Search excerpt of the SPIE abstract [11]",
+            "design": "Offner-type spectrometer based on NASA's Ultra-Compact Imaging Spectrometer, combined with a three-mirror anastigmat telescope similar to the M3 telescope [12]",
+            "mass_kg": null,
+            "power_w": null,
+            "payload_context": "Combined HVM3 and Lunar Thermal Mapper science payload given as about 20 kg by eoPortal [12]. Whole spacecraft about 200 kg [8]. HVM3-only mass and power not found.",
+            "sources": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "images": [
+              {
+                "id": "hvm3_imaging_spectrometer_pre_integration",
+                "description": "Lunar Trailblazer HVM3 imaging spectrometer in a JPL clean room before spacecraft integration.",
+                "image_type": "Instrument photograph (pre-integration)",
+                "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25256/jpeg/PIA25256.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/lunar-trailblazers-hvm3-imaging-spectrometer-before-spacecraft-integration",
+                "publisher": "NASA Science Photojournal (PIA25256)",
+                "credit": "NASA/JPL-Caltech",
+                "caption": "The High-resolution Volatiles and Minerals Moon Mapper (HVM3) sits in a clean room at NASA's Jet Propulsion Laboratory before spacecraft integration. The source page says the photograph was taken in early December 2022.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset URL from the NASA dynamicimage endpoint with query string removed. Checked in v2: HTTP 200, image/jpeg (display rendition, about 290 KB). The /content/dam/ JPEG path listed on the source page returned HTTP 404 in v2 and was not used. The source page does not state whether the unit is flight hardware or a test unit. NASA usage guidelines were not checked, so the image is not treated as public domain."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "IIRS: 560 x 330 x 510 mm as extracted from the v1 reading of the paper (header garbled; not re-verified in v2). M3 and HVM3 dimensions are not published in the sources read. The three instruments are not directly comparable on dimensions.",
+        "mass_and_weight": "IIRS: 11.7 kg, carried from the v1 reading of the Current Science paper and not re-verified in v2 [1]. M3: not verified; reported values of 8 kg [14], 8.3 kg [13] and 8.2 kg [15] disagree slightly. HVM3: not found for the instrument alone; a combined HVM3 and Lunar Thermal Mapper payload of about 20 kg is given by eoPortal [12]. Mass figures are not presented as comparable performance measures.",
+        "power_requirements": "IIRS: detector about 500 mW at 90 K; cooler about 11.3 W during cool-down and 7.9 W during regulation, as listed in Table 3 of the paper [1] (carried from v1; not re-verified in v2). Whole-instrument power not stated. M3: not verified; reported values of 15 W [14], about 16 W average [13] and below 20 W [15]. HVM3: not found."
+      },
+      "environmental_and_operational_requirements": "The examples are lunar-orbit instruments. IIRS is designed for a polar circular orbit at 100 km altitude, observing in nadir geometry [1][2]. Nominal imaging sessions last about 10 minutes, with longer sessions of about 20 minutes in specific cases [1]. Thermal control is needed for both the detector and the optical module. The detector is actively cooled to 90 K, the electro-optical module is around 225 K, and the electronics operate between 0 and 40 °C. Passive radiators and heaters are used in addition to the cooler [1].\n\nChanging Sun geometry causes thermal conditions to vary through the orbit. The paper analyses two extreme conditions, noon-midnight and dawn-dusk orbits, for thermal control [1]. Measurements of reflected light need sunlight, and the cold-trap spectra in Li et al. (2018) were taken from terrain that receives only indirect light [4]. In-orbit calibration uses predefined sites and deep space [1].\n\nData must be processed through several levels. Level 0 contains raw payload data with ancillary and housekeeping data. Level 1 is radiometrically corrected and geometrically tagged. Level 2 adds further corrections. The data are planned to be archived in the Planetary Data System (PDS-4) format [1].",
+      "limitations": "- Thermal emission from the lunar surface beyond about 2.0 µm can mask weak water absorptions, so a separation step is needed [1].\n- The detector must be actively cooled. IIRS uses a rotary Stirling-type cooler, which the designers selected to meet mass, power, volume and life requirements [1].\n- M3's range ends near 3.0 µm, which is not enough on its own to tell OH and H2O apart [4].\n- Reflectance spectroscopy measures the optical surface. Li et al. describe ice at the optical surface, and their radiative-transfer modelling suggests that some ice-bearing pixels may contain around 30 wt% ice mixed into regolith. The total abundance is therefore model-dependent [4].\n- Cold-trap detections in shadowed terrain are sparse: only about 3.5% of cold traps show exposed ice in the Li et al. analysis [4].\n- No HVM3 science data are reported, because the spacecraft never reached the Moon [9].\n- None of these instruments measured the surface directly. The examples are orbital, and no landed or rover-mounted water spectrometer is covered here.",
+      "transportation_and_deployment": {
+        "overview": "All three examples are orbital instruments. No surface deployment is described for any of them in the sources read.",
+        "transportation_process": [
+          "IIRS (Chandrayaan-2): one of the instruments on the orbiter [2]. Spacecraft-level integration is not described in the sources read.",
+          "IIRS (Chandrayaan-2): launched on the GSLV Mk III-M1 vehicle on 22 July 2019 [3].",
+          "IIRS (Chandrayaan-2): orbiter inserted into lunar orbit on 20 August 2019 [3]. IIRS then operates in nadir geometry from a 100 km polar orbit, starting with predefined priority sites [1].",
+          "M3 (Chandrayaan-1): launched on 22 October 2008 [6]. Integration and transfer are not described in the sources read.",
+          "HVM3 (Lunar Trailblazer): shipped to Lockheed Martin in Littleton, Colorado, for integration with the spacecraft [10].",
+          "HVM3 (Lunar Trailblazer): spacecraft launched on 26 February 2025; contact lost the day after launch; the spacecraft never reached the Moon and no lunar orbit insertion occurred [8][9]."
+        ],
+        "deployment_methods": "No surface deployment mechanism applies. All three examples are orbiter instruments. IIRS begins operations after orbit insertion and calibrates in orbit by observing predefined sites and deep space [1].",
+        "historical_examples": "M3 on Chandrayaan-1 operated in 2008-2009 [6][15]. IIRS on Chandrayaan-2 entered lunar orbit in 2019 [1][3]. HVM3 on Lunar Trailblazer was lost after its 2025 launch, and its mission ended on 31 July 2025 [8][9].",
+        "compatibility_assessment": "No lander, rover or other spacecraft compatibility is assessed. No interface evidence was found in the sources read, and the catalogue entry does not name a host.",
+        "images": []
+      },
+      "historical_significance": "M3 mapped widespread hydration signatures from lunar orbit during 2008–2009, and its results are the reference point against which IIRS was designed [1][5]. Li et al. (2018) later used M3 data to report surface-exposed water ice in shaded polar terrain [4].\n\nIIRS is described by its designers as an advanced version of the earlier Chandrayaan-1 instruments, extended to 5.0 µm [1]. Its flight-grade hardware was described as ready to fly in 2019–2020 [1][3].\n\nHVM3 is historically significant as a planned lunar-orbit water-mapping instrument whose mission ended without reported science results [8][9].",
+      "limitations_and_uncertainties": "- **Source access.** Several primary documents could not be read as text in this run. The Current Science IIRS PDF and the NASA M3 technical report returned binary content, and the SPIE HVM3 record page was empty. The Science and AGU/ADS pages were not readable. Values from these sources are taken from search excerpts, from the v1 article, or are left null, and are labelled as such.\n- **IIRS values carried from v1.** The IIRS optics, detector, cooler, mass, size, noise, band-count and design-history statements attributed to Chowdhury et al. (2020) [1] were carried over from the v1 article. The PDF could not be text-extracted in v2, so they need re-verification against the paper's tables.\n- **IIRS water-ice attribution.** The ISRO page lists water/hydroxyl as the IIRS objective and ties water ice to the DFSAR instrument [2]. The Current Science paper, as carried from v1, describes OH/H2O/H2O-ice mapping [1]. This was not resolved.\n- **IIRS band count.** ISRO gives about 250 bands [2]. The Current Science paper is reported to give 256 channels [1]. This was not resolved.\n- **Pieters et al. (2009).** The Science paper is cited through the reference list of the Current Science paper [1][5]. Its abstract was not accessed.\n- **M3 mass and power.** Three different values are reported in secondary or abstract sources [13][14][15]. No primary value was verified, so both fields are null.\n- **M3 spectral limit.** The Li et al. paper gives 0.46 µm [4] and the Lunar ODE page gives 430 nm [7]. This was not reconciled.\n- **M3 dates.** Wikipedia gives two different end dates for Chandrayaan-1's signal loss [15]. Neither is confirmed by a primary source here.\n- **HVM3 specifications.** The 0.6–3.6 µm range, F/3.4, 70 m pixel and 10 nm resolution come from a search excerpt of the SPIE abstract [11]. The Offner design comes from eoPortal [12]. The combined payload mass of about 20 kg comes from eoPortal [12]. No HVM3-only mass or power was found.\n- **Mission status.** NASA's end-of-mission article confirms that the spacecraft never reached the Moon and that the mission ended on 31 July 2025 [9]. The cause is described only tentatively, as solar arrays not properly oriented towards the Sun [9].\n- **Images.** Only one photograph (HVM3, PIA25256) was verified from an official page. The full-resolution JPEG path listed on the NASA page (`/content/dam/`) returned HTTP 404 in this run. The `dynamicimage` rendition returned HTTP 200 with image/jpeg and is used as `image_url`. It is a display rendition, not the full-resolution download. The TIFF was not checked, and NASA usage rights were not checked, so the image is not treated as public domain.\n- **Lander compatibility.** No lunar lander or spacecraft compatibility has been verified.\n- **Scope.** No lunar landing-site or location recommendations are included, as the user deferred these.",
+      "images": [
+        {
+          "id": "hvm3_imaging_spectrometer_pre_integration",
+          "description": "Lunar Trailblazer HVM3 imaging spectrometer in a JPL clean room before spacecraft integration.",
+          "image_type": "Instrument photograph (pre-integration)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25256/jpeg/PIA25256.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/lunar-trailblazers-hvm3-imaging-spectrometer-before-spacecraft-integration",
+          "publisher": "NASA Science Photojournal (PIA25256)",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "The High-resolution Volatiles and Minerals Moon Mapper (HVM3) sits in a clean room at NASA's Jet Propulsion Laboratory before spacecraft integration. The source page says the photograph was taken in early December 2022.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL from the NASA dynamicimage endpoint with query string removed. Checked in v2: HTTP 200, image/jpeg (display rendition, about 290 KB). The /content/dam/ JPEG path listed on the source page returned HTTP 404 in v2 and was not used. The source page does not state whether the unit is flight hardware or a test unit. NASA usage guidelines were not checked, so the image is not treated as public domain."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "hvm3_imaging_spectrometer_pre_integration",
+          "description": "Lunar Trailblazer HVM3 imaging spectrometer in a JPL clean room before spacecraft integration.",
+          "image_type": "Instrument photograph (pre-integration)",
+          "image_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia25/pia25256/jpeg/PIA25256.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/lunar-trailblazers-hvm3-imaging-spectrometer-before-spacecraft-integration",
+          "publisher": "NASA Science Photojournal (PIA25256)",
+          "credit": "NASA/JPL-Caltech",
+          "caption": "The High-resolution Volatiles and Minerals Moon Mapper (HVM3) sits in a clean room at NASA's Jet Propulsion Laboratory before spacecraft integration. The source page says the photograph was taken in early December 2022.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset URL from the NASA dynamicimage endpoint with query string removed. Checked in v2: HTTP 200, image/jpeg (display rendition, about 290 KB). The /content/dam/ JPEG path listed on the source page returned HTTP 404 in v2 and was not used. The source page does not state whether the unit is flight hardware or a test unit. NASA usage guidelines were not checked, so the image is not treated as public domain."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Chowdhury, A. R. et al. (2020). Imaging Infrared Spectrometer onboard Chandrayaan-2 Orbiter. Current Science 118(3), 368–375, doi:10.18520/cs/v118/i3/368-375.",
+          "publisher": "Current Science",
+          "date": "2020-02-10",
+          "type": "primary, peer-reviewed (text not re-extracted in v2; IIRS table values carried from v1)",
+          "url": "https://www.currentscience.ac.in/Volumes/118/03/0368.pdf"
+        },
+        {
+          "number": 2,
+          "title": "Indian Space Research Organisation (ISRO). Chandrayaan-2 science page (IIRS description and objectives).",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "date": "not stated on page",
+          "type": "primary, agency (read in v2)",
+          "url": "https://www.isro.gov.in/Chandrayaan2_science.html"
+        },
+        {
+          "number": 3,
+          "title": "Indian Space Research Organisation (ISRO). Chandrayaan-2 mission page (GSLV Mk III-M1).",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "date": "not stated on page",
+          "type": "primary, agency (carried from v1; not re-read in v2)",
+          "url": "https://www.isro.gov.in/mission_GSLVMkIIIM1.html"
+        },
+        {
+          "number": 4,
+          "title": "Li, S. et al. (2018). Direct evidence of surface exposed water ice in the lunar polar regions. PNAS 115(36), 8907–8912, doi:10.1073/pnas.1802345115.",
+          "publisher": "Proceedings of the National Academy of Sciences (PNAS)",
+          "date": "2018-08-20",
+          "type": "primary, peer-reviewed (read in v2)",
+          "url": "https://doi.org/10.1073/pnas.1802345115"
+        },
+        {
+          "number": 5,
+          "title": "Pieters, C. M. et al. (2009). Character and spatial distribution of OH/H2O on the surface of the Moon seen by M3 on Chandrayaan-1. Science 326, 568–572, doi:10.1126/science.1178658 (citation as listed in reference 1; abstract not accessed).",
+          "publisher": "Science",
+          "date": "2009",
+          "type": "primary, peer-reviewed (citation only; abstract not accessed)",
+          "url": "https://doi.org/10.1126/science.1178658"
+        },
+        {
+          "number": 6,
+          "title": "NASA Jet Propulsion Laboratory. Moon Mineralogy Mapper (M3) mission page.",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "date": "not stated on page",
+          "type": "primary, agency (carried from v1; not re-read in v2)",
+          "url": "https://www.jpl.nasa.gov/missions/moon-mineralogy-mapper-m3/"
+        },
+        {
+          "number": 7,
+          "title": "NASA Lunar Orbital Data Explorer (ODE). Chandrayaan-1 M3 instrument page (PDS-archived M3 specifications and product levels).",
+          "publisher": "NASA Lunar Orbital Data Explorer (Washington University, PDS Imaging Node)",
+          "date": "not stated on page",
+          "type": "primary, archive instrument documentation (read in v2)",
+          "url": "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/ISRO_Chandrayaan-1/M3/Intro.htm"
+        },
+        {
+          "number": 8,
+          "title": "NASA. Lunar Trailblazer fact sheet (launch, mass and instrument descriptions).",
+          "publisher": "NASA Science",
+          "date": "2025-02-28 (last updated, per page)",
+          "type": "primary, agency (read in v2)",
+          "url": "https://science.nasa.gov/mission/lunar-trailblazer-fact-sheet"
+        },
+        {
+          "number": 9,
+          "title": "NASA Jet Propulsion Laboratory. NASA's Lunar Trailblazer Moon Mission Ends.",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "date": "2025-08-04",
+          "type": "primary, agency (read in v2)",
+          "url": "https://www.jpl.nasa.gov/news/nasas-lunar-trailblazer-moon-mission-ends/"
+        },
+        {
+          "number": 10,
+          "title": "NASA Science Photojournal, PIA25256: Lunar Trailblazer's HVM3 Imaging Spectrometer Before Spacecraft Integration (NASA/JPL-Caltech).",
+          "publisher": "NASA Science Photojournal",
+          "date": "not stated on page (photograph taken early December 2022)",
+          "type": "primary, agency image record (read in v2)",
+          "url": "https://science.nasa.gov/photojournal/lunar-trailblazers-hvm3-imaging-spectrometer-before-spacecraft-integration"
+        },
+        {
+          "number": 11,
+          "title": "Optical design and performance of the Lunar Trailblazer High-resolution Volatiles and Minerals Moon Mapper (HVM3). SPIE Proceedings vol. 12235, doi:10.1117/12.2632552.",
+          "publisher": "SPIE",
+          "date": "not stated in excerpt",
+          "type": "primary, conference paper (abstract as shown in search excerpt; record page not readable)",
+          "url": "https://doi.org/10.1117/12.2632552"
+        },
+        {
+          "number": 12,
+          "title": "eoPortal. Lunar Trailblazer mission page.",
+          "publisher": "eoPortal (ESA)",
+          "date": "not stated in excerpt",
+          "type": "secondary (search excerpt only; used for HVM3 design description and combined payload mass)",
+          "url": "https://eoportal.org/satellite-missions/lunar-trailblazer"
+        },
+        {
+          "number": 13,
+          "title": "AGU Fall Meeting 2009, abstract P23B-1246 (ADS record 2009AGUFM.P23B1246G). Moon Mineralogy Mapper mass and power.",
+          "publisher": "American Geophysical Union (via NASA ADS)",
+          "date": "2009",
+          "type": "abstract (search excerpt only; full abstract not read)",
+          "url": "https://ui.adsabs.harvard.edu/abs/2009AGUFM.P23B1246G/abstract"
+        },
+        {
+          "number": 14,
+          "title": "Moon Mineralogy Mapper technical report, NASA Technical Reports Server, NTRS 20090025993 (mass and power as shown in search excerpt).",
+          "publisher": "NASA Technical Reports Server",
+          "date": "2009",
+          "type": "primary, technical report (PDF not text-readable in this run; search excerpt only)",
+          "url": "https://ntrs.nasa.gov/api/citations/20090025993/downloads/20090025993.pdf"
+        },
+        {
+          "number": 15,
+          "title": "Wikipedia. Moon Mineralogy Mapper (secondary; used only for conflicting M3 values and the end-date conflict).",
+          "publisher": "Wikipedia",
+          "date": "accessed 2026-11-13",
+          "type": "secondary",
+          "url": "https://en.wikipedia.org/wiki/Moon_Mineralogy_Mapper"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "HVM3 (Lunar Trailblazer) example": "payload.article.physical_specifications.examples[2].images",
+      "IIRS and M3 examples": "No verified official image asset was found; no image is placed for these examples."
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Other URLs are canonical source URLs or DOI links, with no query string or fragment."
+  },
+  "data_quality_notes": [
+    "Correction rerun (v2). The v1 article is unchanged. This run used 6 web searches and 14 page fetches, within the brief's budget, with a preference for primary sources.",
+    "HVM3 mission status corrected: the JPL end-of-mission article (2025-08-04) confirms the spacecraft never reached the Moon and that NASA ended the mission on 31 July 2025. The v1 phrase 'lost after launch' is retained as a summary, but the status is now sourced to NASA.",
+    "HVM3 specifications (0.6-3.6 um, F/3.4, 70 m, 10 nm) come from a search excerpt of the SPIE abstract (doi:10.1117/12.2632552). The SPIE record page was not readable in this run. Design description and the combined HVM3 plus Lunar Thermal Mapper mass (about 20 kg) come from eoPortal (secondary). v1 values from Wikipedia (50-90 m pixel) are superseded.",
+    "IIRS optics, detector, cooler, mass (11.7 kg), size, noise and band-count values attributed to Chowdhury et al. (2020) are carried from the v1 extraction. The Current Science PDF returned binary content in v2 and could not be re-verified. These values are flagged for re-verification.",
+    "The IIRS band count differs between ISRO (about 250) and the Current Science paper as reported (256). Not resolved.",
+    "ISRO's IIRS objectives list water/hydroxyl and do not list water ice (which ISRO ties to DFSAR). The Current Science paper, as carried from v1, refers to H2O-ice mapping. Not resolved.",
+    "M3 mass and power are null. Reported values disagree: 8 kg and 15 W (NASA technical report excerpt), 8.3 kg and about 16 W average (AGU 2009 abstract excerpt), 8.2 kg and below 20 W (Wikipedia). The primary instrument paper (Green et al. 2011) was not accessible.",
+    "M3 spectral range: Li et al. (2018) give 0.46-2.98 um; the Lunar ODE M3 page gives 430-3000 nm at 10 nm sampling. Not reconciled.",
+    "M3 launch date (22 October 2008) and the JPL M3 mission page reference are carried from v1 and not re-read in v2. Wikipedia gives two different end dates for Chandrayaan-1's signal loss.",
+    "The HVM3 image (PIA25256) is the only verified image. The /content/dam/ full-resolution JPEG path returned HTTP 404 in v2; the dynamicimage rendition (HTTP 200, image/jpeg, query string removed) is used. TIFF not checked. NASA usage rights not checked; not treated as public domain.",
+    "No verified official photograph was found for IIRS or M3, so no image objects are included for those examples rather than inventing URLs or using search thumbnails.",
+    "Pieters et al. (2009) is cited only through the reference list of the Current Science paper; the abstract was not accessed.",
+    "Li et al. (2018) PNAS values were read in v2 (M3 range, 280 m pixels, no detections below 70 degrees, shaded terrain within 20 degrees of both poles, below 110 K, about 30 wt% ice model result, about 3.5% of cold traps with exposed ice). The paper's significance statement calls the evidence 'direct and definitive', while the body text presents the band shift and abundance estimates as open questions.",
+    "The Lunar Trailblazer launch vehicle (Falcon 9, IM-2 rideshare) is from the NASA fact sheet (read in v2). The Lockheed Martin integration statement is from the NASA photojournal caption page (read in v2).",
+    "The category name 'Water, ice and volatile detection' and the payload name 'Infrared water detection spectrometer' were checked against lunar_payloads_catalogue_320.md. The validator also writes a .urls.txt side file next to the JSON, as other payload outputs do.",
+    "No lunar landing-site or location recommendations are included, as the user deferred these."
+  ]
+}

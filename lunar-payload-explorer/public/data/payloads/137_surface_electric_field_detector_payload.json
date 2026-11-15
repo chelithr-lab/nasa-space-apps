@@ -1,0 +1,220 @@
+{
+  "catalogue_id": 137,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 6,
+    "name": "Radiation and space environment"
+  },
+  "payload": {
+    "number": 137,
+    "name": "Surface electric field detector",
+    "article": {
+      "overview": "A surface electric field detector is an instrument that measures electric fields, and related charged-particle conditions, at or near the lunar surface. Such measurements matter because the surface and the fine dust on it can become electrically charged, and electric fields can move that dust, which may interfere with equipment [4][7]. In the sources reviewed for this article, the instrument class is represented by a LuSEE-Night electric-field antenna system, a surface package in development with an electric field instrument from the University of Oslo and spherical probes on booms, a breadboard instrument called DUSTER, an electrostatic charging instrument developed at NASA Kennedy Space Center, and the proposed ELVIS sensor [1][2][3][4][6]. None of these was confirmed as having returned flown lunar surface electric-field measurements in the sources reviewed.",
+      "description": "A surface electric field detector measures the electric potential or field at the lunar surface, usually with conducting probes or antennas that are held away from the lander or rover body on booms or other supports. Some designs measure a potential difference between two probes, while others measure electric field components along three axes with orthogonal antennas [2][6]. Some designs also sense the plasma environment, meaning the thin, charged gas near the surface, or measure ion currents, because these affect how the surface charges [2][4]. Surface electric field work is distinct from magnetometry and from seismology: it focuses on electrostatic charging and near-surface electric fields rather than on magnetic fields or ground motion. The payload can be a standalone instrument, a sensor sharing a package with a dust detector [2], or a radio-frequency antenna system whose electric-field channels are used for lunar radio observations [1].",
+      "scientific_purpose_and_applications": "The main purposes described in the sources are to characterise the near-surface electrical environment and to understand how charged dust behaves. The surface package described in the 2025 abstract is intended to measure parameters near the lunar surface, including electric fields, to support future exploration [2]. The DUSTER breadboard is intended to characterise charged dust at exploration sites and the electrostatic forces that move it, so that mitigation can be planned, citing health effects, equipment damage and overheating of thermal radiators as hazards [3]. The NASA Kennedy Space Center instrumentation is intended to measure the electrostatic charge that regolith dust builds up on space-rated materials such as rover wheels and astronaut boots, and it is also described as capable of mapping electric fields near the surface and measuring ion currents [4]. LuSEE-Night uses electric-field-sensing antennas for radio measurements, with a stated aim of pathfinding low-frequency observations from the lunar far side [1]. The ELVIS proposal aimed to sample the full three-dimensional electric field vector and to detect short transient pulses [6]. The Umeå Lunar Venture student project states an aim of making a first measurement of the Moon's surface electric field, which it says had previously been addressed only by computer simulation [7].",
+      "operating_principle": "Surface electric field detectors in the sources use conducting sensors whose potential or voltage responds to the local electric field and plasma. In the Oslo-linked package, the electric field instrument consists of several spherical probes mounted on booms. These probes can operate in a double-probe mode, with current biasing, or in a Langmuir probe mode [2]. In a double-probe configuration, the potential difference between two probes separated by a boom length gives a field component along the line joining them. A Langmuir probe mode instead interprets the current collected as a function of applied probe voltage in terms of plasma properties such as density and temperature [2]. LuSEE-Night measures voltages on its antennas through a high-impedance, low-noise front end, digitises four channels at 102.4 million samples per second, and forms auto- and cross-correlation spectra on an FPGA [1]. ELVIS was proposed to use three orthogonal electric dipole antennas and a four-channel digital sampling system [6]. The KSC instrumentation pairs electrostatic charge measurements with field mapping and ion current measurements [4]. The DUSTER breadboard combines a Langmuir probe, a DC electric field sensor used to infer the charging level of the dust layer, and an active dust sensor [3].",
+      "scientific_importance": "The Moon's surface charges in its plasma environment, and charged dust can move and adhere to surfaces. Understanding this is important both for science and for operations, because dust can damage equipment, degrade thermal surfaces and affect instruments [3]. Direct, in-situ electric field measurements at the surface would test models that so far rely largely on computer simulation [7]. Measurements from several instruments of the same types would also help separate local effects from wider plasma conditions. LuSEE-Night's far-side radio work addresses a different scientific goal, the observation of the cosmic Dark Ages, but uses the same class of electric-field-sensing hardware [1]. The sources do not establish that any of these measurements has yet been made on the lunar surface.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power specification for a surface electric field detector. The examples below describe specific instruments, and their values should not be compared directly. Where a value is not given in the source reviewed, it is stated as not publicly specified in that source.",
+        "examples": [
+          {
+            "name": "LuSEE-Night electric-field antenna system",
+            "type": "Flight-planned lunar far-side radio experiment; development stage per January 2023 source; launch and landing outcome not verified",
+            "sensor_configuration": "Two orthogonal electric dipole antennas (source abstract) on a rotating carousel; the source's figure caption and spectrometer section instead refer to four monopole voltage channels. Unresolved in source.",
+            "dipole_tip_to_tip_length_m": 6,
+            "stacer_element_length_m": 3,
+            "stacer_element_material": "BeCu",
+            "deployed_stacer_tube_diameter_cm": 1,
+            "receiver": "4-channel, 50 MHz Nyquist baseband receiver; sampling at 102.4 million samples per second across four single-ended antenna voltages; FPGA produces auto- and cross-correlation spectra.",
+            "frequency_coverage": "Full-Stokes spectral density measurements up to 50 MHz; far-field calibration signal to 51.2 MHz.",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "battery_mass_kg_approximate": 40,
+            "operating_constraints": "Must operate continuously through the approximately 14 Earth-day lunar night; lander must cease operations before first nightfall and remain powered off; antenna carousel runs only during the lunar day.",
+            "qualification": "Not stated in source reviewed. Sensitivity, noise figure and ADC bit depth are not stated.",
+            "source_urls": [
+              "https://arxiv.org/abs/2301.10345"
+            ],
+            "images": []
+          },
+          {
+            "name": "University of Oslo-linked surface package with spherical probes on booms",
+            "type": "Design-stage package under ESA contract (2025 conference abstract)",
+            "sensor_configuration": "Number of spherical probes on booms not stated in abstract; operable in double-probe mode with current biasing, or in Langmuir probe mode. Companion dust detector from University of Stuttgart. Boom package managed by the Swedish Institute of Space Physics; power and command/data electronics box designed by Czech Academy of Sciences.",
+            "probe_count": null,
+            "boom_length_m": null,
+            "measurement_range": null,
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "status": "Design stage: progressing from measurement requirements to instrument concept selection; not a prototype, flight unit or flown instrument.",
+            "source_urls": [
+              "https://meetingorganizer.copernicus.org/EPSC-DPS2025/EPSC-DPS2025-1628.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "DUSTER breadboard",
+            "type": "Three-sensor breadboard for charged-dust characterisation on planetary surfaces; EU-funded",
+            "sensor_configuration": "Langmuir probe (potential swept from -100 V to +100 V; front end measures very faint currents); DC electric field sensor inferring dust-layer charging level; active dust sensor whose front end biases the probe up to 5 kV and measures charge, speed and mass of dust particles.",
+            "coordinating_institution": "BIRA-IASB; IAA-CSIC (digital unit, low-voltage supply, software); ONERA (active dust probe, lab tests)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "status": "Breadboard under development; E-field sensor and Langmuir probe developed; Langmuir probe manufactured in two coated versions; performance comparison in plasma chamber tests planned; active dust probe lab tests described as carried out without published results.",
+            "mission_or_lander": "Not named on source page",
+            "source_urls": [
+              "https://www.aeronomie.be/en/annual-report/dusting-moon"
+            ],
+            "images": []
+          },
+          {
+            "name": "NASA Kennedy Space Center electrostatic charging instrumentation",
+            "type": "Developed instrumentation for in situ measurement of regolith dust electrostatic charge; can also map near-surface electric fields and measure ion currents",
+            "sensor_configuration": "Not specified in abstract reviewed.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "flight_status": "Not stated; the authors say they have developed the instrumentation. A separate microgravity vacuum dust-charging experiment is still in development.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20220007230"
+            ],
+            "images": []
+          },
+          {
+            "name": "ELVIS (ElectroMagnetic Vector Information Sensor)",
+            "type": "Proposed 2005 electromagnetic sensor for Chandrayaan-1; flight not confirmed in sources reviewed",
+            "sensor_configuration": "Three orthogonal electric dipole antennas; one magnetic search coil; four-channel digital sampling system.",
+            "measurement_capability": "Samples full 3D electric field vector up to 18 MHz; detects pulses with minimum width 5 ns; one magnetic field component from a few Hz to about 100 kHz (upper limit garbled in source text, to verify).",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "status": "Proposed; under consideration by the Indian Space Research Organisation at time of paper; flight not confirmed.",
+            "source_urls": [
+              "https://arxiv.org/abs/astro-ph/0509864"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 17 Surface Electrical Properties experiment (related historical experiment, not a surface electric field detector)",
+            "type": "Historical lunar surface electromagnetic sounding experiment, Apollo 17",
+            "sensor_configuration": "Transmitting antenna deployed near the Lunar Module; receiving antenna mounted on the Lunar Roving Vehicle.",
+            "measurement_principle": "Transmission, absorption and reflection of electromagnetic energy by lunar regolith and subsurface; not a direct surface electric field measurement.",
+            "frequencies": "Not stated on source page reviewed",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "source_urls": [
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:sep.a17l"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The examples vary greatly. The LuSEE-Night electric-field system uses two orthogonal dipoles about 6 m tip-to-tip made from 3 m deployable stacer elements, whose size is set by the radio measurement band. The Oslo-linked package uses spherical probes on booms whose dimensions are not stated in the abstract. The DUSTER breadboard is a laboratory-scale sensor set whose dimensions are not stated in the source reviewed. A new instrument's dimensions would need to be set by its measurement range, boom length, probe size and the surface layout of its host lander or rover, and verified against interface requirements.",
+        "mass_and_weight": "Mass is not publicly specified for the electric-field sensor subsystems in the sources reviewed. The LuSEE-Night source gives a battery of roughly 40 kg that carries the payload through the lunar night; the mass of the full payload is not stated. A new surface electric field detector's mass would affect launch and lander capacity and must be verified against lander specifications.",
+        "power_requirements": "Not publicly specified for the electric-field systems in the sources reviewed. The LuSEE-Night source describes a battery-based night-time operation with the lander powered off, but gives no total payload power figure in the source reviewed. The power budget of the other examples is not stated."
+      },
+      "environmental_and_operational_requirements": "A surface electric field detector must operate in lunar vacuum, with large day-night temperature changes and exposure to plasma and dust. Its sensors and booms must be stable enough that their positions do not change the measured fields, and the lander or rover should not generate electromagnetic interference that masks the signal. LuSEE-Night illustrates these constraints clearly. Its antenna carousel runs only during the lunar day when solar power is available. The payload must operate continuously through the approximately 14-Earth-day lunar night, and the lander must cease operations before the first nightfall and remain powered off for the duration of the mission [1]. The Umeå Lunar Venture team describes an instrument that fits in a small cube designed to withstand launch vibration [7]. Other constraints, such as thermal control and dust protection, are general engineering considerations for the lunar surface rather than specifications taken from a named instrument.",
+      "limitations": "Surface electric field instruments are sensitive to their own mounting. Probes on booms, antenna elements and lander structures can distort the local field and charging, and dust or plasma conditions can change with time and location. A single surface sensor measures conditions at one point, so it cannot by itself map the field across a region. The measurement techniques also differ. Double-probe, Langmuir probe, voltage-measuring antenna and electrostatic charge instruments do not measure exactly the same quantity, so their values cannot be compared directly without calibration against a common reference. The sources reviewed contain almost no flight-verified performance figures for lunar surface electric fields.",
+      "transportation_and_deployment": {
+        "overview": "A surface electric field detector would be delivered to the Moon as part of a lander's surface payload, typically through a commercial or agency lunar lander. The sources reviewed do not verify compatibility with any named lander or rover for these instruments, so no lander is assigned here.",
+        "transportation_process": [
+          "Integrate the sensor package, booms or antennas and electronics into a lander or rover payload accommodation on Earth.",
+          "Launch and transfer to the Moon on a lunar delivery mission.",
+          "Land the payload on the lunar surface.",
+          "Deploy booms or antennas away from the lander structure and verify their orientation and stability.",
+          "Connect power and data, and confirm that the lander is quiet electromagnetically during measurements."
+        ],
+        "deployment_methods": "LuSEE-Night deploys its dipole antennas as deployable stacer elements on a rotating carousel, and the carousel runs only during the lunar day [1]. The Oslo-linked package uses booms carrying spherical probes [2]. Deployment methods for DUSTER and the KSC instrumentation are not described in detail in the sources reviewed. The Umeå team describes an instrument that must survive launch vibration [7].",
+        "historical_examples": "The Apollo 17 Surface Electrical Properties experiment deployed a transmitting antenna near the Lunar Module and a receiving antenna on the Lunar Roving Vehicle [8]. Apollo experiments were installed by astronauts. No historical lunar surface electric field detector was confirmed in the sources reviewed.",
+        "compatibility_assessment": "LuSEE-Night is planned as a payload on the NASA CLPS mission designated CS-3, with ESA's Lunar Pathfinder relay providing S-band communications, and its lander is expected to stop operating before the lunar night [1]. The sources do not verify compatibility of the other examples with any lander. Mass, power and interface figures for a new surface electric field detector would need to be checked against verified lander specifications before any integration claim is made.",
+        "images": []
+      },
+      "historical_significance": "No surface electric field detector has been confirmed in the sources reviewed as returning flown measurements of the lunar surface electric field. The field has therefore been studied largely through simulation and through proposed or breadboard instruments [3][4][7]. A conceptual model payload for externally mounted space-plasma instruments on the Lunar Gateway has also been described, but the abstract reviewed gives no electric-field probe parameters [5]. The Apollo 17 Surface Electrical Properties experiment is the nearest historical electrical experiment on the lunar surface, but it probed the subsurface by electromagnetic transmission rather than by measuring the surface electric field [8]. The ELVIS proposal showed an early interest in full three-dimensional electric field measurement at the Moon, but its flight status is not confirmed in the sources reviewed [6]. Recent development efforts, including the Oslo-linked package, the DUSTER breadboard and the KSC instrumentation, indicate growing attention to surface charging and dust, but the sources do not establish a completed flight record [2][3][4].",
+      "limitations_and_uncertainties": "The term surface electric field detector describes a class of instruments rather than one standard design. The sources reviewed mix proposals, breadboards, developed hardware and in-development flight instruments, and they should not be read as achieved measurements. The LuSEE-Night timeline is the most important uncertainty: the source describes a planned delivery in late 2025 or early 2026 [1], and the current date is after that window. The launch and landing outcome was not verified for this article. The LuSEE-Night antenna count is also unresolved between the source abstract and its figure and spectrometer sections [1]. The Oslo-linked package abstract gives no probe count, boom length or measurement range [2]. The DUSTER page gives no mission or launch date [3]. The KSC abstract gives no hardware specifications [4]. The Umeå project page is dated January 2019 and gives a launch target of late 2019, so its timeline is likely outdated [7]. The ELVIS paper is from 2005 and its flight status is unverified [6]. Several full PDFs could not be read in this review, so specifications taken from abstracts may be incomplete. No lunar landing-site or location recommendation is included, as deferred by the user.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "LuSEE 'Night': The Lunar Surface Electromagnetics Experiment",
+          "publisher": "arXiv",
+          "year": 2023,
+          "authors": null,
+          "url": "https://arxiv.org/abs/2301.10345"
+        },
+        {
+          "title": "Abstract EPSC-DPS2025-1628: lunar surface electric field and dust package (exact title not recorded in this review)",
+          "publisher": "EPSC-DPS Joint Meeting 2025",
+          "year": 2025,
+          "authors": "Lasse B. N. Clausen, Yoshifumi Futaana, Fabrice Cipriani, Gregoire Deprez, Fredrik Leffe Johansson",
+          "url": "https://meetingorganizer.copernicus.org/EPSC-DPS2025/EPSC-DPS2025-1628.html"
+        },
+        {
+          "title": "Dusting the Moon",
+          "publisher": "BIRA-IASB (Belgian Institute for Space Aeronomy)",
+          "year": null,
+          "authors": null,
+          "url": "https://www.aeronomie.be/en/annual-report/dusting-moon"
+        },
+        {
+          "title": "Electrostatic Charging of the Lunar Surface",
+          "publisher": "51st International Conference on Environmental Systems; NASA NTRS 20220007230",
+          "year": 2022,
+          "authors": "James R. Phillips III, Charles R. Buhler, Michael R. Johansen, Carlos I. Calle, Adrienne R. Dove",
+          "url": "https://ntrs.nasa.gov/citations/20220007230"
+        },
+        {
+          "title": "Space Plasma Physics Science Opportunities for the Lunar Orbital Platform-Gateway",
+          "publisher": "arXiv",
+          "year": 2022,
+          "authors": "Iannis Dandouras et al.",
+          "url": "https://arxiv.org/abs/2301.02189"
+        },
+        {
+          "title": "ELVIS - ELectromagnetic Vector Information Sensor",
+          "publisher": "arXiv",
+          "year": 2005,
+          "authors": "J. E. S. Bergman et al.",
+          "url": "https://arxiv.org/abs/astro-ph/0509864"
+        },
+        {
+          "title": "Umeå Lunar Venture",
+          "publisher": "Umeå University",
+          "year": 2019,
+          "authors": null,
+          "url": "https://www.umu.se/en/feature/umea-lunar-venture/"
+        },
+        {
+          "title": "Apollo 17 LM Surface Electrical Properties Experiment (urn:nasa:pds:context:instrument:sep.a17l)",
+          "publisher": "NASA Planetary Data System, PSI ARCNAV",
+          "year": null,
+          "authors": null,
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:sep.a17l"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image assets were verified in this run, so no image objects are included; no image URLs were invented."
+  },
+  "data_quality_notes": [
+    "No images were researched or verified in this run. The image registry, overview_images and all section-level image arrays are empty by design; the image rules in the skill were not satisfied because no official direct asset URLs were checked.",
+    "Web research used 5 searches and 12 page reads. Several PDFs (Springer s11214-025-01202-5, NTRS ICES full paper, arXiv 1207.4965, arXiv 2407.07173) returned binary content or redirects and were not read; claims rely on the abstract or landing page for those.",
+    "The LuSEE-Night source abstract describes two dipoles while its figure caption and spectrometer section describe four monopole voltage channels. This is unresolved.",
+    "The LuSEE-Night planned delivery (CS-3, late 2025 or early 2026) has passed relative to the date of this article; the launch and landing outcome was not verified.",
+    "The Umeå Lunar Venture page is dated January 2019 with a late-2019 launch target; its timeline is likely outdated.",
+    "The ELVIS paper is from 2005 and its flight status was not confirmed; the magnetic-field upper frequency limit in the source text was garbled.",
+    "The Apollo 17 SEP experiment is included only as a related historical electrical experiment; it is not a surface electric field detector. Its frequencies and hardware mass were not verified on the page read.",
+    "The Gateway paper (arXiv 2301.02189) was read from its abstract only; the electric-field probe parameters were not available.",
+    "The Oslo-linked package exact title was not recorded; the reference title is a descriptive placeholder based on the abstract. The EPSC abstract gives no probe count, boom length or measurement range.",
+    "Mass, power and dimension values are null where not publicly specified in the sources reviewed."
+  ]
+}

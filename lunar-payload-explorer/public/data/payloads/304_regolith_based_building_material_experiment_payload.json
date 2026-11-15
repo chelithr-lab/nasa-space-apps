@@ -1,0 +1,202 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 304,
+    "name": "Regolith-based building material experiment",
+    "article": {
+      "overview": "Regolith-based building material experiments test whether the loose, dusty soil of the Moon (regolith), or a laboratory simulant of it, can be consolidated into bricks, tiles, blocks or printed structures using local materials and energy. The aim is to reduce the mass that must be launched from Earth for habitats, landing pads, radiation shielding and other infrastructure. The evidence falls into four levels: (1) a Chinese experiment in which simulant bricks were exposed outside the Tiangong space station for one year and then returned, as reported by HUST and CGTN; (2) European solar-sintering demonstrators developed on Earth under RegoLight and an ESA GSTP activity; (3) laboratory sintering studies of simulants and Apollo-returned samples; and (4) MOONRISE, a laser-melting payload planned to fly to the Moon on an Astrobotic lander in late 2026, not verified as flown. Only item (1) involves hardware reported as having been in space. No lunar-surface building-material experiment with published, verified results was found.",
+      "description": "Lunar regolith is a layer of broken rock fragments, mineral grains, impact glass and fine dust covering the lunar surface. It contains no organic matter or water, and its particles are sharp and angular because the Moon has no atmosphere or weathering to smooth them. A regolith-based building material experiment consolidates this material. The three main routes in the sources reviewed are: sintering without a binder, in which particles are heated below full melting so they bond at contact points (heat may come from concentrated sunlight, electromagnetic induction, microwaves or a furnace); melting, in which a high-power laser melts the regolith locally and builds a structure layer by layer, as in the MOONRISE concept; and binder-based consolidation, in which a polymer or salt binder is mixed with regolith. Binder-based methods require materials that must be carried from Earth or produced locally, and no verified lunar binder experiment was identified. An experiment in this category typically reports process conditions (temperature, time, particle size, heating method), resulting properties (density, porosity, compressive or flexural strength, thermal behaviour) and durability after exposure to the lunar or space environment.",
+      "scientific_purpose_and_applications": "The purpose is to establish whether a material can be produced and tested under lunar-relevant conditions, and which process parameters control its properties. Key questions include: which particle sizes and compositions sinter at practical temperatures (an EAC-1A simulant laboratory study reports that the finest sieved fraction reached a higher maximum sintering temperature, with more densification and higher biaxial strength); how the process behaves in vacuum, where outgassing from heated material may change the result (the RegoLight vacuum-chamber campaign reported outgassing challenges at sintering temperature, but no quantitative outgassing data were found in the summaries reviewed); how finished material performs after long exposure to thermal cycling, radiation and micrometeoroid impacts (the Chinese exposure experiment was designed for this, with comparisons to Earth-based control samples planned); and whether material made in microgravity differs from Earth-made material, a question raised in the sources but not answered by a verified result. Applications, if processes mature, include landing pads, road surfaces, shielding walls and pressurised-habitat shells. These are proposals; none has been demonstrated at scale or in a lunar environment in the sources reviewed.",
+      "operating_principle": "Solar sintering (RegoLight): a Fresnel lens focuses sunlight onto a small spot on a bed of regolith simulant. A three-axis gantry moves the lens and sintering spot while a dispenser spreads each new regolith layer. The lens is aimed according to the sun's elevation and a predefined pattern, and the process repeats until the part is finished or solar intensity becomes too low. The approach is binder-free. Electromagnetic and microwave heating: the Chinese exposure bricks are reported to have been fabricated with hot pressing, electromagnetic-induction heating and microwave sintering. Public reports do not state which method applied to which samples, and the sintering temperature was not stated in the sources reviewed; one secondary source reports heating above 1,000 degrees Celsius by induction, which could not be confirmed against a primary source. Laser melting (MOONRISE): a laser melts regolith at a fixed spot and builds a structure by moving the laser and material; the 2024 developer press release describes two-dimensional structures, with a camera recording the melt. Laser power is not stated. Laboratory sintering of lunar material: ESA work on Apollo-returned regolith samples, as reported in secondary coverage, found all tested Apollo samples sintered within the temperature range needed for simulant under the same set-up; mare samples from Apollo 11 and 15 sintered rapidly, making over-sintering easier. The primary paper was not retrieved, so these values are not used as verified numbers.",
+      "scientific_importance": "Building infrastructure from local material could reduce the construction mass that must be transported from Earth, a central motivation for in-situ resource utilisation on the Moon. Sintering and melting experiments also reveal how fine, angular, glassy and partly metallic lunar particles respond to heat, which informs materials science and the handling of lunar dust in hardware. Exposure experiments are the only route to measuring how such materials age in space: a brick that performs well in the laboratory may degrade under thermal cycling, radiation or micrometeoroid bombardment. The Chinese exposure experiment is an early example of testing this in orbit, although its results were not published in the sources reviewed.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a regolith-based building material experiment. The payload class ranges from grams of sample material on an external platform to multi-tonne structures that are proposed but not built. The four examples are not directly comparable in material, process, scale or status, and no mass, size or power figure from one example should be applied to another. No example has verified dimensions or mass, so none is given. A comparison table would mislead by implying equivalent test conditions.",
+        "examples": [
+          {
+            "name": "Tiangong external exposure of lunar-simulant bricks",
+            "type": "Flown space-exposure experiment (reported)",
+            "hardware": "Bricks made from a lunar-soil simulant, described in public reports as sintered or pressed.",
+            "sample_count": {
+              "hust_reported_prepared": 74,
+              "cgtn_reported_first_returned_batch": 34,
+              "status": "Unresolved discrepancy between sources."
+            },
+            "simulant_source": "Reported as 'simulated lunar regolith'. The sources reviewed do not name the source material; other reports name different sources that could not be verified.",
+            "launch": "Launched to the Tiangong space station on 15 November 2024 aboard the Tianzhou-8 cargo ship (HUST).",
+            "mounting": "External exposure platform outside the station (HUST, CGTN). Specific mounting not described.",
+            "planned_exposure": "One, two or three years, with one batch returned after one year (HUST).",
+            "return": "Samples retrieved on 14 November 2025 after returning aboard the Shenzhou-21 spacecraft (HUST).",
+            "condition_reported": "HUST reports the one-year unit (R5) returned in excellent condition. CGTN reports the first batch remained in good condition and states compressive strength is more than three times that of regular bricks, without a stated baseline. A HUST scientist was reported in secondary coverage as saying there was no visible impact damage; not verified against a primary statement.",
+            "dimensions_and_mass": "Not publicly specified in the sources reviewed.",
+            "status": "Reported as flown as an external exposure experiment. Remaining samples were reported to continue exposure in orbit as of November 2025. Status of the two- and three-year batches as of 13 November 2026 could not be confirmed.",
+            "limitations": "Simulant bricks, not lunar regolith. No test data for returned samples published in the sources reviewed. Claimed strength improvement has no stated baseline.",
+            "source_urls": [
+              "https://english.hust.edu.cn/info/1102/4282.htm",
+              "https://news.cgtn.com/news/2025-11-25/China-recovers-first-batch-of-space-exposed-lunar-bricks--1IACuZTzWla/p.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "ESA-funded solar-sintering demonstrators (RegoLight and ESA GSTP)",
+            "type": "Ground-based and vacuum-chamber demonstration",
+            "programme": "RegoLight, Horizon 2020 grant 686202, coordinated by DLR, 1 November 2015 to 30 April 2018, EU contribution EUR 999,372.50 (CORDIS).",
+            "process": "Binder-free concentrated solar sintering with a Fresnel lens on a three-axis gantry and an automatic regolith dispenser; solar furnace and solar simulator used in the ESA GSTP activity.",
+            "output": "ESA GSTP page describes three brick-sized demonstrators. CORDIS reports a building element with a fine structure, features down to about 1.4 cm resolution, produced without a bonding agent under ambient conditions.",
+            "vacuum_tests": "A regolith dispenser and three-axis table were fitted inside a vacuum chamber; a few layers were sintered with high-flux xenon lamps at DLR Cologne (spectrum close to sunlight). Outgassing at sintering temperature was reported as a significant challenge; no quantitative data in the summary.",
+            "simulant": "CORDIS refers to a regolith simulant without naming it. A search-result claim of JSC-2A could not be confirmed.",
+            "technology_readiness_statements": "ESA GSTP page: TRL 4 for the 2017 demonstrators. CORDIS RegoLight periodic report: current TRL 5. Helmholtz project page (search summary only): TRL 3, apparently the pre-project baseline.",
+            "mechanical_data": "Mechanical characterisation was an objective; no compressive or flexural strength values for the building elements were found in the sources reviewed.",
+            "dimensions_and_mass": "Brick-sized demonstrators (ESA GSTP); no precise dimensions or mass published in the sources reviewed.",
+            "status": "Ground-based and vacuum-chamber demonstration only. No lunar or space flight of this hardware is reported.",
+            "source_urls": [
+              "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/3D_printing_of_a_model_building_block_for_a_lunar_base_outer_shell",
+              "https://cordis.europa.eu/project/id/686202/reporting",
+              "https://cordis.europa.eu/project/id/686202"
+            ],
+            "images": []
+          },
+          {
+            "name": "MOONRISE laser-melting payload",
+            "type": "Proposed lunar payload (planned, not verified as flown)",
+            "developers": "Laser Zentrum Hannover (lead), Technische Universitat Berlin (synthetic regolith, process research) and Astrobotic (lander delivery).",
+            "funding": "EUR 4.75 million from DLR, using federal economics ministry (BMWK) funds, per the LZH press release of 9 April 2024.",
+            "process": "Laser melting of regolith to build two-dimensional structures; camera records the melt process; AI planned for site selection and quality control.",
+            "laser_power": "Not publicly specified in the source.",
+            "mounting": "Mounting on lander, rover or arm not stated in the source.",
+            "lander_and_schedule": "The 2024 press release states LZH contracted Astrobotic for a flight to the Moon in late 2026. The image caption names the Griffin lander as illustrative. No compatibility is asserted.",
+            "stated_goal": "To provide proof of concept that laser melting is viable on the Moon (a goal, not a demonstrated result).",
+            "status": "Planned at the time of the press release. Flight and current schedule not confirmed; no current update found in the sources reviewed.",
+            "dimensions_and_mass": "Not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://www.lzh.de/en/node/71975"
+            ],
+            "images": []
+          },
+          {
+            "name": "EAC-1A simulant sintering laboratory study",
+            "type": "Laboratory study (ground-based)",
+            "study": "Scientific Reports, December 2023, article s41598-023-50391-y, on sintering of ESA's EAC-1A mare simulant. Exact title not confirmed.",
+            "result_as_reported": "The finest sieved fraction reached a higher maximum sintering temperature, with more densification and higher biaxial strength. Full numerical values were not retrieved, so none is given.",
+            "status": "Laboratory experiment only.",
+            "source_urls": [
+              "https://www.nature.com/articles/s41598-023-50391-y"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for any example. Dimensions for a future system would depend on the intended structure, the sintering or melting method and the deployment and support architecture, none of which is specified in the sources reviewed.",
+        "mass_and_weight": "Not publicly specified for any example. Reported brick mass figures encountered in secondary coverage could not be verified and are not used. Launch mass for any future lunar system would depend on the lander, the process hardware and the structure produced.",
+        "power_requirements": "Not publicly specified for any example. Solar sintering uses concentrated sunlight rather than electrical power. Electromagnetic, microwave and laser processes require electrical power, the amount of which is not stated in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "Vacuum: the Moon has effectively no atmosphere, so heated material can outgas and the process must be designed without air; the RegoLight vacuum tests highlighted outgassing as a challenge. Thermal cycling: surface temperatures vary widely between lunar day and night, and repeated cycles can crack or weaken a material. Radiation and micrometeoroids: ultraviolet and other radiation and impacts may degrade a material over time; the Chinese exposure experiment is designed to test this, but results were not published in the sources reviewed. Energy: solar sintering depends on solar intensity and stopped when intensity became too low in RegoLight; a lunar night would restrict solar sintering, though no lunar operating schedule was found. Electrical processes require power, and laser processes require thermal control and a protected working environment. Dust: lunar dust is abrasive and can contaminate hardware; the sources do not quantify its effect on these experiments.",
+      "limitations": "Most results come from ground-based tests, simulants or laboratory-scale samples; scaling to structural size has not been demonstrated in the sources reviewed. The Tiangong exposure results are not published in a primary source reviewed here, and the sample count and claimed strength improvement are unresolved. Technology readiness is inconsistent across sources for the same programme (TRL 3, 4 and 5). Mechanical data are missing for several examples. The MOONRISE flight status is unverified and no lander compatibility assessment has been made. Simulants are not regolith, and simulant results may not represent real lunar material, which varies by site and maturity.",
+      "transportation_and_deployment": {
+        "overview": "A surface building material experiment would be delivered as part of a lunar lander or surface payload. For the Chinese example, samples were transported to an orbiting station and returned to Earth; for MOONRISE, delivery to the lunar surface on a planned commercial lander was announced. No interface with a named lander is verified.",
+        "transportation_process": [
+          "Integrate the process hardware and feedstock into a lander or payload compartment on Earth.",
+          "Launch the payload on a launch vehicle.",
+          "Transfer it towards the Moon.",
+          "Deliver it to the surface by lander.",
+          "Deploy and level the hardware; for solar sintering, position a sun-facing mobile gantry or equivalent system.",
+          "Connect power, thermal control and data systems as required by the process (electrical, laser or furnace systems)."
+        ],
+        "deployment_methods": "Deployment method is not specified for any lunar example. Solar sintering would require a sun-facing site and a positioning system; laser and electrical processes would require power, thermal control and a protected working environment. No dedicated deployment mechanism was identified in the sources reviewed.",
+        "historical_examples": "The Tiangong exposure experiment used a cargo spacecraft (Tianzhou-8) to deliver samples to an external platform and a crew spacecraft (Shenzhou-21) to return them after one year. This demonstrates a sample return pathway in low Earth orbit, not a lunar transportation method. The RegoLight and ESA GSTP solar-sintering demonstrators were ground-based and did not involve lunar transport.",
+        "compatibility_assessment": "Not assessed for any named lander or spacecraft. The MOONRISE 2024 press release names Astrobotic as lander partner and late 2026 as the planned flight; the Griffin lander appears only in an illustrative caption. No payload mass, dimensions, mounting or power interface was found for compatibility with that lander, so no compatibility is asserted.",
+        "images": []
+      },
+      "historical_significance": "The Tiangong exposure is one of the more concrete attempts to test building-material samples in a space environment, with a one-year exposure and return reported in November 2025. The European solar-sintering work under RegoLight and ESA GSTP, between 2015 and 2018, demonstrated binder-free solar sintering of regolith simulant on Earth and identified vacuum outgassing as a challenge. MOONRISE represents a planned attempt to demonstrate laser melting on the Moon. The significance of these efforts depends on results: until the Tiangong samples are analysed and published, and until a lunar-surface process produces verified data, the field remains at the stage of demonstration and laboratory evidence.",
+      "limitations_and_uncertainties": "Sample count and composition: the 74 versus 34 sample discrepancy for the Chinese bricks is unresolved, and the simulant source and sintering method for each sample are not stated in public reports. Strength claims: the statement that returned bricks have compressive strength more than three times that of regular bricks has no stated baseline and no published test method. Readiness level: TRL statements for RegoLight-related work differ (TRL 3, 4 and 5) and should be checked against full project reports. MOONRISE flight status: the late-2026 date comes from a 2024 press release and its current status is unverified. Lander compatibility: no payload interface data were found for any named lander. Lunar material: Apollo sample sintering results are reported only in secondary coverage; the primary paper was not retrieved. Unverified reports: a reported induction heating temperature above 1,000 degrees Celsius, a JSC-2A simulant identification, a reported 100-gram brick mass, and a reported 2013 ESA lunar-base block demonstration with named commercial partners were encountered but are not used as facts. Images: no image was verified as a direct, rights-cleared asset, so the article includes none.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "'Lunar bricks' return safely after a year in space (news item; index page retrieved)",
+          "publisher": "Huazhong University of Science and Technology",
+          "date": "2025-11-24",
+          "url": "https://english.hust.edu.cn/info/1102/4282.htm",
+          "notes": "Source page retrieved as an index; the article is linked from it."
+        },
+        {
+          "title": "China recovers first batch of space-exposed lunar bricks",
+          "publisher": "CGTN",
+          "date": "2025-11-25",
+          "url": "https://news.cgtn.com/news/2025-11-25/China-recovers-first-batch-of-space-exposed-lunar-bricks--1IACuZTzWla/p.html",
+          "notes": "Short news piece; sample count and fabrication details partly stated."
+        },
+        {
+          "title": "RegoLight periodic report (Sintering Regolith with Solar Light, project 686202)",
+          "publisher": "CORDIS, European Commission",
+          "date": "2019-04-01",
+          "url": "https://cordis.europa.eu/project/id/686202/reporting",
+          "notes": "Period 1 report, last updated 1 April 2019. Source for current TRL 5 statement and vacuum-test description."
+        },
+        {
+          "title": "RegoLight project record",
+          "publisher": "CORDIS, European Commission",
+          "date": null,
+          "url": "https://cordis.europa.eu/project/id/686202",
+          "notes": "Project dates and funding."
+        },
+        {
+          "title": "3D printing of a model building block for a lunar base outer shell (GSTP ref. G617-153QT)",
+          "publisher": "European Space Agency",
+          "date": "2017-06-29",
+          "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/3D_printing_of_a_model_building_block_for_a_lunar_base_outer_shell",
+          "notes": "Source for TRL 4 statement, three brick-sized demonstrators, binder-free process and simulant characterisation."
+        },
+        {
+          "title": "Next step towards the Moon: LZH and TU Berlin partner with Astrobotic",
+          "publisher": "Laser Zentrum Hannover",
+          "date": "2024-04-09",
+          "url": "https://www.lzh.de/en/node/71975",
+          "notes": "Press release. Planned late 2026 flight; laser melting not sintering."
+        },
+        {
+          "title": "Study of sintering of the EAC-1A lunar regolith simulant (exact title not confirmed)",
+          "publisher": "Scientific Reports",
+          "date": "2023-12",
+          "url": "https://www.nature.com/articles/s41598-023-50391-y",
+          "notes": "Cited from a search-result summary; full text not retrieved."
+        },
+        {
+          "title": "Sintering Regolith with Solar Light (RegoLight) project page",
+          "publisher": "Helmholtz Association",
+          "date": null,
+          "url": "https://www.helmholtz.de/en/research/international-cooperation/eu-projects/pillar-2-industrial-leadership/space/regolight",
+          "notes": "Cited from a search-result summary for the TRL 3 baseline statement; page not fetched."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No image objects are included because no direct image asset was verified during this review; the article contains no images."
+  },
+  "data_quality_notes": [
+    "Sample count conflict: HUST reports 74 bricks prepared; CGTN reports 34 samples in the first returned batch. Unresolved.",
+    "TRL conflict: ESA GSTP page reports TRL 4 for the 2017 demonstrators; CORDIS RegoLight periodic report reports current TRL 5; a Helmholtz page summary reports TRL 3 (apparently the pre-project baseline).",
+    "MOONRISE status: the planned late-2026 lander flight is from a 2024 press release; current flight status not verified. Laser melting is the method, not sintering.",
+    "Simulant source for the Chinese exposure bricks is not stated in the HUST or CGTN reports; other sources named different materials that could not be verified.",
+    "Unverified secondary claims excluded from facts: induction heating above 1,000 degrees Celsius; JSC-2A simulant identification; reported 100-gram brick mass; reported 2013 ESA lunar-base block demonstration with named commercial partners; reported ICON laser-melting demonstration date for 2026-2027; reported RockSat-X microgravity sintering project.",
+    "Strength claim for returned Chinese bricks ('more than three times that of regular bricks', CGTN) has no stated baseline or test method.",
+    "No primary source retrieved for the ESA Apollo regolith pellet sintering study; its temperature findings are reported only in secondary coverage and are not used as numbers.",
+    "No direct image asset was verified; image arrays are empty and image_urls_added is false.",
+    "Primary HUST article was not retrieved; the index page was used as the source page."
+  ]
+}

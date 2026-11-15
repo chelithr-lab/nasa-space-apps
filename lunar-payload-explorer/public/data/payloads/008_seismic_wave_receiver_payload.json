@@ -1,0 +1,401 @@
+{
+  "catalogue_id": 8,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 1,
+    "name": "Geophysical and lunar interior instruments"
+  },
+  "payload": {
+    "number": 8,
+    "name": "Seismic wave receiver",
+    "article": {
+      "scope_note": "The catalogue name 'seismic wave receiver' is not defined in the catalogue. This article uses the reading: the receiving and recording chain of a seismic station, namely the electronics and software that take the output of a sensor (a seismometer, a geophone or a fibre-optic cable), convert it into digital samples, attach accurate times, store the samples and send them on towards Earth. Sensors are covered by payloads 002-006; controlled sources by payload 007. The fibre-optic receiver is included because it is a different way of making a receiver, not a different sensor.",
+      "overview": "A seismic wave receiver is the part of a seismic station that turns ground motion into a time-stamped record. A sensor produces a small electrical signal. The receiver amplifies it, filters it, converts it into digital numbers, marks each sample with a time, stores it and passes it to a telecommunications link. Without this chain, the sensor's signal cannot be used. The Apollo lunar surface experiments wired their seismic channels to a central station, which served as the data hub for the whole ALSEP package [1][2]. On Mars, the InSight SEIS instrument used its own electronics box with dedicated analogue-to-digital converters, a separate clock and onboard memory [4]. A proposed lunar alternative is fibre-optic distributed acoustic sensing (DAS), in which an interrogator unit at the lander reads ground motion along a buried cable [6].",
+      "description": "A seismic wave receiver has five functions, which the designs below perform in different ways. Front-end conditioning: amplifying and filtering the sensor signal so that it fits the converter range. Analogue-to-digital conversion: turning the signal into numbers; resolution (bits per sample) and sample rate both set the quality of the record. Anti-aliasing and decimation: removing frequencies that are too high for the sample rate, before reducing the sample rate for storage; without this step, high-frequency energy is folded into false low-frequency signals. Time stamping: attaching an accurate time to each sample or block of samples. Storage and telemetry: holding data until it can be sent, then formatting it for the link to Earth. The International Lunar Network requirements draft, which applies to any seismic instrument type, asks for time stamps, UTC time, constant sampling, FDSN-format data, a limit on aliasing, and station coordinates accurate to 25 m [8].",
+      "scientific_purpose_and_applications": "The purpose of a receiver is to make the sensor's signal usable. Its design determines which frequencies can be recorded without distortion; how precisely arrival times can be compared between stations, which is needed for locating events; and how much data survives the trip to Earth. For a lunar network, the sources read emphasise simultaneous, comparable records from several stations [8][9]. The receiver chain is where those requirements are met or lost.",
+      "operating_principle": "The receiving chain works in a fixed order. (1) Sensor output: a seismometer or geophone converts ground motion into an electrical signal. Apollo's geophones and seismometers produced analogue voltages, which were sent along cables to the central station [1][2]. (2) Conversion: in the Apollo 1969 design, each experiment converted its own data and sent it to the data processors in serial form, while an analogue multiplexer scanned the other channels [1]. In InSight, each seismic channel had its own sigma-delta converter, sampled at 32 kHz and reduced to 500 Hz before filtering [4]. (3) Filtering and decimation: in InSight, the filters after the converter suppressed out-of-band frequencies by at least 120 dB before the sample rate was reduced, using a 3rd-order sinc filter in the converter stage and FIR filters in the FPGA [4]. (4) Time stamping: samples are tagged with a time from the station clock; InSight's clock counted 1/1024-second ticks in a 40-bit counter, which the design states can count more than 34 years [4]. (5) Storage and telemetry: Apollo sent its data immediately by S-band link, with no onboard storage other than shift registers [2]; InSight stored up to 65 hours of data in the electronics box [4].",
+      "scientific_importance": "The receiver sets the scientific quality of every record. Three requirements recur in the sources read. Known times: arrival times can only be compared between stations if the stations share one clock standard; the ILN draft requires time-synchronisation errors smaller than the sample interval [8]. Known rates and filtering: aliasing, when high-frequency energy is folded into the record, can produce false signals; the ILN draft limits aliasing to less than 0.1% of the signal above the Nyquist frequency [8]. Complete, archivable records: the ILN draft requires data and metadata to be archived and any operation that affects the signal to be time-stamped [8]. The Apollo data were processed on the ground from magnetic tapes recorded at the tracking stations [2][3]. The Apollo archive therefore depended on the receiving sites as much as the lunar hardware.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a seismic wave receiver. The four examples below are different designs for different missions and should not be compared directly.",
+        "examples": [
+          {
+            "name": "Apollo ALSEP central station seismic data path",
+            "type": "Flown lunar receiver and telemetry chain (1969-1977)",
+            "status": "Flown. The Apollo 12 handbook describes ALSEP 1, which contained the passive seismic experiment (PSE), and the Bendix report identifies ALSEP Array A Flight 1 as Apollo 12 [1][2]. The handbook is a 1969 design document; the Bendix report is a 1973 final report. Values are labelled by source.",
+            "telemetry_chain_design_1969_handbook": {
+              "source": "[1]",
+              "analogue_multiplexer": "One analogue multiplexer, 90 channels maximum; channels 1-15 redundant, channels 16-90 normal.",
+              "analogue_to_digital_converters": "Two, each with an 8-bit conversion, applied to a housekeeping word (word 33).",
+              "digital_data_processors": "Two, each sending its output in serial form.",
+              "transmitters": "Two S-band transmitters at 2278.5 MHz, phase-modulated, minimum output 1 W, input power 6.6 to 9.45 W.",
+              "seismic_data_path": "Seismic data were converted within each experiment and not passed through the multiplexer."
+            },
+            "frame_and_bit_rates": {
+              "sources": "[1][2]",
+              "sampling_interval_each_source": "54.34 s in the normal mode (handbook); 54 s (Bendix report).",
+              "frame": "64 words of 10 bits, 640 bits per frame.",
+              "normal_rate_bps": 1060,
+              "low_rate_bps": 530,
+              "active_seismic_experiment_rate_bps": 10600,
+              "bit_error_target": "10 to the minus 4 (Bendix report)."
+            },
+            "storage_and_ground_handling": {
+              "onboard_storage": "The Bendix report says the ALSEP has no provision for data storage other than shift registers; data were transmitted almost immediately and recorded on magnetic tape 24 hours a day at S-band receiving stations [2].",
+              "raw_tapes": "The 1974 processing report describes raw MSFN telemetry tapes holding 6 to 8 hours of ALSEP data, recorded at the remote tracking sites [3].",
+              "reels_and_volume": "Average reel 24 hours, maximum 33 hours; about 1095 tapes per year [3]. These are ground-side figures, not onboard electronics."
+            },
+            "pse_electronics_bendix_report": {
+              "source": "[2]",
+              "science_signals": "Seven science signals (four seismic, three tidal) plus sensor temperature, sent to the PSE central station electronics through a pair of 10-foot, 27-conductor flat cables.",
+              "mass_lb": 4.2,
+              "dimensions_in": "7.25 x 6.50 x 2.75",
+              "power_w": {
+                "standby": 3.5,
+                "basic_operation": 4.2,
+                "thermal_control_max": 5.0
+              }
+            },
+            "central_station_as_a_whole": {
+              "base_power_w": 17.12,
+              "base_power_source": "[1]",
+              "total_mass": "Not publicly specified in the sources read.",
+              "total_dimensions": "Not publicly specified in the sources read. The Bendix report gives one subpackage as about 24 x 27 x 21 inches and the thermal plate as 23.25 x 20 inches [2]."
+            },
+            "failures_and_limitations_reported": [
+              "A prototype test found a malfunction in one of its redundant digital sections, isolated to the multiformat commutator board in the X section [2].",
+              "The Bendix report also describes a replacement of Analog Data Processor S/N 13 with S/N 11 after a thermistor measured 47 kOhm instead of the nominal 15 kOhm [2]. The extraction does not make clear whether this was a flight or pre-flight event, and it is not assigned to either here."
+            ],
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_common/alsep/a12_alsep_systems_handbook.pdf",
+              "https://ntrs.nasa.gov/citations/19740009979",
+              "https://ntrs.nasa.gov/citations/19740026205"
+            ],
+            "images": [
+              {
+                "id": "apollo_14_central_station_closeup",
+                "description": "Apollo 14 ALSEP central station, close-up, with antenna mast and thermal foil.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/As14-67-09379_%2825398963314%29.jpg",
+                "source_page_url": "https://commons.wikimedia.org/wiki/File:As14-67-09379_(25398963314).jpg",
+                "publisher": "NASA (NASA Photograph Collection), as stated on Wikimedia Commons",
+                "credit": "NASA Photograph Collection; Flickr origin, National Museum of the U.S. Navy, as stated on the Commons page",
+                "caption": "Apollo 14 ALSEP central station (photograph AS14-67-9379, 5 February 1971, as dated on Wikimedia Commons). The image shows the central station housing, antenna mast and thermal foil. The electronics inside the housing are not visible.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct Wikimedia Commons asset URL verified (HTTP 200, image/jpeg; viewed). Commons states a public-domain licence (PD-USGov-NASA). The Commons date (5 February 1971) conflicts with the CSA date for the same scene (14 February 1971); see the CSA image record."
+              }
+            ]
+          },
+          {
+            "name": "Apollo Active Seismic Experiment (ASE) data path",
+            "type": "Flown lunar receiver format (Apollo 14 and 16 ASE)",
+            "status": "Flown on Apollo 14 and 16; see payload 007 for the experiment itself. The Bendix report describes the ASE data format; the handbook notes that the ASE was not in the ALSEP 1 configuration [1][2].",
+            "data_format_bendix_report": {
+              "source": "[2]",
+              "word_format": "20-bit digital word format",
+              "data_rate_bps": 10600,
+              "constraint": "The higher bit rate and longer word length preclude the usual data collection from other experiments while the ASE is activated.",
+              "engineering_data": "Five electrical power system measurements included as housekeeping data.",
+              "total_weight_lb": 34.66,
+              "power_w": {
+                "maximum": 8.0,
+                "nominal_operation": 6.0,
+                "thermal_control_standby": 3.0
+              },
+              "electronics_dimensions": "Not readable in the extracted table."
+            },
+            "configuration_handbook": "The ALSEP 1 configuration did not include the ASE. The handbook states that downlink data is meaningless if the command is executed with no ASE in the flight configuration [1].",
+            "sampling_reference": "The ASE seismic sampling is described in payload 007, which cites the Nunn et al. (2020) review for a nominal sampling rate of 530 Hz on Apollo 14 and 16.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_common/alsep/a12_alsep_systems_handbook.pdf",
+              "https://ntrs.nasa.gov/citations/19740009979"
+            ],
+            "images": [
+              {
+                "id": "apollo_14_active_seismic_unit_csa",
+                "description": "Apollo 14 ALSEP science package with a white box and cables in front of the central station, deployed on the lunar surface.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://www.asc-csa.gc.ca/images/recherche/tiles/a182b09d-f04e-4c9e-88b4-93c67ad67003.jpg",
+                "source_page_url": "https://www.asc-csa.gc.ca/eng/multimedia/search/image/19751",
+                "publisher": "Canadian Space Agency (ASC) catalogue; image credit NASA",
+                "credit": "NASA (Credit: NASA, as stated on the CSA page)",
+                "caption": "Apollo 14 Science, CSA catalogue 19751. The CSA caption identifies the box in front as the active seismic unit.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct CSA asset URL verified (HTTP 200, image/jpeg; viewed). The active-seismic identification is the CSA caption and was not checked against a NASA source. The CSA date of 14 February 1971 conflicts with the 5 February 1971 date for the Commons copy of the same scene. No rights statement beyond the credit. The image shows the deployed package; the receiver electronics are not identifiable."
+              }
+            ]
+          },
+          {
+            "name": "InSight SEIS acquisition electronics (Mars)",
+            "type": "Flown Mars seismic acquisition chain (2018-2022); NOT a lunar system",
+            "status": "Flown on Mars. Included as a modern, flown seismic acquisition chain; no lunar operation is implied. The Lognonne et al. (2019) paper describes design and pre-flight values and reports no in-flight performance results [4]. Values are labelled D (design), P (pre-flight) or O (planned operations).",
+            "architecture_D": "The SEIS E-Box, inside the lander's warm electronics box, contains three VBB feedback boards, one short-period feedback board, one motor-driver card, one acquisition board and two control boards (redundant pair), and two power modules fed from a 28 V primary supply [4]. Signal conditioning and analogue-to-digital conversion for the seismic channels are not redundant; the rest of the E-Box is cold-spare redundant [4]. Robustness: space-qualified parts, latch-up protection, FPGA with triple-mode redundancy and EDAC on memories [4]. The E-Box is controlled by the lander command and data handling computer and powered by the power distribution unit; the bus type to the lander computer is not stated in this paper; the numeric operating temperature range is not stated; the paper says the box will remain within the MIL temperature range but is not stable [4].",
+            "sampling_and_conversion_D": "Baseline acquisition rates: 20 samples per second for the VBB sensors and 100 samples per second for the SP sensors, with a 24-bit acquisition system. Science converters: sigma-delta devices sampled at 32 kHz, giving 24-bit samples at 500 Hz before filtering. Intrinsic converter noise 3.8 microvolt per root-Hz, white to 10 mHz; quantisation noise dominates above about 8 Hz [4].",
+            "anti_aliasing_and_decimation_D": "Filters after the converter suppress out-of-band frequencies by at least 120 dB before decimation. Stages: 3rd-order sinc filter in the converter, then three symmetric (linear-phase) FIR stages in the FPGA. Velocity channels stored at 100 Hz or 20 Hz; position and temperature channels at 1 Hz or 0.1 Hz. Eight coefficient sets, each up to 256 taps, held in non-volatile memory and uploadable by command [4].",
+            "time_stamping_D_and_P": "The SEIS has its own clock, independent of the lander computer. A 40-bit counter counts 1/1024-second ticks and can count more than 34 years. One time stamp per 1-second frame. Filter group delays are not compensated; the stamp marks the first sample. A 1 PPS output goes to the lander's auxiliary electronics for cross-correlation. Ground-test updating of the E-Box clock from a GPS-synchronised PC was asynchronous and did not ensure accuracy better than 0.5 s (P) [4]. This is a ground-test limit, not a flight measurement.",
+            "storage_and_data_path_D_and_O": "Up to 65 hours of data can be stored in the E-Box non-volatile memory (D) [4]. The lander mass memory buffers full-rate data; the plan is for the SEIS flight software to filter and decimate the data about every 10 hours, after which it is sent through Mars orbiters to the Deep Space Network (O) [4]. Two raw production figures are given: about 1.03 Gbit per sol (section 4.1.9) and about 650 Mbit per sol (section 7.1); both are quoted. Planned SEIS allocation: 38 Mbit per sol, of which about 30 Mbit continuous and 8 Mbit event data (O) [4].",
+            "mass_power_dimensions_P": {
+              "e_box_mass_kg": 5.2,
+              "e_box_mass_note": "Weighed flight unit (P). A figure caption gives 5 kg and 9 W for the electronic box; this differs from the weighed value and both are quoted.",
+              "whole_seis_mass_kg_approx": 28.8,
+              "whole_seis_power_w_at_28V_flight_model": {
+                "standby": 2.89,
+                "nominal": 5.88,
+                "active_cross_calibration": 11.83
+              },
+              "whole_seis_power_note": "Whole-SEIS power, measured on the flight model in AIT (P); not E-Box alone.",
+              "e_box_dimensions_mm_D": {
+                "height": 243.8,
+                "top": "303.5 x 125.5",
+                "bottom": "343.5 x 169.5",
+                "note": "From the figure caption; bottom includes the mounting structure."
+              }
+            },
+            "source_urls": [
+              "https://publikationen.bibliothek.kit.edu/1000091070/23522708",
+              "https://doi.org/10.1007/s11214-018-0574-6"
+            ],
+            "images": []
+          },
+          {
+            "name": "Fibre-optic distributed acoustic sensing (DAS) receiver",
+            "type": "Proposed lunar receiver concept (simulation and Earth field test; not flown; not on the Moon)",
+            "status": "Concept. No fibre-optic receiver has been flown on the Moon, and no lunar demonstration is described here.",
+            "proposed_architecture": "A base station at the lander would house a DAS interrogator, a data-processing unit and a telecommunications system; fibre cables would be laid on the surface, with deployment by a lunar rover proposed [6]. One cable is described as giving thousands of individual sensors (proposed; number not stated) [6].",
+            "simulation_wu_et_al_2024": "Artificial seismograms built from Apollo seismometer data; array stacking recovered a phase called ScS. No noise metrics are reported in the coverage read. The paper was not accessible; these statements come from the phys.org and SSA news summaries [6].",
+            "earth_field_test_zhai_et_al_2024": "A DAS-equipped fibre cable deployed in Antarctica. Result (qualitative): the sensors were sensitive enough to measure the small shaking caused by ice cracking and moving. Fibre length, channel spacing, gauge length and sensitivity are not stated in the coverage read [7]. The proposed next step is demonstration with the limited power resources available on the Moon; this is proposed, not done [7].",
+            "values_not_stated": "Fibre length, channel spacing, gauge length, sensitivity, frequency band, interrogator power, mass, thermal requirement and technology readiness level (TRL) are not stated for any lunar DAS concept in the sources read.",
+            "source_urls": [
+              "https://phys.org/news/2024-02-fiber-optic-cable-scientists-probe.html",
+              "https://www.seismosoc.org/news/could-fiber-optic-cable-help-scientists-probe-the-deep-layers-of-the-moon/",
+              "https://experts.caltech.edu/news/a-new-type-of-seismic-sensor-to-detect-moonquakes"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Apollo central-station subpackage about 24 x 27 x 21 inches; PSE central station electronics 7.25 x 6.50 x 2.75 inches; InSight E-Box 243.8 mm high (figure caption). The total dimensions of the Apollo central station are not stated. A lunar DAS base station's size is not stated. These designs are not directly comparable.",
+        "mass_and_weight": "PSE central station electronics 4.2 lb; ASE total weight 34.66 lb (Apollo). InSight E-Box 5.2 kg (weighed flight unit) and whole SEIS about 28.8 kg. Apollo central-station total mass is not publicly specified in the sources read. A lunar DAS interrogator's mass is not stated.",
+        "power_requirements": "Apollo central-station base power 17.12 W [1]; PSE electronics 3.5 to 5.0 W; ASE 3.0 to 8.0 W [2]. InSight whole SEIS 2.89 W standby to 11.83 W active (P) [4]. A lunar DAS interrogator's power is not stated in any source read [6][7]."
+      },
+      "environmental_and_operational_requirements": "Thermal: the InSight electronics will remain within the MIL temperature range but are not stable (D), with the numeric range not stated [4]; the Bendix report gives a 0 to 135 F operating range for the Apollo data subsystem (OCR-derived) [2]. Power: see physical_specifications.power_requirements. Clock and timing: the ILN draft requires station timing errors smaller than the sample interval and UTC time stamps [8]; the InSight clock has a 0.5 s ground-test accuracy limit (P) [4]; Apollo timing accuracy is not stated in the sources read. Data volume and link: Apollo downlink was immediate because no onboard storage was provided [2]; InSight onboard memory held up to 65 hours (D) [4]; a lunar network would have to meet the ILN requirement for archivable FDSN-format data [8].",
+      "limitations": "1. Apollo data are OCR-derived: the handbook and the Bendix report were read from OCR text; some values are used only where stated in legible text. 2. Design versus flown: the 1969 handbook describes the design; the 1973 report describes the as-built system; neither gives in-flight performance data for the receiver. 3. Apollo timing accuracy is not stated in any source read. 4. Apollo central-station total mass, dimensions and power are not stated in the legible text. 5. Conflicting numbers in the InSight paper: E-Box mass 5.2 kg (text) vs 5 kg (figure caption); daily data volume 1.03 Gbit (section 4.1.9) vs 650 Mbit (section 7.1). 6. The HAL paper on the InSight electronics was not read (access blocked), so the bus type and temperature range remain unstated. 7. The DAS papers were not read: the Wu et al. paper returned HTTP 403; the Zhai et al. DOI was taken from a Caltech page and not checked at the journal; the JPL DAS poster could not be decoded. 8. ILN requirement wording needs checking: the requirement text was extracted from a spreadsheet, and ILN-REQ-2.1 appears to say sampling rate where a time interval is expected. 9. Images: two verified; an Apollo 12 wide-angle image was excluded because its 300-pixel size cannot show central-station electronics; no image of receiver or data-acquisition electronics was found for any example. 10. Scope: the article interprets seismic wave receiver as the recording chain; a different catalogue intent would change the scope.",
+      "transportation_and_deployment": {
+        "overview": "Apollo: the central station and its subpackages were carried to the surface as part of the ALSEP and set up by the crew [1][2]. InSight (Mars): the SEIS E-Box was inside the lander's warm electronics box; this is a Mars lander and is relevant to the Moon only as an example of integration approach [4]. Fibre-optic DAS (proposed): the interrogator stays at the lander base station and the fibre cables are deployed on the surface, possibly by a rover [6]. No lunar delivery route or lander compatibility is verified for any receiver in this article.",
+        "transportation_process": [
+          "Apollo: the central station and subpackages were transported as part of the ALSEP package and set up by the crew; the Bendix report gives the thermal plate and subpackage sizes [2].",
+          "Apollo: the sources read do not describe the detailed setup steps for the receiver hardware [1][2].",
+          "InSight (Mars): the E-Box was integrated inside the lander's warm electronics box [4].",
+          "Fibre-optic DAS (proposed): interrogator at the lander base station; fibre cables laid on the surface, possibly by a rover [6]."
+        ],
+        "deployment_methods": "Apollo: crew setup of the ALSEP package [1][2]. Fibre-optic DAS: proposed rover deployment of cables [6]. The sources read do not describe a lunar DAS deployment procedure.",
+        "historical_examples": "Apollo ALSEP central station (1969-1977) and Apollo ASE data path (1971-1972) [1][2]; InSight SEIS acquisition electronics on Mars (2018-2022) [4]; fibre-optic DAS (concept only) [6][7].",
+        "compatibility_assessment": "No compatibility with any current or future lander is claimed for any receiver in this article. No compatibility is verified.",
+        "images": []
+      },
+      "historical_significance": "Among the sources read, the Apollo central stations were the first seismic data receivers on the Moon. Their data were recorded at tracking stations on magnetic tape and processed on the ground at the Johnson Space Center [2][3]. The payload 006 article records that the Apollo passive network operated until September 1977, citing Nunn et al. (2020). InSight demonstrated a modern seismic acquisition chain on Mars with a separate clock, onboard memory and a planned relay through orbiters [4]; its design shows the approach that proposed lunar networks have followed, although no lunar network has been flown. The International Lunar Network requirement set is a proposal for how future lunar receivers should time-stamp, format and archive their data [8].",
+      "limitations_and_uncertainties": "Apollo OCR sources: the handbook [1] and the Bendix report [2] are OCR-derived; some values are used only where the text is legible. InSight primary sources: the Lognonne et al. paper was read in full [4]; the HAL paper on the same electronics was not readable [5]. Fibre-optic DAS: the primary Wu et al. paper was not accessible [6]; the Zhai et al. field test was read from a Caltech summary [7]; no lunar DAS system has been flown or demonstrated on the Moon. ILN requirements: extracted from a spreadsheet; the Zenodo record page returned HTTP 403 to an automated check [8]. Date conflict: the Commons and CSA copies of the Apollo 14 ALSEP photograph give 5 and 14 February 1971 [10][11]. Proposed and unverified claims: a rover-deployable DAS concept appeared only in search snippets from the JPL poster [12]; claims about the number of seismometers equivalent to a cable length were not verified and are not used.",
+      "images": [
+        {
+          "id": "apollo_14_central_station_closeup",
+          "description": "Apollo 14 ALSEP central station, close-up, with antenna mast and thermal foil.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/As14-67-09379_%2825398963314%29.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:As14-67-09379_(25398963314).jpg",
+          "publisher": "NASA (NASA Photograph Collection), as stated on Wikimedia Commons",
+          "credit": "NASA Photograph Collection; Flickr origin, National Museum of the U.S. Navy, as stated on the Commons page",
+          "caption": "Apollo 14 ALSEP central station (photograph AS14-67-9379, 5 February 1971, as dated on Wikimedia Commons). The image shows the central station housing, antenna mast and thermal foil. The electronics inside the housing are not visible.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct Wikimedia Commons asset URL verified (HTTP 200, image/jpeg; viewed). Commons states a public-domain licence (PD-USGov-NASA). The Commons date (5 February 1971) conflicts with the CSA date for the same scene (14 February 1971); see the CSA image record."
+        },
+        {
+          "id": "apollo_14_active_seismic_unit_csa",
+          "description": "Apollo 14 ALSEP science package with a white box and cables in front of the central station, deployed on the lunar surface.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://www.asc-csa.gc.ca/images/recherche/tiles/a182b09d-f04e-4c9e-88b4-93c67ad67003.jpg",
+          "source_page_url": "https://www.asc-csa.gc.ca/eng/multimedia/search/image/19751",
+          "publisher": "Canadian Space Agency (ASC) catalogue; image credit NASA",
+          "credit": "NASA (Credit: NASA, as stated on the CSA page)",
+          "caption": "Apollo 14 Science, CSA catalogue 19751. The CSA caption identifies the box in front as the active seismic unit.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct CSA asset URL verified (HTTP 200, image/jpeg; viewed). The active-seismic identification is the CSA caption and was not checked against a NASA source. The CSA date of 14 February 1971 conflicts with the 5 February 1971 date for the Commons copy of the same scene. No rights statement beyond the credit. The image shows the deployed package; the receiver electronics are not identifiable."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "apollo_14_central_station_closeup",
+          "description": "Apollo 14 ALSEP central station, close-up, with antenna mast and thermal foil.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/As14-67-09379_%2825398963314%29.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:As14-67-09379_(25398963314).jpg",
+          "publisher": "NASA (NASA Photograph Collection), as stated on Wikimedia Commons",
+          "credit": "NASA Photograph Collection; Flickr origin, National Museum of the U.S. Navy, as stated on the Commons page",
+          "caption": "Apollo 14 ALSEP central station (photograph AS14-67-9379, 5 February 1971, as dated on Wikimedia Commons). The image shows the central station housing, antenna mast and thermal foil. The electronics inside the housing are not visible.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct Wikimedia Commons asset URL verified (HTTP 200, image/jpeg; viewed). Commons states a public-domain licence (PD-USGov-NASA). The Commons date (5 February 1971) conflicts with the CSA date for the same scene (14 February 1971); see the CSA image record."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Apollo Lunar Surface Experiments Package (ALSEP 1) Systems Handbook",
+          "authors": "NASA MSC Flight Control Division",
+          "publisher": "NASA Manned Spacecraft Center, Houston",
+          "publication_date": "Information as of 15 January 1969; Change 1, September 1969",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_common/alsep/a12_alsep_systems_handbook.pdf",
+          "read_status": "Read from OCR text. Several tables garbled; values used only where legible."
+        },
+        {
+          "number": 2,
+          "title": "Final Report for ALSEP Arrays A, B, C, and A-2 (BSR 4096)",
+          "authors": "Bendix Aerospace Systems Division",
+          "publisher": "NASA NTRS record 19740009979",
+          "publication_date": "1973-09",
+          "url": "https://ntrs.nasa.gov/api/citations/19740009979/downloads/19740009979.pdf",
+          "read_status": "Read from OCR text; tables garbled."
+        },
+        {
+          "number": 3,
+          "title": "Apollo Lunar Surface Experiments Package Data Processing System (NASA TND-7781)",
+          "authors": "Eason, R.L.",
+          "publisher": "NASA Johnson Space Center; NTRS record 19740026205",
+          "publication_date": "1974-09",
+          "url": "https://ntrs.nasa.gov/api/citations/19740026205/downloads/19740026205.pdf",
+          "read_status": "Read from OCR text. Ground-side processing only."
+        },
+        {
+          "number": 4,
+          "title": "SEIS: Insight's Seismic Experiment for Internal Structure of Mars",
+          "authors": "Lognonne, P., et al.",
+          "publisher": "Space Science Reviews",
+          "publication_date": "2019 (volume 215, article 12)",
+          "url": "https://doi.org/10.1007/s11214-018-0574-6",
+          "read_status": "Read in full from the open-access copy at https://publikationen.bibliothek.kit.edu/1000091070/23522708."
+        },
+        {
+          "number": 5,
+          "title": "Seismic High-Resolution Acquisition Electronics for the NASA InSight Mission on Mars",
+          "authors": "Not confirmed in the research record",
+          "publisher": "HAL open archive",
+          "publication_date": "not confirmed",
+          "url": "https://hal-univ-paris.archives-ouvertes.fr/hal-03917211",
+          "read_status": "NOT READ. Access blocked to automated retrieval. Cited only in limitations."
+        },
+        {
+          "number": 6,
+          "title": "Fiber Seismic Network on the Moon",
+          "authors": "Wu, W., et al.",
+          "publisher": "Seismological Research Letters",
+          "publication_date": "2024",
+          "url": "https://doi.org/10.1785/0220230067",
+          "read_status": "Paper NOT READ (publisher page HTTP 403). Read via phys.org (https://phys.org/news/2024-02-fiber-optic-cable-scientists-probe.html) and SSA news (https://www.seismosoc.org/news/could-fiber-optic-cable-help-scientists-probe-the-deep-layers-of-the-moon/)."
+        },
+        {
+          "number": 7,
+          "title": "Assessing the feasibility of Distributed Acoustic Sensing (DAS) for moonquake detection",
+          "authors": "Zhai, Q., et al.",
+          "publisher": "Earth and Planetary Science Letters",
+          "publication_date": "2024 (year inferred)",
+          "url": "https://doi.org/10.1016/j.epsl.2024.118695",
+          "read_status": "DOI as given on the Caltech page; not checked at the journal. Read via https://experts.caltech.edu/news/a-new-type-of-seismic-sensor-to-detect-moonquakes."
+        },
+        {
+          "number": 8,
+          "title": "Low Level Requirements, International Lunar Network, v1.0",
+          "authors": "International Lunar Network (requirements draft)",
+          "publisher": "Zenodo record 7787610",
+          "publication_date": "2023 (Zenodo record date not confirmed)",
+          "url": "https://zenodo.org/records/7787610/files/LowLevelRequirements_InternationalLunarNetwork_v1.0.xlsx",
+          "read_status": "Parsed locally from the spreadsheet. The record page returned HTTP 403 to an automated check. Requirement wording to be checked (see limitations)."
+        },
+        {
+          "number": 9,
+          "title": "Lunar Geophysical Network Decadal Study Final Report",
+          "authors": "Neal, C.R., Weber, R., et al.",
+          "publisher": "NASA Goddard Space Flight Center",
+          "publication_date": "2020-08-10",
+          "url": "https://assets.science.nasa.gov/content/dam/science/psd/planetary-science-division/2024/Lunar-Geophysical-Network.pdf",
+          "read_status": "Local copy data/sources/006/Lunar-Geophysical-Network.pdf, read for payload 006."
+        },
+        {
+          "number": 10,
+          "title": "ALSEP photograph AS14-67-9379 (Apollo 14 ALSEP central station)",
+          "authors": "NASA Photograph Collection (catalogued by NASA)",
+          "publisher": "Wikimedia Commons",
+          "publication_date": "not stated (event date 5 February 1971 as dated on Commons)",
+          "url": "https://commons.wikimedia.org/wiki/File:As14-67-09379_(25398963314).jpg",
+          "read_status": "Image file page checked; credit and licence as stated on the Commons page."
+        },
+        {
+          "number": 11,
+          "title": "Apollo 14 Science (image catalogue 19751)",
+          "authors": "Canadian Space Agency (ASC)",
+          "publisher": "Canadian Space Agency image catalogue; credit NASA",
+          "publication_date": "event date 14 February 1971 as stated on the page",
+          "url": "https://www.asc-csa.gc.ca/eng/multimedia/search/image/19751",
+          "read_status": "Source page checked; image viewed; caption used for the active-seismic identification."
+        },
+        {
+          "number": 12,
+          "title": "Distributed acoustic sensing poster (JPL)",
+          "authors": "NASA JPL",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "publication_date": "2022",
+          "url": "https://www.jpl.nasa.gov/site/research/media/posters/2022/R21102p.pdf",
+          "read_status": "NOT READ. PDF could not be decoded. Search snippets only; not cited for specific values."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo ALSEP central station example": "payload.article.physical_specifications.examples[0].images",
+      "Apollo ASE data path example": "payload.article.physical_specifications.examples[1].images",
+      "InSight SEIS example": "payload.article.physical_specifications.examples[2].images (no verified image of receiver electronics)",
+      "fibre-optic DAS example": "payload.article.physical_specifications.examples[3].images (no verified image)",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no image verified for transport configuration)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Direct image URLs for the Apollo 14 central station (Commons) and the CSA Apollo 14 ALSEP image were checked with HTTP 200 and an image content type on 2026-11-12, and both were viewed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Scope: 'seismic wave receiver' is undefined in the catalogue. This article uses the reading 'receiving and recording chain' (conversion, timing, storage and telemetry) and includes fibre-optic DAS as a distinct receiver type. A different catalogue intent would change the scope.",
+    "Apollo handbook and Bendix report were read from OCR text. Several tables are garbled (for example the handbook's Table 6-II row labels and Table 5-IV tolerance symbols, and the Bendix command-decoder weight and volume, which are unverified). Values used only where legible.",
+    "Apollo central-station total mass, dimensions and power are not stated in the legible text; Apollo timing accuracy is not stated in any source read; PSE per-channel sample rate and resolution are not stated.",
+    "Apollo 'ALSEP 1' is identified as Apollo 12 by the Bendix report (Array A Flight 1). The handbook is a 1969 design document; the Bendix report is a 1973 as-built report. The 47 kOhm thermistor replacement (Analog Data Processor S/N 13 replaced by S/N 11) is not assigned to flight or pre-flight in the extracted text.",
+    "The 1974 processing report (Eason) describes ground-side tape handling; onboard storage is described only in the Bendix report, which states no onboard storage other than shift registers.",
+    "InSight SEIS values are design (D), pre-flight (P) or planned operations (O). The Lognonne et al. paper reports no in-flight performance results. Mars is not the Moon and no lunar operation is implied.",
+    "InSight E-Box mass: 5.2 kg (weighed flight unit, text) vs 5 kg with 9 W (figure caption). Both quoted.",
+    "InSight daily data production: 1.03 Gbit per sol (section 4.1.9) vs about 650 Mbit per sol (section 7.1). Both quoted; planned SEIS allocation 38 Mbit per sol.",
+    "The HAL paper (InSight acquisition electronics) was not readable (access blocked). Bus type to the lander computer and the numeric operating temperature range are therefore not stated.",
+    "Fibre-optic DAS: the Wu et al. (2024) SRL paper returned HTTP 403 and was not read; its statements come from phys.org and SSA news summaries. The simulation (artificial seismograms from Apollo seismometer data; ScS recovery) is not an operated lunar system. No noise metrics reported in the coverage read.",
+    "Fibre-optic DAS: the Zhai et al. (EPSL) DOI 10.1016/j.epsl.2024.118695 was taken from the Caltech page and not checked at the journal; year 2024 inferred. The Antarctic field test is qualitative; no parameters stated.",
+    "The JPL DAS poster (R21102p.pdf) could not be decoded. Concept details (rover-deployable DAS with interrogator at the lander) are from search snippets only and are not cited for values.",
+    "ILN requirements: extracted from the Zenodo spreadsheet by a research agent; the record page returned HTTP 403 to an automated check. ILN-REQ-2.1 appears to say 'sampling rate' where a time interval is expected; verify the exact wording before quoting it as a requirement.",
+    "Images: two verified direct assets (Commons AS14-67-9379; CSA 19751). Date conflict: Commons dates the photograph 5 February 1971; CSA dates the same scene 14 February 1971. The CSA active-seismic identification is from its caption and was not checked against a NASA source. An Apollo 12 wide-angle image (AS12-H-47-6921) was excluded: at 300 pixels it cannot show the central-station electronics.",
+    "No image of receiver or data-acquisition electronics was verified for any example (Apollo central station, Apollo ASE, InSight SEIS, fibre DAS). The InSight SEIS sensor image PIA21846 was considered and excluded because it shows a sensor, not receiver electronics.",
+    "Claims that one cable equals about 10,000 seismometers, and a 100 km equivalence, were not verified and are not used.",
+    "No landing-site recommendations are included, in line with the user's deferral."
+  ]
+}

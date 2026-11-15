@@ -1,0 +1,163 @@
+{
+  "catalogue_id": 244,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 12,
+    "name": "Astronomical observation"
+  },
+  "payload": {
+    "number": 244,
+    "name": "Gamma-ray telescope",
+    "article": {
+      "overview": "A gamma-ray telescope is an instrument designed to detect gamma rays, the most energetic form of electromagnetic radiation, and to estimate their arrival direction and energy so that the sources producing them can be studied. Gamma-ray telescopes are used to observe black holes, neutron stars, supernova remnants and the diffuse gamma-ray glow produced when cosmic rays interact with matter. Almost all operating gamma-ray telescopes have been in Earth orbit. A telescope on the Moon has been proposed because the Moon has no atmosphere to absorb incoming gamma rays, and proponents argue that its surface and orbit offer long-duration, stable viewing conditions. The sources consulted for this article do not describe any gamma-ray telescope that has been built, flown or operated on the lunar surface for astronomy. This entry therefore covers proposed concepts, lunar-orbit observations that used the Moon as a natural occulting disc, and the engineering constraints that any such telescope would face.",
+      "description": "A gamma-ray telescope records individual high-energy photons and reconstructs their direction and energy. Ordinary mirrors and lenses do not focus gamma rays at the energies of interest, so instruments rely on how photons interact with matter. In the MeV range, photons mainly interact through Compton scattering, and above about 1.022 MeV electron-positron pair production also becomes possible. A typical instrument therefore combines a converter or tracker, which records where an interaction occurs and the direction of the resulting particles, with a calorimeter that measures the deposited energy. This is standard detector physics and is not specific to any one proposal.\n\nThe most developed lunar-surface concept in the sources read is MoonRay, proposed by Pier Simone Marrocchesi of the University of Siena and reported as published in Advances in Space Research [2]. Its content is taken from an interview-based article [3]. It is described as a modular, permanent cosmic-ray and gamma-ray observatory built from stacked units called towers, which would be added over a series of lunar missions so that the observatory produces science before it is complete [3]. Two lunar-orbit concepts use a different method. The Lunar Occultation Explorer (LOX) was proposed for NASA's Medium-class Explorer (MIDEX) programme and uses the Moon to block and unblock sky sources [4]. A 12U CubeSat concept described in 2020 would carry CdZnTe detectors in lunar orbit and locate MeV line sources from changes in counting rate during occultations [5]. Separately, the Fermi Large Area Telescope, an Earth-orbiting instrument, has measured gamma rays produced when cosmic rays strike the lunar surface [6]. A surface-based instrument would sit close to that emitting surface, so its design would need to account for it. This is an engineering inference and is not stated in the cited sources.",
+      "scientific_purpose_and_applications": "The proposals describe three main purposes. The first is astrophysical: observing gamma-ray sources in the MeV band, which the cited proposals address [1][3]. The second is the study of the Moon's own gamma-ray emission. Fujiwara et al. model the gamma-ray spectrum produced when Galactic cosmic rays strike the lunar surface and predict spectral features, including a 1.779 MeV line from silicon-28 de-excitation, an electron-positron annihilation line, and lines from the radioactive isotopes sodium-22 and aluminium-26. They state that these lines are sensitive to cosmic rays below about 1 GeV per nucleon [1]. The third is cosmic-ray science. The Fermi LAT collaboration used a full Monte Carlo simulation of the lunar gamma-ray emission to derive cosmic-ray proton and helium spectra near Earth, and reported that the flux changes with solar activity [6]. A lunar telescope would extend such measurements into the MeV range from a site without an atmosphere, but the sources read do not quantify how much improvement this would give.",
+      "operating_principle": "Two operating principles are relevant. The first is direct detection. As in other gamma-ray telescopes, an incoming photon interacts in a converter or detector, the interaction position and deposited energy are recorded, and the event is reconstructed. The MoonRay concept states that it detects charged cosmic rays and high-energy gamma rays directly because the Moon has essentially no atmosphere [3]. The second is occultation. The Moon blocks the sky as it moves across the field of view, so a detector in lunar orbit sees a source switch off and on at the lunar limb. Miller and Lawrence describe the pattern of eclipses as unique for each sky location, so the time history of the counting rate can localise a source, while the detector's energy spectrum helps characterise it [4].",
+      "scientific_importance": "The importance of a Moon-based gamma-ray telescope depends on the sky coverage and sensitivity it can provide. The proposals state these goals but do not yet demonstrate them. Fermi LAT is the principal modern survey at GeV energies, operating from Earth orbit [6]. The MeV band is less well covered, and the MoonRay description argues that a permanent lunar observatory with a large effective area could extend MeV-band observations over an extended period [3]. The most concrete archival result in the sources read is the Miller and Lawrence reanalysis of Lunar Prospector Gamma Ray Spectrometer data. They reported a detection of Cygnus X-1 in the MeV band, which they describe as the first astrophysical source detected from the Moon, and they monitored it over a six-month period [4]. The significance and energy range of that detection are given in the original paper, which was not read in full for this article. The result shows that occultation analysis can use archival lunar-orbit data. It does not show that a dedicated lunar telescope would reach any particular performance level.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar gamma-ray telescope. The examples below are proposed concepts rather than flown or prototype hardware. Their stated design goals and descriptions are not measured performance, and values that are not published in the sources are given as not publicly specified.",
+        "examples": [
+          {
+            "name": "MoonRay (proposed permanent surface observatory)",
+            "type": "Proposed surface observatory concept (not built)",
+            "status": "Concept; no prototype or flight hardware mentioned in the source read.",
+            "architecture": "Modular: stacked units called towers; array of 100 to 256 towers.",
+            "design_goal": "Detect gamma rays down to 5 degrees above the horizon.",
+            "energy_resolution": "Claimed to be better at high energy than Fermi LAT, with comparable angular resolution; no numerical value given.",
+            "effective_area": "Described as surpassing Fermi by a significant factor; no multiplier given.",
+            "mass_kg": null,
+            "dimensions": null,
+            "power_w": null,
+            "detector_technology": null,
+            "timeline": "Not given; phased build.",
+            "source_urls": [
+              "https://starlust.org/astroparticle-physicist-proposes-to-build-an-observatory-on-the-moons-south-poleheres-why",
+              "https://doi.org/10.1016/j.asr.2025.10.076"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Occultation Explorer (LOX) (proposed orbital mission)",
+            "type": "Proposed orbital occultation mission concept (not approved or built)",
+            "status": "Dedicated mission concept being developed for future consideration under NASA's MIDEX programme.",
+            "programme_price_ceiling_usd": 250000000,
+            "programme_price_ceiling_note": "Maximum MIDEX programme price tag as reported; not an instrument cost.",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": null,
+            "source_urls": [
+              "https://sciencedaily.com/releases/2016/06/160601163657.htm"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar occultation 12U CubeSat concept (Mesick et al.)",
+            "type": "Proposed lunar-orbit small-satellite concept (not built)",
+            "status": "Proposal presented in 2020; full paper not read.",
+            "size_class": "12U CubeSat",
+            "detectors": "CdZnTe",
+            "performance_claim": "Simulation suggests line sensitivity comparable to much larger proposed Compton telescopes (simulation, not measurement).",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions": null,
+            "source_urls": [
+              "https://electronicimaging.spiedigitallibrary.org/conference-proceedings-of-spie/11444/1144456/A-lunar-CubeSat-mission-for-high-sensitivity-nuclear-astrophysics/10.1117/12.2576179.full"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are not publicly specified for MoonRay or LOX. The only size class stated is the 12U CubeSat concept [5]. The MoonRay cover image, as described in the source summary, is an artist's concept of an unpressurised shed housing the telescope and control room, with labs in a nearby pressurised habitat. This is an illustration, not a design dimension [3].",
+        "mass_and_weight": "Not publicly specified for any example. The MoonRay description states that heavy absorbers would be needed and that making them from lunar material would keep each tower's mass manageable [3], but no tower mass is given. Mass determines lander capacity and launch requirements, so it is the main missing item for any transport assessment.",
+        "power_requirements": "Not publicly specified for any example. Thermal management requires heaters and therefore power. The MoonRay author expects solar power for the telescope but suspects nuclear energy may be needed for in-situ resource utilisation [3]."
+      },
+      "environmental_and_operational_requirements": "A lunar gamma-ray telescope must operate in a vacuum with extreme surface temperature swings. NASA reports daytime highs near the equator of about 121 °C and night-time lows of about −133 °C, with no atmosphere to moderate the contrast [7]. The surface is exposed to galactic cosmic rays, solar wind and occasional bursts from coronal mass ejections [7][8], and micrometeoroid impacts continuously churn the surface [8]. For a gamma-ray instrument the most relevant consequences are thermal stability of detectors and electronics, long-term radiation exposure of detectors and electronics (an engineering inference, not a result from the cited sources), a stable mount that keeps the viewing direction known, and an unobstructed horizon. The MoonRay concept identifies the horizon as a site-selection constraint for its 5-degree design goal [3].",
+      "limitations": "Every lunar gamma-ray telescope discussed here is a proposal. No measured performance, flight heritage or prototype is available in the sources read. The Moon's surface emits gamma rays produced by cosmic-ray interactions [1][6], so a surface instrument would need to separate the signal of interest from this lunar emission. The occultation method depends on accurate knowledge of the spacecraft and Moon geometry, and on sky coverage. The Miller and Lawrence result is a reanalysis of data from an instrument designed for spectroscopy rather than for sky imaging [4]. Finally, the MoonRay concept is described in a secondary article [3], and its full paper was not retrieved [2].",
+      "transportation_and_deployment": {
+        "overview": "Gamma-ray telescope concepts differ strongly in mass and deployment. A surface observatory would be delivered as a set of units over several missions, an orbital occulting telescope would be a spacecraft, and the 12U CubeSat would be a small spacecraft. No transport or lander interface is verified in the sources read.",
+        "transportation_process": [
+          "Build or integrate the telescope units or spacecraft on Earth.",
+          "Launch on a launch vehicle.",
+          "Transfer towards the Moon.",
+          "For a surface observatory, deliver units with a lunar lander and establish power, thermal and data interfaces.",
+          "For an orbital telescope, insert the spacecraft into lunar orbit and commission the instrument, pointing and data systems."
+        ],
+        "deployment_methods": "MoonRay is described as deployed tower by tower over a series of lunar missions, so each delivery adds to a working observatory [3]. The mechanism, unit mass and interface requirements are not given. LOX and the 12U CubeSat concept are orbital, and their insertion and commissioning methods are not described in the sources read [4][5].",
+        "historical_examples": "No gamma-ray telescope has been deployed on the lunar surface for astronomy in the sources read. The Lunar Prospector Gamma Ray Spectrometer, an orbital instrument, was reanalysed for occultation work [4].",
+        "compatibility_assessment": "No gamma-ray telescope concept should be assigned to a specific lander, rover or spacecraft on the current evidence. MoonRay's mass, power, dimensions and interfaces are not published, and the LOX and CubeSat concepts do not name a launch vehicle or host spacecraft in the sources read [3][4][5].",
+        "images": []
+      },
+      "historical_significance": "The Miller and Lawrence reanalysis of Lunar Prospector data is the notable historical milestone. It is reported as the first astrophysical source detected from the Moon, using occultation of Cygnus X-1 [4]. The LOX concept dates from at least 2016 [4], and the MoonRay proposal shows that lunar gamma-ray astronomy continues to be studied as a mission option [3]. The Fermi LAT measurement of lunar gamma-ray emission [6] is an important precursor because it characterises the surface emission that any lunar telescope would have to handle.",
+      "limitations_and_uncertainties": "The entry title 'Gamma-ray telescope' describes a class of instruments. The cited concepts are not interchangeable: MoonRay is a surface observatory, LOX is an orbital occulting mission and the CubeSat is an orbital small satellite. Their claims are proposals and simulations. The article does not evaluate lunar siting, which the user has deferred, and it does not treat any proposed site as recommended. Key numbers, including energy ranges, significance values and effective areas, are either absent or come from secondary summaries and should be checked against the primary papers.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "The Moon as a Cosmic-Ray Spectrometer: Prospects for MeV Gamma-Ray Observations",
+          "publisher": "Fujiwara, T., Owen, E. R., Inoue, Y. et al.; arXiv:2504.07195 (accepted for publication in The Astrophysical Journal)",
+          "url": "https://arxiv.org/abs/2504.07195"
+        },
+        {
+          "title": "Advances in Space Research, DOI 10.1016/j.asr.2025.10.076 (MoonRay concept; full paper not retrieved)",
+          "publisher": "Marrocchesi, P. S.; Advances in Space Research (2026)",
+          "url": "https://doi.org/10.1016/j.asr.2025.10.076"
+        },
+        {
+          "title": "Astroparticle physicist proposes to build an observatory on the Moon's South Pole",
+          "publisher": "Starlust (interview-based secondary article)",
+          "url": "https://starlust.org/astroparticle-physicist-proposes-to-build-an-observatory-on-the-moons-south-poleheres-why"
+        },
+        {
+          "title": "First light: MeV astrophysics from the Moon (press release on the Miller and Lawrence lunar occultation study)",
+          "publisher": "ScienceDaily; R. S. Miller (University of Alabama in Huntsville) and D. J. Lawrence (Johns Hopkins University Applied Physics Laboratory), 2016",
+          "url": "https://sciencedaily.com/releases/2016/06/160601163657.htm"
+        },
+        {
+          "title": "A lunar CubeSat mission for high-sensitivity nuclear astrophysics",
+          "publisher": "Mesick, K. E. et al.; Proceedings of SPIE 11444 (2020)",
+          "url": "https://electronicimaging.spiedigitallibrary.org/conference-proceedings-of-spie/11444/1144456/A-lunar-CubeSat-mission-for-high-sensitivity-nuclear-astrophysics/10.1117/12.2576179.full"
+        },
+        {
+          "title": "Measurement of the high-energy gamma-ray emission from the Moon with the Fermi Large Area Telescope",
+          "publisher": "Fermi LAT Collaboration (Ackermann, M. et al.); Physical Review D 93, 082001 (2016)",
+          "url": "https://arxiv.org/abs/1604.03349"
+        },
+        {
+          "title": "Sun and weather overview",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/moon/sun-and-weather-overview"
+        },
+        {
+          "title": "Weather on the Moon",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/moon/weather-on-the-moon"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No image assets were verified, so no image objects are included."
+  },
+  "data_quality_notes": [
+    "Catalogue confirmed: ID 244, name 'Gamma-ray telescope', category 12 'Astronomical observation'.",
+    "No gamma-ray telescope built, flown or operated on the lunar surface for astronomy was found in the sources read; all telescope designs described are proposals or simulations.",
+    "No image assets were verified. Image arrays are empty, image_urls_added is false, and no image URLs were invented.",
+    "The full MoonRay paper [2] was not retrieved (PDF host returned HTTP 403). MoonRay content comes from the Starlust interview-based article [3]. The DOI is as reported by that article.",
+    "The Miller and Lawrence (2016) result is taken from a press release [4]. Its energy range and statistical significance were not verified against the paper.",
+    "The Mesick et al. (2020) concept is taken from the SPIE listing summary; the full text was not read.",
+    "The NASA lunar-environment figures [7][8] come from NASA Science pages read via search summaries, not full-page fetches.",
+    "Fujiwara et al. [1] results are Monte Carlo predictions, not measurements.",
+    "Lunar siting was not evaluated, consistent with the user's deferral. The MoonRay polar siting is mentioned only as described by its source and is not recommended here.",
+    "One WebFetch to the UAH news page returned HTTP 404 and one to the Advances in Space Research PDF returned HTTP 403; neither was used as a source."
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "catalogue_id": 136,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 6,
+    "name": "Radiation and space environment"
+  },
+  "payload": {
+    "number": 136,
+    "name": "Solar wind ion collector",
+    "article": {
+      "overview": "A solar wind ion collector is a passive collection experiment. A clean collector material is exposed to the solar wind, the stream of charged particles flowing outward from the Sun, and the captured material is later returned to Earth for laboratory analysis. The best-documented flown example is the Apollo Solar Wind Composition (SWC) experiment. During Apollo 11, 12, 14, 15 and 16, astronauts erected a sheet of high-purity aluminium foil on the lunar surface, and the returned foils were analysed in terrestrial laboratories. Secondary summaries describe the results as the first definitive isotopic measurements of solar material. This article treats the payload as the collection concept embodied by the SWC experiment. The catalogue name does not specify a particular design.",
+      "description": "The Sun continuously emits a flow of plasma, mainly protons and electrons with smaller amounts of helium and heavier ions. On the Moon, which has no substantial atmosphere, a surface collector is exposed directly to this flow, and a secondary summary of the Apollo experiment describes the lunar surface as lying outside Earth's magnetic shield. A solar wind ion collector therefore samples the solar wind without the filtering effects of Earth's magnetosphere. In the Apollo SWC design, the collector was a thin sheet of very high-purity aluminium foil. The foil was held up on a telescoping pole so that it faced the Sun. After exposure, the foil was detached from the pole, sealed in a Teflon bag and returned to Earth. Because the collector is passive, it does not generate measurements on the Moon. Its scientific value depends on what is retained in the foil and on the laboratory techniques used afterwards.",
+      "scientific_purpose_and_applications": "The main purpose of a solar wind ion collector is to measure the isotopic and elemental composition of the solar wind. The Sun's composition is the reference for the composition of the solar system, but direct samples of solar material are rare. The Apollo SWC experiment was designed to collect solar wind particles outside Earth's magnetic shield and to measure their ion types and energies. Secondary summaries of the Apollo results state that the returned foils produced accurate helium, neon and argon isotope compositions of the solar wind. The 1972 NASA abstracts reviewed here report helium and neon concentrations. Applications include: comparing solar wind isotope ratios with those of the Sun, planets, meteorites and lunar soils; testing whether the lunar surface environment alters the solar wind composition measured at the surface; calibrating or validating models of solar wind production and transport; and providing a long-duration collection record that an active instrument may not capture in the same way. The 1972 Apollo 15 preliminary science report by Geiss and colleagues summarised helium and neon concentrations from the Apollo 11, 12, 14 and 15 foils. The Apollo 16 report described a layered collection technique intended to separate particles by energy and arrival direction, and it listed improved argon accuracy and a search for helium above roughly 40 keV per nucleon as objectives.",
+      "operating_principle": "The general principle is that energetic solar wind particles strike a clean collector surface and are retained in its near-surface layer. Most of the solar wind particles are protons, but noble gases such as helium, neon and argon are present in small amounts and can be retained in the foil. The principle described here is general background. The published reports reviewed for this article do not describe the detailed retention physics of the aluminium foil. After return to Earth, the foil is analysed in a laboratory. The secondary and NASA abstracts reviewed here describe the analysis only in general terms: the solar wind gases implanted in the foil are released and their isotopic composition is measured. The Apollo 16 design included platinum segments. The platinum allowed dilute hydrofluoric acid treatment on Earth to remove possible residual dust contamination from the platinum foil sections before analysis. The Apollo 16 report describes this treatment explicitly. The collector is not an ion spectrometer. It does not measure ion energy or arrival direction in real time. The Apollo 16 layering approach was intended to provide some energy and direction information after return, but the extent of that information depends on the analysis.",
+      "scientific_importance": "The solar wind is the most accessible sample of the Sun's outer layers, and a collector returns a physical sample that can be analysed with laboratory techniques far more sensitive than those available in flight. The Apollo SWC experiment demonstrated that solar wind composition can be measured from lunar-surface collection. The later Genesis mission extended this approach to a multi-year collection in space at the Sun-Earth L1 point. The NASA Genesis page describes the Apollo 16 collection as the prior record for a solar wind collector, at 45 hours, which the multi-year Genesis collection far exceeded. The importance of this concept is not only in the elements captured. It is in the reference values that the returned material provides. Isotope ratios from the Sun constrain theories of how the solar system formed and how volatile elements were distributed within it. A lunar collector also makes it possible to test whether the Moon's surface environment alters the composition of incoming solar wind before it is collected.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a solar wind ion collector. The sources reviewed describe two flown examples with very different platforms. The Apollo SWC was a lunar-surface foil. Genesis was a spacecraft collector at L1 and is not a lunar payload. Values below describe those specific examples and should not be generalised.",
+        "examples": [
+          {
+            "name": "Apollo Solar Wind Composition (SWC) experiment",
+            "type": "Flown lunar-surface collector",
+            "flight_status": "Flown on the lunar surface during Apollo 11, 12, 14, 15 and 16. This is the only flown lunar example of the collection concept reviewed here.",
+            "collector_material": "Very high-purity aluminium foil. The NASA-hosted summary does not give a purity percentage. The Apollo 16 foil also had platinum metal segments.",
+            "foil_dimensions_m": [0.30, 1.40],
+            "foil_dimensions_note": "Approximately 0.30 m by 1.40 m (about 1 ft by 4.6 ft), erected with a telescoping pole. This figure comes from a secondary summary (Wikipedia) and is not confirmed against a primary NASA document in this review.",
+            "exposure_times": {
+              "Apollo 11": "77 minutes (single source; provisional)",
+              "Apollo 12": "18 h 42 min",
+              "Apollo 14": "21 h",
+              "Apollo 15": "41 h 8 min",
+              "Apollo 16": "45 h 5 min"
+            },
+            "retrieval": "Foil detached from the pole, sealed in a Teflon bag and returned to Earth. On Apollo 15 the foil did not roll up mechanically and had to be rolled manually, according to a secondary summary.",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "qualification": "Mass, power and thermal design are not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19720015179",
+              "https://ntrs.nasa.gov/citations/19730013019",
+              "https://en.wikipedia.org/wiki/Solar_Wind_Composition_Experiment"
+            ],
+            "images": [
+              {
+                "id": "apollo_11_aldrin_swc_surface",
+                "description": "Astronaut Edwin E. Aldrin Jr. on the lunar surface during the Apollo 11 extravehicular activity, with the Solar Wind Composition experiment to his right and the lunar module in the background.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://images-assets.nasa.gov/image/as11-40-5873/as11-40-5873~large.jpg",
+                "source_page_url": "https://www.nasa.gov/image-detail/amf-as11-40-5873/",
+                "publisher": "NASA",
+                "credit": "NASA (photographed by Neil A. Armstrong, 20 July 1969)",
+                "caption": "Edwin E. Aldrin Jr. on the lunar surface during the Apollo 11 extravehicular activity, with the Solar Wind Composition experiment to his right and the lunar module in the background.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "NASA image ID AS11-40-5873. Direct asset URL taken from the NASA image-detail page download link (1912x1920 px large JPEG); query strings removed (none present). The URL has not been independently fetched to confirm it resolves. The NASA page does not state a usage restriction for this image, but the NASA Brand and Usage Guidelines should be checked before republication."
+              }
+            ]
+          },
+          {
+            "name": "Genesis solar wind collector arrays",
+            "type": "Flown spacecraft collector (not a lunar payload)",
+            "flight_status": "Flown on the Genesis spacecraft, launched 8 August 2001 and operating in a halo orbit around the Sun-Earth L1 point. Included for comparison because it is a flown multi-year solar wind collection system.",
+            "collector_design": "A stack of four circular metallic trays. One tray was continuously exposed, and three were deployed depending on solar wind conditions, according to NASA Science. The collector types named are bulk arrays and a coronal mass ejection (CME) collector.",
+            "exposure_days": {
+              "bulk_arrays": 887,
+              "cme_collector": 193
+            },
+            "collector_material": "Not named in the source.",
+            "dimensions": "Not given in the source.",
+            "mass_kg": null,
+            "power_consumption_w": null,
+            "return": "The sample return capsule landed in Utah on 8 September 2004. The drogue parachute did not deploy, and the capsule was severely damaged and contaminated. Scientists still recovered significant data from the fragments.",
+            "qualification": "Materials and dimensions are not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://science.nasa.gov/mission/genesis/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The Apollo SWC used a thin, long foil of approximately 0.30 m by 1.40 m, erected on a telescoping pole. The Genesis collector used stacked circular metallic trays in a spacecraft. A future collector's dimensions would need to be determined from its collection area, deployment method and the lander's packaging constraints. These are not verified specifications.",
+        "mass_and_weight": "Mass for the Apollo SWC and the Genesis collector is not publicly specified in the sources reviewed. Mass affects launch requirements, lander capacity and deployment design, but no mass value is asserted for a future collector.",
+        "power_requirements": "Power requirements are not publicly specified in the sources reviewed for either example. The Apollo SWC is described as a passive foil; the sources reviewed do not describe any powered subsystem for it."
+      },
+      "environmental_and_operational_requirements": "A passive lunar foil must survive the lunar surface environment for the duration of its exposure. This includes large temperature changes, high-energy radiation and micrometeoroid exposure. The Apollo foils were exposed for minutes to about 45 hours, so the required operating duration was short compared with a long-duration spacecraft collector. The collector must face the Sun and be kept clean. The Apollo design used a telescoping pole to erect the foil, and the Apollo 16 design added platinum segments and acid treatment to address dust contamination. Contamination is therefore a central operational concern. Dust, handling, or unintended exposure before or after the collection period can affect the measured composition. Retrieval also needs careful handling. The foil was removed from the pole and sealed in a Teflon bag for return. Mechanical difficulties in rolling the foil were reported on at least one Apollo mission.",
+      "limitations": "The collector returns a time-integrated sample. It does not provide real-time or time-resolved measurements. Foil collection does not directly measure ion energy or direction in real time. The Apollo 16 layering approach was intended to provide some energy and directional information after return. Contamination by lunar dust or surface materials can affect the measurement. The Apollo 16 acid treatment addressed one form of this problem but is not a complete solution. The sources reviewed do not provide a verified mass, power or dimension specification for a future collector design. A surface collector's output depends on the surface environment. A secondary summary reports that the Apollo results indicated the lunar environment did not significantly affect the solar wind composition measured at the surface, but this conclusion should be checked against the original reports. Solar wind ion detectors, such as the Chang'E-1 Solar Wind Ion Detectors, are different instruments. They measure flux in orbit rather than collecting a sample for return, and they are not the same concept as this collector.",
+      "transportation_and_deployment": {
+        "overview": "This is a surface payload. A future collector would need to be integrated into a lander or surface experiment package, launched, transferred to the Moon, delivered to the surface, deployed, and retrieved for return.",
+        "transportation_process": [
+          "Integrate the collector into a lander or surface experiment package on Earth.",
+          "Launch it into space using a launch vehicle.",
+          "Transfer it towards the Moon and deliver it to the surface with a lunar lander.",
+          "Erect or deploy the collector so that its collecting surface faces the Sun.",
+          "Exposure period on the surface, then retrieve the collector, seal it and stow it for return to Earth."
+        ],
+        "deployment_methods": "The Apollo foil was erected by an astronaut on a telescoping pole, oriented towards the Sun. The sources reviewed do not describe the required alignment tolerance, the stowage configuration or the delivery arrangement for the Apollo foils.",
+        "historical_examples": "The Apollo SWC foils were deployed and retrieved by astronauts during Apollo 11, 12, 14, 15 and 16. The Genesis collector was a spacecraft-based example that returned to Earth by capsule in 2004.",
+        "compatibility_assessment": "A future collector's compatibility with a specific lunar lander would need to be assessed from verified mass, dimensions, mounting, deployment, power, and sample return requirements. No compatibility with a named lander is asserted here. The Apollo SWC appears to be a passive experiment, and the sources reviewed do not describe any power or data interface for it.",
+        "images": []
+      },
+      "historical_significance": "The Apollo SWC experiment is the lunar-surface origin of the solar wind collection concept. It was designed by a Swiss team led by Johannes Geiss, with Peter Eberhardt of the University of Bern and Peter Signer of ETH Zurich. The foils flown on Apollo 11, 12, 14, 15 and 16 were returned to Earth for isotopic analysis. The Genesis mission later used a spacecraft-based collector for a multi-year collection. Genesis extended the same scientific concept far beyond the Apollo durations, but its return failed, so its scientific data depend partly on salvage from damaged fragments.",
+      "limitations_and_uncertainties": "The catalogue name 'Solar wind ion collector' is a general description. No single standard design is named in the catalogue. The Apollo foil dimensions come from a secondary summary and should be verified against a primary NASA document. The Apollo 11 exposure time of 77 minutes appears in only one source. The 1972 NASA abstract for the Apollo 15 report lists Apollo 11, 12, 14 and 15 foils, while the secondary summary also includes Apollo 16. The Apollo 16 flight is documented in a separate NASA report, but its foil results were not available in full text. The Apollo 15 preliminary report and the Apollo 16 full text were not accessible in this review. The helium and neon results are described only in abstracts. A 2007 Space Science Reviews Genesis-related paper reported helium and neon values for the Genesis target that did not differ significantly from the Apollo foil values. The paper was not verified in full text here, so it is not used as a reference. The Apollo 11 image caption and secondary sources differ on whether the experiment was already deployed when the photograph was taken. The image is cited for context only. No mass, power, lifetime or lander-compatibility values are asserted for a future collector.",
+      "images": [
+        {
+          "id": "apollo_11_aldrin_swc_surface",
+          "description": "Astronaut Edwin E. Aldrin Jr. on the lunar surface during the Apollo 11 extravehicular activity, with the Solar Wind Composition experiment to his right and the lunar module in the background.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://images-assets.nasa.gov/image/as11-40-5873/as11-40-5873~large.jpg",
+          "source_page_url": "https://www.nasa.gov/image-detail/amf-as11-40-5873/",
+          "publisher": "NASA",
+          "credit": "NASA (photographed by Neil A. Armstrong, 20 July 1969)",
+          "caption": "Edwin E. Aldrin Jr. on the lunar surface during the Apollo 11 extravehicular activity, with the Solar Wind Composition experiment to his right and the lunar module in the background.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "NASA image ID AS11-40-5873. Direct asset URL taken from the NASA image-detail page download link (1912x1920 px large JPEG); query strings removed (none present). The URL has not been independently fetched to confirm it resolves. The NASA page does not state a usage restriction for this image, but the NASA Brand and Usage Guidelines should be checked before republication."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "apollo_11_aldrin_swc_surface",
+          "description": "Astronaut Edwin E. Aldrin Jr. on the lunar surface during the Apollo 11 extravehicular activity, with the Solar Wind Composition experiment to his right and the lunar module in the background.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://images-assets.nasa.gov/image/as11-40-5873/as11-40-5873~large.jpg",
+          "source_page_url": "https://www.nasa.gov/image-detail/amf-as11-40-5873/",
+          "publisher": "NASA",
+          "credit": "NASA (photographed by Neil A. Armstrong, 20 July 1969)",
+          "caption": "Edwin E. Aldrin Jr. on the lunar surface during the Apollo 11 extravehicular activity, with the Solar Wind Composition experiment to his right and the lunar module in the background.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "NASA image ID AS11-40-5873. Direct asset URL taken from the NASA image-detail page download link (1912x1920 px large JPEG); query strings removed (none present). The URL has not been independently fetched to confirm it resolves. The NASA page does not state a usage restriction for this image, but the NASA Brand and Usage Guidelines should be checked before republication."
+        }
+      ],
+      "references": [
+        {
+          "title": "Solar-wind composition experiment (Apollo 15 Preliminary Science Report)",
+          "authors": "Geiss, J.; Buehler, F.; Cerutti, H.; Eberhardt, P.",
+          "publisher": "NASA Manned Spacecraft Center (Apollo 15 Preliminary Science Report); NASA Technical Reports Server, accession 72N22829",
+          "date": "1972",
+          "url": "https://ntrs.nasa.gov/citations/19720015179"
+        },
+        {
+          "title": "Solar wind composition experiment (Apollo 16 Preliminary Science Report)",
+          "authors": "Geiss, J.; Buehler, F.; Cerutti, H.; Eberhardt, P.; Filleux, C.",
+          "publisher": "NASA Lyndon B. Johnson Space Center (Apollo 16 Preliminary Science Report); NASA Technical Reports Server, accession 73N21746",
+          "date": "1972/1973",
+          "url": "https://ntrs.nasa.gov/citations/19730013019"
+        },
+        {
+          "title": "Genesis mission",
+          "authors": null,
+          "publisher": "NASA Science",
+          "date": null,
+          "url": "https://science.nasa.gov/mission/genesis/"
+        },
+        {
+          "title": "Image detail AS11-40-5873 (Apollo 11, Edwin Aldrin with Solar Wind Composition experiment)",
+          "authors": null,
+          "publisher": "NASA",
+          "date": null,
+          "url": "https://www.nasa.gov/image-detail/amf-as11-40-5873/"
+        },
+        {
+          "title": "Solar Wind Composition Experiment (secondary summary; used for foil dimensions, exposure durations and the Apollo 16 platinum detail)",
+          "authors": null,
+          "publisher": "Wikipedia",
+          "date": null,
+          "url": "https://en.wikipedia.org/wiki/Solar_Wind_Composition_Experiment"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo Solar Wind Composition example": "payload.article.physical_specifications.examples[0].images",
+      "Genesis example": "No images used in the article",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (empty; no transportation image verified)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Payload identity: the catalogue name 'Solar wind ion collector' does not specify a design. This article treats it as the collection concept embodied by the flown Apollo Solar Wind Composition (SWC) experiment, with the Genesis spacecraft collector included for comparison only; Genesis is not a lunar payload.",
+    "Foil dimensions (0.30 m by 1.40 m) come from a secondary summary (Wikipedia) and were not confirmed against a primary NASA document.",
+    "Apollo 11 exposure time (77 minutes) appears in a single source and is provisional.",
+    "Flight list: the 1972 NASA Apollo 15 abstract lists Apollo 11, 12, 14 and 15 foils; the Apollo 16 flight and its platinum-segment foils are documented in a separate NASA report (abstract only reviewed) and in the secondary summary.",
+    "Full texts of the 1972 NASA Apollo 15 and Apollo 16 preliminary reports were not accessible in this review; helium, neon and argon results are described from abstracts and secondary summaries only.",
+    "A 2007 Space Science Reviews Genesis-related paper (Grimberg et al.) was identified in search results but not verified in full text and is not cited as a reference. The associated Springer page could not be read.",
+    "Operating principle (ion retention in foil and laboratory release/analysis) is general background, not drawn from a specific source reviewed.",
+    "The Apollo 11 image (AS11-40-5873) was identified from NASA's image-detail page; its direct asset URL was taken from the page's download link and has not been independently fetched to confirm it resolves.",
+    "The Apollo 11 image caption describes the experiment as already deployed, while some secondary sources describe Aldrin as completing deployment. The image is used for context only.",
+    "A web search result (cavac.at) contained embedded instructions unrelated to the query. They were ignored and not used as a source.",
+    "No mass, power, lifetime, collector material purity, Genesis collector dimensions, or lander-compatibility values are asserted; these are listed as not publicly specified in the sources reviewed.",
+    "Research budget: about 6 WebSearch calls and about 8 page reads (including two blocked or redirected reads that yielded no content)."
+  ]
+}

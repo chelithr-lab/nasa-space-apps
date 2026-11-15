@@ -1,0 +1,259 @@
+{
+  "catalogue_id": 26,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 26,
+    "name": "Panoramic camera",
+    "article": {
+      "scope": "Generic panoramic camera class: instruments that record a wide surface area as a scanned strip, a set of overlapping frames or a mast-driven mosaic. Dedicated sensor types are cross-referenced to payloads 027 (high-resolution camera), 028 (terrain mapping camera), 029 (stereo camera), 030 (navigation camera), 031 (hazard detection camera), 032 (descent camera), 043 (panchromatic camera), 044 (wide-angle camera), 045 (narrow-angle camera) and 049 (photogrammetry system).",
+      "overview": "A panoramic camera records a wide angle of a planetary surface in one sequence of images, rather than in a single narrow frame. Some designs scan the scene as the camera moves or rotates; others take many overlapping frames from a mast that pans and tilts, and join them into a mosaic. When two cameras view the same scene from slightly different positions, their images can also be used to build three-dimensional terrain models.\n\nTwo flown lunar examples are described in detail here. The Apollo 15 Itek panoramic camera was a film camera in the Command and Service Module (CSM) Scientific Instrument Module (SIM) bay that scanned the lunar surface from orbit [6]. The Chang'e-3 Yutu rover panoramic camera (PCAM) is a mast-mounted pair of digital cameras that operated on the lunar surface after the landing of 14 December 2013 [1][2][3]. The Chang'e-4 Yutu-2 rover also carried a mast-mounted panoramic camera pair. The sources accessed describe its configuration and modes but do not give verified numerical specifications, so none are stated here [4][5].",
+      "description": "In this article, a panoramic camera is defined by the product rather than by one optical design. The product is a wide surface view built from scanned strips, overlapping frames or a sequence of mast positions, with enough geometric information to place each image on the ground. The same class can use film, as on Apollo 15, or digital detectors, as on Chang'e-3 and Chang'e-4.\n\nThe Apollo 15 camera recorded images on 127 mm by 1219 mm (5 in by 48 in) black-and-white 3414 film. The film cassette was retrieved by the Command Module Pilot during an extravehicular activity on the transearth return, so the images were not transmitted in real time [6]. The Chang'e-3 and Chang'e-4 rover cameras are digital. The CASDC archive describes its PCAM products as PDS-format IMG files, including 16-bit grayscale products that have not been demosaiced and 8-bit colour products that have been demosaiced [2].\n\nThe rover cameras are carried on a mast that can be moved to sweep the view. The Chang'e-4 press description states that the mast pans left-right and pitches up-down to cover the scene, and that the two identical cameras on the mast offer black-and-white and colour imaging modes [4]. The Chang'e-3 PCAM is also described as installed on the rover mast [1].",
+      "scientific_purpose_and_applications": "For orbital imaging, the Apollo 15 panoramic camera was designed to obtain high-resolution panoramic photographs with stereoscopic and monoscopic coverage of the lunar surface. It also supplied supporting photography for the other CSM cameras and experiments [6]. The Principal Investigator was Dr Frederick J. Doyle of the U.S. Geological Survey [6].\n\nFor surface rover imaging, the Chang'e-3 PCAM supported scene imaging, colour photography and stereo terrain products. The ISPRS paper on Chang'e-3 terrain reconstruction reports that the maps were extensively used to support Yutu operations and strategic planning [3]. The Chang'e-4 press description states that the rover's panoramic camera is responsible for colour photographs of the lander, and that its images will play a guiding role for other rover payloads; the guidance statement is a forward-looking claim in the source, not a reported result [4].\n\nThe applications in this class are therefore context imaging, geology, topography and support for rover operations. A Yutu-2 paper on the visible and near-infrared spectrometer states that the navigation and hazard cameras are engineering payloads used for guidance, navigation and control, whereas the Pancam is part of the scientific payloads [5]. On Yutu-2, the panoramic camera's role is therefore scientific and imaging rather than navigation.",
+      "operating_principle": "A panoramic image is built either by scanning a strip of ground across a film or detector, or by taking a sequence of overlapping frames and joining them. The Apollo 15 camera used a roll frame that rotated continuously in the cross-track scan direction, a gimbal that tilted the camera fore and aft to give stereo coverage and forward-motion compensation, a main frame, and a nitrogen pressure vessel for certain film-roller gas bearings [6].\n\nIn stereo mode the Apollo 15 images were tilted alternately forward and backward by 12.5 degrees, giving 100 per cent overlap with a 25-degree convergent angle. Consecutive frames with the same tilt overlapped by 10 per cent [6].\n\nThe Chang'e-3 PCAM is described as a stereo pair that can acquire three-dimensional images of the lunar surface using the principle of binocular stereo vision. The Chang'e-3 abstract also describes switching between a static image mode and a dynamic video mode with automatic exposure time [1]. The Chang'e-4 description uses the same binocular principle [4]. The Chang'e-3 cameras use CMOS detectors with Bayer colour filter arrays, giving 2352 by 1728 pixel full-resolution frames [2].",
+      "scientific_importance": "A panoramic camera records geology and terrain in context. For Apollo 15, the camera was a mapping instrument. The NSSDCA description lists image coverage of 337 km by 21.6 km from an altitude of 111 km and more than 1500 useful photographs [6]. These values come from one instrument description and are not an independent measurement of the mission's full coverage.\n\nFor Chang'e-3, terrain products made from PCAM images were used operationally. The ISPRS paper reports that the maps were extensively used to support Yutu operations and that preliminary exploration planning for the rover's second lunar day had been made [3].\n\nFor Chang'e-4, the panoramic camera is part of the rover's scientific and imaging payload set [5]. The sources accessed do not report its scientific results, so its scientific importance is recorded here as a configuration and role only.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a panoramic camera. The three examples below differ in platform, optics, detector and status, so they are not directly comparable and no comparison table is given. Values are tied to the named instrument and source. A value that the accessed sources do not state is recorded as not publicly specified.",
+        "examples": [
+          {
+            "name": "Apollo 15 Itek panoramic camera, Scientific Instrument Module (SIM) bay",
+            "type": "Flown lunar-orbit film panoramic and stereo mapping camera (Apollo 15 CSM)",
+            "status": "Flown (Apollo 15, lunar orbit)",
+            "focal_length_cm": 61,
+            "field_of_view_deg": {
+              "cross_track": 108,
+              "along_track_scanned": 10.77
+            },
+            "image_size_cm": [
+              114.8,
+              11.4
+            ],
+            "image_coverage_km": [
+              337,
+              21.6
+            ],
+            "orbital_altitude_km": 111,
+            "film": "127 mm x 1219 mm black-and-white 3414 film; capacity 1981 m (6500 ft), over 1600 frames",
+            "resolution_m_range_from_111_km": [
+              1,
+              2
+            ],
+            "stereo_geometry": "Frames tilted alternately +/-12.5 degrees (25-degree convergence), 100% overlap in stereo mode; 10% overlap between consecutive same-tilt frames",
+            "mass_kg": "not publicly specified in accessed source",
+            "dimensions": "not publicly specified in accessed source (image size given; camera enclosure dimensions not stated in text read)",
+            "power": "not publicly specified in accessed source",
+            "useful_photographs": "over 1500",
+            "details": "- **Status:** Flown on Apollo 15 from the CSM SIM bay, scanning the lunar surface from lunar orbit [6]. This article does not verify the Apollo 16 or Apollo 17 cameras.\n- **Optics:** Focal length 61 cm (24 in). The lens was an eight-element, field-flattened Petzval type [6].\n- **Scan geometry:** The cross-track field of view was 108 degrees, and the along-track scanned field was 10.77 degrees. The NSSDCA document presents these as the camera's ranges [6].\n- **Image size and coverage:** Image size 114.8 cm by 11.4 cm; image coverage 337 km by 21.6 km from an orbital altitude of 111 km [6].\n- **Film:** 127 mm by 1219 mm (5 in by 48 in) black-and-white 3414 film, with a film capacity of 1981 m (6500 ft) for more than 1600 frames [6].\n- **Resolution:** Listed as 1 m to 2 m from 111 km altitude [6].\n- **Stereo:** Frames were tilted alternately forward and backward by 12.5 degrees in stereo mode, for 100 per cent overlap with a 25-degree convergent angle. Consecutive frames with the same tilt overlapped by 10 per cent [6].\n- **Structure and thermal control:** Roll frame, gimbal assembly, main frame and a nitrogen pressure vessel (shared with the Fairchild mapping camera, experiment 15A-03). The camera was mounted on structural beams between the two SIM shelves and needed no deployment subsystem. The lens was stowed face-inward, and the camera stowed its lens automatically under off-nominal lens thermal conditions [6].\n- **Crew controls:** The command module allowed the crew to switch camera heaters on and off, supply or remove primary power, select operate or standby, control film-roller torque, set the daily five-film frame advance, change the exposure slit width, and choose stereo or monoscopic mode [6].\n- **Results:** Over 1500 useful photographs were obtained [6].\n- **Mass, power and dimensions:** Not publicly specified in the accessed source. The NSSDCA document gives no mass or power figure for the camera.\n- **Figures:** Figure 1 (camera enclosure and SIM mounting) and Figure 2 (principal components) are in the NSSDCA document. No direct image asset was verified, so they are cited as a linked reference only: [PDS Apollo 15 Panoramic Camera document](https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a15/instruments/a15c_pancam.pdf) [6].",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a15/instruments/a15c_pancam.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-3 Yutu rover panoramic camera (PCAM)",
+            "type": "Flown lunar-surface rover panoramic stereo camera pair",
+            "status": "Flown (Chang'e-3, lunar surface, from 14 December 2013 landing)",
+            "configuration": "Two identical cameras mounted on the rover mast",
+            "focal_length_mm": 50,
+            "field_of_view_deg": "19.7 x 14.5 (axes not labelled in the abstract)",
+            "detector": "CMOS, 2352 x 1728 pixels, Bayer colour filter array",
+            "panchromatic_downsampled_pixels": "1176 x 864",
+            "stereo_baseline_mm": "not verified in accessed sources",
+            "mtf_static": 0.33,
+            "snr_max_db": 44,
+            "mass_kg": "not publicly specified in accessed sources",
+            "dimensions": "not publicly specified in accessed sources",
+            "power": "not publicly specified in accessed sources",
+            "details": "- **Status:** Flown on the Chang'e-3 mission. Chang'e-3 landed at 13:11 GMT on 14 December 2013 [3]. Archived PCAM observations include observation 0005 (21 to 23 December 2013) and observation 0006 (from 24 December 2013) [2].\n- **Configuration:** Two identical cameras, with identical functions, performances and interfaces, installed on the rover mast [1]. The archive index describes a stereo pair of colour cameras with CMOS detectors [2].\n- **Focal length:** 50 mm for the panoramic camera lens [1].\n- **Field of view:** 19.7 degrees by 14.5 degrees [1][2]. The abstract does not label the horizontal and vertical axes.\n- **Detector and pixels:** CMOS detectors with 2352 by 1728 pixels and Bayer colour filter arrays [2]. Panchromatic products were downsampled by a factor of two before downlinking, to 1176 by 864 pixels [2].\n- **Stereo baseline:** Not verified in the accessed sources. A search summary attributes a 270 mm baseline to a 2016 Remote Sensing paper that could not be accessed, so the value is not used as a specification here.\n- **Performance:** Static modulation transfer function 0.33. Largest signal-to-noise ratio 44 dB under the best illumination and viewing conditions. The authors state that all performance parameters satisfy the design requirements, but the abstract gives no requirement values [1].\n- **Modes and data products:** Full-resolution colour observations (PCAML-C and PCAMR-C), and panchromatic observations (Q-series) downsampled by a factor of two. Products 2A and 2B are 16-bit grayscale images that have not been demosaiced; product 2C is an 8-bit colour image that has been demosaiced [2].\n- **Mass, power and dimensions:** Not publicly specified in the accessed sources [1][2].\n- **Images:** The right-camera and left-camera frames shown below are archive previews from the CASDC index. They were verified as direct assets, and the right-camera frame was viewed.",
+            "source_urls": [
+              "https://iopscience.iop.org/article/10.1088/1674-4527/15/11/009",
+              "https://casdc.china-vo.org/archive/change3/p.html",
+              "https://isprs-archives.copernicus.org/articles/XL-4/149/2014/"
+            ],
+            "images": [
+              {
+                "id": "chang_e3_pcam_right_camera_lander_frame",
+                "description": "Chang'e-3 Yutu rover panoramic camera (PCAM) right-camera frame showing the Chang'e-3 lander on the lunar surface (archive PNG preview, observation 0005).",
+                "image_type": "Flown lunar surface panoramic camera frame (archive PNG preview)",
+                "image_url": "https://casdc.china-vo.org/archive/change3/pcam/png/PCAMR-C-001_SCI_N_20131221194448_0005_A_2A.png",
+                "source_page_url": "https://casdc.china-vo.org/archive/change3/p.html",
+                "publisher": "Science and Application Center for Moon and Deepspace Exploration (CASDC), Chinese Academy of Sciences",
+                "credit": "CAS, CNSA and CASDC, as credited on the source index page",
+                "caption": "Chang'e-3 PCAM right-camera frame, 21 December 2013 at 19:44:48 (grayscale 2A product, 2352 x 1728 pixels), showing the lander.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct PNG URL verified: HTTP 200, image/png, about 3.6 MB; the image was viewed and shows the Chang'e-3 lander. The index lists it as PCAMR-C-001 (right camera). This is an archive preview of product 2A, not a PDS IMG download. Reuse conditions were not verified; the source index credits CAS, CNSA and CASDC. No query string or fragment is present in the URLs."
+              },
+              {
+                "id": "chang_e3_pcam_left_camera_frame",
+                "description": "Chang'e-3 Yutu rover PCAM left-camera frame from the same observation sequence as the right-camera frame (archive PNG preview).",
+                "image_type": "Flown lunar surface panoramic camera frame (archive PNG preview)",
+                "image_url": "https://casdc.china-vo.org/archive/change3/pcam/png/PCAML-C-001_SCI_N_20131221194504_0005_A_2A.png",
+                "source_page_url": "https://casdc.china-vo.org/archive/change3/p.html",
+                "publisher": "Science and Application Center for Moon and Deepspace Exploration (CASDC), Chinese Academy of Sciences",
+                "credit": "CAS, CNSA and CASDC, as credited on the source index page",
+                "caption": "Chang'e-3 PCAM left-camera frame, 21 December 2013 at 19:45:04 (grayscale 2A product), listed on the index as the left camera of observation 0005.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct PNG URL verified: HTTP 200, image/png. The URL is listed on the source index page. Its content was not inspected visually in this run. The frame was captured 16 seconds after the right-camera frame according to the file timestamps, so it is not described as a simultaneous stereo partner. Reuse conditions were not verified."
+              }
+            ]
+          },
+          {
+            "name": "Chang'e-4 Yutu-2 rover panoramic camera (Pancam)",
+            "type": "Flown lunar far-side rover panoramic camera pair",
+            "status": "Flown (Chang'e-4, lunar far side, landed January 2019); current operational status not confirmed in accessed sources",
+            "configuration": "Two identical cameras on the rover mast; black-and-white and colour modes; binocular stereo",
+            "focal_length_mm": "not verified in accessed sources",
+            "field_of_view_deg": "not verified in accessed sources",
+            "detector": "not verified in accessed sources",
+            "stereo_baseline_mm": "not verified in accessed sources",
+            "mass_kg": "not publicly specified in accessed sources",
+            "dimensions": "not publicly specified in accessed sources",
+            "power": "not publicly specified in accessed sources",
+            "details": "- **Status:** Flown on the Chang'e-4 mission, which landed in January 2019 on the lunar far side [5]. The accessed sources do not establish the rover's current operational status, and this article does not state one.\n- **Configuration:** Two identical cameras mounted on the rover mast, with black-and-white and colour imaging modes [4]. The Pancam and Navcam are both mounted atop the rover mast [5].\n- **Stereo and role:** The press description states that the system acquires three-dimensional images using binocular stereo vision, similar to human eyes [4]. The Yutu-2 paper describes the Pancam as part of the scientific payloads, whereas the navigation and hazard cameras are engineering payloads [5].\n- **Resolution:** The press description states that the camera “can achieve millimeter-scale spatial resolution in close observation” [4]. This is an attributed statement, not a measured value, and no distance is given.\n- **Field of view:** A search summary cites 19.6 by 14.5 degrees from a 2024 Remote Sensing paper, which returned HTTP 403 when accessed. The value is therefore not used as a verified specification.\n- **Focal length, baseline, detector, mass, power and dimensions:** Not publicly specified in the accessed sources.",
+            "source_urls": [
+              "https://www.chinaservicesinfo.com/s/201901/15/WS5c3d9af3498e27e3380368b3/panoramic-cameras-help-achieve-complete-success-of-change-4-mission.html",
+              "https://isprs-archives.copernicus.org/articles/XLIII-B3-2020/1191/2020/isprs-archives-XLIII-B3-2020-1191-2020.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "There is no universal size for a panoramic camera. The Apollo 15 camera was a scanning camera installed in the CSM SIM bay, with a 61 cm focal length; its enclosure dimensions are not stated in the text read. The Chang'e-3 and Chang'e-4 cameras are mast-mounted digital cameras, but their dimensions are not publicly specified in the accessed sources. The three examples are not directly comparable.",
+        "mass_and_weight": "Mass is not publicly specified for the Apollo 15 camera or for either Chang'e PCAM in the accessed sources. Mass affects launch and mounting design for any flight camera, but no mass value is verified here.",
+        "power_requirements": "The Apollo 15 camera was powered from the command module, with crew-controlled heaters and primary power switching [6]. Power consumption is not publicly specified for the Apollo 15 camera or the Chang'e-3 and Chang'e-4 PCAM units in the accessed sources."
+      },
+      "environmental_and_operational_requirements": "The Apollo 15 camera was designed for a spacecraft environment rather than the lunar surface. It was housed in the CSM SIM bay with its lens stowed face-inward to protect it from CSM contamination sources. It stowed its lens automatically when off-nominal lens thermal conditions were experienced, and the crew could switch heaters on and off and supply or remove primary power [6].\n\nThe Apollo 15 film camera also required operational care: a five-film frame advance was needed each day if the camera was not operated within a 24-hour period, to prevent film set after loading, and film-roller torque was applied during launch, translunar injection and service-propulsion flight to prevent slack [6].\n\nFor the Chang'e-3 PCAM, the signal-to-noise figure is stated only for the best illumination and viewing conditions, so performance under other lighting is not characterised in the abstract [1]. Thermal, dust and radiation requirements for the rover panoramic cameras were not found in the accessed sources and are not described here.",
+      "limitations": "A panoramic camera gives a wide view but not a complete map. A mast-mounted rover camera records the view from one position at a time, and an orbital film camera records only the strips that were scanned along its track. Resolution, stereo quality and coverage depend on geometry, illumination and the number of usable frames.\n\nThe Apollo 15 camera's data were not available in real time. The film cassette was retrieved by the Command Module Pilot during extravehicular activity [6]. Its useful-photograph count is taken from the NSSDCA description and is not independently checked.\n\nThe Chang'e-3 numerical values come from the abstract of one paper, and the full text was not read. The baseline, mass, power and dimensions were not verified. For Chang'e-4, the numerical configuration is limited to statements in a press description and a Yutu-2 spectrometer paper that mentions the Pancam only as a payload.",
+      "transportation_and_deployment": {
+        "overview": "Panoramic cameras are carried either as rover mast payloads on the lunar surface or as orbiter payloads in a service module bay. The accessed sources describe the Apollo 15 orbiter installation and the Chang'e rover mast installation, but not their launch or transfer integration in detail.",
+        "transportation_process": [
+          "Surface (Chang'e-3 and Chang'e-4): the PCAM is integrated on the rover and mounted on its mast; Earth integration, launch, transfer and landing loads are not described in the accessed sources.",
+          "Surface: the mast pans and tilts so that the camera pair can cover the scene [4].",
+          "Orbiter (Apollo 15): the camera is mounted on structural beams in the CSM SIM bay and needs no deployment subsystem [6].",
+          "Orbiter: the camera scans from an orbital altitude of 111 km, and the film cassette is retrieved by the Command Module Pilot during EVA on the transearth return [6].",
+          "No lander, rover or spacecraft compatibility is asserted."
+        ],
+        "deployment_methods": "Surface cameras are deployed by the rover mast; the Chang'e-3 and Chang'e-4 rover descriptions do not give a separate deployment sequence for the PCAM. The Apollo 15 camera was not deployed; it operated in the SIM-installed position [6].",
+        "historical_examples": "Apollo 15 SIM bay panoramic camera (orbital, flown); Chang'e-3 Yutu PCAM (surface, flown); Chang'e-4 Yutu-2 Pancam (surface, flown, far side).",
+        "compatibility_assessment": "**Compatibility.** No lander, rover or spacecraft compatibility is asserted in this article. A future panoramic camera would need to be assessed against its mass, dimensions, mounting and mast or pointing requirements, thermal and dust protection, power and data interfaces, and the host's deck or mast geometry. None of these was verified for a named lander or rover in this run.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 15 panoramic camera is a flown example of an orbital panoramic and stereo mapping camera, and it returned more than 1500 useful photographs [6]. The accessed sources do not establish how it compared with other orbital cameras of its time, so no priority claim is made.\n\nThe Chang'e-3 PCAM is a flown example of a surface panoramic camera whose products supported rover operations. The ISPRS paper states that the maps were extensively used to support Yutu operations [3]. The colour role for the lander and the stereo capability are reported in the 2019 press description [4].\n\nThe Chang'e-4 PCAM extends the rover panoramic record to the lunar far side. Its configuration and modes are described in the 2019 press description and the Yutu-2 paper [4][5]. Its numerical specifications are not verified here.",
+      "limitations_and_uncertainties": "The main evidence gaps for this article are listed below. Each is a gap in the accessed sources, not a finding that a value is absent from the instrument record.\n\n- **Apollo 15 camera.** Mass, power and detailed dimensions are not stated in the NSSDCA description accessed. The Apollo 15 Preliminary Science Report and the Apollo Scientific Experiments Data Handbook cited by that document were not read. The Apollo 16 and Apollo 17 camera specifications were not verified.\n- **Apollo 15 figures.** Figures 1 and 2 of the NSSDCA document were not extracted as direct image assets. They are cited as a linked reference only.\n- **Chang'e-3 PCAM.** The full text of the 2015 RAA paper was not read, so the baseline, detector pixel size, mass, power and dimensions are not verified. A 2016 Remote Sensing paper (Wu et al.) that gives a 270 mm baseline in a search summary returned HTTP 403 and was not accessed.\n- **Chang'e-4 PCAM.** The focal length, field of view, detector, baseline, mass, power and dimensions are not verified. The 19.6 by 14.5 degree figure appears only in a search summary of a 2024 Remote Sensing paper (DOI 10.3390/rs16132356), which returned HTTP 403. The Chang'e-4 instrument review in Science China Information Sciences (DOI 10.1007/s11432-020-3047-4) was not accessible in this run.\n- **Chang'e-4 status.** The current operational status of Yutu-2 is not confirmed by the accessed sources.\n- **Lunokhod panoramic imaging.** Soviet lunar panoramic imaging on the Lunokhod rovers was not described. Sources accessed gave conflicting hardware descriptions and panorama counts, and the NSSDC Master Catalog entry was not retrieved.\n- **Proposed and prototype examples.** No proposed or prototype generic panoramic camera was described from accessed sources, so this article describes only flown examples.\n- **Planetary panoramic cameras off the Moon.** Mars and other planetary panoramic imagers are outside this article.\n- **Images.** Two Chang'e-3 PCAM archive previews were verified as direct assets (HTTP 200). Apollo 15 imagery is cited as a linked source-page reference only. Reuse conditions for the CASDC previews were not verified.\n- **Lunar landing sites.** This article does not recommend lunar landing sites or locations. That is deferred by the user.",
+      "images": [
+        {
+          "id": "chang_e3_pcam_right_camera_lander_frame",
+          "description": "Chang'e-3 Yutu rover panoramic camera (PCAM) right-camera frame showing the Chang'e-3 lander on the lunar surface (archive PNG preview, observation 0005).",
+          "image_type": "Flown lunar surface panoramic camera frame (archive PNG preview)",
+          "image_url": "https://casdc.china-vo.org/archive/change3/pcam/png/PCAMR-C-001_SCI_N_20131221194448_0005_A_2A.png",
+          "source_page_url": "https://casdc.china-vo.org/archive/change3/p.html",
+          "publisher": "Science and Application Center for Moon and Deepspace Exploration (CASDC), Chinese Academy of Sciences",
+          "credit": "CAS, CNSA and CASDC, as credited on the source index page",
+          "caption": "Chang'e-3 PCAM right-camera frame, 21 December 2013 at 19:44:48 (grayscale 2A product, 2352 x 1728 pixels), showing the lander.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct PNG URL verified: HTTP 200, image/png, about 3.6 MB; the image was viewed and shows the Chang'e-3 lander. The index lists it as PCAMR-C-001 (right camera). This is an archive preview of product 2A, not a PDS IMG download. Reuse conditions were not verified; the source index credits CAS, CNSA and CASDC. No query string or fragment is present in the URLs."
+        },
+        {
+          "id": "chang_e3_pcam_left_camera_frame",
+          "description": "Chang'e-3 Yutu rover PCAM left-camera frame from the same observation sequence as the right-camera frame (archive PNG preview).",
+          "image_type": "Flown lunar surface panoramic camera frame (archive PNG preview)",
+          "image_url": "https://casdc.china-vo.org/archive/change3/pcam/png/PCAML-C-001_SCI_N_20131221194504_0005_A_2A.png",
+          "source_page_url": "https://casdc.china-vo.org/archive/change3/p.html",
+          "publisher": "Science and Application Center for Moon and Deepspace Exploration (CASDC), Chinese Academy of Sciences",
+          "credit": "CAS, CNSA and CASDC, as credited on the source index page",
+          "caption": "Chang'e-3 PCAM left-camera frame, 21 December 2013 at 19:45:04 (grayscale 2A product), listed on the index as the left camera of observation 0005.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct PNG URL verified: HTTP 200, image/png. The URL is listed on the source index page. Its content was not inspected visually in this run. The frame was captured 16 seconds after the right-camera frame according to the file timestamps, so it is not described as a simultaneous stereo partner. Reuse conditions were not verified."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "chang_e3_pcam_right_camera_lander_frame",
+          "description": "Chang'e-3 Yutu rover panoramic camera (PCAM) right-camera frame showing the Chang'e-3 lander on the lunar surface (archive PNG preview, observation 0005).",
+          "image_type": "Flown lunar surface panoramic camera frame (archive PNG preview)",
+          "image_url": "https://casdc.china-vo.org/archive/change3/pcam/png/PCAMR-C-001_SCI_N_20131221194448_0005_A_2A.png",
+          "source_page_url": "https://casdc.china-vo.org/archive/change3/p.html",
+          "publisher": "Science and Application Center for Moon and Deepspace Exploration (CASDC), Chinese Academy of Sciences",
+          "credit": "CAS, CNSA and CASDC, as credited on the source index page",
+          "caption": "Chang'e-3 PCAM right-camera frame, 21 December 2013 at 19:44:48 (grayscale 2A product, 2352 x 1728 pixels), showing the lander.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct PNG URL verified: HTTP 200, image/png, about 3.6 MB; the image was viewed and shows the Chang'e-3 lander. The index lists it as PCAMR-C-001 (right camera). This is an archive preview of product 2A, not a PDS IMG download. Reuse conditions were not verified; the source index credits CAS, CNSA and CASDC. No query string or fragment is present in the URLs."
+        }
+      ],
+      "references": [
+        {
+          "title": "Panoramic camera on the Yutu lunar rover of the Chang'e-3 mission",
+          "publisher": "Research in Astronomy and Astrophysics (Yang, J.-F., Li, C.-L., Xue, B., et al., 2015; vol. 15, no. 11, p. 1867; DOI 10.1088/1674-4527/15/11/009). Abstract read on the IOP Publishing article page.",
+          "url": "https://iopscience.iop.org/article/10.1088/1674-4527/15/11/009"
+        },
+        {
+          "title": "Chang'e 3 data: Rover Panoramic Camera (PCAM), archive index",
+          "publisher": "Science and Application Center for Moon and Deepspace Exploration (CASDC), Chinese Academy of Sciences; credits CAS, CNSA and CASDC as stated on the page",
+          "url": "https://casdc.china-vo.org/archive/change3/p.html"
+        },
+        {
+          "title": "Digital terrain model reconstruction and preliminary scientific exploration planning of the Chang'E 3",
+          "publisher": "Liu, J., Ren, X., Mu, L., et al. (2014). International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XL-4, 149-151; DOI 10.5194/isprsarchives-XL-4-149-2014. Abstract page read.",
+          "url": "https://isprs-archives.copernicus.org/articles/XL-4/149/2014/"
+        },
+        {
+          "title": "Panoramic cameras help achieve complete success of Chang'e-4 mission",
+          "publisher": "China Daily (byline Lu Hongyan), updated 15 January 2019; hosted by chinaservicesinfo.com",
+          "url": "https://www.chinaservicesinfo.com/s/201901/15/WS5c3d9af3498e27e3380368b3/panoramic-cameras-help-achieve-complete-success-of-change-4-mission.html"
+        },
+        {
+          "title": "Implementation strategy of visible and near-infrared imaging spectrometer on Yutu-2 rover based on vision measurement technology",
+          "publisher": "Yu, T., Liu, Z., Rong, Z., et al. (2020). International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLIII-B3-2020, 1191. PDF read.",
+          "url": "https://isprs-archives.copernicus.org/articles/XLIII-B3-2020/1191/2020/isprs-archives-XLIII-B3-2020-1191-2020.pdf"
+        },
+        {
+          "title": "Apollo 15 Panoramic Camera (instrument overview, PDS Apollo document set)",
+          "publisher": "NASA Space Science Data Coordinated Archive (NSSDCA) via NASA PDS Lunar Geosciences node; figures taken from Cameron et al. (1972) per the document. Full text read.",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a15/instruments/a15c_pancam.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Chang'e-3 PCAM example": "payload.article.physical_specifications.examples[1].images",
+      "Apollo 15 SIM bay example": "payload.article.physical_specifications.examples[0].images (no verified direct image; linked source-page reference only)",
+      "Chang'e-4 Pancam example": "payload.article.physical_specifications.examples[2].images (no verified direct image)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. The URLs were checked with HTTP requests; the Chang'e-3 image URLs return HTTP 200 with image/png. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Apollo 15 camera specifications come from one NSSDCA instrument description (PDS document, full text read). They were not cross-checked against the Apollo 15 Preliminary Science Report or the Apollo Scientific Experiments Data Handbook cited by that document. Apollo 16 and 17 camera specifications were not verified.",
+    "Chang'e-3 PCAM values (focal length 50 mm, FOV 19.7 x 14.5 degrees, static MTF 0.33, SNR 44 dB) come from the abstract of the 2015 RAA paper; the full text was not read. The 270 mm baseline appears only in a search summary of a 2016 Remote Sensing paper that returned HTTP 403, so it is not used. Mass, power and dimensions were not verified.",
+    "Chang'e-4 Pancam numerical specifications were not verified. The 19.6 x 14.5 degree FOV appears only in a search summary of a 2024 paper that returned HTTP 403. The Chang'e-4 instrument review (DOI 10.1007/s11432-020-3047-4) was not accessible. Current operational status of Yutu-2 is not confirmed.",
+    "Verified direct images: two Chang'e-3 PCAM archive PNG previews (HTTP 200, image/png); the right-camera frame was viewed and shows the lander, and the left-camera frame was not inspected visually. Apollo 15 Figures 1 and 2 were not extracted as direct assets and are linked references only. Reuse conditions for the CASDC previews were not verified.",
+    "Lunokhod panoramic imaging was not described: accessed sources gave conflicting hardware descriptions and panorama counts, and the NSSDC Master Catalog entry was not retrieved.",
+    "No proposed or prototype generic panoramic camera was described from accessed sources. The article covers flown examples only."
+  ]
+}

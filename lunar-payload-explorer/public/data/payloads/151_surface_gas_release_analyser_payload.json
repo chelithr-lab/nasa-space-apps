@@ -1,0 +1,212 @@
+{
+  "catalogue_id": 151,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 7,
+    "name": "Lunar exosphere and atmospheric instruments"
+  },
+  "payload": {
+    "number": 151,
+    "name": "Surface gas release analyser",
+    "article": {
+      "overview": "A surface gas release analyser is an instrument that heats a solid sample taken from the lunar surface or shallow subsurface in a controlled oven and measures the gases released as the temperature rises. This technique, known as evolved gas analysis, can identify volatile substances such as water, carbon dioxide, sulfur-bearing gases, noble gases and organic compounds that are held in regolith or rock. The payload is grouped with the lunar exosphere and atmospheric instruments because it characterises the volatile content that a surface releases, although its measurements are made on samples rather than on the tenuous exosphere itself.",
+      "description": "A surface gas release analyser combines three functions: sample handling, controlled heating and gas measurement. Sample handling covers collecting regolith or drilled material and transferring it into an oven. The oven is then heated, often under vacuum, so that volatile species are driven out of the sample. The released gases pass to an analytical device, which may be a mass spectrometer, a gas chromatograph with a detector, or a laser absorption spectrometer. The usual output is a record of gas abundance against temperature, which allows scientists to infer which minerals or compounds released each gas.\n\nSeveral concepts have been developed for this role. The NASA Goddard Volatile Analysis by Pyrolysis of Regolith (VAPoR) instrument was designed as a vacuum pyrolysis mass spectrometer for in situ analysis of lunar regolith [1]. The Southwest Research Institute (SwRI) Laser Absorption Spectrometer for Volatiles and Evolved Gas (LASVEGAS) heats a small sample and identifies gases from their absorption of laser light [3]. The ESA-led PROSPECT package includes a laboratory, ProSPA, which seals drilled samples in ovens, heats them and analyses the released volatiles by mass spectrometry [6][7]. The Luna-Resurs Gas Analytical Package (GAP) includes a pyrolysis oven, a gas chromatograph and a neutral gas mass spectrometer (NGMS) [4]. A 2024 article describing PROSPECT in detail is available in Frontiers in Space Technologies [5]; this article uses only its bibliographic record, because its full text could not be read during this research.",
+      "scientific_purpose_and_applications": "The main purpose of a surface gas release analyser is to determine which volatile substances are present in lunar material, in what form, and at which temperatures they are released. Volatile content is relevant to lunar science because it can help interpret sample mineralogy and volatile history [2]. It is also relevant to exploration. The VAPoR design study argued that measurements of polar regolith could identify water and other volatiles as potential resources for future human exploration [1]. PROSPECT is designed to analyse volatiles in lunar samples [6], and the same type of measurement could support in-situ resource utilisation studies by showing which materials release water or oxygen-bearing gases on heating. This last application is a general engineering use case and is not confirmed for any specific flight instrument.",
+      "operating_principle": "A surface gas release analyser works by controlled heating followed by gas identification. A sealed sample is placed in an oven, and its temperature is raised in steps or at a steady ramp. Minerals and adsorbed compounds release gases at characteristic temperatures, so the temperature at which a gas appears gives information about the material that held it. The evolved gases are transferred, often in a vacuum, to an analyser. A mass spectrometer separates ions by their mass-to-charge ratio, which identifies the molecular species present and can produce plots of ion signal against temperature. A gas chromatograph separates a gas mixture before detection, and a laser absorption spectrometer identifies gases from the wavelengths of light they absorb [3][4]. The method has been used on Mars by the Sample Analysis at Mars (SAM) instrument on the Curiosity rover, whose evolved gas analyser measured water, hydrogen, sulfur dioxide, carbon dioxide and other gases from Gale Crater sediments [2].",
+      "scientific_importance": "Before the VAPoR design study, the authors stated that no in situ evolved-gas analyses of lunar regolith had been carried out, and that no atmospheric or evolved-gas measurements had been made at the lunar poles [1]. An in situ analyser would therefore provide direct chemical information from material that is otherwise available only as returned samples or remote observations. The SAM evolved gas analyser on Mars shows that the method can support mineral interpretation in planetary sediments, with its results pointing to nitrates, oxychlorine phases, sulfates and organic compounds in Gale Crater materials [2]. This demonstrates the scientific value of evolved gas analysis, although the Martian results do not directly describe lunar conditions.",
+      "physical_specifications": {
+        "note": "There is no single universal specification for a surface gas release analyser. Published concepts differ in heating method, analyser type and mission role, so the values below apply only to the named instrument or mission. Where a value was not stated in the sources read for this article, it is marked as not stated.",
+        "examples": [
+          {
+            "name": "LASVEGAS (Laser Absorption Spectrometer for Volatiles and Evolved Gas)",
+            "type": "Development concept; laser absorption spectrometer",
+            "developers": "Southwest Research Institute, Ball Aerospace, Southwest Sciences Inc., Princeton University",
+            "flight_status": "Not selected for flight as of the May 2020 SwRI release; DALI programme funding (2020) to adapt the design for lunar surface operation",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "mass_power_size_description": "Described qualitatively as extremely compact, low mass, low volume and low power, and about half the size of a paper towel roll. No numerical values published in the cited release.",
+            "target_gases": [
+              "water",
+              "methane",
+              "other volatile gases"
+            ],
+            "source_urls": [
+              "https://www.swri.org/press-release/nasa-lunar-lasvegas-spectrometer-planetary-materials"
+            ],
+            "images": []
+          },
+          {
+            "name": "VAPoR (Volatile Analysis by Pyrolysis of Regolith)",
+            "type": "Vacuum pyrolysis mass spectrometer concept; under development at NASA Goddard Space Flight Center (as of 2010)",
+            "flight_status": "Not described as flight hardware in the cited 2010 paper",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "heating_temperature_c": {
+              "design_target": 1400,
+              "atmosphere": "vacuum",
+              "note": "Design heating target stated in the 2010 abstract; breadboard test temperatures not stated in the abstract read."
+            },
+            "source_urls": [
+              "https://doi.org/10.1016/j.pss.2010.03.006"
+            ],
+            "images": []
+          },
+          {
+            "name": "NGMS (Neutral Gas Mass Spectrometer), Luna-Resurs Gas Analytical Package",
+            "type": "Compact time-of-flight neutral gas mass spectrometer with grid-less ion mirror",
+            "developers": "University of Bern group with Russian IKI partners (per search-indexed summary; not verified on instrument page)",
+            "flight_status": "Two flight units (NGMS-PFM and NGMS-FS) at the University of Bern, described as waiting for their next mission; no confirmed launch date",
+            "mass_kg": 3.5,
+            "dimensions_cm": [
+              26,
+              15,
+              18
+            ],
+            "dimensions_note": "Maximum size as stated on the instrument page.",
+            "power_w": 25,
+            "power_note": "Stated as can be fully operated with 25 W.",
+            "operating_temperature_c": {
+              "min": -30,
+              "max": 80
+            },
+            "mass_resolution": "not stated on instrument page read",
+            "source_urls": [
+              "https://luna-ngms.unibe.ch/instrument/index_eng.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "PROSPECT ProSPA laboratory (with ProSEED drill)",
+            "type": "Sample acquisition and analysis package: ProSEED drill and ProSPA miniature laboratory",
+            "developers": "ESA with Open University (ProSPA), Leonardo S.p.A. and other partners, per 2018 IAC author list",
+            "flight_status": "Planned. Originally for Russia's Luna-27 lander (2018 paper). ESA's 29 August 2024 release reports a NASA CLPS flight opportunity with Intuitive Machines in 2027. Launch and landing dates not confirmed in sources read.",
+            "mass_kg": null,
+            "mass_note": "ProSPA mass not stated. ESA gives about 80 kg for the total of six instruments on the lander, including instruments other than PROSPECT.",
+            "package_mass_kg_six_instruments": 80,
+            "dimensions_cm": null,
+            "power_w": null,
+            "drill_depth_m": {
+              "2018_iac_paper": 1.2,
+              "2024_esa_release": 1.0,
+              "note": "Sources give different values (up to 1.2 m in 2018; up to one metre in 2024). Reconcile with current mission documentation."
+            },
+            "source_urls": [
+              "https://iafastro.directory/iac/archive/browse/IAC-18/A3/2B/42773/",
+              "https://www.esa.int/Newsroom/Press_Releases/European_drill_and_mini_lab_secure_ride_to_the_Moon"
+            ],
+            "images": []
+          },
+          {
+            "name": "SAM evolved gas analyser (SAM-EGA), Curiosity rover (Mars reference, not a lunar instrument)",
+            "type": "Flown evolved gas analyser on Mars; included as flight-heritage reference only",
+            "flight_status": "Flown and operating on Curiosity (Mars)",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "heating_temperature_c": null,
+            "heating_temperature_note": "Not stated in the text read for this article.",
+            "source_urls": [
+              "https://doi.org/10.1002/2016JE005225"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are available only for the NGMS, at a maximum of 26 x 15 x 18 cm. The LASVEGAS release gives only a qualitative size comparison. The PROSPECT drill depth differs between sources, being 1.2 m in the 2018 paper and one metre in the 2024 release. Dimensions for VAPoR, ProSPA and SAM are not stated in the sources read.",
+        "mass_and_weight": "The NGMS has a mass of about 3.5 kg. The combined mass of the six-instrument package described by ESA is about 80 kg, which is not a PROSPECT-only value. Mass values for VAPoR, LASVEGAS, ProSPA and SAM are not stated in the sources read.",
+        "power_requirements": "Power is stated only for the NGMS, at 25 W for full operation. Power for VAPoR, LASVEGAS, ProSPA and SAM is not stated in the sources read."
+      },
+      "environmental_and_operational_requirements": "A surface gas release analyser must operate in vacuum, with large surface temperature variations and exposure to radiation and dust. The NGMS has a stated operating range of -30 C to 80 C. The VAPoR design heating target of 1400 C under vacuum makes oven containment, thermal isolation and sealing central engineering issues for any high-temperature oven. PROSPECT is designed to handle volatiles that are cold-trapped in the subsurface and released by heating in ovens, so cold sample handling and sealing before heating are operational requirements. No environmental qualification test results for these instruments were found in the sources read.",
+      "limitations": "Evolved gas analysis is destructive. The sample is heated, and the volatile content released in that process is consumed. Gas release temperatures depend on mineral chemistry and can overlap, so interpretation requires reference data and often complementary mineralogical measurements, as the SAM work illustrates. Lunar flight heritage for this payload class is very limited. The VAPoR concept was not described as flight hardware, LASVEGAS had not been selected for flight at its 2020 release, and the NGMS flight units are waiting for a mission. This article therefore cannot claim lunar flight experience for a surface gas release analyser.",
+      "transportation_and_deployment": {
+        "overview": "A surface gas release analyser would normally be a lander-mounted payload, often integrated with a drill, scoop or sample-handling system. Its transport chain follows that of other lander payloads: integration on Earth, launch, transfer to the Moon, landing, deployment, and connection of power, thermal and data interfaces.",
+        "transportation_process": [
+          "Integrate the analyser, oven and sample-handling hardware into a lander or sample-handling package on Earth.",
+          "Launch the package on a launch vehicle and transfer it towards the Moon.",
+          "Land the package on the lunar surface with the lander.",
+          "Deploy the drill or sample inlet, deliver samples to the oven, and seal them before heating.",
+          "Connect power, thermal control and data interfaces, and keep the analysis chain within its operating range."
+        ],
+        "deployment_methods": "For PROSPECT, the ProSEED drill delivers samples to the ProSPA laboratory. Deployment methods for LASVEGAS, VAPoR and other concepts are not specified in the sources read; both are described as laboratory or development concepts rather than deployed systems.",
+        "historical_examples": "The SAM evolved gas analyser on Mars is a flown example of the method in a rover payload. No lunar surface evolved gas analyser flight is documented in the sources reviewed.",
+        "compatibility_assessment": "NASA selected Intuitive Machines for a Commercial Lunar Payload Services flight opportunity for PROSPECT, according to ESA. The ESA release does not name the lander model or mission designation in the text read, and no launch or landing date was confirmed. Interface compatibility between PROSPECT and a specific lander has not been verified. Luna-Resurs is described in the 2018 paper as planned for a south-polar landing, but current launch trackers list only placeholder dates; its interface compatibility with the Gas Analytical Package has not been verified.",
+        "images": []
+      },
+      "historical_significance": "In situ evolved gas analysis for the Moon was under development by the late 2000s. The VAPoR paper, published in 2010, described a pyrolysis mass spectrometer for lunar regolith and noted the absence of in situ evolved-gas data from the Moon at that time. The method subsequently flew on Mars with SAM, which provides a reference for interpreting volatile release in planetary sediments. Lunar concepts such as LASVEGAS, the NGMS within Luna-Resurs and PROSPECT ProSPA were developed in parallel with funding and partner programmes. As of the sources reviewed, none has been confirmed to have operated on the Moon.",
+      "limitations_and_uncertainties": "This article is based on a limited, time-constrained review. The payload name describes a class of instruments rather than one standard design, and the examples are not interchangeable. Most lunar concepts are at the proposal, development or awaiting-flight stage, so their numerical specifications should be read as design data, not measured performance. Source dates range from 2010 to 2024, and mission schedules, especially for Luna-Resurs and PROSPECT, may have changed. Images were not verified during this run, so the article contains no figures.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "VAPoR - Volatile Analysis by Pyrolysis of Regolith: an instrument for in situ detection of water, noble gases, and organics on the Moon (ten Kate et al., 2010), Planetary and Space Science 58(7-8), 1007-1017",
+          "publisher": "Planetary and Space Science (Elsevier)",
+          "url": "https://doi.org/10.1016/j.pss.2010.03.006"
+        },
+        {
+          "title": "Evolved gas analyses of sedimentary rocks and eolian sediment in Gale Crater, Mars (Sutter et al., 2017), Journal of Geophysical Research: Planets",
+          "publisher": "Journal of Geophysical Research: Planets (AGU)",
+          "url": "https://doi.org/10.1002/2016JE005225"
+        },
+        {
+          "title": "NASA awards SwRI $3 million to develop lunar LASVEGAS spectrometer (press release, May 2020)",
+          "publisher": "Southwest Research Institute",
+          "url": "https://www.swri.org/press-release/nasa-lunar-lasvegas-spectrometer-planetary-materials"
+        },
+        {
+          "title": "NGMS - Time of Flight Neutral Gas Mass Spectrometer (instrument page, undated)",
+          "publisher": "University of Bern",
+          "url": "https://luna-ngms.unibe.ch/instrument/index_eng.html"
+        },
+        {
+          "title": "PROSPECT: A comprehensive sample acquisition and analysis package for lunar science and exploration (Trautner et al., 2024), Frontiers in Space Technologies 5, 1331828",
+          "publisher": "Frontiers in Space Technologies",
+          "url": "https://doi.org/10.3389/frspt.2024.1331828"
+        },
+        {
+          "title": "PROSPECT: A Novel Package for Subsurface Sample Acquisition and Analysis of Lunar Volatiles (Trautner et al., 2018), IAC-18,A3,2B,2,x42773",
+          "publisher": "International Astronautical Congress (IAC-18)",
+          "url": "https://iafastro.directory/iac/archive/browse/IAC-18/A3/2B/42773/"
+        },
+        {
+          "title": "European drill and mini lab secure ride to the Moon (press release N 46-2024, 29 August 2024)",
+          "publisher": "European Space Agency",
+          "url": "https://www.esa.int/Newsroom/Press_Releases/European_drill_and_mini_lab_secure_ride_to_the_Moon"
+        },
+        {
+          "title": "Soyuz 2.1b/Fregat-M Luna 27 launch listing (third-party tracker; placeholder date, low reliability)",
+          "publisher": "Spacelaunchnow",
+          "url": "https://spacelaunchnow.me/launch/soyuz-21bfregat-m-luna-27"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples": "payload.article.physical_specifications.examples[i].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image URLs were verified in this run, so no image objects are included. All other URLs in this file have query strings and fragments removed."
+  },
+  "data_quality_notes": [
+    "No images were researched or verified in this run; image arrays are empty and image_urls_added is false. No image URLs have been invented.",
+    "The full text of the 2024 PROSPECT article (Frontiers, doi 10.3389/frspt.2024.1331828) could not be read; only its bibliographic record is used. ProSPA technical values from that paper, such as oven ramp rate and temperature, are not included.",
+    "The VAPoR, LASVEGAS, ProSPA and SAM mass, power and dimension values are not stated in the sources read, and are recorded as null.",
+    "The PROSPECT drill depth differs between the 2018 IAC paper (up to 1.2 m) and the 2024 ESA release (up to one metre).",
+    "The ESA 2024 release gives a combined mass of about 80 kg for six instruments, which is not a PROSPECT-only figure.",
+    "The PROSPECT lander and mission designation (Intuitive Machines, NASA CLPS) are as reported by ESA in August 2024; the mission designation and launch or landing date were not confirmed.",
+    "The Luna-Resurs launch date is not confirmed; the cited launch listing shows placeholder entries and is low reliability.",
+    "No lunar surface gas release analyser has been confirmed to have flown in the sources reviewed. The SAM evolved gas analyser is a Mars reference only."
+  ]
+}

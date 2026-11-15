@@ -1,0 +1,193 @@
+{
+  "catalogue_id": 185,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 9,
+    "name": "Navigation, communication and geodesy"
+  },
+  "payload": {
+    "number": 185,
+    "name": "Laser ranging instrument",
+    "article": {
+      "overview": "A laser ranging instrument measures distance by timing light that travels to a target and back. In lunar science and geodesy the term most often refers to Earth-Moon laser ranging (LLR). Ground stations on Earth fire short laser pulses at reflectors on the Moon, and the round-trip time gives the distance. The lunar-side reflectors are passive: they have no laser, receiver or power supply [1][2].\n\nScope of this article: this entry is treated as the lunar laser-ranging hardware family. It covers the corner-cube retroreflector arrays that Earth stations range to, and the Laser Ranging receiver flown on the Lunar Reconnaissance Orbiter (LRO), which measured one-way laser ranging. This split is a working judgement, because the catalogue does not define the entry boundary. Neighbouring entries are excluded: active rangefinders and altimeters are in 048 (Laser rangefinder) and 047 (Laser altimeter), and scanning lidar is in 046 (Lidar scanner). The LRO receiver depends on the LOLA altimeter for timing, so the two are discussed together where they interact.\n\nStatus: three lunar hardware items are described. The Apollo arrays were flown and deployed on the Moon during the Apollo missions. NGLR-1 was flown on Blue Ghost Mission 1 and deployed in March 2025, with early ranging results reported. The LRO Laser Ranging receiver was flown on LRO. A single-cube successor design from Turyshev et al. is described as a proposed concept, not as hardware that has flown.",
+      "description": "A corner-cube retroreflector is a three-faced mirror corner. Light that enters the cube is reflected back along its incoming direction, so a laser aimed from Earth returns toward the station that fired it [4][5].\n\nThe Apollo 11 and Apollo 14 arrays each consist of 100 fused-silica corner cubes, each 38 mm (3.8 cm) in diameter, mounted in a 46 cm aluminium panel [3][5]. The Apollo 15 array is larger, with 300 cubes and a stated size of 1.05 m by 0.64 m [5].\n\nNGLR-1 is a single cube-corner reflector. The ILRS mission page gives a circular reflector 100 mm in diameter and 72 mm high, mounted on a gimbal-supported Antennae Support Panel (ASP) [1]. This flown unit is not shown in the sources read to be the same as the 170 mm aperture design described in the Turyshev et al. paper [4][5].\n\nThe LRO Laser Ranging system is a spacecraft receiver. A receiver telescope on LRO's high-gain antenna captures the uplinked laser pulse, and a fibre optic cable carries the signal to the LOLA instrument, whose electronics record the arrival time against an ultrastable crystal oscillator [7]. The ground segment is a pointable laser at a satellite laser ranging station, which times and transmits each pulse, together with a data distribution facility and the LOLA Science Operations Center [7].",
+      "scientific_purpose_and_applications": "The ILRS lists the primary application of NGLR-1 as lunar science and general relativity, together with lunar geodesy. Other listed applications include lunar interior structure, dark matter theories and planetary ephemerides [1]. The ILRS page presents NGLR-1 as a successor to the Apollo and Luna retroreflectors, intended to improve on their results [1].\n\nThe University of Maryland NGLR project reports that Apollo-era ranging accuracy improved from about 150 mm to a couple of millimetres over roughly 55 years [2]. These improvements are reported at the level of the whole ranging system, not for the reflectors alone.\n\nFor LRO, the Laser Ranging system contributes to precise orbit determination. The ILRS page states relative range precision below 10 cm at 1 Hz, and orbit knowledge goals of 50 m along track, 50 m cross track and 1 m radial [6]. The NASA page describes the receiver's intended purpose as determining the spacecraft's position to the sub-meter level [7]. These are mission objectives, not reported measured results.",
+      "operating_principle": "Ranging is a time-of-flight measurement. The distance equals the speed of light multiplied by the round-trip time, divided by two. For the passive lunar arrays, the Earth station fires a pulse, the cubes reflect it, and the station detects the few returning photons. Returns are very weak, so long averaging is needed to reach millimetre-level results [5].\n\nLunar libration tilts the arrays relative to Earth. Cubes in a multi-cube array then sit at slightly different distances, so the returned pulse spreads in time. The Turyshev et al. analysis gives an example: for a 1 m reflector at an 8.2° misalignment, the path-length variation is about ±7 cm, or about ±475 ps in arrival time [5]. A single cube has equal path lengths to all points of its surface for any viewing angle, so the single-cube concept avoids this spread in principle [4][5]. The design rationale for the flown NGLR-1 single cube is not confirmed in the sources read.\n\nFor the LRO receiver, the ground station fires 532 nm pulses synchronised to LOLA's 28 Hz operating cycle, and LOLA timestamps the arrival [6][7]. This is one-way ranging, so the receiver needs no transmitter on the spacecraft.",
+      "scientific_importance": "Passive retroreflectors give ranging data without drawing power on the Moon. This is why Apollo-era arrays remain useful to Earth-based ranging, decades after deployment [2][3]. NGLR-1 was placed on the Moon to extend that record with a new array [1][2].\n\nThe University of Maryland reports preliminary NGLR-1 results. On 3 March 2025, the Grasse station (MeO) obtained a distance of 358,727.670 km with a statistical uncertainty of 0.8 mm, from a 532 nm session less than 24 hours after landing. The single-range uncertainty was 1.6 mm, and the residual spread was about 72 ps RMS, roughly 11 mm one-way. The page notes that a single station's distance is not yet science-grade, because corrections for atmosphere, geophysics and systematic biases are still needed [2]. These are early measurements, not a completed science analysis.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a laser ranging instrument. The examples below cover passive arrays, an active spacecraft receiver and a proposed concept. Values are given only where a named source states them. Passive arrays and active receivers are not directly comparable, so no ranking is implied.",
+        "examples": [
+          {
+            "name": "Apollo 11 and Apollo 14 laser retroreflector arrays",
+            "type": "Passive corner-cube array (flown on the lunar surface)",
+            "cube_count": 100,
+            "cube_diameter_mm": 38,
+            "panel_size_cm": 46,
+            "mass_kg": null,
+            "power": "Not stated",
+            "images": [],
+            "source_urls": [
+              "https://ilrs.gsfc.nasa.gov/missions/satellite_missions/current_missions/ap11_reflector.html",
+              "https://ar5iv.arxiv.org/html/1210.7857"
+            ],
+            "example_heading": "Example 1: Apollo 11 and Apollo 14 laser retroreflector arrays (passive, flown)",
+            "article_text": "Status: flown and deployed on the lunar surface. The ILRS gives the Apollo 11 deployment site as the Sea of Tranquility and states that the Apollo 11 and Apollo 14 arrays are identical [3].\n\nPublished configuration. 100 fused-silica corner cubes, each 3.8 cm (38 mm) in diameter, in a 46 cm aluminium panel [3][5]. The ILRS page gives the panel size only; the second panel dimension, mass and power are not stated [3]. A passive array is not expected to need power, but no power figure is given in the sources read.\n\nPerformance. The return rate for the Apollo 11 array is not stated in the ILRS page [3]. The overall Apollo ranging accuracy is described in [2] (see Scientific Importance and Scientific Purpose)."
+          },
+          {
+            "name": "Apollo 15 laser retroreflector array",
+            "type": "Passive corner-cube array (flown on the lunar surface)",
+            "cube_count": 300,
+            "array_size_m": [
+              1.05,
+              0.64
+            ],
+            "mass_kg": null,
+            "power": "Not stated",
+            "images": [],
+            "source_urls": [
+              "https://ar5iv.arxiv.org/html/1210.7857"
+            ],
+            "example_heading": "Example 2: Apollo 15 laser retroreflector array (passive, flown)",
+            "article_text": "Status: flown. The Turyshev et al. paper gives the Apollo 15 array as 300 cubes with a stated size of 1.05 m by 0.64 m [5]. The ILRS page for this array could not be read in this run.\n\nPublished configuration. The cubes are of the same 38 mm Apollo cube size as Examples 1 [5]. Mass, power and panel material are not stated in the sources read. The array's return-rate and dispersion values are not stated."
+          },
+          {
+            "name": "NGLR-1 retroreflector",
+            "type": "Passive single-cube retroreflector (flown; deployed March 2025)",
+            "cube_count": 1,
+            "diameter_mm": 100,
+            "height_mm": 72,
+            "mass_kg": null,
+            "power": "Not stated",
+            "images": [],
+            "source_urls": [
+              "https://ilrs.gsfc.nasa.gov/missions/satellite_missions/current_missions/ngl1_general.html",
+              "https://www.physics.umd.edu/nglr/status_03122025.html"
+            ],
+            "example_heading": "Example 3: NGLR-1 retroreflector (passive, single cube, flown 2025)",
+            "article_text": "Status: flown on Blue Ghost Mission 1. The ILRS lists the launch as 15 January 2025 at 06:11 UTC from Kennedy Space Center, Florida [1]. The University of Maryland states that Blue Ghost made a soft landing in Mare Crisium on 2 March 2025. The separate deployment date for the reflector is not stated [2]. The ILRS page gives a landing target of 17.0°N, 59.1°E in Mare Crisium [1].\n\nPublished configuration. One circular cube-corner reflector, 100 mm in diameter and 72 mm high, mounted on a gimbal-supported Antennae Support Panel [1]. The ILRS page states a 19-day prime mission with the panel pointed toward Earth, and an expected life of \"many decades\" [1]. The expected life is an expectation, not a verified measurement. Mass is not stated [1][2].\n\nEarly performance. Preliminary values are given in Scientific Importance [2]. Return rates relative to the Apollo 11 array are described by the University of Maryland as statistically similar in a later update, but that update was not read in this run and is not used here."
+          },
+          {
+            "name": "LRO Laser Ranging receiver",
+            "type": "Active one-way ranging receiver (flown on LRO)",
+            "mass_kg": 100,
+            "mass_kg_note": "Listed on the ILRS page; not confirmed as the LR instrument mass",
+            "wavelength_nm": 532,
+            "pulse_rate_hz": 28,
+            "power": "Not stated",
+            "images": [],
+            "source_urls": [
+              "https://ilrs.dgfi.tum.de/missions/satellite_missions/past_missions/lrol_general.html",
+              "https://science.gsfc.nasa.gov/attic/lrolr/index.html"
+            ],
+            "example_heading": "Example 4: LRO Laser Ranging receiver (active, flown on LRO)",
+            "article_text": "Status: flown on the Lunar Reconnaissance Orbiter. The ILRS page gives a launch date of 17 June 2009. The same page also says the mission was scheduled to launch in October 2008, so the launch date is not fully consistent within the page [6].\n\nPublished configuration. The ILRS lists the LR hardware mass as 100 kg, but the page does not confirm whether this refers to the LR instrument or to a larger item [6]. Power is not stated. The laser wavelength is 532 nm, with 28 Hz pulses [6]. The flight segment comprises a receiver telescope, a fibre link and LOLA electronics for timing [7].\n\nOperating dates. The ILRS page gives an expected life of one year but no start or end dates for operations [6]. The NASA page was last updated in 2015 and gives no operating dates [7]."
+          },
+          {
+            "name": "Single-cube successor concept (Turyshev et al.)",
+            "type": "Proposed design concept (not flown)",
+            "aperture_mm": 170,
+            "mass_kg_design_goal_max": 3.5,
+            "power": "Draws no power (design)",
+            "range_precision_goal_mm": 1,
+            "range_precision_status": "Design goal and projection; not measured",
+            "images": [],
+            "source_urls": [
+              "https://arxiv.org/abs/1210.7857",
+              "https://ar5iv.arxiv.org/html/1210.7857"
+            ],
+            "example_heading": "Example 5: Single-cube successor concept (Turyshev et al., proposed, not flown)",
+            "article_text": "Status: proposed design concept. The concept is a single hollow corner cube with a 170 mm optical aperture, about five times the 38 mm Apollo cubes [4][5].\n\nDesign values and goals. Total mass 3.5 kg or less, stated as a design goal. No power is drawn. The angular stability requirement is under 0.1 arcsec, and the deployment pointing requirement is within 2° of the mean Earth direction [5]. The paper states a 1 mm Earth-Moon range precision in a single pulse, which is a design goal and projection, not a measured result [4][5].\n\nTest evidence. A 125 mm hollow cube prototype was tested in a JPL thermal-vacuum chamber. The paper reports the test qualitatively and gives no numerical results [5]. The paper describes the casing as cylindrical in one section and spherical in another, so the casing shape is not established [5]."
+          }
+        ],
+        "dimensions_and_proportions": "Apollo 11 and 14: 100 cubes of 38 mm in a 46 cm aluminium panel [3][5]. Apollo 15: 300 cubes, 1.05 m by 0.64 m [5]. NGLR-1: one cube, 100 mm diameter and 72 mm high [1]. LRO Laser Ranging receiver: dimensions not stated [6]. Concept: 170 mm optical aperture [5]. These are not comparable designs.",
+        "mass_and_weight": "Not stated for the Apollo arrays or NGLR-1 in the sources read [1][3]. The ILRS lists the LRO Laser Ranging hardware as 100 kg, not confirmed as the instrument mass [6]. Concept design goal: 3.5 kg or less [5].",
+        "power_requirements": "Not stated for the Apollo arrays, NGLR-1 or the LRO receiver in the sources read [1][3][6]. The passive arrays draw no power by nature. The concept draws no power by design [5]."
+      },
+      "environmental_and_operational_requirements": "The reflectors operate in vacuum on the lunar surface, where the temperature cycles widely. The Turyshev et al. analysis uses surface temperatures of 390 K (day) to 90 K (night) and gives a simulated cube temperature of about −39 °C to −32 °C during the lunar day [5]. The analysis assumes no lunar dust in the assembly. The paper notes that dust is a suspected cause of fading in the Apollo arrays, so this assumption is a significant limitation [5].\n\nPointing matters. The NGLR-1 panel is gimbal-supported so that it can point toward Earth [1]. The Turyshev concept has a deployment requirement of within 2° of the mean Earth direction [5].\n\nThe wavelength in both the NGLR-1 and LRO ground systems is 532 nm [1][6]. The Turyshev concept uses an optical filter with a 10 nm band around 532 nm [5]. On the ground, station size matters. The University of Maryland notes that the Wettzell telescope's collecting area is 22 times smaller than APOLLO's [2].",
+      "limitations": "Passive arrays depend entirely on Earth-based stations and on photon return. Very few photons come back, so reaching millimetre precision needs averaging over thousands of photons [5].\n\nFor multi-cube arrays, libration spreads the return pulse, which limits the precision [5]. Return-rate figures for the Apollo arrays are not stated in the sources read [3].\n\nThe NGLR-1 results are preliminary. The University of Maryland describes the March 2025 values as very preliminary and notes that science-grade results need further corrections [2].\n\nThe LRO receiver's ranging performance depends on the ground station network. The ILRS page does not name the network, and it refers only to terrestrial ground stations and SLR stations [6].",
+      "transportation_and_deployment": {
+        "overview": "Surface passive arrays (Apollo and NGLR-1). Passive reflectors are carried to the surface by a lander or as part of a crewed mission. The Apollo arrays were placed by astronauts at the Sea of Tranquility [3]. NGLR-1 was delivered by Blue Ghost Mission 1, launched on 15 January 2025 and soft-landed in Mare Crisium on 2 March 2025 [1][2]. The gimbal-supported panel was pointed toward Earth [1]. The deployment mechanism for NGLR-1 beyond the gimbal and pointing description is not described in the sources read.\n\nConcept (single cube). The Turyshev et al. paper gives a low mass target to allow robotic deployment, but no mass figure is stated in the abstract [4]. The paper's deployment pointing requirement is within 2° of the mean Earth direction [5].\n\nOrbiter (LRO receiver). The LR receiver is integrated on LRO's high-gain antenna and linked to LOLA by a fibre optic cable [7]. The ILRS page gives the planned orbit as polar, near circular, at about 50 km altitude [6]. Commissioning, pointing and thermal interfaces are not described in the sources read.\n\nNo compatibility with any named lander, rover or spacecraft is asserted in this article.",
+        "transportation_process": [
+          "Surface passive arrays (Apollo and NGLR-1). Passive reflectors are carried to the surface by a lander or as part of a crewed mission. The Apollo arrays were placed by astronauts at the Sea of Tranquility [3]. NGLR-1 was delivered by Blue Ghost Mission 1, launched on 15 January 2025 and soft-landed in Mare Crisium on 2 March 2025 [1][2]. The gimbal-supported panel was pointed toward Earth [1]. The deployment mechanism for NGLR-1 beyond the gimbal and pointing description is not described in the sources read.",
+          "Concept (single cube). The Turyshev et al. paper gives a low mass target to allow robotic deployment, but no mass figure is stated in the abstract [4]. The paper's deployment pointing requirement is within 2° of the mean Earth direction [5].",
+          "Orbiter (LRO receiver). The LR receiver is integrated on LRO's high-gain antenna and linked to LOLA by a fibre optic cable [7]. The ILRS page gives the planned orbit as polar, near circular, at about 50 km altitude [6]. Commissioning, pointing and thermal interfaces are not described in the sources read."
+        ],
+        "deployment_methods": "Apollo arrays were placed by astronauts at the Sea of Tranquility [3]. NGLR-1 was delivered by Blue Ghost Mission 1 with its gimbal-supported panel pointed toward Earth [1][2]. The Turyshev concept has a deployment pointing requirement of within 2 degrees of the mean Earth direction [5].",
+        "historical_examples": "Apollo 11, 14 and 15 arrays [3][5][8]. NGLR-1 on Blue Ghost Mission 1, 2025 [1][2]. LRO Laser Ranging receiver on LRO [6][7].",
+        "compatibility_assessment": "No compatibility with any named lander, rover or spacecraft is asserted in this article.",
+        "images": []
+      },
+      "historical_significance": "The Apollo retroreflector arrays are described in secondary summaries as the first deployable lunar laser ranging experiment. They were carried on Apollo 11, 14 and 15 [8]. The ILRS page identifies the Apollo 11 and Apollo 14 arrays as identical and places the Apollo 11 array in the Sea of Tranquility [3].\n\nThe Apollo arrays are followed by NGLR-1, which was placed on the Moon in 2025 and is intended to improve on Apollo and Luna results [1][2]. The Turyshev et al. paper also gives the dimensions of an earlier Soviet Lunokhod array as 14 triangular cubes of about 106 mm per side, which is a comparison point for array design [5].\n\nThe LRO receiver is the spacecraft-side laser ranging element of a lunar orbiter mission. Its performance results are not verified in the sources read [6][7].",
+      "limitations_and_uncertainties": "The principal uncertainties are listed below, grouped by hardware item. Each item states what is not verified, why it could not be verified in this run, and which source it affects. Numerical values carry their source citations, and none has been reconciled with the original reports that could not be read in this run.\n\n- Apollo arrays. Mass, power and the second panel dimension for the Apollo 11 and 14 arrays are not stated in the ILRS page read [3]. The Apollo 15 array's size and cube count come from the Turyshev et al. paper rather than from an ILRS page, because the Apollo 15 ILRS page could not be read in this run [5].\n- NASA technical report on the Apollo retroreflector. The NASA technical report describing the Apollo laser retroreflector could not be text-extracted in this run, so its design values are not used.\n- NGLR-1. Mass and cube-count details are not stated in the sources read. The expected life of \"many decades\" is an expectation. The ILRS page's date metadata appears stale because it cites a March 2025 press release while last modified in February 2025 [1]. The University of Maryland NGLR-1 status PDF could not be text-extracted in this run.\n- LRO receiver. The 100 kg mass is not confirmed as the LR hardware mass [6]. The launch date conflicts with the page's own scheduled date [6]. Operating dates and the ground network are not verified, and the pages read were last updated in 2015 [6][7]. The ILRS LR parameter page could not be read.\n- Single-cube concept. The 1 mm figure is a design goal. The abstract says single pulse, while the conclusions say few-photon [4][5]. The full paper's analysis was read only in HTML rendering [5], so its figures should be checked against the published journal version. The casing shape and one temperature uniformity figure are inconsistent or garbled in the rendering [5].\n- Images. No image is included. No direct official image asset URL was verified for any example in this run.\n- Historical claim. The \"first deployable experiment\" description is taken from a secondary summary [8] and is not confirmed against a primary NASA source.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "number": 1,
+          "citation": "ILRS (International Laser Ranging Service), NASA Goddard. Next Generation Lunar Retroreflector-1 (NGLR-1), mission page.",
+          "url": "https://ilrs.gsfc.nasa.gov/missions/satellite_missions/current_missions/ngl1_general.html"
+        },
+        {
+          "number": 2,
+          "citation": "University of Maryland, NGLR project. Very Preliminary Analysis of the First Lunar Laser Ranging (LLR) Results (status dated 10 March 2025, page header 12 March 2025).",
+          "url": "https://www.physics.umd.edu/nglr/status_03122025.html"
+        },
+        {
+          "number": 3,
+          "citation": "ILRS, NASA Goddard. Apollo 11 Lunar Laser Retroreflector Array, reflector page.",
+          "url": "https://ilrs.gsfc.nasa.gov/missions/satellite_missions/current_missions/ap11_reflector.html"
+        },
+        {
+          "number": 4,
+          "citation": "Turyshev, S. G., Williams, J. G. and Folkner, W. M. Corner-cube retro-reflector instrument for advanced lunar laser ranging. arXiv:1210.7857 (journal version: Experimental Astronomy 36(1), 105-135, 2013).",
+          "url": "https://arxiv.org/abs/1210.7857"
+        },
+        {
+          "number": 5,
+          "citation": "Turyshev, S. G., Williams, J. G. and Folkner, W. M. Corner-cube retro-reflector instrument for advanced lunar laser ranging, HTML rendering of arXiv:1210.7857 (ar5iv).",
+          "url": "https://ar5iv.arxiv.org/html/1210.7857"
+        },
+        {
+          "number": 6,
+          "citation": "ILRS, NASA Goddard. LRO Laser Ranging (LR), past mission page.",
+          "url": "https://ilrs.dgfi.tum.de/missions/satellite_missions/past_missions/lrol_general.html"
+        },
+        {
+          "number": 7,
+          "citation": "NASA Goddard Space Flight Center. Laser Ranging to the Lunar Reconnaissance Orbiter (LRO), project page (last updated 2015).",
+          "url": "https://science.gsfc.nasa.gov/attic/lrolr/index.html"
+        },
+        {
+          "number": 8,
+          "citation": "Wikipedia. Laser Ranging Retroreflector (secondary reference; used only for the historical description of the Apollo arrays).",
+          "url": "https://en.wikipedia.org/wiki/Laser_Ranging_Retroreflector"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No images are included in this article because no direct official image asset was verified in this run; source pages are cited instead."
+  },
+  "data_quality_notes": [
+    "Lunar-side laser ranging hardware is treated as one family: passive corner-cube arrays plus the LRO Laser Ranging receiver. Active rangefinders, altimeters and scanning lidars are excluded and cross-referenced to 046, 047 and 048. This scope is a working judgement.",
+    "Apollo 15 cube count and array size come from the Turyshev et al. HTML rendering [5], not from an ILRS page; the ILRS Apollo 15 page returned HTTP 404 in this run.",
+    "The NASA technical report on the Apollo laser retroreflector (NTRS 19710022133) and the UMD NGLR-1 status PDF could not be text-extracted in this run and are not used for values.",
+    "The LRO Laser Ranging ILRS parameter page returned HTTP 404. Values come from the ILRS past-mission page [6] and the NASA project page [7], which were last updated in 2015 and conflict on launch timing.",
+    "The 100 kg LRO Laser Ranging mass on the ILRS past-mission page [6] is not confirmed as the instrument mass.",
+    "NGLR-1 results are preliminary University of Maryland values from March 2025 [2]. They are not science-grade results.",
+    "The Turyshev single-cube 1 mm precision is a design goal and projection. The abstract says single pulse; the conclusions say few-photon. Casing shape is inconsistent between sections, and one temperature uniformity figure is garbled in the rendering [5].",
+    "Wikipedia [8] is a secondary reference used only for the historical description of the Apollo arrays as the first deployable lunar laser ranging experiment.",
+    "Search-summary-only leads were not used as values: an LRO 12-cube corner-cube array, NASA GRLR, and the Turyshev paper's 19 mm recess dimension."
+  ]
+}

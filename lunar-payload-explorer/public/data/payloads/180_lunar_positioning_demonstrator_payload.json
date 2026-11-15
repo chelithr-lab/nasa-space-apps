@@ -1,0 +1,326 @@
+{
+  "catalogue_id": 180,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 9,
+    "name": "Navigation, communication and geodesy"
+  },
+  "payload": {
+    "number": 180,
+    "name": "Lunar positioning demonstrator",
+    "article": {
+      "overview": "A lunar positioning demonstrator is an experimental payload that tests whether positioning, navigation and timing (PNT) can be provided on or around the Moon. A demonstrator of this kind may receive signals from Earth's satellite navigation systems, transmit its own ranging signals, or act as a fixed surface beacon that helps a user determine position. Its purpose is to prove the technology, measure its performance and reduce risk before a permanent lunar navigation service is built. The name describes a class of experiments rather than one standard design. The Lunar GNSS Receiver Experiment (LuGRE), a NASA and Italian Space Agency payload, tracked Earth satellite navigation signals on the lunar surface in March 2025. Other demonstrators, such as the NASA Lunar Node-1 beacon and European surface beacon concepts, are at earlier stages or have less verified test evidence.",
+      "description": "Lunar positioning demonstrators are built to answer a practical question: can the Moon be navigated using a combination of signals from Earth's navigation satellites and new lunar-based infrastructure? Earth's GPS and Galileo satellites broadcast signals that are very weak at lunar distances, and the Moon has no equivalent navigation network. A demonstrator therefore usually carries a sensitive receiver, a directional antenna and processing software, and it may be combined with a surface beacon that broadcasts ranging signals and correction data. Demonstrators can be tested during transit, in lunar orbit or on the surface. Each test provides evidence about signal availability, receiver performance, thermal behaviour and the accuracy obtainable from a given architecture. The examples discussed in this article differ substantially in hardware, mission role and evidence base, and they are not interchangeable.",
+      "scientific_purpose_and_applications": "The main purpose is to determine whether navigation signals can be acquired, tracked and converted into position, velocity and time solutions at the Moon, and under what conditions. ESA's NAVISP programme describes a three-phase lunar PNT roadmap: first, using Earth GNSS signals received by high-sensitivity receivers and directional antennas; second, adding dedicated lunar orbiting ranging satellites as part of a proposed Lunar Communication and Navigation Service (LCNS) [4]; and third, adding further orbiting and surface infrastructure for autonomous lunar PNT and surface coverage [4]. Demonstrators address the first and early parts of this roadmap and produce measured data that can reduce the risk of later systems. Potential applications include positioning support for surface assets, time synchronisation and navigation of lunar orbiters and landers. These are proposed uses; none of the examples described below has demonstrated them as an operational service.",
+      "operating_principle": "A GNSS-based demonstrator receives radio signals broadcast by navigation satellites. Each signal carries a timing code and the satellite's orbit data. The receiver measures the apparent delay of each signal, usually called a pseudorange, and combines measurements from several satellites to estimate its own position, velocity and clock error. The LuGRE team notes that standalone positioning requires at least four tracked signals [2]. A surface beacon works differently: it generates its own ranging signals and broadcasts differential correction data so that a user can reduce errors such as those from orbit and clock predictions [5]. Performance depends on carrier-to-noise density (C/N0), antenna gain, receiver noise figure and processing algorithms such as weighted least squares or Kalman filtering. Reception at the Moon is harder than near Earth because the navigation satellites are far more distant and the antenna must point accurately towards the Earth-side constellations [2].",
+      "scientific_importance": "Navigation on the Moon is currently limited because no established lunar navigation service exists. Surface missions, rovers and future crewed operations would benefit from accurate position and time, but sensors on the vehicle and tracking from Earth may not be sufficient for every task. Demonstrators measure the actual signal environment, receiver behaviour and surface error sources, which cannot always be predicted reliably from theory alone. LuGRE's flight data, for example, showed that in-flight C/N0 was generally 7 to 12 dB lower than simulation predicted for GPS L1 signals, with the root cause under investigation [2]. Such results inform the design of future lunar receivers. A single short test does not, however, establish a complete navigation service.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar positioning demonstrator. The four examples below describe different types of hardware: a NASA navigation beacon, a flown GNSS receiver experiment, a European surface beacon concept and a European navigation payload study. Values are tied to the named example and source. Reported figures refer to different roles and should not be compared as like-for-like.",
+        "examples": [
+          {
+            "name": "NASA Lunar Node-1 (LN-1) navigation beacon",
+            "type": "Lunar navigation beacon carried on the Intuitive Machines IM-1 mission; on-surface operating results not confirmed in the sources reviewed",
+            "developer": "NASA Marshall Space Flight Center",
+            "sponsor_programme": "NASA-provided lunar payloads, described by NASA as part of the Commercial Lunar Payload Services (CLPS) initiative",
+            "flight_status": "Carried on the IM-1 mission to the Moon (lander landed February 2024). NASA's page describes operations in future tense and does not report results.",
+            "mass_reported": "Approximately 2.8 kg (NASA page)",
+            "dimensions_reported": "Approximately 175 x 220 x 300 cm in volume (NASA page). This unit appears inconsistent with the reported mass and is not treated as a verified dimension.",
+            "power_reported": "No numerical power specification given. The page states that long-term operation would require adequate power generation and storage.",
+            "signal_band": "S-band (no further frequency details on the source page)",
+            "source_urls": [
+              "https://science.nasa.gov/technology/technology-highlights/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface"
+            ],
+            "images": [
+              {
+                "id": "ln1_flight_payload_installed",
+                "description": "NASA Lunar Node-1 (LN-1) flight payload installed on the Intuitive Machines NOVA-C lander for IM-1.",
+                "image_type": "Flight hardware installation photograph",
+                "image_url": null,
+                "source_page_url": "https://science.nasa.gov/technology/technology-highlights/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+                "publisher": "NASA",
+                "credit": "NASA (as listed on source page)",
+                "caption": "Flight payload installed on the NOVA-C lander, as listed on the NASA LN-1 page.",
+                "section_placements": [
+                  "physical_specifications.examples[0]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "A direct asset URL appears in the NASA page markup but was not fetched or verified in this run, so image_url is null. View the image on the source page; check NASA reuse terms before republication."
+              },
+              {
+                "id": "ln1_concept_of_operations",
+                "description": "NASA concept of operations diagram for Lunar Node-1 navigation beacon operations.",
+                "image_type": "Technical diagram (concept of operations)",
+                "image_url": null,
+                "source_page_url": "https://science.nasa.gov/technology/technology-highlights/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+                "publisher": "NASA",
+                "credit": "NASA (as listed on source page)",
+                "caption": "Lunar Node-1 concept of operations diagram, as listed on the NASA LN-1 page.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL not fetched or verified in this run, so image_url is null. The diagram depicts the intended concept, not measured operations."
+              }
+            ]
+          },
+          {
+            "name": "Lunar GNSS Receiver Experiment (LuGRE)",
+            "type": "Flown lunar surface GNSS receiver experiment (technology demonstration)",
+            "developer": "NASA with the Italian Space Agency (ASI); receiver engineering by Qascom",
+            "sponsor_programme": "NASA CLPS delivery on a commercial lunar lander",
+            "flight_status": "Flown on the Firefly Blue Ghost lunar lander, which landed on 2 March 2025 at 08:34 UTC according to the NAVIGATION paper.",
+            "receiver": "Qascom QN400-SPACE, multi-constellation and multi-frequency; dual cold-redundant design (primary RXA and secondary RXB) under a supervisory board; baseband Xilinx Zynq 7000 SoC; RF front-end Analog Devices AD9361",
+            "antenna": "Passive 3 x 3 planar right-hand circularly polarised L-band high-gain antenna; peak gain 15.35 dBic in L1/E1 (12 degree half-power beamwidth) and 14.56 dBic in L5/E5 (16 degree)",
+            "low_noise_amplifier": "Gain 41.5 dB (L1/E1) and 44.2 dB (L5/E5); noise figure 0.8 dB (L1) and 1.3 dB (L5)",
+            "mass_reported": "Flight model total mass of less than 5 kg (NAVIGATION paper)",
+            "power_reported": "Maximum operational power of 14 W (NAVIGATION paper)",
+            "signals": "GPS and Galileo L1/E1 and L5/E5 signals (NAVIGATION paper)",
+            "surface_results": "First surface position fix at 06:51:35 UTC on 3 March 2025 using GPS PRN 18 and 25 and Galileo PRN 2 and 34 (four satellites, eight signal components). The paper reports more than 95 hours of surface operation, with power lost on 16 March 2025 at 22:50 UTC. Position, velocity and time accuracy values and the total surface satellite count were not verified in this run.",
+            "source_urls": [
+              "https://navi.ion.org/content/73/1/navi.756",
+              "https://etd.gsfc.nasa.gov/our-work/lunar-gnss-receiver-experiment-lugre/"
+            ],
+            "images": [
+              {
+                "id": "lugre_artist_concept",
+                "description": "Artist's concept of LuGRE aboard the Blue Ghost lunar lander receiving signals from Earth's GNSS constellations.",
+                "image_type": "Artist's concept rendering",
+                "image_url": null,
+                "source_page_url": "https://etd.gsfc.nasa.gov/our-work/lunar-gnss-receiver-experiment-lugre/",
+                "publisher": "NASA Goddard Engineering and Technology Directorate",
+                "credit": "NASA/Dave Ryan",
+                "caption": "Artist's concept rendering of LuGRE aboard the Blue Ghost lunar lander receiving signals from Earth's GNSS constellations.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Artist's concept, not a photograph of flight hardware. The direct asset URL was not fetched or verified in this run, so image_url is null."
+              }
+            ]
+          },
+          {
+            "name": "Qascom / OHB Italia lunar surface PNT beacon and reference station ('Moon Station')",
+            "type": "Surface beacon and reference-station demonstrator, with a flight-model design and an elegant breadboard (EBB); not flown",
+            "developer": "Qascom with OHB Italia",
+            "sponsor_programme": "ESA NAVISP programme",
+            "flight_status": "Not flown. Development and testing reported as complete in a February 2026 trade press article.",
+            "mass_reported": "Roughly 180 kg (trade press article; not checked against ESA documentation)",
+            "power_reported": "Peak power around 440 W (trade press article; not checked against ESA documentation)",
+            "signals": "S-band navigation signals used in the testbed. The transmit frequency of the beacon is not stated in the article.",
+            "performance": "Meter-level positioning accuracy reported from simulations that combine digital elevation models with extended Kalman filter processing over areas spanning hundreds of kilometres. No measured accuracy is reported. Differential-correction benefits are described qualitatively, without figures.",
+            "thermal": "Survival, active and operative modes analysed across the lunar day-night cycle, with temperatures that can drop below -150 degrees Celsius (per article)",
+            "deployment_assumption": "Deployment assumed near the lunar South Pole (per article)",
+            "source_urls": [
+              "https://insidegnss.com/qascom-demonstrates-lunar-surface-pnt-beacon-and-reference-station/"
+            ],
+            "images": [
+              {
+                "id": "qascom_testbed",
+                "description": "Lunar surface beacon and reference station testbed developed by Qascom for the ESA NAVISP programme.",
+                "image_type": "Testbed image (exact type not stated in source)",
+                "image_url": null,
+                "source_page_url": "https://insidegnss.com/qascom-demonstrates-lunar-surface-pnt-beacon-and-reference-station/",
+                "publisher": "InsideGNSS",
+                "credit": "Image courtesy of Qascom (as stated on source page)",
+                "caption": "Lunar surface beacon and reference station testbed (image courtesy of Qascom).",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Article image hosted by a trade publication. The direct asset URL was not fetched or verified in this run, so image_url is null. Reuse rights should be confirmed with Qascom or InsideGNSS."
+              }
+            ]
+          },
+          {
+            "name": "ESA NAVISP EL1-061 bis navigation payload demonstrator",
+            "type": "Navigation payload elegant breadboard (EBB) study for a future LCNS navigation payload; project status listed as completed",
+            "developer": "Thales Alenia Space Italia (prime), with Telespazio Belgium, INFN, Centro Ricerca Aerospaziali Sapienza and Antwerp Space",
+            "sponsor_programme": "ESA NAVISP programme",
+            "flight_status": "Not flown; ground development and test study. No flight is recorded on the NAVISP project page.",
+            "specifications": "No frequencies, mass, power or signal specifications are stated on the NAVISP project page; these are not publicly specified there.",
+            "source_urls": [
+              "https://navisp.esa.int/project/details/211/show"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No single dimension set applies to the class. LN-1's source gives a volume that is internally inconsistent with its reported mass, so no verified dimensions are asserted. The LuGRE receiver and antenna dimensions are not given in the sources reviewed. The Qascom station's dimensions are not stated in the article. The NAVISP study does not publish dimensions.",
+        "mass_and_weight": "Reported masses are approximately 2.8 kg for LN-1 (NASA page), less than 5 kg for the LuGRE flight model (NAVIGATION paper) and roughly 180 kg for the Qascom station (trade press). These figures describe different roles, from a small beacon to a larger surface station, and are not interchangeable.",
+        "power_requirements": "LuGRE's maximum operational power is 14 W (NAVIGATION paper). The Qascom station's peak power is around 440 W (trade press). LN-1 has no numerical power specification on its NASA page, and the NAVISP project page gives none."
+      },
+      "environmental_and_operational_requirements": "The lunar surface has no atmosphere and large day-night temperature swings. LuGRE's receiver peaked at 72 degrees Celsius and its high-gain antenna at 115 degrees Celsius during surface operations, and receiver clock drift of about 10 to 15 minutes after start-up correlated with temperature [2]. Its operations were limited to protect the lander's attitude-control resources, with a baseline of at least fifteen one-hour periods [2]. LuGRE met a 1 degree Earth-pointing requirement, with off-pointing under 0.21 degrees on the surface [2]. The Qascom station was analysed for survival, active and operative modes across the lunar day-night cycle [5]. Operational requirements include stable mounting, an unobstructed view of the Earth-side navigation constellations and reliable power and data links.",
+      "limitations": "A demonstrator shows that a technique works only under the conditions tested. Single experiments are often limited by short operating time, a small number of visible satellites, weak signal strength and tight power budgets. LuGRE's in-flight C/N0 was 7 to 12 dB below simulation, so most side-lobe signals fell below the acquisition threshold, and standalone positioning needs at least four tracked signals [2]. Many accuracy claims for lunar beacons come from simulations rather than flight measurements and must be treated as design estimates [5]. Position accuracy depends on geometry, clock quality, thermal behaviour and the correction data available.",
+      "transportation_and_deployment": {
+        "overview": "A lunar positioning demonstrator can be delivered as a dedicated payload or as one instrument on a lander. Both flown examples used commercial lunar landers under NASA's CLPS initiative: LN-1 on the Intuitive Machines IM-1 mission [1], and LuGRE on the Firefly Blue Ghost lander [3].",
+        "transportation_process": [
+          "Integrate the receiver, antenna and electronics with the host lander on Earth, checking antenna field-of-view and pointing constraints.",
+          "Launch the lander and transfer it to a lunar trajectory.",
+          "Land the lander on the lunar surface. LuGRE's receiver was powered on less than 24 hours after landing [2].",
+          "Mount the antenna and receiver with an acceptable view of the sky, then connect power and data.",
+          "Operate within the lander's power and attitude-control budget while managing the lunar day-night thermal cycle [2].",
+          "For beacon concepts, install the beacon and reference station on a suitable surface site and integrate power, communications and thermal protection [5]."
+        ],
+        "deployment_methods": "The flown examples used lander-mounted installation rather than a separate deployment mechanism. LN-1 was installed on the NOVA-C lander [1], and LuGRE was carried aboard the Blue Ghost lander [2][3]. The Qascom station is a fixed surface beacon concept whose deployment method is not described beyond an assumed site [5]. The NAVISP study does not state a deployment method [4].",
+        "historical_examples": "LN-1 was carried on the IM-1 mission, whose lander landed in February 2024 and was reported in news coverage to have touched down hard and to have come to rest tilted [6]. Its surface performance is not confirmed in the sources reviewed [1]. LuGRE landed on 2 March 2025 and produced a surface navigation fix on 3 March 2025 [2]. Neither example demonstrates a permanent lunar navigation service.",
+        "compatibility_assessment": "Compatibility with a specific lander is documented only for the flown examples: LN-1 with IM-1 [1] and LuGRE with Blue Ghost [3]. No verified interface evidence was found linking the Qascom station or the NAVISP navigation payload to any named lander or spacecraft [4][5]. A new demonstrator would need its mass, dimensions, mounting, antenna field of view, power and data interfaces checked against the target lander's verified specifications before any compatibility claim is made.",
+        "images": [
+          {
+            "id": "ln1_flight_payload_installed",
+            "description": "NASA Lunar Node-1 (LN-1) flight payload installed on the Intuitive Machines NOVA-C lander for IM-1.",
+            "image_type": "Flight hardware installation photograph",
+            "image_url": null,
+            "source_page_url": "https://science.nasa.gov/technology/technology-highlights/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+            "publisher": "NASA",
+            "credit": "NASA (as listed on source page)",
+            "caption": "Flight payload installed on the NOVA-C lander, as listed on the NASA LN-1 page.",
+            "section_placements": [
+              "physical_specifications.examples[0]",
+              "transportation_and_deployment"
+            ],
+            "notes": "A direct asset URL appears in the NASA page markup but was not fetched or verified in this run, so image_url is null. View the image on the source page; check NASA reuse terms before republication."
+          }
+        ]
+      },
+      "historical_significance": "LuGRE produced the first GNSS-based position fix recorded on the lunar surface, obtained on 3 March 2025 [2]. This shows that Earth's navigation satellite signals can be tracked from the lunar surface, although accuracy results were not verified in this run. LN-1 is significant as a NASA lunar navigation beacon carried on a commercial lander, but its performance has not been confirmed in the sources reviewed [1]. The NAVISP programme is significant as the ESA framework for the proposed LCNS roadmap [4], and the Qascom work is an example of European surface beacon development [5]. Together these efforts move from concept towards flight and test evidence, but the sources reviewed describe no permanent lunar navigation service.",
+      "limitations_and_uncertainties": "The name 'lunar positioning demonstrator' describes a category of experiments, so the examples here differ in mission role, maturity and evidence base. LN-1's source gives no numerical power specification, and its reported volume appears inconsistent with its reported mass; its on-surface results have not been confirmed. LuGRE's flight evidence comes from a journal paper, but its position-accuracy and surface satellite-count results were not verified in this run because only the first part of the full text was read. The Qascom accuracy figure and the NAVISP roadmap statements are design or programme statements rather than measured results. The Qascom mass and power figures come from a trade press article and remain unverified against ESA documentation. This article is not a certified design specification for a new payload.",
+      "images": [
+        {
+          "id": "ln1_flight_payload_installed",
+          "description": "NASA Lunar Node-1 (LN-1) flight payload installed on the Intuitive Machines NOVA-C lander for IM-1.",
+          "image_type": "Flight hardware installation photograph",
+          "image_url": null,
+          "source_page_url": "https://science.nasa.gov/technology/technology-highlights/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+          "publisher": "NASA",
+          "credit": "NASA (as listed on source page)",
+          "caption": "Flight payload installed on the NOVA-C lander, as listed on the NASA LN-1 page.",
+          "section_placements": [
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ],
+          "notes": "A direct asset URL appears in the NASA page markup but was not fetched or verified in this run, so image_url is null. View the image on the source page; check NASA reuse terms before republication."
+        },
+        {
+          "id": "ln1_concept_of_operations",
+          "description": "NASA concept of operations diagram for Lunar Node-1 navigation beacon operations.",
+          "image_type": "Technical diagram (concept of operations)",
+          "image_url": null,
+          "source_page_url": "https://science.nasa.gov/technology/technology-highlights/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface",
+          "publisher": "NASA",
+          "credit": "NASA (as listed on source page)",
+          "caption": "Lunar Node-1 concept of operations diagram, as listed on the NASA LN-1 page.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL not fetched or verified in this run, so image_url is null. The diagram depicts the intended concept, not measured operations."
+        },
+        {
+          "id": "lugre_artist_concept",
+          "description": "Artist's concept of LuGRE aboard the Blue Ghost lunar lander receiving signals from Earth's GNSS constellations.",
+          "image_type": "Artist's concept rendering",
+          "image_url": null,
+          "source_page_url": "https://etd.gsfc.nasa.gov/our-work/lunar-gnss-receiver-experiment-lugre/",
+          "publisher": "NASA Goddard Engineering and Technology Directorate",
+          "credit": "NASA/Dave Ryan",
+          "caption": "Artist's concept rendering of LuGRE aboard the Blue Ghost lunar lander receiving signals from Earth's GNSS constellations.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Artist's concept, not a photograph of flight hardware. The direct asset URL was not fetched or verified in this run, so image_url is null."
+        },
+        {
+          "id": "qascom_testbed",
+          "description": "Lunar surface beacon and reference station testbed developed by Qascom for the ESA NAVISP programme.",
+          "image_type": "Testbed image (exact type not stated in source)",
+          "image_url": null,
+          "source_page_url": "https://insidegnss.com/qascom-demonstrates-lunar-surface-pnt-beacon-and-reference-station/",
+          "publisher": "InsideGNSS",
+          "credit": "Image courtesy of Qascom (as stated on source page)",
+          "caption": "Lunar surface beacon and reference station testbed (image courtesy of Qascom).",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Article image hosted by a trade publication. The direct asset URL was not fetched or verified in this run, so image_url is null. Reuse rights should be confirmed with Qascom or InsideGNSS."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lugre_artist_concept",
+          "description": "Artist's concept of LuGRE aboard the Blue Ghost lunar lander receiving signals from Earth's GNSS constellations.",
+          "image_type": "Artist's concept rendering",
+          "image_url": null,
+          "source_page_url": "https://etd.gsfc.nasa.gov/our-work/lunar-gnss-receiver-experiment-lugre/",
+          "publisher": "NASA Goddard Engineering and Technology Directorate",
+          "credit": "NASA/Dave Ryan",
+          "caption": "Artist's concept rendering of LuGRE aboard the Blue Ghost lunar lander receiving signals from Earth's GNSS constellations.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Artist's concept, not a photograph of flight hardware. The direct asset URL was not fetched or verified in this run, so image_url is null."
+        }
+      ],
+      "references": [
+        {
+          "title": "Deploying and Demonstrating Navigation Aids on the Lunar Surface (Lunar Node-1 technology highlight)",
+          "publisher": "NASA Science",
+          "url": "https://science.nasa.gov/technology/technology-highlights/deploying-and-demonstrating-navigation-aids-on-the-lunar-surface"
+        },
+        {
+          "title": "GNSS Reception at the Moon: First Results of the Lunar GNSS Receiver Experiment (LuGRE)",
+          "publisher": "NAVIGATION: Journal of the Institute of Navigation, vol. 73, no. 1, navi.756 (March 2026); Parker, Konitzer, Esantsi, Ashman, Dovis et al.",
+          "url": "https://navi.ion.org/content/73/1/navi.756"
+        },
+        {
+          "title": "Lunar GNSS Receiver Experiment (LuGRE)",
+          "publisher": "NASA Goddard Engineering and Technology Directorate",
+          "url": "https://etd.gsfc.nasa.gov/our-work/lunar-gnss-receiver-experiment-lugre/"
+        },
+        {
+          "title": "061 bis - Navigation payload demonstrator of future LCNS satellite",
+          "publisher": "ESA NAVISP programme",
+          "url": "https://navisp.esa.int/project/details/211/show"
+        },
+        {
+          "title": "Qascom Demonstrates Lunar Surface PNT Beacon and Reference Station",
+          "publisher": "InsideGNSS (trade press, February 2026)",
+          "url": "https://insidegnss.com/qascom-demonstrates-lunar-surface-pnt-beacon-and-reference-station/"
+        },
+        {
+          "title": "IM and NASA Declare Success - Odysseus Lander on the Moon",
+          "publisher": "SpacePolicyOnline (news)",
+          "url": "https://spacepolicyonline.com/news/im-and-nasa-declare-success-odysseus-lander-on-the-moon/"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Example 1 NASA Lunar Node-1 (LN-1)": "payload.article.physical_specifications.examples[0].images",
+      "Example 2 Lunar GNSS Receiver Experiment (LuGRE)": "payload.article.physical_specifications.examples[1].images",
+      "Example 3 Qascom / OHB Italia Moon Station": "payload.article.physical_specifications.examples[2].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. image_url is null for every image because direct asset URLs were not fetched or verified in this run; source_page_url links are used instead. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Image direct asset URLs were not fetched or verified in this run. All four registry images use image_url null with a source_page_url; the asset URLs can be checked on those pages.",
+    "The LuGRE NAVIGATION paper was read only in its first 100,000 characters. Position accuracy results, the surface satellite count and the limitations and conclusions sections were not verified.",
+    "The LN-1 NASA page gives a mass of approximately 2.8 kg and a volume of approximately 175 x 220 x 300 cm. The unit inconsistency was not resolved, so no dimensions are asserted.",
+    "LN-1 on-surface performance was not found in the sources reviewed. The IM-1 landing details come from a secondary news source.",
+    "Qascom mass (roughly 180 kg) and peak power (around 440 W) come from a trade press article dated 9 February 2026 and were not checked against ESA documentation.",
+    "Qascom's meter-level accuracy comes from simulations, not measured test or flight data.",
+    "A search snippet reported that the NAVISP navigation payload test results supported suitability for the Moonlight concept. The NAVISP project page does not use the name Moonlight and this claim was not verified, so it is not used.",
+    "The NAVIGATION paper gives different Qascom author locations (Cassola and Bassano del Grappa) and LuGRE distance figures differ between sources. Neither point is used in the article.",
+    "No lunar landing-site or location recommendations are included, per the user's deferral. Qascom's assumed deployment area is reported only as a design assumption from the source."
+  ]
+}

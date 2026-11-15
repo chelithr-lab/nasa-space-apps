@@ -1,0 +1,196 @@
+{
+  "catalogue_id": 168,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 8,
+    "name": "Regolith and soil analysis"
+  },
+  "payload": {
+    "number": 168,
+    "name": "Soil adhesion sensor",
+    "article": {
+      "overview": "A soil adhesion sensor is an instrument class designed to measure how strongly lunar regolith, the loose layer of dust and soil on the Moon, sticks to surfaces such as spacesuit fabrics, thermal paints, optics, solar cells and other spacecraft materials. The name describes a measurement purpose rather than one standard design. Two lunar-relevant instruments were identified in this research: NASA's Regolith Adherence Characterization (RAC) payload, carried on Firefly's Blue Ghost Mission 1 lander [1][2][6], and the LUNARIS payload from AGH University of Science and Technology in Krakow, a small optical instrument planned to fly on a future Griffin lander [3][4]. A benchtop laboratory centrifuge that measures particle detachment from a substrate is also described to show the ground-based approach [5].\n\nNASA's delivery page documents RAC's placement on the Blue Ghost Mission 1 lander [2]. No RAC measurement results were found in the sources reviewed, and LUNARIS has not flown. The lunar-surface status of RAC is therefore established only as delivery to the Moon, not as an available dataset.",
+      "description": "Adhesion is the tendency of fine particles to remain attached to a surface. NASA describes lunar regolith as “a sticky challenge for long-duration expeditions to the surface” [1]. Lunar dust can interfere with machinery and threaten astronauts [4], so engineers need measured data on which materials dust clings to, and how much, before selecting materials for spacesuits, habitats, spacecraft and instruments [1][2].\n\nA soil adhesion sensor addresses this by exposing or loading test materials and recording how much dust remains on them or how strongly it is held. Two approaches appear in the sources reviewed. In an in-situ approach, samples are exposed on the lunar surface and imaged over time, as in RAC [2]. In a laboratory approach, dusted samples are spun and the force needed to detach particles is inferred from microscope images of the particles [5]. The two approaches measure different quantities, so their results should not be read as numerically equivalent.\n\nAdhesion values depend on the dust, the substrate and the environment. The laboratory study used a single lunar regolith simulant on a single PEEK substrate [5], so its numbers describe that combination only.",
+      "scientific_purpose_and_applications": "The primary purpose is to provide engineering data on how lunar dust adheres to candidate materials under lunar conditions, rather than to study the Moon's interior or geology. NASA states that RAC data are meant to help select materials for spacecraft, spacesuits, habitats and equipment under Artemis [1][2]. RAC is also described as measuring dust accumulation rates during landing and routine lander operations [1].\n\nRAC's sample set reflects these applications. NASA's article lists fabrics, paint coatings, optical systems, sensors and solar cells among its materials [1], and the CLPS page includes a dust collection disk, thermal control paint, Kapton and titanium [2].\n\nThe LUNARIS team's stated purpose is similar: to understand how regolith adheres to materials planned for future lunar use, so that equipment and habitats can be designed accordingly [4]. The laboratory centrifuge is a screening tool for comparing simulant and substrate pairs [5].",
+      "operating_principle": "The sources reviewed describe three different operating principles, one for each example in the physical specifications section.\n\nRAC is an exposure-and-imaging experiment. Its two sample wheels, A and B, rotate into view of cameras every 24 hours. The CLPS page describes 5.1 MP images, supplemented by infrared, ultraviolet and temperature data [2]. Wheel B stays covered until post-landing commissioning is complete and serves as a control for effects during transit, while wheel A is exposed for the whole mission [2]. Accumulated dust is therefore observed on exposed samples over time; the instrument does not directly measure the force needed to remove it. Operations are described as autonomous, with some ground commanding for recovery and contingencies [2]. The page states that RAC components are derived from the Materials International Space Station Experiment (MISSE) [2].\n\nThe LUNARIS team describes a compact, active payload whose purpose is to measure how regolith adheres to materials [3]. A preprint describing its design could not be retrieved in full for this article. A search summary of that 2025 preprint [7] reports that the payload deploys a hatch, presses a sample plate onto the surface, lights the contact area, takes images and sends data to Earth. These operating steps have not been checked against the full text and should be treated as unverified.\n\nThe laboratory centrifuge works as follows. A sample dusted with particles spins on a plate. The detachment force of each particle is estimated from its centrifugal force, Fc = m·ω²·r, where m is particle mass, ω is angular velocity and r is the radius of rotation. Particle mass is estimated from microscope images as area × estimated height × density [5]. The paper expresses adhesion as a balance between centrifugal and gravitational force [5]. Because particle mass comes from images, results depend on how particles are segmented and on assumptions about density and shape [5].",
+      "scientific_importance": "Adhesion data sit between two kinds of evidence. Laboratory tests with simulants are controllable but may not match the real lunar surface, and the centrifuge study's authors describe their device as a comparative screening tool rather than a precision instrument [5]. Exposure experiments on the Moon test real materials under real conditions, but only if their data are returned and analysed [1][2].\n\nRAC is significant as a flown exposure experiment for materials at the lunar surface. If its data are published, they would give a direct lunar-surface data point for this class of measurement. No RAC results were found in the sources reviewed [1][2].\n\nThe AGH team links its work to crew safety and machinery reliability, noting that lunar dust can interfere with machinery and threaten astronauts [4]. If flown, a small low-mass optical payload such as LUNARIS could add materials data at modest delivery cost [3][4]. Its value is still prospective.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power specification for a soil adhesion sensor. The three examples below are of different kinds: a flown NASA exposure-and-imaging payload, a small planned optical payload, and a laboratory benchtop device. Their figures describe those specific instruments and should not be compared as if they were the same design. Values not published in the sources reviewed are described as not publicly specified rather than estimated.",
+        "examples": [
+          {
+            "name": "Regolith Adherence Characterization (RAC)",
+            "type": "Flown exposure-and-imaging payload (Blue Ghost Mission 1, CLPS TO 19D)",
+            "developer": "Aegis Aerospace, Webster, Texas",
+            "mass_kg": null,
+            "dimensions": "not publicly specified",
+            "power": "not publicly specified",
+            "sample_configuration": {
+              "wheels": 2,
+              "sample_materials_per_wheel": 15,
+              "total_samples": 30
+            },
+            "imaging": "5.1 MP camera images; infrared, ultraviolet and temperature data",
+            "cadence": "Sample wheels rotate into camera view every 24 hours",
+            "operational_results": "none published in the sources reviewed",
+            "source_urls": [
+              "https://www.nasa.gov/missions/artemis/nasa-science-payload-to-study-sticky-lunar-dust-challenge",
+              "https://science.nasa.gov/lunar-science/deliveries/19d-firefly-aerospace/"
+            ],
+            "images": []
+          },
+          {
+            "name": "LUNARIS",
+            "type": "Planned small optical regolith-adhesion payload (not flown)",
+            "developer": "Lunar Technologies student team, AGH University of Science and Technology, Krakow, with Orbital Space (Dubai)",
+            "status": "Not flown. Vibration and thermal-vacuum tests at ESA CubeSat Support Facility, July 2025; design refinements needed before flight readiness per ESA",
+            "mass_kg": 0.2,
+            "mass_note": "about 200 g (approximate)",
+            "dimensions_cm": [
+              6,
+              8,
+              10
+            ],
+            "structure": "3D printed by selective laser sintering in Windform",
+            "power_w": null,
+            "power_note": "not stated on pages read; 0.5 W budget appears only in an unverified search summary of the 2025 preprint",
+            "launch": "planned for 2027 per AGH, on Astrobotic Griffin lander; no month, day or launch vehicle given",
+            "source_urls": [
+              "https://education.esa.int/Educational_Satellites/Lunaris_payload_from_AGH_University_prepares_for_the_Moon_with_ESA",
+              "https://lunar-tech.agh.edu.pl/en/lunaris"
+            ],
+            "images": []
+          },
+          {
+            "name": "Benchtop centrifugal dust-adhesion device (laboratory)",
+            "type": "Ground-based laboratory research prototype (benchtop centrifuge; not a flight instrument)",
+            "developer": "not stated in the content reviewed",
+            "mass_kg": null,
+            "cost_eur": 104.07,
+            "radius_of_rotation_m": 0.014455,
+            "test_speeds_rpm": [
+              6800,
+              10400
+            ],
+            "spin_duration_s": 10,
+            "sample": "2.5 mm PEEK substrate",
+            "dust": "Lunex LX-M100 lunar regolith simulant, sieved through 100 µm then 50 µm",
+            "imaging": "Keyence VHX-7000 at 200×; 0.7041 µm per pixel",
+            "force_range": "not stated; adhesion described as on the order of nanonewtons",
+            "measurement_uncertainty": "not quantified",
+            "power_supply": "external 6 V",
+            "source_urls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC12446612/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The three examples differ widely in scale: LUNARIS is a 6 × 8 × 10 cm payload [4]; RAC's dimensions are not publicly specified [1][2]; the centrifuge is a benchtop assembly with a 14.455 mm radius of rotation [5]. No general proportions can be inferred for the class.",
+        "mass_and_weight": "LUNARIS is about 200 g [3][4]. RAC's mass is not publicly specified [1][2]. The centrifuge study does not report a total device mass in the content reviewed [5]. Mass drives lander capacity and delivery cost, so the difference between a 200 g payload and a larger instrument matters for mission planning.",
+        "power_requirements": "LUNARIS: not stated on the sources read; a 0.5 W budget appears only in a search summary of [7] and is unverified. RAC: not publicly specified [1][2]. The laboratory device runs from an external 6 V supply [5]."
+      },
+      "environmental_and_operational_requirements": "Adhesion instruments on the lunar surface must survive conditions shared with other surface payloads. The LUNARIS team's qualification shows one approach: vibration to simulate launch and landing loads, and thermal-vacuum cycling to simulate launch, cruise and surface operations [3].\n\nRAC's sample exposure is governed by its 24-hour wheel-rotation schedule [2]. Its control wheel stays covered until post-landing commissioning is complete [2]. NASA describes the instrument as measuring dust accumulation during landing and routine lander operations [1].\n\nThe laboratory device requires its motor speed to be calibrated experimentally, because speed cannot be set directly in rpm, and its performance depends on bearing resistance and mechanical tolerances [5].",
+      "limitations": "The evidence base for this payload class is currently thin. No RAC measurement results were found in the sources reviewed [1][2], and LUNARIS has not flown [3][4].\n\nIn the laboratory device, adhesion is inferred indirectly from calculated particle mass and angular velocity. Accuracy depends on image segmentation and on density and shape assumptions, and the authors describe it as a comparative screening tool [5]. The paper also contains inconsistencies that should be resolved before its numbers are reused: the 10,400 rpm test exceeds the motor rating [5], and particle size is described as mostly sub-micrometre in the text while one table lists a median of 87 µm [5].\n\nResults from one simulant and one substrate cannot be transferred directly to other materials or to the real lunar surface [5].",
+      "transportation_and_deployment": {
+        "overview": "RAC was carried to the Moon as one payload on a commercial CLPS lander [1][2]. LUNARIS is planned for delivery on Astrobotic's Griffin lander, but no interface or integration data beyond the AGH project statement were found [4]. The laboratory centrifuge is ground equipment and is not transported.",
+        "transportation_process": [
+          "Earth integration: RAC was integrated into the Blue Ghost Mission 1 payload complement under CLPS task order TO 19D [2]. Integration steps for LUNARIS are not described in the sources reviewed [3][4].",
+          "Launch and lunar transfer: the Blue Ghost Mission 1 lander carried RAC to the Moon [2][6]. The launch vehicle and transfer profile are not stated in the sources reviewed.",
+          "Landing delivery: Blue Ghost Mission 1 landed in Mare Crisium on 2 March 2025 [6].",
+          "Pre-flight qualification (LUNARIS): vibration and thermal-vacuum testing at ESA's CubeSat Support Facility in July 2025 [3].",
+          "Launch and delivery (LUNARIS): planned for 2027 on Griffin [4]; launch vehicle and transfer not stated.",
+          "Power, data and thermal interfaces: RAC's power and data interfaces are not described in the sources reviewed [2]. LUNARIS power is not stated [3][4]."
+        ],
+        "deployment_methods": "The RAC page describes sample wheels rotating into camera view and does not describe a deployment mechanism [2]. LUNARIS is described by ESA as micro-deployable [3]. A search summary of its 2025 preprint [7] reports a hatch and a sample-plate press; this is unverified. The laboratory centrifuge needs no deployment.",
+        "historical_examples": "RAC is the flown example identified here. It was delivered on Blue Ghost Mission 1, which landed in Mare Crisium on 2 March 2025 [6]. Its operation after landing is not reported in the sources reviewed [2]. LUNARIS and the laboratory centrifuge have not flown [3][4][5].",
+        "compatibility_assessment": "Compatibility depends on mass, volume, mounting, thermal, power, data and landing-load interfaces. None of these was verified for a specific lander beyond the cases described above. RAC's flight on Blue Ghost Mission 1 is documented [2][6]. LUNARIS's compatibility with Griffin is not verified: the AGH page names the lander and a 2027 launch but gives no interface data [4]. No compatibility claim is made beyond these statements.",
+        "images": []
+      },
+      "historical_significance": "In the sources reviewed, dedicated dust-adhesion payloads appear only in recent projects. RAC was one of ten NASA science and technology payloads on Firefly's Blue Ghost Mission 1, which landed in Mare Crisium on 2 March 2025 [1][2][6]. NASA presents it as a source of data for Artemis-era hardware selection [1].\n\nLUNARIS represents a different development model: a student-led university project working with a commercial partner and a commercial lander, with a planned 2027 launch [3][4]. The laboratory centrifuge demonstrates a low-cost ground method for comparing dust adhesion on simulant and substrate pairs [5].\n\nThis search was not a historical survey. Earlier soil-property instruments, including proposals for planetary adhesion estimates, were not verified and are not assessed here.",
+      "limitations_and_uncertainties": "- RAC results: none published in the sources reviewed. Sensing and illumination details are not described [1][2].\n- RAC specifications: mass, dimensions and power are not publicly specified [1][2].\n- LUNARIS mechanism and power: only partly sourced from ESA and the AGH page [3][4]. The full text of the 2025 preprint [7] could not be retrieved, so its operating details are unverified.\n- LUNARIS schedule: AGH gives 2027 without a month or day [4]. Search summaries mention other Griffin dates; the LUNARIS manifest slot is not confirmed.\n- Laboratory device: force range and measurement uncertainty are not quantified, and the paper contains internal inconsistencies noted above [5].\n- Standards: the sources reviewed do not establish a standard specification or measurement protocol for soil adhesion sensors.\n- Lander compatibility: not verified for any payload described here.\n- Images: no direct image asset was verified for this article, so the article contains no images.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "NASA Science Payload to Study Sticky Lunar Dust Challenge",
+          "publisher": "NASA",
+          "date": "Page dated 20 December 2024 (updated 8 January 2025 per page metadata)",
+          "url": "https://www.nasa.gov/missions/artemis/nasa-science-payload-to-study-sticky-lunar-dust-challenge",
+          "verification": "Fetched and summarised."
+        },
+        {
+          "title": "Regolith Adherence Characterization (RAC): CLPS TO19D delivery page",
+          "publisher": "NASA Science",
+          "date": "Undated on the fetched page",
+          "url": "https://science.nasa.gov/lunar-science/deliveries/19d-firefly-aerospace/",
+          "verification": "Fetched and summarised."
+        },
+        {
+          "title": "Lunaris payload from AGH University prepares for the Moon with ESA",
+          "publisher": "ESA Education",
+          "date": "15 September 2025",
+          "url": "https://education.esa.int/Educational_Satellites/Lunaris_payload_from_AGH_University_prepares_for_the_Moon_with_ESA",
+          "verification": "Fetched via ESA redirect and summarised."
+        },
+        {
+          "title": "LUNARIS payload project page",
+          "publisher": "AGH University of Science and Technology, Krakow (Lunar Technologies)",
+          "date": "Undated on the fetched page",
+          "url": "https://lunar-tech.agh.edu.pl/en/lunaris",
+          "verification": "Fetched and summarised."
+        },
+        {
+          "title": "Centrifugal device for dust adhesion measurement",
+          "publisher": "PubMed Central (PMC12446612)",
+          "date": "Not captured in this run",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12446612/",
+          "verification": "Fetched via PMC redirect and summarised. Authors and publication date not captured."
+        },
+        {
+          "title": "Blue Ghost successfully starts lunar surface mission while IM-2 lands sideways",
+          "publisher": "NASASpaceflight",
+          "date": "March 2025",
+          "url": "https://www.nasaspaceflight.com/2025/03/blue-ghost-im-2-landings/",
+          "verification": "Search summary only; page not fetched. Used only for the Blue Ghost Mission 1 landing date and surface operations."
+        },
+        {
+          "title": "Lunaris optical payload preprint (Preprints.org manuscript 202508.2082)",
+          "publisher": "Preprints.org",
+          "date": "2025",
+          "url": "https://www.preprints.org/manuscript/202508.2082",
+          "verification": "Search summary only; full text not retrieved (HTTP 403). Operating-step and power claims are unverified."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Regolith Adherence Characterization (RAC) example": "payload.article.physical_specifications.examples[0].images",
+      "LUNARIS example": "payload.article.physical_specifications.examples[1].images",
+      "Benchtop centrifugal device example": "payload.article.physical_specifications.examples[2].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All URL fields in this file have query strings and fragments removed. No image URLs were included because no direct image asset was verified in this run."
+  },
+  "data_quality_notes": [
+    "No direct image asset URL was verified; image arrays are empty and the article contains no images.",
+    "NASA's article says 'more than a dozen' sample materials in one passage and 15 materials in another; the NASA CLPS page states thirty samples, two identical sets of 15. The article uses 15 materials per wheel and 30 samples in total.",
+    "Blue Ghost Mission 1 landing date (2 March 2025) is taken from a search summary of NASASpaceflight and secondary coverage, not from a fetched primary page.",
+    "The 2025 Lunaris preprint (Preprints.org 202508.2082) could not be fetched (HTTP 403). Its operating steps (hatch, sample-plate press, illumination) and its 0.5 W power budget come from a search summary only and are flagged as unverified in the article. The MDPI Remote Sensing Lunaris technical note also returned HTTP 403 and is not cited.",
+    "LUNARIS manifest is unconfirmed: AGH gives 2027 for Griffin; search summaries mention other Griffin-1 timing that does not name LUNARIS.",
+    "Laboratory centrifuge paper has internal inconsistencies: 10,400 rpm exceeds the 10,000 rpm no-load motor rating; adhesion sign convention differs between text and equation; sub-micrometre particle statement conflicts with a median of 87 µm in its table; height equation dimensional consistency unclear. Values are reported with these caveats.",
+    "Viking-era and other historical soil-property instrument pages returned HTTP 403 and were not verified; no historical survey is included.",
+    "Adhesion physics (van der Waals and electrostatic contributions) appeared only in search summaries and is not presented as a sourced claim.",
+    "Lunar location recommendations were deferred by the user and are not included."
+  ]
+}

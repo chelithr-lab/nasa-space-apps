@@ -1,0 +1,154 @@
+{
+  "catalogue_id": 215,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 215,
+    "name": "3D printing technology demonstrator",
+    "article": {
+      "overview": "A 3D printing technology demonstrator is a test system that shows whether additive manufacturing, which builds objects layer by layer from a digital model, can work with materials and conditions relevant to the Moon. For lunar use, the main attraction is in-situ resource utilisation (ISRU): producing parts or structures from local regolith (lunar soil) instead of launching every building material from Earth [1][3][5]. The sources reviewed for this article describe examples at different maturity levels: an International Space Station test with simulated regolith, announced for launch around August 2021 [1]; a solar sintering proof of concept on Earth that reached Technology Readiness Level (TRL) 4 [2][3]; and laser-based regolith printing concepts that are described as planned rather than flown [4][5]. No reviewed source reports a 3D printer operating on the lunar surface.",
+      "description": "A lunar 3D printing demonstrator combines a print head or energy source, a feedstock supply, a build platform and process monitoring. The feedstock and energy source vary by design. One approach mixes simulated regolith with a polymer binder and prints it in microgravity [1]. Another uses only concentrated sunlight to sinter regolith simulant without any binder [2][3]. A third, proposed by ICON, uses a laser to melt regolith with no additives; the 2022 ICON article explains that water-based binders are unsuitable because water would sublimate on the Moon [5]. DLR's MOONRISE concept also melts lunar dust with a laser, with AI-supported process and quality control from Earth [4]. In each case the demonstrator's purpose is to test whether printing works and whether the printed material has useful mechanical properties, rather than to supply a production capability.",
+      "scientific_purpose_and_applications": "The main scientific and engineering purposes are to verify that printing functions in the target environment, to measure the mechanical properties of printed material, and to learn how regolith behaves when heated or melted. The ISS experiment was designed to demonstrate printing in microgravity and to obtain tensile, compressive and flexural strength values for printed simulant samples [1]. The ESA-funded solar sintering work studied substrate, scanning pattern and scanning speed as process parameters and produced brick-sized demonstrators [3]. Applications considered in the sources include an outer shell for a lunar base [3] and in-situ construction for Artemis-era infrastructure [1][5]. These aims are demonstrations of feasibility. None of the reviewed sources reports a completed lunar structure.",
+      "operating_principle": "All approaches build parts layer by layer, but the energy input and bonding mechanism differ. In solar sintering, concentrated sunlight is focused onto a layer of regolith simulant, heating the grains until they fuse, and the layers are built up in sequence [2][3]. In laser melting, a laser tuned to the chemistry of the regolith melts each layer, which solidifies into a ceramic structure before the next layer is added [5]. In the Redwire approach, a polymer binder holds simulant particles together during printing [1]. The ESA activity identified substrate, scan pattern and scan speed as variables that control the process [3]. The detailed thermal and bonding physics of each route depends on experimental data that were not all available in the sources reviewed.",
+      "scientific_importance": "Regolith is present at the lunar surface, so using it for construction could reduce the mass that must be launched from Earth [1]. Printing could also allow structures to be built without the infrastructure needed for conventional casting. The sources reviewed present this as a strategic need rather than as a proven capability: the ISS test was designed to determine whether printing works without gravity and what strength the material achieves [1], while ground demonstrations used simulants under laboratory or simulated-sunlight conditions [2][3]. ICON notes that regolith composition varies by landing site, so extensive testing would be required before lunar use [5]. The importance of a demonstrator therefore lies in closing evidence gaps about process robustness, material performance and operations in real lunar conditions.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a 3D printing technology demonstrator, because the class includes different feedstocks, energy sources and build methods. The examples below are described separately and must not be treated as interchangeable. Mass, dimensions and power are reported only where a source gives them. The sources reviewed do not publish these values for the four examples, so they are recorded as not publicly specified.",
+        "examples": [
+          {
+            "name": "Redwire Regolith Print (ISS technology demonstration)",
+            "type": "In-space technology demonstration; flight and results not confirmed in the sources reviewed",
+            "description": "Redwire's Regolith Print project adds a custom print head and new print beds to Redwire's Additive Manufacturing Facility (AMF), a commercial printer that has operated on the International Space Station since 2016 [1]. The feedstock is a proprietary mixture of simulated lunar regolith and polymer, and each print head is preloaded with its own feedstock supply [1]. The primary objective is to show that the process works in microgravity; the secondary objective is to measure the tensile, compressive and flexural strength of the printed material [1]. The project planned to print three slabs on the station, return them to Earth, and have NASA laboratories extract test specimens for destructive testing [1]. The Redwire article dated 5 August 2021 gives a launch window on Northrop Grumman's 16th commercial resupply mission, no earlier than 10 August [1]. The sources reviewed report no test results.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://rdw.com/newsroom/developing-key-technologies-to-build-sustainable-lunar-infrastructure"
+            ],
+            "images": []
+          },
+          {
+            "name": "ESA-funded solar sintering demonstrator (DLR; ESA GSTP reference G617-153QT)",
+            "type": "Ground-based proof of concept; TRL 4 as stated by ESA",
+            "description": "The ESA activity demonstrated additive manufacturing that sinters lunar soil simulant using only concentrated solar energy and no binder [3]. The process was demonstrated with a solar furnace and a solar simulator, and the activity produced three brick-sized demonstrators [3]. ESA reports the achieved TRL as 4 and identifies a follow-on activity to study lunar environmental effects on process performance and the consolidated material [3]. The contractor was DLR, and the ESA page lists the Horizon 2020 project RegoLight as a follow-on [3]. The related paper by Meurisse and colleagues reports the feasibility of layer-by-layer sintering of lunar regolith using concentrated sunlight [2]. This article's summary of that paper is based on the search-result abstract and project information, not on the full text.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/3D_printing_of_a_model_building_block_for_a_lunar_base_outer_shell",
+              "https://elib.dlr.de/123179/"
+            ],
+            "images": []
+          },
+          {
+            "name": "ICON laser-based regolith printing (NASA-funded concept)",
+            "type": "Proposed lunar construction technology; Earth vacuum demonstrations reported",
+            "description": "ICON's proposed approach melts regolith with a laser tuned to its chemistry, laying and melting successive layers into a ceramic structure without additives [5]. The company has tested the approach on simulated regolith in vacuum demonstrations on Earth [5]. A NASA Phase III SBIR award of $57.2M funds the technology, including a flight-ready printer system and ICON's first construction project on the Moon [5]. The 2022 article projected a lunar-surface demonstration in 2026, assuming the Artemis timeline held [5]. No flight hardware status, launch date or assigned mission is reported in that source [5].",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://payloadspace.com/icon-wins-nasa-contract-for-lunar-3d-printing"
+            ],
+            "images": []
+          },
+          {
+            "name": "MOONRISE (DLR, with Laser Zentrum Hannover and TU Berlin)",
+            "type": "Planned lunar laser-processing demonstrator; not flown",
+            "description": "MOONRISE is a project funded by the German Space Agency at DLR to melt lunar regolith with a laser so that it solidifies into compact solid structures [4]. Partners are Laser Zentrum Hannover (LZH) and Technische Universität Berlin [4]. The concept includes AI-based analysis of conditions on the Moon and of the solidified material, enabling process and quality control from Earth [4]. The payload is planned to be transported to the Moon as part of NASA's Commercial Lunar Payload Services (CLPS) programme; no launch or landing date and no TRL are given [4]. The DLR page reports no dimensions, sample sizes or performance figures for the demonstrator [4].",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "source_urls": [
+              "https://event.dlr.de/en/ila2026/moonrise/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are not publicly specified for any of the four examples reviewed. The ESA demonstrators are described only as brick-sized [3], which is not a dimensional specification. A lunar printer's size would depend on its build volume, feedstock system, energy source and power availability, none of which is published for these examples.",
+        "mass_and_weight": "No mass value is published in the reviewed sources for these examples. Mass is a major design driver for lunar delivery because it affects launch and lander capacity; the absence of published mass figures means no comparison of mass requirements can be made here.",
+        "power_requirements": "Power requirements are not publicly specified for the examples. The laser approaches need electrical power [4][5], and solar sintering depends on concentrated sunlight [3]. The power requirements of the ISS printer are not given in the sources reviewed [1]."
+      },
+      "environmental_and_operational_requirements": "Lunar surface operations expose a printer to vacuum, large temperature swings, radiation and micrometeoroid impacts, and each approach has its own requirements. Polymer-binder printing requires a controlled feedstock and print environment, and the ISS experiment was designed to operate in microgravity [1]. Solar sintering depends on a steady source of concentrated sunlight, which the ESA activity exercised in a solar furnace and a solar simulator [3]. Laser approaches need electrical power and must handle regolith whose composition varies by landing site [4][5]. Water-based binders are unsuitable on the Moon because water would sublimate [5]. Printed parts must also be tested under the environments they will experience; the ESA activity identified the effects of the lunar environment on process performance as a follow-on study [3].",
+      "limitations": "Most published results use simulants rather than real lunar regolith, and the sources reviewed do not report measured strength values for the ISS-printed material [1]. The TRL 4 figure applies to the ESA activity described on its page [3]. The ICON lunar demonstration year comes from a 2022 article and has no confirmed update in the sources reviewed [5]. No reviewed source reports a 3D printer operating on the Moon, so the article cannot describe lunar operating performance. Each approach depends on power, sunlight or a feedstock supply that would have to be delivered and maintained.",
+      "transportation_and_deployment": {
+        "overview": "A 3D printing demonstrator for the lunar surface would be a surface payload. Its transport chain would include printer and feedstock integration, launch, transfer, landing and deployment, followed by power, data and thermal set-up. The published examples sit at different points in this chain: the ISS printer is already in orbit as a platform, and MOONRISE is planned for a CLPS delivery [1][4]. No verified lander interface is available for any example, so compatibility cannot be asserted.",
+        "transportation_process": [
+          "Integrate the printer, print heads, feedstock supply and print beds with a spacecraft or cargo vehicle. For the ISS example, new print heads and beds were carried on a Northrop Grumman commercial resupply mission [1].",
+          "Launch the hardware on a launch vehicle or cargo spacecraft.",
+          "For a lunar surface demonstrator, transfer to the Moon and deliver the payload with a lander; MOONRISE is planned for transport under NASA's CLPS programme [4].",
+          "Deploy the printer on a stable, levelled build surface and connect power, thermal control and data links.",
+          "Load regolith feedstock, begin trial printing and monitor the process with telemetry.",
+          "Return printed samples if specimens are to be tested on Earth, as the ISS project planned for three slabs [1]."
+        ],
+        "deployment_methods": "The sources reviewed do not specify a lunar deployment method for any of these examples. Options that would need assessment include robotic placement and lander-mounted deployment; neither is verified for these payloads.",
+        "historical_examples": "The ISS Additive Manufacturing Facility, operating since 2016, is the in-space printing platform used for the Redwire project [1]. The ESA and DLR solar sintering work produced brick-sized demonstrators in ground tests [3]. No reviewed source describes a printer deployed on the lunar surface.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted. MOONRISE is described as planned for transport under NASA's CLPS programme [4], but the DLR page does not name a lander or interface. The ICON award funds a flight-ready printer system [5], but no interface data are available in the sources reviewed. Compatibility would need to be assessed against verified mass, volume, mounting, power, thermal and data interface specifications.",
+        "images": []
+      },
+      "historical_significance": "The Redwire project is among the first planned tests of printing with simulated regolith in orbit, and its sample-return plan was intended to give laboratory strength data [1]. The solar sintering work showed in a ground setting that regolith simulant could be sintered without a binder using concentrated sunlight [2][3]. The laser-based concepts from ICON and DLR represent later development directions [4][5]. Their historical significance will depend on whether lunar-surface demonstrations take place.",
+      "limitations_and_uncertainties": "The sources are a mix of mission announcements, agency project pages, an archived ESA page and trade press. The Redwire article is a pre-launch preview from 2021, so the launch outcome and test results are not confirmed here [1]. The solar sintering paper [2] was identified from a search listing and its abstract, and its detailed figures were not checked. The ICON timeline is a 2022 projection [5], and the DLR MOONRISE page gives no numbers [4]. No mass, dimensions, power or strength value is verified for any example. No image assets were verified, so the article includes no images. The payload name describes a class of technology rather than a single design, so the examples must not be read as interchangeable.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Developing Key Technologies to Build Sustainable Lunar Infrastructure (Redwire Regolith Print)",
+          "publisher": "Redwire Space newsroom; article dated 5 August 2021",
+          "url": "https://rdw.com/newsroom/developing-key-technologies-to-build-sustainable-lunar-infrastructure"
+        },
+        {
+          "title": "Solar 3D printing of lunar regolith (Meurisse et al.), Acta Astronautica 152, pp. 800-810",
+          "publisher": "Acta Astronautica; DLR eLib record (listing seen in search results, not opened)",
+          "url": "https://elib.dlr.de/123179/"
+        },
+        {
+          "title": "3D printing of a model building block for a lunar base outer shell (ESA GSTP reference G617-153QT)",
+          "publisher": "European Space Agency; published 29 June 2017; archive content",
+          "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/3D_printing_of_a_model_building_block_for_a_lunar_base_outer_shell"
+        },
+        {
+          "title": "MOONRISE: laser-based processing of lunar dust (DLR ILA 2026 page)",
+          "publisher": "German Aerospace Center (DLR)",
+          "url": "https://event.dlr.de/en/ila2026/moonrise/"
+        },
+        {
+          "title": "ICON Wins NASA Contract for Lunar 3D Printing",
+          "publisher": "Payload Space; published 29 November 2022, updated 5 December 2022",
+          "url": "https://payloadspace.com/icon-wins-nasa-contract-for-lunar-3d-printing"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Redwire Regolith Print example": "payload.article.physical_specifications.examples[0].images",
+      "ESA solar sintering example": "payload.article.physical_specifications.examples[1].images",
+      "ICON laser example": "payload.article.physical_specifications.examples[2].images",
+      "MOONRISE example": "payload.article.physical_specifications.examples[3].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image URLs were verified for this payload, so the image arrays are empty."
+  },
+  "data_quality_notes": [
+    "No image URLs were verified. The image arrays are empty and research_status.image_urls_added is false.",
+    "Reference 2 (Meurisse et al., 2018) was identified from a search listing; the full text was not opened. The only details used are its title, journal and general feasibility claim.",
+    "Reference 1 is a pre-launch preview dated 5 August 2021; the launch outcome and test results were not confirmed.",
+    "The ICON 2026 demonstration date is a 2022 projection and was not updated in the sources reviewed.",
+    "Details for references 3 and 4 come from fetched page summaries. The ESA page is marked as archive content.",
+    "Figures reported in a search-result snippet about a solar sintering thesis (irradiance and print duration) were excluded because the source was not opened.",
+    "Other concepts seen in search results (for example SpaceFactory LINA) were excluded to keep this entry to the four examples described."
+  ]
+}

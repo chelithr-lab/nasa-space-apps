@@ -1,0 +1,305 @@
+{
+  "catalogue_id": 241,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 12,
+    "name": "Astronomical observation"
+  },
+  "payload": {
+    "number": 241,
+    "name": "Cosmic microwave background detector",
+    "article": {
+      "overview": "A cosmic microwave background (CMB) detector is an instrument that measures the faint, almost uniform microwave radiation left over from the early universe [3]. The signal is extremely weak compared with the instrument's own noise and with microwave emission from the Milky Way, so CMB instruments are cooled, shielded and carefully calibrated. In the 320-payload catalogue this payload is classed as astronomical observation. This article uses flown space instruments from COBE, WMAP and Planck as examples of the detector class [1][8][9]. No lunar CMB detector mission was verified during this research, and this article does not assume that one exists.",
+      "description": "A CMB detector measures faint microwave and sub-millimetre radiation from the sky. The CMB is thermal radiation from the early universe; COBE's FIRAS found it to have a blackbody temperature of 2.725 ± 0.002 K [3]. Its tiny temperature differences across the sky and its polarization carry information about the universe. Detectors used for this fall broadly into two families. Radiometers amplify the incoming signal electronically, often with cryogenic HEMT amplifiers, and then detect its power [8][9]. Bolometers absorb the radiation and measure the temperature rise of the absorbing element with a sensitive thermometer [10]. Some instruments measure the sky's spectrum, while others map its temperature or polarization. The description below uses flown space instruments as examples and does not treat any one design as the definition of the class.",
+      "scientific_purpose_and_applications": "The main purposes are to measure the CMB spectrum, its overall temperature, its anisotropies (sky-to-sky temperature differences) and, in later missions, its polarization. The COBE DMR reported intrinsic anisotropy in the CMB at about one part in 100,000 [1]. COBE FIRAS measured the CMB spectrum [3]. WMAP and Planck observed the sky at several frequencies, which allows foreground emission from the Galaxy to be modelled and separated from the CMB [8][9]. Proposed concepts such as PIXIE would use multimode bolometers for spectral and polarization work [12]. A 2006 CMB task-force report judged that bolometers had a clear advantage over MMIC amplifiers for a space mission aiming at B-mode polarization sensitivity to r = 0.01, and recommended baselining them [13]. PIXIE and the other concepts are proposals, not flown missions.",
+      "operating_principle": "Radiometers and bolometers work on different principles. In a radiometer, the incoming signal is amplified by a cryogenic low-noise amplifier and its power is measured. WMAP used HEMT amplifiers in differential, polarization-sensitive receivers [8]. The Planck LFI used HEMT radio receiver arrays cooled to about 20 K [9]. The COBE DMR used a differential design that compared two sky directions 60 degrees apart [2]. A search summary of a DMR design paper described Dicke switching, which alternates the input between two feeds to cancel slow gain drift; this was not verified in the primary text [7]. In a bolometer, radiation is absorbed by a thin element whose temperature rises. Planck HFI used silicon nitride spider-web absorbers coated with gold, each read by an NTD germanium thermistor and operated at about 0.1 K [10][9]. Cold operation reduces the detector's own thermal noise so that the faint CMB signal can be measured. The COBE FIRAS was described as a polarizing Michelson Fourier-transform spectrometer [6]. The FIRAS documentation index refers to an external blackbody calibrator [5]. A search summary of the SPIE design paper described a differential comparison against a reference calibrator, which conflicts with the external-calibrator description. This conflict is unresolved [6].",
+      "scientific_importance": "The CMB is one of the main observational foundations of cosmology. Its blackbody spectrum, measured by FIRAS, and its temperature anisotropies, first detected by the DMR and then mapped in detail by WMAP and Planck, constrain models of the early universe [1][3][8][9]. Detectors that improve sensitivity or add polarization sensitivity extend those constraints. Because the CMB signal is small compared with foreground emission and instrumental noise, calibration, stability and systematic-error control largely determine the scientific value of a CMB detector. The cosmological parameter results themselves depend on mission analyses that were not reviewed in this article.",
+      "physical_specifications": {
+        "note": "There is no single universal mass, size or power value for a CMB detector. The four examples below describe specific flown instruments, and their values are tied to those instruments. Where a value has not been verified, it is marked as not verified rather than estimated.",
+        "examples": [
+          {
+            "name": "COBE Differential Microwave Radiometer (DMR)",
+            "type": "Flown space CMB instrument (COBE)",
+            "frequency_channels_ghz": [31.5, 53, 90],
+            "radiometer_count": 6,
+            "radiometer_description": "Six differential microwave radiometers; two nearly independent channels operating at each of three frequencies [2].",
+            "beam_fwhm_degrees": 7,
+            "differencing_angle_degrees": 60,
+            "detector_technology": "Not confirmed in the primary text read. A search summary cites ferrite Dicke switches at 100 Hz in a DMR design paper [7], which was not read in full.",
+            "mass_kg": null,
+            "power_w": null,
+            "summary": "The COBE DMR had three frequency channels at 31.5, 53 and 90 GHz, chosen to reduce contamination from Galactic emission [2]. It comprised six differential microwave radiometers, described as two nearly independent channels operating at each of the three frequencies [2]. Each horn antenna has a 7-degree FWHM beam, and each radiometer compares two sky directions separated by 60 degrees [2]. The detector technology is not confirmed in the primary text read. A search summary cites ferrite Dicke switches at 100 Hz in a DMR design paper [7], but that paper was not read in full. Mass and power are not verified in the sources read.",
+            "source_urls": [
+              "https://lambda.gsfc.nasa.gov/product/cobe/dmr_overview.cfm",
+              "https://lambda.gsfc.nasa.gov/product/cobe/about_dmr.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "COBE Far Infrared Absolute Spectrophotometer (FIRAS)",
+            "type": "Flown space CMB spectrometer (COBE)",
+            "frequency_range_ghz": "60 to 3000 (60 GHz to 3 THz, per the LAMBDA FIRAS overview)",
+            "measurement_principle": "Described as a polarizing Michelson Fourier-transform spectrometer [6].",
+            "calibrator": "FIRAS documentation index refers to an external blackbody calibrator [5]. A search summary described a differential comparison against a reference calibrator; unresolved.",
+            "operating_temperature": "About 1.6 K in the COBE dewar; in-flight helium temperature reading 1.40 K [4].",
+            "cryostat": "650-litre superfluid helium dewar shared with DIRBE [4].",
+            "field_of_view_degrees": 7,
+            "telemetry_rate_bps": 1362,
+            "cryogen_depleted": "21 September 1990, after 1.6 sky surveys [4].",
+            "mass_kg": null,
+            "power_w": null,
+            "mass_power_note": "Not verified. The COBE spacecraft values (2270 kg total mass; 542 W combined spacecraft and instrument load) are spacecraft-level and must not be attributed to FIRAS [4]. A Wikipedia figure (60 kg, 84 W) was not used.",
+            "summary": "The COBE FIRAS covered the range from 60 GHz to 3 THz according to the LAMBDA FIRAS overview [3]. FIRAS was cooled by the COBE dewar, a 650-litre superfluid helium cryostat shared with DIRBE, which kept the instruments at about 1.6 K; the in-flight helium temperature reading was 1.40 K [4]. FIRAS points along the spin axis with a 7-degree field of view and was allocated a telemetry rate of 1362 bits per second [4]. Its helium was depleted on 21 September 1990, after FIRAS had surveyed the sky 1.6 times [4]. Its interferometer and calibrator design are described in the FIRAS documentation [5][6]. Instrument mass and power are not verified. The COBE spacecraft figures (2,270 kg total mass and a 542 W combined spacecraft and instrument load) are spacecraft-level values and must not be attributed to FIRAS [4].",
+            "source_urls": [
+              "https://lambda.gsfc.nasa.gov/product/cobe/firas_overview.cfm",
+              "https://lambda.gsfc.nasa.gov/product/cobe/spacecraft_description.html",
+              "https://lambda.gsfc.nasa.gov/product/cobe/firas_exsupv4.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "WMAP radiometers",
+            "type": "Flown space CMB radiometer system (WMAP)",
+            "launch": "30 June 2001 on a Delta II 7425-10 [8].",
+            "frequency_bands_ghz": {
+              "K": 23,
+              "Ka": 33,
+              "Q": 41,
+              "V": 61,
+              "W": 94
+            },
+            "detector_technology": "HEMT amplifiers in differential, polarization-sensitive receivers [8].",
+            "cooling": "Passively cooled to about 90 K [8].",
+            "design_lifetime_months": 27,
+            "mission_operations": "The DR5 release covers the full nine years of spacecraft operations at L2 [8].",
+            "mass_kg": 840,
+            "power_w": 419,
+            "mass_power_note": "The LAMBDA page does not make clear whether 840 kg and 419 W refer to the spacecraft or the radiometer assembly alone, so they are not attributed to the radiometers here [8].",
+            "optics": "1.4 by 1.6 m primary mirrors in a back-to-back Gregorian design [8].",
+            "summary": "WMAP was launched on 30 June 2001 on a Delta II 7425-10 and observed in five bands: K at 23 GHz, Ka at 33 GHz, Q at 41 GHz, V at 61 GHz and W at 94 GHz. The LAMBDA page describes these as typical radiometer values [8]. Its radiometers used HEMT amplifiers in differential, polarization-sensitive receivers and were passively cooled to about 90 K [8]. The design lifetime was 27 months, and the final DR5 release covers the full nine years of spacecraft operations at L2 [8]. The LAMBDA page gives a mass of 840 kg, a power of 419 W and 1.4 by 1.6 m primary mirrors in a back-to-back Gregorian design. The page does not make clear whether these figures apply to the spacecraft or to the radiometer assembly alone, so they are not attributed to the radiometers here [8].",
+            "source_urls": [
+              "https://lambda.gsfc.nasa.gov/product/map/current/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Planck Low Frequency Instrument (LFI) and High Frequency Instrument (HFI)",
+            "type": "Flown space CMB mission instruments (Planck)",
+            "lfi": {
+              "detector_technology": "HEMT radio receiver arrays [9].",
+              "frequency_range_ghz": [27, 77],
+              "operating_temperature_k": "About 20 [9].",
+              "cooling": "H2 sorption cooler [9].",
+              "bands": [
+                {"centre_ghz": 30, "bandwidth_ghz": 6, "beam_fwhm_arcmin": 33, "flux_sensitivity_mjy_per_pixel": 13},
+                {"centre_ghz": 44, "bandwidth_ghz": 8.8, "beam_fwhm_arcmin": 24, "flux_sensitivity_mjy_per_pixel": 19},
+                {"centre_ghz": 70, "bandwidth_ghz": 14, "beam_fwhm_arcmin": 14, "flux_sensitivity_mjy_per_pixel": 25}
+              ]
+            },
+            "hfi": {
+              "detector_technology": "Spider-web bolometer arrays with NTD germanium thermistors [9][10].",
+              "frequency_range_ghz": "84 to 1000 (ESA page); six bands 100 to 857 GHz (IPAC page) [9][10].",
+              "operating_temperature_k": "About 0.1 [9][10].",
+              "cooling": "H2 sorption, Joule-Thomson and 3He/4He dilution coolers [9].",
+              "detector_count": 54,
+              "detector_count_conflict": "The IPAC archive page gives 54 detectors in the focal plane [10]. A pre-launch HFI paper, read only as a search summary, describes 48 silicon nitride micromesh bolometers [11]. Unresolved.",
+              "polarization_sensitive_bolometers": 32,
+              "feed_horns": 32,
+              "spider_web": "1-micron-thick silicon nitride coated with gold [10].",
+              "thermistor": "NTD germanium slice, 30 x 100 x 300 microns [10].",
+              "bands": [
+                {"centre_ghz": 100, "bandwidth_ghz": 33, "beam_fwhm_arcmin": 9.2, "flux_sensitivity_mjy_per_pixel": 9},
+                {"centre_ghz": 143, "bandwidth_ghz": 47, "beam_fwhm_arcmin": 7.1, "flux_sensitivity_mjy_per_pixel": 12.6},
+                {"centre_ghz": 217, "bandwidth_ghz": 72, "beam_fwhm_arcmin": 5, "flux_sensitivity_mjy_per_pixel": 9.4},
+                {"centre_ghz": 353, "bandwidth_ghz": 116, "beam_fwhm_arcmin": 5, "flux_sensitivity_mjy_per_pixel": 20},
+                {"centre_ghz": 545, "bandwidth_ghz": 180, "beam_fwhm_arcmin": 5, "flux_sensitivity_mjy_per_pixel": 46},
+                {"centre_ghz": 857, "bandwidth_ghz": 283, "beam_fwhm_arcmin": 5, "flux_sensitivity_mjy_per_pixel": 52}
+              ],
+              "sensitivity_note": "ESA sensitivity values are per pixel, for the average integration time, after two sky surveys (14 months) [9]."
+            },
+            "mass_kg": null,
+            "power_w": null,
+            "mass_power_note": "Not stated in the sources read [9][10].",
+            "summary": "Planck carried two instruments. The LFI used HEMT radio receiver arrays covering 27 to 77 GHz, operated at about 20 K with an H2 sorption cooler. Its beams are 33, 24 and 14 arcminutes at 30, 44 and 70 GHz [9]. The HFI used bolometric detectors covering 84 GHz to 1 THz, operated at about 0.1 K, with a cooling chain of H2 sorption, Joule-Thomson and 3He/4He dilution coolers [9]. The NASA/IPAC archive page describes six HFI bands from 100 to 857 GHz, 54 detectors in the focal plane, 32 polarization-sensitive bolometers and 32 feed horns [10]. Each spider-web absorber is 1-micron-thick silicon nitride coated with gold, and each NTD germanium thermistor is a 30 x 100 x 300 micron slice [10]. A pre-launch HFI paper, read only as a search summary, describes 48 silicon nitride micromesh bolometers. This conflicts with the 54-detector figure and is unresolved [11]. Mass and power of the detector assemblies are not stated in these sources [9][10]. The ESA page was last updated on 1 September 2019 and its site is under review, so its values should be rechecked before reuse [9].",
+            "source_urls": [
+              "https://sci.esa.int/web/planck/-/34730-instruments",
+              "https://planck.ipac.caltech.edu/page/high_frequency_instrument"
+            ],
+            "images": [
+              {
+                "id": "planck_hfi_focal_plane",
+                "description": "Planck High Frequency Instrument focal plane, shown on the NASA/IPAC Planck archive HFI page.",
+                "image_type": "Focal plane image",
+                "image_url": null,
+                "source_page_url": "https://planck.ipac.caltech.edu/page/high_frequency_instrument",
+                "publisher": "NASA/IPAC Planck archive",
+                "credit": "ESA (per source page)",
+                "caption": "Planck High Frequency Instrument focal plane; the source page credits the image to ESA and notes that 32 feed horns concentrate light onto the detectors.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[3]"
+                ],
+                "notes": "No direct image asset URL was verified, so image_url is null and a linked source-page reference is used. Check rights on the source page before republication."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Not verified for most examples. Sizes that were verified are the WMAP primary mirrors (1.4 by 1.6 m) [8] and the telescope primary and secondary mirror dimensions for Planck, which are telescope values rather than detector dimensions [9]. The NTD thermistor size is 30 x 100 x 300 microns [10]. Detector dimensions and mounting geometry depend on the named instrument.",
+        "mass_and_weight": "Mass is not verified for the detector assemblies of any example. The WMAP values (840 kg) and COBE spacecraft values (2,270 kg) are spacecraft-level, and the mass attribution for WMAP is unclear [4][8]. Mass directly affects launch and lander requirements, so it must be taken from a named instrument's verified documentation.",
+        "power_requirements": "Power is not verified for the detector assemblies of any example. The WMAP value (419 W) and the COBE combined spacecraft and instrument load (542 W) are spacecraft-level values [4][8]. Cryogenic cooling, which dominates thermal design for the cold examples, is provided by the cryogen or cryocooler systems described above [4][9]."
+      },
+      "environmental_and_operational_requirements": "The examples show the main requirements. Detectors need cryogenic operation: about 20 K for the Planck LFI amplifiers [9], about 0.1 K for the Planck HFI bolometers [9][10], about 1.6 K for COBE FIRAS in a helium dewar [4], and passive cooling to about 90 K for WMAP [8]. They also need shielding from the Sun and Earth, stable mounting so that structural movement or thermal change does not mimic sky signals, and frequency coverage that lets Galactic foreground emission be modelled and removed [2][8][9]. Data processing must handle cosmic-ray glitches, which affected Planck HFI data [11].",
+      "limitations": "A detector measures power or intensity in a frequency band and does not by itself produce a sky map. Maps need scanning or many pixels, calibration and foreground removal. Cryogen-limited instruments have finite lives: COBE FIRAS operated until its helium was depleted on 21 September 1990 [4]. A pre-launch Planck HFI paper, read as a search summary, reported that sensitivity was limited mainly by CMB photon noise, but that was a pre-launch self-assessment and not a final mission result [11]. Cosmic-ray glitches must be removed from bolometer data [11].",
+      "transportation_and_deployment": {
+        "overview": "No lunar CMB detector mission was verified in this research. This section therefore discusses generic considerations for a surface payload and does not assert compatibility with any lander or spacecraft.",
+        "transportation_process": [
+          "Integrate the detector, its cryocooler or cryogen system, its mount and its thermal shields on Earth.",
+          "Launch the payload with a lander and transfer it to the Moon.",
+          "Land the payload on the lunar surface.",
+          "Deploy and level the instrument, then check its cooling and pointing.",
+          "Connect power, thermal control and data interfaces."
+        ],
+        "deployment_methods": "Deployment method is not specified for this payload and would depend on the instrument's mass and pointing requirements.",
+        "historical_examples": "The COBE, WMAP and Planck examples were all flown on spacecraft in space rather than on the lunar surface [4][8][9].",
+        "compatibility_assessment": "No orbiter configuration is assumed. Compatibility with any named lander is not assessed, because no interface evidence was found. The example masses and powers are for flown spacecraft and do not transfer to a lunar payload.",
+        "images": []
+      },
+      "historical_significance": "The COBE DMR reported intrinsic anisotropy in the CMB at about one part in 100,000 [1], and COBE FIRAS measured the blackbody spectrum [3]. WMAP observed the sky in five bands from L2 [8]. Planck covered nine frequency bands with its LFI and HFI [9][10]. Later proposals such as PIXIE are discussed in [12] and [13].",
+      "limitations_and_uncertainties": "The payload name describes a class of instruments rather than one standard design. The COBE, WMAP and Planck examples differ in frequency coverage, detector technology, cooling and mission design, and they are not interchangeable. Mass, power, dimensions, detector counts and sensor sensitivities must always be tied to a named instrument and source. Several values in this article are unresolved: the COBE FIRAS mass and power are not verified, the COBE DMR detector technology is not confirmed, and the Planck HFI detector count differs between two sources. This article describes engineering considerations for a lunar CMB detector in general terms; it is not a design specification for a new payload.",
+      "images": [
+        {
+          "id": "planck_hfi_focal_plane",
+          "description": "Planck High Frequency Instrument focal plane, shown on the NASA/IPAC Planck archive HFI page.",
+          "image_type": "Focal plane image",
+          "image_url": null,
+          "source_page_url": "https://planck.ipac.caltech.edu/page/high_frequency_instrument",
+          "publisher": "NASA/IPAC Planck archive",
+          "credit": "ESA (per source page)",
+          "caption": "Planck High Frequency Instrument focal plane; the source page credits the image to ESA and notes that 32 feed horns concentrate light onto the detectors.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "No direct image asset URL was verified, so image_url is null and a linked source-page reference is used. Check rights on the source page before republication."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "planck_hfi_focal_plane",
+          "description": "Planck High Frequency Instrument focal plane, shown on the NASA/IPAC Planck archive HFI page.",
+          "image_type": "Focal plane image",
+          "image_url": null,
+          "source_page_url": "https://planck.ipac.caltech.edu/page/high_frequency_instrument",
+          "publisher": "NASA/IPAC Planck archive",
+          "credit": "ESA (per source page)",
+          "caption": "Planck High Frequency Instrument focal plane; the source page credits the image to ESA and notes that 32 feed horns concentrate light onto the detectors.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[3]"
+          ],
+          "notes": "No direct image asset URL was verified, so image_url is null and a linked source-page reference is used. Check rights on the source page before republication."
+        }
+      ],
+      "references": [
+        {
+          "title": "NASA LAMBDA, COBE Differential Microwave Radiometer (DMR) overview",
+          "publisher": "NASA Goddard LAMBDA",
+          "url": "https://lambda.gsfc.nasa.gov/product/cobe/dmr_overview.cfm"
+        },
+        {
+          "title": "NASA LAMBDA, About DMR",
+          "publisher": "NASA Goddard LAMBDA",
+          "url": "https://lambda.gsfc.nasa.gov/product/cobe/about_dmr.html"
+        },
+        {
+          "title": "NASA LAMBDA, COBE FIRAS overview",
+          "publisher": "NASA Goddard LAMBDA",
+          "url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_overview.cfm"
+        },
+        {
+          "title": "NASA LAMBDA, COBE mission design, spacecraft and orbit",
+          "publisher": "NASA Goddard LAMBDA",
+          "url": "https://lambda.gsfc.nasa.gov/product/cobe/spacecraft_description.html"
+        },
+        {
+          "title": "NASA LAMBDA, FIRAS Explanatory Supplement, version 4, index",
+          "publisher": "NASA Goddard LAMBDA",
+          "url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_exsupv4.html"
+        },
+        {
+          "title": "Design for the COBE far-infrared absolute spectrophotometer (FIRAS), SPIE proceedings (publication date not verified; search summary only)",
+          "publisher": "Mather, Fixsen and Shafer; SPIE",
+          "url": "https://astronomicaltelescopes.spiedigitallibrary.org/conference-proceedings-of-spie/2019/0000/Design-for-the-COBE-far-infrared-absolute-spectrophotometer-FIRAS/10.1117/12.157823.full"
+        },
+        {
+          "title": "Design and results of differential microwave radiometers (DMR) on COBE, SPIE proceedings (search summary only)",
+          "publisher": "SPIE",
+          "url": "https://electronicimaging.spiedigitallibrary.org/conference-proceedings-of-spie/2019/0000/Design-and-results-of-differential-microwave-radiometers-DMR-on-COBE/10.1117/12.157828.full"
+        },
+        {
+          "title": "NASA LAMBDA, WMAP mission page (DR5 summary)",
+          "publisher": "NASA Goddard LAMBDA",
+          "url": "https://lambda.gsfc.nasa.gov/product/map/current/"
+        },
+        {
+          "title": "Planck instruments (page last updated 1 September 2019)",
+          "publisher": "European Space Agency",
+          "url": "https://sci.esa.int/web/planck/-/34730-instruments"
+        },
+        {
+          "title": "Planck High Frequency Instrument",
+          "publisher": "NASA/IPAC Planck archive",
+          "url": "https://planck.ipac.caltech.edu/page/high_frequency_instrument"
+        },
+        {
+          "title": "Planck pre-launch HFI paper, arXiv astro-ph/0112458 (pre-launch; search summary only)",
+          "publisher": "arXiv / ar5iv",
+          "url": "https://ar5iv.labs.arxiv.org/html/astro-ph/0112458"
+        },
+        {
+          "title": "PIXIE multimode bolometer development, arXiv:1611.04466 (concept; search summary only)",
+          "publisher": "arXiv",
+          "url": "https://arxiv.org/pdf/1611.04466"
+        },
+        {
+          "title": "CMB Task Force report, arXiv astro-ph/0604101 (2006; search summary only)",
+          "publisher": "arXiv",
+          "url": "https://arxiv.org/pdf/astro-ph/0604101"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Planck LFI/HFI example": "payload.article.physical_specifications.examples[3].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. image_url is null for every image because no direct asset URL was verified. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "COBE FIRAS mass and power are not verified. The sources read give only spacecraft-level values (2,270 kg; 542 W). A Wikipedia figure (60 kg, 84 W) was not used.",
+    "COBE FIRAS calibrator design is unresolved: the FIRAS documentation index refers to an external blackbody calibrator, while a search summary described a differential comparison against a reference calibrator.",
+    "COBE DMR detector technology is not confirmed. The Dicke-switching description and the 100 Hz switching rate come from a search summary of a DMR SPIE paper that was not read in full.",
+    "Planck HFI detector count conflicts: 54 detectors (NASA/IPAC archive page) versus 48 silicon nitride micromesh bolometers (pre-launch paper, search summary only). Neither is confirmed against a final mission publication.",
+    "The Planck HFI frequency range is stated as 84 GHz to 1 THz on the ESA page and as six bands from 100 to 857 GHz on the IPAC page. Both are reported; they are not reconciled.",
+    "WMAP mass (840 kg) and power (419 W) are not clearly attributed to the spacecraft or to the radiometer assembly, so they are not used as radiometer values.",
+    "The ESA Planck instruments page was last updated on 1 September 2019 and its site is under review; values should be rechecked against current ESA sources before reuse.",
+    "The FIRAS design PDF (FES4 App B) could not be read as text, so FIRAS hardware details rely on search summaries and the LAMBDA pages.",
+    "Several references are search summaries rather than full primary reads (SPIE DMR and FIRAS design pages, pre-launch Planck HFI paper, PIXIE and CMB Task Force papers). They are marked as such in the reference titles.",
+    "PIXIE and the other concepts named in this article are proposals and have not flown.",
+    "No direct image asset URL was verified for any image. image_url is null and the source-page link is used instead, as required by the skill. Rights must be checked before republication.",
+    "No lunar CMB detector mission was verified. Transportation and deployment content is generic and makes no compatibility claim for any lander or spacecraft.",
+    "Search budget: 7 WebSearch calls and 9 WebFetch page or document reads were used for this payload."
+  ]
+}

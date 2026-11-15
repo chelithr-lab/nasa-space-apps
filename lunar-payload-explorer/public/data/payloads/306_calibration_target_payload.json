@@ -1,0 +1,148 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 306,
+    "name": "Calibration target",
+    "article": {
+      "overview": "A calibration target is a surface or object with known, documented optical or physical properties, placed on the Moon so that a lunar instrument can be checked against it. Typical properties are reflectance, colour, grey-scale brightness and geometry. Without such a reference, surface measurements cannot be reliably converted into absolute physical values or compared with measurements from other times, instruments or missions. 'Calibration target' describes a function rather than a single design; the examples below were selected because they are documented as flown lunar hardware or as in situ calibration references.",
+      "description": "A lunar calibration target usually has three parts. First, a reference surface or panel with a known reflectance or colour, such as a diffuser panel, a grey or colour chart, or a patch with a measured spectral response. Second, a mounting and geometry so that the instrument views the target under known conditions; viewing angle, distance and the Sun's angle relative to the target all affect the result. Third, a measurement procedure in which the instrument images or measures the target at known times, alongside its scientific observations, so that changes in the instrument's response (temperature drift, ageing, dust contamination or sensitivity change) can be corrected. On a lunar surface mission the target is exposed to the same environment as the rest of the payload: a large daily temperature swing, vacuum, radiation and fine regolith dust. Its surface properties must therefore be stable, or any change must be monitored.",
+      "scientific_purpose_and_applications": "Absolute calibration of surface instruments: a spectrometer or camera records relative signals, and a reference surface of known reflectance allows the signal to be converted into a physically meaningful reflectance. Monitoring instrument drift: repeated measurements of the same reference track changes in instrument response over a mission. Colour and photometric reconstruction: colour imaging from filtered cameras depends on known reference patches. Cross-mission comparison: shared, documented references allow results from different instruments and missions to be compared with each other and with orbital data. Regolith surface studies: comparing the reference target with the surrounding regolith helps separate instrument effects from real surface properties.",
+      "operating_principle": "The basic principle is comparison. The instrument records the signal from the target under known conditions. Because the target's reflectance or colour is known, the recorded signal can be related to an absolute value, and the difference between expected and measured values is attributed to instrument response and viewing geometry. For a spectrometer such as a visible and near-infrared imager, a diffuser panel is viewed through a calibration unit that can be moved into or out of the optical path; the panel scatters sunlight, so the ratio of target signal to surface signal gives reflectance. For a television or photographic camera, the target carries grey-scale and colour patches, and images of these patches are used to adjust brightness and colour response and to check the linearity of the imaging system.",
+      "scientific_importance": "The Moon is widely used as a reference body for remote sensing of airless surfaces, but there has been a long-standing question about how accurately the absolute reflectance of lunar regions is known. In situ measurements taken with a known panel on the surface can address this directly by reducing reliance on atmospheric and orbital-geometry corrections. A recent in situ study using the Chang'e-3 Visible and Near-Infrared Imaging Spectrometer (VNIS) panel proposed the Chang'e-3 landing region as a new calibration reference site (Wu et al., 2018, as reported in a search-result summary). The authors' conclusion is drawn from their own analysis and was not independently replicated in the sources reviewed for this article.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a calibration target. The reference material, size, mounting and protection vary with the instrument each target supports. Values below describe specific flown or documented examples only. Where a value was not verified in this research run it is recorded as 'not publicly specified' or null.",
+        "examples": [
+          {
+            "name": "Surveyor TV photometric reflectance chart",
+            "type": "Historical flown lunar lander calibration chart (Surveyor program)",
+            "status": "Flown on Surveyor lunar landers. Design documented in a 1970 engineering paper; reflectance values and patch specifications not accessible in this research run.",
+            "purpose_as_stated_in_source": "Designed to support a post-landing calibration scheme for the Surveyor television system. Intended to evaluate resolution, photometric response, colorimetric response and the angle of the Sun relative to the chart face. The author concluded that the TV system needed periodic performance checks because it had to operate over a wide temperature range during a lunar day of about 14 Earth days.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "reflectance_values": "Not publicly specified in the sources accessed.",
+            "mounting_notes": "A search-result summary of the Surveyor III mission report refers to a 'photometric target on footpad 2' and a colour calibration chart mounted on a leg. Not confirmed against the full report.",
+            "other_search_summary_leads": "A search-result summary describes a photometric disc with orange, green, blue and white patches visible in a Surveyor 1 image. Not confirmed by reading the source image or full document.",
+            "qualification": "Surveyor-era hardware; specifications for this chart are not transferable to other calibration targets.",
+            "source_urls": [
+              "https://journal.smpte.org/periodicals/Journal%20of%20the%20SMPTE/79/3/15/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chang'e-3 VNIS in situ calibration panel",
+            "type": "Flown lunar rover calibration unit (Chang'e-3 Yutu rover, 2013)",
+            "status": "Flown. Part of the Visible and Near-Infrared Imaging Spectrometer (VNIS) on the Yutu rover.",
+            "hardware_description": "The VNIS calibration unit has a Teflon diffuser panel at its light entrance. A lightweight ultrasonic motor moves the calibration unit between measurement and calibration modes and between dust-protection positions (search-result summaries).",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "measurement_geometry": "A search-result summary of Wu et al. (2018) reports measurement from about 0.69 m above the surface at a 45-degree emission angle. Not confirmed against the full paper.",
+            "reflectance_result": "The authors' published estimate, as reported in a search-result summary, is about 3.86 per cent visible reflectance at the Chang'e-3 site, and the site is proposed as a new calibration reference. This is an analysis result, not an independently verified measurement.",
+            "calibration_coefficients": "Not publicly specified in the sources accessed.",
+            "qualification": "The panel result is a published estimate; the full paper and calibration coefficients were not reviewed.",
+            "source_urls": [
+              "https://cdsarc.cds.unistra.fr/VizieR/ftp/J/AJ/155/213/ReadMe",
+              "https://proceedings.spiedigitallibrary.org/conference-proceedings-of-spie/9263/92630D/Visible-and-Near-Infrared-Imaging-Spectrometer-VNIS-For-Chang-E/10.1117/12.2069193.full"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo-era lunar surface colour chart (unidentified)",
+            "type": "Lead for further research, not a described payload",
+            "status": "Not verified. Search-result summaries state that some Apollo film rolls include shots of a colour calibration chart, and that a Hasselblad surface camera was pre-flight calibrated, including illuminance distribution across the film.",
+            "mission_and_chart_design": "Not identified in the sources accessed.",
+            "reflectance_values": "Not publicly specified in the sources accessed.",
+            "source_urls": [],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for the examples above. Calibration targets are generally small compared with the instruments that use them, but this is a general observation and not a measured specification.",
+        "mass_and_weight": "Not publicly specified for the examples above.",
+        "power_requirements": "A passive reference surface needs no power. Calibration units that move, heat or protect the reference need power, as described in the relevant instrument documentation. Specific values were not verified."
+      },
+      "environmental_and_operational_requirements": "Thermal: the reference surface must keep its properties over the lunar day-night cycle and the temperature changes that affect the instrument; Surveyor documentation explicitly describes the need for temperature-dependent calibration. Dust: regolith dust can change the apparent reflectance of a panel; the VNIS design includes a mechanism that moves the calibration unit to protect the panel. Dust effects on other targets are not documented in the sources reviewed. Illumination: Sun angle changes the measured signal, so measurement geometry must be known or controlled. Stability: the target's reflectance must not change significantly during the mission, or changes must be monitored. Mounting: the target must be visible to the instrument without shadowing from the lander or rover.",
+      "limitations": "A calibration target only corrects for effects it can observe and cannot detect every change in the instrument. Reference properties depend on pre-flight laboratory characterisation and on material stability in the lunar environment. Sun angle, viewing angle and dust can alter the measured signal and must be accounted for. Published reflectance estimates for a lunar site depend on the analysis method, and different analyses can give different results. Calibration targets on one mission do not automatically transfer to another mission's instruments.",
+      "transportation_and_deployment": {
+        "overview": "A calibration target is normally part of a surface instrument or lander/rover payload. It is integrated on Earth with the instrument, carried through launch, transfer and landing, and deployed or fixed within the instrument's field of view after landing.",
+        "transportation_process": [
+          "Integrate the target and its instrument on Earth as part of the payload.",
+          "Launch the lander or rover on a launch vehicle.",
+          "Transfer to the Moon and land.",
+          "Deploy or confirm the target's position in the instrument's field of view.",
+          "Connect power, data and any thermal or dust-protection mechanisms, as applicable to the design."
+        ],
+        "deployment_methods": "Fixed to the lander structure (Surveyor example, mounting described in mission summaries only) or integrated into a rover-mounted instrument whose calibration unit is moved by a motor (Chang'e-3 VNIS example). Full mounting and interface details were not verified against mission documentation.",
+        "historical_examples": "Surveyor TV photometric chart (lander-mounted) and Chang'e-3 VNIS calibration panel (rover-mounted). Both are described in Section 8 of the article.",
+        "compatibility_assessment": "No compatibility assessment is made. Calibration targets are typically integrated into the instrument or rover design, so compatibility depends on the specific mission interface. No named lander, rover or spacecraft is claimed as compatible with this payload class.",
+        "images": []
+      },
+      "historical_significance": "Lunar surface calibration references have been used since the early landers. The Surveyor TV chart is an early example of a planned post-landing photometric check. The Chang'e-3 VNIS panel is a more recent example used for in situ absolute reflectance measurement; its published result has been used to propose a new calibration site. Both show the value of carrying a known reference to the surface rather than relying only on orbital or laboratory data.",
+      "limitations_and_uncertainties": "The Surveyor chart's reflectance values and patch design were not accessible; the 1970 paper is behind a sign-in wall. The Surveyor mounting details and the Surveyor 1 photometric disc are based on search-result summaries, not full-text reading. The Chang'e-3 reflectance estimate of about 3.86 per cent and the VNIS geometry (0.69 m, 45-degree emission) come from a search-result summary of Wu et al. (2018); the full paper was not accessed. Calibration coefficients, mass and dimensions for the VNIS calibration unit were not found. The Apollo colour-chart lead could not be tied to a mission or chart design. No verified direct image asset URLs were located for any example, so the article and this file contain no embedded images. The article does not recommend lunar landing sites; the Chang'e-3 site is mentioned only as a published calibration proposal from the cited study.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "The Design of Postlanding Television System Photometric Charts for the Surveyor Spacecraft",
+          "publisher": "Journal of the SMPTE, vol. 79, no. 3 (author: L. E. Blanchard; 1970; DOI 10.5594/J13614)",
+          "url": "https://journal.smpte.org/periodicals/Journal%20of%20the%20SMPTE/79/3/15/",
+          "notes": "Bibliographic details read from the landing page; full text behind sign-in."
+        },
+        {
+          "title": "The Absolute Reflectance and New Calibration Site of the Moon",
+          "publisher": "The Astronomical Journal, vol. 155, article 213 (Wu et al., 2018)",
+          "url": "https://cdsarc.cds.unistra.fr/VizieR/ftp/J/AJ/155/213/ReadMe",
+          "notes": "Catalogue record URL identified via search; the fetch returned a connection error in this run, so the full paper was not read."
+        },
+        {
+          "title": "Calibration of Visible and Near-infrared Imaging Spectrometer (VNIS) on lunar surface",
+          "publisher": "Semantic Scholar record (Xu, Lv et al.; year and venue not verified)",
+          "url": "https://www.semanticscholar.org/paper/Calibration-of-Visible-and-Near-infrared-Imaging-on-Xu-Lv/f28209ee0ace73988d55cf70ca4a8ed5e4af45fb",
+          "notes": "Listed in search results only; not accessed."
+        },
+        {
+          "title": "Visible and Near-Infrared Imaging Spectrometer (VNIS) for Chang'E-3",
+          "publisher": "SPIE Proceedings, vol. 9263 (He et al., 2014)",
+          "url": "https://proceedings.spiedigitallibrary.org/conference-proceedings-of-spie/9263/92630D/Visible-and-Near-Infrared-Imaging-Spectrometer-VNIS-For-Chang-E/10.1117/12.2069193.full",
+          "notes": "Listed in search results only; not accessed. Author attribution taken from search summary."
+        },
+        {
+          "title": "Surveyor III mission report, photometric target and chart calibration figures",
+          "publisher": "NASA JPL Technical Report 32-1177 (as cited in search summaries)",
+          "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a12/a12SurveyorIIITV.pdf",
+          "notes": "This URL returned HTTP 404 when fetched. Content was known only from search summaries. Not verified."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL fields in this file have query strings and fragments removed. No verified direct image assets were identified, so no image objects are included; no image_url values are set. Section-level image arrays are present but empty by design.",
+    "no_images_reason": "Candidate image sources for the Surveyor chart and the Chang'e-3 VNIS panel were not located as verified direct asset URLs during this run."
+  },
+  "data_quality_notes": [
+    "Surveyor TV chart reflectance values, patch design and mounting were not verified; the 1970 SMPTE paper is behind a sign-in wall.",
+    "The Surveyor III mission report URL (NASA ALSJ) returned HTTP 404. Its content was known only from search-result summaries.",
+    "The Surveyor 1 photometric disc was known only from a search-result summary and was not confirmed by reading the image or document.",
+    "The Chang'e-3 VNIS reflectance estimate (about 3.86 per cent) and the measurement geometry (0.69 m height, 45-degree emission) come from a search-result summary of Wu et al. (2018). The full paper was not accessed; the catalogue ReadMe fetch returned a connection error.",
+    "The author list and year for the Semantic Scholar VNIS calibration record were not verified.",
+    "The Apollo colour-chart lead could not be tied to a mission or chart design; it is recorded as a lead, not a described payload.",
+    "No mass, dimensions, power, calibration coefficients or lifetime values were verified for any calibration target example; these are recorded as null or 'not publicly specified'.",
+    "Surveyor and Chang'e-3 landing dates are general background and were not independently cited in this run.",
+    "Catalogue entry 306 'Calibration target' is a generic class; the article and JSON describe the function, not a single standard design."
+  ]
+}

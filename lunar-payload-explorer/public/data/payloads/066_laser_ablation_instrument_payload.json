@@ -1,0 +1,212 @@
+{
+  "catalogue_id": 66,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 66,
+    "name": "Laser ablation instrument",
+    "article": {
+      "overview": "A laser ablation instrument removes a small amount of material from a solid sample with a focused pulsed laser and then analyses the removed material, usually with a mass spectrometer. The resulting mass spectrum shows which chemical elements and isotopes are present and, in some designs, information about larger molecules. For lunar exploration, the technique is studied as a way to analyse regolith and rock in place, without returning a sample to a laboratory. The sources reviewed for this article describe several laser ablation mass spectrometers at the concept, breadboard, engineering-test or development stage. None is confirmed to have operated on the Moon.\n\n**Scope of this article.** The article covers in situ planetary and lunar instruments in which a pulsed laser ablates the sample and a mass spectrometer analyses the ablated material. It is limited to that measurement chain.\n\n- **In scope:** laser ablation mass spectrometers, their examples, and their engineering constraints.\n- **Out of scope:** laser-induced breakdown spectroscopy, which analyses light emitted by a laser plasma rather than ions (see 060 and 075); Raman spectroscopy (see 063); laser-induced fluorescence (see 074); general-purpose mass spectrometers and secondary ion mass spectrometers (see 059 and 073); and laboratory laser ablation analysis of returned samples, which is a laboratory technique rather than a payload.\n\n**Status summary.** The article distinguishes four categories of evidence:\n\n- **Flown and operating on the Moon:** none confirmed in the sources reviewed.\n- **Flight-model baseline defined, engineering test unit in development, not flown:** CRATER, developed with NASA Goddard and partners [1][2].\n- **Assigned to a planned lunar lander mission, pre-launch in the sources reviewed:** CLPS-LIMS of the University of Bern [4].\n- **Breadboard, laboratory prototype or concept, not flown:** LAMA [3] and the Bern miniaturised reflectron time-of-flight designs [5][6][7][9].",
+      "description": "A laser ablation mass spectrometer has four functional parts:\n\n1. **Pulsed laser.** A short laser pulse is focused onto a small spot on the sample. The laser wavelength differs between designs. CRATER uses a pulsed solid-state ultraviolet laser at 213 nm [1]. LAMA uses a Q-switched Nd:YAG laser at 1064 nm [3]. The laser type of CLPS-LIMS is not stated on the project page [4].\n2. **Ablation plume.** Each pulse removes a small volume of material. The removed material leaves the surface as a plume of atoms, molecules, ions and particles. Part of the plume may already be ionised, and the ionisation conditions depend on the laser energy and design.\n3. **Ion optics.** Electric fields accelerate, collimate and steer the ions into the mass analyser. CRATER uses an ion optical interface for this purpose [1].\n4. **Mass analyser.** Two analyser types appear in the sources reviewed. A time-of-flight analyser separates ions by the time they take to travel a fixed distance, which depends on their mass-to-charge ratio [3][5]. An Orbitrap analyser traps ions in an electrostatic field and measures the frequency at which they oscillate, which provides very high mass resolution [1].\n\nStandoff operation, in which the laser analyses a target from a distance, is a stated feature of LAMA [3]. The standoff distance and sampling geometry of CRATER are not stated in the sources reviewed.",
+      "scientific_purpose_and_applications": "The main purpose of a laser ablation mass spectrometer is to determine the elemental and isotopic composition of a small spot on a surface, with little or no sample preparation. Its applications, as stated in the sources reviewed, include:\n\n- **Elemental and isotopic abundances.** CRATER is designed to measure elemental and isotopic abundances of lunar surface samples [1]. The CLPS-LIMS project describes its aim as analysing the element and isotope composition of lunar regolith dust in situ [4].\n- **Organic content.** The CRATER paper states that the instrument can characterise the organic content of lunar samples [1].\n- **Resource and water-ice prospecting.** The LAMA abstract states that high-intensity laser operation allows correlated detection of H+ and O+ ions for water-ice prospecting [3]. This is a stated design goal in a conference abstract, not a measured lunar result.\n- **Sample-triage and regolith characterisation.** The Bern group's miniaturised designs were proposed for planetary surfaces and rovers [5][9]. The sources reviewed do not describe a measured lunar dataset from such an instrument.",
+      "operating_principle": "A laser pulse heats a small volume of the sample so rapidly that material is vaporised and ejected. Because the material is removed from the surface, the measurement consumes a small amount of sample, which is removed from the spot being analysed. The ejected material is then guided into the mass analyser. The analyser sorts the ions by mass-to-charge ratio, and the detector records the number of ions at each mass. The resulting mass spectrum is interpreted in terms of the elements, isotopes and fragments present.\n\nTwo features of the principle govern performance. First, the ionisation efficiency and fragmentation depend on the laser wavelength, pulse energy and the sample's physical state, so the same material can give different spectra under different conditions. Second, ions of different elements or compounds can share nearly the same mass. Such isobars can be separated only by an analyser with sufficiently high mass resolution. CRATER's Orbitrap is described as providing ultrahigh mass resolution and high mass accuracy that separate isobars [1]. The LAMA abstract describes a heritage time-of-flight design, which is a different trade-off between resolution, mass and power [3]. The numerical resolution of either instrument is not stated in the sources read for this article.",
+      "scientific_importance": "Laser ablation mass spectrometry provides information that elemental spectroscopy alone does not. Techniques such as X-ray fluorescence or laser-induced breakdown spectroscopy report which elements are present. A mass spectrometer also separates isotopes and can detect molecular fragments, which can record isotope ratios and some organic signatures. Isotope ratios are useful for studying the origin of volatiles and the history of materials on the Moon. The CRATER paper frames its science goals in these terms [1].\n\nOn the Moon, the main scientific value of a laser ablation mass spectrometer would be a spatially local measurement of elemental and isotopic composition in regolith and rock, and a test for volatile-related species such as water-ice signatures. The University of Bern describes CLPS-LIMS as its second lunar instrument, after the Solar Wind Collector flown on Apollo 11 [4]. No lunar result from a laser ablation mass spectrometer is confirmed in the sources reviewed for this article.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a laser ablation mass spectrometer. The instruments below differ in laser wavelength, analyser type, development stage and published detail, so their values should not be compared as if they described one design. Each value is tied to a named instrument and source. Where a source does not publish a value, this article says \"not publicly specified\" or \"not stated\" and does not infer one.",
+        "examples": [
+          {
+            "example_number": 1,
+            "name": "CRATER (Characterization of Regolith And Trace Economic Resources)",
+            "status": "flight-model baseline defined, engineering test unit in development, not flown",
+            "section_text": "**Status: not flown. The Ray et al. 2024 paper describes the baseline design of the flight model and a prototype that performs its full functionality. An engineering test unit is in development as a pathfinder for near-term mission opportunities [1]. A 2022 NASA poster describes CRATER as currently under development for a prospective lunar lander [2]. No mission assignment is named in the sources read [1][2].**\n\nPublished values, as given by the sources read:\n\n- **Analyser and laser:** Orbitrap mass analyser with a pulsed, solid-state, 213 nm ultraviolet laser for ablation [1].\n- **Mass:** below 10 kg, as a flight-model requirement [1].\n- **Volume:** below 20 000 cm³, as a flight-model requirement [1].\n- **Peak power:** below 60 W, as a flight-model requirement [1].\n- **Mass resolution:** described as ultrahigh, with no numerical value stated [1].\n- **Pulse energy, spatial resolution and spot size:** not stated [1].\n\nThese are design requirements for the flight model. They are not measured performance values of the prototype.",
+            "published_values_as_stated": [
+              "**Analyser and laser:** Orbitrap mass analyser with a pulsed, solid-state, 213 nm ultraviolet laser for ablation [1].",
+              "**Mass:** below 10 kg, as a flight-model requirement [1].",
+              "**Volume:** below 20 000 cm³, as a flight-model requirement [1].",
+              "**Peak power:** below 60 W, as a flight-model requirement [1].",
+              "**Mass resolution:** described as ultrahigh, with no numerical value stated [1].",
+              "**Pulse energy, spatial resolution and spot size:** not stated [1]."
+            ],
+            "reference_numbers": [
+              1,
+              2
+            ],
+            "images": []
+          },
+          {
+            "example_number": 2,
+            "name": "CLPS-LIMS (Laser Ablation Ionization Mass Spectrometer, University of Bern)",
+            "status": "planned for Blue Ghost Mission 4, pre-launch",
+            "section_text": "**Status: planned, not flown. The University of Bern project page states that the instrument will be part of the payload suite of Firefly Aerospace's Blue Ghost Mission 4, procured under NASA's Commercial Lunar Payload Services (CLPS) Task Order CS-6, with a target landing in late 2029. NASA selected the instrument in 2021. The page uses future tense [4]. A 2023 conference abstract, known only from a search-result summary, gives a different mission and an earlier date. The mission-date conflict is unresolved, and the Bern page is taken as the more recent source [4].**\n\nPublished values:\n\n- **Laser type, wavelength and energy:** not stated on the project page [4].\n- **Mass, dimensions and power:** not stated on the project page [4].\n- **Analyser:** the project page does not describe the analyser. A search-result summary described a reflectron time-of-flight design, but that summary was not checked against a primary document.\n\nThe project page includes no verified direct image asset, so no image is shown for this example.",
+            "published_values_as_stated": [
+              "**Laser type, wavelength and energy:** not stated on the project page [4].",
+              "**Mass, dimensions and power:** not stated on the project page [4].",
+              "**Analyser:** the project page does not describe the analyser. A search-result summary described a reflectron time-of-flight design, but that summary was not checked against a primary document."
+            ],
+            "reference_numbers": [
+              4
+            ],
+            "images": []
+          },
+          {
+            "example_number": 3,
+            "name": "LAMA (Laser Ablation Mass Analyzer, NASA Goddard)",
+            "status": "standoff design, conference abstract, not flown",
+            "section_text": "**Status: preliminary design, not flown. The source is a 2025 HEMS workshop abstract from NASA Goddard [3]. The abstract's performance claims are preliminary.**\n\nPublished values and design features, as given by the abstract [3]:\n\n- **Operation:** standoff analysis of the lunar surface, with semi-autonomous operation.\n- **Laser:** Q-switched Nd:YAG at 1064 nm.\n- **Analyser:** a time-of-flight mass spectrometer. The abstract states that it uses a heritage design derived from the Phobos-Grunt and Luna instruments.\n- **Target species:** correlated detection of H+ and O+ ions for water-ice prospecting.\n- **Mass, dimensions, power and mass resolution:** not stated in the abstract as read [3]. A search-result summary described a few-kilogram, low-power target; this was not confirmed in the abstract text and is not adopted here.",
+            "published_values_as_stated": [
+              "**Operation:** standoff analysis of the lunar surface, with semi-autonomous operation.",
+              "**Laser:** Q-switched Nd:YAG at 1064 nm.",
+              "**Analyser:** a time-of-flight mass spectrometer. The abstract states that it uses a heritage design derived from the Phobos-Grunt and Luna instruments.",
+              "**Target species:** correlated detection of H+ and O+ ions for water-ice prospecting.",
+              "**Mass, dimensions, power and mass resolution:** not stated in the abstract as read [3]. A search-result summary described a few-kilogram, low-power target; this was not confirmed in the abstract text and is not adopted here."
+            ],
+            "reference_numbers": [
+              3
+            ],
+            "images": []
+          },
+          {
+            "example_number": 4,
+            "name": "Bern miniaturised reflectron laser-ablation time-of-flight instrument",
+            "status": "laboratory and design estimates, not flown",
+            "section_text": "**Status: laboratory prototypes and design estimates from the Bern group, not flown. The Bern group's papers were proposed for planetary surface and rover instruments [5][9]. The figures below come from search-result summaries of those papers, because the PDFs could not be read in full in this run. They must be checked against the primary texts before use.**\n\nDesign estimates, as summarised from the sources:\n\n- **2003 flight-version estimate:** mass 500 g including all electronics, volume 650 cm³, power 3 W [5].\n- **Later LMS module design:** mass 0.28 kg including electronics and the laser ablation ion source, dimensions 7 × 4 × 3 cm, power 3 W [6].\n- **Rover variant:** a smaller, cigarette-box-sized version with a design mass of 250 g, described as small enough to be integrated in a rover or robotic arm [9].\n- **Top-level flight parameters:** the 2022 review in *Universe* states that it presents dimension, weight and power for a possible flight design, but these values were not retrieved [7].\n\nThe 280 g, 500 g and 250 g masses correspond to different design versions and are not interchangeable. The 7 × 4 × 3 cm dimensions and the 650 cm³ volume are also not directly consistent with each other, and the sources do not reconcile them. No value here is a measured flight-unit value.",
+            "published_values_as_stated": [
+              "**2003 flight-version estimate:** mass 500 g including all electronics, volume 650 cm³, power 3 W [5].",
+              "**Later LMS module design:** mass 0.28 kg including electronics and the laser ablation ion source, dimensions 7 × 4 × 3 cm, power 3 W [6].",
+              "**Rover variant:** a smaller, cigarette-box-sized version with a design mass of 250 g, described as small enough to be integrated in a rover or robotic arm [9].",
+              "**Top-level flight parameters:** the 2022 review in *Universe* states that it presents dimension, weight and power for a possible flight design, but these values were not retrieved [7]."
+            ],
+            "reference_numbers": [
+              5,
+              6,
+              7,
+              9
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No single dimension set applies to the payload class. The sources reviewed give dimensions only for the Bern miniaturised designs: a 7 × 4 × 3 cm module in one summary of a later LMS design [6], and a 650 cm³ volume in the 2003 estimate [5]. These two dimension sets are not reconciled. CRATER's dimensions are given only as a volume ceiling of below 20 000 cm³ for the flight-model baseline [1]. CLPS-LIMS and LAMA dimensions are not stated in the sources read [3][4]. See Examples 1 to 4 and the Limitations section.",
+        "mass_and_weight": "CRATER flight-model requirement: below 10 kg [1]. Bern estimates: 500 g in the 2003 flight-version estimate [5], 0.28 kg for a later LMS module [6] and 250 g for a rover variant [9]. CLPS-LIMS and LAMA masses are not stated [3][4]. The masses describe different design versions and are not interchangeable. None is a measured flight-unit mass.",
+        "power_requirements": "CRATER flight-model requirement: below 60 W peak power [1]. Bern designs: about 3 W in the 2003 and later estimates [5][6]. LAMA and CLPS-LIMS power values are not stated [3][4]. These are design requirements or estimates and must be confirmed for any specific mission."
+      },
+      "environmental_and_operational_requirements": "A lunar laser ablation mass spectrometer would operate in vacuum, with large surface temperature changes, strong sunlight and deep shadow, radiation and fine regolith dust. Each of these matters for this measurement:\n\n- **Vacuum and ion transport.** Ions must travel through the analyser without colliding with residual gas, so the analyser needs a vacuum environment or its own vacuum system. The sources reviewed do not quantify the vacuum requirement for any named design.\n- **Thermal control.** Lasers, ion optics and electronics need temperature control. The CRATER paper does not state a thermal requirement, and the sources reviewed do not publish thermal values for the other examples.\n- **Dust.** Regolith dust can coat optical surfaces and deposit on the ion optics. The sources reviewed do not describe a dust-protection design for a named instrument.\n- **Standoff and focus.** The energy density on the sample depends on the spot size and focus. A 2012 NASA Goddard poster on a miniaturised laser ablation mass spectrometer identified the laser spot size, the gap between the sample and the inlet, and reflectron focusing as design challenges for landed missions [8]. LAMA's standoff design is intended to address the sampling geometry [3].\n- **Power.** The CRATER flight-model requirement of below 60 W peak power and the Bern estimates of about 3 W for the miniaturised designs [1][5][6] show a wide range of power budgets across the designs. Power and thermal budgets must be confirmed for any specific mission.",
+      "limitations": "- **Sample consumption.** The measurement removes a small amount of material from the spot. Repeated measurements create a pit or depression, and the removed material cannot be recovered for later analysis on the same instrument.\n- **Quantification.** The conversion of a mass spectrum into absolute abundances usually requires calibration against standards. The sources reviewed do not describe the calibration plan for any lunar design.\n- **Ionisation variability.** The ionisation efficiency depends on the sample's composition, grain size, surface condition and laser energy. Results from one spot may not represent a whole sample.\n- **Resolution against mass and power.** The high resolution of an Orbitrap is accompanied by different mass, volume and power requirements from a time-of-flight design [1][3][5]. Selecting an analyser therefore involves a trade-off.\n- **Development status.** Every example in this article is a concept, breadboard, prototype, engineering test unit or pre-launch design. None is confirmed to have flown.\n- **Value conflicts.** The Bern estimates for mass and volume are not mutually consistent across the summaries reviewed [5][6][9].",
+      "transportation_and_deployment": {
+        "overview": "A laser ablation mass spectrometer on the Moon would be a surface payload. The generic steps are:",
+        "transportation_process": [
+          "Integrate the instrument on Earth into the lander or rover, including optical alignment, thermal protection and power and data interfaces.",
+          "Launch the spacecraft on a launch vehicle.",
+          "Transfer the spacecraft to the Moon.",
+          "Land the lander or deliver the rover.",
+          "Deploy the instrument head or position the rover or arm at the target.",
+          "Operate the instrument, with its power, thermal and data systems active."
+        ],
+        "deployment_methods": "**Sampling geometry.** LAMA is described as a standoff instrument [3], which would avoid direct contact with the surface. The deployment method of CRATER, including whether it requires contact sampling or an arm, is not stated in the sources reviewed.",
+        "historical_examples": "Laser ablation mass spectrometry designs for planetary use date from the early 2000s, when the Bern group published a miniaturised reflectron time-of-flight design [5], and from a 2012 NASA Goddard concept for landed missions to airless bodies [8]. CRATER's flight-model baseline was described in 2024 [1]. No laser ablation mass spectrometer is confirmed to have flown to the Moon in the sources reviewed.",
+        "compatibility_assessment": "**CLPS-LIMS.** The Bern project page states that the instrument is planned for Blue Ghost Mission 4 [4]. That assignment is a stated programme relationship. The sources reviewed do not provide the interface data, such as mass, power, thermal and data interfaces, needed to verify a compatibility assessment with the lander [4].\n\n**CRATER and LAMA.** The sources reviewed name no lander or rover for either instrument [1][2][3]. No compatibility is asserted for either.\n\n**Bern miniaturised designs.** The rover variant is described as small enough to be integrated in a rover or robotic arm [9]. This describes a design concept, not a verified interface with any rover.",
+        "images": []
+      },
+      "historical_significance": "Laser ablation mass spectrometry has been developed for planetary instruments for more than two decades. The Bern group published a miniaturised reflectron time-of-flight design in the early 2000s [5]. A NASA Goddard concept for a miniaturised laser ablation mass spectrometer for landed missions to airless bodies was presented in 2012 [8]. CRATER's flight-model baseline was described in 2024 [1]. LAMA was presented in 2025 [3].\n\nOn the Moon, the CLPS-LIMS project is the most advanced planned example in the sources reviewed, because it has a named lander mission [4]. No laser ablation mass spectrometer is confirmed to have operated on the lunar surface in the sources reviewed. The article did not survey every spaceflight laser ablation or desorption instrument, so the absence of a flight record here does not establish that no such instrument has flown on any planetary mission.",
+      "limitations_and_uncertainties": "- **CLPS-LIMS mission status.** The Bern project page gives a landing target of late 2029 and uses future tense [4]. A 2023 conference abstract, known only from a search-result summary, gives a different mission and date. The conflict is unresolved, and no launch confirmation was found.\n- **CLPS-LIMS technical values.** The laser type, wavelength, analyser details, mass, dimensions and power are not stated in the project page [4]. A search-result summary described a femtosecond laser, but this was not verified against a primary document.\n- **CRATER values.** The pulse energy, mass resolution, spatial resolution and mission are not stated in the paper as read [1]. The mass, volume and power values are flight-model requirements, not measured values.\n- **LAMA values.** The abstract gives no mass, dimensions, power or mass resolution [3]. The abstract is preliminary, and no measured performance is reported.\n- **Bern miniaturised designs.** The 2003 paper [5], the Whitby et al. abstract [6] and the rover-variant paper [9] could not be read in full in this run, and the review [7] was not retrieved. The figures in this article come from search-result summaries and must be checked.\n- **Not analysed.** The CosmOrbitrap, an Orbitrap-based laser desorption instrument for cryogenic environments, was noted in searches but not analysed in this article.\n- **Images.** No direct image asset of CRATER, CLPS-LIMS, LAMA or the Bern designs was verified in this run. The article therefore contains no embedded images, and the JSON image registry is empty. The University of Bern homepage has a title image that could not be verified as an image asset of the instrument, so it is not used.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "number": 1,
+          "title": "Characterization of Regolith And Trace Economic Resources (CRATER): An Orbitrap-based laser desorption mass spectrometry instrument for in situ exploration of the Moon",
+          "publisher": "Wiley (Rapid Communications in Mass Spectrometry)",
+          "url": "https://doi.org/10.1002/rcm.9657",
+          "citation": "Ray, S., Arevalo Jr., R., Southard, A., et al. (2024). Characterization of Regolith And Trace Economic Resources (CRATER): An Orbitrap-based laser desorption mass spectrometry instrument for in situ exploration of the Moon. *Rapid Communications in Mass Spectrometry*, 38(6), e9657. DOI 10.1002/rcm.9657."
+        },
+        {
+          "number": 2,
+          "title": "UV Laser Development for In Situ Planetary Lander Instruments",
+          "publisher": "NASA NTRS",
+          "url": "https://ntrs.nasa.gov/citations/20220005140",
+          "citation": "Fahey, M., Yu, A., Lee, J., et al. (date not stated). UV Laser Development for In Situ Planetary Lander Instruments (conference poster, NASA NTRS Document ID 20220005140; meeting held 4–6 April 2022)."
+        },
+        {
+          "number": 3,
+          "title": "LAMA abstract, HEMS Workshop 2025",
+          "publisher": "HEMS Workshop (NASA Goddard authors)",
+          "url": "https://www.hems-workshop.org/15thWS/HEMS%20WS%202025%20Abstracts/Li%20Abstract%20Final.pdf",
+          "citation": "NASA Goddard authors (2025). LAMA abstract, HEMS Workshop 2025 abstracts, file \"Li Abstract Final\" (author list not verified)."
+        },
+        {
+          "number": 4,
+          "title": "CLPS-LIMS project page, Laser Ablation Ionization Mass Spectrometer",
+          "publisher": "University of Bern",
+          "url": "https://lims.unibe.ch/",
+          "citation": "University of Bern, Space Research and Planetology Division. CLPS-LIMS project page (Laser Ablation Ionization Mass Spectrometer; undated)."
+        },
+        {
+          "number": 5,
+          "title": "Miniaturised reflectron time-of-flight laser-ablation mass spectrometer (inferred title)",
+          "publisher": "Measurement Science and Technology (inferred)",
+          "url": "https://wurz.space.unibe.ch/mst3_12_017.pdf",
+          "citation": "Rohner, U., Whitby, J. A., & Wurz, P. (2003). Miniaturised reflectron time-of-flight laser-ablation mass spectrometer (title and venue inferred from search results; Measurement Science and Technology, 14, p. 2159, not read in full)."
+        },
+        {
+          "number": 6,
+          "title": "LMS module design abstract (identified from search results)",
+          "publisher": "Lunar and Planetary Science (identified from search results)",
+          "url": "https://wurz.space.unibe.ch/LPI2066.pdf",
+          "citation": "Whitby, J. A., et al. (year not verified). LMS module design abstract (Lunar and Planetary Science abstract, identified from search results; not read in full)."
+        },
+        {
+          "number": 7,
+          "title": "Review of laser ablation time-of-flight mass spectrometry for planetary missions (not read in full)",
+          "publisher": "Universe",
+          "url": "https://wurz.space.unibe.ch/universe-08-00410-v2.pdf",
+          "citation": "Tulej, M., et al. (2022). Review of laser ablation time-of-flight mass spectrometry for planetary missions (*Universe*, 8, 410; not read in full)."
+        },
+        {
+          "number": 8,
+          "title": "Miniaturized laser ablation mass spectrometer for landed missions to airless bodies (poster 1082)",
+          "publisher": "NASA Goddard",
+          "url": "https://ssed.gsfc.nasa.gov/IPM/IPM2012/PDF/Posters/Li-1082.pdf",
+          "citation": "Li, et al. (2012). Miniaturized laser ablation mass spectrometer for landed missions to airless bodies (NASA Goddard, Instrument Development poster 1082; read as a search-result summary only)."
+        },
+        {
+          "number": 9,
+          "title": "Rover-variant laser-ablation time-of-flight design (search-result summary only)",
+          "publisher": "University of Bern (Wurz group)",
+          "url": "https://wurz.space.unibe.ch/19_rohner.pdf",
+          "citation": "Rohner, U., et al. (year and title not verified). Rover-variant laser-ablation time-of-flight design (search-result summary only; not read in full)."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[i]": "payload.article.physical_specifications.examples[i].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No verified direct image asset was found for this payload, so every image array is empty and the Markdown article contains no embedded images. All JSON URLs (references) have query strings and fragments removed; the LAMA reference URL keeps its percent-encoded spaces."
+  },
+  "data_quality_notes": [
+    "No direct image asset was verified for CRATER, CLPS-LIMS, LAMA or the Bern miniaturised designs. Image arrays are empty by design rather than using unverified URLs.",
+    "CLPS-LIMS mission timing conflicts: the Bern project page gives a Blue Ghost Mission 4 landing target of late 2029 and uses future tense [4]; a 2023 conference abstract known only from a search summary gives an earlier CP-22 date. The Bern page is treated as more recent but this is unresolved.",
+    "CLPS-LIMS laser type, wavelength, analyser details, mass, dimensions and power are not stated on the project page. A search summary described a femtosecond laser and a reflectron time-of-flight design; these were not verified against a primary document and are not adopted.",
+    "The Bern miniaturised-design figures (500 g, 650 cm³, 3 W; 0.28 kg and 7 × 4 × 3 cm; 250 g) come from search-result summaries of papers whose PDFs could not be read in full in this run. Titles, years and venues for references 5, 6, 7 and 9 are inferred or unverified. The 7 × 4 × 3 cm and 650 cm³ values are not consistent with each other.",
+    "CRATER values are flight-model requirements (below 10 kg, below 20 000 cm³, below 60 W peak) from Ray et al. 2024 [1], not measured performance. Pulse energy, mass resolution, spatial resolution and mission are not stated in the paper as read.",
+    "LAMA is described in a 2025 conference abstract only [3]. Its author list is not verified from the file name, and no mass, dimensions, power or mass resolution is stated. A search summary gave a few-kilogram target that is not adopted.",
+    "No lander compatibility is asserted for CRATER, LAMA or the Bern designs. The CLPS-LIMS Blue Ghost Mission 4 assignment is a stated programme relationship [4] without verified interface data.",
+    "Flight history was not surveyed exhaustively; the article does not establish that no laser ablation or desorption instrument has flown on any planetary mission. CosmOrbitrap was noted in searches but not analysed.",
+    "The Ray et al. 2024 DOI and publication date are taken from the DRUM repository record for the paper; the paper itself was read via its abstract summary only."
+  ]
+}

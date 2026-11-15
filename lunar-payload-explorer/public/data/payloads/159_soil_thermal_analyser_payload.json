@@ -1,0 +1,251 @@
+{
+  "catalogue_id": 159,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 8,
+    "name": "Regolith and soil analysis"
+  },
+  "payload": {
+    "number": 159,
+    "name": "Soil thermal analyser",
+    "article": {
+      "overview": "A soil thermal analyser is an instrument that measures how regolith (lunar soil) conducts and stores heat. Most designs push a heated probe into the ground, record how its temperature changes over time, and convert that response into a thermal property, usually thermal conductivity. The result matters for heat-flow studies, for models of the near-surface temperature, and for the thermal design of equipment that sits on or in the regolith.\n\nNo instrument with the exact name \"soil thermal analyser\" was identified in the sources consulted. This article therefore describes the measurement class and uses two lunar examples that were actually flown: the Chandrayaan-3 Surface Thermophysical Experiment (ChaSTE), which measured regolith conductivity at 80 mm depth in August 2023, and the Lunar Instrumentation for Subsurface Thermal Exploration with Rapidity (LISTER), which reached about 1 m depth on Blue Ghost Mission 1 in March 2025. The heat-flow and conductivity background used in payloads 009 (heat-flow probe) and 010 (thermal conductivity probe) also applies here.",
+      "description": "A soil thermal analyser combines three elements: a probe that can be placed in the regolith, a heater that supplies a known amount of heat, and temperature sensors that record the response. The probe is usually long and thin so that it can be treated as a line heat source, and the sensors are placed along or near the heater.\n\nTwo broad designs appear in the sources read for this article. In the first, a single-needle or single-probe design is heated along its length and read by sensors inside or beside the heater. LISTER uses this approach, with a 2.8 mm needle that carries a heater and two platinum resistance thermometers (RTDs). In the second, a multi-sensor penetrating probe combines a heater with a larger array of temperature sensors along a longer stem. ChaSTE uses this approach, with ten RTDs and a foil heater near its tip.\n\nBoth designs are placed by a mechanism rather than by hand. ChaSTE is driven into the regolith by a motor and ball screw. LISTER is placed by a pneumatic drill that uses a nitrogen gas jet to lift regolith out of the hole while a probe is pushed down the same hole.",
+      "scientific_purpose_and_applications": "The main purpose is to measure the thermal conductivity of regolith at depth. Conductivity is needed to convert a temperature gradient into heat flow from the interior. The heat-flow relation is simple: heat flow equals conductivity multiplied by the temperature gradient over the depth interval. Without a conductivity measurement, a temperature gradient cannot be turned into a heat flux [2][1].\n\nConductivity measurements also support engineering models of heat exchange between surface equipment and the regolith; comparison of how deep regolith layers store and conduct heat, which can reveal compaction or grain-structure changes with depth [1]; and reconstruction of the Moon's thermal evolution when several sites are measured. NASA states that taking similar measurements at multiple sites could help reconstruct the Moon's thermal evolution [3].",
+      "operating_principle": "A line-source heater creates a temperature rise in the surrounding ground. Over the early part of the heating, the temperature rise at a fixed sensor is approximately linear when plotted against the logarithm of time. The slope of that line is inversely proportional to thermal conductivity, so a measured slope can be converted into a conductivity value once the heater power and the instrument geometry are known [1].\n\nThe ChaSTE team used this approach directly. Its two heating experiments were analysed as linear fits of temperature against ln(time), giving slopes of 3.235 K/s and 3.130 K/s, with R-squared values above 0.999. Each slope was converted to conductivity using a laboratory calibration of the heater against a reference hot-wire measurement in a simulant [1].\n\nTwo practical constraints follow from the physics. The logarithmic relation only holds after the probe has heated the surrounding ground for long enough, and the result depends on how much heat is lost along the probe and into its support structure. The ChaSTE authors state that the linear region was used only after about 15 minutes in their laboratory tests, and that the linearity criterion was applied at R-squared above 0.99 or 0.999 depending on the section analysed [1].\n\nLISTER uses a related but different sequence. Each measurement sequence takes about 2 hours: about 1 hour of equilibration, 30 minutes of heating and 30 minutes of cooling. Conductivity is obtained from the temperature rise and fall of the needle during the heating and cooling, interpreted with a finite-element heat-transfer model [2][4].",
+      "scientific_importance": "Conductivity is the link between a measured temperature gradient and the heat that leaves the Moon. A single measurement at one depth does not give heat flow by itself, but it constrains the thermal model used for the whole profile [1][2].\n\nThe ChaSTE result is scientifically significant because it provides an in situ conductivity value for regolith at high southern latitude. The authors report it as the first in situ measurement of regolith thermal conductivity at that latitude [1]. The value at 80 mm depth is very low, which the authors relate to the properties of the regolith at that depth and to the packing density they derived.\n\nLISTER is significant because it extended in situ thermal measurements to about 1 m depth, which is deeper than the 8 cm depth the paper cites as the earlier robotic record [2]. Its eight measurement depths, between 0.288 m and 0.971 m, are a direct test of how conductivity and temperature change with depth at one site [2]. A preliminary heat-flow estimate of 13 to 14 mW m-2 was reported at conference level, comparable to the 16 mW m-2 measured at the Apollo 17 site. That estimate is preliminary and has not yet been published in a peer-reviewed paper that was read for this article [5].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power for a soil thermal analyser. The two flown examples below use different heaters, geometries and placement systems, and their figures are not directly comparable. Values are given only for the named instrument and source. Where a value is not stated in the sources read, the article says so.",
+        "examples": [
+          {
+            "name": "Chandrayaan-3 Surface Thermophysical Experiment (ChaSTE)",
+            "type": "Flown lunar instrument (Vikram lander, Chandrayaan-3, 2023)",
+            "status": "Vikram landed on 23 August 2023 at the Shiv Shakti site, 69.373 degrees S, 32.319 degrees E, as given in the paper. Secondary news sources give 24 August 2023 as the start of probe deployment; not verified in the paper.",
+            "penetrating_part_diameter_mm": 20,
+            "remaining_part_diameter_mm": 25,
+            "nose_cone_length_mm": 40,
+            "sleeve_diameter_before_penetration_mm": 36,
+            "overall_probe_length": "Not stated in the paper.",
+            "probe_material": "Cyanate ester composite (stated thermal conductivity 0.16 to 0.17 W m-1 K-1) with a titanium-alloy nose tip.",
+            "temperature_sensors": "Ten Pt-1000 RTDs, 4 mm diameter, four-wire, calibrated range 150 to 350 K; calibration maximum deviation below 0.4 K.",
+            "heater": "Foil-type, 15 mm wide, wound over RTD 9, operating at 0.1 W.",
+            "electronics": "Microcontroller-based with a 12-bit ADC.",
+            "penetration_mechanism": "Brushless DC motor and ball screw, with shape-memory-alloy hold-and-release. Designed for up to 310 mm stroke, advancing in 2.5 mm motor steps. Penetration took about 29 hours.",
+            "heater_position_mm": 80,
+            "sensor_span_mm_approx": 100,
+            "final_penetration_depth": "Not explicitly stated in the paper.",
+            "measurement_method": "Two active-heating experiments at 80 mm depth at 0.1 W. Experiment 1: heated 3.5 h, off, then on again after 10 h. Experiment 2: 2.5 h heating. Analysed as linear fit of temperature against ln(time), slopes 3.235 K/s and 3.130 K/s, R-squared above 0.999. Laboratory calibration against a hot-wire reference in polyurethane foam simulant.",
+            "thermal_conductivity_results": [
+              {
+                "experiment": 1,
+                "depth_mm": 80,
+                "value_w_m-1_k-1": 0.0115,
+                "uncertainty_w_m-1_k-1": 0.0008,
+                "uncertainty_note": "Stated 95 percent value; total uncertainty budget 7.5 percent (coverage factor 2)."
+              },
+              {
+                "experiment": 2,
+                "depth_mm": 80,
+                "value_w_m-1_k-1": 0.0124,
+                "uncertainty_w_m-1_k-1": 0.0009,
+                "uncertainty_note": "Stated 95 percent value."
+              }
+            ],
+            "packing_density_kg_m-3": "1940 +/- 10 (derived from penetration motor current; model range 1930 to 1950).",
+            "model_cross_checks": "Empirical model 0.0118 to 0.012 W m-1 K-1 for the same temperatures and density range. Axisymmetric finite-element model (about 0.22 million elements) best fit at 0.0115 W m-1 K-1, with maximum deviation below 0.5 degrees C within 2 hours.",
+            "mass_kg": "Not stated in the paper.",
+            "power_budget": "Not stated in the paper, apart from the 0.1 W heater.",
+            "source_urls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC11880395/",
+              "https://doi.org/10.1038/s41598-025-91866-4"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Instrumentation for Subsurface Thermal Exploration with Rapidity (LISTER)",
+            "type": "Flown lunar instrument (Blue Ghost Mission 1, CLPS TO-19D, Mare Crisium, 2025)",
+            "status": "Deployed in March 2025. Data released to the PDS Geosciences Node on 9 January 2026. Developed by Texas Tech University and Honeybee Robotics; principal investigator Dr Seiichi Nagihara.",
+            "needle_sensor_diameter_mm": 2.8,
+            "needle_exposed_length_mm": 28,
+            "needle_casing": "Stainless steel.",
+            "temperature_sensors": "Two platinum RTDs: one at the needle midpoint, one at the spacer-nozzle joint. Calibrated to 0.01 K absolute accuracy; resolution better than 0.001 K (24-bit ADC, 100 to 400 K range).",
+            "heater": "Manganin resistance wire along the full needle length, powered at 50 mW when active.",
+            "excavation_method": "Pneumatic. Nitrogen gas jet lofts regolith out of the hole; no mechanical cutting.",
+            "tube": "6.4 mm diameter stainless steel, coiled and spooled from a reel; spacer/nozzle of G10 CR fiberglass, 10 cm long, 1 cm outer diameter (nozzle hole size not stated).",
+            "gas_supply": "Two tanks at 30.3 MPa, 130 g of nitrogen each; flow about 12 SLPM rising to about 15 SLPM near end of life (per paper). Fixed flow after launch.",
+            "total_mass_kg": 12.9,
+            "total_mass_note": "Complete LISTER system including avionics; not the needle alone.",
+            "design_target_depth_m": 3,
+            "measurement_depths_m": [
+              0.288,
+              0.329,
+              0.394,
+              0.6,
+              0.783,
+              0.947,
+              0.956,
+              0.971
+            ],
+            "depth_reached": "Paper abstract gives 1 m. The body states the probe reached 98 cm in the first three days, then met major obstacles and did not advance beyond 1 m.",
+            "measurement_sequence": "About 2 hours per depth: about 1 hour equilibration, 30 minutes heating, 30 minutes cooling.",
+            "obstacle_handling": "Dithering with 5 or 10 mm amplitude triggered by weight-on-bit; safety threshold 120 N; excavation stops after three dither cycles with less than 10 mm progress.",
+            "thermal_conductivity_result": "Not stated in the Part I paper read for this article; analysis is in a separate article.",
+            "heat_flow_preliminary": "Preliminary 13 to 14 mW m-2 at conference level (EGU26 abstract), comparable to 16 mW m-2 at the Apollo 17 site. Not peer-reviewed in the sources read.",
+            "lander_thermal_constraint": "Thermal operations must finish in the morning to stay within about 30 degrees C lander temperature limit.",
+            "source_urls": [
+              "https://doi.org/10.3847/PSJ/ae0465",
+              "https://www.nasa.gov/missions/artemis/nasa-payload-aims-to-probe-moons-depths-to-study-heat-flow",
+              "https://pds-geosciences.wustl.edu/missions/clps/to19d_lister.htm"
+            ],
+            "images": [
+              {
+                "id": "lister_hardware_bench_photo",
+                "description": "LISTER flight-candidate hardware on a laboratory bench: a black sealed electronics box and a pneumatic drill and probe assembly on an aluminium base, with a red tag reading 'Remove before flight'.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2024/12/img-4939.jpeg",
+                "source_page_url": "https://www.nasa.gov/missions/artemis/nasa-payload-aims-to-probe-moons-depths-to-study-heat-flow",
+                "publisher": "NASA",
+                "credit": "Photo courtesy: Firefly Aerospace",
+                "caption": "LISTER flight-candidate hardware on a laboratory bench. Photo courtesy: Firefly Aerospace.",
+                "section_placements": [
+                  "physical_specifications.examples[1]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct NASA WordPress asset URL with no query string or fragment; retrieved and displayed as a JPEG. Identification as LISTER hardware is inferred from page context and visible Honeybee Robotics markings. Rights: credited to Firefly Aerospace; reuse conditions not verified."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "The ChaSTE probe is a penetrating stem with a 20 mm diameter tip section, a 25 mm remaining section and a 40 mm nose cone, housed in a 36 mm sleeve before penetration; its overall length is not stated. The LISTER needle is 2.8 mm in diameter with a 28 mm exposed length, carried at the end of a 6.4 mm tube and a 10 cm, 1 cm diameter spacer. The two sets of dimensions describe different architectures and should not be compared as like-for-like specifications.",
+        "mass_and_weight": "ChaSTE: mass not stated in the paper. LISTER: 12.9 kg total including avionics, which is the complete system rather than the probe alone.",
+        "power_requirements": "ChaSTE: 0.1 W foil heater during active-heating experiments; electronics power not stated. LISTER: 50 mW manganin heater along the needle when active; total system power not stated in the sources read."
+      },
+      "environmental_and_operational_requirements": "Both examples operate in the lunar near-surface environment, with large diurnal temperature swings, no atmosphere and exposure to radiation and micrometeoroids. The ChaSTE sensors were calibrated over 150 to 350 K. For LISTER, thermal operations must be finished in the morning to stay within the lander's temperature limit of about 30 degrees C. Other operating constraints recorded for LISTER include stopping excavation when weight-on-bit exceeds a 120 N safety threshold and using a dithering motion to pass obstacles. Regolith disturbance is a practical consideration: the ChaSTE authors state that modification of the regolith by the lander and the probe was inevitable.",
+      "limitations": "ChaSTE's heater was calibrated in a laboratory using polyurethane foam as a simulant, not lunar regolith, and the authors note the simulant may not be comparable in density or composition. The ChaSTE result applies to conditions at 80 mm depth at one site. LISTER did not reach its 3 m design target; major obstacles stopped progress at about 1 m, and the cause is not known for certain. The LISTER excavation method cannot cut solid rock, and large stones can accumulate at the bottom of the hole. The hole narrows with depth, from about 2 cm to about 7 cm at the surface. The LISTER gas flow rate is fixed after launch. LISTER's cameras became inoperable as the spacecraft heated.",
+      "transportation_and_deployment": {
+        "overview": "A soil thermal analyser can be delivered to the Moon as part of a lander payload compartment or as one instrument within a larger surface package. Both flown examples were carried as lander payloads. ChaSTE was part of the Chandrayaan-3 Vikram lander payload; LISTER was one of ten NASA payloads on Firefly's Blue Ghost Mission 1.",
+        "transportation_process": [
+          "Integrate the probe, electronics and deployment mechanism into the lander payload on Earth.",
+          "Launch and transfer to the Moon.",
+          "Land the spacecraft at the target site (ChaSTE: Shiv Shakti site, 23 August 2023; LISTER: Mare Crisium, March 2025).",
+          "Deploy the probe into the regolith using the instrument's own mechanism (motor-driven penetration for ChaSTE; gas-jet excavation with a spooled tube for LISTER).",
+          "Hold the probe at known depths and run the heating sequences, scheduling thermal operations within lander temperature limits where applicable."
+        ],
+        "deployment_methods": "ChaSTE uses a brushless DC motor and ball screw with shape-memory-alloy hold-and-release; penetration took about 29 hours and the design stroke is up to 310 mm. LISTER uses pneumatic excavation with a nitrogen gas jet and a spooled 6.4 mm stainless-steel tube, with a dithering motion to handle obstacles. Neither approach should be assumed to transfer to a different lander without a new interface analysis.",
+        "historical_examples": "ChaSTE (Chandrayaan-3 Vikram lander, 2023) and LISTER (Blue Ghost Mission 1, 2025) are the two flown examples in this article. Earlier lunar conductivity measurements from the Apollo heat-flow experiments are covered in payloads 009 and 010.",
+        "compatibility_assessment": "Compatibility of a soil thermal analyser with any named lander or spacecraft has not been assessed in this article. ChaSTE's and LISTER's interfaces with their respective landers' power, data and thermal systems are not described in the sources read. A future instrument would need its mass, dimensions, deployment loads, power, thermal limits and data interface compared with verified lander specifications before any compatibility is claimed.",
+        "images": [
+          {
+            "id": "lister_hardware_bench_photo",
+            "description": "LISTER flight-candidate hardware on a laboratory bench: a black sealed electronics box and a pneumatic drill and probe assembly on an aluminium base, with a red tag reading 'Remove before flight'.",
+            "image_type": "Engineering hardware photograph",
+            "image_url": "https://www.nasa.gov/wp-content/uploads/2024/12/img-4939.jpeg",
+            "source_page_url": "https://www.nasa.gov/missions/artemis/nasa-payload-aims-to-probe-moons-depths-to-study-heat-flow",
+            "publisher": "NASA",
+            "credit": "Photo courtesy: Firefly Aerospace",
+            "caption": "LISTER flight-candidate hardware on a laboratory bench. Photo courtesy: Firefly Aerospace.",
+            "section_placements": [
+              "physical_specifications.examples[1]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct NASA WordPress asset URL with no query string or fragment; retrieved and displayed as a JPEG. Identification as LISTER hardware is inferred from page context and visible Honeybee Robotics markings. Rights: credited to Firefly Aerospace; reuse conditions not verified."
+          }
+        ]
+      },
+      "historical_significance": "ChaSTE was reported by its authors as the first in situ measurement of regolith thermal conductivity at high southern latitude, published in Scientific Reports in 2025. LISTER extended robotic in situ thermal measurements to about 1 m depth at eight measurement points between 0.288 m and 0.971 m, as reported in its abstract. The mission was flown as a commercial lunar delivery under NASA's CLPS programme. Earlier in situ conductivity work, including the Apollo heat-flow experiments, is covered in payloads 009 and 010.",
+      "limitations_and_uncertainties": "- **No instrument named \"soil thermal analyser\" was confirmed.** The article covers the measurement class and two flown examples. A different instrument may be intended by the catalogue name.\n- **ChaSTE probe length and mass.** The overall probe length and the mass and power budget are not stated in the paper [1].\n- **ChaSTE final depth.** The paper gives the heater position (80 mm) and sensor span (about 100 mm), but not a final penetration depth. Secondary sources give 10 cm and 140 mm. Those values are not verified and are not used in this article.\n- **ChaSTE deployment mechanism.** A secondary source describes a rotation-based mechanism. The paper describes a motor-driven ball-screw system with a shape-memory-alloy hold-and-release. This article follows the paper.\n- **ChaSTE simulant.** The laboratory calibration used foam, not lunar regolith. The authors recognise this as a limitation [1].\n- **LISTER thermal conductivity.** No LISTER conductivity value or uncertainty is stated in the Part I paper read for this article. The thermal analysis is in a separate article that was not read [2].\n- **LISTER heat flow.** The 13 to 14 mW m-2 value is a preliminary conference-level estimate and is not used as a verified result in this article [5].\n- **LISTER mass and sensor count.** The 12.9 kg total is the complete LISTER system including avionics. A separate probe mass is not given [2].\n- **LISTER lander interface.** The interface with the Blue Ghost lander is not described in the sources read.\n- **Unverified news item.** A 2026 news summary reports single-particle conductivity values for Chang'e-5 soil. These were not verified against a primary paper and are not used in this article.\n- **Images.** One LISTER photograph has a verified direct asset URL. Its identification as LISTER hardware is inferred from the page context. No verified direct image asset was found for ChaSTE within the page-read budget.",
+      "images": [
+        {
+          "id": "lister_hardware_bench_photo",
+          "description": "LISTER flight-candidate hardware on a laboratory bench: a black sealed electronics box and a pneumatic drill and probe assembly on an aluminium base, with a red tag reading 'Remove before flight'.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2024/12/img-4939.jpeg",
+          "source_page_url": "https://www.nasa.gov/missions/artemis/nasa-payload-aims-to-probe-moons-depths-to-study-heat-flow",
+          "publisher": "NASA",
+          "credit": "Photo courtesy: Firefly Aerospace",
+          "caption": "LISTER flight-candidate hardware on a laboratory bench. Photo courtesy: Firefly Aerospace.",
+          "section_placements": [
+            "physical_specifications.examples[1]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct NASA WordPress asset URL with no query string or fragment; retrieved and displayed as a JPEG. Identification as LISTER hardware is inferred from page context and visible Honeybee Robotics markings. Rights: credited to Firefly Aerospace; reuse conditions not verified."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Thermal conductivity of high latitude lunar regolith measured by Chandra's Surface Thermophysical Experiment (ChaSTE) onboard Chandrayaan 3 lander",
+          "authors": "Mathew N., Prasad K. D., Mohammad F., et al.",
+          "publisher": "Scientific Reports",
+          "publication_date": "2025-03-04",
+          "doi": "10.1038/s41598-025-91866-4",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11880395/",
+          "reference_key": "MATHEW2025"
+        },
+        {
+          "title": "The Lunar Instrumentation for Subsurface Thermal Exploration with Rapidity (LISTER) on Blue Ghost Mission 1 to Mare Crisium. I. Pneumatic Excavation of Regolith",
+          "authors": "Nagihara S., Zacny K., Ngo P., et al.",
+          "publisher": "The Planetary Science Journal, 6(10), 232",
+          "publication_date": "2025-10-08",
+          "doi": "10.3847/PSJ/ae0465",
+          "url": "https://doi.org/10.3847/PSJ/ae0465",
+          "reference_key": "NAGIHARA2025"
+        },
+        {
+          "title": "NASA Payload Aims to Probe Moon's Depths to Study Heat Flow",
+          "authors": "NASA",
+          "publisher": "NASA",
+          "publication_date": "2024-12-18",
+          "url": "https://www.nasa.gov/missions/artemis/nasa-payload-aims-to-probe-moons-depths-to-study-heat-flow",
+          "reference_key": "NASA-LISTER"
+        },
+        {
+          "title": "Blue Ghost (CLPS TO-19D) LISTER data",
+          "authors": "NASA Planetary Data System, Geosciences Node",
+          "publisher": "NASA PDS Geosciences Node",
+          "publication_date": "2026-01-09",
+          "url": "https://pds-geosciences.wustl.edu/missions/clps/to19d_lister.htm",
+          "reference_key": "NASA-PDS-LISTER"
+        },
+        {
+          "title": "Preliminary LISTER heat-flow abstract, EGU26-6066",
+          "authors": "LISTER team",
+          "publisher": "European Geosciences Union (EGU26)",
+          "publication_date": "2026-03-13",
+          "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-6066.html",
+          "reference_key": "EGU26-LISTER",
+          "notes": "Taken from a search summary, not a full page read. Conference abstract; preliminary."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "physical_specifications LISTER example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "No instrument with the exact name 'soil thermal analyser' was identified; the article covers the measurement class with two flown examples (ChaSTE, LISTER). The catalogue name was not changed.",
+    "ChaSTE details come from the Mathew et al. (2025) Scientific Reports paper read via PMC. Overall probe length, mass and power budget are not stated there. Final penetration depth is not explicitly stated; the 80 mm heater position and roughly 100 mm sensor span are reported.",
+    "Secondary sources give conflicting ChaSTE depths (10 cm, 140 mm) and a rotation-based deployment; these were not verified and are not used.",
+    "LISTER details come from the Nagihara et al. (2025) Part I paper (abstract and body via IOP). Thermal conductivity values and uncertainties are not stated in Part I; the thermal-analysis article was not read.",
+    "LISTER preliminary heat flow of 13 to 14 mW m-2 is from an EGU26 conference abstract known only from a search summary; it is labelled preliminary and not treated as a verified result.",
+    "The Chang'e-5 single-particle thermal conductivity figures come from a 2026 news summary and were not verified against a primary paper; they are not used in the article.",
+    "The LISTER hardware photograph (NASA asset img-4939.jpeg) was retrieved and displayed as a JPEG. Its identification as LISTER hardware is inferred from page context and visible Honeybee Robotics markings; the caption as read does not name it explicitly. Reuse rights are credited to Firefly Aerospace and not verified.",
+    "No verified direct image asset was obtained for ChaSTE within the page-read budget, so no ChaSTE image object is included.",
+    "Chandrayaan-3 landing and deployment dates: landing 23 August 2023 per the paper; deployment start 24 August 2023 is from secondary news and is not relied on.",
+    "The search-summary-only EGU26 reference and the Apollo heat-flow background (covered in payloads 009 and 010) were not re-read for this article."
+  ]
+}

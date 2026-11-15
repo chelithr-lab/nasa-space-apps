@@ -1,0 +1,369 @@
+{
+  "catalogue_id": 20,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 1,
+    "name": "Geophysical and lunar interior instruments"
+  },
+  "payload": {
+    "number": 20,
+    "name": "Electromagnetic field sensor",
+    "article": {
+      "scope_note": "Scope reading: this article covers the generic class of in-situ electromagnetic (EM) field sensors on the Moon or in lunar orbit: instruments that measure electric fields, or radio-frequency and other electromagnetic fields, as sensors in their own right, or that transmit and receive EM energy to probe the ground. Magnetic-field measurement is excluded and is covered by payloads 012 (Magnetometer), 013 (Fluxgate magnetometer), 014 (Vector magnetometer) and 015 (Scalar magnetometer). The magnetotelluric sounder (payload 021), which uses natural-source EM variations to sound the interior, is also excluded. Electrical conductivity measured as a material property is cross-referenced to payload 022 (Electrical conductivity probe). Plasma, surface electric-field and dust-charging instruments are cross-referenced to their own catalogue entries (for example, 125 and 137) and are not repeated here. Because the catalogue name is a broad class, three examples of different kinds are described: the Apollo 17 Surface Electrical Properties (SEP) experiment (flown, active radio-frequency transmitter and receiver on the surface), the ARTEMIS Electric Field Instrument (EFI) (flown in lunar orbit), and LuSEE-Night (planned, radio instrument on the lunar far side). No universal specification is given for the class.",
+      "overview": "Electromagnetic (EM) field sensing on the Moon answers questions that a magnetometer cannot. A magnetometer measures the magnetic component of the field. An electromagnetic field sensor, as used here, measures the electric component of a field, or the radio-frequency electromagnetic energy that passes through, is absorbed by, or is reflected from the ground. Such measurements can reveal how electrically conducting or dielectric the regolith and rock are, and how plasma and the solar wind charge and move the surface.\n\nThree examples are described. The Apollo 17 Surface Electrical Properties (SEP) experiment transmitted radio-frequency energy across the lunar surface and recorded it at a receiver [1][3]. ARTEMIS, a pair of spacecraft in lunar orbit from 2011, carried an Electric Field Instrument (EFI) [5][6]. LuSEE-Night is a planned radio instrument for the lunar far side, with a launch and landing not yet confirmed at the date of this article [9][10][13][14].",
+      "description": "An electromagnetic field sensor responds to the electric field, the magnetic field, or both, at frequencies from direct current to radio frequencies. On the Moon the sensor may be a pair of electrodes or antennas on the surface or on a boom, a transmitter and receiver pair that probes the ground between them, or an instrument on a spacecraft that measures the electric field of the surrounding plasma.\n\nElectromagnetic methods differ from seismic and thermal methods because the signal depends on the electrical properties of the material. Conductivity, dielectric permittivity and magnetic permeability control how an EM wave travels, how strongly it is absorbed, and how much of it is reflected. A sensor that measures these effects can give information about the composition, porosity and layering of the ground, but only where the measurement geometry and frequency are suited to the target [1][2].\n\nThe class is broad. A sensor may be a passive electric-field detector, an active transmitter and receiver, or a radio receiver. The examples in this article show three of these forms.",
+      "scientific_purpose_and_applications": "The purpose of an EM field sensor is to measure electric fields or EM energy so that the electrical state of the surface, the interior and the surrounding plasma can be determined.\n\nFor the surface and near-surface, the Apollo 17 SEP experiment aimed to obtain data on the transmission, absorption and reflection of electromagnetic energy by the lunar surface and regolith [1]. A 2018 reanalysis of the same data, as summarised in a search-result abstract, reports that the signal attenuation is mainly due to absorption rather than scattering, and that the derived loss tangent is about 0.01. The same summary states that the basalt bottom was not detected to a depth of about 2 km [2]. These are summary-level results; the full paper was not read.\n\nFor the surrounding plasma and the space environment, NASA lists the Electric Field Instruments among the five scientific instruments on the ARTEMIS probes [5]. The EFI is one of the field instruments used to study the lunar plasma environment and the interaction of the solar wind with the Moon. The precise plasma-science objectives for the lunar-orbit phase were not read in full text.\n\nFor radio science, LuSEE-Night is intended to listen for a faint low-frequency radio signal that cannot be observed from Earth, using the Moon's far side, which is shielded from terrestrial radio interference. It is planned to collect data during the lunar night, when solar radio noise is blocked [9][10][13].",
+      "operating_principle": "Electromagnetic field sensors use several operating principles. The three examples illustrate different ones.\n\nActive transmitter and receiver (Apollo 17 SEP). The SEP experiment placed a transmitting antenna near the Lunar Module and a receiving antenna on the Lunar Rover [1]. The NTRS abstract of the SP-330 chapter describes the basic principle as interferometry, with a single dipole antenna radiating electromagnetic energy and a loop receiver measuring the magnitudes of the fields [3]. The transmitter sent a radio-frequency signal through the surface, and the receiver recorded the signal that arrived. The 2018 reanalysis derives loss tangents from the attenuation of that received signal [2]. It describes SEP as a continuous-wave radio-frequency interferometer operating from 1 to 32 MHz [2]. That frequency range is from the search-result summary and was not verified in the full paper.\n\nElectric-field measurement (ARTEMIS EFI). The THEMIS EFI description page states that its L2 product is a three-dimensional estimate, including the perpendicular component, derived from spin-plane electric-field measurements under the assumption E·B = 0, using magnetometer data [8]. A search-result summary of the 2008 EFI design paper describes a three-axis electric-field instrument using wire-boom and stacer-boom antennas, operating in waveform and spectral modes [6]. Its measurement principle is generally described as a double-probe technique, in which the potential difference between two antennas separated by a known distance gives the electric field along the line between them. This principle was not confirmed from the full design paper in this run, and the boom lengths and frequency limits in that paper were not read.\n\nRadio-frequency receiver (LuSEE-Night). LuSEE-Night is described as a pathfinder radio telescope with deployable antennas [9]. The 2025 collaboration paper describes four 3 m monopole antennas arranged as two horizontal cross pseudo-dipoles on a rotating stage [14]. The 2024 power paper describes four horizontal monopole antennas, arranged for wide zenith-pointing beams with two orthogonal linear polarizations [13]. The receiver architecture was not published in the sources read.",
+      "scientific_importance": "The Apollo 17 SEP experiment is an early example of an electromagnetic probe of the lunar surface. Its data have been used to estimate the radio-frequency loss of the upper regolith and basalt, and the 2018 reanalysis links the attenuation to absorption in the basalt [2]. The SP-330 chapter of 1973 is the primary Apollo 17 preliminary report for the experiment [3]. A 1974 final report is cited in the literature for the SEP analysis but was not read in full and is not used here.\n\nARTEMIS EFI data form part of the lunar-plasma record of the late 2000s and early 2010s, a period when the lunar orbit environment was measured in more detail than in the Apollo era [5][6].\n\nLuSEE-Night would, if flown, extend radio science to a frequency band that is not accessible from Earth. Its scientific value depends on the quiet environment of the far side and on the lunar night, which is not yet confirmed by flight data [9][13].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size, power or frequency range for an electromagnetic field sensor. The three examples differ in purpose, measurement method and mission role. Values are given only for the named instrument and source. Where a value is not stated in the sources read, the article says so and uses null. No value has been inferred.",
+        "examples": [
+          {
+            "name": "Apollo 17 Surface Electrical Properties (SEP) experiment",
+            "type": "Lunar surface active radio-frequency transmitter and receiver",
+            "status": "Flown on the Moon during the Apollo 17 mission (1972). The PDS overview records a transmitting antenna placed near the Lunar Module and a receiving antenna placed on the Lunar Rover [1].",
+            "measurement_type": "Active radio-frequency transmission through the lunar surface and reception at a second station, to study transmission, absorption and reflection of electromagnetic energy [1]. The NTRS abstract of the SP-330 chapter describes interferometry with a single dipole transmitting antenna and a loop receiver [3].",
+            "deployment": "Transmitting antenna placed near the Lunar Module; receiving antenna placed on the Lunar Rover [1]",
+            "frequency_range_mhz": {
+              "value": null,
+              "summary_value_unverified": "1 to 32 MHz, continuous-wave RF interferometer (2018 reanalysis search-result summary [2])",
+              "note": "Not stated in the PDS overview [1] or the NTRS abstract [3]; the summary value was not checked in full text."
+            },
+            "antenna_geometry": "Not stated in the PDS overview (no shape, length, spacing or orientation) [1]. The NTRS abstract refers to a single dipole transmitting antenna [3]. The Apollo 17 image caption states that the wire in the foreground is part of the dipole antenna of the SEP experiment, and gives the rover's distance from the SEP experiment as 35 m [11][12].",
+            "derived_result": "A loss tangent of about 0.01 is reported in the 2018 reanalysis summary [2]. A 1974 report, as summarised in a search result, gives an upper bound of 0.05 and a possible value as low as 0.002. Neither was read in full, and the two should not be compared without the original papers.",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_w": null,
+            "investigators": "PDS overview: author D. R. Williams, editor S. A. McLaughlin; G. Simmons cited only as author of a referenced SP-330 chapter [1]. NTRS record of the SP-330 chapter lists G. Simmons and D. Strangway among its authors [3].",
+            "specifications_status": "Mass, dimensions, power, antenna dimensions and mission operating dates not stated in the PDS overview [1] or the NTRS abstract [3].",
+            "source_refs": [
+              1,
+              2,
+              3,
+              11,
+              12
+            ],
+            "images": [
+              {
+                "id": "ap17_sep_antenna_wire_as17_134_20435",
+                "description": "Apollo 17 frame AS17-134-20435 showing the Lunar Module, an astronaut and the Lunar Roving Vehicle; a thin wire in the foreground is, according to the image caption, part of the SEP dipole antenna.",
+                "image_type": "Historical lunar surface photograph",
+                "image_url": "https://images-assets.nasa.gov/image/as17-134-20435/as17-134-20435~large.jpg",
+                "source_page_url": "https://commons.wikimedia.org/wiki/File:AS17-134-20435_(21059080083).jpg",
+                "publisher": "NASA (via Wikimedia Commons record; Project Apollo Archive as listed author)",
+                "credit": "NASA",
+                "caption": "The wire in the foreground is part of the dipole antenna of the SEP experiment; the rover is 35 m from the SEP experiment (caption as quoted on the Commons record).",
+                "notes": "Direct NASA image asset (images-assets.nasa.gov, lowercase path; HTTP 200, image/jpeg; downloaded and viewed; re-checked HTTP 200 in this revision). The NASA image-detail page was not located, so the Wikimedia Commons file record (HTTP 200) is used as the source page. The Commons record states the file is in the public domain in the United States because it was created by NASA, and that this tag does not indicate the copyright status of the attached work. The SEP antenna identification rests on the caption, read on the Commons record. The antenna wire is a thin line in a wide frame and is not separately measured.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]",
+                  "transportation_and_deployment"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "ARTEMIS Electric Field Instrument (EFI), lunar orbit",
+            "type": "Lunar orbit electric-field instrument (THEMIS heritage)",
+            "status": "Flown in lunar orbit. NASA gives ARTEMIS-P1 lunar-orbit entry on 2011-06-27 and ARTEMIS-P2 on 2011-07-17 [5]. Wikipedia gives 2011-07-02 for P1 [7]; the NASA date is used.",
+            "heritage": "ARTEMIS reused two THEMIS spacecraft (THEMIS-B and THEMIS-C) reassigned to the Moon [5][7]",
+            "design_summary_unverified": "Search-result summary of a 2008 design paper: three-axis instrument with 20 radial wire-boom and 10 axial stacer-boom antennas; operating on the THEMIS spacecraft since early 2007; waveform and spectral measurements from DC to 8 kHz; broadband channel to 400 kHz [6]. Full text not read; figures not verified. Applicability to the lunar phase not confirmed.",
+            "measurement_principle": "Generally described as a double-probe technique; not confirmed from the full design paper in this run [6]",
+            "data_product": "THEMIS EFI description page: the L2 product is a 3D estimate including the perpendicular electric field, derived from spin-plane E-field measurements assuming E·B = 0, using flux-gate magnetometer data [8]. A processing assumption, not a sensor specification.",
+            "operating_status": "NASA page states both spacecraft 'continue to operate in good health', tied to the 2017 tenth launch anniversary; current status not confirmed [5]",
+            "mass_kg": null,
+            "power_w": null,
+            "boom_length_m": null,
+            "specifications_status": "Mass, power and lunar-configuration boom lengths not stated in the sources read. The THEMIS EFI description page [8] gives no hardware specifications.",
+            "source_refs": [
+              5,
+              6,
+              7,
+              8
+            ],
+            "images": []
+          },
+          {
+            "name": "LuSEE-Night (Lunar Surface Electromagnetics Experiment-Night)",
+            "type": "Planned lunar far-side radio instrument (pathfinder radio telescope)",
+            "status": "Planned, not flown at the date of this article. CU Boulder page (September 2023 update) describes a pathfinder on a Firefly Blue Ghost-design lander and states Firefly will deliver an orbiter and two surface payloads to the Moon in 2026 [9]. The 2023 press release describes the experiment as carried on a future Commercial Lunar Payload Services flight operated by Firefly Aerospace [10]. Launch and landing dates not confirmed from a current source.",
+            "partners": "Brookhaven National Laboratory (DOE); UC Berkeley Space Sciences Laboratory; NASA Science Mission Directorate; NASA Marshall Planetary Missions Program Office; Firefly Aerospace (lander provider); ESA (Lunar Pathfinder relay) [9]",
+            "frequency_range_mhz": {
+              "value": null,
+              "reported_values_conflicting": [
+                "0.1 to 50 MHz, 2024 power paper abstract [13]",
+                "1 to 50 MHz sky band, 2025 collaboration paper abstract [14]",
+                "0.5 to 50 MHz, 2023 press release [10]"
+              ],
+              "note": "CU Boulder page states no frequency range [9]. The values conflict and none is confirmed as the hardware receiver range."
+            },
+            "antennas": {
+              "stated_in_primary_2025_paper": "Four 3 m monopole antennas arranged as two horizontal cross pseudo-dipoles on a rotating stage [14]",
+              "stated_in_primary_2024_paper": "Four horizontal monopole antennas, arranged for wide zenith-pointing beams with two orthogonal linear polarizations; no length in the abstract [13]",
+              "stated_in_2023_press_release": "Two antenna pairs, each six metres tip to tip, spring-loaded stacer antennas that uncoil after landing [10]",
+              "stated_in_primary_project_page": "'Deployable antennas'; number and length not stated [9]",
+              "conflict": "The 2023 press release (two pairs, six metres) and the 2025 collaboration paper (four 3 m monopoles) disagree. The article does not resolve the conflict; the 2025 paper is the most recent primary statement."
+            },
+            "stowage": "2023 press release states the whole experiment must travel to the Moon in a cube with one-metre sides [10]; not confirmed from a primary source.",
+            "mass_kg": null,
+            "power_w": null,
+            "power_statement": "2024 power paper abstract: the spectrometer must be powered through the lunar night using a 7 kWh battery [13]. A design statement; no power draw in watts is given.",
+            "operating_period": "Intended to collect data during the two-week lunar night, when solar radio noise is blocked [10][13]; mission-design statement, not confirmed from a flight source.",
+            "mass_note": "The 280 kg figure on the CU Boulder page refers to ESA's Lunar Pathfinder, not to LuSEE-Night [9].",
+            "specifications_status": "Mass not stated in primary sources read. Antenna and frequency details conflict across sources (see above).",
+            "source_refs": [
+              9,
+              10,
+              13,
+              14
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No single value applies. Apollo 17 SEP antenna dimensions are not stated in the PDS overview or the NTRS abstract; the image caption identifies a dipole wire and a 35 m rover-to-experiment distance [1][3][11][12]. ARTEMIS EFI boom and antenna counts are from a search-result summary of the 2008 design paper and are not verified [6]. LuSEE-Night antenna sizes conflict between sources: four 3 m monopoles [14] versus two pairs of six metres tip to tip [10]; the stowage cube of one-metre sides is from a 2023 press release and is unverified [10]. Not publicly specified in the primary sources read for the other values.",
+        "mass_and_weight": "Not publicly specified in the sources read for the Apollo 17 SEP experiment, the ARTEMIS EFI or LuSEE-Night. The 280 kg figure on the CU Boulder LuSEE-Night page refers to ESA's Lunar Pathfinder and is not an instrument mass [9].",
+        "power_requirements": "Not publicly specified in the sources read for the Apollo 17 SEP experiment or the ARTEMIS EFI. For LuSEE-Night, the 2024 power paper abstract states that the spectrometer must be powered through the lunar night using a 7 kWh battery; this is a design statement and gives no power draw in watts [13]."
+      },
+      "environmental_and_operational_requirements": "Electromagnetic field sensors on the lunar surface must work across the same extreme thermal and radiation environment as other surface instruments. The Apollo 17 SEP experiment used a surface antenna and a rover-mounted receiver, so its environmental requirements were those of exposed antennas and simple electronics [1]. The sources read do not describe its thermal control.\n\nElectrical cleanliness is an operational requirement. An instrument that measures a weak electric field must not be disturbed by the lander's own electrical and electromagnetic environment, by the rover, or by the crew. The EFI design uses wire booms and stacer booms to hold its antennas away from the spacecraft body (search-result summary of the 2008 design paper [6]; the purpose of each boom was not read). The Apollo 17 SEP transmitter and receiver were placed away from the Lunar Module and the rover, as reported in the PDS overview and in the image caption [1][12].\n\nRadio-frequency measurements depend on the environment in which they are made. LuSEE-Night is planned for the far side, which is shielded from terrestrial radio interference, and for the lunar night, when solar radio emission is blocked [9][10]. Its data must be relayed to Earth, because the far side does not face the Earth. The 2023 press release states that the data will go through a relay satellite that passes overhead [10], and the CU Boulder page names ESA's Lunar Pathfinder as the relay provider [9].",
+      "limitations": "An electromagnetic field sensor measures the electrical or radio properties of the material or the plasma at the point of measurement and within its frequency range. An active surface experiment such as SEP gives an integrated response along the transmission path, and it cannot by itself resolve the depth, composition or structure of that path without a model [1][2][3].\n\nThe interpretation of EM measurements depends on the assumed model. The 2018 reanalysis of SEP shows that the same data can be interpreted to give different loss values and bounds, as the older 1974 report gives a looser range [2]. Values from different analyses should not be combined without checking their assumptions.\n\nA passive electric-field instrument on a spacecraft measures the field at the spacecraft, which may be affected by the spacecraft's own potential and by the surrounding plasma. The THEMIS EFI L2 product uses a processing assumption, E·B = 0, to estimate the perpendicular component [8]. That assumption affects how the results should be read.\n\nThe planned LuSEE-Night instrument has no flight data. Its frequency range and antenna geometry differ between sources, its power figure is a design statement, and its mass, launch and landing dates are not confirmed. Any statement about its performance is a design goal, not a measurement.",
+      "transportation_and_deployment": {
+        "overview": "The three examples are handled separately. The Apollo 17 SEP antennas were a surface experiment set up by the crew, with the transmitter near the Lunar Module and the receiver on the Lunar Rover. The ARTEMIS EFI was carried on the two ARTEMIS spacecraft, which were THEMIS spacecraft reassigned to the Moon, and was not delivered as a separate payload. LuSEE-Night is a planned surface payload on a Firefly Blue Ghost-design lander. No lander, rover or spacecraft compatibility is asserted for any example.",
+        "transportation_process": [
+          "Surface (Apollo 17 SEP): the sources read do not describe stowage on the Lunar Module or release from it. The PDS overview records a transmitter deployed near the Lunar Module and a receiver placed on the Lunar Rover [1].",
+          "Surface (Apollo 17 SEP): a search-result summary of the Apollo 17 mission overview states that the team set the experiment up during the first moonwalk; the mission overview was not read in full.",
+          "Orbiter (ARTEMIS EFI): carried by ARTEMIS-P1 and ARTEMIS-P2, which entered lunar orbit on 2011-06-27 and 2011-07-17 per NASA [5]. Boom deployment and commissioning sequence not described in the sources read.",
+          "Surface (LuSEE-Night, planned): to fly on a Firefly Blue Ghost-design lander as a Commercial Lunar Payload Services flight operated by Firefly Aerospace [9][10]; the 2023 press release states that the spring-loaded stacer antennas uncoil into position after landing [10]; stowage and deployment are not described in the 2024 and 2025 abstracts [13][14]; release mechanism and lander interface not confirmed from primary sources."
+        ],
+        "deployment_methods": "Apollo 17 SEP: transmitter and receiver placed on the surface, one near the Lunar Module and one on the Lunar Rover [1]; the image caption places the rover 35 m from the experiment [12]. ARTEMIS EFI: wire-boom and stacer-boom antennas, per a search-result summary of the 2008 design paper [6]; deployment sequence not read. LuSEE-Night: the 2023 press release describes two pairs of spring-loaded stacer antennas that uncoil after landing [10]; the 2025 paper describes four 3 m monopoles on a rotating stage [14]; the conflict is unresolved and no deployment method is confirmed from a primary source.",
+        "historical_examples": "Apollo 17 Surface Electrical Properties experiment (1972 mission) [1][3]; ARTEMIS-P1 and ARTEMIS-P2 with the Electric Field Instrument (lunar orbit from 2011) [5][6]; LuSEE-Night (planned; pathfinder on Firefly Blue Ghost-design lander) [9][10].",
+        "compatibility_assessment": "Not assessed. No named lander, rover or spacecraft interface was verified for any example. The LuSEE-Night statements about Firefly's Blue Ghost are programme statements, not verified interface evidence [9][10]. Any future EM field sensor would need assessment on mass, dimensions, antenna stowage, deployment method, power, data and thermal requirements.",
+        "images": [
+          {
+            "id": "ap17_sep_antenna_wire_as17_134_20435",
+            "description": "Apollo 17 frame AS17-134-20435 showing the Lunar Module, an astronaut and the Lunar Roving Vehicle; a thin wire in the foreground is, according to the image caption, part of the SEP dipole antenna.",
+            "image_type": "Historical lunar surface photograph",
+            "image_url": "https://images-assets.nasa.gov/image/as17-134-20435/as17-134-20435~large.jpg",
+            "source_page_url": "https://commons.wikimedia.org/wiki/File:AS17-134-20435_(21059080083).jpg",
+            "publisher": "NASA (via Wikimedia Commons record; Project Apollo Archive as listed author)",
+            "credit": "NASA",
+            "caption": "The wire in the foreground is part of the dipole antenna of the SEP experiment; the rover is 35 m from the SEP experiment (caption as quoted on the Commons record).",
+            "notes": "Direct NASA image asset (images-assets.nasa.gov, lowercase path; HTTP 200, image/jpeg; downloaded and viewed; re-checked HTTP 200 in this revision). The NASA image-detail page was not located, so the Wikimedia Commons file record (HTTP 200) is used as the source page. The Commons record states the file is in the public domain in the United States because it was created by NASA, and that this tag does not indicate the copyright status of the attached work. The SEP antenna identification rests on the caption, read on the Commons record. The antenna wire is a thin line in a wide frame and is not separately measured.",
+            "section_placements": [
+              "overview",
+              "physical_specifications.examples[0]",
+              "transportation_and_deployment"
+            ]
+          }
+        ]
+      },
+      "historical_significance": "The Apollo 17 SEP experiment was one of the Apollo-era surface experiments that used radio-frequency transmission through the regolith to study the Moon's electrical properties [1][2][3]. Its results have been reanalysed, most recently in 2018, to derive a loss tangent and to infer porosity and layering in the upper tens of metres [2].\n\nThe ARTEMIS EFI extended electric-field measurements to lunar orbit and forms part of a continuing record of lunar plasma and surface-charging studies [5][6]. The THEMIS heritage of the EFI links the lunar measurements to an earlier Earth-orbit mission [6][8].\n\nLuSEE-Night, if flown, would be a radio instrument on the lunar far side designed to measure low-frequency radio emission during the lunar night [9][10][13]. Its historical status is pending.",
+      "limitations_and_uncertainties": "**SEP frequency and geometry.** The PDS overview gives no frequency range, antenna geometry, mass, power or results [1], and the NTRS abstract of the SP-330 chapter gives none of these either [3]. The 1 to 32 MHz range comes from a 2018 summary [2], and the antenna dimensions come from a photograph caption [11][12]. Neither was checked in a full primary report.\n\n**SEP derived values.** The loss tangent values (about 0.01 in 2018 and up to 0.05 in 1974) come from search-result summaries of two papers, neither read in full. The SP-330 chapter [3] was read as an abstract only, and the NTRS transmitter-antenna paper [4] was not read. The 1974 and 1975 SEP reports cited in the literature were not read.\n\n**SEP investigators.** The PDS overview lists D. R. Williams as author and S. A. McLaughlin as editor [1]. The NTRS record lists G. Simmons and D. Strangway among the authors of the SP-330 chapter [3]. An earlier draft also cited an SP-4009 appendix mirror that lists SEP in the ALSEP table. That mirror could not be reached, so the ALSEP membership of the experiment is unresolved and the claim is not made here.\n\n**SEP dates.** The PDS overview's document dates (2016 creation, 2018 edits) conflict with its citation year (2017) [1]. Mission operating dates for SEP were not stated.\n\n**ARTEMIS EFI specifications.** Boom lengths, antenna counts and frequency limits come from a search-result summary of the 2008 design paper [6]. The full paper was not read. The THEMIS EFI description page [8] does not give boom counts, boom lengths or frequency limits, and it links to a separate instrument page that was not read. Mass and power were not found.\n\n**ARTEMIS lunar-orbit dates.** NASA gives 27 June 2011 for P1 [5]. Wikipedia gives 2 July 2011 [7]. The NASA date is used here, but it was not checked against mission logs.\n\n**ARTEMIS operating status.** NASA's statement about good health is tied to 2017 [5]. Current status was not confirmed.\n\n**LuSEE-Night frequency and antennas.** The sources conflict. The 2024 power paper abstract gives 0.1 to 50 MHz [13], the 2025 collaboration paper abstract gives a 1 to 50 MHz sky band [14], and the 2023 press release gives 0.5 to 50 MHz [10]. The antenna descriptions differ between the 2025 paper (four 3 m monopoles) [14] and the 2023 press release (two pairs, six metres tip to tip) [10]. The CU Boulder page states neither value [9]. None of the values has been confirmed as a hardware limit.\n\n**LuSEE-Night schedule.** The project page is dated by a September 2023 update [9]. Current launch and landing status was not confirmed at the date of this article.\n\n**LuSEE-Night mass, power and stowage.** Mass is not stated in the sources read. The 7 kWh battery figure is a design statement from an abstract [13]. The stowage cube is from a 2023 press release and is unverified [10].\n\n**Images.** One direct NASA image asset, AS17-134-20435, was verified and viewed. Its source page is the Commons file record, and the NASA source page was not located. No image of the LuSEE-Night flight hardware and no image of the ARTEMIS EFI was verified; the LuSEE-Night images in news coverage are artist's renderings and a test-antenna photograph, and none is used.\n\n**Source access.** The previous draft's data.gov EFI record (404), EurekAlert release (403; 202 on re-check) and apolloexplorer SP-4009 mirror (no connection) were replaced or removed. The Springer DOI for the EFI design paper resolves to a login-cookie page rather than the paper, so the 2008 figures remain unverified. The Icarus DOI resolves to the publisher page, and the full paper was not read.\n\n**Other EM sensors.** Surface electric-field detectors, plasma wave instruments and dielectric sensors are cross-referenced to other catalogue entries and were not researched in this article. Chandrayaan, Chang'e and Soviet EM instruments were not researched.\n\n**Lunar landing sites.** This article does not recommend lunar landing sites or locations. That is deferred by the user.",
+      "images": [
+        {
+          "id": "ap17_sep_antenna_wire_as17_134_20435",
+          "description": "Apollo 17 frame AS17-134-20435 showing the Lunar Module, an astronaut and the Lunar Roving Vehicle; a thin wire in the foreground is, according to the image caption, part of the SEP dipole antenna.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://images-assets.nasa.gov/image/as17-134-20435/as17-134-20435~large.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:AS17-134-20435_(21059080083).jpg",
+          "publisher": "NASA (via Wikimedia Commons record; Project Apollo Archive as listed author)",
+          "credit": "NASA",
+          "caption": "The wire in the foreground is part of the dipole antenna of the SEP experiment; the rover is 35 m from the SEP experiment (caption as quoted on the Commons record).",
+          "notes": "Direct NASA image asset (images-assets.nasa.gov, lowercase path; HTTP 200, image/jpeg; downloaded and viewed; re-checked HTTP 200 in this revision). The NASA image-detail page was not located, so the Wikimedia Commons file record (HTTP 200) is used as the source page. The Commons record states the file is in the public domain in the United States because it was created by NASA, and that this tag does not indicate the copyright status of the attached work. The SEP antenna identification rests on the caption, read on the Commons record. The antenna wire is a thin line in a wide frame and is not separately measured.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ]
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "ap17_sep_antenna_wire_as17_134_20435",
+          "description": "Apollo 17 frame AS17-134-20435 showing the Lunar Module, an astronaut and the Lunar Roving Vehicle; a thin wire in the foreground is, according to the image caption, part of the SEP dipole antenna.",
+          "image_type": "Historical lunar surface photograph",
+          "image_url": "https://images-assets.nasa.gov/image/as17-134-20435/as17-134-20435~large.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:AS17-134-20435_(21059080083).jpg",
+          "publisher": "NASA (via Wikimedia Commons record; Project Apollo Archive as listed author)",
+          "credit": "NASA",
+          "caption": "The wire in the foreground is part of the dipole antenna of the SEP experiment; the rover is 35 m from the SEP experiment (caption as quoted on the Commons record).",
+          "notes": "Direct NASA image asset (images-assets.nasa.gov, lowercase path; HTTP 200, image/jpeg; downloaded and viewed; re-checked HTTP 200 in this revision). The NASA image-detail page was not located, so the Wikimedia Commons file record (HTTP 200) is used as the source page. The Commons record states the file is in the public domain in the United States because it was created by NASA, and that this tag does not indicate the copyright status of the attached work. The SEP antenna identification rests on the caption, read on the Commons record. The antenna wire is a thin line in a wide frame and is not separately measured.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ]
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Overview of the Apollo 17 Surface Electrical Properties (SEP) Experiment (PDS4 product, v1.0)",
+          "author": "Williams, D. R. (author); McLaughlin, S. A. (editor)",
+          "publisher": "NSSDCA / NASA Planetary Data System, Geosciences Node",
+          "date": "2016 (created); 2018 (minor edits); citation year given as 2017",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17l_sep.xml",
+          "pdf_url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17l_sep.pdf",
+          "notes": "Read through the XML text version. The PDF version returned HTTP 200 (application/pdf) in this revision but was not read."
+        },
+        {
+          "number": 2,
+          "title": "New analysis of the Apollo 17 surface electrical properties experiment",
+          "author": "Grimm, R. E.",
+          "publisher": "Icarus, 314, 389-399",
+          "date": "2018",
+          "doi": "10.1016/j.icarus.2018.06.007",
+          "url": "https://doi.org/10.1016/j.icarus.2018.06.007",
+          "notes": "Read as a search-result abstract summary only; full text not read. DOI resolves (HTTP 200 after redirect) to the publisher page. Figures (1 to 32 MHz; loss tangent about 0.01; basalt bottom not detected to about 2 km) are unverified summary values."
+        },
+        {
+          "number": 3,
+          "title": "Surface electrical properties experiment, chapter 15 in NASA SP-330, Apollo 17 Preliminary Science Report",
+          "author": "Simmons, G.; Strangway, D. et al.",
+          "publisher": "NASA SP-330 (NASA Technical Reports Server record 19740010332)",
+          "date": "1973 (publication date recorded on NTRS)",
+          "url": "https://ntrs.nasa.gov/citations/19740010332",
+          "notes": "NTRS record read; abstract states the interferometry principle, a single dipole antenna radiating electromagnetic energy and a loop receiver measuring the field magnitudes. Pages 15-1 to 15-14 per search summary. Full chapter not read. Affiliation metadata on the NTRS record is inconsistent for one author and was not relied on."
+        },
+        {
+          "number": 4,
+          "title": "NASA technical paper on the SEP transmitter antenna (H. D. Cubley)",
+          "author": "Cubley, H. D.",
+          "publisher": "NASA NTRS",
+          "date": "1973 (NTRS record 19730050568)",
+          "url": "https://ntrs.nasa.gov/citations/19730050568",
+          "notes": "Title and content seen in a search-result record only; not read in full."
+        },
+        {
+          "number": 5,
+          "title": "THEMIS/ARTEMIS mission page",
+          "author": "NASA Science",
+          "publisher": "NASA",
+          "date": "page last updated 2026-01-09 (per page)",
+          "url": "https://science.nasa.gov/mission/themis-artemis",
+          "notes": "Source of ARTEMIS-P1 (2011-06-27) and ARTEMIS-P2 (2011-07-17) lunar-orbit entry dates, the list of five scientific instruments including the Electric Field Instruments, and the 'good health' statement tied to 2017."
+        },
+        {
+          "number": 6,
+          "title": "Electric Field Instrument (EFI) for THEMIS",
+          "author": "Bonnell, J. W.; Mozer, F. S.; Delory, G. T. et al.",
+          "publisher": "Space Science Reviews (Springer)",
+          "date": "2008",
+          "doi": "10.1007/s11214-008-9469-2",
+          "url": "https://doi.org/10.1007/s11214-008-9469-2",
+          "notes": "Design figures (20 radial wire-boom and 10 axial stacer-boom antennas; DC to 8 kHz waveform and spectra; broadband channel to 400 kHz; operation since early 2007) read from a search-result summary only. The Springer DOI resolved to a login-cookie page. Title as listed on the Springer record not confirmed in this run."
+        },
+        {
+          "number": 7,
+          "title": "THEMIS",
+          "author": "Wikipedia contributors",
+          "publisher": "Wikipedia",
+          "date": "not stated",
+          "url": "https://en.wikipedia.org/wiki/THEMIS",
+          "notes": "Secondary source used only to flag the conflicting P1 lunar-orbit date (2011-07-02). The earlier URL www.wikipedia.org/wiki/THEMIS redirects to this page."
+        },
+        {
+          "number": 8,
+          "title": "Electric Field Instrument (EFI), THEMIS mission description page (L2 product)",
+          "author": "University of California, Berkeley, Space Sciences Laboratory (THEMIS mission)",
+          "publisher": "THEMIS mission website",
+          "date": "not stated (no last-updated date shown on page)",
+          "url": "https://themis.ssl.berkeley.edu/efi_desc.shtml",
+          "notes": "Replaces the earlier data.gov record, which returned HTTP 404. Read via fetch. Source of the L2 product description, including the perpendicular electric field derived from spin-plane E-field measurements assuming E dot B = 0, using FGM magnetometer data. The page gives no hardware specifications and links to instrument_efi.shtml, which was not read."
+        },
+        {
+          "number": 9,
+          "title": "Lunar Surface Electromagnetics Experiment-Night (LuSEE-Night)",
+          "author": "University of Colorado Boulder, NESS project page",
+          "publisher": "University of Colorado Boulder",
+          "date": "September 2023 update",
+          "url": "https://www.colorado.edu/ness/projects/lunar-surface-electromagnetics-experiment-night-lusee-night",
+          "notes": "Read via WebFetch summary. States pathfinder radio telescope on Firefly Blue Ghost-design lander, 2026 delivery of orbiter and two surface payloads, partners, and 'deployable antennas' without number or length. Frequency range, mass, power and operating period not stated. The 280 kg figure refers to ESA's Lunar Pathfinder."
+        },
+        {
+          "number": 10,
+          "title": "Listening to the Radio on the Far Side of the Moon",
+          "author": "Press release (Lawrence Berkeley National Laboratory, as recorded on the fetched page)",
+          "publisher": "Newswise (DOE Science News Source)",
+          "date": "2023-09-26",
+          "url": "https://www.newswise.com/doescience/listening-to-the-radio-on-the-far-side-of-the-moon",
+          "notes": "Replaces the earlier EurekAlert copy (HTTP 403 and 202 on re-check). Read via fetch with verbatim quotes: 0.5 to 50 MHz; two pairs of antennas six metres tip to tip; spring-loaded stacer antennas; one-metre cube stowage; two-week lunar night; relay satellite; a CLPS flight operated by Firefly Aerospace. Secondary (press release); the earlier Brookhaven attribution was not confirmed on this page."
+        },
+        {
+          "number": 11,
+          "title": "AS17-134-20435 (21059080083).jpg, Apollo 17 frame",
+          "author": "Project Apollo Archive (listed author on Commons record); NASA (creator)",
+          "publisher": "Wikimedia Commons",
+          "date": "not stated",
+          "url": "https://commons.wikimedia.org/wiki/File:AS17-134-20435_(21059080083).jpg",
+          "notes": "Source page for image AS17-134-20435 (HTTP 200 in this revision). Caption quoted from this record: wire in the foreground part of SEP dipole antenna; rover 35 m from SEP experiment. Public-domain tag as recorded on the page."
+        },
+        {
+          "number": 12,
+          "title": "AS17-134-20435 direct image asset (NASA Apollo image archive)",
+          "author": "NASA",
+          "publisher": "NASA image archive (direct asset URL)",
+          "date": "not stated",
+          "url": "https://images-assets.nasa.gov/image/as17-134-20435/as17-134-20435~large.jpg",
+          "notes": "Direct asset verified by HTTP 200 image/jpeg in this revision and earlier by viewing the image. Source page not located on NASA domain."
+        },
+        {
+          "number": 13,
+          "title": "LuSEE-Night power requirements and power generation strategy",
+          "author": "Saliwanchik, B. R. B.; Herrmann, S.; Kotov, I.; O'Connor, P.; Potekhin, M.; Slosar, A.; Bale, S.",
+          "publisher": "arXiv (arXiv:2407.07173)",
+          "date": "2024-07-09 (submission date)",
+          "url": "https://arxiv.org/abs/2407.07173",
+          "notes": "Abstract read via fetch (HTTP 200 in this revision). States four horizontal monopole antennas for zenith-pointing beams with two orthogonal linear polarizations; frequency range 0.1 to 50 MHz; spectrometer to be powered through the lunar night using a 7 kWh battery; two weeks of lunar night. Antenna length and power draw not given in the abstract. Full text not read. Added in this revision as a primary LuSEE-Night source."
+        },
+        {
+          "number": 14,
+          "title": "Linear map-making with LuSEE-Night",
+          "author": "Camacho, H.; Rotermund, K. M.; Slosar, A. et al.",
+          "publisher": "arXiv (arXiv:2508.16773); the arXiv comments field states publication in the Open Journal of Astrophysics (not verified)",
+          "date": "2025-08-22 (submission date; revised 2026-03-04)",
+          "url": "https://arxiv.org/abs/2508.16773",
+          "notes": "Abstract read via fetch (HTTP 200 in this revision). States four 3 m monopole antennas arranged as two horizontal cross pseudo-dipoles on a rotational stage, and a 1 to 50 MHz sky-sensitive band (not stated as a hardware limit). Stowage, mass, power, lunar-night period and delivery schedule not stated. Full text not read. Added in this revision as a primary LuSEE-Night source."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo 17 SEP example": "payload.article.physical_specifications.examples[0].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values, and all reference URLs, have query strings and fragments removed. The Apollo 17 direct asset was re-checked at https://images-assets.nasa.gov/image/as17-134-20435/as17-134-20435~large.jpg (HTTP 200, image/jpeg) and was viewed in an earlier run. The source page for the image is the Wikimedia Commons file record (HTTP 200) because the NASA image-detail page could not be located. Section-level image objects are repeated intentionally and are identical to the master registry entry."
+  },
+  "data_quality_notes": [
+    "Revision (v1, in place, after HTTP checks): the data.gov EFI record (reference 8 in the prior draft, HTTP 404) was replaced by the THEMIS EFI description page https://themis.ssl.berkeley.edu/efi_desc.shtml (HTTP 200), which supports the E dot B = 0 L2 product statement. The EurekAlert LuSEE-Night release (HTTP 403, then 202 on re-check) was replaced by the Newswise copy of the same 2023 press release (HTTP 200). The apolloexplorer SP-4009 mirror (no connection) was removed; the ALSEP membership claim that depended on it is no longer made and is recorded as unresolved below. The NTRS record of the SP-330 chapter (19740010332, HTTP 200) was added as reference 3, and two primary LuSEE-Night arXiv abstracts (2407.07173 and 2508.16773, both HTTP 200) were added as references 13 and 14.",
+    "Scope: the class is treated as in-situ electromagnetic field sensing (electric fields and radio-frequency EM energy). Magnetometers (payloads 012 to 015) and the magnetotelluric sounder (payload 021) are excluded. Cross-references: 022 electrical conductivity probe, 089 dielectric permittivity sensor, 125 plasma wave instrument, 137 surface electric field detector.",
+    "Apollo 17 SEP: the PDS overview and the NTRS abstract give no frequency range, antenna geometry, mass, power, dimensions, operating dates or results. The PDS PDF is available (HTTP 200) but was not read; the XML text version was read. The SEP final technical report on the PDS archive (HTTP 200) was not read because the fetch tool could not process it within size limits.",
+    "Apollo 17 SEP frequency (1 to 32 MHz), loss tangent (about 0.01 in 2018; up to 0.05 and possibly 0.002 in 1974) and the basalt-depth statement come from search-result summaries of Grimm (2018) and a 1974 report. Full texts were not read.",
+    "Apollo 17 SEP investigators: the PDS overview lists D. R. Williams (author) and S. A. McLaughlin (editor); the NTRS record of the SP-330 chapter lists G. Simmons and D. Strangway among its authors. The ALSEP membership of SEP is unresolved: an earlier search summary of SP-4009 Appendix 9 (apolloexplorer mirror) was not re-verifiable, and the ALSEP Data Book Appendix F PDF on ibiblio (HTTP 200) is a scanned document that could not be read text-wise. The claim is not made in the article.",
+    "Apollo 17 SEP dates: the PDS overview's document dates (2016 creation, 2018 edits) conflict with its citation year (2017). Mission operating dates for SEP not stated.",
+    "ARTEMIS EFI design figures (20 radial wire-boom and 10 axial stacer-boom antennas; DC to 8 kHz; broadband to 400 kHz; operating since early 2007) come from a search-result summary of the 2008 Springer paper. The Springer DOI resolved to a login-cookie page and the full text was not read. The THEMIS EFI description page gives no hardware specifications. Mass, power and lunar-phase configuration not stated in sources read.",
+    "ARTEMIS EFI measurement principle (double-probe) is stated as a general description and was not confirmed from the full design paper in this run.",
+    "ARTEMIS lunar-orbit date conflict: NASA gives 2011-06-27 for P1 (used); Wikipedia gives 2011-07-02. NASA's 'good health' statement is tied to 2017 and current operating status is not confirmed.",
+    "LuSEE-Night frequency range conflicts across sources: 0.1 to 50 MHz (arXiv 2407.07173 abstract, 2024); 1 to 50 MHz sky band (arXiv 2508.16773 abstract, 2025); 0.5 to 50 MHz (2023 press release). The CU Boulder page states no range. None is confirmed as a hardware limit.",
+    "LuSEE-Night antennas conflict across sources: four 3 m monopoles in two horizontal cross pseudo-dipoles on a rotating stage (arXiv 2508.16773, 2025); four horizontal monopoles with no length in the abstract (arXiv 2407.07173, 2024); two antenna pairs six metres tip to tip, spring-loaded stacer antennas (2023 press release). The CU Boulder page says only 'deployable antennas'. The article does not resolve the conflict; the 2025 collaboration paper is the most recent primary statement.",
+    "LuSEE-Night power: the 2024 power paper abstract states the spectrometer must be powered through the lunar night using a 7 kWh battery. This is a design statement, not a measured or verified power draw. No watt value is published in the sources read.",
+    "LuSEE-Night schedule: CU Boulder page is dated September 2023 and states a 2026 Firefly delivery; launch and landing status was not confirmed at the article date (2026-11-12). The 280 kg figure on the CU page refers to ESA's Lunar Pathfinder, not LuSEE-Night.",
+    "LuSEE-Night mass, stowage and operating period: mass not stated in primary sources read. The one-metre stowage cube is from the 2023 press release and is unverified. The two-week lunar-night operating period is a mission-design statement.",
+    "Images: one direct NASA image asset, AS17-134-20435 (Apollo 17 frame), was re-checked (HTTP 200 image/jpeg) and was viewed in an earlier run. Its SEP-antenna identification rests on the Commons caption. The NASA image-detail page could not be located, so the Commons file record is the source page. No direct image of the LuSEE-Night flight hardware or of the ARTEMIS EFI was verified; news-coverage renderings and test-antenna photographs were not used. Direct-asset verification is recorded as false for official source pages because the source page used is Commons, not an official NASA page.",
+    "No physical mass, dimension or power values are given for any example because none was verified in the sources read. Values are null throughout, not inferred.",
+    "Other EM field-sensor history (Chandrayaan, Chang'e, Soviet and other national instruments; Apollo 15 and 16 subsatellite electric or EM instruments; surface electric-field detectors) was not researched in this article.",
+    "URL checks (this revision, curl with a browser User-Agent, redirects followed): all JSON URLs were checked. Failures remaining: none among the references and image URLs retained in the article. Notes: the Springer and Icarus DOIs resolve to publisher pages (HTTP 200 after redirect) but the full texts were not read; the Wikipedia URL was normalised to en.wikipedia.org.",
+    "No lunar landing-site or location recommendation is included, in line with the deferral by the user. No lander, rover or spacecraft compatibility is asserted for any example. Blue Ghost and Firefly statements are programme statements only."
+  ]
+}

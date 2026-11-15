@@ -1,0 +1,253 @@
+{
+  "catalogue_id": 253,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 13,
+    "name": "Sample collection, preservation and return"
+  },
+  "payload": {
+    "number": 253,
+    "name": "Sample transfer mechanism",
+    "article": {
+      "overview": "A sample transfer mechanism is the device or sub-system that moves a collected lunar sample, usually inside a sealed container, from one part of a sample-return system to another. In a typical architecture this might mean moving the container from a surface ascent vehicle into an orbiting spacecraft, or from a lander into a return capsule. The mechanism must do this without opening the sample to contamination, without damaging the container and without losing the seal. Apollo handled sealed sample containers that were moved by astronauts and ground teams. China's Chang'e-5 mission (2020) used a dedicated automated mechanism in lunar orbit to move a sealed sample container from its ascender into the Earth-return capsule. That mission is the best-documented modern example of an automated in-orbit sample transfer mechanism among the sources reviewed for this article.",
+      "description": "\"Sample transfer mechanism\" describes a functional class of sub-system, not a single standard instrument. Its defining job is to transfer a sample or a sealed sample container between two interfaces. Depending on the mission, those interfaces may be between a surface ascent vehicle and an orbiting spacecraft, between a lander and a return capsule, or between a sample-handling enclosure and a transfer lock or curation facility. The mechanism typically includes a drive or actuation element, a guide or linkage that defines the motion path, a grip or latch interface that engages the container, and position or status sensing. Some designs also include a reset or retraction function so that the mechanism does not obstruct the closing of a hatch or door after transfer. These functional elements are described from the Chang'e-5 transfer-mechanism literature; the internal arrangement of other mechanisms is not publicly documented in the sources reviewed. Lunar sample containers are a related but separate topic. Apollo used Apollo Lunar Sample Return Containers (ALSRCs), which were sealed for return to Earth. The transfer mechanism is what moves those containers, not what seals them.",
+      "scientific_purpose_and_applications": "The scientific value of a sample-return mission depends on keeping the returned material in a known and controlled state. A transfer mechanism contributes in three ways. First, containment: the sample should remain inside a sealed container during transfer so that it is not exposed to the lunar environment, spacecraft contamination or Earth's atmosphere. Second, traceability: the chain of custody (which container was moved, when, and between which hardware) is part of the scientific record, and automated transfer generates telemetry that can support this record, although detailed telemetry formats of specific missions are not covered here. Third, mission reliability: a sample that is lost, damaged or cannot be transferred into the return capsule may end the mission's primary objective, so the transfer step is a single point of failure that must be designed and tested with care. Applications beyond lunar return include other sample-return missions in which material must be moved between modules in orbit or on a surface; the published sources reviewed for this article focus on lunar missions.",
+      "operating_principle": "Because 'sample transfer mechanism' describes a class of hardware, the principle below is a general engineering description supported by the Chang'e-5 example, not a description of a universal design. A typical transfer sequence involves: (1) engagement, in which the mechanism's grip or latch engages the sealed container at a defined interface on the ascender or other source module; (2) motion along a defined path to the destination module, where for Chang'e-5 the published design uses a pawl composite linkage and the reported total transfer distance is no less than 626 mm; (3) hand-over, in which the container is placed at the destination interface and secured in the return capsule; and (4) release and retraction, in which the grip is released and the mechanism is reset and retracted so that it does not obstruct the hatch or door from closing. Design constraints in the published Chang'e-5 work include tolerance of positional deviation and friction, avoidance of impact loads that could damage the container, and the requirement that the mechanism can be reset and retracted to allow the re-entry vehicle's hatch to close. The mechanism is therefore designed as a transfer and interface device, not only as a motion device.",
+      "scientific_importance": "Sample transfer is an enabling step in sample return: without a reliable transfer, samples collected on the surface cannot reach the return vehicle. The Chang'e-5 mission reportedly carried out a robotic transfer of a sealed container in lunar orbit, which press coverage described as the first automated rendezvous and docking of a spacecraft in lunar orbit. This is a CNSA-sourced press claim and has not been independently verified in this article. The Apollo program demonstrated the importance of controlled handling after sample collection. The sources reviewed describe Apollo containers as sealed under vacuum so that the internal pressure did not exceed the lunar ambient pressure, and as opened at the Lunar Receiving Laboratory in nitrogen-purged gloveboxes to avoid terrestrial contamination.",
+      "physical_specifications": {
+        "note": "There is no universal mass, dimension or power requirement for a sample transfer mechanism. The mechanism's size depends on the container it moves, the geometry of the source and destination modules, the required motion path and the mission's power and thermal budget. The examples below describe specific hardware only and must not be generalised to other designs.",
+        "examples": [
+          {
+            "name": "Chang'e-5 in-orbit sample container transfer mechanism",
+            "type": "Flown lunar sample-return transfer mechanism (automated, in lunar orbit)",
+            "mechanism_type": "Pawl composite linkage transfer mechanism (as reported in the Aerospace 2023 paper, from search-result excerpt)",
+            "sample_container_mass_g": 360,
+            "total_transfer_distance_mm": {
+              "value": 626,
+              "qualifier": "No less than 626 mm, from ascender to re-entry vehicle through the lunar orbiter. This is a design value as reported, not a measured result."
+            },
+            "ground_verification": "The paper reports that the transfer process was verified on a ground test system, which the authors state indicates the design can satisfy the transfer mission requirements.",
+            "requirements_reported_not_measured": [
+              "Tolerance of positional deviation and friction during transfer.",
+              "Avoidance of impact loads that could damage the sample container.",
+              "Ability to reset and retract after transfer so that the re-entry vehicle hatch can close."
+            ],
+            "numerical_limits_for_requirements": "Specific numerical limits for positional deviation, friction and impact loads were not retrieved and are not stated.",
+            "dimensions_and_mass_of_mechanism": "Not publicly specified in the sources reviewed.",
+            "power_requirements": "Not publicly specified in the sources reviewed.",
+            "qualification": "Flown on the Chang'e-5 mission (2020) according to press reporting and the Aerospace 2023 abstract excerpt; the full paper text was not retrieved. Mission-level sample-mass figures are discussed under mission_context.",
+            "mission_context": {
+              "docking_and_transfer_reported": "Press reporting (Spaceflight Now, 5 December 2020, citing Chinese officials) states the ascender docked with the orbiter-returner combination at 4:42 p.m. EST (2142 GMT), and that the container was transferred about 30 minutes later, at 5:12 p.m. EST (2212 GMT).",
+              "sample_mass_target_kg": 2,
+              "sample_mass_target_status": "Mission target stated in press reporting (goal of more than 2 kg). No official measured mass was verified in the sources reviewed.",
+              "sample_mass_measured_kg": null
+            },
+            "source_urls": [
+              "https://www.mdpi.com/2226-4310/10/12/992",
+              "https://www.jpl.nasa.gov/images/pia24297-armstrong-and-rock-box"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo Lunar Sample Return Container (ALSRC) handling and transfer",
+            "type": "Flown historical sample container handling and transfer chain (not an automated transfer mechanism)",
+            "mechanism_type": "Not applicable as an automated transfer mechanism. The sources reviewed describe manual handling by crew and ground teams; no automated Chang'e-5-type transfer mechanism for Apollo was identified in the sources reviewed.",
+            "sample_container_mass_kg": null,
+            "sample_container_dimensions_cm": null,
+            "sample_container_materials": "Not publicly specified in verified sources.",
+            "sealing": "Containers were sealed under vacuum so that internal pressure did not exceed the lunar ambient pressure (sources reviewed).",
+            "receiving_and_opening": "Containers were transferred to the Lunar Receiving Laboratory (Building 37, Manned Spacecraft Center, Houston) and opened in nitrogen-purged gloveboxes to avoid terrestrial contamination (secondary summary sources).",
+            "qualification": "ALSRC dimensions, mass and materials were not verified from accessible primary sources and are not stated. The Smithsonian Apollo 11 object record could not be retrieved during automated access.",
+            "source_urls": [
+              "https://www.si.edu/object/alsrc-apollo-lunar-sample-return-container-apollo-11:nasm_A19710813000",
+              "https://www.jpl.nasa.gov/images/pia24297-armstrong-and-rock-box",
+              "https://en.wikipedia.org/wiki/Lunar_Receiving_Laboratory"
+            ],
+            "images": [
+              {
+                "id": "pia24297_apollo_alsrc_training",
+                "description": "Apollo 11 commander Neil Armstrong working with an Apollo Lunar Sample Return Container during a lunar surface simulation training exercise.",
+                "image_type": "NASA photojournal training photograph",
+                "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA24297.jpg",
+                "source_page_url": "https://www.jpl.nasa.gov/images/pia24297-armstrong-and-rock-box",
+                "publisher": "NASA/JPL-Caltech (NASA Photojournal PIA24297)",
+                "credit": "NASA",
+                "caption": "Apollo 11 commander Neil Armstrong works with an Apollo Lunar Sample Return Container during a two-and-a-half-hour lunar surface simulation training exercise. The image was taken on 18 April 1969 in Building 9 at the Manned Spacecraft Center in Houston, Texas, and is not an image of lunar surface operations.",
+                "section_placements": [
+                  "overview_images",
+                  "physical_specifications.examples[1].images"
+                ],
+                "notes": "Direct JPEG asset URL (query-free) returned HTTP 200 with content type image/jpeg during verification. The JPL source page was read by content fetch; direct curl access to the source page returned HTTP 403, so the page was verified by content only. The page links to a JPL image-use policy whose terms were not retrieved; reuse terms must be checked before republication. A TIFF download is also offered on the source page (photojournal.jpl.nasa.gov/tiff/PIA24297.tif) and was not used."
+              },
+              {
+                "id": "smithsonian_apollo11_alsrc_object",
+                "description": "Smithsonian National Air and Space Museum object record for an Apollo 11 Apollo Lunar Sample Return Container (accession NASM A19710813000).",
+                "image_type": "Museum collection object record (source-page reference; no verified direct image asset)",
+                "image_url": null,
+                "source_page_url": "https://www.si.edu/object/alsrc-apollo-lunar-sample-return-container-apollo-11:nasm_A19710813000",
+                "publisher": "Smithsonian National Air and Space Museum",
+                "credit": "Smithsonian National Air and Space Museum",
+                "caption": "Apollo 11 Apollo Lunar Sample Return Container object record, Smithsonian National Air and Space Museum collection.",
+                "section_placements": [
+                  "physical_specifications.examples[1].images"
+                ],
+                "notes": "image_url is null because no direct asset URL could be verified; the source page returned HTTP 403 to automated access and was seen only in search results. The record is referenced as a linked source-page reference in the Markdown, not as a rendered image. Museum rights and usage conditions apply; consult them before any republication."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Not generalisable. The Chang'e-5 transfer mechanism's dimensions were not publicly specified in the sources reviewed; the 626 mm figure is a transfer distance, not a device dimension. Apollo ALSRC dimensions were not verified.",
+        "mass_and_weight": "The only verified mass in this article is the Chang'e-5 sample container mass of 360 g, as reported in the Aerospace 2023 paper excerpt. This is the container's mass, not the transfer mechanism's mass. The mechanism's mass was not publicly specified in the sources reviewed.",
+        "power_requirements": "Not publicly specified in the sources reviewed for the Chang'e-5 transfer mechanism or for Apollo sample containers. Power for any future mechanism would depend on its actuation design and the host spacecraft's power budget."
+      },
+      "environmental_and_operational_requirements": "A transfer mechanism operates in lunar orbit or on the lunar surface, and within the spacecraft that hosts it. Published requirements are limited. The following are engineering considerations drawn from the Chang'e-5 design context and general spacecraft practice, and are not verified specifications for any specific mechanism: vacuum and thermal environment tolerance, including thermal cycling of the host spacecraft; mechanical tolerance of positional deviation and friction, which the published Chang'e-5 design explicitly states as a requirement; avoidance of impact loads that could damage the sealed container; contamination control throughout the transfer (the published Chang'e-5 sample-handling process reportedly includes a funnel to limit contamination during sample deposition and a sweeping action to clear excess regolith so that the container lid can close, as reported in press and search-excerpt sources); and reset and retraction so that the mechanism does not obstruct the closing of the return capsule's hatch. Operational details such as whether the mechanism is powered throughout the transfer, the telemetry sampled, and the number of cycles supported were not publicly specified in the sources reviewed.",
+      "limitations": "The article describes a functional class of hardware, and no single design is representative of all sample transfer mechanisms. The primary Chang'e-5 paper could not be retrieved in full; its values were taken from search-result excerpts. Mission-level sample figures are targets rather than measurements. No claim is made that a transfer mechanism is compatible with any named lander, ascender, orbiter or return capsule beyond the Chang'e-5 hardware as published. Apollo ALSRC dimensions and mass were not verified and are not stated.",
+      "transportation_and_deployment": {
+        "overview": "A sample transfer mechanism is a sample-return payload, so this section discusses containment, handling, sealing, transfer and return-chain constraints. The mechanism is integrated into the source or destination module on Earth, launched with the mission spacecraft, and operates in lunar orbit or on the surface as applicable. Containment must be maintained throughout launch, transit and transfer.",
+        "transportation_process": [
+          "Earth integration: integrate the mechanism into the source or destination module, install the sealed container in the ascent vehicle or sample-handling enclosure, and verify the transfer path through ground testing before launch. Chang'e-5 used a ground test system to verify its transfer sequence.",
+          "Launch and lunar transfer: launch the mechanism as part of the mission spacecraft, maintaining sealing and containment through launch and transit.",
+          "Surface operation (where applicable): collect the sample, place it in a sealed container, and pass the container to the ascent system. The Chang'e-5 sample-handling process reportedly included a funnel and a sweeping action to limit contamination and to ensure that the lid could close.",
+          "Orbital transfer: the ascender docks with the orbiter-returner combination and the sealed container is transferred into the return capsule. The published Chang'e-5 design was verified against a transfer distance of no less than 626 mm and was reset and retracted after transfer so that the hatch could close.",
+          "Return-chain constraints: once inside the return capsule, the chain of custody continues through re-entry, recovery and delivery to curation facilities. Apollo containers were transferred to the Lunar Receiving Laboratory, where they were opened in nitrogen-purged gloveboxes."
+        ],
+        "deployment_methods": "Transfer is not a deployment in the usual sense. The Chang'e-5 method was an automated linkage-based transfer in lunar orbit. Apollo containers were moved by crew and ground teams. No deployment method is applicable to a generic sample transfer mechanism without a specific architecture.",
+        "historical_examples": "Chang'e-5 (2020): automated in-orbit transfer of a sealed container from the ascender to the re-entry capsule, as reported in the Aerospace 2023 paper excerpt and press reporting. Apollo (1969-1972): manual handling of sealed ALSRCs from the lunar surface through the recovery chain to the Lunar Receiving Laboratory.",
+        "compatibility_assessment": "No claim is made that a transfer mechanism is compatible with any specific lander, ascender, orbiter or return capsule beyond the Chang'e-5 hardware as published. Any compatibility assessment would need to compare mass, dimensions, container interface, transfer distance, power, thermal and data interfaces against verified spacecraft specifications.",
+        "images": []
+      },
+      "historical_significance": "Apollo Lunar Sample Return Containers were used on the crewed landing missions. Containers were sealed under vacuum and returned to the Lunar Receiving Laboratory at the Manned Spacecraft Center, Houston, where they were opened in controlled conditions; the laboratory later operated more as a curation facility for later missions. These operations are described at a summary level in the sources reviewed. Chang'e-5 (2020) reportedly used an automated in-orbit transfer of a sealed sample container, described in press reporting as the first automated rendezvous and docking of a spacecraft in lunar orbit; this claim is CNSA-sourced press reporting and is not independently verified here. Luna 16 (1970) is described in secondary encyclopedic summaries as returning lunar soil in a hermetically sealed container inside a re-entry capsule; these summaries were not verified against a primary Soviet or NASA document, and no numerical claims from them are used.",
+      "limitations_and_uncertainties": "The primary Chang'e-5 paper (MDPI Aerospace, 2023) returned an access error during retrieval, so values attributed to it come from search-result excerpts and must be checked against the full text. Statements about the Chang'e-5 docking and transfer timing come from a single press source citing Chinese officials. The 2 kg sample figure is a mission target and no measured mass was verified. Apollo ALSRC dimensions, mass and materials were not verified. Luna 16 sample sizes and transfer details differ between secondary sources and were not verified. Telemetry formats, transfer cycle counts and fault-handling behaviour were not publicly specified in the sources reviewed.",
+      "images": [
+        {
+          "id": "pia24297_apollo_alsrc_training",
+          "description": "Apollo 11 commander Neil Armstrong working with an Apollo Lunar Sample Return Container during a lunar surface simulation training exercise.",
+          "image_type": "NASA photojournal training photograph",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA24297.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/images/pia24297-armstrong-and-rock-box",
+          "publisher": "NASA/JPL-Caltech (NASA Photojournal PIA24297)",
+          "credit": "NASA",
+          "caption": "Apollo 11 commander Neil Armstrong works with an Apollo Lunar Sample Return Container during a two-and-a-half-hour lunar surface simulation training exercise. The image was taken on 18 April 1969 in Building 9 at the Manned Spacecraft Center in Houston, Texas, and is not an image of lunar surface operations.",
+          "section_placements": [
+            "overview_images",
+            "physical_specifications.examples[1].images"
+          ],
+          "notes": "Direct JPEG asset URL (query-free) returned HTTP 200 with content type image/jpeg during verification. The JPL source page was read by content fetch; direct curl access to the source page returned HTTP 403. The page links to a JPL image-use policy whose terms were not retrieved; reuse terms must be checked before republication."
+        },
+        {
+          "id": "smithsonian_apollo11_alsrc_object",
+          "description": "Smithsonian National Air and Space Museum object record for an Apollo 11 Apollo Lunar Sample Return Container (accession NASM A19710813000).",
+          "image_type": "Museum collection object record (source-page reference; no verified direct image asset)",
+          "image_url": null,
+          "source_page_url": "https://www.si.edu/object/alsrc-apollo-lunar-sample-return-container-apollo-11:nasm_A19710813000",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Smithsonian National Air and Space Museum",
+          "caption": "Apollo 11 Apollo Lunar Sample Return Container object record, Smithsonian National Air and Space Museum collection.",
+          "section_placements": [
+            "physical_specifications.examples[1].images"
+          ],
+          "notes": "image_url is null because no direct asset URL could be verified; the source page returned HTTP 403 to automated access. Rendered in the Markdown as a linked source-page reference, not an image. Museum rights and usage conditions apply."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "pia24297_apollo_alsrc_training",
+          "description": "Apollo 11 commander Neil Armstrong working with an Apollo Lunar Sample Return Container during a lunar surface simulation training exercise.",
+          "image_type": "NASA photojournal training photograph",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA24297.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/images/pia24297-armstrong-and-rock-box",
+          "publisher": "NASA/JPL-Caltech (NASA Photojournal PIA24297)",
+          "credit": "NASA",
+          "caption": "Apollo 11 commander Neil Armstrong works with an Apollo Lunar Sample Return Container during a two-and-a-half-hour lunar surface simulation training exercise. The image was taken on 18 April 1969 in Building 9 at the Manned Spacecraft Center in Houston, Texas, and is not an image of lunar surface operations.",
+          "section_placements": [
+            "overview_images",
+            "physical_specifications.examples[1].images"
+          ],
+          "notes": "Repeated from the master registry. See master registry entry for verification details."
+        }
+      ],
+      "references": [
+        {
+          "id": 1,
+          "authors": "Chinese research team (author names not verified in this article)",
+          "title": "Design of In-Orbit Sample Container Transfer Mechanism for Chang'E-5 Lunar Sample Return Mission",
+          "publisher": "Aerospace (MDPI)",
+          "publication_date": "2023 (volume 10, issue 12, article 992)",
+          "url": "https://www.mdpi.com/2226-4310/10/12/992",
+          "access_note": "Full text not retrieved (HTTP 403 to automated access). Values attributed to this paper come from search-result excerpts and must be checked against the full text."
+        },
+        {
+          "id": 2,
+          "authors": "Not stated",
+          "title": "ALSRC, Apollo Lunar Sample Return Container, Apollo 11 (object record nasm_A19710813000)",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "publication_date": "Not stated",
+          "url": "https://www.si.edu/object/alsrc-apollo-lunar-sample-return-container-apollo-11:nasm_A19710813000",
+          "access_note": "Page not retrieved (HTTP 403 to automated access); listing seen in search results only."
+        },
+        {
+          "id": 3,
+          "authors": "NASA / JPL-Caltech",
+          "title": "Armstrong and Rock Box (NASA Photojournal PIA24297)",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "publication_date": "2020-12-22 (page date; photograph taken 1969-04-18)",
+          "url": "https://www.jpl.nasa.gov/images/pia24297-armstrong-and-rock-box",
+          "access_note": "Retrieved by content fetch. Direct curl access returned HTTP 403."
+        },
+        {
+          "id": 4,
+          "authors": "Stephen Clark",
+          "title": "Chinese mission accomplishes first-ever robotic docking in lunar orbit",
+          "publisher": "Spaceflight Now",
+          "publication_date": "2020-12-05",
+          "url": null,
+          "access_note": "Retrieved by content fetch via a non-canonical identifier. The canonical URL was not confirmed and is therefore not recorded. See data_quality_notes."
+        },
+        {
+          "id": 5,
+          "authors": "Wikipedia contributors",
+          "title": "Lunar Receiving Laboratory",
+          "publisher": "Wikipedia",
+          "publication_date": "Not stated",
+          "url": "https://en.wikipedia.org/wiki/Lunar_Receiving_Laboratory",
+          "access_note": "Secondary source. Summary seen in search results only; not verified against a primary NASA document in this article."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Chang'e-5 in-orbit transfer mechanism example": "payload.article.physical_specifications.examples[0].images (no images displayed in this example)",
+      "Apollo ALSRC handling example": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images displayed in this section)"
+    },
+    "url_policy": "All image_url, source_page_url and reference url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. Spaceflight Now reference has no URL recorded because the canonical URL was not confirmed."
+  },
+  "data_quality_notes": [
+    "Chang'e-5 Aerospace 2023 paper: the full text could not be retrieved (HTTP 403). The 360 g container mass, the 626 mm minimum transfer distance and the pawl composite linkage type come from search-result excerpts. Verify against the full text before use.",
+    "Chang'e-5 paper authors are not verified; the reference records the research team generically.",
+    "Chang'e-5 sample mass: the 2 kg figure is a mission target stated in press reporting. No official measured mass was verified. A search snippet reported a larger retrieved mass figure from a news source that was not verified and was not used.",
+    "Chang'e-5 docking and transfer timing (4:42 p.m. EST docking; transfer about 30 minutes later) come from one press source citing Chinese officials and were not independently confirmed.",
+    "CNSA-sourced claim that the Chang'e-5 docking was the first automated rendezvous and docking of any spacecraft in lunar orbit is press-reported and not independently verified.",
+    "Chang'e-5 transfer mechanism dimensions, mass, power, drive arrangement and telemetry were not publicly specified in the sources reviewed.",
+    "Apollo ALSRC dimensions, mass and materials were not verified from accessible primary sources and are left unstated. The Smithsonian ALSRC object page returned HTTP 403 and could not be retrieved; its listing was seen only in search results.",
+    "Apollo transfer-chain details (vacuum sealing, nitrogen-purged gloveboxes, Lunar Receiving Laboratory in Building 37) come from secondary summary sources. A primary NASA curation document (for example a NASA technical report on lunar sample containers or curation history) should be checked before publication.",
+    "Image PIA24297 (Apollo 11 ALSRC training photograph, taken 18 April 1969 in Building 9 at the Manned Spacecraft Center): the direct JPEG returned HTTP 200 with content type image/jpeg. The source page was read by content fetch but returned HTTP 403 to direct HTTP access, so the page is verified by content only. It is a simulation training image, not an image of lunar surface operations. JPL image-use policy terms were not retrieved.",
+    "No direct image asset was verified for the Smithsonian Apollo 11 ALSRC object; image_url is null and the object is referenced by source page only.",
+    "Spaceflight Now reference: the canonical article URL was not confirmed. The article was retrieved via a non-canonical identifier, so no URL is recorded in the reference.",
+    "Luna 16 details (sample size and transfer method) come from secondary encyclopedic summaries that differ between sources. They are described qualitatively only and not verified against a primary Soviet or NASA document.",
+    "Telemetry formats, cycle counts and fault-handling behaviour for transfer mechanisms are not publicly specified in the sources reviewed.",
+    "A NASA Allton sample-curation PDF (nasa.gov/wp-content/uploads/2019/04/02_allton_corrected_apollo.pdf) was identified but could not be read; it may contain primary ALSRC and Lunar Receiving Laboratory details and should be reviewed."
+  ]
+}

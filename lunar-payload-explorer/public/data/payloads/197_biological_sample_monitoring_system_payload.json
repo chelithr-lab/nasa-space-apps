@@ -1,0 +1,289 @@
+{
+  "catalogue_id": 197,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 10,
+    "name": "Biological and life-science experiments"
+  },
+  "payload": {
+    "number": 197,
+    "name": "Biological sample monitoring system",
+    "article": {
+      "overview": "A biological sample monitoring system is an instrument, or a small self-contained payload, that keeps living or dormant biological material under controlled conditions on the Moon or in lunar space and records the conditions the samples experience. Typical measurements include temperature and pressure inside a sealed sample chamber, radiation exposure and, in some designs, the growth or activity of the organisms themselves. Its purpose is to show whether a biology experiment stayed within its survival limits and, if it did, what the organisms did. Only a few lunar and near-lunar biology payloads have flown so far, and their results are mixed, so this article separates flown hardware from planned and proposed hardware throughout.",
+      "description": "A biological sample monitoring system combines three functions. It holds the biological material in a sealed, thermally managed enclosure. It senses the environment around the sample. It records measurements that can be downlinked for analysis. Some designs also measure the biology itself, for example by optically detecting how much a yeast or microbial culture has grown, or by imaging seedlings. The enclosure may be a simple sealed canister with no active control, as in the Chang'e-4 Lunar Micro Ecosystem [1]. It may instead be a more capable autonomous system with fluidics, LED optics and a control module, as in the planned NASA LEIA BioSensor [5]. Because the Moon has no atmosphere and its surface temperatures are extreme, the enclosure, thermal design and power budget often shape the experiment as much as the biological measurement does.",
+      "scientific_purpose_and_applications": "Biological monitoring serves three purposes. First, it documents the environment that biological samples experience, so that a biological result can be interpreted. A lack of growth may reflect radiation, temperature, power loss, sample age or an instrument fault, and monitoring data is the only way to separate these causes. Second, it provides data on how organisms respond to the lunar environment, including ionising radiation and reduced gravity, which matters for planning human exploration [5][6]. Third, it tests the engineering of closed or semi-closed biological systems, such as the micro-habitats that any future plant or microbial life-support demonstration would require [4]. Applications include radiation biology, space biology, bioregenerative life-support research and verification that samples were preserved in a usable state.",
+      "operating_principle": "A typical monitoring system uses sensors to measure temperature, pressure, humidity or radiation inside or near the biological module. It records these values with timing data so they can be linked to the biological observations. Where the biology is measured directly, the instrument may use optical methods. The LEIA BioSensor, derived from the BioSentinel CubeSat design, uses a three-colour LED detection system and a dye readout to follow yeast growth and metabolic activity in microfluidic cards [5]. Changes in cell activity can, in principle, indicate radiation damage, but the link between optical signal and biological effect has to be calibrated against ground controls. Imaging systems can record plant development. Reports of the Chang'e-4 experiment describe two small cameras, but the primary summary used for this article does not name any camera hardware, so the camera configuration is treated as unconfirmed [1][3].",
+      "scientific_importance": "Biological experiments on the Moon can only be interpreted if the environment they experienced is known. Without monitoring, a failure to grow could have many causes that cannot be separated. The most widely reported lunar biology result so far is the sprouting of a cotton seed in the Chang'e-4 Lunar Micro Ecosystem in 2019, although reports disagree on how many organisms responded [1][2][3]. The BioSentinel yeast experiments, flown on NASA's Artemis I mission in 2022, showed no yeast growth, and NASA attributed this most likely to yeast viability after extended storage rather than to radiation [6]. Results of this kind matter because they constrain the design of future experiments, even when they do not show dramatic biology.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a biological sample monitoring system. The payload class ranges from a sealed canister with a few sensors to an autonomous microfluidic instrument with its own control electronics. The examples below are specific instruments, flown or planned, and the values given apply only to those named designs.",
+        "examples": [
+          {
+            "name": "Chang'e-4 Lunar Micro Ecosystem (LME)",
+            "type": "Flown lunar biology canister experiment",
+            "status": "Flown. Carried on the Chang'e-4 lander to the lunar farside, which landed in January 2019 [2].",
+            "developer": "Chongqing University, led by Xie Gengxin [1].",
+            "mass_kg": 2.6,
+            "dimensions_cm": {
+              "length": 18,
+              "diameter": 16
+            },
+            "power": "Not described in the primary summary [1].",
+            "sensors_and_cameras": "Not described in the primary summary [1]. Reports of two small cameras and more than 170 images are not confirmed here [3].",
+            "organisms": [
+              "Cotton seeds",
+              "Potato seeds",
+              "Rape seeds",
+              "Arabidopsis thaliana seeds",
+              "Yeast",
+              "Fruit fly eggs"
+            ],
+            "thermal_control": "The Universe Today summary describes the canister as unheated, kept in mostly Earth-like conditions, with no published temperature or humidity setpoints [1]. A separate search summary reported a setpoint of about 24 °C, which cannot be reconciled with that description and is treated as unconfirmed [2].",
+            "outcome": "The cotton seedling was the only positive result in the primary summary [1]. Reports disagree on whether potato or rape seeds also sprouted [2][3]. The cotton shoot died when temperatures reached about minus 190 °C, after roughly one lunar day [1]. Earlier Chinese reporting cites a low of about minus 170 °C [2]; this discrepancy is not resolved here.",
+            "source_urls": [
+              "https://universetoday.com/143614/chinas-lander-successfully-grew-some-cotton-plants-on-the-moon-fruit-flies-and-potatoes-didnt-fare-so-well/",
+              "https://phys.org/news/2019-01-cottoning-chinese-seed-moon.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "BioSentinel (deep-space yeast CubeSat)",
+            "type": "Flown deep-space biological monitoring CubeSat",
+            "status": "Flown. The 6U CubeSat launched on NASA's Artemis I mission on 16 November 2022 and was deployed a few hours after launch. It operated in deep space rather than on the lunar surface [6].",
+            "biology": "Two yeast strains, one lacking a DNA-repair gene. The experiments were designed to measure the biological response to ionising radiation and reduced gravity [6].",
+            "monitoring": "A BioSensor fluidic system with LED optical readout. The same design was later adapted for LEIA [5][6].",
+            "result": "Four two-week experiments observed no yeast cell growth. NASA attributed the lack of growth most likely to yeast viability after extended storage, not to deep-space radiation [6]. The onboard radiation detector kept working and continues to record dose [6].",
+            "mass_and_power": "Not verified in this research.",
+            "source_urls": [
+              "https://www.nasa.gov/ames/biosentinel"
+            ],
+            "images": []
+          },
+          {
+            "name": "Space Tango AVATAR (Artemis II organ-chip payload)",
+            "type": "Manifested biological monitoring payload on a crewed lunar flyby",
+            "status": "Manifested on NASA's Artemis II mission. Sources describe a roughly 10-day flight around the Moon as a lunar flyby. Flight completion and post-flight results are not verified here [7].",
+            "hardware": "A battery-powered payload handling environmental control and media delivery for four organ chips containing live bone marrow cells from crew members [7].",
+            "operation": "The payload ran autonomously after ground activation. The crew confirmed system health once a day by pressing a button [7].",
+            "power": "Battery capacity, operating duration and backup power were not found [7].",
+            "source_urls": [
+              "https://spacetango.com/latest/space-tango-artemis-ii-avatar-human-health-moon/"
+            ],
+            "images": []
+          },
+          {
+            "name": "ALEPH-1 (RMIT and Lunaria One lunar micro-habitat)",
+            "type": "Planned lunar surface micro-habitat demonstrator",
+            "status": "Planned. Scheduled for Intuitive Machines' IM-3 mission on a Nova-C lander in the second half of 2026. No specific launch date was found [4].",
+            "developers_and_funding": "Payload development and integration by the RMIT M2MIST Centre, funded by Lunaria One Pty Ltd under the Australian Space Agency Moon-to-Mars Initiative Demonstrator Award (2022) [4].",
+            "mass_kg": 0.5,
+            "dimensions_cm": "Not stated [4].",
+            "power": {
+              "heater_w": 10,
+              "avionics_w": 5
+            },
+            "data": "Ethernet interface with a 100 Mb data limit. Mission data is planned to pass from the lander to Earth through the Deep Space Network; uplink is described as planned, not confirmed [4].",
+            "architecture": "A Control Module connected by an umbilical harness to a hermetically sealed Biological Module. The unit is mounted on a side panel of the Nova-C [4].",
+            "biology": "Two samples of crustose lichen, Rhizocarpon geographicum. Seeds appear only in the description of a test-version figure, so seeds on the flight unit are unconfirmed [4].",
+            "sensors": "Internal air temperature and pressure only [4].",
+            "objective": "Test whether micro-habitat conditions can be maintained and measured, and whether the necessary data can be collected, including 72 hours on the lunar surface [4].",
+            "status_caveat": "The RMIT page shows a test version and engineering-model electronics, and does not state flight-model status [4].",
+            "source_urls": [
+              "https://www.rmit.edu.au/partner/hubs/space-industry-hub/m2mist/aleph-1"
+            ],
+            "images": []
+          },
+          {
+            "name": "LEIA (Lunar Explorer Instrument for space biology Applications)",
+            "type": "Planned NASA lunar surface yeast radiation and growth experiment",
+            "status": "Planned. Delivery is through NASA's Commercial Lunar Payload Services (CLPS), with a landing in the South Pole region scheduled for 2026. The NASA article is dated 2023, so this timing may have changed [5].",
+            "components": "The BioSensor (NASA Ames, based on BioSentinel), the ARES LET charged-particle spectrometer (NASA Johnson Space Center), and the Mini-FND miniature fast neutron detector (Southwest Research Institute) [5].",
+            "biology": "Dry yeast in microfluidic cards. A secondary search summary reports 16 culture wells per card, or 256 samples in total; the NASA page does not confirm this count [5].",
+            "measurement": "Growth and metabolic activity by three-colour LED detection and a dye readout. Yeast radiation exposure and surface charged-particle and neutron radiation are also measured [5].",
+            "duration": "Planned to finish within 10 Earth days or less, with data sent directly to Earth [5].",
+            "hardware_status": "The photo captions describe a prototype unit [5].",
+            "mass_power_dimensions": "Not stated on the NASA page [5].",
+            "source_urls": [
+              "https://www.nasa.gov/centers-and-facilities/ames/what-is-the-lunar-explorer-instrument-for-space-biology-applications"
+            ],
+            "images": [
+              {
+                "id": "leia_biosensor_microfluidic_card",
+                "description": "LEIA BioSensor microfluidic card (prototype) holding dry yeast culture compartments.",
+                "image_type": "Engineering hardware photograph (prototype)",
+                "image_url": null,
+                "source_page_url": "https://www.nasa.gov/centers-and-facilities/ames/what-is-the-lunar-explorer-instrument-for-space-biology-applications",
+                "publisher": "NASA Ames Research Center",
+                "credit": "NASA/Dominic Hart",
+                "caption": "LEIA BioSensor microfluidic card (prototype) with dry yeast in compartments, as captioned on the NASA source page.",
+                "section_placements": [
+                  "physical_specifications.examples[4]"
+                ],
+                "notes": "The NASA page lists image files under nasa.gov/wp-content/uploads/2023/08/ (including acd23-0020-002.jpg), but the direct asset was not downloaded or checked, so image_url is null. The linked source page is used in the article instead."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Published dimensions exist for only one example here. The Chang'e-4 canister was 18 cm long and 16 cm in diameter [1]. ALEPH-1 dimensions are not stated [4], and the LEIA dimensions are not stated on the NASA page [5]. Dimensions should therefore be read as instrument-specific and not as a class property.",
+        "mass_and_weight": "Published masses are about 2.6 kg for the Chang'e-4 canister [1] and about 500 g for ALEPH-1 [4]. No mass is published for the BioSentinel 6U CubeSat or the LEIA BioSensor in the sources used here. Mass drives launch-vehicle and lander capacity, so these figures cannot be compared as like-for-like systems.",
+        "power_requirements": "ALEPH-1 is the only example here with published power values: a 10 W heater and a 5 W avionics load [4]. No power value is published for LEIA [5] or for the Chang'e-4 canister in the sources used. Power figures for BioSentinel and AVATAR were not verified."
+      },
+      "environmental_and_operational_requirements": "Biological samples on the lunar surface have to survive conditions that differ greatly from Earth. The surface experiences large temperature swings between lunar day and night. The Chang'e-4 cotton shoot died after temperatures fell to about minus 190 °C in the first lunar night [1]. The surface also has no atmosphere to moderate radiation or micrometeoroid exposure. A biological monitor therefore needs stable thermal control for the sample, a controlled water supply where growth is measured, a power budget that survives the lunar night if the experiment is meant to run for longer than a day, and protection from mechanical vibration. A secondary search summary reports that a NASA technical record flagged vibration-related data anomalies for the LEIA BioSensor from a nearby drill; this record was not read in full and is not relied on here.",
+      "limitations": "Each instrument carries a small set of organisms, so any single result is statistically weak. Power is limited: the ALEPH-1 heater alone draws 10 W [4]. Data volume is also limited, with a 100 Mb allocation for ALEPH-1 [4]. Most sensors measure only temperature and pressure [4], which leaves the link between environment and biological response largely inferred. Engineering-model and prototype hardware dominates the planned examples [4][5], and no common standard exists for lunar biology platforms.",
+      "transportation_and_deployment": {
+        "overview": "Surface payload. Integration with the lander happens on Earth, followed by launch, lunar transfer and landing. Deployment and power and data connection then follow. For ALEPH-1, RMIT states that the unit is mounted on a side panel of the Nova-C and uses Ethernet to the lander, with a 10 W heater and 5 W avionics load [4]. LEIA is described as a CLPS delivery [5]. The Chang'e-4 canister was carried on the lander as part of that spacecraft [1]. Other examples: BioSentinel was deployed as a CubeSat after launch on Artemis I [6]. The AVATAR payload was carried in the science bay of its Artemis II spacecraft, with autonomous operation after ground activation [7].",
+        "transportation_process": [
+          "Integrate the payload with its carrier (lander, CubeSat dispenser or crewed spacecraft science bay) on Earth.",
+          "Launch on the carrier vehicle.",
+          "Transfer towards the Moon, or to deep space in the case of BioSentinel.",
+          "Land the surface payloads on the lunar surface, or operate the in-spacecraft payload during the flight.",
+          "Activate the payload and connect its power and data interfaces."
+        ],
+        "deployment_methods": "ALEPH-1 is mounted on a side panel of the Nova-C [4]. LEIA is planned for CLPS delivery [5]. BioSentinel was deployed as a CubeSat after launch [6]. AVATAR was operated inside the spacecraft after ground activation [7].",
+        "historical_examples": "The Chang'e-4 Lunar Micro Ecosystem was carried on the Chang'e-4 lander [1]. BioSentinel flew on Artemis I [6]. AVATAR was manifested on Artemis II [7].",
+        "compatibility_assessment": "No compatibility with a named lander should be assumed beyond the ALEPH-1 mounting and IM-3 mission described by RMIT [4]. The LEIA lander assignment and interface data were not verified.",
+        "images": []
+      },
+      "historical_significance": "The Apollo programme established that lunar material and returning crews needed biological quarantine. The Lunar Receiving Laboratory at the Manned Spacecraft Center was built in 1966 and 1967 for biological quarantine of crews, spacecraft and samples and for biohazard testing [8]. Crews were isolated for 21 days after closing the hatch, and samples were released 50 to 80 days later, according to a search summary of the NASA technical record [8]. After microbial analysis of Apollo 11, 12 and 14 samples, NASA and the Inter-agency Committee on Back-Contamination concluded there was no hazard and that post-lunar quarantine should be discontinued [8]. Modern biological monitoring builds on that tradition of tracking the biological condition of samples. The Chang'e-4 Lunar Micro Ecosystem produced the most widely reported lunar biology result to date, although reporting on it is contested [1][2][3]. A 2021 National Academies workshop on using CLPS to achieve lunar biological and physical science objectives sets the policy context for small biological payloads [9].",
+      "limitations_and_uncertainties": "The term 'biological sample monitoring system' describes a function rather than a single design, so the examples here are not interchangeable, and values for mass, dimensions and power are tied to named instruments. Flight evidence is sparse. The Chang'e-4 results rest mainly on press and secondary reporting, reports disagree on the cotton seedling's death temperature and on how many organisms sprouted, and the 2023 Acta Astronautica paper mentioned in one search summary could not be located, so its content is not used. The AVATAR flight outcome and battery figures are unverified, and the flight status of ALEPH-1 and LEIA is not confirmed. The Apollo quarantine figures come from a search summary, not a full read of the NASA report. No direct image asset URL was verified, so all image_url fields are null.",
+      "images": [
+        {
+          "id": "change4_lander_surface_context",
+          "description": "Chang'e-4 lander on the lunar farside, the spacecraft that carried the Lunar Micro Ecosystem canister.",
+          "image_type": "Lunar surface spacecraft photograph (context)",
+          "image_url": null,
+          "source_page_url": "https://universetoday.com/143614/chinas-lander-successfully-grew-some-cotton-plants-on-the-moon-fruit-flies-and-potatoes-didnt-fare-so-well/",
+          "publisher": "Universe Today (image credited to CNSA/CLEP on that page)",
+          "credit": "CNSA/CLEP (as credited on the source page)",
+          "caption": "Chang'e-4 lander on the lunar farside. Contextual image of the carrier lander; it is not presented as a picture of the canister.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset URL not verified. The image path seen in the Universe Today page text was not fetched or checked, and it is a publisher-hosted article image, so image_url is null and the linked source page is used. Rights and reuse: credited to CNSA/CLEP on the page; public-domain status is not confirmed."
+        },
+        {
+          "id": "leia_biosensor_microfluidic_card",
+          "description": "LEIA BioSensor microfluidic card (prototype) holding dry yeast culture compartments.",
+          "image_type": "Engineering hardware photograph (prototype)",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/centers-and-facilities/ames/what-is-the-lunar-explorer-instrument-for-space-biology-applications",
+          "publisher": "NASA Ames Research Center",
+          "credit": "NASA/Dominic Hart",
+          "caption": "LEIA BioSensor microfluidic card (prototype) with dry yeast in compartments, as captioned on the NASA source page.",
+          "section_placements": [
+            "physical_specifications.examples[4]"
+          ],
+          "notes": "The NASA page lists image files under nasa.gov/wp-content/uploads/2023/08/ (including acd23-0020-002.jpg), but the direct asset was not downloaded or checked, so image_url is null. The linked source page is used in the article instead."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "change4_lander_surface_context",
+          "description": "Chang'e-4 lander on the lunar farside, the spacecraft that carried the Lunar Micro Ecosystem canister.",
+          "image_type": "Lunar surface spacecraft photograph (context)",
+          "image_url": null,
+          "source_page_url": "https://universetoday.com/143614/chinas-lander-successfully-grew-some-cotton-plants-on-the-moon-fruit-flies-and-potatoes-didnt-fare-so-well/",
+          "publisher": "Universe Today (image credited to CNSA/CLEP on that page)",
+          "credit": "CNSA/CLEP (as credited on the source page)",
+          "caption": "Chang'e-4 lander on the lunar farside. Contextual image of the carrier lander; it is not presented as a picture of the canister.",
+          "section_placements": [
+            "overview"
+          ],
+          "notes": "Direct asset URL not verified. The image path seen in the Universe Today page text was not fetched or checked, and it is a publisher-hosted article image, so image_url is null and the linked source page is used. Rights and reuse: credited to CNSA/CLEP on the page; public-domain status is not confirmed."
+        }
+      ],
+      "references": [
+        {
+          "title": "China's lander successfully grew some cotton plants on the Moon. Fruit flies and potatoes didn't fare so well",
+          "publisher": "Universe Today",
+          "date": "2019",
+          "url": "https://universetoday.com/143614/chinas-lander-successfully-grew-some-cotton-plants-on-the-moon-fruit-flies-and-potatoes-didnt-fare-so-well/"
+        },
+        {
+          "title": "Cottoning on: Chinese seed sprouts on moon",
+          "publisher": "Phys.org",
+          "date": "2019-01",
+          "url": "https://phys.org/news/2019-01-cottoning-chinese-seed-moon.html"
+        },
+        {
+          "title": "Seeds have sprouted on the Moon for the first time",
+          "publisher": "Gizmodo",
+          "date": "2019-01",
+          "url": "https://gizmodo.com/seeds-have-sprouted-on-the-moon-for-the-first-time-1831767708"
+        },
+        {
+          "title": "ALEPH-1 Mission and Payload Description Summary",
+          "publisher": "RMIT University, M2MIST Centre",
+          "date": null,
+          "url": "https://www.rmit.edu.au/partner/hubs/space-industry-hub/m2mist/aleph-1"
+        },
+        {
+          "title": "What is the Lunar Explorer Instrument for Space Biology Applications?",
+          "publisher": "NASA Ames Research Center",
+          "date": "2023-08-24 (last updated 2023-11-13)",
+          "url": "https://www.nasa.gov/centers-and-facilities/ames/what-is-the-lunar-explorer-instrument-for-space-biology-applications"
+        },
+        {
+          "title": "BioSentinel mission page",
+          "publisher": "NASA Ames Research Center",
+          "date": null,
+          "url": "https://www.nasa.gov/ames/biosentinel"
+        },
+        {
+          "title": "AVATAR payload news release on Artemis II",
+          "publisher": "Space Tango",
+          "date": "2025-09-18 (with later updates)",
+          "url": "https://spacetango.com/latest/space-tango-artemis-ii-avatar-human-health-moon/"
+        },
+        {
+          "title": "Lunar Receiving Laboratory technical record (NTRS 19760023161; not read in full)",
+          "publisher": "NASA Technical Reports Server",
+          "date": "1976",
+          "url": "https://ntrs.nasa.gov/api/citations/19760023161/downloads/19760023161.pdf"
+        },
+        {
+          "title": "Using Commercial Lunar Payload Services (CLPS) to Achieve Lunar Biological and Physical Science Objectives: Proceedings of a Workshop",
+          "publisher": "National Academies Press",
+          "date": "2021",
+          "url": "https://doi.org/10.17226/26378"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Chang'e-4 Lunar Micro Ecosystem example": "payload.article.physical_specifications.examples[0].images (no images placed)",
+      "BioSentinel example": "payload.article.physical_specifications.examples[1].images (no images placed)",
+      "Space Tango AVATAR example": "payload.article.physical_specifications.examples[2].images (no images placed)",
+      "ALEPH-1 example": "payload.article.physical_specifications.examples[3].images (no images placed)",
+      "LEIA example": "payload.article.physical_specifications.examples[4].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images placed)"
+    },
+    "url_policy": "No image_url in this file has been verified as a direct asset, so each image_url is null and the linked source page is used in the Markdown article. All image_url and source_page_url values have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Chang'e-4 thermal control conflicts: the Universe Today summary describes the canister as unheated with no published setpoints, while a separate search summary reported a setpoint of about 24 °C. Unresolved.",
+    "Chang'e-4 cotton death temperature conflicts: about minus 190 °C in the Universe Today summary versus about minus 170 °C in earlier Chinese reporting. Unresolved.",
+    "Chang'e-4 sprouting count conflicts: the Universe Today summary reports cotton as the only positive result, while other reporting says potato and rape seeds also sprouted. Unresolved.",
+    "Chang'e-4 camera hardware: the primary summary names none; secondary reports of two cameras and more than 170 images are unconfirmed.",
+    "Chang'e-4 operating duration and shutdown: one search summary reports more than 212 hours before a planned shutdown; the Universe Today summary gives no shutdown reason. The 2023 Acta Astronautica paper by Xie et al. was not located, so its content is not used.",
+    "ALEPH-1: flight-model status, launch date, dimensions and flight seeds are not confirmed; a test-version figure and engineering-model electronics are described on the RMIT page.",
+    "LEIA: the landing timing comes from a 2023 article and may have changed. The 256-sample count (16 wells per card) comes from a secondary summary and is not confirmed on the NASA page. Lander assignment from a technical record was not verified.",
+    "AVATAR: flight completion, post-flight results, battery capacity and operating duration are not verified. An earlier search summary cited a 14-day battery figure that could not be confirmed, so it is not used.",
+    "BioSentinel: mass and power are not verified; no peer-reviewed results paper was found, and the null yeast result rests on NASA web and fact-sheet summaries.",
+    "Apollo Lunar Receiving Laboratory figures (21-day isolation, release 50 to 80 days after hatch closure, ICBC conclusion) come from a search summary; the NTRS PDF exceeded the fetch size limit and was not read. One source gives a two-week isolation for Apollo 11, which conflicts with the 21-day figure.",
+    "National Academies 2021 workshop: only the title, publisher, year and DOI were verified; no recommendations are attributed to it.",
+    "Images: no direct image asset was downloaded or verified. The LEIA image asset URLs listed on the NASA page were not checked, and the Chang'e-4 lander image is a publisher-hosted article image. All image_url fields are null and linked source pages are used.",
+    "Web search quota was not reached. Eight web searches and four successful page reads were used."
+  ]
+}

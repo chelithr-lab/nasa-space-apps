@@ -1,0 +1,160 @@
+{
+  "catalogue_id": 233,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 12,
+    "name": "Astronomical observation"
+  },
+  "payload": {
+    "number": 233,
+    "name": "Cosmic-ray telescope",
+    "article": {
+      "overview": "A cosmic-ray telescope is an instrument that detects high-energy charged particles (cosmic rays) and records how they pass through a stack of detectors, so that their energy, charge or direction can be estimated. On the Moon, such an instrument can characterise the radiation environment that astronauts and equipment experience, and can study cosmic rays that strike the lunar surface and produce secondary radiation. The best-documented example is NASA's Cosmic Ray Telescope for the Effects of Radiation (CRaTER), which flies on the Lunar Reconnaissance Orbiter (LRO) in lunar orbit, not on the surface [1]. Two further examples are proposed rather than flown: LURAD, a radiation-monitor design study for the Gateway and the lunar surface [4], and MoonRay, a concept for a permanent surface observatory [6]. In the sources reviewed for this article, no cosmic-ray telescope is documented as operating on the lunar surface.",
+      "description": "Cosmic rays are high-energy atomic nuclei and electrons, mainly from sources outside the Solar System (galactic cosmic rays) or from the Sun (solar energetic particles). A cosmic-ray telescope is a stack of particle detectors, often with absorbing material between the detectors. A passing particle deposits energy in each layer it crosses, leaving a recognisable pattern. Analysis of that pattern gives the particle's energy and type. Some designs also estimate the direction from which layers were hit. Because the Moon has no global magnetic field or thick atmosphere, particles reach its surface and interact with the regolith. The resulting secondary radiation, including neutrons and gamma rays, can carry information about the surface composition and about the cosmic-ray flux that produced it [4][5].",
+      "scientific_purpose_and_applications": "Radiation environment for crew and equipment: LURAD is explicitly designed to support astronaut radiation protection through microdosimetry and biological dose measurement [4]. CRaTER was built to characterise the radiation environment that humans would face on future lunar missions; this purpose is stated in secondary summaries of NASA and university archive material and was not confirmed from a primary instrument paper. Galactic cosmic rays and solar particle events: CRaTER measures linear energy transfer (LET) spectra from galactic cosmic rays and solar energetic protons above about 10 MeV, after shielding [1]. LURAD targets galactic cosmic rays and solar particle events in the lunar environment [4]. Lunar surface and soil studies: LURAD proposes to use albedo (surface-reflected) radiation, including neutrons, to study soil composition [4]. A secondary summary indicates that CRaTER's nadir-facing view covers radiation from the lunar surface. Gamma-ray and cosmic-ray observation from the Moon: the MoonRay concept targets high-energy cosmic-ray and gamma-ray observations, including the Southern Sky [6]. A 2025 study argues that the Moon acts as a cosmic-ray-driven gamma-ray emitter and that next-generation MeV instruments could use its emission lines as time-resolved probes of cosmic-ray activity [5].",
+      "operating_principle": "A cosmic-ray telescope such as CRaTER uses stacked silicon detectors. Each detector produces an electrical signal proportional to the energy a particle deposits in it. CRaTER's detector pairs are arranged so that thin detectors are optimised for high-LET interactions and thick detectors for low-LET interactions [1]. Comparing the deposits across the stack allows the instrument to separate particle types and energies. The signals are amplified and digitised. The PDS record for CRaTER gives a 12-bit digitisation, a 12 microsecond internal deadtime, a maximum telemetered rate of 1200 events per second and a 1-second time-tag accuracy [1]. A secondary summary states that dose rates are computed hourly by summing the energy deposited in each detector and dividing by detector mass; this method was not checked against a primary source. Gamma-ray instruments in the MoonRay concept use a different approach. According to a secondary summary of the concept, each module would carry a tracker and a thick crystal calorimeter, with proton/electron rejection better than 10^5 [6]. This was not verified from the primary 2023 paper.",
+      "scientific_importance": "The Moon's lack of a magnetic field and atmosphere makes it a direct site for studying galactic cosmic rays and solar particle events [4]. Measurements from the lunar environment therefore complement near-Earth and deep-space observations. For future human exploration, the same measurements also support radiation risk assessment [4]. Lunar-surface gamma-ray emission from cosmic-ray interactions has been modelled and compared with existing Fermi-LAT observations, suggesting a way to use the Moon as a cosmic-ray spectrometer [5]. A dedicated surface telescope would extend such studies to energies and sky regions that current instruments do not cover well [6].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a cosmic-ray telescope. The examples below describe one flown orbital instrument and two proposed designs; they are not directly comparable and no comparison table is given.",
+        "examples": [
+          {
+            "name": "LRO CRaTER (Cosmic Ray Telescope for the Effects of Radiation)",
+            "type": "Flown instrument in lunar orbit (Lunar Reconnaissance Orbiter)",
+            "mass_kg": null,
+            "mass_status": "Unresolved. Spaceflight Now mission summary gives 5.4 kg [2]; a UNH instrument overview reported in search results gives measured 5.53 kg with a 6.36 kg allocation [3]. Neither is confirmed from a primary source.",
+            "power_w": null,
+            "power_status": "Unresolved. Spaceflight Now mission summary gives an average of 7.3 W [2]; a UNH instrument overview reported in search results gives measured 6.66 W with a 9.00 W allocation [3]. Neither is confirmed from a primary source.",
+            "detector_configuration": "Six ion-implanted silicon detectors, each 2 cm in diameter, mounted on detector boards and arranged as three thin/thick pairs separated by tissue-equivalent plastic within an aluminium structure [1]. Detectors 1, 3 and 5 are listed as 140 micrometres thick and the others as 1000 micrometres; the PDS entry omits the micro symbol, so the units are presumed. A search summary reported five detectors, which conflicts with the primary PDS entry; six is used here.",
+            "operating_modes": "Two modes: powered up and powered down [1].",
+            "telemetry": "Maximum telemetered rate of 1200 events per second, 12-bit digitisation, 12 microsecond internal deadtime, 1-second time-tag accuracy [1].",
+            "measurement_scope": "Linear energy transfer (LET) spectra from galactic cosmic rays and solar energetic protons above about 10 MeV, after shielding [1].",
+            "energy_ranges_and_viewing_geometry_secondary": "Secondary search summaries describe a zenith and nadir view, low-LET measurement from about 200 keV to 100 MeV, high-LET from 2 MeV to 1 GeV, endcaps blocking protons below roughly 13 MeV, and a data rate of about 0.5 kbps rising to about 90 kbps during solar flares. The PDS entry does not state energy or LET ranges, so these are not treated as verified.",
+            "qualification": "Flown. Launched in June 2009 as part of LRO, according to a secondary mission summary [2]. Current operational status not verified.",
+            "source_urls": [
+              "https://pds.nasa.gov/data/pds3/releases/latest/2020/202007-ppi/zzold/instLROcrater.CAT",
+              "https://spaceflightnow.com/atlas/av020/090610lro.html",
+              "https://crater.unh.edu/instrument.shtml"
+            ],
+            "images": []
+          },
+          {
+            "name": "LURAD (Radiation Monitor Package for the Gateway and the Lunar Surface)",
+            "type": "Proposed design study (no built, tested or flown hardware)",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_status": "Not stated in the abstract reviewed [4]. A search summary mentions a 30 cm telescope length and a 5 x 5 cm2 cross-section, but this was not confirmed in the primary text and is not adopted.",
+            "measurement_scope": "Protons, electrons, heavy ions, gamma rays and neutrons, with a microdosimetry subsystem measuring LET(Si) spectra [4].",
+            "technologies_proposed": "Fully depleted silicon monolithic active pixel sensors; scintillators read by silicon photomultipliers; silicon-on-insulator microdosimetry sensors [4].",
+            "platform": "Lunar orbit (Gateway) and the lunar surface, per the title and abstract [4].",
+            "qualification": "Proposed. Design study with Monte Carlo feasibility analysis; no measured performance [4].",
+            "source_urls": [
+              "https://arxiv.org/abs/2405.03187"
+            ],
+            "images": []
+          },
+          {
+            "name": "MoonRay (permanent lunar cosmic-ray and gamma-ray observatory concept)",
+            "type": "Concept study (not a funded mission)",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_status": "Not publicly verified in the sources reviewed.",
+            "configuration_secondary": "Per a secondary summary: a modular array of independent towers, baseline 10 x 10 (MoonRay-100), optional 16 x 16 (MoonRay-256); each tower carries three instruments including a tracker and a thick crystal calorimeter with proton/electron rejection above 10^5 [6]. Not verified from the primary paper.",
+            "siting_rationale_and_power": "Concept cites South Pole sky coverage as its rationale and assumes power from lunar habitat infrastructure [6]. The power source is an assumption, not a verified interface.",
+            "deployment_concept": "Towers deployed progressively over several lunar missions, with early stages producing science data [6].",
+            "qualification": "Concept only. The acceptance claim of an order of magnitude larger than flown or planned instruments is a design claim, not a measurement [6].",
+            "source_urls": [
+              "https://doi.org/10.1016/j.astropartphys.2023.102879"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No single dimension set applies to a cosmic-ray telescope. CRaTER is described as a single integrated sensor and electronics box in PDS terms, with its detector stack in an aluminium structure [1]. Its external dimensions are not stated in the sources reviewed. LURAD and MoonRay dimensions are not verified (see examples).",
+        "mass_and_weight": "Mass for CRaTER is unresolved between a mission summary (5.4 kg) [2] and a UNH overview reported in search results (5.53 kg measured; 6.36 kg allocation) [3]. No mass is adopted. LURAD and MoonRay masses are not publicly verified.",
+        "power_requirements": "CRaTER average power is unresolved between 7.3 W [2] and 6.66 W measured with a 9.00 W allocation [3]. No power value is adopted. MoonRay assumes power from habitat infrastructure, which is not a verified interface [6]."
+      },
+      "environmental_and_operational_requirements": "The lunar environment exposes a cosmic-ray telescope to unshielded galactic cosmic rays and solar energetic particles, because the Moon has no substantial magnetic field or atmosphere [4]. A surface instrument would also receive secondary radiation generated in the regolith [4]. The instrument must therefore be designed for a high-radiation environment and for the stability of its detectors and electronics. Thermal, vacuum and dust requirements must be determined from the platform; no verified thermal or dust specification exists in the sources reviewed for the examples. Data handling depends on the host platform; CRaTER's telemetry rates are given above from secondary sources.",
+      "limitations": "A single telescope has a limited field of view and acceptance, which restricts the directions and energy ranges it can observe. The MoonRay concept claims an acceptance an order of magnitude larger than flown or planned instruments, but this is a design claim, not a measurement [6]. Detector shielding and thresholds limit the lowest particle energies that can be measured; for CRaTER, endcap shielding removes protons below about 13 MeV according to a secondary summary [1]. An orbital instrument cannot directly measure the local surface environment. LURAD and MoonRay are not built or flown, so their performance is not demonstrated.",
+      "transportation_and_deployment": {
+        "overview": "The three examples differ: CRaTER is an orbital instrument already flown on LRO, LURAD is a proposed Gateway and surface radiation monitor, and MoonRay is a surface observatory concept. No lander, rover or spacecraft compatibility has been verified for any of them.",
+        "transportation_process": [
+          "CRaTER: integrated into the LRO spacecraft and launched in June 2009, according to a secondary mission summary [2].",
+          "CRaTER: operations depended on LRO's spacecraft integration, orbit and data interfaces; no separate surface deployment was required.",
+          "MoonRay (concept): towers would be delivered and deployed progressively over several lunar missions, with early stages producing science data [6].",
+          "MoonRay (concept): power is assumed from lunar habitat infrastructure, which is not verified [6].",
+          "LURAD (proposed): framed for the Gateway and the lunar surface [4]; no transport interface has been verified."
+        ],
+        "deployment_methods": "CRaTER was carried on the LRO spacecraft and operated in orbit. The MoonRay concept envisages progressive tower deployment over several missions. Deployment methods for LURAD and MoonRay are not specified in the sources reviewed.",
+        "historical_examples": "CRaTER, launched with LRO in 2009, is the flown example in lunar orbit, according to secondary sources [1][2]. No surface-deployed cosmic-ray telescope is documented in the sources reviewed.",
+        "compatibility_assessment": "No lander, rover or spacecraft compatibility has been verified for any example. Mass, dimensions, mounting, power and communications interfaces would need to be assessed against verified spacecraft specifications before any compatibility claim could be made.",
+        "images": []
+      },
+      "historical_significance": "CRaTER is a flown example of a cosmic-ray telescope in lunar orbit, launched in 2009 as part of LRO, according to secondary sources [1][2]. Its measurements have contributed to lunar radiation-environment studies, but the sources reviewed do not allow the scale of those contributions to be quantified here. LURAD and MoonRay show the continuing development of lunar radiation and cosmic-ray instruments, but neither has flown [4][6].",
+      "limitations_and_uncertainties": "Mass and power for CRaTER conflict between a mission summary [2] and an instrument overview summarised in search results [3]; neither value is confirmed. The detector count is six in the primary PDS record [1] but five in one search summary. Detector thicknesses are presumed to be micrometres because the PDS entry omits the unit symbol [1]. Energy ranges, viewing geometry and data rates for CRaTER come from secondary summaries and were not confirmed from a primary instrument paper. The Space Science Reviews CRaTER instrument paper (Spence and colleagues, 2010) is referenced in the PDS record but was not opened [1]; the UNH instrument page could not be opened because its certificate was rejected on two attempts [3]. Current operational status of CRaTER was not verified. MoonRay details (towers, per-tower instruments, calorimeter type, rejection factor, power assumption) come from secondary summaries and need checking against the 2023 primary paper [6]. LURAD dimensions are not confirmed in the primary text reviewed [4]. No direct image asset was verified, so the article includes no images. This article does not include landing-site or location recommendations, which are deferred by the user.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "Instrument catalog entry for LRO CRaTER (instLROcrater.CAT)",
+          "publisher": "NASA Planetary Data System",
+          "url": "https://pds.nasa.gov/data/pds3/releases/latest/2020/202007-ppi/zzold/instLROcrater.CAT",
+          "access_note": "Opened."
+        },
+        {
+          "title": "Lunar Reconnaissance Orbiter launch profile",
+          "publisher": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/atlas/av020/090610lro.html",
+          "access_note": "Search summary only; page not opened."
+        },
+        {
+          "title": "CRaTER instrument overview",
+          "publisher": "University of New Hampshire",
+          "url": "https://crater.unh.edu/instrument.shtml",
+          "access_note": "Search summary only; page could not be opened (certificate rejected on two attempts)."
+        },
+        {
+          "title": "LURAD: Design Study of a Comprehensive Radiation Monitor Package for the Gateway and the Lunar Surface",
+          "publisher": "C. Potiriadis et al., Advances in Space Research 74(3), 2024; arXiv:2405.03187",
+          "url": "https://arxiv.org/abs/2405.03187",
+          "access_note": "Abstract opened."
+        },
+        {
+          "title": "The Moon as a Cosmic-Ray Spectrometer: Prospects for MeV Gamma-Ray Observations",
+          "publisher": "T. Fujiwara et al., 2025; arXiv:2504.07195",
+          "url": "https://arxiv.org/abs/2504.07195",
+          "access_note": "Abstract opened."
+        },
+        {
+          "title": "MOONRAY: A permanent high-energy cosmic-ray observatory on the surface of the Moon",
+          "publisher": "P. S. Marrocchesi, Astroparticle Physics, 2023, DOI 10.1016/j.astropartphys.2023.102879",
+          "url": "https://doi.org/10.1016/j.astropartphys.2023.102879",
+          "access_note": "DOI taken from a search result; article not opened."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL values in this file have query strings and fragments removed. No image URLs are included because no direct image asset was verified from an official source."
+  },
+  "data_quality_notes": [
+    "CRaTER mass and power conflict between a Spaceflight Now mission summary (5.4 kg; 7.3 W average) and a UNH instrument overview reported in search results (5.53 kg measured, 6.66 W measured; allocations 6.36 kg and 9.00 W). The UNH page could not be opened, so neither set is adopted; mass_kg and power_w are null.",
+    "CRaTER detector count: six in the primary PDS record; a search summary reported five. Six is used.",
+    "CRaTER detector thicknesses (140 and 1000) are presumed to be micrometres; the PDS entry omits the micro symbol.",
+    "CRaTER energy ranges, viewing geometry, data rates and dose-rate method come from secondary summaries and are not verified against a primary instrument paper. The Space Science Reviews CRaTER paper was not opened.",
+    "CRaTER launch date (June 2009) and principal investigator come from a secondary mission summary.",
+    "LURAD telescope dimensions (30 cm length, 5 x 5 cm2 cross-section) appear only in a search summary and are not confirmed by the abstract or primary text; not adopted.",
+    "MoonRay details (tower configuration, per-tower instruments, calorimeter, rejection factor, power assumption) come from secondary summaries; the 2023 primary paper was not opened.",
+    "No direct image asset was verified; images arrays are empty and image_urls_added is false.",
+    "Lunar location recommendations are deferred by the user and not included."
+  ]
+}

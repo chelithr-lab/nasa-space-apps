@@ -1,0 +1,199 @@
+{
+  "catalogue_id": 225,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 225,
+    "name": "Regolith sintering demonstrator",
+    "article": {
+      "overview": "A regolith sintering demonstrator is a test system that heats lunar regolith, or a regolith simulant, until its grains fuse into a coherent solid without fully melting the material. The aim is to show that bricks, landing pads, blast shields or road surfaces could eventually be made from local soil rather than shipped from Earth. The name describes a class of demonstrators rather than one standard instrument.\n\nThe sintering demonstrators found in the sources reviewed use microwave, concentrated solar, flash-sintering or laser heating. All are terrestrial, laboratory, simulant-based or proposed. None has been verified as having sintered regolith on the lunar surface [1][2][3][4][5][6]. A planned lunar laser-melting test, MOONRISE, is related but is melting rather than sintering, and no flight has been verified [8].",
+      "description": "Sintering bonds powder particles by heating them below their melting point. Atomic diffusion and local softening at contact points grow necks between grains, so a loose powder bed becomes a porous or dense solid. Lunar regolith is a demanding feedstock: it conducts heat poorly [2], varies in mineral composition [5], and its particle size must be controlled [4].\n\nPublished demonstrator concepts differ mainly in how energy is delivered. ESA's MICROLITH study used local microwave heating to make simulant bricks [1]. The NASA Marshall-led work proposes microwave powder bed fusion to build layered structures [2]. RegoLight studied concentrated sunlight with a movable print head that deposits and sinters successive regolith layers [5][6][7]. Lunar Forge describes a laser sintering unit, with a solar- and battery-powered version planned for a 2027 lunar-surface demonstration [4]. Flash sintering has been studied as a route that the Lucideon release describes as faster and less energy-intensive. The release does not describe the mechanism or the test atmosphere [3].",
+      "scientific_purpose_and_applications": "The main purpose of a sintering demonstrator is to test whether a process can turn regolith into a usable material under realistic constraints, such as vacuum, dust, thermal cycling, limited power and remote operation. Demonstrators measure product properties such as density, porosity and compressive strength, and test how these depend on the regolith source and processing settings [1][3][4].\n\nProposed applications include landing pads, blast shields, roads and levelled terrain, dust shelters and structural elements for habitats [2][6]. These are design goals, not demonstrated capabilities.",
+      "operating_principle": "A typical demonstrator has three functional parts: a feed and spreading system that lays a thin layer of regolith or simulant, an energy source that heats selected regions, and a control system that moves the source or the bed and records temperature and process settings. Repeating these steps builds a layered part [5][6].\n\nThe energy source sets the heating pattern. Microwaves can heat the bulk of a powder volume directly, which the NASA authors argue suits a poorly conducting regolith bed [2]. Lasers and concentrated sunlight heat a small spot, so scan paths and beam control matter. RegoLight used a Fresnel lens on a three-axis gantry in a solar simulator to show the principle [7]. Lunar Forge says its process adapts in real time to variable regolith composition [4].",
+      "scientific_importance": "Construction materials are heavy and costly to launch. Lunar Forge cites about USD 1 million per kilogram for transport to the lunar surface, a company figure that has not been verified [4]. Sintering demonstrators address whether local processing is technically feasible before infrastructure is committed to it.\n\nEarly results suggest that regolith composition and maturity matter. The 2017 RegoLight paper on the influence of mineral composition on sintering is listed in the project record [5], and ESA's MICROLITH summary reports that regolith from different lunar regions affects the density of the final material [1]. These are early, simulant-based results and do not establish a general sintering procedure for the Moon.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a regolith sintering demonstrator. The examples below describe individual programmes. Where the sources do not publish mass, dimensions, power or other specifications, this article says so rather than estimating them.",
+        "examples": [
+          {
+            "name": "ESA MICROLITH microwave sintering study",
+            "type": "Terrestrial laboratory demonstrator (ESA-funded study; not flown)",
+            "status": "Laboratory; not flown",
+            "summary": "The ESA-funded study ran from January 2021 to July 2022 under the EXPRO+ programme, with RINA as coordinator. The consortium used local microwave heating with solid-state microwave generators to make bricks from regolith simulant. The ESA project summary reports that sintering worked on regolith representing both maria and highlands, that the choice of regolith affects final density, and that preliminary tests were run in vacuum. The sources reviewed call solid-state microwave generators a valid and promising solution, but they do not give density, porosity or strength values [1].",
+            "not_publicly_specified": "Mass, dimensions, power consumption, sintering temperatures and times, and technology readiness level.",
+            "source_urls": [
+              "https://nebula.esa.int/content/microwaves-heating-sintering-regolith-microlith"
+            ],
+            "images": []
+          },
+          {
+            "name": "NASA microwave powder bed fusion concept",
+            "type": "Proposed development concept (NASA Marshall-led team)",
+            "status": "Under development; no lunar demonstration verified",
+            "summary": "A 2022 ICAM abstract describes scaling up microwave powder bed fusion for lunar infrastructure. The authors argue that microwave energy heats regolith volumetrically, which is energy efficient even though regolith conducts heat poorly. They state that microwave systems, concept of operations and sintering protocols are being developed to create a sub-element structure targeted for a lunar demonstration mission. The abstract reports no numerical test results [2].",
+            "not_publicly_specified": "All numerical performance, mass, dimensions and power values; demonstration schedule.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20220005023"
+            ],
+            "images": []
+          },
+          {
+            "name": "RegoLight solar sintering robotic prototypes",
+            "type": "Laboratory and solar-simulator prototypes (EU-funded; project closed)",
+            "status": "Closed project; no lunar flight stated",
+            "summary": "RegoLight (Horizon 2020 grant 686202, 1 November 2015 to 30 April 2018) was coordinated by the German Aerospace Center (DLR) with an EU contribution of EUR 999,372.50. Its publications include robotic prototypes for solar sintering of regolith on the lunar surface and a 2017 paper on how mineral composition influences sintering [5]. The Helmholtz page describes a movable print head that aims concentrated sunlight and adds successive regolith layers, and a baseline lab setup that builds a regolith brick on a moving table in a solar furnace. It states that the approach uses the Sun as the only energy source and gives a current TRL of 3, with a TRL 5 breadboard target [6]. The page reports no measured results. The 2017 prototype paper is listed as a conference paper; only its title could be read [7].",
+            "not_publicly_specified": "Concentrator type, beam power, sintering temperatures, simulant names, mass and dimensions, and measured mechanical properties.",
+            "source_urls": [
+              "https://cordis.europa.eu/project/id/686202/results/fr",
+              "https://www.helmholtz.de/en/research/international-cooperation/eu-projects/pillar-2-industrial-leadership/space/regolight",
+              "https://liquifer.com/wp-content/uploads/2020/03/2017_Robotic-_Regolight3.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Flash sintering feasibility study (Lucideon, ESA-funded)",
+            "type": "Laboratory feasibility study",
+            "status": "Feasibility study; no flight",
+            "summary": "A Lucideon press release describes an ESA-funded programme on flash sintering of lunar regolith simulant. It claims the process can be up to 35 to 40 percent faster and up to 50 percent less energy-intensive than conventional sintering [3]. The release gives no baseline conditions, sample sizes, measurement methods, or density and strength data, and the release does not state the test atmosphere.",
+            "not_publicly_specified": "Temperatures, durations, atmosphere, density, porosity, strength, mass, dimensions and power.",
+            "source_urls": [
+              "https://www.lucideon.com/news/flash-sintering-feasibility-for-lunar-construction-materials"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Forge laser sintering unit",
+            "type": "Company development programme (planned lunar-surface demonstration)",
+            "status": "Planned; not flown",
+            "summary": "Lunar Forge, a start-up that recently emerged from stealth, describes laser sintering of regolith, with regolith filtered and sieved to control particle size before laser heating [4]. The company reports laboratory compressive strengths above 200 MPa, with some samples reaching 345 MPa, but the article gives no test conditions. It plans a first lunar-surface demonstration in 2027 on a lander not yet named, using a solar- and battery-powered sintering unit, and a second flight with radioisotope power. These are company statements in a company-sourced article dated 1 July 2026.",
+            "not_publicly_specified": "Mass, dimensions and power values; lander identity; test conditions for the strength results; dates for follow-on flights.",
+            "source_urls": [
+              "https://payloadspace.com/exclusive-lunar-forge-unveils-plans-to-build-lunar-infrastructure-out-of-dust/"
+            ],
+            "images": []
+          },
+          {
+            "name": "MOONRISE laser melting experiment",
+            "type": "Planned lunar-surface experiment (laser melting of lunar dust, not sintering)",
+            "status": "Planned as of a 2024 page; no flight verified",
+            "summary": "The MOONRISE project by TU Berlin and Laser Zentrum Hannover, funded with EUR 4.75 million by DLR, plans to melt lunar dust with a compact laser to form flat two-dimensional test structures as a precursor to 3D printing [8]. The page, dated 14 April 2024, says the launch is expected at the end of 2026 and that the laser will ride on an Astrobotic lander, but it does not confirm the vehicle. The page does not say whether real regolith or a simulant would be used.",
+            "not_publicly_specified": "Laser power, size, mass, number of samples, sample size and test duration.",
+            "source_urls": [
+              "https://www.reinraum.de/en/news/experiment-of-tu-berlin-lands-on-the-moon.html"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions and proportions are not publicly specified for any demonstrator reviewed. Demonstrator geometry is driven by the heating method, the build volume and the feed system, and none of the reviewed sources gives those values for a named system.",
+        "mass_and_weight": "Mass is not publicly specified for any demonstrator reviewed. Lunar Forge states that its laboratory technology is being miniaturised to fit a lander, but gives no mass [4].",
+        "power_requirements": "Power is not publicly specified for any demonstrator reviewed. The ESA summary describes microwave heating as implementable at relatively low power, without a value [1]. Lunar Forge's planned unit is solar- and battery-powered, and a second flight would use radioisotope power, with no figures given [4]."
+      },
+      "environmental_and_operational_requirements": "A lunar sintering demonstrator must operate in vacuum, which changes heat transfer and material behaviour. The ESA summary lists the very low pressure of the lunar environment as a factor still to be understood [1]. Other generic drivers include lunar temperature swings, abrasive dust that can coat optics and mechanisms, and limited power and communications. For solar methods, sunlight availability and dust on optics would set operating windows. None of the reviewed sources quantifies these for a named system. These are engineering considerations, not verified specifications.",
+      "limitations": "Most evidence is laboratory, simulant-based or company-reported. No sintering demonstrator reviewed here has a verified lunar-surface result. Reported gains in speed and energy lack baselines [3]. Company strength figures lack test conditions [4]. The TRL stated on the Helmholtz RegoLight page is undated and may be outdated [6]. The reviewed pages do not state a TRL for MICROLITH or Lunar Forge [1][4].",
+      "transportation_and_deployment": {
+        "overview": "A regolith sintering demonstrator would be a surface payload, or part of one, delivered by a lander. Lunar Forge's planned demonstration uses a lander it has not yet named [4]. The MOONRISE page says the laser experiment is contracted to fly on an Astrobotic lander, but does not confirm the vehicle [8].",
+        "transportation_process": [
+          "Integrate the demonstrator's feed, energy source and control electronics into a lander payload compartment on Earth.",
+          "Launch it on a launch vehicle and transfer it towards the Moon.",
+          "Deliver it to the surface with a lunar lander.",
+          "Deploy and set up the feed system, the energy source and any scan or print-head mechanism on the surface.",
+          "Connect power (solar and battery, or radioisotope for longer operation as Lunar Forge describes [4]) and data links, and verify thermal and dust protection.",
+          "Operate the process, record results and return data to Earth through the lander's communications path."
+        ],
+        "deployment_methods": "Deployment methods are not verified for any demonstrator reviewed. Designs with a print head that moves across a powder bed imply a mobile or gantry-style system [6][7]. Sintering results would also depend on the feed and spreading process, which must be reliable in dusty conditions.",
+        "historical_examples": "No sintering demonstrator reviewed here has a verified lunar deployment. The RegoLight and MICROLITH projects were completed on Earth [1][5].",
+        "compatibility_assessment": "Compatibility is not assessed. No lander compatibility is claimed for any demonstrator in this article. Lunar Forge's lander is unnamed and the MOONRISE vehicle is unconfirmed [4][8]. Mass, dimensions, power and interface data would be needed before any compatibility assessment.",
+        "images": []
+      },
+      "historical_significance": "The programmes are recent. RegoLight ran from 2015 to 2018 and developed robotic prototypes and a laboratory setup for solar sintering, tested on Earth [5][6].ESA's MICROLITH study ran from 2021 to 2022 and produced laboratory-scale microwave bricks from simulant [1]. NASA's Marshall-led team presented a microwave powder bed scale-up aimed at a lunar demonstration in 2022 [2]. Lunar Forge's 2026 plan for a 2027 lunar demonstration [4] and the 2024 MOONRISE laser-melting plan [8] show the field moving toward lunar flight tests, but none is verified as flown in the sources reviewed.",
+      "limitations_and_uncertainties": "No lunar-surface sintering result has been verified in the sources reviewed. Numerical values are missing for several projects: density, porosity and strength for MICROLITH and the NASA work, measured mechanical data for RegoLight, and test conditions for Lunar Forge [1][2][4][5].\n\nSeveral sources are company or press material. Lunar Forge's strengths, speed and cost figures and the Lucideon energy claims are unverified [3][4]. The primary ESA MICROLITH page could not be read in full, so its statements rest on summary text [1]. The RegoLight 2017 paper could be identified but not read [7].\n\nDates are time-sensitive. The MOONRISE launch expectation comes from a 2024 page and no later update was found [8]. The Lunar Forge 2027 plan comes from a single July 2026 article [4].\n\nTerminology matters. Laser melting (MOONRISE) and sintering (most other entries) are different processes and are not interchangeable in this article [8].",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "MICROwaves heating for sintering of regoLITH (MICROLITH) project page",
+          "publisher": "European Space Agency (ESA) Nebula",
+          "date": "Project period January 2021 to July 2022",
+          "url": "https://nebula.esa.int/content/microwaves-heating-sintering-regolith-microlith",
+          "notes": "Could not be fetched in full (the page redirected to activities.esa.int). Content used only as search-result summary text."
+        },
+        {
+          "title": "Scaleup of Microwave Powder Bed Fusion for Lunar Infrastructure Construction (ICAM 2022 abstract)",
+          "publisher": "NASA Marshall Space Flight Center and collaborators; NASA Technical Reports Server",
+          "date": "2022",
+          "url": "https://ntrs.nasa.gov/citations/20220005023",
+          "notes": "Abstract read. No numerical results in the abstract."
+        },
+        {
+          "title": "Flash sintering feasibility for lunar construction materials (press release)",
+          "publisher": "Lucideon",
+          "date": "October 2026 (date as shown on the page)",
+          "url": "https://www.lucideon.com/news/flash-sintering-feasibility-for-lunar-construction-materials",
+          "notes": "Company press release. Claims not independently verified; no baseline conditions given."
+        },
+        {
+          "title": "Exclusive: Lunar Forge unveils plans to build lunar infrastructure out of dust",
+          "publisher": "Payload Space",
+          "date": "2026-07-01",
+          "url": "https://payloadspace.com/exclusive-lunar-forge-unveils-plans-to-build-lunar-infrastructure-out-of-dust/",
+          "notes": "Company-sourced exclusive. Lab test conditions not given; 2027 demonstration date not independently confirmed."
+        },
+        {
+          "title": "Sintering Regolith with Solar Light (RegoLight), grant agreement 686202",
+          "publisher": "European Commission, CORDIS",
+          "date": "2015-11-01 to 2018-04-30 (project closed)",
+          "url": "https://cordis.europa.eu/project/id/686202/results/fr",
+          "notes": "Lists project publications and funding. No measured results on the page."
+        },
+        {
+          "title": "RegoLight: Sintering Regolith with Solar Light",
+          "publisher": "Helmholtz",
+          "date": "Undated",
+          "url": "https://www.helmholtz.de/en/research/international-cooperation/eu-projects/pillar-2-industrial-leadership/space/regolight",
+          "notes": "States current TRL3 and a TRL5 breadboard target. Undated, so the TRL may be outdated."
+        },
+        {
+          "title": "Robotic prototypes for the solar sintering of regolith on the lunar surface developed within the Regolight project (IAC 2017)",
+          "publisher": "Space Applications Services and collaborators (PDF hosted by Liquifer)",
+          "date": "2017",
+          "url": "https://liquifer.com/wp-content/uploads/2020/03/2017_Robotic-_Regolight3.pdf",
+          "notes": "Only the title and file metadata could be read from this PDF."
+        },
+        {
+          "title": "Experiment of TU Berlin lands on the Moon (MOONRISE)",
+          "publisher": "Reinraum (TU Berlin and Laser Zentrum Hannover news item; AI-translated from German)",
+          "date": "2024-04-14",
+          "url": "https://www.reinraum.de/en/news/experiment-of-tu-berlin-lands-on-the-moon.html",
+          "notes": "No flight-status update found after this date."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL fields have query strings and fragments removed. No image assets were verified, so no image objects are included."
+  },
+  "data_quality_notes": [
+    "No direct image asset URLs were verified from official pages. The article contains no images and the image registry is empty.",
+    "The ESA MICROLITH project page and its executive summary could not be read in full because the URLs redirected to activities.esa.int. Statements attributed to ESA MICROLITH rest on search-result summaries and should be checked against the primary report.",
+    "A search summary of the Lucideon flash-sintering work reported specific temperatures and times. The fetched press release gives no temperatures, so those figures are not used in this article.",
+    "TRL statements for the RegoLight work are inconsistent across sources. The Helmholtz page is undated and states TRL3 current with a TRL5 target. Other summaries reporting higher prototype TRLs could not be checked against a primary source and are not used.",
+    "The RegoLight 2017 prototype paper could be identified only by title and metadata, so its content is not used beyond the title.",
+    "Lunar Forge figures (strength, cost per kilogram, 2027 demonstration, funding) are company statements in a single company-sourced article and are not independently verified.",
+    "MOONRISE timing comes from an April 2024 page and no later status was found. The project is a laser-melting experiment and is included as a related lunar test, not as a sintering demonstrator.",
+    "No technical specification has been audited. No mass, dimensions, power, lifetime, TRL or lander compatibility value is asserted except as stated by a named source.",
+    "The Markdown article and this JSON are generated from the same research notes for payload 225 v1."
+  ]
+}

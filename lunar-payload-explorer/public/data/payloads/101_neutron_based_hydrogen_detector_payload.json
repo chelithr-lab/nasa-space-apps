@@ -1,0 +1,392 @@
+{
+  "catalogue_id": 101,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 5,
+    "name": "Water, ice and volatile detection"
+  },
+  "payload": {
+    "number": 101,
+    "name": "Neutron-based hydrogen detector",
+    "article": {
+      "overview": "A neutron-based hydrogen detector looks for hydrogen in the uppermost layer of a planetary surface by measuring neutrons. Hydrogen matters on the Moon because hydrogen in the cold polar regions may indicate water ice. The method does not see hydrogen directly. It measures how the flux and energy of neutrons leaving the ground change, because hydrogen-rich material alters the neutron population that reaches a detector in orbit [1][2].\n\nScope of this article. This article covers neutron spectrometers designed to detect hydrogen by measuring neutrons, with lunar-orbit examples.\n\n- In scope: the neutron measurement chain, its energy bands, and the two documented lunar-orbit examples.\n- Out of scope: gamma-ray spectrometers (catalogue 57), which measure a different radiation signal; the generic neutron spectrometer entry (catalogue 58), which is not duplicated here; and other hydrogen and water detectors (catalogue 99, 100 and 103), which are not covered by this article.\n\nStatus summary. The article distinguishes three kinds of evidence:\n\n- Flown in lunar orbit (historical): the Lunar Prospector Neutron Spectrometer (NS), January 1998 to July 1999 [4][7].\n- Flown in lunar orbit (LRO): the Lunar Exploration Neutron Detector (LEND), described in its PDS documentation [2][3], in a 2010 instrument paper that reports design and calibration plans rather than measured results [1], and in a 2021 calibration study of its observations [9].\n- Planetary heritage (Mars, not lunar): HEND on Mars Odyssey, named in the LEND documentation as LEND's predecessor [2].",
+      "description": "The LEND instrument, as documented in its PDS software interface specification [2], comprises four parts:\n\n1. Eight helium-3 (3He) sensors for thermal and epithermal neutrons. Four are uncollimated (STN1–3 and SETN) and four are collimated (CSETN1–4). The 2021 calibration study also describes LEND as having eight helium-3 detectors [9].\n2. A collimating module that defines the instrument's field of view. It uses external polyethylene for moderation and internal boron-10 (10B) layers for absorption, and absorbs most neutrons arriving from outside its field of view [2].\n3. Cadmium shields on the collimated sensors, which absorb neutrons below about 0.4 eV, mainly thermal neutrons [2].\n4. SHEN, a stilbene scintillator for high-energy neutrons, with 16 energy channels from 300 keV to more than 15 MeV and a 40° field of view (half width at half maximum) [2].\n\nThe LEND product columns define the following neutron energy bands [2]:\n\n| Band | Energy range | Product column |\n|---|---|---|\n| Thermal | below 0.4 eV | THERMAL |\n| Epithermal 1 | 0.4 eV to 100 eV | EPITHERMAL_FLUX1 |\n| Epithermal 2 | 0.10 keV to 10 keV | EPITHERMAL_FLUX2 |\n| Epithermal 3 | 10 keV to 1.0 MeV | EPITHERMAL_FLUX3 |\n| Fast 1 | 1 MeV to 2.5 MeV | FAST_FLUX1 |\n| Fast 2 | 2.5 MeV to 7.5 MeV | FAST_FLUX2 |\n| Fast 3 | 7.5 MeV to 10 MeV | FAST_FLUX3 |\n\nThe specification prints the Epithermal 2 range as \"1 0 keV\", which appears to be a formatting error for 10 keV [2]. The THERMAL column is described in the specification as epithermal, but its stated range is thermal; this article uses the range [2].\n\nThe Lunar Prospector Neutron Spectrometer is described in NASA's mission text as having detected hydrogen at the lunar poles, which NASA assumed to be in the form of water [4]. Its two helium-3 counters, mass and power are documented in the PDS instrument catalogue entry [7] (see Physical Specifications).",
+      "scientific_purpose_and_applications": "- Hydrogen mapping of the uppermost surface. Mitrofanov et al. describe LEND as optimized for \"high spatial resolution hydrogen mapping of the Moon's upper-most surface\" [1].\n- Near-surface water ice in polar cold traps. LEND's stated goals include identifying possible near-surface water ice in polar cold traps [1]. The PDS instrument context page lists a hydrogen sensitivity of 100 ppm as an objective [3].\n- Shadowed polar craters. Spaceflight Now's description of the LRO mission states that LEND \"will be able to detect hydrogen in permanently shadowed craters near the lunar poles that may be water ice\" [6].\n- Radiation environment. Mitrofanov et al. list characterizing the radiation environment in lunar orbit, relevant to humans, as one of LEND's requirements [1].\n- Historical polar water-ice estimate. NASA's Lunar Prospector page gives \"possibly about\" 330 million short tons (300 million metric tons) of water ice mixed into the regolith at each pole [4]. This is an estimate from the mission team's interpretation, not a direct measurement of ice quantity.",
+      "operating_principle": "Neutrons are produced in the lunar regolith when high-energy particles strike the surface, and some of them escape. This is general background and is not supported by a cited source in this article (see Limitations, Uncertainties and Evidence Gaps). Collisions with hydrogen slow neutrons down. Where hydrogen-rich material is present near the surface, the population of lower-energy (epithermal) neutrons leaving the ground changes, and an orbiting detector can record that change in energy bands.\n\nLEND measures this with its eight 3He sensors, which detect thermal and epithermal neutrons [2]. Cadmium shields and the collimator restrict which neutrons each collimated sensor sees [2]. The collimated system provides a horizontal resolution of 5 km for LRO at an altitude of 50 km [2]. Fast neutrons are measured separately by the SHEN scintillator across its energy channels [2].\n\nThe Lunar Prospector NS used two identical helium-3 gas proportional counters, one covered with cadmium and one with tin, so that the two sensors respond to different neutron energy ranges [7].\n\nThe averaged LEND map products use grid cells of 0.5° × 0.5° at the poles and 1.0° × 1.0° at the equator [2]. These are data-product grids, not the instrument's resolution.",
+      "scientific_importance": "Orbital hydrogen mapping is important because the Moon's polar cold traps are permanently shadowed areas where volatile material could survive over long periods. Neutron measurements sample hydrogen in the upper metre or so of the surface, a depth that optical instruments cannot see. NASA's mission page for Lunar Prospector describes the polar hydrogen result as the first direct evidence of water ice at the lunar poles [4]. The original polar interpretation was published by Feldman et al. in *Science* in 1998 [8].\n\nThe hydrogen signal does not identify the chemical form of the hydrogen. NASA's Lunar Prospector interpretation assumed water [4], and LEND's objectives describe testing for water ice in cold traps rather than proving it [1]. The LEND data are also intended to inform the next stages of global lunar exploration and to support studies of hydrogen implantation and diffusion in regolith [1].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a neutron-based hydrogen detector. The two lunar-orbit examples below use different periods, sensor architectures and levels of documentation. Where values are given, they describe different missions and measurement designs and should not be compared as though they came from one instrument. The Lunar Prospector values are from the PDS instrument catalogue [7]. The LEND mass and power are from a secondary mission summary [6] and have not been confirmed against a primary instrument record.",
+        "examples": [
+          {
+            "name": "Lunar Prospector Neutron Spectrometer (NS)",
+            "type": "Historical lunar-orbital neutron spectrometer (flown 1998-1999)",
+            "mass_kg": 3.9,
+            "external_dimensions_per_counter_cm": {
+              "diameter": 5,
+              "length": 20
+            },
+            "counter_count": 2,
+            "power_consumption_w": 2.5,
+            "power_source_note": "Value from the PDS instrument catalogue entry (NSINST.CAT), which gives 2.5 W.",
+            "sensor_configuration": "Two identical helium-3 filled gas proportional counters. One has a 0.75 mm cadmium shield, which the catalogue describes as sensitive only to epithermal neutrons above about 0.25 eV. The other has a 0.75 mm tin shield, which the catalogue describes as sensitive to thermal and epithermal neutrons.",
+            "mission_dates": "Launch January 1998 (6 January 1998 in NASA Key Dates; 7 January 1998 02:28:44 UT in the spacecraft specification table); entered lunar orbit 12 January 1998; orbit lowered to about 40 km on 10 December 1998; primary mission ended and extended mission began 28 January 1999; impact on Shoemaker crater 31 July 1999.",
+            "qualification": "Mass, power, counter dimensions and shielding from the PDS instrument catalogue entry, which cites a 1998 instrument specification by Binder et al. That specification was not retrieved in full. Mission dates and interpretation from NASA's Lunar Prospector page. The overall instrument envelope is not stated.",
+            "source_urls": [
+              "https://pds.nasa.gov/data/lp-l-6-ephemeris-v1.0/lp_0013/CATALOG/NSINST.CAT",
+              "https://science.nasa.gov/mission/lunar-prospector/"
+            ],
+            "images": [
+              {
+                "id": "lunar_prospector_artist_concept",
+                "description": "Artist's concept of the Lunar Prospector spacecraft above the Moon.",
+                "image_type": "Artist's concept (illustration)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/78777main_befcras.jpg",
+                "source_page_url": "https://science.nasa.gov/mission/lunar-prospector/",
+                "publisher": "NASA",
+                "credit": "NASA/Ames",
+                "caption": "An artist's concept of the spacecraft just before impact on the Moon.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Clean asset path; the source page supplied a resized variant with a w= query parameter, which was removed. Downloaded and confirmed as a JPEG showing a spacecraft above the lunar limb. Source page alt text: 'Lunar Prospector above the Moon.' This is an illustration, not a photograph, and does not depict the neutron spectrometer. Rights and reuse terms were not verified beyond the NASA/Ames credit on the source page."
+              }
+            ],
+            "notes": "Mass, power and counter dimensions are from the PDS catalogue entry [7]. The overall instrument envelope and detector design beyond those values are not stated there. The NASA page's 'possibly about' 330 million short tons water-ice estimate is an interpretation of neutron data, not a direct measurement."
+          },
+          {
+            "name": "Lunar Exploration Neutron Detector (LEND)",
+            "type": "Flight instrument on NASA's Lunar Reconnaissance Orbiter (LRO), lunar orbit",
+            "mass_kg": 25.8,
+            "mass_source_quality": "Reported by Spaceflight Now mission summary (secondary source). Not confirmed against a primary PDS or NASA instrument record.",
+            "dimensions_cm": null,
+            "power_consumption_w": {
+              "average": 11.6,
+              "basis": "average",
+              "source_quality": "Reported by Spaceflight Now mission summary (single secondary source). Not confirmed against a primary record."
+            },
+            "sensor_configuration": "Eight 3He sensors: four uncollimated (STN1-3, SETN) and four collimated (CSETN1-4) with cadmium shielding; collimating module with external polyethylene moderation and internal 10B absorber layers; SHEN stilbene scintillator with 16 energy channels from 300 keV to more than 15 MeV and a 40 degree field of view (half width at half maximum).",
+            "energy_bands": [
+              {
+                "band": "Thermal",
+                "range": "below 0.4 eV",
+                "product_column": "THERMAL"
+              },
+              {
+                "band": "Epithermal 1",
+                "range": "0.4 eV to 100 eV",
+                "product_column": "EPITHERMAL_FLUX1"
+              },
+              {
+                "band": "Epithermal 2",
+                "range": "0.10 keV to 10 keV (specification prints '1 0 keV')",
+                "product_column": "EPITHERMAL_FLUX2"
+              },
+              {
+                "band": "Epithermal 3",
+                "range": "10 keV to 1.0 MeV",
+                "product_column": "EPITHERMAL_FLUX3"
+              },
+              {
+                "band": "Fast 1",
+                "range": "1 MeV to 2.5 MeV",
+                "product_column": "FAST_FLUX1"
+              },
+              {
+                "band": "Fast 2",
+                "range": "2.5 MeV to 7.5 MeV",
+                "product_column": "FAST_FLUX2"
+              },
+              {
+                "band": "Fast 3",
+                "range": "7.5 MeV to 10 MeV",
+                "product_column": "FAST_FLUX3"
+              }
+            ],
+            "horizontal_resolution": "5 km for LRO at 50 km altitude (collimated system), per the PDS LEND specification. Spaceflight Now gives 10 km spatial resolution for LEND epithermal measurements. The two figures are not reconciled in the sources accessed; both are reported.",
+            "stated_objectives": {
+              "hydrogen_sensitivity_ppm": 100,
+              "hydrogen_map_spatial_resolution_km": 5,
+              "note": "Objectives listed on the PDS instrument context page; not measured performance."
+            },
+            "data_volume": "About 0.26 Gbit of measurement data per day.",
+            "operating_modes": [
+              "MEASUREMENTS",
+              "STAND-BY",
+              "OFF"
+            ],
+            "principal_investigator": "Igor Mitrofanov, Institute for Space Research, Moscow (per Spaceflight Now).",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lro/lro-l-lend-2-edr-v1/lrolen_0xxx/document/lend_rdr_sis.htm",
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:lend.lro",
+              "https://spaceflightnow.com/atlas/av020/090610lro.html"
+            ],
+            "images": [
+              {
+                "id": "lend_svs_south_pole_count_map",
+                "description": "Neutron count-rate visualization of the lunar south polar region from LEND observations, labelled Jun 12 2012 (2.9 years), with crater labels.",
+                "image_type": "Scientific visualization of LEND data (not hardware)",
+                "image_url": "https://svs.gsfc.nasa.gov/vis/a000000/a004000/a004057/lend.2180_print.jpg",
+                "source_page_url": "https://svs.gsfc.nasa.gov/4057",
+                "publisher": "NASA Goddard Space Flight Center Scientific Visualization Studio",
+                "credit": "NASA's Goddard Space Flight Center Scientific Visualization Studio",
+                "caption": "Neutron count rate over the lunar south pole from LEND observations, from the NASA SVS visualization 'LEND Looks for Water at the South Pole'.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct SVS print image, 1024x576 JPEG, downloaded and visually checked. It is a data visualization of LEND count rates, not an image of the instrument hardware. The source page gives no caption or alt text for this still. Rights and reuse terms were not verified beyond the NASA credit."
+              },
+              {
+                "id": "lro_spacecraft_rendering",
+                "description": "Rendering of NASA's Lunar Reconnaissance Orbiter with solar arrays, a high-gain antenna and the Earth in the background.",
+                "image_type": "Spacecraft rendering (illustration)",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2017/11/174593main-lro-rendering.jpg",
+                "source_page_url": "https://science.nasa.gov/mission/lro/",
+                "publisher": "NASA",
+                "credit": "NASA (credit not shown on the source page)",
+                "caption": "Rendering of the Lunar Reconnaissance Orbiter; no caption is provided on the source page.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Clean asset path; the source page variant carried a w= query parameter, which was removed. Downloaded and confirmed as a JPEG. Shows the host spacecraft (LRO), not LEND itself. Rights and reuse terms not verified."
+              }
+            ],
+            "notes": "Mass and average power come from a single secondary source [6] and are not confirmed by a primary record. Dimensions are not stated in the specification, the PDS context page or the Spaceflight Now article. Launch date, orbit insertion and current operating status were not verified. The 10 km figure is attributed to Spaceflight Now and is not reconciled with the PDS 5 km figure."
+          },
+          {
+            "name": "HEND neutron detector on NASA Mars Odyssey (planetary heritage)",
+            "type": "Planetary heritage neutron detector at Mars; not a lunar instrument in the sources accessed",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "sensor_configuration": "Not retrieved for this article.",
+            "qualification": "Named in the LEND specification as the predecessor of LEND [2]. No HEND values are given.",
+            "source_urls": [
+              "https://pds-geosciences.wustl.edu/lro/lro-l-lend-2-edr-v1/lrolen_0xxx/document/lend_rdr_sis.htm"
+            ],
+            "images": [],
+            "notes": "No HEND specifications were retrieved. The expansion of the HEND acronym was not verified in the fetched sources."
+          }
+        ],
+        "dimensions_and_proportions": "Lunar Prospector NS: each of the two counters is 5 cm in diameter and 20 cm long [7]; the overall envelope is not stated. LEND: no enclosure dimensions are stated in the sources accessed [2][3][6]. Any new instrument's dimensions would depend on its collimator geometry, detector count and spacecraft mounting.",
+        "mass_and_weight": "Lunar Prospector NS: 3.9 kg [7]. LEND: 25.8 kg as reported by a secondary mission summary [6], not confirmed against a primary record. HEND: not retrieved. Mass would need to be taken from a primary instrument source before any launch or lander comparison.",
+        "power_requirements": "Lunar Prospector NS: 2.5 W [7]. LEND: average 11.6 W as reported by a secondary mission summary [6], not confirmed. HEND: not retrieved."
+      },
+      "environmental_and_operational_requirements": "LEND operates in lunar orbit, and its resolution figure is quoted at 50 km altitude [2]. The Lunar Prospector NS was operated at about 40 km during its lower-orbit phase, for higher-resolution studies [4]. Orbital altitude therefore directly sets the footprint and resolution of any neutron map.\n\nLEND's measurement modes and data volume are documented [2]. The specification also divides the sensors into uncollimated and collimated groups [2]; the sources fetched do not explain the purpose of the uncollimated group. Thermal control, radiation exposure and vacuum operation are general engineering constraints for any orbiting instrument. No thermal, radiation or vacuum qualification values were retrieved for either example, so none is stated here.",
+      "limitations": "- Coarse spatial resolution. The LEND collimated system resolves about 5 km horizontally at 50 km altitude according to the PDS specification [2]. Spaceflight Now gives 10 km [6]. Either way, individual small hydrogen sources cannot be separated at that scale.\n- Depth averaging. Spaceflight Now's description of LEND gives a sensing depth of \"down to ~1 meter\" [6]. A neutron signal integrates over that depth and cannot show how hydrogen is layered within it.\n- Hydrogen is not the same as water. Neutron measurements respond to hydrogen content, not chemical form. NASA's Lunar Prospector interpretation assumed water [4].\n- Estimates depend on models. The Lunar Prospector water-ice amount is given as \"possibly about\" a value, and is an interpretation of the neutron data [4].\n- Incomplete or unconfirmed instrument specifications. The Lunar Prospector NS values come from the PDS catalogue [7]. The LEND mass and power come from a single secondary source [6]. LEND dimensions and HEND specifications are not available in the sources accessed.",
+      "transportation_and_deployment": {
+        "overview": "Both documented lunar examples are orbital payloads. They do not describe a surface deployment, so the discussion below covers orbiter integration and operations.",
+        "transportation_process": [
+          "Integrate the detector assembly with a host orbiter, including its power, data and thermal interfaces.",
+          "Launch the spacecraft, carry out cruise and insert it into lunar orbit.",
+          "Commission the instrument, set it to measurement mode and downlink its data.",
+          "Operate the instrument in lunar orbit, with any orbit changes the mission requires."
+        ],
+        "deployment_methods": "Not applicable to either documented lunar example, which are orbital payloads. No surface deployment mechanism is described in the sources accessed.",
+        "historical_examples": "Lunar Prospector Neutron Spectrometer (1998-1999) and LEND on LRO are the two documented lunar-orbit examples. HEND on Mars Odyssey is a planetary heritage example that is not lunar.",
+        "compatibility_assessment": "No lander or surface-host compatibility is assessed or claimed. The orbital host for LEND is LRO [2][3]; the orbital host for the Lunar Prospector NS was Lunar Prospector [4]. Host interface details were not retrieved for either.",
+        "images": []
+      },
+      "historical_significance": "Lunar Prospector's neutron spectrometer, flown in 1998–1999, provided the polar hydrogen result that NASA presents as the first direct evidence of water ice at the lunar poles [4]. The polar interpretation was published by Feldman et al. in *Science* in 1998 [8]. The full text of that paper was not accessed for this version, so its specific values are not reproduced here. Its successor in the documented lineage is LEND, which the LEND specification describes as a follow-on to HEND on Mars Odyssey [2].\n\nThe 2010 Space Science Reviews paper on LEND describes its design for three LRO requirements: hydrogen mapping, near-surface water ice in polar cold traps, and the lunar-orbit radiation environment [1]. The paper reports calibration and planned observations, not measured results [1]. A 2021 arXiv study cross-calibrates LEND observations against Lunar Prospector epithermal-neutron data and other references, and describes a ten-plus-year LEND observation campaign [9].",
+      "limitations_and_uncertainties": "This article is a second-revision draft (v2). It closes several v1 gaps: the Lunar Prospector NS mass, power and counter dimensions are now given from the PDS catalogue [7]; the 1998 polar-hydrogen paper is now cited [8]; and a LEND-specific image is now included [10]. The following gaps remain open and affect confidence in the article.\n- The full text of Feldman et al. (1998) [8] was not accessed. Its citation comes from bibliographic records, and claims about it are limited to the NASA page [4].\n- The LEND mass (25.8 kg) and average power (11.6 W) come from a single secondary mission summary [6] and have not been confirmed against a primary PDS or NASA instrument record. No LEND dimensions were found.\n- The LEND horizontal resolution is 5 km in the PDS specification [2] and 10 km in Spaceflight Now [6]. The article reports both and does not reconcile them.\n- LEND's launch date, orbit-insertion date and current operating status were not verified.\n- The neutron production and moderation physics in the Operating Principle section is general background and is not supported by a cited source.\n- The Lunar Prospector NS mass and power are from the PDS catalogue entry, which cites a 1998 Binder et al. specification [7]. That specification was not retrieved.\n- The LEND SVS image (Figure 2 and Figure 4) is a data visualization, not a hardware photograph. A NASA archived LEND photo was reported in a search result but was not retrieved, so no LEND hardware image is included.\n- Image rights and reuse terms were not verified beyond the credits given on the source pages.\n- HEND on Mars Odyssey: specifications were not retrieved. Only its heritage relationship to LEND is cited [2].\n- Other national lunar neutron instruments were not surveyed. The article covers only the two lunar-orbit examples.\n- No lunar landing-site recommendations or lander compatibility claims are made, consistent with the deferral of location recommendations.",
+      "images": [
+        {
+          "id": "lunar_prospector_artist_concept",
+          "description": "Artist's concept of the Lunar Prospector spacecraft above the Moon.",
+          "image_type": "Artist's concept (illustration)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/78777main_befcras.jpg",
+          "source_page_url": "https://science.nasa.gov/mission/lunar-prospector/",
+          "publisher": "NASA",
+          "credit": "NASA/Ames",
+          "caption": "An artist's concept of the spacecraft just before impact on the Moon.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Clean asset path; the source page supplied a resized variant with a w= query parameter, which was removed. Downloaded and confirmed as a JPEG showing a spacecraft above the lunar limb. Source page alt text: 'Lunar Prospector above the Moon.' This is an illustration, not a photograph, and does not depict the neutron spectrometer. Rights and reuse terms were not verified beyond the NASA/Ames credit on the source page."
+        },
+        {
+          "id": "lend_svs_south_pole_count_map",
+          "description": "Neutron count-rate visualization of the lunar south polar region from LEND observations, labelled Jun 12 2012 (2.9 years), with crater labels.",
+          "image_type": "Scientific visualization of LEND data (not hardware)",
+          "image_url": "https://svs.gsfc.nasa.gov/vis/a000000/a004000/a004057/lend.2180_print.jpg",
+          "source_page_url": "https://svs.gsfc.nasa.gov/4057",
+          "publisher": "NASA Goddard Space Flight Center Scientific Visualization Studio",
+          "credit": "NASA's Goddard Space Flight Center Scientific Visualization Studio",
+          "caption": "Neutron count rate over the lunar south pole from LEND observations, from the NASA SVS visualization 'LEND Looks for Water at the South Pole'.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct SVS print image, 1024x576 JPEG, downloaded and visually checked. It is a data visualization of LEND count rates, not an image of the instrument hardware. The source page gives no caption or alt text for this still. Rights and reuse terms were not verified beyond the NASA credit."
+        },
+        {
+          "id": "lro_spacecraft_rendering",
+          "description": "Rendering of NASA's Lunar Reconnaissance Orbiter with solar arrays, a high-gain antenna and the Earth in the background.",
+          "image_type": "Spacecraft rendering (illustration)",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2017/11/174593main-lro-rendering.jpg",
+          "source_page_url": "https://science.nasa.gov/mission/lro/",
+          "publisher": "NASA",
+          "credit": "NASA (credit not shown on the source page)",
+          "caption": "Rendering of the Lunar Reconnaissance Orbiter; no caption is provided on the source page.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Clean asset path; the source page variant carried a w= query parameter, which was removed. Downloaded and confirmed as a JPEG. Shows the host spacecraft (LRO), not LEND itself. Rights and reuse terms not verified."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lunar_prospector_artist_concept",
+          "description": "Artist's concept of the Lunar Prospector spacecraft above the Moon.",
+          "image_type": "Artist's concept (illustration)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/78777main_befcras.jpg",
+          "source_page_url": "https://science.nasa.gov/mission/lunar-prospector/",
+          "publisher": "NASA",
+          "credit": "NASA/Ames",
+          "caption": "An artist's concept of the spacecraft just before impact on the Moon.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Clean asset path; the source page supplied a resized variant with a w= query parameter, which was removed. Downloaded and confirmed as a JPEG showing a spacecraft above the lunar limb. Source page alt text: 'Lunar Prospector above the Moon.' This is an illustration, not a photograph, and does not depict the neutron spectrometer. Rights and reuse terms were not verified beyond the NASA/Ames credit on the source page."
+        },
+        {
+          "id": "lend_svs_south_pole_count_map",
+          "description": "Neutron count-rate visualization of the lunar south polar region from LEND observations, labelled Jun 12 2012 (2.9 years), with crater labels.",
+          "image_type": "Scientific visualization of LEND data (not hardware)",
+          "image_url": "https://svs.gsfc.nasa.gov/vis/a000000/a004000/a004057/lend.2180_print.jpg",
+          "source_page_url": "https://svs.gsfc.nasa.gov/4057",
+          "publisher": "NASA Goddard Space Flight Center Scientific Visualization Studio",
+          "credit": "NASA's Goddard Space Flight Center Scientific Visualization Studio",
+          "caption": "Neutron count rate over the lunar south pole from LEND observations, from the NASA SVS visualization 'LEND Looks for Water at the South Pole'.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct SVS print image, 1024x576 JPEG, downloaded and visually checked. It is a data visualization of LEND count rates, not an image of the instrument hardware. The source page gives no caption or alt text for this still. Rights and reuse terms were not verified beyond the NASA credit."
+        }
+      ],
+      "references": [
+        {
+          "title": "Lunar Exploration Neutron Detector for the NASA Lunar Reconnaissance Orbiter",
+          "authors": "Mitrofanov, I. G., et al.",
+          "publisher": "Space Science Reviews (Springer)",
+          "date": "2010",
+          "identifier": "DOI 10.1007/s11214-009-9608-4; Space Science Reviews 150(1-4), 183-207",
+          "url": "https://experts.arizona.edu/en/publications/lunar-exploration-neutron-detector-for-the-nasa-lunar-reconnaissa/"
+        },
+        {
+          "title": "LRO Lunar Exploration Neutron Detector (LEND) Reduced Data Record software interface specification (lend_rdr_sis)",
+          "authors": "NASA Planetary Data System, Geosciences Node",
+          "publisher": "NASA PDS",
+          "date": "2016-06-10",
+          "identifier": "lend_rdr_sis",
+          "url": "https://pds-geosciences.wustl.edu/lro/lro-l-lend-2-edr-v1/lrolen_0xxx/document/lend_rdr_sis.htm"
+        },
+        {
+          "title": "LRO Lunar Exploration Neutron Detector (LEND) instrument context",
+          "authors": "NASA Planetary Data System",
+          "publisher": "NASA PDS (ARCNAV)",
+          "date": "not stated",
+          "identifier": "urn:nasa:pds:context:instrument:lend.lro, version 1.0",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:lend.lro"
+        },
+        {
+          "title": "Lunar Prospector mission page",
+          "authors": "NASA Science",
+          "publisher": "NASA",
+          "date": "not stated",
+          "identifier": null,
+          "url": "https://science.nasa.gov/mission/lunar-prospector/"
+        },
+        {
+          "title": "Lunar Reconnaissance Orbiter mission page",
+          "authors": "NASA Science",
+          "publisher": "NASA",
+          "date": "not stated",
+          "identifier": null,
+          "url": "https://science.nasa.gov/mission/lro/"
+        },
+        {
+          "title": "Mission article for the Lunar Reconnaissance Orbiter, including a description of LEND",
+          "authors": "Spaceflight Now",
+          "publisher": "Spaceflight Now",
+          "date": "not stated",
+          "identifier": null,
+          "url": "https://spaceflightnow.com/atlas/av020/090610lro.html"
+        },
+        {
+          "title": "Lunar Prospector Neutron Spectrometer instrument catalogue entry (NSINST.CAT), lp-l-6-ephemeris-v1.0",
+          "authors": "NASA Planetary Data System",
+          "publisher": "NASA PDS",
+          "date": "not stated",
+          "identifier": "lp-l-6-ephemeris-v1.0, lp_0013/CATALOG/NSINST.CAT",
+          "url": "https://pds.nasa.gov/data/lp-l-6-ephemeris-v1.0/lp_0013/CATALOG/NSINST.CAT"
+        },
+        {
+          "title": "Fluxes of Fast and Epithermal Neutrons from Lunar Prospector: Evidence for Water Ice at the Lunar Poles",
+          "authors": "Feldman, W. C., et al.",
+          "publisher": "Science",
+          "date": "1998",
+          "identifier": "DOI 10.1126/science.281.5382.1496; Science 281(5382), 1496-1500",
+          "url": "https://doi.org/10.1126/science.281.5382.1496"
+        },
+        {
+          "title": "Calibration and validation of the lunar exploration neutron detector (LEND) observations for the study of the moon volatiles",
+          "authors": "Su, J. J., McClanahan, T. P., Parsons, A. M., et al.",
+          "publisher": "arXiv",
+          "date": "2021",
+          "identifier": "arXiv:2104.03451",
+          "url": "https://arxiv.org/abs/2104.03451"
+        },
+        {
+          "title": "LEND Looks for Water at the South Pole (SVS 4057)",
+          "authors": "NASA Goddard Space Flight Center Scientific Visualization Studio",
+          "publisher": "NASA Goddard SVS",
+          "date": "2013-03-25",
+          "identifier": "SVS 4057",
+          "url": "https://svs.gsfc.nasa.gov/4057"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[0]": "payload.article.physical_specifications.examples[0].images",
+      "physical_specifications.examples[1]": "payload.article.physical_specifications.examples[1].images"
+    },
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "v2 rerun. v1 files (neutron_based_hydrogen_detector_payload_101.md and .json) are unchanged.",
+    "Research budget for v2: 5 web searches and 9 page fetch attempts. Five did not return usable content: arXiv PDF (404), Feldman PDF on lpl.arizona.edu (404), openpolar Feldman record (certificate error), and Springer and science.org DOI (redirected to login or paywall).",
+    "Lunar Prospector NS mass (3.9 kg), power (2.5 W) and counter dimensions (5 cm diameter by 20 cm long each) are from the PDS instrument catalogue entry NSINST.CAT, which cites a 1998 Binder et al. specification that was not retrieved.",
+    "Feldman et al. (1998), Science 281(5382), 1496-1500, DOI 10.1126/science.281.5382.1496: the bibliographic details come from search metadata and an openpolar record. The full text and abstract were not read, so no specific value from the paper is stated.",
+    "LEND mass (25.8 kg) and average power (11.6 W) come from the Spaceflight Now LRO article, a secondary source. The PDS specification and PDS context page do not state them. Treat as unconfirmed.",
+    "LEND horizontal resolution: 5 km at 50 km altitude (PDS lend_rdr_sis) versus 10 km spatial resolution (Spaceflight Now). Both reported; not reconciled.",
+    "The v1 10 km figure was excluded because it lacked a primary source. In v2 it is attributed to Spaceflight Now and not used as the instrument's resolution.",
+    "LEND SVS image (lend.2180_print.jpg): downloaded to scratchpad, 1024x576 JPEG, visually checked. It is a data visualization of LEND count rates, not hardware. The source page gives no caption or alt text for this still.",
+    "A NASA archived LEND photo credit (NASA/Debbie McCallum) was reported in a search result but was not retrieved or verified. No LEND hardware image is included.",
+    "The 2021 arXiv calibration paper (arXiv:2104.03451) was read as an abstract only. The v2 abstract page returned no full text or instrument specifications. Its statements in this article are limited to the abstract (eight helium-3 detectors; ten-plus-year campaign; cross-calibration against Lunar Prospector epithermal-neutron data).",
+    "The LRO launch date and LEND activation date were not verified. The Spaceflight Now article does not state them.",
+    "The neutron production and moderation physics in the Operating Principle section is general background and is not supported by a cited source.",
+    "HEND on Mars Odyssey: no specifications retrieved; the heritage relationship is cited from the LEND specification only.",
+    "Images: three JPEG assets were downloaded and confirmed (Lunar Prospector artist's concept; LEND SVS count-rate visualization; LRO spacecraft rendering). Rights and reuse terms were not verified beyond source-page credits.",
+    "All JSON URLs were cleaned of query strings and fragments.",
+    "Lunar landing-site recommendations and lander compatibility are not included, consistent with the user's deferral. No compatibility with a named lander, rover or spacecraft is claimed.",
+    "Progress ledger and catalogue were not edited, per instruction."
+  ]
+}

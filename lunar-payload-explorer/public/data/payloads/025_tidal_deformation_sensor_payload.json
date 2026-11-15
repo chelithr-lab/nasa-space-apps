@@ -1,0 +1,377 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 1,
+    "name": "Geophysical and lunar interior instruments"
+  },
+  "payload": {
+    "number": 25,
+    "name": "Tidal deformation sensor",
+    "article": {
+      "scope": "Scope reading: this article covers instruments whose defined purpose is to measure the solid-body tidal response of the Moon (periodic surface displacement, tilt, strain, or the tidal change in gravity). It describes the Apollo 17 Lunar Surface Gravimeter (LSG), whose stated objectives include lunar tidal deformation, and the Apollo and Lunokhod laser retroreflector arrays, which are used for tidal ranging. Orbital altimetry (LOLA) is described as a measurement technique, not a deployed sensor. General tiltmeters (payload 018) and strainmeters (payload 019) are cross-referenced and included only where tide-specific. Gravimeters are payload 016. Seismometers (payloads 001 to 004) are cross-referenced. Libration measurement is payload 024. Laser ranging is catalogue entry 185 and geodesy is catalogue entry 187, which overlap with the retroreflector and altimetry examples.",
+      "overview": "The Moon flexes under the tidal pull of the Earth and the Sun, so its surface moves up and down periodically. The response of the interior to this forcing carries information about how rigid, dissipative and fluid the deep interior is [5][6]. A tidal-deformation sensor is an instrument built to record this response directly at a fixed surface point, or indirectly from orbit or from ranging.\n\nTwo flown approaches are described in this article. The first is the Apollo 17 Lunar Surface Gravimeter (LSG), which had tidal deformation among its listed objectives. It was deployed in December 1972 and operated, with interruptions, until the Apollo surface stations were shut down in September 1977 [1][2]. The second is the set of Apollo and Lunokhod laser retroreflector arrays, whose ranging records are used to study tidal and orientation effects [8]. Orbital altimetry from the Lunar Orbiter Laser Altimeter (LOLA) has also detected the lunar body tide, with a Love number h2 of 0.0371 ± 0.0033 [5]. LOLA is a remote method, not a deployed tidal sensor.",
+      "description": "A tidal-deformation sensor measures some part of the Moon's periodic response to tidal forcing. The signal is small and slow, so the instrument needs a stable zero point and a low-frequency response. Four measurable quantities are relevant: radial displacement (the vertical rise and fall of the surface); tilt (the change in the local surface slope); strain (the change in the length of a rock or surface segment); and tidal gravity change (the change in the gravitational acceleration measured at a point as the surface and the mass beneath it move).\n\nA single instrument may be sensitive to more than one of these, and the signals are not interchangeable. A gravimeter at a fixed point responds both to the change in gravitational pull and to the effect of vertical displacement. Separating the two is a general geophysical problem that usually needs a model or a second measurement. The sources read do not describe how the LSG data were separated into these components.",
+      "scientific_purpose_and_applications": "The purpose of a tidal-deformation measurement is to find out how the Moon responds to a known forcing. The response is expressed through Love numbers, which describe how much of the tidal potential is converted into displacement and into a secondary gravitational potential [5][6]. Different Love numbers are sensitive to different parts of the interior, and dissipation in the interior shifts the response in phase [7].\n\nThe Apollo 17 LSG objectives, as listed in the NSSDCA/PDS overview, were: determining the value of lunar gravity relative to Earth gravity; determining the magnitude of lunar surface deformation due to tidal forces; measuring the vertical components of lunar natural seismicity; monitoring free oscillations of the Moon; and correlating with Earth gravimeters to search for gravitational radiation [2]. The tidal objective is one of several, and the overview states that problems with the suspended mass limited the instrument's usefulness [2].\n\nOrbital and ranging measurements address the same physics from a distance. The LOLA result gives h2 = 0.0371 ± 0.0033 from crossover points in the altimetry data [5]. GRAIL gravity-field solutions give degree-2 Love numbers k2 of about 0.024 [6]. The lunar laser ranging record gives a tidal dissipation quality factor of Q = 33 ± 4 at a monthly period, with only weak dependence on period [7]. These are the best-supported quantitative tidal results in the sources read. None of them comes from a surface tidal-deformation sensor on the Moon.",
+      "operating_principle": "Two principles are relevant: the sensing principle of a surface gravimeter, and the principle of a ranging or altimetric measurement.\n\nSurface gravimeter (Apollo 17 LSG). The LSG was a LaCoste-Romberg type instrument. A beam is held horizontal by a zero-length spring and a mass spring [2]. A change in the local gravitational acceleration moves the beam away from equilibrium. A plate on the free end of the beam sits between two fixed capacitor plates that form part of a radio-frequency bridge circuit. Any motion of the beam produces an alternating-current error voltage. This voltage can be amplified and fed back to the capacitor plates to restore the beam to equilibrium. It can also be operated with no restoring force from the plates [2]. The sources read describe the feedback arrangement but do not state which output channel carried the tidal data, so the tidal signal extraction is not described here.\n\nThe LSG was designed to cover 0 to 16 Hz in three bands. The lowest band, from DC to one cycle per 20 minutes, was the tidal band. The middle band covered one cycle per 20 minutes to three cycles per minute. The highest band, of interest for seismic and gravitational-radiation studies, covered three cycles per minute to 16 Hz. The sampling rate was 48 samples per second [2]. The overview gives the nominal sensitivity as one part in 10^11 of lunar gravity [2]. This is a nominal instrument figure, not a tidal-specific sensitivity and not a measured performance.\n\nRanging and altimetry. Laser ranging to a retroreflector measures the round-trip time of a laser pulse, from which the Earth-Moon distance is inferred. Tidal displacement of the surface changes the range [8]. Altimetry measures the height of the spacecraft above the surface at many points. Crossovers between tracks cancel much of the spacecraft orbit error, so the periodic tidal signal can be recovered [5]. Both methods measure the Moon's tidal response from a distance. Neither is a sensor placed on the lunar surface.",
+      "scientific_importance": "Tidal deformation is a direct probe of the Moon's bulk elastic and dissipative properties. Love numbers constrain the rigidity of the mantle and the presence and size of a fluid core, but the constraints depend on the interior model used [5][6]. Dissipation is also a diagnostic of the interior state [7].\n\nA surface instrument adds local information that remote methods cannot provide at the same site. A gravimeter at a fixed point records the tidal gravity signal at that location, and it can be combined with seismic and heat-flow data from the same site. The LSG's seismic role is also relevant. Kawamura and colleagues used LSG data as a seismometer and reported that, despite the malfunction, the LSG could relocate previously located deep moonquake nests and locate five that had not been locatable before [4]. That paper is about the seismic use, not the tidal use. It shows, however, that the Apollo 17 record still yields new results after reanalysis.\n\nThe best-constrained tidal numbers in the sources read come from orbit and ranging. The LOLA h2 and the GRAIL k2 values are from those methods [5][6]. A new surface tidal-deformation sensor would be most valuable where it measures something these methods cannot: the local tilt or strain at a site, recorded continuously over many tidal cycles. That is a design argument, not a measured result.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a tidal-deformation sensor. The examples below use different measurement principles and measure different quantities. Values are given only for the named instrument and source. Where a value is not published in the sources read, the article says so, and no value has been inferred.",
+        "examples": [
+          {
+            "name": "Apollo 17 Lunar Surface Gravimeter (LSG)",
+            "type": "Historical lunar surface instrument (ALSEP)",
+            "status": "Flown on the Moon",
+            "experiment_designation": "S-207",
+            "deployment_date": "1972-12-12",
+            "shutdown": "1977-09-30 (ALSEP stations shut down)",
+            "placement": "Deployed by the crew about 8 m from the ALSEP central station; connected by ribbon cable",
+            "sensor_configuration": "LaCoste-Romberg type beam with zero-length spring and mass-adding mechanism; capacitor-plate displacement sensing in an RF bridge; optional feedback to the capacitor plates",
+            "frequency_response": "0 to 16 Hz in three bands; lowest band DC to 1 cycle per 20 minutes (lunar tides); middle band 1 cycle per 20 minutes to 3 cycles per minute; highest band 3 cycles per minute to 16 Hz (seismic and gravitational radiation)",
+            "sampling_rate_samples_per_s": 48,
+            "nominal_sensitivity": "1 part in 10^11 of lunar gravity (nominal instrument figure, not tidal-specific)",
+            "thermal_design": {
+              "spring_operating_temperature_K": "about 323",
+              "regulation": "better than 1 millidegree near the optimum over the day-night cycle",
+              "measures": "insulation, sunshade, radiating hole to dark sky, and heater"
+            },
+            "total_mass_kg": 12.7,
+            "total_mass_basis": "Basic equipment: gravimeter, electronics, spring-mass suspension with capacitor plates, sunshield and ribbon cable to the central station",
+            "dimensions": "not stated in the overview read",
+            "power": "not stated in the overview read",
+            "post_deployment_configuration": "Balance mass found too light after deployment; beam centred only by an extra load of 140 mg (0.0017 N) applied through partial caging, so the mass-weight assembly contacted the beam. Behaved as a gravimeter with resonant frequency 1.5 Hz and post-amplifier gain 17. Ground commands attempted to reconfigure over about one and a half years.",
+            "operational_record": [
+              "Heater regulation circuit failed fully on at 01:16 UT on 1974-03-15; temperature off-scale high; data unusable",
+              "Useful data returned from 1974-04-20",
+              "Heater regulation circuit failed fully on again on 1975-07-07",
+              "1975-07-30: intermittent ADC operation, alleviated by manual heater commanding",
+              "Normal operation regained 1975-09-02; anomalous regulation recurred 1975-09-19 and attempts to regain control failed",
+              "Overview states useful data continued to be returned until ALSEP shutdown on 1977-09-30"
+            ],
+            "tidal_result": "No published tidal-deformation result from the LSG in the sources read",
+            "limited_capacity_function": "One-axis vertical seismometer (per overview)",
+            "source_refs": [
+              2,
+              1
+            ],
+            "images": [
+              {
+                "id": "a17_lsg_deployed_fig1_s72_37253",
+                "description": "Apollo 17 Lunar Surface Gravimeter in deployed configuration.",
+                "image_type": "Historical lunar surface photograph (figure reproduced in instrument overview)",
+                "image_url": null,
+                "source_page_url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17a_lsg.pdf",
+                "publisher": "NASA (figure reproduced in NSSDCA/PDS instrument overview)",
+                "credit": "NASA (image S72-37253)",
+                "caption": "Apollo 17 Lunar Surface Gravimeter in deployed configuration (Figure 1 of the NSSDCA/PDS overview).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "No direct NASA asset URL was verified. Guessed images-assets.nasa.gov URLs for S72-37253 returned a non-image response. The figure is cited as a linked source-page reference only. Rights follow NASA media guidelines; no public-domain status is asserted."
+              },
+              {
+                "id": "a17_lsg_alsep_site_fig3_as17_134_20501",
+                "description": "Apollo 17 LSG deployed at the ALSEP site, with the central station, radioisotope generator and Lunar Module in the background.",
+                "image_type": "Historical lunar surface photograph (figure reproduced in instrument overview)",
+                "image_url": null,
+                "source_page_url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17a_lsg.pdf",
+                "publisher": "NASA (figure reproduced in NSSDCA/PDS instrument overview)",
+                "credit": "NASA (image AS-17-134-20501; credited in overview to Sullivan, 1994)",
+                "caption": "The LSG deployed at the Apollo 17 ALSEP site (Figure 3 of the NSSDCA/PDS overview).",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "No direct NASA asset URL was verified. The asset URL tested for AS-17-134-20501 returned HTTP 403. The figure is cited as a linked source-page reference only."
+              }
+            ]
+          },
+          {
+            "name": "Apollo and Lunokhod laser retroreflector arrays",
+            "type": "Passive optical reflector arrays used for lunar laser ranging",
+            "status": "Flown on the Moon (search-level statement; instrument documents not read)",
+            "sites": "Apollo 11, Apollo 14 and Apollo 15 reflector arrays; French-built reflector carried by Soviet Lunokhod 2 (search-level)",
+            "role_in_tidal_measurement": "Lunar laser ranging is described at search level as the principal source of data on lunar tides and orientation. Tides are inferred from range variation over time; a retroreflector does not measure tides alone.",
+            "mass_dimensions_power": "Not publicly specified in the sources read",
+            "source_refs": [
+              8
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Orbiter Laser Altimeter (LOLA), tidal detection",
+            "type": "Orbital altimetry measurement technique (not a surface instrument)",
+            "status": "LOLA on the Lunar Reconnaissance Orbiter flew in lunar orbit; tidal result from altimetry data",
+            "method": "Nearly 500,000 crossover points between tracks separate periodic radial tidal deformation from residual trajectory errors",
+            "expected_differential_signal": "About 10 cm at ground track intersections, limited by polar orbit sampling; this is a differential crossover signal, not the tidal amplitude",
+            "result": {
+              "love_number_h2": 0.0371,
+              "uncertainty": 0.0033,
+              "statement": "Consistent with, but lower than, recent lunar laser ranging results"
+            },
+            "observation_dates": "not stated in the record read",
+            "tidal_amplitude": "not stated in the record read",
+            "instrument_specifications": "Not described in this article; LOLA is treated as a measurement technique",
+            "source_refs": [
+              5
+            ],
+            "images": []
+          }
+        ],
+        "proposed_and_concept_examples": [
+          {
+            "name": "Lunar Geophysical Network (LGN)",
+            "status": "Concept (NASA fact sheet); search-level only",
+            "instrument_complement_per_fact_sheet": "Seismometer, heat-flow probe, retroreflector, magnetotelluric sounder. No tiltmeter or strainmeter listed in the fact sheet read.",
+            "specifications": "not publicly specified in the sources read",
+            "source_refs": [
+              9
+            ]
+          },
+          {
+            "name": "Lander-based geodesy package (Royal Observatory of Belgium concept)",
+            "status": "Concept; search-level only",
+            "notes": "Lists tidal deformation among science objectives; requires precisely surveyed mechanical ties between instruments",
+            "specifications": "not publicly specified in the sources read",
+            "source_refs": [
+              10
+            ]
+          },
+          {
+            "name": "PIONEERS six-degree-of-freedom rotation and tidal sensor",
+            "status": "Concept; full text not accessible (HTTP 403)",
+            "notes": "Described at search level as a six-degree-of-freedom sensor for rotation and tidal motion",
+            "specifications": "not used; not verified",
+            "source_refs": [
+              11
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "There is no single dimension set for a tidal-deformation sensor. The Apollo 17 LSG total mass is given, but its dimensions are not stated in the overview read. The LOLA and retroreflector examples have no instrument dimensions in the sources read. Separate tilt or strain instruments that flew on the Moon were not found in the sources read.",
+        "mass_and_weight": "The Apollo 17 LSG total mass of 12.7 kg is the only mass figure in the sources read, and it is for the basic equipment including sunshield and ribbon cable [2]. Masses for the retroreflector arrays, LOLA hardware and the proposed concepts are not publicly specified in the sources read. Mass determines launch and lander requirements, so these values are needed before any compatibility assessment.",
+        "power_requirements": "Power for the Apollo 17 LSG is not stated in the overview read. The overview describes heater-controlled thermal regulation, but the heater or total power budget is not published in the sources read. Power for the retroreflector arrays and LOLA hardware is not described in the sources read. No power figure is inferred."
+      },
+      "environmental_and_operational_requirements": "A tidal-deformation sensor needs a stable reference over the whole lunar day-night cycle. The Apollo 17 LSG shows the consequence. Its spring had to be held near 323 K to within 1 millidegree, and failures of the heater regulation circuit in 1974 and 1975 made the data unusable for periods [2]. A surface gravimeter therefore needs insulation, a sunshade, controlled heating and a radiating surface, as the LSG design did [2].\n\nA tilt or strain sensor has a related problem. As a general engineering consideration, a lander expands and contracts with the lunar diurnal cycle, and that thermal motion can mask a small tidal tilt signal. A search summary of a NASA lunar seismometer study says the same thing, but that primary study was not traced in this run, so the statement is not used as a specification. The sources read do not quantify the effect for any specific lander.\n\nLeveling and alignment are required. The LSG had to be levelled and aligned within plus or minus 3 degrees, using the sunshield shadow, before the ribbon cable was mated to the central station [2]. As a general engineering consideration, a tilt-sensitive instrument needs a known and stable orientation, because a small misalignment can couple horizontal motion into the vertical or tilt channel.\n\nPower and data are not quantified for the LSG in the overview read. The retroreflector and altimetry examples depend on ranging or spacecraft infrastructure, which is not described in the sources read.",
+      "limitations": "A surface tidal-deformation sensor records one site. It cannot map tidal response over the Moon, and the local geology and the lander can both affect the measurement. Remote methods cover the whole surface but at much lower local resolution.\n\nThe tidal signal is small relative to instrument drift and temperature effects. The LSG's own record shows the problem. After deployment, the beam could only be balanced by adding a load and partially caging the mass, and the instrument then behaved as a gravimeter with a resonant frequency of 1.5 Hz [2]. Tidal extraction therefore depends on a stable zero point, which is hard to guarantee for a long-duration surface instrument.\n\nThe tidal quantities from different methods are not directly comparable. The LOLA h2 is a radial-displacement Love number from orbit [5]. The GRAIL k2 values are gravity-field Love numbers from a different analysis [6]. The lunar laser ranging dissipation factor Q is a dissipation measure [7]. Each should be used only for its own purpose.\n\nA numerical tidal amplitude for the Moon is not given with a reliable citation in the sources read. Values that appear in search summaries were not used.",
+      "transportation_and_deployment": {
+        "overview": "The transportation discussion covers the Apollo 17 LSG as a crew-deployed surface instrument, the retroreflector arrays as delivered surface reflectors described at search level, and LOLA as an orbital data source. No lander or spacecraft compatibility is asserted for any example, and no proposed concept has a verified transportation design in the sources read.",
+        "transportation_process": [
+          "Apollo 17 LSG: the overview gives the leveling and alignment procedure, but the stowage on the Lunar Module and transfer to the site are not described in the sources read.",
+          "Apollo 17 LSG: deployed by the crew during extravehicular activity on 1972-12-12, about 8 m from the ALSEP central station, and connected by ribbon cable.",
+          "Apollo 17 LSG: leveled and aligned within plus or minus 3 degrees using the sunshield shadow before the ribbon cable was mated to the central station.",
+          "Retroreflector arrays: delivered by the Apollo and Lunokhod missions; deployment described only at search level.",
+          "LOLA: altimetry data from the Lunar Reconnaissance Orbiter; spacecraft integration and orbit history not described in this article."
+        ],
+        "deployment_methods": "The Apollo 17 LSG was deployed by the crew during extravehicular activity and levelled and aligned on the surface, then connected to the ALSEP central station by ribbon cable [2]. The overview does not describe stowage on the Lunar Module or the carrying method. Any future surface tidal sensor would need stowage, release and deployment designs suited to its lander and mission. Those designs are not described in the sources read for any proposed concept.",
+        "historical_examples": "The Apollo 17 LSG (surface gravimeter, 1972 to 1977), the Apollo and Lunokhod retroreflector arrays (ranging, search-level), and LOLA on the Lunar Reconnaissance Orbiter (altimetry tidal detection, 2014 publication) are the flown or flown-data examples in this article.",
+        "compatibility_assessment": "No compatibility is asserted with any named lander, rover or spacecraft. The sources read do not establish the mass, dimensions, mounting interface, thermal requirements, power or deployment method that a future tidal-deformation sensor would need. Those values would be needed before any compatibility assessment.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 17 LSG was the instrument with an explicit tidal-deformation objective among the Apollo surface instruments read for this article [2]. Its record shows both what the design promised and how hard the measurement is. Its reanalysis as a seismometer shows that the data remain useful for other purposes [4].\n\nThe Apollo-era retroreflector arrays have provided lunar ranging data since 1969, according to search-level sources [8]. Those ranging records are the basis for much of the lunar tide and orientation work described in the search results.\n\nOrbital tidal detection is more recent. LOLA detected the lunar body tide from altimetry data and reported h2 = 0.0371 ± 0.0033 [5]. GRAIL gravity solutions gave precise degree-2 Love numbers in the same period [6].",
+      "limitations_and_uncertainties": "LSG tidal result: the sources read do not report a published tidal-deformation result from the Apollo 17 LSG. The overview lists the tidal objective and the instrument's limited operation, but no tidal numbers are given [2]. The 1977 final report on the LSG experiment (NASA NTRS record 19770012037) was identified but not read because the full PDF exceeded the fetch size limit. That report may contain tidal results that this article does not include.\n\nLSG thermal and operational details: the heater failure dates and the post-deployment balance problem come from the NSSDCA/PDS overview, which is a condensed description [2]. The underlying Preliminary Science Report chapter (Giganti et al., 1973) and the Lauderdale and Eichelman (1974) data handbook chapter are cited there but were not read directly [1][3].\n\nLSG mass, dimensions and power: only the total mass of 12.7 kg is given in the overview. Dimensions and power are not stated in the sources read.\n\nApollo seismometer tilt channels: the Apollo passive seismic experiment's sensitivity to tilt and any tidal-band gravity estimate were not verified against a primary instrument description. The PDS Apollo PSE description read for this article is a data-format specification and contains no tilt or tidal content [13]. Tilt claims about the Apollo 12 and Apollo 14 seismometers were therefore not used.\n\nLOLA h2 value: the value 0.0371 ± 0.0033 comes from the record of the GRL paper read through the MIT DSpace record. The full text could not be retrieved from core.ac.uk (HTTP 403). The observation period and tidal amplitude were not stated in the record read [5]. A different h2 figure (0.0387 ± 0.0025) appeared in a search summary; its source was not identified, so it is not used.\n\nGRAIL k2 values: the degree-2 Love numbers are taken from the abstract summary in the NTRS record of Lemoine et al. (2013). The paper was not read in full [6].\n\nLunar laser ranging: the reflector deployment and tidal ranging statements come from search-level summaries of the arXiv record, not from instrument documentation [8]. The Williams et al. (2006) dissipation value is from the arXiv abstract [7].\n\nProposed concepts: the LGN, lander-based geodesy and PIONEERS items are search-level only. Their specifications were not verified, and no figures are taken from them [9][10][11].\n\nTilt and strain instruments: no tiltmeter or strainmeter that flew on the Moon was found in the sources read. The searches for lunar tilt and tidal sensors returned no primary instrument record. This is a search gap, not a conclusion that none flew [12].\n\nImages: no verified direct image asset was retrieved for any example. The LSG figures are cited in the overview only, and the ALSJ archive pages redirected to a general NASA page. The figures are therefore given as linked references only.\n\nLunar landing sites: this article does not recommend lunar landing sites or locations. That is deferred by the user. The LSG deployment coordinates in the overview are omitted for that reason.",
+      "images": [
+        {
+          "id": "a17_lsg_deployed_fig1_s72_37253",
+          "description": "Apollo 17 Lunar Surface Gravimeter in deployed configuration.",
+          "image_type": "Historical lunar surface photograph (figure reproduced in instrument overview)",
+          "image_url": null,
+          "source_page_url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17a_lsg.pdf",
+          "publisher": "NASA (figure reproduced in NSSDCA/PDS instrument overview)",
+          "credit": "NASA (image S72-37253)",
+          "caption": "Apollo 17 Lunar Surface Gravimeter in deployed configuration (Figure 1 of the NSSDCA/PDS overview).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "No direct NASA asset URL was verified. Guessed images-assets.nasa.gov URLs for S72-37253 returned a non-image response. The figure is cited as a linked source-page reference only. Rights follow NASA media guidelines; no public-domain status is asserted."
+        },
+        {
+          "id": "a17_lsg_alsep_site_fig3_as17_134_20501",
+          "description": "Apollo 17 LSG deployed at the ALSEP site, with the central station, radioisotope generator and Lunar Module in the background.",
+          "image_type": "Historical lunar surface photograph (figure reproduced in instrument overview)",
+          "image_url": null,
+          "source_page_url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17a_lsg.pdf",
+          "publisher": "NASA (figure reproduced in NSSDCA/PDS instrument overview)",
+          "credit": "NASA (image AS-17-134-20501; credited in overview to Sullivan, 1994)",
+          "caption": "The LSG deployed at the Apollo 17 ALSEP site (Figure 3 of the NSSDCA/PDS overview).",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "No direct NASA asset URL was verified. The asset URL tested for AS-17-134-20501 returned HTTP 403. The figure is cited as a linked source-page reference only."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "a17_lsg_deployed_fig1_s72_37253",
+          "description": "Apollo 17 Lunar Surface Gravimeter in deployed configuration.",
+          "image_type": "Historical lunar surface photograph (figure reproduced in instrument overview)",
+          "image_url": null,
+          "source_page_url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17a_lsg.pdf",
+          "publisher": "NASA (figure reproduced in NSSDCA/PDS instrument overview)",
+          "credit": "NASA (image S72-37253)",
+          "caption": "Apollo 17 Lunar Surface Gravimeter in deployed configuration (Figure 1 of the NSSDCA/PDS overview).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "No direct NASA asset URL was verified. The figure is cited as a linked source-page reference only."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Lunar Surface Gravimeter Experiment, Apollo 17 Preliminary Science Report, Chapter 12",
+          "author": "Giganti, J. J., Larson, J. V., Richard, J. P. and Weber, J.",
+          "publisher": "NASA SP-330",
+          "date": "1973",
+          "url": null,
+          "notes": "Cited within reference 2; not read directly."
+        },
+        {
+          "number": 2,
+          "title": "Apollo 17 Lunar Surface Gravimeter (LSG), Instrument Overview",
+          "author": "NSSDCA / NASA Planetary Data System",
+          "publisher": "NASA Planetary Data System Geosciences Node",
+          "date": "not stated",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-apollodoc/document_a17/instruments/a17a_lsg.pdf",
+          "notes": "Primary source for the LSG description. Read as a PDF text layer; a condensed version of the Preliminary Science Report chapter."
+        },
+        {
+          "number": 3,
+          "title": "Lunar Surface Gravimeter, Chapter 22, Apollo Scientific Experiments Data Handbook",
+          "author": "Lauderdale, W. W. and Eichelman, W. F. (eds.)",
+          "publisher": "NASA TM X-58131, JSC-09166",
+          "date": "1974 (revised 1976)",
+          "url": null,
+          "notes": "Cited within reference 2; not read directly."
+        },
+        {
+          "number": 4,
+          "title": "Lunar Surface Gravimeter as a lunar seismometer: Investigation of a new source of seismic information on the Moon",
+          "author": "Kawamura, T., Kobayashi, N., Tanaka, S. and Lognonné, P.",
+          "publisher": "Journal of Geophysical Research: Planets, 120(2), 343-358",
+          "date": "2015",
+          "url": "https://hal-insu.archives-ouvertes.fr/insu-02559880",
+          "notes": "DOI 10.1002/2014JE004724. Read via HAL record summary, not the full paper."
+        },
+        {
+          "number": 5,
+          "title": "Detection of the Lunar Body Tide by the Lunar Orbiter Laser Altimeter",
+          "author": "Mazarico, E., Barker, M. K., Neumann, G. A., Zuber, M. T. and Smith, D. E.",
+          "publisher": "Geophysical Research Letters, 41(7), 2282-2288",
+          "date": "2014-04-04",
+          "url": "https://dspace.mit.edu/handle/1721.1/97925",
+          "notes": "DOI 10.1002/2013gl059085. Read via MIT DSpace record. Source of h2 = 0.0371 ± 0.0033. Full text returned HTTP 403 from core.ac.uk."
+        },
+        {
+          "number": 6,
+          "title": "High-degree Gravity Models from GRAIL Primary Mission Data",
+          "author": "Lemoine, F. G., Goossens, S. J., Sabaka, T. J., Nicholas, J. B., Mazarico, E., Rowlands, D. D., Loomis, B. D., Chinn, D. S., Caprette, D. S., Neumann, G. A., Smith, D. E. and Zuber, M. T.",
+          "publisher": "Journal of Geophysical Research: Planets, 118(8)",
+          "date": "2013-08-23",
+          "url": "https://ntrs.nasa.gov/citations/20140010292",
+          "notes": "DOI 10.1002/jgre.20118. Read via NTRS record summary. Degree-2 Love numbers as stated in the abstract summary."
+        },
+        {
+          "number": 7,
+          "title": "Lunar Laser Ranging Science: Gravitational Physics and Lunar Interior and Geodesy",
+          "author": "Williams, J. G., Turyshev, S. G., Boggs, D. H. and Ratcliff, J. T.",
+          "publisher": "Advances in Space Research, 37, 67-71 (arXiv:gr-qc/0412049)",
+          "date": "2006 (arXiv submission 2004-12-11)",
+          "url": "https://arxiv.org/abs/gr-qc/0412049",
+          "notes": "Abstract read. Source of tidal dissipation Q = 33 ± 4 at a monthly period."
+        },
+        {
+          "number": 8,
+          "title": "Lunar Laser Ranging Science (arXiv:gr-qc/0411095)",
+          "author": "Not read",
+          "publisher": "arXiv",
+          "date": "2004",
+          "url": "https://arxiv.org/pdf/gr-qc/0411095",
+          "notes": "Search-level only. Retroreflector array list and ranging statements seen in search summaries; full text not read."
+        },
+        {
+          "number": 9,
+          "title": "The Lunar Geophysical Network (fact sheet)",
+          "author": "NASA",
+          "publisher": "NASA Science",
+          "date": "2023",
+          "url": "https://science.nasa.gov/wp-content/uploads/2023/11/the-lunar-geophysical-network.pdf",
+          "notes": "Read at search level for the instrument complement."
+        },
+        {
+          "number": 10,
+          "title": "Lunar geodesy instrument package concept (Royal Observatory of Belgium)",
+          "author": "Royal Observatory of Belgium",
+          "publisher": "Not recorded",
+          "date": "not stated",
+          "url": null,
+          "notes": "Search-level only; no full text read and no URL recorded."
+        },
+        {
+          "number": 11,
+          "title": "PIONEERS instrument paper (2024)",
+          "author": "Surname Filice per file name; full author list not read",
+          "publisher": "Not recorded",
+          "date": "2024",
+          "url": "https://pioneers.oma.be/pdf/2024_Filice.pdf",
+          "notes": "Search-level only; full text returned HTTP 403."
+        },
+        {
+          "number": 12,
+          "title": "Distributed Instruments for Planetary Surface Science: Scientific Opportunities and Technology Feasibility",
+          "author": "Rossi, F., Anderson, R. C., Bandyopadhyay, S., Brandon, E., Goel, A., Vander Hook, J., Mischna, M., Villarreal, M. and Wronkiewicz, M.",
+          "publisher": "arXiv:2407.01757",
+          "date": "2024-07-01",
+          "url": "https://arxiv.org/abs/2407.01757",
+          "notes": "Abstract read; no tilt or strain content in the abstract."
+        },
+        {
+          "number": 13,
+          "title": "Apollo Passive Seismic Experiment Description (apollo_pse_description.pdf)",
+          "author": "NASA PDS Geosciences Node",
+          "publisher": "NASA Planetary Data System",
+          "date": "2022",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollo_pse/document/apollo_pse_description.pdf",
+          "notes": "Read to check for tilt and tidal content; none found. Data-format specification."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Apollo 17 LSG example": "payload.article.physical_specifications.examples[0].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No direct image asset URL was verified, so every image_url is null and the figures are cited as linked source-page references. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery. Reference URLs have query strings and fragments removed."
+  },
+  "data_quality_notes": [
+    "Scope: class-level article on instruments designed to measure lunar solid-body tidal response. The Apollo 17 LSG is included because its stated objectives include tidal deformation. Retroreflector ranging and LOLA altimetry are described as tidal measurement techniques. Tiltmeters (018), strainmeters (019), gravimeters (016), seismometers (001-004), libration (024), laser ranging (185) and geodesy (187) are cross-referenced and overlap with this payload.",
+    "LSG tidal result gap: the sources read do not report a published tidal-deformation result from the Apollo 17 LSG. The 1977 final report (NTRS 19770012037) was identified but not read because the full PDF exceeded the fetch size limit. It may contain tidal results.",
+    "LSG mass is 12.7 kg for the basic equipment including sunshield and ribbon cable (overview). Dimensions and power are not stated in the overview read.",
+    "LSG operating history: the heater failure dates, the post-deployment balance problem and the 1974 and 1975 recovery dates come from the NSSDCA/PDS condensed overview, not from the full Preliminary Science Report chapter (Giganti et al., 1973), which was not read directly.",
+    "LSG nominal sensitivity (1 part in 10^11 of lunar gravity) is an instrument figure in the overview, not a tidal-specific or measured performance value.",
+    "Apollo 12 and Apollo 14 passive seismic experiment tilt sensitivity and any tidal-band gravity estimate were not verified against a primary instrument description. The PDS Apollo PSE description read is a data-format specification with no tilt or tidal content. Tilt claims from secondary summaries were not used.",
+    "LOLA h2 = 0.0371 ± 0.0033 is from the MIT DSpace record of Mazarico et al. (2014). The full text was not retrieved (core.ac.uk returned HTTP 403). Observation dates and tidal amplitude are not stated in the record read. An alternative h2 of 0.0387 ± 0.0025 appeared in a search summary with no identified source and is not used.",
+    "The 10 cm figure in the LOLA entry is the expected differential crossover signal limited by polar orbit sampling, not the amplitude of the lunar tide. No reliable lunar tidal amplitude citation was found in the sources read.",
+    "GRAIL k2 values (degree-2 Love numbers) are from the abstract summary of Lemoine et al. (2013) in the NTRS record; the paper was not read in full.",
+    "Lunar laser ranging retroreflector arrays (Apollo 11, 14, 15 and Lunokhod 2) and the statement that ranging is the principal source of lunar tide data are search-level only, from the arXiv record gr-qc/0411095, which was not read in full.",
+    "Kawamura et al. (2015) LSG seismometer results were read from the HAL record summary, not the full paper.",
+    "No tiltmeter or strainmeter that flew on the Moon was found in the sources read. This is a search gap, not a conclusion that none flew.",
+    "Proposed concepts (LGN, Royal Observatory of Belgium lander geodesy package, PIONEERS) are search-level only. The PIONEERS full text returned HTTP 403. No specifications are taken from them.",
+    "Images: no direct NASA asset URL was verified for the LSG figures. A test of the AS-17-134-20501 asset URL returned HTTP 403, guessed S72-37253 URLs returned a non-image response, and ALSJ archive pages redirected to a general NASA page. All image_url values are null with linked source-page references.",
+    "The LSG deployment coordinates in the overview are omitted. No lunar landing-site or location recommendations are included; those are deferred by the user.",
+    "No lander, rover or spacecraft compatibility is asserted for any example."
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 277,
+    "name": "Anchoring system",
+    "article": {
+      "overview": "An anchoring system is a device or mechanism that secures a vehicle, tether, structure or instrument to the lunar surface so that it resists pulling, sliding, tipping or lifting. On the Moon the anchoring medium is regolith, the loose layer of broken rock and fine dust that covers the surface. Its holding strength is variable and depends strongly on grain size, density, cohesion and compaction, so an anchor that works in one place may perform differently in another. The research for this article did not identify a flown, flight-qualified lunar anchoring system with a published flight record. The examples below are laboratory prototypes, a student flight-test concept, a NASA-funded concept study and a field-tested launched-anchor prototype, and each example's status is stated.",
+      "description": "Anchoring system describes a class of mechanisms rather than one standard payload. The concepts found in the research fall into three broad groups. Penetrating anchors are helical auger or spike-like elements driven or screwed into the ground, with holding force coming from the surrounding soil; a 1993 University of Idaho study tested this approach in a soil simulant. Launched or tethered anchors are fired away from a rover, after which a winch on the rover draws the rover toward the anchor, or draws the anchor back into the launcher for reuse. Chemically bonded anchors are triggered at deployment to create metal-based pegs or fused soil that bonds a structure to the regolith; a NASA NIAC 2021 study proposed this approach for landing platforms and structures. A complete system usually contains the anchor element, an emplacement or launch mechanism, a load path such as a tether, cable or mounting interface and, in some designs, a winch, a reset mechanism or a power source. Anchoring is an enabling capability rather than a scientific instrument. It can help a rover climb a slope it could not otherwise climb, help a stuck vehicle recover, hold a tether for exploration of a steep feature, or resist loads acting on a structure.",
+      "scientific_purpose_and_applications": "Anchoring systems are primarily engineering enablers. Mobility on steep or loose terrain: a resettable launched-anchor prototype was reported to help a rover climb a 17 degree slope of loose lunar regolith simulant that it could not otherwise climb (Kainth et al., 2025). This result is taken from a search-index preview of the paper; the full text was not readable in this run. Self-rescue: recovering a vehicle that has become stuck or is on unstable ground. Tethered exploration: concept studies for tethered rovers and robots in which a surface anchor supports the tether. Several such concepts were identified during research, including JPL concepts for tethered pit exploration and for a crater-based radio telescope, but they were pre-decisional and were not verified against primary full-text documents in this run. Structures and surface equipment: the 1993 University of Idaho study considered anchors for vehicle recovery, tent stakes, pole erection and regolith shields (NTRS record 19950006277). Landing platforms: the NASA NIAC RAMS concept proposes chemically bonded anchors and soil stabilisers so that structures bind to the regolith under landing and operational loads.",
+      "operating_principle": "The holding capacity of every anchor depends on how the surrounding soil resists movement. Helical (screw) anchors are rotated into the soil; the soil resists uplift on the helix and shaft, so holding capacity depends on helix size, depth and soil properties. In the 1993 study, a single-helix auger performed best on both the energy needed to emplace it and its ultimate holding capacity. Launched anchors are sent away from the vehicle by a launch mechanism and embed in the ground; a winch on the vehicle then pulls the vehicle toward the anchor. In the resettable design, the winch pulls the anchor back out of the ground and into the launcher, and a release and reset mechanism allows the launch to be repeated. Chemically bonded anchors (the RAMS concept) use precursors, described on the NASA page as nanothermite mixtures and organosilanes, that react after deployment to weld anchor points to the regolith and solidify a layer of soil. NASA's page describes this as a concept and states that no test results or technology readiness level are given.",
+      "scientific_importance": "Anchoring is important because many lunar mobility, sampling and deployment concepts need a fixed reaction point. Without one, a rover cannot pull against the ground on a slope, a tether cannot be held taut, and a structure cannot resist lateral or uplift loads. Anchor tests in lunar simulants also generate engineering data on how regolith resists pull-out and penetration, which is relevant to soil-mechanics models used in mobility and foundation design. The data are only as representative as the simulant used, so comparisons with real lunar regolith remain an open issue. The evidence base is currently laboratory and conceptual rather than flight data, and no lunar anchoring result measured in situ on the Moon was identified.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an anchoring system. The examples are different mechanisms, tested or proposed in different soils and at different maturity levels. Their values are not directly comparable and the examples should not be read as a standard design.",
+        "examples": [
+          {
+            "name": "Single-helix auger anchor prototype (University of Idaho, 1993)",
+            "type": "Ground-tested laboratory prototype",
+            "status": "Not flown",
+            "mass_kg": 0.21262,
+            "mass_note": "212.62 g, reported for the optimised anchor in the report abstract summary.",
+            "optimised_dimensions_sandy_soil_cm": {
+              "helix_diameter": 4.45,
+              "pitch": 1.27,
+              "blade_thickness": 0.15,
+              "total_length": 35.56,
+              "shaft_diameter": 0.78
+            },
+            "dimension_note": "Optimised for sandy soil, not for lunar regolith. Values taken from the report abstract summary.",
+            "power_consumption_w": null,
+            "test_environment": "A 1.3 cubic metre bed of decomposed granite, adjusted through moisture and compaction to simulate lunar soil.",
+            "measured_quantities": [
+              "Emplacement torque",
+              "Failure load",
+              "Pull-out force at various angles",
+              "Soil disturbance during placement"
+            ],
+            "reported_result": "The single-helix auger gave the best performance on emplacement energy and ultimate holding capacity. Smaller-diameter single-helix augers held more force than larger ones at the same depth. The abstract does not state numerical holding-capacity or torque values.",
+            "qualification": "Engineering prototype study (NASA contractor report NASA-CR-197193, 1993). Not flight-qualified.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19950006277"
+            ],
+            "images": []
+          },
+          {
+            "name": "Resettable land anchor launcher (Kainth et al., ICRA 2025)",
+            "type": "Laboratory and field-tested prototype",
+            "status": "Not flown",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "architecture": [
+              "Anchor",
+              "Launch mechanism",
+              "Winch",
+              "Release and reset mechanism allowing repeated launches",
+              "Rover mount"
+            ],
+            "test_reported": "A rover-mounted launcher allowed a rover to climb a 17 degree slope of loose GRC-1 lunar regolith simulant that it could not otherwise climb. This result comes from a search-index preview of the paper; the full text was not readable with the tools used, so the test set-up is not verified.",
+            "qualification": "Not publicly specified in the sources that could be read. Dimensions, mass, launch energy and pull force are not verified.",
+            "source_urls": [
+              "https://doi.org/10.1109/ICRA55743.2025.11128100"
+            ],
+            "images": []
+          },
+          {
+            "name": "TRILow-g soft-robot anchor flight-test concept (UCSB, 2022-2023)",
+            "type": "Student capstone payload concept for a suborbital flight",
+            "status": "Flight planned for early 2023; flight and results not confirmed",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "concept": "A tip-extending soft-robot anchor was to be compared with a rigid penetrometer (rigid intruder) in a container of simulated lunar soil. The payload was to fly on a Blue Origin New Shepard suborbital capsule.",
+            "qualification": "University capstone summary, not a flight-operations document. No dimensions or masses stated.",
+            "source_urls": [
+              "https://capstone.engineering.ucsb.edu/projects/trilow-g"
+            ],
+            "images": []
+          },
+          {
+            "name": "Regolith Adaptive Modification System (RAMS) concept (NASA NIAC, 2021)",
+            "type": "Conceptual study funded through NASA NIAC",
+            "status": "Concept only; no flown hardware",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "concept": "Microcapsule-based anchors and soil stabilisers that react on deployment, forming anchor points and solidifying regolith. The page describes nanothermite mixtures and organosilanes as the precursor chemistry.",
+            "qualification": "The NASA page states no technology readiness level, no test data and no flown hardware. The page names Texas A&M Engineering Experiment Station as the principal investigator's institution. Specifications not publicly specified.",
+            "source_urls": [
+              "https://www.nasa.gov/directorates/stmd/niac/niac-studies/regolith-adaptive-modification-system-rams-to-support-early-extraterrestrial-planetary-landings-and-operations/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Anchoring device for regolith (Embry-Riddle Aeronautical University, 2016)",
+            "type": "University student design project, not a lunar system",
+            "status": "Planned tests described; build and test not confirmed; not flown",
+            "mass_kg": null,
+            "dimensions_cm": null,
+            "power_consumption_w": null,
+            "concept": "A pneumatic drill combined with an altered auger inside a collapsible casing, designed to anchor an astronaut to regolith in microgravity during an asteroid-surface task under the NASA Micro-g NExT Challenge.",
+            "qualification": "The exhibit describes planned tests in June 2016 at the Johnson Space Center Neutral Buoyancy Laboratory. No dimensions or test results are given.",
+            "source_urls": [
+              "https://commons.erau.edu/exhibit/discovery-day/discovery-day-2016/anchoring-device-for-regolith-design-and-development/"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Only the 1993 single-helix anchor gives published dimensions, and those are for a sandy-soil optimisation of a single helical anchor. The launched-anchor dimensions are not publicly specified in the sources that could be read. The TRILow-g, RAMS and Embry-Riddle examples give no dimensions. Because the designs differ in kind (screw, launched, chemically bonded), overall dimensions should not be compared across them.",
+        "mass_and_weight": "The only published mass is 212.62 g for the optimised single-helix anchor in the 1993 study. The launcher, winch and rover mount in the launched-anchor concept are not separately specified. The mass of a single anchor element is not the mass of a complete anchoring system, which also includes the emplacement or launch hardware.",
+        "power_requirements": "Power requirements are not publicly specified for any example. The 1993 study planned a flywheel and motor in a sealed protective box for emplacement, but the abstract gives no power figure. The launched-anchor concept uses a winch whose power is not stated in the sources that could be read. The RAMS concept is described as chemically driven, but the sources give no electrical power figure."
+      },
+      "environmental_and_operational_requirements": "General engineering considerations for lunar anchoring are listed here. These are engineering considerations, not certified requirements for any specific system. Variable soil: holding capacity depends on regolith density, cohesion, grain size, moisture, compaction and the presence of rock, and performance measured in one simulant may not transfer to another. Load direction: anchors may be loaded at angles to the surface, and the 1993 study measured pull-out force at various angles. Thermal and vacuum conditions: lubricants, seals, motors and electronics must function across extreme temperature swings and in vacuum; the 1993 study chose a flywheel over a gear system for expected reliability in the lunar environment. Dust and abrasion: regolith dust and grit can wear seals and moving parts; a JPL tethered-rover paper identified in search results (not opened) lists abrasion from glassy regolith as a tether concern, which is not verified against the full text. Power and data: winches, launchers and emplacement motors need power, and some concepts need data links to the host vehicle.",
+      "limitations": "The holding capacity of an anchor is strongly soil-dependent. Most tests reviewed used simulants (decomposed granite adjusted to lunar soil, or GRC-1 lunar regolith simulant), not returned lunar samples. No flown lunar anchoring system with a published flight record was identified. Published numerical data are sparse, and several sources give no holding capacity, power or mass values. The launched-anchor paper (Kainth et al., 2025) could not be read in full and its test details come from a search-index preview. The TRILow-g flight outcome is not confirmed. The RAMS concept gives no technology readiness level or test results.",
+      "transportation_and_deployment": {
+        "overview": "An anchoring system is usually carried by another vehicle rather than delivered as a standalone payload. It can be integrated into a rover or lander, or it can be a deployable element carried on a surface vehicle. The discussion is a general description of a surface payload and is not a statement of compatibility with any named lander or rover.",
+        "transportation_process": [
+          "Integration on Earth: the anchor and its launch or emplacement hardware are mounted on the host rover or lander, and the mount must carry the pulling loads of the anchor and tether into the host structure.",
+          "Launch and transfer: the host vehicle is launched and transferred toward the Moon as part of its mission.",
+          "Landing and stowage: the anchoring hardware must survive landing loads and be stowed until needed.",
+          "Deployment: a launcher fires the anchor, or an emplacement device drives it into the ground; a chemical system would be triggered after placement.",
+          "Winch and tether management: the winch draws the host toward the anchor, or the anchor is retrieved and reset for reuse.",
+          "Power and data: the host provides power and, where relevant, control and telemetry to the anchoring hardware."
+        ],
+        "deployment_methods": "Launched and winched (resettable launcher concept). Screw-driven emplacement by a motor-driven device (1993 conceptual design for lunar or Martian use). Chemically triggered bonding (RAMS concept).",
+        "historical_examples": "No flown lunar anchoring system was identified in the research. Laboratory emplacement tests (the 1993 study) and a suborbital flight-test concept (TRILow-g, flight planned for early 2023, outcome not confirmed) are the closest historical examples.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft has been assessed, because no verified interface specification for an anchoring system was found. Any future assessment would need the anchor's mass, dimensions, mounting loads, deployment method, power and data needs, and the host vehicle's interface specification, verified against the host's published documents before any compatibility claim is made.",
+        "images": []
+      },
+      "historical_significance": "Anchoring has been studied for lunar and Martian surface use since at least the early 1990s. The 1993 University of Idaho study (NASA-CR-197193) explored an autonomous emplacement system for anchors used for vehicle recovery, tents, poles and regolith shields. In the 2020s the focus moved toward self-rescue and slope climbing (Kainth et al., 2025), a flight-test concept for a small payload (TRILow-g) and chemically bonded anchor concepts (NASA NIAC RAMS). The significance of this work lies in showing that anchoring is an enabling capability for mobility on steep or loose terrain. It has not yet been shown to operate on the Moon.",
+      "limitations_and_uncertainties": "No flight heritage: no flown or flight-qualified lunar anchoring system was identified. Simulant dependence: results come from simulants, and their representativeness for real lunar regolith is not established in the sources reviewed. Incomplete full text: the Kainth et al. (2025) ICRA paper could not be read in full with the tools used; its details are taken from a search preview and must be verified against the paper before reuse. Unverified older sources: two ASCE papers on helical anchors (2008) and wedge anchors in lunar simulant (2012, Chang, Bernold and Lee) were identified in search results but could not be opened (HTTP 403), and are not cited as evidence here. Unverified concept work: tethered-rover and crater-telescope concepts from JPL, and a 2025 arXiv paper on tip-extending anchors tested in Mars simulant, were identified in search results but not opened, and are not cited as evidence here. No image assets: no direct, verified image asset was identified for this payload in this run, so no images are included. Missing numbers: holding capacities, power requirements and mass figures are missing for most examples.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "A lunar/Martian anchor emplacement system",
+          "authors": "Clinton, D., Holt, A., Jantz, E., Kaufman, T., Martin, J., Weber, R.",
+          "publisher": "NASA Technical Reports Server (NASA-CR-197193, University of Idaho)",
+          "publication_date": "1993",
+          "url": "https://ntrs.nasa.gov/citations/19950006277",
+          "access_note": "Abstract summary only; full report not read."
+        },
+        {
+          "title": "Resettable Land Anchor Launcher for Unmanned Rover Rescue and Slope Climbing",
+          "authors": "Kainth, A., Krohn, A. R., Johnson, K., Schepelmann, A., Hawkes, E. W., Naclerio, N. D.",
+          "publisher": "IEEE International Conference on Robotics and Automation (ICRA) 2025, pp. 13443-13449",
+          "publication_date": "2025-05-19",
+          "url": "https://doi.org/10.1109/ICRA55743.2025.11128100",
+          "access_note": "Bibliographic data from Crossref; full text not read."
+        },
+        {
+          "title": "TRILow-g (Test of Robotic Intrusion in Low-g)",
+          "authors": "UCSB Engineering Capstone team",
+          "publisher": "University of California, Santa Barbara, Engineering Capstone",
+          "publication_date": null,
+          "url": "https://capstone.engineering.ucsb.edu/projects/trilow-g",
+          "access_note": "Project summary page; does not confirm flight or report results."
+        },
+        {
+          "title": "Regolith Adaptive Modification System (RAMS) to Support Early Extraterrestrial Planetary Landings and Operations",
+          "authors": null,
+          "publisher": "NASA Innovative Advanced Concepts (NIAC)",
+          "publication_date": "2021-04-08",
+          "url": "https://www.nasa.gov/directorates/stmd/niac/niac-studies/regolith-adaptive-modification-system-rams-to-support-early-extraterrestrial-planetary-landings-and-operations/",
+          "access_note": "NASA study page; states no TRL or test results."
+        },
+        {
+          "title": "Anchoring Device for Regolith Design and Development",
+          "authors": "Williams, K., Eldar, N., Zuniga, A., Rios Romero, D., Kor, C., Kelkar, N.",
+          "publisher": "Embry-Riddle Aeronautical University, Discovery Day 2016",
+          "publication_date": "2016",
+          "url": "https://commons.erau.edu/exhibit/discovery-day/discovery-day-2016/anchoring-device-for-regolith-design-and-development/",
+          "access_note": "Student project exhibit; planned tests only."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No image assets were verified for this payload, so no image URLs are included. All source URLs in this file have query strings and fragments removed."
+  },
+  "data_quality_notes": [
+    "No direct image asset was identified and verified for this payload in this run; image arrays are empty and no Markdown images are included.",
+    "The Kainth et al. (2025) ICRA paper PDF could not be read with the WebFetch tool (returned binary content). Its test details (17 degree slope, GRC-1 simulant, five-part architecture, reset mechanism) come from search-index previews and must be verified against the full text.",
+    "The 1993 single-helix anchor dimensions and mass (212.62 g) come from the NTRS record abstract summary as returned by WebFetch, not from the full report PDF. Holding-capacity and torque values were not reported in the abstract summary and are not given.",
+    "Two ASCE papers (helical anchors, 2008; circular wedge anchoring in lunar simulant, 2012, Chang, Bernold and Lee) were identified in search results but returned HTTP 403 when fetched. They are not cited as evidence.",
+    "A 2025 arXiv paper on tip-extending robotic anchors in Mars regolith simulant (arXiv 2511.10901) and a JPL tethered-rover tether-design paper (NTRS) were identified in search results only and not opened. They are not cited as evidence.",
+    "The TRILow-g page reports a planned early-2023 suborbital flight with no results and does not confirm the flight occurred.",
+    "The RAMS NIAC page does not state the study phase or any TRL, and the phase/selection year is not confirmed beyond the 2021 page date.",
+    "Lander, rover and spacecraft compatibility was not assessed because no verified interface specification for an anchoring system was found. The transportation section is a general description only.",
+    "The LCRT and Moon Diver (JPL) concepts were mentioned in the article only as pre-decisional context from search results; no primary JPL document was opened.",
+    "The Berkeley ICRA 2025 PDF (edg.berkeley.edu ICRA25_4494) was returned as binary and was not used as a source."
+  ]
+}

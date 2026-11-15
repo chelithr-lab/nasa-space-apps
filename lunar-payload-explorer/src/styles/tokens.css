@@ -1,0 +1,55 @@
+/* Design tokens (LF-1). Structure mirrors Serenity Lunar Explorer; accent is LPE blue.
+   To retheme, change the --accent* values only. */
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg:            #05080c;
+  --bg-raised:     #0b1118;
+  --panel:         rgba(28, 40, 52, 0.92);
+  --panel-solid:   #1c2834;
+  --panel-2:       #24323f;
+  --panel-active:  #34495c;
+  --border:        rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(255, 255, 255, 0.22);
+
+  /* Text */
+  --text:          #e8eef4;
+  --text-muted:    #9aabba;
+  --text-faint:    #6f8192;
+
+  /* Accent (LPE blue) */
+  --accent:        #4d8dff;
+  --accent-hover:  #6fa3ff;
+  --accent-press:  #3a72d9;
+  --accent-soft:   rgba(77, 141, 255, 0.16);
+  --accent-line:   rgba(77, 141, 255, 0.55);
+  --on-accent:     #04101f;
+
+  /* Status (shared with Serenity) */
+  --ok:            #3ddc97;
+  --ok-soft:       rgba(61, 220, 151, 0.12);
+  --warn:          #f0a53a;
+  --warn-soft:     rgba(240, 165, 58, 0.12);
+  --danger:        #ff6b6b;
+
+  /* Shape & spacing */
+  --radius-sm:     6px;
+  --radius:        12px;
+  --radius-lg:     16px;
+  --radius-pill:   999px;
+  --gap:           20px;
+  --container:     1280px;
+  --gutter:        clamp(16px, 4vw, 40px);
+  --header-h:      68px;
+
+  /* Type */
+  --font-ui:   "Barlow Condensed", "Roboto Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --label-tracking: 0.14em;
+
+  /* Effects */
+  --shadow:    0 10px 30px rgba(0, 0, 0, 0.45);
+  --ring:      0 0 0 2px var(--bg), 0 0 0 4px var(--accent);
+  --ease:      cubic-bezier(.2, .7, .2, 1);
+}

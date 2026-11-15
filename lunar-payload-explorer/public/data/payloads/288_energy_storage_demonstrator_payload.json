@@ -1,0 +1,233 @@
+{
+  "catalogue_id": 288,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 288,
+    "name": "Energy storage demonstrator",
+    "article": {
+      "overview": "The Energy storage demonstrator entry in the catalogue (payload 288, category 15, Lunar technology and infrastructure experiments) describes a technology demonstrator for storing energy on the lunar surface, where a night lasts about 14 Earth days. The catalogue does not specify a design, and no flown lunar energy storage demonstrator was identified in the sources reviewed. The best-documented candidate is NASA Glenn Research Center's breadboard regenerative fuel cell (RFC) system, a laboratory prototype that NASA says must complete environmental testing before any lunar launch [1][2]. The second example is a proposed ESA concept that would store solar heat in processed lunar regolith [3]. Neither example has flown, and neither publishes a measured energy-storage performance figure.",
+      "description": "An energy storage demonstrator is a surface technology experiment whose purpose is to show that a storage system can accumulate energy while sunlight is available and release it later, particularly during the lunar night. At the equator, the lunar night lasts about two Earth weeks, so a surface system that relies only on sunlight must either store energy or stop working for that period [1][3]. The sources reviewed describe two different approaches. In electrochemical storage, electricity splits water into hydrogen and oxygen, which a fuel cell later recombines to produce electricity [1][2]. In thermal storage, sunlight heats lunar regolith, which later drives a heat engine [3]. The catalogue name therefore describes a category of technology rather than a single hardware design.",
+      "scientific_purpose_and_applications": "The purpose of a surface energy storage demonstrator is technology maturation rather than direct scientific measurement. NASA states that the RFC system is intended for habitats, rovers and other Artemis systems, and that recharging would reduce the need for resupply from Earth [1]. Storage that works through a lunar night would let a surface system keep operating when solar power is unavailable. The ESA concept addresses the same night-time problem, but its 2017 article presents it as a concept for further study rather than a demonstrated system [3]. Applications are therefore described as intended uses in NASA and ESA material, not as demonstrated capabilities.",
+      "operating_principle": "NASA describes the RFC as working like a rechargeable system. Electricity is used to split water into hydrogen and oxygen, which are stored. When power is needed, a fuel cell combines the hydrogen and oxygen to produce water, heat and electricity, and NASA states that both steps would take place on the lunar surface [1]. The breadboard pairs a PEM fuel cell stack with a liquid-anode-feed PEM electrolyzer, and it is controlled by a CubeSat space processor running a state machine with fault monitoring [2]. In the ESA concept, multiple mirrors direct sunlight onto processed lunar regolith. The regolith absorbs and stores heat during the day, and a heat engine placed in the heated regolith runs on the temperature difference. At night, the heat engine runs on heat released gradually from the soil [3]. The ESA article describes this as a concept and gives no measured heat-storage, power or efficiency values [3].",
+      "scientific_importance": "Energy storage is not a science measurement in its own right, but it is an enabling capability. Without storage that survives the lunar night, surface systems that depend on solar power must be designed around long periods without power. NASA cites lunar-night operation, reduced resupply and a potential mass advantage over battery systems as motivations for the RFC work [1][2]. The mass advantage is a design comparison stated by NASA, not a published mass figure [1]. Because the sources reviewed contain no measured performance data for either concept, the scientific importance of this payload class depends on future test results that are not yet available.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar energy storage demonstrator. The two examples below use different technologies, an electrochemical regenerative fuel cell and regolith thermal storage, and their published values are not directly comparable. Where a value is not published in the sources reviewed, it is recorded as not publicly specified.",
+        "examples": [
+          {
+            "name": "NASA Glenn breadboard regenerative fuel cell (RFC) system",
+            "type": "Ground-based breadboard prototype; not flown",
+            "status": "NASA's 2026 article states that the system must complete environmental testing before it can launch to the Moon, and that no launch is scheduled [1]. The 2026 NASA presentation describes it as a breadboard system built at Glenn Research Center [2].",
+            "physical_description": "NASA describes the system as about the length of a sedan and the height of a person, with nearly 270 sensors and about 1,000 components [1]. No mass, dimension, volume or power figures are published in the sources reviewed, so these values are recorded as not publicly specified.",
+            "architecture": "The breadboard pairs a PEM fuel cell stack with a liquid-anode-feed PEM electrolyzer. Most balance-of-system components are commercial off-the-shelf parts. The presentation cites a design capability of electrochemical compression of reactants at balanced pressures up to 12.4 MPa (1800 psia). This is a design capability, not a measured result [2].",
+            "test_results": "In open-loop laboratory testing, the system operated autonomously through multiple simulated lunar day/night cycles and accumulated more than 550 hours of operation. Electrolysis products were vented, and gas cylinders supplied the fuel cell, so the reactants were not recycled from the electrolyzer [2]. Five unplanned transitions to a safe state occurred, each requiring a manual restart: four from thermal management and one from a water-management control issue in the electrolyzer subsystem [2]. NASA's 2026 article describes the next phase as running the complete system and storing the hydrogen and oxygen produced during recharge for the first time. This is presented as upcoming, not completed [1].",
+            "storage_target": "NASA's Game Changing Development project aims to build and demonstrate a breadboard RFC system able to provide 2 to 3.4 times the energy storage capability of state-of-the-art packaged lithium-ion battery systems [4]. This is a development target taken from a 2023 review excerpt, not a measured result. Achieved specific energy and round-trip efficiency are not reported [2].",
+            "not_publicly_specified": [
+              "Mass (kg)",
+              "Dimensions beyond the qualitative description",
+              "Power draw (W)",
+              "Stored energy (Wh or kWh)",
+              "Specific energy (Wh/kg)",
+              "Round-trip efficiency (%)",
+              "Cycle life",
+              "Operating temperature range"
+            ],
+            "mass_kg": null,
+            "source_refs": [
+              1,
+              2,
+              4
+            ],
+            "images": [
+              {
+                "id": "nasa_rfc_fuel_cell_installation",
+                "description": "NASA Glenn team members install a fuel cell onto the regenerative fuel cell breadboard system.",
+                "image_type": "Laboratory engineering photograph",
+                "image_url": null,
+                "source_page_url": "https://www.nasa.gov/general/nasa-regenerative-fuel-cell-testing/",
+                "publisher": "NASA",
+                "credit": "NASA/Jef Janis",
+                "caption": "Dr. Kerrigan Cain, Jessica Cashman, Dr. Devon Powers and Ryan Grotenrath install a fuel cell onto the system, Fuel Cell Testing Laboratory, NASA Glenn Research Center (photograph dated 23 February 2026).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL not verified, so image_url is null and the NASA article page is the source reference. Identified by the article gallery caption (image 2 of 8). Reuse terms should be checked on the NASA page before republication."
+              },
+              {
+                "id": "nasa_rfc_lab_system",
+                "description": "The regenerative fuel cell breadboard system inside the Fuel Cell Testing Laboratory.",
+                "image_type": "Laboratory photograph",
+                "image_url": null,
+                "source_page_url": "https://www.nasa.gov/general/nasa-regenerative-fuel-cell-testing/",
+                "publisher": "NASA",
+                "credit": "NASA/Jef Janis",
+                "caption": "The system is shown inside the Fuel Cell Testing Laboratory at NASA Glenn Research Center (photograph dated 23 February 2026).",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL not verified, so image_url is null and the NASA article page is the source reference. Identified by the article gallery caption (image 8 of 8). Reuse terms should be checked on the NASA page before republication."
+              }
+            ]
+          },
+          {
+            "name": "ESA regolith thermal energy-storage concept",
+            "type": "Proposed concept; not built or tested according to its source",
+            "status": "ESA's 2017 article describes the concept and reports no ground tests and no flight [3]. A small demonstrator is planned, but the article does not say it has been built. The next step is numerical and simulation studies to put values on heat storage and electricity provision [3].",
+            "physical_description": "The concept places multiple mirrors that direct sunlight onto processed lunar regolith. The regolith absorbs and stores heat during the lunar day, and a heat engine placed in the heated regolith runs on the temperature difference. During the night, the heat engine runs on heat released gradually from the soil [3].",
+            "architecture": "By day, sunlight drives the heat engine directly and excess heat is stored in the soil. At night, the stored heat is the energy source for the heat engine [3]. The article describes this as a storage principle and does not give capacity or output values.",
+            "test_results": "None reported. The article gives no heat-storage, electricity-output, power, mass, energy or storage-volume values [3].",
+            "storage_target": "None given. The article gives no quantitative performance targets [3].",
+            "not_publicly_specified": [
+              "Mass (kg)",
+              "Dimensions",
+              "Storage volume (m3)",
+              "Electricity output (W)",
+              "Stored energy (kWh)",
+              "Round-trip efficiency (%)"
+            ],
+            "mass_kg": null,
+            "source_refs": [
+              3
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The two examples are not comparable in dimensions. For the RFC breadboard, NASA gives only a qualitative size, about the length of a sedan and the height of a person [1]. The ESA concept gives no dimensions or storage volume [3]. A surface storage system would need its dimensions set by its energy capacity, thermal design and interfaces. No such dimensions are established here.",
+        "mass_and_weight": "NASA states that the RFC system could weigh less than comparable battery systems while storing the same amount of energy, but it gives no mass value or battery comparison data [1]. No mass is published for the ESA concept [3]. Mass is therefore not publicly specified for either example.",
+        "power_requirements": "Not publicly specified for either example. The RFC breadboard's electrical and thermal power draws and the ESA concept's electricity output have not been published in the sources reviewed [1][2][3]."
+      },
+      "environmental_and_operational_requirements": "A lunar energy storage system must operate through a night of about two Earth weeks. ESA's article gives the night length as about 14 days, with night temperatures below -170 degrees C and a sunlit equatorial surface well above 100 degrees C [3]. NASA states that the RFC system must complete environmental testing that simulates lunar surface conditions before it can launch, and that the planned tests are intended to show that it can cope with conditions harsher than a controlled laboratory [1]. Quantitative requirements for thermal interfaces, radiation tolerance, vibration and dust are not specified in the sources reviewed. The open-loop test record also shows that an electrochemical system depends on reliable thermal and water management, because the five safe-state transitions came from thermal and water-management faults [2].",
+      "limitations": "The main limitation is that no lunar energy storage demonstrator with measured flight or surface performance was identified in the sources reviewed. The RFC evidence comes from laboratory tests of a breadboard system, with five unplanned safe-state transitions and no published efficiency, specific energy or mass figures [1][2]. The ESA concept has no measured results and no quantitative targets [3]. The sources also do not specify a delivery vehicle, mission date or interface, so the storage performance of either approach in real lunar conditions is unknown.",
+      "transportation_and_deployment": {
+        "overview": "No flight configuration, mission assignment or lander interface was identified for either example. The RFC system is a laboratory breadboard, and NASA states that it must pass environmental testing before any lunar launch and that no launch is scheduled [1]. The steps below describe a general sequence for a surface payload. They are not a compatibility assessment for any named lander, rover or spacecraft.",
+        "transportation_process": [
+          "Integrate the storage system into a lander or surface-payload structure on Earth, after the environmental testing that NASA says must precede launch [1].",
+          "Launch on a launch vehicle. No vehicle or date is identified in the sources [1].",
+          "Transfer to the Moon and land the payload on the surface with a lander. No lander is named, and no landing-load or interface data are available.",
+          "Deploy and set up the system on a suitable surface site, then connect power, data and thermal interfaces. Lunar site selection is outside the scope of this article.",
+          "Commission and operate the system. The sources describe only remote, autonomous operation of the laboratory breadboard from a control room [1], which does not establish flight operations."
+        ],
+        "deployment_methods": "No deployment mechanism, stowage configuration or setup procedure has been published for either example. The RFC system would need a deployment design that handles its stored hydrogen and oxygen [1], and the ESA concept would need one that handles the regolith heat-storage mass and the mirror arrangement [3]. These are engineering considerations rather than verified design features.",
+        "historical_examples": "No flown lunar energy storage demonstrator was identified in the sources reviewed. The RFC work is laboratory development [1][2], and the ESA concept had not been built or tested according to its 2017 source [3].",
+        "compatibility_assessment": "Not assessed. No lander, rover or spacecraft interface was verified for either example, and the published data do not include the mass, dimensions, power or data requirements needed for a compatibility check. Assigning either approach to a specific lunar delivery vehicle would require verified interface data.",
+        "images": []
+      },
+      "historical_significance": "According to a 2023 NASA review excerpt, NASA has investigated regenerative fuel cell energy storage for lunar missions since the late 1960s [4]. The excerpt was read as a search result only, and the statement could not be checked against the full document. The most recent milestone in the sources reviewed is NASA's May 2026 report that a fuel cell was installed on the breadboard in February 2026 and that the team was preparing to run the complete system [1]. ESA's 2017 article is significant because it presents a non-electrochemical concept, storing solar heat in regolith, for the same night-time problem [3]. No flown lunar energy storage demonstrator is identified in the sources reviewed.",
+      "limitations_and_uncertainties": "The catalogue entry names a class of technology rather than one hardware design, so the values for the RFC breadboard and the ESA concept must not be combined or compared directly. The RFC evidence is laboratory-only and consists of open-loop tests with gas cylinders feeding the fuel cell [2]. A closed recharge cycle, in which stored hydrogen and oxygen are later used, is described as upcoming [1]. The 2 to 3.4 times storage figure is a development target from a 2023 review excerpt [4], not a measured result. The ESA article is from 2017 and reports no quantitative values [3]. Several other leads were identified only through search summaries or unreadable PDF text and are not used as evidence here: a 2019 NASA roadmap, a 2021 NASA presentation, a 2021 technical memorandum, a 2023 NASA surface-power presentation that could not be retrieved, and a 2018 IAC paper on lunar energy storage and generation. Each would need to be read in full before any figure from it is used.",
+      "images": [
+        {
+          "id": "nasa_rfc_fuel_cell_installation",
+          "description": "NASA Glenn team members install a fuel cell onto the regenerative fuel cell breadboard system.",
+          "image_type": "Laboratory engineering photograph",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/general/nasa-regenerative-fuel-cell-testing/",
+          "publisher": "NASA",
+          "credit": "NASA/Jef Janis",
+          "caption": "Dr. Kerrigan Cain, Jessica Cashman, Dr. Devon Powers and Ryan Grotenrath install a fuel cell onto the system, Fuel Cell Testing Laboratory, NASA Glenn Research Center (photograph dated 23 February 2026).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL not verified, so image_url is null and the NASA article page is the source reference. Identified by the article gallery caption (image 2 of 8). Reuse terms should be checked on the NASA page before republication."
+        },
+        {
+          "id": "nasa_rfc_lab_system",
+          "description": "The regenerative fuel cell breadboard system inside the Fuel Cell Testing Laboratory.",
+          "image_type": "Laboratory photograph",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/general/nasa-regenerative-fuel-cell-testing/",
+          "publisher": "NASA",
+          "credit": "NASA/Jef Janis",
+          "caption": "The system is shown inside the Fuel Cell Testing Laboratory at NASA Glenn Research Center (photograph dated 23 February 2026).",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL not verified, so image_url is null and the NASA article page is the source reference. Identified by the article gallery caption (image 8 of 8). Reuse terms should be checked on the NASA page before republication."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "nasa_rfc_fuel_cell_installation",
+          "description": "NASA Glenn team members install a fuel cell onto the regenerative fuel cell breadboard system.",
+          "image_type": "Laboratory engineering photograph",
+          "image_url": null,
+          "source_page_url": "https://www.nasa.gov/general/nasa-regenerative-fuel-cell-testing/",
+          "publisher": "NASA",
+          "credit": "NASA/Jef Janis",
+          "caption": "Dr. Kerrigan Cain, Jessica Cashman, Dr. Devon Powers and Ryan Grotenrath install a fuel cell onto the system, Fuel Cell Testing Laboratory, NASA Glenn Research Center (photograph dated 23 February 2026).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL not verified, so image_url is null and the NASA article page is the source reference. Identified by the article gallery caption (image 2 of 8). Reuse terms should be checked on the NASA page before republication."
+        }
+      ],
+      "references": [
+        {
+          "title": "NASA Fuel Cell Tests Pave Way for Energy Storage on Moon",
+          "authors": "Ellen Bausback",
+          "publisher": "NASA",
+          "date": "2026-05-08",
+          "url": "https://www.nasa.gov/general/nasa-regenerative-fuel-cell-testing/",
+          "verification_note": "Article text read in full via WebFetch. Image captions and credits taken from the article text; no direct image asset URLs were verified."
+        },
+        {
+          "title": "Performance of a Regenerative Fuel Cell System for the Lunar Surface",
+          "authors": "K. Cain, P. Smith, D. Powers, M. McCaskey, J. Cashman, R. Grotenrath, C. Heldman, I. Jakupca",
+          "publisher": "NASA Glenn Research Center; HX5, LLC (presentation, NTRS record 20260002730)",
+          "date": "2026 (publication date not stated; NTRS record acquired 2026-04-03)",
+          "url": "https://ntrs.nasa.gov/citations/20260002730",
+          "verification_note": "Record abstract read via WebFetch. Measured results and stated targets were separated from the abstract text."
+        },
+        {
+          "title": "Surviving the long dark night of the Moon",
+          "authors": "Moritz Fontaine",
+          "publisher": "European Space Agency",
+          "date": "2017-03-23",
+          "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Surviving_the_long_dark_night_of_the_Moon",
+          "verification_note": "Article read via WebFetch. Labelled archive content by ESA. Describes a concept; no quantitative results."
+        },
+        {
+          "title": "Game Changing Development presentation on breadboard regenerative fuel cell energy storage for lunar surface applications (NTRS 20230012948)",
+          "authors": "Not confirmed",
+          "publisher": "NASA",
+          "date": "2023 (inferred from record number; not confirmed)",
+          "url": "https://ntrs.nasa.gov/api/citations/20230012948/downloads/20230012948.pdf",
+          "verification_note": "Read only as a search-result excerpt. The PDF could not be text-extracted in this session, so the 2 to 3.4 times storage target and the late-1960s history are unverified against the full document."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Example 1 (NASA Glenn breadboard RFC)": "payload.article.physical_specifications.examples[0].images",
+      "Example 2 (ESA regolith concept)": "payload.article.physical_specifications.examples[1].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. No direct image asset URL was verified for this payload, so image_url is null and source_page_url links to the NASA article page."
+  },
+  "data_quality_notes": [
+    "The catalogue entry is a generic class name. The two examples are different technologies and no flown lunar energy storage demonstrator was identified.",
+    "Reference 4 was read only as a search-result excerpt because its PDF could not be text-extracted. The 2 to 3.4 times storage target and the late-1960s history are unverified against the full document.",
+    "The NASA 2026 article images have no verified direct asset URLs, so both image_url values are null. Source-page links and credits come from the article text.",
+    "Other leads were identified only through search summaries or unreadable or missing documents and are not cited: NTRS 20190033080 (2019 NASA roadmap), NTRS 20210025356 (2021 NREIP presentation), NTRS 20210024659 (2021 technical memorandum), a 2023 NASA surface-power presentation (404 on retrieval), an FY20 RFC TRL 3-to-5 project, ESA MESG and HEBAM regolith projects, and a 2018 IAC paper on lunar energy storage and generation.",
+    "A search summary reported a possible surface-power demonstration on a commercial lander by about 2026. It was not verified, so no flight plan is assumed.",
+    "No Chang'e or rechargeable-battery lunar-night payload was identified in the sources reviewed.",
+    "No landing site or lunar location recommendation is included, as deferred by the user."
+  ]
+}

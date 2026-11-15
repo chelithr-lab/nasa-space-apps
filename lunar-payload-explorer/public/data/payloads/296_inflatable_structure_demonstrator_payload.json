@@ -1,0 +1,170 @@
+{
+  "catalogue_id": 296,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 296,
+    "name": "Inflatable structure demonstrator",
+    "article": {
+      "overview": "An inflatable structure demonstrator is a test article built from fabric or multilayer \"softgoods\" that is packed compactly for launch and then expanded after delivery. Its purpose is to check whether inflatable structures can serve as lunar habitats, airlocks or other infrastructure. The most useful public examples are ground and field demonstrators rather than flown lunar hardware:\n\n- a 12-foot (3.65 m) diameter concept demonstrator with an inflatable airlock, built by ILC Dover for NASA and tested at NASA Langley Research Center in 2007 [1];\n- a 13-month field test habitat at McMurdo Station, Antarctica, from January 2008 to February 2009 [2][5];\n- Lockheed Martin's softgoods habitat programme, which reported subscale burst tests in 2024 and plans an in-space demonstration around the end of the decade [3][4].",
+      "description": "The examples share a common architecture in broad terms. A gas-tight inner bladder holds pressure. A load-carrying fabric restraint layer, typically multilayer, carries the internal pressure as tension. Insulating and protective layers are added for thermal and micrometeoroid protection. This is a general engineering description rather than a specification taken from a single cited source, and the exact layer stack of each example is not described in the sources reviewed. Once expanded, the structure is rigidised by internal pressure rather than by a frame, so the stowed volume at launch can be much smaller than the deployed volume. Inflatable demonstrators are primarily engineering experiments rather than science instruments.",
+      "scientific_purpose_and_applications": "The primary purpose is engineering validation rather than scientific measurement of the Moon. According to NASA project leadership, the 2007 Langley unit was a 'concept demonstrator' used for testing, publicity and exhibits, and its planned testing covered packaging, mass and interior layout [ref 1]. The McMurdo test was intended to assess the durability, performance and operability of an inflatable habitat and the systems that support it [ref 2][ref 5]. Lockheed Martin's test programme addresses burst strength and the long-term creep behaviour of its fabric [ref 3][ref 4]. Proposed applications include lunar habitats, airlocks and other expandable infrastructure. Validated data about materials, joints, thermal behaviour, leakage, durability and operations is the main value of a demonstrator.",
+      "operating_principle": "Once delivered, the structure is inflated and pressurised, and its internal pressure keeps it in shape. In pressure-stabilised fabric structures, the restraint layer carries loads in tension while the bladder keeps the gas contained. Structural margin is usually expressed as a factor of safety against a burst or failure pressure. Long-term survival depends on creep, the slow stretching of a loaded material over time, and on the behaviour of seals, doors and penetrations. The sources reviewed discuss burst margin and creep but do not describe the complete pressurisation and inflation system of any example. This operating principle is a general engineering explanation and is not attributed to a single cited source.",
+      "scientific_importance": "Lunar surface habitats are a major operational need for future crewed missions. An inflatable structure could offer a much larger interior volume for a given launch mass than a rigid metal module, provided the material and seal performance can be demonstrated over the required lifetime. The main scientific and engineering value of a demonstrator is therefore the validated data it produces about materials, joints, thermal behaviour, leakage, durability and operations, not a measurement of the Moon itself.",
+      "physical_specifications": {
+        "note": "There is no universal specification for an inflatable structure demonstrator. Each example below is a different test article built for a different purpose. Values are given only where a source states them; otherwise the field is marked 'not publicly specified'. The three examples are not directly comparable and their numbers should not be combined.",
+        "examples": [
+          {
+            "name": "NASA Langley / ILC Dover 12-ft concept demonstrator (2007)",
+            "type": "Ground concept demonstrator (not flown)",
+            "builder_and_status": "ILC Dover, a NASA contractor, delivered the unit to NASA Langley Research Center in Hampton, Virginia, for ground-based evaluation. It is a ground test article and has not flown.",
+            "main_unit_diameter_m": 3.65,
+            "main_unit_diameter_ft": 12,
+            "main_unit_height_m": 5.49,
+            "main_unit_height_ft": 18,
+            "main_unit_volume_m3_approx": 45,
+            "main_unit_volume_ft3_approx": 1600,
+            "airlock": "An inflatable airlock is joined to the main unit by an airtight door. Its dimensions are not given in the source reviewed.",
+            "mass_kg": null,
+            "power_requirements": "Not publicly specified in the source reviewed.",
+            "thermal_design": "Not publicly specified in the source reviewed.",
+            "dimensional_discrepancy": "One search-result summary of 2007 coverage reported a 2007 demonstration model at about 13 ft in diameter and over 19 ft tall. This was not reconciled with the NBC/Space.com figures, so the 12 ft by 18 ft values are reported as the figures in the fetched source.",
+            "source_urls": [
+              "https://www.nbcnews.com/id/wbna17836128"
+            ],
+            "images": []
+          },
+          {
+            "name": "McMurdo Station field test habitat (2008-2009)",
+            "type": "Antarctic field test habitat (not a lunar deployment)",
+            "partners": "The U.S. National Science Foundation hosted the habitat at McMurdo Station; ILC Dover built it; NASA supplied the instrumentation and monitoring system.",
+            "test_period": "13-month test, January 2008 to February 2009.",
+            "living_space_ft2": 384,
+            "living_space_m2_approx": 36,
+            "max_ceiling_height_ft": 8,
+            "max_ceiling_height_m_approx": 2.4,
+            "reported_configuration": "Insulated, heated, powered and pressurised.",
+            "instrumentation": "Sensor data was transmitted wirelessly to an on-site computer system and then sent to NASA over the internet.",
+            "relationship_to_langley_unit": "Not confirmed. The sources reviewed do not establish whether the McMurdo habitat is the same hardware as the Langley unit. The stated floor area is not consistent with a simple 12 ft diameter cylinder, so the two should be treated as separate articles.",
+            "mass_kg": null,
+            "power_requirements": "Not publicly specified in the sources reviewed.",
+            "outcome_data": "Not publicly specified in the sources reviewed. The NASA health-monitoring paper was identified in search results, but its full text was not extracted, so no quantitative results are reported.",
+            "source_urls": [
+              "https://phys.org/news/2007-11-nasa-lunar-habitat-extreme-antarctic.pdf",
+              "https://ntrs.nasa.gov/api/citations/20090029953/downloads/20090029953.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lockheed Martin softgoods habitat (subscale burst test, 2024 reporting)",
+            "type": "Subscale industry test article (not flown)",
+            "material": "Vectran, a liquid-crystal-polymer fibre. Lockheed Martin describes it as 'five times stronger than steel and 10 times stronger than aluminum'; this is a company claim not independently verified in this article.",
+            "burst_test_result": "The subscale unit burst at 224 psi (about 15.4 bar), according to Aviation Week. This was reported as the fifth burst evaluation in the campaign, run at a former Titan rocket test stand in Colorado.",
+            "safety_margin_reported": [
+              "Aviation Week reports 14.7 times NASA's required factor of safety.",
+              "SpaceNews (search-result summary), quoting Lockheed Martin, reports a factor of safety above six against a NASA minimum of four for softgoods.",
+              "Lockheed Martin's February 2024 feature states the burst tests showed the technology is 'six times stronger than the pressure it will be used at in space'."
+            ],
+            "safety_margin_note": "The bases of these figures differ and have not been reconciled.",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified.",
+            "planned_next_steps": "A full-scale burst test to estimate habitat lifetime, subscale system-level creep testing, and an in-space demonstration in orbit or on the lunar surface around the end of the decade.",
+            "source_urls": [
+              "https://www.lockheedmartin.com/en-us/news/features/2024/inflatable-habitats-expanding-space-exploration.html",
+              "https://aviationweek.com/space/space-exploration/lockheed-martins-lunar-inflatable-habitat-passes-key-burst-test"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions are given only for the 2007 Langley unit (main unit 12 ft in diameter, 18 ft tall, about 1,600 ft3 volume, with an inflatable airlock whose size is not given) and for the McMurdo habitat's living space (about 384 ft2 with an 8 ft peak ceiling). The Lockheed unit's dimensions are not publicly specified. The three examples are different designs and their dimensions are not comparable.",
+        "mass_and_weight": "Not publicly specified for any example reviewed. Mass determines launch, lander and deployment requirements, but no verified mass value exists in the sources reviewed for any of the three examples.",
+        "power_requirements": "Not publicly specified for any example reviewed. The McMurdo habitat was described as powered, and pressurisation and environmental systems would require power, but no value is given in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A lunar surface inflatable must withstand the Moon's environment: no substantial atmosphere, large surface temperature swings, radiation and micrometeoroid impacts. These are general lunar conditions rather than requirements from a specific demonstrator. The sources reviewed show more specific requirements: pressure integrity over time, with burst margin verified against NASA's required factor of safety (given as 4 for softgoods in one account and stated differently in another) [ref 3][ref 4]; creep resistance of the load-carrying fabric over the design life, where Lockheed Martin states that Vectran life predictions depend on long-term testing and extrapolation and that accelerated creep testing at elevated temperature is difficult [ref 4]; thermal control, since the McMurdo habitat was insulated and heated [ref 2]; and installation on a stable surface with interfaces for power, data and crew access, which the sources do not specify for any lunar installation.",
+      "limitations": "No flight heritage on the Moon: the sources reviewed show ground tests, a field test in Antarctica and planned in-space demonstrations, but not an inflatable habitat operating on the Moon. The burst-margin figures for the Lockheed unit conflict, and the dimensions reported for the 2007 unit differ between sources. Mass, power, lifetime, thermal performance, leak rate and operational outcomes are not publicly specified for the examples reviewed. Creep and lifetime predictions for the fabric are extrapolated from limited data [ref 4]. Results from one fabric system, one geometry or one test site should not be assumed to apply to others.",
+      "transportation_and_deployment": {
+        "overview": "A surface inflatable demonstrator would be integrated into a lander or cargo compartment on Earth, launched, transferred to the Moon and delivered to the surface. It would have to be packed into a stowed configuration that fits the launch vehicle and lander, then inflated and pressurised after landing. The stowed mass and volume of the examples reviewed are not publicly specified, so no lander compatibility can be assessed from the sources.",
+        "transportation_process": [
+          "Integrate the stowed inflatable structure and its inflation and pressurisation equipment into a lander or cargo compartment on Earth.",
+          "Launch it into space using a launch vehicle.",
+          "Transfer it towards the Moon.",
+          "Use a lunar lander to deliver it to the surface.",
+          "Inflate and pressurise the structure, set it on a stable surface, and connect power, data, thermal and crew-access interfaces.",
+          "Interface details for any lunar installation are not described in the sources reviewed."
+        ],
+        "deployment_methods": "The examples reviewed were inflated on the ground at Langley, in Antarctica at McMurdo, or are planned for in-space demonstration by Lockheed Martin. The sources do not describe a lunar deployment. Pressurisation and the method of setting the structure on the surface are not described in the sources reviewed.",
+        "historical_examples": "The 2007 Langley concept demonstrator was delivered to NASA Langley for ground evaluation [ref 1]. The McMurdo habitat was a 13-month field test in Antarctica, with NSF hosting, ILC Dover building the habitat and NASA providing instrumentation [ref 2][ref 5]. Lockheed Martin's habitat has been subjected to subscale burst testing, with a full-scale burst test and an in-space demonstration planned [ref 3][ref 4].",
+        "compatibility_assessment": "No compatibility with a named lander, habitat or spacecraft is established in this article. Compatibility would require verified stowed dimensions, mass, interface points and deployment sequence for a specific design.",
+        "images": []
+      },
+      "historical_significance": "In 2007, the 12-ft NASA Langley / ILC Dover concept demonstrator was presented as a building block for a lunar outpost. NASA's stated target at the time was that lunar testing of inflatable habitats 'could begin in 2020' [ref 1]. The sources reviewed do not confirm that this lunar test occurred. The 2008-2009 McMurdo Station field test in Antarctica was intended to assess durability, performance and operability; a NASA paper describes its outcome as providing lessons learned for implementing inflatable habitats and their supporting systems [ref 2][ref 5]. In 2024, Lockheed Martin's softgoods programme reported burst tests and set out a path to an in-space demonstration [ref 3][ref 4].",
+      "limitations_and_uncertainties": "- The catalogue entry is generic. The article covers examples that are representative of the category; it does not identify a single mission or flown payload.\n- The current status of the 2007 Langley unit was not confirmed. A later reference to a planned museum display was found in search results but not verified.\n- The NASA McMurdo outcome paper [5] could not be read in full, so its quantitative findings are not reported.\n- The Lockheed Martin burst-margin figures conflict across sources [3][4], and the dimensions of the 2007 unit differ between accounts.\n- The current programme status of the Lockheed Martin in-space demonstration was not confirmed in the sources reviewed.\n- Mass, power, thermal design and lander interfaces are not publicly specified for any example.\n- No direct image asset was verified for any example, so this article contains no images.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "NASA tests inflatable lunar shelters",
+          "publisher": "NBC News (reprint of Space.com), by Ker Than",
+          "date": "2007-03-28",
+          "url": "https://www.nbcnews.com/id/wbna17836128"
+        },
+        {
+          "title": "NASA release on the McMurdo lunar habitat test (reprinted by phys.org)",
+          "publisher": "NASA (reprinted by phys.org)",
+          "date": "2007-11",
+          "url": "https://phys.org/news/2007-11-nasa-lunar-habitat-extreme-antarctic.pdf",
+          "notes": "Summary taken from search-result text; the PDF was not extracted."
+        },
+        {
+          "title": "Inflatable Habitats: Expanding Space Exploration",
+          "publisher": "Lockheed Martin",
+          "date": "2024-02-12",
+          "url": "https://www.lockheedmartin.com/en-us/news/features/2024/inflatable-habitats-expanding-space-exploration.html"
+        },
+        {
+          "title": "Lockheed Martin's Lunar Inflatable Habitat Passes Key Burst Test",
+          "publisher": "Aviation Week",
+          "date": "not verified",
+          "url": "https://aviationweek.com/space/space-exploration/lockheed-martins-lunar-inflatable-habitat-passes-key-burst-test",
+          "notes": "Summarised from search-result text; publication date not verified."
+        },
+        {
+          "title": "Health monitoring paper on the McMurdo inflatable habitat (NASA NTRS record 20090029953)",
+          "publisher": "NASA Technical Reports Server",
+          "date": "not verified",
+          "url": "https://ntrs.nasa.gov/api/citations/20090029953/downloads/20090029953.pdf",
+          "notes": "Full text not extracted; description taken from search-result text."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values, and all reference URLs in this file, have query strings and fragments removed. No direct image asset was verified, so no images are included."
+  },
+  "data_quality_notes": [
+    "The catalogue entry 'Inflatable structure demonstrator' does not name a specific mission, agency or hardware item. The examples chosen are the best-documented public inflatable demonstrators found in this research, and this choice is an interpretation.",
+    "No lunar operation of an inflatable structure is established by the sources reviewed. All examples are ground, field or planned in-space demonstrators.",
+    "The NASA Langley 2007 concept demonstrator was reported in one search-result summary at about 13 ft in diameter and over 19 ft tall, which conflicts with the 12 ft by 18 ft figures in the fetched NBC/Space.com article. The fetched figures are used.",
+    "The Lockheed Martin safety-margin figures conflict: 14.7 times NASA's required factor of safety (Aviation Week), above six against a NASA minimum of four (SpaceNews, search-result summary), and six times the operating pressure (Lockheed Martin 2024 feature). The bases have not been reconciled.",
+    "A NASA photograph caption dated 26 February 2007 (credit NASA/Jeff Caplan) shows the 12-ft Langley habitat, but no verified direct asset URL or source page was retrieved, so it is not included as an image.",
+    "The McMurdo NASA health-monitoring paper (NTRS 20090029953) was identified in search results but its full text could not be extracted. Its quantitative findings are therefore not reported.",
+    "Several reference sources were summarised from search-result text rather than fetched in full (phys.org release, Aviation Week article, NTRS record). Their publication dates and details are marked as not verified where applicable.",
+    "The Vectran strength comparison ('five times stronger than steel') is a company claim from Lockheed Martin and has not been independently verified.",
+    "Mass, power, thermal design, stowed volume and lander interfaces are not publicly specified for any example. Lander compatibility has not been assessed.",
+    "Two WebFetch attempts failed (ILC Dover page returned HTTP 429; an Antarctic Sun article was unreachable) and one SpaceNews article returned a connection reset. These sources were not used."
+  ]
+}

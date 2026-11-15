@@ -1,0 +1,361 @@
+{
+  "catalogue_id": 271,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 14,
+    "name": "Robotics, mobility and deployment technology"
+  },
+  "payload": {
+    "number": 271,
+    "name": "Precision landing sensor",
+    "article": {
+      "overview": "A precision landing sensor measures the quantities a spacecraft needs in order to descend and touch down close to a chosen target: its height above the ground, its ground-relative velocity and, in some designs, a three-dimensional map of the terrain below. On the Moon, the leading technologies in this class are laser-based (lidar) sensors. NASA's Navigation Doppler Lidar (NDL) is the clearest flown example in the sources reviewed: an NDL unit operated during the descent of Intuitive Machines' Odysseus lander, which landed on the Moon on 22 February 2024 (NASA Flight Opportunities). The NDL data were not used in the landing solution because of a software problem, so the flight demonstrated the sensor's measurements rather than its closed-loop navigation role (Aerospace America, 2026).",
+      "description": "The payload class covers sensors that feed the guidance, navigation and control (GN&C) system during powered descent. Three functions recur in the sources: altimetry (measuring height above the surface, often across a wide altitude range); velocimetry (measuring the vehicle's velocity relative to the ground, needed to control touchdown speed and direction); and hazard mapping (scanning the terrain near the intended site to produce a digital elevation model (DEM) that can identify slopes, rocks and other hazards). NASA's Langley Research Center describes radar as the traditional approach to sensing altitude and velocity in the absence of GPS, and presents NDL as a laser alternative with higher precision and lower size, mass and power (Amzajerdian et al.). The NDL instrument transmits three laser beams and combines their line-of-sight measurements into the three velocity components and the altitude of the vehicle. The NASA Johnson Space Center (JSC) Safe and Precise Landing - Integrated Capabilities Evolution (SPLICE) programme pairs a scanning hazard detection lidar (HDL) with navigation and site-targeting software, so the vehicle can divert from a planned site that proves hazardous (Ward et al.). Precision is mission-dependent: the SPLICE goals are stated relative to a site selected during descent, not to a fixed map coordinate, and the sources do not describe a single universal precision requirement.",
+      "scientific_purpose_and_applications": "The purpose of a precision landing sensor is to reduce landing error and improve touchdown safety rather than to make a scientific measurement of the Moon itself. The sources identify four applications. (1) Precision landing near a pre-designated site: NASA describes NDL as enabling 'pinpoint landing at a pre-designated site' (Amzajerdian et al.). SPLICE links landing precision to surface operations: a landing closer to the intended target reduces the transit time needed on the surface after touchdown (Ward et al.). (2) Hazard detection and safe-site selection: NASA describes the HDL as a sensor that images the surface to find hazards for landing, such as steep slopes and large rocks (NASA Goddard Engineering and Technology Directorate). (3) Navigation without GPS: NDL was designed as a backup navigation system for the Intuitive Machines lander (Aerospace America, 2026). (4) Terrain-relative and site-relative navigation: the SPLICE navigation filter uses HDL scans to estimate the position of the landing site, not just the vehicle (Ward et al.).",
+      "operating_principle": "Navigation Doppler Lidar (NDL): NDL is a coherent Doppler lidar. It transmits three laser beams at fixed but different angles toward the ground and measures range and velocity along each beam using a frequency-modulated continuous-wave (FMCW) technique. The line-of-sight measurements from the three beams are combined to recover the three components of the vehicle's velocity vector and its altitude above the ground (Amzajerdian et al.). The beat between the transmitted chirp and the returned signal carries range; the Doppler shift of the return carries velocity along each beam. Hazard detection lidar (HDL): the HDL is described as a hybrid scanning-imaging lidar that performs rapid three-dimensional imaging of the landing site and generates a DEM in real time (NASA Goddard). In the SPLICE navigation paper, the HDL provides a set of altitudes relative to a DEM origin point, and the navigation filter uses these altitudes together with the HDL's pointing and misalignment (Ward et al.). ALHAT precursor sensors: the Autonomous Landing and Hazard Avoidance Technology (ALHAT) work described a flash lidar for three-dimensional elevation maps during approach, a Doppler lidar for velocity, and a laser altimeter for altitude over a wider range. The Doppler lidar obtains range and velocity from the frequency content of a frequency-modulated continuous waveform (Amzajerdian et al., ALHAT paper).",
+      "scientific_importance": "The importance of the payload class is mainly engineering and mission-enabling. NDL's pre-flight performance was established through ground, aircraft, sled and suborbital tests, so the Odysseus flight is significant as the reported operation of this sensor on a lunar landing. NASA describes the two lunar NDL units as precursors for certified units on future robotic and crewed missions (Amzajerdian et al.). The SPLICE navigation study also illustrates an engineering limit. In a simulated lunar descent, the navigation filter with HDL and site targeting met all but one of the SPLICE performance goals (the position error distribution at terminal descent). The authors state that NDL range and velocity measurements alone were insufficient for meeting the program goals and that additional information, such as the HDL digital elevation model and a terrain camera, is needed (Ward et al.).",
+      "physical_specifications": {
+        "note": "No single universal specification exists for a precision landing sensor. The examples differ in maturity: one was flown on a lunar lander, one is a precursor development and field-test suite, and one is an engineering development unit whose performance appears in simulation. Values are tied to the named example and source. Where a value is not published in the sources reviewed, this record says so. The comparison table below covers NDL only, because its values come from one instrument family and differ by test condition and source.",
+        "ndl_reported_performance_comparison": [
+          {
+            "source": "Amzajerdian et al. (NASA Langley), engineering test unit",
+            "condition": "Static, laboratory",
+            "reported_value": "Velocity precision 2 mm/s; range precision 12.5 cm; from over 10 km slant range",
+            "status_of_value": "Ground test"
+          },
+          {
+            "source": "Amzajerdian et al. (NASA Langley), abstract",
+            "condition": "Dynamic operation, from over 5 km altitude",
+            "reported_value": "A few cm/s and a few meters precision, depending on vehicle dynamics",
+            "status_of_value": "Stated in abstract; depends on conditions"
+          },
+          {
+            "source": "Optica press release, 3 October 2024",
+            "condition": "Odysseus flight, descent",
+            "reported_value": "Altitude 8 km; precisions better than 0.8 cm/s and 0.8 m; almost 100% valid velocity and range measurements",
+            "status_of_value": "Press release describing flight; method not stated in the release text read"
+          },
+          {
+            "source": "NASA Flight Opportunities page",
+            "condition": "Odysseus flight, descent",
+            "reported_value": "100% valid measurements from 10 km to the Moon's surface; no numerical precision given",
+            "status_of_value": "NASA page statement"
+          },
+          {
+            "source": "Aerospace America (2026), citing a NASA paper",
+            "condition": "Odysseus post-flight comparison with models",
+            "reported_value": "Lidar and modelled values agree to within about 5 m (range) and 0.5 m/s (velocity)",
+            "status_of_value": "Press report of a NASA paper; not verified against the paper"
+          }
+        ],
+        "examples": [
+          {
+            "name": "Navigation Doppler Lidar (NDL), flown on Intuitive Machines' Odysseus (IM-1)",
+            "type": "Flown lunar lander sensor (engineering test unit flight configuration)",
+            "status": "Flown. NASA states that NDL was one of six payloads that landed on the Moon on 22 February 2024 aboard Odysseus. NASA describes the flight unit as identical to the engineering test unit that met the criteria of Technology Readiness Level 6. NDL also flew on Blue Origin's New Shepard suborbital vehicle in 2020 and 2021 (Amzajerdian et al.). The second lunar unit flew on Astrobotic's Peregrine lander, which failed in January 2024 before reaching the lunar surface (GeekWire, 2024; secondary press coverage not fetched in full).",
+            "sensor_configuration": "An electro-optics chassis contains the transmitter laser, receivers and signal processor. An optical head with three transmit/receive telescopes is connected to the chassis by fibre-optic cables. The chassis can be installed anywhere on the vehicle, but the optical head must have a clear view of the ground (Amzajerdian et al.).",
+            "number_of_beams": 3,
+            "measurement_method": "Frequency-modulated continuous-wave (FMCW) range and velocity along each beam; three line-of-sight measurements combined into three velocity components and altitude (Amzajerdian et al.)",
+            "velocity_measurement_limit": "Up to 218 m/s along the line of sight of its beams from over 5 km altitude (Amzajerdian et al.)",
+            "engineering_test_unit_static_performance": {
+              "velocity_precision_mm_per_s": 2,
+              "range_precision_cm": 12.5,
+              "slant_range_km": "over 10",
+              "condition": "Static environment; ground test (Amzajerdian et al.)"
+            },
+            "dynamic_performance_statement": "Performance degrades in a dynamic operational environment during descent and landing. Truck tests at Joint Base Langley-Eustis showed maximum operational range falling from over 10 km without vibration to about 7 km at the vibration level expected for a lunar lander (Amzajerdian et al.).",
+            "predicted_lunar_max_slant_range_km": "Over 6.5 per beam (estimate, after adjusting for expected surface albedo and removing the atmospheric effect of the test runway; Amzajerdian et al.). This is an estimate, not a flight measurement.",
+            "flight_reported_values": [
+              {
+                "source": "Optica press release, 3 October 2024",
+                "altitude_km": 8,
+                "precision": "Better than 0.8 cm/s (velocity) and 0.8 m (range)",
+                "validity": "Almost 100% valid velocity and range measurements",
+                "status": "Press release; method not stated in release text read"
+              },
+              {
+                "source": "NASA Flight Opportunities page",
+                "altitude_km": 10,
+                "precision": "Not numerically given",
+                "validity": "100% valid measurements from 10 km to the Moon's surface; gathered during descent",
+                "status": "NASA page statement"
+              },
+              {
+                "source": "Aerospace America (2026), citing a NASA paper",
+                "altitude_km": null,
+                "precision": "Agreement with models to within about 5 m (range) and 0.5 m/s (velocity)",
+                "validity": "Not stated",
+                "status": "Press report of a NASA paper; not verified against the paper"
+              }
+            ],
+            "data_use_during_landing": "According to press reporting, NDL data were not used in the landing solution because a software problem prevented the lander from using them. The lander completed a soft landing but tipped over shortly after (Aerospace America, 2026).",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in the sources reviewed. The NDL paper states the design complies with vehicle size, mass and power constraints but gives no values.",
+            "power_w": null,
+            "next_flight_status": "Aerospace America (August 2026) reports that the next NDL flight is planned on Astrobotic's first Griffin lander, with a target of late 2026. The current status of that flight was not verified.",
+            "source_urls": [
+              "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/moon-mission-for-flight-tested-navigation-doppler-lidar/",
+              "https://ntrs.nasa.gov/api/citations/20220008277/downloads/CLRC%202022_NDL%20Manuscript.pdf",
+              "https://ntrs.nasa.gov/citations/20240016238",
+              "https://www.optica.org/about/newsroom/news_releases/2024/october/new_doppler_lidar_technology_poised_to_improve_accuracy_and_stability_during_planetary_landings",
+              "https://aerospaceamerica.aiaa.org/after-successful-2024-demo-nasas-laser-navigation-tool-approaches-next-flight/"
+            ],
+            "images": [
+              {
+                "id": "ndl_stmd_lander_illustration",
+                "description": "NASA illustration of a lander hovering over a lunar surface, shown on the NASA Flight Opportunities page for Navigation Doppler Lidar.",
+                "image_type": "Illustration (conceptual)",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2024/12/ndl%E2%80%93cr-nasa-pvrs.png",
+                "source_page_url": "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/moon-mission-for-flight-tested-navigation-doppler-lidar/",
+                "publisher": "NASA",
+                "credit": "NASA (credit line not separately verified)",
+                "caption": "Illustration of a lander hovering over a lunar surface (NASA).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Conceptual illustration, not a photograph of the flown hardware. The image URL contains an en dash, percent-encoded in this clean URL. HTTP HEAD check returned 200 OK. Full-resolution download not checked."
+              }
+            ]
+          },
+          {
+            "name": "ALHAT lidar sensor suite (flash lidar, Doppler lidar and laser altimeter)",
+            "type": "Development and field-test precursor sensor suite; no lunar flight reported in the sources reviewed",
+            "status": "The paper describes a breadboard Doppler lidar and a prototype system. The laser altimeter was tested at the NASA Langley range and flown in an ALHAT field test on a helicopter. The paper refers to flash lidar experiments from aircraft platforms. No lunar flight of this suite is reported in the sources reviewed.",
+            "sensors": [
+              {
+                "name": "3-Dimensional Imaging Flash Lidar",
+                "function": "Elevation maps of terrain for hazard identification during approach",
+                "operational_altitude": "Approach phase between 1000 m and 500 m above ground (body text)",
+                "update_rate_hz": 30
+              },
+              {
+                "name": "Doppler Lidar",
+                "function": "Ground velocity and distance for precision navigation; also altitude and ground-relative attitude",
+                "precision": "Approximately 1 cm/s velocity (body text)",
+                "update_rate_hz": 30
+              },
+              {
+                "name": "Laser Altimeter",
+                "function": "Independent altitude data over a large operational range",
+                "operational_altitude": "20 km to 100 m (body text)",
+                "field_result": "Operational range of almost 30 km with range precision of about 8 cm in a helicopter field test (ALHAT paper)",
+                "update_rate_hz": 30
+              }
+            ],
+            "table_note": "The sensor-function and precision table in the ALHAT paper could not be unambiguously aligned in the text extraction, so values above are taken from the body text.",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in the sources reviewed.",
+            "power_w": null,
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20100036247/downloads/20100036247.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "SPLICE Hazard Detection Lidar (HDL)",
+            "type": "Engineering development unit (EDU); not reported as flown in the sources reviewed",
+            "status": "NASA reports a dynamic ground test of the HDL EDU mounted on a rig in a pickup truck bed and driven around NASA Goddard (NASA Goddard Engineering and Technology Directorate).",
+            "function": "Hybrid scanning-imaging lidar performing rapid three-dimensional landing-site imaging and real-time DEM generation for hazard detection (NASA Goddard).",
+            "published_hardware_values": "None found in the sources reviewed. The NASA Goddard page gives no range, accuracy, point rate, field of view, mass, power or dimensions.",
+            "simulation_result": "In a closed-loop simulated lunar descent, the HDL scan occurs about 4149 s after mission start (mission elapsed time). The navigation filter, with HDL-based divert, meets all but one SPLICE performance goal in Monte Carlo runs (position error distribution at terminal descent). This is a simulation result, not a hardware measurement (Ward et al.).",
+            "future_use": "NASA says 'Future Moon missions could use SPLICE's advanced algorithms and sensors', with no date or status given (NASA Goddard Engineering and Technology Directorate).",
+            "mass_kg": null,
+            "dimensions": "Not publicly specified in the sources reviewed.",
+            "power_w": null,
+            "source_urls": [
+              "https://etd.gsfc.nasa.gov/our-work/hazard-detection-lidar/",
+              "https://ntrs.nasa.gov/api/citations/20230015916/downloads/SPLICE_Nav2024_Scitech_Paper.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No example has publicly specified dimensions in the sources reviewed. The NDL instrument comprises an electro-optics chassis and a separate optical head with three transmit/receive telescopes linked by fibre-optic cables, so its packaging is not a single enclosure. The chassis can be installed anywhere on the vehicle, but the optical head must have a clear view of the ground (Amzajerdian et al.). The ALHAT and HDL dimensions are not publicly specified in the sources reviewed.",
+        "mass_and_weight": "Not publicly specified for NDL, ALHAT or HDL in the sources reviewed. The NDL paper states that its design complies with vehicle size, mass and power constraints and claims reduced size, mass and power compared with radar, but it gives no numerical values (Amzajerdian et al.).",
+        "power_requirements": "Not publicly specified for NDL, ALHAT or HDL in the sources reviewed. No power value is given for the flown NDL unit."
+      },
+      "environmental_and_operational_requirements": "Each NDL chassis and optical head was tested for vibration, shock, thermal-vacuum and electromagnetic interference before delivery to the vehicle providers. Component-level radiation testing was performed as deemed necessary (Amzajerdian et al.). The NDL paper identifies vehicle vibration as the dominant cause of performance degradation, and identifies better vibration isolation of the laser source as an area for improvement in the next generation (Amzajerdian et al.). The Odysseus results were reported to exceed projections partly because of lower vehicle vibration and higher surface reflectivity than the conservative estimates assumed (Optica press release, October 2024). The NDL optical head must have a clear view of the ground (Amzajerdian et al.). The ALHAT paper states the requirement to land under any lighting conditions (Amzajerdian et al., ALHAT paper). The sources reviewed do not give lighting-dependent performance data for the flown NDL unit.",
+      "limitations": "Vehicle vibration reduces NDL's maximum range and precision, which is the main design constraint identified by the NASA Langley team (Amzajerdian et al.). The Odysseus performance data come from a NASA page, an Optica press release, a conference paper with no numerical flight results, and press reporting of a NASA analysis; a final peer-reviewed flight report was not identified. According to press reporting, the NDL data were not used in the landing solution because of a software problem (Aerospace America, 2026), so the flight did not demonstrate closed-loop use of NDL during descent. The SPLICE simulation concludes that NDL range and velocity alone are insufficient for the program's precision goals (Ward et al.). No HDL hardware values or flight results were found. The sources reviewed connect NDL to the Odysseus mission only and do not establish compatibility with any other lander.",
+      "transportation_and_deployment": {
+        "overview": "A precision landing sensor is not deployed on the surface. It is integrated into the descent and landing vehicle, operates during descent, and is then no longer used. The relevant integration points are mechanical mounting, line-of-sight to the ground, electrical and data interfaces with the GN&C system, and environmental qualification.",
+        "transportation_process": [
+          "Earth integration: NDL engineering test units were built to NASA spaceflight processes and standards. One unit was used for integrated ground and aircraft flight testing with landing-vehicle avionics, and two units were delivered to the lunar lander providers (Amzajerdian et al.).",
+          "Launch and transfer: the sources reviewed do not describe NDL-specific launch loads or transfer conditions. A NASA image caption on the NDL page shows a SpaceX Falcon 9 carrying a Nova-C lander at launch; the launch date is not confirmed in the text read.",
+          "Descent and landing: the NDL sensor provides range and velocity during descent (Aerospace America, 2026; NASA Flight Opportunities). In the SPLICE simulation, the navigation filter receives NDL measurements after the powered descent initiation (PDI) burn, with TRN active before it; NDL measurements begin roughly 175 s to 75 s before the HDL scan in that simulation (Ward et al.).",
+          "Mounting and interfaces: the optical head must have a clear view of the ground, the chassis is connected to the optical head by fibre, and the sensor output feeds the navigation filter (Amzajerdian et al.; Ward et al.). The sources do not describe power or thermal-interface values for the flown unit.",
+          "Lander context: the Odysseus lander was the Nova-C vehicle shown in the IM-1 mission illustration (NASA Flight Opportunities). This establishes the lander type that carried NDL on IM-1 only; it does not establish compatibility with any other lander.",
+          "Future flight: Aerospace America reports that a second NDL unit is planned on Astrobotic's Griffin lander, with a target of late 2026 (Aerospace America, 2026). This was not verified against Astrobotic's own schedule."
+        ],
+        "deployment_methods": "No deployment mechanism is involved. The sensor is fixed to the descent vehicle, with its optical head oriented toward the ground and its chassis connected by fibre. Operation is continuous during descent and landing (Amzajerdian et al.; Aerospace America, 2026).",
+        "historical_examples": "The NDL unit flown on Intuitive Machines' Odysseus (IM-1) landed on 22 February 2024 (NASA Flight Opportunities). A second NDL unit flew on Astrobotic's Peregrine lander, which did not reach the lunar surface (secondary press coverage). NDL also flew suborbitally on Blue Origin's New Shepard in 2020 and 2021 (Amzajerdian et al.).",
+        "compatibility_assessment": "Compatibility with any particular lander is established only for the Odysseus (IM-1) mission in the sources reviewed. No compatibility claim is made for Griffin or any other vehicle.",
+        "images": [
+          {
+            "id": "intuitive_machines_nova_c_render",
+            "description": "Illustration of Intuitive Machines' Nova-C lunar lander, the IM-1 mission render shown on the NASA NDL page.",
+            "image_type": "Illustration (mission render)",
+            "image_url": "https://www.nasa.gov/wp-content/uploads/2023/06/im-1-nova-c-mission-render.jpg",
+            "source_page_url": "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/moon-mission-for-flight-tested-navigation-doppler-lidar/",
+            "publisher": "NASA (hosting page); Intuitive Machines (credit)",
+            "credit": "Intuitive Machines",
+            "caption": "Illustration of Intuitive Machines' Nova-C lunar lander.",
+            "section_placements": [
+              "transportation_and_deployment"
+            ],
+            "notes": "Shown on the NASA NDL page with credit to Intuitive Machines. It is a mission illustration, not a photograph of the NDL unit. The clean URL drops the w=985 resize parameter. HTTP HEAD check returned 200 OK. Full-resolution download not checked."
+          }
+        ]
+      },
+      "historical_significance": "The NASA Langley paper states that past planetary landings primarily relied on radar for velocity and altitude data (Amzajerdian et al.). The sources reviewed do not provide Apollo lunar module landing radar specifications, so this record does not describe those values. The ALHAT paper states that flash lidar component technology projects were initiated in 2008 in collaboration with industry, aimed at a landing sensor system for safe landing (Amzajerdian et al., ALHAT paper). NDL's development led to suborbital demonstrations on New Shepard in 2020 and 2021 and to the Odysseus lunar landing in February 2024. The NASA paper on the Odysseus flight is titled 'Demonstration of Navigation Doppler Lidar Capabilities Onboard the First Commercial Lunar Lander' (Hines et al.). The SPLICE programme, managed from NASA Johnson Space Center, has developed site-relative navigation and hazard-detection algorithms and sensors; its lunar-relevant results so far are simulation and ground-test results (Ward et al.; NASA Goddard Engineering and Technology Directorate).",
+      "limitations_and_uncertainties": "1. Conflicting Odysseus values: the NDL altitude of valid measurements is given as 8 km in the Optica release and as 10 km on the NASA Flight Opportunities page. Precision values differ between the Optica release (better than 0.8 cm/s and 0.8 m), NASA's engineering test-unit figures (2 mm/s and 12.5 cm, static), and press reporting of post-flight model agreement (about 5 m and 0.5 m/s). These are not directly comparable and have not been reconciled against a peer-reviewed flight report. 2. Mass, dimensions and power are not publicly specified for NDL, ALHAT or HDL in the sources reviewed. 3. HDL hardware: no published range, accuracy, point rate, field of view or power values were found, and HDL flight status is not established. 4. ALHAT table alignment: the ALHAT table could not be unambiguously matched to its rows in the text extraction; values are from the body text. 5. Peregrine: the NDL unit on Astrobotic's Peregrine lander did not reach the lunar surface; this rests on secondary press coverage and the NDL data status for that mission is not verified. 6. Griffin status: the planned flight of a second NDL unit on Griffin is reported for late 2026; its current status was not verified. 7. Date uncertainty: publication years of several technical documents were inferred from record identifiers or file names and are marked as such in the references. 8. A secondary search-result claim that the HDL produced 16 million points in two seconds with about 1 cm range accuracy in a Goddard ground test was found only in search-result text, not in a primary source, and is not used in this record. 9. This record makes no lunar landing-site recommendations and no lander-compatibility claims beyond the Odysseus mission.",
+      "images": [
+        {
+          "id": "ndl_stmd_lander_illustration",
+          "description": "NASA illustration of a lander hovering over a lunar surface, shown on the NASA Flight Opportunities page for Navigation Doppler Lidar.",
+          "image_type": "Illustration (conceptual)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2024/12/ndl%E2%80%93cr-nasa-pvrs.png",
+          "source_page_url": "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/moon-mission-for-flight-tested-navigation-doppler-lidar/",
+          "publisher": "NASA",
+          "credit": "NASA (credit line not separately verified)",
+          "caption": "Illustration of a lander hovering over a lunar surface (NASA).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Conceptual illustration, not a photograph of the flown hardware. The image URL contains an en dash, percent-encoded in this clean URL. HTTP HEAD check returned 200 OK. Full-resolution download not checked."
+        },
+        {
+          "id": "intuitive_machines_nova_c_render",
+          "description": "Illustration of Intuitive Machines' Nova-C lunar lander, the IM-1 mission render shown on the NASA NDL page.",
+          "image_type": "Illustration (mission render)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2023/06/im-1-nova-c-mission-render.jpg",
+          "source_page_url": "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/moon-mission-for-flight-tested-navigation-doppler-lidar/",
+          "publisher": "NASA (hosting page); Intuitive Machines (credit)",
+          "credit": "Intuitive Machines",
+          "caption": "Illustration of Intuitive Machines' Nova-C lunar lander.",
+          "section_placements": [
+            "transportation_and_deployment"
+          ],
+          "notes": "Shown on the NASA NDL page with credit to Intuitive Machines. It is a mission illustration, not a photograph of the NDL unit. The clean URL drops the w=985 resize parameter. HTTP HEAD check returned 200 OK. Full-resolution download not checked."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "ndl_stmd_lander_illustration",
+          "description": "NASA illustration of a lander hovering over a lunar surface, shown on the NASA Flight Opportunities page for Navigation Doppler Lidar.",
+          "image_type": "Illustration (conceptual)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2024/12/ndl%E2%80%93cr-nasa-pvrs.png",
+          "source_page_url": "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/moon-mission-for-flight-tested-navigation-doppler-lidar/",
+          "publisher": "NASA",
+          "credit": "NASA (credit line not separately verified)",
+          "caption": "Illustration of a lander hovering over a lunar surface (NASA).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Conceptual illustration, not a photograph of the flown hardware. The image URL contains an en dash, percent-encoded in this clean URL. HTTP HEAD check returned 200 OK. Full-resolution download not checked."
+        }
+      ],
+      "references": [
+        {
+          "title": "Moon Mission for Flight-Tested Navigation Doppler Lidar",
+          "publisher": "NASA Flight Opportunities (STMD)",
+          "date": "Page dated 27 June 2025; last updated 12 June 2026 (per page metadata)",
+          "url": "https://www.nasa.gov/stmd-flight-opportunities/transitions-of-flight-tested-technologies/moon-mission-for-flight-tested-navigation-doppler-lidar/"
+        },
+        {
+          "title": "Development of a Coherent Doppler Lidar for Precision Landing on Planetary Bodies",
+          "publisher": "NASA Langley Research Center (NTRS record 20220008277, file 'CLRC 2022')",
+          "authors": "Farzin Amzajerdian, Glenn D. Hines, Aram Gragossian, Bruce W. Barnes, Nathan A. Dostart",
+          "date": "Year inferred from NTRS record and file name; not confirmed in text",
+          "url": "https://ntrs.nasa.gov/api/citations/20220008277/downloads/CLRC%202022_NDL%20Manuscript.pdf"
+        },
+        {
+          "title": "Demonstration of Navigation Doppler Lidar Capabilities Onboard the First Commercial Lunar Lander",
+          "publisher": "AIAA SciTech Forum (NTRS record 20240016238)",
+          "authors": "Glenn Hines, Farzin Amzajerdian, Aram Gragossian, Christopher Karlgaard, Scott Angster, Rafael A. Lugo, Daniel Litton",
+          "date": "January 2025 (presented 6-10 January 2025 per NTRS record; date acquired 18 December 2024)",
+          "url": "https://ntrs.nasa.gov/citations/20240016238"
+        },
+        {
+          "title": "New Doppler lidar technology poised to improve accuracy and stability during planetary landings",
+          "publisher": "Optica (press release)",
+          "date": "3 October 2024",
+          "url": "https://www.optica.org/about/newsroom/news_releases/2024/october/new_doppler_lidar_technology_poised_to_improve_accuracy_and_stability_during_planetary_landings"
+        },
+        {
+          "title": "After successful 2024 demo, NASA's laser navigation tool approaches next flight",
+          "publisher": "Aerospace America (AIAA)",
+          "author": "Paul Brinkmann",
+          "date": "4 August 2026 (per article)",
+          "url": "https://aerospaceamerica.aiaa.org/after-successful-2024-demo-nasas-laser-navigation-tool-approaches-next-flight/"
+        },
+        {
+          "title": "Lidar-Based Safe Site Relative Navigation (SPLICE navigation paper, Nav2024 SciTech)",
+          "publisher": "NASA Johnson Space Center; The Charles Stark Draper Laboratory; Aerodyne Industries; Odyssey Space Research (NTRS record 20230015916)",
+          "authors": "Kari C. Ward, Kyle W. Smith, Isaac S. Rowe, Jeanette M. Harper, Davis W. Adams, Samuel M. Pedrotty, Gavin F. Mendeck",
+          "date": "Year inferred from file name 'Nav2024'; not confirmed in text",
+          "url": "https://ntrs.nasa.gov/api/citations/20230015916/downloads/SPLICE_Nav2024_Scitech_Paper.pdf"
+        },
+        {
+          "title": "Hazard Detection Lidar",
+          "publisher": "NASA Goddard Engineering and Technology Directorate",
+          "date": "Page last updated 2 July 2025 (page banner notes a funding lapse; information may be out of date)",
+          "url": "https://etd.gsfc.nasa.gov/our-work/hazard-detection-lidar/"
+        },
+        {
+          "title": "Development of Lidar Sensor Systems for Autonomous Safe Landing on Planetary Bodies (ALHAT)",
+          "publisher": "NASA Langley Research Center (NTRS record 20100036247)",
+          "authors": "F. Amzajerdian, D. Pierrottet, L. Petway, M. Vanek",
+          "date": "Year inferred from NTRS record ID; not confirmed in text",
+          "url": "https://ntrs.nasa.gov/api/citations/20100036247/downloads/20100036247.pdf"
+        },
+        {
+          "title": "Astrobotic's Peregrine moon lander mission end",
+          "publisher": "GeekWire (secondary press)",
+          "date": "2024",
+          "url": "https://www.geekwire.com/2024/astrobotics-peregrine-moon-lander-mission-end/",
+          "notes": "Search-result summary only; not fetched in full."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "NDL flown example (Navigation Doppler Lidar)": "payload.article.physical_specifications.examples[0].images",
+      "ALHAT example": "payload.article.physical_specifications.examples[1].images (empty; no verified image identified)",
+      "SPLICE HDL example": "payload.article.physical_specifications.examples[2].images (empty; no verified image identified)",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Image URLs were checked with HTTP HEAD requests (200 OK). Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Conflicting Odysseus NDL values: the Optica release gives 8 km altitude and precisions better than 0.8 cm/s and 0.8 m; the NASA Flight Opportunities page gives 100% valid measurements from 10 km and no numerical precision; press reporting of a NASA paper gives agreement with models within about 5 m and 0.5 m/s. These are not reconciled and no peer-reviewed flight report was identified.",
+    "The NASA paper behind the post-flight agreement figures (5 m and 0.5 m/s) was not readable in this session; the figures come from the Aerospace America article (4 August 2026) and remain unverified against the primary paper.",
+    "Conflicting NDL performance statements across sources: static engineering test unit 2 mm/s and 12.5 cm (NDL paper) versus 2 cm/s and 2 m (secondary search-result summary, not used as a value) versus a dynamic 'few cm/s and few m' (NDL paper abstract). The article reports each with its condition.",
+    "Mass, dimensions and power are not publicly specified in the sources reviewed for NDL, ALHAT or HDL; the NDL paper claims reduced size, mass and power versus radar without values. All are recorded as null.",
+    "ALHAT paper (NTRS 20100036247): the sensor-function and precision table could not be unambiguously aligned from the text extraction. Values in this record come from the body text (Doppler velocity approximately 1 cm/s; laser altimeter 20 km to 100 m; all three sensors nominal 30 Hz; laser altimeter helicopter field result of almost 30 km range and about 8 cm precision).",
+    "ALHAT paper year and SPLICE Nav2024 paper year are inferred from NTRS record identifiers and file names; the PDF text did not show a date in the portion extracted.",
+    "NDL manuscript (NTRS 20220008277): the paper text was readable only after local text extraction. Its year is inferred from the record and file name ('CLRC 2022').",
+    "The Hines et al. NTRS record (20240016238) gives no numerical NDL performance values; its qualitative statements ('exceptional') are not used as values.",
+    "HDL: the SPLICE Nav2024 paper gives simulation results only. The NASA Goddard HDL page gives no hardware values and reports only a ground test. HDL flight status is not established.",
+    "Unverified search-result claim, not used: a secondary source said the HDL produced 16 million data points in two seconds with about 1 cm range accuracy in a Goddard ground test. No primary source was found.",
+    "The Apollo lunar module landing radar was not described with verified specifications; the Apollo landing-radar journal and report URLs fetched in this session were unavailable or unreadable. The radar baseline is stated only as the NDL paper's general claim that past landings relied primarily on radar.",
+    "Peregrine: the NDL unit on Astrobotic's Peregrine lander did not reach the lunar surface. The statement rests on a secondary press search result (GeekWire) that was not fetched in full; the NDL data status for that mission is not verified.",
+    "Griffin: the planned flight of a second NDL unit on Astrobotic's Griffin lander is reported (Aerospace America, August 2026) with a late-2026 target. Its current status was not verified.",
+    "NASA Flight Opportunities page: dated 27 June 2025 (per page metadata) and last updated 12 June 2026. The NASA Goddard HDL page carries a banner that NASA is not updating the page due to a lapse in federal funding and may be out of date (last updated 2 July 2025).",
+    "Images: two NASA-hosted images (an NDL conceptual illustration and the IM-1 Nova-C mission render) were identified on the NASA NDL page and verified by HTTP HEAD (200 OK). Neither is a photograph of the NDL hardware. No verified image was found for the ALHAT suite or the SPLICE HDL. Full-resolution downloads were not checked.",
+    "Lunar location recommendations: deferred by the user and not included. No lander-compatibility claim is made beyond the Odysseus (IM-1) mission."
+  ]
+}

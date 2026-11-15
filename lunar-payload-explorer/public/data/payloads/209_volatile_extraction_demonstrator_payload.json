@@ -1,0 +1,196 @@
+{
+  "catalogue_id": 209,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 11,
+    "name": "In-situ resource utilisation (ISRU)"
+  },
+  "payload": {
+    "number": 209,
+    "name": "Volatile extraction demonstrator",
+    "article": {
+      "overview": "A volatile extraction demonstrator is a payload that heats lunar regolith, or a sample drilled from it, to release volatile substances such as water and hydrogen, and then collects and measures what is released. It belongs to in-situ resource utilisation (ISRU): its purpose is to test whether useful volatiles can be recovered from lunar material and to measure how much can be recovered. The name describes a class of payloads rather than one standard design. The best-documented example is the TRIDENT drill and MSolo mass spectrometer carried on the Polar Resources Ice Mining Experiment 1 (PRIME-1) payload, which was delivered to the Moon by the Intuitive Machines IM-2 mission [1][2][3]. The lander came to rest in an off-nominal orientation; the drill was deployed horizontally and did not penetrate the regolith, so the planned extraction demonstration was not completed [2][3].",
+      "description": "Volatiles in lunar material can be present as water ice in cold, shadowed regolith, or bound within minerals, or implanted in grain surfaces by the solar wind. A demonstrator usually follows one chain of steps: it acquires a sample, transfers or seals it, heats it under vacuum, captures the released gases and identifies them. Designs differ in where the heating happens. TRIDENT is a drill with an auger-integrated heater; its regolith cone is then analysed by a mass spectrometer [2]. Light WAVE is a laboratory system in which sealed icy samples are heated and the released gas is quantified with the ideal gas law and mass spectrometry [4]. The ESA MARVEL concept uses microwave heating of sample batches [5]. VAPoR is a pyrolysis mass spectrometer that heats powdered samples in vacuum to analyse their volatile content [6]. The category therefore spans drill-and-analyse systems, sealed-sample quantification systems and heating-and-analysis instruments.",
+      "scientific_purpose_and_applications": "The main purpose of a volatile extraction demonstrator is to establish whether volatiles can be recovered from lunar material under conditions similar to those a resource-use system would face. Such a demonstrator can establish whether a volatile is present, estimate its concentration, and measure how efficiently it is released at different temperatures [2][4][5]. The ESA MARVEL material lists open questions about how nanophase iron, electrostatic effects and irregular particle shapes affect heating in real lunar conditions [5]. The longer-term applications are drinking water and life-support supplies, hydrogen and oxygen for propellant, and resource prospecting for surface operations. These applications are prospective; the sources reviewed do not report a flight demonstration of extraction at production scale.",
+      "operating_principle": "A typical demonstrator sequence is: acquire regolith; transfer or seal it in a sample chamber; heat it, usually in vacuum; collect the released gases in a volume of known temperature and pressure; and identify and quantify them with a mass spectrometer [4]. The Light WAVE approach uses the ideal gas law to derive the total amount of gas released, and divides the extracted water by the sample mass to obtain a water concentration by mass [4]. The heating temperature determines which volatiles are released. ESA's MARVEL material gives target release windows of about 200 to 400 degrees Celsius for solar-wind hydrogen and about 400 to 600 degrees Celsius for water from hydroxyl groups in minerals [5]. These are published target ranges, not measurements from a flown instrument. The VAPoR pyrolysis mass spectrometer can heat powdered samples up to 1400 degrees Celsius in vacuum [6]. The MARVEL concept plans to heat samples at 250 W for one hour and then monitor cooling for a further hour [5].",
+      "scientific_importance": "Orbital and remote-sensing observations can suggest that volatiles are present at the lunar poles, but they do not measure how much is recoverable from regolith or how easily it can be released. Extraction demonstrators provide ground truth on those questions. A demonstrator operated on the surface can test material in its real thermal and vacuum environment, which laboratory simulants cannot fully reproduce. The programmes reviewed here aim to convert likely volatile deposits into measured yields, extraction rates and temperature behaviour [4][5]. Each such measurement narrows the uncertainty in resource estimates that future ISRU systems depend on.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power specification for a volatile extraction demonstrator. The examples below describe individual flown systems, laboratory systems, ground-development concepts or instrument concepts. Values are given only where a source states them for that named item, and each example is labelled by its development status.",
+        "examples": [
+          {
+            "name": "PRIME-1 TRIDENT drill with MSolo mass spectrometer",
+            "type": "Flown lunar surface payload (limited operation)",
+            "description": "TRIDENT is described as a '1 m class' drill that advances in 10 cm bites and carries an auger-integrated heater with a colocated temperature sensor 35 cm above the bit [2]. The source describes these as design configuration, not performance values. MSolo is a mass spectrometer that analyses the regolith cone produced by TRIDENT on PRIME-1 and VIPER [2]. Secondary search-result summaries describe MSolo as a commercial off-the-shelf mass spectrometer modified for space use, and TRIDENT as having rotary and percussive actuators; neither was confirmed by the primary abstract, so they are not used as verified values. The primary abstract states that TRIDENT was deployed horizontally after an off-nominal landing orientation, that all actuators, sensors and heaters worked as designed, and that the drill did not penetrate the regolith, which fell onto it during landing [2]. Secondary coverage quoting NASA's PRIME-1 team reports that the mission reached closer to 10 hours of operations rather than the planned 10 days, and that the lander's tilted attitude prevented the instruments from completing their science goals [3]. The two accounts differ in emphasis; both are reported here without choosing between them.",
+            "mass_kg": null,
+            "dimensions": "1 m class drill (size class, not a measured dimension) [2]",
+            "power": null,
+            "key_parameters": {
+              "drill_bite_depth_cm": 10,
+              "temperature_sensor_distance_above_bit_cm": 35,
+              "heater": "auger-integrated heater; power not stated in source"
+            },
+            "qualification": "Primary abstract reports the subsystems worked as designed in flight; the drill did not penetrate the regolith [2]. Mass and power were not confirmed.",
+            "source_urls": [
+              "https://icedrill.org/library/trident-ice-mining-drill-lunar-volatile-prospecting-prime-1-and-viper-missions",
+              "https://www.nasa.gov/missions/artemis/nasas-lunar-drill-technology-passes-tests-on-the-moon/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Light WAVE ice-regolith extraction and water quantification system",
+            "type": "Laboratory system described as demonstrated in a relevant environment; not flown in sources reviewed",
+            "description": "Light WAVE, as described by its author at NASA Johnson Space Center in a 2022 conference paper, captures icy soil from a drill, weighs and seals each sample, heats it to release volatiles, and collects the gas in a volume at known temperature [4]. The total gas amount is calculated with the ideal gas law, and a mass spectrometer identifies and quantifies each component [4]. The paper's stated aim was to determine the accuracy of water quantification. The text reviewed reports no measured accuracy and no numerical results [4]. The author suggests the approach could handle many samples in future ice-investigation missions and could support lunar sample return [4].",
+            "mass_kg": null,
+            "dimensions": null,
+            "power": null,
+            "key_parameters": {},
+            "qualification": "Relevant-environment demonstration as titled in the source; no measured accuracy in the text reviewed [4].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20220005441"
+            ],
+            "images": []
+          },
+          {
+            "name": "MARVEL Microwave Heating Demonstrator concept",
+            "type": "ESA ground-development project; not flown",
+            "description": "MARVEL (Microwave Heating Apparatus of Lunar Regolith for Variant Experiments of Lunar ISRU Missions) was an ESA project under its Discovery programme. Its goal was flight hardware for a Microwave Heating Demonstrator payload for future ESA lunar ISRU missions [5]. The planned payload would process up to nine 50 g samples, heating each at 250 W for one hour and then cooling it for one hour while measuring temperature and the volatile profile released [5]. These are planned operating parameters, not measured results. The project page lists its status as closed, with a 2021 start and a 2022 end [5]. ESA's report names the European Large Logistic Lander and Astrobotic's Griffin as possible hosts [5]; no compatibility with either was verified.",
+            "mass_kg": null,
+            "dimensions": null,
+            "power": "250 W microwave heating input per sample (planned) [5]",
+            "key_parameters": {
+              "max_samples": 9,
+              "sample_mass_g": 50,
+              "heating_time_min": 60,
+              "cooling_time_min": 60
+            },
+            "qualification": "Ground development only; the project page lists a 40% implementation figure and a TRL entry that is not clearly tied to a component, so neither is used [5].",
+            "source_urls": [
+              "https://nebula.esa.int/4000133998"
+            ],
+            "images": []
+          },
+          {
+            "name": "VAPoR Volatile Analysis by Pyrolysis of Regolith",
+            "type": "NASA Goddard instrument concept; flight status not confirmed in sources reviewed",
+            "description": "VAPoR is a pyrolysis mass spectrometer designed to heat powdered regolith or drill fines under vacuum, up to 1400 degrees Celsius, to detect water, noble gases and organics in the evolved gas [6]. Its sample manipulation system, vacuum pyrolysis unit, gas processing system and mass spectrometer were described as developed from components of the SAM instrument [6]. Test work cited in the 2010 paper includes an Apollo 16 regolith sample, a Murchison meteorite fragment, and a field unit that analysed Mauna Kea soils and detected water [6]. The sources reviewed do not state whether VAPoR has flown.",
+            "mass_kg": null,
+            "dimensions": null,
+            "power": null,
+            "key_parameters": {
+              "max_temperature_c": 1400,
+              "atmosphere": "vacuum"
+            },
+            "qualification": "Instrument concept with laboratory and field-test history described in a secondary summary of [6]; mass, dimensions and power not found.",
+            "source_urls": [
+              "https://cisto-news.gsfc.nasa.gov/sed/content/uploadFiles/publication_files/tenKateetal2010.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The sources reviewed give a '1 m class' size for the PRIME-1 TRIDENT drill [2]. Dimensions for MSolo, Light WAVE, MARVEL and VAPoR were not stated in the sources reviewed. Because the examples use different sample-handling architectures, their sizes should not be compared directly.",
+        "mass_and_weight": "Only the PRIME-1 TRIDENT drill has a mass figure in the secondary search-result summaries (about 16 kg). That figure was not confirmed by the primary abstract [2], so it is recorded as not verified. No verified mass is available for MSolo, Light WAVE, MARVEL or VAPoR in the sources reviewed.",
+        "power_requirements": "The MARVEL concept specifies 250 W of microwave heating input per sample for one hour [5]. The PRIME-1 heaters are described as having worked as designed, but their power draw is not stated in the sources reviewed [2]. Power figures for Light WAVE and VAPoR were not found in the sources reviewed."
+      },
+      "environmental_and_operational_requirements": "A volatile extraction demonstrator must work in vacuum, across the wide surface temperature range of the Moon, and in areas where thermal conditions are uncertain. Its heater needs controlled power, and the instrument needs thermal protection so that heating does not disturb other systems. Sample handling must keep volatiles from escaping before measurement, which means sealed transfer or rapid analysis [4]. Lander orientation matters: PRIME-1 showed that an off-nominal landing attitude can prevent a drill from reaching the regolith [2][3]. Power and data requirements for the flown PRIME-1 system were not verified in the sources reviewed.",
+      "limitations": "A demonstrator measures only the sample it processes. Small samples, such as the 50 g units in the MARVEL concept, may not represent a whole deposit, so sample selection is critical [5]. Heating can release species from different minerals over overlapping temperature ranges, which makes it hard to attribute a gas to one source without the full temperature history [5][6]. Laboratory and simulant results may not match regolith behaviour in the real environment [4][5]. A failed deployment, such as the PRIME-1 horizontal drill, can prevent any extraction measurement [2][3].",
+      "transportation_and_deployment": {
+        "overview": "A volatile extraction demonstrator is normally a surface payload. Its transportation chain starts with integration into a lander on Earth, continues through launch and lunar transfer, then covers landing, deployment, and setup of power, data and thermal interfaces. PRIME-1 is the only flown example in the sources reviewed. It was carried by the IM-2 lander, and its drill was deployed horizontally because of the off-nominal landing attitude [2][3].",
+        "transportation_process": [
+          "Integrate the demonstrator, including its drill or sample chamber and mass spectrometer, into the lander on Earth.",
+          "Launch the lander and transfer it towards the Moon.",
+          "Land the lander on the surface; the landing attitude determines whether a deployment mechanism can work as intended.",
+          "Deploy the drill or sample system and carry out sample acquisition, sealing or heating, and analysis.",
+          "Connect the power, data and thermal interfaces that the payload requires."
+        ],
+        "deployment_methods": "For PRIME-1 the drill was deployed in a horizontal orientation after the lander's off-nominal landing attitude [2]. The sources reviewed do not describe the deployment mechanism in further detail. For the laboratory, ground-development and instrument-concept examples, no deployment method was verified.",
+        "historical_examples": "PRIME-1 is the flown example reviewed here [2][3]. Light WAVE has no verified flight manifest in the sources reviewed [4]. The MARVEL project aimed at a flight demonstrator but is described as closed [5].",
+        "compatibility_assessment": "No lander compatibility is asserted for any example. The MARVEL project report names ESA's European Large Logistic Lander and Astrobotic's Griffin as possible hosts [5]; compatibility with either was not verified, and no lander is assigned in this article.",
+        "images": []
+      },
+      "historical_significance": "VAPoR was selected for concept funding in 2007 under the NASA Lunar Sortie Science Opportunities programme [6]. The Light WAVE paper describes a laboratory approach to water quantification that may support sample return [4]. The ESA MARVEL project ran as a ground-development effort for a microwave demonstrator payload from 2021 to 2022 [5]. PRIME-1 was an attempt to test an ice-mining drill and mass spectrometer on the lunar surface, and is the most direct flight precedent in the sources reviewed [2][3].",
+      "limitations_and_uncertainties": "The term volatile extraction demonstrator describes a class of payloads rather than one design, so values from different examples must not be compared directly. Only PRIME-1 is a flown example in the sources reviewed, and its instruments were limited by the lander's orientation and reduced operating time [2][3]. The Light WAVE, MARVEL and VAPoR examples are laboratory, ground-development or instrument-concept work. Several numerical values, including the TRIDENT mass, MSolo specifications, Light WAVE accuracy and VAPoR mass, are not verified. A few points rely on secondary sources: NASA statements reported in press coverage [3], the MARVEL project details summarised from ESA pages [5], and VAPoR test details from a 2010 paper not opened in full [6]. These should be checked against the primary documents before reuse. No direct image asset was verified, so the article includes no images. RESOLVE/OVEN and other ISRU extraction systems were outside this run's search budget and are not covered.",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "number": 1,
+          "title": "TRIDENT Ice Mining Drill for Lunar Volatile Prospecting for PRIME-1 and VIPER Missions",
+          "authors": "Zacny et al.",
+          "publisher": "The Planetary Science Journal",
+          "date": "2025",
+          "url": "https://doi.org/10.3847/PSJ/ae0b51",
+          "notes": "DOI as given on the library page [2]; full paper not opened."
+        },
+        {
+          "number": 2,
+          "title": "TRIDENT Ice Mining Drill for Lunar Volatile Prospecting for PRIME-1 and VIPER Missions (library abstract page)",
+          "authors": "Zacny et al.",
+          "publisher": "icedrill.org library",
+          "date": "2025",
+          "url": "https://icedrill.org/library/trident-ice-mining-drill-lunar-volatile-prospecting-prime-1-and-viper-missions",
+          "notes": "Abstract page read; no mass, power or full specifications on this page."
+        },
+        {
+          "number": 3,
+          "title": "NASA's Lunar Drill Technology Passes Tests on the Moon",
+          "authors": null,
+          "publisher": "NASA",
+          "date": "date not confirmed",
+          "url": "https://www.nasa.gov/missions/artemis/nasas-lunar-drill-technology-passes-tests-on-the-moon/",
+          "notes": "Article not opened; statements attributed to it come from search-result summaries and must be checked."
+        },
+        {
+          "number": 4,
+          "title": "Demonstration of a Lunar Water Extraction and Quantification Technique in a Relevant Environment",
+          "authors": "Paz, A. J.",
+          "publisher": "AIAA ASCEND 2022; NASA NTRS record 20220005441",
+          "date": "2022",
+          "url": "https://ntrs.nasa.gov/citations/20220005441",
+          "notes": "Record read; no quantitative results in the text."
+        },
+        {
+          "number": 5,
+          "title": "MARVEL: Microwave Heating Apparatus of Lunar Regolith for Variant Experiments of Lunar ISRU Missions (project page)",
+          "authors": null,
+          "publisher": "European Space Agency",
+          "date": "2021-2022 project dates",
+          "url": "https://nebula.esa.int/4000133998",
+          "notes": "Page redirected and was not fully read; details come from search-result summaries of ESA pages and the linked report."
+        },
+        {
+          "number": 6,
+          "title": "Volatile analysis by pyrolysis of regolith for planetary resource exploration",
+          "authors": "ten Kate, I. L. et al.",
+          "publisher": "NASA Goddard (PDF on NASA CISTO news site)",
+          "date": "2010",
+          "url": "https://cisto-news.gsfc.nasa.gov/sed/content/uploadFiles/publication_files/tenKateetal2010.pdf",
+          "notes": "Not opened in full; claims come from a search-result summary."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All image_url and source_page_url values have query strings and fragments removed. No image URLs are included because no direct asset was verified."
+  },
+  "data_quality_notes": [
+    "No direct image asset was verified; the article and JSON contain no images.",
+    "PRIME-1 TRIDENT mass and MSolo specifications were not confirmed by a primary source; mass recorded as null.",
+    "Light WAVE accuracy figures were not available in the text reviewed.",
+    "MARVEL (ESA) details come from search-result summaries of ESA pages; the redirected pages and report were not fully read.",
+    "VAPoR test details come from a search-result summary of a 2010 paper that was not opened in full; flight status not confirmed.",
+    "NASA PRIME-1 article statements (operating time, lander attitude) come from search-result summaries, not an opened page.",
+    "RESOLVE/OVEN and other ISRU extraction systems were not covered in this run.",
+    "Conditions and gaps for this article: research used web search and selected page reads within the batch budget; no direct image asset was verified; the references are given in the order cited."
+  ]
+}

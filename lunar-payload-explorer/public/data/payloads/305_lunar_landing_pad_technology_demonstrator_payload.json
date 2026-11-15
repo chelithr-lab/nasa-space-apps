@@ -1,0 +1,274 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 305,
+    "name": "Lunar landing pad technology demonstrator",
+    "article": {
+      "overview": "A lunar landing pad technology demonstrator is an experiment, or a campaign of experiments, that tests whether a prepared surface pad can protect a lander, an ascent vehicle and nearby equipment from regolith thrown up by rocket plumes. The catalogue name describes a class of demonstrators rather than one flown instrument. As of the sources reviewed for this article, no lunar landing pad demonstrator has been confirmed to have operated on the Moon. The work reviewed here consists of ground tests with rocket engines, laboratory processing trials, and concept studies.",
+      "description": "When a rocket lands or launches close to the ground, its exhaust gas strikes the surface at high speed and temperature. On an airless body such as the Moon, this can throw regolith outward in a fast, wide ejecta curtain, excavate a crater beneath the engine and endanger nearby hardware. A landing pad addresses this by placing a robust, relatively level and erosion-resistant surface under the landing or launch area. A demonstrator tests one or more ways of making that surface. The approaches reviewed fall into four groups: (1) regolith bound with a polymer or silicone binder, formed into pavers or a continuous layer (the NASA Kennedy work also tested sintered regolith simulant pavers); (2) regolith fused by heat, including microwave sintering (NASA Marshall MMPACT work); (3) pads created in flight, where the lander's engine plume carries ceramic particles to the surface, where they partly melt and bind the dust just before touchdown (Masten FAST concept); (4) pre-built or modular pads from Earth-supplied materials, such as the University of Alabama in Huntsville and Linc Research vented modular prototype, or a fabric-anchored binder-stabilised regolith surface (LILL-E Pad concept). Each approach has a different mass, power and operations profile, and the reviewed sources do not show that any one of them is preferred for flight.",
+      "scientific_purpose_and_applications": "The main purpose is engineering risk reduction for lunar landers and ascent vehicles rather than the measurement of a natural phenomenon. The Kennedy Space Center authors state that the lunar surface is currently used unprepared, and that 'significant risks exist for the larger landers proposed for the Artemis Program' because of higher thrust, increased ejecta and cratering, co-located assets in the ejecta path, and possible strict surface levelness requirements for tall vehicles (Gelino et al., 2022). Secondary applications identified in the sources include: protecting nearby surface assets such as power systems, habitats and instruments from ejecta; providing a level, load-bearing surface for tall vehicles; producing data on how regolith erodes under real plume conditions, which feeds plume-surface interaction models used to choose safe sites (NASA's 2021 article describes its LPAD work as building models of how a lander affects the surface); and building materials and processing know-how for later lunar construction, including habitats and roads (NASA Marshall's MMPACT programme lists landing pads, habitats, shelters, roadways, berms and blast shields among its goals).",
+      "operating_principle": "Two physical processes must be considered: the plume environment and the pad response. Plume environment: a lander's engine plume contains hot gas that can exceed the temperature at which many materials soften or erode, and high pressure that drives material away from the surface. The Kennedy authors state that pad thickness depends on the gas temperatures, velocities and pressures at the surface, and that thruster placement changes the plume environment: high-mounted thrusters produce a comparatively benign surface environment, while traditional low aft-mounted engines produce a much harsher one (Gelino et al., 2022). Pad response: a pad must resist thermal and erosive attack, hold together under the landing load, prevent gas from undermining the surface, and avoid releasing ejecta of its own. The Kennedy paper notes that Apollo-era landers' footpads were designed to apply a static pressure of 0.7 psi, and that the team therefore treated erosion rate, rather than dynamic landing loads, as the governing factor for pad thickness; landing loads had not yet been considered in its pad designs (Gelino et al., 2022). Construction approaches differ in energy and material needs. Binder-bound regolith requires the binder (for example a silicone thermoset) to be imported from Earth but needs no bulk heating of the regolith, which the Kennedy team describes as reducing power, process control and system complexity. Sintering or melting uses heat to fuse regolith; NASA Marshall describes microwave heating as its route to construction (Edmunson et al., 2020). In-flight deposition uses the plume to melt and fix particles, so no separate construction stage is needed, but the deposited mass must be carried by the lander. Modular venting pads use rigid modules whose internal channels redirect exhaust away from the structure.",
+      "scientific_importance": "The importance of these demonstrators lies in reducing uncertainty for lunar operations rather than in producing new astrophysical or geophysical knowledge directly. The Kennedy authors state that plume-driven ejecta and cratering are expected to be more severe for the larger landers planned for Artemis, which makes erosion data from ground testing directly useful for design. A demonstrator that measures erosion, cratering or ejecta with the actual regolith simulant and engine conditions therefore informs both pad design and the operational rules for choosing where a lander sets down. The reviewed sources do not demonstrate that any specific approach can be built and tested in lunar conditions. The Kennedy paper states that the materials 'must be proven to be compatible with lunar environments' and that their performance under lunar thermal, radiation and gravity environments remains to be characterised (Gelino et al., 2022).",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar landing pad demonstrator. The five examples below are at different stages of development, use different materials, and have different pad sizes, so their figures are not directly comparable. Where a sentence describes a target, design assumption or measured value, the text says which it is. Small-scale ground test specimens are reported in imperial units in the NASA source and are converted here for convenience.",
+        "examples": [
+          {
+            "name": "RTV-bound and sintered regolith pavers (NASA Kennedy Space Center, Swamp Works)",
+            "type": "Laboratory and ground hot-fire test article (not flown)",
+            "status": "Ground hot-fire tested; not flown; not verified for lunar environments",
+            "specimen_dimensions": [
+              {
+                "specimen": "20% RTV-bound regolith paver (Campaigns 1 and 2)",
+                "reported_dimensions": "39.25 x 39.25 x 1.5 in (approx. 99.7 x 99.7 x 3.8 cm)"
+              },
+              {
+                "specimen": "11% RTV-bound regolith paver (Campaign 2)",
+                "reported_dimensions": "12.5 x 12.5 x 1.5 in (approx. 31.8 x 31.8 x 3.8 cm)"
+              },
+              {
+                "specimen": "Sintered regolith paver array (Campaign 2)",
+                "reported_dimensions": "Nine pavers of approx. 12 x 12 x 1 in in a 3 x 3 pattern with approx. 0.5 in grout gaps grouted with 20% RTV-regolith"
+              }
+            ],
+            "materials": "Black Point-1 (BP-1) regolith simulant bound with RTV-655 thermoset silicone polymer at 20% and 11% RTV by mass; sintered regolith pavers with 20% RTV-regolith grout.",
+            "engine": "Masten 'Switchblade' gaseous oxygen/methane heat-sink engine, approx. 444 N nominal thrust, two-second firing, chamber pressure 5,170 kPa, O2/CH4 mixture ratio 2.5 to 3.2.",
+            "test_campaigns": "December 2020 and March 2021, under the Large Vehicle Lunar Landing Surface Interaction project (public-private partnership with SpaceX under a 2019 NASA Announcement of Collaboration Opportunity).",
+            "results_as_reported": "Campaign 1 (engine 16 cm above the 20% paver, static): cylindrical cavity 3.07 cm diameter and 3.2 cm deep, approx. 23.7 cm3 eroded; paver pierced, no regolith ejecta observed during firing. Campaign 2 (engine descending from approx. 1.02 m to 0.6 m above the test article): 20% and 11% pavers and the sintered-paver grout line showed heat scarring but little to no erosion. The abstract states that significant erosion was experienced during the more extreme thermal testing conditions and that all test articles successfully mitigated regolith ejecta; the body text describes the results above. These should be read as reported and not reconciled beyond the paper's own statements.",
+            "construction_implement_test": "Laboratory test at CW Brabender facilities. A 1 in single-screw extruder (25:1 L/D) behaved irregularly above approx. 80% BP-1; at 90% BP-1 torque exceeded 320 N m and a safety shear pin failed. A 20 mm co-rotating twin-screw extruder (800 mm long) produced consistent extrudate at 85/15 BP-1/RTV by mass and a self-supporting dense rod at 90/10. Bonding between deposited passes was not tested.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20220000334",
+              "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-tests-landing-pad-materials-for-future-lunar-missions"
+            ],
+            "images": [
+              {
+                "id": "nasa_lpad_hot_fire_test",
+                "description": "Hot fire testing of a landing-pad material test article, from NASA's Kennedy Space Center landing-pad article.",
+                "image_type": "Ground hot-fire test photograph (NASA)",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2021/10/masten-testing-polymer-regolith-concrete-2021.jpg",
+                "source_page_url": "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-tests-landing-pad-materials-for-future-lunar-missions",
+                "publisher": "NASA",
+                "credit": "NASA",
+                "caption": "Hot fire testing. Credit: NASA. Source page: NASA, 'NASA Tests Landing Pad Materials for Future Lunar Missions' (21 Oct 2021).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL checked by HTTP HEAD request (200, image/jpeg). The source page's ?w=1428 query parameter was removed. The page alt text is 'Hot fire testing'; the filename refers to polymer-regolith concrete, which the page does not confirm in detail. Separate photographer credit not verified."
+              }
+            ]
+          },
+          {
+            "name": "Masten FAST (in-Flight Alumina Spray Technique)",
+            "type": "Proposed concept from a NIAC Phase I study, as reported in press coverage (not flown; no lunar hardware reported)",
+            "status": "Proposed concept; Masten describes a lunar test as the next step, with no date or mission given",
+            "concept": "Ceramic alumina particles are injected into the descending lander's engine plume, partly melt, coat the dust and solidify into a pad as the lander approaches the surface. Press reports that the whole deposit and cooling process would take less than 13 seconds. Recommended layering: a layer of larger alumina particles first, then a layer of much smaller particles on top.",
+            "reported_figures_press_only": "About 186 kg of alumina released over about 10 seconds from up to 30 m altitude, forming a pad about 6 m in diameter. Secondary coverage gives the Artemis-lander simulation mass as 410 lb (consistent with about 186 kg); a third secondary source gives a pad mass near 300 kg. The primary NIAC report was not located, so these figures are unverified.",
+            "source_urls": [
+              "https://www.freethink.com/space/moon-dust"
+            ],
+            "images": []
+          },
+          {
+            "name": "UAH and Linc Research vented modular pad (ground prototype)",
+            "type": "Ground prototype with rocket-motor hot-fire tests (not flown)",
+            "status": "Ground prototype; 6 m (20 ft) pad in development and planned for testing at NASA Marshall; no dates given",
+            "dimensions": "3.65 m (12 ft) diameter prototype built from modular, interlocking concrete components with internal vent channels that redirect exhaust away from the structure. Embedded sensors recorded plume movement through the vents during each firing. Concrete is a stand-in for materials that might later be made from lunar regolith (sintered ceramics or 'lunacrete').",
+            "tests": "Three hot-fire tests at the University of Alabama in Huntsville Propulsion Research Center. Motor type and thrust are not stated. Funding: NASA Artemis programme via the STTR programme.",
+            "results_as_reported": "The lead investigator states that the hot-fire tests demonstrated the rocket plume could be redirected, and that the vented design protected the pad from heat. No dust or erosion measurements are reported. The article is undated in the reviewed copy.",
+            "source_urls": [
+              "https://www.universetoday.com/articles/students-test-prototype-landing-pad-to-make-lunar-operations-safe"
+            ],
+            "images": []
+          },
+          {
+            "name": "LILL-E Pad concept (Colorado School of Mines with ICON, Masten Space Systems and Adherent Technologies)",
+            "type": "Concept and planned tests (not flown)",
+            "status": "Concept; planned tests described in February 2021; no results reported in the source",
+            "design": "Regolith surface reinforced with a binder (POND area, polymer-hardened regolith applied through a binder distribution system) and a central landing/launch pad (LLP) of carbon-fibre fabric anchored to the ground. Per the team's description, the fabric must withstand 3,000 to 4,000 C, block gas intrusion and bear the lander's weight. Deployment would be autonomous and robotic.",
+            "planned_tests": "Thermal load and vacuum-chamber testing of the carbon-fibre barrier; engine test with Masten Space Systems at its Plume Surface Interaction test gear in Mojave, California; lab work in a vacuum chamber and Lunar Testbed with JSC-1 simulant.",
+            "results_as_reported": "No quantitative results reported. The team says laboratory testing has shown promise, but mixing/wetting mechanics and south-pole temperature effects remain unknown. The stated goal is implementation 'by 2026'.",
+            "source_urls": [
+              "https://www.leonarddavid.com/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Microwave sintering of regolith (NASA Marshall MMPACT)",
+            "type": "Development programme; laboratory-stage materials and sintering work (no flight hardware reported)",
+            "status": "Development; demonstration on a small CLPS lander was planned for the 2025 timeframe, not confirmed in the reviewed sources",
+            "scope": "Moon-to-Mars Planetary Autonomous Construction Technology (MMPACT) project with three elements: autonomous construction system, construction feedstock materials development, and a microwave sintering construction capability. Materials work focuses on cementitious materials, metals, and sintered and melted regolith, tested for tensile, compressive and flexural strength, thermal swings and vacuum.",
+            "stated_plan": "'The team plans to demonstrate construction on a small Commercial Lunar Payload Services (CLPS) lander in the 2025 timeframe, with a future goal of constructing a subscale landing pad in 2028-2029' (Edmunson et al., 2020). Dependencies listed include the excavation interface, regolith feedstock beneficiation, storage and provision, structures requirements, site-to-site mobility, lunar simulant availability, lander off-loading capability, navigation, power, regolith composition and mineralogy, lander specifications and communication protocols.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20205007535"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Pad diameters in the sources range from about 0.3 m test pavers to a 3.65 m prototype, a 6 m proposed pad (FAST and UAH follow-on), and the 100 m to 200 m Artemis landing-pad diameters discussed by the Kennedy authors. The Kennedy paper reports that the Artemis Program's landing-pad diameter requirement was 200 m, with discussions under way to reduce it to 100 m. The examples are not directly comparable because they differ in scale, material and development stage.",
+        "mass_and_weight": "Mass depends on pad size, thickness and binder fraction. The Kennedy paper gives estimates of imported polymer mass for assumed pad sizes (see the transportation section). No flight-mass figure for a complete pad system is publicly specified for any of the examples. The press-reported FAST alumina mass (about 186 kg; 410 lb in one secondary source) is for a proposed concept and is unverified against a primary report.",
+        "power_requirements": "A passive pad structure has no intrinsic electrical power requirement reported in the sources. Test instrumentation, sintering systems and extruders do require power, but the reviewed sources do not state flight power budgets for a deployed pad. Power requirements are therefore not publicly specified for flight-scale systems."
+      },
+      "environmental_and_operational_requirements": "A lunar landing pad must survive and perform in the lunar environment, which has no substantial atmosphere, large temperature swings, and micrometeoroid and radiation exposure. Plume loads: the plume's temperature, velocity and pressure determine required pad thickness and erosion rate; the Kennedy paper treats erosion rate as the governing design driver in its current analysis. Surface levelness: tall vehicles may require a level surface, one of the reasons for the pad concept. Thermal, radiation and gravity conditions: the Kennedy paper states that effects of lunar thermal, radiation and gravity environments on the materials were not assessed and must be characterised in follow-on work; the LILL-E concept identifies south-pole temperature effects as unknown. Landing-site and operational context: the sources do not recommend lunar landing sites, and this article makes no such recommendation. The Kennedy team notes that improved landing accuracy, which would shrink the required pad diameter, has a significant positive effect on the feasibility of imported-binder pads.",
+      "limitations": "No demonstrator has been confirmed on the Moon; every example reviewed is a ground test, laboratory study, concept or planned development. Scale: the largest tested pavers are about 1 m across, far smaller than the 100 m to 200 m pads discussed for Artemis, and scaling is not demonstrated. Limited engine and plume range: the Kennedy tests used a 444 N engine firing for two seconds; the UAH tests used motors whose type and thrust are not stated. Imported-binder mass: the RTV-bound approach requires a polymer that cannot be produced in situ with the described process, so feasibility depends on mass delivered from Earth. Missing measurements: the UAH and LILL-E reports give no dust or erosion measurements, and the Kennedy abstract and body describe erosion differently. Dated sources: several reviewed sources date from 2020 to 2022, and the 2026 review did not find a confirmed flight schedule for any example.",
+      "transportation_and_deployment": {
+        "overview": "A lunar landing pad demonstrator would be delivered to the Moon as part of a lander's payload, either as a self-contained package or as a set of construction materials and equipment that the lander and surface systems use on arrival. Surface-payload integration sequence (general): integrate the demonstrator or materials into the lander on Earth; launch on a launch vehicle; transfer to lunar orbit or trajectory; land; deploy the pad materials or equipment; and then form, cure or sinter the pad, or deposit it in flight, depending on the approach. Mass and delivery constraints: the Kennedy paper calculates imported binder mass for an 85 wt% regolith mixture (15 wt% RTV) for several pad sizes and thicknesses (Table 1 of Gelino et al., 2022). The paper states that SpaceX Starship was then targeting 100 to 200 t of payload to the lunar surface, and that a 100 t payload could supply the binder for all but the largest pad sizes; a 200 m pad is not feasible with one such payload, while 100 m or smaller pads could be accommodated. These are 2021-2022 vehicle targets and are not confirmed for any current vehicle.",
+        "transportation_process": [
+          "Integrate the demonstrator or pad materials into the lander on Earth.",
+          "Launch on a launch vehicle.",
+          "Transfer to lunar orbit or trajectory.",
+          "Land on the lunar surface.",
+          "Deploy the pad materials or equipment, or deposit the pad in flight during descent.",
+          "Form, cure, sinter or otherwise complete the pad, and check its performance and interfaces."
+        ],
+        "deployment_methods": "The Kennedy team tested a screw-extruder concept on the ground for mixing, conveying and depositing the binder-regolith material, with a roller compaction option that could reduce positioning demands; adhesion to the roller must be addressed if the method is pursued. FAST relies on the lander's own engine plume for deposition, which would need integration with the descent profile. The UAH article does not describe a placement method for its modular pad. The LILL-E concept describes autonomous robotic deployment.",
+        "historical_examples": "Early Apollo landings took place directly on unprepared regolith, which the Kennedy authors describe as the current state of the art for lunar landings and launches. No landing pad has been constructed or demonstrated on the Moon in the sources reviewed.",
+        "compatibility_assessment": "No named lander, rover or spacecraft has been verified as compatible with any pad system reviewed here. The Kennedy paper does not claim compatibility with a specific vehicle, and this article does not do so either. Compatibility would need to be assessed against mass, mounting, landing loads, deployment method, power, communications and the vehicle's plume configuration.",
+        "images": []
+      },
+      "historical_significance": "Early Apollo landings took place directly on unprepared regolith, and that practice remains the current state of the art for lunar landings and launches, according to the Kennedy authors (Gelino et al., 2022). Interest in landing-pad construction grew as Artemis-class landers, with much higher thrust than Apollo-era descent engines, were planned. The Kennedy LPAD work was funded through NASA's Game Changing Development Program (NASA, 2021), and the MMPACT project is funded through the Lunar Surface Innovation Initiative (Edmunson et al., 2020). The field is therefore recent: its main demonstrations are ground tests in 2020-2021, with concept development and planned lunar demonstrations since.",
+      "limitations_and_uncertainties": "Technology readiness: the Kennedy paper states the overall technology was approximately TRL 2 to 3 and recommends development to TRL 6 for a small-scale lunar demonstration using a CLPS mission (Gelino et al., 2022). This is the paper's own assessment; no independent review was found. Flight status: no flight, lander or CLPS mission carrying a landing-pad experiment has been confirmed in the sources reviewed. Test conditions: hot-fire tests were run at near-field distances (for example, the Kennedy engine was 60 cm above the test article at closest approach), which may not match descent plume geometry. Discrepancies in the Kennedy paper: the abstract refers to 'two simulated Starship lunar launch/landing environments' (one thermal, one pressure-focused), but the body describes two test campaigns using a single engine and does not explicitly map campaigns to these environments; the abstract's statement about significant erosion is not directly matched by the body text. Unverified figures: FAST pad dimensions and mass come from press coverage of a NIAC study; the primary report was not located and sources disagree on alumina mass. Article dating: the UAH article is undated in the reviewed copy, and the LILL-E article (February 2021) has a timeline that has passed. Lunar environment: dust behaviour, thermal cycling, radiation and gravity effects on binder-bound and sintered materials were not tested in the sources reviewed.",
+      "images": [
+        {
+          "id": "nasa_lpad_hot_fire_test",
+          "description": "Hot fire testing of a landing-pad material test article, from NASA's Kennedy Space Center landing-pad article.",
+          "image_type": "Ground hot-fire test photograph (NASA)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2021/10/masten-testing-polymer-regolith-concrete-2021.jpg",
+          "source_page_url": "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-tests-landing-pad-materials-for-future-lunar-missions",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Hot fire testing. Credit: NASA. Source page: NASA, 'NASA Tests Landing Pad Materials for Future Lunar Missions' (21 Oct 2021).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL checked by HTTP HEAD request (200, image/jpeg). The source page's ?w=1428 query parameter was removed. The page alt text is 'Hot fire testing'; the filename refers to polymer-regolith concrete, which the page does not confirm in detail. Separate photographer credit not verified."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "nasa_lpad_hot_fire_test",
+          "description": "Hot fire testing of a landing-pad material test article, from NASA's Kennedy Space Center landing-pad article.",
+          "image_type": "Ground hot-fire test photograph (NASA)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2021/10/masten-testing-polymer-regolith-concrete-2021.jpg",
+          "source_page_url": "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-tests-landing-pad-materials-for-future-lunar-missions",
+          "publisher": "NASA",
+          "credit": "NASA",
+          "caption": "Hot fire testing. Credit: NASA. Source page: NASA, 'NASA Tests Landing Pad Materials for Future Lunar Missions' (21 Oct 2021).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL checked by HTTP HEAD request (200, image/jpeg). The source page's ?w=1428 query parameter was removed. The page alt text is 'Hot fire testing'; the filename refers to polymer-regolith concrete, which the page does not confirm in detail. Separate photographer credit not verified."
+        }
+      ],
+      "references": [
+        {
+          "title": "In-situ Lunar Launch and Landing Pad Construction with Regolith-Thermoset Polymer Composite Materials",
+          "authors": "Gelino, N. J.; Mueller, R. P.; Sibille, L.; Dixon, K. L.; Gleeson, J.; Buckles, B.",
+          "publisher": "ASCE Earth and Space 2022 (conference paper; NASA NTRS)",
+          "date": "2022-04-25 to 2022-04-28 (conference dates)",
+          "url": "https://ntrs.nasa.gov/citations/20220000334"
+        },
+        {
+          "title": "NASA Tests Landing Pad Materials for Future Lunar Missions",
+          "publisher": "NASA Kennedy Space Center",
+          "date": "2021-10-21",
+          "url": "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-tests-landing-pad-materials-for-future-lunar-missions"
+        },
+        {
+          "title": "Moon to Mars Planetary Autonomous Construction Technology (MMPACT) Lunar Surface Construction Activity at NASA Marshall Space Flight Center",
+          "authors": "Edmunson, J.; Clinton, R. G.; Fiske, M. R.; Effinger, M. R.",
+          "publisher": "NASA Marshall Space Flight Center (conference abstract; NASA NTRS)",
+          "date": "document created 2020-09-11",
+          "url": "https://ntrs.nasa.gov/citations/20205007535"
+        },
+        {
+          "title": "Students test prototype landing pad to make lunar operations safe",
+          "publisher": "Universe Today",
+          "date": "undated in reviewed copy",
+          "url": "https://www.universetoday.com/articles/students-test-prototype-landing-pad-to-make-lunar-operations-safe"
+        },
+        {
+          "title": "Inside Outer Space column on the LILL-E Pad concept",
+          "authors": "Leonard David",
+          "publisher": "Leonard David (personal site)",
+          "date": "2021-02-05",
+          "url": "https://www.leonarddavid.com/"
+        },
+        {
+          "title": "Spacecraft tech turns moon dust into 'near-instant' landing pads",
+          "publisher": "Freethink",
+          "date": "2021-10-03",
+          "url": "https://www.freethink.com/space/moon-dust"
+        },
+        {
+          "title": "Large Vehicle Lunar Landing Surface Interaction and In-Situ Resource Based Risk Mitigation: Landing & Launch Pads (AIAA 2021-4071)",
+          "authors": "Mueller, R. P. et al.",
+          "publisher": "AIAA ASCEND 2021",
+          "date": "2021-11",
+          "url": null,
+          "notes": "Cited in Gelino et al. (2022); not independently retrieved."
+        },
+        {
+          "title": "Planetary basalt field project: Construction of a lunar launch/landing pad",
+          "authors": "Kelso, R. M. et al.",
+          "publisher": "Cited in Gelino et al. (2022)",
+          "date": "2016",
+          "url": null,
+          "notes": "Cited in Gelino et al. (2022); not independently retrieved."
+        },
+        {
+          "title": "Design, test, and simulation of lunar and Mars landing pad soil stabilization built with in situ rock utilization",
+          "authors": "van Susante, P. J.; Metzger, P. T.",
+          "publisher": "Earth and Space 2016 (cited in Gelino et al., 2022)",
+          "date": "2016",
+          "url": null,
+          "notes": "Cited in Gelino et al. (2022); not independently retrieved."
+        },
+        {
+          "title": "Feasibility study on lunar concrete landing pad",
+          "authors": "Lee, J.; Chang, B. C.; Lee, S.; Lee, T. S.",
+          "publisher": "Earth and Space 2012 (cited in Gelino et al., 2022)",
+          "date": "2012",
+          "url": null,
+          "notes": "Cited in Gelino et al. (2022); not independently retrieved."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "RTV-bound and sintered regolith pavers example": "payload.article.physical_specifications.examples[0].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. The image is repeated intentionally in the overview and in the RTV-bound and sintered regolith paver example so each section can render its own image without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Lunar landing pad technology demonstrator: no demonstrator has been confirmed to have operated on the Moon in the sources reviewed; all examples are ground tests, lab studies, concepts or planned development.",
+    "Masten FAST figures (about 186 kg alumina, 6 m pad, 10 s release from 30 m) come from press coverage of a NIAC Phase I study; the primary report was not located, and secondary sources disagree on alumina/pad mass (410 lb, about 186 kg, or near 300 kg). The NIAC attribution itself came from a secondary search summary and should be confirmed.",
+    "Kennedy RTV paper (Gelino et al., 2022): the abstract describes significant erosion under more extreme thermal conditions and refers to two simulated Starship environments, while the body describes Campaign 1 erosion (about 23.7 cm3) and little to no erosion in Campaign 2 with a single engine. Reported as written; not reconciled.",
+    "Kennedy RTV paper TRL (approx. TRL 2 to 3; TRL 6 recommended for a small-scale CLPS demonstration) is the paper's own self-assessment.",
+    "Kennedy paper Table 1 payload masses use assumed pad parameters (25 mm or 50 mm thickness, 80 to 85 wt% regolith) and are not design values.",
+    "Kennedy paper's 100 t to 200 t Starship payload target is a 2021-2022 figure and has not been confirmed for any current vehicle.",
+    "MMPACT (Edmunson et al., 2020): the planned CLPS demonstration in the 2025 timeframe and the 2028-2029 subscale pad goal are not confirmed by any reviewed source; treat as dated.",
+    "UAH/Linc vented modular pad: the reviewed article is undated; its next steps (6 m pad, Marshall testing) have no dates. The motor type and thrust are not stated.",
+    "LILL-E Pad concept: the source article (Leonard David, 5 February 2021) is identified by a query-string URL (?p=27124). The URL policy removes the query string, so the clean URL https://www.leonarddavid.com/ does not identify the article; this reference is weakly verifiable. The 'by 2026' goal is the article's own, and no later status was found.",
+    "Image: one NASA image is included. Its direct asset URL returned HTTP 200 (image/jpeg) on a HEAD request. Its credit line and specimen identity beyond the alt text 'Hot fire testing' were not separately verified. Figures from the Kennedy paper were not reproduced because no verified direct asset URL was obtained.",
+    "Research gaps not closed: full-text verification of references 7 to 10 (cited in Gelino et al., 2022 only); no 2025-2026 status updates found for any example; full-resolution image downloads not checked."
+  ]
+}

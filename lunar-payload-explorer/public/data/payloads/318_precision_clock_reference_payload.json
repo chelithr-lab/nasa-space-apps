@@ -1,0 +1,228 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 16,
+    "name": "Calibration, reference and monitoring systems"
+  },
+  "payload": {
+    "number": 318,
+    "name": "Precision clock reference",
+    "article": {
+      "overview": "A precision clock reference is an instrument that generates a highly stable frequency and time signal. Other instruments, communication links and navigation services use that signal to synchronise their measurements and check their own timing. On the Moon, a precision clock reference would provide a local time standard for surface and orbital systems that would otherwise depend on Earth-based time. The status of this payload class must be stated clearly. NASA's Deep Space Atomic Clock (DSAC) operated in Earth orbit from June 2019 to September 2021 as a technology demonstration; it was not a lunar payload. ESA's NovaMoon concept includes atomic clocks within a planned lunar navigation and timing payload, with no published launch date. NIST researchers have published a relativistic framework for lunar clock rates, which is theoretical work. No lunar-surface precision clock payload was confirmed as flown in the sources reviewed.",
+      "description": "A precision clock reference is built around an atomic frequency standard. An atomic standard uses the natural, repeatable resonance of atoms or ions to define a frequency. The instrument counts cycles of that frequency to produce time, and outputs a stable signal to the systems it serves. Two properties matter most. Stability describes how little the frequency varies over short and long averaging times, and it determines how well a clock holds time between synchronisations. Accuracy and traceability describe how closely the clock's time matches a defined reference, and how that match is maintained; for a lunar payload the reference might be Earth time, a lunar time scale, or a network of other clocks. A flight clock also needs a physical packaging solution. It must survive launch vibration, thermal cycling and radiation, and hold a stable temperature. Much of the engineering effort goes into these environmental and thermal controls rather than into the frequency standard itself.",
+      "scientific_purpose_and_applications": "The main applications described in the sources reviewed are navigation and positioning, a lunar time reference, deep-space navigation, and instrument time-tagging and synchronisation. For navigation, a stable clock on the surface or in orbit can support time-of-flight measurements that give position. The NIST authors describe a lunar network of surface clocks, with orbiting clocks acting as satellites, as a possible lunar GPS framework; this is a proposal in the cited work, not a deployed system. For a lunar time reference, NIST describes a master Moon time for the whole lunar surface, similar in role to UTC on Earth; a precision clock reference would be a physical realisation of such a time scale. For deep-space navigation, NASA's DSAC demonstration tested whether a precision space clock could improve radio tracking. The NASA analysis reported that orbit determination using DSAC-derived one-way data was on par with traditional two-way data types; this was an analytical experiment, not an in-flight navigation result. For instrument time-tagging, other lunar instruments can use a shared time base to align their data. The sources reviewed do not describe a specific lunar instrument using such a reference.",
+      "operating_principle": "A precision clock reference uses a resonating physical system whose frequency is very stable. The DSAC design is an example; NASA describes it as an ultra-precise, mercury-ion atomic clock housed in a small box. The main steps in operation are: (1) the atomic or ionic resonator is prepared in a defined state; (2) a local oscillator is tuned to the resonance; (3) the resonance is measured and a feedback loop corrects the oscillator so that its frequency stays locked to the atomic transition; (4) the corrected frequency is counted to produce time, and the time is distributed to users; and (5) the clock is compared with a reference, such as Earth time through a radio link or another clock, to estimate drift and correct it. Step 5 is the main way a clock is checked after launch. On the Moon, the comparison would involve a link to Earth or to other lunar clocks. The sources reviewed do not describe the comparison method for any lunar clock payload.",
+      "scientific_importance": "Precise time is a basic requirement for navigation, communication and science on the Moon. Time errors translate directly into position errors, so a clock that drifts too far can degrade a navigation solution. The NIST article states that atomic clocks on the lunar surface would tick faster than clocks on Earth by about 56 microseconds per day. The associated arXiv preprint gives a more precise value of about 56.02 microseconds per day for a clock near the lunar equator. The NIST article does not explain the derivation, and the figure applies to a modelled configuration. The offset arises from two opposing effects: the Moon's motion relative to Earth tends to slow a lunar clock, while the Moon's weaker gravity tends to speed it up. The NIST article states a navigation goal: The goal is to ensure that spacecraft can land within a few meters of their intended destination. This is a target for the proposed timing framework, not a measured result. Lunar clock timing matters for three reasons: navigation accuracy, a shared surface time scale, and the ability to combine measurements from several sites. The NIST authors frame their work as a foundation for a GPS-like lunar system; that framing is a proposal, and the sources reviewed do not show an operating lunar network.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power figure for a precision clock reference. The class covers very different designs, from laboratory-grade standards to compact clocks. The examples below describe specific clocks only; values are not transferable between them.",
+        "examples": [
+          {
+            "name": "Deep Space Atomic Clock (DSAC)",
+            "type": "Flown space atomic clock technology demonstration (Earth orbit; not a lunar payload)",
+            "frequency_standard": "Mercury-ion atomic clock, as described by NASA as an ultra-precise, mercury-ion atomic clock.",
+            "mass_kg": null,
+            "mass_note": "Not publicly specified in the sources reviewed.",
+            "size_description": "NASA's 2021 release states about 10 inches (25 centimeters) on each side and roughly the size of a toaster. NASA's 2018 release describes it as about the size of a four-slice toaster. Both are descriptive, not engineering drawings.",
+            "approximate_cube_side_cm": 25,
+            "power_w": null,
+            "power_note": "Not publicly specified in the sources reviewed. The successor design was intended to reduce size, weight and power, but no figures were given.",
+            "flight_history": "Launched 25 June 2019 as a hosted payload on General Atomics' Orbital Test Bed spacecraft, part of the U.S. Department of Defense Space Test Program-2 mission. The mission ended on 18 September 2021, after its one-year primary mission had been extended.",
+            "measured_performance_in_orbit": {
+              "time_deviation": "Less than four nanoseconds after more than 20 days of operation (NASA 2021 release).",
+              "comparison_claim": "More than an order of magnitude better than GPS atomic clocks (NASA 2021 release).",
+              "one_day_fractional_frequency_stability": "Approximately 3 x 10^-15 at one day, against a stated requirement of approximately 2 x 10^-14 (NASA mission-results paper, as extracted; superscripts were lost in extraction and must be confirmed against the original paper)."
+            },
+            "pre_flight_ground_result": "NASA's 2018 release states ground tests showed DSAC to be more than 50 times as stable as the atomic clocks currently flown on GPS. This was a ground measurement, not an in-orbit result.",
+            "pre_flight_goal": "The 2018 release set an in-orbit goal of accuracy to better than two nanoseconds over a day, with a goal of 0.3 nanosecond. These are pre-flight targets, not the measured results above.",
+            "source_urls": [
+              "https://www.jpl.nasa.gov/news/nasa-tests-atomic-clock-for-deep-space-navigation/",
+              "https://www.jpl.nasa.gov/news/working-overtime-nasas-deep-space-atomic-clock-completes-mission",
+              "https://ntrs.nasa.gov/citations/20230006982"
+            ],
+            "images": [
+              {
+                "id": "dsac_hardware_photo",
+                "description": "The Deep Space Atomic Clock in the middle bay of the General Atomics Orbital Test Bed spacecraft.",
+                "image_type": "Flight hardware photograph (Earth orbit; not a lunar image)",
+                "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/images/imagestechnology20180206dsac20180206-16.width-1024.jpg",
+                "source_page_url": "https://www.jpl.nasa.gov/news/nasa-tests-atomic-clock-for-deep-space-navigation/",
+                "publisher": "NASA Jet Propulsion Laboratory",
+                "credit": "NASA",
+                "caption": "A glimpse of the Deep Space Atomic Clock in the middle bay of the General Atomics Orbital Test Bed spacecraft.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct image asset URL (display size, width 1024) returned HTTP 200 with image/jpeg on verification; the original full-size file at https://d2pn8kiwq2w21t.cloudfront.net/original_images/imagestechnology20180206dsac20180206-16.jpg also returned HTTP 200. Only availability was checked; file contents were not inspected beyond the source page's description. The image is shown in the source article and is credited to NASA. Usage rights should be checked against NASA image-use policy before republication. URL has no query string or fragment."
+              }
+            ]
+          },
+          {
+            "name": "NovaMoon",
+            "type": "Proposed ESA lunar navigation and timing payload concept (not flown)",
+            "mass_kg": null,
+            "power_w": null,
+            "dimensions_cm": null,
+            "clock_content": "Atomic clocks, including MiniRAFS and high-performance (optical) clocks, plus a synchronisation unit (ESA article).",
+            "wider_payload": "A combined GNSS and Lunar Augmented Navigation Service (LANS) navigation user terminal, a laser retroreflector, a Very Long Baseline Interferometry (VLBI) subsystem, and an optional laser-ranging capability; an optional LunaNet communications user terminal is also mentioned.",
+            "clock_performance": "Not publicly specified in the ESA article. No clock stability or accuracy specification is given.",
+            "schedule_and_lander": "ESA states that incremental versions are planned to fly on various lunar landers. The full configuration (version 3) is aimed at Argonaut 2. No launch date is given for any version. No interface evidence for Argonaut 2 was found, so this is a planned target and not a verified compatibility.",
+            "operating_duration": "ESA states two years, with a possible extension to five years, contrasted with a typical lunar mission duration of one lunar day (about 14 Earth days).",
+            "source_urls": [
+              "https://www.esa.int/Applications/Satellite_navigation/Introducing_NovaMoon"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "The DSAC example is a compact box described by NASA as about 25 cm per side. The NovaMoon proposal does not publish dimensions. A new precision clock reference would need dimensions determined by its frequency standard, thermal control, power and mounting requirements, and no dimensions can be assumed from either example.",
+        "mass_and_weight": "Mass is not publicly specified for DSAC or NovaMoon in the sources reviewed. Mass affects launch requirements, lander capacity and mounting design, and no value should be inferred from the examples above.",
+        "power_requirements": "Power is not publicly specified for DSAC or NovaMoon in the sources reviewed. A continuously operating clock needs a continuous power supply, and the power budget must include thermal control."
+      },
+      "environmental_and_operational_requirements": "A lunar precision clock must operate with thermal control, since clock stability is sensitive to temperature and lunar surface temperatures vary widely between day and night. It also needs radiation tolerance for lunar and deep-space radiation, which can affect electronics and the resonator; the sources reviewed do not give verified radiation-test figures for DSAC. Mechanical stability is required so that launch and landing vibration, and mounting on the surface, do not disturb the clock. A continuously operating clock needs continuous power. Finally, a standalone clock drifts over time, so its usefulness depends on synchronisation with a reference through a communication or ranging link.",
+      "limitations": "No lunar-surface clock payload was confirmed as flown in the sources reviewed. DSAC has ended, and NovaMoon has no published schedule. Mass and power are not publicly specified for either clock example. The stability figures for DSAC use different measurement methods and averaging times and should not be compared directly without the original data. A standalone clock drifts, so its value depends on a link and a reference clock.",
+      "transportation_and_deployment": {
+        "overview": "A surface precision clock would be delivered as part of a lander or surface payload, and an orbital clock would be delivered as part of a lunar-orbit spacecraft. No lunar clock payload with a verified interface specification was found in the sources reviewed.",
+        "transportation_process": [
+          "Integrate the clock into a spacecraft or lander payload compartment on Earth.",
+          "Launch it using a launch vehicle.",
+          "Transfer it towards the Moon.",
+          "Deliver it to the lunar surface by lander, or insert an orbital host into lunar orbit.",
+          "Deploy, mount and thermally protect the clock, then connect its power, data and reference-link interfaces.",
+          "Commission the clock and compare it against a reference to establish its drift."
+        ],
+        "deployment_methods": "Deployment method is not specified for any lunar precision clock payload in the sources reviewed. ESA describes NovaMoon as planned for various landers, with its full configuration aimed at Argonaut 2, and does not publish a lander interface, mass limit or mounting specification in the article reviewed. The NIST framework refers to orbiting clocks acting as satellites of a lunar navigation network, but gives no orbital clock design or host spacecraft.",
+        "historical_examples": "DSAC was a hosted payload on General Atomics' Orbital Test Bed spacecraft in Earth orbit, launched 25 June 2019. It is a historical example of space-hosted clock integration, not of lunar deployment.",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft has been verified for a precision clock reference payload. The NovaMoon association with Argonaut 2 is a planned target stated by ESA and must not be read as a verified interface.",
+        "images": []
+      },
+      "historical_significance": "The DSAC demonstration showed that a mercury-ion atomic clock could operate in space and meet its main pre-flight goals over a multi-year demonstration. NASA reported that the mission was extended beyond its planned primary period because of its timekeeping stability. Its follow-on, DSAC-2, was selected for a planned demonstration aboard NASA's VERITAS mission to Venus, with a target launch by 2028; this is a target, not a confirmed launch. For the Moon, the NIST framework and the NovaMoon proposal are early steps toward a lunar time standard and clock-based navigation, and both remain proposals or theoretical work.",
+      "limitations_and_uncertainties": "DSAC flew in Earth orbit and is not a lunar payload. NovaMoon is proposed. The NIST framework is theoretical. No mass, power or clock-performance specification is publicly given for NovaMoon, and mass and power are not publicly specified for DSAC. The NASA mission-results paper's citation number (20230006982) suggests 2023, while the page lists 2022; the date should be confirmed before citation. Some stability figures found in search results came from a non-peer-reviewed preprint and are excluded because they could not be verified against a primary source. The 56-microsecond daily offset comes from a modelled framework; the NIST article does not explain its derivation, and the associated preprint gives a slightly different value for an equatorial case. The Lunar Pathfinder mission carries a GNSS receiver rather than a precision clock and is mentioned for context only; its launch is listed as NET 2027 in the sources reviewed.",
+      "images": [
+        {
+          "id": "dsac_hardware_photo",
+          "description": "The Deep Space Atomic Clock in the middle bay of the General Atomics Orbital Test Bed spacecraft.",
+          "image_type": "Flight hardware photograph (Earth orbit; not a lunar image)",
+          "image_url": "https://d2pn8kiwq2w21t.cloudfront.net/images/imagestechnology20180206dsac20180206-16.width-1024.jpg",
+          "source_page_url": "https://www.jpl.nasa.gov/news/nasa-tests-atomic-clock-for-deep-space-navigation/",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "credit": "NASA",
+          "caption": "A glimpse of the Deep Space Atomic Clock in the middle bay of the General Atomics Orbital Test Bed spacecraft.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct image asset URL (display size, width 1024) returned HTTP 200 with image/jpeg on verification. URL has no query string or fragment. Usage rights should be checked before republication."
+        },
+        {
+          "id": "nist_lunar_coordinate_time_illustration",
+          "description": "Illustration of a spacecraft orbiting the Moon with the Earth visible over the lunar horizon, used by NIST to introduce the lunar coordinate time system.",
+          "image_type": "Illustration (artist rendering)",
+          "image_url": null,
+          "source_page_url": "https://www.nist.gov/news-events/news/2024/08/what-time-it-moon",
+          "publisher": "NASA (as displayed on NIST source page)",
+          "credit": "NASA",
+          "caption": "The lunar coordinate time system could serve as a foundation for developing a GPS-like navigation system on the Moon.",
+          "section_placements": [
+            "scientific_importance_images"
+          ],
+          "notes": "No verified direct image asset URL was identified. The image is referenced by its NIST source page as a linked reference in the Markdown article rather than embedded. The NIST page shows a header image with alt text and a body caption, both credited to NASA; the direct asset was not located. Do not reuse the source page URL as an image URL. URL has no query string or fragment."
+        }
+      ],
+      "scientific_importance_images": [
+        {
+          "id": "nist_lunar_coordinate_time_illustration",
+          "description": "Illustration of a spacecraft orbiting the Moon with the Earth visible over the lunar horizon, used by NIST to introduce the lunar coordinate time system.",
+          "image_type": "Illustration (artist rendering)",
+          "image_url": null,
+          "source_page_url": "https://www.nist.gov/news-events/news/2024/08/what-time-it-moon",
+          "publisher": "NASA (as displayed on NIST source page)",
+          "credit": "NASA",
+          "caption": "The lunar coordinate time system could serve as a foundation for developing a GPS-like navigation system on the Moon.",
+          "section_placements": [
+            "scientific_importance_images"
+          ],
+          "notes": "No verified direct image asset URL. Linked source-page reference only. URL has no query string or fragment."
+        }
+      ],
+      "overview_images": [],
+      "references": [
+        {
+          "title": "NASA Tests Atomic Clock for Deep Space Navigation",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "date": "2018-02-06",
+          "url": "https://www.jpl.nasa.gov/news/nasa-tests-atomic-clock-for-deep-space-navigation/"
+        },
+        {
+          "title": "Working Overtime: NASA's Deep Space Atomic Clock Completes Mission",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "date": "2021-10-05",
+          "url": "https://www.jpl.nasa.gov/news/working-overtime-nasas-deep-space-atomic-clock-completes-mission"
+        },
+        {
+          "title": "Deep Space Atomic Clock Technology Demonstration Mission Results",
+          "publisher": "NASA Technical Reports Server (NTRS), citation 20230006982",
+          "authors": "Wang, R., Stuart, J., Seal, E., Robison, D., Murphy, D., Kuang, D., Herrera, R., Enzer, D., Dorsey, A., Burt, E., Tjoelker, R., Prestage, J., Seubert, J., Ely, T. A.",
+          "date": "2022 per page metadata; citation number suggests 2023 (to be confirmed)",
+          "url": "https://ntrs.nasa.gov/citations/20230006982"
+        },
+        {
+          "title": "Introducing NovaMoon",
+          "publisher": "European Space Agency",
+          "date": "2026-10-12 per page metadata",
+          "url": "https://www.esa.int/Applications/Satellite_navigation/Introducing_NovaMoon"
+        },
+        {
+          "title": "What Time Is It on the Moon?",
+          "publisher": "National Institute of Standards and Technology (NIST)",
+          "date": "2024-08",
+          "url": "https://www.nist.gov/news-events/news/2024/08/what-time-it-moon"
+        },
+        {
+          "title": "A relativistic framework to estimate clock rates on the Moon",
+          "publisher": "The Astronomical Journal (authors: Neil Ashby and Bijunath R. Patla)",
+          "date": "2024-08-12",
+          "doi": "10.3847/1538-3881/ad643a",
+          "url": "https://doi.org/10.3847/1538-3881/ad643a",
+          "notes": "Cited from the NIST article; the DOI page itself was not fetched."
+        },
+        {
+          "title": "Lunar Mission Services",
+          "publisher": "SSTL",
+          "url": "https://sstl.co.uk/what-we-do/lunar-mission-services",
+          "notes": "Source for the Lunar Pathfinder NET 2027 launch statement."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images (no images)",
+      "Deep Space Atomic Clock (DSAC) example": "payload.article.physical_specifications.examples[0].images",
+      "NovaMoon example": "payload.article.physical_specifications.examples[1].images (no images)",
+      "scientific importance": "payload.article.scientific_importance_images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (no images)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. The DSAC image URL was verified by HTTP 200 without any query parameters. The NIST illustration has no verified direct asset URL, so image_url is null and the source page is linked instead. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "The payload is a class of instruments. No lunar-surface precision clock payload was confirmed as flown in the sources reviewed. DSAC is an Earth-orbit flight demonstration and NovaMoon is proposed.",
+    "DSAC mass and power are not publicly specified in the sources reviewed. Size is given only as descriptive approximations in NASA releases (about 25 cm per side; toaster comparisons).",
+    "The DSAC one-day fractional frequency stability value (approximately 3 x 10^-15 against a requirement of approximately 2 x 10^-14) comes from the NASA mission-results paper, where superscripts were lost during text extraction. It is flagged for confirmation against the original paper before reuse.",
+    "The NASA mission-results paper's citation number (20230006982) suggests 2023, while the page metadata lists 2022. The date is flagged for confirmation.",
+    "The 56 microseconds per day figure is from the NIST article and is consistent with its associated arXiv preprint (about 56.02 microseconds per day for an equatorial clock). The NIST article does not explain its derivation, and the preprint also lists an alternative GPS-style estimate that is not used here.",
+    "Stability figures from a non-peer-reviewed preprint and a search-result summary of ground tests were excluded because they could not be verified against a primary source.",
+    "NovaMoon mass, power, dimensions, clock performance and launch date are not publicly specified in the ESA article. The Argonaut 2 association is a planned target stated by ESA and is not a verified compatibility.",
+    "The NIST illustration has no verified direct image asset URL, so it is referenced by its source page only. The DSAC photograph is an Earth-orbit flight image and is labelled as such.",
+    "Full-resolution image downloads were not inspected beyond checking HTTP availability. Image usage rights should be checked before republication.",
+    "The DOI page for the Ashby and Patla paper was not fetched; the citation is taken from the NIST article."
+  ]
+}

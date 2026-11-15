@@ -1,0 +1,391 @@
+{
+  "catalogue_id": 1,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 13,
+    "name": "Sample collection, preservation and return"
+  },
+  "payload": {
+    "number": 262,
+    "name": "Sample weighing instrument",
+    "article": {
+      "overview": "A sample weighing instrument measures the mass of material collected for a lunar sample-return or curation chain: rock, soil or core material held in a scoop, drill sample, canister, container or return capsule. Mass is a basic measurement. It can show whether a sample-acquisition attempt has gathered enough material, it supports inventory and curation records, and it has been used to keep surface-collected containers within lift-off limits. The sources reviewed describe three different things that should not be confused: (1) a lunar-surface weighing device, the Apollo-era Sample Scale, which the Smithsonian records as used on Apollo 14, 15, 16 and 17; (2) a mission-level weighing of returned Chang'e-6 samples, whose weighing method and instrument are not described; and (3) laboratory prototypes of in-canister mass sensors, which the sources present as proof-of-concept or development work rather than flight hardware.",
+      "description": "A sample weighing instrument converts the presence of collected material into a mass value. The sources reviewed use four broad approaches. Direct weighing on a scale is represented by the Apollo Sample Scale, which weighed containers of rocks and soil on the lunar surface. In-canister capacitive sensing, in which the sample deflects a membrane and changes a capacitance, is represented by the JPL Distributed Capacitive (DisC) sensor. Resonance sensing, in which the sample mass changes the frequency of a piezoelectric resonator, is represented by the JPL piezoelectric resonance balance. Indirect estimation from spacecraft motion data was used for the OSIRIS-REx asteroid sample when the planned measurement was dropped; it is not a weighing instrument and is included only as a contrast. Lunar sample totals give the scale of what such an instrument must handle. The NASA Johnson Space Center review of Apollo curation reports that the six Apollo landing missions returned about 2,196 samples totalling roughly 382 kg, and that the 58 Apollo 11 samples weighed 21.5 kg.",
+      "scientific_purpose_and_applications": "The sources give three practical purposes for measuring sample mass. Mission decisions: a piezoelectric balance design paper notes that mass data could help interpret instrument results, prevent overloading of sample-handling ports, and might be needed before a sample-return spacecraft departs; the DisC sensor is described as a way to confirm in situ whether a robotic sample-return spacecraft has collected enough sample, so that acquisition can be retried if it has not. Handling limits: the Apollo Sample Scale existed so that predetermined weight limits were not exceeded at lunar lift-off. Accounting and curation: accurate mass records are needed for the inventory of returned material. The Chang'e-6 total was reported by the China National Space Administration (CNSA) as a preliminary figure, and the sample container was handed over to the Chinese Academy of Sciences at the same ceremony. No source reviewed describes a flown lunar in-situ balance that reports a performance specification for mass accuracy.",
+      "operating_principle": "Apollo Sample Scale: the Smithsonian record describes calibration in 5 lb increments up to 80 lb and notes that 80 lb on the Moon corresponds to about 480 lb on Earth. The record does not describe the internal sensing mechanism, so none is stated here. DisC capacitive sensor: a 10 cm elastic membrane sits at the bottom of the sample canister; the weight of accumulated sample deflects it and narrows the gap to a rigid substrate, which increases capacitance. Reference capacitors and a temperature sensor compensate for temperature effects. The developers chose capacitance over piezoelectric sensing because of its better temperature stability. Piezoelectric resonance balance: the measured frequency shift is proportional to the change in sample mass; an oscillator and counter track the shift, and calibration tables convert it to mass. A thickness-mode resonator can mix a sample with a reagent or solvent so that both can be measured before the sample is taken into an instrument. Indirect (inertia-based) estimate: for OSIRIS-REx, reaction-wheel momentum data from sampling movements performed before and after collection were used to estimate the change in the spacecraft's moment of inertia; conservation of momentum then isolates the sample mass.",
+      "scientific_importance": "Mass is one of the few measurements that every returned sample has in common, so it underpins comparison between collections. The Apollo totals show how large the returned collections were. The Chang'e-6 value of 1,935.3 g, reported as a preliminary CNSA measurement for samples from the far side of the Moon, is an example of a publicly announced mass. Whether that value is net sample mass or includes the container is not stated, so it cannot be compared directly with a container-free value without that information. An instrument that measures mass in situ is important for sample-return architectures because the spacecraft may need to confirm sample quantity before committing to return. The DisC proof-of-concept showed capacitance changes for simulated samples of 100 g to 500 g in laboratory tests.",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or accuracy specification for a sample weighing instrument. The examples below are historical, mission-level, laboratory or indirect cases, and their status differs. Values are given only where the source states them. The masses of samples (for example 1,935.3 g or 21.5 kg) are sample masses, not instrument masses.",
+        "examples": [
+          {
+            "name": "Apollo Sample Scale (Scale, Sample, Lunar Surface)",
+            "type": "Historical lunar-surface weighing device",
+            "status": "Scale type used on Apollo 14, 15, 16 and 17 per the Smithsonian record. The catalogued unit is a training unit and is not stated to have flown.",
+            "mass_kg": null,
+            "mass_note": "Not stated in the Smithsonian record.",
+            "dimensions_cm": [34.9, 5.1, 4.4],
+            "dimensions_note": "Dimensions of the catalogued training unit (1 ft 1 3/4 in x 2 in x 1 3/4 in).",
+            "calibration": "Calibrated in 5 lb increments up to 80 lb. The museum notes that 80 lb on the Moon is equivalent to about 480 lb on Earth.",
+            "materials": "Aluminium, ferrous alloy and paint.",
+            "accuracy_resolution_power": "Not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://airandspace.si.edu/collection-objects/scale-sample-lunar-surface/nasm_A19750135000"
+            ],
+            "images": [
+              {
+                "id": "smithsonian_apollo_sample_scale_record",
+                "description": "Smithsonian National Air and Space Museum object record for the Scale, Sample, Lunar Surface (object A19750135000), including catalogue images on the page.",
+                "image_type": "Museum object record (image reference)",
+                "image_url": null,
+                "source_page_url": "https://airandspace.si.edu/collection-objects/scale-sample-lunar-surface/nasm_A19750135000",
+                "publisher": "Smithsonian National Air and Space Museum",
+                "credit": "Smithsonian National Air and Space Museum; the credit line on the page reads 'Transferred from the National Aeronautics and Space' and is truncated.",
+                "caption": "Scale, Sample, Lunar Surface, object A19750135000, on display in the Destination Moon gallery according to the NASM record.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "No direct image file URL verified. The page's image endpoints (ids.si.edu/ids/deliveryService) carry their identifiers only in query strings, so image_url is null under the URL policy. Use the source page to view the catalogue images. Usage conditions apply."
+              }
+            ]
+          },
+          {
+            "name": "Chang'e-6 returned-sample weighing (mission measurement; instrument not specified)",
+            "type": "Flown mission measurement of returned lunar samples, announced in 2024; not an instrument specification",
+            "status": "Flown mission (Chang'e-6). The weighing method and instrument are not described in the sources reviewed.",
+            "reported_sample_mass_g": 1935.3,
+            "mass_note": "Reported sample mass of 1,935.3 g from the far side of the Moon, described as a preliminary CNSA measurement. This is a sample mass, not an instrument mass, and the field is not an instrument mass_kg value. The sources do not state whether it is net sample mass or includes the container.",
+            "context": "Chang'e-5 (2020) is reported by the Planetary Society to have collected about 1.7 kg of samples using a mechanical scoop and a drill.",
+            "source_urls": [
+              "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/content.html",
+              "https://english.cas.cn/special-reports/Highlights_2024/202601/t20260106_1145284.shtml"
+            ],
+            "images": [
+              {
+                "id": "cnsa_chang_e6_weighing_preparation",
+                "description": "Researchers prepare to weigh Chang'e-6 lunar samples during a returner opening ceremony.",
+                "image_type": "Official agency photograph (sample handling)",
+                "image_url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/part/10573154.png",
+                "source_page_url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/content.html",
+                "publisher": "China National Space Administration (CNSA)",
+                "credit": "CNSA; photographer not named on the source page.",
+                "caption": "Researchers prepare to weigh Chang'e-6 lunar samples during a returner opening ceremony (photo dated 26 June 2024 on the CNSA page).",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct image file verified as a live HTTP 200 image/png response on 2026-11-13 with no query string, linked from the official CNSA article. Reuse conditions not verified; check before republication."
+              }
+            ]
+          },
+          {
+            "name": "JPL Distributed Capacitive (DisC) sensor",
+            "type": "Laboratory proof-of-concept in-canister mass sensor (NASA Tech Briefs NPO-47690)",
+            "status": "Proof-of-concept devices only. Flight status not stated in the source.",
+            "mass_kg": null,
+            "mass_note": "Not publicly specified in the source.",
+            "sensing_element": "A 10 cm diameter pressure-sensitive elastic membrane at the bottom of a sample canister.",
+            "measured_response": "Tens to hundreds of picofarads of capacitance change when a simulated sample of 100 g to 500 g is placed on the membrane (proof-of-concept).",
+            "compensation": "Reference capacitors and a temperature sensor.",
+            "accuracy_power": "Not publicly specified in the source.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20120001210"
+            ],
+            "images": []
+          },
+          {
+            "name": "JPL piezoelectric resonance balance",
+            "type": "Piezoelectric resonance balance under development (2017 preprint)",
+            "status": "Under development. The source does not state that it has flown.",
+            "mass_kg": null,
+            "mass_note": "Not publicly specified; the abstract gives no numerical mass range.",
+            "principle": "A frequency shift proportional to sample mass change, tracked by an oscillator and counter and converted to mass using calibration tables.",
+            "design_features": "Resonator geometries were tested to linearise the response; a thickness-mode resonator was added so that a sample can be mixed with a reagent or solvent and both measured before ingestion; designs for easy loading and unloading were described.",
+            "performance_figures": "The abstract provides no numerical mass range, resolution or frequency values.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20210007959"
+            ],
+            "images": []
+          },
+          {
+            "name": "OSIRIS-REx indirect sample mass estimate (asteroid mission; not an instrument)",
+            "type": "Analytical estimate from spacecraft motion data on an asteroid mission; not a lunar payload and not a weighing instrument",
+            "status": "Flown asteroid mission; the planned direct sample mass measurement was skipped after sample leakage was observed.",
+            "mass_kg": null,
+            "estimate": "Collected sample mass estimated at 250.37 +/- 101 g from reaction-wheel momentum data. The mission requirement was more than 60 g.",
+            "source_urls": [
+              "https://arxiv.org/abs/2109.05561"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Only the Apollo Sample Scale training unit has published dimensions in the sources reviewed (34.9 x 5.1 x 4.4 cm). The DisC membrane is 10 cm in diameter. No overall proportion can be defined for the class.",
+        "mass_and_weight": "No mass is published for any weighing instrument in the sources reviewed. For lunar hardware, weight depends on local gravity; the Apollo scale was calibrated in pounds on the lunar surface. The 1,935.3 g and 21.5 kg figures quoted in this article are sample masses, not instrument masses.",
+        "power_requirements": "Not publicly specified in the sources reviewed for any of the examples."
+      },
+      "environmental_and_operational_requirements": "Gravity: a scale that reads weight depends on local gravity; the Apollo Sample Scale was calibrated in lunar weight. The piezoelectric balance paper notes that design requirements are affected by local gravity and by the acoustic properties of the sample. Temperature: the DisC sensor uses reference capacitors and a temperature sensor to compensate for temperature effects, and capacitance was chosen for its temperature stability. Sample containment: the DisC sensor is designed for the sample canister and must respond to material collected in it; the piezoelectric design includes loading and unloading features. Lunar environment (general engineering): vacuum, large temperature swings and radiation affect every lunar instrument. These general points are not drawn from the sources cited in this article and would need to be checked against specific mission requirements.",
+      "limitations": "No flown lunar in-situ sample weighing instrument with published mass accuracy was identified. The Apollo scale record describes a training unit and gives no mass, accuracy or sensing mechanism. The DisC sensor was tested with simulated samples and is a proof-of-concept. The piezoelectric balance abstract gives no numerical performance values. The indirect method depends on knowledge of spacecraft dynamics and produced a wide uncertainty (+/-101 g on about 250 g). Chang'e-6 values are preliminary and do not state the weighing method or the container treatment.",
+      "transportation_and_deployment": {
+        "overview": "A sample weighing function could sit in three places in a lunar sample chain: inside the sample acquisition canister, in a surface handling step, or in curation after return. The sources do not establish which configuration any future lunar mission would use.",
+        "transportation_process": [
+          "Earth integration, launch and lunar transfer of a weighing instrument are not described in the sources reviewed; no interface with a launch vehicle, transfer stage or return capsule is asserted.",
+          "Landing and surface handling: the Apollo Sample Scale was used to weigh containers of rocks and soil on the lunar surface before lift-off, so that predetermined weight limits were not exceeded.",
+          "Containment and sealing: the DisC sensor sits at the bottom of the sample canister and is designed to report whether enough sample is present before return.",
+          "Transfer and return chain: for Chang'e-6, the sample container and sample certificate were handed over at a ceremony in Beijing, and the samples were then transferred to the National Astronomical Observatories. CNSA photographs show the container being placed in a protection case on 26 June 2024.",
+          "Ground curation: the Chang'e-6 weighing photograph caption describes weighing during a returner opening ceremony on Earth."
+        ],
+        "deployment_methods": "A surface weighing device such as the Apollo Sample Scale was used to weigh containers of rocks and soil on the lunar surface before lift-off. An in-canister sensor such as DisC would measure the sample where it is collected. The Chang'e-6 photograph caption describes weighing during a returner opening ceremony on Earth.",
+        "historical_examples": "Apollo 14 to 17 used the Sample Scale type. Chang'e-6 reported a preliminary mass after return.",
+        "compatibility_assessment": "Not assessed. No lander, rover or return-capsule interface for any weighing instrument has been verified. The mass and interface data needed for such an assessment are not published in the sources reviewed.",
+        "images": [
+          {
+            "id": "cnsa_chang_e6_container_protection_case",
+            "description": "Container of Chang'e-6 lunar samples being placed in a protection case.",
+            "image_type": "Official agency photograph (containment and handling)",
+            "image_url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/part/10573153.png",
+            "source_page_url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/content.html",
+            "publisher": "China National Space Administration (CNSA)",
+            "credit": "CNSA; photographer not named on the source page.",
+            "caption": "Researchers put the container of Chang'e-6 lunar samples into a protection case (26 June 2024).",
+            "section_placements": [
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct image file verified as a live HTTP 200 image/png response on 2026-11-13 with no query string, linked from the official CNSA article. Reuse conditions not verified."
+          },
+          {
+            "id": "cas_chang_e6_reception_ceremony",
+            "description": "Reception ceremony for Chang'e-6 lunar samples at the National Astronomical Observatories.",
+            "image_type": "Official institute photograph (return-chain handover)",
+            "image_url": "https://english.cas.cn/special-reports/Highlights_2024/202601/W020260106578431271455.png",
+            "source_page_url": "https://english.cas.cn/special-reports/Highlights_2024/202601/t20260106_1145284.shtml",
+            "publisher": "Chinese Academy of Sciences (English)",
+            "credit": "Xinhua, as printed on the source page.",
+            "caption": "A reception ceremony for Chang'e-6 lunar samples held at the National Astronomical Observatories (28 June 2024).",
+            "section_placements": [
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct image file verified as a live HTTP 200 image/png response on 2026-11-13 with no query string. The page is a 2026 republication of a June 2024 article; the byline date is used. Reuse conditions not verified."
+          }
+        ]
+      },
+      "historical_significance": "The Apollo Sample Scale type was used on Apollo 14 to 17 to weigh containers of rocks and soil so that lift-off weight limits were not exceeded. The Apollo collection totals (about 2,196 samples, about 382 kg) show how much material had to be tracked and handled. An Apollo 11 lunar sample photograph from NASA Johnson Space Center, held in the Wikimedia Commons archive, shows a sample in a vacuum-chamber setting with a measurement scale visible; it does not show a weighing instrument and is cited only to illustrate the curation context. The Chang'e-5 and Chang'e-6 returns show that the mass of returned lunar samples continues to be reported publicly: Chang'e-5 was reported to have collected about 1.7 kg, and Chang'e-6 reported a preliminary total of 1,935.3 g of far-side samples on 28 June 2024.",
+      "limitations_and_uncertainties": "Apollo Sample Scale: the Smithsonian record is for a training unit and gives no mass, accuracy or sensing mechanism. A search summary reported that Apollo 11 and 12 used a heavier scale than the later compact device; this was not verified against the record or the 1989 NASA catalogue it cites and is not stated as fact. Apollo curation balances: a search summary of a lunar glovebox balance paper reported a 1978 Curation Office selection of a Mettler PL200 for weighing samples in the gloveboxes, with custom retrofits of housing, weighing pan and wiring; the paper's record returned HTTP 403, so this claim is unverified and excluded from the verified facts. Chang'e-6: the 1,935.3 g value is preliminary; the weighing method, the instrument and whether the container is included are not stated. Chang'e-5: the 1.7 kg figure is from the Planetary Society; a 1,731 g figure appears in secondary summaries but the primary source was not opened; net or gross status is not stated. DisC: the source is a 2011 technical brief; flight status is not stated; the proof-of-concept used simulated samples of 100 g to 500 g. A later seven-channel variant appeared only in a search summary and was not opened, so it is not described. Piezoelectric balance: the source is a 2017 preprint, read from its abstract; the full text was not reviewed and no performance figures are available. OSIRIS-REx: an asteroid mission; the estimate was taken from the arXiv abstract page because the PDF could not be read. No lunar in-situ flight heritage for a weighing sensor was identified beyond the Apollo-era scale type. No compatibility with any named lander, rover or return capsule is asserted.",
+      "images": [
+        {
+          "id": "cnsa_chang_e6_weighing_preparation",
+          "description": "Researchers prepare to weigh Chang'e-6 lunar samples during a returner opening ceremony.",
+          "image_type": "Official agency photograph (sample handling)",
+          "image_url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/part/10573154.png",
+          "source_page_url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/content.html",
+          "publisher": "China National Space Administration (CNSA)",
+          "credit": "CNSA; photographer not named on the source page.",
+          "caption": "Researchers prepare to weigh Chang'e-6 lunar samples during a returner opening ceremony (photo dated 26 June 2024 on the CNSA page).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct image file verified as a live HTTP 200 image/png response on 2026-11-13 with no query string, linked from the official CNSA article. Reuse conditions not verified; check before republication."
+        },
+        {
+          "id": "smithsonian_apollo_sample_scale_record",
+          "description": "Smithsonian National Air and Space Museum object record for the Scale, Sample, Lunar Surface (object A19750135000), including catalogue images on the page.",
+          "image_type": "Museum object record (image reference)",
+          "image_url": null,
+          "source_page_url": "https://airandspace.si.edu/collection-objects/scale-sample-lunar-surface/nasm_A19750135000",
+          "publisher": "Smithsonian National Air and Space Museum",
+          "credit": "Smithsonian National Air and Space Museum; the credit line on the page reads 'Transferred from the National Aeronautics and Space' and is truncated.",
+          "caption": "Scale, Sample, Lunar Surface, object A19750135000, on display in the Destination Moon gallery according to the NASM record.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "No direct image file URL verified. The page's image endpoints (ids.si.edu/ids/deliveryService) carry their identifiers only in query strings, so image_url is null under the URL policy. Use the source page to view the catalogue images. Usage conditions apply."
+        },
+        {
+          "id": "cnsa_chang_e6_container_protection_case",
+          "description": "Container of Chang'e-6 lunar samples being placed in a protection case.",
+          "image_type": "Official agency photograph (containment and handling)",
+          "image_url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/part/10573153.png",
+          "source_page_url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/content.html",
+          "publisher": "China National Space Administration (CNSA)",
+          "credit": "CNSA; photographer not named on the source page.",
+          "caption": "Researchers put the container of Chang'e-6 lunar samples into a protection case (26 June 2024).",
+          "section_placements": [
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct image file verified as a live HTTP 200 image/png response on 2026-11-13 with no query string, linked from the official CNSA article. Reuse conditions not verified."
+        },
+        {
+          "id": "cas_chang_e6_reception_ceremony",
+          "description": "Reception ceremony for Chang'e-6 lunar samples at the National Astronomical Observatories.",
+          "image_type": "Official institute photograph (return-chain handover)",
+          "image_url": "https://english.cas.cn/special-reports/Highlights_2024/202601/W020260106578431271455.png",
+          "source_page_url": "https://english.cas.cn/special-reports/Highlights_2024/202601/t20260106_1145284.shtml",
+          "publisher": "Chinese Academy of Sciences (English)",
+          "credit": "Xinhua, as printed on the source page.",
+          "caption": "A reception ceremony for Chang'e-6 lunar samples held at the National Astronomical Observatories (28 June 2024).",
+          "section_placements": [
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct image file verified as a live HTTP 200 image/png response on 2026-11-13 with no query string. The page is a 2026 republication of a June 2024 article; the byline date is used. Reuse conditions not verified."
+        },
+        {
+          "id": "apollo11_lunar_sample_s69_45009",
+          "description": "Apollo 11 lunar sample 10003 photographed with a measurement scale visible (NASA image S69-45009).",
+          "image_type": "Historical lunar sample photograph (Wikimedia Commons copy of a NASA image)",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/LUNAR_SAMPLES_-_APOLLO_XI_-_MSC_%28S69-45009%29.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:LUNAR_SAMPLES_-_APOLLO_XI_-_MSC_(S69-45009).jpg",
+          "publisher": "NASA Johnson Space Center (catalogued); hosted on Wikimedia Commons",
+          "credit": "NASA (catalogued by NASA Johnson Space Center, as stated on the Wikimedia Commons file page).",
+          "caption": "Apollo 11 lunar sample 10003 (NASA image S69-45009). A measurement scale is visible; the photograph does not show a weighing instrument.",
+          "section_placements": [
+            "historical_significance"
+          ],
+          "notes": "Direct Wikimedia Commons upload file verified as a live HTTP 200 image/jpeg response on 2026-11-13. This is not an official NASA asset URL; the NASA archive copy was not verified. The Commons page states NASA-created public-domain status, which was not independently verified. The file page gives the capture date as 27 or 28 July 1969 (discrepant). Relevance to weighing is indirect."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "cnsa_chang_e6_weighing_preparation",
+          "description": "Researchers prepare to weigh Chang'e-6 lunar samples during a returner opening ceremony.",
+          "image_type": "Official agency photograph (sample handling)",
+          "image_url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/part/10573154.png",
+          "source_page_url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/content.html",
+          "publisher": "China National Space Administration (CNSA)",
+          "credit": "CNSA; photographer not named on the source page.",
+          "caption": "Researchers prepare to weigh Chang'e-6 lunar samples during a returner opening ceremony (photo dated 26 June 2024 on the CNSA page).",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct image file verified as a live HTTP 200 image/png response on 2026-11-13 with no query string, linked from the official CNSA article. Reuse conditions not verified; check before republication."
+        }
+      ],
+      "historical_significance_images": [
+        {
+          "id": "apollo11_lunar_sample_s69_45009",
+          "description": "Apollo 11 lunar sample 10003 photographed with a measurement scale visible (NASA image S69-45009).",
+          "image_type": "Historical lunar sample photograph (Wikimedia Commons copy of a NASA image)",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/LUNAR_SAMPLES_-_APOLLO_XI_-_MSC_%28S69-45009%29.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:LUNAR_SAMPLES_-_APOLLO_XI_-_MSC_(S69-45009).jpg",
+          "publisher": "NASA Johnson Space Center (catalogued); hosted on Wikimedia Commons",
+          "credit": "NASA (catalogued by NASA Johnson Space Center, as stated on the Wikimedia Commons file page).",
+          "caption": "Apollo 11 lunar sample 10003 (NASA image S69-45009). A measurement scale is visible; the photograph does not show a weighing instrument.",
+          "section_placements": [
+            "historical_significance"
+          ],
+          "notes": "Direct Wikimedia Commons upload file verified as a live HTTP 200 image/jpeg response on 2026-11-13. This is not an official NASA asset URL; the NASA archive copy was not verified. The Commons page states NASA-created public-domain status, which was not independently verified. The file page gives the capture date as 27 or 28 July 1969 (discrepant). Relevance to weighing is indirect."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Compact piezoelectric resonance mass balance for sample verification and mass quantification and mixing",
+          "authors": "Yahnker, C. R.; Merewether, G. B.; Noell, A. C.; Lee, H. J.; Sherrit, S.",
+          "publisher": "Jet Propulsion Laboratory, NASA NTRS (preprint)",
+          "publication_date": "2017-03-25",
+          "url": "https://ntrs.nasa.gov/citations/20210007959"
+        },
+        {
+          "number": 2,
+          "title": "Distributed Capacitive Sensor for Sample Mass Measurement (NPO-47690)",
+          "authors": "Toda, R.; McKinney, C.; Jackson, S. P.; Mojarradi, M.; Manohara, H.; Trebi-Ollennu, A.",
+          "publisher": "NASA Tech Briefs / NASA NTRS (Jet Propulsion Laboratory)",
+          "publication_date": "2011-12-01",
+          "url": "https://ntrs.nasa.gov/citations/20120001210"
+        },
+        {
+          "number": 3,
+          "title": "Alternative Sample Mass Measurement Technique for OSIRIS-REx Sample Collection Phase",
+          "authors": "Ma, H.; Skeen, M.; Olds, R.; Miller, B.; Lauretta, D. S.",
+          "publisher": "arXiv (arXiv:2109.05561)",
+          "publication_date": "2021-09-12",
+          "url": "https://arxiv.org/abs/2109.05561"
+        },
+        {
+          "number": 4,
+          "title": "Lunar Samples: Apollo Collection Tools, Curation Handling, Surveyor III and Soviet Luna Samples (JSC-17994)",
+          "authors": "Allton, J. H.",
+          "publisher": "NASA Johnson Space Center (conference paper, Lunar Regolith Simulant Workshop)",
+          "publication_date": "2009-03-17",
+          "url": "https://ntrs.nasa.gov/citations/20090011852"
+        },
+        {
+          "number": 5,
+          "title": "Scale, Sample, Lunar Surface (object A19750135000)",
+          "authors": null,
+          "publisher": "Smithsonian National Air and Space Museum",
+          "publication_date": null,
+          "url": "https://airandspace.si.edu/collection-objects/scale-sample-lunar-surface/nasm_A19750135000"
+        },
+        {
+          "number": 6,
+          "title": "Chang'e-5: China's Moon sample return mission",
+          "authors": null,
+          "publisher": "The Planetary Society",
+          "publication_date": null,
+          "url": "https://www.planetary.org/space-missions/change-5"
+        },
+        {
+          "number": 7,
+          "title": "China's Chang'e-6 collects 1,935.3 grams of samples from the Moon's far side",
+          "authors": null,
+          "publisher": "China National Space Administration (CNSA)",
+          "publication_date": "2024-06-28",
+          "url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10573149/content.html"
+        },
+        {
+          "number": 8,
+          "title": "China's Chang'e-6 Collects 1,935.3 Grams of Samples from the Moon's Far Side",
+          "authors": null,
+          "publisher": "Chinese Academy of Sciences (English)",
+          "publication_date": "2024-06-28 (byline; page republished 2026)",
+          "url": "https://english.cas.cn/special-reports/Highlights_2024/202601/t20260106_1145284.shtml"
+        },
+        {
+          "number": 9,
+          "title": "LUNAR SAMPLES - APOLLO XI - MSC (S69-45009)",
+          "authors": null,
+          "publisher": "NASA Johnson Space Center, via Wikimedia Commons",
+          "publication_date": "1969 (capture date given as 27 or 28 July 1969 on the file page)",
+          "url": "https://commons.wikimedia.org/wiki/File:LUNAR_SAMPLES_-_APOLLO_XI_-_MSC_(S69-45009).jpg"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Chang'e-6 returned-sample weighing example": "payload.article.physical_specifications.examples[1].images",
+      "Apollo Sample Scale example": "payload.article.physical_specifications.examples[0].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images",
+      "historical significance": "payload.article.historical_significance_images"
+    },
+    "url_policy": "All image_url, source_page_url and reference URLs in this file have query strings and fragments removed. Direct image URLs for the CNSA and Chinese Academy of Sciences images were checked by HTTP request on 2026-11-13. The Smithsonian image reference has image_url null because its image endpoints carry identifiers only in query strings. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "The Apollo Sample Scale is documented by a Smithsonian record for a training unit. Its mass, measurement accuracy, resolution, power and sensing mechanism are not stated in any source reviewed.",
+    "A search summary reported that Apollo 11 and 12 used a heavier scale than the compact device used on later missions. Not verified against the Smithsonian record or the NASA 1989 catalogue of lunar sampling tools; excluded from the verified text.",
+    "A search summary of a lunar glovebox balance paper reported a 1978 Curation Office selection of a Mettler PL200 with custom retrofits. The paper's record (core.ac.uk/works/78477732) returned HTTP 403 and could not be opened. Unverified and excluded from the verified text.",
+    "Chang'e-6 mass of 1,935.3 g is a preliminary CNSA measurement. The weighing method, the instrument used, and whether the figure is net or includes the container are not stated in the CNSA or Chinese Academy of Sciences texts.",
+    "Chang'e-5 mass: the Planetary Society gives about 1.7 kg collected. A 1,731 g figure appears in secondary summaries that were not opened. Net or gross status not stated.",
+    "The DisC sensor source is a 2011 NASA Tech Brief describing laboratory proof-of-concept devices tested with simulated samples of 100 g to 500 g. No flight status or performance accuracy is stated.",
+    "A later seven-channel capacitive variant (NPO-48143) appeared only in a search summary and was not opened; it is not described in the article.",
+    "The piezoelectric resonance balance source is a 2017 JPL preprint read from its abstract. The full text was not reviewed; no numerical performance figures are available.",
+    "OSIRIS-REx estimate (250.37 +/- 101 g) is for an asteroid sample, not a lunar sample. It was taken from the arXiv abstract page because the arXiv PDF could not be read as text. The article describes the estimate as reaction-wheel momentum data only, which is what the fetched page states.",
+    "Image rights: CNSA and Chinese Academy of Sciences images are direct files on official pages verified by HTTP 200; their reuse terms were not checked. The Wikimedia Commons Apollo 11 image is not an official NASA asset URL, and its public-domain status is taken from the Commons page without independent verification.",
+    "The Wikimedia Commons file page gives the capture date of Apollo 11 image S69-45009 as 27 July 1969 in the caption and 28 July 1969 in the date field. Unresolved.",
+    "The Smithsonian image endpoints (ids.si.edu/ids/deliveryService) do not yield distinct direct image file URLs once query strings are removed, so image_url is null for that record.",
+    "No flown lunar in-situ weighing sensor with published mass accuracy was identified. No compatibility with any named lander, rover or return capsule is asserted.",
+    "research_status.direct_image_assets_verified_from_official_pages is false: the CNSA and Chinese Academy of Sciences direct image URLs were verified against official pages, but the Wikimedia Commons Apollo 11 image is not an official asset and the Smithsonian image reference has no direct URL.",
+    "No lunar location recommendations are included, per the user's deferral."
+  ]
+}

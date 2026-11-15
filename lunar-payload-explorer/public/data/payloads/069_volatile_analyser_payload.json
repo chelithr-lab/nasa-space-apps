@@ -1,0 +1,265 @@
+{
+  "catalogue_id": 69,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 3,
+    "name": "Mineralogical and chemical analysis"
+  },
+  "payload": {
+    "number": 69,
+    "name": "Volatile analyser",
+    "article": {
+      "overview": "A volatile analyser is an instrument that releases volatile substances from a sample and identifies them. Volatiles are compounds that vaporise or outgas readily, such as water, carbon dioxide, nitrogen, sulfur dioxide, hydrogen and noble gases. Most volatile analysers heat or otherwise process a sample, then use a mass spectrometer to measure the released gases by their mass-to-charge ratio [5][6]. On the Moon, the main interest is in volatiles held in regolith, particularly in the cold, permanently shadowed polar regions. Their abundance, isotopic composition and release behaviour matter both for science and for in-situ resource utilisation (ISRU), where a locally available source of water or other consumables could reduce the mass that must be launched from Earth [5][6]. The catalogue name describes a class of instrument rather than one design. The sources reviewed here describe an Apollo-era atmospheric mass spectrometer, a short-lived 2025 surface demonstration, and two proposed regolith-analysis instruments that have not flown.",
+      "description": "A volatile analyser generally has four functional parts. A sample handling system collects regolith or drill cuttings and transfers them into a sealed container or oven. A heating unit releases volatiles from the sample, either by vacuum pyrolysis (heating without oxygen) or by combustion in oxygen. Gas processing components, such as valves, metering volumes and pressure sensors, control the sample gas as it passes to the detector. The detector is usually a mass spectrometer, which separates ions by mass-to-charge ratio and produces a spectrum for each temperature step or time interval [5][6].\n\nThe measurement technique is often called evolved gas analysis. The sample is heated along a controlled temperature ramp, and the gases released at each temperature are recorded. This temperature profile helps distinguish volatiles bound with different strengths, which is important because lunar volatiles may be present in both loosely and chemically bound forms [6].\n\nNot every instrument of this type heats regolith. The Apollo 17 Lunar Atmospheric Composition Experiment measured the gas around the lunar surface rather than analysing a heated sample [1]. The payload name therefore covers both atmosphere-sampling and sample-heating approaches.",
+      "scientific_purpose_and_applications": "The main scientific purposes that the sources give for lunar volatile analysers are:\n- Identifying volatile species present in regolith and their relative abundances, including water, hydrogen, carbon dioxide, nitrogen, sulfur dioxide, oxygen and noble gases [5].\n- Determining isotopic ratios of hydrogen, carbon, oxygen and nitrogen. These ratios can help establish whether polar volatiles came from comets, asteroids, the solar wind or other sources [5][6].\n- Evaluating extraction behaviour as a function of temperature, which is needed to design ISRU processes [5][6].\n- Assessing contamination. Measuring organic compounds and volatiles in lunar material can help separate lunar material from terrestrial contamination, including contamination from spacecraft and humans [5].\n- Providing ground truth for orbital remote sensing, so that orbital hydrogen or water signatures can be interpreted with direct in-situ measurements [6].",
+      "operating_principle": "In a heating-type volatile analyser, the sample is sealed or transferred into a container, then heated in a controlled mode. The released gases pass through an inlet into a mass spectrometer. The spectrometer ionises the gas molecules, separates the ions by mass-to-charge ratio, and records their abundances. Changes in the spectrum with temperature identify when each species is released [5][6].\n\nThe proposed ProSPA instrument for the PROSPECT package illustrates the approach. Its oven is heated at a ramp rate of 6 °C per minute while the released gases are analysed continuously by an ion trap mass spectrometer. For isotope measurements, a magnetic sector instrument analyses gases released at fixed temperatures in vacuum or in oxygen [6].\n\nThe sources describe different detector types. The VAPoR concept uses a quadrupole mass spectrometer design derived from the Sample Analysis at Mars instrument, with a MEMS time-of-flight mass spectrometer under development as a lighter alternative [5]. The MSolo instrument is described in NASA slides as a mass spectrometer that scanned 0 to 90 m/z, but its detector type is not stated in the retrieved slides [2].",
+      "scientific_importance": "Lunar volatiles are important because the Moon's polar regions may contain water ice and other volatile compounds in cold traps. Remote-sensing observations can show that hydrogen is present, but they cannot by themselves identify the chemical form or the origin of the hydrogen [5][6]. A volatile analyser that heats or samples regolith directly can help answer these questions.\n\nThe Apollo 17 atmospheric measurements provided an earlier in-situ view of the lunar exosphere. A VAPoR abstract notes that these measurements suggested the presence of cold-trapped volatiles expelled by solar heating, although the composition and origin of the polar volatiles remained unresolved [5]. The 2025 MSolo surface operations provided only a short test of a commercial mass spectrometer on the lunar surface, but they showed how contamination from the spacecraft and Earth can dominate the spectra [2].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power requirement for a volatile analyser. Designs range from a lightweight atmosphere mass spectrometer to a multi-unit chemical laboratory that includes ovens, gas handling and two different mass analysers. Values below apply to the named instrument and source only. Several examples are proposals or resource estimates rather than measured flight values. The examples are not directly comparable, so no comparison table is given.",
+        "examples": [
+          {
+            "name": "Apollo 17 Lunar Atmospheric Composition Experiment (LACE)",
+            "type": "Historical flown instrument, part of the Apollo 17 Apollo Lunar Surface Experiments Package",
+            "instrument_description": "A miniature mass spectrometer, described as the Lunar Atmospheric Composition Experiment [1].",
+            "mass_kg": null,
+            "dimensions": "Not stated in the primary report abstract retrieved for this article [1].",
+            "power": "Not stated in the primary report abstract retrieved for this article [1].",
+            "mass_range": "Not stated in the primary report abstract retrieved for this article [1].",
+            "operations": "The 1973 Apollo 17 Preliminary Science Report records initial activation on 27 December 1972, about 50 hours after sunset. Operation covered the first lunar night and was repeated for the second and third lunations. Daytime operation was paused except for a brief check near noon [1].",
+            "qualification_and_notes": "Secondary sources report additional results and a later failure. These were not verified against the primary text and are not used as data here.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/19740010334"
+            ],
+            "images": []
+          },
+          {
+            "name": "Mass Spectrometer Observing Lunar Operations (MSolo), PRIME-1 on IM-2 Athena",
+            "type": "Flown commercial off-the-shelf (COTS) mass spectrometer, described by NASA as modified to work in space",
+            "flight": "Carried on the PRIME-1 payload on Intuitive Machines' IM-2 Athena lander, which landed on 6 March 2025 at 17:28 UTC [2].",
+            "mass_kg": null,
+            "dimensions": "Not stated in the NASA slides or the NASA PRIME-1 page retrieved for this article [2][3].",
+            "power": "Not stated in the NASA slides or the NASA PRIME-1 page retrieved for this article [2][3].",
+            "mass_range": "Scans covered 0 to 90 m/z [2]. A full mass range specification is not stated in the retrieved sources [2][3].",
+            "surface_operations": "The team reports that the instrument was powered on three times and captured 43 scans: 40 complete and 3 partial. The filament survived the landing, tuning was good but not perfect, and sensitivity was lower than during transit. The team suggested dust on the filament or ion source as a possible cause, but this was not confirmed [2].",
+            "results": "Peak shapes and tuning were reported as good on the surface. The team reports that Earth air contamination persisted for days after launch and dominated the transit and landed spectra. It also reports that IM-2 venting of methane and oxygen tanks, which were pressurised with helium, changed the spectra during surface operation [2]. NASA's public summary states that the gases detected were believed to be human-made, from propellant venting and Earth water [3]. No lunar water detection is claimed.",
+            "limitations": "The team states that if the landing had been in an icy region, water would have been expected above the post-landing background, but this is a conditional expectation and not a measurement [2].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20260003150/downloads/MSolo%20PRIME-1%20overview%20and%20results%20-%20LSSW.pdf",
+              "https://www.nasa.gov/prime-1/"
+            ],
+            "images": [
+              {
+                "id": "msolo_test_unit_photo",
+                "description": "Photograph of a metal instrument with blue cabling and labels, captioned on the NASA PRIME-1 page as an MSolo test unit.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_1.jpg",
+                "source_page_url": "https://www.nasa.gov/prime-1/",
+                "publisher": "NASA",
+                "credit": "Not stated on source page",
+                "caption": "Mass Spectrometer Observing Lunar Operations (MSolo) test unit instrument, as captioned on the NASA PRIME-1 page. The photograph does not carry a readable MSolo label.",
+                "section_placements": [
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL taken from the converted text of the NASA PRIME-1 page, with query strings removed; the raw HTML src attribute was not inspected. The file was retrieved and inspected visually. The image shows a test-unit-type hardware photograph; identification as MSolo rests on the NASA page caption."
+              }
+            ]
+          },
+          {
+            "name": "Volatile Analysis by Pyrolysis of Regolith (VAPoR)",
+            "type": "Proposed instrument concept, developed at NASA Goddard Space Flight Center; not flown",
+            "capability": "Vacuum pyrolysis of regolith or drill fines at temperatures up to 1400 °C, with a sample manipulation system, pyrolysis unit, gas processing system and mass spectrometer. The components were described as based on the Sample Analysis at Mars instrument suite [5].",
+            "mass_kg_estimate": [
+              7,
+              15
+            ],
+            "power_w_average_estimate": 18,
+            "power_w_peak_estimate": 36,
+            "volume_in_estimate": [
+              8,
+              17,
+              20
+            ],
+            "volume_cm_approx": [
+              20.3,
+              43.2,
+              50.8
+            ],
+            "telemetry_rate_kbps_estimate": 4,
+            "resource_note": "The abstract states that the mass, power, volume and telemetry values are estimates based on SAM and earlier flight quadrupole mass spectrometers [5].",
+            "maturity": "The abstract describes a breadboard instrument and a quadrupole mass spectrometer in fabrication and test. It also describes MEMS time-of-flight mass spectrometers as under development [5]. No flight status is given.",
+            "date_and_funding": "The retrieved abstract records selection for funding in 2007 under the NASA Lunar Sortie Science Opportunities programme. The publication date is not printed in the retrieved text [5].",
+            "source_urls": [
+              "https://ntrs.nasa.gov/api/citations/20080023349/downloads/20080023349.pdf"
+            ],
+            "images": []
+          },
+          {
+            "name": "ProSPA (Sample Processing and Analysis), PROSPECT for Luna-27",
+            "type": "Proposed flight instrument in development by ESA and its partners, with the first anticipated implementation on the Luna-27 mission planned by Roscosmos and ESA [6]",
+            "analytical_laboratory": "A miniature chemical analysis laboratory measuring 37 x 27 x 13 cm, containing an ion trap mass spectrometer (target m/z range 2-200 amu) and a magnetic sector instrument for stable isotope analysis at about per-mil precision [6].",
+            "ion_trap_device_mass_g_max": 500,
+            "mass_kg_estimate": 10,
+            "mass_kg_estimate_note": "Present prediction including margin, as stated in the 2018 abstract [6].",
+            "peak_power_w_predicted": 70,
+            "sample_handling": "A rotary carousel of single-use sample ovens, with an imager to confirm sample presence. The oven volume for each sample is given as 10-60 mm3 [6].",
+            "heating_modes": "Evolved gas analysis at a 6 °C per minute ramp. ISRU hydrogen reduction at 900 °C. Methane carbothermal reduction at 1000 °C [6].",
+            "status": "At the time of the 2018 abstract, ProSPA was undergoing its Preliminary Design Review at the end of Phase B, and a prototype was under construction. Luna-27's current status was not verified for this article [6].",
+            "source_urls": [
+              "https://www.cosmos.esa.int/documents/1568476/1766000/RD5_2018_LPSC_PROSPECT_ProSPA_Poster_Abstract2172.pdf"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "No single size applies to volatile analysers. The VAPoR concept gives an estimated volume of 8 x 17 x 20 inches (about 20 x 43 x 51 cm). The ProSPA analytical laboratory is 37 x 27 x 13 cm. The Apollo LACE dimensions are not stated in the retrieved primary abstract. These values are not directly comparable because they describe different architectures and levels of maturity.",
+        "mass_and_weight": "The VAPoR concept estimates 7-15 kg. The ProSPA prediction is 10 kg including margin. The MSolo mass is not stated in the retrieved NASA sources. A non-primary blog gives a mass under 7.5 kg for MSolo, which could not be verified and is not used. The LACE mass is not stated in the retrieved primary abstract.",
+        "power_requirements": "The VAPoR concept estimates 18 W average and 36 W peak. ProSPA is predicted to need a peak of about 70 W. The MSolo power requirement is not stated in the retrieved NASA sources. The LACE power requirement is not stated in the retrieved primary abstract."
+      },
+      "environmental_and_operational_requirements": "Lunar volatiles are sensitive to temperature and grain size, so sample handling must minimise loss before analysis. The 2018 ProSPA abstract assumes a regolith temperature of about 120-150 K at the sampled site. Its oven is expected to be at 150 K or colder when a sample is transferred from the drill. The instrument is to be placed on the anti-sun side of the lander to keep sampling in shade [6].\n\nThermal control is essential for the analysis. The ProSPA design isolates the solids inlet from the warm chemical laboratory enclosure to protect the oven temperature [6].\n\nContamination control is also important. The MSolo surface team reports that Earth air persisted in the spectra for days after launch, that the sensor was not hermetically sealed, and that baking out or leaving the instrument on for long periods is necessary to reach the best sensitivity [2].\n\nPower and telemetry are constrained. The VAPoR concept assumes an average power of 18 W and a 4 kbps telemetry rate [5]. The IM-2 PRIME-1 instruments were stowed and powered off during transit, with survival heaters active and a planned health check of about 5 hours [2].",
+      "limitations": "- Sample representativeness. A drilled or scooped sample shows the material at one depth and place. ProSPA aims to sample up to 1.2 m depth [6].\n- Volatile loss. Some volatiles may be lost before the sample is sealed, so measured abundances may not reflect the original material [6].\n- Contamination. Terrestrial air, combustion products and spacecraft propellant can dominate spectra. MSolo's transit and surface data show this problem [2][3].\n- Sensitivity and tuning. Sensitivity can change with tuning, filament condition or dust. The MSolo team reports lower surface sensitivity than during transit [2].\n- Limited data. The MSolo surface dataset comprises a small number of scans from one short operation. Published scientific analyses were not identified in the sources reviewed.",
+      "transportation_and_deployment": {
+        "overview": "A volatile analyser on a lunar surface mission is integrated into a lander or rover payload on Earth, launched on a launch vehicle, transferred to the Moon, delivered to the surface and then operated with power, thermal and data interfaces. The Apollo LACE was part of the Apollo 17 ALSEP package [1]. The MSolo instrument was flown on IM-2 Athena, a Nova-C class lander [2].",
+        "transportation_process": [
+          "Integrate the payload into the lander on Earth, with power, thermal and data interfaces.",
+          "Launch on a launch vehicle and transfer to the Moon.",
+          "Deliver to the lunar surface by lander.",
+          "Keep the instrument stowed and powered off during transit, with survival heaters active and a planned health check of about 5 hours [2].",
+          "After landing, verify lander status and warm the instrument to operational temperature.",
+          "Release the drill from its launch locks and deploy its footpad to the surface; drill to a planned depth of 25 cm, with MSolo analysing the drill cuttings [2].",
+          "Operate MSolo for tuning, baseline scans and sample analysis as planned [2]."
+        ],
+        "deployment_methods": "For the IM-2 mission, the planned MSolo sequence was to power and tune the instrument after landing, then run a baseline scan. The drill was to be deployed to the surface and to a depth of 25 cm, with drill cuttings analysed by MSolo [2]. The actual surface operations ended early, as described below.",
+        "historical_examples": "The Apollo 17 LACE was part of the Apollo 17 ALSEP package and operated from the lunar surface in 1972-1973 [1]. The 2025 IM-2 mission carried PRIME-1 with MSolo to the lunar surface; the lander came to rest on its side in a crater [2][3].",
+        "compatibility_assessment": "No transport or deployment compatibility is assessed for ProSPA or VAPoR. The ProSPA abstract refers only to the Luna-27 platform accommodation [6]. The IM-2 flight of MSolo is documented by NASA [2][3], but this does not establish compatibility with any other lander.",
+        "landing_and_surface_outcome": "The actual mission was shorter than planned. The lander landed on 6 March 2025 at 17:28 UTC, near Mons Mouton. The sources give different distances from the target, ranging from about 250 m to about 500 m [2][3]. The lander came to rest on its side in a crater, which prevented its solar cells from recharging. Operations ended within about 12 hours according to the MSolo team [2], and the NASA page says 'closer to 10 hours' [3]. The NASA PRIME-1 page includes a caption that shows the drill deployed [3]. The NASA drill-test article states that the drill actuators performed as designed on the Moon [4]. The MSolo slides list the drill sequence as planned and do not state drilling depth or sample results [2]. No sample-acquisition result was identified.",
+        "images": [
+          {
+            "id": "im2_lander_on_moon",
+            "description": "IM-2 Athena lunar lander resting on its side in a crater on the lunar surface, with a small crescent Earth visible above the horizon.",
+            "image_type": "Lunar surface photograph (lander)",
+            "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+            "source_page_url": "https://www.nasa.gov/prime-1/",
+            "publisher": "NASA",
+            "credit": "Not stated on source page",
+            "caption": "The Intuitive Machines IM-2 Athena lander after its landing near Mons Mouton in March 2025. The lander's PRIME-1 payloads, including the MSolo mass spectrometer, were part of this mission.",
+            "section_placements": [
+              "overview",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct asset URL taken from the converted text of the NASA PRIME-1 page, with query strings removed; the raw HTML src attribute was not inspected. The file was retrieved and inspected visually and shows the lander on its side on the lunar surface. The NASA page alt text mentions the PRIME-1 drill; the drill is not independently confirmed in the inspected view. Credit is not stated on the source page."
+          }
+        ]
+      },
+      "historical_significance": "The Apollo 17 LACE instrument measured the lunar atmosphere in situ from 1972 to 1973 as part of the Apollo Lunar Surface Experiments Package [1]. The VAPoR abstract cites those measurements as suggesting cold-trapped volatiles expelled by solar heating, and it treats in-situ volatile analysis as a logical next step [5].\n\nThe 2025 MSolo flight is historically significant as a demonstration of a COTS mass spectrometer operating on the lunar surface. The MSolo team reports that the mission validated the instrument model for future use [2]. The flight was short, however, and its scientific value is limited to a small dataset [2][3].",
+      "limitations_and_uncertainties": "- **Flight evidence.** MSolo flew and produced surface data, but the public sources give no final scientific results on lunar volatiles. The team describes the results as preliminary [2][3].\n- **Drill outcome.** The sources reviewed give different descriptions of drill deployment and do not establish drilling depth or sample acquisition [2][3][4].\n- **Mission duration and landing distance.** The sources give different values for the surface operation time and the distance from the intended site [2][3].\n- **MSolo physical specifications.** Mass, power, dimensions and mass range are not stated in the retrieved NASA sources. A non-primary blog gives a mass figure, which could not be verified.\n- **LACE physical specifications.** Mass, dimensions, power and mass range are not stated in the retrieved primary abstract [1].\n- **LACE secondary results.** Reported helium, neon and argon identifications, atmospheric density ranges, deployment-date conflicts and a later failure date come from secondary sources and were not verified against primary reports.\n- **VAPoR status.** The VAPoR figures are estimates and concept values. The abstract's publication date is not printed in the retrieved text [5].\n- **ProSPA status.** The ProSPA figures come from a 2018 abstract. Current Luna-27 and PROSPECT status was not verified [6].\n- **Image rights.** Images were obtained from NASA pages and retrieved as files. Rights and reuse terms beyond the NASA source pages were not checked.",
+      "images": [
+        {
+          "id": "im2_lander_on_moon",
+          "description": "IM-2 Athena lunar lander resting on its side in a crater on the lunar surface, with a small crescent Earth visible above the horizon.",
+          "image_type": "Lunar surface photograph (lander)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+          "source_page_url": "https://www.nasa.gov/prime-1/",
+          "publisher": "NASA",
+          "credit": "Not stated on source page",
+          "caption": "The Intuitive Machines IM-2 Athena lander after its landing near Mons Mouton in March 2025. The lander's PRIME-1 payloads, including the MSolo mass spectrometer, were part of this mission.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL taken from the converted text of the NASA PRIME-1 page, with query strings removed; the raw HTML src attribute was not inspected. The file was retrieved and inspected visually and shows the lander on its side on the lunar surface. The NASA page alt text mentions the PRIME-1 drill; the drill is not independently confirmed in the inspected view. Credit is not stated on the source page."
+        },
+        {
+          "id": "msolo_test_unit_photo",
+          "description": "Photograph of a metal instrument with blue cabling and labels, captioned on the NASA PRIME-1 page as an MSolo test unit.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2020/07/prime-1_web_photo_1.jpg",
+          "source_page_url": "https://www.nasa.gov/prime-1/",
+          "publisher": "NASA",
+          "credit": "Not stated on source page",
+          "caption": "Mass Spectrometer Observing Lunar Operations (MSolo) test unit instrument, as captioned on the NASA PRIME-1 page. The photograph does not carry a readable MSolo label.",
+          "section_placements": [
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL taken from the converted text of the NASA PRIME-1 page, with query strings removed; the raw HTML src attribute was not inspected. The file was retrieved and inspected visually. The image shows a test-unit-type hardware photograph; identification as MSolo rests on the NASA page caption."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "im2_lander_on_moon",
+          "description": "IM-2 Athena lunar lander resting on its side in a crater on the lunar surface, with a small crescent Earth visible above the horizon.",
+          "image_type": "Lunar surface photograph (lander)",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2025/03/im-2-lander-on-moon.png",
+          "source_page_url": "https://www.nasa.gov/prime-1/",
+          "publisher": "NASA",
+          "credit": "Not stated on source page",
+          "caption": "The Intuitive Machines IM-2 Athena lander after its landing near Mons Mouton in March 2025. The lander's PRIME-1 payloads, including the MSolo mass spectrometer, were part of this mission.",
+          "section_placements": [
+            "overview",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL taken from the converted text of the NASA PRIME-1 page, with query strings removed; the raw HTML src attribute was not inspected. The file was retrieved and inspected visually and shows the lander on its side on the lunar surface. The NASA page alt text mentions the PRIME-1 drill; the drill is not independently confirmed in the inspected view. Credit is not stated on the source page."
+        }
+      ],
+      "references": [
+        {
+          "title": "Lunar atmospheric composition experiment (Apollo 17 Preliminary Science Report, NASA SP-330)",
+          "publisher": "NASA NTRS; authors J. H. Hoffman, R. R. Hodges, Jr., F. S. Johnson, D. E. Evans; 1973",
+          "url": "https://ntrs.nasa.gov/citations/19740010334"
+        },
+        {
+          "title": "PRIME-1: MSolo Overview and Results (presentation, April 2026)",
+          "publisher": "NASA NTRS; MSolo Science Team; 2026",
+          "url": "https://ntrs.nasa.gov/api/citations/20260003150/downloads/MSolo%20PRIME-1%20overview%20and%20results%20-%20LSSW.pdf"
+        },
+        {
+          "title": "PRIME-1 (Polar Resources Ice Mining Experiment-1)",
+          "publisher": "NASA; mission page last updated 11 March 2025",
+          "url": "https://www.nasa.gov/prime-1/"
+        },
+        {
+          "title": "NASA's lunar drill technology passes tests on the Moon",
+          "publisher": "NASA; article dated 29 April 2025",
+          "url": "https://www.nasa.gov/missions/artemis/clps/nasas-lunar-drill-technology-passes-tests-on-the-moon/"
+        },
+        {
+          "title": "Volatile Analysis by Pyrolysis of Regolith (VAPoR) on the Moon using mass spectrometry (conference abstract)",
+          "publisher": "NASA NTRS; D. P. Glavin, I. L. ten Kate, W. Brinckerhoff et al.; c. 2008, date not printed in retrieved text",
+          "url": "https://ntrs.nasa.gov/api/citations/20080023349/downloads/20080023349.pdf"
+        },
+        {
+          "title": "ProSPA: Analysis of Lunar Polar Volatiles and ISRU Demonstration on the Moon (49th LPSC, abstract 2172)",
+          "publisher": "ESA; S. J. Barber, I. P. Wright, F. Abernethy et al.; 2018",
+          "url": "https://www.cosmos.esa.int/documents/1568476/1766000/RD5_2018_LPSC_PROSPECT_ProSPA_Poster_Abstract2172.pdf"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "IM-2 lander example in transportation and deployment": "payload.article.transportation_and_deployment.images",
+      "MSolo example": "payload.article.physical_specifications.examples[1].images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Image objects are repeated in each section-level array where they are displayed in the article. Direct image URLs were taken from converted text of NASA pages and were not checked against raw HTML src attributes; this is recorded in each image's notes."
+  },
+  "data_quality_notes": [
+    "No direct lunar-surface image of Apollo 17 LACE was verified; secondary-source candidates were not used because rights and direct asset URLs were not confirmed.",
+    "MSolo mass, power, dimensions and mass range are not stated in the retrieved NASA sources. A non-primary blog gives a mass under 7.5 kg; this was not verified and is not used.",
+    "Sources conflict on the drill outcome on the Moon: the NASA PRIME-1 page caption shows the drill deployed, the NASA drill-test article says the actuators performed as designed, and the MSolo slides list the drill sequence as planned. Drilling depth and sample acquisition are not established.",
+    "Sources conflict on the landing distance from the intended site (about 250 m, 400 m and 500 m are given) and on surface operation duration (about 12 hours per the MSolo slides; closer to 10 hours per the NASA page).",
+    "LACE deployment-date and operation details come from the 1973 Apollo 17 Preliminary Science Report abstract. Secondary-source claims about identified gases, atmospheric density, number of lunations and a later failure date were not verified against primary text.",
+    "VAPoR figures are estimates and concept values, not measured flight performance. The publication date is not printed in the retrieved abstract; NTRS record 20080023349 is used for the reference.",
+    "ProSPA figures come from a 2018 LPSC abstract. Current Luna-27 and PROSPECT status was not verified for this article.",
+    "Image URLs were taken from converted text of NASA pages rather than raw HTML. The two image files were retrieved and inspected visually, but the raw src attributes were not confirmed.",
+    "Source PDFs were retrieved through a web-fetch tool that did not extract their text; text was extracted locally with pdftotext for the VAPoR, ProSPA and MSolo slide sources."
+  ]
+}

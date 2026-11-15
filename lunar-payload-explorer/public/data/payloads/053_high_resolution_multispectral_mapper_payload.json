@@ -1,0 +1,318 @@
+{
+  "catalogue_id": 53,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 53,
+    "name": "High-resolution multispectral mapper",
+    "article": {
+      "overview": "A high-resolution multispectral mapper is an imaging instrument that combines two properties. It resolves fine surface detail, at metre or sub-metre scale from orbit, and it records that detail through several spectral bands, so that colour or reflectance differences can be mapped at the same time. The two properties usually pull against each other. A camera that resolves small features needs a small pixel and a narrow field of view, and a wide spectral bandwidth to collect enough light in a short exposure. Using several narrow bands for composition costs signal and coverage.\n\nScope of this article. In scope: the generic class of fine-scale imagers with a small number of spectral bands, the design trade between resolution and band count, and three flown examples with primary sources read in this run. Out of scope, and cross-referenced rather than repeated:\n\n- Panchromatic or single-band high-resolution cameras, which are covered by payload 027 (High-resolution camera) and payload 043 (Panchromatic camera).\n\n- Coarser multispectral imagers, which cover a few broad bands at lower resolution, covered by payload 034 (Multispectral imager). The LRO Wide Angle Camera is treated in detail there and appears here only as one half of a camera pair.\n\n- Hyperspectral imaging spectrometers, which record a continuous spectrum for each pixel, covered by payload 035 (Hyperspectral imager).\n\n- Terrain mapping cameras and stereo cameras, covered by payloads 028 (Terrain mapping camera) and 029 (Stereo camera). The LROC Narrow Angle Camera is treated in detail in payload 045 (Narrow-angle camera).\n\n- Polarimetric imagers, covered by payload 052 (Polarimetric imager).\n\nEvidence caveat. The catalogue name describes a class. In this run, no single flown lunar instrument was found whose primary documentation uses the name \"high-resolution multispectral mapper\". The lunar example is therefore a pair of cameras on one orbiter, not one instrument. The three examples are not interchangeable with one another, and none is a standard design.",
+      "description": "A high-resolution multispectral mapper is normally a line-scanning or push-frame telescope with a small-pitch detector and a spectral filter arrangement. Its spatial scale comes from the telescope focal length and detector pixel size, as in payload 027. Its band set comes from filters, such as a filter wheel or a filter array on a detector, as in payload 034.\n\nThree designs illustrate the range in the sources read:\n\n- NEAR Multispectral Imager (MSI). A five-element refractive telescope with an eight-position filter wheel feeds a charge-coupled device (CCD). Seven narrowband filters and one broadband filter were chosen for composition and navigation [1].\n\n- HiRISE on Mars Reconnaissance Orbiter. A broad RED filter covers most of a 14-CCD detector. Four further CCDs carry blue-green (BG) and near-infrared (IR) filters along the centre of the swath, and these are combined with RED data into colour products [4][5].\n\n- LROC Narrow Angle Camera and Wide Angle Camera on Lunar Reconnaissance Orbiter. Two NAC telescopes give panchromatic images at 0.5 m per pixel from 50 km. A separate WAC records seven colour bands at coarser scale [7].",
+      "scientific_purpose_and_applications": "The purpose is to map surface detail and colour or composition over the same area with one instrument family. In the sources read, the specific uses are:\n\n- Colour-enhanced geology. HiRISE colour products are used to show colour differences between materials. The HiRISE team notes that dust is generally redder, while coarser materials such as sand and rock look bluer, and that the colours are enhanced or infrared-shifted and not natural [4].\n\n- Fine-scale context for spectral data. The LROC NAC gives 0.5 m panchromatic images that can be set against the seven-band WAC. The LROC instrument paper states that the WAC's bandpasses are suited to detecting ilmenite [7]. That claim belongs to the WAC, which is treated in payload 034.\n\n- Colour mapping of an asteroid. The 1998 NEAR instrument description states that seven narrowband filters were chosen for multicolour imaging and comparison with earlier asteroid observations [1]. The published colour science results from Eros were not read in full in this run, so no result is stated here.\n\nThese purposes are stated for each instrument in its own source. The article does not extend them beyond those sources.",
+      "operating_principle": "A high-resolution multispectral mapper forms an image through a telescope onto a detector, with a filter in the optical path for each band. Each filter passes a range of wavelengths and rejects the rest. The detector converts the light into a digital number per pixel per band. The bands are then radiometrically calibrated before comparison [4][7].\n\nThe instrument's spatial scale is set by the angular size of one detector pixel. The projected ground size equals that angle times the range to the surface. The NEAR MSI design gives a pixel angular size of 95 by 161 microradians. This corresponds to 9.5 by 16.1 m at 100 km range [1]. The LROC NAC gives 0.5 m per pixel at the nominal 50 km orbit [7].\n\nHiRISE uses time delay integration (TDI). The same ground point is integrated over several detector lines as the spacecraft moves [5]. The colour products use the centre of the swath, where the BG and IR CCDs are located. The colour product covers the central 20 per cent of the RED swath width [4].",
+      "scientific_importance": "The main scientific value of a high-resolution multispectral mapper is that it links morphology and colour at a scale where individual outcrops, craters and boulders can be examined. It can show whether a colour unit is laterally extensive, or whether a colour change follows a landform.\n\nThe value is limited by calibration, illumination and altitude. Colours in HiRISE are relative and enhanced, so colour values are not absolute reflectance without the calibrated RDR products [4]. For the LROC pair, the NAC and WAC have different ground scales, so pixel values cannot be compared directly. Results from one mapper should be compared with another only after reviewing each instrument's calibration and illumination treatment.",
+      "physical_specifications": {
+        "note": "There is no universal mass, power, band set, or resolution for a high-resolution multispectral mapper. The three examples below are specific flown instruments or camera pairs. Each value is taken from the cited source. \"Not publicly specified in the sources accessed\" means that no value was found in the documents read in this run.",
+        "comparison_table_markdown": "| Item | NEAR Multispectral Imager (MSI) | HiRISE (Mars Reconnaissance Orbiter) | LROC NAC pair plus WAC (Lunar Reconnaissance Orbiter) |\n|---|---|---|---|\n| Status in sources | Launched on NEAR on 17 February 1996 [1]. Entered orbit around Eros on 14 February 2000 [2]. End-of-mission status not verified in this run. | Flown on MRO. The FAQ is written in the present tense, but current operating status is not verified in this run [5]. | Flown on LRO. Current operating status not verified in this run. The LROC instrument paper describes the instrument design [7]. |\n| Platform and environment | NEAR spacecraft; asteroid 433 Eros orbit | MRO; Mars orbit | LRO; lunar orbit |\n| Band set | Eight-position filter wheel: 700 nm broadband (plus or minus 100 nm), 450, 550, 760, 900, 950, 1000 and 1050 nm [1] | RED 570 to 830 nm; BG below 580 nm; IR above 790 nm [5]. Passband centres not verified in this run. | NAC: panchromatic, no bands. WAC: five visible bands from 415 to 690 nm and two UV bands near 320 and 360 nm [7] |\n| Spatial scale | 9.5 by 16.1 m per pixel at 100 km range [1]. Pixel 16 by 27 micrometres; instantaneous field of view 95 by 161 microradians [1]. | Bin 1 about 0.3 m per pixel, as stated in the FAQ [5]. Map-projected products at 0.25 m (bin 1), 0.5 m (bin 2) or 1.0 m (bin 4) [5]. | NAC 0.5 m per pixel at 50 km; combined NAC swath 5 km at 50 km [7]. WAC 75 m per pixel (visible) and 384 m per pixel (UV) at 50 km [7]. |\n| Field of view and optics | 2.93 by 2.25 degrees; focal length 168 mm in the abstract, 167.35 mm in the specification table [1] | Not verified in this run | NAC: 700 mm focal-length telescope per NAC, 5000-pixel CCD line array, two NAC units with 2.85 degrees cross-track FOV each [7]. WAC: see payload 034 for the specification-page values, which differ between sources. |\n| Detector | Charge-coupled device (CCD), 537 by 244 active pixels, passively cooled [1] | 14 CCDs in total: 10 RED, 2 BG, 2 IR [5]. Colour products use 6 of the 14 CCDs [4]. | NAC: CCD line array of 5000 pixels [7]. WAC: 1000 by 1000 pixel CCD with seven filters [7] |\n| Mass | Camera head 3.7 kg [1] | Not publicly specified in the sources accessed | NAC: not publicly specified in the sources accessed. WAC: 0.9 kg (payload 034) |\n| Power | Not publicly specified in the sources accessed | Not publicly specified in the sources accessed | NAC: not publicly specified in the sources accessed. WAC: 2.7 W peak, 2.6 W average (payload 034) |\n| Dimensions | Camera head envelope 42.7 by 20.5 by 17.1 cm [1] | Not publicly specified in the sources accessed | NAC: not publicly specified in the sources accessed. WAC: 15.8 by 23.2 by 32.3 cm including radiator (payload 034) |",
+        "examples": [
+          {
+            "name": "NEAR Multispectral Imager (MSI)",
+            "details": [
+              "Status: flown on the NEAR spacecraft. The NEAR spacecraft launched on 17 February 1996 on a Delta II rocket, as stated in the 1998 instrument description [1]. The NSSDC mission page records orbit insertion around Eros on 14 February 2000 [2]. The NASA press release for a 12 February 2000 approach sequence attributes the images to the MSI [3].",
+              "Telescope and filters: five-element refractive optics with an eight-position filter wheel. The filters are 700 nm broadband (plus or minus 100 nm), 450, 550, 760, 900, 950, 1000 and 1050 nm [1]. The paper states that seven narrowband filters were chosen for multicolour imaging and comparison with earlier asteroid observations. The eighth, broadband filter was chosen for optical navigation [1].",
+              "Resolution and field of view: 2.93 by 2.25 degrees, with a pixel instantaneous field of view of 95 by 161 microradians, giving 9.5 by 16.1 m at 100 km [1].",
+              "Mass and power: camera head 3.7 kg, envelope 42.7 by 20.5 by 17.1 cm [1]. Power is not publicly specified in the sources accessed.",
+              "Use in orbit: the NSSDC page describes the MSI's approach imaging and a 780-frame rotation sequence taken on 12 February 2000 [2]. The press release below is for that sequence [3]. Its caption states that the MSI recorded the pictures about 1,800 km from Eros, with features as small as 180 m visible."
+            ],
+            "images": [
+              {
+                "id": "near_msi_eros_rotation_sequence_pia02463",
+                "description": "Twelve-panel rotation sequence of asteroid 433 Eros taken by the NEAR Multispectral Imager during approach on 12 February 2000.",
+                "image_type": "Orbital spacecraft image (NEAR MSI, multi-frame rotation sequence)",
+                "image_url": "https://pds-rings.seti.org/press_releases/medium/PIA02xxx/PIA02463_med.jpg",
+                "source_page_url": "https://pds-rings.seti.org/press_releases/pages/PIA02xxx/PIA02463.html",
+                "publisher": "NASA/JPL/JHUAPL (press release PIA02463, mirrored on the PDS Rings Node)",
+                "credit": "NASA/JPL/JHUAPL (as stated on the source page)",
+                "caption": "On February 12, two days before NEAR's insertion into orbit around Eros, the spacecraft's Multispectral Imager recorded these pictures of the asteroid spinning on its axis. Features as small as 590 feet (180 meters) wide can be seen.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset verified: HTTP 200, image/jpeg, 86,533 bytes, on the PDS Rings Node mirror of the JPL press release. The official JPL asset path photojournal.jpl.nasa.gov/jpeg/PIA02463.jpg returned HTTP 200 with text/html, not an image, so it was not used. The mirror is therefore not an official NASA asset host; rights follow the NASA/JPL press-release credit. Path contains the literal segment PIA02xxx, as published on the mirror."
+              }
+            ],
+            "status_note": "Status: flown on the NEAR spacecraft. The NEAR spacecraft launched on 17 February 1996 on a Delta II rocket, as stated in the 1998 instrument description [1]. The NSSDC mission page records orbit insertion around Eros on 14 February 2000 [2]. The NASA press release for a 12 February 2000 approach sequence attributes the images to the MSI [3]."
+          },
+          {
+            "name": "HiRISE on Mars Reconnaissance Orbiter",
+            "details": [
+              "Status: flown on MRO at Mars. The HiRISE team's FAQ describes the camera's colour channels in the present tense, but it does not give a current operating status [5]. The HiRISE colour-products document is dated 10 October 2007 [4]. The primary HiRISE instrument paper (McEwen et al., 2007) is cited but was not read in full [6].",
+              "Colour design: 14 CCDs in total. The colour products use six of them, RED4, RED5, BG12, BG13, IR10 and IR11 [4]. The FAQ gives the channel counts as 10 RED, 2 BG and 2 IR [5]. The BG filter primarily accepts green light, so the blue-green band is described as green-accepting [4].",
+              "Passbands: RED 570 to 830 nm, BG below 580 nm, IR above 790 nm [5]. The FAQ gives passband ranges, not centre wavelengths, and the centres are not verified in this run.",
+              "Colour swath and products: the colour product covers the central 20 per cent of the RED swath width and combines IR, RED and BG images [4]. The colour is not natural colour, since the IR, RED and BG channels are displayed as red, green and blue [4].",
+              "Scale: bin 1 about 0.3 m per pixel; map-projected products at 0.25, 0.5 or 1.0 m per pixel [5]."
+            ],
+            "images": [
+              {
+                "id": "hirise_first_color_image_pia08061",
+                "description": "First colour image from HiRISE on Mars Reconnaissance Orbiter, 24 March 2006, showing infrared-shifted colour of the surface.",
+                "image_type": "Orbital colour image (HiRISE IR-RED-BG 3-colour product, infrared-shifted)",
+                "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia08/pia08061/PIA08061.jpg",
+                "source_page_url": "https://science.nasa.gov/photojournal/first-color-hirise-image-of-mars",
+                "publisher": "NASA Photojournal (NASA/JPL/University of Arizona)",
+                "credit": "Credits: NASA/JPL/University of Arizona (as stated on the source page)",
+                "caption": "First colour image from the High Resolution Imaging Science Experiment. The colours are infrared-shifted, not natural. Centred at 33.65 degrees south, 305.07 degrees east; scale 2.49 m per pixel.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset verified: HTTP 200, image/jpeg, 4,953,490 bytes (full-resolution JPEG, header check only; the file was not downloaded or inspected). Asset path listed on the source page. The source page's caption is paraphrased in part in this JSON. Reuse rights: NASA Photojournal image policy applies; no separate licence was checked."
+              }
+            ],
+            "status_note": "Status: flown on MRO at Mars. The HiRISE team's FAQ describes the camera's colour channels in the present tense, but it does not give a current operating status [5]. The HiRISE colour-products document is dated 10 October 2007 [4]. The primary HiRISE instrument paper (McEwen et al., 2007) is cited but was not read in full [6]."
+          },
+          {
+            "name": "LROC Narrow Angle Camera pair plus Wide Angle Camera (lunar orbit)",
+            "details": [
+              "Status: flown on the Lunar Reconnaissance Orbiter. The LROC instrument paper [7] describes the design and does not state the operating status in the pages read. This article treats the pair as one lunar example, and the WAC specification values are given in payload 034.",
+              "NAC design: two monochrome, panchromatic NAC units. Each has a 700 mm focal-length telescope imaging onto a 5000-pixel CCD line array. The pair gives a combined 5 km swath at the nominal 50 km orbit, with 0.5 m per pixel [7].",
+              "WAC design: a seven-colour push-frame camera with visible filters from 415 to 690 nm and UV filters near 320 and 360 nm. It gives 75 m per pixel visible and 384 m per pixel UV at 50 km [7]. Specification values, including mass and power, are in payload 034 [see payload 034 for the source comparison].",
+              "Pair use: the LROC instrument paper describes global multispectral imaging with the WAC, and high-resolution NAC imaging of selected targets [7]. The pair is therefore a mapping system with two scales. A pixel from one camera cannot be compared directly with a pixel from the other without resampling."
+            ],
+            "images": [
+              {
+                "id": "lroc_wac_415nm_nearside_mosaic",
+                "description": "LRO Wide Angle Camera orthographic view of the lunar nearside at 415 nm.",
+                "image_type": "Orbital multispectral image (WAC, single filter)",
+                "image_url": "https://lroc.im-ldi.com/ckeditor_assets/pictures/594/content_moon_415nm_952.png",
+                "source_page_url": "https://lroc.im-ldi.com/images/986",
+                "publisher": "LROC Science Operations Center (Arizona State University)",
+                "credit": "NASA/GSFC/Arizona State University (as captioned on the source page)",
+                "caption": "Orthographic view of the nearside from the WAC at 415 nm.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct asset verified: HTTP 200, image/png, 450,813 bytes; the same asset was verified in payload 034 and re-checked in this run. Shown here as the WAC half of the NAC plus WAC pair. Rights: NASA/LROC image use policy applies; no separate licence was checked."
+              }
+            ],
+            "status_note": "Status: flown on the Lunar Reconnaissance Orbiter. The LROC instrument paper [7] describes the design and does not state the operating status in the pages read. This article treats the pair as one lunar example, and the WAC specification values are given in payload 034."
+          }
+        ],
+        "related_example_not_verified": {
+          "title": "Related example not verified in this run",
+          "details": [],
+          "text": "The MESSENGER Mercury Dual Imaging System (MDIS) combines a monochrome narrow-angle camera and a multispectral wide-angle camera on a common pivot platform [10][11]. The ODE data-product page lists five of the WAC filters as 430, 560, 750, 830 and 1000 nm, and records the product sampling as 128 pixels per degree [11]. The full filter set and instrument performance were not verified in this run, so MDIS is not treated as a full example."
+        },
+        "dimensions_and_proportions": "Spatial scales and dimensions are not comparable across the three examples because altitude or range differs (NEAR at 100 km range; HiRISE bin 1 pixel scale; LROC at 50 km). Dimensions: NEAR MSI camera head envelope 42.7 by 20.5 by 17.1 cm [1]. HiRISE: not publicly specified in the sources accessed. LROC NAC: not publicly specified in the sources accessed. LROC WAC: 15.8 by 23.2 by 32.3 cm including radiator (payload 034).",
+        "mass_and_weight": "NEAR MSI camera head 3.7 kg [1]. HiRISE: not publicly specified in the sources accessed. LROC NAC: not publicly specified in the sources accessed. LROC WAC: 0.9 kg (payload 034). The sources accessed do not state whether these values include mounting hardware or harnesses.",
+        "power_requirements": "NEAR MSI: not publicly specified in the sources accessed. HiRISE: not publicly specified in the sources accessed. LROC NAC: not publicly specified in the sources accessed. LROC WAC: 2.7 W peak and 2.6 W average (payload 034)."
+      },
+      "environmental_and_operational_requirements": "The three examples operate in vacuum or thin atmospheric conditions, with strong thermal cycling and solar illumination that changes with geometry. The 1998 NEAR instrument description notes that the detector is passively cooled [1]. Thermal stability matters for a fine-pitch detector, and the NEAR design gives a depth of focus of 20 m at its pixel size and f-number [1].\n\nBand products also depend on calibration and on how the images are displayed. The HiRISE team notes that the PDS colour product uses fixed stretches, while the browse products are stretched for each image [4]. The LROC pair requires separate calibration for the NAC and WAC. The sources read do not describe the environmental qualification tests of the LROC pair in detail.",
+      "limitations": "- Resolution versus band count. Fine resolution and many narrow bands pull against each other, because short exposures give less light per band. This is a general design trade noted in the literature summaries reviewed. It was not verified against a primary source in this run, and none of the three examples quantifies it.\n\n- Colour is relative. HiRISE colour products are enhanced for display, and they are not absolute reflectance without the calibrated products [4].\n\n- Mixed scales. The LROC pair has two ground scales. Colour from the WAC cannot be placed on the NAC scale without resampling, and any fusion method requires careful checks.\n\n- Altitude dependence. All ground scales in this article depend on the altitude or range quoted for each instrument. Differences between the NEAR, HiRISE and LROC figures are not evidence of design differences alone.\n\n- Incomplete specifications. HiRISE mass, power and telescope focal length, and the LROC NAC mass and power, were not verified in this run.\n\n- Colour science. The colour-products document (reference 4) gives processing rules, not a calibrated reflectance comparison across missions.",
+      "transportation_and_deployment": {
+        "overview": "A high-resolution multispectral mapper is delivered as part of a spacecraft payload. The examples in this article were flown on orbiters, so their transportation chain is a spacecraft chain rather than a surface chain. The NEAR MSI was delivered on the NEAR spacecraft. Launch was on 17 February 1996 on a Delta II rocket [1]. HiRISE is carried on MRO. The LROC NAC and WAC are carried on LRO.",
+        "transportation_process": [
+          "Integrate the camera or camera pair into the spacecraft payload compartment on Earth, with thermal, pointing and data interfaces connected.",
+          "Launch the spacecraft and transfer it to the target body.",
+          "Insert the spacecraft into the operational orbit and commission the instrument, including focus, filter and calibration checks.",
+          "Operate with pointing and thermal limits set by the spacecraft, and downlink images through the mission data chain."
+        ],
+        "deployment_methods": "No surface deployment applies to the orbital examples. The sources read do not describe a surface mapper that deploys from a lander or rover.",
+        "historical_examples": "NEAR Multispectral Imager: launched on NEAR on 17 February 1996 (Delta II), orbit around Eros 14 February 2000. HiRISE: flown on Mars Reconnaissance Orbiter. LROC NAC and WAC: flown on Lunar Reconnaissance Orbiter. No lander or rover example is used.",
+        "compatibility_assessment": "No lander, rover or spacecraft compatibility has been assessed for a generic high-resolution multispectral mapper. Compatibility would require verified mass, envelope, mounting, power, thermal and data interface data for the specific design. The examples above do not provide those for a new design.",
+        "images": []
+      },
+      "historical_significance": "The NEAR MSI was among the instruments used for approach and orbital imaging of 433 Eros. Its approach sequences were released as NASA press images, and the 1998 instrument description records its design as a fast, low-cost Discovery-class camera [1][3].\n\nHiRISE has returned colour images of Mars from orbit since 2006. The first colour image, released in April 2006, showed infrared-shifted colour of the surface at about 2.5 m per pixel [9]. The team's colour-products document describes how the colour channels are combined [4].\n\nThe LROC NAC and WAC pair is designed for global multispectral and fine-scale lunar mapping. The LROC instrument paper describes the cameras and their intended mapping [7]. Operational results from the pair were not reviewed in this run. Its 415 nm WAC image is used as an example of the multispectral half of the pair [8].",
+      "limitations_and_uncertainties": "The term \"high-resolution multispectral mapper\" describes a class. The three examples are not interchangeable, and their band sets, scales and evidence bases differ. Read each value with its instrument and source.\n\nEvidence gaps recorded in this run:\n\n- No single flown lunar instrument was found whose primary documentation uses the catalogue name. The LROC pair is used as the lunar example, and it is a combination of two cameras.\n\n- The LROC WAC field of view differs between sources. The LROC specification page gives 61 degrees for the visible unit, and the instrument paper gives 90 degrees across 1008 pixels [7]. Payload 034 records the values from the specification page. The conflict is not resolved here.\n\n- The LROC pixel scales for the WAC differ from some secondary summaries, as noted in payload 034.\n\n- HiRISE passband centres are not verified; the FAQ gives ranges, and a secondary abstract gives approximate centres that were not checked against a primary source.\n\n- The HiRISE primary instrument paper (McEwen et al., 2007) was cited but not read in full.\n\n- The NEAR MSI focal length is 168 mm in the abstract and 167.35 mm in the specification table. The abstract value is used here, and the table value is recorded.\n\n- NEAR MSI power was not found in the sections read.\n\n- News coverage reports that the Chang'e-4 panoramic camera has a colour mode, but no filter or spectral specification was found in a primary source in this run. It is not included.\n\n- The MESSENGER MDIS filter set and instrument performance were not verified in full text; the Hawkins et al. (2007) paper was not accessible in full in this run.\n\n- No lunar landing-site or location recommendation is made. The user has deferred these until a date-dependent visualisation is available.",
+      "images": [
+        {
+          "id": "hirise_first_color_image_pia08061",
+          "description": "First colour image from HiRISE on Mars Reconnaissance Orbiter, 24 March 2006, showing infrared-shifted colour of the surface.",
+          "image_type": "Orbital colour image (HiRISE IR-RED-BG 3-colour product, infrared-shifted)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia08/pia08061/PIA08061.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/first-color-hirise-image-of-mars",
+          "publisher": "NASA Photojournal (NASA/JPL/University of Arizona)",
+          "credit": "Credits: NASA/JPL/University of Arizona (as stated on the source page)",
+          "caption": "First colour image from the High Resolution Imaging Science Experiment. The colours are infrared-shifted, not natural. Centred at 33.65 degrees south, 305.07 degrees east; scale 2.49 m per pixel.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset verified: HTTP 200, image/jpeg, 4,953,490 bytes (full-resolution JPEG, header check only; the file was not downloaded or inspected). Asset path listed on the source page. The source page's caption is paraphrased in part in this JSON. Reuse rights: NASA Photojournal image policy applies; no separate licence was checked."
+        },
+        {
+          "id": "near_msi_eros_rotation_sequence_pia02463",
+          "description": "Twelve-panel rotation sequence of asteroid 433 Eros taken by the NEAR Multispectral Imager during approach on 12 February 2000.",
+          "image_type": "Orbital spacecraft image (NEAR MSI, multi-frame rotation sequence)",
+          "image_url": "https://pds-rings.seti.org/press_releases/medium/PIA02xxx/PIA02463_med.jpg",
+          "source_page_url": "https://pds-rings.seti.org/press_releases/pages/PIA02xxx/PIA02463.html",
+          "publisher": "NASA/JPL/JHUAPL (press release PIA02463, mirrored on the PDS Rings Node)",
+          "credit": "NASA/JPL/JHUAPL (as stated on the source page)",
+          "caption": "On February 12, two days before NEAR's insertion into orbit around Eros, the spacecraft's Multispectral Imager recorded these pictures of the asteroid spinning on its axis. Features as small as 590 feet (180 meters) wide can be seen.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset verified: HTTP 200, image/jpeg, 86,533 bytes, on the PDS Rings Node mirror of the JPL press release. The official JPL asset path photojournal.jpl.nasa.gov/jpeg/PIA02463.jpg returned HTTP 200 with text/html, not an image, so it was not used. The mirror is therefore not an official NASA asset host; rights follow the NASA/JPL press-release credit. Path contains the literal segment PIA02xxx, as published on the mirror."
+        },
+        {
+          "id": "lroc_wac_415nm_nearside_mosaic",
+          "description": "LRO Wide Angle Camera orthographic view of the lunar nearside at 415 nm.",
+          "image_type": "Orbital multispectral image (WAC, single filter)",
+          "image_url": "https://lroc.im-ldi.com/ckeditor_assets/pictures/594/content_moon_415nm_952.png",
+          "source_page_url": "https://lroc.im-ldi.com/images/986",
+          "publisher": "LROC Science Operations Center (Arizona State University)",
+          "credit": "NASA/GSFC/Arizona State University (as captioned on the source page)",
+          "caption": "Orthographic view of the nearside from the WAC at 415 nm.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct asset verified: HTTP 200, image/png, 450,813 bytes; the same asset was verified in payload 034 and re-checked in this run. Shown here as the WAC half of the NAC plus WAC pair. Rights: NASA/LROC image use policy applies; no separate licence was checked."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "hirise_first_color_image_pia08061",
+          "description": "First colour image from HiRISE on Mars Reconnaissance Orbiter, 24 March 2006, showing infrared-shifted colour of the surface.",
+          "image_type": "Orbital colour image (HiRISE IR-RED-BG 3-colour product, infrared-shifted)",
+          "image_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia08/pia08061/PIA08061.jpg",
+          "source_page_url": "https://science.nasa.gov/photojournal/first-color-hirise-image-of-mars",
+          "publisher": "NASA Photojournal (NASA/JPL/University of Arizona)",
+          "credit": "Credits: NASA/JPL/University of Arizona (as stated on the source page)",
+          "caption": "First colour image from the High Resolution Imaging Science Experiment. The colours are infrared-shifted, not natural. Centred at 33.65 degrees south, 305.07 degrees east; scale 2.49 m per pixel.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset verified: HTTP 200, image/jpeg, 4,953,490 bytes (full-resolution JPEG, header check only; the file was not downloaded or inspected). Asset path listed on the source page. The source page's caption is paraphrased in part in this JSON. Reuse rights: NASA Photojournal image policy applies; no separate licence was checked."
+        }
+      ],
+      "references": [
+        {
+          "title": "The NEAR Multispectral Imager",
+          "authors": "Hawkins, S. E. III",
+          "date": "1998",
+          "publisher": "Johns Hopkins APL Technical Digest, vol. 19, no. 2",
+          "url": "https://secwww.jhuapl.edu/techdigest/Content/techdigest/pdf/V19-N02/19-02-Hawkins.pdf",
+          "notes": "Primary instrument description for NEAR MSI: optics, filter set, FOV, detector, pixel angular size, mass. Power not found in the sections read. Focal length 168 mm (abstract) versus 167.35 mm (table). Full text read from a locally saved copy."
+        },
+        {
+          "title": "NEAR Encounter with Asteroid 433 Eros",
+          "authors": "NASA National Space Science Data Center",
+          "date": "not stated on page",
+          "publisher": "NASA NSSDC",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/mission/near/near_eros_approach.html",
+          "notes": "Orbit insertion on 14 February 2000; 780-frame MSI rotation sequence on 12 February. No MSI specifications on this page."
+        },
+        {
+          "title": "PIA02463: NEAR Approach to Eros - 12 Panel Rotation Sequence",
+          "authors": "NASA/JPL/JHUAPL",
+          "date": "2000-05-07 (release date)",
+          "publisher": "NASA JPL press release, mirrored on the PDS Rings Node",
+          "url": "https://pds-rings.seti.org/press_releases/pages/PIA02xxx/PIA02463.html",
+          "notes": "Source page for the NEAR MSI image. Caption, instrument field and credit read in this run. Acquisition date not given on the page."
+        },
+        {
+          "title": "Information for Scientific Users of HiRISE Color Products",
+          "authors": "McEwen, A. and Eliason, E.",
+          "date": "2007-10-10",
+          "publisher": "HiRISE team document (University of Arizona)",
+          "url": "https://www.uahirise.org/pdf/color-products.pdf",
+          "notes": "Primary source for 14-CCD layout, 6 colour CCDs (RED4, RED5, BG12, BG13, IR10, IR11), colour product over the central 20 per cent of RED swath width, and PDS versus browse stretch rules. Full text read from a locally saved copy."
+        },
+        {
+          "title": "HiRISE Frequently Asked Questions",
+          "authors": "HiRISE project (University of Arizona and LPL)",
+          "date": "not stated on page",
+          "publisher": "HiRISE project website",
+          "url": "http://hirise.lpl.arizona.edu/faq/",
+          "notes": "Source for the RED 570-830 nm, BG below 580 nm and IR above 790 nm passband ranges; 10 RED, 2 BG and 2 IR CCDs; bin 1 about 0.3 m per pixel; map-projected products at 0.25, 0.5 and 1.0 m per pixel. Mass and power not stated. The FAQ does not state current operating status. Reached via a redirect from the HTTPS address."
+        },
+        {
+          "title": "The High Resolution Imaging Science Experiment (HiRISE) instrument description",
+          "authors": "McEwen, A. S. et al.",
+          "date": "2007",
+          "publisher": "Journal of Geophysical Research, 112, E05S02",
+          "url": "https://doi.org/10.1029/2005JE002605",
+          "notes": "Cited by the HiRISE colour-products document. Not read in full in this run; no values are taken from it."
+        },
+        {
+          "title": "Lunar Reconnaissance Orbiter Camera (LROC) Instrument Overview",
+          "authors": "Robinson, M. S. et al.",
+          "date": "2010",
+          "publisher": "Space Science Reviews, 150, 81-124",
+          "url": "https://lroc.im-ldi.com/assets/LROC_instrument_overview-5b07a1035bc2625c486e7f3d5777034224aa9b6ea887b61fcfd962f863c675f9.pdf",
+          "notes": "Primary source for NAC design (700 mm telescope, 5000-pixel CCD line array, 0.5 m per pixel at 50 km, 5 km combined swath), WAC design (seven filters, 75 m visible and 384 m UV at 50 km; visible 6.0 mm lens with 90 degree FOV across 1008 pixels; UV 4.7 mm lens) and WAC bandpass intent. The WAC FOV differs from the 61 degree value on the specification page (payload 034). Full text read from a locally saved copy; a redirect from the original host was followed."
+        },
+        {
+          "title": "Ilmenite Seen with Ultraviolet Light",
+          "authors": "LROC Science Operations Center",
+          "date": "2017-12-01",
+          "publisher": "LROC Science Operations Center, Arizona State University",
+          "url": "https://lroc.im-ldi.com/images/986",
+          "notes": "Source page for the 415 nm WAC image (same asset as payload 034)."
+        },
+        {
+          "title": "PIA08061: First Color HiRISE Image of Mars",
+          "authors": "NASA/JPL/University of Arizona",
+          "date": "2006-04-07 (image addition date)",
+          "publisher": "NASA Photojournal",
+          "url": "https://science.nasa.gov/photojournal/first-color-hirise-image-of-mars",
+          "notes": "Source page and asset list for the HiRISE colour image. The catalogue URL photojournal.jpl.nasa.gov/catalog/PIA08061 redirects to this page. Caption paraphrased in part."
+        },
+        {
+          "title": "The Mercury Dual Imaging System on the MESSENGER Spacecraft",
+          "authors": "Hawkins, S. E. III et al.",
+          "date": "2007",
+          "publisher": "Space Science Reviews, 131, 247-338",
+          "url": "https://doi.org/10.1007/s11214-007-9266-3",
+          "notes": "Abstract-level information only in this run. The Smithsonian repository copy returned HTTP 403 and was not read. Used only for the MDIS description (monochrome NAC and multispectral WAC on a common pivot)."
+        },
+        {
+          "title": "MESSENGER MDIS Wide-angle Map-projected 5-Color Multispectral RDR (MAPMP5)",
+          "authors": "NASA PDS Orbital Data Explorer",
+          "date": "not stated on page",
+          "publisher": "NASA PDS Orbital Data Explorer",
+          "url": "https://ode.rsl.wustl.edu/mercury/pagehelp/Content/Missions_Instruments/MESSENGER/MDIS/MDIS-WAC/MAPMP5.htm",
+          "notes": "Lists five of the eleven WAC filters (430, 560, 750, 830, 1000 nm) and 128 pixels per degree for the product. Band units are not defined on the page."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "NEAR MSI example": "payload.article.physical_specifications.examples[0].images",
+      "HiRISE example": "payload.article.physical_specifications.examples[1].images",
+      "LROC NAC plus WAC example": "payload.article.physical_specifications.examples[2].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (empty: no verified image for this section)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Class versus instrument: the catalogue name describes a class. No single flown lunar instrument whose primary documentation uses the name 'high-resolution multispectral mapper' was identified in this run. The lunar example is the LROC NAC plus WAC pair on one orbiter.",
+    "Status: NEAR MSI (launched 1996, orbit around Eros from 14 February 2000) and HiRISE (on MRO at Mars) and the LROC pair (on LRO) are flown. Current operating status was not verified for HiRISE or the LROC pair, and the NEAR MSI end-of-mission status was not verified. None is a prototype or proposal example.",
+    "Gap 1: HiRISE passband centres were not verified. The FAQ gives passband ranges (RED 570-830 nm, BG below 580 nm, IR above 790 nm). A secondary EGU abstract gives approximate centres of about 690, 500 and 870 nm; these were not checked against a primary source and are not used.",
+    "Gap 2: HiRISE telescope focal length, field of view, mass, power and dimensions were not verified. The FAQ states none of mass or power.",
+    "Gap 3: The NEAR MSI focal length is 168 mm in the abstract and 167.35 mm in the specification table. The abstract value is used in the article. The NEAR MSI power was not found in the sections read.",
+    "Gap 4: The LROC WAC field of view differs between sources: 61 degrees (specification page, payload 034) and 90 degrees across 1008 pixels (instrument paper, this article). Unresolved here; see payload 034.",
+    "Gap 5: The LROC NAC mass, power and dimensions were not publicly specified in the sources accessed.",
+    "Gap 6: The MESSENGER MDIS (Mercury) filter set and performance were not verified in full text. The Hawkins et al. (2007) MDIS paper was reached only as an abstract; the Smithsonian copy returned HTTP 403. MDIS is therefore recorded as a related example, not a full example.",
+    "Gap 7: A 2016 ISPRS paper on fusing LROC NAC and WAC images was located by search but not read in full. No fusion result is stated in this article.",
+    "Image rights: the HiRISE image is an official NASA Photojournal asset (HTTP 200, image/jpeg). The LROC image is the same asset verified in payload 034 (HTTP 200, image/png). The NEAR MSI image is a PDS Rings Node mirror of a NASA/JPL press-release asset (HTTP 200, image/jpeg); the official JPL asset path returned HTML and was not used. Reuse rights were not separately checked for any image.",
+    "Image verification depth: direct asset checks used HTTP status and content type only. Full-resolution downloads were not inspected. direct_image_assets_verified_from_official_pages is recorded as false because the NEAR MSI asset is not from an official NASA asset host.",
+    "Scope cross-references (not duplicated here): 027 High-resolution camera; 034 Multispectral imager; 035 Hyperspectral imager; 043 Panchromatic camera; 045 Narrow-angle camera; 052 Polarimetric imager; 028 Terrain mapping camera; 029 Stereo camera.",
+    "Not covered: Chang'e-4 panoramic camera colour mode (news reports only; no primary filter specification found); no lander, rover or surface example; no lunar landing-site or location recommendation (deferred by the user)."
+  ]
+}

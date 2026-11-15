@@ -1,0 +1,228 @@
+{
+  "catalogue_id": 116,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "article_version": "v2",
+  "category": {
+    "number": 6,
+    "name": "Radiation and space environment"
+  },
+  "payload": {
+    "number": 116,
+    "name": "Solar particle detector",
+    "article": {
+      "overview": "A solar particle detector is an instrument class for measuring charged particles that come from the Sun, mainly the continuous solar wind and the energetic particles released by solar eruptions, and for characterising how these particles interact with the lunar environment. In this catalogue the entry is a generic payload class rather than one named instrument, so this article covers several related examples rather than one design.\n\nThis v2 article re-researches the entry and supersedes the v1 draft. The examples documented in the sources read for this run are three Apollo 12 surface experiments (the Solar Wind Spectrometer, the Solar Wind Collector foil and the Suprathermal Ion Detector Experiment) [5][6][7][8], the Lunar Reconnaissance Orbiter radiation telescope CRaTER [1][2][3], and the RAMBHA-LP Langmuir probe on the Chandrayaan-3 lander [9][10][11]. RAMBHA-LP is a plasma instrument rather than a solar-particle detector and is included as an adjacent example. All four flown examples are documented as operated on the Moon or in lunar orbit. No universal specification exists for this payload class, and several instrument-level values are not publicly specified in the sources read.",
+      "description": "Solar wind is a continuous outflow of ionised gas (plasma) from the Sun, consisting mostly of protons and electrons with smaller amounts of heavier ions. Solar energetic particles are accelerated to much higher energies during solar flares and coronal mass ejections, and galactic cosmic rays arrive from outside the solar system. These populations reach the lunar surface and orbit directly because the Moon has no global atmosphere or magnetic field. This general background was not drawn from a source checked in this run and is flagged in the data-quality notes.\n\nThe Apollo 12 surface package used three different approaches. The Solar Wind Spectrometer (SWS, called the SWE on the ALSJ page) used seven modulated Faraday cups to measure electron and positive-ion components of the solar wind and magnetotail plasma [6]. The Solar Wind Collector (SWC) was a foil that the crew deployed near the lunar module [5]; its intended role, capturing solar-wind atoms for later analysis, is reported in secondary summaries that were not read in full. The Suprathermal Ion Detector Experiment (SIDE) measured the energies and masses of positive ions reaching the lunar surface, using a Total Ion Detector and a Mass Analyzer [7][8].\n\nCRaTER belongs to a different sub-class: an orbital telescope with six silicon detectors arranged as thin and thick pairs, separated by sections of tissue-equivalent plastic. It characterises the radiation environment by building linear energy transfer (LET) spectra of galactic and solar cosmic rays [1][2][3]. LET is the energy deposited per unit path length by a charged particle as it passes through matter, which is the quantity relevant to biological dose. RAMBHA-LP is a 5 cm spherical Langmuir probe on a 1 m boom that measures near-surface plasma density and temperature on the Chandrayaan-3 lander [9][10].",
+      "scientific_purpose_and_applications": "The purpose of these instruments is to measure the particle and plasma environment at the lunar surface or in lunar orbit. The Apollo 12 solar-wind experiments were placed to measure the solar wind directly at the surface, and the SIDE was used to study positive ions reaching the surface, including magnetospheric ions and ions produced by ultraviolet ionisation of the lunar atmosphere [5][6][7].\n\nFor radiation instruments, the stated purpose is to study the radiation environment on the Moon and what that radiation might mean for living things. NASA states that CRaTER tests models of radiation effects and shielding, which may support protective technologies [1]. The UNH project describes the same measurement as the basis for LET spectra of galactic and solar cosmic rays [2][3]. The sources read do not quantify an operational dose requirement.\n\nISRO states that RAMBHA-LP aims to make the first in-situ measurements of the surface-bound lunar plasma environment over the south polar region and to understand charging in the near-surface region [9]. Its purpose is plasma density rather than solar-particle flux, so it is an adjacent example only.",
+      "operating_principle": "The SWS used seven modulated Faraday cups. Energy spectra were obtained by applying fixed sequences of square-wave AC retarding potentials to a modulator grid and measuring the resulting changes in current [6]. Electron energies were measured from 6 to 1330 eV and positive-ion energies from 18 to 9780 eV [6]. One plasma measurement sequence was made every 28.1 seconds, with 14 ion energy steps spaced by a factor of √2 and 7 electron energy steps spaced by a factor of 2 [6].\n\nThe SWC needs no active electronics. A foil exposed at the surface accumulates solar-wind atoms that can later be analysed in the laboratory. The exposure duration, foil area and collection efficiency for the Apollo 12 foil are not stated in the ALSJ text read [5].\n\nSIDE had two positive-ion detectors [8]. The Total Ion Detector (TID) used a channel electron multiplier with no velocity filter and covered 10 to 3500 eV in 20 steps [8]. The Mass Analyzer (MA) combined a Wien velocity filter, a curved-plate energy-per-charge filter and a channel electron multiplier, giving 20 mass channels from about 10 to 1000 atomic mass units per charge at six energies (0.2, 0.6, 1.8, 5.4, 16.2 and 48.6 eV). Only the two highest energies had dependable laboratory calibrations [8]. A mass spectrum and an energy spectrum were obtained every 24 seconds in normal mode [8].\n\nCRaTER’s detectors sit in thin (140 µm) and thick (1000 µm) silicon pairs, separated by tissue-equivalent plastic (A-150) that simulates soft tissue [2]. Energy deposits in the six detectors, with directional information inferred from coincidences between detectors, are combined into LET spectra [2]. The sources read do not describe the conversion algorithm in detail.\n\nRAMBHA-LP is a Langmuir probe. Its 5 cm metallic spherical probe is mounted on a 1 m boom attached to the lander’s upper deck, isolated from the lander body so that it samples undisturbed lunar plasma. It is deployed by a hold-release mechanism after touchdown [9]. It can detect return currents as low as picoamperes, sweeping bias from −12 V to +12 V in 0.1 V steps with a 1 ms dwell time [9].",
+      "scientific_importance": "These measurements connect solar output and the particle environment to conditions at the lunar surface, which has no thick atmosphere to absorb incoming particles. The Apollo 12 SWS operated on the surface until it was switched off in January 1977 [6]. Its crew debrief describes the deployment as going “exactly as advertised” [5].\n\nFor radiation science, CRaTER provides lunar-orbit LET measurements of galactic and solar cosmic rays [2][3]. Its science value depends on the published LET spectra, which were not extracted in this run.\n\nISRO describes the RAMBHA-LP measurements as the first in-situ measurements of the surface-bound lunar plasma over the south polar region [9]. The Manju et al. paper reports a mean electron density of 380 to 600 per cubic centimetre and a mean electron temperature of 3000 to 8000 K during lunar daytime observations from 24 August to 2 September 2023 [11]. An earlier ISRO release of 31 August 2023 reported approximately 5 to 30 million electrons per cubic metre, which is about 5 to 30 per cubic centimetre after unit conversion [9]. The 2023 figure is described as an early-daytime estimate. The gap between the two sets of values is more than an order of magnitude, and the sources read do not explain it [9][10][11].",
+      "physical_specifications": {
+        "note": "There is no universal mass, size or power figure for a solar particle detector. Solar-wind spectrometers, passive collectors, suprathermal-ion detectors, orbital radiation telescopes and plasma probes differ in principle, size and platform. The examples below are individual instruments and are not directly comparable, so no comparison table is given. A value is given only where a source states it.",
+        "examples": [
+          {
+            "name": "Apollo 12 Solar Wind Spectrometer (SWS; called SWE in the ALSJ)",
+            "type": "Modulated Faraday-cup solar-wind and plasma spectrometer, lunar surface",
+            "flight_status": "Flown on the lunar surface as part of the Apollo 12 ALSEP [5][6].",
+            "description": "Flight status: flown on the lunar surface as part of the Apollo 12 Apollo Lunar Surface Experiments Package (ALSEP) [5][6]. The ALSJ page refers to the instrument as the SWE, while the PDS documentation calls it the SWS [5][6].\n\nMeasurement: directional intensities of charged particles, measured with seven modulated Faraday cups. Energy spectra were built from fixed sequences of square-wave AC retarding potentials applied to a modulator grid [6]. Electron energies were measured from 6 to 1330 eV and positive-ion energies from 18 to 9780 eV [6].\n\nPhysical values: mass 5.7 kg and total power 12.5 W, as stated in the PDS description [6]. The deployed dimensions are 30.5 × 28.2 × 34.5 cm; the PDS text does not label which dimension is the height [6]. The ALSJ commentary gives the height as 35 cm [5]. These values are consistent within rounding.\n\nSampling and shutdown: one plasma measurement sequence every 28.1 seconds [6]. The dust covers were removed automatically on 20 November 1969 at about 15:30 UT, roughly an hour after lunar module ascent [6]. The instrument went to standby on 3 March 1976 to provide power for heating the central station electronics, and was switched off on 15 January 1977 to increase power for central station thermal control [6].\n\nPlacement: the ALSJ records the SWS deployed about 4.0 m (13 ft) south of the Central Station, citing Mission Report Figure 3-6 [5].",
+            "mass_kg": 5.7,
+            "power_w": 12.5,
+            "power_note": "12.5 W total, as stated in the PDS instrument description [6].",
+            "dimensions_deployed_cm": [
+              30.5,
+              28.2,
+              34.5
+            ],
+            "dimensions_note": "Deployed dimensions as stated in the PDS description, which does not label the height; the ALSJ gives a height of 35 cm [5][6].",
+            "source_urls": [
+              "https://www.apollojournals.org/alsj/a12/a12.alsepdep.html",
+              "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a12sws_solar_wind_28s_1hr/document/a12a_sws.txt"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 12 Solar Wind Collector (SWC) foil",
+            "type": "Passive foil collector, lunar surface",
+            "flight_status": "Flown on the lunar surface on Apollo 12 [5].",
+            "description": "Flight status: flown on the lunar surface on Apollo 12 [5].\n\nDescription: the ALSJ commentary describes the Solar Wind Collector (SWC) as a foil ‘window shade’ that the crew deployed near the lunar module at the start of the extravehicular activity [5]. Its intended role, capturing solar-wind atoms for analysis after return to Earth, comes from secondary summaries that were not read in full, so it is not confirmed in primary text in this run.\n\nPhysical values: the mass, dimensions and exposure time are not stated in the ALSJ text read [5]. A search summary gave foil figures for an Apollo solar-wind foil, but the primary technical documents returned could not be read (scanned PDF), so no foil values are used in this article.",
+            "mass_kg": null,
+            "power_w": null,
+            "power_note": "Passive collector; no power requirement stated in the sources read.",
+            "dimensions_deployed_cm": null,
+            "dimensions_note": "Not stated in the sources read.",
+            "source_urls": [
+              "https://www.apollojournals.org/alsj/a12/a12.alsepdep.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Apollo 12 Suprathermal Ion Detector Experiment (SIDE)",
+            "type": "Positive-ion detector package with Total Ion Detector and Mass Analyzer, lunar surface",
+            "flight_status": "Flown on the Apollo 12 ALSEP [5][7].",
+            "description": "Flight status: flown on the Apollo 12 ALSEP [5][7].\n\nMeasurement: the energies and masses of positive ions reaching the lunar surface, including magnetospheric ions and ions produced by ultraviolet ionisation of the lunar atmosphere [7].\n\nInstrument: two positive-ion detectors [8]. The Total Ion Detector (TID) covered 10 to 3500 eV in 20 steps [8]. The Mass Analyzer (MA) provided 20 mass channels from about 10 to 1000 atomic mass units per charge at six energies, with dependable calibration only at the two highest energies [8]. A mass spectrum and an energy spectrum were obtained every 24 seconds in normal mode [8].\n\nPhysical values: mass, power and dimensions are not stated in the sources read [7][8]. The PDS document describes the instrument as a rectangular box whose top is roughly 50 cm above the surface [8].\n\nPlacement: the PDS document states SIDE was deployed approximately 15 m southwest of the central station [8]. The ALSJ commentary places it about 60 feet (roughly 18 m) southwest of the Central Station [5]. The two values disagree and both are reported.\n\nOperation: a dust-protecting lid covered the detectors until ground command opened it [5]. The ALSJ commentary records the lid opening unexpectedly during deployment and the three legs being too close together for good stability [5]. A Cold Cathode Ion Gauge (CCIG) was stored in a SIDE compartment, set on the surface by the astronaut and connected to SIDE by a cable [5][8].",
+            "mass_kg": null,
+            "power_w": null,
+            "power_note": "Not stated in the sources read.",
+            "dimensions_deployed_cm": null,
+            "dimensions_note": "Not stated as dimensions; the PDS document gives the top as roughly 50 cm above the surface [8].",
+            "source_urls": [
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:side.a12a",
+              "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a12/instruments/a12a_side.txt",
+              "https://www.apollojournals.org/alsj/a12/a12.alsepdep.html"
+            ],
+            "images": []
+          },
+          {
+            "name": "Lunar Reconnaissance Orbiter CRaTER (lunar-orbit radiation telescope)",
+            "type": "Radiation telescope with silicon detectors and tissue-equivalent plastic, lunar orbit",
+            "flight_status": "Flown on the Lunar Reconnaissance Orbiter (LRO) [1][2]; LRO launch in 2009 per a search summary [4].",
+            "description": "Flight status: flown on NASA’s Lunar Reconnaissance Orbiter [1][2]. The 2009 launch year is from a search summary of a launch-coverage page [4].\n\nMeasurement: energy deposited in six silicon detectors arranged as thin and thick pairs, with sections of tissue-equivalent plastic between the pairs, used to build linear energy transfer (LET) spectra of galactic and solar cosmic rays [2][3]. Thin detectors are 140 µm thick and thick detectors are 1000 µm thick. The tissue-equivalent plastic is A-150, which simulates soft tissue [2].\n\nPhysical values: the UNH instrument page lists a measured mass of 5.53 kg against a 6.36 kg allocation, and an average power of 6.66 W against a 9.00 W allocation [2]. A search summary of a launch-coverage page gives an instrument mass of 5.4 kg and average power of 7.3 W [4]. This difference is unresolved. No instrument dimensions are given [2]. The UNH page carries a 2015 copyright notice and gives no dates for its figures [2].\n\nData-quality note: the UNH page lists a high-LET range as ‘2.3 keV/µm to 2.2 keV/µm’, whose upper bound is below its lower bound, which appears to be a typographical error [2].",
+            "mass_kg": 5.53,
+            "power_w": 6.66,
+            "power_note": "Average power 6.66 W against a 9.00 W allocation, per the UNH instrument page [2]; a search summary gives 7.3 W [4].",
+            "dimensions_deployed_cm": null,
+            "dimensions_note": "Not stated in the sources read [2].",
+            "source_urls": [
+              "https://crater.unh.edu/instrument.shtml",
+              "https://science.nasa.gov/mission/lro/spacecraft-and-instruments/"
+            ],
+            "images": []
+          },
+          {
+            "name": "Chandrayaan-3 RAMBHA-LP (adjacent plasma probe, not a solar-particle detector)",
+            "type": "Langmuir probe for near-surface lunar plasma, lunar surface (Chandrayaan-3 lander)",
+            "flight_status": "Operated on the Chandrayaan-3 lander on the lunar surface after its August 2023 landing [9][10].",
+            "description": "Flight status: operated on the Chandrayaan-3 lander on the lunar surface following the August 2023 landing, as described by ISRO [9][10].\n\nHardware: a 5 cm metallic spherical Langmuir probe mounted on a 1 m boom attached to the lander’s upper deck, isolated from the lander body; developed by the Space Physics Laboratory, Vikram Sarabhai Space Centre [9].\n\nReported densities: ISRO’s release of 31 August 2023 gave approximately 5 to 30 million electrons per cubic metre in the early lunar daytime [9]. ISRO’s release of 9 December 2025 gives 380 to 600 electrons per cubic centimetre near the Shiv Shakti point (69.3° S, 32.3° E), using data from 23 August to 3 September 2023 [10]. The paper’s abstract gives a mean electron density of 380 to 600 per cubic centimetre and a mean electron temperature of 3000 to 8000 K for observations from 24 August to 2 September 2023 [11]. The paper’s introduction gives the landing site as 70° S, 32° E [11]. The two sets of density values differ by more than an order of magnitude after unit conversion, and the sources read do not explain the difference [9][10][11].\n\nMass and power are not stated in the sources read [9].",
+            "mass_kg": null,
+            "power_w": null,
+            "power_note": "Not stated in the sources read [9].",
+            "dimensions_deployed_cm": null,
+            "dimensions_note": "Probe sphere 5 cm in diameter on a 1 m boom [9].",
+            "source_urls": [
+              "https://www.isro.gov.in/ISRO_EN/Ch3_Rambha-LP_near-surface_Plasma.html",
+              "https://www.isro.gov.in/ISRO_EN/Chandrayaan3RAMBHALP_GroundTruth.html",
+              "https://doi.org/10.1093/mnras/staf1276"
+            ],
+            "images": []
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for the generic class. Documented dimensions: the SWS deployed size is 30.5 × 28.2 × 34.5 cm [6], with the ALSJ giving a height of 35 cm [5]; the SIDE top is roughly 50 cm above the surface [8]; the RAMBHA-LP probe is a 5 cm sphere on a 1 m boom [9]. No CRaTER instrument dimensions are given in the sources read [2].",
+        "mass_and_weight": "Documented instrument masses: SWS 5.7 kg [6]; CRaTER 5.53 kg against a 6.36 kg allocation [2], with a secondary summary giving 5.4 kg [4]. Masses for the SWC, SIDE and RAMBHA-LP are not stated in the sources read.",
+        "power_requirements": "Documented instrument power: SWS 12.5 W total [6]; CRaTER 6.66 W average against a 9.00 W allocation [2], with a secondary summary giving 7.3 W [4]. Power for the SWC, SIDE and RAMBHA-LP is not stated in the sources read."
+      },
+      "environmental_and_operational_requirements": "Surface instruments operate in the lunar environment without an atmosphere, with large day-night thermal swings. The Apollo 12 examples depended on crew deployment and on connection to the ALSEP central station [5][6]. Specific thermal, vacuum, radiation-tolerance and temperature limits for these instruments are not publicly specified in the sources read. The general environmental description is background and is not separately sourced.\n\nPower and thermal budgets were shared with the central station. The SWS was placed on standby during the lunar night in March 1976 to provide power for central station heating, and was switched off in January 1977 to increase power for central station thermal control [6]. Dust was an operational concern: the SIDE lid was closed on the surface to keep dust off the detectors until ground command opened it [5].\n\nRAMBHA-LP’s boom isolates the probe from the lander body so that it samples the undisturbed plasma, and it is deployed by a hold-release mechanism after touchdown [9]. CRaTER operates in the radiation environment of lunar orbit, which is the quantity the telescope is designed to measure [1][2][3]; the sources read do not quantify its operating range or thermal limits.",
+      "limitations": "This entry is a generic class, so no single specification applies. The examples are heterogeneous and must not be read as a like-for-like performance comparison.\n\nSeveral primary documents could not be read in full. The Apollo 12 SWC technical document returned by search was a scanned PDF that could not be parsed, the full text of the Spence et al. (2010) CRaTER paper was not opened, the full text of the Manju et al. (2025) paper was read only through its abstract and introduction, and the Apollo 12 Preliminary Science Report (SP-235) was not accessed [3][11].\n\nCRaTER values conflict between sources: the UNH page gives 5.53 kg and 6.66 W, while a search summary gives 5.4 kg and 7.3 W [2][4]. The SWS height is given as 34.5 cm in the PDS text and 35 cm on the ALSJ page, and the SIDE distance as about 15 m in the PDS document and about 18 m on the ALSJ page [5][6][8].\n\nThe background physics paragraph (origin of solar wind and cosmic rays, and the Moon’s lack of a global atmosphere and magnetic field) is not separately cited and should be verified before publication.",
+      "transportation_and_deployment": {
+        "overview": "The examples span crew-deployed surface experiments (Apollo 12 ALSEP), an orbital radiation telescope flown as a mission instrument (CRaTER on LRO) and a lander-mounted probe (RAMBHA-LP on Chandrayaan-3). Surface and orbital examples have different integration problems, discussed below.",
+        "transportation_process": [
+          "**Earth integration:** how the Apollo 12 instruments were integrated into the ALSEP package, and Earth-side integration for CRaTER and RAMBHA-LP, are not described in the sources read.",
+          "**Launch:** CRaTER flew on LRO, which launched in 2009 per a search summary [4]. Launch vehicle details for LRO and the launch of RAMBHA-LP were not verified in this run.",
+          "**Landing and delivery:** the ALSJ records the SWC foil deployed near the lunar module at the start of the extravehicular activity [5]. RAMBHA-LP was mounted on the Chandrayaan-3 lander’s upper deck and deployed by a hold-release mechanism after touchdown [9].",
+          "**Deployment and setup:** the SWS was placed about 4.0 m south of the Central Station [5]. The SIDE was placed about 15 m southwest according to the PDS document [8], or about 60 feet (roughly 18 m) southwest according to the ALSJ [5]. The CCIG gauge was set down 3 to 5 feet from SIDE [5].",
+          "**Power, data, thermal and mechanical interfaces:** the SIDE data were carried by a cable to the Central Station, and the CCIG was connected to SIDE by a cable [5][8]. The SWS power and thermal interaction with the central station is described in [6]. Mechanical interface values are not stated in the sources read."
+        ],
+        "deployment_methods": "The Apollo 12 instruments were deployed by the crew during the extravehicular activity. The SWS was placed about 4.0 m south of the Central Station, the SIDE about 15 m to 18 m southwest of it, and the SWC foil near the lunar module [5][6][8]. CRaTER is an orbital instrument with no surface deployment. RAMBHA-LP was deployed by a hold-release mechanism after touchdown [9].",
+        "historical_examples": "Historical examples in the sources read are the Apollo 12 ALSEP instruments (1969) [5][6][7][8], LRO with CRaTER (launched 2009) [1][4], and the Chandrayaan-3 lander payload RAMBHA-LP (2023) [9][10].",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft is asserted beyond the documented host for each example: the Apollo 12 ALSEP for the Apollo instruments [5][6][7][8], LRO for CRaTER [1][2], and the Chandrayaan-3 lander for RAMBHA-LP [9][10]. No new lander compatibility is assessed, so the transportation-compatibility flag is false.",
+        "images": []
+      },
+      "historical_significance": "The Apollo 12 package carried two solar-wind experiments, and the crew debrief describes the solar-wind instrument as having gone “exactly as advertised” [5]. The sources read do not establish a priority claim for the Apollo 12 surface instruments, and none is made here.\n\nCRaTER contributes to characterisation of the lunar radiation environment from orbit, and NASA describes it as testing models of radiation effects and shielding [1].\n\nISRO describes the RAMBHA-LP measurements as the first in-situ measurements of the surface-bound lunar plasma over the south polar region [9]. This is ISRO’s own claim and has not been checked against independent sources in this run.",
+      "limitations_and_uncertainties": "Flight status is established for the Apollo 12 instruments from ALSJ and PDS documentation [5][6][7][8], for CRaTER from NASA and UNH pages [1][2], and for RAMBHA-LP from ISRO releases and the MNRAS paper [9][10][11].\n\nOpen gaps: the SWC foil’s mass, dimensions, exposure time and analysis method; the mass, power and dimensions of SIDE; the CRaTER mass and power discrepancy with secondary sources; and the RAMBHA-LP difference between the 2023 and 2025 density values [2][4][9][10][11].\n\nNo solar-particle flux values, LET numbers or detector efficiencies are reported in this article, because none were verified from primary data in the sources read.\n\nNo image assets were verified for this article, so none are included (see the data-quality notes).",
+      "images": [],
+      "overview_images": [],
+      "references": [
+        {
+          "number": 1,
+          "title": "NASA Science. “Lunar Reconnaissance Orbiter: Spacecraft and Instruments”.",
+          "publisher": "NASA",
+          "url": "https://science.nasa.gov/mission/lro/spacecraft-and-instruments/"
+        },
+        {
+          "number": 2,
+          "title": "University of New Hampshire. “Cosmic Ray Telescope for the Effects of Radiation (CRaTER)” instrument page.",
+          "publisher": "University of New Hampshire CRaTER team",
+          "url": "https://crater.unh.edu/instrument.shtml"
+        },
+        {
+          "number": 3,
+          "title": "Spence, H. E. et al. (2010). “CRaTER: The Cosmic Ray Telescope for the Effects of Radiation Experiment on the Lunar Reconnaissance Orbiter Mission”. Space Science Reviews 150(1–4), 243–284. Bibliographic details from a search result; full text not opened in this run.",
+          "publisher": "Space Science Reviews",
+          "url": "https://findscholars.unh.edu/display/publication46484"
+        },
+        {
+          "number": 4,
+          "title": "Spaceflight Now. LRO launch coverage page (search-result summary only; page not opened in this run).",
+          "publisher": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/atlas/av020/090610lro.html"
+        },
+        {
+          "number": 5,
+          "title": "Apollo Lunar Surface Journal. “Apollo 12 ALSEP Deployment”.",
+          "publisher": "Apollo Lunar Surface Journal (ALSJ)",
+          "url": "https://www.apollojournals.org/alsj/a12/a12.alsepdep.html"
+        },
+        {
+          "number": 6,
+          "title": "NASA Planetary Data System, Geosciences Node. “Apollo 12 ALSEP Solar Wind Spectrometer instrument description (a12a_sws)”.",
+          "publisher": "NASA PDS Geosciences Node",
+          "url": "https://pds-geosciences.wustl.edu/Lunar/urn-nasa-pds-a12sws_solar_wind_28s_1hr/document/a12a_sws.txt"
+        },
+        {
+          "number": 7,
+          "title": "NASA Planetary Data System. “Apollo 12 ALSEP Suprathermal Ion Detector Experiment” context record (urn:nasa:pds:context:instrument:side.a12a).",
+          "publisher": "NASA PDS (PSI node)",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:side.a12a"
+        },
+        {
+          "number": 8,
+          "title": "NASA Planetary Data System, Geosciences Node. “Apollo 12 SIDE instrument description (a12a_side)”.",
+          "publisher": "NASA PDS Geosciences Node",
+          "url": "https://pds-geosciences.wustl.edu/lunar/urn-nasa-pds-apollodoc/document_a12/instruments/a12a_side.txt"
+        },
+        {
+          "number": 9,
+          "title": "ISRO. “RAMBHA-LP on-board Chandrayaan-3 measures near-surface plasma content”, including the release dated 31 August 2023.",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "url": "https://www.isro.gov.in/ISRO_EN/Ch3_Rambha-LP_near-surface_Plasma.html"
+        },
+        {
+          "number": 10,
+          "title": "ISRO. “Chandrayaan-3’s RAMBHA-LP Instrument Delivers Critical ‘Ground Truth’ on the Moon’s Plasma Environment” (release dated 9 December 2025).",
+          "publisher": "Indian Space Research Organisation (ISRO)",
+          "url": "https://www.isro.gov.in/ISRO_EN/Chandrayaan3RAMBHALP_GroundTruth.html"
+        },
+        {
+          "number": 11,
+          "title": "Manju, G. et al. (2025). “In situ ionospheric observations near lunar south pole by the Langmuir Probe on Chandrayaan-3 lander”. Monthly Notices of the Royal Astronomical Society 542(4), 2647–2656. DOI 10.1093/mnras/staf1276.",
+          "publisher": "Monthly Notices of the Royal Astronomical Society (Oxford University Press)",
+          "url": "https://doi.org/10.1093/mnras/staf1276"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": false,
+      "direct_image_assets_verified_from_official_pages": false,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {},
+    "url_policy": "All URL query strings and fragments removed. No image URLs were verified, so no image objects are included."
+  },
+  "data_quality_notes": [
+    "Rerun v2 of the v1 entry. The v1 files solar_particle_detector_payload_116.md, .json and .urls.txt were not modified.",
+    "Research budget for this run: 7 WebSearch calls and 11 WebFetch reads (the redirect follow-up for the MNRAS DOI is counted within those reads). Search-result summaries were used for a few values (SWC foil figures, the Spaceflight Now CRaTER figures and the LRO launch year, and the Spence et al. bibliographic details); each is flagged in the text.",
+    "v1 relied on a Wikipedia article for the RAMBHA-LP values. v2 replaces that with ISRO releases and the peer-reviewed MNRAS abstract. The v1 ‘operating principle’ of the SWS was sourced only to a measurement principle; v2 adds the PDS instrument description.",
+    "Apollo 12 SWC foil figures (area, mass, exposure) reported by a search summary were not used because the primary document could not be parsed.",
+    "The SIDE distance from the Central Station is 15 m in the PDS document and about 60 feet in the ALSJ commentary. Both are reported; the discrepancy is unresolved.",
+    "The SWS height is 34.5 cm in the PDS text and 35 cm in the ALSJ commentary. The PDS text does not label which deployed dimension is the height.",
+    "CRaTER mass and power differ between the UNH page (5.53 kg; 6.66 W) and a search summary of a launch-coverage page (5.4 kg; 7.3 W). The UNH page has an apparent typographical error in its high-LET range.",
+    "RAMBHA-LP density values from 2023 and 2025 differ by more than an order of magnitude after unit conversion; the sources read do not explain this. The MNRAS paper’s observation window (24 August to 2 September 2023) and landing-site coordinates (70° S, 32° E in the introduction) differ slightly from the ISRO release (23 August to 3 September 2023; 69.3° S, 32.3° E).",
+    "The general physical background (solar-wind composition, origin of solar energetic particles and cosmic rays, the Moon’s lack of a global atmosphere and magnetic field, and generic thermal-environment statements) is not separately cited and should be verified before publication.",
+    "No image assets were verified. Image arrays are empty and no image URLs were invented.",
+    "The validator writes a .urls.txt file next to the JSON, consistent with other payload outputs in this folder."
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "catalogue_id": 294,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 15,
+    "name": "Lunar technology and infrastructure experiments"
+  },
+  "payload": {
+    "number": 294,
+    "name": "Lunar dust-resistant materials experiment",
+    "article": {
+      "overview": "The Lunar dust-resistant materials experiment is a passive surface-exposure test. Candidate materials are placed on the lunar surface and imaged over time to see how much dust settles on, sticks to or is removed from them. The best-documented example is NASA's Regolith Adherence Characterization (RAC) payload, which flew on Firefly Aerospace's Blue Ghost Mission 1 and landed at Mare Crisium on 2 March 2025 [1][3]. Its samples were exposed just before landing and for thirteen days afterwards [1]. The published results so far are qualitative image observations; no quantitative adhesion values have been released in the sources reviewed [1].",
+      "description": "In this experiment, a set of material coupons is mounted on a sample carrier and exposed to the lunar environment. Because all materials share the same exposure, the results are comparative: which surfaces collect dust least and which shed it. For the RAC payload, half of each coupon was laser-ablation patterned to create an engineered surface texture [1]. Three materials supplied by NASA Langley Research Center were reported in the 2025 results record: the Ti-6Al-4V titanium alloy, fluorinated ethylene propylene (FEP) and a low-creep, low-relaxation carbon fiber reinforced polymer (LCLR CFRP) [1]. NASA states that the RAC payload exposes 15 sample materials, including fabrics, paint coatings, optical systems, sensors and solar cells [4]. Integrity Testing Laboratory Inc. reported supplying two diamond-like carbon (DLC) coated test surfaces [5]. The sample composition differs between the 2022 pre-flight paper and the 2025 results record, as discussed under Limitations [1][2].",
+      "scientific_purpose_and_applications": "Lunar regolith is abrasive and adheres to surfaces, which the NASA Langley authors identify as a threat to the durability and reusability of equipment [6]. The experiment is intended to identify materials and surface treatments that resist this. NASA describes the RAC goal as helping NASA and industry select and protect hardware for Artemis-era missions [4]. The payload's stated applications include spacecraft, spacesuits and habitats, and its sample set includes solar cells, optics, coatings and sensors [4].\n\nA second purpose is methodological. The 2022 authors state that testing dust-mitigation technologies in the actual lunar environment is important [2], and a 2024 NASA abstract identifies the lack of standard laboratory methods for dust-tolerance testing as a key barrier [6].",
+      "operating_principle": "The experiment works by passive exposure. The sources describe the materials as sitting on the surface, with dust accumulation judged from images taken during the exposure [1][4]. No active dust-removal mechanism is described. NASA states that the payload measures dust accumulation during landing and during routine lander operations [4]. The 2025 results record reports image-based observations: significant dust on the titanium alloy on 3 March 2025, less on FEP, no significant accumulation on the CFRP, and near-complete removal of dust from all surfaces by 13 March 2025 [1]. The imaging hardware and method are not described in the sources reviewed [1]. Because these observations are qualitative, the sources provide no numerical adhesion force, particle count or percentage area coverage [1].",
+      "scientific_importance": "Lunar dust is abrasive and adheres to surfaces, so it can degrade the performance and life of equipment that must operate on the Moon for long periods [6]. The 2025 authors note that adhesion is hard to test on Earth because gravity and vacuum cannot be fully reproduced, so direct surface exposure gives evidence that ground tests cannot provide [1]. The importance of the RAC result therefore lies less in any single number than in the demonstration that surface exposure can yield usable imaging data on candidate materials [1]. Its significance is also limited by the state of the evidence: the results come from a single flight, rely on image-based observations and include a removal event whose cause has not been determined [1].",
+      "physical_specifications": {
+        "note": "There is no universal specification for a lunar dust-resistant materials experiment. Sample sets, carriers and instruments vary by programme. The mass, dimensions and power requirements of the RAC payload are not stated in the sources reviewed [1]. The single flown example below is documented in detail, and it should not be read as a template for other exposure experiments.",
+        "examples": [
+          {
+            "name": "Regolith Adherence Characterization (RAC) payload on Firefly Blue Ghost Mission 1",
+            "type": "Flown lunar surface materials-exposure payload",
+            "status": "Flown; landed at Mare Crisium on 2 March 2025 [1][3]",
+            "lander": "Firefly Aerospace Blue Ghost Mission 1",
+            "landing_date": "2025-03-02",
+            "landing_site": "Mare Crisium",
+            "instrument_developer": "Aegis Aerospace (Webster, Texas) [4]",
+            "management": "NASA Marshall Space Flight Center, under the Commercial Lunar Payload Services (CLPS) programme [4]",
+            "sample_count": 15,
+            "sample_count_source": "NASA states that the RAC payload exposes 15 sample materials [4].",
+            "sample_materials_langley": [
+              "Ti-6Al-4V titanium alloy",
+              "Fluorinated ethylene propylene (FEP)",
+              "Low-creep, low-relaxation carbon fiber reinforced polymer (LCLR CFRP)"
+            ],
+            "sample_surfaces_itl": "Two diamond-like carbon (DLC) coated test surfaces reported by Integrity Testing Laboratory Inc. [5]. Coating composition and thickness are not stated in the sources reviewed.",
+            "exposure": "Samples exposed just before landing and for thirteen days after landing [1]",
+            "results_status": "Qualitative image observations; cause of near-complete dust removal by 13 March 2025 under investigation; no numerical adhesion data reported [1]",
+            "mass_kg": null,
+            "external_dimensions_cm": null,
+            "power_consumption_w": null,
+            "sensor_configuration": "Not publicly specified; imaging hardware and method not described in the sources reviewed [1]",
+            "qualification": "Not publicly specified in the sources reviewed.",
+            "source_urls": [
+              "https://ntrs.nasa.gov/citations/20250010853",
+              "https://science.nasa.gov/lunar-science/deliveries/19d-firefly-aerospace/",
+              "https://www.nasa.gov/missions/artemis/nasa-science-payload-to-study-sticky-lunar-dust-challenge"
+            ],
+            "images": [
+              {
+                "id": "rac_delivery_fit_check",
+                "description": "RAC payload being delivered to and fit checked at Firefly Aerospace before flight.",
+                "image_type": "Engineering integration photograph",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2023/04/rac-1-jpg.webp",
+                "source_page_url": "https://science.nasa.gov/lunar-science/deliveries/19d-firefly-aerospace/",
+                "publisher": "NASA",
+                "credit": "NASA/Firefly Aerospace/Aegis Aerospace",
+                "caption": "RAC being delivered and fit checked at Firefly Aerospace.",
+                "section_placements": [
+                  "physical_specifications.examples[0]",
+                  "transportation_and_deployment"
+                ],
+                "notes": "Direct asset URL taken from the NASA Science Blue Ghost Mission 1 page. The URL returned image content on direct request. The image itself was not visually inspected, so its content is described only by the source-page caption. Full-resolution download not checked."
+              },
+              {
+                "id": "rac_schematic_on_lander",
+                "description": "Schematic of the RAC payload affixed to a lander.",
+                "image_type": "Technical schematic",
+                "image_url": "https://science.nasa.gov/wp-content/uploads/2023/04/rac-2.png",
+                "source_page_url": "https://science.nasa.gov/lunar-science/deliveries/19d-firefly-aerospace/",
+                "publisher": "NASA",
+                "credit": "NASA/Alpha Space Test and Research Alliance, LLC",
+                "caption": "Schematic of the Regolith Adherence Characterization (RAC) payload affixed to a lander.",
+                "section_placements": [
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL taken from the NASA Science Blue Ghost Mission 1 page. The URL returned image content on direct request. The image was not visually inspected. Credit is as given on the source page."
+              },
+              {
+                "id": "rac_pre_integration_close_up",
+                "description": "Close-up photo of the RAC instrument, with a blue logo on a large silver metal circle.",
+                "image_type": "Engineering hardware photograph",
+                "image_url": "https://www.nasa.gov/wp-content/uploads/2024/12/rac-pre-integration-image-1.jpg",
+                "source_page_url": "https://www.nasa.gov/missions/artemis/nasa-science-payload-to-study-sticky-lunar-dust-challenge",
+                "publisher": "NASA",
+                "credit": "Photo courtesy Firefly Aerospace",
+                "caption": "Close-up photo of the RAC instrument, with a blue logo on a large silver metal circle.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct asset URL taken from the NASA article's image markup. The URL returned JPEG content on direct request. The image was not visually inspected. The source-page caption is truncated; the caption given here is the visible description. Credit is Firefly Aerospace as stated on the source page."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for the RAC instrument in the sources reviewed [1]. The NASA imagery shows the payload affixed to a lander [3], but no dimensions are given. A future exposure experiment would need its dimensions set by its sample count, carrier geometry and mounting arrangement.",
+        "mass_and_weight": "Not publicly specified in the sources reviewed [1]. Mass matters for launch and lander capacity planning, but no value for the RAC instrument is published in the sources used here.",
+        "power_requirements": "Not publicly specified in the sources reviewed [1]. The sources describe the lander's own thermal management during lunar noon [5] but do not give RAC power consumption."
+      },
+      "environmental_and_operational_requirements": "The RAC samples were exposed to the lunar surface from just before landing for thirteen days [1]. A trade-press article reports that the Blue Ghost lander shut down its systems to survive lunar noon, when surface temperatures can reach 250°F (121°C) [5]. That figure comes from an article citing Firefly mission updates and has not been checked against a primary Firefly or NASA document. The experiment therefore needs to tolerate the lunar day and night thermal cycle and the dust environment, but the sources do not give the sample-level temperature or tolerance limits.",
+      "limitations": "The RAC evidence is limited to one flight, qualitative image observations and a single documented exposure period [1]. The sources report no numerical dust masses, coverage percentages or adhesion forces [1]. The cause of the near-complete dust removal by 13 March 2025 is under investigation and has not been determined [1]. The sample lists in the 2022 and 2025 records do not reconcile [1][2]. The NASA sources also describe the sample carrier differently (see Transportation and Deployment) [1][4][5].",
+      "transportation_and_deployment": {
+        "overview": "The RAC payload is a surface payload. The documented transport chain is integration and fit checking at Firefly Aerospace, launch and lunar transfer on Blue Ghost Mission 1, and landing at Mare Crisium on 2 March 2025 [1][3]. The launch date and transfer timeline are not stated in the sources reviewed.",
+        "transportation_process": [
+          "Earth integration: RAC was delivered to Firefly Aerospace and fit checked before integration onto the lander [3].",
+          "Launch and lunar transfer: the payload flew as one of ten NASA CLPS science payloads on Blue Ghost Mission 1 [3]. Launch date and transfer details are not stated in the sources reviewed.",
+          "Landing delivery: the lander reached Mare Crisium, and the RAC samples were on the surface from 2 March 2025 [1][3].",
+          "Pre-landing exposure: samples were exposed just before landing [1].",
+          "Deployment and sample exposure: the sources describe the sample carrier differently. One trade-press source reports two cylindrical wheels with 15 sample surfaces each, one wheel exposed for the whole mission and the other stowed until surface operations began [5]. The NASA results record refers to a sample carrier disc [1], and NASA's 2024 article refers to the payload's wheels [4]. The configuration therefore needs confirmation from a primary source.",
+          "Power, data and thermal interfaces: not described in the sources reviewed. The lunar-noon shutdown is reported as a lander-level action [5]."
+        ],
+        "deployment_methods": "The RAC payload was a passive surface experiment: its sample carrier was exposed to the surface after landing. One trade-press source reports one wheel exposed for the whole mission and the other stowed until surface operations began [5]. The NASA records describe a sample carrier disc [1] and the payload's wheels [4], so the exact configuration needs primary-source confirmation.",
+        "historical_examples": "The RAC payload is the documented flown example in this article. Its results record reports a 2 March 2025 landing and a thirteen-day exposure [1]. No other flown example is described here.",
+        "compatibility_assessment": "The RAC-Blue Ghost Mission 1 pairing is documented by NASA [3][4]. This article does not extend that compatibility to other landers or payloads.",
+        "images": [
+          {
+            "id": "rac_delivery_fit_check",
+            "description": "RAC payload being delivered to and fit checked at Firefly Aerospace before flight.",
+            "image_type": "Engineering integration photograph",
+            "image_url": "https://science.nasa.gov/wp-content/uploads/2023/04/rac-1-jpg.webp",
+            "source_page_url": "https://science.nasa.gov/lunar-science/deliveries/19d-firefly-aerospace/",
+            "publisher": "NASA",
+            "credit": "NASA/Firefly Aerospace/Aegis Aerospace",
+            "caption": "RAC being delivered and fit checked at Firefly Aerospace.",
+            "section_placements": [
+              "physical_specifications.examples[0]",
+              "transportation_and_deployment"
+            ],
+            "notes": "Direct asset URL taken from the NASA Science Blue Ghost Mission 1 page. The URL returned image content on direct request. The image itself was not visually inspected, so its content is described only by the source-page caption. Full-resolution download not checked."
+          }
+        ]
+      },
+      "historical_significance": "The RAC payload was described in a 2022 NASA Langley paper as scheduled for a flight in 2023 [2]. The 2025 results record gives a landing date of 2 March 2025 [1]. The payload is significant because it moves dust-tolerance testing from ground simulation into the lunar surface environment, which the authors identify as an important step [1][2]. Its published results are preliminary and are presented as conference records [1].",
+      "limitations_and_uncertainties": "Results are qualitative image observations from a single flight. The 2025 record reports significant dust on the titanium alloy on 3 March 2025, less on FEP, no significant accumulation on the CFRP, and complete removal on 13 March 2025, but gives no numerical particle counts, area coverage, mass or adhesion force [1]. The cause of the removal is under investigation [1]. The 2022 paper describes the Langley selection as two polymers, a CFRP and a metal alloy [2], whereas the 2025 record lists three Langley-supplied materials (Ti-6Al-4V, FEP and LCLR CFRP) [1]. The records do not reconcile these lists. The DLC coatings reported by Integrity Testing Laboratory [5] do not appear in the NASA records reviewed. The claim that the RAC experiment is complete is attributed to Firefly updates in a trade-press article and was not verified against a primary Firefly page [5]. The 2022 paper anticipated a 2023 flight [2], and the 2025 record reports a 2025 landing [1]. A separate NASA-affiliated Patch Plate Materials Compatibility Assessment project appeared in search summaries as a planned CLPS flight of passive dust-mitigation materials. No primary document for it was retrieved, so it is not described as flown or planned in this article. Mass, dimensions, power and sensor specifications are not publicly specified in the sources reviewed [1].",
+      "images": [
+        {
+          "id": "rac_delivery_fit_check",
+          "description": "RAC payload being delivered to and fit checked at Firefly Aerospace before flight.",
+          "image_type": "Engineering integration photograph",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/04/rac-1-jpg.webp",
+          "source_page_url": "https://science.nasa.gov/lunar-science/deliveries/19d-firefly-aerospace/",
+          "publisher": "NASA",
+          "credit": "NASA/Firefly Aerospace/Aegis Aerospace",
+          "caption": "RAC being delivered and fit checked at Firefly Aerospace.",
+          "section_placements": [
+            "physical_specifications.examples[0]",
+            "transportation_and_deployment"
+          ],
+          "notes": "Direct asset URL taken from the NASA Science Blue Ghost Mission 1 page. The URL returned image content on direct request. The image itself was not visually inspected, so its content is described only by the source-page caption. Full-resolution download not checked."
+        },
+        {
+          "id": "rac_schematic_on_lander",
+          "description": "Schematic of the RAC payload affixed to a lander.",
+          "image_type": "Technical schematic",
+          "image_url": "https://science.nasa.gov/wp-content/uploads/2023/04/rac-2.png",
+          "source_page_url": "https://science.nasa.gov/lunar-science/deliveries/19d-firefly-aerospace/",
+          "publisher": "NASA",
+          "credit": "NASA/Alpha Space Test and Research Alliance, LLC",
+          "caption": "Schematic of the Regolith Adherence Characterization (RAC) payload affixed to a lander.",
+          "section_placements": [
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA Science Blue Ghost Mission 1 page. The URL returned image content on direct request. The image was not visually inspected. Credit is as given on the source page."
+        },
+        {
+          "id": "rac_pre_integration_close_up",
+          "description": "Close-up photo of the RAC instrument, with a blue logo on a large silver metal circle.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2024/12/rac-pre-integration-image-1.jpg",
+          "source_page_url": "https://www.nasa.gov/missions/artemis/nasa-science-payload-to-study-sticky-lunar-dust-challenge",
+          "publisher": "NASA",
+          "credit": "Photo courtesy Firefly Aerospace",
+          "caption": "Close-up photo of the RAC instrument, with a blue logo on a large silver metal circle.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA article's image markup. The URL returned JPEG content on direct request. The image was not visually inspected. The source-page caption is truncated; the caption given here is the visible description. Credit is Firefly Aerospace as stated on the source page."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "rac_pre_integration_close_up",
+          "description": "Close-up photo of the RAC instrument, with a blue logo on a large silver metal circle.",
+          "image_type": "Engineering hardware photograph",
+          "image_url": "https://www.nasa.gov/wp-content/uploads/2024/12/rac-pre-integration-image-1.jpg",
+          "source_page_url": "https://www.nasa.gov/missions/artemis/nasa-science-payload-to-study-sticky-lunar-dust-challenge",
+          "publisher": "NASA",
+          "credit": "Photo courtesy Firefly Aerospace",
+          "caption": "Close-up photo of the RAC instrument, with a blue logo on a large silver metal circle.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct asset URL taken from the NASA article's image markup. The URL returned JPEG content on direct request. The image was not visually inspected. The source-page caption is truncated; the caption given here is the visible description. Credit is Firefly Aerospace as stated on the source page."
+        }
+      ],
+      "references": [
+        {
+          "title": "Surface Engineered Materials in the Lunar Environment: Results from the Regolith Adherence Characterization (RAC) Payload Mission",
+          "publisher": "NASA Technical Reports Server (record 20250010853); presented at AGU 2025, New Orleans. Authors: Wohl, C. J., Das, L., et al.",
+          "url": "https://ntrs.nasa.gov/citations/20250010853"
+        },
+        {
+          "title": "Evaluation of Materials and Surfaces for Lunar Regolith Adherence Characterization (RAC) Payload Samples",
+          "publisher": "AIAA SciTech Forum, San Diego, 3-7 January 2022; NASA Technical Reports Server (record 20210024439). Authors: Das, L., Wohl, C. J., et al.",
+          "url": "https://ntrs.nasa.gov/citations/20210024439"
+        },
+        {
+          "title": "Firefly Aerospace Blue Ghost Mission 1 lunar delivery page",
+          "publisher": "NASA Science; last updated 30 April 2025",
+          "url": "https://science.nasa.gov/lunar-science/deliveries/19d-firefly-aerospace/"
+        },
+        {
+          "title": "NASA Science Payload to Study Sticky Lunar Dust Challenge",
+          "publisher": "NASA; published 20 December 2024, last updated 8 January 2025",
+          "url": "https://www.nasa.gov/missions/artemis/nasa-science-payload-to-study-sticky-lunar-dust-challenge"
+        },
+        {
+          "title": "Canada's technology helps repel lunar dust on Blue Ghost moon lander",
+          "publisher": "SpaceQ (author: Craig Bamford); 11 March 2025",
+          "url": "https://spaceq.ca/canadas-technology-helps-repel-lunar-dust-on-blue-ghost-moon-lander/"
+        },
+        {
+          "title": "Dust-Proofing the Future: Materials Challenges for Lunar Exploration",
+          "publisher": "MS&T'24, Pittsburgh, 6-9 October 2024; NASA Technical Reports Server (record 20240012680). Author: Wiesner, V. L.",
+          "url": "https://ntrs.nasa.gov/citations/20240012680"
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "Regolith Adherence Characterization (RAC) example": "payload.article.physical_specifications.examples[0].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "RAC sample composition differs between sources: the 2022 NASA Langley paper describes two polymers, a CFRP and a metal alloy [2]; the 2025 results record lists three Langley-supplied materials, Ti-6Al-4V, FEP and LCLR CFRP [1]. The lists have not been reconciled.",
+    "The sample carrier configuration differs between sources: two wheels with one exposed and one stowed [5] and [4], versus a sample carrier disc [1]. Needs primary-source confirmation.",
+    "The DLC coatings from Integrity Testing Laboratory [5] do not appear in the NASA records reviewed.",
+    "The statement that the RAC experiment is complete is attributed to Firefly updates in a trade-press article [5] and was not verified against a primary Firefly page.",
+    "The lunar-noon temperature figure (250 F / 121 C) and lander shutdown description come from a trade-press article [5] and were not checked against a primary source.",
+    "Image assets: three direct asset URLs taken from NASA source-page markup. Each returned image content on direct request, confirming the asset exists, but the images were not visually inspected and full-resolution downloads were not checked. Captions and credits are as given on the source pages.",
+    "No quantitative RAC results (dust mass, coverage percentage, adhesion force) are published in the sources reviewed; the 2025 results are qualitative image observations [1].",
+    "The Patch Plate Materials Compatibility Assessment project appeared in search summaries only; no primary document was retrieved, so no flight or technical claim is made for it.",
+    "The Blue Ghost Mission 1 launch date and transfer timeline were not verified in the sources used."
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "catalogue_id": 40,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 40,
+    "name": "Near-infrared camera",
+    "article": {
+      "overview": "A near-infrared (NIR) camera is an imager that records scene brightness at wavelengths just beyond the range of human vision. For this class the article uses a working band of roughly 0.7 to 2.5 µm. That band is a scope definition for this article, not a specification published by any one instrument. Many minerals and water-bearing materials absorb or reflect light in characteristic ways in this region, so a camera that records several NIR bands can show where those materials are; this general background is not tied to one source. Designs vary: some use a few broad filters, some use a set of narrow filters in front of one sensor, and detectors range from silicon arrays that stop short of this band to indium gallium arsenide (InGaAs) and indium antimonide (InSb) arrays that respond further into the infrared. This article covers four lunar or lunar-mission examples with published evidence: the Clementine NIR camera [1][2], the near-infrared channel of the SELENE (Kaguya) Multiband Imager [3][6], the NIR cameras on LCROSS [7] and the Multi-Band Camera on the SLIM lander [8]. Their wavelengths, detectors, status and evidence differ, so their values should not be compared as if they described one product. Imaging spectrometers that record many contiguous bands are covered in entries 035 (Hyperspectral imager) and 061 (Near-infrared spectrometer), short-wave infrared cameras in entry 041 and thermal imagers in entry 036.",
+      "description": "A camera records a scene by focusing light through an optical system onto a detector array. For a near-infrared camera, three choices define the instrument: the wavelength band selected by filters or by the detector's own response, the detector material, and the way the image is built up. The detector material sets how far into the infrared the instrument can see. The Clementine NIR camera used an indium antimonide array that was cooled mechanically to about 70 K at the Moon [1]. The LCROSS NIR cameras used an InGaAs array with a thermoelectric cooler [7]. The SELENE Multiband Imager records images by push-broom scanning, in which selected lines of an area array are read as the spacecraft moves over the ground [3][6].\n\nFilters are used in two ways in these examples. The LCROSS NIR1 camera carries a long-pass filter that passes wavelengths above about 1.4 µm, while the companion NIR2 camera has no filter [7]. The SLIM Multi-Band Camera uses a filter wheel holding ten band-pass filters in front of its VIS-NIR sensor [8]. Each filter choice determines which materials and which features the camera is sensitive to, so the filter list is central to any scientific use of the images.",
+      "scientific_purpose_and_applications": "The stated purposes differ between the examples.\n\n- **Mineral and rock composition.** The SELENE Multiband Imager team described goals to investigate small areas such as crater central peaks and crater walls, including the existence, chemical composition and source of olivine at some central peaks, and to search for magnesian anorthosites suggested to be on the far side of the Moon [3].\n- **Surface and water-related mapping.** The LCROSS NIR cameras were to provide near-infrared context imagery of the Centaur impact and the resulting plume, monitor the morphology of the ejecta cloud, determine near-infrared grain properties and produce water-concentration maps [7].\n- **Lunar surface spectral mapping.** The Clementine NIR camera was described as designed to study the surface of the Moon at six near-infrared wavelengths [1][2].\n- **Post-landing observation.** After touchdown, the SLIM Multi-Band Camera observed ejecta from Shioli crater [8]. The accessed mission page does not describe the camera's full set of scientific objectives.",
+      "operating_principle": "The basic chain is the same in every example: light enters a lens, passes a filter or is sorted by wavelength, falls on a detector array, and is read out as numbers that are assembled into an image. The differences lie in the details.\n\nThe SELENE Multiband Imager builds images in push-broom mode from selected lines of area arrays [3]. Its near-infrared channel is one of two subsystems, MI-VIS and MI-NIR, each with a nadir-directed telescope of 65 mm focal length [6]. The LCROSS cameras are framing cameras with a 320 × 240-pixel InGaAs array and a 25 mm f/1.4 lens [7]. The SLIM Multi-Band Camera changes band by rotating a filter wheel with ten band-pass filters [8]. The Clementine NIR camera used a 256 × 256-pixel InSb array with a catadioptric lens, cooled to 70 ± 0.5 K at the Moon [1].",
+      "scientific_importance": "Near-infrared bands add information that a visible-light image cannot provide, because the absorption and reflectance features that many materials show are often located in this region. A camera with several well-chosen NIR bands can support composition mapping and context imaging, although the sources accessed do not compare its data volume with that of other instrument types. The importance of a given camera depends on its bands, its detector and its calibration, and the examples here differ in all three. Their published values are therefore reported instrument by instrument below.",
+      "physical_specifications": {
+        "note": "There is no universal specification for a near-infrared camera. The four examples use different wavelength bands, detector materials, cooling methods and integration arrangements, and the sources accessed publish different sets of values. Where a source does not publish a value, this article says \"not publicly specified\". Each number is tied to the named instrument and to its source. The examples are not ranked against one another.",
+        "examples": [
+          {
+            "name": "Clementine Near-Infrared (NIR) camera",
+            "type": "Flown lunar orbital NIR imaging camera (Clementine mission)",
+            "status": "flown (Clementine lunar mission label and archive entries); operating dates not stated on pages accessed; no explicit flight-operations statement found",
+            "detector": "256 x 256 indium antimonide (InSb) focal plane array; catadioptric lens; mechanically cooled, operated at 70 +/- 0.5 K at the Moon",
+            "bands_nm": [
+              1100,
+              1250,
+              1500,
+              2000,
+              2600,
+              2780
+            ],
+            "band_width_nm": "not publicly specified on pages accessed",
+            "fov_deg": "not publicly specified on pages accessed",
+            "ground_resolution_m": "not publicly specified on pages accessed",
+            "dimensions_mm": "not publicly specified on pages accessed",
+            "mass_kg": "not publicly specified on pages accessed",
+            "power_w": "not publicly specified on pages accessed",
+            "source_urls": [
+              "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/Clementine/NIR/intro.htm",
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:nir.clem1"
+            ],
+            "images": [],
+            "article_text": "**Status: flown on the Clementine lunar mission, as shown by the NASA PDS mission label and archive entries [1][2].** The pages accessed do not state operating dates or say explicitly that the camera operated in flight. The archive entry notes that the planned rendezvous with the asteroid 1620 Geographos was cancelled because of an equipment malfunction [2].\n\n- Detector: 256 × 256-pixel indium antimonide (InSb) focal plane array, with a catadioptric lens. The array was mechanically cooled and operated at 70 ± 0.5 K at the Moon [1].\n- Spectral bands: six bands at 1100, 1250, 1500, 2000, 2600 and 2780 nm [1]. Bandwidths are not publicly specified on the pages accessed.\n- Field of view, ground resolution, dimensions, mass and power: not publicly specified on the pages accessed."
+          },
+          {
+            "name": "SELENE (Kaguya) Multiband Imager (MI), near-infrared channel",
+            "type": "Flown lunar orbital multiband imager, near-infrared channel (MI-NIR subsystem of LISM)",
+            "status": "flown (SELENE launched 14 September 2007; first lunar images 3 November 2007); end of MI operations not stated on pages accessed",
+            "detector": "two-dimensional detector for MI-NIR; detector type and cooling not confirmed on pages accessed",
+            "bands_nm": [
+              1000,
+              1050,
+              1250,
+              1550
+            ],
+            "band_width_nm": "not publicly specified on pages accessed",
+            "telescope": "nadir-directed telescope, 65 mm focal length (per MI subsystem)",
+            "fov_deg": "not publicly specified on pages accessed",
+            "ground_resolution_m": "62 m for NIR bands from 100 km orbital altitude (JpGU 2008 preliminary report); 60 m for MI-NIR (ODE help page, altitude not stated)",
+            "swath_km": "not publicly specified on pages accessed",
+            "dimensions_mm": "not publicly specified on pages accessed",
+            "mass_kg": "not publicly specified on pages accessed",
+            "power_w": "not publicly specified on pages accessed",
+            "source_urls": [
+              "https://www2.jpgu.org/meeting/2008/program/pdf/P221/P221-001_e.pdf",
+              "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/KAGUYA%20(SELENE)/MI/Intro.htm",
+              "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm"
+            ],
+            "images": [
+              {
+                "id": "jaxa_selene_lism_instruments",
+                "description": "Figure of the three SELENE (Kaguya) LISM optical instruments: Terrain Camera (TC), Multiband Imager (MI) and Spectral Profiler (SP).",
+                "image_type": "Mission instrument figure (JAXA SELENE equipment page)",
+                "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_001.gif",
+                "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+                "publisher": "JAXA SELENE project",
+                "credit": "JAXA",
+                "caption": "Three high-performance optical instruments (TC, MI, SP), per the JAXA SELENE TC page caption.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct asset URL checked in this run: HTTP 200 (image/gif), and the source page (tc_e.htm) references img_tc_001.gif. The figure shows TC, MI and SP together, so it is not an MI-only image. JAXA website reuse conditions were not verified. Full-resolution version not checked."
+              }
+            ],
+            "article_text": "**Status: flown.** SELENE was launched on 14 September 2007 from Tanegashima Space Center. MI took its first lunar images on 3 November 2007 from a 100 km polar orbit. The preliminary in-flight report states that the MTF was not changed by launch and that no defective pixels were found in either the VIS or NIR detector [3]. The pages accessed do not state when MI operations ended. The full Ohtake et al. (2008) paper in *Earth, Planets and Space* [4] was not accessible in full in this run, so the band values below come from the 2008 JpGU preliminary report [3].\n\n- Subsystem: MI-NIR, one of two MI subsystems (the other is MI-VIS). Each subsystem has a nadir-directed telescope of 65 mm focal length and a different two-dimensional detector [6]. The detector type and cooling are not confirmed on the pages accessed.\n- Spectral bands: four NIR bands with assigned wavelengths of 1000, 1050, 1250 and 1550 nm [3]. The ODE help page also describes four NIR bands [6]. Bandwidths are not publicly specified on the pages accessed.\n- Ground resolution: 62 m for the NIR bands from the 100 km orbital altitude [3]. The ODE help page gives 60 m for MI-NIR without stating an altitude [6]. The 62 m altitude-linked value is used here.\n- Swath, field of view in degrees, dimensions, mass and power: not publicly specified on the pages accessed.\n- Early performance: during the first check-out, MI took more than 3500 images in nine bands. The NIR and VIS bands were both included in that count [3]."
+          },
+          {
+            "name": "LCROSS Near Infrared Cameras (NIR1 and NIR2)",
+            "type": "Flown lunar-impact mission NIR imaging cameras (LCROSS spacecraft)",
+            "status": "flown (LCROSS mission); launch and impact dates not stated on pages accessed",
+            "detector": "320 x 240 pixel InGaAs focal plane array; actively cooled by an internal thermoelectric cooler",
+            "bands_um": "0.9-1.7 (one of two NIR cameras); NIR1 has a long-pass filter above 1.4 um; NIR2 is filterless",
+            "lens": "25 mm f/1.4 C-mount lens",
+            "fov_deg": "28.7 x 21.7",
+            "pixel_scale": "not stated on pages accessed; derived horizontal estimate of about 0.09 deg per pixel is not a published value",
+            "output_format": "720 x 486, 24-bit RGB arrays (archive entry); an output format, not a sensor resolution",
+            "dimensions_mm": "not publicly specified on pages accessed",
+            "mass_kg": "not publicly specified on pages accessed",
+            "power_w": "not publicly specified on pages accessed",
+            "source_urls": [
+              "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:nir1.lcross"
+            ],
+            "images": [],
+            "article_text": "**Status: flown on the LCROSS mission.** The cameras were used for near-infrared context imaging of the Centaur impact and its plume [7]. Launch and impact dates are not stated on the pages accessed.\n\n- Configuration: one of two NIR cameras, described as covering 0.9–1.7 µm. NIR1 carries a long-pass filter that passes wavelengths above 1.4 µm, and NIR2 is filterless [7].\n- Detector: 320 × 240-pixel InGaAs focal plane array, actively cooled by an internal thermoelectric cooler [7].\n- Optics and field of view: 25 mm f/1.4 C-mount lens; field of view 28.7 × 21.7 degrees [7]. A pixel scale is not stated. Dividing the horizontal field by the 320 horizontal pixels gives roughly 0.09 degrees per pixel. That figure is a derived estimate and is not a published value.\n- Image format: the archive entry describes captured images as 720 × 486, 24-bit RGB arrays [7]. This is an output format, not a sensor resolution.\n- Mass, power and dimensions: not publicly specified on the pages accessed. The archive entry is truncated."
+          },
+          {
+            "name": "SLIM Multi-Band Camera (MBC)",
+            "type": "Flown lunar landing-demonstrator VIS-NIR camera (SLIM)",
+            "status": "flown (SLIM landing 19 January 2024, 15:20 as listed, time zone not stated; MBC operations listed to 23 August 2024)",
+            "detector": "VIS-NIR imaging sensor, stated sensitivity 750-1650 nm",
+            "filters": "filter wheel with ten band-pass filters; centre wavelengths and bandwidths not verified on accessed pages",
+            "fov_deg": "not publicly specified on pages accessed",
+            "ground_resolution_m": "not publicly specified on pages accessed",
+            "dimensions_mm": "not publicly specified on pages accessed",
+            "mass_kg": "not publicly specified on pages accessed",
+            "power_w": "not publicly specified on pages accessed",
+            "source_urls": [
+              "https://darts.isas.jaxa.jp/en/missions/slim"
+            ],
+            "images": [],
+            "article_text": "**Status: flown on the SLIM lunar landing demonstrator.** The JAXA DARTS mission page lists the landing as 19 January 2024 at 15:20 (time zone not stated) and the MBC operations as ending on 23 August 2024. After touchdown, the MBC observed ejecta from Shioli crater [8].\n\n- Sensor: VIS-NIR imaging sensor, stated to be sensitive from 750 to 1650 nm [8].\n- Filters: a filter wheel holding ten band-pass filters [8]. The centre wavelengths and bandwidths of those filters are not verified. A conference abstract that could have supplied them was not accessible in this run.\n- Field of view, spatial resolution, dimensions, mass and power: not publicly specified on the pages accessed. The DARTS dataset entry is marked \"in preparation\" [8]."
+          }
+        ],
+        "dimensions_and_proportions": "Not publicly specified for any of the four examples on the pages accessed; see per-example entries.",
+        "mass_and_weight": "Not publicly specified for any of the four examples on the pages accessed; see per-example entries.",
+        "power_requirements": "Not publicly specified for any of the four examples on the pages accessed; see per-example entries."
+      },
+      "environmental_and_operational_requirements": "All four examples operated, or were designed to operate, in the vacuum and thermal environment of the Moon. The sources accessed do not give qualification values, temperature tolerances or radiation tolerances for any of the four examples, so this article states none. Two operational facts are published. The Clementine NIR array was cooled to 70 ± 0.5 K at the Moon [1]. The SELENE MI first-light observations were made at a Sun elevation angle of more than 32 degrees [3]. Illumination geometry is therefore a practical constraint for any NIR imaging, but the sources accessed do not quantify the constraint for the other examples.",
+      "limitations": "- The four examples do not share one specification. Their bands, detectors, optics and status differ, and a single table would imply comparability that the sources do not support.\n- Several key values are not publicly specified on the pages accessed, including bandwidths for most instruments, fields of view and resolutions for the Clementine and SLIM cameras, and mass and power for all four.\n- Flight status for the Clementine camera rests on the mission label and archive entries rather than an explicit flight-operations statement [1][2].\n- The SELENE NIR band list is taken from a preliminary 2008 report [3] and the full paper [4] was not accessed in full. The detector type for the SELENE NIR channel has not been confirmed on a primary page.\n- The LCROSS and SLIM records accessed were truncated or incomplete on specifications, and the SLIM filter values were not verified.",
+      "transportation_and_deployment": {
+        "overview": "The examples fall into two groups. The Clementine, SELENE MI and LCROSS cameras were fixed to orbiting or flyby spacecraft. The SLIM Multi-Band Camera was carried on a lander [1][3][6][7][8]. The accessed sources do not describe the integration sequence, cable routing, thermal interfaces or data interfaces for any of these installations.",
+        "transportation_process": [
+          "Orbiter examples. For SELENE MI, the first-light report describes operation from a 100 km polar orbit after check-out [3]. No launch, transfer or commissioning details for the Clementine, SELENE or LCROSS cameras are given on the pages accessed.",
+          "Surface example. The SLIM MBC was delivered to the lunar surface on SLIM and observed ejecta after touchdown [8]. Its mounting, power, thermal and data interfaces are not publicly specified on the accessed pages."
+        ],
+        "deployment_methods": " The orbital examples were not deployed. They were fixed to their host spacecraft. The SLIM MBC was operated after touchdown on the lander, and the accessed sources do not describe a separate deployment mechanism.",
+        "historical_examples": " Clementine [1][2], SELENE MI [3][6], LCROSS [7] and SLIM [8] are the four examples used in this article.",
+        "compatibility_assessment": " No compatibility with a specific lander, rover, orbiter or spacecraft is asserted beyond the host relationships stated in the cited sources. No lunar landing site or location is recommended.",
+        "images": []
+      },
+      "historical_significance": "The four examples come from separate programmes, and the sources accessed document each one separately. The Clementine NIR camera is recorded in the NASA PDS archive with six near-infrared bands [1][2]. The SELENE MI first-light report documents early in-flight performance and a band set that covered both visible and NIR wavelengths [3]. The LCROSS NIR cameras were used to observe a deliberate impact and its plume [7]. The SLIM MBC was used after a lunar landing to observe ejecta [8]. This article does not rank these programmes or claim firsts that the sources do not state.",
+      "limitations_and_uncertainties": "- **Clementine NIR.** Bandwidths, field of view, ground resolution, dimensions, mass, power and operating dates are not publicly specified on the pages accessed. The flight status is inferred from the mission label and the archive record rather than from an explicit operations statement [1][2].\n- **SELENE MI NIR.** The band centres of 1000, 1050, 1250 and 1550 nm come from the 2008 JpGU preliminary report [3]. The full paper [4] was not accessible in full in this run. Bandwidths and the NIR detector type are not confirmed. The ground resolution is given as 62 m in the report [3] and 60 m on the ODE help page [6].\n- **LCROSS NIR.** The archive entry is truncated. Mass, power, dates, pixel scale and host-spacecraft detail are not confirmed on the accessed text. The LCROSS mission dates are not stated on the pages accessed.\n- **SLIM MBC.** The filter centre wavelengths and bandwidths are not verified. The DARTS dataset is marked \"in preparation\" [8]. A 2017 conference abstract and a 2025 Acta Astronautica overview were identified but not accessed in this run, so they are not used as evidence here.\n- **Scope.** No proposed or prototype lunar NIR camera has been verified in this run, so the article contains no proposed-status example. Cross-referenced entries cover related instruments: entry 035 and entry 061 for spectrometers, entry 041 for short-wave infrared cameras and entry 036 for thermal imagers.",
+      "images": [
+        {
+          "id": "jaxa_selene_lism_instruments",
+          "description": "Figure of the three SELENE (Kaguya) LISM optical instruments: Terrain Camera (TC), Multiband Imager (MI) and Spectral Profiler (SP).",
+          "image_type": "Mission instrument figure (JAXA SELENE equipment page)",
+          "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_001.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "publisher": "JAXA SELENE project",
+          "credit": "JAXA",
+          "caption": "Three high-performance optical instruments (TC, MI, SP), per the JAXA SELENE TC page caption.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL checked in this run: HTTP 200 (image/gif), and the source page (tc_e.htm) references img_tc_001.gif. The figure shows TC, MI and SP together, so it is not an MI-only image. JAXA website reuse conditions were not verified. Full-resolution version not checked."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "jaxa_selene_lism_instruments",
+          "description": "Figure of the three SELENE (Kaguya) LISM optical instruments: Terrain Camera (TC), Multiband Imager (MI) and Spectral Profiler (SP).",
+          "image_type": "Mission instrument figure (JAXA SELENE equipment page)",
+          "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_001.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "publisher": "JAXA SELENE project",
+          "credit": "JAXA",
+          "caption": "Three high-performance optical instruments (TC, MI, SP), per the JAXA SELENE TC page caption.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct asset URL checked in this run: HTTP 200 (image/gif), and the source page (tc_e.htm) references img_tc_001.gif. The figure shows TC, MI and SP together, so it is not an MI-only image. JAXA website reuse conditions were not verified. Full-resolution version not checked."
+        }
+      ],
+      "references": [
+        {
+          "number": 1,
+          "title": "Clementine Near-Infrared (NIR) camera instrument help page",
+          "publisher": "NASA PDS Lunar Orbital Data Explorer (ODE)",
+          "url": "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/Clementine/NIR/intro.htm",
+          "notes": "Six NIR bands; InSb 256 x 256 FPA at 70 +/- 0.5 K; mission label Clementine. Bandwidths, FOV, GSD, mass, power not stated on page."
+        },
+        {
+          "number": 2,
+          "title": "Clementine 1 Near Infrared Camera (urn:nasa:pds:context:instrument:nir.clem1)",
+          "publisher": "NASA PDS context registry (ARC Nav, PSI)",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:nir.clem1",
+          "notes": "Purpose: study lunar surface and asteroid 1620 Geographos; Geographos rendezvous cancelled due to equipment malfunction. Specifications not stated."
+        },
+        {
+          "number": 3,
+          "title": "Preliminary results of the Multiband Imager for the SELENE mission (abstract P221-001)",
+          "publisher": "Japan Geoscience Union Meeting 2008; authors Ohtake, M., Yokota, Y., Haruyama, J., Morota, T., Honda, C., Abe, M., Matsunaga, T., Ogawa, Y. and LISM Working Group",
+          "url": "https://www2.jpgu.org/meeting/2008/program/pdf/P221/P221-001_e.pdf",
+          "notes": "NIR bands 1000, 1050, 1250, 1550 nm; NIR 62 m from 100 km; SELENE launch 14 Sep 2007; first light 3 Nov 2007; MTF unchanged by launch. Preliminary report."
+        },
+        {
+          "number": 4,
+          "title": "Ohtake et al. (2008), Earth, Planets and Space 60, 257-264, DOI 10.1186/BF03352789 (title not verified in this run)",
+          "publisher": "Earth, Planets and Space (Springer)",
+          "url": "https://link.springer.com/article/10.1186/BF03352789",
+          "notes": "Full text not accessed in this run (publisher login); cited for publication identity only; listed in search results as the MI reference paper."
+        },
+        {
+          "number": 5,
+          "title": "Terrain Camera (TC) equipment page, including LISM instrument figure",
+          "publisher": "JAXA SELENE project",
+          "url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "notes": "Source page for img_tc_001.gif (three LISM instruments). Mission operating dates and MI specifications not stated on this page."
+        },
+        {
+          "number": 6,
+          "title": "KAGUYA (SELENE) Multi-band Imager (MI) instrument help page",
+          "publisher": "NASA PDS Lunar Orbital Data Explorer (ODE)",
+          "url": "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/KAGUYA%20(SELENE)/MI/Intro.htm",
+          "notes": "MI-VIS and MI-NIR subsystems; 65 mm focal length; push-broom; 5 VIS and 4 NIR bands; 20 m VIS and 60 m NIR resolution (altitude not stated); band centres not given on page."
+        },
+        {
+          "number": 7,
+          "title": "LCROSS Near Infrared Camera 1 (NIR1) instrument record (urn:nasa:pds:context:instrument:nir1.lcross)",
+          "publisher": "NASA PDS context registry (ARC Nav, PSI)",
+          "url": "https://arcnav.psi.edu/urn:nasa:pds:context:instrument:nir1.lcross",
+          "notes": "One of two NIR (0.9-1.7 micron) cameras; NIR1 long-pass >1.4 micron; InGaAs 320 x 240 cooled by TEC; 25 mm f/1.4 lens; FOV 28.7 x 21.7 deg; page truncated, mass/power/dates not confirmed."
+        },
+        {
+          "number": 8,
+          "title": "SLIM mission page, including Multi-Band Camera description",
+          "publisher": "JAXA ISAS DARTS",
+          "url": "https://darts.isas.jaxa.jp/en/missions/slim",
+          "notes": "MBC: VIS-NIR sensor, 750-1650 nm sensitivity, filter wheel with ten band-pass filters; landing 2024-01-19 15:20 as listed; operations to 2024-08-23; ejecta from Shioli crater observed; MBC dataset 'in preparation'."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "physical_specifications.examples[1]": "payload.article.physical_specifications.examples[1].images"
+    },
+    "url_policy": "All URL query strings and fragments removed. Every image_url and source_page_url in this file was checked to contain no query string or fragment. One direct image asset is used."
+  },
+  "data_quality_notes": [
+    "Clementine NIR: bandwidths, field of view, ground resolution, dimensions, mass, power and operating dates are not publicly specified on the pages accessed. Flight status rests on the mission label and archive entries rather than an explicit operations statement.",
+    "SELENE MI NIR: band centres (1000, 1050, 1250, 1550 nm) and 62 m resolution come from the 2008 JpGU preliminary report; the full Ohtake et al. (2008) paper was behind a publisher login and was not read. Bandwidths and the NIR detector type/cooling are unverified. ODE gives 60 m for MI-NIR without altitude.",
+    "LCROSS NIR: archive entry is truncated; mass, power, dimensions, launch/impact dates and pixel scale are not confirmed. The 0.09 deg/pixel figure is derived from the published FOV and pixel count, not a published value.",
+    "SLIM MBC: the ten filter centre wavelengths and bandwidths are not verified; a 2017 conference abstract returned HTTP 403 and the 2025 Acta Astronautica overview redirected without readable content. The DARTS MBC dataset is marked 'in preparation'. Mass, power, FOV and resolution are not published on the accessed page.",
+    "Image: one direct image asset is used (JAXA LISM figure, img_tc_001.gif, HTTP 200 image/gif, referenced on the JAXA source page). The figure shows TC, MI and SP together. JAXA reuse conditions and full-resolution version were not checked. No other image was verified, so none is included.",
+    "Scope: no proposed or prototype lunar NIR camera was verified in this run, so no proposed-status example is included. Related instruments are cross-referenced rather than duplicated: entries 035 and 061 (spectrometers), 041 (SWIR cameras) and 036 (thermal imagers).",
+    "No lander, rover or spacecraft compatibility is asserted beyond the host relationships stated in the cited sources; transportation interfaces are not publicly specified for any example."
+  ]
+}

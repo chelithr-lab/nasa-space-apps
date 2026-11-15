@@ -1,0 +1,443 @@
+{
+  "catalogue_id": 34,
+  "catalogue_name": "Lunar Payloads Explorer",
+  "category": {
+    "number": 2,
+    "name": "Imaging, photography and surface mapping"
+  },
+  "payload": {
+    "number": 34,
+    "name": "Multispectral imager",
+    "article": {
+      "overview": "A multispectral imager records the same scene through a small number of discrete spectral bands, each a relatively broad slice of the spectrum. Comparing the brightness of a surface across bands gives information about differences in colour and reflectance. As a general matter, not drawn from a single source here, such differences are used as proxies for composition and surface maturity, and a camera-type instrument can cover large areas at a scale that a spectrometer cannot. The examples in this article use between seven and eleven bands.\n\nThis article covers the generic class, not one standard instrument. The examples are a lunar orbital multispectral imager flown on the Lunar Reconnaissance Orbiter (the Wide Angle Camera of LROC) [1][2][3], a lunar orbital multiband imager flown on Japan's SELENE (Kaguya) orbiter [4][5][6], and a non-lunar example, the Mastcam-Z multispectral camera flown on NASA's Perseverance rover on Mars [7][8][9]. The three are not interchangeable: they differ in band count, band range, optics, platform and evidence base.",
+      "description": "A multispectral imager is a framing or push-broom camera with a filter arrangement, such as a filter wheel, fixed bandpass filters over separate detector areas, or several optics each carrying one filter. Filters are chosen for the spectral contrasts a mission needs, so band sets differ between instruments. Each band produces its own image, and the set of images is combined into colour composites or band ratios.\n\nThe lunar examples in this article are orbital. The LRO Wide Angle Camera has seven filters, with visible and UV images acquired in push-frame formats [2]. The SELENE Multiband Imager splits its nine bands between a visible sensor and a near-infrared sensor, each with its own telescope and detector [4][5]. The Mastcam-Z is a pair of zoomable cameras whose filter wheels hold narrowband filters from about 442 to 1022 nm, together with broadband red, green and blue colour filters [7][8].",
+      "scientific_purpose_and_applications": "The purpose of a multispectral imager is to turn brightness differences between bands into compositional and surface context. For the lunar examples, the sources state the following. The LROC article on ilmenite describes comparing the WAC 321 nm ultraviolet filter with its 415 nm visible filter to give an index of ilmenite abundance [3]. The SELENE MI's five visible and four near-infrared bands are described as helping to identify soil and rock types [5]. JAXA describes the MI as one of three optical instruments in the LISM suite, alongside the Terrain Camera and Spectral Profiler [4].\n\nFor the Mars example, the Mastcam-Z is presented by its investigation paper as a multispectral, stereoscopic imaging investigation with narrowband colour imaging across about 400-1000 nm [7]. This article does not recommend any lunar or Martian location for study, and it does not extend these purposes beyond what the cited sources state.",
+      "operating_principle": "A multispectral imager measures reflected sunlight in a set of narrow or moderately broad spectral bands. Each band is defined by a filter that passes a range of wavelengths centred on a nominal value and rejects the rest. The detector converts the transmitted light into a digital number for each pixel. Those numbers must be calibrated before bands can be compared; the Mastcam-Z team describes primary and secondary calibration targets for this purpose [9].\n\nThe LRO Wide Angle Camera lists separate focal lengths and f-numbers for its visible and UV channels, and its image formats are a five-filter visible push-frame set and a two-filter UV colour set [2]. The SELENE Multiband Imager uses two nadir-looking telescopes with two-dimensional detectors and bandpass filters, and operates as a push-broom imager [5]. Mastcam-Z uses a filter wheel on each camera; one of its eight positions carries a broadband RGB filter behind a near-infrared cut-off and the other seven carry narrowband or solar filters [7].",
+      "scientific_importance": "Multispectral data are important because they provide compositional and maturity context over large areas with a modest instrument. A hyperspectral instrument samples many narrow bands; a multispectral imager samples a few broad ones, which gives coverage and spatial detail at the cost of fine spectral discrimination. The examples in this article show how that trade is made in practice. The LRO WAC has seven bands, the SELENE MI nine and Mastcam-Z eleven narrowband filters, so their band-based products are not directly interchangeable [2][5][7].\n\nThe scientific importance of each example depends on its published band set, calibration and coverage. The published sources support the use of band ratios for specific purposes, such as the ilmenite index [3], but they do not establish a common calibration across the three instruments. Results from one instrument should be compared with another only after reviewing its calibration and photometric treatment.",
+      "physical_specifications": {
+        "note": "There is no universal mass, power, size or band set for a multispectral imager. The three examples below are specific flown instruments. The values in the comparison table and in each example are taken from the cited sources. Where a source does not publish a value, the text says \"not publicly specified\". The table is intended to show what is published, not to rank the instruments.",
+        "comparison_table_markdown": "| Item | LRO Wide Angle Camera (LROC WAC) | SELENE (Kaguya) Multiband Imager (MI) | Mastcam-Z (Perseverance) |\n|---|---|---|---|\n| Status in sources | Flown on the Lunar Reconnaissance Orbiter [1][2]; current operating status not verified in this run | Flown on the SELENE (Kaguya) orbiter [4]; operating dates not stated in the pages accessed | Flown on the Perseverance rover; launch on 30 July 2020 [7]; current status not verified in this run |\n| Platform and environment | Lunar orbit | Lunar orbit | Mars surface |\n| Band count | 7 (two UV, five visible) [2] | 9 (five VIS, four NIR) [4][5] | 11 narrowband filters per [7]; plus broadband RGB colour filters [8] |\n| Band centres | 321, 360, 415, 566, 604, 643, 689 nm [2] | VIS 0.415, 0.75, 0.9, 0.95, 1.0 um; NIR 1.0, 1.05, 1.25, 1.55 um [4] | Per-filter centres in the table in [8]; endpoints 442 nm and 1022 nm [9] |\n| Spatial scale | 75 m/pixel (visible) and 385 m/pixel (UV, 4x4 binned) at 50 km reference altitude [2] | VIS 20 m, NIR 62 m [4] (the ODE documentation states 60 m for NIR [5]); altitude basis not stated on the pages accessed | Not comparable: published as angular field of view, with ground sampling depending on range [7][8] |\n| Field of view | Visible 61 deg; UV 59 deg; monochrome 92 deg [2] | VIS 11 deg (19.3 km); NIR 11.2 deg (19.6 km) [4] | Widest 25.5 x 19.1 deg (zoom-dependent) [8]; narrowest 6.2 x 4.6 deg [7][8] |\n| Mass | 0.9 kg [2] | not publicly specified in the pages accessed | Camera head 1.38 kg each; digital electronics assembly 1.47 kg [7][8] |\n| Power | 2.7 W peak; 2.6 W average [2] | not publicly specified in the pages accessed | 7.5 W standby and 11.8 W imaging, per camera [7][8] |\n| Dimensions | 15.8 x 23.2 x 32.3 cm, including radiator [2] | not publicly specified in the pages accessed | Camera head 11 x 12 x 26 cm each; electronics 22 x 12 x 5 cm [8] |",
+        "examples": [
+          {
+            "name": "Lunar Reconnaissance Orbiter Wide Angle Camera (LROC WAC)",
+            "type": "Flown lunar orbital multispectral camera (LROC Wide Angle Camera)",
+            "status": "Flown on the Lunar Reconnaissance Orbiter. Current operating status not verified in this run. The specification page is dated 2013.",
+            "platform": "Lunar Reconnaissance Orbiter (orbiter)",
+            "band_count": 7,
+            "bands_nm": [
+              321,
+              360,
+              415,
+              566,
+              604,
+              643,
+              689
+            ],
+            "band_configuration": "Two UV filters (321, 360 nm) and five visible filters (415, 566, 604, 643, 689 nm). The specification page's format listings label a 2-filter UV colour set and a 5-filter visible push-frame set; 321 nm is identified as the UV filter in [3].",
+            "focal_length_mm": {
+              "visible": 6.0,
+              "uv": 4.7
+            },
+            "field_of_view_deg": {
+              "monochrome": 92,
+              "visible": 61,
+              "uv": 59
+            },
+            "detector": "Kodak KAI-1001, 1024 x 1024 pixel format (per [2])",
+            "nadir_pixel_scale_m": {
+              "visible": 75,
+              "uv_4x4_binned": 385,
+              "reference_altitude_km": 50
+            },
+            "mass_kg": 0.9,
+            "power_w": {
+              "peak": 2.7,
+              "average": 2.6
+            },
+            "dimensions_cm": "15.8 x 23.2 x 32.3 (width x length x height, including radiator)",
+            "source_urls": [
+              "https://lroc.im-ldi.com/about/specs",
+              "https://lroc.im-ldi.com/images/986",
+              "https://pubs.usgs.gov/publication/70033784"
+            ],
+            "notes": "Secondary summaries quote about 100 m and 400 m; not resolved. The WAC section does not state current operating status.",
+            "images": [
+              {
+                "id": "lroc_wac_415nm_nearside_mosaic",
+                "description": "LRO Wide Angle Camera orthographic view of the lunar nearside at 415 nm.",
+                "image_type": "Orbital multispectral image (WAC, single filter)",
+                "image_url": "https://lroc.im-ldi.com/ckeditor_assets/pictures/594/content_moon_415nm_952.png",
+                "source_page_url": "https://lroc.im-ldi.com/images/986",
+                "publisher": "LROC Science Operations Center (Arizona State University)",
+                "credit": "NASA/GSFC/Arizona State University (as captioned on the source page)",
+                "caption": "Orthographic view of the nearside from the WAC at 415 nm.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[0]"
+                ],
+                "notes": "Direct image asset verified: HTTP 200, image/png, about 451 KB; the asset path is referenced in the source page HTML (src=/ckeditor_assets/pictures/594/content_moon_415nm_952.png). The source page describes this as the 415 nm WAC view used in its UV/visible ratio discussion. Rights: NASA/LROC image use policy applies; no separate licence was checked."
+              }
+            ]
+          },
+          {
+            "name": "SELENE (Kaguya) Multiband Imager (MI)",
+            "type": "Flown lunar orbital multiband imager (LISM suite)",
+            "status": "Flown on the SELENE (Kaguya) orbiter. Operating dates not stated on the pages accessed. MI results published in Nature (JAXA press release, 2009).",
+            "platform": "SELENE (Kaguya) orbiter, with the Terrain Camera and Spectral Profiler",
+            "band_count": 9,
+            "bands_um": {
+              "VIS": [
+                0.415,
+                0.75,
+                0.9,
+                0.95,
+                1.0
+              ],
+              "NIR": [
+                1.0,
+                1.05,
+                1.25,
+                1.55
+              ]
+            },
+            "band_width": "Listed as 10-50 nm in a JAXA table whose columns were lost in extraction; attribution to MI is an inference.",
+            "spatial_resolution_m": {
+              "VIS": 20,
+              "NIR": 62,
+              "nir_as_stated_in_ode_documentation": 60
+            },
+            "field_of_view": {
+              "VIS": "11 deg (19.3 km)",
+              "NIR": "11.2 deg (19.6 km)",
+              "altitude_basis": "not stated on the fetched pages"
+            },
+            "telescope": "Two nadir-directed telescopes, 65 mm focal length, two-dimensional detectors, bandpass filters, push-broom operation (per [5])",
+            "mass_kg": "not publicly specified in the pages accessed",
+            "power": "not publicly specified in the pages accessed",
+            "dimensions": "not publicly specified in the pages accessed",
+            "operating_altitude": "not publicly specified in the pages accessed",
+            "source_urls": [
+              "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+              "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/KAGUYA%20(SELENE)/MI/Intro.htm",
+              "https://global.jaxa.jp/press/2009/09/20090910_kaguya_e.html"
+            ],
+            "notes": "1.0 um is listed in both VIS and NIR sets on the JAXA page; not resolved. The Ohtake et al. (2008) MI paper was not accessible.",
+            "images": [
+              {
+                "id": "selene_lism_instrument_figure",
+                "description": "Figure showing the Terrain Camera, Multiband Imager and Spectral Profiler installed on KAGUYA.",
+                "image_type": "Technical figure (instrument figure on mission page)",
+                "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_001.gif",
+                "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+                "publisher": "Japan Aerospace Exploration Agency (JAXA)",
+                "credit": "JAXA (publisher credit; photographer not stated on page)",
+                "caption": "Three high-performance optical instruments (TC, MI, SP) are installed on KAGUYA.",
+                "section_placements": [
+                  "overview",
+                  "physical_specifications.examples[1]"
+                ],
+                "notes": "Direct image asset verified: HTTP 200, image/gif, about 22 KB; img_tc_001.gif is referenced on the JAXA LISM page with this caption. The figure shows the MI together with the TC and SP and is not an MI-only image. JAXA usage conditions were not checked."
+              }
+            ]
+          },
+          {
+            "name": "Mars 2020 Perseverance Mast Camera Zoom (Mastcam-Z)",
+            "type": "Flown Mars surface multispectral stereo camera (non-lunar example)",
+            "status": "Flown on the Perseverance rover (Mars 2020). Launch on 30 July 2020 per [7]. The specification page describes the rover landing in Jezero crater; current status not verified in this run.",
+            "platform": "Perseverance rover (Mars surface)",
+            "band_count": 11,
+            "band_count_note": "Eleven narrowband filters per [7]; the per-eye specification table in [8] lists narrowband positions L1-L6 and R1-R6 plus solar filters L7/R7. The two counts are not reconciled.",
+            "band_range_nm_stated": "about 400-1000 nm per [7]; narrowband endpoints 442 nm and 1022 nm per [9]",
+            "filter_table_center_pm_hwhm_nm": {
+              "Red Bayer (L0/R0)": [
+                "630 +/- 43",
+                "631 +/- 43"
+              ],
+              "Green Bayer (L0/R0)": [
+                "544 +/- 41",
+                "544 +/- 42"
+              ],
+              "Blue Bayer (L0/R0)": [
+                "480 +/- 46",
+                "480 +/- 46"
+              ],
+              "L1/R1": [
+                "800 +/- 9",
+                "800 +/- 9"
+              ],
+              "L2/R2": [
+                "754 +/- 10",
+                "866 +/- 10"
+              ],
+              "L3/R3": [
+                "677 +/- 11",
+                "910 +/- 12"
+              ],
+              "L4/R4": [
+                "605 +/- 9",
+                "939 +/- 12"
+              ],
+              "L5/R5": [
+                "528 +/- 11",
+                "978 +/- 10"
+              ],
+              "L6/R6": [
+                "442 +/- 12",
+                "1022 +/- 19"
+              ],
+              "Solar L7 / R7": [
+                "590 +/- 88 (ND6)",
+                "880 +/- 10 (ND5)"
+              ]
+            },
+            "field_of_view_deg": {
+              "widest_paper": "25.6 x 19.2 (26 mm focal length)",
+              "narrowest_paper": "6.2 x 4.6 (110 mm focal length)",
+              "widest_spec_page": "25.5 x 19.1 (1600 x 1200 pixels)"
+            },
+            "mass_kg": {
+              "camera_head_each": 1.38,
+              "digital_electronics_assembly": 1.47,
+              "primary_calibration_target_g": 103,
+              "secondary_calibration_target_g": 15
+            },
+            "power_w": {
+              "per_camera_standby": 7.5,
+              "per_camera_imaging": 11.8
+            },
+            "dimensions_cm": {
+              "camera_head_each": "11 x 12 x 26",
+              "digital_electronics_assembly": "22 x 12 x 5",
+              "primary_calibration_target": "98 x 98 x 8 mm base plus 37.5 mm gnomon",
+              "secondary_calibration_target": "80 x 30 x 16 mm"
+            },
+            "source_urls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7883548/",
+              "https://mastcamz.asu.edu/cameras/tech-specs/",
+              "https://mastcamz.asu.edu/mars-in-full-color/"
+            ],
+            "notes": "Non-lunar flown example included as a multispectral reference. Current operating status not verified. Table 3 of [7] (filter list) was not readable in text.",
+            "images": [
+              {
+                "id": "mastcamz_calibration_targets_on_rover",
+                "description": "Mastcam-Z radiometric calibration targets mounted on the rover and imaged by the left Mastcam-Z camera during testing at JPL.",
+                "image_type": "Engineering test image (calibration-target figure)",
+                "image_url": "https://mastcamz.asu.edu/wp-content/uploads/2020/12/Figure2-1024x415.jpg",
+                "source_page_url": "https://mastcamz.asu.edu/mars-in-full-color/",
+                "publisher": "Mastcam-Z team, Arizona State University",
+                "credit": "Not stated on the source page as fetched; publisher is the Mastcam-Z team",
+                "caption": "(a) The Mastcam-Z calibration targets mounted on the rover and imaged with the left Mastcam-Z camera during testing at JPL.",
+                "section_placements": [
+                  "physical_specifications.examples[2]"
+                ],
+                "notes": "Direct image asset verified: HTTP 200, image/jpeg, about 91 KB; Figure2-1024x415.jpg is referenced on the source page with this caption. The image shows calibration targets on the rover during pre-launch testing; it is used only to show the Mastcam-Z hardware context."
+              }
+            ]
+          }
+        ],
+        "dimensions_and_proportions": "Dimensions and proportions differ strongly between the examples. The LRO WAC has a stated envelope of 15.8 x 23.2 x 32.3 cm including its radiator [2]. The Mastcam-Z camera heads are each 11 x 12 x 26 cm, and their separate electronics assembly is 22 x 12 x 5 cm [8]. No dimension is given in the pages accessed for the SELENE MI, so no comparison is made for that item.",
+        "mass_and_weight": "Mass and power follow the same pattern. The LRO WAC is stated at 0.9 kg with 2.7 W peak and 2.6 W average power [2]. Mastcam-Z is stated at 1.38 kg per camera head and 1.47 kg for the electronics, with 7.5 W standby and 11.8 W imaging power per camera [7][8]. The sources accessed do not state whether these values include mounting hardware, thermal insulation or harnesses.",
+        "power_requirements": "LRO WAC: 2.7 W peak and 2.6 W average [2]. SELENE MI: not publicly specified in the pages accessed. Mastcam-Z: 7.5 W standby and 11.8 W imaging per camera [7][8]."
+      },
+      "environmental_and_operational_requirements": "The lunar orbital examples work in vacuum, with solar illumination and thermal cycling. These are general conditions of lunar orbit rather than values from one source. Two engineering points are stated in the sources accessed. The LRO WAC's nadir pixel scale is given for a 50 km reference altitude, so ground sampling scales with orbit altitude [2]. Band products also depend on illumination geometry; the sources accessed describe this only in general terms, and do not give the correction each instrument team applies.\n\nThe Mars example operates on the surface, where dust accumulation and changing illumination are general concerns. Mastcam-Z carries primary and secondary calibration targets for radiometric calibration [8][9]. The sources accessed do not describe the lunar environmental qualification of any lunar example in this article.",
+      "limitations": "As a general limitation of reflectance-based band analysis, a few broad bands cannot uniquely identify minerals, and band ratios are affected by grain size, space weathering, shadowing and phase angle. Results should be treated as indicators that need confirmation by spectroscopy or other data. Each example also has its own limits. The LRO WAC has ground sampling of 75 m (visible) and 385 m (UV) at 50 km [2], which is coarser than dedicated high-resolution cameras. The SELENE MI's resolution is quoted on the JAXA page without an altitude basis [4]. The Mastcam-Z's products depend on its calibration targets and on illumination [8][9].",
+      "transportation_and_deployment": {
+        "overview": "A multispectral imager is normally delivered as part of an orbiter or a surface mission payload. The lunar examples in this article were flown on orbiters, so their transportation chain is a spacecraft chain: integration, launch, transfer and orbit insertion, commissioning and operations. The Mastcam-Z was delivered to Mars as part of a rover payload. No lunar lander or rover interface for a generic multispectral imager has been verified in this article, so no compatibility is asserted.",
+        "transportation_process": [
+          "Integrate the imager into a spacecraft payload compartment, or onto a rover mast, on Earth, with its thermal and data interfaces connected.",
+          "Launch the spacecraft on a launch vehicle; for an orbiter, transfer to the target body.",
+          "For an orbiter, insert into the operational orbit and commission the instrument, including checks of focus, filter operation and calibration.",
+          "Operate with pointing and thermal constraints set by the spacecraft, and downlink data through the mission's communications chain.",
+          "For a surface payload, stow the camera, deploy the mast or mount, and perform calibration against onboard targets before operations."
+        ],
+        "deployment_methods": "For the lunar orbital examples, deployment in the surface sense does not apply: the instrument is fixed to the spacecraft and used during orbit operations. For Mastcam-Z, the camera is mounted on the Perseverance rover, and the calibration targets are mounted on the rover as well [9]. The sources accessed do not describe the stowage or deployment sequence in detail.",
+        "historical_examples": "The LRO WAC and the SELENE MI were both carried on orbiters that obtained lunar science data [1][4][6]. The Mastcam-Z is an example of a multispectral imager on a Mars rover that was integrated for launch as part of the Mars 2020 mission [7].",
+        "compatibility_assessment": "No compatibility with a named lander, rover or spacecraft has been assessed for a generic multispectral imager. For any future instrument, compatibility would require verified mass, envelope, mounting, power, thermal and data interface data, which the examples above do not provide for a new design.",
+        "images": []
+      },
+      "historical_significance": "The LRO WAC has returned multispectral data from lunar orbit, and the LROC article uses its 415 nm nearside view and the 321 nm ultraviolet band to illustrate the UV/visible ratio used for ilmenite mapping [1][3]. The SELENE MI produced results that were published in Nature in 2009 [6], and its bands were described in JAXA's instrument description [4]. The Mastcam-Z is a non-lunar example; before landing, its team described it as the first zoom-capable camera on the surface of Mars [9]. That is a pre-landing statement, not a verified post-landing performance result.",
+      "limitations_and_uncertainties": "The term \"multispectral imager\" describes a class of instruments rather than a single design. The examples are not interchangeable. Their band counts, band ranges, spatial scales and evidence bases differ, and the values in this article must always be read with their instrument and source.\n\nSeveral values are unresolved. The LRO WAC pixel scale is given for a 50 km reference altitude on its specification page, while secondary summaries quote about 100 m and 400 m for the same channels [2]. The SELENE MI band list includes 1.0 um in both its visible and near-infrared sets, and its band-width row could not be attributed with certainty [4]. The Mastcam-Z has eleven narrowband filters according to the investigation paper [7], while the technical specifications table lists seven narrowband positions per camera [8]; reconciling them requires the paper's Table 3, which was not readable in text. The Mastcam-Z FOV also differs slightly between the paper and the specification page [7][8].\n\nEvidence gaps include: the MI paper by Ohtake et al. (2008) was not accessible, so MI mass, power, dimensions and altitude are not given; the LRO and SELENE operating status is not verified; Chang'e and Chandrayaan multispectral or panoramic cameras were not verified in this run and no numbers are given for them; and no direct interface evidence exists for any lunar lander or spacecraft in the transportation section.",
+      "images": [
+        {
+          "id": "lroc_wac_415nm_nearside_mosaic",
+          "description": "LRO Wide Angle Camera orthographic view of the lunar nearside at 415 nm.",
+          "image_type": "Orbital multispectral image (WAC, single filter)",
+          "image_url": "https://lroc.im-ldi.com/ckeditor_assets/pictures/594/content_moon_415nm_952.png",
+          "source_page_url": "https://lroc.im-ldi.com/images/986",
+          "publisher": "LROC Science Operations Center (Arizona State University)",
+          "credit": "NASA/GSFC/Arizona State University (as captioned on the source page)",
+          "caption": "Orthographic view of the nearside from the WAC at 415 nm.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct image asset verified: HTTP 200, image/png, about 451 KB; the asset path is referenced in the source page HTML (src=/ckeditor_assets/pictures/594/content_moon_415nm_952.png). The source page describes this as the 415 nm WAC view used in its UV/visible ratio discussion. Rights: NASA/LROC image use policy applies; no separate licence was checked."
+        },
+        {
+          "id": "selene_lism_instrument_figure",
+          "description": "Figure showing the Terrain Camera, Multiband Imager and Spectral Profiler installed on KAGUYA.",
+          "image_type": "Technical figure (instrument figure on mission page)",
+          "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_001.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "publisher": "Japan Aerospace Exploration Agency (JAXA)",
+          "credit": "JAXA (publisher credit; photographer not stated on page)",
+          "caption": "Three high-performance optical instruments (TC, MI, SP) are installed on KAGUYA.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct image asset verified: HTTP 200, image/gif, about 22 KB; img_tc_001.gif is referenced on the JAXA LISM page with this caption. The figure shows the MI together with the TC and SP and is not an MI-only image. JAXA usage conditions were not checked."
+        },
+        {
+          "id": "mastcamz_calibration_targets_on_rover",
+          "description": "Mastcam-Z radiometric calibration targets mounted on the rover and imaged by the left Mastcam-Z camera during testing at JPL.",
+          "image_type": "Engineering test image (calibration-target figure)",
+          "image_url": "https://mastcamz.asu.edu/wp-content/uploads/2020/12/Figure2-1024x415.jpg",
+          "source_page_url": "https://mastcamz.asu.edu/mars-in-full-color/",
+          "publisher": "Mastcam-Z team, Arizona State University",
+          "credit": "Not stated on the source page as fetched; publisher is the Mastcam-Z team",
+          "caption": "(a) The Mastcam-Z calibration targets mounted on the rover and imaged with the left Mastcam-Z camera during testing at JPL.",
+          "section_placements": [
+            "physical_specifications.examples[2]"
+          ],
+          "notes": "Direct image asset verified: HTTP 200, image/jpeg, about 91 KB; Figure2-1024x415.jpg is referenced on the source page with this caption. The image shows calibration targets on the rover during pre-launch testing; it is used only to show the Mastcam-Z hardware context."
+        }
+      ],
+      "overview_images": [
+        {
+          "id": "lroc_wac_415nm_nearside_mosaic",
+          "description": "LRO Wide Angle Camera orthographic view of the lunar nearside at 415 nm.",
+          "image_type": "Orbital multispectral image (WAC, single filter)",
+          "image_url": "https://lroc.im-ldi.com/ckeditor_assets/pictures/594/content_moon_415nm_952.png",
+          "source_page_url": "https://lroc.im-ldi.com/images/986",
+          "publisher": "LROC Science Operations Center (Arizona State University)",
+          "credit": "NASA/GSFC/Arizona State University (as captioned on the source page)",
+          "caption": "Orthographic view of the nearside from the WAC at 415 nm.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[0]"
+          ],
+          "notes": "Direct image asset verified: HTTP 200, image/png, about 451 KB; the asset path is referenced in the source page HTML (src=/ckeditor_assets/pictures/594/content_moon_415nm_952.png). The source page describes this as the 415 nm WAC view used in its UV/visible ratio discussion. Rights: NASA/LROC image use policy applies; no separate licence was checked."
+        },
+        {
+          "id": "selene_lism_instrument_figure",
+          "description": "Figure showing the Terrain Camera, Multiband Imager and Spectral Profiler installed on KAGUYA.",
+          "image_type": "Technical figure (instrument figure on mission page)",
+          "image_url": "https://selene.tksc.jaxa.jp/en/equipment/image/img_tc_001.gif",
+          "source_page_url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "publisher": "Japan Aerospace Exploration Agency (JAXA)",
+          "credit": "JAXA (publisher credit; photographer not stated on page)",
+          "caption": "Three high-performance optical instruments (TC, MI, SP) are installed on KAGUYA.",
+          "section_placements": [
+            "overview",
+            "physical_specifications.examples[1]"
+          ],
+          "notes": "Direct image asset verified: HTTP 200, image/gif, about 22 KB; img_tc_001.gif is referenced on the JAXA LISM page with this caption. The figure shows the MI together with the TC and SP and is not an MI-only image. JAXA usage conditions were not checked."
+        }
+      ],
+      "references": [
+        {
+          "title": "Lunar Reconnaissance Orbiter Camera (LROC) Instrument Overview",
+          "authors": "Robinson, M. S. et al.",
+          "date": "2010",
+          "publisher": "Space Science Reviews, 150, 81-124 (publication record via USGS Publications Warehouse)",
+          "url": "https://pubs.usgs.gov/publication/70033784",
+          "notes": "Used only for the statement that LROC comprises a Wide Angle Camera and Narrow Angle Cameras aboard LRO. The publication record page was reachable, but full text was not accessed in this run (publisher full-text access returned HTTP 403), so bibliographic details come from the record and search metadata."
+        },
+        {
+          "title": "Lunar Reconnaissance Orbiter Camera - specifications (Wide Angle Camera section)",
+          "authors": "LROC team, Arizona State University",
+          "date": "last updated 2013-05-08 per page",
+          "publisher": "LROC (Lunar Reconnaissance Orbiter Camera) website",
+          "url": "https://lroc.im-ldi.com/about/specs",
+          "notes": "Primary source for WAC filter wavelengths, optics, detector, pixel scale at 50 km, mass, power and dimensions. The page is dated and its WAC section does not state current operating status."
+        },
+        {
+          "title": "Ilmenite Seen with Ultraviolet Light",
+          "authors": "Sato, H. (LROC article)",
+          "date": "2017-12-01",
+          "publisher": "LROC Science Operations Center",
+          "url": "https://lroc.im-ldi.com/images/986",
+          "notes": "Source of the WAC 415 nm nearside image and of the description of the 321 nm UV filter used with the 415 nm filter for ilmenite mapping. Source page for the image in this article."
+        },
+        {
+          "title": "LISM [Terrain Camera (TC), Multiband Imager (MI), Spectral Profiler (SP)]",
+          "authors": "SELENE (KAGUYA) project",
+          "date": "not stated on page",
+          "publisher": "Japan Aerospace Exploration Agency (JAXA)",
+          "url": "https://selene.tksc.jaxa.jp/en/equipment/tc_e.htm",
+          "notes": "Primary JAXA source for MI band centres, spatial resolution and field of view. The page's specification table lost its column structure in extraction, so the band-width attribution is an inference. Mass, power, dimensions and altitude are not given on this page; the page refers to a separate download section that was not accessed."
+        },
+        {
+          "title": "KAGUYA (SELENE) Multi band Imager instrument",
+          "authors": "NASA Planetary Data System (ODE) help documentation",
+          "date": "not stated on page",
+          "publisher": "NASA Orbital Data Explorer (ODE)",
+          "url": "https://ode.rsl.wustl.edu/mars/pagehelp/Content/Missions_Instruments/KAGUYA%20(SELENE)/MI/Intro.htm",
+          "notes": "Used for MI-VIS (five bands) and MI-NIR (four bands), 65 mm telescope focal length, push-broom operation, and a 20 m / 60 m resolution statement. The NIR resolution is rounded to 60 m here, while the JAXA page gives 62 m."
+        },
+        {
+          "title": "Kaguya Multiband Imager results published in Nature (press release)",
+          "authors": "JAXA",
+          "date": "2009-09-10",
+          "publisher": "JAXA Global press release",
+          "url": "https://global.jaxa.jp/press/2009/09/20090910_kaguya_e.html",
+          "notes": "Used only to confirm that MI results were published in Nature. The release contains no instrument specifications."
+        },
+        {
+          "title": "The Mars 2020 Perseverance Rover Mast Camera Zoom (Mastcam-Z) Multispectral, Stereoscopic Imaging Investigation",
+          "authors": "Bell, J. F. et al.",
+          "date": "2021",
+          "publisher": "Space Science Reviews (full text via PubMed Central)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7883548/",
+          "notes": "Primary investigation paper for Mastcam-Z: 400-1000 nm narrowband imaging, launch date, camera head and electronics mass and power, and the FOV table. Table 3 (filter list) is an embedded image and was not readable in text, so per-filter values come from the Mastcam-Z technical specifications page."
+        },
+        {
+          "title": "Mastcam-Z technical specifications",
+          "authors": "Mastcam-Z team, Arizona State University",
+          "date": "last updated 2021-02-25 per page",
+          "publisher": "Mastcam-Z project website",
+          "url": "https://mastcamz.asu.edu/cameras/tech-specs/",
+          "notes": "Source of the per-eye narrowband filter table (centre +/- HWHM in nm), mass, power and dimensions. Describes the rover landing in Jezero crater but does not give current operating status."
+        },
+        {
+          "title": "Mars in full color (Mastcam-Z article, pre-landing)",
+          "authors": "Mastcam-Z team, Arizona State University",
+          "date": "2020-12 (page footer shows last update 2024-01-15)",
+          "publisher": "Mastcam-Z project website",
+          "url": "https://mastcamz.asu.edu/mars-in-full-color/",
+          "notes": "Pre-landing article. Source of the 442 nm and 1022 nm endpoints and of the Figure 2 calibration-target image (caption (a)). Written in the future tense; it does not confirm post-landing performance."
+        }
+      ]
+    },
+    "research_status": {
+      "article_drafted": true,
+      "technical_specifications_fully_audited": false,
+      "image_urls_added": true,
+      "direct_image_assets_verified_from_official_pages": true,
+      "full_resolution_image_downloads_checked": false,
+      "transportation_compatibility_verified_for_specific_landers": false,
+      "lunar_location_recommendations": "Deferred by user; not included."
+    }
+  },
+  "image_handling": {
+    "image_registry": "payload.article.images",
+    "section_placements": {
+      "overview": "payload.article.overview_images",
+      "LRO WAC example": "payload.article.physical_specifications.examples[0].images",
+      "SELENE MI example": "payload.article.physical_specifications.examples[1].images",
+      "Mastcam-Z example": "payload.article.physical_specifications.examples[2].images",
+      "transportation and deployment": "payload.article.transportation_and_deployment.images (empty: no verified image for this section)"
+    },
+    "url_policy": "All image_url and source_page_url values in this file have query strings and fragments removed. Section-level image objects are repeated intentionally so each article section can render its own images without resolving IDs against the master gallery."
+  },
+  "data_quality_notes": [
+    "Status: LRO WAC and SELENE MI are flown lunar orbital instruments; Mastcam-Z is flown on Mars and is included only as a non-lunar multispectral reference. Current operating status was not verified for any example.",
+    "Unresolved gap 1: The Mastcam-Z filter count is stated as eleven narrowband filters in the investigation paper [7], while the per-eye table on the technical specifications page lists L1-L6/R1-R6 plus solar L7/R7 [8]. Paper Table 3 is an embedded image and was not readable, so the reconciliation is open.",
+    "Unresolved gap 2: The SELENE MI band list places 1.0 um in both the VIS and NIR sets, and the MI band-width row could not be attributed with certainty. MI mass, power, dimensions and operating altitude are not publicly specified in the accessed pages. The Ohtake et al. (2008) MI paper was not accessible (publisher returned HTTP 403).",
+    "Unresolved gap 3: The LRO WAC pixel scale is given for a 50 km reference altitude on the LROC specification page (dated 2013); secondary summaries quote about 100 m and 400 m. The Robinson et al. (2010) LROC overview was not read in full text (publisher record reachable, full text not accessed).",
+    "Not covered in this run: Chang'e-3/Chang'e-4 panoramic camera multispectral filters, Chandrayaan multispectral or colour instruments and MSL Mastcam heritage values. No numerical values are given for them and no compatibility is asserted.",
+    "Image rights: all three direct images are verified as HTTP 200 assets and are identified on their source pages. Reuse rights were not separately checked; the LROC image falls under NASA/LROC image policy, the JAXA figure under JAXA site conditions, and the Mastcam-Z figure is a pre-launch calibration-target image with no photographer credit stated on the page.",
+    "Cross-references (not duplicated here): 035 Hyperspectral imager, 036 Infrared imager, 053 High-resolution multispectral mapper, 061 Near-infrared spectrometer."
+  ]
+}
